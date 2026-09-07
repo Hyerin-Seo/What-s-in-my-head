@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] == "바로가기"
+views:
+  - type: cards
+    name: 🔖 바로가기
+    order:
+      - 제목
+      - 요약
+    sort:
+      - property: 순서
+        direction: ASC
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 185

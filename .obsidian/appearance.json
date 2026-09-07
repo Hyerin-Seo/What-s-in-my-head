@@ -1,0 +1,17 @@
+{
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "library-cards",
+    "wide-page",
+    "calendar-fix",
+    "kanban-labels",
+    "maruburi",
+    "author-chips",
+    "heading-link"
+  ],
+  "textFontFamily": "LG Smart UI",
+  "interfaceFontFamily": "LG Smart UI",
+  "baseFontSizeAction": false,
+  "monospaceFontFamily": "LG Smart UI",
+  "theme": "system"
+}

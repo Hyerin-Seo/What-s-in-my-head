@@ -1,0 +1,9 @@
+{
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "readableLineLength": true,
+  "trashOption": "local",
+  "attachmentFolderPath": "./이미지",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "0.📥 인박스/🥭 망고 인박스"
+}

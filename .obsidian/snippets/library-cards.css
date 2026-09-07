@@ -1,0 +1,102 @@
+/* ─────────────────────────────────────────────
+   📗 망고네 도서관 — 책 카드 전용 스타일
+   선택자가 전부 캔버스/Bases 카드 안으로 한정돼 있어서
+   일반 문서의 여백·가독성에는 영향을 주지 않습니다.
+   ───────────────────────────────────────────── */
+
+/* 1. 캔버스 책 카드: 제목 ↔ 속성 ↔ 표지 사이 여백 제거 */
+.canvas-node-content .inline-title {
+  margin-bottom: 0 !important;
+  font-size: 1.05em;
+  line-height: 1.3;
+}
+.canvas-node-content .metadata-container {
+  margin-block: 0 !important;
+  padding-block: 0 !important;
+  border: none !important;
+}
+.canvas-node-content .markdown-preview-view,
+.canvas-node-content .markdown-preview-sizer {
+  padding-top: 8px !important;
+}
+/* 표지 이미지가 카드 폭을 꽉 채우도록 */
+.canvas-node-content .markdown-preview-view img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* 2. 캔버스 그룹(장르 구획) 라벨 */
+.canvas-group-label {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* 3. Bases 카드뷰 — 노션 갤러리 카드
+   ─────────────────────────────────────────────
+   카드 레이아웃은 CSS 가 아니라 JS 가 픽셀 좌표로 깝니다
+   (.bases-cards-item / -cover / -property 가 전부 position:absolute).
+   그래서 높이·비율은 .base 의 imageAspectRatio / cardSize 로 정하고,
+   여기서는 옵시디언이 열어둔 --bases-cards-* 변수와 글자만 손봅니다.
+
+   라벨을 숨겨도 레이아웃이 안 깨지는 이유:
+   옵시디언은 숨긴 '테스터' 엘리먼트를 실제로 measure 해서 카드 높이를
+   구합니다. 테스터도 .bases-cards-label 을 갖고 있어서, 전역으로 숨기면
+   측정값이 같이 줄어 카드가 정확히 그만큼 짧아집니다.
+   ───────────────────────────────────────────── */
+
+.bases-cards-container {
+  --bases-cards-scale: 1;
+  --bases-cards-line-height: 20px;
+  --bases-cards-cover-background: var(--background-secondary);
+  --bases-cards-shadow: 0 0 0 1px rgba(15, 15, 15, 0.09), 0 1px 3px rgba(15, 15, 15, 0.05);
+  --bases-cards-shadow-hover: 0 0 0 1px rgba(15, 15, 15, 0.16), 0 3px 9px rgba(15, 15, 15, 0.09);
+  padding: 4px 2px 16px;
+}
+
+.theme-dark .bases-cards-container {
+  --bases-cards-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10);
+  --bases-cards-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.20), 0 3px 9px rgba(0, 0, 0, 0.45);
+}
+
+.bases-cards-item {
+  border-radius: 8px;
+  transition: box-shadow 120ms ease;
+}
+
+/* 속성 이름('평점' '담당' '요약')을 지웁니다 — 노션 카드엔 값만 있습니다 */
+.bases-cards-label {
+  display: none;
+}
+
+/* 제목 */
+.bases-cards-property.mod-title .bases-cards-line {
+  font-size: var(--font-ui-medium);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* 저자 — 회색 작은 글씨. 담당이 아니라 저자 속성입니다 (노션 나의 서재 DB 의 저자 필드) */
+.bases-cards-property[data-property="note.저자"] .bases-cards-line,
+.bases-cards-property[data-property="저자"] .bases-cards-line {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+}
+
+/* 평점 — 별이 제목에 눌리지 않게 살짝 줄입니다 */
+.bases-cards-property[data-property="note.평점"] .bases-cards-line,
+.bases-cards-property[data-property="평점"] .bases-cards-line {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+/* 요약 등 나머지 값 */
+.bases-cards-property:not(.mod-title) .bases-cards-line {
+  color: var(--text-muted);
+}
+
+/* 값이 비면 기본이 '—' 인데, 너무 눈에 띄어 연하게 */
+.bases-cards-line:empty::before {
+  color: var(--text-faint);
+  opacity: 0.5;
+}

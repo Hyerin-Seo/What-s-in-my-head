@@ -1,0 +1,69 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] == "할일"
+    - file.inFolder("1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현")
+views:
+  - type: kanban-view
+    name: 🗂️ 칸반
+    order:
+      - 담당
+      - 작성자
+      - 중요도
+      - 마감
+    quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+    groupByProperty: note.상태
+    cardTitleProperty: note.제목
+    swimlaneByProperty: note.담당
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    columnOrders:
+      note.상태:
+        - 진행중
+        - 위임함
+        - 일정 있음
+        - 기한만
+        - 완료
+        - 히스토리
+    cardOrders:
+    columnColors:
+      note.상태: {}
+    swimlaneOrders:
+      "note.상태\x1fnote.담당":
+        - 민규 서
+        - Uncategorized
+        - "[[민규 서]]"
+        - "[[Rin]]"
+    collapsedLanes:
+      "note.상태\x1fnote.담당": []
+  - type: table
+    name: 📊 전체 표
+    order:
+      - file
+      - 상태
+      - 담당
+      - 작성자
+      - 중요도
+      - 마감
+      - 수정일
+    sort:
+      - property: 상태
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: cards
+    name: 🎴 갤러리
+    groupBy:
+      property: 상태
+      direction: ASC
+    order:
+      - 제목
+      - 담당
+      - 작성자
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 210
+newItemFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+newItemTemplate: 1.🎯(Project) 프로젝트/!(Template) 새 할 일.md

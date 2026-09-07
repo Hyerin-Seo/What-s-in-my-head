@@ -1,0 +1,36 @@
+/* Calendar Bases — 임베드 안에서 달력이 절반만 그려지는 문제 보정.
+   FullCalendar 가 컨테이너 폭을 재기 전에 열 너비를 계산해서 생기는 현상입니다.
+   내부 표들을 폭 100% 로 강제합니다. */
+
+.bases-calendar-container,
+.bases-calendar-container .fc,
+.bases-calendar-container .fc-view-harness,
+.bases-calendar-container .fc-daygrid,
+.bases-calendar-container .fc-dayGridMonth-view {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* 스크롤그리드 본체와 그 안의 표들 */
+.bases-calendar-container table.fc-scrollgrid,
+.bases-calendar-container .fc-scrollgrid,
+.bases-calendar-container .fc-scroller-harness > table,
+.bases-calendar-container .fc-scroller > table,
+.bases-calendar-container .fc-col-header,
+.bases-calendar-container .fc-daygrid-body,
+.bases-calendar-container .fc-daygrid-body > table {
+  width: 100% !important;
+  min-width: 100% !important;
+  table-layout: fixed !important;
+}
+
+/* 인라인 style="width: NNNpx" 로 박힌 열 너비 무력화 */
+.bases-calendar-container .fc-col-header col,
+.bases-calendar-container .fc-daygrid-body col {
+  width: auto !important;
+}
+
+/* 스크롤러가 내용을 가로로 자르지 않게 */
+.bases-calendar-container .fc-scroller {
+  overflow-x: visible !important;
+}

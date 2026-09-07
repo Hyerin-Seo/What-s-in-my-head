@@ -1,0 +1,113 @@
+/* ────────────────────────────────────────────────────────────
+   작성자 칩 — 누가 쓴 글인지 색으로 구분
+
+   담당(누가 책임지나) 과 작성자(누가 썼나) 는 다른 속성입니다.
+   AI가 쓴 글은 한눈에 티가 나야 하니 사람과 색 계열을 나눕니다.
+
+     사람   민규 서 파랑 · Rin 보라
+     AI     Claude 주황 · Gemini 청록 · ChatGPT 초록
+
+   값이 위키링크라서 <span class="internal-link" data-href="이름"> 으로
+   렌더되고(obsidian.asar 의 renderFileLink 확인), 그래서 이름별로 잡힙니다.
+   따옴표 없는 [[x]] 는 YAML 이 중첩 리스트로 읽으니 항상 "[[x]]" 로 넣으세요.
+
+   쓰는 사람·도구가 늘면 아래 블록을 복사해 이름과 색만 바꾸면 됩니다.
+   ──────────────────────────────────────────────────────────── */
+
+/* ── 칩 공통 모양 ─────────────────────────────────────────────
+   담당·작성자가 나오는 곳:
+     표 · 카드   [data-property="note.담당"]      (셀 부모에 실림)
+     칸반 카드   .obk-card-property[data-label="note.담당"]
+     속성 패널   .metadata-property[data-property-key="담당"] */
+
+/* 담당·작성자 칸만. 표 셀은 부모에 data-property 가 실리고(i.el.dataset.property),
+   카드도 같은 속성을 씁니다. 칸반만 data-label 입니다.
+   예전엔 .bases-table-cell .internal-link 로 걸어서 파일명까지 칩이 됐습니다. */
+[data-property="note.담당"] .internal-link,
+[data-property="note.작성자"] .internal-link,
+[data-property="담당"] .internal-link,
+[data-property="작성자"] .internal-link,
+.obk-card-property[data-label="note.담당"] .internal-link,
+.obk-card-property[data-label="note.작성자"] .internal-link,
+.metadata-property[data-property-key="담당"] .internal-link,
+.metadata-property[data-property-key="작성자"] .internal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 8px 1px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none !important;
+  opacity: 1;
+  background: var(--background-modifier-hover);
+  color: var(--text-muted);
+}
+
+[data-property="note.담당"] .internal-link::before,
+[data-property="note.작성자"] .internal-link::before,
+[data-property="담당"] .internal-link::before,
+[data-property="작성자"] .internal-link::before,
+.obk-card-property[data-label="note.담당"] .internal-link::before,
+.obk-card-property[data-label="note.작성자"] .internal-link::before,
+.metadata-property[data-property-key="담당"] .internal-link::before,
+.metadata-property[data-property-key="작성자"] .internal-link::before {
+  content: "●";
+  font-size: 8px;
+}
+
+/* 라벨('작성자' 글자)은 칸반 카드에서만 지웁니다 — 표·속성창에는 필요합니다 */
+.obk-card-property[data-label="note.작성자"] > .obk-card-property-label {
+  display: none;
+}
+
+.obk-card-property[data-label="note.작성자"] .value-list-container,
+.bases-cards-property[data-property="note.작성자"] .value-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.obk-card-property[data-label="note.작성자"] .value-list-gap,
+.bases-cards-property[data-property="note.작성자"] .value-list-gap {
+  display: none;
+}
+
+/* ── 사람 ─────────────────────────────────────────────────── */
+
+.internal-link[data-href="민규 서"] {
+  background: color-mix(in srgb, var(--color-blue) 14%, transparent) !important;
+  color: var(--color-blue) !important;
+}
+
+.internal-link[data-href="Rin"] {
+  background: color-mix(in srgb, var(--color-purple) 14%, transparent) !important;
+  color: var(--color-purple) !important;
+}
+
+/* ── AI — 사람과 색 계열을 나눠서 한눈에 구분되게 ──────────── */
+
+.internal-link[data-href="Claude"] {
+  background: color-mix(in srgb, var(--color-orange) 16%, transparent) !important;
+  color: var(--color-orange) !important;
+}
+
+.internal-link[data-href="Gemini"] {
+  background: color-mix(in srgb, var(--color-cyan) 16%, transparent) !important;
+  color: var(--color-cyan) !important;
+}
+
+.internal-link[data-href="ChatGPT"] {
+  background: color-mix(in srgb, var(--color-green) 16%, transparent) !important;
+  color: var(--color-green) !important;
+}
+
+/* AI가 쓴 것은 앞에 표시를 하나 더 둡니다 */
+.internal-link[data-href="Claude"]::before,
+.internal-link[data-href="Gemini"]::before,
+.internal-link[data-href="ChatGPT"]::before {
+  content: "🤖" !important;
+  font-size: 9px !important;
+}

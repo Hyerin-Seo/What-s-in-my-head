@@ -1,0 +1,51 @@
+filters:
+  and:
+    - file.ext == "md"
+    - not:
+        - file.name.startsWith("!(Template)")
+    - not:
+        - file.name == "📥 인박스 사용법"
+    - file.inFolder("0.📥 인박스")
+views:
+  - type: table
+    name: 🥭 망고
+    filters:
+      and:
+        - file.inFolder("0.📥 인박스/🥭 망고 인박스")
+    order:
+      - file
+      - 요약
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 🐶 개린
+    filters:
+      and:
+        - file.inFolder("0.📥 인박스/🐶 개린 인박스")
+    order:
+      - file
+      - 요약
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 📊 전부
+    order:
+      - file
+      - 유형
+      - 요약
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: ASC
+    summaries:
+      제목: Filled
+newItemFolder: 0.📥 인박스/🥭 망고 인박스
+newItemTemplate: 0.📥 인박스/!(Template) 새 메모.md

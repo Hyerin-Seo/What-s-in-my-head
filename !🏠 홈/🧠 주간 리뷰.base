@@ -1,0 +1,104 @@
+filters:
+  and:
+    - not:
+        - file.name.startsWith("!(Template)")
+    - file.ext == "md"
+    - note["유형"] != "양식"
+    - note["유형"] != "대시보드"
+views:
+  - type: table
+    name: 1️⃣ 인박스 비우기
+    filters:
+      and:
+        - note["구역"] == "0.inbox"
+        - note["유형"] != "일지"
+    order:
+      - file
+      - 요약
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 2️⃣ 멈춰 있는 일
+    filters:
+      and:
+        - note["유형"] == "할일"
+        - note["구역"] == "1.project"
+        - note["상태"] != "완료"
+    order:
+      - file
+      - 상태
+      - 담당
+      - 작성자
+      - 수정일
+      - 마감
+    sort:
+      - property: 수정일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 3️⃣ 위임했는데 소식 없는 것
+    filters:
+      and:
+        - note["유형"] == "할일"
+        - note["상태"] == "위임함"
+    order:
+      - file
+      - 담당
+      - 작성자
+      - 수정일
+      - 마감
+    sort:
+      - property: 수정일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 4️⃣ 검토만 하고 묵힌 자료
+    filters:
+      and:
+        - note["상태"] == "검토 중"
+    order:
+      - file
+      - 분류
+      - 요약
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 5️⃣ 유형·구역이 빈 노트
+    filters:
+      or:
+        - note["유형"].isEmpty()
+        - note["구역"].isEmpty()
+    order:
+      - file
+      - 유형
+      - 구역
+    summaries:
+      제목: Filled
+  - type: table
+    name: 6️⃣ 요약이 빈 자료
+    filters:
+      and:
+        - note["구역"] == "3.resource"
+        - note["요약"].isEmpty()
+        - not:
+            - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관")
+    order:
+      - file
+      - 유형
+      - 분류
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: DESC
+    summaries:
+      제목: Filled

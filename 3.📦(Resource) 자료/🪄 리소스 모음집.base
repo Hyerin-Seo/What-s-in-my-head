@@ -1,0 +1,125 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] != "양식"
+    - or:
+        - note["유형"] == "자료"
+        - note["유형"] == "레퍼런스"
+        - note["유형"] == "아이디어"
+    - note["구역"] == "3.resource"
+views:
+  - type: kanban-view
+    name: 🚦 상태 칸반
+    order:
+      - 분류
+      - 요약
+    groupByProperty: note.상태
+    cardTitleProperty: note.제목
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    quickAddFolder: 3.📦(Resource) 자료
+    columnOrders:
+      note.상태:
+        - 검토 중
+        - picked
+        - 언젠가·아마도
+    cardOrders:
+      note.상태: {}
+    columnColors:
+      note.상태: {}
+  - type: table
+    name: 🕳️ 상태를 안 정한 것
+    filters:
+      and:
+        - note["상태"].isEmpty()
+    order:
+      - file
+      - 유형
+      - 분류
+      - 요약
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: DESC
+    summaries:
+      제목: Filled
+  - type: kanban-view
+    name: ✅ picked 만
+    filters:
+      and:
+        - note["상태"] == "picked"
+    order:
+      - 요약
+    groupByProperty: note.분류
+    cardTitleProperty: note.제목
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    columnOrders:
+      note.분류:
+        - UI + 디자인 + 기술 레퍼런스
+    cardOrders:
+    columnColors:
+      note.분류: {}
+  - type: kanban-view
+    name: 🪄 전체
+    order:
+      - 상태
+      - 요약
+    groupByProperty: note.분류
+    cardTitleProperty: note.제목
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    columnOrders:
+      note.분류:
+        - UI + 디자인 + 기술 레퍼런스
+        - NovelAI UI
+        - 이런게 필요해!
+        - Uncategorized
+        - 망고AI UI
+        - 자료 조사 UI
+        - NovelAI UI, 망고AI UI
+        - 기타
+        - NovelAI UI, 망고AI UI, 생산성 향상 UI, 자료 조사 UI
+        - 망고AI UI, 생산성 향상 UI
+        - 망고AI UI, 생산성 향상 UI, 자료 조사 UI
+        - NovelAI UI, 망고AI UI, 자료 조사 UI
+    cardOrders:
+      note.분류: {}
+    columnColors:
+      note.분류: {}
+  - type: cards
+    name: 🔎 검토 중
+    filters:
+      and:
+        - note["상태"] == "검토 중"
+    order:
+      - 제목
+      - 분류
+      - 요약
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 200
+  - type: table
+    name: 📊 전체 표
+    order:
+      - file
+      - 상태
+      - 분류
+      - 주제
+      - 중요도
+      - 요약
+      - 링크
+      - 담당
+      - 작성자
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: DESC
+    summaries:
+      제목: Filled
+newItemFolder: 3.📦(Resource) 자료
+newItemTemplate: 3.📦(Resource) 자료/!Template/!(Template) 새 자료 등록 양식/[조사 목적] 제목.md

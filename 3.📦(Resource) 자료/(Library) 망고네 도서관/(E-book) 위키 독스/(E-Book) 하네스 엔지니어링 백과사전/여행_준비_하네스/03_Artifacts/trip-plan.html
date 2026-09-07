@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧭 가족 여행 준비 하네스 종합 시각 보고서</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --card-hover: rgba(51, 65, 85, 0.8);
+      --primary: #6366f1;
+      --primary-glow: rgba(99, 102, 241, 0.35);
+      --accent-cyan: #06b6d4;
+      --accent-pink: #ec4899;
+      --accent-amber: #f59e0b;
+      --accent-emerald: #10b981;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --badge-warning-bg: rgba(245, 158, 11, 0.15);
+      --badge-warning-border: rgba(245, 158, 11, 0.4);
+      --badge-warning-text: #fbbf24;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .header-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: var(--accent-cyan);
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(to right, #ffffff, #a5b4fc, #38bdf8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Version Switcher Tabs */
+    .tab-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .tab-btn {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 0.75rem 1.75rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tab-btn:hover {
+      background: var(--card-hover);
+      color: var(--text-main);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, var(--primary) 0%, #4f46e5 100%);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+
+    /* Tab Content Views */
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.4s ease-in-out forwards;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Grid Layout */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+    }
+
+    .col-12 { grid-column: span 12; }
+    .col-8 { grid-column: span 8; }
+    .col-6 { grid-column: span 6; }
+    .col-4 { grid-column: span 4; }
+
+    @media (max-width: 992px) {
+      .col-8, .col-6, .col-4 { grid-column: span 12; }
+    }
+
+    /* Card Component */
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: border-color 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 0.75rem;
+    }
+
+    /* Badge "확인 필요" */
+    .badge-warning {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: var(--badge-warning-bg);
+      border: 1px solid var(--badge-warning-border);
+      color: var(--badge-warning-text);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      letter-spacing: -0.02em;
+    }
+
+    /* Overview Details */
+    .overview-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .overview-item {
+      background: rgba(15, 23, 42, 0.6);
+      padding: 1rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .overview-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .overview-value {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* Timeline Styles */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .timeline-day {
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 14px;
+      padding: 1.25rem;
+      border-left: 4px solid var(--primary);
+    }
+
+    .timeline-day-header {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--accent-cyan);
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .timeline-event {
+      display: flex;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+      font-size: 0.95rem;
+    }
+
+    .timeline-event:last-child {
+      border-bottom: none;
+    }
+
+    .timeline-time {
+      min-width: 100px;
+      color: var(--accent-pink);
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+
+    .rest-tag {
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent-emerald);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+
+    /* Table Styles */
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    .custom-table th {
+      background: rgba(15, 23, 42, 0.8);
+      color: var(--text-muted);
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .custom-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .custom-table tr:hover {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Chart Box */
+    .chart-container {
+      position: relative;
+      height: 280px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .budget-info-box {
+      margin-top: 1rem;
+      background: rgba(15, 23, 42, 0.6);
+      padding: 1rem;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Checklist Styles */
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      background: rgba(15, 23, 42, 0.5);
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.2s ease;
+    }
+
+    .check-item:hover {
+      background: rgba(30, 41, 59, 0.8);
+    }
+
+    .check-item input[type="checkbox"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--text-muted);
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+      margin-top: 2px;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .check-item input[type="checkbox"]:checked {
+      background: var(--accent-emerald);
+      border-color: var(--accent-emerald);
+    }
+
+    .check-item input[type="checkbox"]:checked::after {
+      content: '✓';
+      position: absolute;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 900;
+      top: -2px;
+      left: 3px;
+    }
+
+    .check-item input[type="checkbox"]:checked + span {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    /* Risk Block */
+    .risk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .risk-box {
+      background: rgba(15, 23, 42, 0.6);
+      border-left: 4px solid var(--accent-pink);
+      padding: 1rem;
+      border-radius: 12px;
+    }
+
+    .risk-title {
+      font-weight: 700;
+      color: #f43f5e;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .risk-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* Progress bar */
+    .progress-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald));
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="header-tag">🧭 Antigravity Multi-Agent Harness Output</div>
+      <h1>가족 여행 준비 종합 시각 리포트</h1>
+      <p class="subtitle">에이전트 검증 파이프라인 산출물 기반 시각화 대시보드</p>
+    </header>
+
+    <!-- Version Switcher -->
+    <div class="tab-container">
+      <button class="tab-btn active" onclick="switchTab('v1')">
+        🌴 v1. 제주도 2박 3일 (국내 3세대 가족)
+      </button>
+      <button class="tab-btn" onclick="switchTab('v2')">
+        ✈️ v2. 일본 오사카 2박 3일 (해외 효도 여행)
+      </button>
+      <button class="tab-btn" onclick="switchTab('v3')">
+        🌊 v3. 제주 힙한 친구 (3박4일 100만 원)
+      </button>
+    </div>
+
+    <!-- =================================================== -->
+    <!-- TAB 1: VERSION 1 - JEJU ISLAND -->
+    <!-- =================================================== -->
+    <div id="tab-v1" class="tab-content active">
+      <div class="dashboard-grid">
+
+        <!-- 1. 여행 개요 카드 -->
+        <div class="card col-12">
+          <div class="card-title">📌 1. 여행 개요 (v1. 국내 제주도)</div>
+          <div class="overview-list">
+            <div class="overview-item">
+              <div class="overview-label">여행지</div>
+              <div class="overview-value">제주도</div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">기간</div>
+              <div class="overview-value">2박 3일</div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">동행자</div>
+              <div class="overview-value">4명 <span style="font-size:0.8rem; font-weight:normal; color:var(--text-muted);">(부모님 2명, 나, 초등학생 1명)</span></div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">예산</div>
+              <div class="overview-value" style="color:var(--accent-cyan);">1,200,000 원</div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">여행 스타일</div>
+              <div class="overview-value" style="font-size:0.95rem;">자연 풍경, 맛집, 짧은 이동, 여유 일정</div>
+            </div>
+            <div class="overview-item" style="grid-column: span 2;">
+              <div class="overview-label">주의사항 & 필수 제약</div>
+              <div class="overview-value" style="font-size:0.9rem; color:#f87171;">
+                ⚠️ 부모님 걷기 최소화(평지위주/경사지 제외) / 🌧️ 비 오는 날 대체 실내 코스
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 날짜별 일정 카드 -->
+        <div class="card col-8">
+          <div class="card-title">🗓️ 2. 날짜별 일정 (휴식 타임 보장)</div>
+          <div class="timeline">
+
+            <div class="timeline-day">
+              <div class="timeline-day-header">
+                <span>1일차: 제주 동부 (조천·구좌 코스)</span>
+                <span style="font-size:0.8rem; color:var(--text-muted);">이동거리 30분 이내</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">10:30~11:30</div>
+                <div>제주공항 도착 및 렌트카(카니발/SUV) 수령</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">11:30~12:30</div>
+                <div><strong>[점심] 도두해녀의집</strong> - 전복죽, 성게미역국 (평지 식당)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">13:00~15:00</div>
+                <div>
+                  함덕 서우봉 해변 평지 산책 & <strong>☕ 카페 드라르마/델문도</strong>
+                  <span class="rest-tag">☕ 가족 1차 휴식</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">15:30~17:30</div>
+                <div>스누피가든 (아이 선호 & 평지/전동카트 코스)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">18:00~19:30</div>
+                <div><strong>[저녁] 칠돈가 함덕점</strong> - 제주 흑돼지 구이</div>
+              </div>
+            </div>
+
+            <div class="timeline-day">
+              <div class="timeline-day-header">
+                <span>2일차: 제주 서귀포·중문 (자연&미식 코스)</span>
+                <span style="font-size:0.8rem; color:var(--text-muted);">데크길 위주 산책</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">09:30~11:00</div>
+                <div>주상절리대 (데크길 평지 산책, 계단 제외, 30분)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">11:30~13:00</div>
+                <div><strong>[점심] 중문 운정이네</strong> - 통갈치구이 & 갈치조림 한상차림</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">13:30~15:00</div>
+                <div>
+                  <strong>☕ 중문 오션뷰 카페 '더클리프' 또는 '바다다'</strong>
+                  <span class="rest-tag">☕ 가족 2차 휴식</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">15:30~17:30</div>
+                <div>카멜리아 힐 (평지 정원 수목원)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">18:00~19:30</div>
+                <div>서귀포 매일올레시장 산책 & <strong>쌍둥이횟집</strong> 모둠회 정식</div>
+              </div>
+            </div>
+
+            <div class="timeline-day">
+              <div class="timeline-day-header">
+                <span>3일차: 제주 서부 (한림·애월 코스 & 귀가)</span>
+                <span style="font-size:0.8rem; color:var(--text-muted);">힐링 & 쇼핑</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">09:30~11:30</div>
+                <div>한림공원 (평지 휠체어/유모차 산책로, 동굴, 식물원)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">12:00~13:00</div>
+                <div><strong>[점심] 애월 해성도식당 / 놀맨</strong> - 해물라면 & 전복리조또</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">13:30~15:00</div>
+                <div>
+                  애월 한담해변 산책 ➔ <strong>☕ 하이엔드제주 카페</strong>
+                  <span class="rest-tag">☕ 가족 3차 휴식</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">15:30~16:30</div>
+                <div>제주 동문재래시장 (기념품 및 선물 쇼핑)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">17:00~</div>
+                <div>렌트카 반납 ➔ 제주공항 이동 (18:30 이후 출국)</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4. 예산 차트 & 정보 카드 -->
+        <div class="card col-4">
+          <div class="card-title">💰 4. 예산 분배 차트</div>
+          <div class="chart-container">
+            <canvas id="chart-v1"></canvas>
+          </div>
+          <div class="budget-info-box">
+            <div style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">💡 예산 데이터 검증 결과:</div>
+            • <strong>총 예산:</strong> 1,200,000 원<br/>
+            • <strong>숙소:</strong> 380,000 원 (31.7%)<br/>
+            • <strong>교통:</strong> 200,000 원 (16.7%)<br/>
+            • <strong>식비:</strong> 480,000 원 (40.0%)<br/>
+            • <strong>활동비:</strong> 90,000 원 (7.5%)<br/>
+            • <strong>예비비:</strong> 50,000 원 (4.1%)<br/>
+            <span style="color:var(--accent-emerald); font-weight:600;">✅ 예산 숫자가 완벽하게 일치하며 100% 분배 완료되었습니다.</span>
+          </div>
+        </div>
+
+        <!-- 3. 장소 후보 표 -->
+        <div class="card col-12">
+          <div class="card-title">📍 3. 장소 및 식사 후보 비교표</div>
+          <div style="overflow-x: auto;">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>장소/식당 후보</th>
+                  <th>선택 이유 및 특징</th>
+                  <th>부모님/아이 고려 요소</th>
+                  <th>대체안 / 비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span style="color:var(--accent-cyan); font-weight:700;">숙소 후보 1</span></td>
+                  <td><strong>소노벨 제주 (함덕)</strong></td>
+                  <td>함덕해수욕장 도보 3분, 평지 위치</td>
+                  <td>주차장-객실 동선 최단, 마트/식당 도보 접근</td>
+                  <td><span class="badge-warning">⚠️ 예실 현황 확인 필요</span></td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--accent-cyan); font-weight:700;">숙소 후보 2</span></td>
+                  <td><strong>제주 신화월드 신화관</strong></td>
+                  <td>테마파크/워터파크 인접 리조트</td>
+                  <td>아이 놀거리 풍부, 엘리베이터/산책로 우수</td>
+                  <td>숙소비 약 38만 원 수준</td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--accent-pink); font-weight:700;">꼭 가볼 곳</span></td>
+                  <td><strong>주상절리대 & 한림공원</strong></td>
+                  <td>제주 대표 힐링 자연 경관</td>
+                  <td>전 구간 계단 없는 평지 데크길 산책 가능</td>
+                  <td>소요시간 1시간 이내 조율</td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--accent-pink); font-weight:700;">꼭 가볼 곳</span></td>
+                  <td><strong>스누피가든</strong></td>
+                  <td>아기자기한 캐릭터 정원 & 전동 카트</td>
+                  <td>아이 좋아하는 캐릭터 + 부모님 카트 이동 가능</td>
+                  <td>우천 시 빛의 벙커로 대체</td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--accent-emerald); font-weight:700;">식당 후보</span></td>
+                  <td><strong>운정이네 (통갈치구이)</strong></td>
+                  <td>제주 향토 음식 푸짐한 한상 차림</td>
+                  <td>자극적이지 않고 부모님 좋아하시는 한식 코스</td>
+                  <td>사전 전화 확인 권장</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5. 준비물 체크리스트 -->
+        <div class="card col-6">
+          <div class="card-title">🎒 5. 준비물 체크리스트 (v1)</div>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-v1"></div></div>
+          <ul class="checklist" id="checklist-v1">
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v1')"><span><strong>👴👵 부모님:</strong> 무릎 보호대, 평소 복용 약(혈압/당뇨 등), 편한 운동화</span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v1')"><span><strong>👴👵 부모님:</strong> 접이식 휴대용 의자/방석 (대기 시 유용)</span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v1')"><span><strong>👶 아이:</strong> 멀미약, 이동 시 먹을 간식, 얇은 바람막이 겉옷</span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v1')"><span><strong>🌧️ 날씨 대비:</strong> 접이식 우산 4개, 우비, 보조 비닐봉지</span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v1')"><span><strong>📄 공통 필수:</strong> 신분증, 운전면허증, 아이 등본, 결제 카드</span></li>
+          </ul>
+        </div>
+
+        <!-- 6. 위험 요소 블록 -->
+        <div class="card col-6">
+          <div class="card-title">⚠️ 6. 위험 요소 및 대체 계획</div>
+          <div class="risk-grid">
+            <div class="risk-box">
+              <div class="risk-title">🌧️ 우천 리스크</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> 빛의 벙커(성산 실내 미디어아트) 또는 아르떼뮤지엄 제주(애월 실내)로 100% 실내 동선 변경.
+              </div>
+            </div>
+            <div class="risk-box">
+              <div class="risk-title">👴 부모님 피로 / 과밀 리스크</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> 카멜리아힐/한림공원 산책 조기 종료 후 오션뷰 카페(델문도/하이엔드) 휴식 시간 확대.
+              </div>
+            </div>
+            <div class="risk-box" style="border-left-color: var(--accent-amber);">
+              <div class="risk-title" style="color:var(--accent-amber);">💰 예산 초과 리스크</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> 비상 예비비 5만 원 보유 및 흑돼지 구이 횟수 조절.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. 최종 승인 체크리스트 -->
+        <div class="card col-12">
+          <div class="card-title">👤 7. 사람 직접 승인 체크리스트 (Human Gate)</div>
+          <ul class="checklist">
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>숙소 선택 및 결제 승인:</strong> 소노벨 제주 또는 신화월드 패밀리룸 예약 (사람 직접 결제)
+                <span class="badge-warning">⚠️ 방 객실 남아있는지 확인 필요</span>
+              </span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>렌트카 예약 승인:</strong> 카니발/대형 SUV 3일 렌트 승인 (사람 직접 결제)
+                <span class="badge-warning">⚠️ 면책 보험 범위 확인 필요</span>
+              </span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>항공권 시간 확정:</strong> 1일차 10:30 이전 제주 도착 / 3일차 18:30 이후 출발 비행기 확정
+                <span class="badge-warning">⚠️ 최종 발권 확인 필요</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =================================================== -->
+    <!-- TAB 2: VERSION 2 - OSAKA JAPAN -->
+    <!-- =================================================== -->
+    <div id="tab-v2" class="tab-content">
+      <div class="dashboard-grid">
+
+        <!-- 1. 여행 개요 카드 -->
+        <div class="card col-12">
+          <div class="card-title">📌 1. 여행 개요 (v2. 해외 오사카)</div>
+          <div class="overview-list">
+            <div class="overview-item">
+              <div class="overview-label">여행지</div>
+              <div class="overview-value">일본 오사카 (Osaka, Japan)</div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">기간</div>
+              <div class="overview-value">2박 3일 <span class="badge-warning">⚠️ 정확한 날짜 확인 필요</span></div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">동행자</div>
+              <div class="overview-value">성인 3명 <span style="font-size:0.8rem; font-weight:normal; color:var(--text-muted);">(부모님 2명, 나 1명 / 아이 없음)</span></div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">예산</div>
+              <div class="overview-value" style="color:var(--accent-pink);">1,800,000 원</div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">여행 스타일</div>
+              <div class="overview-value" style="font-size:0.95rem;">맛집 탐방, 여유로운 산책, 쇼핑 조금, 이동 최소화</div>
+            </div>
+            <div class="overview-item" style="grid-column: span 2;">
+              <div class="overview-label">주의사항 & 필수 제약</div>
+              <div class="overview-value" style="font-size:0.9rem; color:#f87171;">
+                ⚠️ 부모님 오래 걷기 힘듦 (지하철 환승 최소화, 필요시 택시 활용, 1일 2회 카페 휴식)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 날짜별 일정 카드 -->
+        <div class="card col-8">
+          <div class="card-title">🗓️ 2. 날짜별 일정 (환승 최소화 코스)</div>
+          <div class="timeline">
+
+            <div class="timeline-day" style="border-left-color: var(--accent-pink);">
+              <div class="timeline-day-header">
+                <span>1일차: 입국 & 난바·도톤보리 산책</span>
+                <span class="badge-warning">⚠️ 항공편 탑승 시간 확인 필요</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">오전</div>
+                <div>간사이 공항 도착 ➔ 난카이 라피트(특급열차 지정석) 탑승 ➔ 난바역 이동 (35분, 환승 없음)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">점심</div>
+                <div><strong>[점심] 카츠쿠라 / 도톤보리 하리주</strong> - 정갈한 돈카츠/스키야키 정식</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">오후</div>
+                <div>
+                  도톤보리 평지 산책 & <strong>톤보리 리버크루즈</strong> (앉아서 구경) ➔ <strong>☕ 오션뷰/리버뷰 카페</strong>
+                  <span class="rest-tag">☕ 가족 1차 휴식</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">저녁</div>
+                <div><strong>[저녁] 하리주 난바 본점 / 가와후쿠</strong> - 부모님 선호 스키야키 / 우동</div>
+              </div>
+            </div>
+
+            <div class="timeline-day" style="border-left-color: var(--accent-pink);">
+              <div class="timeline-day-header">
+                <span>2일차: 오사카성 전동차 & 수변 미식</span>
+                <span style="font-size:0.8rem; color:var(--text-muted);">전동차 & 엘리베이터 활용</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">오전</div>
+                <div>오사카성 공원 (<strong>로드트레인 전동차</strong> 탑승 ➔ 천수각 엘리베이터 이용 관람)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">점심</div>
+                <div><strong>[점심] 우나기 덴 / 우나기 히츠마부시</strong> - 부모님 보양식 장어덮밥</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">오후</div>
+                <div>
+                  나카노시마 수변 공원 산책 (택시 이동 권장) ➔ <strong>☕ 나카노시마 장미정원 카페</strong>
+                  <span class="rest-tag">☕ 가족 2차 휴식</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">저녁</div>
+                <div><strong>[저녁] 마츠사카규 야키니쿠 M 난바점</strong> <span class="badge-warning">⚠️ 식당 사전 예약 확인 필요</span></div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">야간</div>
+                <div>우메다 스카이빌딩 공중정원 (초고속 엘리베이터 이동) 또는 호텔 조기 휴식</div>
+              </div>
+            </div>
+
+            <div class="timeline-day" style="border-left-color: var(--accent-pink);">
+              <div class="timeline-day-header">
+                <span>3일차: 구로몬 시장 & 출국</span>
+                <span class="badge-warning">⚠️ 귀국 항공편 시간 확인 필요</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">오전</div>
+                <div>호텔 체크아웃 ➔ 구로몬 시장 (호텔 인근 평지 산책 & 가리비/오뎅 주전부리)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">낮</div>
+                <div>난바 다카시마야 백화점 (기념품 쇼핑) ➔ 난카이 라피트 탑승 ➔ 간사이 공항 이동</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">오후</div>
+                <div>간사이 공항 출국 수속 및 귀국</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4. 예산 차트 & 정보 카드 -->
+        <div class="card col-4">
+          <div class="card-title">💰 4. 예산 분배 차트 (v2)</div>
+          <div class="chart-container">
+            <canvas id="chart-v2"></canvas>
+          </div>
+          <div class="budget-info-box">
+            <div style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">⚠️ 추가 확인이 필요한 예산 항목:</div>
+            • <strong>숙소:</strong> 550,000 원 <span class="badge-warning">⚠️ 1박당 세부 금액 확인 필요</span><br/>
+            • <strong>교통:</strong> 350,000 원 <span class="badge-warning">⚠️ 항공권 발권 시점 금액 확인 필요</span><br/>
+            • <strong>식비:</strong> 550,000 원 (3인 6식)<br/>
+            • <strong>활동비:</strong> 100,000 원 (크루즈/천수각/전망대)<br/>
+            • <strong>예비비:</strong> 250,000 원 (택시/환율 대비)<br/>
+            <span style="color:var(--badge-warning-text); font-weight:600;">👉 현재 항공권 특가 시점에 따라 숙소/교통 예산 미세 조정이 필요합니다.</span>
+          </div>
+        </div>
+
+        <!-- 3. 장소 후보 표 -->
+        <div class="card col-12">
+          <div class="card-title">📍 3. 장소 및 식사 후보 비교표 (v2)</div>
+          <div style="overflow-x: auto;">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>장소/식당 후보</th>
+                  <th>선택 이유 및 특징</th>
+                  <th>부모님 고려 요소</th>
+                  <th>확인 필요 항목</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span style="color:var(--accent-pink); font-weight:700;">꼭 가볼 곳</span></td>
+                  <td><strong>도톤보리 리버크루즈</strong></td>
+                  <td>약 20분간 앉아서 도톤보리 야경 감상</td>
+                  <td>걷지 않고 관광 가능, 체력 부담 Zero</td>
+                  <td>당일 현장 승선권 수령 확인 필요</td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--accent-pink); font-weight:700;">꼭 가볼 곳</span></td>
+                  <td><strong>오사카성 공원</strong></td>
+                  <td>오사카 랜드마크 역사 공원</td>
+                  <td>입구-천수각 **로드트레인 전동차** 운영</td>
+                  <td>로드트레인 정기 점검일 확인 필요</td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--accent-pink); font-weight:700;">꼭 가볼 곳</span></td>
+                  <td><strong>우메다 스카이빌딩</strong></td>
+                  <td>360도 도심 전망대 야경 명소</td>
+                  <td>초고속 엘리베이터 이동으로 보행 최소화</td>
+                  <td>입장권 사전 예매 할인 확인 필요</td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--text-muted); font-weight:700;">여유 시 이동</span></td>
+                  <td><strong>구로몬 시장 / 린쿠 아울렛</strong></td>
+                  <td>시장 미식 탐방 & 공항 길 아울렛 쇼핑</td>
+                  <td>평지 이동 중심, 택시 이용 용이</td>
+                  <td>아울렛 이동 시 공항 짐 보관 확인 필요</td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--accent-emerald); font-weight:700;">식당 후보</span></td>
+                  <td><strong>하리주 난바 본점 (스키야키)</strong></td>
+                  <td>100년 전통 노포 와규 스키야키</td>
+                  <td>부모님 드시기 부드러운 고급 와규 고기</td>
+                  <td>사전 예약 필수 여부 확인 필요</td>
+                </tr>
+                <tr>
+                  <td><span style="color:var(--accent-emerald); font-weight:700;">식당 후보</span></td>
+                  <td><strong>마츠사카규 야키니쿠 M</strong></td>
+                  <td>최상급 와규 야키니쿠 전문점</td>
+                  <td>개별 룸 테이블 제공 가능</td>
+                  <td><span class="badge-warning">⚠️ 예약 가능 여부 확인 필요</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5. 준비물 체크리스트 -->
+        <div class="card col-6">
+          <div class="card-title">🎒 5. 준비물 체크리스트 (v2)</div>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-v2"></div></div>
+          <ul class="checklist" id="checklist-v2">
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v2')"><span><strong>📄 개인:</strong> 여권 (유효기간 6개월 이상 필수) <span class="badge-warning">⚠️ 확인 필요</span></span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v2')"><span><strong>🔌 공통:</strong> 110V 돼지코 멀티 어댑터 (2~3개)</span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v2')"><span><strong>📡 공통:</strong> 포켓 Wi-Fi 또는 일본 e-SIM/SIM 카드</span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v2')"><span><strong>💳 공통:</strong> 엔화 현금 (3~5만 엔) 및 트래블월렛/트래블로그 카드</span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v2')"><span><strong>👴👵 부모님:</strong> 복용 약(혈압/당뇨), 무릎 보호대, 파스, 접이식 방석</span></li>
+            <li class="check-item"><input type="checkbox" onchange="updateProgress('v2')"><span><strong>👶 아이 동반 용품:</strong> 해당 없음 (아이 미동반)</span></li>
+          </ul>
+        </div>
+
+        <!-- 6. 위험 요소 블록 -->
+        <div class="card col-6">
+          <div class="card-title">⚠️ 6. 위험 요소 및 대체 계획 (v2)</div>
+          <div class="risk-grid">
+            <div class="risk-box">
+              <div class="risk-title">🌧️ 우천 리스크</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> 야외 오사카성 산책 대신 **우메다 지하상가 (Whity Umeda) & 아베노 하루카스 300 실내 전망대**로 100% 실내 동선 전환.
+              </div>
+            </div>
+            <div class="risk-box">
+              <div class="risk-title">👴 이동 및 피로 리스크</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> 지하철 계단 이동 생략 ➔ 3인 합승 시 가성비 좋은 **오사카 도심 택시 이용**으로 전체 대체.
+              </div>
+            </div>
+            <div class="risk-box" style="border-left-color: var(--accent-amber);">
+              <div class="risk-title" style="color:var(--accent-amber);">💰 예산 초과 리스크</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> 고급 야키니쿠/스키야키 ➔ 정갈한 한식 정식/덮밥류로 변경 및 백화점 쇼핑 예산 축소.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. 최종 승인 체크리스트 -->
+        <div class="card col-12">
+          <div class="card-title">👤 7. 사람 직접 승인 체크리스트 (v2 Final Gate)</div>
+          <ul class="checklist">
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>여권 유효기간 확인:</strong> 부모님 및 본인 여권 만료일이 6개월 이상 남아있는지 확인
+                <span class="badge-warning">⚠️ 확인 필요</span>
+              </span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>Visit Japan Web 등록:</strong> 일본 입국 심사 및 세관 신고 QR 사전 등록
+                <span class="badge-warning">⚠️ 출발 24시간 전 확인 필요</span>
+              </span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>숙소 및 라피트 결제 승인:</strong> 난바역 인근 엘리베이터 호텔 3인실 및 라피트 특급권 결제
+                <span class="badge-warning">⚠️ 금액 및 예약확정 확인 필요</span>
+              </span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>식당 사전 예약 승인:</strong> 하리주 / 마츠사카규 M 식당 예약 진행
+                <span class="badge-warning">⚠️ 사전 예약 확인 필요</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================================== -->
+    <!-- TAB 3: VERSION 3 - JEJU TRENDY FRIENDS TRIP -->
+    <!-- =================================================== -->
+    <div id="tab-v3" class="tab-content">
+      <div class="dashboard-grid">
+
+        <!-- 1. 여행 개요 카드 -->
+        <div class="card col-12">
+          <div class="card-title">📌 1. 여행 개요 (v3. 제주 힙한 친구 여행 3박4일)</div>
+          <div class="overview-list">
+            <div class="overview-item">
+              <div class="overview-label">여행지</div>
+              <div class="overview-value">제주도 (서북부·서남부·동부)</div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">기간</div>
+              <div class="overview-value">3박 4일</div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">동행자</div>
+              <div class="overview-value">2명 <span style="font-size:0.8rem; font-weight:normal; color:var(--text-muted);">(친구 1명 + 나 / 20대 MZ)</span></div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">예산</div>
+              <div class="overview-value" style="color:var(--accent-cyan);">1,000,000 원 (2인 기준)</div>
+            </div>
+            <div class="overview-item">
+              <div class="overview-label">여행 스타일</div>
+              <div class="overview-value" style="font-size:0.95rem;">바다수영, 스노클링, 노을 드라이브, 트렌디 핫플, 미식 탐방</div>
+            </div>
+            <div class="overview-item" style="grid-column: span 2;">
+              <div class="overview-label">주의사항 & 특별 요청</div>
+              <div class="overview-value" style="font-size:0.9rem; color:#f87171;">
+                ☀️ 폭염 회피 (12~15시 오션뷰 실내/수영) / 🌧️ 비 올 때 아르떼뮤지엄·LP바 등 100% 실내 대안
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 날짜별 일정 카드 -->
+        <div class="card col-8">
+          <div class="card-title">🗓️ 2. 날짜별 일정 (트렌디 핫플 & 수영 & 노을)</div>
+          <div class="timeline">
+
+            <div class="timeline-day">
+              <div class="timeline-day-header">
+                <span>1일차: 제주 서북부 (애월·협재 해안 드라이브 & 금능 노을 수영)</span>
+                <span style="font-size:0.8rem; color:var(--accent-cyan);">드라이브 & 바다수영</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">10:30~12:00</div>
+                <div>제주공항 도착 ➔ 렌트카(전기차/준중형) 수령 ➔ 애월 방향 진입</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">12:00~13:30</div>
+                <div><strong>[점심] 도두해녀의집 / 숙성도 노형점</strong> - 성게물회 & 전복죽 / 교차숙성 흑돼지</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">13:30~15:30</div>
+                <div>
+                  애월 해안도로 오션뷰 바다 드라이브 ➔ <strong>☕ 팀블로우 / 트라이브</strong>
+                  <span class="rest-tag">☀️ 폭염 실내 릴랙스</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">15:30~18:30</div>
+                <div>
+                  <strong>금능·협재 해수욕장</strong> - 에메랄드빛 바다수영 & 튜브 물놀이
+                  <span class="rest-tag" style="background:rgba(245,158,11,0.2); color:#fbbf24; border-color:rgba(245,158,11,0.4);">🌅 금능 비양도 노을</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">19:00~21:00</div>
+                <div><strong>[저녁] 숙성도 애월점 / 한림 흑돼지 구이</strong> & 맥주 타임</div>
+              </div>
+            </div>
+
+            <div class="timeline-day">
+              <div class="timeline-day-header">
+                <span>2일차: 제주 서남부 (판포포구 스노클링 & 신창풍차 노을 펍)</span>
+                <span style="font-size:0.8rem; color:var(--accent-cyan);">스노클링 & 힙한 펍</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">10:00~12:00</div>
+                <div><strong>판포포구</strong> - 천연 에메랄드 포구 바다수영 & 스노클링 (투명 바다 관람)</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">12:00~13:30</div>
+                <div><strong>[점심] 협재 칼국수 / 애월 바다라면</strong> - 해물라면 & 보목 물회</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">13:30~16:00</div>
+                <div>
+                  <strong>☕ 오션뷰 카페 '울트라마린' / '집의기록상점'</strong> (에그타르트 & 창가 휴식)
+                  <span class="rest-tag">☀️ 피크타임 피신</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">16:00~19:00</div>
+                <div>
+                  <strong>신창풍차해안도로</strong> 바다 드라이브 ➔ 풍차 산책 & 포토 타임
+                  <span class="rest-tag" style="background:rgba(245,158,11,0.2); color:#fbbf24; border-color:rgba(245,158,11,0.4);">🌅 차귀도 석양</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">19:30~22:00</div>
+                <div><strong>[저녁] 싱싱잇 (SingSingEat) 라운지 펍</strong> 또는 한림 포구 고등어회&딱새우회 포장</div>
+              </div>
+            </div>
+
+            <div class="timeline-day">
+              <div class="timeline-day-header">
+                <span>3일차: 제주 중문 & 동부 (색달 파도 힐링 & 세화 노을 드라이브)</span>
+                <span style="font-size:0.8rem; color:var(--accent-cyan);">서핑 감성 & 오션뷰 라운지</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">10:00~12:00</div>
+                <div><strong>중문 색달해수욕장</strong> - 시원한 파도 해수욕 & 썬베드 힐링</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">12:30~14:00</div>
+                <div><strong>[점심] 볼케이노 수제버거 / 해성가든</strong> - 힙한 트렌디 정식</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">14:00~16:30</div>
+                <div>
+                  <strong>☕ 중문 '더클리프 (The Cliff)'</strong> - 발리 스타일 오션뷰 라운지 (음료 & DJ 음악)
+                  <span class="rest-tag">☀️ 폭염 오션뷰 릴랙스</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">16:30~19:00</div>
+                <div>
+                  <strong>세화-월정 해안도로 드라이브</strong> ➔ 오션뷰 카페 노을 감상
+                  <span class="rest-tag" style="background:rgba(245,158,11,0.2); color:#fbbf24; border-color:rgba(245,158,11,0.4);">🌅 세화 오션뷰 노을</span>
+                </div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">19:30~21:00</div>
+                <div><strong>[저녁] 세화 힙한 바베큐 / 구좌 딱새우 떡볶이 핫플</strong></div>
+              </div>
+            </div>
+
+            <div class="timeline-day">
+              <div class="timeline-day-header">
+                <span>4일차: 제주 북부 (도두·이호테우 드라이브 & 실내 소품숍 후 귀가)</span>
+                <span style="font-size:0.8rem; color:var(--accent-cyan);">쇼핑 & 마무리는 드라이브</span>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">10:30~12:00</div>
+                <div><strong>☕ 앤트러사이트 애월 / 도두몰</strong> - 브런치 & 모닝 커피</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">12:00~13:30</div>
+                <div><strong>[점심] 올래국수 / 자매국수</strong> - 제주 원조 진한 고기국수</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">13:30~16:00</div>
+                <div>이호테우 말등대 바다 드라이브 ➔ <strong>D&DEPARTMENT JEJU</strong> 힙한 편집숍 & 제주 마음샌드 쇼핑</div>
+              </div>
+              <div class="timeline-event">
+                <div class="timeline-time">16:30~</div>
+                <div>렌트카 반납 ➔ 제주공항 이동 (18:00 이후 출국)</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4. 예산 차트 & 정보 카드 -->
+        <div class="card col-4">
+          <div class="card-title">💰 4. 예산 분배 차트 (v3 100만 원)</div>
+          <div class="chart-container">
+            <canvas id="chart-v3"></canvas>
+          </div>
+          <div class="budget-info-box">
+            <div style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">💡 예산 데이터 검증 결과 (2인 기준):</div>
+            • <strong>총 예산:</strong> 1,000,000 원 (1인당 50만 원)<br/>
+            • <strong>숙소:</strong> 420,000 원 (42.0%) - 감성 스테이 3박<br/>
+            • <strong>교통/렌트:</strong> 180,000 원 (18.0%) - 전기차 4일+기름<br/>
+            • <strong>식비/카페:</strong> 320,000 원 (32.0%) - 핫플 8식+카페/펍<br/>
+            • <strong>액티비티/용품:</strong> 40,000 원 (4.0%) - 스노클링 장비대여<br/>
+            • <strong>예비비:</strong> 40,000 원 (4.0%) - 비상 주차/기념품<br/>
+          </div>
+        </div>
+
+        <!-- 5. 준비물 체크리스트 카드 -->
+        <div class="card col-6">
+          <div class="card-title">🎒 5. 20대 친구 필수 준비물 체크리스트</div>
+          
+          <div class="progress-bar-container">
+            <div class="progress-label">
+              <span>체크리스트 달성도 (v3)</span>
+              <span id="progress-text-v3">완료</span>
+            </div>
+            <div class="progress-track">
+              <div id="progress-v3" class="progress-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <ul id="checklist-v3" class="checklist">
+            <li class="check-item">
+              <input type="checkbox" checked onclick="updateProgress('v3')">
+              <span>운전면허증, 신용/체크카드, 비치웨어 & 선글라스</span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox" checked onclick="updateProgress('v3')">
+              <span>스마트폰 방수팩 & 아쿠아슈즈 (스노클링용)</span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox" checked onclick="updateProgress('v3')">
+              <span>암튜브 / 튜브 & 비치 타올</span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox" checked onclick="updateProgress('v3')">
+              <span>강력 차단 선크림 & 알로에 수딩젤</span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox" checked onclick="updateProgress('v3')">
+              <span>삼각대 / 셀카봉 (노을 샷) & 보조배터리(20,000mAh)</span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox" checked onclick="updateProgress('v3')">
+              <span>블루투스 스피커 (드라이브 & 숙소 음악)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 6. 리스크 관리 카드 -->
+        <div class="card col-6">
+          <div class="card-title">🛡️ 6. 폭염 & 우천 대체 리스크 대응</div>
+          <div style="display:flex; flex-direction:column; gap:1rem;">
+            <div class="risk-box" style="border-left-color: var(--accent-amber);">
+              <div class="risk-title" style="color:var(--accent-amber);">☀️ 폭염 피크 타임 (12:00~15:00)</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> 야외 땡볕 산책 금지 ➔ 에어컨 완비 오션뷰 카페(더클리프/팀블로우) 또는 시원한 바다수영으로 체온 조절.
+              </div>
+            </div>
+            <div class="risk-box">
+              <div class="risk-title">🌧️ 비 오는 날 실내 트렌디 대체안</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> **아르떼뮤지엄 제주** (몰입형 미디어아트) & **마틸다 LP바** (레트로 음악 감상) & **D&DEPARTMENT JEJU** 실내 숍 100% 전환.
+              </div>
+            </div>
+            <div class="risk-box" style="border-left-color: var(--primary);">
+              <div class="risk-title" style="color:var(--primary);">🚗 이동 최소화 및 핫플 웨이팅</div>
+              <div class="risk-desc">
+                <strong>대체 계획:</strong> 애월-협재-신창 권역별 집중 동선 ➔ 캐치테이블 사전 테이블링 앱 활용으로 웨이팅 최소화.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. 최종 승인 체크리스트 -->
+        <div class="card col-12">
+          <div class="card-title">👤 7. 사람 직접 승인 체크리스트 (v3 Final Gate)</div>
+          <ul class="checklist">
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>렌트카 운전자 등록 및 차종 선택:</strong> 운전면허증 등록 및 전기차/가솔린 특가 차량 결제
+                <span class="badge-warning">⚠️ 운전자 확인 필요</span>
+              </span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>감성 숙소 3박 결제 승인:</strong> 애월/협재 인근 뷰 좋은 스테이/에어비앤비 예약
+                <span class="badge-warning">⚠️ 예약확정 확인 필요</span>
+              </span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>핫플 식당 캐치테이블 앱 등록:</strong> 숙성도, 싱싱잇 등 사전 앱 테이블링 준비
+                <span class="badge-warning">⚠️ 사전 준비 필요</span>
+              </span>
+            </li>
+            <li class="check-item">
+              <input type="checkbox">
+              <span>
+                <strong>스노클링 & 해수욕 장비 지참 점검:</strong> 방수팩, 튜브, 선크림 챙겼는지 확인
+                <span class="badge-warning">⚠️ 최종 점검 필요</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Antigravity Travel Harness | Rendered with Chart.js & Vanilla CSS</p>
+    </footer>
+  </div>
+
+  <script>
+    // Tab Switcher Logic
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      
+      if (tabId === 'v1') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('tab-v1').classList.add('active');
+      } else if (tabId === 'v2') {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('tab-v2').classList.add('active');
+      } else if (tabId === 'v3') {
+        document.querySelectorAll('.tab-btn')[2].classList.add('active');
+        document.getElementById('tab-v3').classList.add('active');
+      }
+    }
+
+    // Progress Bar Updater
+    function updateProgress(vId) {
+      const list = document.getElementById(`checklist-${vId}`);
+      if (!list) return;
+      const checkboxes = list.querySelectorAll('input[type="checkbox"]');
+      const checked = list.querySelectorAll('input[type="checkbox"]:checked');
+      const percent = (checked.length / checkboxes.length) * 100;
+      const progEl = document.getElementById(`progress-${vId}`);
+      if (progEl) progEl.style.width = percent + '%';
+    }
+
+    // Chart.js Rendering
+    window.addEventListener('DOMContentLoaded', () => {
+      // v1 Chart (Jeju Family)
+      const ctxV1 = document.getElementById('chart-v1').getContext('2d');
+      new Chart(ctxV1, {
+        type: 'doughnut',
+        data: {
+          labels: ['숙소비', '교통비', '식비', '활동비', '예비비'],
+          datasets: [{
+            data: [380000, 200000, 480000, 90000, 50000],
+            backgroundColor: ['#6366f1', '#06b6d4', '#ec4899', '#10b981', '#f59e0b'],
+            borderWidth: 2,
+            borderColor: '#1e293b'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: '#f8fafc', font: { family: 'Noto Sans KR', size: 11 } }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const value = context.raw.toLocaleString();
+                  return ` ${context.label}: ${value}원`;
+                }
+              }
+            }
+          }
+        }
+      });
+
+      // v2 Chart (Osaka)
+      const ctxV2 = document.getElementById('chart-v2').getContext('2d');
+      new Chart(ctxV2, {
+        type: 'doughnut',
+        data: {
+          labels: ['숙소비 (예정)', '교통/항공 (예정)', '식비', '활동비', '예비비'],
+          datasets: [{
+            data: [550000, 350000, 550000, 100000, 250000],
+            backgroundColor: ['#ec4899', '#f59e0b', '#6366f1', '#10b981', '#06b6d4'],
+            borderWidth: 2,
+            borderColor: '#1e293b'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: '#f8fafc', font: { family: 'Noto Sans KR', size: 11 } }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const value = context.raw.toLocaleString();
+                  return ` ${context.label}: 약 ${value}원`;
+                }
+              }
+            }
+          }
+        }
+      });
+
+      // v3 Chart (Jeju Trendy Friends)
+      const ctxV3 = document.getElementById('chart-v3').getContext('2d');
+      new Chart(ctxV3, {
+        type: 'doughnut',
+        data: {
+          labels: ['숙소비 (42%)', '교통/렌트 (18%)', '식비/카페 (32%)', '액티비티 (4%)', '예비비 (4%)'],
+          datasets: [{
+            data: [420000, 180000, 320000, 40000, 40000],
+            backgroundColor: ['#38bdf8', '#a5b4fc', '#ec4899', '#10b981', '#f59e0b'],
+            borderWidth: 2,
+            borderColor: '#1e293b'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: '#f8fafc', font: { family: 'Noto Sans KR', size: 11 } }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const value = context.raw.toLocaleString();
+                  return ` ${context.label}: ${value}원`;
+                }
+              }
+            }
+          }
+        }
+      });
+
+      // Initial progress update
+      updateProgress('v1');
+      updateProgress('v2');
+      updateProgress('v3');
+    });
+  </script>
+</body>
+</html>

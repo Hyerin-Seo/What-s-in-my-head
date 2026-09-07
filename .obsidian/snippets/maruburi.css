@@ -1,0 +1,80 @@
+/* ────────────────────────────────────────────────────────────
+   마루 부리 (네이버) — 볼트에 심은 폰트
+
+   윈도우에 설치하지 않아도 됩니다. 폰트 파일이 .obsidian/fonts/ 에 있고
+   여기서 @font-face 로 직접 불러옵니다. 볼트를 다른 컴퓨터로 옮겨도 따라갑니다.
+
+   ※ 이 방식은 설정 → 모양 → 글꼴 목록에는 안 뜹니다.
+     목록에 띄우려면 윈도우에 따로 설치해야 합니다.
+   ──────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../fonts/MaruBuri-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../fonts/MaruBuri-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../fonts/MaruBuri-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../fonts/MaruBuri-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../fonts/MaruBuri-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── 본문 글꼴 ───────────────────────────────────────────────
+   마루 부리는 명조(세리프)입니다. 라틴 문자는 마루 부리에 없으므로
+   뒤에 폴백을 둬서 영문·숫자는 시스템 폰트가 받도록 합니다. */
+body {
+  --font-text-theme: "MaruBuri", "Nanum Myeongjo", "Malgun Gothic", serif;
+}
+
+/* ── UI 글꼴 ─────────────────────────────────────────────────
+   사이드바·설정창까지 명조로 바꾸면 좀 무겁습니다.
+   원하시면 아래 두 줄의 주석을 풀어주세요. */
+/*
+body { --font-interface-theme: "MaruBuri", "Malgun Gothic", sans-serif; }
+*/
+
+/* ── 읽기 편하게 미세 조정 ───────────────────────────────────
+   명조는 고딕보다 획이 얇아 같은 크기에서 작아 보입니다. */
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-preview-view {
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+}
+
+/* 제목은 조금 더 굵게 — 마루 부리 Bold 가 잡아줍니다 */
+.markdown-preview-view h1, .markdown-source-view .HyperMD-header-1,
+.markdown-preview-view h2, .markdown-source-view .HyperMD-header-2,
+.markdown-preview-view h3, .markdown-source-view .HyperMD-header-3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* 코드·경로는 명조가 어울리지 않으니 고정폭 유지 */
+code, pre, .cm-inline-code, .cm-hmd-codeblock {
+  font-family: var(--font-monospace);
+}

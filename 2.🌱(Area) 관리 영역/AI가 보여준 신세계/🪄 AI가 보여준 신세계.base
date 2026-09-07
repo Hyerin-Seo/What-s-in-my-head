@@ -1,0 +1,59 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] != "양식"
+    - file.inFolder("2.🌱(Area) 관리 영역/AI가 보여준 신세계")
+views:
+  - type: cards
+    name: 🪄 전체
+    order:
+      - 제목
+      - 요약
+      - 주제
+    sort:
+      - property: 작성일
+        direction: ASC
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 210
+  - type: cards
+    name: 🏷️ 주제별
+    groupBy:
+      property: 주제
+      direction: ASC
+    order:
+      - 제목
+      - 요약
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 200
+  - type: table
+    name: 📊 전체 표
+    order:
+      - file
+      - 상태
+      - 주제
+      - 중요도
+      - 요약
+      - 링크
+      - 담당
+      - 작성자
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: DESC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 🕳️ 정리 필요
+    filters:
+      or:
+        - note["요약"].isEmpty()
+        - note["커버"].isEmpty()
+    order:
+      - file
+      - 요약
+      - 커버
+newItemFolder: 2.🌱(Area) 관리 영역/AI가 보여준 신세계

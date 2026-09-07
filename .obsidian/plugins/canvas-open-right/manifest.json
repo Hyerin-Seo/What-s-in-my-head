@@ -1,0 +1,9 @@
+{
+  "id": "canvas-open-right",
+  "name": "Canvas: 우측에서 열기",
+  "version": "1.0.0",
+  "minAppVersion": "1.10.2",
+  "description": "캔버스 카드를 우측 화면 또는 오른쪽 사이드바에서 엽니다. 옵시디언 기본 캔버스 메뉴에는 '새 탭에서 열기'만 있습니다.",
+  "author": "개똥이 머릿속",
+  "isDesktopOnly": false
+}

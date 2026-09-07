@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__0e0d0206-8e6a-42bc-bbed-2f742c2cd3a2__notion-fetch",
+      "mcp__0e0d0206-8e6a-42bc-bbed-2f742c2cd3a2__notion-get-comments",
+      "mcp__0e0d0206-8e6a-42bc-bbed-2f742c2cd3a2__notion-query-data-sources",
+      "WebFetch(domain:www.aladin.co.kr)",
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\user\\\\Desktop\\\\개똥이 머릿속\\\\📗\\(Library\\) 망고네 도서관\\\\📖 라이트 노벨 구성과 작법 노하우 ㅊ\" | Select-Object @{n='Name';e={$_.FullName.Replace\\('C:\\\\Users\\\\user\\\\Desktop\\\\개똥이 머릿속\\\\📗\\(Library\\) 망고네 도서관\\\\',''\\)}}, Length | Format-Table -AutoSize)",
+      "mcp__0e0d0206-8e6a-42bc-bbed-2f742c2cd3a2__notion-get-users"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+# Trash
+.trash/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Obsidian local workspace & cache states
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json.bak
+.obsidian/graph.json
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini

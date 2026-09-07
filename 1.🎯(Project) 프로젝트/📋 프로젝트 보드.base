@@ -1,0 +1,156 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] == "할일"
+    - not:
+        - file.name.startsWith("!(Template)")
+views:
+  - type: kanban-view
+    name: 🗂️ 전체 칸반
+    order:
+      - 담당
+      - 작성자
+      - 중요도
+      - 마감
+    quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+    groupByProperty: note.상태
+    cardTitleProperty: note.제목
+    swimlaneByProperty: note.분류
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    columnOrders:
+      note.상태:
+        - 진행중
+        - 위임함
+        - 일정 있음
+        - 기한만
+        - 완료
+        - 히스토리
+    cardOrders:
+    columnColors:
+      note.상태: {}
+    swimlaneOrders:
+      "note.상태\x1fnote.분류":
+        - 🍋 망고말씀 9절
+        - 🐶 아이디어 대방출
+        - 🚚 PARA 구축 — 자료 이식
+        - 🧪 문서 어시스턴트 프로토타입 구현
+    collapsedLanes:
+      "note.상태\x1fnote.분류": []
+  - type: kanban-view
+    name: 👤 사람별
+    order:
+      - 담당
+      - 작성자
+      - 중요도
+      - 마감
+    quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+    groupByProperty: note.상태
+    cardTitleProperty: note.제목
+    swimlaneByProperty: note.담당
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    columnOrders:
+      note.상태:
+        - 진행중
+        - 위임함
+        - 일정 있음
+        - 기한만
+        - 완료
+        - 히스토리
+    cardOrders:
+    columnColors:
+      note.상태: {}
+    swimlaneOrders:
+      "note.상태\x1fnote.담당":
+        - "[[Rin]]"
+        - "[[민규 서]]"
+        - Uncategorized
+    collapsedLanes:
+      "note.상태\x1fnote.담당": []
+  - type: table
+    name: ⏰ 마감 가까운 순
+    filters:
+      and:
+        - not:
+            - note["마감"].isEmpty()
+        - note["상태"] != "완료"
+    order:
+      - file
+      - 마감
+      - 상태
+      - 담당
+      - 작성자
+      - 분류
+    sort:
+      - property: 마감
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: ⏳ 내가 기다리는 것
+    filters:
+      and:
+        - note["상태"] == "위임함"
+    order:
+      - file
+      - 담당
+      - 작성자
+      - 분류
+      - 마감
+      - 수정일
+    sort:
+      - property: 수정일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 📅 일정 있음
+    filters:
+      and:
+        - note["상태"] == "일정 있음"
+    order:
+      - file
+      - 마감
+      - 담당
+      - 작성자
+      - 분류
+    sort:
+      - property: 마감
+        direction: ASC
+  - type: table
+    name: 📊 전체 표
+    order:
+      - file
+      - 상태
+      - 담당
+      - 작성자
+      - 분류
+      - 중요도
+      - 마감
+      - 수정일
+    sort:
+      - property: 상태
+        direction: ASC
+    summaries:
+      제목: Filled
+      중요도: Average
+      마감: Latest
+  - type: cards
+    name: 🎴 갤러리
+    groupBy:
+      property: 상태
+      direction: ASC
+    order:
+      - 제목
+      - 담당
+      - 작성자
+      - 마감
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 220
+newItemFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+newItemTemplate: 1.🎯(Project) 프로젝트/!(Template) 새 할 일.md

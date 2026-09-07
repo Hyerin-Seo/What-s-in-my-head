@@ -1,0 +1,448 @@
+.block-handle-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 24px; /* Fixed height for better centering calculation */
+    z-index: 10;
+    pointer-events: all;
+    background-color: transparent;
+    transition: transform 0.08s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+    opacity: 0;
+}
+
+.block-handle-wrap:not(.is-hidden) {
+    opacity: 1;
+}
+
+.block-handle-wrap.is-right {
+    flex-direction: row-reverse;
+}
+
+.ftn-fold-ellipsis {
+    display: inline-block;
+    margin-left: 0.35em;
+    padding: 0 0.35em;
+    border-radius: 4px;
+    background-color: var(--background-modifier-hover);
+    color: var(--text-muted);
+    cursor: pointer;
+    /* The glyph is a full em wide and reads as too heavy at body size. */
+    font-size: 0.85em;
+    line-height: 1.2;
+    vertical-align: baseline;
+    user-select: none;
+}
+
+.ftn-fold-ellipsis:hover {
+    background-color: var(--background-modifier-active-hover);
+    color: var(--text-normal);
+}
+
+.block-handle-button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #aea9a3;
+    cursor: pointer;
+    transition: background-color 0.1s ease, color 0.1s ease, transform 0.1s ease;
+}
+
+.block-handle-button:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-normal);
+    transform: scale(1.1);
+}
+
+.block-handle-button svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* Notion Block 操作菜单 */
+.wk-nb-action-menu {
+    position: fixed;
+    z-index: 1000;
+    width: 236px;
+    max-height: min(300px, calc(100vh - 16px));
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    overflow: hidden;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 10px;
+    background: var(--background-primary);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18), 0 4px 14px rgba(0, 0, 0, 0.10);
+    color: var(--text-normal);
+}
+
+.wk-nb-action-submenu {
+    width: 204px;
+}
+
+.wk-nb-action-submenu.is-callout {
+    width: 164px;
+}
+
+.wk-nb-hidden-file-input {
+    display: none;
+}
+
+.wk-nb-action-menu-list {
+    overflow: auto;
+    padding-right: 2px;
+}
+
+.wk-nb-action-menu-section {
+    padding: 5px 9px 3px;
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.wk-nb-action-menu-row {
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr) auto auto auto;
+    align-items: center;
+    gap: 6px;
+    min-height: 28px;
+    padding: 2px 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: var(--text-normal);
+}
+
+.wk-nb-action-menu-row.is-active {
+    background: var(--background-modifier-hover);
+}
+
+.wk-nb-action-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    color: var(--text-muted);
+}
+
+.wk-nb-action-menu-icon svg {
+    width: 17px;
+    height: 17px;
+}
+
+.wk-nb-action-menu-label {
+    min-width: 0;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wk-nb-action-menu-shortcut,
+.wk-nb-action-menu-badge {
+    color: var(--text-faint);
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.wk-nb-action-menu-badge {
+    padding: 1px 6px;
+    border-radius: 6px;
+    background: var(--background-modifier-hover);
+    color: var(--text-muted);
+}
+
+.wk-nb-action-menu-chevron {
+    display: flex;
+    color: var(--text-faint);
+}
+
+.wk-nb-action-menu-chevron svg {
+    width: 16px;
+    height: 16px;
+}
+
+.wk-nb-action-menu-separator {
+    height: 1px;
+    margin: 5px 8px;
+    background: var(--background-modifier-border);
+}
+
+.wk-nb-action-menu-color-icon {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 7px;
+    background: var(--background-primary);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.wk-nb-action-menu-color-icon.is-gray {
+    color: var(--text-muted);
+    background: rgba(var(--mono-rgb-100), 0.08);
+}
+
+.wk-nb-action-menu-color-icon.is-brown {
+    color: #9f6b53;
+    background: rgba(159, 107, 83, 0.14);
+}
+
+.wk-nb-action-menu-color-icon.is-orange {
+    color: var(--color-orange);
+    background: rgba(var(--color-orange-rgb), 0.14);
+}
+
+.wk-nb-action-menu-color-icon.is-yellow {
+    color: var(--color-yellow);
+    background: rgba(var(--color-yellow-rgb), 0.16);
+}
+
+.wk-nb-action-menu-color-icon.is-green {
+    color: var(--color-green);
+    background: rgba(var(--color-green-rgb), 0.14);
+}
+
+.wk-nb-action-menu-color-icon.is-blue {
+    color: var(--color-blue);
+    background: rgba(var(--color-blue-rgb), 0.14);
+}
+
+.wk-nb-action-menu-color-icon.is-purple {
+    color: var(--color-purple);
+    background: rgba(var(--color-purple-rgb), 0.14);
+}
+
+.wk-nb-action-menu-color-icon.is-pink {
+    color: var(--color-pink);
+    background: rgba(var(--color-pink-rgb), 0.14);
+}
+
+.wk-nb-action-menu-color-icon.is-red {
+    color: var(--color-red);
+    background: rgba(var(--color-red-rgb), 0.14);
+}
+
+/* Hide handles on mobile */
+@media (max-width: 768px) {
+    .block-handle-wrap {
+        display: none;
+    }
+}
+
+/* Drag & Drop Feedback */
+.block-drag-ghost {
+    position: fixed;
+    pointer-events: none;
+    background: var(--background-primary);
+    border: 1px solid var(--divider-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-s);
+    opacity: 0.7;
+    z-index: 9999;
+    font-size: var(--font-adaptive-small);
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.block-drag-indicator {
+    position: fixed;
+    height: 2px;
+    background-color: var(--interactive-accent);
+    pointer-events: none;
+    z-index: 9998;
+    display: none;
+    transition: top 0.1s ease;
+}
+
+body.is-dragging-block,
+body.is-dragging-block * {
+    cursor: grabbing;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* 原生菜单样式微调 - 极致精致 */
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    min-height: 26px;
+}
+
+.menu .menu-item .menu-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    opacity: 0.85;
+    flex-shrink: 0;
+}
+
+.menu .menu-item .menu-item-icon svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+    stroke: currentColor;
+    fill: none;
+}
+
+.menu-item-title {
+    font-size: 13px;
+}
+
+/* ── Notion-style multi-block selection ─────────────────────────────────────
+   Applied by src/blockSelection.ts via Decoration.line, so the class lands on
+   .cm-line itself.
+
+   Paint only — background and border-radius. No padding, no margin, nothing
+   that changes a line box. Vertical margin on .cm-line desynchronises
+   CodeMirror's heightmap from the rendered page and sends the caret to the
+   wrong line; see the header comment in the vault's notion.css snippet.
+*/
+
+.ftn-block-selected {
+    background-color: hsla(var(--color-accent-hsl), 0.18);
+    border-radius: 3px;
+}
+
+/* While whole blocks are selected, suppress CodeMirror's own ragged
+   highlight. Without this the two stack: a darker glyph-hugging band inside
+   an edge-to-edge block tint, which reads as a rendering bug rather than as
+   selection. The class is toggled on the editor root by the view plugin. */
+.ftn-has-block-selection .cm-selectionBackground,
+.ftn-has-block-selection .cm-line ::selection {
+    background-color: transparent !important;
+}
+
+/* ── Drop-indent selection ──────────────────────────────────────────────────
+   While dragging, horizontal pointer position chooses the depth the block
+   will land at. The indicator's left edge moves to show that depth.
+
+   The dot marks the chosen indent, and only appears when more than one depth
+   is legal here — in flat prose there is nothing to choose, so the indicator
+   stays a plain line and the drag looks exactly as it did before.
+*/
+
+.block-drag-indicator.is-indent-selectable::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+}
+
+.block-drag-indicator {
+    transition: left 60ms cubic-bezier(0.4, 0, 0.2, 1),
+                width 60ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Insert-menu item list, in settings */
+.ftn-insert-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 8px 0 12px;
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.ftn-insert-item-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background-color: var(--background-secondary);
+    /* The whole row is the drag target, so the cursor says so everywhere. */
+    cursor: grab;
+}
+
+.ftn-insert-item-row.is-dragging {
+    opacity: 0.4;
+}
+
+.ftn-insert-item-row.is-drop-target {
+    outline: 2px solid var(--interactive-accent);
+    outline-offset: -2px;
+}
+
+.ftn-insert-item-grip,
+.ftn-insert-item-icon {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+}
+
+.ftn-insert-item-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.ftn-insert-item-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Names the command a custom row runs. The label above is the user's own
+   wording, so without this nothing on screen says what the row actually does. */
+.ftn-insert-item-source {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+}
+
+.ftn-insert-item-source.is-missing {
+    color: var(--text-error);
+}
+
+.ftn-insert-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ftn-insert-item-button {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 4px;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.ftn-insert-item-button:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-normal);
+}
+
+.ftn-insert-item-button.is-danger:hover {
+    color: var(--text-error);
+}
+
+.ftn-icon-preview {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+}
+
+/* Command picker rows. The id line is what tells apart the several plugins
+   that each ship a command called "Insert table". */
+.ftn-command-suggest-id {
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+}

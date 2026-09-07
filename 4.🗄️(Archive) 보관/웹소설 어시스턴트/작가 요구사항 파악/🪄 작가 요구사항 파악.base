@@ -1,0 +1,57 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] != "양식"
+    - note["분류"].contains("작가 요구사항 파악")
+views:
+  - type: cards
+    name: 🪄 보드
+    order:
+      - 제목
+      - 요약
+      - 주제
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 220
+  - type: cards
+    name: 🔬 주제별
+    groupBy:
+      property: 주제
+      direction: ASC
+    order:
+      - 제목
+      - 요약
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 200
+  - type: table
+    name: 📊 전체 표
+    order:
+      - file.file
+      - 주제
+      - 중요도
+      - 상태
+      - 요약
+      - 링크
+      - 담당
+      - 작성자
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: DESC
+    summaries:
+      제목: Filled
+      작성일: Earliest
+  - type: table
+    name: 🕳️ 정리 필요
+    filters:
+      or:
+        - note["요약"].isEmpty()
+        - note["커버"].isEmpty()
+    order:
+      - file.file
+      - 요약
+      - 커버
+      - 링크

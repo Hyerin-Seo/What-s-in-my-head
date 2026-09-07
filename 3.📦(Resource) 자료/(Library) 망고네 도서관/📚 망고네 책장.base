@@ -1,0 +1,77 @@
+filters:
+  and:
+    - file.name != "📖 (책 제목)"
+    - note["유형"] == "책"
+views:
+  - type: cards
+    name: 📖 전체 책장
+    order:
+      - 제목
+      - 평점
+      - 저자
+    sort:
+      - property: 제목
+        direction: ASC
+    image: 커버
+    imageAspectRatio: 0.56
+    imageFit: contain
+    cardSize: 230
+  - type: cards
+    name: 📚 장르별
+    groupBy:
+      property: 분류
+      direction: ASC
+    order:
+      - 제목
+      - 평점
+      - 저자
+    image: 커버
+    imageAspectRatio: 0.56
+    imageFit: contain
+    cardSize: 200
+  - type: cards
+    name: 🔥 읽는 중
+    filters:
+      and:
+        - note["상태"] == "독서중"
+    order:
+      - 제목
+      - 평점
+      - 저자
+    image: 커버
+    imageAspectRatio: 0.56
+    imageFit: contain
+    cardSize: 230
+  - type: cards
+    name: ⭐ 인생책
+    filters:
+      and:
+        - note["중요도"] >= 5
+    order:
+      - 제목
+      - 평점
+      - 저자
+    image: 커버
+    imageAspectRatio: 0.56
+    imageFit: contain
+    cardSize: 230
+  - type: table
+    name: 📊 전체 표
+    order:
+      - file
+      - 저자
+      - 작성자
+      - 분류
+      - 상태
+      - 중요도
+      - 작성일
+      - 마감
+      - 링크
+    sort:
+      - property: 제목
+        direction: ASC
+    summaries:
+      제목: Filled
+      중요도: Average
+newItemFolder: 3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적
+newItemTemplate: 3.📦(Resource) 자료/!Template/!(Template) 새 책 등록 양식/📖 (책 제목).md

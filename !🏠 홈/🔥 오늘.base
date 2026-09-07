@@ -1,0 +1,98 @@
+filters:
+  and:
+    - not:
+        - file.name.startsWith("!(Template)")
+    - file.ext == "md"
+    - note["유형"] != "양식"
+views:
+  - type: table
+    name: 🏃 지금 붙잡고 있는 것
+    filters:
+      and:
+        - note["유형"] == "할일"
+        - note["상태"] == "진행중"
+    order:
+      - file
+      - 분류
+      - 담당
+      - 작성자
+      - 마감
+      - 중요도
+    sort:
+      - property: 중요도
+        direction: DESC
+    summaries:
+      제목: Filled
+    columnSize:
+      file.file: 749
+  - type: table
+    name: ⏰ 마감 가까운 순
+    filters:
+      and:
+        - note["유형"] == "할일"
+        - not:
+            - note["마감"].isEmpty()
+        - note["상태"] != "완료"
+    order:
+      - file
+      - 마감
+      - 상태
+      - 담당
+      - 작성자
+      - 분류
+    sort:
+      - property: 마감
+        direction: ASC
+    summaries:
+      제목: Filled
+    columnSize:
+      file.file: 751
+      note.작성자: 108
+  - type: table
+    name: ⏳ 남이 갖고 있는 것
+    filters:
+      and:
+        - note["유형"] == "할일"
+        - note["상태"] == "위임함"
+    order:
+      - file
+      - 담당
+      - 작성자
+      - 분류
+      - 마감
+      - 수정일
+    sort:
+      - property: 수정일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 📥 인박스
+    filters:
+      and:
+        - note["구역"] == "0.inbox"
+        - note["유형"] != "일지"
+        - note["유형"] != "대시보드"
+    order:
+      - file
+      - 요약
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: table
+    name: 🕐 최근에 손댄 것
+    filters:
+      and:
+        - not:
+            - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관")
+    order:
+      - file
+      - 유형
+      - 구역
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC

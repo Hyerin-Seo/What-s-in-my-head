@@ -1,0 +1,116 @@
+/* ────────────────────────────────────────────────────────────
+   칸반 플러그인은 값이 빈 카드를 영어 그대로 'Uncategorized' 로 묶습니다.
+   플러그인 안에 UNCATEGORIZED_LABEL = "Uncategorized" 로 박혀 있어
+   설정으로는 못 바꾸지만, 값이 data 속성에 실려 있어 CSS 로 갈아끼웁니다.
+     .obk-column[data-column-value]  /  .obk-swimlane[data-swimlane-value]
+   ──────────────────────────────────────────────────────────── */
+
+.obk-column[data-column-value="Uncategorized"] > .obk-column-header > .obk-column-title,
+.obk-swimlane[data-swimlane-value="Uncategorized"] > .obk-swimlane-header > .obk-swimlane-title {
+  font-size: 0 !important;
+  color: transparent;
+}
+
+.obk-column[data-column-value="Uncategorized"] > .obk-column-header > .obk-column-title::after,
+.obk-swimlane[data-swimlane-value="Uncategorized"] > .obk-swimlane-header > .obk-swimlane-title::after {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* 열은 상태로 묶습니다 — 상태가 빈 것 */
+.obk-column[data-column-value="Uncategorized"] > .obk-column-header > .obk-column-title::after {
+  content: "📥 아직 안 정함";
+}
+
+/* 레인은 담당으로 묶습니다 — 아무에게도 안 맡긴 것 */
+.obk-swimlane[data-swimlane-value="Uncategorized"] > .obk-swimlane-header > .obk-swimlane-title::after {
+  content: "🙋 미할당";
+}
+
+/* 빈 칸이라는 걸 색으로도 알려줍니다 */
+.obk-column[data-column-value="Uncategorized"] > .obk-column-header,
+.obk-swimlane[data-swimlane-value="Uncategorized"] > .obk-swimlane-header {
+  background: var(--background-modifier-border);
+}
+
+/* ────────────────────────────────────────────────────────────
+   담당 = 사람 칩
+
+   문자열 값은 옵시디언이 setText() 로 글자만 찍어서 DOM 에 누구인지
+   안 남습니다 (asar 의 String.renderTo). 그래서 CSS 가 사람을 구분할
+   수 없습니다. 그래서 담당 값을 위키링크로 바꿨습니다 —
+   renderFileLink 가 <span class="internal-link" data-href="이름"> 을 만들어 주므로 사람별로 잡힙니다.
+
+   쓰는 사람은 민규 서 · Rin 둘뿐이라 그대로 박아둡니다.
+   사람이 늘면 아래 두 블록을 복사해서 이름과 색만 바꾸세요.
+   ──────────────────────────────────────────────────────────── */
+
+.obk-card-property[data-label="note.담당"] {
+  margin-top: 4px;
+}
+
+/* '담당' 이라는 라벨은 칩만 봐도 아니까 뺍니다 */
+.obk-card-property[data-label="note.담당"] > .obk-card-property-label {
+  display: none;
+}
+
+.obk-card-property[data-label="note.담당"] .value-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* 항목 사이 줄바꿈용 span 은 칩 배치를 망칩니다 */
+.obk-card-property[data-label="note.담당"] .value-list-gap {
+  display: none;
+}
+
+/* 칩 공통 모양 — 사람 노트가 없어도 흐려지지 않게 opacity 를 되돌립니다 */
+.obk-card-property[data-label="note.담당"] .internal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 8px 1px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none !important;
+  opacity: 1;
+  background: var(--background-modifier-hover);
+  color: var(--text-muted);
+}
+
+.obk-card-property[data-label="note.담당"] .internal-link::before {
+  content: "●";
+  font-size: 8px;
+}
+
+/* ── 스윔레인 머리글 ──────────────────────────────────────────
+   칸반은 레인을 value.toString() 으로 묶는데 링크 값의 toString 은
+   "[[이름]]" 을 돌려줍니다. 머리글에 대괄호가 그대로 보이니 갈아끼웁니다.
+   ──────────────────────────────────────────────────────────── */
+
+.obk-swimlane[data-swimlane-value^="[["] > .obk-swimlane-header > .obk-swimlane-title {
+  font-size: 0 !important;
+  color: transparent;
+}
+
+.obk-swimlane[data-swimlane-value^="[["] > .obk-swimlane-header > .obk-swimlane-title::after {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.obk-swimlane[data-swimlane-value="[[민규 서]]"] > .obk-swimlane-header > .obk-swimlane-title::after {
+  content: "🔵 민규 서";
+  color: var(--color-blue);
+}
+
+.obk-swimlane[data-swimlane-value="[[Rin]]"] > .obk-swimlane-header > .obk-swimlane-title::after {
+  content: "🟣 Rin";
+  color: var(--color-purple);
+}

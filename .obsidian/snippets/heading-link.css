@@ -1,0 +1,71 @@
+/* ────────────────────────────────────────────────────────────
+   제목 링크 — 노션처럼
+
+   제목을 보드 링크로 만들면 옵시디언 기본값이 얹혀서
+   "크고 굵은 글씨 + 파란색 + 밑줄" 이 되어 몹시 지저분합니다.
+   노션은 반대입니다 — 평소엔 제목과 똑같고, 호버할 때만
+   글자 뒤에 둥근 회색 배경이 깔립니다.
+
+   ※ 화면 종류로 범위를 좁히면 안 됩니다.
+     콜아웃 안 제목은 라이브 프리뷰에서 .markdown-preview-view 바깥
+     (.cm-embed-block > .callout)에서 렌더돼서 빠져버립니다.
+     그래서 제목 요소 자체를 전역으로 잡습니다.
+   ──────────────────────────────────────────────────────────── */
+
+:root {
+  /* 노션 호버 배경 정도의 아주 옅은 회색 */
+  --heading-link-hover: rgba(15, 15, 15, 0.045);
+}
+
+.theme-dark {
+  --heading-link-hover: rgba(255, 255, 255, 0.055);
+}
+
+/* ── 1. 제목 안에서는 링크 색·밑줄을 끈다 ────────────────── */
+
+:is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-header) {
+  --link-color: inherit;
+  --link-color-hover: inherit;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-weight: inherit;
+  --link-unresolved-color: inherit;
+  --link-unresolved-opacity: 1;
+  --link-unresolved-decoration-style: none;
+  --link-unresolved-filter: none;
+}
+
+/* ── 2. 렌더된 제목 (읽기 화면 · 콜아웃 · 임베드 전부) ──── */
+
+:is(h1, h2, h3, h4, h5, h6) a.internal-link {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none !important;
+  border-radius: 4px;
+  transition: background-color 100ms ease, box-shadow 100ms ease;
+}
+
+/* 배경이 글자에 딱 붙지 않도록 box-shadow 로 바깥까지 넓힙니다.
+   padding 을 쓰면 줄이 밀려서 제목 위치가 흔들립니다. */
+:is(h1, h2, h3, h4, h5, h6) a.internal-link:hover {
+  background-color: var(--heading-link-hover);
+  box-shadow: 0 0 0 5px var(--heading-link-hover);
+  cursor: pointer;
+}
+
+/* ── 3. 라이브 프리뷰의 원본 제목 줄 ────────────────────── */
+
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-header) :is(.cm-hmd-internal-link, .cm-underline) {
+  color: inherit;
+  text-decoration: none !important;
+  border-radius: 4px;
+  transition: background-color 100ms ease, box-shadow 100ms ease;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-header) .cm-hmd-internal-link:hover,
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-header) .cm-hmd-internal-link .cm-underline:hover {
+  background-color: var(--heading-link-hover);
+  box-shadow: 0 0 0 5px var(--heading-link-hover);
+  cursor: pointer;
+}

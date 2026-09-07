@@ -1,0 +1,73 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] == "메모"
+views:
+  - type: table
+    name: 📓 전체
+    groupBy:
+      property: 분류
+      direction: ASC
+    order:
+      - file
+      - 요약
+      - 주제
+      - 상위
+      - 작성자
+    sort:
+      - property: 제목
+        direction: ASC
+    summaries:
+      제목: Filled
+  - type: cards
+    name: 📖 책 읽고 남긴 것
+    filters:
+      and:
+        - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적")
+    order:
+      - 제목
+      - 요약
+      - 상위
+      - 작성자
+    sort:
+      - property: 상위
+        direction: ASC
+    cardSize: 260
+  - type: table
+    name: 🔧 하네스 백과사전
+    filters:
+      and:
+        - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전")
+        - not:
+            - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전/여행_준비_하네스")
+    order:
+      - file
+      - 요약
+      - 주제
+      - 작성자
+    sort:
+      - property: 제목
+        direction: ASC
+  - type: table
+    name: ✈️ 여행 하네스 실습
+    filters:
+      and:
+        - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전/여행_준비_하네스")
+    order:
+      - file
+      - 요약
+      - 주제
+      - 상위
+    sort:
+      - property: 제목
+        direction: ASC
+  - type: table
+    name: 🕳️ 요약이 빈 것
+    filters:
+      and:
+        - note["요약"].isEmpty()
+    order:
+      - file
+      - 분류
+      - 상위
+newItemFolder: 3.📦(Resource) 자료/(Library) 망고네 도서관
