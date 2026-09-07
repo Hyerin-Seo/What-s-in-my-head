@@ -22,14 +22,14 @@ views:
       - property: 작성일
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: cards
     name: 👤 사람별
     groupBy:
       property: 담당
       direction: ASC
     order:
-      - 제목
+      - file
       - 분류
       - 상태
     image: 커버

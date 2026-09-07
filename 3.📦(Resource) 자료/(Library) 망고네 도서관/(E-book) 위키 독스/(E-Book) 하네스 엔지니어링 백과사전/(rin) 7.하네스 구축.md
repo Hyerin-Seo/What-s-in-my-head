@@ -1,5 +1,4 @@
 ---
-제목: (rin) 7.하네스 구축
 유형: 메모
 구역: 3.resource
 분류:
@@ -9,12 +8,10 @@
   - 핸드오프
   - 가드레일
 상태:
-중요도:
 요약: Agents SDK로 agent·tools·handoffs·guardrails·tracing을 조립하는 법
 작성일:
-수정일:
 마감:
-커버:
+커버: "[[Pasted image 20260814133545.png]]"
 상위: "[[📖 하네스 엔지니어링 백과사전]]"
 링크:
 담당:

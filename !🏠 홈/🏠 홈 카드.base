@@ -6,10 +6,10 @@ views:
   - type: cards
     name: 🏠 홈 카드
     order:
-      - 제목
+      - file
       - 요약
     sort:
-      - property: 제목
+      - property: file.name
         direction: ASC
     image: 커버
     imageAspectRatio: 0.667

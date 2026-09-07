@@ -7,7 +7,7 @@ views:
   - type: cards
     name: 🪄 전체
     order:
-      - 제목
+      - file
       - 요약
       - 주제
     sort:
@@ -23,7 +23,7 @@ views:
       property: 주제
       direction: ASC
     order:
-      - 제목
+      - file
       - 요약
     image: 커버
     imageAspectRatio: 0.667
@@ -35,7 +35,6 @@ views:
       - file
       - 상태
       - 주제
-      - 중요도
       - 요약
       - 링크
       - 담당
@@ -45,7 +44,7 @@ views:
       - property: 작성일
         direction: DESC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 🕳️ 정리 필요
     filters:

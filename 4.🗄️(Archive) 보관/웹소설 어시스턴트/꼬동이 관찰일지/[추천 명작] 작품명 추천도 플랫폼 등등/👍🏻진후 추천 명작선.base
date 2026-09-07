@@ -8,22 +8,22 @@ views:
       - file.file
       - 분류
       - 주제
-      - 중요도
+      - 원래 중요도
       - 추천자
       - 작성자
       - 링크
     sort:
-      - property: 중요도
+      - property: 원래 중요도
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: cards
     name: 🏆 추천도별
     groupBy:
-      property: 중요도
+      property: 원래 중요도
       direction: ASC
     order:
-      - 제목
+      - file
       - 분류
       - 링크
     image: 커버

@@ -1,5 +1,4 @@
 ---
-제목: "[레퍼런스 + Agent] 클로드 코드 유출 사건"
 유형: 레퍼런스
 구역: 3.resource
 분류:
@@ -9,12 +8,10 @@
   - 프롬프트 유출
   - 에이전트 분석
 상태: 언젠가·아마도
-중요도:
 요약: |-
   • 기술 노하우
     • 분석 사이트가 몇 개 있음
 작성일: 2026-04-03T21:36:35
-수정일: 2026-04-03T21:41:45
 마감:
 커버:
 상위: https://app.notion.com/p/2a84bd01fa01818b8a7fffe8934ec43c
@@ -22,11 +19,8 @@
 담당:
 작성자:
   - "[[민규 서]]"
-원래 상태: false
-아이콘: 💡
 평가:
 참고 포인트:
-notion_db: current research DB
 ---
 
 [Claude Code 내부 아키텍처 분석](https://bits-bytes-nn.github.io/insights/agentic-ai/2026/03/31/claude-code-source-map-leak-analysis.html)

@@ -6,7 +6,7 @@ views:
   - type: cards
     name: 🔖 바로가기
     order:
-      - 제목
+      - file
       - 요약
     sort:
       - property: 순서

@@ -9,11 +9,9 @@ views:
     order:
       - 담당
       - 작성자
-      - 중요도
       - 마감
     quickAddFolder: 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식
     groupByProperty: note.상태
-    cardTitleProperty: note.제목
     swimlaneByProperty: note.담당
     imageProperty: note.커버
     imageFit: cover
@@ -27,6 +25,11 @@ views:
         - 완료
         - 히스토리
     cardOrders:
+      "note.상태\x1fnote.담당":
+        "[[Rin]]\x1f완료":
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/(idea) 클로드만 mcp 물리냐! 제미나이도 물리도!.md
+        "[[Rin]]\x1f히스토리":
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/[특명] 가오슝 숙소를 찾아라.md
     columnColors:
       note.상태: {}
     swimlaneOrders:
@@ -45,21 +48,20 @@ views:
       - 상태
       - 담당
       - 작성자
-      - 중요도
       - 마감
-      - 수정일
+      - file.mtime
     sort:
       - property: 상태
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: cards
     name: 🎴 갤러리
     groupBy:
       property: 상태
       direction: ASC
     order:
-      - 제목
+      - file
       - 담당
       - 작성자
     image: 커버

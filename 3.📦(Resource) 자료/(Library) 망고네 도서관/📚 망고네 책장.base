@@ -6,11 +6,11 @@ views:
   - type: cards
     name: 📖 전체 책장
     order:
-      - 제목
+      - file
       - 평점
       - 저자
     sort:
-      - property: 제목
+      - property: file.name
         direction: ASC
     image: 커버
     imageAspectRatio: 0.56
@@ -22,7 +22,7 @@ views:
       property: 분류
       direction: ASC
     order:
-      - 제목
+      - file
       - 평점
       - 저자
     image: 커버
@@ -35,7 +35,7 @@ views:
       and:
         - note["상태"] == "독서중"
     order:
-      - 제목
+      - file
       - 평점
       - 저자
     image: 커버
@@ -46,9 +46,9 @@ views:
     name: ⭐ 인생책
     filters:
       and:
-        - note["중요도"] >= 5
+        - note["평점"] == "⭐️⭐️⭐️⭐️⭐️"
     order:
-      - 제목
+      - file
       - 평점
       - 저자
     image: 커버
@@ -63,15 +63,13 @@ views:
       - 작성자
       - 분류
       - 상태
-      - 중요도
       - 작성일
       - 마감
       - 링크
     sort:
-      - property: 제목
+      - property: file.name
         direction: ASC
     summaries:
-      제목: Filled
-      중요도: Average
+      유형: Filled
 newItemFolder: 3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적
 newItemTemplate: 3.📦(Resource) 자료/!Template/!(Template) 새 책 등록 양식/📖 (책 제목).md

@@ -1,0 +1,1287 @@
+{
+ "1.🎯(Project) 프로젝트/!(Template) 새 할 일.md": {
+  "중요도": "3"
+ },
+ "1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(seo)자동화하고 싶은 task 100선.md": {
+  "중요도": "5",
+  "중분류": [
+   "- 기능 개선",
+   "- 스토리 작가 파악"
+  ],
+  "문서 유형": "\"[DOC-RES] 조사 자료\""
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/DB 날려먹은 날,, 리멤버 미.md": {
+  "수정일": "2025-11-13T16:30:13",
+  "notion_db": "망고AI 추구미"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/Welcome to Novel AI 사용 전 필독!.md": {
+  "수정일": "2025-11-25T15:36:34",
+  "notion_db": "망고AI 추구미"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/앞날의 지침(Not Tired…).md": {
+  "수정일": "2026-02-05T15:15:00",
+  "notion_db": "망고AI 추구미",
+  "아이콘": "⚠️"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/왜 우린 웹소설 어시스턴트인가.md": {
+  "수정일": "2025-11-25T23:47:10",
+  "notion_db": "망고AI 추구미"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음.md": {
+  "수정일": "2025-11-13T16:32:35",
+  "notion_db": "망고AI 추구미"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/📅근무표 (휴가 및 일정 공유).md": {
+  "수정일": "2025-11-25T23:46:24",
+  "notion_db": "망고AI 추구미"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/근무표 (휴가 및 일정 공유)/병가신청.md": {
+  "notion_db": "휴가"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/근무표 (휴가 및 일정 공유)/부산 출장 (2).md": {
+  "notion_db": "휴가"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/근무표 (휴가 및 일정 공유)/부산 출장.md": {
+  "notion_db": "휴가"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/근무표 (휴가 및 일정 공유)/혜린 부산 출장(0907-0914).md": {
+  "notion_db": "휴가"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/근무표 (휴가 및 일정 공유)/휴가 신청.md": {
+  "notion_db": "휴가"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/근무표 (휴가 및 일정 공유)/!(Template) 근무표 품의서/[품의서] 제목.md": {
+  "notion_db": "휴가"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/OpenAI.md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/구글 (Google).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/리프트 (Lyft).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/링크드인 (LinkedIn).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/마이크로소프트 (Microsoft).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/아마존 (Amazon).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/애플 (Apple).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/앤트로픽 (Anthropic).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/에어비앤비 (Airbnb).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/오라클 (Oracle).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/우버 (Uber).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/트위터 (Twitter).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/팔란티어 (Palantir).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/페이스북 (Facebook).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/(Ongoing) 망고AI 추구미/피터 틸 독점기업 7대 조건 참조 기업 모음/페이팔 (PayPal).md": {
+  "notion_db": "참조 기업"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[감동의 눈물] 핀터레스트 + 구글 ai studio.md": {
+  "수정일": "2026-01-03T16:50:48",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[검색 고수] 웬만한 조사나 리서치는 나보다 훨 나음.md": {
+  "수정일": "2026-01-03T17:06:52",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[내 머릿속 검색] 옵시디언에 묻어둔 예전 메모를 소환.md": {
+  "수정일": "2026-09-02T13:32:40",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[대량 작업] 대량 보고서 (50개 이상) 동시 작업.md": {
+  "수정일": "2026-01-04T21:15:03",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[대필!] 코드 + 문서 작성 + 씬 작성.md": {
+  "수정일": "2026-01-03T17:35:55",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[딥리서치] 30분 걸릴 조사를 보고서째로 뽑아줌.md": {
+  "수정일": "2026-09-02T13:31:32",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[비교표 자동 생성] 툴·제품 스펙을 한 판에 정리.md": {
+  "수정일": "2026-09-02T13:32:40",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[선생님 + A] AI도 다 아는 것은 아니다. 그런데 새로 보는 개념도 이해력이 나보다 월등.md": {
+  "수정일": "2026-01-03T16:35:56",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[선생님!] 만물 박사 어려운 개념을 그냥 때려박아줌.md": {
+  "수정일": "2026-01-03T16:38:29",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[시뮬레이터] 특정 상황, 인물 가정하고 시뮬레이션 시켜보기.md": {
+  "수정일": "2026-01-07T02:09:53",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[실시간 검색] 어제 나온 소식도 지금 바로 긁어옴.md": {
+  "수정일": "2026-09-02T13:31:32",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[심리적 안정감] 내 머릿 속이 아닌 옵시디언 어딘가에만 있다면….md": {
+  "수정일": "2026-01-03T17:14:28",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[아이디어 Develop] Visual Thinking 하기가 너무 편함.md": {
+  "수정일": "2026-01-03T16:42:30",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[언어 장벽 제거] 외국어 논문·해외 자료도 그냥 내 자료가 됨.md": {
+  "수정일": "2026-09-02T13:32:03",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[영상 → 텍스트] 유튜브·회의 녹음을 읽을 수 있는 자료로.md": {
+  "수정일": "2026-09-02T13:32:03",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[웹·PDF 스크랩] 흩어진 원문을 한 곳에 모아줌.md": {
+  "수정일": "2026-09-02T13:32:03",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[컨셉만 주면] 대충 내용을 완성해줘! → 생각 확장의 추진력.md": {
+  "수정일": "2026-01-03T17:33:32",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[툴 사용 가이드] 다른 툴 사용법을 압도적으로 잘 알랴줌.md": {
+  "수정일": "2026-01-03T19:51:43",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[팩트체크] 출처 교차검증 — 그럴듯한 거짓말 걸러내기.md": {
+  "수정일": "2026-09-02T13:31:32",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/AI가 보여준 신세계/[후기 수집] 실사용 평가를 모아 결정 근거로.md": {
+  "수정일": "2026-09-02T13:32:40",
+  "notion_db": "current research DB",
+  "아이콘": "💡",
+  "분야": "AI 활용 방안 연구"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[결점 파악] AI 서비스 특 무료 체험 1주 → 구독.md": {
+  "수정일": "2025-12-18T23:53:12",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] ai툴 많은거 같긴 한데 막상 내가 필요한거 찾아보려 하면 마땅한게 없노!.md": {
+  "수정일": "2026-01-13T20:38:05",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] 그냥 성능 떨어지는 애가 한 무더기.md": {
+  "수정일": "2025-12-18T23:07:30",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] 뭐 하나 제대로 쓰려면 공부해야할기 이리 많노!.md": {
+  "수정일": "2025-12-22T20:38:10",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] 어디다 쓰라고 이래 칼질 해놨노! 내 보고서 작성하려면 한 달에 30만원 구독료로 내야겠네….md": {
+  "수정일": "2025-12-18T23:16:52",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] 읽을 게 뭐이리 많노! 근데 읽어보면 다 개소리고!.md": {
+  "수정일": "2025-12-18T23:41:29",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] 조금만 방심하면 고삐풀린 망아지처럼 미쳐날뛰노!.md": {
+  "수정일": "2025-12-18T23:33:35",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] 최적화 시키기에는 그전에 입력해야할게 너무 많다….md": {
+  "수정일": "2025-12-18T23:33:14",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] 한글은요….md": {
+  "수정일": "2025-12-18T23:14:58",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "2.🌱(Area) 관리 영역/불편하다 불편해/[불편하다 불편해] 할 줄 아는 건 없으면서 하나할 때마다 돈 내라카노!.md": {
+  "수정일": "2025-12-18T23:43:14",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/!Template/!(Template) 새 레퍼런스 등록 양식/[레퍼런스] 제목.md": {
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/!Template/!(Template) 새 자료 등록 양식/[조사 목적] 제목.md": {
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/!Template/!(Template) 새 책 등록 양식/📖 (책 제목).md": {
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/AI와 웹소설/📖 AI와 웹소설.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2aa4bd01fa0180e59c6cf4ca62b19b14",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/Find your why/📖 Find your why.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/글쓰는 삶을 위한 일 년/📖 글쓰는 삶을 위한 일 년.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2b44bd01fa0180e4bb81d652623fed95",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/글쓰며 사는 삶 - 작가적인 삶을 위한 글쓰기 레슨/📖 글쓰며 사는 삶 - 작가적인 삶을 위한 글쓰기 레슨.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2b44bd01fa01803b8654cd54745c5012",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/기획자의 질문법/📖 기획자의 질문법.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa01819f8c5ed664b7557043",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/끌리는 이야기는 어떻게 쓰는가/📖 끌리는 이야기는 어떻게 쓰는가.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a14bd01fa01809aaf7fdf6b4762589e",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/내가 신이 되는 세상 세계관 설정/📖 내가 신이 되는 세상 세계관 설정.md": {
+  "중요도": "3",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa0180c9a27efc3bd8482dfe",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/넷플릭스처럼 쓴다/📖 넷플릭스처럼 쓴다.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2cc4bd01fa018051bd81fa39f14b8f84",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/노트 하나로 인생을 바꾸는 기적의 메모술/📖 노트 하나로 인생을 바꾸는 기적의 메모술.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a94bd01fa01801f81ded826f3c457dd",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/다시, 기획은 2형식이다/📖 다시, 기획은 2형식이다.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa01814899f6cd32366b7716",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/도쿄의 편집 - 에디터,크리에이터를 위한 편집력 강의/📖 도쿄의 편집 - 에디터,크리에이터를 위한 편집력 강의.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2b44bd01fa0180e2b0f7cd846d45be2a",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/돈 되는 AI, 어디서부터 무엇을 어떻게 해야 할까/📖 돈 되는 AI, 어디서부터 무엇을 어떻게 해야 할까.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa018140ae42ca103ded28f5",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/라이트 노벨 구성과 작법 노하우/📖 라이트 노벨 구성과 작법 노하우.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa01811a87e0c2dde3a23f1d",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/마스터링 서스펜스 구조와 플롯/📖 마스터링 서스펜스 구조와 플롯.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a14bd01fa018070baa0f1bd3d9d49b5",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/마케터처럼 생각하기/📖 마케터처럼 생각하기.md": {
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/밀리언 뷰 웹소설 비밀코드/📖 밀리언 뷰 웹소설 비밀코드.md": {
+  "중요도": "1",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2ad4bd01fa0180f7b5cce6ee35096a8d",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/북마녀의 시크릿 단어/📖 북마녀의 시크릿 단어.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa0180c7be02e7d2f3cf7dc1",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/살짝 웃기는 글이 잘쓴글입니다/📖 살짝 웃기는 글이 잘쓴글입니다.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a14bd01fa0180759c2ece491c5d36b6",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/삶에 지칠 때 작가가 버티는 법/📖 삶에 지칠 때 작가가 버티는 법.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2b44bd01fa0180568083e5b6450344ed",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/세컨드 브레인/📖 세컨드 브레인.md": {
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/세컨드 브레인 부스트/📖 세컨드 브레인 부스트.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a04bd01fa018043abd1f62326f42904",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/스토리 설계자 - 장르불문 존재감을 발휘하는 단단한 스토리 코어 설계법/📖 스토리 설계자 - 장르불문 존재감을 발휘하는 단단한 스토리 코어 설계법.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a14bd01fa01801ea64ac3c3285a194a",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/스토리만이 살길 - 콘텐츠 전쟁에서 승리하는 27가지 스토리 법칙/📖 스토리만이 살길 - 콘텐츠 전쟁에서 승리하는 27가지 스토리 법칙.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a84bd01fa0180e3a534c43ca7ce5ff8",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/스토리텔링 우동이즘의 잘 팔리는 웹툰, 웹소설 이야기 만들기/📖 스토리텔링 우동이즘의 잘 팔리는 웹툰, 웹소설 이야기 만들기.md": {
+  "중요도": "2",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2c44bd01fa01809bb7bee2ca9766838e",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/시스템을 잘 만들게 하는 기술/📖 시스템을 잘 만들게 하는 기술.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2aa4bd01fa018067932ff3e2d6cee730",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/쏟아지는 일 완벽하게 해내는 법/📖 쏟아지는 일 완벽하게 해내는 법 - 일을 쌓아두지 않고 성공적으로 처리하는 GTD 프로젝트.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/아이디어에서 완성까지, 캐릭터 줄거리 단계별 가이드/📖 아이디어에서 완성까지, 캐릭터 줄거리 단계별 가이드.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2ad4bd01fa018081a8dfe5ae1f6c42d0",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/억대 연봉 부르는 웹소설 작가수업/📖 억대 연봉 부르는 웹소설 작가수업.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2ad4bd01fa0180439ea8c41e9393b5f5",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/예술이라 부르지 마! - 아이처럼 생각하고 창조하는 10가지 방법/📖 예술이라 부르지 마! - 아이처럼 생각하고 창조하는 10가지 방법.md": {
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/이야기를 완성하는 서사 패턴 959/📖 이야기를 완성하는 서사 패턴 959.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a14bd01fa0180bc98e4c6fbd7318488",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/인간의 130가지 감정 표현법/📖 인간의 130가지 감정 표현법.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa018062acb2c6c011c131bc",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/인스파이어드 - 감동을 전하는 IT 제품은 어떻게 만들어지는가/📖 인스파이어드 - 감동을 전하는 IT 제품은 어떻게 만들어지는가.md": {
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/작가 수업/📖 작가 수업.md": {
+  "중요도": "2",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2b44bd01fa0180d2bb78d7e9b344f3c2",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/작가란 무엇인가/📖 작가란 무엇인가.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2b44bd01fa0180e69c23f3129dbff0c3",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/제대로 세상을 보는 비결/📖 제대로 세상을 보는 비결.md": {
+  "중요도": "3",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a84bd01fa0180f881fae05e75d572b4",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/제로 투 원/📖 제로 투 원.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa01815e9860fa97daffbd8f",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/창의적 생각의 발견, 글쓰기/📖 창의적 생각의 발견, 글쓰기.md": {
+  "중요도": "2",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2cc4bd01fa018021873ae53fc5ad52de",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/창작의 블랙홀을 건너는 크리에이터를 위한 안내서/📖 창작의 블랙홀을 건너는 크리에이터를 위한 안내서.md": {
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2b44bd01fa018001a530f8d25c717bc8",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/창작자를 위한 픽사 스토리텔링/📖 창작자를 위한 픽사 스토리텔링.md": {
+  "중요도": "3",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2cc4bd01fa018053aaaacee718f30a15",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/캐릭터 직업 사전/📖 캐릭터 직업 사전.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa018097bde0d644e3838538",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/토요타에서 배운 종이 한 장으로 요약하는 기술/📖 토요타에서 배운 종이 한 장으로 요약하는 기술.md": {
+  "중요도": "5",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/2a04bd01fa0180d5b46be9cf9ec320f1",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적/프로의 장르 글쓰기 특강/📖 프로의 장르 글쓰기 특강.md": {
+  "중요도": "4",
+  "이동버튼": "(버튼 속성 — 복제 불가)",
+  "notion_url": "https://app.notion.com/p/29b4bd01fa01800ca1b6e024be677cf4",
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) LLM위키 완벽 가이드/📖 LLM위키 완벽 가이드.md": {
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전/📖 하네스 엔지니어링 백과사전.md": {
+  "notion_db": "나의 서재 DB"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스 + Agent] 클로드 코드 유출 사건.md": {
+  "수정일": "2026-04-03T21:41:45",
+  "notion_db": "current research DB",
+  "원래 상태": "false",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스 + 작가 요구사항 분석] ONESTOPforWriter 사이트 조사.md": {
+  "수정일": "2025-12-15T20:27:30",
+  "notion_db": "current research DB",
+  "원래 상태": "false",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] ALCHEMY.md": {
+  "중요도": "3",
+  "notion_url": "https://app.notion.com/p/32c4bd01fa0180e3aa80fde0c1f68224",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Are.na_아이디어 블럭.md": {
+  "중요도": "3",
+  "notion_url": "https://app.notion.com/p/2964bd01fa0181e49ac1ec07b4f6da73",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "true",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Canva Ai.md": {
+  "중요도": "3",
+  "notion_url": "https://app.notion.com/p/3114bd01fa018079a2b5c20f7dd5a244",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Causality(Hollywoodcamerawork).md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/2f34bd01fa01800db078e4342f5ab23e",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Dabble.md": {
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Dribbble.md": {
+  "중요도": "3",
+  "notion_url": "https://app.notion.com/p/2f54bd01fa018062a81ec0093eda06a9",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Eagle_이미지 파일 자동 정리기.md": {
+  "중요도": "3",
+  "notion_url": "https://app.notion.com/p/2964bd01fa0181e29219da8acb9e7545",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "true",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Fibery.md": {
+  "중요도": "1",
+  "notion_url": "https://app.notion.com/p/3114bd01fa0180fab7a9e8ee0eb67733",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Genspark AI.md": {
+  "중요도": "5",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] GM-Meme.md": {
+  "중요도": "5",
+  "수정일": "2026-02-09T22:56:21",
+  "notion_url": "https://app.notion.com/p/3024bd01fa018008ad51c3cedab1b34f",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Grammarly 분석.md": {
+  "중요도": "3",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "true",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] HOYO WIKI.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/2f54bd01fa018086a456e24f71a28e08",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] illumi.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/3114bd01fa01805ba0d5e817d145ce7a",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] JAM.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/3114bd01fa018043bfd9cf26b1c6d867",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] LegendKeeper.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/2f54bd01fa0180839dd8f911668998d9",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] livingwriter.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/3024bd01fa0180fda986f0c9fab888e4",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Mem.md": {
+  "중요도": "5",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Miro AI.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/3114bd01fa01802caec3ced10b0cd515",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Muse.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/2e44bd01fa01807d9c7bdbaa3a34e860",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] My.mind.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/3024bd01fa0180e183b3c53b99c191ee",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] MyMap.md": {
+  "중요도": "5",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] OpenClaw(클로드봇, 몰타봇).md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/2f84bd01fa018083ac08eb590d6827b7",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Quest Portal.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/32c4bd01fa018019b5cdda2b8dd6ea57",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Readwise.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/2e24bd01fa0180bab684f0e21cb17c43",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Scrintal.md": {
+  "중요도": "5",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] Standford d.school.md": {
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] tldraw.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/3114bd01fa0180cda553f565cbffaa2c",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] 게임 UI DB사이트 모음.md": {
+  "중요도": "3",
+  "notion_url": "https://app.notion.com/p/2f54bd01fa018032811efcbc28c32ab0",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] 경쟁사 Key Concept 추출.by 7단계 방법론.md": {
+  "중요도": "3",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "true",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] 닌텐도.md": {
+  "중요도": "3",
+  "notion_url": "https://app.notion.com/p/2f54bd01fa0180a39bf5e866e5b93d6a",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] 소설 전용 프로그램 및 플러그인.md": {
+  "수정일": "2025-11-26T22:45:08",
+  "notion_db": "current research DB",
+  "원래 상태": "false",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] 어도비 Firefly.md": {
+  "중요도": "5",
+  "notion_url": "https://app.notion.com/p/2e34bd01fa0180eda9d1c8f6e1021eef",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[레퍼런스] 에이전트 캐릭터 비서 ui.md": {
+  "중요도": "3",
+  "notion_url": "https://app.notion.com/p/3104bd01fa0180cfa783d35130bb5446",
+  "notion_db": "UI 레퍼런스 분석 DB",
+  "원래 상태": "false",
+  "아이콘": "🍴"
+ },
+ "3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/[패치노트] Notebook LM 인포그래픽 기능.md": {
+  "수정일": "2025-12-24T14:29:04",
+  "notion_db": "current research DB",
+  "원래 상태": "false",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/이런게 필요해!/(idea) AI Exporter 이미지랑 영상까지 싹싹 김치 긁어오기.md": {
+  "중요도": "3",
+  "중분류": [
+   "- UI+기능 아이디어"
+  ],
+  "문서 유형": "\"[DOC-DRF] 초안\""
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/(넷플릭스 방법론 확장 - 노래 제목) 힙합 가사, 노래 가사, 커뮤 글, 썰 등 다른 영역으로부터 영감되는 문장, 표현, 소재 구상 아이디어 제공 UI.md": {
+  "수정일": "2025-12-29T23:28:00",
+  "notion_url": "https://app.notion.com/p/2ce4bd01fa018096a8cef9eb9c300599",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/(방구석 연구소) 나만의 ai 뮤즈 테스트.md": {
+  "수정일": "2026-01-14T11:25:00",
+  "notion_url": "https://app.notion.com/p/2e74bd01fa01808685d8dab7e0f76adf",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/12단계 사고 발전기.md": {
+  "수정일": "2025-12-29T23:16:00",
+  "notion_url": "https://app.notion.com/p/2d84bd01fa01801a84cbd8eea20deeb1",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/AI 기반 실시간 스토리 분기 관리 및 집필 워크스페이스.md": {
+  "수정일": "2025-12-29T23:22:00",
+  "notion_url": "https://app.notion.com/p/2d34bd01fa0180a798aed1ffbad1a76b",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/AI 실시간 인터랙션 화이트보드 있으면 좋겠다.md": {
+  "수정일": "2025-12-29T23:34:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/AI 자동 스캐닝 + 아카이빙 UI(like Grammarly).md": {
+  "수정일": "2025-12-29T23:31:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/AI 채팅 제어 → UI UX 만으로 제어.md": {
+  "수정일": "2025-12-29T23:35:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/AI 채팅창 부분 수정 기능.md": {
+  "수정일": "2026-01-05T18:09:00",
+  "notion_url": "https://app.notion.com/p/2dc4bd01fa018085a7daffcc0772a071",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/AI별 ‘매직 키워드’ 자동 수집기.md": {
+  "수정일": "2025-12-29T23:34:00",
+  "notion_url": "https://app.notion.com/p/29c4bd01fa01801f9f7ff6903c65f433",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/excalidraw + bizActor - AI 워크플로우.md": {
+  "수정일": "2025-11-13T17:29:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/LLM 수학 능력 시험_너희도 테스트 좀 보자….md": {
+  "수정일": "2026-01-04T14:39:00",
+  "notion_url": "https://app.notion.com/p/2de4bd01fa0180aa90d4cea4d1428f42",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/LLM 채팅 보조 Task Stream 맵 UI.md": {
+  "수정일": "2025-12-29T23:22:00",
+  "notion_url": "https://app.notion.com/p/2d24bd01fa01802d8d19c991fea33ead",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/Notebook LM 그대로 구현하기.md": {
+  "수정일": "2026-01-22T14:39:00",
+  "notion_url": "https://app.notion.com/p/2f04bd01fa018023b22bff0ec0eaeab3",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/N명의 수다쟁이가 내 작품을 같이 보면서 바로 바로 의견 표출하기.md": {
+  "수정일": "2025-12-29T23:33:00",
+  "notion_url": "https://app.notion.com/p/2aa4bd01fa0180e4a8afc3992af50392",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/PARA 기법 자동 문서 관리 에이전트.md": {
+  "수정일": "2025-12-29T23:35:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/PARA 컨셉 AI + 자료 조사기.md": {
+  "수정일": "2025-12-29T23:29:00",
+  "notion_url": "https://app.notion.com/p/2cd4bd01fa0180d18998d702537f6528",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/PKM-Word Branch 내 AI 경험치 먹이기.md": {
+  "수정일": "2025-12-29T23:21:00",
+  "notion_url": "https://app.notion.com/p/2d54bd01fa0180cea970da98b6063efc",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/PPT 찾을 때도 이미지 찾는다고 시간 다 쓴다이가 UI.md": {
+  "수정일": "2025-12-29T23:23:00",
+  "notion_url": "https://app.notion.com/p/2d14bd01fa018079bbccda709d2cd5af",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/Second-Order + Multi 캐릭터 기반 에피소드 생성기.md": {
+  "수정일": "2025-12-29T23:17:00",
+  "notion_url": "https://app.notion.com/p/2d84bd01fa018091bef0c8c539bfeb0e",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/User 페르소나 디테일 생성기.md": {
+  "수정일": "2026-01-02T20:50:00",
+  "notion_url": "https://app.notion.com/p/2dc4bd01fa018005a6ffe5e96a9ea1e5",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/[아이디어] 제목.md": {
+  "수정일": "2025-12-18T19:43:00",
+  "notion_db": "브레인 스토밍 (템플릿)",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/강의 경청하는 ai - Second Brain 연동.md": {
+  "수정일": "2025-12-29T23:33:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/개인용 캐럿.md": {
+  "수정일": "2026-01-21T14:40:00",
+  "notion_url": "https://app.notion.com/p/2ef4bd01fa0180b2ba74ce2e1dc32661",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/게이미피케이션 전략 적용 UI.md": {
+  "수정일": "2025-12-29T23:20:00",
+  "notion_url": "https://app.notion.com/p/2d54bd01fa018084ad10d248d6b38abd",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/글 막힘 뚫기 프로세스 맵 + 포인트별 맞춤 지원.md": {
+  "수정일": "2025-12-29T23:27:00",
+  "notion_url": "https://app.notion.com/p/2d04bd01fa018002a763ef4b946232f9",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/기획 단계에서 관객 반응 참여시키기.md": {
+  "수정일": "2025-12-29T23:18:00",
+  "notion_url": "https://app.notion.com/p/2d64bd01fa0180eb9e15f2811d634aef",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/나 아프면 진짜 병원 가기도 귀찮고 나가기도 너무 귀찮은데 간단한 감기 같은거 약 배달 해주거나 방문해서 수액 놔주면 안되나 ㅠ.md": {
+  "수정일": "2025-11-03T16:32:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/내 등장인물들의 SNS.md": {
+  "수정일": "2025-12-31T13:10:00",
+  "notion_url": "https://app.notion.com/p/2da4bd01fa0180d69f43c3ebc3d96a05",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/내 상황에 맞는 짤 찾아줘.md": {
+  "수정일": "2026-01-03T17:28:00",
+  "notion_url": "https://app.notion.com/p/2dd4bd01fa0180e7a4ffda8cda4429ad",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/내 시선과 눈높이에 맞춰서 자동으로 반응하는 사이드암.md": {
+  "수정일": "2025-12-19T00:09:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/내 작품 전용 AI 수다쟁이 커뮤니티&게시판.md": {
+  "수정일": "2025-12-31T11:39:00",
+  "notion_url": "https://app.notion.com/p/2d94bd01fa0180959cf1f836d255d6a4",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/내가 ‘~있으면 좋겠다’ 라고만 입력하면 다 알아서 조사하고, 비교 분석해서 보고서로 던져주는 에이전트 있으면 좋겠따.md": {
+  "수정일": "2025-12-29T23:34:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/도식화 → 보고서 자동 생성 UI.md": {
+  "수정일": "2025-12-29T23:30:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/리포트 혹은 LLM 출력 내용은 좀 누워서 봤으면….md": {
+  "수정일": "2025-12-29T23:28:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/목표 달성을 위한 7가지 프레임워크 분석 UI.md": {
+  "수정일": "2025-12-29T23:23:00",
+  "notion_url": "https://app.notion.com/p/2d14bd01fa0180feab97eace089939b8",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/미래 주식, 경제, 기술 뉴스.md": {
+  "수정일": "2025-12-31T13:36:00",
+  "notion_url": "https://app.notion.com/p/2da4bd01fa01805a8a21df3fab35b719",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/생각 + 자료 시각화 UI - 8가지의 모형 기준.md": {
+  "수정일": "2025-12-29T23:19:00",
+  "notion_url": "https://app.notion.com/p/2d54bd01fa0180978391e79fed58be63",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/생각 뻗어나가는대로 UI가 따라오는 느낌.md": {
+  "수정일": "2025-12-29T23:28:00",
+  "notion_url": "https://app.notion.com/p/2cf4bd01fa0180c19862d0910baf2d3b",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡",
+  "돌아가기": "https://app.notion.com/p/29b4bd01fa01809da1cdd91fd73978c5"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/생각 확장 질문 생성 UI.md": {
+  "수정일": "2025-12-29T23:19:00",
+  "notion_url": "https://app.notion.com/p/2d54bd01fa01809eb81fe40260529ce2",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/서혜린채, 고동휘채, 서민규채 등등 직원들마다 고유 문체 적용하기.md": {
+  "수정일": "2025-12-19T00:09:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/스토리 분석기(원심분리기) UI.md": {
+  "수정일": "2025-12-29T23:26:00",
+  "notion_url": "https://app.notion.com/p/2d04bd01fa0180d48214f1a5862cec32",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/스토리 제작 비밀 봉투.md": {
+  "수정일": "2025-12-29T23:16:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/스토리 카드를 화이트보드에 바로바로 생성하고 붙이는 느낌 UI.md": {
+  "수정일": "2025-12-29T23:41:00",
+  "notion_url": "https://app.notion.com/p/2d24bd01fa0180f393efeeb6f6f421b2",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/스토리용 SOLVE ANY PROBLEM UI.md": {
+  "수정일": "2025-12-29T23:20:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/싸이월드 느낌의 픽사 꾸미기, 힐링 space 랜덤 스토리 생성기(얘네 움직임!).md": {
+  "수정일": "2025-12-29T23:23:00",
+  "notion_url": "https://app.notion.com/p/2d24bd01fa018082a0bdf8810e2ab803",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/아이디어 or 에피소드 뭉치 자동으로 포스트잇 만들어주기.md": {
+  "수정일": "2025-12-29T23:25:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/아이디어(포스트잇) 채택 ui.md": {
+  "수정일": "2026-02-03T22:40:00",
+  "notion_url": "https://app.notion.com/p/2fc4bd01fa0180b6bfd2fe87b386f719",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/우리가 조사한 AI 에이전트를 실제 대중들에게 공유할 수 있는 공식 채널이 있으면 좋겠다.md": {
+  "수정일": "2025-11-13T17:29:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/원클릭 ‘지저분 텍스트’ → ‘이쁜 보고서’ AI 찾기.md": {
+  "수정일": "2025-11-13T17:29:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/원클릭 마이크로트렌드 조사기_종.md": {
+  "수정일": "2026-01-05T19:27:00",
+  "notion_url": "https://app.notion.com/p/2dc4bd01fa018097948bca22c8af9854",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/이미지 검색 기반 LLM 컨센서스 템플릿 & 신규 템플릿 생성 기능.md": {
+  "수정일": "2025-12-29T23:26:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/인물 관계도 설정기-그래프.md": {
+  "수정일": "2026-01-19T22:44:00",
+  "notion_url": "https://app.notion.com/p/2ed4bd01fa0180058b0fd424eba1a85b",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/작가가 받아들인 단어의 뉘앙스 체계화.md": {
+  "수정일": "2025-12-18T20:15:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/작가의 Writer 페르소나 스텟창.md": {
+  "수정일": "2025-12-29T23:21:00",
+  "notion_url": "https://app.notion.com/p/2d54bd01fa01802b91b6c8d43a633598",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/작동 테스트!.md": {
+  "수정일": "2025-12-22T20:51:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/조르주 폴티 36가지 극적 국면.md": {
+  "수정일": "2025-12-29T23:18:00",
+  "notion_url": "https://app.notion.com/p/2d64bd01fa0180e189cde897ee6b73e1",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/주요 인물, 설정 자동 추출.md": {
+  "수정일": "2026-01-19T22:25:00",
+  "notion_url": "https://app.notion.com/p/2ed4bd01fa0180c8871de5a6d3410dcd",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/챗창에서 바로 제어하는 임베디드 위젯.md": {
+  "수정일": "2026-01-22T20:50:00",
+  "notion_url": "https://app.notion.com/p/2f04bd01fa0180adabcff7a388d445cb",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/카발라 시스템 세계관 아이데이션.md": {
+  "수정일": "2025-12-29T23:21:00",
+  "notion_url": "https://app.notion.com/p/2d54bd01fa0180d6bd53df5fa025bba6",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/캐릭터 믹서&조형 UI.md": {
+  "수정일": "2025-12-29T23:24:00",
+  "notion_url": "https://app.notion.com/p/2d04bd01fa01804f8c10c9cee980fd1c",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/캐릭터 생성기_detail 설정.md": {
+  "수정일": "2025-12-29T23:24:00",
+  "notion_url": "https://app.notion.com/p/2d04bd01fa0180fa8a9fd434c9f9f428",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/캐릭터 아크 추출, 표시기 - 그래프.md": {
+  "수정일": "2026-01-19T23:59:00",
+  "notion_url": "https://app.notion.com/p/2ed4bd01fa0180c798b4e200957af836",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/캐릭터 카드 컬렉션.md": {
+  "수정일": "2025-12-29T23:27:00",
+  "notion_url": "https://app.notion.com/p/2d04bd01fa01806f8550f5373c95730f",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/캐릭터별 ‘상징&용어’ 해석 관리 UI.md": {
+  "수정일": "2025-12-29T23:28:00",
+  "notion_url": "https://app.notion.com/p/2cd4bd01fa0180b89702f75c280400f0",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡",
+  "돌아가기": "https://app.notion.com/p/29b4bd01fa01809da1cdd91fd73978c5"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/키워드&용어 정리집,관리 UI.md": {
+  "수정일": "2025-12-29T23:29:00",
+  "notion_url": "https://app.notion.com/p/2cd4bd01fa01808b8a99f15856f23f5d",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡",
+  "돌아가기": "https://app.notion.com/p/29b4bd01fa01809da1cdd91fd73978c5"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/포스트잇 조각 사이 연결선-빈 칸 채우기.md": {
+  "수정일": "2025-12-29T23:16:00",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/포토샵 + 비디오 편집기 믹싱한 UI 구성.md": {
+  "수정일": "2025-12-29T23:32:00",
+  "notion_url": "https://app.notion.com/p/2b74bd01fa018037bf89ec0ee0b45eea",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/포토샵식 문서 피드백 레이어 관리 UI.md": {
+  "수정일": "2025-12-29T23:30:00",
+  "notion_url": "https://app.notion.com/p/2cd4bd01fa01801493e9eafa9edd911e",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/플롯 익히기 게임 - 템플릿 중심의 스토리 이어가기 게임.md": {
+  "수정일": "2025-12-29T23:24:00",
+  "notion_url": "https://app.notion.com/p/2d04bd01fa01800e98e8f78c1941a4eb",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/픽사 스토리 비트 분해기.md": {
+  "수정일": "2025-12-29T23:22:00",
+  "notion_url": "https://app.notion.com/p/2d34bd01fa0180819d48e23b6a5ff5a6",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/픽사식 그날의 감정을 기억 구슬로 보관히기 ui.md": {
+  "수정일": "2025-12-29T23:22:00",
+  "notion_url": "https://app.notion.com/p/2d24bd01fa0180ff923eebdd2019106b",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/픽사용 캐릭터 생성기_랜덤 믹싱 버전.md": {
+  "수정일": "2025-12-29T23:17:00",
+  "notion_url": "https://app.notion.com/p/2d64bd01fa0180568bdade00a1a2b834",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "3.📦(Resource) 자료/💡 브레인스토밍/픽사형 캐릭터 생성기_필터 적용 버전.md": {
+  "수정일": "2025-12-29T23:17:00",
+  "notion_url": "https://app.notion.com/p/2d64bd01fa0180b492b2e578e70cdcb6",
+  "notion_db": "브레인 스토밍",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/여행 관련/[특명] 가오슝 숙소를 찾아라.md": {
+  "중요도": "5",
+  "수정일": "2026-09-01"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[도움!] 이런 AI 있었으면!.md": {
+  "수정일": "2025-12-20T22:14:00",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[옛다 UI 아이디어] 이런 거 서비스 말면 좋을 듯.md": {
+  "수정일": "2026-02-10T18:02:38",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 거장] 영역 상관 없이 추천하는 글거장.md": {
+  "수정일": "2025-12-15T18:00:09",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등.md": {
+  "수정일": "2025-12-15T18:19:04",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[취미 모음] 진후 작가 밀착 취재!.md": {
+  "수정일": "2025-12-15T18:01:11",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/게임 속 바바리안으로 살아남기.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/공매도 쳤더니 백악관에서 전화 옴.md": {
+  "중요도": "3",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/괴력난신.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/다크 판타지 정상화.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/망겜의 시체줍는 천재전사.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/미국 트럭커가 골동품으로 대박남.md": {
+  "중요도": "3",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/반강제적 제국주의자.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/서울역 드루이드.md": {
+  "중요도": "3",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/악당들의 후원자가 되었다.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/약 먹는 천재 마법사.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/일타강사 백사부.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/재벌집 막내 아들.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/전능의 뇌를 얻었다.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/제목 없음.md": {
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/천재 흑마법사.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/철수를 구하시오.md": {
+  "중요도": "5",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등/하남자의 탑 공략법.md": {
+  "중요도": "3",
+  "notion_db": "👍🏻진후 추천 명작선"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/작가 요구사항 파악/[Youtube 채널] 작가 친구들.md": {
+  "수정일": "2025-11-28T01:24:42",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/작가 요구사항 파악/[웹소설 커뮤니티] 소설넷 리뷰 사이트.md": {
+  "수정일": "2025-12-15T18:03:45",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/작가 요구사항 파악/[창작 영역에 AI 괜찮은가] 웹툰 작가들의 AI 도입에 관련된 토론.md": {
+  "수정일": "2025-12-09T16:39:08",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ },
+ "4.🗄️(Archive) 보관/웹소설 어시스턴트/작가 요구사항 파악/[커뮤니티] 웹소설 작가 커뮤니티 발견.md": {
+  "수정일": "2025-11-25T01:42:39",
+  "notion_db": "current research DB",
+  "아이콘": "💡"
+ }
+}

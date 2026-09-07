@@ -10,11 +10,9 @@ views:
     order:
       - 담당
       - 작성자
-      - 중요도
       - 마감
     quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
     groupByProperty: note.상태
-    cardTitleProperty: note.제목
     swimlaneByProperty: note.분류
     imageProperty: note.커버
     imageFit: cover
@@ -43,11 +41,9 @@ views:
     order:
       - 담당
       - 작성자
-      - 중요도
       - 마감
     quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
     groupByProperty: note.상태
-    cardTitleProperty: note.제목
     swimlaneByProperty: note.담당
     imageProperty: note.커버
     imageFit: cover
@@ -88,7 +84,7 @@ views:
       - property: 마감
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: ⏳ 내가 기다리는 것
     filters:
@@ -100,12 +96,12 @@ views:
       - 작성자
       - 분류
       - 마감
-      - 수정일
+      - file.mtime
     sort:
-      - property: 수정일
+      - property: file.mtime
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 📅 일정 있음
     filters:
@@ -128,15 +124,13 @@ views:
       - 담당
       - 작성자
       - 분류
-      - 중요도
       - 마감
-      - 수정일
+      - file.mtime
     sort:
       - property: 상태
         direction: ASC
     summaries:
-      제목: Filled
-      중요도: Average
+      유형: Filled
       마감: Latest
   - type: cards
     name: 🎴 갤러리
@@ -144,7 +138,7 @@ views:
       property: 상태
       direction: ASC
     order:
-      - 제목
+      - file
       - 담당
       - 작성자
       - 마감

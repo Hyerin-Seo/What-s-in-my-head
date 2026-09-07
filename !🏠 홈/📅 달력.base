@@ -1,0 +1,38 @@
+filters:
+  or:
+    - and:
+        - note["유형"] == "휴가"
+        - not:
+            - note["작성일"].isEmpty()
+    - and:
+        - note["유형"] == "할일"
+        - not:
+            - note["마감"].isEmpty()
+        - not:
+            - note["상태"] == "히스토리"
+formulas:
+  일정시작: if(note["유형"] == "휴가", date(note["작성일"]), date(note["마감"]))
+  구분: if(note["유형"] == "휴가", "🏖️ 근무표", "⏰ 마감")
+views:
+  - type: calendar
+    name: 📅 이번 달
+    order:
+      - file
+      - formula.구분
+    startDate: formula.일정시작
+    endDate: note.마감
+    weekStartDay: sunday
+  - type: table
+    name: 📋 날짜 순
+    order:
+      - file
+      - formula.구분
+      - 상태
+      - formula.일정시작
+      - 마감
+      - 담당
+    sort:
+      - property: 마감
+        direction: ASC
+    summaries:
+      유형: Filled

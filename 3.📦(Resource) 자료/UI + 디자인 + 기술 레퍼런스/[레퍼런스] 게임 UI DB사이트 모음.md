@@ -1,5 +1,4 @@
 ---
-제목: "[레퍼런스] 게임 UI DB사이트 모음"
 유형: 레퍼런스
 구역: 3.resource
 분류:
@@ -7,10 +6,8 @@
 주제:
   - Second Brain
 상태: 검토 중
-중요도: 3
 요약: 모든 게임의 ui가 있는 DB
 작성일: 2026-01-27T16:32:34
-수정일:
 마감:
 커버: "[[3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/이미지/res_게임 UI DB사이트 모음_1.png]]"
 상위: https://app.notion.com/p/2964bd01fa01800c8645f7b3d4e24dc7
@@ -19,12 +16,8 @@
 작성자:
 # ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 원래 중요도: 중
-원래 상태: false
-아이콘: 🍴
 평가: ⭐️⭐️⭐️
 참고 포인트: 게임 ui 검색
-notion_url: https://app.notion.com/p/2f54bd01fa018032811efcbc28c32ab0
-notion_db: UI 레퍼런스 분석 DB
 ---
 
 ![[3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/이미지/res_게임 UI DB사이트 모음_1.png]]

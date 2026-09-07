@@ -20,7 +20,7 @@ views:
       - property: 작성일
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 🐶 개린
     filters:
@@ -34,7 +34,7 @@ views:
       - property: 작성일
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 📊 전부
     order:
@@ -46,6 +46,6 @@ views:
       - property: 작성일
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
 newItemFolder: 0.📥 인박스/🥭 망고 인박스
 newItemTemplate: 0.📥 인박스/!(Template) 새 메모.md

@@ -20,7 +20,7 @@ views:
       - property: 작성일
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 2️⃣ 멈춰 있는 일
     filters:
@@ -33,13 +33,13 @@ views:
       - 상태
       - 담당
       - 작성자
-      - 수정일
+      - file.mtime
       - 마감
     sort:
-      - property: 수정일
+      - property: file.mtime
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 3️⃣ 위임했는데 소식 없는 것
     filters:
@@ -50,13 +50,13 @@ views:
       - file
       - 담당
       - 작성자
-      - 수정일
+      - file.mtime
       - 마감
     sort:
-      - property: 수정일
+      - property: file.mtime
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 4️⃣ 검토만 하고 묵힌 자료
     filters:
@@ -71,7 +71,7 @@ views:
       - property: 작성일
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 5️⃣ 유형·구역이 빈 노트
     filters:
@@ -83,7 +83,7 @@ views:
       - 유형
       - 구역
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 6️⃣ 요약이 빈 자료
     filters:
@@ -101,4 +101,4 @@ views:
       - property: 작성일
         direction: DESC
     summaries:
-      제목: Filled
+      유형: Filled

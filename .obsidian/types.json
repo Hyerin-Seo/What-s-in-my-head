@@ -3,7 +3,7 @@
     "분류": "multitext",
     "주제": "multitext",
     "담당": "multitext",
-    "중요도": "number",
+    "작성자": "multitext",
     "마감": "date"
   }
 }

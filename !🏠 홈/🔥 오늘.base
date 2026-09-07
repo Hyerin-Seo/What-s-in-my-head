@@ -17,12 +17,9 @@ views:
       - 담당
       - 작성자
       - 마감
-      - 중요도
     sort:
-      - property: 중요도
-        direction: DESC
     summaries:
-      제목: Filled
+      유형: Filled
     columnSize:
       file.file: 749
   - type: table
@@ -44,7 +41,7 @@ views:
       - property: 마감
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
     columnSize:
       file.file: 751
       note.작성자: 108
@@ -60,12 +57,12 @@ views:
       - 작성자
       - 분류
       - 마감
-      - 수정일
+      - file.mtime
     sort:
-      - property: 수정일
+      - property: file.mtime
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 📥 인박스
     filters:
@@ -81,7 +78,7 @@ views:
       - property: 작성일
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: table
     name: 🕐 최근에 손댄 것
     filters:

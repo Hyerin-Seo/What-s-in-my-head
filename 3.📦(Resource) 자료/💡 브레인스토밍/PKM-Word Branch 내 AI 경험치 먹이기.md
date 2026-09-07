@@ -1,5 +1,4 @@
 ---
-제목: PKM-Word Branch 내 AI 경험치 먹이기
 유형: 아이디어
 구역: 3.resource
 분류:
@@ -10,10 +9,8 @@
   - 워드 그래프
   - 실시간 분석
 상태: 언젠가·아마도
-중요도:
 요약: 사용자의 글을 바탕으로 실시간 Word Graph 구축
 작성일: 2025-12-26T13:33:00
-수정일: 2025-12-29T23:21:00
 마감:
 커버: "[[3.📦(Resource) 자료/💡 브레인스토밍/이미지/bs_PKM-Word Branch 내 AI 경험치 먹이기_1.png]]"
 상위: https://app.notion.com/p/29b4bd01fa01809da1cdd91fd73978c5
@@ -22,11 +19,8 @@
 작성자:
   - "[[민규 서]]"
 # ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
-아이콘: 💡
 망고's 점수: 7
 개린's 점수: 8
-notion_url: https://app.notion.com/p/2d54bd01fa0180cea970da98b6063efc
-notion_db: 브레인 스토밍
 ---
 
 ![[3.📦(Resource) 자료/💡 브레인스토밍/이미지/bs_PKM-Word Branch 내 AI 경험치 먹이기_1.png]]

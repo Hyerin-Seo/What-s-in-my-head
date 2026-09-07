@@ -9,11 +9,9 @@ views:
     order:
       - 담당
       - 작성자
-      - 중요도
       - 마감
     quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
     groupByProperty: note.상태
-    cardTitleProperty: note.제목
     swimlaneByProperty: note.담당
     imageProperty: note.커버
     imageFit: cover
@@ -27,6 +25,22 @@ views:
         - 완료
         - 히스토리
     cardOrders:
+      "note.상태\x1fnote.담당":
+        "[[민규 서]]\x1f완료": []
+        "[[민규 서]]\x1f일정 있음": []
+        "[[민규 서]]\x1f위임함": []
+        "[[민규 서]]\x1f히스토리":
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(seo)자동화하고 싶은 task 100선.md
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(Draw)에이전트 시대 업무 환경 변화.md
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(Draw)기초 설계.md
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(Draw)LLM Brain 해체.md
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw)워크플로우 심층 해체.md
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(seo)이용자 사용 시나리오.md
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(GEN)AI Work 리스트.md
+        "[[Rin]]\x1f진행중": []
+        "[[민규 서]]\x1f진행중":
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성-VER2.md
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성.md
     columnColors:
       note.상태: {}
     swimlaneOrders:
@@ -44,21 +58,20 @@ views:
       - 상태
       - 담당
       - 작성자
-      - 중요도
       - 마감
-      - 수정일
+      - file.mtime
     sort:
       - property: 상태
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: cards
     name: 🎴 갤러리
     groupBy:
       property: 상태
       direction: ASC
     order:
-      - 제목
+      - file
       - 담당
       - 작성자
     image: 커버

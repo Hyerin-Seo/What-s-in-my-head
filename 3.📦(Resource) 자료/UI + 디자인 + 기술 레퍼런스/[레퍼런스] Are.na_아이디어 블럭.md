@@ -1,5 +1,4 @@
 ---
-제목: "[레퍼런스] Are.na_아이디어 블럭"
 유형: 레퍼런스
 구역: 3.resource
 분류:
@@ -7,10 +6,8 @@
 주제:
   - Second Brain
 상태: picked
-중요도: 3
 요약: 아이디어 블럭화 - 블럭 모음 - 블록 연결 → 새 아이디어
 작성일: 2025-10-24T13:31:32
-수정일:
 마감:
 커버: "[[3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/이미지/res_Are.na_아이디어 블럭_1.png]]"
 상위: https://app.notion.com/p/2964bd01fa01800c8645f7b3d4e24dc7
@@ -19,12 +16,8 @@
 작성자:
 # ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 원래 중요도: 중
-원래 상태: true
-아이콘: 🍴
 평가: ⭐️⭐️⭐️⭐️
 참고 포인트: 수익 모델, Block UI
-notion_url: https://app.notion.com/p/2964bd01fa0181e49ac1ec07b4f6da73
-notion_db: UI 레퍼런스 분석 DB
 ---
 
 ![[3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/이미지/res_Are.na_아이디어 블럭_1.png]]

@@ -1,5 +1,4 @@
 ---
-제목: "[레퍼런스] Standford d.school"
 유형: 레퍼런스
 구역: 3.resource
 분류:
@@ -8,10 +7,8 @@
   - 디자인 씽킹
   - 워크숍
 상태: 검토 중
-중요도:
 요약: 스탠퍼드 d.school — 디자인 씽킹 자료
 작성일: 2026-01-09T19:04:30
-수정일:
 마감:
 커버: "[[3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/이미지/res_Standford d.school_1.png]]"
 상위: https://app.notion.com/p/2964bd01fa01800c8645f7b3d4e24dc7
@@ -19,11 +16,8 @@
 담당:
 작성자:
 # ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
-원래 상태: false
-아이콘: 🍴
 평가:
 참고 포인트:
-notion_db: UI 레퍼런스 분석 DB
 ---
 
 ![[3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/이미지/res_Standford d.school_1.png]]

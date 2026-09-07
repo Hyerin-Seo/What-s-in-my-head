@@ -15,17 +15,17 @@ views:
       - 상위
       - 작성자
     sort:
-      - property: 제목
+      - property: file.name
         direction: ASC
     summaries:
-      제목: Filled
+      유형: Filled
   - type: cards
     name: 📖 책 읽고 남긴 것
     filters:
       and:
         - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적")
     order:
-      - 제목
+      - file
       - 요약
       - 상위
       - 작성자
@@ -46,7 +46,7 @@ views:
       - 주제
       - 작성자
     sort:
-      - property: 제목
+      - property: file.name
         direction: ASC
   - type: table
     name: ✈️ 여행 하네스 실습
@@ -59,7 +59,7 @@ views:
       - 주제
       - 상위
     sort:
-      - property: 제목
+      - property: file.name
         direction: ASC
   - type: table
     name: 🕳️ 요약이 빈 것

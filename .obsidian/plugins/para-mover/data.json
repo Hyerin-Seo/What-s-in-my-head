@@ -1,0 +1,19 @@
+{
+  "autoMove": true,
+  "writeBack": true,
+  "useClassFolder": true,
+  "notice": true,
+  "landing": {
+    "0.inbox": "0.📥 인박스/🥭 망고 인박스",
+    "1.project": "1.🎯(Project) 프로젝트",
+    "2.area": "2.🌱(Area) 관리 영역",
+    "3.resource": "3.📦(Resource) 자료",
+    "4.archive": "4.🗄️(Archive) 보관"
+  },
+  "exclude": [
+    "!🏠 홈",
+    "3.📦(Resource) 자료/!Template"
+  ],
+  "sweepOnStart": true,
+  "askAfterMove": true
+}

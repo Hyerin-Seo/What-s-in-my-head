@@ -1,5 +1,4 @@
 ---
-제목: "[감동의 눈물] 핀터레스트 + 구글 ai studio"
 유형: 자료
 구역: 2.area
 분류:
@@ -9,12 +8,10 @@
   - AI 오케스트레이션
   - 이미지 생성
 상태: 검토 중
-중요도:
 요약: |-
   - 증강 지능 (Augmented Intelligence)
   - AI 오케스트레이션 (AI Orchestration) / AI 디렉팅
 작성일: 2026-01-03T15:58:34
-수정일: 2026-01-03T16:50:48
 마감:
 커버: "[[2.🌱(Area) 관리 영역/AI가 보여준 신세계/이미지/res_감동의 눈물 핀터레스트 + 구글 ai studio_1.jpg]]"
 상위: https://app.notion.com/p/2a84bd01fa01818b8a7fffe8934ec43c
@@ -23,9 +20,6 @@
 작성자:
   - "[[민규 서]]"
 # ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
-아이콘: 💡
-분야: AI 활용 방안 연구
-notion_db: current research DB
 ---
 
 ![[2.🌱(Area) 관리 영역/AI가 보여준 신세계/이미지/res_감동의 눈물 핀터레스트 + 구글 ai studio_1.jpg]]

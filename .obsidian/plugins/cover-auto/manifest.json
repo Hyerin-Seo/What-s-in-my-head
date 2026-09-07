@@ -1,0 +1,9 @@
+{
+  "id": "cover-auto",
+  "name": "커버 자동 채우기",
+  "version": "1.0.0",
+  "minAppVersion": "1.10.2",
+  "description": "본문 최상단 이미지를 `커버` 속성에 자동으로 넣습니다. 커버가 비어 있을 때만 채우고, 이미지가 없으면 비워 둡니다.",
+  "author": "개똥이 머릿속",
+  "isDesktopOnly": false
+}

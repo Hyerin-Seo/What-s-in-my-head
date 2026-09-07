@@ -1,5 +1,4 @@
 ---
-제목: "[레퍼런스] OpenClaw(클로드봇, 몰타봇)"
 유형: 레퍼런스
 구역: 3.resource
 분류:
@@ -7,14 +6,12 @@
 주제:
   - Second Brain
 상태: 검토 중
-중요도: 5
 요약: |-
   - 능동형 AI(클로드랑 궁합이 젤 잘 맞는 듯)
   - Computer use
   - Context 관리
   - 챗 환경 통합(슬랙, Whatsapp)
 작성일: 2026-01-30T16:57:52
-수정일:
 마감:
 커버: "[[3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/이미지/res_OpenClaw(클로드봇, 몰타봇)_1.png]]"
 상위: https://app.notion.com/p/2964bd01fa01800c8645f7b3d4e24dc7
@@ -25,12 +22,8 @@
 작성자:
 # ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 원래 중요도: 상
-원래 상태: false
-아이콘: 🍴
 평가: ⭐️⭐️⭐️⭐️⭐️
 참고 포인트: 진짜 별도의 ‘동료’가 생긴 것 같다
-notion_url: https://app.notion.com/p/2f84bd01fa018083ac08eb590d6827b7
-notion_db: UI 레퍼런스 분석 DB
 ---
 
 ![[3.📦(Resource) 자료/UI + 디자인 + 기술 레퍼런스/이미지/res_OpenClaw(클로드봇, 몰타봇)_1.png]]
