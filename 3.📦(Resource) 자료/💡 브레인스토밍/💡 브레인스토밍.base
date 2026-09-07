@@ -2,6 +2,8 @@ filters:
   and:
     - file.ext == "md"
     - note["유형"] == "아이디어"
+    - note["구역"] == "3.resource"
+    - file.inFolder("3.📦(Resource) 자료/💡 브레인스토밍")
     - not:
         - file.name == "[아이디어] 제목"
 views:

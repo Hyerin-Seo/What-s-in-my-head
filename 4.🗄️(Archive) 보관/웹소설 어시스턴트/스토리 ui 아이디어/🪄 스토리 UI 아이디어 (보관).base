@@ -1,0 +1,31 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["구역"] == "4.archive"
+    - file.inFolder("4.🗄️(Archive) 보관/웹소설 어시스턴트/스토리 ui 아이디어")
+views:
+  - type: cards
+    name: 🗄️ 보관된 아이디어
+    groupBy:
+      property: 상태
+      direction: ASC
+    order:
+      - file
+      - 요약
+      - 분류
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 210
+  - type: table
+    name: 📊 전체 목록
+    order:
+      - file
+      - 상태
+      - 분류
+      - 요약
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: DESC
+newItemFolder: 4.🗄️(Archive) 보관/웹소설 어시스턴트/스토리 ui 아이디어
