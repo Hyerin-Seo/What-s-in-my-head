@@ -1,6 +1,6 @@
 ---
 유형: 아이디어
-구역: 3.resource
+구역: 4.archive
 분류:
   - NovelAI UI
   - 망고AI UI
