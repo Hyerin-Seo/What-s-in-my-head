@@ -39,6 +39,11 @@ const first = (v) => (Array.isArray(v) ? v[0] : v);
 const str = (v) => (first(v) == null ? "" : String(first(v)).trim());
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/** 모든 노트가 갖는 속성 13종. 순서까지 이 볼트의 약속입니다 */
+const STD = ["유형", "구역", "분류", "주제", "상태", "요약",
+             "작성일", "마감", "커버", "상위", "링크", "담당", "작성자"];
+const LIST_KEYS = ["분류", "주제", "담당", "작성자"];
+
 /** 옵시디언이 본문에 그려주는 이미지 확장자 (obsidian.asar 의 목록과 같게) */
 const IMG_EXT = ["bmp", "png", "jpg", "jpeg", "gif", "svg", "webp", "avif"];
 
@@ -260,6 +265,7 @@ class ParaMod extends Mod {
     this.zones = ZONES;
     this.busy = new Set();     // 내가 방금 건드린 경로 — 되돌아오는 이벤트를 무시한다
     this.timers = new Map();   // 경로별 디바운스
+    this.stampTimers = new Map();
 
     // 왼쪽 리본 — 언제든 누를 수 있는 자리
     this.addRibbonIcon("folder-symlink", "PARA 구역 정리 — 안 맞는 것 보기", () => this.audit());
@@ -279,12 +285,15 @@ class ParaMod extends Mod {
       this.registerEvent(
         this.app.vault.on("rename", (file, oldPath) => this.onMoved(file, oldPath))
       );
+      // 어느 폴더에서 만들든 인박스와 똑같이 — 속성 없는 노트는 어디에도 안 뜹니다
+      this.registerEvent(this.app.vault.on("create", (file) => this.queueStamp(file)));
 
       // 플러그인이 꺼져 있던 동안, 또는 다른 기기에서 속성만 고쳐진 동안 밀린 것을
       // 켜질 때 한 번 정리합니다. 명령을 따로 누르지 않아도 되게.
       // (메타데이터 캐시가 다 읽힐 시간을 조금 줍니다)
       this.startupTimer = setTimeout(async () => {
         if (this.settings.sweepOnStart) await this.sweep(true, "start");
+        if (this.settings.stampNew) await this.stampAll("start");
         this.refreshStatus();
         // 위치는 맞는데 유형·상태·분류가 옛 구역 값인 노트가 있으면 목록을 바로 엽니다.
         // (알림은 사라져 버려서 쓸모가 없습니다)
@@ -327,6 +336,21 @@ class ParaMod extends Mod {
         }
         return true;
       },
+    });
+    this.addCommand({
+      id: "stamp-active",
+      name: "이 노트에 속성 채우기 (빈 노트에 13종 얹기)",
+      checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
+        if (!file || file.extension !== "md") return false;
+        if (!checking) this.stamp(file, "cmd");
+        return true;
+      },
+    });
+    this.addCommand({
+      id: "stamp-all",
+      name: "볼트 전체 — 속성 없는 노트 채우기",
+      callback: () => this.stampAll("cmd"),
     });
     this.addCommand({
       id: "sweep",
@@ -440,6 +464,8 @@ class ParaMod extends Mod {
     clearTimeout(this.startupTimer);
     for (const t of this.timers.values()) clearTimeout(t);
     this.timers.clear();
+    for (const t of this.stampTimers.values()) clearTimeout(t);
+    this.stampTimers.clear();
   }
 
   async moveByZone(file, caller) {
@@ -526,6 +552,11 @@ class ParaMod extends Mod {
     // (`상태: 미처리` 도 인박스 전용 값이라 유형별 표에 없습니다)
     if (zoneKey === "0.inbox") return out;
 
+    if (!kind) {
+      // 유형이 없으면 어느 보드도 이 노트를 안 거릅니다. 안 보이는 게 제일 나쁩니다.
+      out.push(["유형", "비어 있습니다 — 보드는 유형으로 거르므로 어디에도 안 뜹니다"]);
+      return out;
+    }
     const allowedKinds = STRUCTURAL_KINDS.includes(kind) ? null : ZONE_KINDS[zoneKey];
     if (kind && allowedKinds && !allowedKinds.includes(kind)) {
       out.push(["유형", "“" + kind + "” 은 " + zoneKey + " 에 없는 유형입니다. 보드가 유형으로 거릅니다"]);
@@ -590,6 +621,158 @@ class ParaMod extends Mod {
       return;
     }
     new FixModal(this.app, this, file, bad).open();
+  }
+
+  /* ── 새 노트 속성 채우기 ──────────────────────────────────
+     인박스만 자동이고 나머지는 손으로, 일 이유가 없습니다. GTD 볼트라 "할머니한테
+     9시에 전화하기" 같은 노트가 프로젝트 폴더에서 바로 태어납니다. 속성이 없으면
+     그 노트는 **어느 보드에도 안 뜨고 어긋남 목록에도 안 잡힙니다** — 틀린 게 아니라
+     없는 것처럼 취급됩니다. 그게 제일 나쁩니다.
+
+     그래서 속성 13종을 바로 붙입니다. 채우는 것은 **자리가 말해주는 것뿐**입니다.
+
+     | 속성 | 어디서 | 확실한가 |
+     | 구역   | 폴더                                  | 확실 |
+     | 작성일 | 오늘                                  | 확실 |
+     | 유형   | 그 구역에 쓸 수 있는 유형이 하나뿐일 때 | 확실 (1.project → 할일) |
+     | 상태   | 그 유형이 쓰는 첫 값                   | 관례 (할일 → 진행중) |
+     | 분류   | 같은 폴더 이웃 → 없으면 상위 폴더 이름  | 관찰 (지어내지 않음) |
+
+     `2.area`(9종)·`3.resource`(7종)처럼 고를 여지가 있으면 **유형을 비워 둡니다.**
+     대신 비어 있다는 사실이 어긋남 목록(상태바 ⚠ PARA)에 잡히고, 이웃이 쓰는 유형을
+     누를 수 있는 알림으로 권합니다. 파일 이름이나 본문으로는 여전히 추측하지 않습니다. */
+
+  /** 이 구역에서 고민 없이 정할 수 있는 유형 (없으면 빈 문자열) */
+  kindForZone(zoneKey) {
+    if (zoneKey === "0.inbox") return "메모";     // 인박스 양식이 쓰는 값 — 판단을 미루는 자리
+    const ks = ZONE_KINDS[zoneKey];
+    return ks && ks.length === 1 ? ks[0] : "";
+  }
+
+  /** 이 노트가 속할 분류 — 이웃 먼저, 없으면 상위 폴더 이름 중 그 구역이 쓰는 것 */
+  classFor(file, zoneKey) {
+    const sib = this.suggestClass(file);
+    if (sib) return sib;
+    const known = new Set(this.classesInZone(zoneKey).map((c) => c[0]));
+    const parts = file.path.split("/");
+    parts.pop();                                   // 파일 이름 빼고
+    while (parts.length > 1) {                     // 구역 폴더까지 거슬러 올라간다
+      const name = parts[parts.length - 1];
+      if (known.has(name)) return name;
+      parts.pop();
+    }
+    return "";
+  }
+
+  /** 속성을 붙일 노트인가 — { zone, props, 확실치 않은 것 } 또는 null */
+  stampPlan(file) {
+    if (!(file instanceof TFile) || file.extension !== "md") return null;
+    if (this.isExcluded(file.path)) return null;
+    if (file.basename.startsWith("!(Template)")) return null;
+    const zoneKey = this.zoneOfPath(file.path);
+    if (!zoneKey) return null;                     // 구역 폴더 밖 (볼트 최상단 등)
+    const cache = this.app.metadataCache.getFileCache(file) || {};
+    if (cache.frontmatter) return null;            // 이미 있는 것은 절대 안 건드립니다
+
+    const kind = this.kindForZone(zoneKey);
+    const state = zoneKey === "0.inbox" ? "미처리"
+                : kind ? this.stateFor(zoneKey, kind, "") : "";
+    const cls = this.classFor(file, zoneKey);
+    return { zoneKey, kind, state, cls, file };
+  }
+
+  /** 프론트매터가 아예 없는 노트에 표준 13종을 얹는다 */
+  async stamp(file, caller) {
+    const p = this.stampPlan(file);
+    if (!p) {
+      if (caller === "cmd") new Notice("속성을 채울 것이 없습니다 (이미 있거나 구역 밖입니다).");
+      return false;
+    }
+    const today = todayYmd();
+    await this.app.vault.process(file, (data) => {
+      if (data.startsWith("---\n")) return data;   // 그 사이에 생겼으면 물러난다
+      const fm = ["---"];
+      for (const k of STD) {
+        if (k === "유형" && p.kind) fm.push("유형: " + p.kind);
+        else if (k === "구역") fm.push("구역: " + p.zoneKey);
+        else if (k === "상태" && p.state) fm.push("상태: " + p.state);
+        else if (k === "작성일") fm.push("작성일: " + today);
+        else if (k === "분류" && p.cls) fm.push("분류:", "  - " + yamlScalar(p.cls));
+        else fm.push(k + ":");
+      }
+      fm.push("---", "");
+      return fm.join("\n") + data;
+    });
+
+    const what = [p.kind || "유형 비움", p.zoneKey, p.state, p.cls].filter(Boolean).join(" · ");
+    if (p.kind) {
+      if (this.settings.notice) new Notice("🏷 " + file.basename + "\n" + what, 5000);
+    } else {
+      // 고를 여지가 있는 구역입니다. 지어내지 않고, 이웃이 쓰는 값을 눌러서 넣게 합니다.
+      this.offerKind(file);
+    }
+    this.refreshStatus();
+    return true;
+  }
+
+  /** 유형을 못 정했을 때 — 이웃이 쓰는 값을 누를 수 있는 알림으로 */
+  offerKind(file) {
+    const zoneKey = this.zoneOfPath(file.path);
+    const tally = new Map();
+    const parent = file.parent;
+    for (const sib of (parent ? parent.children : [])) {
+      if (!(sib instanceof TFile) || sib === file || sib.extension !== "md") continue;
+      const k = str(((this.app.metadataCache.getFileCache(sib) || {}).frontmatter || {})["유형"]);
+      if (k) tally.set(k, (tally.get(k) || 0) + 1);
+    }
+    let best = "", n = 0;
+    for (const [k, v] of tally) if (v > n) { best = k; n = v; }
+
+    const msg = "🏷 " + file.basename + "\n" + zoneKey + " 은 유형을 고를 수 있습니다." +
+      (best ? "\n같은 폴더는 “" + best + "” 를 씁니다 — 눌러서 넣기" : "\n눌러서 고르기");
+    const nt = new Notice(msg, 0);          // 저절로 사라지면 놓칩니다
+    nt.noticeEl.style.cursor = "pointer";
+    nt.noticeEl.onclick = async () => {
+      nt.hide();
+      if (best) {
+        await this.app.vault.process(file, (d) => setProps(d, {
+          "유형": best, "상태": this.stateFor(zoneKey, best, ""),
+        }));
+        new Notice("🏷 " + file.basename + "\n유형 → " + best, 4000);
+        this.refreshStatus();
+      } else {
+        new FixModal(this.app, this, file, this.mismatches(file)).open();
+      }
+    };
+  }
+
+  /** 만들자마자 채웁니다. 한 글자 치는 중에 튀지 않게 조금 기다립니다 */
+  queueStamp(file) {
+    if (!this.settings.stampNew) return;
+    if (!(file instanceof TFile) || file.extension !== "md") return;
+    const path = file.path;
+    clearTimeout(this.stampTimers.get(path));
+    this.stampTimers.set(path, setTimeout(() => {
+      this.stampTimers.delete(path);
+      const f = this.app.vault.getAbstractFileByPath(path);
+      if (f instanceof TFile) this.stamp(f, "auto");
+    }, 1500));
+  }
+
+  /** 속성이 아예 없는 노트 — 어느 보드에도 안 뜨는 것들 */
+  unstamped() {
+    return this.app.vault.getMarkdownFiles().filter((f) => this.stampPlan(f));
+  }
+
+  async stampAll(caller) {
+    const todo = this.unstamped();
+    if (!todo.length) {
+      if (caller !== "start") new Notice("속성이 없는 노트가 없습니다. ✔");
+      return;
+    }
+    let n = 0;
+    for (const f of todo) if (await this.stamp(f, "sweep")) n++;
+    new Notice("🏷 속성이 없던 노트 " + n + "개를 채웠습니다.", 8000);
   }
 
   /* ── 전체 훑기 ───────────────────────────────────────── */
@@ -1095,6 +1278,16 @@ ParaMod.prototype.displaySettings = function (c) {
     }));
 
   new Setting(c)
+    .setName("만들면 속성을 바로 붙인다")
+    .setDesc("어느 PARA 폴더에서 새 노트를 만들어도 인박스와 똑같이 속성 13종이 붙습니다. " +
+             "자리가 말해주는 것만 채웁니다 — 1.project 는 쓸 수 있는 유형이 `할일` " +
+             "하나뿐이라 확정하고, 고를 여지가 있는 구역이면 유형을 비운 채 알림으로 권합니다. " +
+             "속성이 없으면 그 노트는 어느 보드에도 안 뜹니다.")
+    .addToggle((t) => t.setValue(s.stampNew).onChange(async (v) => {
+      s.stampNew = v; await this.save();
+    }));
+
+  new Setting(c)
     .setName("폴더로 끌면 구역을 고친다")
     .setDesc("파일 탐색기에서 다른 구역으로 끌면 `구역` 속성을 그 폴더에 맞춰 씁니다.")
     .addToggle((t) => t.setValue(s.writeBack).onChange(async (v) => {
@@ -1154,9 +1347,6 @@ ParaMod.prototype.displaySettings = function (c) {
 const INBOX = "0.📥 인박스";
 const ATT_SUBDIR = "이미지";
 
-const STD = ["유형", "구역", "분류", "주제", "상태", "요약",
-             "작성일", "마감", "커버", "상위", "링크", "담당", "작성자"];
-const LIST_KEYS = ["분류", "주제", "담당", "작성자"];
 
 const IMG = IMG_EXT;          // 공통 목록 하나를 넷이 같이 씁니다
 const AV = ["mp3", "wav", "m4a", "3gp", "flac", "ogg", "oga", "opus",
@@ -1226,6 +1416,24 @@ class InboxMod extends Mod {
       id: "ai",
       name: "인박스 AI 요약·주제 채우기 (agy 호출 · 오래 걸립니다)",
       callback: () => this.runAi(),
+    });
+    // 자동은 인박스만 합니다 — 던져 넣은 첨부는 내용이 안 보이니까요.
+    // 손으로 쓴 노트는 본문이 생긴 **뒤에** 이 명령으로 부릅니다. 제목만 있는 노트를
+    // 요약하면 지어내는 것이 됩니다.
+    this.addCommand({
+      id: "ai-active",
+      name: "이 노트 요약·주제 채우기 (agy · 어느 폴더든)",
+      checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
+        if (!file || file.extension !== "md") return false;
+        if (!checking) {
+          new Notice("🤖 " + file.basename + " — agy 에 보냅니다…", 5000);
+          this.askAgy(file).catch((e) => {
+            new Notice("[인박스] 요약 실패 — " + String(e).slice(0, 160), 9000);
+          });
+        }
+        return true;
+      },
     });
   }
 
@@ -2325,6 +2533,7 @@ const DEFAULTS = {
     autoMove: true,        // 구역 속성을 고치면 바로 옮긴다
     sweepOnStart: true,    // 켜질 때 밀린 것을 한 번 정리한다
     askAfterMove: true,    // 옮긴 뒤 유형·상태·분류가 안 맞으면 물어본다
+    stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
     writeBack: true,       // 폴더로 끌면 구역 속성을 고쳐 쓴다
     useClassFolder: true,  // 분류 이름과 똑같은 하위 폴더가 있으면 거기로
     notice: true,          // 옮길 때 알림
