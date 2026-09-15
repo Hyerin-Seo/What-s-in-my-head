@@ -294,6 +294,7 @@ class ParaMod extends Mod {
       this.startupTimer = setTimeout(async () => {
         if (this.settings.sweepOnStart) await this.sweep(true, "start");
         if (this.settings.stampNew) await this.stampAll("start");
+        if (this.settings.authorFromName) await this.fillAuthorAll("start");
         this.refreshStatus();
         // 위치는 맞는데 유형·상태·분류가 옛 구역 값인 노트가 있으면 목록을 바로 엽니다.
         // (알림은 사라져 버려서 쓸모가 없습니다)
@@ -344,6 +345,21 @@ class ParaMod extends Mod {
         const file = this.app.workspace.getActiveFile();
         if (!file || file.extension !== "md") return false;
         if (!checking) this.stamp(file, "cmd");
+        return true;
+      },
+    });
+    this.addCommand({
+      id: "author-all",
+      name: "볼트 전체 — 파일 이름 앞머리로 작성자 채우기",
+      callback: () => this.fillAuthorAll("cmd"),
+    });
+    this.addCommand({
+      id: "author-active",
+      name: "이 노트 작성자 채우기 (파일 이름 앞머리)",
+      checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
+        if (!file || file.extension !== "md") return false;
+        if (!checking) this.fillAuthor(file, "cmd");
         return true;
       },
     });
@@ -704,6 +720,8 @@ class ParaMod extends Mod {
       return fm.join("\n") + data;
     });
 
+    if (this.settings.authorFromName) await this.fillAuthor(file, "stamp");
+
     const what = [p.kind || "유형 비움", p.zoneKey, p.state, p.cls].filter(Boolean).join(" · ");
     if (p.kind) {
       if (this.settings.notice) new Notice("🏷 " + file.basename + "\n" + what, 5000);
@@ -773,6 +791,80 @@ class ParaMod extends Mod {
     let n = 0;
     for (const f of todo) if (await this.stamp(f, "sweep")) n++;
     new Notice("🏷 속성이 없던 노트 " + n + "개를 채웠습니다.", 8000);
+  }
+
+  /* ── 파일 이름 앞머리로 `작성자` 채우기 ─────────────────────
+     이 볼트는 파일 이름 앞에 누가 썼는지를 붙여 왔습니다 — `(rin) …` `(gen) …`
+     `(seo) …`. 사람이 **직접 붙인 표시**라서 읽어도 되는 사실입니다.
+     (파일 이름으로 *내용*을 추측하는 것과는 다릅니다. 그건 여전히 안 합니다)
+
+     `(Draw)` `(GEN)AI Work` 처럼 대소문자가 섞여 있어 소문자로 맞춰 봅니다.
+     `(SEO&GEN)` 같이 둘이면 둘 다 넣습니다.
+     표에 없는 앞머리(`(draw)` `(idea)` `(meet)` …)는 **사람이 아니라 종류 표시**라
+     건너뜁니다. 표는 설정에서 고칩니다. */
+
+  /** 파일 이름 앞머리에서 작성자들을 읽는다. 모르는 앞머리면 빈 배열 */
+  authorsFromName(basename) {
+    const m = /^\s*\(([^)]{1,30})\)/.exec(basename);
+    if (!m) return [];
+    const map = this.settings.authorPrefix || {};
+    const keys = {};
+    for (const k of Object.keys(map)) keys[k.toLowerCase().trim()] = map[k];
+    const out = [];
+    for (const piece of m[1].split(/[&+,\/]/)) {
+      const who = keys[piece.toLowerCase().trim()];
+      if (who && !out.includes(who)) out.push(who);
+    }
+    return out;
+  }
+
+  /** 작성자가 **비어 있을 때만** 채웁니다. 사람이 적어 둔 값은 안 덮어씁니다 */
+  async fillAuthor(file, caller) {
+    const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
+    if (!fm) return false;
+    const cur = fm["작성자"];
+    const has = Array.isArray(cur) ? cur.filter(Boolean).length > 0 : Boolean(str(cur));
+    if (has) {
+      if (caller === "cmd") new Notice("이미 작성자가 적혀 있습니다 — 안 건드립니다.");
+      return false;
+    }
+    const who = this.authorsFromName(file.basename);
+    if (!who.length) {
+      if (caller === "cmd") {
+        new Notice("파일 이름 앞에 아는 표시가 없습니다.\n" +
+          "아는 것: " + Object.keys(this.settings.authorPrefix || {}).join(" · "), 7000);
+      }
+      return false;
+    }
+    await this.app.vault.process(file, (d) =>
+      setProps(d, { "작성자": who.map((w) => "[[" + w + "]]") }));
+    if (caller === "cmd" || this.settings.notice) {
+      new Notice("✍ " + file.basename + "\n작성자 → " + who.join(" · "), 5000);
+    }
+    return true;
+  }
+
+  /** 작성자가 비었는데 이름이 말해주는 노트들 */
+  authorlessNotes() {
+    return this.app.vault.getMarkdownFiles().filter((f) => {
+      if (this.isExcluded(f.path)) return false;
+      const fm = (this.app.metadataCache.getFileCache(f) || {}).frontmatter;
+      if (!fm) return false;
+      const cur = fm["작성자"];
+      const has = Array.isArray(cur) ? cur.filter(Boolean).length > 0 : Boolean(str(cur));
+      return !has && this.authorsFromName(f.basename).length > 0;
+    });
+  }
+
+  async fillAuthorAll(caller) {
+    const todo = this.authorlessNotes();
+    if (!todo.length) {
+      if (caller !== "start") new Notice("이름이 말해주는데 작성자가 빈 노트가 없습니다. ✔");
+      return;
+    }
+    let n = 0;
+    for (const f of todo) if (await this.fillAuthor(f, "sweep")) n++;
+    new Notice("✍ 작성자를 " + n + "개 채웠습니다. (파일 이름 앞머리 기준)", 8000);
   }
 
   /* ── 전체 훑기 ───────────────────────────────────────── */
@@ -1286,6 +1378,36 @@ ParaMod.prototype.displaySettings = function (c) {
     .addToggle((t) => t.setValue(s.stampNew).onChange(async (v) => {
       s.stampNew = v; await this.save();
     }));
+
+  new Setting(c)
+    .setName("파일 이름 앞머리로 작성자를 채운다")
+    .setDesc("`(rin) …` `(gen) …` `(seo) …` 처럼 이름 앞에 붙은 표시를 읽습니다. " +
+             "사람이 직접 붙인 표시라서 사실로 봅니다 — 파일 이름으로 내용을 추측하는 것과는 " +
+             "다릅니다. **작성자가 비어 있을 때만** 채우고, 적혀 있으면 안 건드립니다.")
+    .addToggle((t) => t.setValue(s.authorFromName).onChange(async (v) => {
+      s.authorFromName = v; await this.save();
+    }));
+
+  new Setting(c)
+    .setName("앞머리 → 작성자 표")
+    .setDesc("한 줄에 `앞머리 = 이름`. 표에 없는 앞머리(`(draw)` `(idea)` 같은 종류 표시)는 " +
+             "건너뜁니다. `(SEO&GEN)` 처럼 둘이면 둘 다 넣습니다.")
+    .addTextArea((t) => {
+      t.inputEl.rows = 4;
+      t.inputEl.style.width = "100%";
+      t.setValue(Object.entries(s.authorPrefix || {}).map((e) => e[0] + " = " + e[1]).join("\n"))
+        .onChange(async (v) => {
+          const map = {};
+          for (const line of v.split("\n")) {
+            const i = line.indexOf("=");
+            if (i < 0) continue;
+            const k = line.slice(0, i).trim(), who = line.slice(i + 1).trim();
+            if (k && who) map[k] = who;
+          }
+          s.authorPrefix = map;
+          await this.save();
+        });
+    });
 
   new Setting(c)
     .setName("폴더로 끌면 구역을 고친다")
@@ -2534,6 +2656,12 @@ const DEFAULTS = {
     sweepOnStart: true,    // 켜질 때 밀린 것을 한 번 정리한다
     askAfterMove: true,    // 옮긴 뒤 유형·상태·분류가 안 맞으면 물어본다
     stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
+    authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
+    authorPrefix: {        // 앞머리 → 작성자. 사람이 직접 붙인 표시라서 읽습니다
+      "rin": "Rin",
+      "gen": "Gemini",
+      "seo": "민규 서",
+    },
     writeBack: true,       // 폴더로 끌면 구역 속성을 고쳐 쓴다
     useClassFolder: true,  // 분류 이름과 똑같은 하위 폴더가 있으면 거기로
     notice: true,          // 옮길 때 알림
