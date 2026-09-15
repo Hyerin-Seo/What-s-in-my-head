@@ -18,11 +18,11 @@ views:
     imageAspectRatio: 0.667
     columnOrders:
       note.상태:
+        - to do
         - 진행중
-        - 위임함
-        - 일정 있음
-        - 기한만
+        - 확인 필요
         - 완료
+        - 퍼즈
         - 히스토리
     cardOrders:
       "note.상태\x1fnote.담당":
@@ -38,7 +38,6 @@ views:
         "[[민규 서]]\x1f히스토리": []
         "[[Rin]]\x1f진행중": []
         "[[민규 서]]\x1f진행중":
-          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성-VER2.md
           - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성.md
     columnColors:
       note.상태: {}

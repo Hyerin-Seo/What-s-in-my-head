@@ -18,11 +18,11 @@ views:
     imageAspectRatio: 0.667
     columnOrders:
       note.상태:
+        - to do
         - 진행중
-        - 위임함
-        - 일정 있음
-        - 기한만
+        - 확인 필요
         - 완료
+        - 퍼즈
         - 히스토리
     cardOrders:
       "note.상태\x1fnote.담당":

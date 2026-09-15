@@ -228,7 +228,10 @@ const ZONE_KINDS = {
    빈 배열은 그 유형이 상태를 아예 안 쓴다는 뜻입니다 (메모 40건·작품 17건·
    기업 15건·원칙 6건 전부 빈값). 그래서 유형이 바뀌면 상태를 비워야 합니다. */
 const KIND_STATES = {
-  "할일": ["진행중", "위임함", "일정 있음", "기한만", "완료", "히스토리"],
+  /* 진행 상황 순서. 칸반 칸이 이 순서 그대로입니다.
+     예전의 `위임함`·`일정 있음`·`기한만` 은 진행 상황이 아니라 **누가·언제** 라서
+     칸에서 빼고 속성으로 옮겼습니다 (담당 · 마감). */
+  "할일": ["to do", "진행중", "확인 필요", "완료", "퍼즈", "히스토리"],
   "자료": ["검토 중", "picked", "언젠가·아마도"],
   "레퍼런스": ["검토 중", "picked", "언젠가·아마도"],
   "아이디어": ["검토 중", "picked", "언젠가·아마도"],
@@ -242,6 +245,12 @@ const ALL_KINDS = Object.keys(KIND_STATES);
 
 /* 이 유형은 위치가 곧 역할이라 옮기지 않습니다 */
 const NEVER_MOVE_KINDS = ["홈", "대시보드"];
+
+/* 프로젝트 보드 — 칸반 하나에 모든 프로젝트, 프로젝트는 뷰로 고릅니다 */
+const PROJECT_ZONE = "1.🎯(Project) 프로젝트";
+const PROJECT_BOARD = PROJECT_ZONE + "/📋 프로젝트 보드.base";
+/* 이 말이 든 폴더는 프로젝트가 아닙니다 (그림·첨부 보관소) */
+const NOT_PROJECT = ["이미지", "image", "attachment", "첨부"];
 
 /* 구역과 상관없는 구조용 노트 — 유형 검사에서 뺍니다.
    `1. project` `3. resource` 같은 구역 대문 노트가 유형 `홈` 이고, 각자 자기 구역에
@@ -287,6 +296,8 @@ class ParaMod extends Mod {
       );
       // 어느 폴더에서 만들든 인박스와 똑같이 — 속성 없는 노트는 어디에도 안 뜹니다
       this.registerEvent(this.app.vault.on("create", (file) => this.queueStamp(file)));
+      // 프로젝트 폴더를 만들면 보드에 그 프로젝트 칸반 뷰가 붙습니다
+      this.registerEvent(this.app.vault.on("create", (file) => this.queueBoardSync(file)));
 
       // 플러그인이 꺼져 있던 동안, 또는 다른 기기에서 속성만 고쳐진 동안 밀린 것을
       // 켜질 때 한 번 정리합니다. 명령을 따로 누르지 않아도 되게.
@@ -295,6 +306,7 @@ class ParaMod extends Mod {
         if (this.settings.sweepOnStart) await this.sweep(true, "start");
         if (this.settings.stampNew) await this.stampAll("start");
         if (this.settings.authorFromName) await this.fillAuthorAll("start");
+        if (this.settings.syncProjectViews) await this.syncProjectViews("start");
         this.refreshStatus();
         // 위치는 맞는데 유형·상태·분류가 옛 구역 값인 노트가 있으면 목록을 바로 엽니다.
         // (알림은 사라져 버려서 쓸모가 없습니다)
@@ -347,6 +359,11 @@ class ParaMod extends Mod {
         if (!checking) this.stamp(file, "cmd");
         return true;
       },
+    });
+    this.addCommand({
+      id: "board-sync",
+      name: "프로젝트 보드에 빠진 프로젝트 뷰 붙이기",
+      callback: () => this.syncProjectViews("cmd"),
     });
     this.addCommand({
       id: "author-all",
@@ -482,6 +499,7 @@ class ParaMod extends Mod {
     this.timers.clear();
     for (const t of this.stampTimers.values()) clearTimeout(t);
     this.stampTimers.clear();
+    clearTimeout(this.boardTimer);
   }
 
   async moveByZone(file, caller) {
@@ -688,13 +706,17 @@ class ParaMod extends Mod {
     const zoneKey = this.zoneOfPath(file.path);
     if (!zoneKey) return null;                     // 구역 폴더 밖 (볼트 최상단 등)
     const cache = this.app.metadataCache.getFileCache(file) || {};
-    if (cache.frontmatter) return null;            // 이미 있는 것은 절대 안 건드립니다
+    const fm = cache.frontmatter;
+    // 이 볼트의 노트인가는 `구역`·`유형` 으로 봅니다. 프론트매터가 있어도 그 둘이 다
+    // 없으면 밖에서 들어온 것입니다 (엑스칼리드로우처럼 자기 속성만 가진 것도 여기).
+    if (fm && (str(fm["구역"]) || str(fm["유형"]))) return null;
+    const hadFm = Boolean(fm);
 
     const kind = this.kindForZone(zoneKey);
     const state = zoneKey === "0.inbox" ? "미처리"
                 : kind ? this.stateFor(zoneKey, kind, "") : "";
     const cls = this.classFor(file, zoneKey);
-    return { zoneKey, kind, state, cls, file };
+    return { zoneKey, kind, state, cls, file, hadFm };
   }
 
   /** 프론트매터가 아예 없는 노트에 표준 13종을 얹는다 */
@@ -705,20 +727,34 @@ class ParaMod extends Mod {
       return false;
     }
     const today = todayYmd();
-    await this.app.vault.process(file, (data) => {
-      if (data.startsWith("---\n")) return data;   // 그 사이에 생겼으면 물러난다
-      const fm = ["---"];
-      for (const k of STD) {
-        if (k === "유형" && p.kind) fm.push("유형: " + p.kind);
-        else if (k === "구역") fm.push("구역: " + p.zoneKey);
-        else if (k === "상태" && p.state) fm.push("상태: " + p.state);
-        else if (k === "작성일") fm.push("작성일: " + today);
-        else if (k === "분류" && p.cls) fm.push("분류:", "  - " + yamlScalar(p.cls));
-        else fm.push(k + ":");
-      }
-      fm.push("---", "");
-      return fm.join("\n") + data;
-    });
+    if (p.hadFm) {
+      // 이미 프론트매터가 있는 노트(엑스칼리드로우 등)는 **그 블록 안에** 덧붙입니다.
+      // 첫 줄들을 지우면 그림이 날아갑니다. setProps 는 없는 키만 뒤에 더합니다.
+      const props = {};
+      for (const k of STD) props[k] = "";
+      for (const k of LIST_KEYS) props[k] = [];
+      props["구역"] = p.zoneKey;
+      props["작성일"] = today;
+      if (p.kind) props["유형"] = p.kind;
+      if (p.state) props["상태"] = p.state;
+      if (p.cls) props["분류"] = [p.cls];
+      await this.app.vault.process(file, (data) => setProps(data, props));
+    } else {
+      await this.app.vault.process(file, (data) => {
+        if (data.startsWith("---\n")) return data;   // 그 사이에 생겼으면 물러난다
+        const out = ["---"];
+        for (const k of STD) {
+          if (k === "유형" && p.kind) out.push("유형: " + p.kind);
+          else if (k === "구역") out.push("구역: " + p.zoneKey);
+          else if (k === "상태" && p.state) out.push("상태: " + p.state);
+          else if (k === "작성일") out.push("작성일: " + today);
+          else if (k === "분류" && p.cls) out.push("분류:", "  - " + yamlScalar(p.cls));
+          else out.push(k + ":");
+        }
+        out.push("---", "");
+        return out.join("\n") + data;
+      });
+    }
 
     if (this.settings.authorFromName) await this.fillAuthor(file, "stamp");
 
@@ -865,6 +901,109 @@ class ParaMod extends Mod {
     let n = 0;
     for (const f of todo) if (await this.fillAuthor(f, "sweep")) n++;
     new Notice("✍ 작성자를 " + n + "개 채웠습니다. (파일 이름 앞머리 기준)", 8000);
+  }
+
+  /* ── 프로젝트 보드에 뷰 붙이기 ────────────────────────────
+     칸반은 **하나**입니다. 모든 프로젝트의 할일이 한 판에 들어가고, 프로젝트는
+     스윔레인이 아니라 **뷰**로 고릅니다. 프로젝트가 늘어도 판이 쪼개지지 않습니다.
+
+     프로젝트 = `1.🎯(Project) 프로젝트` **바로 아래 폴더**. 이미지·첨부 보관 폴더는
+     프로젝트가 아닙니다. 그래서 폴더를 하나 만들면 그게 새 프로젝트이고, 여기서
+     그 폴더만 거르는 칸반 뷰를 보드에 **덧붙입니다**.
+
+     덧붙이기만 합니다 — 보드를 통째로 다시 쓰지 않습니다. 칸반 플러그인이 카드를
+     끌 때마다 `cardOrders`·`columnColors` 를 그 파일에 적어 두기 때문에, 다시 쓰면
+     사람이 맞춰 둔 순서가 날아갑니다. */
+
+  /** 프로젝트 폴더들 — 이미지·첨부 보관소는 뺍니다 */
+  projectFolders() {
+    const root = this.app.vault.getAbstractFileByPath(PROJECT_ZONE);
+    if (!(root instanceof TFolder)) return [];
+    return root.children
+      .filter((f) => f instanceof TFolder && this.isProjectFolder(f.name))
+      .map((f) => f.name)
+      .sort();
+  }
+
+  isProjectFolder(name) {
+    if (name.startsWith(".") || name.startsWith("!")) return false;
+    const low = name.toLowerCase();
+    return !NOT_PROJECT.some((bad) => low.includes(bad));
+  }
+
+  /** 칸반 뷰 한 덩어리 (보드 파일에 들어갈 줄들) */
+  kanbanViewLines(name, folder) {
+    const L = ["  - type: kanban-view", "    name: " + name];
+    if (folder) {
+      L.push("    filters:", "      and:",
+        '        - file.inFolder("' + PROJECT_ZONE + "/" + folder + '")');
+    }
+    L.push("    order:", "      - 담당", "      - 마감", "      - 작성자");
+    L.push("    quickAddFolder: " + (folder ? PROJECT_ZONE + "/" + folder : PROJECT_ZONE));
+    L.push("    groupByProperty: note.상태");
+    // 스윔레인은 일부러 안 넣습니다 — 프로젝트 구분 없이 한 판으로 봅니다
+    L.push("    imageProperty: note.커버", "    imageFit: cover",
+           "    imageAspectRatio: 0.667");
+    L.push("    columnOrders:", "      note.상태:");
+    for (const c of (KIND_STATES["할일"] || [])) L.push("        - " + c);
+    L.push("    columnColors:", "      note.상태: {}");
+    return L;
+  }
+
+  /** 보드에 없는 프로젝트의 뷰를 덧붙인다. 더한 프로젝트 이름들을 돌려줍니다 */
+  async syncProjectViews(caller) {
+    const board = this.app.vault.getAbstractFileByPath(PROJECT_BOARD);
+    if (!(board instanceof TFile)) {
+      if (caller === "cmd") new Notice("프로젝트 보드를 못 찾았습니다:\n" + PROJECT_BOARD, 8000);
+      return [];
+    }
+    const folders = this.projectFolders();
+    const added = [];
+    await this.app.vault.process(board, (data) => {
+      const lines = data.split("\n");
+      const missing = folders.filter((f) =>
+        !lines.some((l) => l.trim() === "name: " + f));
+      if (!missing.length) return data;
+
+      // 마지막 칸반 뷰 다음에 끼웁니다 (칸반끼리 모여 있게)
+      let at = -1;
+      for (let i = 0; i < lines.length; i++) {
+        if (lines[i].trim() === "- type: kanban-view") at = i;
+      }
+      if (at < 0) {
+        at = lines.findIndex((l) => l.trim() === "views:");
+        if (at < 0) return data;
+        at += 1;
+      } else {
+        at += 1;
+        while (at < lines.length && !/^ {2}- /.test(lines[at])) at++;
+      }
+      const block = [];
+      for (const f of missing) {
+        block.push(...this.kanbanViewLines(f, f));
+        added.push(f);
+      }
+      lines.splice(at, 0, ...block);
+      return lines.join("\n");
+    });
+
+    if (added.length) {
+      new Notice("📋 프로젝트 보드에 뷰를 더했습니다:\n" + added.join(" · "), 8000);
+    } else if (caller === "cmd") {
+      new Notice("프로젝트 보드에 모든 프로젝트가 이미 있습니다. ✔");
+    }
+    return added;
+  }
+
+  /** 프로젝트 폴더가 새로 생기면 뷰를 붙입니다 */
+  queueBoardSync(file) {
+    if (!this.settings.syncProjectViews) return;
+    if (!(file instanceof TFolder)) return;
+    const parts = file.path.split("/");
+    if (parts.length !== 2 || parts[0] !== PROJECT_ZONE) return;   // 바로 아래만
+    if (!this.isProjectFolder(file.name)) return;
+    clearTimeout(this.boardTimer);
+    this.boardTimer = setTimeout(() => this.syncProjectViews("auto"), 3000);
   }
 
   /* ── 전체 훑기 ───────────────────────────────────────── */
@@ -1377,6 +1516,16 @@ ParaMod.prototype.displaySettings = function (c) {
              "속성이 없으면 그 노트는 어느 보드에도 안 뜹니다.")
     .addToggle((t) => t.setValue(s.stampNew).onChange(async (v) => {
       s.stampNew = v; await this.save();
+    }));
+
+  new Setting(c)
+    .setName("프로젝트 폴더가 생기면 보드에 뷰를 붙인다")
+    .setDesc("`" + PROJECT_ZONE + "` 바로 아래 폴더가 곧 프로젝트입니다. " +
+             "새로 만들면 그 프로젝트만 거르는 칸반 뷰가 프로젝트 보드에 붙습니다. " +
+             "덧붙이기만 하고 보드를 다시 쓰지는 않습니다 — 카드 순서가 날아가니까요. " +
+             "이미지·첨부 폴더는 프로젝트로 안 봅니다.")
+    .addToggle((t) => t.setValue(s.syncProjectViews).onChange(async (v) => {
+      s.syncProjectViews = v; await this.save();
     }));
 
   new Setting(c)
@@ -2657,6 +2806,7 @@ const DEFAULTS = {
     askAfterMove: true,    // 옮긴 뒤 유형·상태·분류가 안 맞으면 물어본다
     stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
     authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
+    syncProjectViews: true, // 프로젝트 폴더가 생기면 보드에 칸반 뷰를 붙인다
     authorPrefix: {        // 앞머리 → 작성자. 사람이 직접 붙인 표시라서 읽습니다
       "rin": "Rin",
       "gen": "Gemini",
