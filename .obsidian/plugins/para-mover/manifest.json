@@ -1,9 +1,0 @@
-{
-  "id": "para-mover",
-  "name": "PARA 구역 정리",
-  "version": "1.0.0",
-  "minAppVersion": "1.10.2",
-  "description": "구역 속성을 바꾸면 노트를 그 PARA 폴더로 옮기고, 폴더로 끌면 구역 속성을 고칩니다. 상태(진행중·검토 중 등)는 건드리지 않습니다.",
-  "author": "개똥이 머릿속",
-  "isDesktopOnly": false
-}

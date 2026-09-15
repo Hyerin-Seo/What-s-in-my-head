@@ -29,5 +29,6 @@
   "publish": false,
   "sync": true,
   "bases": true,
-  "webviewer": true
+  "webviewer": true,
+  "open-with-default-app": true
 }

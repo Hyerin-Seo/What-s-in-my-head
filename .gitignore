@@ -15,3 +15,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 합치기 전 플러그인 백업 (로컬 안전망 — 옛 코드는 git 히스토리에 이미 있습니다)
+.obsidian/_옛 플러그인*/

@@ -5,8 +5,22 @@ filters:
         - file.name.startsWith("!(Template)")
     - not:
         - file.name == "📥 인박스 사용법"
+    - not:
+        - file.name == "📥 인박스 대시보드"
     - file.inFolder("0.📥 인박스")
 views:
+  - type: cards
+    name: 🎴 카드 갤러리
+    order:
+      - file
+      - 유형
+      - 상태
+      - 요약
+      - 작성일
+      - 커버
+    sort:
+      - property: 작성일
+        direction: DESC
   - type: table
     name: 🥭 망고
     filters:
@@ -48,4 +62,4 @@ views:
     summaries:
       유형: Filled
 newItemFolder: 0.📥 인박스/🥭 망고 인박스
-newItemTemplate: 0.📥 인박스/!(Template) 새 메모.md
+newItemTemplate: 0.📥 인박스/!(Template) 새 인박스 노트.md

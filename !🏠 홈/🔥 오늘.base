@@ -70,6 +70,7 @@ views:
         - note["구역"] == "0.inbox"
         - note["유형"] != "일지"
         - note["유형"] != "대시보드"
+        - note["유형"] != "홈"
     order:
       - file
       - 요약

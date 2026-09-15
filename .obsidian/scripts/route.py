@@ -4,8 +4,8 @@
   python route.py                                현황
   python route.py --fill [--write]               맡김 폴더 속성 채우기 (에이전트가 먼저 실행)
   python route.py --repair [--write]             직접 옮긴 노트의 구역·빠진 속성 수리
-  python route.py "제목" 3.resource [--write]      첨부까지 데리고 이동
-  python route.py "제목" "3.📦(Resource) 자료/AI가 보여준 신세계" --write
+  python route.py "파일명" 3.resource [--write]     첨부까지 데리고 이동
+  python route.py "파일명" "3.📦(Resource) 자료/AI가 보여준 신세계" --write
 
 폴더
   0.📥 인박스/🥭 망고 인박스   민규 서
@@ -32,7 +32,7 @@ ZONE_DIR = {"0.inbox": INB,
 ATT = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".pdf",
        ".mp4", ".mov", ".webm", ".mp3", ".wav")
 IMG = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg")
-STD = ["제목", "유형", "구역", "분류", "주제", "상태", "요약",
+STD = ["유형", "구역", "분류", "주제", "상태", "요약",
        "작성일", "마감", "커버", "상위", "링크", "담당", "작성자"]
 MARK = "# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──"
 
@@ -127,14 +127,6 @@ def write_fm(p, fm, body):
 
 def q(v): return '"%s"' % v if v else ""   # 위키링크 포함 전부 감싼다
 
-def title_of(body, fallback):
-    m = re.search(r"^#\s+(.+)$", body, re.M)
-    if m: return m.group(1).strip()
-    for ln in body.split("\n"):
-        t = ln.strip().lstrip("*> ").strip()
-        if t and not t.startswith(("!", "[", "#", "|", "-")): return t[:60]
-    return fallback
-
 def zone_of_path(r):
     if r == INB or r.startswith(INB + "/"): return "0.inbox"
     top = r.split("/")[0]
@@ -165,7 +157,7 @@ if "--fill" in sys.argv:
             os.makedirs(img, exist_ok=True)
             shutil.move(p, os.path.join(img, f))
             fm = {k: "" for k in STD}
-            fm.update({"제목": q(stem), "유형": q("자료"), "구역": q("0.inbox"),
+            fm.update({"유형": q("자료"), "구역": q("0.inbox"),
                        "상태": q("미처리"), "작성일": q(today), "담당": "",
                        "커버": "[[%s]]" % newatt if is_img else "",
                        "인박스 처리": q("맡김")})
@@ -177,7 +169,7 @@ if "--fill" in sys.argv:
         if not f.endswith(".md"): continue
         p = os.path.join(d, f)
         fm, body = read_fm(p)
-        miss = [k for k in STD if k not in fm or (k == "제목" and not fm.get(k))]
+        miss = [k for k in STD if k not in fm]
         pulled = [a for a in sorted(attachments_of(p))
                   if not a.startswith(TODO + "/") and not other_users(a, p)]
         if not miss and not pulled and fm.get("인박스 처리"): continue
@@ -186,8 +178,7 @@ if "--fill" in sys.argv:
             for a in sorted(attachments_of(p)):
                 if os.path.splitext(a)[1].lower() in IMG: cover = "[[%s]]" % a; break
         new = {k: fm.get(k, "") for k in STD}
-        new.update({"제목": fm.get("제목") or q(title_of(body, f[:-3])),
-                    "유형": fm.get("유형") or q("메모"), "구역": q("0.inbox"),
+        new.update({"유형": fm.get("유형") or q("메모"), "구역": q("0.inbox"),
                     "상태": fm.get("상태") or q("미처리"),
                     "작성일": fm.get("작성일") or q(today),
                     "담당": fm.get("담당") or "", "커버": cover})
@@ -248,7 +239,6 @@ if "--repair" in sys.argv:
             new = {k: fm.get(k, "") for k in STD}
             new["구역"] = q(want)
             if state_fix: new["상태"] = q(state_fix)
-            if not new.get("제목"): new["제목"] = q(title_of(body, os.path.basename(p)[:-3]))
             if not new.get("유형"): new["유형"] = q("메모")
             for k in fm:
                 if k not in STD: new[k] = fm[k]
@@ -288,7 +278,7 @@ if len(args) < 2:
         print("%s — %d개" % (label, len(items)))
         for f in items: print("   %s" % f[:64])
     print("\n맡김 준비 :  python .obsidian/scripts/route.py --fill --write")
-    print("옮기기    :  python .obsidian/scripts/route.py \"제목\" 3.resource --write")
+    print("옮기기    :  python .obsidian/scripts/route.py \"파일명\" 3.resource --write")
     print("수리      :  python .obsidian/scripts/route.py --repair --write")
     sys.exit()
 

@@ -5,6 +5,7 @@ filters:
     - file.ext == "md"
     - note["유형"] != "양식"
     - note["유형"] != "대시보드"
+    - note["유형"] != "홈"
 views:
   - type: table
     name: 1️⃣ 인박스 비우기

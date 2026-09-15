@@ -1,0 +1,23 @@
+{
+ "type": "object",
+ "properties": {
+  "요약": {
+   "type": "string",
+   "description": "이 자료가 무엇인지 한 문장. 40자 안쪽. 마침표 없이."
+  },
+  "주제": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "minItems": 2,
+   "maxItems": 5,
+   "description": "검색용 한국어 키워드. 명사구. 해시태그 기호 없이."
+  }
+ },
+ "required": [
+  "요약",
+  "주제"
+ ],
+ "additionalProperties": false
+}

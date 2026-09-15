@@ -1504,6 +1504,100 @@ function planColorWrap(lineText, tagName, style) {
   };
 }
 
+// src/codeFence.ts
+var FENCE2 = /^\s*(```|~~~)/;
+function findCodeFence(doc, lineNo) {
+  let openChar = null;
+  let openLine = 0;
+  let n = 0;
+  for (const text of doc.iterLines()) {
+    n++;
+    const match = FENCE2.exec(text);
+    if (n <= lineNo) {
+      if (match) {
+        if (openChar === null) {
+          openChar = match[1];
+          openLine = n;
+        } else if (match[1] === openChar) {
+          if (n === lineNo)
+            return { openLine, closeLine: n };
+          openChar = null;
+          openLine = 0;
+        }
+      }
+      if (n === lineNo && openChar === null)
+        return null;
+      continue;
+    }
+    if (match && match[1] === openChar)
+      return { openLine, closeLine: n };
+  }
+  return openChar === null ? null : { openLine, closeLine: null };
+}
+function isInsideCodeFence(doc, lineNo) {
+  const fence = findCodeFence(doc, lineNo);
+  return fence !== null && lineNo > fence.openLine;
+}
+function findFencedLines(doc) {
+  const fenced = /* @__PURE__ */ new Set();
+  let openChar = null;
+  let n = 0;
+  for (const text of doc.iterLines()) {
+    n++;
+    const match = FENCE2.exec(text);
+    if (openChar !== null) {
+      fenced.add(n);
+      if (match && match[1] === openChar) {
+        openChar = null;
+      }
+      continue;
+    }
+    if (match)
+      openChar = match[1];
+  }
+  return fenced;
+}
+function codeFenceContent(doc, lineNo) {
+  const fence = findCodeFence(doc, lineNo);
+  if (!fence)
+    return null;
+  const first = fence.openLine + 1;
+  const last = fence.closeLine === null ? doc.lines : fence.closeLine - 1;
+  if (last < first)
+    return null;
+  return { from: doc.line(first).from, to: doc.line(last).to };
+}
+function findFenceSpans(doc) {
+  const spans = /* @__PURE__ */ new Map();
+  let openChar = null;
+  let open = [];
+  let n = 0;
+  const close = (lastLine) => {
+    const span = { firstLine: open[0], lastLine };
+    for (const line of open)
+      spans.set(line, span);
+    openChar = null;
+    open = [];
+  };
+  for (const text of doc.iterLines()) {
+    n++;
+    const match = FENCE2.exec(text);
+    if (openChar === null) {
+      if (match) {
+        openChar = match[1];
+        open = [n];
+      }
+      continue;
+    }
+    open.push(n);
+    if (match && match[1] === openChar)
+      close(n);
+  }
+  if (openChar !== null)
+    close(n);
+  return spans;
+}
+
 // src/notionActionMenu.ts
 var TEXT_COLORS = [
   { id: "default", label: "\u9ED8\u8BA4\u6587\u672C", value: "", className: "is-default" },
@@ -1848,9 +1942,13 @@ var NotionBlockActionMenu = class {
     return (_a = CALLOUT_ICONS[type.toLowerCase()]) != null ? _a : CALLOUT_ICONS.note;
   }
   deleteLine() {
-    const line = this.view.state.doc.line(this.lineNo);
-    const from = line.number === 1 ? line.from : line.from - 1;
-    const to = line.number === 1 && this.view.state.doc.lines > 1 ? line.to + 1 : line.to;
+    var _a, _b;
+    const doc = this.view.state.doc;
+    const span = findFenceSpans(doc).get(this.lineNo);
+    const first = doc.line((_a = span == null ? void 0 : span.firstLine) != null ? _a : this.lineNo);
+    const last = doc.line((_b = span == null ? void 0 : span.lastLine) != null ? _b : this.lineNo);
+    const from = first.number === 1 ? first.from : first.from - 1;
+    const to = first.number === 1 && doc.lines > last.number ? last.to + 1 : last.to;
     dispatchBlockEdit(this.view, {
       changes: { from, to, insert: "" },
       scrollIntoView: true,
@@ -2545,16 +2643,19 @@ function trimBlankEdges(doc, first, last) {
     last--;
   return [first, last];
 }
-function toRange(doc, first, last) {
+function toRange(doc, first, last, isFence) {
   return {
     from: doc.line(first).from,
     to: doc.line(last).to,
     firstLine: first,
     lastLine: last,
-    indent: indentWidth(doc.line(first).text)
+    indent: indentWidth(doc.line(first).text),
+    isFence
   };
 }
 function resolveDragRange(doc, lineNo, granularity, selection) {
+  var _a, _b, _c, _d;
+  const spans = findFenceSpans(doc);
   if (selection) {
     for (const range of selection.ranges) {
       if (range.empty)
@@ -2565,16 +2666,23 @@ function resolveDragRange(doc, lineNo, granularity, selection) {
         continue;
       if (lineNo >= first && lineNo <= last) {
         const [f, l] = trimBlankEdges(doc, first, last);
-        return toRange(doc, f, l);
+        const wideFirst = (_b = (_a = spans.get(f)) == null ? void 0 : _a.firstLine) != null ? _b : f;
+        const wideLast = (_d = (_c = spans.get(l)) == null ? void 0 : _c.lastLine) != null ? _d : l;
+        const span2 = spans.get(wideFirst);
+        const whollyOneFence = span2 !== void 0 && span2.firstLine === wideFirst && span2.lastLine === wideLast;
+        return toRange(doc, wideFirst, wideLast, whollyOneFence);
       }
     }
   }
+  const span = spans.get(lineNo);
+  if (span)
+    return toRange(doc, span.firstLine, span.lastLine, true);
   if (granularity === "paragraph" && !isBlank(doc.line(lineNo).text)) {
     const start = findBlockStart(doc, lineNo);
     const end = findBlockEnd(doc, start);
-    return toRange(doc, start, end);
+    return toRange(doc, start, end, false);
   }
-  return toRange(doc, lineNo, lineNo);
+  return toRange(doc, lineNo, lineNo, false);
 }
 function isListItem(text) {
   return /^[ \t]*([-*+]|\d+[.)])[ \t]/.test(text);
@@ -2629,6 +2737,7 @@ function reindentBlock(text, fromIndent, toIndent) {
 }
 var GHOST_TEXT_LIMIT = 50;
 function countBlocks(doc, firstLine, lastLine) {
+  const spans = findFenceSpans(doc);
   let count = 0;
   let n = firstLine;
   while (n <= lastLine) {
@@ -2636,7 +2745,8 @@ function countBlocks(doc, firstLine, lastLine) {
       n++;
       continue;
     }
-    const end = findBlockEnd(doc, findBlockStart(doc, n));
+    const span = spans.get(n);
+    const end = span ? span.lastLine : findBlockEnd(doc, findBlockStart(doc, n));
     count++;
     n = Math.max(end, n) + 1;
   }
@@ -2870,6 +2980,14 @@ var DragManager = class {
     this.currentAllowedIndents = [0];
     /** Line the cached indents were computed for; null means they are stale. */
     this.indentsForLine = null;
+    /**
+     * Fence spans as of drag start, for keeping a drop out of the middle of
+     * someone's code. Read once: the document cannot change mid-drag, and this
+     * is consulted on every pointer frame.
+     */
+    this.fenceSpans = /* @__PURE__ */ new Map();
+    /** A code block never re-indents on drop, so it is offered no choice. */
+    this.draggingFence = false;
     this.indentUnit = 4;
     this.metrics = null;
     this.onViewportChange = () => {
@@ -2928,6 +3046,8 @@ var DragManager = class {
       lastLine: range.lastLine
     };
     this.indentUnit = detectIndentUnit(doc);
+    this.draggingFence = range.isFence;
+    this.fenceSpans = findFenceSpans(doc);
     this.ghostEl = this.ownerDocument.body.createDiv({
       cls: "block-drag-ghost",
       text: describeDragGhost(
@@ -2971,6 +3091,8 @@ var DragManager = class {
     this.currentTargetLine = null;
     this.indentsForLine = null;
     this.metrics = null;
+    this.draggingFence = false;
+    this.fenceSpans = /* @__PURE__ */ new Map();
     if (this.ghostEl) {
       this.ghostEl.remove();
       this.ghostEl = null;
@@ -3007,6 +3129,7 @@ var DragManager = class {
    * per frame instead of one per probe.
    */
   processMove(mouseX, mouseY) {
+    var _a, _b;
     if (!this.isDragging)
       return;
     const m = this.readMetrics();
@@ -3031,6 +3154,9 @@ var DragManager = class {
           const hiddenUntil = foldHidingLineEnd(this.view, targetLine);
           if (hiddenUntil !== null)
             targetLine = hiddenUntil + 1;
+          const fence = this.fenceSpans.get(targetLine);
+          if (fence && targetLine > fence.firstLine)
+            targetLine = fence.lastLine + 1;
           this.currentTargetLine = targetLine;
           if (this.indentsForLine !== targetLine) {
             this.currentAllowedIndents = allowedIndents(
@@ -3040,14 +3166,14 @@ var DragManager = class {
             );
             this.indentsForLine = targetLine;
           }
-          const desired = Math.max(0, Math.round((mouseX - m.contentLeft) / m.columnPx));
+          const desired = this.draggingFence ? (_b = (_a = this.startBlock) == null ? void 0 : _a.indent) != null ? _b : 0 : Math.max(0, Math.round((mouseX - m.contentLeft) / m.columnPx));
           this.currentTargetIndent = pickIndent(this.currentAllowedIndents, desired);
           const offsetPx = this.currentTargetIndent * m.columnPx;
           paint = {
             top,
             left: coords.left + offsetPx,
             width: Math.max(40, m.contentWidth - offsetPx),
-            hasChoice: this.currentAllowedIndents.length > 1
+            hasChoice: !this.draggingFence && this.currentAllowedIndents.length > 1
           };
         }
       } catch (e) {
@@ -3573,9 +3699,60 @@ var import_state2 = require("@codemirror/state");
 
 // src/markerRanges.ts
 var PAIRED = ["***", "___", "**", "__", "==", "~~", "*", "_"];
-var FENCE2 = /^\s*(```|~~~|\$\$)/;
+var FENCE3 = /^\s*(```|~~~|\$\$)/;
+var URL_END = /[\s)\]>]/;
+function linkLength(text, i) {
+  const wiki = text.startsWith("![[", i) ? 3 : text.startsWith("[[", i) ? 2 : 0;
+  if (wiki > 0) {
+    const close = text.indexOf("]]", i + wiki);
+    return close === -1 ? 0 : close + 2 - i;
+  }
+  const bracketAt = text.startsWith("![", i) ? i + 1 : text[i] === "[" ? i : -1;
+  if (bracketAt !== -1) {
+    let depth = 0;
+    let j = bracketAt;
+    for (; j < text.length; j++) {
+      if (text[j] === "\\") {
+        j++;
+        continue;
+      }
+      if (text[j] === "[")
+        depth++;
+      else if (text[j] === "]" && --depth === 0)
+        break;
+    }
+    if (depth !== 0 || text[j + 1] !== "(")
+      return 0;
+    let open = 0;
+    let k = j + 1;
+    for (; k < text.length; k++) {
+      if (text[k] === "\\") {
+        k++;
+        continue;
+      }
+      if (text[k] === "(")
+        open++;
+      else if (text[k] === ")" && --open === 0)
+        break;
+    }
+    return open === 0 ? k + 1 - i : 0;
+  }
+  if (text[i] === "<") {
+    const close = text.indexOf(">", i + 1);
+    if (close === -1)
+      return 0;
+    return /^<[a-z][a-z0-9+.-]*:/i.test(text.slice(i, close + 1)) ? close + 1 - i : 0;
+  }
+  if (text.startsWith("http://", i) || text.startsWith("https://", i)) {
+    let end = i;
+    while (end < text.length && !URL_END.test(text[end]))
+      end++;
+    return end - i;
+  }
+  return 0;
+}
 function findMarkerRanges(lineText, lineFrom = 0) {
-  if (FENCE2.test(lineText))
+  if (FENCE3.test(lineText))
     return [];
   const ranges = [];
   const heading = /^(#{1,6})(\s)/.exec(lineText);
@@ -3603,6 +3780,11 @@ function findMarkerRanges(lineText, lineFrom = 0) {
       i = close + 1;
       continue;
     }
+    const link = linkLength(lineText, i);
+    if (link > 0) {
+      i += link;
+      continue;
+    }
     const token = PAIRED.find((t2) => lineText.startsWith(t2, i));
     if (!token) {
       i++;
@@ -3621,70 +3803,6 @@ function findMarkerRanges(lineText, lineFrom = 0) {
     i += token.length;
   }
   return ranges.sort((a, b) => a.from - b.from);
-}
-
-// src/codeFence.ts
-var FENCE3 = /^\s*(```|~~~)/;
-function findCodeFence(doc, lineNo) {
-  let openChar = null;
-  let openLine = 0;
-  let n = 0;
-  for (const text of doc.iterLines()) {
-    n++;
-    const match = FENCE3.exec(text);
-    if (n <= lineNo) {
-      if (match) {
-        if (openChar === null) {
-          openChar = match[1];
-          openLine = n;
-        } else if (match[1] === openChar) {
-          if (n === lineNo)
-            return { openLine, closeLine: n };
-          openChar = null;
-          openLine = 0;
-        }
-      }
-      if (n === lineNo && openChar === null)
-        return null;
-      continue;
-    }
-    if (match && match[1] === openChar)
-      return { openLine, closeLine: n };
-  }
-  return openChar === null ? null : { openLine, closeLine: null };
-}
-function isInsideCodeFence(doc, lineNo) {
-  const fence = findCodeFence(doc, lineNo);
-  return fence !== null && lineNo > fence.openLine;
-}
-function findFencedLines(doc) {
-  const fenced = /* @__PURE__ */ new Set();
-  let openChar = null;
-  let n = 0;
-  for (const text of doc.iterLines()) {
-    n++;
-    const match = FENCE3.exec(text);
-    if (openChar !== null) {
-      fenced.add(n);
-      if (match && match[1] === openChar) {
-        openChar = null;
-      }
-      continue;
-    }
-    if (match)
-      openChar = match[1];
-  }
-  return fenced;
-}
-function codeFenceContent(doc, lineNo) {
-  const fence = findCodeFence(doc, lineNo);
-  if (!fence)
-    return null;
-  const first = fence.openLine + 1;
-  const last = fence.closeLine === null ? doc.lines : fence.closeLine - 1;
-  if (last < first)
-    return null;
-  return { from: doc.line(first).from, to: doc.line(last).to };
 }
 
 // src/hideSyntax.ts

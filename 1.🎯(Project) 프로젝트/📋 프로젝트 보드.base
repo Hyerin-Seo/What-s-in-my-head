@@ -26,6 +26,7 @@ views:
         - 완료
         - 히스토리
     cardOrders:
+      "note.상태\x1fnote.분류": {}
     columnColors:
       note.상태: {}
     swimlaneOrders:
