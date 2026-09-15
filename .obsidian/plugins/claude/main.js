@@ -182,6 +182,7 @@ class Mod {
     return this.plugin.addCommand(Object.assign({}, cmd, { id: this.id + "-" + cmd.id }));
   }
   registerEvent(ref) { return this.plugin.registerEvent(ref); }
+  registerMarkdownPostProcessor(fn) { return this.plugin.registerMarkdownPostProcessor(fn); }
   addRibbonIcon(icon, title, cb) { return this.plugin.addRibbonIcon(icon, title, cb); }
   addStatusBarItem() { return this.plugin.addStatusBarItem(); }
 }
@@ -1168,6 +1169,7 @@ const WRAP_EXT = [...EMBEDDABLE,
   "zip", "7z", "rar", "txt", "json", "epub", "psd", "ai", "sketch", "fig"];
 const NEVER = ["md", "base"];          // 문서·보드는 감싸지 않는다
 const SKIP_DIRS = ["이미지", "images", "attachments"];
+const FOLDER_MARK = "폴더::";       // 노트 안에서 폴더를 가리키는 표시
 
 /* agy 에 강제할 출력 형식. 이게 있으면 응답에서 ```json 울타리를 벗길 필요가 없다 —
    `structured_output` 로 파싱된 객체가 그대로 온다. */
@@ -1196,6 +1198,8 @@ class InboxMod extends Mod {
     this.timers = new Map();
     this.aiQueue = [];        // agy 로 보낼 노트 경로
     this.aiBusy = false;
+
+    this.registerFolderLinks();
 
     this.app.workspace.onLayoutReady(() => {
       this.registerEvent(this.app.vault.on("create", (f) => this.queue(f)));
@@ -1233,11 +1237,17 @@ class InboxMod extends Mod {
 
   /* ── 판단 ─────────────────────────────────────────────── */
 
-  /** 인박스 안(하위 폴더 포함)이고 첨부 보관 폴더가 아닌가 */
+  /**
+   * 던지는 자리 안의 파일인가.
+   * 인박스 바로 아래(`0.📥 인박스/자료.pdf`)와 칸 안(`…/🐶 개린 인박스/자료.pdf`)만
+   * 셉니다. **던진 폴더 안(그보다 깊은 것)은 건드리지 않습니다** — 폴더는 통째로
+   * 하나의 자료라서, 안엣것을 따로 감싸면 던진 사람이 원한 묶음이 부서집니다.
+   */
   inInbox(path) {
     if (!path.startsWith(INBOX + "/")) return false;
-    const parts = path.split("/");
-    return !parts.slice(0, -1).some((seg) => SKIP_DIRS.includes(seg));
+    const parts = path.split("/").slice(1);
+    if (parts.slice(0, -1).some((seg) => SKIP_DIRS.includes(seg))) return false;
+    return parts.length <= 2;
   }
 
   target(file) {
@@ -1253,6 +1263,7 @@ class InboxMod extends Mod {
 
   queue(file) {
     if (!this.settings.auto) return;
+    if (file instanceof TFolder) return this.queueFolder(file);
     if (!this.target(file)) return;
     // 복사가 끝나기 전에 손대면 크기가 0으로 잡힌다. 잠깐 기다린다.
     const path = file.path;
@@ -1262,6 +1273,27 @@ class InboxMod extends Mod {
       const f = this.app.vault.getAbstractFileByPath(path);
       if (f instanceof TFile) this.wrap(f);
     }, 1500));
+  }
+
+  /** 폴더는 안이 다 복사될 때까지 좀 더 기다립니다 */
+  queueFolder(folder) {
+    const path = folder.path;
+    if (!this.folderTarget(folder)) {
+      // 인박스 **바로 아래** 폴더는 자료가 아니라 새 칸입니다. 조용히 넘기면
+      // "던졌는데 아무 반응이 없다" 가 되니 무엇으로 봤는지는 알려 줍니다.
+      const parts = path.split("/").slice(1);
+      if (parts.length === 1 && !SKIP_DIRS.includes(parts[0]) && this.settings.notice) {
+        new Notice("📂 " + folder.name + "\n인박스의 새 칸으로 봅니다 (핀보드 탭이 됩니다).\n"
+          + "자료로 감싸려면 칸 **안**에 넣으세요.", 9000);
+      }
+      return;
+    }
+    clearTimeout(this.timers.get(path));
+    this.timers.set(path, setTimeout(() => {
+      this.timers.delete(path);
+      const f = this.app.vault.getAbstractFileByPath(path);
+      if (f instanceof TFolder) this.wrapFolder(f);
+    }, 2500));
   }
 
   /* ── 감싸기 ───────────────────────────────────────────── */
@@ -1362,18 +1394,180 @@ class InboxMod extends Mod {
     return true;
   }
 
+  /* ── 폴더도 던질 수 있어야 합니다 ─────────────────────────
+     파일과 똑같이 대합니다. 다만 **폴더는 옮기지도, 안을 건드리지도 않습니다.**
+     통째로 하나의 자료이기 때문입니다 — 안에 든 파일 30개를 따로따로 감싸면
+     던진 사람이 원한 묶음이 부서집니다.
+
+     그래서 층을 이렇게 봅니다.
+
+       0.📥 인박스/🐶 개린 인박스/          ← **칸**. 던지는 자리 (핀보드 탭이 됩니다)
+       0.📥 인박스/🐶 개린 인박스/자료.pdf   ← 던진 것 → 노트로 감쌈 + 이미지/ 로
+       0.📥 인박스/🐶 개린 인박스/받은 폴더/ ← 던진 것 → 노트로 감쌈 (제자리)
+       0.📥 인박스/🐶 개린 인박스/받은 폴더/a.pdf ← **안 건드립니다**
+
+     인박스 바로 아래에 만든 폴더는 새 **칸**으로 봅니다 (자료가 아니라 자리).
+     그때는 감싸는 대신 알림만 띄웁니다 — 아무 반응이 없으면 고장으로 보이니까요.
+
+     옵시디언은 폴더 드롭을 실제로 받습니다 (obsidian.asar 확인:
+     dataTransfer 항목이 디렉터리면 `importDirectory` 로 통째로 복사해 넣습니다).
+     그렇게 들어온 폴더도 `vault.on("create")` 로 똑같이 잡힙니다. */
+
+  /** 던진 폴더인가 — { 칸 } 또는 null */
+  folderTarget(folder) {
+    if (!(folder instanceof TFolder)) return null;
+    if (!folder.path.startsWith(INBOX + "/")) return null;
+    const parts = folder.path.split("/").slice(1);     // 인박스 아래 조각들
+    if (parts.some((seg) => SKIP_DIRS.includes(seg))) return null;
+    if (parts.length !== 2) return null;               // 1 = 칸 · 3 이상 = 던진 폴더 안
+    return { zone: parts[0] };
+  }
+
+  /** 폴더 안에 무엇이 얼마나 있나 (보여줄 만큼만) */
+  folderStat(folder) {
+    const out = { files: 0, folders: 0, bytes: 0, sample: [] };
+    const walk = (f, depth) => {
+      for (const c of f.children || []) {
+        if (c instanceof TFolder) {
+          out.folders++;
+          if (out.sample.length < 12) out.sample.push({ folder: true, file: c, depth });
+          walk(c, depth + 1);
+        } else {
+          out.files++;
+          out.bytes += (c.stat && c.stat.size) || 0;
+          if (out.sample.length < 12) out.sample.push({ folder: false, file: c, depth });
+        }
+      }
+    };
+    walk(folder, 0);
+    return out;
+  }
+
+  /** 폴더를 노트로 감싼다. 폴더는 제자리에 두고 노트만 옆에 만듭니다 */
+  async wrapFolder(folder) {
+    if (!this.folderTarget(folder)) return false;
+    const dir = folder.parent ? folder.parent.path : INBOX;
+    let notePath = normalizePath(dir + "/" + folder.name + ".md");
+    if (this.app.vault.getAbstractFileByPath(notePath)) {
+      notePath = normalizePath(dir + "/" + folder.name + " (폴더).md");
+    }
+    if (this.app.vault.getAbstractFileByPath(notePath)) return false;
+
+    const stat = this.folderStat(folder);
+    const today = todayYmd();
+
+    const fm = ["---"];
+    for (const k of STD) {
+      if (k === "유형") fm.push("유형: 자료");
+      else if (k === "구역") fm.push("구역: 0.inbox");
+      else if (k === "상태") fm.push("상태: 미처리");
+      else if (k === "작성일") fm.push("작성일: " + today);
+      else fm.push(k + ":");
+    }
+    fm.push("---");
+
+    // 안에 뭐가 들었는지 몇 개만 — 3주 뒤에 이것만 보고 판단하게 됩니다
+    const lines = [];
+    for (const s of stat.sample) {
+      const pad = "  ".repeat(s.depth || 0);
+      if (s.folder) {
+        lines.push(pad + "- 📁 " + s.file.name + "/");
+      } else {
+        const link = this.app.metadataCache.fileToLinktext(s.file, notePath);
+        lines.push(pad + "- [[" + link + "]]  ·  " + humanSize((s.file.stat || {}).size));
+      }
+    }
+    const more = stat.files + stat.folders - stat.sample.length;
+    if (more > 0) lines.push("- … 그 밖에 " + more + "개");
+
+    const body = [
+      "",
+      "## 이게 뭐였더라",
+      "",
+      "- ",
+      "",
+      "## 다음 행동",
+      "",
+      "- [ ] ",
+      "",
+      "%%",
+      "폴더는 통째로 하나의 자료입니다. 안에 든 파일은 따로 감싸지 않습니다.",
+      "안에서 한 개만 따로 다루고 싶으면 그 파일을 칸(이 폴더의 상위)으로 꺼내세요.",
+      "내보낼 때는 핀보드 카드의 `📤 PARA로 보내기` 를 누르세요. 구역만 고르면",
+      "유형·상태·분류·마감을 한 창에서 묻고 노트를 옮깁니다.",
+      "(폴더 자체는 따라가지 않습니다 — 폴더는 파일 탐색기에서 같이 옮기세요)",
+      "다 적었으면 이 블록은 지워도 됩니다.",
+      "%%",
+      "",
+      "---",
+      "",
+      "📁 원본 폴더 열기 → `" + FOLDER_MARK + folder.path + "`",
+      "",
+      "`폴더` · 파일 " + stat.files + "개" +
+        (stat.folders ? " · 하위 폴더 " + stat.folders + "개" : "") +
+        " · " + humanSize(stat.bytes) + " · " + today + " 들어옴",
+      "",
+    ].concat(lines).concat([""]).join("\n");
+
+    await this.app.vault.create(notePath, fm.join("\n") + "\n" + body);
+    if (this.settings.notice) {
+      new Notice("📁 " + folder.name + "\n→ " + notePath.split("/").pop(), 5000);
+    }
+    if (this.settings.ai) this.enqueue([notePath]);
+    return true;
+  }
+
+  /** 노트 안의 `폴더::경로` 를 눌러서 폴더 창을 연다 */
+  openFolder(path) {
+    const f = this.app.vault.getAbstractFileByPath(path);
+    if (!(f instanceof TFolder)) {
+      new Notice("그 폴더가 없습니다 — 옮겼거나 이름이 바뀌었습니다.\n" + path, 8000);
+      return;
+    }
+    // openWithDefaultApp 은 폴더 **자체**를 띄웁니다 (showInFolder 는 상위를 열고 고릅니다)
+    if (this.app.openWithDefaultApp) this.app.openWithDefaultApp(path);
+    else if (this.app.showInFolder) this.app.showInFolder(path);
+    else new Notice("이 버전에서는 폴더를 열 수 없습니다.");
+  }
+
+  /** `폴더::경로` 인라인 코드를 누를 수 있는 칩으로 바꾼다 */
+  registerFolderLinks() {
+    this.registerMarkdownPostProcessor((el) => {
+      for (const code of Array.from(el.querySelectorAll("code"))) {
+        const text = (code.textContent || "").trim();
+        if (!text.startsWith(FOLDER_MARK)) continue;
+        const path = text.slice(FOLDER_MARK.length).trim();
+        // 팝아웃 창은 document 가 따로입니다. 그 코드가 사는 문서에서 만듭니다
+        const a = code.ownerDocument.createElement("a");
+        a.addClass("claude-folder-chip");
+        a.setText("📁 " + (path.split("/").pop() || path));
+        a.setAttr("aria-label", path + " 을 파일 탐색기에서 엽니다");
+        a.onclick = (e) => { e.preventDefault(); this.openFolder(path); };
+        code.replaceWith(a);
+      }
+    });
+  }
+
   async sweep(caller) {
     const todo = [];
     for (const f of this.app.vault.getFiles()) {
       if (this.target(f)) todo.push(f);
     }
-    if (!todo.length) {
-      if (caller !== "start") new Notice("인박스에 감쌀 파일이 없습니다. ✔");
+    // 폴더도 — 플러그인이 꺼져 있던 동안 들어온 것이 있습니다
+    const folders = this.app.vault.getAllLoadedFiles().filter(
+      (f) => f instanceof TFolder && this.folderTarget(f)
+        && !this.app.vault.getAbstractFileByPath(
+             normalizePath((f.parent ? f.parent.path : INBOX) + "/" + f.name + ".md"))
+    );
+    if (!todo.length && !folders.length) {
+      if (caller !== "start") new Notice("인박스에 감쌀 것이 없습니다. ✔");
       return;
     }
     let n = 0;
     for (const f of todo) if (await this.wrap(f)) n++;
-    new Notice(`📥 ${n}개를 노트로 감쌌습니다.`, 6000);
+    let m = 0;
+    for (const f of folders) if (await this.wrapFolder(f)) m++;
+    new Notice(`📥 ${n}개를 노트로 감쌌습니다.` + (m ? ` (폴더 ${m}개 포함)` : ""), 6000);
   }
 
   /* ── 손으로 쓰는 인박스 노트 ──────────────────────────────
