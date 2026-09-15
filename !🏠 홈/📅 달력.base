@@ -1,3 +1,7 @@
+# 날짜가 있는 것만 모읍니다.
+#   휴가  → 작성일
+#   할일  → `일정`(해야 할 날) 이 있으면 그 날, 없으면 `마감`(끝내야 하는 날)
+# `일정` 은 할일 고유 속성입니다. 모든 할일 노트에 칸이 열려 있어야 formula 가 안전합니다.
 filters:
   or:
     - and:
@@ -7,12 +11,15 @@ filters:
     - and:
         - note["유형"] == "할일"
         - not:
-            - note["마감"].isEmpty()
-        - not:
             - note["상태"] == "히스토리"
+        - or:
+            - not:
+                - note["마감"].isEmpty()
+            - not:
+                - note["일정"].isEmpty()
 formulas:
-  일정시작: if(note["유형"] == "휴가", date(note["작성일"]), date(note["마감"]))
-  구분: if(note["유형"] == "휴가", "🏖️ 근무표", "⏰ 마감")
+  일정시작: 'if(note["유형"] == "휴가", date(note["작성일"]), if(note["일정"].isEmpty(), date(note["마감"]), date(note["일정"])))'
+  구분: 'if(note["유형"] == "휴가", "🏖️ 근무표", if(note["일정"].isEmpty(), "⏰ 마감", "📅 하는 날"))'
 views:
   - type: calendar
     name: 📅 이번 달
@@ -29,6 +36,7 @@ views:
       - formula.구분
       - 상태
       - formula.일정시작
+      - 일정
       - 마감
       - 담당
     sort:

@@ -13,6 +13,7 @@ views:
     name: 🗂️ 전체
     order:
       - 담당
+      - 일정
       - 마감
       - 작성자
     quickAddFolder: 1.🎯(Project) 프로젝트
@@ -37,6 +38,7 @@ views:
         - file.inFolder("1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식")
     order:
       - 담당
+      - 일정
       - 마감
       - 작성자
     quickAddFolder: 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식
@@ -61,6 +63,7 @@ views:
         - file.inFolder("1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현")
     order:
       - 담당
+      - 일정
       - 마감
       - 작성자
     quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
@@ -94,6 +97,23 @@ views:
       - 작성자
     sort:
       - property: 마감
+        direction: ASC
+  - type: table
+    name: 📅 하는 날이 잡힌 것
+    filters:
+      and:
+        - not:
+            - note["일정"].isEmpty()
+        - note["상태"] != "완료"
+        - note["상태"] != "히스토리"
+    order:
+      - file
+      - 일정
+      - 마감
+      - 상태
+      - 담당
+    sort:
+      - property: 일정
         direction: ASC
   - type: table
     name: ⏳ 확인 필요

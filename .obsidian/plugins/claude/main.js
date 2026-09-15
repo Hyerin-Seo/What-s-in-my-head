@@ -44,6 +44,12 @@ const STD = ["유형", "구역", "분류", "주제", "상태", "요약",
              "작성일", "마감", "커버", "상위", "링크", "담당", "작성자"];
 const LIST_KEYS = ["분류", "주제", "담당", "작성자"];
 
+/* 유형별 고유 속성 — 13종이 아니라 그 유형에만 있는 것입니다 (책의 `저자`·`평점` 처럼).
+   `일정` = **해야 할 날**. `마감` 은 **끝내야 하는 날** 이라 다릅니다.
+   예전 칸반의 `일정 있음`·`기한만` 이 이 둘로 갈라졌습니다. */
+const EXTRA_KEYS = { "할일": ["일정"] };
+const EXTRA_HEAD = "# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──";
+
 /** 옵시디언이 본문에 그려주는 이미지 확장자 (obsidian.asar 의 목록과 같게) */
 const IMG_EXT = ["bmp", "png", "jpg", "jpeg", "gif", "svg", "webp", "avif"];
 
@@ -738,6 +744,7 @@ class ParaMod extends Mod {
       if (p.kind) props["유형"] = p.kind;
       if (p.state) props["상태"] = p.state;
       if (p.cls) props["분류"] = [p.cls];
+      for (const k of (EXTRA_KEYS[p.kind] || [])) props[k] = "";
       await this.app.vault.process(file, (data) => setProps(data, props));
     } else {
       await this.app.vault.process(file, (data) => {
@@ -750,6 +757,11 @@ class ParaMod extends Mod {
           else if (k === "작성일") out.push("작성일: " + today);
           else if (k === "분류" && p.cls) out.push("분류:", "  - " + yamlScalar(p.cls));
           else out.push(k + ":");
+        }
+        const extra = EXTRA_KEYS[p.kind] || [];
+        if (extra.length) {
+          out.push(EXTRA_HEAD);
+          for (const k of extra) out.push(k + ":");
         }
         out.push("---", "");
         return out.join("\n") + data;
@@ -938,7 +950,7 @@ class ParaMod extends Mod {
       L.push("    filters:", "      and:",
         '        - file.inFolder("' + PROJECT_ZONE + "/" + folder + '")');
     }
-    L.push("    order:", "      - 담당", "      - 마감", "      - 작성자");
+    L.push("    order:", "      - 담당", "      - 일정", "      - 마감", "      - 작성자");
     L.push("    quickAddFolder: " + (folder ? PROJECT_ZONE + "/" + folder : PROJECT_ZONE));
     L.push("    groupByProperty: note.상태");
     // 스윔레인은 일부러 안 넣습니다 — 프로젝트 구분 없이 한 판으로 봅니다
