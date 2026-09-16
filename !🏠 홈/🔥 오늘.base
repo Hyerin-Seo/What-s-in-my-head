@@ -22,7 +22,7 @@ views:
       유형: Filled
     columnSize:
       file.file: 749
-      note.상태: 119
+      note.상태: 268
   - type: table
     name: ⏰ 마감 가까운 순
     filters:
