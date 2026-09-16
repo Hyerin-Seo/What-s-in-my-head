@@ -2988,8 +2988,11 @@ class ChipMod extends Mod {
     this.obs.observe(document.body, { childList: true, subtree: true, characterData: true });
     this.registerEvent(this.app.workspace.on("layout-change", this.queue));
 
-    // 칩을 누르면 드롭다운. 옵시디언 기본 편집칸보다 먼저 받아야 해서 capture 입니다.
-    this.registerDomEvent(document, "click", (e) => this.onClick(e), true);
+    // 칩을 누르면 드롭다운. **mousedown** 이어야 합니다 — 글자 칸이 contenteditable 이라
+    // mousedown 에서 이미 포커스가 잡히고, 나중에 포커스가 풀릴 때 옵시디언이 **그 칸에
+    // 들고 있던 옛 글자를 프론트매터에 도로 씁니다.** click 에서 막으면 이미 늦어서,
+    // 우리가 쓴 값이 잠시 뒤 되돌아갑니다. mousedown 을 막으면 포커스 자체가 안 잡힙니다.
+    this.registerDomEvent(document, "mousedown", (e) => this.onClick(e), true);
 
     this.queue();
 
@@ -3106,6 +3109,14 @@ class ChipMod extends Mod {
 
     e.preventDefault();
     e.stopPropagation();
+
+    // 이미 포커스가 잡혀 있었다면(앞서 눌러 둔 칸) 먼저 풀어 줍니다. 풀 때 옵시디언이
+    // 옛 글자를 쓰는데, 그건 지금 값과 같으니 아무 일도 아닙니다. 우리가 쓴 뒤에 풀리면
+    // 그때는 우리 값이 덮입니다 — 그래서 순서가 중요합니다.
+    const doc = wrap.ownerDocument;
+    if (doc && doc.activeElement && wrap.contains(doc.activeElement) && doc.activeElement.blur) {
+      doc.activeElement.blur();
+    }
 
     const cur = str(fm["상태"]);
     const menu = new Menu();

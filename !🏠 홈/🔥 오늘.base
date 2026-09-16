@@ -71,12 +71,14 @@ views:
       - 마감
       - file.mtime
     sort:
+      - property: 상태
+        direction: DESC
       - property: file.mtime
         direction: ASC
     summaries:
       유형: Filled
     columnSize:
-      note.상태: 177
+      note.상태: 76
   - type: table
     name: ⏳ 확인 필요 — 남·답을 기다리는 것
     filters:
