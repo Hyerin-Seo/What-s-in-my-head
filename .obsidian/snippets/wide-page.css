@@ -47,6 +47,70 @@
   padding-bottom: 96px !important;
 }
 
+/* ── 홈 상단 이미지: 노션식 커버 ─────────────────────────────────
+   위키 임베드는 HTML 블록 안에서 렌더하지 않으므로 기본 `![[홈 화면.jpg]]`를
+   유지하고, 홈 전용 class + 파일명으로 이미지 자체를 고릅니다. */
+.home-page .image-embed[src$="홈 화면.jpg"] img,
+.home-page img[alt="홈 화면.jpg"],
+.home-page img[src*="홈%20화면"],
+.home-page img[src*="홈 화면"] {
+  display: block;
+  width: 100% !important;
+  height: clamp(180px, 20vw, 280px) !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 8px 0 8px !important;
+  border-radius: 0 !important;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.home-page .image-embed[src$="홈 화면.jpg"] {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+.home-page .image-embed[src$="홈 화면.jpg"] img {
+  height: 280px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.home-page .inline-title { display: none; }
+.home-page .metadata-container { margin-block: 0 8px !important; }
+.home-page .cm-content { padding-top: 0 !important; }
+.home-page .HyperMD-header-1 { padding-top: 8px !important; padding-bottom: 8px !important; }
+
+.home-page .internal-embed.image-embed,
+.home-page .cm-embed-block:has(img) {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.home-page .internal-embed.image-embed img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 280px !important;
+  object-fit: cover !important;
+  object-position: center 42% !important;
+}
+.home-page .cm-embed-block:has(img) { margin-block: 0 8px !important; }
+.home-page { container-type: inline-size; }
+.home-page img[alt="홈 화면.jpg"],
+.home-page .image-embed img {
+  width: calc(100cqw - 96px) !important;
+  min-width: calc(100cqw - 96px) !important;
+  max-width: none !important;
+  height: 280px !important;
+  object-fit: cover !important;
+}
+
+/* 커버 바로 아래의 홈 제목을 붙여, 아이콘·제목과 본문 사이의 빈 공간을 줄입니다. */
+.home-page .markdown-preview-sizer > h1,
+.home-page .markdown-preview-sizer > div > h1 {
+  margin-top: 8px !important;
+}
+
 /* ── 3. 베이스 임베드를 폭 끝까지 ───────────────────────────────── */
 .wide-page .bases-embed,
 .wide-page .internal-embed.bases-embed,
