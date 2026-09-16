@@ -22,6 +22,7 @@ views:
       유형: Filled
     columnSize:
       file.file: 749
+      note.상태: 119
   - type: table
     name: ⏰ 마감 가까운 순
     filters:
@@ -70,6 +71,8 @@ views:
         direction: ASC
     summaries:
       유형: Filled
+    columnSize:
+      note.상태: 177
   - type: table
     name: ⏳ 확인 필요 — 남·답을 기다리는 것
     filters:

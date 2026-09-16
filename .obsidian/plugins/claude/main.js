@@ -29,7 +29,7 @@
  *   · 사람이 골라 넣은 값은 덮어쓰지 않습니다.
  */
 const {
-  Plugin, PluginSettingTab, Setting, Notice, Modal,
+  Plugin, PluginSettingTab, Setting, Notice, Modal, Menu,
   TFile, TFolder, normalizePath,
 } = require("obsidian");
 
@@ -194,6 +194,7 @@ class Mod {
   }
   registerEvent(ref) { return this.plugin.registerEvent(ref); }
   registerMarkdownPostProcessor(fn) { return this.plugin.registerMarkdownPostProcessor(fn); }
+  registerDomEvent(el, ev, cb, opts) { return this.plugin.registerDomEvent(el, ev, cb, opts); }
   addRibbonIcon(icon, title, cb) { return this.plugin.addRibbonIcon(icon, title, cb); }
   addStatusBarItem() { return this.plugin.addStatusBarItem(); }
 }
@@ -2975,8 +2976,8 @@ class ChipMod extends Mod {
     super(plugin, "chip");
     this.title = "상태 칩";
     this.icon = "🚦";
-    this.blurb = "베이스 표·카드의 상태 칸을 색 칩으로 그립니다. "
-      + "값을 바꾸는 것은 옵시디언 기본대로 — 칸을 누르면 목록이 뜹니다.";
+    this.blurb = "베이스 표·카드의 상태를 색 칩으로 그리고, 눌렀을 때 그 유형이 쓰는 "
+      + "값만 담긴 드롭다운을 엽니다.";
   }
 
   onload() {
@@ -2987,6 +2988,10 @@ class ChipMod extends Mod {
     // 우리가 다는 data-chip-value 가 또 우리를 부르는 고리가 생깁니다.
     this.obs.observe(document.body, { childList: true, subtree: true, characterData: true });
     this.registerEvent(this.app.workspace.on("layout-change", this.queue));
+
+    // 칩을 누르면 드롭다운. 옵시디언 기본 편집칸보다 먼저 받아야 해서 capture 입니다.
+    this.registerDomEvent(document, "click", (e) => this.onClick(e), true);
+
     this.queue();
 
     // 칩이 도는지 눈으로 확인할 길 — 플러그인은 옵시디언을 다시 켜야 바뀝니다.
@@ -3028,8 +3033,13 @@ class ChipMod extends Mod {
     return out;
   }
 
+  props() {
+    return (this.settings.props || []).filter(Boolean);
+  }
+
+  /** 칸에 값을 적어 둡니다 — 값이 없으면 지웁니다 (빈 알약이 뜨면 안 되니까) */
   paint() {
-    const props = (this.settings.props || []).filter(Boolean);
+    const props = this.props();
     if (!props.length) return 0;
     const sel = props.map((p) =>
       '[data-property="note.' + p + '"], .obk-card-property[data-label="note.' + p + '"]'
@@ -3044,14 +3054,64 @@ class ChipMod extends Mod {
         for (const ed of el.querySelectorAll("[contenteditable], input, textarea")) {
           if (ed.getAttribute("spellcheck") !== "false") ed.setAttribute("spellcheck", "false");
         }
-        n++;
         // 고치는 중인 칸은 글자가 오락가락하니 건드리지 않습니다
         if (el.contains(doc.activeElement)) continue;
         const v = (el.textContent || "").trim();
+        if (!v) { el.removeAttribute("data-chip-value"); continue; }
         if (el.dataset.chipValue !== v) el.dataset.chipValue = v;
+        n++;
       }
     }
     return n;
+  }
+
+  /* ── 눌렀을 때 — 그 유형이 쓰는 값만 담긴 드롭다운 ─────────
+     옵시디언이 text 속성에 달아 주는 제안기는 **볼트 전체에서 그 속성에 쓰인 값**을
+     보여주고, 이미 적힌 글자로 걸러집니다. 그래서 `진행중` 칸을 누르면 `진행중` 하나만
+     뜹니다. 여기서는 그 노트의 `유형` 을 보고 `KIND_STATES` 의 값만 냅니다 —
+     할일이면 여섯 칸, 책이면 다섯, 상태를 안 쓰는 유형이면 아예 안 엽니다. */
+
+  onClick(e) {
+    const t = e.target;
+    if (!t || !t.closest) return;
+    const wrap = t.closest('[data-property="note.상태"]');
+    if (!wrap || wrap.querySelector(".bases-table-header")) return;
+
+    const file = this.fileOfRow(wrap);
+    if (!file) return;                       // 어느 노트인지 모르면 기본 동작 그대로
+    const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {};
+    const values = KIND_STATES[str(fm["유형"])];
+    if (!values || !values.length) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    const cur = str(fm["상태"]);
+    const menu = new Menu();
+    for (const v of values) {
+      menu.addItem((i) => i.setTitle(v).setChecked(v === cur)
+        .onClick(() => this.setState(file, v)));
+    }
+    menu.showAtMouseEvent(e);
+  }
+
+  /** 이 줄이 어느 노트인가 — 같은 줄의 파일 링크로 찾습니다 */
+  fileOfRow(cell) {
+    let row = cell.parentElement;
+    for (let i = 0; row && i < 3; i++, row = row.parentElement) {
+      const a = row.querySelector('[data-property^="file"] a.internal-link') ||
+                row.querySelector("a.internal-link");
+      if (!a) continue;
+      const href = a.dataset.href || a.getAttribute("href") || "";
+      const f = this.app.metadataCache.getFirstLinkpathDest(href, "");
+      if (f instanceof TFile) return f;
+    }
+    return null;
+  }
+
+  async setState(file, v) {
+    await this.app.vault.process(file, (d) => setProps(d, { "상태": v }));
+    new Notice("🚦 " + file.basename + "\n상태 → " + v, 3000);
   }
 }
 
