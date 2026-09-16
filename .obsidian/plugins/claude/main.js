@@ -274,6 +274,14 @@ const NOT_PROJECT = ["이미지", "image", "attachment", "첨부"];
    삽니다. 어느 보드도 이걸 유형으로 안 거르니 "그 구역에 없는 유형" 이라고 할 게
    아닙니다. route.py 의 --repair 도 같은 셋을 예외로 둡니다. */
 const STRUCTURAL_KINDS = ["홈", "대시보드", "양식"];
+
+/* 이웃이 쓴다고 **권하면 안 되는** 유형 — 한 폴더에 하나뿐인 대문·틀입니다.
+   `(Library) 망고네 도서관` 의 이웃은 `🏠 도서관 홈` 한 장뿐이라, 거기서 새로 만든
+   노트에 "같은 폴더는 바로가기 를 씁니다" 를 권했고 그대로 눌러서 캔버스 노트가
+   홈의 🔖 바로가기 카드에 끼어 버렸습니다. 대문은 늘리는 것이 아닙니다.
+   STRUCTURAL_KINDS 와 따로 둡니다 — 그쪽은 구역 검사 예외라 route.py 와 짝이 맞아야
+   합니다 (한쪽만 고치지 마세요). 이 표는 권하기에만 씁니다. */
+const NEVER_SUGGEST_KINDS = ["홈", "대시보드", "양식", "바로가기"];
 const OPT_OUT_KEY = "PARA정리";   // 노트에 `PARA정리: 끔` 이면 건너뜁니다
 
 class ParaMod extends Mod {
@@ -895,7 +903,8 @@ class ParaMod extends Mod {
     for (const sib of (parent ? parent.children : [])) {
       if (!(sib instanceof TFile) || sib === file || sib.extension !== "md") continue;
       const k = str(((this.app.metadataCache.getFileCache(sib) || {}).frontmatter || {})["유형"]);
-      if (k) tally.set(k, (tally.get(k) || 0) + 1);
+      // 대문·틀은 한 폴더에 하나뿐입니다 — 이웃이 그거라고 새 노트도 그건 아닙니다
+      if (k && !NEVER_SUGGEST_KINDS.includes(k)) tally.set(k, (tally.get(k) || 0) + 1);
     }
     let best = "", n = 0;
     for (const [k, v] of tally) if (v > n) { best = k; n = v; }
