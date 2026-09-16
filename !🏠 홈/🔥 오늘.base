@@ -69,6 +69,8 @@ views:
         direction: ASC
     summaries:
       유형: Filled
+    columnSize:
+      file.file: 407
   - type: table
     name: 📥 인박스
     filters:
