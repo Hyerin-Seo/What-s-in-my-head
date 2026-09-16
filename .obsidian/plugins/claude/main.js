@@ -294,6 +294,7 @@ class ParaMod extends Mod {
     this.stampTimers = new Map();
     this.canvasTimers = new Map();
     this.strayTimers = new Map();
+    this.topUpTimers = new Map();
 
     // 왼쪽 리본 — 언제든 누를 수 있는 자리
     this.addRibbonIcon("folder-symlink", "PARA 구역 정리 — 안 맞는 것 보기", () => this.audit());
@@ -319,6 +320,8 @@ class ParaMod extends Mod {
       this.registerEvent(this.app.vault.on("create", (file) => this.queueCanvas(file)));
       // 경로를 두 번 붙여 생긴 빈 구역 폴더 — 남의 플러그인이 흘리고 갑니다
       this.registerEvent(this.app.vault.on("create", (file) => this.queueStrayFolder(file)));
+      // 양식에서 태어난 노트 — 양식이 비워 둔 작성일·분류를 자리와 오늘로 채웁니다
+      this.registerEvent(this.app.vault.on("create", (file) => this.queueTopUp(file)));
       // 프로젝트 폴더를 만들면 전용 보드와 프로젝트 보드의 필터 뷰를 함께 만듭니다.
       this.registerEvent(this.app.vault.on("create", (file) => {
         this.queueBoardSync(file);
@@ -441,6 +444,16 @@ class ParaMod extends Mod {
       id: "canvas-all",
       name: "볼트 전체 — 혼자 있는 캔버스를 노트로 세우기",
       callback: () => this.wrapCanvasAll("cmd"),
+    });
+    this.addCommand({
+      id: "topup-active",
+      name: "이 노트 빈 칸 채우기 (작성일·분류)",
+      checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
+        if (!file || file.extension !== "md") return false;
+        if (!checking) this.topUpNew(file, "cmd");
+        return true;
+      },
     });
     this.addCommand({
       id: "stray-all",
@@ -589,6 +602,8 @@ class ParaMod extends Mod {
     this.canvasTimers.clear();
     for (const t of this.strayTimers.values()) clearTimeout(t);
     this.strayTimers.clear();
+    for (const t of this.topUpTimers.values()) clearTimeout(t);
+    this.topUpTimers.clear();
     clearTimeout(this.boardTimer);
   }
 
@@ -1004,6 +1019,80 @@ class ParaMod extends Mod {
     let n = 0;
     for (const f of todo) if (await this.fillAuthor(f, "sweep")) n++;
     new Notice("✍ 작성자를 " + n + "개 채웠습니다. (파일 이름 앞머리 기준)", 8000);
+  }
+
+  /* ── 양식에서 태어난 노트의 빈 칸 채우기 ──────────────────
+     `stamp()` 는 **프론트매터가 아예 없는** 노트만 봅니다. 보드의 `+` 로 만든 노트는
+     양식의 프론트매터를 통째로 물려받아 `유형`·`구역`·`상태` 가 이미 차 있으니
+     그 그물에 안 걸립니다. 그런데 **양식이 비워 둔 칸은 영영 빈 채로 남습니다** —
+     `작성일` 과 `분류` 가 그렇습니다. 보드에서 만든 할일마다 작성일이 없고, PARA 구축
+     폴더에서 만들었는데 분류가 비어 있는 게 그 때문이었습니다.
+
+     자리와 시각은 **사실**이라 채웁니다. 그 둘뿐입니다.
+
+     | 칸 | 무엇으로 | 확실한가 |
+     | --- | --- | --- |
+     | `작성일` | 오늘 | 확실 — 오늘 만든 노트입니다 |
+     | `분류` | 같은 폴더 이웃이 쓰는 값 → 없으면 상위 폴더 이름 중 그 구역이 쓰는 것 | 관찰. 없으면 **비워 둡니다** |
+
+     `요약`·`주제`·`작성자` 는 안 건드립니다 — 그건 내용을 읽어야 아는 것이라
+     자리가 말해 주지 않습니다.
+
+     **만들 때 딱 한 번만** 봅니다. 사람이 나중에 분류를 지웠는데 다시 채워 넣으면
+     그건 고쳐 주는 게 아니라 되돌리는 것입니다. 그래서 `metadataCache changed` 가
+     아니라 `vault create` 에만 붙습니다. */
+
+  async topUpNew(file, caller) {
+    if (!(file instanceof TFile) || file.extension !== "md") return false;
+    if (this.isExcluded(file.path)) return false;
+    if (file.basename.startsWith("!(Template)")) return false;
+    const zoneKey = this.zoneOfPath(file.path);
+    if (!zoneKey) return false;
+    const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
+    if (!fm) return false;                                  // 속성이 아예 없으면 stamp() 몫
+    if (!str(fm["구역"]) && !str(fm["유형"])) return false;   // 이것도 stamp() 몫
+    if (str(fm[OPT_OUT_KEY]) === "끔") return false;
+
+    const props = {};
+    if (!str(fm["작성일"])) props["작성일"] = todayYmd();
+    const cur = Array.isArray(fm["분류"]) ? fm["분류"].filter(Boolean)
+              : (str(fm["분류"]) ? [str(fm["분류"])] : []);
+    if (!cur.length) {
+      const guess = this.classFor(file, zoneKey);           // 지어내지 않습니다
+      if (guess) props["분류"] = [guess];
+    }
+    if (!Object.keys(props).length) {
+      if (caller === "cmd") new Notice("채울 빈 칸이 없습니다 — 작성일·분류가 이미 차 있습니다.");
+      return false;
+    }
+
+    await this.app.vault.process(file, (data) => setProps(data, props));
+    if (caller === "cmd" || this.settings.notice) {
+      const what = Object.entries(props)
+        .map(([k, v]) => k + " → " + (Array.isArray(v) ? v.join(" · ") : v)).join("   ");
+      new Notice("🏷 " + file.basename + "\n" + what, 5000);
+    }
+    this.refreshStatus();
+    return true;
+  }
+
+  /** 만들자마자는 아직 양식의 속성이 안 들어와 있습니다 — 캐시가 읽을 때까지 기다립니다 */
+  queueTopUp(file) {
+    if (!this.settings.topUpNew) return;
+    if (!(file instanceof TFile) || file.extension !== "md") return;
+    const path = file.path;
+    clearTimeout(this.topUpTimers.get(path));
+    this.topUpTimers.set(path, setTimeout(async () => {
+      this.topUpTimers.delete(path);
+      for (let i = 0; i < 12; i++) {
+        const f = this.app.vault.getAbstractFileByPath(path);
+        if (!(f instanceof TFile)) return;
+        if ((this.app.metadataCache.getFileCache(f) || {}).frontmatter) break;
+        await sleep(250);
+      }
+      const f = this.app.vault.getAbstractFileByPath(path);
+      if (f instanceof TFile) await this.topUpNew(f, "auto");
+    }, 2000));
   }
 
   /* ── 안쪽에 생긴 구역 이름 폴더 치우기 ─────────────────────
@@ -2140,6 +2229,16 @@ ParaMod.prototype.displaySettings = function (c) {
              "캔버스 파일은 제자리에 그대로 둡니다 — 첨부가 아니라 문서니까요.")
     .addToggle((t) => t.setValue(s.wrapCanvas).onChange(async (v) => {
       s.wrapCanvas = v; await this.save();
+    }));
+
+  new Setting(c)
+    .setName("양식에서 만든 노트의 빈 작성일·분류를 채운다")
+    .setDesc("보드의 `+` 로 만든 노트는 양식의 속성을 통째로 물려받아서 `속성 붙이기` 의 " +
+             "그물에 안 걸립니다. 그런데 양식이 비워 둔 `작성일`·`분류` 는 영영 빈 채로 " +
+             "남습니다. **만들 때 한 번만** — 작성일은 오늘, 분류는 같은 폴더 이웃이 쓰는 " +
+             "값으로 (없으면 비워 둡니다). `요약`·`주제`·`작성자` 는 안 건드립니다.")
+    .addToggle((t) => t.setValue(s.topUpNew).onChange(async (v) => {
+      s.topUpNew = v; await this.save();
     }));
 
   new Setting(c)
@@ -3762,6 +3861,7 @@ const DEFAULTS = {
     stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
     wrapCanvas: true,      // 캔버스 옆에 노트를 세운다 (캔버스는 속성을 못 가진다)
     sweepStrayZoneFolders: true, // 경로가 두 번 붙어 생긴 빈 구역 폴더를 휴지통으로
+    topUpNew: true,        // 양식에서 태어난 노트의 빈 작성일·분류를 자리와 오늘로
     authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
     syncProjectViews: true, // 프로젝트·담당자별 필터 뷰를 프로젝트 보드에 자동으로 만든다
     people: ["Rin", "민규 서"], // 칸반에 늘 두는 담당자. 일이 없어도 탭은 있습니다
