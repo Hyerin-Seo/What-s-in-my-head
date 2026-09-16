@@ -444,7 +444,12 @@ async function createQuickAddCard(title, columnValue, swimlaneValue, ctx, cb) {
     }
   };
   try {
-    await cb.createFileForView(fileNameToCreate, setFrontmatter);
+    // [개똥이 머릿속 수정] 파일 **이름**만 넘깁니다. 옵시디언의 새 항목 만들기가
+    // 앞에 폴더(newItemFolder → 템플릿 폴더 → 필터의 inFolder)를 다시 붙이기 때문에,
+    // 전체 경로를 넘기면 `<폴더>/<폴더>/이름` 이 되어 빈 폴더가 남았습니다.
+    // (obsidian.asar 확인: newItemMenu.open 이 `s + name` 으로 경로를 만듭니다)
+    // 플러그인을 업데이트하면 이 줄이 되돌아갑니다 — CLAUDE.md 를 보세요.
+    await cb.createFileForView(baseFileName, setFrontmatter);
     closeNativeNewItemPopover(ctx.doc);
     await ensureCreatedCardInFolder(ctx.app, createdFilePaths, createdFilePromise, baseFileName, targetFolder);
   } catch (error) {
