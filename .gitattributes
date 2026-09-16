@@ -1,0 +1,7 @@
+# Ensure all text files use LF line endings
+* text=auto eol=lf
+*.base text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.css text eol=lf

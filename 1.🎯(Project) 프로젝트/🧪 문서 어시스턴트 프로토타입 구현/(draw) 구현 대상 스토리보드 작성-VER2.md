@@ -10,7 +10,7 @@ tags:
   - 스토리보드
   - 카드화
   - 비동기 지시
-상태: to do
+상태: 퍼즈
 요약: 보드에서 직접 지시하고 결과를 카드화하는 흐름 — 비동기 지시 스토리보드 (VER2)
 작성일: 2026-08-31
 마감:
@@ -21,7 +21,6 @@ tags:
   - "[[민규 서]]"
 작성자:
   - "[[민규 서]]"
-# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 일정:
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'

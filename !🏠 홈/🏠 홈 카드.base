@@ -1,13 +1,9 @@
-# 구역 대문 5장. 카드를 누르면 그 구역의 대문 노트가 열립니다.
-# 0.inbox 의 대문은 `📥 인박스 대시보드` 입니다 — 그래서 카드 제목만
-# `0. inbox` 로 갈아 끼웁니다. 파일명을 그대로 쓰면 제목이 "📥 인박스 대시보드"
-# 가 되고 이모지 때문에 정렬도 맨 뒤로 밀립니다.
-formulas:
-  대문: 'if(note["구역"] == "0.inbox", "0. inbox", file.name)'
 filters:
   and:
     - file.ext == "md"
     - note["유형"] == "홈"
+formulas:
+  대문: if(note["구역"] == "0.inbox", "0. inbox", file.name)
 views:
   - type: cards
     name: 🏠 홈 카드
