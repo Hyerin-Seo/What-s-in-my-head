@@ -30,7 +30,32 @@ views:
     columnColors:
       note.상태: {}
     cardOrders:
-      note.상태: {}
+      note.상태:
+        진행중:
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(gen) 멀티 벡터의 이해.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/보험 도에민 뽀개기/(GEN) 보험 약관 해체하기.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(GEN)다중 에이전트 오케스트레이션 분야 연구 계열.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(gen)목차 기반 인덱싱.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(gen)문서 내용 추출 기술.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/(gen)보험 보장 내역 - 약관 분석 use case.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/보험 도에민 뽀개기/(gen)보험 약관을 읽기 어려운 이유.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/reference/(gen)보험-계약 전용 분석 툴.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/dataset/(gen)GraphRAG 아이디어.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/(gen)GraphRAG-랭귀지 후보.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(gen)LlamaIndex Actor 매핑 및 평가.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(gen)LlamaIndex docs 스킬셋.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/복잡한 문서 이해하기/(GEN)LLM Wiki의 토큰 압축과 한계.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(gen)Notebook LM Enterprise 딥리서치 보고서.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/(gen)Object-pkm vs GraphRAG.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/복잡한 문서 이해하기/(seo)비슷한 확장 가능 도메인(like 보험 약관).md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/(seo)진척상황.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/보험 도에민 뽀개기/(SEO&GEN) 보험 질문리스트.md
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/새로운 프로젝트/노트 추가.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/dataset/db_실손_1_20_gemini.md
+        to do:
+          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성-VER2.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(Draw)LlamaIndex 구조.md
+          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/reference/(gen)문서 파싱 및 표 추출 분야의 Kaggle 같은 리더보드 사이트.md
   - type: kanban-view
     name: 🚚 PARA 구축 — 자료 이식
     filters:
