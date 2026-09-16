@@ -23,6 +23,7 @@ views:
         - 검토 중
         - picked
         - 언젠가·아마도
+        - Uncategorized
     cardOrders:
       note.상태: {}
     columnColors:
