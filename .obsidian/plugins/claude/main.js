@@ -368,7 +368,7 @@ class ParaMod extends Mod {
     });
     this.addCommand({
       id: "board-sync",
-      name: "프로젝트 보드에 빠진 프로젝트 뷰 붙이기",
+      name: "프로젝트 보드에 빠진 뷰 붙이기 (프로젝트 · 담당자)",
       callback: () => this.syncProjectViews("cmd"),
     });
     this.addCommand({
@@ -916,12 +916,15 @@ class ParaMod extends Mod {
   }
 
   /* ── 프로젝트 보드에 뷰 붙이기 ────────────────────────────
-     칸반은 **하나**입니다. 모든 프로젝트의 할일이 한 판에 들어가고, 프로젝트는
-     스윔레인이 아니라 **뷰**로 고릅니다. 프로젝트가 늘어도 판이 쪼개지지 않습니다.
+     칸반은 **하나**입니다. 모든 프로젝트의 할일이 한 판에 들어가고, 프로젝트도
+     담당자도 스윔레인이 아니라 **뷰**로 고릅니다. 무엇이 늘어도 판이 쪼개지지 않습니다.
 
      프로젝트 = `1.🎯(Project) 프로젝트` **바로 아래 폴더**. 이미지·첨부 보관 폴더는
      프로젝트가 아닙니다. 그래서 폴더를 하나 만들면 그게 새 프로젝트이고, 여기서
      그 폴더만 거르는 칸반 뷰를 보드에 **덧붙입니다**.
+
+     프로젝트별 보드(프로젝트 폴더 안에 있고 그 폴더를 거르는 `.base`)에는 그 프로젝트
+     안의 담당자 뷰만 붙입니다.
 
      덧붙이기만 합니다 — 보드를 통째로 다시 쓰지 않습니다. 칸반 플러그인이 카드를
      끌 때마다 `cardOrders`·`columnColors` 를 그 파일에 적어 두기 때문에, 다시 쓰면
@@ -962,19 +965,96 @@ class ParaMod extends Mod {
     return L;
   }
 
-  /** 보드에 없는 프로젝트의 뷰를 덧붙인다. 더한 프로젝트 이름들을 돌려줍니다 */
-  async syncProjectViews(caller) {
-    const board = this.app.vault.getAbstractFileByPath(PROJECT_BOARD);
+  /* ── 담당자도 뷰로 고릅니다 ───────────────────────────────
+     예전에는 칸반을 담당자별 **스윔레인**으로 갈랐습니다. 사람이 늘 때마다 판이 세로로
+     쪼개지고, 빈 줄(`Uncategorized`)이 늘 맨 위를 차지했습니다. 프로젝트와 같은 이유로
+     뷰로 바꿉니다 — 판은 하나, 보고 싶은 사람만 걸러서 봅니다.
+
+     `담당` 은 목록이고 값이 위키링크라 `.contains("[[민규 서]]")` 로 겁니다.
+     **대괄호까지 넣어야 합니다.** 목록의 `contains` 는 `looseEquals` 로 견주는데,
+     링크와 글자를 견줄 때 글자를 위키링크로 파싱해서 맞춰 보기 때문입니다
+     (obsidian.asar 확인). 대괄호를 빼면 파싱이 안 돼 조용히 0건이 됩니다. */
+
+  /** 프로젝트 할일에 실제로 적혀 있는 담당자들. folder 를 주면 그 프로젝트 안에서만 */
+  assignees(folder) {
+    const base = PROJECT_ZONE + "/" + (folder ? folder + "/" : "");
+    const seen = new Set();
+    for (const f of this.app.vault.getMarkdownFiles()) {
+      if (!f.path.startsWith(base)) continue;
+      const fm = (this.app.metadataCache.getFileCache(f) || {}).frontmatter || {};
+      if (str(fm["유형"]) !== "할일") continue;
+      const raw = fm["담당"];
+      const list = Array.isArray(raw) ? raw : (raw ? [raw] : []);
+      for (const v of list) {
+        const name = String(v).replace(/^\[\[/, "").replace(/\]\]$/, "").split("|")[0].trim();
+        if (name) seen.add(name);
+      }
+    }
+    return [...seen].sort();
+  }
+
+  /** 담당자 뷰 한 덩어리. folder 를 주면 그 프로젝트 안에서만 */
+  assigneeViewLines(who, folder) {
+    const L = ["  - type: kanban-view", "    name: " + this.assigneeViewName(who)];
+    L.push("    filters:", "      and:");
+    if (folder) L.push('        - file.inFolder("' + PROJECT_ZONE + "/" + folder + '")');
+    if (who) L.push('        - note["담당"].contains("[[' + who + ']]")');
+    else L.push('        - note["담당"].isEmpty()');
+    L.push("    order:", "      - 담당", "      - 일정", "      - 마감", "      - 작성자");
+    L.push("    quickAddFolder: " + (folder ? PROJECT_ZONE + "/" + folder : PROJECT_ZONE));
+    L.push("    groupByProperty: note.상태");
+    L.push("    imageProperty: note.커버", "    imageFit: cover",
+           "    imageAspectRatio: 0.667");
+    L.push("    columnOrders:", "      note.상태:");
+    for (const c of (KIND_STATES["할일"] || [])) L.push("        - " + c);
+    L.push("    columnColors:", "      note.상태: {}");
+    return L;
+  }
+
+  assigneeViewName(who) {
+    return "👤 " + (who || "미할당");
+  }
+
+  /** 이 프로젝트 폴더 바로 안에 있는, 그 폴더만 거르는 보드(.base) */
+  projectBoards(folder) {
+    const dir = this.app.vault.getAbstractFileByPath(PROJECT_ZONE + "/" + folder);
+    if (!(dir instanceof TFolder)) return [];
+    const mark = 'file.inFolder("' + PROJECT_ZONE + "/" + folder + '")';
+    return dir.children.filter((f) =>
+      f instanceof TFile && f.extension === "base" &&
+      (this.boardText.get(f.path) || "").includes(mark));
+  }
+
+  /**
+   * 보드에 빠진 뷰를 덧붙인다. 더한 뷰 이름들을 돌려줍니다.
+   * @param path    보드(.base) 경로
+   * @param folder  이 보드가 한 프로젝트 것이면 그 폴더 이름 (전체 보드면 null)
+   * @param kinds   무엇을 붙일지 — "project" · "assignee"
+   */
+  async syncViews(path, folder, kinds, caller) {
+    const board = this.app.vault.getAbstractFileByPath(path);
     if (!(board instanceof TFile)) {
-      if (caller === "cmd") new Notice("프로젝트 보드를 못 찾았습니다:\n" + PROJECT_BOARD, 8000);
+      if (caller === "cmd") new Notice("보드를 못 찾았습니다:\n" + path, 8000);
       return [];
     }
-    const folders = this.projectFolders();
+    const want = [];
+    if (kinds.includes("project")) {
+      for (const p of this.projectFolders()) {
+        want.push({ name: p, lines: () => this.kanbanViewLines(p, p) });
+      }
+    }
+    if (kinds.includes("assignee")) {
+      // 빈 칸(미할당)도 한 장 — 아직 아무도 안 맡은 것이 안 보이면 안 됩니다
+      for (const who of this.assignees(folder).concat([""])) {
+        want.push({ name: this.assigneeViewName(who),
+                    lines: () => this.assigneeViewLines(who, folder) });
+      }
+    }
+
     const added = [];
     await this.app.vault.process(board, (data) => {
       const lines = data.split("\n");
-      const missing = folders.filter((f) =>
-        !lines.some((l) => l.trim() === "name: " + f));
+      const missing = want.filter((w) => !lines.some((l) => l.trim() === "name: " + w.name));
       if (!missing.length) return data;
 
       // 마지막 칸반 뷰 다음에 끼웁니다 (칸반끼리 모여 있게)
@@ -991,18 +1071,40 @@ class ParaMod extends Mod {
         while (at < lines.length && !/^ {2}- /.test(lines[at])) at++;
       }
       const block = [];
-      for (const f of missing) {
-        block.push(...this.kanbanViewLines(f, f));
-        added.push(f);
+      for (const w of missing) {
+        block.push(...w.lines());
+        added.push(w.name);
       }
       lines.splice(at, 0, ...block);
       return lines.join("\n");
     });
 
     if (added.length) {
-      new Notice("📋 프로젝트 보드에 뷰를 더했습니다:\n" + added.join(" · "), 8000);
-    } else if (caller === "cmd") {
-      new Notice("프로젝트 보드에 모든 프로젝트가 이미 있습니다. ✔");
+      new Notice(path.split("/").pop().replace(/\.base$/, "") +
+                 " 에 뷰를 더했습니다:\n" + added.join(" · "), 8000);
+    }
+    return added;
+  }
+
+  /** 프로젝트 보드 + 프로젝트별 보드에 빠진 뷰(프로젝트 · 담당자)를 붙입니다 */
+  async syncProjectViews(caller) {
+    // 프로젝트별 보드를 알아보려면 글을 읽어야 합니다 (한 번만 읽고 돌려 씁니다)
+    this.boardText = new Map();
+    for (const f of this.app.vault.getFiles()) {
+      if (f.extension !== "base" || !f.path.startsWith(PROJECT_ZONE + "/")) continue;
+      try { this.boardText.set(f.path, await this.app.vault.read(f)); } catch (e) {}
+    }
+
+    const added = await this.syncViews(PROJECT_BOARD, null, ["project", "assignee"], caller);
+    for (const folder of this.projectFolders()) {
+      for (const b of this.projectBoards(folder)) {
+        added.push(...await this.syncViews(b.path, folder, ["assignee"], caller));
+      }
+    }
+    this.boardText = null;
+
+    if (!added.length && caller === "cmd") {
+      new Notice("보드에 빠진 뷰가 없습니다. ✔");
     }
     return added;
   }
@@ -1531,9 +1633,11 @@ ParaMod.prototype.displaySettings = function (c) {
     }));
 
   new Setting(c)
-    .setName("프로젝트 폴더가 생기면 보드에 뷰를 붙인다")
+    .setName("프로젝트·담당자가 늘면 보드에 뷰를 붙인다")
     .setDesc("`" + PROJECT_ZONE + "` 바로 아래 폴더가 곧 프로젝트입니다. " +
              "새로 만들면 그 프로젝트만 거르는 칸반 뷰가 프로젝트 보드에 붙습니다. " +
+             "담당자도 같습니다 — `담당` 에 새 이름이 적히면 그 사람만 거르는 뷰가 붙습니다 " +
+             "(프로젝트별 보드에는 그 프로젝트 안의 담당자만). " +
              "덧붙이기만 하고 보드를 다시 쓰지는 않습니다 — 카드 순서가 날아가니까요. " +
              "이미지·첨부 폴더는 프로젝트로 안 봅니다.")
     .addToggle((t) => t.setValue(s.syncProjectViews).onChange(async (v) => {
