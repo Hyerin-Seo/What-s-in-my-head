@@ -22,13 +22,14 @@
       "3.📦(Resource) 자료/!Template"
     ],
     "sweepOnStart": true,
-    "askAfterMove": true
+    "askAfterMove": true,
+    "syncProjectViews": true
   },
   "inbox": {
     "auto": true,
     "notice": true,
     "ai": true,
-    "aiAuthor": "Claude",
+    "aiAuthor": "",
     "gapMs": 4000,
     "agy": "agy"
   },

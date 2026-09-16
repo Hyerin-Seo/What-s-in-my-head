@@ -50,7 +50,9 @@ SKIP_DIRS = ("이미지", "images", "attachments")
 
 # 요약·주제를 채운 주체로 적을 이름. 이 볼트를 만든 Claude 로 둡니다.
 # 다른 AI 로 돌리게 바꾸면 이 값도 같이 바꾸세요 — 실제로 쓴 쪽을 적는 게 규칙입니다.
-AI_AUTHOR = "[[Claude]]"
+# 요약 한 줄을 채운 것과 그 노트를 쓴 것은 다릅니다. 비워 두면 `작성자` 를 안 건드립니다.
+# (플러그인의 `작성자에 적을 이름` 설정과 같은 뜻입니다 — 한쪽만 고치지 마세요)
+AI_AUTHOR = ""
 
 WRITE = "--write" in sys.argv
 TODAY = dt.date.today().isoformat()
@@ -312,13 +314,13 @@ def ai():
 
         fm["요약"] = got["요약"]
         fm["주제"] = got["주제"]
-        # AI 가 본문(요약·주제)을 채웠으니 CLAUDE.md 규칙대로 밝힌다
-        cur = fm.get("작성자") or []
-        if not isinstance(cur, list):
-            cur = [cur] if cur else []
-        if AI_AUTHOR not in [str(x).strip('"') for x in cur]:
-            cur.append(AI_AUTHOR)
-        fm["작성자"] = cur
+        if AI_AUTHOR:
+            cur = fm.get("작성자") or []
+            if not isinstance(cur, list):
+                cur = [cur] if cur else []
+            if AI_AUTHOR not in [str(x).strip('"') for x in cur]:
+                cur.append(AI_AUTHOR)
+            fm["작성자"] = cur
         write_fm(p, fm, body)
         done.append((f, got["요약"], got["주제"]))
         time.sleep(3)          # 연달아 부르면 막힌다

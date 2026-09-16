@@ -30,7 +30,7 @@
  */
 const {
   Plugin, PluginSettingTab, Setting, Notice, Modal, Menu,
-  TFile, TFolder, normalizePath,
+  TFile, TFolder, normalizePath, parseYaml,
 } = require("obsidian");
 
 /* ══ 공통 도우미 ══════════════════════════════════════════ */
@@ -259,9 +259,13 @@ const ALL_KINDS = Object.keys(KIND_STATES);
 /* 이 유형은 위치가 곧 역할이라 옮기지 않습니다 */
 const NEVER_MOVE_KINDS = ["홈", "대시보드"];
 
-/* 프로젝트 보드 — 칸반 하나에 모든 프로젝트, 프로젝트는 뷰로 고릅니다 */
+/* 프로젝트 보드 — 칸반 하나에 모든 프로젝트를 모아 봅니다. */
 const PROJECT_ZONE = "1.🎯(Project) 프로젝트";
 const PROJECT_BOARD = PROJECT_ZONE + "/📋 프로젝트 보드.base";
+/* 프로젝트별 보드를 한때 다 이 이름으로 만들었습니다. 셋이 다 `프로젝트 보드` 라
+   탭에서도 파일 탐색기에서도 어느 프로젝트 것인지 알 방법이 없었습니다. 이제는
+   폴더 이름을 따는데, 옛 이름으로 만들어 둔 것만 골라 바꾸려고 남겨 둡니다. */
+const LEGACY_BOARD_NAME = "🗂️ 프로젝트 보드";
 /* 이 말이 든 폴더는 프로젝트가 아닙니다 (그림·첨부 보관소) */
 const NOT_PROJECT = ["이미지", "image", "attachment", "첨부"];
 
@@ -288,6 +292,7 @@ class ParaMod extends Mod {
     this.busy = new Set();     // 내가 방금 건드린 경로 — 되돌아오는 이벤트를 무시한다
     this.timers = new Map();   // 경로별 디바운스
     this.stampTimers = new Map();
+    this.canvasTimers = new Map();
 
     // 왼쪽 리본 — 언제든 누를 수 있는 자리
     this.addRibbonIcon("folder-symlink", "PARA 구역 정리 — 안 맞는 것 보기", () => this.audit());
@@ -309,8 +314,26 @@ class ParaMod extends Mod {
       );
       // 어느 폴더에서 만들든 인박스와 똑같이 — 속성 없는 노트는 어디에도 안 뜹니다
       this.registerEvent(this.app.vault.on("create", (file) => this.queueStamp(file)));
-      // 프로젝트 폴더를 만들면 보드에 그 프로젝트 칸반 뷰가 붙습니다
-      this.registerEvent(this.app.vault.on("create", (file) => this.queueBoardSync(file)));
+      // 캔버스는 속성을 가질 수 없어 어느 보드에도 못 뜹니다 — 옆에 노트를 세웁니다
+      this.registerEvent(this.app.vault.on("create", (file) => this.queueCanvas(file)));
+      // 프로젝트 폴더를 만들면 전용 보드와 프로젝트 보드의 필터 뷰를 함께 만듭니다.
+      this.registerEvent(this.app.vault.on("create", (file) => {
+        this.queueBoardSync(file);
+      }));
+      this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
+        if (file instanceof TFolder) {
+          this.projectRenames = this.projectRenames || [];
+          this.projectRenames.push({ oldPath, newPath: file.path });
+        }
+        this.queueBoardSync(file, oldPath);
+      }));
+      this.registerEvent(this.app.vault.on("delete", (file) => this.queueBoardSync(file)));
+      // Independent of stamping/AI: one failure there must not stop board maintenance.
+      this.queueProjectReconcile("start");
+      this.projectPoll = setInterval(() => {
+        const signature = JSON.stringify(this.projectFolders());
+        if (signature !== this.projectSignature) this.queueProjectReconcile("auto");
+      }, 10000);
 
       // 플러그인이 꺼져 있던 동안, 또는 다른 기기에서 속성만 고쳐진 동안 밀린 것을
       // 켜질 때 한 번 정리합니다. 명령을 따로 누르지 않아도 되게.
@@ -318,8 +341,8 @@ class ParaMod extends Mod {
       this.startupTimer = setTimeout(async () => {
         if (this.settings.sweepOnStart) await this.sweep(true, "start");
         if (this.settings.stampNew) await this.stampAll("start");
+        if (this.settings.wrapCanvas) await this.wrapCanvasAll("start");
         if (this.settings.authorFromName) await this.fillAuthorAll("start");
-        if (this.settings.syncProjectViews) await this.syncProjectViews("start");
         this.refreshStatus();
         // 위치는 맞는데 유형·상태·분류가 옛 구역 값인 노트가 있으면 목록을 바로 엽니다.
         // (알림은 사라져 버려서 쓸모가 없습니다)
@@ -375,8 +398,10 @@ class ParaMod extends Mod {
     });
     this.addCommand({
       id: "board-sync",
-      name: "프로젝트 보드에 빠진 뷰 붙이기 (프로젝트 · 담당자)",
-      callback: () => this.syncProjectViews("cmd"),
+      name: "프로젝트 보드 필터 뷰·프로젝트별 보드 보완",
+      callback: async () => {
+        await this.reconcileProjects("cmd");
+      },
     });
     this.addCommand({
       id: "author-all",
@@ -399,6 +424,21 @@ class ParaMod extends Mod {
       callback: () => this.stampAll("cmd"),
     });
     this.addCommand({
+      id: "canvas-active",
+      name: "이 캔버스를 노트로 세우기 (보드에 뜨게)",
+      checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
+        if (!file || file.extension !== "canvas") return false;
+        if (!checking) this.wrapCanvas(file, "cmd");
+        return true;
+      },
+    });
+    this.addCommand({
+      id: "canvas-all",
+      name: "볼트 전체 — 혼자 있는 캔버스를 노트로 세우기",
+      callback: () => this.wrapCanvasAll("cmd"),
+    });
+    this.addCommand({
       id: "sweep",
       name: "볼트 전체 — 구역 속성대로 옮기기",
       callback: () => this.sweep(true),
@@ -413,6 +453,19 @@ class ParaMod extends Mod {
       name: "구역이 폴더와 어긋난 노트 찾기 (옮기지 않음)",
       callback: () => this.sweep(false),
     });
+
+    this.registerEvent(
+      this.app.workspace.on("file-menu", (menu, file) => {
+        if (!(file instanceof TFile) || file.extension !== "canvas") return;
+        if (!this.canvasPlan(file)) return;      // 이미 세워져 있거나 구역 폴더 밖
+        menu.addItem((i) =>
+          i.setSection("action")
+            .setTitle("노트로 세우기 (보드에 뜨게)")
+            .setIcon("lucide-layout-dashboard")
+            .onClick(() => this.wrapCanvas(file, "cmd"))
+        );
+      })
+    );
 
     this.registerEvent(
       this.app.workspace.on("file-menu", (menu, file) => {
@@ -488,7 +541,16 @@ class ParaMod extends Mod {
     const hits = this.app.vault.getAllLoadedFiles().filter(
       (f) => f instanceof TFolder && f.name === cls && f.path.split("/")[0] === zone.folder
     );
-    return hits.length === 1 ? hits[0].path : root;   // 후보가 하나일 때만 (헷갈리면 구역 최상단)
+    if (!hits.length) return root;
+    // **제일 얕은 것**이 사람이 뜻한 폴더입니다. 예전에는 `hits.length === 1` 만 봤는데,
+    // 칸반 빠른 추가가 `…/구역/분류` 같은 빈 폴더를 하나 흘리고 가면 후보가 둘이 되어
+    // 그때부터 모든 노트가 조용히 구역 최상단에 떨어졌습니다 — 틀렸다는 말도 없이.
+    // 깊이가 같은 후보가 둘이면 그건 진짜로 헷갈리는 것이라 최상단으로 물러납니다.
+    let best = hits[0];
+    for (const f of hits) if (f.path.split("/").length < best.path.split("/").length) best = f;
+    const depth = best.path.split("/").length;
+    const tied = hits.filter((f) => f.path.split("/").length === depth);
+    return tied.length === 1 ? best.path : root;
   }
 
   /* ── ① 속성 → 폴더 ───────────────────────────────────── */
@@ -507,11 +569,15 @@ class ParaMod extends Mod {
   }
 
   onunload() {
+    this.projectStopped = true;
+    clearInterval(this.projectPoll);
     clearTimeout(this.startupTimer);
     for (const t of this.timers.values()) clearTimeout(t);
     this.timers.clear();
     for (const t of this.stampTimers.values()) clearTimeout(t);
     this.stampTimers.clear();
+    for (const t of this.canvasTimers.values()) clearTimeout(t);
+    this.canvasTimers.clear();
     clearTimeout(this.boardTimer);
   }
 
@@ -929,6 +995,294 @@ class ParaMod extends Mod {
     new Notice("✍ 작성자를 " + n + "개 채웠습니다. (파일 이름 앞머리 기준)", 8000);
   }
 
+  /* ── 캔버스도 카드가 되게 ─────────────────────────────────
+     `.canvas` 는 **속성을 가질 수 없습니다.** 프론트매터를 읽어 주는 파일은 마크다운
+     하나뿐입니다 (obsidian.asar 확인 — metadataCache 의 `isSupportedFile` 이
+     `"md" === e.extension` 한 줄입니다). 베이스는 `vault.getFiles()` 로 볼트의 **모든**
+     파일을 훑으니 캔버스도 후보에는 들어가지만 (그래서 보드 필터에 `file.ext == "md"`
+     가 있습니다), `유형`·`상태` 가 없으니 어느 칸에도 못 들어갑니다. 결국 캔버스는
+     만들어 놓고도 **안 보입니다** — 틀린 게 아니라 없는 것처럼 취급됩니다.
+
+     그래서 인박스가 첨부에 하는 것과 똑같이 **옆에 노트를 세웁니다.** 카드는 그
+     노트고, 카드를 누르면 본문의 링크로 캔버스가 열립니다. 캔버스 파일은 제자리에
+     둡니다 — 첨부가 아니라 문서니까요 (인박스도 캔버스만 `이미지/` 로 안 옮깁니다).
+
+     채우는 것은 속성 붙이기와 같은 기준입니다 — **자리가 말해주는 것만**. 그림을
+     열어 보고 무슨 내용인지 짐작하지 않습니다. */
+
+  canvasNotePath(file) {
+    const dir = file.parent ? file.parent.path : "";
+    return normalizePath((dir ? dir + "/" : "") + file.basename + ".md");
+  }
+
+  /** 노트로 세울 캔버스인가 — 아니면 null */
+  canvasPlan(file) {
+    if (!(file instanceof TFile) || file.extension !== "canvas") return null;
+    if (this.isExcluded(file.path)) return null;
+    const zoneKey = this.zoneOfPath(file.path);
+    if (!zoneKey) return null;                       // 구역 폴더 밖
+    const notePath = this.canvasNotePath(file);
+    if (this.app.vault.getAbstractFileByPath(notePath)) return null;   // 이미 세워져 있다
+    const kind = this.kindForZone(zoneKey);
+    const state = zoneKey === "0.inbox" ? "미처리"
+                : kind ? this.stateFor(zoneKey, kind, "") : "";
+    return { file, zoneKey, kind, state, notePath, cls: this.classFor(file, zoneKey) };
+  }
+
+  async wrapCanvas(file, caller) {
+    const p = this.canvasPlan(file);
+    if (!p) {
+      if (caller === "cmd") new Notice("세울 것이 없습니다 — 노트가 이미 있거나 구역 폴더 밖입니다.");
+      return false;
+    }
+    const today = todayYmd();
+    const out = ["---"];
+    for (const k of STD) {
+      if (k === "유형" && p.kind) out.push("유형: " + p.kind);
+      else if (k === "구역") out.push("구역: " + p.zoneKey);
+      else if (k === "상태" && p.state) out.push("상태: " + p.state);
+      else if (k === "작성일") out.push("작성일: " + today);
+      else if (k === "분류" && p.cls) out.push("분류:", "  - " + yamlScalar(p.cls));
+      else out.push(k + ":");
+    }
+    const extra = EXTRA_KEYS[p.kind] || [];
+    if (extra.length) {
+      out.push(EXTRA_HEAD);
+      for (const k of extra) out.push(k + ":");
+    }
+    out.push("---", "");
+
+    // 노트와 캔버스는 **이름이 같습니다.** 링크에 확장자가 없으면 이 노트로 되돌아옵니다.
+    // fileToLinktext 는 마크다운이 아닌 것에 확장자를 남깁니다.
+    const link = this.app.metadataCache.fileToLinktext(file, p.notePath);
+    const body = [
+      "🖼 캔버스 열기 → [[" + link + "]]",
+      "",
+      "%%",
+      "보드에 뜨는 카드가 이 노트입니다. 캔버스는 속성을 가질 수 없어서 — 프론트매터를",
+      "읽어 주는 건 마크다운뿐입니다 — 옆에 노트를 세웁니다. 캔버스 파일은 제자리에",
+      "그대로 있습니다. 이 노트를 지우면 캔버스가 보드에서 다시 사라집니다.",
+      "무엇을 그린 것인지 `요약` 에 한 줄 적어 두면 3주 뒤에 도움이 됩니다.",
+      "%%",
+      "",
+      "![[" + link + "]]",
+      "",
+    ].join("\n");
+
+    await this.app.vault.create(p.notePath, out.join("\n") + body);
+
+    const note = this.app.vault.getAbstractFileByPath(p.notePath);
+    const what = [p.kind || "유형 비움", p.zoneKey, p.state, p.cls].filter(Boolean).join(" · ");
+    if (p.kind) {
+      if (caller === "cmd" || this.settings.notice) {
+        new Notice("🖼 " + file.name + "\n보드에 뜨게 노트로 세웠습니다 — " + what, 6000);
+      }
+    } else if (note instanceof TFile) {
+      // 고를 여지가 있는 구역입니다 — 지어내지 않고 이웃이 쓰는 값을 권합니다
+      this.offerKind(note);
+    }
+    this.refreshStatus();
+    return true;
+  }
+
+  /** 캔버스를 만들면 옆에 노트를 세웁니다 (다 써질 때까지 잠깐 기다립니다) */
+  queueCanvas(file) {
+    if (!this.settings.wrapCanvas) return;
+    if (!(file instanceof TFile) || file.extension !== "canvas") return;
+    const path = file.path;
+    clearTimeout(this.canvasTimers.get(path));
+    this.canvasTimers.set(path, setTimeout(() => {
+      this.canvasTimers.delete(path);
+      const f = this.app.vault.getAbstractFileByPath(path);
+      if (f instanceof TFile) this.wrapCanvas(f, "auto");
+    }, 1500));
+  }
+
+  /** 노트 없이 혼자 있는 캔버스 — 어느 보드에도 안 뜹니다 */
+  bareCanvases() {
+    return this.app.vault.getFiles().filter((f) => this.canvasPlan(f));
+  }
+
+  async wrapCanvasAll(caller) {
+    const todo = this.bareCanvases();
+    if (!todo.length) {
+      if (caller !== "start") new Notice("노트 없이 혼자 있는 캔버스가 없습니다. ✔");
+      return;
+    }
+    let n = 0;
+    for (const f of todo) if (await this.wrapCanvas(f, "sweep")) n++;
+    if (n) new Notice("🖼 캔버스 " + n + "개를 노트로 세웠습니다.", 8000);
+  }
+
+  /* ── 프로젝트 폴더별 보드 ─────────────────────────────────
+     프로젝트 보드는 전체 칸반 한 장으로 유지합니다. 각 프로젝트 폴더에는 그 폴더만
+     거르는 보드 파일 하나를 두어, 프로젝트 홈의 목록에서 바로 열 수 있게 합니다.
+     이 파일은 정해진 필터·속성만 담는 구조물이라 agy가 아닌 플러그인이 만듭니다. */
+
+  /* 보드 이름은 **폴더 이름 그대로**입니다. 앞머리 이모지만 뗍니다 — 보드가 자기
+     🗂️ 를 달기 때문입니다 (`😁MangoDoc_엔진설계` → `🗂️ MangoDoc_엔진설계 보드`).
+     파일 이름에 못 쓰는 글자만 공백으로 바꾸고, 나머지는 한 글자도 안 건드립니다. */
+  boardNameFor(folder) {
+    const safe = (x) => x.replace(/[\\\/:*?"<>|#^\[\]]/g, " ").replace(/\s+/g, " ").trim();
+    const name = String(folder);
+    const bare = safe(name.replace(/^[\p{Extended_Pictographic}\uFE0F\u200D]+\s*/u, ""));
+    return "🗂️ " + (bare || safe(name) || "프로젝트") + " 보드";
+  }
+
+  projectBoardPath(folder) {
+    return PROJECT_ZONE + "/" + folder + "/" + this.boardNameFor(folder) + ".base";
+  }
+
+  /** 옛 이름으로 만들어 둔 보드를 폴더 이름표로 바꿉니다.
+      **플러그인이 지은 그 이름일 때만** 건드립니다 — 사람이 붙인 보드 이름
+      (`🗂️ PARA 구축 보드`)은 그 사람 것이라 그대로 둡니다. */
+  async renameLegacyBoards(caller) {
+    const renamed = [];
+    for (const folder of this.projectFolders()) {
+      const old = this.app.vault.getAbstractFileByPath(
+        PROJECT_ZONE + "/" + folder + "/" + LEGACY_BOARD_NAME + ".base");
+      const want = this.projectBoardPath(folder);
+      if (!(old instanceof TFile) || old.path === want) continue;
+      if (this.app.vault.getAbstractFileByPath(want)) continue;
+      try {
+        await this.app.fileManager.renameFile(old, want);
+        renamed.push(folder);
+      } catch (e) {
+        console.error("[Claude] 보드 이름 바꾸기 실패", old.path, e);
+      }
+    }
+    if (renamed.length && (caller === "cmd" || this.settings.notice)) {
+      new Notice("🗂️ 보드 이름을 폴더 이름으로 바꿨습니다:\n" + renamed.join(" · "), 8000);
+    }
+    return renamed;
+  }
+
+  projectBoardText(folder) {
+    const path = PROJECT_ZONE + "/" + folder;
+    const L = [
+      "filters:",
+      "  and:",
+      '    - file.ext == "md"',
+      '    - note["유형"] == "할일"',
+      '    - note["구역"] == "1.project"',
+      '    - file.inFolder("' + path + '")',
+      "    - not:",
+      '        - file.name.startsWith("!(Template)")',
+      "views:",
+      "  - type: kanban-view",
+      "    name: 🗂️ 전체",
+      "    order:",
+      "      - 담당",
+      "      - 일정",
+      "      - 마감",
+      "      - 작성자",
+      "    quickAddFolder: " + path,
+      "    groupByProperty: note.상태",
+      "    imageProperty: note.커버",
+      "    imageFit: cover",
+      "    imageAspectRatio: 0.667",
+      "    columnOrders:",
+      "      note.상태:",
+    ];
+    for (const state of (KIND_STATES["할일"] || [])) L.push("        - " + state);
+    L.push("    columnColors:", "      note.상태: {}");
+    // 프로젝트 전용 보드는 처음부터 세 담당자 보기까지 함께 만듭니다.
+    // 일이 없어도 탭이 있어야 "아직 배정된 일이 없다"를 확인할 수 있습니다.
+    for (const who of ["Rin", "민규 서", ""]) {
+      L.push(...this.assigneeViewLines(who, folder));
+    }
+    L.push("  - type: table", "    name: 📊 전체 표", "    order:",
+      "      - 담당", "      - 일정", "      - 마감", "      - 작성자");
+    L.push("newItemFolder: " + JSON.stringify(path),
+      "newItemTemplate: " + JSON.stringify(PROJECT_ZONE + "/!(Template) 새 할 일.md"), "");
+    return L.join("\n");
+  }
+
+  async ensureProjectBoard(folder, caller) {
+    const dir = this.app.vault.getAbstractFileByPath(PROJECT_ZONE + "/" + folder);
+    if (!(dir instanceof TFolder)) return null;
+    const existing = dir.children.find((item) => item instanceof TFile && item.extension === "base");
+    if (existing) return existing;
+    const board = await this.app.vault.create(this.projectBoardPath(folder), this.projectBoardText(folder));
+    if (caller === "cmd" || this.settings.notice) {
+      new Notice("🗂️ " + folder + "\n프로젝트 보드를 만들었습니다.", 5000);
+    }
+    return board;
+  }
+
+  async ensureProjectBoards(caller) {
+    const made = [];
+    for (const folder of this.projectFolders()) {
+      const before = this.app.vault.getAbstractFileByPath(this.projectBoardPath(folder));
+      const board = await this.ensureProjectBoard(folder, caller);
+      if (board && !before) made.push(folder);
+    }
+    if (caller === "cmd" && !made.length) new Notice("모든 프로젝트에 보드가 있습니다. ✔");
+    return made;
+  }
+
+  /** 새 프로젝트 최상위 폴더가 생긴 뒤, 보드 파일 하나를 만듭니다. */
+  queueProjectBoard(file) {
+    this.queueBoardSync(file);
+  }
+
+  queueProjectReconcile(caller = "auto") {
+    if (this.projectStopped) return;
+    clearTimeout(this.boardTimer);
+    this.boardTimer = setTimeout(() => {
+      this.reconcileProjects(caller).catch((error) => {
+        console.error("[Claude] 프로젝트 보드 동기화 실패", error);
+        new Notice("프로젝트 보드 동기화 실패: " + error.message, 8000);
+      });
+    }, 350);
+  }
+
+  async reconcileProjects(caller = "auto") {
+    this.projectDirty = true;
+    if (this.projectRun) return this.projectRun;
+    this.projectRun = (async () => {
+      while (this.projectDirty && !this.projectStopped) {
+        this.projectDirty = false;
+        // Never prune during a transient missing root (external directory moves).
+        if (!(this.app.vault.getAbstractFileByPath(PROJECT_ZONE) instanceof TFolder)) return;
+        const moves = (this.projectRenames || []).splice(0);
+        for (const move of moves) await this.retargetProjectBoards(move);
+        await this.renameLegacyBoards(caller);
+        await this.ensureProjectBoards(caller);
+        if (this.settings.syncProjectViews) await this.syncProjectViews(caller);
+        this.projectSignature = JSON.stringify(this.projectFolders());
+      }
+    })();
+    try { await this.projectRun; }
+    finally { this.projectRun = null; }
+  }
+
+  async retargetProjectBoards({ oldPath, newPath }) {
+    if (oldPath === newPath) return;
+    const dir = this.app.vault.getAbstractFileByPath(newPath);
+    if (!(dir instanceof TFolder) || !newPath.startsWith(PROJECT_ZONE + "/")) return;
+    for (const board of dir.children.filter(f => f instanceof TFile && f.extension === "base")) {
+      await this.app.vault.process(board, data => {
+        const oldFilter = "file.inFolder(" + JSON.stringify(oldPath) + ")";
+        if (!data.includes(oldFilter)) return data;
+        // Preserve user column/card settings while repairing the board's folder scope.
+        return data.split(oldPath).join(newPath);
+      });
+    }
+    // 이름도 따라갑니다 — 보드 이름이 곧 폴더 이름이라서요. 플러그인이 지은 이름일
+    // 때만 바꿉니다. 프로젝트 최상위 폴더에만 해당합니다 (하위 폴더는 프로젝트가 아님).
+    const parts = newPath.split("/");
+    if (parts.length !== 2) return;
+    const mine = new Set([LEGACY_BOARD_NAME, this.boardNameFor(oldPath.split("/").pop())]);
+    const want = this.projectBoardPath(parts[1]);
+    for (const board of dir.children.filter(f => f instanceof TFile && f.extension === "base")) {
+      if (!mine.has(board.basename) || board.path === want) continue;
+      if (this.app.vault.getAbstractFileByPath(want)) continue;
+      try { await this.app.fileManager.renameFile(board, want); }
+      catch (e) { console.error("[Claude] 보드 이름 바꾸기 실패", board.path, e); }
+    }
+  }
+
   /* ── 프로젝트 보드에 뷰 붙이기 ────────────────────────────
      칸반은 **하나**입니다. 모든 프로젝트의 할일이 한 판에 들어가고, 프로젝트도
      담당자도 스윔레인이 아니라 **뷰**로 고릅니다. 무엇이 늘어도 판이 쪼개지지 않습니다.
@@ -940,7 +1294,7 @@ class ParaMod extends Mod {
      프로젝트별 보드(프로젝트 폴더 안에 있고 그 폴더를 거르는 `.base`)에는 그 프로젝트
      안의 담당자 뷰만 붙입니다.
 
-     덧붙이기만 합니다 — 보드를 통째로 다시 쓰지 않습니다. 칸반 플러그인이 카드를
+     현재 직계 폴더와 프로젝트 뷰를 맞춥니다. 칸반 플러그인이 카드를
      끌 때마다 `cardOrders`·`columnColors` 를 그 파일에 적어 두기 때문에, 다시 쓰면
      사람이 맞춰 둔 순서가 날아갑니다. */
 
@@ -962,7 +1316,7 @@ class ParaMod extends Mod {
 
   /** 칸반 뷰 한 덩어리 (보드 파일에 들어갈 줄들) */
   kanbanViewLines(name, folder) {
-    const L = ["  - type: kanban-view", "    name: " + name];
+    const L = ["  - type: kanban-view", "    name: " + JSON.stringify(name)];
     if (folder) {
       L.push("    filters:", "      and:",
         '        - file.inFolder("' + PROJECT_ZONE + "/" + folder + '")');
@@ -1014,7 +1368,7 @@ class ParaMod extends Mod {
       명단에 없는 이름이 `담당` 에 적혀 있으면 그 사람 뷰도 붙입니다 — 안 보이는 일이
       없게. */
   roster(folder) {
-    const out = (this.settings.people || [])
+    const out = [...new Set(["Rin", "민규 서", ...(this.settings.people || [])])]
       .map((x) => String(x).trim()).filter(Boolean);
     for (const who of this.assignees(folder)) if (!out.includes(who)) out.push(who);
     return out;
@@ -1080,9 +1434,34 @@ class ParaMod extends Mod {
 
     const added = [];
     await this.app.vault.process(board, (data) => {
+      // Validate first; retain each surviving view byte-for-byte (card order, colors, etc.).
+      const document = parseYaml(data);
+      if (!document || !Array.isArray(document.views)) throw new Error("잘못된 보드 YAML: " + path);
       const lines = data.split("\n");
-      const missing = want.filter((w) => !lines.some((l) => l.trim() === "name: " + w.name));
-      if (!missing.length) return data;
+      if (kinds.includes("project")) {
+        const current = new Set(this.projectFolders().map(p => PROJECT_ZONE + "/" + p));
+        const starts = [];
+        for (let i = 0; i < lines.length; i++) if (/^  - type:/.test(lines[i])) starts.push(i);
+        for (let n = starts.length - 1; n >= 0; n--) {
+          const start = starts[n];
+          let end = start + 1;
+          while (end < lines.length && !/^  - /.test(lines[end]) && !/^\S/.test(lines[end])) end++;
+          const view = parseYaml("views:\n" + lines.slice(start, end).join("\n")).views[0];
+          const rules = view.filters?.and;
+          // Only a project-folder view qualifies; assignee/custom compound filters stay intact.
+          if (view.type !== "kanban-view" || !Array.isArray(rules) || rules.length !== 1 || typeof rules[0] !== "string") continue;
+          const match = rules[0].match(/^file\.inFolder\(("(?:[^"\\]|\\.)*")\)$/);
+          if (!match) continue;
+          const target = JSON.parse(match[1]);
+          if (!target.startsWith(PROJECT_ZONE + "/")) continue;
+          if (view.name !== target.split("/").pop()) continue;
+          if (!current.has(target)) lines.splice(start, end - start);
+        }
+      }
+      const kept = parseYaml(lines.join("\n"));
+      const names = new Set(kept.views.map(v => v.name));
+      const missing = want.filter(w => !names.has(w.name));
+      if (!missing.length) return lines.join("\n");
 
       // 마지막 칸반 뷰 다음에 끼웁니다 (칸반끼리 모여 있게)
       let at = -1;
@@ -1095,7 +1474,7 @@ class ParaMod extends Mod {
         at += 1;
       } else {
         at += 1;
-        while (at < lines.length && !/^ {2}- /.test(lines[at])) at++;
+        while (at < lines.length && !/^ {2}- /.test(lines[at]) && !/^\S/.test(lines[at])) at++;
       }
       const block = [];
       for (const w of missing) {
@@ -1103,7 +1482,9 @@ class ParaMod extends Mod {
         added.push(w.name);
       }
       lines.splice(at, 0, ...block);
-      return lines.join("\n");
+      const result = lines.join("\n");
+      parseYaml(result);
+      return result;
     });
 
     if (added.length) {
@@ -1138,13 +1519,10 @@ class ParaMod extends Mod {
 
   /** 프로젝트 폴더가 새로 생기면 뷰를 붙입니다 */
   queueBoardSync(file) {
-    if (!this.settings.syncProjectViews) return;
-    if (!(file instanceof TFolder)) return;
-    const parts = file.path.split("/");
-    if (parts.length !== 2 || parts[0] !== PROJECT_ZONE) return;   // 바로 아래만
-    if (!this.isProjectFolder(file.name)) return;
-    clearTimeout(this.boardTimer);
-    this.boardTimer = setTimeout(() => this.syncProjectViews("auto"), 3000);
+    const oldPath = arguments[1] || "";
+    const relevant = p => p === PROJECT_ZONE || p.startsWith(PROJECT_ZONE + "/");
+    if ((file instanceof TFolder || file.extension === "base") &&
+        (relevant(file.path) || relevant(oldPath))) this.queueProjectReconcile();
   }
 
   /* ── 전체 훑기 ───────────────────────────────────────── */
@@ -1657,6 +2035,16 @@ ParaMod.prototype.displaySettings = function (c) {
              "속성이 없으면 그 노트는 어느 보드에도 안 뜹니다.")
     .addToggle((t) => t.setValue(s.stampNew).onChange(async (v) => {
       s.stampNew = v; await this.save();
+    }));
+
+  new Setting(c)
+    .setName("캔버스 옆에 노트를 세운다")
+    .setDesc("`.canvas` 는 속성을 가질 수 없습니다 — 프론트매터를 읽어 주는 파일은 " +
+             "마크다운뿐입니다. 그래서 캔버스는 만들어 놓고도 어느 보드에도 안 뜹니다. " +
+             "인박스가 첨부에 하듯 같은 이름의 노트를 옆에 세워 그 노트를 카드로 씁니다. " +
+             "캔버스 파일은 제자리에 그대로 둡니다 — 첨부가 아니라 문서니까요.")
+    .addToggle((t) => t.setValue(s.wrapCanvas).onChange(async (v) => {
+      s.wrapCanvas = v; await this.save();
     }));
 
   new Setting(c)
@@ -2413,9 +2801,12 @@ class InboxMod extends Mod {
     const topics = (got["주제"] || []).map((x) => String(x).trim()).filter(Boolean);
     if (!summary && !topics.length) throw new Error("빈 결과");
 
-    const author = "[[" + String(this.settings.aiAuthor || "Claude") + "]]";
+    // `작성자` 는 **기본이 비어 있습니다.** 요약 한 줄을 채운 것과 그 노트를 쓴 것은
+    // 다릅니다. 게다가 요약을 쓰는 건 agy(Antigravity)라 `Claude` 는 사실도 아니었습니다.
+    // 적고 싶으면 설정 → Claude → 인박스 자동 감싸기 → `작성자에 적을 이름` 에 넣으세요.
+    const who = String(this.settings.aiAuthor || "").trim();
     await this.app.vault.process(file, (data) =>
-      setProps(data, { "요약": summary, "주제": topics }, author));
+      setProps(data, { "요약": summary, "주제": topics }, who ? "[[" + who + "]]" : ""));
 
     if (this.settings.notice) {
       new Notice("🤖 " + file.basename + "\n" + summary, 6000);
@@ -2591,9 +2982,11 @@ InboxMod.prototype.displaySettings = function (c) {
       if (v) this.pump();
     }));
   new Setting(c).setName("`작성자` 에 적을 이름")
-    .setDesc("요약을 쓴 주체입니다. 실제로 쓴 쪽을 적는 게 이 볼트 규칙입니다.")
-    .addText((t) => t.setValue(s.aiAuthor).setPlaceholder("Claude")
-      .onChange(async (v) => { s.aiAuthor = v.trim() || "Claude"; await this.save(); }));
+    .setDesc("**비워 두면 아무것도 안 적습니다 (기본).** 요약 한 줄을 채운 것과 그 노트를 " +
+             "쓴 것은 다릅니다. 적겠다면 실제로 쓴 쪽을 적으세요 — 요약을 쓰는 건 " +
+             "agy(Antigravity)입니다.")
+    .addText((t) => t.setValue(s.aiAuthor).setPlaceholder("비워 두면 안 적습니다")
+      .onChange(async (v) => { s.aiAuthor = v.trim(); await this.save(); }));
   new Setting(c).setName("호출 간격 (밀리초)")
     .setDesc("너무 짧으면 agy 가 막힙니다. 기본 4000.")
     .addText((t) => t.setValue(String(s.gapMs))
@@ -2987,7 +3380,9 @@ class ChipMod extends Mod {
 
   onload() {
     this.timer = null;
+    this.openMenu = null;
     this.queue = this.queue.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
     this.obs = new MutationObserver(this.queue);
     // 글자만 바뀌는 경우(칸반에서 카드를 끌면)도 잡습니다. 속성 변화는 일부러 안 봅니다 —
     // 우리가 다는 data-chip-value 가 또 우리를 부르는 고리가 생깁니다.
@@ -3006,6 +3401,9 @@ class ChipMod extends Mod {
        왼쪽 단추만 가로챕니다. 오른쪽 단추는 옵시디언 기본 메뉴 그대로 둡니다. */
     this.registerDomEvent(document, "mousedown", (e) => this.onDown(e), true);
     this.registerDomEvent(document, "click", (e) => this.onClick(e), true);
+    // 메뉴는 눌렀던 셀에만 유효합니다. 화면/표를 스크롤하면 원래 셀이 이동하므로
+    // 고정 좌표에 떠 있는 메뉴를 남기지 않고, 기본 속성 드롭다운처럼 즉시 닫습니다.
+    this.registerDomEvent(document, "scroll", this.closeMenu, true);
 
     this.queue();
 
@@ -3026,6 +3424,7 @@ class ChipMod extends Mod {
   onunload() {
     if (this.obs) this.obs.disconnect();
     clearTimeout(this.timer);
+    this.closeMenu();
     for (const doc of this.docs()) {
       for (const el of doc.querySelectorAll("[data-chip-value]")) {
         el.removeAttribute("data-chip-value");
@@ -3185,12 +3584,20 @@ class ChipMod extends Mod {
       doc.activeElement.blur();
     }
 
+    this.closeMenu();
     const menu = new Menu();
     for (const v of h.values) {
       menu.addItem((i) => i.setTitle(v).setChecked(v === h.cur)
         .onClick(() => this.setState(h.file, v)));
     }
+    this.openMenu = menu;
     menu.showAtMouseEvent(e);
+  }
+
+  closeMenu() {
+    if (!this.openMenu) return;
+    if (typeof this.openMenu.hide === "function") this.openMenu.hide();
+    this.openMenu = null;
   }
 
   /** 이 줄이 어느 노트인가 — 같은 줄의 **파일 칸** 링크로 찾습니다.
@@ -3248,8 +3655,9 @@ const DEFAULTS = {
     sweepOnStart: true,    // 켜질 때 밀린 것을 한 번 정리한다
     askAfterMove: true,    // 옮긴 뒤 유형·상태·분류가 안 맞으면 물어본다
     stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
+    wrapCanvas: true,      // 캔버스 옆에 노트를 세운다 (캔버스는 속성을 못 가진다)
     authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
-    syncProjectViews: true, // 프로젝트 폴더가 생기면 보드에 칸반 뷰를 붙인다
+    syncProjectViews: true, // 프로젝트·담당자별 필터 뷰를 프로젝트 보드에 자동으로 만든다
     people: ["Rin", "민규 서"], // 칸반에 늘 두는 담당자. 일이 없어도 탭은 있습니다
     authorPrefix: {        // 앞머리 → 작성자. 사람이 직접 붙인 표시라서 읽습니다
       "rin": "Rin",
@@ -3275,7 +3683,7 @@ const DEFAULTS = {
     newFolder: INBOX + "/🥭 망고 인박스",                 // 새 노트가 떨어지는 자리
     notice: true,
     ai: true,            // 감싼 뒤 agy 로 요약·주제까지 자동으로
-    aiAuthor: "Claude",  // 요약을 쓴 주체로 `작성자` 에 적을 이름
+    aiAuthor: "",        // 요약을 쓴 주체로 `작성자` 에 적을 이름. **비우면 안 적습니다**
     gapMs: 4000,         // agy 호출 사이 간격
     agy: "agy",          // 실행 파일 (PATH 에 없으면 전체 경로)
   },
