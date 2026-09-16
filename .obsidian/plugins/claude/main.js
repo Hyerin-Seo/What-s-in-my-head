@@ -3014,6 +3014,9 @@ class ChipMod extends Mod {
       for (const el of doc.querySelectorAll("[data-chip-value]")) {
         el.removeAttribute("data-chip-value");
       }
+      for (const el of doc.querySelectorAll(".claude-chip")) {
+        el.classList.remove("claude-chip");
+      }
     }
   }
 
@@ -3056,8 +3059,20 @@ class ChipMod extends Mod {
         // 고치는 중인 칸은 글자가 오락가락하니 건드리지 않습니다
         if (el.contains(doc.activeElement)) continue;
         const v = (el.textContent || "").trim();
-        if (!v) { el.removeAttribute("data-chip-value"); continue; }
+        // 칩은 **글자를 담은 안쪽 칸**에 씌웁니다. 바깥 칸(.bases-table-cell)은 옵시디언이
+        // `display:flex; width:100%` 로 못박아 둬서 무엇을 칠하든 칸 전체가 칠해집니다
+        // (obsidian.asar 확인). 담당·작성자 칩도 알약 껍데기가 아니라 그 **안쪽**
+        // `.multi-select-pill-content` 에 색이 붙습니다 — 같은 자리입니다.
+        const inner = el.querySelector(".metadata-input-longtext") ||
+                      el.querySelector("[contenteditable]") ||
+                      el.querySelector(".bases-cards-line, .obk-card-property-value");
+        if (!v) {
+          el.removeAttribute("data-chip-value");
+          if (inner) inner.classList.remove("claude-chip");
+          continue;
+        }
         if (el.dataset.chipValue !== v) el.dataset.chipValue = v;
+        if (inner && !inner.classList.contains("claude-chip")) inner.classList.add("claude-chip");
         n++;
       }
     }

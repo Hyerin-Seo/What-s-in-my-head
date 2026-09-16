@@ -687,6 +687,22 @@ p.커버.path      →  "망고.jpg"            ← 이걸 써야 합니다
 `i.el.dataset.property=n` 확인). 그래서 `chip` 기능이 그 칸에
 `data-chip-value="진행중"` 을 적어 주고, 색은 `plugins/claude/styles.css` 가 고릅니다.
 
+**칩은 안쪽 칸에 씌웁니다. 바깥 칸에 칠하면 칸 전체가 칠해집니다.**
+
+```
+div.bases-td[data-property="note.상태"]           ← chip 이 data-chip-value 를 적는 곳
+  div.bases-table-cell                            ← 옵시디언: display:flex; width:100%
+    div.metadata-input-longtext[contenteditable]  ← **글자가 여기. 여기에 .claude-chip**
+```
+
+담당·작성자도 알약 껍데기(`.multi-select-pill`)가 아니라 그 안쪽
+`.multi-select-pill-content.internal-link` 에 색이 붙습니다 (`author-chips.css`).
+**같은 자리입니다.** 처음에 `.bases-table-cell` 에 칠했다가 "색만 바뀐 칸" 이 나왔습니다 —
+그 칸은 옵시디언이 `width:100%` 로 못박아 둡니다 (obsidian.asar 확인). 다시 그러지 마세요.
+
+**✕ 는 일부러 안 답니다.** 그건 multitext 알약의 *값 지우기* 단추입니다. 상태를 지우면
+그 카드가 칸반에서 사라지므로 표에서 한 번 눌러 지워지면 안 됩니다.
+
 | 값 | 색 |
 | --- | --- |
 | `to do` | 회색 |
