@@ -38,7 +38,10 @@ views:
         - 완료
         - 퍼즈
         - 히스토리
+        - Uncategorized
     columnColors:
+      note.상태: {}
+    cardOrders:
       note.상태: {}
   - type: kanban-view
     name: 🗂️ 전체
@@ -137,7 +140,10 @@ views:
         - 완료
         - 퍼즈
         - 히스토리
+        - Uncategorized
     columnColors:
+      note.상태: {}
+    cardOrders:
       note.상태: {}
   - type: kanban-view
     name: 👤 Rin
@@ -253,6 +259,8 @@ views:
     sort:
       - property: 일정
         direction: ASC
+    columnSize:
+      note.상태: 96
   - type: table
     name: 🌱 묵히는 것 — 기한이 아직 먼 것
     filters:

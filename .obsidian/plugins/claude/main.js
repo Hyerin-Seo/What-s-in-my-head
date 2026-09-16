@@ -66,6 +66,12 @@ function todayYmd() {
 }
 
 /** 날짜 속성은 캐시에서 Date 로 올 수도, 문자열로 올 수도 있습니다 */
+/** 두 `YYYY-MM-DD` 사이 날 수 (b - a). 시간대 없이 날짜만 봅니다 */
+function daysBetween(a, b) {
+  const p = (s) => Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10));
+  return Math.round((p(b) - p(a)) / 86400000);
+}
+
 function ymdOf(v) {
   const x = first(v);
   if (!x) return "";
@@ -3027,6 +3033,9 @@ class ChipMod extends Mod {
       for (const el of doc.querySelectorAll(".claude-chip")) {
         el.classList.remove("claude-chip");
       }
+      for (const el of doc.querySelectorAll("[data-when]")) {
+        el.removeAttribute("data-when");
+      }
     }
   }
 
@@ -3083,6 +3092,43 @@ class ChipMod extends Mod {
         }
         if (el.dataset.chipValue !== v) el.dataset.chipValue = v;
         if (inner && !inner.classList.contains("claude-chip")) inner.classList.add("claude-chip");
+        n++;
+      }
+    }
+    return n + this.paintDates();
+  }
+
+  /* ── 날짜는 남은 날로 색을 고릅니다 ───────────────────────
+     `마감`·`일정` 은 칸반 카드에서 옅은 상자 하나로 보여서, to do 에 올라와도 묻힙니다.
+     남은 날을 세어 칸에 `data-when` 을 적어 두면 styles.css 가 색과 아이콘을 붙입니다.
+
+       지남   어제까지    빨강 ❗
+       오늘   오늘         주황
+       곧     사흘 안      노랑
+       나중   그 뒤        옅은 회색
+
+     날짜 글자는 칸에 따라 글자이기도 하고 `<input>` 이기도 해서 둘 다 봅니다. */
+
+  paintDates() {
+    const props = (this.settings.dateProps || []).filter(Boolean);
+    if (!props.length) return 0;
+    const sel = props.map((p) =>
+      '[data-property="note.' + p + '"], .obk-card-property[data-label="note.' + p + '"]'
+    ).join(", ");
+    const today = todayYmd();
+    let n = 0;
+    for (const doc of this.docs()) {
+      let els;
+      try { els = doc.querySelectorAll(sel); } catch (e) { return n; }
+      for (const el of els) {
+        if (el.querySelector(".bases-table-header")) continue;
+        const box = el.querySelector("input");
+        const raw = (box ? box.value : el.textContent) || "";
+        const m = /(\d{4})-(\d{2})-(\d{2})/.exec(raw);
+        if (!m) { el.removeAttribute("data-when"); continue; }
+        const days = daysBetween(today, m[0]);
+        const when = days < 0 ? "지남" : days === 0 ? "오늘" : days <= 3 ? "곧" : "나중";
+        if (el.dataset.when !== when) el.dataset.when = when;
         n++;
       }
     }
@@ -3245,7 +3291,8 @@ const DEFAULTS = {
   canvas: {},            // 설정 없음 — 메뉴 항목과 명령뿐입니다
 
   chip: {
-    props: ["상태"],     // 칩으로 그릴 속성. 색은 styles.css 에 값별로
+    props: ["상태"],           // 값으로 색을 고를 속성 (칩)
+    dateProps: ["마감", "일정"], // 남은 날로 색을 고를 속성
   },
 };
 

@@ -143,3 +143,84 @@
   background: color-mix(in srgb, var(--text-faint) 14%, transparent) !important;
   color: var(--text-faint) !important;
 }
+
+/* ── 날짜 칩 — 마감 ⏰ · 일정 📅 ───────────────────────────
+   to do 에 올라와도 옅은 상자 하나라 묻힙니다. 남은 날로 색을 바꿉니다.
+   `chip` 기능이 칸에 `data-when` 을 적어 줍니다 (지남 · 오늘 · 곧 · 나중).
+
+   글자 크기·모양은 상태 칩(.claude-chip)과 같은 값입니다 — 카드 안에서 셋이 한 줄에
+   나란히 서니까요. */
+
+[data-when="지남"] { --claude-when: var(--color-red); }
+[data-when="오늘"] { --claude-when: var(--color-orange); }
+[data-when="곧"]   { --claude-when: var(--color-yellow); }
+[data-when="나중"] { --claude-when: var(--text-faint); }
+
+/* 칸반 카드 — 라벨(‘마감’ 글자)을 지우고 아이콘으로 */
+.obk-card-property[data-label="note.마감"] > .obk-card-property-label,
+.obk-card-property[data-label="note.일정"] > .obk-card-property-label {
+  display: none;
+}
+
+.obk-card-property[data-label="note.마감"] .obk-card-property-value,
+.obk-card-property[data-label="note.일정"] .obk-card-property-value,
+[data-property="note.마감"] .bases-table-cell,
+[data-property="note.일정"] .bases-table-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  width: fit-content;
+  padding: 1px 8px 1px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  background: color-mix(in srgb, var(--claude-when, var(--text-faint)) 14%, transparent);
+  color: var(--claude-when, var(--text-muted));
+}
+
+/* 무엇의 날짜인지 — 아이콘 하나로 */
+.obk-card-property[data-label="note.마감"] .obk-card-property-value::before,
+[data-property="note.마감"] .bases-table-cell::before { content: "⏰"; }
+.obk-card-property[data-label="note.일정"] .obk-card-property-value::before,
+[data-property="note.일정"] .bases-table-cell::before { content: "📅"; }
+
+/* 지난 것은 한 번 더 */
+[data-when="지남"] .obk-card-property-value::after,
+[data-when="지남"] .bases-table-cell::after { content: "❗"; }
+
+/* 날짜 칸 안의 입력상자는 껍데기를 벗깁니다 — 칩 안에 흰 상자가 또 있으면 지저분합니다 */
+.obk-card-property[data-label="note.마감"] input,
+.obk-card-property[data-label="note.일정"] input,
+[data-property="note.마감"] input,
+[data-property="note.일정"] input,
+.obk-card-property[data-label="note.마감"] .metadata-input-date,
+.obk-card-property[data-label="note.일정"] .metadata-input-date,
+[data-property="note.마감"] .metadata-input-date,
+[data-property="note.일정"] .metadata-input-date {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  min-width: 0 !important;
+  width: auto !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+
+/* 날짜가 없으면 칩도 없습니다 */
+.obk-card-property[data-label="note.마감"]:not([data-when]) .obk-card-property-value,
+.obk-card-property[data-label="note.일정"]:not([data-when]) .obk-card-property-value,
+[data-property="note.마감"]:not([data-when]) .bases-table-cell,
+[data-property="note.일정"]:not([data-when]) .bases-table-cell {
+  background: none;
+  padding: 0;
+}
+.obk-card-property[data-label="note.마감"]:not([data-when]) .obk-card-property-value::before,
+.obk-card-property[data-label="note.일정"]:not([data-when]) .obk-card-property-value::before,
+[data-property="note.마감"]:not([data-when]) .bases-table-cell::before,
+[data-property="note.일정"]:not([data-when]) .bases-table-cell::before {
+  content: none;
+}
