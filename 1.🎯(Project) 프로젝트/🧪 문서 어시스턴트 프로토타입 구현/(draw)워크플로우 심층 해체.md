@@ -10,7 +10,7 @@ tags:
   - 워크플로우
   - 업무 프로세스
   - 장애 보고서
-상태: 완료
+상태: 확인 필요
 요약: 업무 지시가 오는 순간부터의 프로세스를 단계별로 해체한 그림
 작성일: 2026-08-26
 마감:
@@ -21,7 +21,6 @@ tags:
   - "[[민규 서]]"
 작성자:
   - "[[민규 서]]"
-# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 일정:
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'

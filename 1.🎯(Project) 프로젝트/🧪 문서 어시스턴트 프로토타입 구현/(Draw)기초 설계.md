@@ -10,7 +10,7 @@ tags:
   - 기초 설계
   - 문서 파싱
   - 메타 정보
-상태: 완료
+상태: 확인 필요
 요약: 문서 업로드 → 구역·항목 추출 → 메타 정보 생성 → 기준 노드까지의 기초 설계도
 작성일: 2026-08-03
 마감:
@@ -21,7 +21,6 @@ tags:
   - "[[민규 서]]"
 작성자:
   - "[[민규 서]]"
-# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 일정:
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
