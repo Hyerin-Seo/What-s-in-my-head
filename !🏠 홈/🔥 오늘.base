@@ -18,11 +18,14 @@ views:
       - 담당
       - 작성자
       - 마감
+    sort:
+      - property: 상태
+        direction: DESC
     summaries:
       유형: Filled
     columnSize:
       file.file: 749
-      note.상태: 96
+      note.상태: 80
       note.작성자: 172
   - type: table
     name: ⏰ 마감 가까운 순

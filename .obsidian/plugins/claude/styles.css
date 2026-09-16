@@ -59,6 +59,8 @@
   gap: 4px;
   width: fit-content !important;
   max-width: 100%;
+  /* 칸 가운데로 — 플렉스 자식이라 좌우 margin 을 auto 로 두면 남는 자리를 반씩 먹습니다 */
+  margin-inline: auto;
   padding: 1px 8px 1px 6px;
   border-radius: 10px;
   font-size: 11px;
