@@ -30,21 +30,26 @@
 /* ── 상태 칩 ──────────────────────────────────────────────
    `담당`·`작성자` 는 값이 위키링크라 `.internal-link[data-href="이름"]` 으로 색을
    고를 수 있습니다 (스니펫 `author-chips.css`). `상태` 는 그냥 글자라서 값이 DOM
-   어디에도 안 남습니다 — 베이스는 칸에 `data-property` 만 답니다.
+   어디에도 안 남습니다 — 베이스는 칸에 `data-property` 만 답니다
+   (obsidian.asar 의 `i.el.dataset.property=n` 확인).
 
    그래서 `chip` 기능이 칸에 `data-chip-value="진행중"` 을 적어 주고, 색은 여기서
-   고릅니다. 값 하나가 칸 하나입니다. 고치는 것은 옵시디언 기본대로 — 칸을 누르면
-   그 속성에 쓰인 값 목록이 뜹니다. */
+   고릅니다. **칩이 안 보이면 플러그인이 옛 코드입니다** — 옵시디언을 다시 켜세요.
+   (명령 팔레트 `상태 칩 — 지금 칠한 칸 세기` 가 0을 내면 그것입니다)
 
-[data-property="note.상태"] .bases-table-cell,
-[data-property="note.상태"] .bases-cards-line,
-.obk-card-property[data-label="note.상태"] .obk-card-property-value {
+   값 하나가 칸 하나입니다. 고치는 것은 옵시디언 기본대로 — 칸을 누르면 그 속성에
+   쓰인 값 목록이 뜹니다. */
+
+.claude-chip,
+[data-chip-value]:not([data-chip-value=""]) .bases-table-cell,
+[data-chip-value]:not([data-chip-value=""]) .bases-cards-line,
+[data-chip-value]:not([data-chip-value=""]) .obk-card-property-value {
   display: inline-flex;
   align-items: center;
   gap: 4px;
   width: fit-content;
   max-width: 100%;
-  padding: 1px 9px;
+  padding: 1px 9px 1px 7px;
   border-radius: 10px;
   font-size: 11px;
   line-height: 17px;
@@ -54,25 +59,28 @@
   color: var(--text-muted);
 }
 
-/* 값이 없으면 칩도 없습니다 — 빈 알약이 줄줄이 뜨면 표가 지저분해집니다 */
-[data-chip-value=""] .bases-table-cell,
-[data-chip-value=""] .bases-cards-line,
-[data-chip-value=""] .obk-card-property-value {
-  background: none;
-  padding: 0;
+/* 담당·작성자 칩과 같은 앞점 — 한 줄에 섞여도 같은 물건으로 보이게 */
+[data-chip-value]:not([data-chip-value=""]) .bases-table-cell::before,
+[data-chip-value]:not([data-chip-value=""]) .bases-cards-line::before,
+[data-chip-value]:not([data-chip-value=""]) .obk-card-property-value::before {
+  content: "●";
+  font-size: 8px;
+}
+
+/* 칩 안의 글자는 밑줄·굵기를 물려받지 않게 (칸 내용이 contenteditable 입니다) */
+[data-chip-value]:not([data-chip-value=""]) .bases-table-cell > * {
+  text-decoration: none;
 }
 
 /* 고치는 중에는 칩을 풀어 줍니다 — 알약 안에 입력칸이 갇히면 글자가 안 보입니다 */
-[data-property="note.상태"] .bases-table-cell:focus-within {
+[data-chip-value] .bases-table-cell:focus-within {
   display: block;
   width: auto;
-  background: none;
   padding: 0;
+  background: none;
 }
-
-/* 맞춤법 물결선 — 상태값은 낱말이 아니라 딱지입니다 */
-[data-property="note.상태"] .bases-table-cell * {
-  -webkit-text-decoration-line: none;
+[data-chip-value] .bases-table-cell:focus-within::before {
+  content: none;
 }
 
 /* ── 값별 색 — 할일의 진행 순서 ─────────────────────────── */
@@ -80,7 +88,7 @@
 [data-chip-value="to do"] .bases-table-cell,
 [data-chip-value="to do"] .bases-cards-line,
 [data-chip-value="to do"] .obk-card-property-value {
-  background: color-mix(in srgb, var(--color-base-50) 22%, transparent);
+  background: color-mix(in srgb, var(--text-muted) 14%, transparent);
   color: var(--text-muted);
 }
 
@@ -115,7 +123,7 @@
 [data-chip-value="히스토리"] .bases-table-cell,
 [data-chip-value="히스토리"] .bases-cards-line,
 [data-chip-value="히스토리"] .obk-card-property-value {
-  background: color-mix(in srgb, var(--color-base-60) 18%, transparent);
+  background: color-mix(in srgb, var(--text-faint) 14%, transparent);
   color: var(--text-faint);
 }
 
@@ -142,4 +150,11 @@
 [data-chip-value="picked"] .obk-card-property-value {
   background: color-mix(in srgb, var(--color-pink) 16%, transparent);
   color: var(--color-pink);
+}
+
+[data-chip-value="언젠가·아마도"] .bases-table-cell,
+[data-chip-value="언젠가·아마도"] .bases-cards-line,
+[data-chip-value="언젠가·아마도"] .obk-card-property-value {
+  background: color-mix(in srgb, var(--text-faint) 14%, transparent);
+  color: var(--text-faint);
 }

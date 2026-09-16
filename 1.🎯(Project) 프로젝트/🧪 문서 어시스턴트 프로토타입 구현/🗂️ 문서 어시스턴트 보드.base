@@ -24,10 +24,10 @@ views:
         - 완료
         - 퍼즈
         - 히스토리
+        - Uncategorized
     cardOrders:
       note.상태:
-        진행중:
-          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성.md
+        진행중: []
         완료:
           - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(seo)자동화하고 싶은 task 100선.md
           - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(Draw)기초 설계.md

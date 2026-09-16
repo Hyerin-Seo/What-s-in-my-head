@@ -2980,6 +2980,19 @@ class ChipMod extends Mod {
     this.obs.observe(document.body, { childList: true, subtree: true, characterData: true });
     this.registerEvent(this.app.workspace.on("layout-change", this.queue));
     this.queue();
+
+    // 칩이 도는지 눈으로 확인할 길 — 플러그인은 옵시디언을 다시 켜야 바뀝니다.
+    // 칩이 안 보일 때 이걸 눌러서 0이 나오면 옛 코드가 돌고 있는 것입니다.
+    this.addCommand({
+      id: "count",
+      name: "상태 칩 — 지금 칠한 칸 세기",
+      callback: () => {
+        const n = this.paint();
+        new Notice(n
+          ? "🚦 상태 칩 — " + n + "칸을 칠했습니다."
+          : "칠할 칸이 없습니다. 상태 칸이 보이는 표를 열어 두고 다시 눌러 보세요.", 6000);
+      },
+    });
   }
 
   onunload() {
@@ -3009,19 +3022,28 @@ class ChipMod extends Mod {
 
   paint() {
     const props = (this.settings.props || []).filter(Boolean);
-    if (!props.length) return;
+    if (!props.length) return 0;
     const sel = props.map((p) =>
       '[data-property="note.' + p + '"], .obk-card-property[data-label="note.' + p + '"]'
     ).join(", ");
+    let n = 0;
     for (const doc of this.docs()) {
       let els;
-      try { els = doc.querySelectorAll(sel); } catch (e) { return; }
+      try { els = doc.querySelectorAll(sel); } catch (e) { return n; }
       for (const el of els) {
-        if (el.querySelector("input, textarea")) continue;   // 고치는 중이면 두고 봅니다
+        if (el.querySelector(".bases-table-header")) continue;   // 머리글은 값이 아닙니다
+        // 빨간 물결선 끄기 — 상태값은 낱말이 아니라 딱지입니다. CSS로는 못 지웁니다
+        for (const ed of el.querySelectorAll("[contenteditable], input, textarea")) {
+          if (ed.getAttribute("spellcheck") !== "false") ed.setAttribute("spellcheck", "false");
+        }
+        n++;
+        // 고치는 중인 칸은 글자가 오락가락하니 건드리지 않습니다
+        if (el.contains(doc.activeElement)) continue;
         const v = (el.textContent || "").trim();
         if (el.dataset.chipValue !== v) el.dataset.chipValue = v;
       }
     }
+    return n;
   }
 }
 
