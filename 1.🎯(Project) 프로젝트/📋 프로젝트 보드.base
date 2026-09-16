@@ -207,7 +207,7 @@ views:
           - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(Draw)LlamaIndex 구조.md
           - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/reference/(gen)문서 파싱 및 표 추출 분야의 Kaggle 같은 리더보드 사이트.md
   - type: kanban-view
-    name: "🐛 버그 리포트"
+    name: 🐛 버그 리포트
     filters:
       and:
         - file.inFolder("1.🎯(Project) 프로젝트/🐛 버그 리포트")

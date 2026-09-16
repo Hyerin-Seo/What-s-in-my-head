@@ -29,7 +29,7 @@ views:
   - type: table
     name: 📊 전체 표
     order:
-      - file.file
+      - file
       - 주제
       - 상태
       - 요약
@@ -50,7 +50,7 @@ views:
         - note["요약"].isEmpty()
         - note["커버"].isEmpty()
     order:
-      - file.file
+      - file
       - 요약
       - 커버
       - 링크
