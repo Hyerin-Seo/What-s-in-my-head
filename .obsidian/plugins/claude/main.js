@@ -293,6 +293,7 @@ class ParaMod extends Mod {
     this.timers = new Map();   // 경로별 디바운스
     this.stampTimers = new Map();
     this.canvasTimers = new Map();
+    this.strayTimers = new Map();
 
     // 왼쪽 리본 — 언제든 누를 수 있는 자리
     this.addRibbonIcon("folder-symlink", "PARA 구역 정리 — 안 맞는 것 보기", () => this.audit());
@@ -316,6 +317,8 @@ class ParaMod extends Mod {
       this.registerEvent(this.app.vault.on("create", (file) => this.queueStamp(file)));
       // 캔버스는 속성을 가질 수 없어 어느 보드에도 못 뜹니다 — 옆에 노트를 세웁니다
       this.registerEvent(this.app.vault.on("create", (file) => this.queueCanvas(file)));
+      // 경로를 두 번 붙여 생긴 빈 구역 폴더 — 남의 플러그인이 흘리고 갑니다
+      this.registerEvent(this.app.vault.on("create", (file) => this.queueStrayFolder(file)));
       // 프로젝트 폴더를 만들면 전용 보드와 프로젝트 보드의 필터 뷰를 함께 만듭니다.
       this.registerEvent(this.app.vault.on("create", (file) => {
         this.queueBoardSync(file);
@@ -342,6 +345,7 @@ class ParaMod extends Mod {
         if (this.settings.sweepOnStart) await this.sweep(true, "start");
         if (this.settings.stampNew) await this.stampAll("start");
         if (this.settings.wrapCanvas) await this.wrapCanvasAll("start");
+        if (this.settings.sweepStrayZoneFolders) await this.sweepStrayFoldersAll("start");
         if (this.settings.authorFromName) await this.fillAuthorAll("start");
         this.refreshStatus();
         // 위치는 맞는데 유형·상태·분류가 옛 구역 값인 노트가 있으면 목록을 바로 엽니다.
@@ -437,6 +441,11 @@ class ParaMod extends Mod {
       id: "canvas-all",
       name: "볼트 전체 — 혼자 있는 캔버스를 노트로 세우기",
       callback: () => this.wrapCanvasAll("cmd"),
+    });
+    this.addCommand({
+      id: "stray-all",
+      name: "볼트 전체 — 경로가 두 번 붙어 생긴 빈 폴더 치우기",
+      callback: () => this.sweepStrayFoldersAll("cmd"),
     });
     this.addCommand({
       id: "sweep",
@@ -578,6 +587,8 @@ class ParaMod extends Mod {
     this.stampTimers.clear();
     for (const t of this.canvasTimers.values()) clearTimeout(t);
     this.canvasTimers.clear();
+    for (const t of this.strayTimers.values()) clearTimeout(t);
+    this.strayTimers.clear();
     clearTimeout(this.boardTimer);
   }
 
@@ -993,6 +1004,90 @@ class ParaMod extends Mod {
     let n = 0;
     for (const f of todo) if (await this.fillAuthor(f, "sweep")) n++;
     new Notice("✍ 작성자를 " + n + "개 채웠습니다. (파일 이름 앞머리 기준)", 8000);
+  }
+
+  /* ── 안쪽에 생긴 구역 이름 폴더 치우기 ─────────────────────
+     구역 폴더(`1.🎯(Project) 프로젝트` 같은 다섯)는 **볼트 최상단에만** 있을 수
+     있습니다. 그 이름이 다른 폴더 **안**에 나타났다면 경로를 두 번 붙인 것입니다.
+
+     칸반 빠른 추가(+)가 그랬습니다. `<quickAddFolder>/<제목>` 전체 경로를 넘기고
+     옵시디언이 그 앞에 `newItemFolder` 를 또 붙여서
+     `…/🚚 PARA/1.🎯(Project) 프로젝트/🚚 PARA/제목.md` 로 만듭니다. 카드는 칸반이
+     제자리로 옮겨 주니 **빈 폴더만 남습니다.** 그 빈 폴더 이름이 하필 `분류` 와 같아서
+     PARA 보내기의 도착 자리까지 망가뜨렸습니다 (`destFolder` 주석 참고).
+
+     칸반 쪽 한 줄은 고쳤지만 **그 플러그인을 업데이트하면 되돌아갑니다.** 남의 코드에
+     기대지 않으려고 여기서도 치웁니다. 조건은 셋 다 만족할 때뿐입니다.
+
+       ① 폴더 이름이 구역 폴더 이름과 똑같다
+       ② 최상단이 아니다 (= 다른 폴더 안에 있다)
+       ③ 하위까지 **파일이 하나도 없다**
+
+     그리고 지우지 않고 **휴지통으로 보냅니다** (`trashFile` — 사람이 정한 휴지통
+     설정을 따릅니다). 이 볼트의 규칙은 삭제는 사람이 한다는 것이고, 빈 껍데기라도
+     되돌릴 길은 남겨 둡니다. */
+
+  /** 안쪽에 생긴 구역 이름 폴더인가 */
+  isStrayZoneFolder(folder) {
+    if (!(folder instanceof TFolder)) return false;
+    if (folder.path.split("/").length < 2) return false;   // 최상단 = 진짜 구역 폴더
+    return Boolean(ZONE_BY_FOLDER[folder.name]);
+  }
+
+  /** 하위까지 뒤져 파일이 하나라도 있나 */
+  hasAnyFile(folder) {
+    for (const c of folder.children) {
+      if (c instanceof TFolder) { if (this.hasAnyFile(c)) return true; }
+      else return true;
+    }
+    return false;
+  }
+
+  async sweepStrayFolder(path, caller) {
+    const f = this.app.vault.getAbstractFileByPath(path);
+    if (!this.isStrayZoneFolder(f)) return false;
+    if (this.hasAnyFile(f)) {
+      if (caller === "cmd") new Notice("안에 파일이 있어 안 치웁니다:\n" + path, 8000);
+      return false;
+    }
+    try {
+      await this.app.fileManager.trashFile(f);
+    } catch (e) {
+      console.error("[Claude] 헛 폴더 치우기 실패", path, e);
+      return false;
+    }
+    if (caller === "cmd" || this.settings.notice) {
+      new Notice("🧹 경로가 두 번 붙어 생긴 빈 폴더를 치웠습니다:\n" + path, 7000);
+    }
+    return true;
+  }
+
+  /** 생기자마자는 못 치웁니다 — 바로 그 안에 노트가 만들어지는 중입니다.
+      칸반이 카드를 제자리로 옮길 때까지 기다렸다가, 그래도 비어 있으면 치웁니다. */
+  queueStrayFolder(folder) {
+    if (!this.settings.sweepStrayZoneFolders) return;
+    if (!this.isStrayZoneFolder(folder)) return;
+    const path = folder.path;
+    clearTimeout(this.strayTimers.get(path));
+    this.strayTimers.set(path, setTimeout(() => {
+      this.strayTimers.delete(path);
+      this.sweepStrayFolder(path, "auto");
+    }, 8000));
+  }
+
+  strayZoneFolders() {
+    return this.app.vault.getAllLoadedFiles().filter((f) => this.isStrayZoneFolder(f));
+  }
+
+  async sweepStrayFoldersAll(caller) {
+    const todo = this.strayZoneFolders();
+    if (!todo.length) {
+      if (caller !== "start") new Notice("안쪽에 생긴 구역 이름 폴더가 없습니다. ✔");
+      return;
+    }
+    let n = 0;
+    for (const f of todo) if (await this.sweepStrayFolder(f.path, "sweep")) n++;
+    if (n) new Notice("🧹 경로가 두 번 붙어 생긴 빈 폴더 " + n + "개를 치웠습니다.", 8000);
   }
 
   /* ── 캔버스도 카드가 되게 ─────────────────────────────────
@@ -2045,6 +2140,16 @@ ParaMod.prototype.displaySettings = function (c) {
              "캔버스 파일은 제자리에 그대로 둡니다 — 첨부가 아니라 문서니까요.")
     .addToggle((t) => t.setValue(s.wrapCanvas).onChange(async (v) => {
       s.wrapCanvas = v; await this.save();
+    }));
+
+  new Setting(c)
+    .setName("경로가 두 번 붙어 생긴 빈 폴더를 치운다")
+    .setDesc("구역 폴더 이름(`1.🎯(Project) 프로젝트` 등)이 다른 폴더 **안**에 나타나면 " +
+             "경로를 두 번 붙인 흔적입니다. 칸반 빠른 추가(+)가 그런 빈 폴더를 흘리고 가는데, " +
+             "그 이름이 `분류` 와 같으면 PARA 보내기의 도착 자리까지 망가집니다. " +
+             "**하위까지 파일이 하나도 없을 때만** 휴지통으로 보냅니다.")
+    .addToggle((t) => t.setValue(s.sweepStrayZoneFolders).onChange(async (v) => {
+      s.sweepStrayZoneFolders = v; await this.save();
     }));
 
   new Setting(c)
@@ -3656,6 +3761,7 @@ const DEFAULTS = {
     askAfterMove: true,    // 옮긴 뒤 유형·상태·분류가 안 맞으면 물어본다
     stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
     wrapCanvas: true,      // 캔버스 옆에 노트를 세운다 (캔버스는 속성을 못 가진다)
+    sweepStrayZoneFolders: true, // 경로가 두 번 붙어 생긴 빈 구역 폴더를 휴지통으로
     authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
     syncProjectViews: true, // 프로젝트·담당자별 필터 뷰를 프로젝트 보드에 자동으로 만든다
     people: ["Rin", "민규 서"], // 칸반에 늘 두는 담당자. 일이 없어도 탭은 있습니다
