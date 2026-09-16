@@ -3,6 +3,21 @@
 excalidraw-plugin: parsed
 tags: [excalidraw]
 
+유형: 할일
+구역: 1.project
+분류:
+  - 🚚 PARA 구축 — 자료 이식
+주제:
+상태: to do
+요약:
+작성일: 2026-09-15
+마감:
+커버:
+상위:
+링크:
+담당:
+작성자:
+일정:
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
 
