@@ -229,6 +229,21 @@ views:
     summaries:
       유형: Filled
   - type: table
+    name: 🕳️ 상태가 빈 것
+    filters:
+      and:
+        - note["상태"].isEmpty()
+    order:
+      - file
+      - 상태
+      - 분류
+      - 담당
+      - 마감
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
     name: 📊 전체 표
     order:
       - file

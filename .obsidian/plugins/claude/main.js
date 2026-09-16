@@ -605,6 +605,14 @@ class ParaMod extends Mod {
     if (state && allowedStates && !allowedStates.includes(state)) {
       out.push(["상태", "“" + state + "” 은 유형 " + kind + " 이 쓰는 값이 아닙니다"]);
     }
+    // 상태를 지우면 칸반의 미분류 칸에만 남고, 상태로 거르는 보드에서는 통째로 빠집니다.
+    // 쓰다 보면 지웁니다. 그래서 어긋남으로 잡습니다.
+    //   보관은 예외 — 치워 둔 것에 진행 상태를 물을 이유가 없습니다 (분류와 같은 이유)
+    //   휴가는 예외 — 비어 있는 것이 "승인 대기" 라는 뜻입니다
+    if (!state && allowedStates && allowedStates.length &&
+        zoneKey !== "4.archive" && kind !== "휴가") {
+      out.push(["상태", "비어 있습니다 — 칸반 미분류 칸에만 남고 상태로 거르는 보드에서 빠집니다"]);
+    }
     // 보관(4.archive)에서는 옛 분류를 그대로 둡니다 — 어디서 왔는지가 기록이니까요.
     // 보관은 P·A·R 이 아닌 것이고, 이름표를 지울 이유가 없습니다.
     if (zoneKey !== "4.archive") {
