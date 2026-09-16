@@ -3092,7 +3092,14 @@ class ChipMod extends Mod {
     if (!wrap || wrap.querySelector(".bases-table-header")) return;
 
     const file = this.fileOfRow(wrap);
-    if (!file) return;                       // 어느 노트인지 모르면 기본 동작 그대로
+    if (!file) {
+      // 어느 노트인지 모르면 기본 동작 그대로 둡니다. 다만 칩이 그려진 칸을 눌렀는데
+      // 목록이 안 뜨면 고장으로 보이니 이유를 말해 줍니다.
+      if (wrap.dataset.chipValue) {
+        new Notice("이 표에서는 어느 노트인지 못 찾았습니다 — 파일 칸이 있는 표에서 눌러 주세요.", 5000);
+      }
+      return;
+    }
     const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {};
     const values = KIND_STATES[str(fm["유형"])];
     if (!values || !values.length) return;
@@ -3109,15 +3116,21 @@ class ChipMod extends Mod {
     menu.showAtMouseEvent(e);
   }
 
-  /** 이 줄이 어느 노트인가 — 같은 줄의 파일 링크로 찾습니다 */
+  /** 이 줄이 어느 노트인가 — 같은 줄의 **파일 칸** 링크로 찾습니다.
+      링크가 `<a>` 라는 보장이 없습니다. 베이스는 위키링크를 `<div class="internal-link"
+      data-href="…">` 로 그립니다 (담당 알약이 그 모양입니다 — 개발자도구 확인).
+      그래서 태그가 아니라 `data-href` 로 찾습니다.
+      담당·작성자 칸에도 링크가 있으므로 **파일 칸 안에서만** 찾습니다 — 엉뚱한 노트에
+      상태를 쓰면 안 되니까요. */
   fileOfRow(cell) {
     let row = cell.parentElement;
     for (let i = 0; row && i < 3; i++, row = row.parentElement) {
-      const a = row.querySelector('[data-property^="file"] a.internal-link') ||
-                row.querySelector("a.internal-link");
-      if (!a) continue;
-      const href = a.dataset.href || a.getAttribute("href") || "";
-      const f = this.app.metadataCache.getFirstLinkpathDest(href, "");
+      const box = row.querySelector('[data-property^="file"]');
+      if (!box) continue;
+      const link = box.querySelector("[data-href]") || box.querySelector("a[href]");
+      if (!link) continue;
+      const href = link.getAttribute("data-href") || link.getAttribute("href") || "";
+      const f = href && this.app.metadataCache.getFirstLinkpathDest(href, "");
       if (f instanceof TFile) return f;
     }
     return null;
