@@ -209,30 +209,6 @@ views:
       - property: file.mtime
         direction: ASC
   - type: table
-    name: ⏳ 남이 갖고 있는 것
-    filters:
-      and:
-        - not:
-            - note["담당"].isEmpty()
-        - not:
-            - note["작성자"].isEmpty()
-        - not:
-            - note["작성자"].containsAll(note["담당"])
-        - note["상태"] != "완료"
-        - note["상태"] != "히스토리"
-    order:
-      - file
-      - 상태
-      - 담당
-      - 작성자
-      - 마감
-      - file.mtime
-    sort:
-      - property: file.mtime
-        direction: ASC
-    summaries:
-      유형: Filled
-  - type: table
     name: 🕳️ 상태가 빈 것
     filters:
       and:
