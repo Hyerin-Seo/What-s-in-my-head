@@ -106,6 +106,10 @@ views:
         - 히스토리
     columnColors:
       note.상태: {}
+    cardOrders:
+      note.상태:
+        Uncategorized: []
+        확인 필요: []
   - type: kanban-view
     name: 👤 민규 서
     filters:

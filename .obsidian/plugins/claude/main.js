@@ -2988,11 +2988,18 @@ class ChipMod extends Mod {
     this.obs.observe(document.body, { childList: true, subtree: true, characterData: true });
     this.registerEvent(this.app.workspace.on("layout-change", this.queue));
 
-    // 칩을 누르면 드롭다운. **mousedown** 이어야 합니다 — 글자 칸이 contenteditable 이라
-    // mousedown 에서 이미 포커스가 잡히고, 나중에 포커스가 풀릴 때 옵시디언이 **그 칸에
-    // 들고 있던 옛 글자를 프론트매터에 도로 씁니다.** click 에서 막으면 이미 늦어서,
-    // 우리가 쓴 값이 잠시 뒤 되돌아갑니다. mousedown 을 막으면 포커스 자체가 안 잡힙니다.
-    this.registerDomEvent(document, "mousedown", (e) => this.onClick(e), true);
+    /* 칩을 누르면 드롭다운. 이벤트가 **둘** 입니다. 하나로는 안 됩니다.
+
+         mousedown  포커스만 막습니다. 글자 칸이 contenteditable 이라 여기서 포커스가
+                    잡히고, 나중에 풀릴 때 옵시디언이 **그 칸에 들고 있던 옛 글자를
+                    프론트매터에 도로 씁니다.** 그러면 고른 값이 되돌아갑니다.
+         click      여기서 메뉴를 엽니다. mousedown 에서 열면 손가락을 뗄 때 오는 click 이
+                    "메뉴 밖을 눌렀다" 로 잡혀서 메뉴가 바로 닫힙니다 — 꾹 누르고 있어야만
+                    보이는 메뉴가 됩니다.
+
+       왼쪽 단추만 가로챕니다. 오른쪽 단추는 옵시디언 기본 메뉴 그대로 둡니다. */
+    this.registerDomEvent(document, "mousedown", (e) => this.onDown(e), true);
+    this.registerDomEvent(document, "click", (e) => this.onClick(e), true);
 
     this.queue();
 
@@ -3088,41 +3095,54 @@ class ChipMod extends Mod {
      뜹니다. 여기서는 그 노트의 `유형` 을 보고 `KIND_STATES` 의 값만 냅니다 —
      할일이면 여섯 칸, 책이면 다섯, 상태를 안 쓰는 유형이면 아예 안 엽니다. */
 
-  onClick(e) {
+  /** 이 눌림이 우리가 맡을 상태 칸인가 — 맞으면 {칸, 노트, 값들} */
+  hit(e, quiet) {
+    if (e.button !== undefined && e.button !== 0) return null;   // 왼쪽 단추만
     const t = e.target;
-    if (!t || !t.closest) return;
+    if (!t || !t.closest) return null;
     const wrap = t.closest('[data-property="note.상태"]');
-    if (!wrap || wrap.querySelector(".bases-table-header")) return;
+    if (!wrap || wrap.querySelector(".bases-table-header")) return null;
 
     const file = this.fileOfRow(wrap);
     if (!file) {
       // 어느 노트인지 모르면 기본 동작 그대로 둡니다. 다만 칩이 그려진 칸을 눌렀는데
-      // 목록이 안 뜨면 고장으로 보이니 이유를 말해 줍니다.
-      if (wrap.dataset.chipValue) {
+      // 목록이 안 뜨면 고장으로 보이니 이유를 말해 줍니다 (한 번만).
+      if (!quiet && wrap.dataset.chipValue) {
         new Notice("이 표에서는 어느 노트인지 못 찾았습니다 — 파일 칸이 있는 표에서 눌러 주세요.", 5000);
       }
-      return;
+      return null;
     }
     const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {};
     const values = KIND_STATES[str(fm["유형"])];
-    if (!values || !values.length) return;
+    if (!values || !values.length) return null;
+    return { wrap, file, values, cur: str(fm["상태"]) };
+  }
 
+  /** 누를 때 — 포커스만 막습니다. 메뉴는 뗄 때(click) 엽니다 */
+  onDown(e) {
+    if (!this.hit(e, true)) return;
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
+  onClick(e) {
+    const h = this.hit(e);
+    if (!h) return;
     e.preventDefault();
     e.stopPropagation();
 
     // 이미 포커스가 잡혀 있었다면(앞서 눌러 둔 칸) 먼저 풀어 줍니다. 풀 때 옵시디언이
     // 옛 글자를 쓰는데, 그건 지금 값과 같으니 아무 일도 아닙니다. 우리가 쓴 뒤에 풀리면
     // 그때는 우리 값이 덮입니다 — 그래서 순서가 중요합니다.
-    const doc = wrap.ownerDocument;
-    if (doc && doc.activeElement && wrap.contains(doc.activeElement) && doc.activeElement.blur) {
+    const doc = h.wrap.ownerDocument;
+    if (doc && doc.activeElement && h.wrap.contains(doc.activeElement) && doc.activeElement.blur) {
       doc.activeElement.blur();
     }
 
-    const cur = str(fm["상태"]);
     const menu = new Menu();
-    for (const v of values) {
-      menu.addItem((i) => i.setTitle(v).setChecked(v === cur)
-        .onClick(() => this.setState(file, v)));
+    for (const v of h.values) {
+      menu.addItem((i) => i.setTitle(v).setChecked(v === h.cur)
+        .onClick(() => this.setState(h.file, v)));
     }
     menu.showAtMouseEvent(e);
   }

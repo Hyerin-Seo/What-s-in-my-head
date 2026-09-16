@@ -71,6 +71,8 @@ views:
       - 마감
       - file.mtime
     sort:
+      - property: 담당
+        direction: ASC
       - property: 상태
         direction: DESC
       - property: file.mtime
