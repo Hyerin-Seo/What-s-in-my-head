@@ -50,6 +50,46 @@ const LIST_KEYS = ["분류", "주제", "담당", "작성자"];
 const EXTRA_KEYS = { "할일": ["일정"] };
 const EXTRA_HEAD = "# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──";
 
+/* ── 줄끝(CRLF) ───────────────────────────────────────────────
+   윈도우에서 만든 노트는 줄끝이 `\r\n` 일 수 있습니다. 프론트매터를 `---\n` 으로만
+   찾으면 그런 노트는 **조용히 건너뜁니다** — 속성이 안 써지는데 오류도 안 납니다.
+   이 볼트에서 제일 나쁜 실패입니다 (안 보이는 채로 틀림). 그래서 다루기 전에 LF 로
+   펴고, 돌려줄 때 원래 줄끝으로 되돌립니다.
+
+   `git config core.autocrlf` 가 `true` 라 **다시 클론하면 전부 CRLF 로 내려옵니다.**
+   `.gitattributes` 로 `eol=lf` 를 못박아 뒀지만, 그래도 코드가 견뎌야 합니다. */
+function eolOf(text) { return text.includes("\r\n") ? "\r\n" : "\n"; }
+function toLf(text) { return text.indexOf("\r") < 0 ? text : text.replace(/\r\n/g, "\n"); }
+function withEol(text, nl) { return nl === "\r\n" ? text.replace(/\n/g, "\r\n") : text; }
+
+/** 프론트매터를 뺀 본문 (줄끝은 LF 로 펴서 돌려줍니다) */
+function bodyOf(text) {
+  const t = toLf(text);
+  if (!t.startsWith("---\n")) return t;
+  const end = t.indexOf("\n---", 3);
+  if (end < 0) return t;
+  const nl = t.indexOf("\n", end + 1);
+  return nl < 0 ? "" : t.slice(nl + 1);
+}
+
+/* 양식 본문에서 **맨 앞 `%%` 블록**은 떼어 냅니다. 거기 적는 것은 *양식 자신에게*
+   하는 말이라("이건 틀이다") 새 노트가 물려받을 이유가 없습니다. 뒤에 붙은 `%%`
+   블록은 *채우는 사람에게* 하는 말이라 그대로 갑니다 — 인박스 양식이 그 모양입니다.
+   위치로 가릅니다. 표시를 따로 두면 그 표시를 또 외워야 합니다. */
+function templateBodyText(text) {
+  let lines = bodyOf(text).split("\n");
+  while (lines.length && !lines[0].trim()) lines.shift();
+  // 닫는 `%%` 는 **그 줄에 그것만** 있는 줄입니다. 글 안에 적힌 `%%` 에 안 속게.
+  if (lines.length && lines[0].trim() === "%%") {
+    let i = 1;
+    while (i < lines.length && lines[i].trim() !== "%%") i++;
+    lines = lines.slice(i + 1);
+    while (lines.length && !lines[0].trim()) lines.shift();
+  }
+  const body = lines.join("\n").replace(/\s+$/, "");
+  return body ? body + "\n" : "";
+}
+
 /** 옵시디언이 본문에 그려주는 이미지 확장자 (obsidian.asar 의 목록과 같게) */
 const IMG_EXT = ["bmp", "png", "jpg", "jpeg", "gif", "svg", "webp", "avif"];
 
@@ -127,11 +167,13 @@ function yamlScalar(v) {
  *                   있는 동안은 이름도 남아 있어야 합니다.
  */
 function setProps(data, props, addAuthor) {
-  if (!data.startsWith("---\n")) return data;
-  const end = data.indexOf("\n---", 3);
+  const nl = eolOf(data);
+  const text = toLf(data);
+  if (!text.startsWith("---\n")) return data;
+  const end = text.indexOf("\n---", 3);
   if (end < 0) return data;
-  const lines = data.slice(4, end + 1).split("\n");
-  const rest = data.slice(end + 1);
+  const lines = text.slice(4, end + 1).split("\n");
+  const rest = text.slice(end + 1);
   const keys = Object.keys(props);
   const done = new Set();
   const out = [];
@@ -179,7 +221,7 @@ function setProps(data, props, addAuthor) {
     out.splice(at, 0, ...add);
   }
 
-  return "---\n" + out.join("\n") + rest;
+  return withEol("---\n" + out.join("\n") + rest, nl);
 }
 
 /* ── 모듈 바탕 ────────────────────────────────────────────
@@ -862,7 +904,7 @@ class ParaMod extends Mod {
       await this.app.vault.process(file, (data) => setProps(data, props));
     } else {
       await this.app.vault.process(file, (data) => {
-        if (data.startsWith("---\n")) return data;   // 그 사이에 생겼으면 물러난다
+        if (toLf(data).startsWith("---\n")) return data;   // 그 사이에 생겼으면 물러난다
         const out = ["---"];
         for (const k of STD) {
           if (k === "유형" && p.kind) out.push("유형: " + p.kind);
@@ -1070,19 +1112,60 @@ class ParaMod extends Mod {
       const guess = this.classFor(file, zoneKey);           // 지어내지 않습니다
       if (guess) props["분류"] = [guess];
     }
-    if (!Object.keys(props).length) {
-      if (caller === "cmd") new Notice("채울 빈 칸이 없습니다 — 작성일·분류가 이미 차 있습니다.");
+    // 본문이 비어 있으면 양식의 틀을 깔아 줍니다 (`+` 는 속성만 베낍니다)
+    let body = "";
+    let raw = "";
+    try { raw = await this.app.vault.read(file); } catch (e) { raw = ""; }
+    if (!bodyOf(raw).trim()) body = await this.templateBody(file, str(fm["유형"]));
+
+    if (!Object.keys(props).length && !body) {
+      if (caller === "cmd") new Notice("채울 빈 칸이 없습니다 — 작성일·분류·본문이 이미 차 있습니다.");
       return false;
     }
 
-    await this.app.vault.process(file, (data) => setProps(data, props));
+    await this.app.vault.process(file, (data) => {
+      let out = Object.keys(props).length ? setProps(data, props) : data;
+      // 기다리는 사이에 뭔가 적었으면 본문은 건드리지 않습니다
+      if (body && !bodyOf(out).trim()) out = out.replace(/\s*$/, "") + "\n\n" + body;
+      return out;
+    });
     if (caller === "cmd" || this.settings.notice) {
       const what = Object.entries(props)
-        .map(([k, v]) => k + " → " + (Array.isArray(v) ? v.join(" · ") : v)).join("   ");
-      new Notice("🏷 " + file.basename + "\n" + what, 5000);
+        .map(([k, v]) => k + " → " + (Array.isArray(v) ? v.join(" · ") : v));
+      if (body) what.push("본문 틀");
+      new Notice("🏷 " + file.basename + "\n" + what.join("   "), 5000);
     }
     this.refreshStatus();
     return true;
+  }
+
+  /* 보드의 `+` 는 양식의 **속성만** 베끼고 본문은 빈 채로 둡니다 (obsidian.asar 확인 —
+     `vault.create(경로, "")` 로 빈 파일을 만든 뒤 `processFrontMatter` 로 속성만 넣습니다).
+     그래서 양식에 적어 둔 틀이 새 노트에 하나도 안 옵니다. 반쪽만 베끼는 것이라 채웁니다.
+
+     어느 양식인지는 **자리**가 정합니다 — 노트가 앉은 폴더부터 구역 폴더까지 거슬러
+     올라가며 `!(Template) …` 을 찾고, **그 폴더에 하나뿐일 때만** 씁니다. 둘이면
+     어느 쪽인지 사람만 압니다. 유형이 다르면 그것도 안 씁니다. */
+
+  /** 이 노트가 물려받을 양식 본문 — 없으면 빈 문자열 */
+  async templateBody(file, kind) {
+    let dir = file.parent;
+    while (dir && dir.path.split("/").length >= 1 && this.zoneOfPath(dir.path + "/x")) {
+      const forms = dir.children.filter((f) =>
+        f instanceof TFile && f.extension === "md" && f.basename.startsWith("!(Template)"));
+      if (forms.length === 1 && forms[0].path !== file.path) {
+        const form = forms[0];
+        const fk = str(((this.app.metadataCache.getFileCache(form) || {}).frontmatter || {})["유형"]);
+        if (!kind || !fk || fk === kind) {
+          try { return templateBodyText(await this.app.vault.read(form)); }
+          catch (e) { return ""; }
+        }
+        return "";                       // 유형이 다른 양식 — 더 위로 올라가지 않습니다
+      }
+      if (forms.length > 1) return "";    // 헷갈리면 안 합니다
+      dir = dir.parent;
+    }
+    return "";
   }
 
   /** 만들자마자는 아직 양식의 속성이 안 들어와 있습니다 — 캐시가 읽을 때까지 기다립니다 */
@@ -2241,11 +2324,12 @@ ParaMod.prototype.displaySettings = function (c) {
     }));
 
   new Setting(c)
-    .setName("양식에서 만든 노트의 빈 작성일·분류를 채운다")
-    .setDesc("보드의 `+` 로 만든 노트는 양식의 속성을 통째로 물려받아서 `속성 붙이기` 의 " +
-             "그물에 안 걸립니다. 그런데 양식이 비워 둔 `작성일`·`분류` 는 영영 빈 채로 " +
-             "남습니다. **만들 때 한 번만** — 작성일은 오늘, 분류는 같은 폴더 이웃이 쓰는 " +
-             "값으로 (없으면 비워 둡니다). `요약`·`주제`·`작성자` 는 안 건드립니다.")
+    .setName("양식에서 만든 노트의 빈 칸을 채운다 (작성일·분류·본문)")
+    .setDesc("보드의 `+` 는 양식의 **속성만** 베끼고 본문은 빈 채로 둡니다. 게다가 속성이 " +
+             "이미 차 있어서 `속성 붙이기` 의 그물에도 안 걸립니다. **만들 때 한 번만** — " +
+             "작성일은 오늘, 분류는 같은 폴더 이웃이 쓰는 값으로 (없으면 비워 둡니다), " +
+             "본문은 그 폴더(없으면 위 폴더)의 양식 틀로. 양식 맨 앞의 `%%` 블록은 " +
+             "양식 자신에게 하는 말이라 안 따라갑니다. `요약`·`주제`·`작성자` 는 안 건드립니다.")
     .addToggle((t) => t.setValue(s.topUpNew).onChange(async (v) => {
       s.topUpNew = v; await this.save();
     }));
@@ -3240,11 +3324,13 @@ function isNonFileCover(v) {
    `processFrontMatter` 는 YAML을 통째로 다시 써서 `# ── 이외 속성 ──` 주석줄이
    날아갈 수 있습니다. 그래서 건드릴 줄만 바꿉니다. */
 function setCoverLine(data, value) {
-  if (!data.startsWith("---\n")) return null;
-  const end = data.indexOf("\n---", 3);
+  const nl = eolOf(data);
+  const text = toLf(data);
+  if (!text.startsWith("---\n")) return null;
+  const end = text.indexOf("\n---", 3);
   if (end < 0) return null;
-  const lines = data.slice(4, end + 1).split("\n");
-  const rest = data.slice(end + 1);
+  const lines = text.slice(4, end + 1).split("\n");
+  const rest = text.slice(end + 1);
   const out = [];
   let found = false;
 
@@ -3259,7 +3345,7 @@ function setCoverLine(data, value) {
     }
   }
   if (!found) return null;      // 커버 속성이 없는 노트는 손대지 않는다
-  return "---\n" + out.join("\n") + rest;
+  return withEol("---\n" + out.join("\n") + rest, nl);
 }
 
 class CoverMod extends Mod {
