@@ -2939,10 +2939,115 @@ class CanvasMod extends Mod {
 }
 
 
+/* ══════════════════════════════════════════════════════════
+   상태 칩 — 표에서도 상태를 칩으로
+   ══════════════════════════════════════════════════════════
+
+   `담당`·`작성자`·`분류` 는 칩으로 뜨는데 `상태` 만 맨 글자였습니다. 이유가 있습니다.
+
+   | 속성 | 타입 | 옵시디언이 그리는 것 |
+   | --- | --- | --- |
+   | `담당`·`작성자` | multitext + 위키링크 | `<a class="internal-link" data-href="민규 서">` → 이름별로 CSS가 잡힙니다 |
+   | `분류`·`주제` | multitext | 알약(pill) + 고를 수 있는 목록 |
+   | `상태` | text | 그냥 글자. **값이 DOM 어디에도 안 적힙니다** |
+
+   베이스 표는 칸에 `data-property="note.상태"` 만 답니다 (obsidian.asar 의
+   `i.el.dataset.property=n` 확인). 값은 글자 노드뿐이라 CSS가 볼 방법이 없습니다.
+   그래서 **값을 속성으로 적어 주는 일만** 여기서 합니다 — 색칠은 styles.css 가 합니다.
+
+   **`상태` 를 multitext 로 바꾸면 안 됩니다.** 알약과 드롭다운은 공짜로 얻지만
+   값이 목록이 되어 `note["상태"] == "완료"` 같은 필터가 전부 조용히 거짓이 됩니다
+   (보드 24개가 그걸로 거릅니다). 칸반 그룹도 같이 깨집니다.
+
+   고르는 것은 이미 됩니다 — 칸을 누르면 옵시디언이 그 속성에 쓰인 값 목록을
+   띄웁니다 (text 속성도 `YD` 제안기를 답니다, obsidian.asar 확인). */
+
+class ChipMod extends Mod {
+  constructor(plugin) {
+    super(plugin, "chip");
+    this.title = "상태 칩";
+    this.icon = "🚦";
+    this.blurb = "베이스 표·카드의 상태 칸을 색 칩으로 그립니다. "
+      + "값을 바꾸는 것은 옵시디언 기본대로 — 칸을 누르면 목록이 뜹니다.";
+  }
+
+  onload() {
+    this.timer = null;
+    this.queue = this.queue.bind(this);
+    this.obs = new MutationObserver(this.queue);
+    // 글자만 바뀌는 경우(칸반에서 카드를 끌면)도 잡습니다. 속성 변화는 일부러 안 봅니다 —
+    // 우리가 다는 data-chip-value 가 또 우리를 부르는 고리가 생깁니다.
+    this.obs.observe(document.body, { childList: true, subtree: true, characterData: true });
+    this.registerEvent(this.app.workspace.on("layout-change", this.queue));
+    this.queue();
+  }
+
+  onunload() {
+    if (this.obs) this.obs.disconnect();
+    clearTimeout(this.timer);
+    for (const doc of this.docs()) {
+      for (const el of doc.querySelectorAll("[data-chip-value]")) {
+        el.removeAttribute("data-chip-value");
+      }
+    }
+  }
+
+  queue() {
+    clearTimeout(this.timer);
+    this.timer = setTimeout(() => this.paint(), 120);
+  }
+
+  /** 본 창 + 떼어낸 창들. 팝아웃은 document 가 따로입니다 */
+  docs() {
+    const out = new Set([document]);
+    this.app.workspace.iterateAllLeaves((leaf) => {
+      const el = leaf && leaf.view && leaf.view.containerEl;
+      if (el && el.ownerDocument) out.add(el.ownerDocument);
+    });
+    return out;
+  }
+
+  paint() {
+    const props = (this.settings.props || []).filter(Boolean);
+    if (!props.length) return;
+    const sel = props.map((p) =>
+      '[data-property="note.' + p + '"], .obk-card-property[data-label="note.' + p + '"]'
+    ).join(", ");
+    for (const doc of this.docs()) {
+      let els;
+      try { els = doc.querySelectorAll(sel); } catch (e) { return; }
+      for (const el of els) {
+        if (el.querySelector("input, textarea")) continue;   // 고치는 중이면 두고 봅니다
+        const v = (el.textContent || "").trim();
+        if (el.dataset.chipValue !== v) el.dataset.chipValue = v;
+      }
+    }
+  }
+}
+
+ChipMod.prototype.displaySettings = function (c) {
+  const s = this.settings;
+
+  new Setting(c)
+    .setName("칩으로 그릴 속성")
+    .setDesc("한 줄에 하나. 베이스 표·카드의 그 칸에 값을 적어 둬서 CSS가 색을 고릅니다. " +
+             "색은 `plugins/claude/styles.css` 에 값별로 적혀 있습니다 — " +
+             "여기에 속성을 더해도 거기에 색이 없으면 회색 칩이 됩니다.")
+    .addTextArea((t) => {
+      t.inputEl.rows = 3;
+      t.inputEl.style.width = "100%";
+      t.setValue((s.props || []).join("\n")).onChange(async (v) => {
+        s.props = v.split("\n").map((x) => x.trim()).filter(Boolean);
+        await this.save();
+      });
+    });
+};
+
+
 /* ══ 설정 기본값 ══════════════════════════════════════════
    모듈별로 칸을 나눠 담습니다. 예전 네 플러그인의 data.json 을 그대로 옮겨 왔습니다. */
 const DEFAULTS = {
-  modules: { para: true, inbox: true, cover: true, canvas: true },
+  modules: { para: true, inbox: true, cover: true, canvas: true, chip: true },
 
   para: {
     autoMove: true,        // 구역 속성을 고치면 바로 옮긴다
@@ -2990,6 +3095,10 @@ const DEFAULTS = {
   },
 
   canvas: {},            // 설정 없음 — 메뉴 항목과 명령뿐입니다
+
+  chip: {
+    props: ["상태"],     // 칩으로 그릴 속성. 색은 styles.css 에 값별로
+  },
 };
 
 /** 저장된 값을 기본값 위에 얹는다 (landing 처럼 한 겹 더 들어간 것까지) */
@@ -3047,7 +3156,7 @@ class ClaudeTab extends PluginSettingTab {
 }
 
 /* ══ 본체 ════════════════════════════════════════════════ */
-const MODULES = [ParaMod, InboxMod, CoverMod, CanvasMod];
+const MODULES = [ParaMod, InboxMod, CoverMod, CanvasMod, ChipMod];
 
 module.exports = class Claude extends Plugin {
   async onload() {
