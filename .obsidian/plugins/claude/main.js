@@ -993,6 +993,19 @@ class ParaMod extends Mod {
     return [...seen].sort();
   }
 
+  /** 칸반에 늘 두는 담당자 명단 — **고정**입니다.
+      그 프로젝트에 아직 그 사람 일이 없어도 뷰는 있어야 합니다. 탭이 없으면
+      "나한테 온 게 없다" 를 확인할 방법이 없고, 일이 하나 생기는 순간 탭이
+      나타났다 사라졌다 합니다. 명단은 설정 → Claude → PARA 구역 정리 에서.
+      명단에 없는 이름이 `담당` 에 적혀 있으면 그 사람 뷰도 붙입니다 — 안 보이는 일이
+      없게. */
+  roster(folder) {
+    const out = (this.settings.people || [])
+      .map((x) => String(x).trim()).filter(Boolean);
+    for (const who of this.assignees(folder)) if (!out.includes(who)) out.push(who);
+    return out;
+  }
+
   /** 담당자 뷰 한 덩어리. folder 를 주면 그 프로젝트 안에서만 */
   assigneeViewLines(who, folder) {
     const L = ["  - type: kanban-view", "    name: " + this.assigneeViewName(who)];
@@ -1045,7 +1058,7 @@ class ParaMod extends Mod {
     }
     if (kinds.includes("assignee")) {
       // 빈 칸(미할당)도 한 장 — 아직 아무도 안 맡은 것이 안 보이면 안 됩니다
-      for (const who of this.assignees(folder).concat([""])) {
+      for (const who of this.roster(folder).concat([""])) {
         want.push({ name: this.assigneeViewName(who),
                     lines: () => this.assigneeViewLines(who, folder) });
       }
@@ -1643,6 +1656,21 @@ ParaMod.prototype.displaySettings = function (c) {
     .addToggle((t) => t.setValue(s.syncProjectViews).onChange(async (v) => {
       s.syncProjectViews = v; await this.save();
     }));
+
+  new Setting(c)
+    .setName("칸반에 늘 두는 담당자")
+    .setDesc("한 줄에 한 사람. 그 프로젝트에 그 사람 일이 아직 없어도 뷰는 있습니다 — " +
+             "일이 생겼다 없어졌다 할 때마다 탭이 나타났다 사라지면 못 씁니다. " +
+             "여기 없는 이름이 `담당` 에 적혀 있으면 그 사람 뷰도 따로 붙습니다. " +
+             "`👤 미할당` 은 늘 맨 뒤에 붙습니다.")
+    .addTextArea((t) => {
+      t.inputEl.rows = 3;
+      t.inputEl.style.width = "100%";
+      t.setValue((s.people || []).join("\n")).onChange(async (v) => {
+        s.people = v.split("\n").map((x) => x.trim()).filter(Boolean);
+        await this.save();
+      });
+    });
 
   new Setting(c)
     .setName("파일 이름 앞머리로 작성자를 채운다")
@@ -2923,6 +2951,7 @@ const DEFAULTS = {
     stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
     authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
     syncProjectViews: true, // 프로젝트 폴더가 생기면 보드에 칸반 뷰를 붙인다
+    people: ["Rin", "민규 서"], // 칸반에 늘 두는 담당자. 일이 없어도 탭은 있습니다
     authorPrefix: {        // 앞머리 → 작성자. 사람이 직접 붙인 표시라서 읽습니다
       "rin": "Rin",
       "gen": "Gemini",
