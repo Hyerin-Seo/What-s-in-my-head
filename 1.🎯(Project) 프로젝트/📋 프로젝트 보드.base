@@ -46,11 +46,9 @@ views:
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 레퍼런스 뷰 좌측 패널 및 모달 시스템.md
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 속성 패널 및 속성 뷰 인스펙터 구축.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_rectangular_styling.md
         진행중: []
         확인 필요:
           - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/project에서 발견되는 버그 잡기.md
-          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
   - type: kanban-view
     name: 🧪 문서 어시스턴트 프로토타입 구현
     filters:
@@ -207,6 +205,9 @@ views:
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 레퍼런스 뷰 좌측 패널 및 모달 시스템.md
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 속성 패널 및 속성 뷰 인스펙터 구축.md
+          - 1.🎯(Project) 프로젝트/🐛 버그 리포트/(modal&화면split)상세 창이 안열림&split 시 칸반 이동 안됨.md
+          - 1.🎯(Project) 프로젝트/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
+          - 1.🎯(Project) 프로젝트/🐛 버그 리포트/(PARA보내기)하위 디렉토리로 이동 못함.md
         완료:
           - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(Draw)기초 설계.md
           - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(Draw)에이전트 시대 업무 환경 변화.md
@@ -224,7 +225,6 @@ views:
           - 1.🎯(Project) 프로젝트/🐛 버그 리포트/pull 받기 전 마지막 점검.md
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 페이지 뷰 수평 스크롤 및 그리드 뷰 모드 구현.md
         확인 필요:
-          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
           - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/project에서 발견되는 버그 잡기.md
   - type: kanban-view
     name: 🐛 버그 리포트
