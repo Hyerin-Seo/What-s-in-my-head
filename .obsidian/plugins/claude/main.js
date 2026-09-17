@@ -40,6 +40,22 @@ const first = (v) => (Array.isArray(v) ? v[0] : v);
 const str = (v) => (first(v) == null ? "" : String(first(v)).trim());
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/** 양식인가 — 파일이나 폴더 이름이 `!(Template)` 로 시작합니다.
+    양식은 **틀**이지 노트가 아니라서 옮기지도, 속성을 채우지도, 어긋남으로 잡지도 않습니다.
+    파일 이름만 보면 `!(Template) 근무표 품의서/[품의서] 제목.md` 같은 **폴더째 양식**이 빠집니다. */
+const isTemplatePath = (path) => /(^|\/)!\(Template\)/.test(path);
+
+/** 폴더 이름을 견줄 **열쇠** — 이모지·띄어쓰기·대소문자를 뺀 글자만 남깁니다.
+    `✏️문서 어시스턴트 에디터 목업` 과 `문서 어시스턴트 에디터 목업` 이 같은 열쇠가 됩니다.
+    이모지만으로 된 이름은 빈 열쇠라 아무것과도 안 맞습니다. */
+const nameKey = (s) => String(s == null ? "" : s).normalize("NFC")
+  .replace(/[\p{Extended_Pictographic}\u200D\uFE0E\uFE0F\u20E3]/gu, "")
+  .replace(/\s+/g, "").toLowerCase();
+
+/** 프론트매터의 `분류` 를 목록으로 (한 줄 글자로 적힌 것도) */
+const classList = (fm) => (Array.isArray(fm["분류"]) ? fm["분류"] : [fm["분류"]])
+  .map((x) => (x == null ? "" : String(x).trim())).filter(Boolean);
+
 /** 에이전트 스킬(`SKILL.md` 가 있는 폴더) 안의 파일인가.
     그 안의 `.md` 는 노트가 아니라 **에이전트가 읽는 설명서**입니다. 속성 13종을 붙이면
     스킬 프론트매터(`name`·`description`)가 망가지고, 유형이 없다고 ⚠ PARA 에 잡힙니다.
@@ -138,22 +154,51 @@ function ymdOf(v) {
 }
 
 /** 외부 명령 실행 — shell 을 거치지 않습니다.
-    윈도우에서 shell:true 로 리스트를 넘기면 줄바꿈이 든 프롬프트가 통째로 깨집니다. */
-function run(spawn, cmd, args, cwd) {
+    윈도우에서 shell:true 로 리스트를 넘기면 줄바꿈이 든 프롬프트가 통째로 깨집니다.
+    shell 없이도 `agy` 이름만으로 `agy.exe` 를 찾습니다 (node 의 spawn 이 PATH 에서 .exe 를 붙여 봅니다).
+    못 찾는 건 PATH 자체에 없을 때라 `resolveAgy` 가 설치 자리를 직접 봅니다.
+
+    `timeoutMs` — 그 시간 안에 안 끝나면 끝내고 `timedOut` 으로 돌려줍니다. 없을 때는 agy 가 멈추면
+    이 Promise 가 영영 안 끝나서, 인박스 요약 대기줄 전체가 그 뒤로 멈췄습니다. */
+function run(spawn, cmd, args, cwd, timeoutMs) {
   return new Promise((resolve) => {
-    let p;
+    let p, out = "", err = "", timer = null, settled = false;
+    const done = (extra) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      resolve(Object.assign({ stdout: out, stderr: err }, extra));
+    };
     try {
       p = spawn(cmd, args, { cwd, windowsHide: true });
     } catch (e) {
-      resolve({ stdout: "", stderr: String(e) });
+      done({ stderr: String(e), missing: Boolean(e && e.code === "ENOENT") });
       return;
     }
-    let out = "", err = "";
     p.stdout.on("data", (d) => { out += d.toString("utf8"); });
     p.stderr.on("data", (d) => { err += d.toString("utf8"); });
-    p.on("error", (e) => resolve({ stdout: "", stderr: String(e) }));
-    p.on("close", () => resolve({ stdout: out, stderr: err }));
+    p.on("error", (e) => done({ stdout: "", stderr: String(e), missing: Boolean(e && e.code === "ENOENT") }));
+    p.on("close", (code) => done({ code }));
+    if (timeoutMs > 0) {
+      timer = setTimeout(() => {
+        try { p.kill(); } catch (e) { /* 이미 끝났으면 */ }
+        done({ stderr: err + "\n" + Math.round(timeoutMs / 1000) + "초 동안 응답이 없어 끝냈습니다", timedOut: true });
+      }, timeoutMs);
+    }
   });
+}
+
+/** 노트에서 **사람이 쓴 글자**만 — 속성·`%%` 안내·제목줄·빈 글머리·임베드·공백을 뺍니다.
+    양식 뼈대만 있는 노트는 거의 0 이 됩니다. 요약을 부를지 가르는 데 씁니다. */
+function meaningfulText(raw) {
+  return toLf(raw)
+    .replace(/^---\n[\s\S]*?\n---\n?/, "")
+    .replace(/%%[\s\S]*?%%/g, "")
+    .split("\n")
+    .filter((l) => !/^\s*#{1,6}\s/.test(l) && !/^\s*([-*+]|\d+\.)\s*(\[[ xX]?\])?\s*$/.test(l))
+    .join("\n")
+    .replace(/!\[\[[^\]]*\]\]/g, "")
+    .replace(/\s+/g, "");
 }
 
 /* ── 프론트매터를 줄 단위로 고쳐 쓴다 ──────────────────────────
@@ -301,6 +346,28 @@ function setProps(data, props, addAuthor) {
   return withEol("---\n" + out.join("\n") + rest, nl);
 }
 
+/** 유형이 `kind` 가 됐을 때 그 유형의 고유 속성 칸(`EXTRA_KEYS`)이 **없으면 빈 칸으로** 엽니다.
+    이미 있는 칸은 값째로 그대로 둡니다 — 그래서 setProps 에 `{ 일정: "" }` 를 넘기지 않습니다
+    (그러면 적어 둔 날짜가 지워집니다).
+
+    속성 13종을 통째로 붙일 때(stamp)만 이 칸을 열었더니, **인박스 노트를 `📤 PARA로 보내기` 로
+    할일로 만들면 `일정` 이 없었습니다** — 인박스 양식은 메모라 그 칸이 없습니다 (2026-09-17,
+    패치노트 두 장). 유형을 쓰는 곳(보내기 · 속성 맞추기 · 알림 버튼)이 전부 이걸 거칩니다. */
+function withKindKeys(data, kind) {
+  const extra = EXTRA_KEYS[str(kind)] || [];
+  if (!extra.length) return data;
+  const nl = eolOf(data);
+  const text = toLf(data);
+  if (!text.startsWith("---\n")) return data;
+  const end = text.indexOf("\n---", 3);
+  if (end < 0) return data;
+  const fm = text.slice(4, end + 1);
+  const missing = extra.filter((k) => !new RegExp("^" + k + ":", "m").test(fm));
+  if (!missing.length) return data;
+  const add = (/^# ── 이외 속성/m.test(fm) ? [] : [EXTRA_HEAD]).concat(missing.map((k) => k + ":"));
+  return withEol(text.slice(0, end + 1) + add.join("\n") + text.slice(end), nl);
+}
+
 /* ── 모듈 바탕 ────────────────────────────────────────────
    기능 하나가 Mod 하나입니다. Mod 는 Plugin 이 아니라서 옵시디언 API 를 직접 못 부릅니다.
    본체에 위임하되 **명령 id 앞에 모듈 id 를 붙입니다** — 넷을 한 플러그인에 넣으면
@@ -376,6 +443,8 @@ const KIND_STATES = {
 const ALL_KINDS = Object.keys(KIND_STATES);
 
 /* 이 유형은 위치가 곧 역할이라 옮기지 않습니다 */
+/* 같은 구역 안에서도 분류로 폴더를 맞추는 구역 — 인박스(판단 전)·보관(분류는 기록)은 뺍니다 */
+const CLASS_MOVE_ZONES = ["1.project", "2.area", "3.resource"];
 const NEVER_MOVE_KINDS = ["홈", "대시보드"];
 
 /* 프로젝트 보드 — 칸반 하나에 모든 프로젝트를 모아 봅니다. */
@@ -450,6 +519,13 @@ class ParaMod extends Mod {
       }));
       // 어느 폴더에서 만들든 인박스와 똑같이 — 속성 없는 노트는 어디에도 안 뜹니다
       this.registerEvent(this.app.vault.on("create", (file) => this.queueStamp(file)));
+      // **옮겨 온** 노트도 — 탐색기로 끌어 옮기면 create 가 아니라 rename 으로 옵니다.
+      // 예전엔 만들 때만 봐서, 속성 없는 .md 를 인박스 칸으로 옮기면 아무 일도 안 일어나고
+      // 핀보드에도 안 떴습니다 (2026-09-17, AGENTS.md 를 개린 인박스로 옮겨 본 것).
+      // 이미 구역·유형이 있는 노트는 stampPlan 이 건너뜁니다.
+      this.registerEvent(this.app.vault.on("rename", (file) => {
+        if (file instanceof TFile && file.extension === "md" && this.zoneOfPath(file.path)) this.queueStamp(file);
+      }));
       // 책장에 떨어진 책은 책 폴더째로 — 만들 때, 그리고 새 항목 창에서 제목을 지을 때
       this.registerEvent(this.app.vault.on("create", (file) => this.queueItemFolder(file)));
       this.registerEvent(this.app.vault.on("rename", (file) => this.queueItemFolder(file)));
@@ -467,6 +543,7 @@ class ParaMod extends Mod {
         if (file instanceof TFolder) {
           this.projectRenames = this.projectRenames || [];
           this.projectRenames.push({ oldPath, newPath: file.path });
+          this.queueClassRename(oldPath, file);
         }
         // 보드 속 경로를 먼저 따라가게 하고, 프로젝트 보드 정리는 그 뒤에 돕니다.
         // 순서가 거꾸로면 정리가 옛 이름의 프로젝트 뷰를 지우고 새 뷰를 만들어서
@@ -483,6 +560,10 @@ class ParaMod extends Mod {
       };
       this.registerEvent(this.app.vault.on("create", boardTouch));
       this.registerEvent(this.app.vault.on("delete", boardTouch));
+      // 밖에서 이름이 바뀐 폴더는 사라짐 + 생김으로 옵니다 — 분류를 폴더 이름에 맞춥니다
+      this.registerEvent(this.app.vault.on("create", (file) => {
+        if (file instanceof TFolder) this.queueClassSync();
+      }));
       // Independent of stamping/AI: one failure there must not stop board maintenance.
       this.queueProjectReconcile("start");
       this.projectPoll = setInterval(() => {
@@ -504,6 +585,7 @@ class ParaMod extends Mod {
         if (this.settings.wrapCanvas) await this.wrapCanvasAll("start");
         if (this.settings.sweepStrayZoneFolders) await this.sweepStrayFoldersAll("start");
         if (this.settings.authorFromName) await this.fillAuthorAll("start");
+        if (this.settings.followFolderNames) await this.syncClassNames("start");
         this.refreshStatus();
         // 위치는 맞는데 유형·상태·분류가 옛 구역 값인 노트가 있으면 목록을 바로 엽니다.
         // (알림은 사라져 버려서 쓸모가 없습니다)
@@ -511,6 +593,12 @@ class ParaMod extends Mod {
           this.audit();
         }
       }, 4000);
+    });
+
+    this.addCommand({
+      id: "sync-class-names",
+      name: "볼트 전체 — 분류를 자기 폴더 이름에 맞추기 (이모지·띄어쓰기)",
+      callback: () => this.syncClassNames("cmd"),
     });
 
     this.addCommand({
@@ -690,6 +778,7 @@ class ParaMod extends Mod {
   isExcluded(path) {
     if (path.split("/").length < 2) return true;   // 최상위 파일은 손대지 않는다
     if (inAgentSkill(this.app, path)) return true;  // 에이전트 스킬 — 노트가 아닙니다
+    if (isTemplatePath(path)) return true;          // 양식 — 틀이지 노트가 아닙니다
     return (this.settings.exclude || []).some(
       (ex) => ex && (path === ex || path.startsWith(ex + "/"))
     );
@@ -711,13 +800,71 @@ class ParaMod extends Mod {
     if (NEVER_MOVE_KINDS.includes(kind)) return "유형 " + kind + " 은 안 옮김";
 
     const from = this.zoneOfPath(file.path);
-    if (from === want) return null;                // 같은 구역 — 하위 폴더는 그대로 둔다
+    if (from === want) return this.planClassMove(file, zone, fm);   // 같은 구역 — 분류 폴더 밖이면 그리로
 
     const dest = this.destFolder(zone, fm);
     if (!dest) return "!! 도착 폴더 없음";
     const target = normalizePath(dest + "/" + file.name);
     if (target === file.path) return null;
     return { file, from, to: want, dest, target, kind };
+  }
+
+  /* ── 같은 구역 안: `분류` 가 들어갈 폴더를 정합니다 ──────────────
+     예전엔 분류로 폴더를 고르는 게 **구역이 바뀔 때뿐**이었습니다. 그래서 `🚚 PARA 구축` 폴더에서
+     만든 노트의 분류를 `✏️문서 어시스턴트 에디터 목업` 으로 바꿔도 제자리였습니다 (2026-09-17).
+     분류는 "구역 안의 묶음" 이고 1.project 에서는 곧 프로젝트 폴더라, 속성과 자리가 어긋나면
+     보드(폴더로 거름)와 분류가 서로 다른 말을 합니다. `구역` 과 똑같이 두 방향을 맞춥니다.
+
+       분류를 고침 / 분류 폴더 밖에 있음  → 그 폴더로 옮김 (planClassMove)
+       탐색기로 다른 폴더에 끌어 놓음     → 분류를 새 자리에 맞춰 고침 (writeBackClass)
+
+     한쪽만 있으면 싸웁니다 — 끌어 놓은 노트가 다음 속성 변경 때 옛 분류 폴더로 도로 끌려갑니다.
+     분류 폴더 **안**(하위 폴더 포함)에 있으면 안 옮깁니다. 프로젝트 안의 폴더 구조는 사람 몫입니다.
+     인박스(판단 전)와 보관(분류는 어디서 왔나의 기록)은 빼고, P·A·R 에서만 합니다. */
+  planClassMove(file, zone, fm) {
+    if (!this.settings.moveByClass || !this.settings.useClassFolder) return null;
+    if (!CLASS_MOVE_ZONES.includes(zone.key)) return null;
+    const root = this.settings.landing[zone.key] || zone.folder;
+    const dests = classList(fm).map((c) => this.destFolder(zone, { "분류": c })).filter((d) => d && d !== root);
+    if (!dests.length) return null;                              // 폴더를 가리키는 분류가 없음
+    if (dests.some((d) => file.path.startsWith(d + "/"))) return null;   // 이미 그 폴더 안
+    const target = normalizePath(dests[0] + "/" + file.name);
+    if (target === file.path) return null;
+    return { file, from: zone.key, to: zone.key, dest: dests[0], target, kind: str(fm["유형"]), byClass: true };
+  }
+
+  /** 같은 구역 안에서 사람이 옮겼으면 — 분류를 새 자리에 맞춥니다 */
+  async writeBackClass(file, oldPath) {
+    if (!this.settings.moveByClass || !this.settings.useClassFolder) return false;
+    const zoneKey = this.zoneOfPath(file.path);
+    if (!CLASS_MOVE_ZONES.includes(zoneKey) || zoneKey !== this.zoneOfPath(oldPath)) return false;
+    const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
+    if (!fm || str(fm[OPT_OUT_KEY]) === "끔") return false;
+    if (STRUCTURAL_KINDS.includes(str(fm["유형"]))) return false;
+    const zone = ZONE_BY_KEY[zoneKey];
+    const root = this.settings.landing[zone.key] || zone.folder;
+    const list = classList(fm);
+    const pointing = list.filter((c) => {
+      const d = this.destFolder(zone, { "분류": c });
+      return d && d !== root;
+    });
+    if (!pointing.length) return false;                          // 폴더를 가리키던 분류가 없었음
+    if (pointing.some((c) => file.path.startsWith(this.destFolder(zone, { "분류": c }) + "/"))) return false;
+    // 새 자리 = 구역 바로 아래 폴더. 구역 맨 위로 옮겼으면 폴더를 가리키던 분류만 뺍니다
+    const seg = file.path.split("/");
+    const top = seg.length > 2 ? seg[1] : "";
+    const next = list.filter((c) => !pointing.includes(c));
+    if (top && !next.includes(top)) next.unshift(top);
+    this.busy.add(file.path);
+    try {
+      await this.app.vault.process(file, (d) => setProps(d, { "분류": next }));
+    } finally {
+      const p = file.path;
+      setTimeout(() => this.busy.delete(p), 2000);
+    }
+    if (this.settings.notice) new Notice("🏷 " + file.basename + "\n분류 → " + (top || "(비움)"), 5000);
+    this.refreshStatus();
+    return true;
   }
 
   /** 도착 폴더 — 분류 이름과 똑같은 하위 폴더가 그 구역 안에 있으면 거기로 */
@@ -730,9 +877,8 @@ class ParaMod extends Mod {
 
     const cls = str(fm["분류"]);
     if (!cls) return root;
-    const hits = this.app.vault.getAllLoadedFiles().filter(
-      (f) => f instanceof TFolder && f.name === cls && f.path.split("/")[0] === zone.folder
-    );
+    // 글자가 똑같은 폴더가 먼저, 없으면 이모지·띄어쓰기만 다른 폴더 (queueClassRename 주석)
+    const hits = this.classFolderHits(zone.folder, cls);
     if (!hits.length) return root;
     // **제일 얕은 것**이 사람이 뜻한 폴더입니다. 예전에는 `hits.length === 1` 만 봤는데,
     // 칸반 빠른 추가가 `…/구역/분류` 같은 빈 폴더를 하나 흘리고 가면 후보가 둘이 되어
@@ -812,6 +958,8 @@ class ParaMod extends Mod {
     this.projectStopped = true;
     clearInterval(this.projectPoll);
     clearTimeout(this.startupTimer);
+    clearTimeout(this.classRenameTimer);
+    clearTimeout(this.classSyncTimer);
     for (const t of this.timers.values()) clearTimeout(t);
     this.timers.clear();
     for (const t of this.stampTimers.values()) clearTimeout(t);
@@ -874,7 +1022,11 @@ class ParaMod extends Mod {
 
     const to = this.zoneOfPath(file.path);
     const from = this.zoneOfPath(oldPath);
-    if (!to || to === from) return;                // 이름만 바뀜 / 같은 구역 안 이동
+    if (!to) return;
+    if (to === from) {                             // 이름만 바뀜 / 같은 구역 안 이동 — 분류만 자리에 맞춥니다
+      await this.writeBackClass(file, oldPath);
+      return;
+    }
 
     const cache = this.app.metadataCache.getFileCache(file) || {};
     const fm = cache.frontmatter;
@@ -949,7 +1101,7 @@ class ParaMod extends Mod {
     if (!name) return [];
     const zs = new Set();
     for (const f of this.app.vault.getAllLoadedFiles()) {
-      if (f instanceof TFolder && f.name === name) {
+      if (f instanceof TFolder && (f.name === name || (nameKey(name) && nameKey(f.name) === nameKey(name)))) {
         const z = ZONE_BY_FOLDER[f.path.split("/")[0]];
         if (z) zs.add(z.key);
       }
@@ -1130,9 +1282,9 @@ class ParaMod extends Mod {
     nt.noticeEl.onclick = async () => {
       nt.hide();
       if (best) {
-        await this.app.vault.process(file, (d) => setProps(d, {
+        await this.app.vault.process(file, (d) => withKindKeys(setProps(d, {
           "유형": best, "상태": this.stateFor(zoneKey, best, ""),
-        }));
+        }), best));
         new Notice("🏷 " + file.basename + "\n유형 → " + best, 4000);
         this.refreshStatus();
       } else {
@@ -1512,6 +1664,145 @@ class ParaMod extends Mod {
       if (changes.length) done.push([f, changes]);
     }
     return done;
+  }
+
+  /* ── 폴더 이름이 바뀌면 분류가 따라갑니다 ─────────────────────
+     `분류` 는 폴더 이름을 **글자로** 들고 있어서, 폴더 이름을 바꾸면 거기서 끊겼습니다.
+     2026-09-17 `문서 어시스턴트 에디터 목업` 폴더에 나중에 ✏️ 를 붙였더니, 그 안의 노트들은
+     옛 이름을 분류로 달고 있었고, `📤 PARA로 보내기` 창이 그 옛 이름을 권했고, 고르면 폴더를
+     못 찾아 `1.🎯(Project) 프로젝트` 맨 위로 떨어졌습니다. 이름은 하루에도 몇 번씩 바꾸는 것이라
+     사람에게 맞추라고 할 일이 아닙니다. 셋이 나눠 막습니다.
+
+       ① 옵시디언 안에서 이름을 바꾸면   → 그 이름을 쓰던 분류를 새 이름으로 고칩니다 (여기)
+       ② 폴더를 찾을 때                 → 글자가 똑같은 게 없으면 열쇠(nameKey)로 찾습니다 (destFolder)
+       ③ 밖에서 바뀐 것(git pull 등)     → 켤 때·폴더가 생길 때, 자기가 든 폴더와 열쇠만 같은
+                                           분류를 그 폴더 이름으로 맞춥니다 (syncClassNames) */
+  queueClassRename(oldPath, folder) {
+    if (!this.settings.followFolderNames) return;
+    const oldName = oldPath.split("/").pop();
+    if (!oldName || oldName === folder.name) return;           // 옮기기만 했으면 이름은 그대로
+    const zoneFolder = folder.path.split("/")[0];
+    if (!ZONE_BY_FOLDER[zoneFolder]) return;
+    (this.classRenames = this.classRenames || []).push({ oldName, newName: folder.name, newPath: folder.path, zoneFolder });
+    clearTimeout(this.classRenameTimer);
+    this.classRenameTimer = setTimeout(() => {
+      this.followClassRenames().catch((e) => console.error("[Claude] 분류 이름 따라가기 실패", e));
+    }, 1500);
+  }
+
+  async followClassRenames() {
+    const renames = (this.classRenames || []).splice(0);
+    if (!renames.length) return [];
+    // 옛 이름의 폴더가 그 구역에 **아직 있으면** 그 분류는 그 폴더를 가리키는 것일 수 있습니다
+    // 방금 이름을 바꾼 폴더 자신은 빼고 봅니다 — 이모지만 붙였으면 열쇠가 같아서 자기가 걸립니다.
+    const folders = this.app.vault.getAllLoadedFiles().filter((f) => f instanceof TFolder && f.path.includes("/"));
+    for (const r of renames) {
+      const others = folders.filter((f) => f.path !== r.newPath && f.path.split("/")[0] === r.zoneFolder);
+      r.key = nameKey(r.oldName);
+      r.aliveExact = others.some((f) => f.name === r.oldName);
+      r.aliveKey = Boolean(r.key) && others.some((f) => nameKey(f.name) === r.key);
+    }
+    const fixed = [];
+    for (const file of this.app.vault.getMarkdownFiles()) {
+      if (this.isExcluded(file.path)) continue;
+      const zoneFolder = file.path.split("/")[0];
+      const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
+      if (!fm) continue;
+      const list = classList(fm);
+      if (!list.length) continue;
+      const next = list.map((c) => {
+        let v = c;
+        for (const r of renames) {                                // 이어서 여러 번 바꿨으면 차례로
+          if (zoneFolder !== r.zoneFolder || v === r.newName) continue;
+          if (v === r.oldName && !r.aliveExact) v = r.newName;
+          // 옛 이름에서 이모지·띄어쓰기만 다르게 적혀 있던 것도 같은 폴더를 가리킵니다
+          else if (r.key && nameKey(v) === r.key && !r.aliveKey) v = r.newName;
+        }
+        return v;
+      });
+      if (next.every((v, i) => v === list[i])) continue;
+      fixed.push([file, list, next]);
+    }
+    await this.writeClasses(fixed);
+    if (fixed.length && this.settings.notice) {
+      new Notice("🏷 폴더 이름을 따라 분류 " + fixed.length + "곳을 고쳤습니다\n" +
+        renames.map((r) => r.oldName + " → " + r.newName).join("\n"), 6000);
+    }
+    return fixed;
+  }
+
+  queueClassSync() {
+    if (!this.settings.followFolderNames) return;
+    clearTimeout(this.classSyncTimer);
+    this.classSyncTimer = setTimeout(() => {
+      this.syncClassNames("auto").catch((e) => console.error("[Claude] 분류 맞추기 실패", e));
+    }, 3000);
+  }
+
+  /** 자기가 든 폴더(또는 그 위 폴더)와 **글자만** 다른 분류를 폴더 이름으로 맞춥니다.
+      다른 곳에 사는 노트의 분류는 안 건드립니다 — 폴더 찾기(②)가 열쇠로 찾아 주니
+      옮길 때 문제가 없고, 사람이 일부러 다르게 적었을 수도 있습니다. */
+  async syncClassNames(caller) {
+    const fixed = [];
+    for (const file of this.app.vault.getMarkdownFiles()) {
+      if (this.isExcluded(file.path) || !this.zoneOfPath(file.path)) continue;
+      const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
+      if (!fm) continue;
+      const list = classList(fm);
+      if (!list.length) continue;
+      const next = list.map((c) => {
+        const k = nameKey(c);
+        if (!k) return c;
+        for (let p = file.parent; p && p.path.includes("/"); p = p.parent) {
+          if (p.name === c) return c;                             // 글자까지 같으면 그대로
+          if (nameKey(p.name) === k) return p.name;
+        }
+        return c;
+      });
+      if (next.every((v, i) => v === list[i])) continue;
+      fixed.push([file, list, next]);
+    }
+    await this.writeClasses(fixed);
+    if (fixed.length) {
+      console.log("[Claude] 분류를 폴더 이름에 맞춤\n" +
+        fixed.map(([f, a, b]) => "  " + f.path + " : " + a.join(", ") + " → " + b.join(", ")).join("\n"));
+      new Notice("🏷 분류 " + fixed.length + "곳을 지금 폴더 이름에 맞췄습니다\n(이모지·띄어쓰기만 달랐던 것)", 6000);
+    } else if (caller === "cmd") {
+      new Notice("분류가 전부 자기 폴더 이름과 맞습니다. ✔");
+    }
+    return fixed;
+  }
+
+  async writeClasses(fixed) {
+    for (const [file, , next] of fixed) {
+      this.busy.add(file.path);                                   // 속성이 바뀌었다고 옮기러 들지 않게
+      try {
+        await this.app.vault.process(file, (d) => setProps(d, { "분류": next }));
+      } finally {
+        setTimeout(() => this.busy.delete(file.path), 2000);
+      }
+    }
+  }
+
+  /** 그 구역 안에서 `분류` 가 가리키는 폴더 후보 — 글자가 똑같은 것, 없으면 열쇠가 같은 것 */
+  classFolderHits(zoneFolder, cls) {
+    const inZone = this.app.vault.getAllLoadedFiles().filter(
+      (f) => f instanceof TFolder && f.path.split("/")[0] === zoneFolder && f.path !== zoneFolder
+    );
+    const exact = inZone.filter((f) => f.name === cls);
+    if (exact.length) return exact;
+    const k = nameKey(cls);
+    return k ? inZone.filter((f) => nameKey(f.name) === k) : [];
+  }
+
+  /** 분류 글자를 **지금 폴더 이름**으로 — 그 구역에 그 분류의 폴더가 있을 때만 */
+  canonicalClass(zoneKey, cls) {
+    const zone = ZONE_BY_KEY[zoneKey];
+    if (!zone || !cls) return cls;
+    const dest = this.destFolder(zone, { "분류": cls });
+    const root = this.settings.landing[zone.key] || zone.folder;
+    const f = dest && dest !== root ? this.app.vault.getAbstractFileByPath(dest) : null;
+    return f instanceof TFolder && nameKey(f.name) === nameKey(cls) ? f.name : cls;
   }
 
   queuePathFollow(oldPath, newPath) {
@@ -2295,7 +2586,8 @@ class ParaMod extends Mod {
       if (caller !== "start") new Notice("구역이 어긋난 노트가 없습니다. ✔");
       return;
     }
-    const lines = todo.map((p) => "· " + p.file.basename + "  (" + (p.from || "구역 밖") + " → " + p.to + ")");
+    const lines = todo.map((p) => "· " + p.file.basename + "  (" +
+      (p.byClass ? "분류 폴더 → " + p.dest.split("/").pop() : (p.from || "구역 밖") + " → " + p.to) + ")");
     console.log("[PARA 구역 정리] 어긋난 노트 " + todo.length + "개\n" + lines.join("\n"));
 
     if (!doMove) {
@@ -2385,7 +2677,21 @@ class ParaMod extends Mod {
       const c = str(((this.app.metadataCache.getFileCache(f) || {}).frontmatter || {})["분류"]);
       if (c) tally.set(c, (tally.get(c) || 0) + 1);
     }
-    return [...tally.entries()].sort((a, b) => b[1] - a[1]);
+    // 같은 폴더를 가리키는 글자 변형(이모지·띄어쓰기)은 **지금 폴더 이름** 하나로 모읍니다.
+    // 안 모으면 옛 이름이 따로 떠서, 그걸 고르면 폴더를 못 찾았습니다.
+    const merged = new Map();
+    for (const [c, n] of tally) {
+      const name = this.canonicalClass(zoneKey, c);
+      merged.set(name, (merged.get(name) || 0) + n);
+    }
+    // 노트가 아직 없는 폴더도 고를 수 있게 — 막 만든 프로젝트로 보낼 때
+    const top = this.app.vault.getAbstractFileByPath(zone.folder);
+    if (top instanceof TFolder) {
+      for (const f of top.children) {
+        if (f instanceof TFolder && this.isProjectFolder(f.name) && !merged.has(f.name)) merged.set(f.name, 0);
+      }
+    }
+    return [...merged.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   }
 
   /** 지금 고른 값대로면 어느 폴더에 떨어지나 — 창에서 미리 보여줍니다 */
@@ -2424,10 +2730,10 @@ class ParaMod extends Mod {
       "구역": opts.zone,
       "유형": opts.kind || "",
       "상태": opts.state || "",
-      "분류": opts.cls ? [opts.cls] : [],
+      "분류": opts.cls ? [this.canonicalClass(opts.zone, opts.cls)] : [],   // 옛 이름이면 지금 폴더 이름으로
     };
     if (opts.due !== undefined) props["마감"] = opts.due || "";
-    await this.app.vault.process(file, (data) => setProps(data, props));
+    await this.app.vault.process(file, (data) => withKindKeys(setProps(data, props), props["유형"]));
 
     // metadataCache 가 새 값을 읽어야 plan() 이 "옮길 이유" 를 봅니다
     await this.waitForProp(file, "구역", opts.zone);
@@ -2537,7 +2843,7 @@ class FixModal extends Modal {
     const kind = this.kind, state = this.state, cls = this.cls;
     // 분류는 목록형입니다 (types.json 에 multitext). 나머지는 스칼라.
     await this.app.vault.process(this.file, (data) =>
-      setProps(data, { "유형": kind, "상태": state, "분류": cls ? [cls] : [] })
+      withKindKeys(setProps(data, { "유형": kind, "상태": state, "분류": cls ? [cls] : [] }), kind)
     );
     new Notice("✔ " + this.file.basename + "\n유형 " + kind +
                " · 상태 " + (state || "(비움)") + " · 분류 " + (cls || "(비움)"), 6000);
@@ -2664,8 +2970,12 @@ class SendModal extends Modal {
     if (used.length) {
       clsSetting.addDropdown((d) => {
         const opts = { "": "(비움)" };
-        for (const [name, n] of used) opts[name] = name + "  (" + n + ")";
-        d.addOptions(opts).setValue(used.some((u) => u[0] === this.cls) ? this.cls : "")
+        for (const [name, n] of used) opts[name] = name + (n ? "  (" + n + ")" : "  (노트 없음)");
+        // 노트에 옛 이름(이모지 빠짐 등)이 적혀 있으면 지금 폴더 이름으로 바꿔 고릅니다
+        const hit = used.find((u) => u[0] === this.cls)
+          || (nameKey(this.cls) ? used.find((u) => nameKey(u[0]) === nameKey(this.cls)) : null);
+        if (hit) this.cls = hit[0];
+        d.addOptions(opts).setValue(hit ? hit[0] : "")
           .onChange((v) => {
             this.cls = v;
             if (this.clsInput) this.clsInput.value = v;
@@ -2829,6 +3139,15 @@ ParaMod.prototype.displaySettings = function (c) {
     }));
 
   new Setting(c)
+    .setName("폴더 이름을 바꾸면 분류가 따라간다")
+    .setDesc("`분류` 는 폴더 이름을 글자로 들고 있어서 이름을 바꾸면 끊깁니다. 옵시디언 안에서 이름을 " +
+             "바꾸면 그 이름을 쓰던 분류를 고치고, 밖에서 바뀐 것은 켤 때 자기 폴더와 글자만 다른 " +
+             "분류를 맞춥니다. 폴더를 찾을 때는 이모지·띄어쓰기가 달라도 같은 폴더로 봅니다.")
+    .addToggle((t) => t.setValue(s.followFolderNames).onChange(async (v) => {
+      s.followFolderNames = v; await this.save();
+    }));
+
+  new Setting(c)
     .setName("폴더째 담는 보드")
     .setDesc("한 줄에 보드 이름 하나 (확장자 없이). 이 보드에서 `+ 새 항목` 으로 만든 노트는 " +
              "제목을 짓는 순간 `<제목>/📖 <제목>.md` 와 `<제목>/이미지/` 로 세워집니다. " +
@@ -2925,6 +3244,15 @@ ParaMod.prototype.displaySettings = function (c) {
     }));
 
   new Setting(c)
+    .setName("같은 구역 안에서도 분류가 폴더를 정한다")
+    .setDesc("분류를 고치면 그 분류 폴더로 옮기고, 파일 탐색기로 다른 폴더에 끌어 놓으면 분류를 새 자리에 " +
+             "맞춥니다. 분류 폴더 안(하위 폴더 포함)이면 안 옮깁니다. 프로젝트·관리 영역·자료에서만 — " +
+             "인박스와 보관은 뺍니다.")
+    .addToggle((t) => t.setValue(s.moveByClass).onChange(async (v) => {
+      s.moveByClass = v; await this.save();
+    }));
+
+  new Setting(c)
     .setName("옮길 때 알림")
     .addToggle((t) => t.setValue(s.notice).onChange(async (v) => {
       s.notice = v; await this.save();
@@ -2981,6 +3309,7 @@ const WRAP_EXT = [...EMBEDDABLE,
   "zip", "7z", "rar", "txt", "json", "epub", "psd", "ai", "sketch", "fig"];
 const NEVER = ["md", "base"];          // 문서·보드는 감싸지 않는다
 const SKIP_DIRS = ["이미지", "images", "attachments"];
+const NOTE_AI_MIN_CHARS = 80;          // 던진 .md 를 요약할 만큼 글이 있나 — 양식 뼈대는 거의 0자
 const FOLDER_MARK = "폴더::";       // 노트 안에서 폴더를 가리키는 표시
 
 /* agy 에 강제할 출력 형식. 이게 있으면 응답에서 ```json 울타리를 벗길 필요가 없다 —
@@ -3010,6 +3339,7 @@ class InboxMod extends Mod {
     this.timers = new Map();
     this.aiQueue = [];        // agy 로 보낼 노트 경로
     this.aiBusy = false;
+    this.aiDone = new Map();  // 경로 → 마지막으로 보낸 시각
 
     this.registerFolderLinks();
 
@@ -3033,6 +3363,11 @@ class InboxMod extends Mod {
       id: "sweep",
       name: "인박스 지금 정리하기 (첨부 → 노트로 감싸기)",
       callback: () => this.sweep("cmd"),
+    });
+    this.addCommand({
+      id: "check-agy",
+      name: "agy 연결 확인 (실행 파일 · 버전)",
+      callback: () => this.checkAgy(),
     });
     this.addCommand({
       id: "ai",
@@ -3094,6 +3429,7 @@ class InboxMod extends Mod {
   queue(file) {
     if (!this.settings.auto) return;
     if (file instanceof TFolder) return this.queueFolder(file);
+    if (file instanceof TFile && file.extension === "md") return this.queueNoteAi(file);
     if (!this.target(file)) return;
     // 복사가 끝나기 전에 손대면 크기가 0으로 잡힌다. 잠깐 기다린다.
     const path = file.path;
@@ -3513,6 +3849,27 @@ class InboxMod extends Mod {
   }
 
   /** 요약·주제가 빈 인박스 노트를 대기줄에 넣는다 */
+  /** 인박스에 **내용이 있는 문서(.md)** 를 던졌을 때도 요약·주제를 채웁니다.
+      예전엔 첨부·폴더를 감쌀 때만 agy 를 불러서, 다른 데서 쓴 문서를 인박스에 던지면 속성
+      (메모·미처리)만 붙고 요약·주제는 영영 비었습니다 (2026-09-17 버그 리포트 — 패치노트 .md).
+      손으로 막 만든 노트는 안 부릅니다. 본문이 양식 뼈대뿐이면 요약이 곧 지어내기입니다
+      — 사람이 쓴 글자가 `NOTE_AI_MIN_CHARS` 자 넘을 때만. */
+  queueNoteAi(file) {
+    if (!this.settings.ai || !this.inInbox(file.path)) return;
+    if (file.basename.startsWith("!(Template)")) return;
+    const path = file.path, key = "ai:" + path;
+    clearTimeout(this.timers.get(key));
+    this.timers.set(key, setTimeout(async () => {
+      this.timers.delete(key);
+      const f = this.app.vault.getAbstractFileByPath(path);
+      if (!(f instanceof TFile) || !this.needsAi(f)) return;
+      const raw = await this.app.vault.read(f);
+      if (!toLf(raw).startsWith("---\n")) return;        // 속성 붙이기가 아직 — 적을 자리가 없습니다
+      if (meaningfulText(raw).length < NOTE_AI_MIN_CHARS) return;
+      this.enqueue([f.path]);
+    }, 4000));                                          // 복사가 끝나고 속성(1.5초 뒤)이 붙은 다음
+  }
+
   enqueue(paths) {
     for (const p of paths) {
       if (!this.aiQueue.includes(p)) this.aiQueue.push(p);
@@ -3525,7 +3882,7 @@ class InboxMod extends Mod {
     if (!this.inInbox(file.path)) return false;
     if (file.basename.startsWith("!(Template)")) return false;
     const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {};
-    if (String(fm["유형"] || "") === "대시보드") return false;
+    if (STRUCTURAL_KINDS.includes(String(fm["유형"] || ""))) return false;   // 핀보드(홈)·대시보드·양식
     const sum = String(fm["요약"] || "").trim();
     const topics = fm["주제"];
     const hasTopics = Array.isArray(topics) ? topics.filter(Boolean).length > 0
@@ -3543,6 +3900,10 @@ class InboxMod extends Mod {
         const path = this.aiQueue.shift();
         const file = this.app.vault.getAbstractFileByPath(path);
         if (!(file instanceof TFile) || !this.needsAi(file)) continue;
+        // 방금 처리한 노트가 또 줄에 서 있으면 건너뜁니다 (감싸기와 .md 감지가 같은 노트를 넣을 때)
+        const recent = this.aiDone.get(path);
+        if (recent && Date.now() - recent < 90000) continue;
+        this.aiDone.set(path, Date.now());
         try {
           await this.askAgy(file);
         } catch (e) {
@@ -3556,6 +3917,69 @@ class InboxMod extends Mod {
     } finally {
       this.aiBusy = false;
     }
+  }
+
+  /** agy 실행 파일 — 설정값이 경로면 그대로, 이름뿐이면 **설치 자리 → PATH** 순으로 찾습니다.
+      옵시디언은 켜질 때의 환경변수를 물려받습니다. agy 를 깐 뒤 옵시디언(또는 윈도우 탐색기)을
+      다시 안 켰으면 PATH 에 agy 가 없어 `spawn agy ENOENT` 로 요약이 조용히 빕니다.
+      agy 는 윈도우에서 `%LOCALAPPDATA%\agy\bin\agy.exe` 에 깔립니다 (두 컴퓨터 다 그 자리). */
+  resolveAgy() {
+    const fs = require("fs"), nodePath = require("path");
+    const want = String(this.settings.agy || "").trim() || "agy";
+    if (/[\\/]/.test(want)) return want;                    // 경로를 적어 뒀으면 그대로
+    const win = process.platform === "win32";
+    const names = win ? (/\.exe$/i.test(want) ? [want] : [want + ".exe"]) : [want];
+    const dirs = [];
+    if (win && process.env.LOCALAPPDATA) dirs.push(nodePath.join(process.env.LOCALAPPDATA, "agy", "bin"));
+    if (!win && process.env.HOME) dirs.push(nodePath.join(process.env.HOME, ".local", "bin"));
+    for (const d of String(process.env.PATH || "").split(nodePath.delimiter)) if (d) dirs.push(d);
+    if (!win) dirs.push("/usr/local/bin", "/opt/homebrew/bin");
+    for (const d of dirs) {
+      for (const n of names) {
+        const p = nodePath.join(d, n);
+        try { if (fs.statSync(p).isFile()) return p; } catch (e) { /* 없음 */ }
+      }
+    }
+    return want;                                              // 못 찾으면 이름 그대로 — 오류 문구가 알려 줍니다
+  }
+
+  /** 실패를 파일에 남깁니다. 알림은 몇 초면 사라지고, 콘솔은 옵시디언을 끄면 지워져서
+      다른 컴퓨터에서 "왜 안 되지" 를 쫓을 길이 없었습니다.
+      `.obsidian/plugins/claude/agy.log` — git 에는 안 올라갑니다 (.gitignore). */
+  logAgy(notePath, cmd, message) {
+    try {
+      const fs = require("fs"), nodePath = require("path");
+      const base = this.vaultPath();
+      if (!base) return;
+      const p = nodePath.join(base, this.plugin.manifest.dir, "agy.log");
+      let old = "";
+      try { old = fs.readFileSync(p, "utf8"); } catch (e) { /* 처음 */ }
+      if (old.length > 200000) old = old.slice(-100000);
+      fs.writeFileSync(p, old + "[" + new Date().toISOString() + "] " + notePath + "\n  실행: " + cmd +
+        "\n  " + String(message).replace(/\n/g, "\n  ") + "\n", "utf8");
+    } catch (e) {
+      console.error("[인박스] agy.log 를 못 썼습니다", e);
+    }
+  }
+
+  /** 명령·설정 버튼: 지금 옵시디언에서 agy 가 실제로 불리나 */
+  async checkAgy() {
+    const { spawn } = require("child_process");
+    const cmd = this.resolveAgy();
+    const r = await run(spawn, cmd, ["--version"], this.vaultPath() || undefined, 20000);
+    const ver = String(r.stdout || "").trim().split("\n")[0];
+    console.log("[인박스] agy 연결 확인", { cmd, PATH: process.env.PATH, result: r });
+    if (ver && !r.missing && !r.timedOut) {
+      new Notice("✔ agy " + ver + "\n" + cmd, 8000);
+      return true;
+    }
+    const why = r.missing ? "agy 를 못 찾았습니다"
+              : r.timedOut ? "20초 동안 응답이 없습니다"
+              : (String(r.stderr || "").trim() || "출력이 없습니다").slice(0, 200);
+    new Notice("✖ " + why + "\n실행: " + cmd + "\n설정 → Claude → 인박스 자동 감싸기 → `agy 실행 파일` 에 " +
+               "전체 경로를 넣거나, agy 를 깐 뒤 옵시디언을 다시 켜세요.", 15000);
+    this.logAgy("(연결 확인)", cmd, why);
+    return false;
   }
 
   /** 한 노트에 대해 agy 를 부르고 프론트매터에 적는다 */
@@ -3572,6 +3996,8 @@ class InboxMod extends Mod {
     fs.writeFileSync(schemaPath, JSON.stringify(SCHEMA, null, 1), "utf8");
 
     const raw = await this.app.vault.read(file);
+    // 속성 칸이 없으면 요약을 받아도 적을 데가 없습니다 — agy 를 부르기 전에 멈춥니다
+    if (!toLf(raw).startsWith("---\n")) throw new Error("속성(프론트매터)이 없어 요약을 적을 자리가 없습니다");
     const body = raw.replace(/^---[\s\S]*?\n---\s*/, "").slice(0, 2000);
     const att = this.attachmentOf(file);
 
@@ -3587,14 +4013,27 @@ class InboxMod extends Mod {
         "본문은 껍데기입니다. **원본 파일의 실제 내용을 읽고** 판단하세요.");
     }
 
+    // ⚠ 알려진 문제 (2026-09-17, 아직 안 고침): 요약 한 건에 몇 분씩 걸립니다.
+    //   작업 폴더(cwd)와 --add-dir 가 **볼트 전체**라서, agy 가 볼트 맨 위의 AGENTS.md 를 규칙으로
+    //   자동으로 읽습니다 (agy 는 작업 공간의 AGENTS.md·GEMINI.md 를 읽음 — agy.exe 안내 문구 확인).
+    //   AGENTS.md 가 "CLAUDE.md 를 먼저 읽고 skills/ 를 보라" 고 해서, 요약 한 줄마다 그걸 다 읽는 것으로 보입니다.
+    //   고칠 방향: cwd 를 볼트 밖 빈 폴더로 · .md 는 폴더를 안 넘김(본문이 프롬프트에 있음) ·
+    //   첨부가 있을 때만 그 첨부 폴더 하나만 --add-dir · 고치기 전후 시간을 재서 확인.
     const args = ["-p", lines.join("\n"), "--output-format", "json",
                   "--json-schema", schemaPath, "--dangerously-skip-permissions",
                   "--add-dir", base];
 
+    const cmd = this.resolveAgy();
     let got = null, lastErr = "";
     for (let attempt = 0; attempt < 3 && !got; attempt++) {
       if (attempt) await sleep(6000 * attempt);          // 막히면 백오프
-      const r = await run(spawn, this.settings.agy, args, base);
+      const r = await run(spawn, cmd, args, base, this.settings.agyTimeoutMs);
+      if (r.missing) {                                   // 다시 불러도 없습니다 — 바로 알립니다
+        lastErr = "agy 를 못 찾았습니다 (" + cmd + ") — 설정의 `agy 실행 파일` 에 전체 경로를 넣거나, " +
+                  "agy 를 깐 뒤 옵시디언을 다시 켜세요";
+        break;
+      }
+      if (r.timedOut) { lastErr = r.stderr.trim().split("\n").pop(); continue; }
       if (!r.stdout.trim()) { lastErr = r.stderr.slice(0, 200) || "출력이 비었습니다"; continue; }
       let parsed;
       try { parsed = JSON.parse(r.stdout); } catch (e) {
@@ -3603,11 +4042,17 @@ class InboxMod extends Mod {
       if (parsed.structured_output) got = parsed.structured_output;
       else lastErr = parsed.error || "structured_output 이 없습니다";
     }
-    if (!got) throw new Error(lastErr);
+    if (!got) {
+      this.logAgy(file.path, cmd, lastErr);
+      throw new Error(lastErr);
+    }
 
     const summary = String(got["요약"] || "").trim();
     const topics = (got["주제"] || []).map((x) => String(x).trim()).filter(Boolean);
-    if (!summary && !topics.length) throw new Error("빈 결과");
+    if (!summary && !topics.length) {
+      this.logAgy(file.path, cmd, "빈 결과 — " + JSON.stringify(got).slice(0, 300));
+      throw new Error("빈 결과");
+    }
 
     // `작성자` 는 **기본이 비어 있습니다.** 요약 한 줄을 채운 것과 그 노트를 쓴 것은
     // 다릅니다. 게다가 요약을 쓰는 건 agy(Antigravity)라 `Claude` 는 사실도 아니었습니다.
@@ -3638,6 +4083,7 @@ class InboxMod extends Mod {
 
   /** 명령: 인박스 전체를 대기줄에 넣는다 */
   runAi() {
+    this.aiDone.clear();                                 // 손으로 부른 건 바로 다시 해 봅니다
     const todo = this.app.vault.getMarkdownFiles().filter((f) => this.needsAi(f));
     if (!todo.length) {
       new Notice("요약이 빈 인박스 노트가 없습니다. ✔");
@@ -3804,9 +4250,11 @@ InboxMod.prototype.displaySettings = function (c) {
         await this.save();
       }));
   new Setting(c).setName("agy 실행 파일")
-    .setDesc("PATH 에 없으면 전체 경로를 넣으세요.")
+    .setDesc("`agy` 면 설치 자리(%LOCALAPPDATA%\\agy\\bin)와 PATH 에서 찾습니다. 그래도 못 찾으면 " +
+             "전체 경로를 넣으세요. 실패는 플러그인 폴더의 agy.log 에 남습니다.")
     .addText((t) => t.setValue(s.agy).setPlaceholder("agy")
-      .onChange(async (v) => { s.agy = v.trim() || "agy"; await this.save(); }));
+      .onChange(async (v) => { s.agy = v.trim() || "agy"; await this.save(); }))
+    .addButton((b) => b.setButtonText("연결 확인").onClick(() => this.checkAgy()));
 
   c.createEl("h3", { text: "먼저 확인할 것" });
   c.createEl("p", {
@@ -3920,6 +4368,7 @@ class CoverMod extends Mod {
 
   isExcluded(path) {
     if (inAgentSkill(this.app, path)) return true;  // 에이전트 스킬 — 커버를 안 붙입니다
+    if (isTemplatePath(path)) return true;          // 양식 — 커버를 안 붙입니다
     return (this.settings.exclude || []).some(
       (ex) => ex && (path === ex || path.startsWith(ex + "/"))
     );
@@ -4557,6 +5006,7 @@ const DEFAULTS = {
     sweepStrayZoneFolders: true, // 경로가 두 번 붙어 생긴 빈 구역 폴더를 휴지통으로
     topUpNew: true,        // 양식에서 태어난 노트의 빈 작성일·분류를 자리와 오늘로
     followBoardPaths: true, // 보드 속 경로가 옮겨진 폴더를 따라가게 (+ 새 항목 폴더 채우기)
+    followFolderNames: true, // 폴더 이름을 바꾸면 분류가 따라간다 · 이모지·띄어쓰기만 달라도 같은 폴더
     folderPerItemBoards: ["📚 망고네 책장"], // 새 항목을 폴더째(제목/📖 제목 + 이미지/) 세우는 보드
     authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
     syncProjectViews: true, // 프로젝트·담당자별 필터 뷰를 프로젝트 보드에 자동으로 만든다
@@ -4568,6 +5018,7 @@ const DEFAULTS = {
     },
     writeBack: true,       // 폴더로 끌면 구역 속성을 고쳐 쓴다
     useClassFolder: true,  // 분류 이름과 똑같은 하위 폴더가 있으면 거기로
+    moveByClass: true,     // 같은 구역 안에서도 분류 폴더 밖이면 옮기고, 끌어 놓으면 분류를 고친다 (P·A·R)
     notice: true,          // 옮길 때 알림
     landing: {
       "0.inbox": "0.📥 인박스/🥭 망고 인박스",
@@ -4587,7 +5038,8 @@ const DEFAULTS = {
     ai: true,            // 감싼 뒤 agy 로 요약·주제까지 자동으로
     aiAuthor: "",        // 요약을 쓴 주체로 `작성자` 에 적을 이름. **비우면 안 적습니다**
     gapMs: 4000,         // agy 호출 사이 간격
-    agy: "agy",          // 실행 파일 (PATH 에 없으면 전체 경로)
+    agy: "agy",          // 실행 파일. 이름뿐이면 설치 자리(%LOCALAPPDATA%\\agy\\bin) → PATH 순으로 찾음
+    agyTimeoutMs: 330000, // 한 번 부를 때 이만큼 지나면 끝냄 (agy 자체 제한 5분보다 조금 길게)
   },
 
   cover: {

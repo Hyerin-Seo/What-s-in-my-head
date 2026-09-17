@@ -6,5 +6,9 @@
   "attachmentFolderPath": "./이미지",
   "newFileLocation": "folder",
   "newFileFolderPath": "0.📥 인박스/🥭 망고 인박스",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "userIgnoreFilters": [
+    "skills/",
+    "/!\\(Template\\)/"
+  ]
 }
