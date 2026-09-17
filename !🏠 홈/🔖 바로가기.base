@@ -2,7 +2,6 @@ filters:
   and:
     - file.ext == "md"
     - note["유형"] == "바로가기"
-    - note["구역"] != "4.archive"
 views:
   - type: cards
     name: 🔖 바로가기

@@ -199,7 +199,6 @@ views:
           - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/보험 도에민 뽀개기/(gen)보험 약관을 읽기 어려운 이유.md
           - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/새로운 프로젝트/노트 추가.md
         to do:
-          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성-VER2.md
           - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/스킬셋/(Draw)LlamaIndex 구조.md
           - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/😁MangoDoc_엔진설계/RAG 모듈 설계/보험 도메인 RAG/reference/(gen)문서 파싱 및 표 추출 분야의 Kaggle 같은 리더보드 사이트.md
   - type: kanban-view
