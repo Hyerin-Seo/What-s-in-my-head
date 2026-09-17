@@ -40,6 +40,19 @@ const first = (v) => (Array.isArray(v) ? v[0] : v);
 const str = (v) => (first(v) == null ? "" : String(first(v)).trim());
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/** 에이전트 스킬(`SKILL.md` 가 있는 폴더) 안의 파일인가.
+    그 안의 `.md` 는 노트가 아니라 **에이전트가 읽는 설명서**입니다. 속성 13종을 붙이면
+    스킬 프론트매터(`name`·`description`)가 망가지고, 유형이 없다고 ⚠ PARA 에 잡힙니다.
+    폴더 이름(`skills`)이 아니라 `SKILL.md` 로 가립니다 — 공부 자료 폴더를 `skills` 라고
+    지을 수도 있으니까요. 볼트 어디에 두든 같습니다. */
+function inAgentSkill(app, path) {
+  const seg = path.split("/");
+  for (let i = seg.length - 1; i >= 1; i--) {
+    if (app.vault.getAbstractFileByPath(seg.slice(0, i).join("/") + "/SKILL.md")) return true;
+  }
+  return false;
+}
+
 /** 모든 노트가 갖는 속성 13종. 순서까지 이 볼트의 약속입니다 */
 const STD = ["유형", "구역", "분류", "주제", "상태", "요약",
              "작성일", "마감", "커버", "상위", "링크", "담당", "작성자"];
@@ -676,6 +689,7 @@ class ParaMod extends Mod {
 
   isExcluded(path) {
     if (path.split("/").length < 2) return true;   // 최상위 파일은 손대지 않는다
+    if (inAgentSkill(this.app, path)) return true;  // 에이전트 스킬 — 노트가 아닙니다
     return (this.settings.exclude || []).some(
       (ex) => ex && (path === ex || path.startsWith(ex + "/"))
     );
@@ -3905,6 +3919,7 @@ class CoverMod extends Mod {
   }
 
   isExcluded(path) {
+    if (inAgentSkill(this.app, path)) return true;  // 에이전트 스킬 — 커버를 안 붙입니다
     return (this.settings.exclude || []).some(
       (ex) => ex && (path === ex || path.startsWith(ex + "/"))
     );
