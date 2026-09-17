@@ -25,7 +25,8 @@
 상위: "[[(seo) editor-workspace 실험]]"
 링크: 
 담당: 
-작성자: Gemini
+작성자:
+  - "[[Gemini]]"
 일정: 
 ---
 
@@ -61,7 +62,8 @@
 상위: "[[(seo) editor-workspace 실험]]"
 링크: 
 담당: 
-작성자: Gemini
+작성자:
+  - "[[Gemini]]"
 일정: 
 ---
 
@@ -99,7 +101,8 @@
 상위: "[[(seo) editor-workspace 실험]]"
 링크: 
 담당: 
-작성자: Gemini
+작성자:
+  - "[[Gemini]]"
 일정: 
 ---
 
@@ -135,7 +138,8 @@
 상위: "[[(seo) editor-workspace 실험]]"
 링크: 
 담당: 
-작성자: Gemini
+작성자:
+  - "[[Gemini]]"
 일정: 
 ---
 
@@ -170,7 +174,8 @@
 상위: "[[(seo) editor-workspace 실험]]"
 링크: 
 담당: 
-작성자: Gemini
+작성자:
+  - "[[Gemini]]"
 일정: 
 ---
 
