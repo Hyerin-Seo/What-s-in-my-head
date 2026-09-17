@@ -207,7 +207,6 @@ views:
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/(seo) editor-workspace 실험.md
         to do:
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 레퍼런스 뷰 좌측 패널 및 모달 시스템.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 속성 패널 및 속성 뷰 인스펙터 구축.md
         완료:
           - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(Draw)기초 설계.md
@@ -263,6 +262,31 @@ views:
       - 마감
       - 작성자
     quickAddFolder: 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업
+    groupByProperty: note.상태
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    columnOrders:
+      note.상태:
+        - to do
+        - 진행중
+        - 확인 필요
+        - 완료
+        - 퍼즈
+        - 히스토리
+    columnColors:
+      note.상태: {}
+  - type: kanban-view
+    name: 💻문서 어시스턴트 동작 구현
+    filters:
+      and:
+        - file.inFolder("1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현")
+    order:
+      - 담당
+      - 일정
+      - 마감
+      - 작성자
+    quickAddFolder: 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
