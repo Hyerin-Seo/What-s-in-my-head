@@ -763,6 +763,20 @@ class ParaMod extends Mod {
         );
       })
     );
+
+    // 파일 탐색기에서 Ctrl·Shift 로 여러 개 고르고 우클릭 — 옵시디언이 고른 목록을 넘겨줍니다
+    this.registerEvent(
+      this.app.workspace.on("files-menu", (menu, files) => {
+        const notes = (files || []).filter((f) => f instanceof TFile && f.extension === "md");
+        if (notes.length < 2) return;
+        menu.addItem((i) =>
+          i.setSection("action")
+            .setTitle("PARA로 일괄 보내기… (" + notes.length + "개)")
+            .setIcon("lucide-send")
+            .onClick(() => this.openBatchSendModal(notes))
+        );
+      })
+    );
   }
 
   /* ── 판단 도우미 ───────────────────────────────────────── */
@@ -1126,6 +1140,7 @@ class ParaMod extends Mod {
 
   /** 옮긴 직후 — 안 맞는 게 있으면 한 번에 고치는 창을 띄운다 */
   afterZoneChange(file) {
+    if (this.batchSending) return;                 // 일괄 보내기 중 — 끝나고 한 번에 알립니다
     const bad = this.mismatches(file);
     if (!bad.length) return;
     if (!this.settings.askAfterMove || this.modalOpen) {
@@ -2713,6 +2728,22 @@ class ParaMod extends Mod {
     return m;
   }
 
+  /** 여러 노트를 한 창으로 — 한 장이면 원래 창을 엽니다. 대문·대시보드·양식과 제외 폴더는 뺍니다 */
+  openBatchSendModal(files, presetZone) {
+    const notes = (files || [])
+      .map((f) => (typeof f === "string" ? this.app.vault.getAbstractFileByPath(f) : f))
+      .filter((f) => f instanceof TFile && f.extension === "md" && !this.isExcluded(f.path) &&
+        !STRUCTURAL_KINDS.includes(str(((this.app.metadataCache.getFileCache(f) || {}).frontmatter || {})["유형"])));
+    if (!notes.length) {
+      new Notice("보낼 수 있는 노트가 없습니다 — 마크다운 노트만, 대문·양식은 빼고 보냅니다.");
+      return null;
+    }
+    if (notes.length === 1) return this.openSendModal(notes[0], presetZone);
+    const m = new BatchSendModal(this.app, this, notes, presetZone);
+    m.open();
+    return m;
+  }
+
   /**
    * 속성을 한 번에 쓰고 그 구역 폴더로 옮긴다.
    * 속성을 먼저 쓰는 이유: 파일만 옮기면 유형·상태·분류가 옛 구역 값으로 남아
@@ -2730,8 +2761,9 @@ class ParaMod extends Mod {
       "구역": opts.zone,
       "유형": opts.kind || "",
       "상태": opts.state || "",
-      "분류": opts.cls ? [this.canonicalClass(opts.zone, opts.cls)] : [],   // 옛 이름이면 지금 폴더 이름으로
     };
+    // 분류를 안 넘기면(일괄 보내기에서 비워 둠) 각자 지금 분류 그대로. 넘기면 옛 이름도 지금 폴더 이름으로
+    if (opts.cls !== undefined) props["분류"] = opts.cls ? [this.canonicalClass(opts.zone, opts.cls)] : [];
     if (opts.due !== undefined) props["마감"] = opts.due || "";
     await this.app.vault.process(file, (data) => withKindKeys(setProps(data, props), props["유형"]));
 
@@ -3031,6 +3063,196 @@ class SendModal extends Modal {
 }
 
 /* ── 밀린 것 목록 — 하나씩 눌러서 고칩니다 ─────────────────── */
+/* ══ 여러 노트를 한 번에 PARA로 ══════════════════════════════
+   핀보드의 `☑ 일괄 보내기` 와 파일 탐색기 다중 선택 우클릭이 엽니다 (2026-09-17 개발 요청).
+
+     구역 · 분류 · 마감   한 번 골라 **모두에**. 분류를 비우면 각자 지금 분류 그대로, 마감을 비우면 각자 그대로
+     유형               **각자 지금 값 유지.** 고른 구역에 없는 유형인 노트만 여기서 한 번에 고릅니다
+                        — pdf 자료와 생각 메모를 같은 유형으로 덮으면 한쪽이 틀립니다
+     상태               노트마다 그 유형이 쓰는 값으로 (stateFor — 미처리는 사라짐)
+
+   보내기는 한 장씩 `sendTo` 를 차례로 부릅니다. 한 장짜리 창과 같은 길이라 규칙이 안 갈라집니다.
+   보내는 동안은 옮긴 뒤 "속성 맞추기" 창을 띄우지 않고, 끝나고 안 맞는 게 있으면 한 번만 알립니다. */
+class BatchSendModal extends Modal {
+  constructor(app, plugin, files, presetZone) {
+    super(app);
+    this.plugin = plugin;
+    this.files = files;
+    this.zone = ZONE_BY_KEY[presetZone] && presetZone !== "0.inbox" ? presetZone : "3.resource";
+    const classes = files.map((f) => str(this.fm(f)["분류"]));
+    this.cls = classes.every((c) => c === classes[0]) ? classes[0] : "";   // 모두 같을 때만 미리 채움
+    this.due = "";
+    this.fixKind = "";
+  }
+
+  fm(file) { return (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {}; }
+
+  /** 고른 구역에 **그대로는 못 가는** 노트 — 유형이 그 구역에 없습니다 */
+  misfits() {
+    const ks = this.plugin.kindsForZone(this.zone);
+    return this.files.filter((f) => !ks.includes(str(this.fm(f)["유형"])));
+  }
+
+  /** 노트마다 실제로 쓸 유형·상태 */
+  planFor(file, misfitSet) {
+    const now = str(this.fm(file)["유형"]);
+    const ks = this.plugin.kindsForZone(this.zone);
+    const kind = misfitSet.has(file) ? (this.fixKind || ks[0] || now) : now;
+    return { kind, state: this.plugin.stateFor(this.zone, kind, str(this.fm(file)["상태"])) };
+  }
+
+  onOpen() {
+    this.plugin.modalOpen = true;
+    this.modalEl.addClass("para-send-modal");
+    this.modalEl.style.width = "min(720px, 94vw)";
+    this.render();
+  }
+
+  onClose() {
+    this.plugin.modalOpen = false;
+    this.contentEl.empty();
+  }
+
+  render() {
+    const c = this.contentEl;
+    c.empty();
+    c.createEl("h3", { text: "📤 PARA로 일괄 보내기 · " + this.files.length + "개" });
+    c.createEl("p", {
+      text: "구역·분류·마감은 모두에 한 번에, 유형은 각자 그대로 갑니다. 고른 구역에 없는 유형만 아래에서 골라 주세요.",
+      cls: "setting-item-description",
+    });
+
+    new Setting(c).setName("구역").setDesc("어디에 둘 것인가")
+      .addDropdown((d) => {
+        const opts = {};
+        for (const z of ZONES) {
+          if (z.key === "0.inbox") continue;
+          opts[z.key] = z.icon + " " + z.label + " — " + z.hint;
+        }
+        d.addOptions(opts).setValue(this.zone).onChange((v) => {
+          this.zone = v;
+          this.fixKind = "";
+          this.render();
+        });
+      });
+
+    const ks = this.plugin.kindsForZone(this.zone);
+    const misfits = this.misfits();
+    if (!misfits.length) {
+      new Setting(c).setName("유형").setDesc("각자 지금 유형 그대로 — " + this.files.length + "개 모두 이 구역에 맞습니다");
+    } else {
+      if (!ks.includes(this.fixKind)) this.fixKind = ks[0] || "";
+      new Setting(c).setName("유형 — 안 맞는 " + misfits.length + "개")
+        .setDesc("이 구역에 없는 유형입니다: " +
+          misfits.slice(0, 4).map((f) => f.basename + " (" + (str(this.fm(f)["유형"]) || "비어 있음") + ")").join(", ") +
+          (misfits.length > 4 ? " 외 " + (misfits.length - 4) + "개" : "") + ". 이 노트들에만 줍니다")
+        .addDropdown((d) => {
+          const opts = {};
+          for (const k of ks) opts[k] = k;
+          d.addOptions(opts).setValue(this.fixKind).onChange((v) => { this.fixKind = v; this.render(); });
+        });
+    }
+
+    const used = this.plugin.classesInZone(this.zone);
+    const clsSetting = new Setting(c).setName("분류")
+      .setDesc("비워 두면 각자 지금 분류 그대로. 적으면 모두 이 분류로 — 폴더 이름과 같으면 그 폴더로 들어갑니다");
+    if (used.length) {
+      clsSetting.addDropdown((d) => {
+        const opts = { "": "(각자 그대로)" };
+        for (const [name, n] of used) opts[name] = name + (n ? "  (" + n + ")" : "  (노트 없음)");
+        const hit = used.find((u) => u[0] === this.cls)
+          || (nameKey(this.cls) ? used.find((u) => nameKey(u[0]) === nameKey(this.cls)) : null);
+        if (hit) this.cls = hit[0];
+        d.addOptions(opts).setValue(hit ? hit[0] : "").onChange((v) => {
+          this.cls = v;
+          if (this.clsInput) this.clsInput.value = v;
+          this.paintDest();
+        });
+      });
+    }
+    clsSetting.addText((t) => {
+      this.clsInput = t.inputEl;
+      t.setValue(this.cls).setPlaceholder("(각자 그대로)").onChange((v) => {
+        this.cls = v.trim();
+        this.paintDest();
+      });
+    });
+
+    new Setting(c).setName("마감").setDesc("비워 두면 각자 지금 마감 그대로. 적으면 모두 이 날짜로")
+      .addText((t) => {
+        t.inputEl.type = "date";
+        t.setValue(this.due).onChange((v) => { this.due = v.trim(); });
+      });
+
+    // 무엇이 어떻게 가나 — 한 줄씩
+    const misfitSet = new Set(misfits);
+    const box = c.createEl("div");
+    box.style.cssText = "max-height:200px;overflow:auto;margin:6px 0 4px;padding:6px 10px;" +
+      "border:1px solid var(--background-modifier-border);border-radius:8px;font-size:12.5px";
+    for (const f of this.files) {
+      const now = str(this.fm(f)["유형"]) || "유형 없음";
+      const p = this.planFor(f, misfitSet);
+      const row = box.createEl("div");
+      row.style.cssText = "padding:3px 0;display:flex;gap:8px;justify-content:space-between";
+      row.createEl("span", { text: f.basename });
+      const right = row.createEl("span", {
+        text: (misfitSet.has(f) ? now + " → " + p.kind : p.kind) + (p.state ? " · " + p.state : ""),
+      });
+      right.style.cssText = "color:" + (misfitSet.has(f) ? "var(--text-accent)" : "var(--text-muted)") + ";white-space:nowrap";
+    }
+
+    this.destEl = c.createEl("p", { cls: "setting-item-description" });
+    this.paintDest();
+
+    new Setting(c)
+      .addButton((b) => b.setButtonText(this.files.length + "개 보내기").setCta().onClick(() => this.send()))
+      .addButton((b) => b.setButtonText("취소").onClick(() => this.close()));
+  }
+
+  paintDest() {
+    if (!this.destEl) return;
+    this.destEl.setText(this.cls
+      ? "→ " + this.plugin.previewDest(this.zone, this.cls) + "/"
+      : "→ 각자 분류 폴더로 (그 구역에 같은 이름 폴더가 없으면 " + (ZONE_BY_KEY[this.zone] || {}).folder + " 맨 위)");
+  }
+
+  async send() {
+    const misfitSet = new Set(this.misfits());
+    const plan = this.files.map((f) => Object.assign({ file: f }, this.planFor(f, misfitSet)));
+    const zone = this.zone, cls = this.cls, due = this.due;
+    this.close();
+    const running = new Notice("📤 " + plan.length + "개를 보내는 중…", 0);
+    const sent = [], failed = [];
+    this.plugin.batchSending = true;
+    try {
+      for (const p of plan) {
+        const opts = { zone, kind: p.kind, state: p.state };
+        if (cls) opts.cls = cls;                    // 비우면 각자 지금 분류 그대로
+        if (due) opts.due = due;                    // 비우면 각자 지금 마감 그대로
+        try {
+          if (await this.plugin.sendTo(p.file, opts)) sent.push(p.file);
+          else failed.push(p.file);
+        } catch (e) {
+          console.error("[PARA] 일괄 보내기 실패: " + p.file.path, e);
+          failed.push(p.file);
+        }
+      }
+    } finally {
+      this.plugin.batchSending = false;
+      running.hide();
+    }
+    const label = (ZONE_BY_KEY[zone] || {}).label || zone;
+    new Notice("📤 " + sent.length + "개를 " + label + " 로 보냈습니다" +
+      (failed.length ? "\n못 보낸 것 " + failed.length + "개: " + failed.map((f) => f.basename).join(", ") : ""), 8000);
+    const odd = sent.filter((f) => this.plugin.mismatches(f).length);
+    if (odd.length) {
+      new Notice("⚠ " + odd.length + "개는 유형·상태·분류가 새 구역과 안 맞습니다.\n상태바의 ⚠ PARA 를 눌러 고치세요.", 10000);
+    }
+    this.plugin.refreshStatus();
+    if (this.onSent) this.onSent(sent, failed);
+  }
+}
+
 class AuditModal extends Modal {
   constructor(app, plugin, rows) {
     super(app);
@@ -5163,6 +5385,13 @@ module.exports = class Claude extends Plugin {
     const m = this.mod("para");
     if (!m) { new Notice("PARA 구역 정리 기능이 꺼져 있습니다. 설정에서 켜세요."); return null; }
     return m.openSendModal(file, zone);
+  }
+
+  /** 핀보드의 `☑ 일괄 보내기` 가 부릅니다 */
+  openBatchSendModal(files, zone) {
+    const m = this.mod("para");
+    if (!m) { new Notice("PARA 구역 정리 기능이 꺼져 있습니다. 설정에서 켜세요."); return null; }
+    return m.openBatchSendModal(files, zone);
   }
 
   openNewNoteModal(folder) {
