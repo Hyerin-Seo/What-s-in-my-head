@@ -42,12 +42,8 @@ views:
       note.상태: {}
     cardOrders:
       note.상태:
-        to do:
-          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성.md
-          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(draw) 구현 대상 스토리보드 작성-VER2.md
-          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(seo)이용자 사용 시나리오.md
+        to do: []
         진행중:
-          - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/project에서 발견되는 버그 잡기.md
           - 1.🎯(Project) 프로젝트/🚚 PARA 구축 — 자료 이식/망고에게 개똥이 머릿속 이식 작업.md
   - type: kanban-view
     name: 🧪 문서 어시스턴트 프로토타입 구현
