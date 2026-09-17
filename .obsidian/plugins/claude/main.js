@@ -9,6 +9,7 @@
  *   인박스 자동 감싸기     던져 넣은 파일을 노트로 + `✏️ 새 인박스`
  *   커버 자동 채우기       본문 첫 이미지를 `커버` 속성으로
  *   캔버스 우측에서 열기    캔버스 카드를 우측 화면·사이드바에서
+ *   홈 버튼               탭 제목줄에 🏠 — 누르면 그 탭이 홈으로
  *
  * 왜 묶었나
  *   ① **버전이 하나여야 합니다.** 넷이 같은 프론트매터를 같은 방식으로 고칩니다.
@@ -30,7 +31,7 @@
  */
 const {
   Plugin, PluginSettingTab, Setting, Notice, Modal, Menu,
-  TFile, TFolder, normalizePath, parseYaml,
+  TFile, TFolder, normalizePath, parseYaml, Keymap,
 } = require("obsidian");
 
 /* ══ 공통 도우미 ══════════════════════════════════════════ */
@@ -4440,10 +4441,97 @@ ChipMod.prototype.displaySettings = function (c) {
 };
 
 
+/* ══════════════════════════════════════════════════════════
+   홈 버튼
+   ══════════════════════════════════════════════════════════
+
+   탭 제목줄 오른쪽(책갈피·읽기 모드·⋮ 옆)에 🏠 단추를 답니다. 누르면 **그 탭**이 홈으로 갑니다.
+   Ctrl+클릭·가운데 클릭은 새 탭 — 옵시디언 링크와 같은 규칙입니다 (`Keymap.isModEvent`).
+
+   · 단추는 **뷰마다** 붙습니다 (obsidian.asar 의 `addAction` — 뷰의 `actionsEl` 맨 앞에 끼웁니다).
+     탭에서 다른 종류의 파일(노트 → 보드)을 열면 뷰가 새로 만들어져 단추가 없어지므로,
+     레이아웃이 바뀔 때마다 단추 없는 뷰를 찾아 다시 붙입니다. 붙었는지는 **DOM 이 기억합니다**
+     (`.claude-home-action`) — 따로 표를 들고 있지 않아 닫힌 탭을 쫓아다닐 일이 없습니다.
+   · 가운데 작업 영역의 탭에만 답니다 (`iterateRootLeaves`). 사이드바에는 안 붙입니다.
+   · 홈은 **경로가 아니라 이름**으로 찾습니다 (`getFirstLinkpathDest`) — 폴더를 옮겨도 따라갑니다.
+     글자로 박은 경로가 폴더를 못 따라가서 보드가 줄줄이 깨졌던 것과 같은 이유입니다. */
+class HomeMod extends Mod {
+  constructor(plugin) {
+    super(plugin, "home");
+    this.title = "홈 버튼";
+    this.icon = "🏠";
+    this.blurb = "탭 제목줄 오른쪽에 홈으로 가는 단추를 답니다. Ctrl+클릭하면 새 탭에서 엽니다.";
+  }
+
+  onload() {
+    const attach = () => this.attachAll();
+    this.registerEvent(this.app.workspace.on("layout-change", attach));
+    this.registerEvent(this.app.workspace.on("active-leaf-change", attach));
+    this.app.workspace.onLayoutReady(attach);
+
+    // 단축키를 걸 수 있게 — 설정 → 단축키 에서 `홈으로 가기`
+    this.addCommand({
+      id: "go",
+      name: "홈으로 가기",
+      callback: () => this.go(false, null),
+    });
+  }
+
+  onunload() {
+    this.app.workspace.iterateAllLeaves((leaf) => {
+      const el = leaf.view && leaf.view.actionsEl;
+      if (el) el.querySelectorAll(".claude-home-action").forEach((b) => b.remove());
+    });
+  }
+
+  attachAll() {
+    this.app.workspace.iterateRootLeaves((leaf) => {
+      const view = leaf.view;
+      if (!view || !view.actionsEl || typeof view.addAction !== "function") return;
+      if (view.actionsEl.querySelector(".claude-home-action")) return;
+      const btn = view.addAction("lucide-home", "홈으로",
+        (evt) => this.go(Keymap.isModEvent(evt), leaf));
+      btn.addClass("claude-home-action");
+    });
+  }
+
+  homeFile() {
+    const name = str(this.settings.note).replace(/\.md$/i, "");
+    const f = name && this.app.metadataCache.getFirstLinkpathDest(name, "");
+    return f instanceof TFile ? f : null;
+  }
+
+  async go(mode, leaf) {
+    const file = this.homeFile();
+    if (!file) {
+      new Notice("🏠 홈 노트 `" + str(this.settings.note) + "` 를 못 찾았습니다.\n"
+        + "설정 → Claude → 홈 버튼 에서 이름을 고치세요.", 8000);
+      return;
+    }
+    // 단추를 누른 그 탭에서 엽니다. 고정한 탭은 안 갈아엎고 새 탭으로 — 옵시디언 링크와 같습니다.
+    // 명령으로 부르면(leaf 없음) 지금 탭 — getLeaf(false) 가 고정 탭이면 알아서 새 탭을 엽니다
+    if (leaf && !mode && !leaf.getViewState().pinned) return leaf.openFile(file);
+    return this.app.workspace.getLeaf(mode || (leaf ? "tab" : false)).openFile(file);
+  }
+}
+
+HomeMod.prototype.displaySettings = function (c) {
+  const s = this.settings;
+  new Setting(c)
+    .setName("홈 노트")
+    .setDesc("노트 이름만 적습니다 (링크에 쓰는 이름). 폴더는 안 적어도 됩니다 — 옮겨도 이름으로 찾습니다. " +
+             "이름을 바꿨으면 여기도 고치세요.")
+    .addText((t) => t.setValue(s.note || "").onChange(async (v) => {
+      s.note = v.trim();
+      await this.save();
+    }));
+};
+
+
 /* ══ 설정 기본값 ══════════════════════════════════════════
    모듈별로 칸을 나눠 담습니다. 예전 네 플러그인의 data.json 을 그대로 옮겨 왔습니다. */
 const DEFAULTS = {
-  modules: { para: true, inbox: true, cover: true, canvas: true, chip: true },
+  modules: { para: true, inbox: true, cover: true, canvas: true, chip: true, home: true },
 
   para: {
     autoMove: true,        // 구역 속성을 고치면 바로 옮긴다
@@ -4500,6 +4588,10 @@ const DEFAULTS = {
   chip: {
     props: ["상태"],           // 값으로 색을 고를 속성 (칩)
     dateProps: ["마감", "일정"], // 남은 날로 색을 고를 속성
+  },
+
+  home: {
+    note: "🏠 홈",               // 홈 노트 **이름**. 경로가 아니라서 폴더를 옮겨도 찾습니다
   },
 };
 
@@ -4558,7 +4650,7 @@ class ClaudeTab extends PluginSettingTab {
 }
 
 /* ══ 본체 ════════════════════════════════════════════════ */
-const MODULES = [ParaMod, InboxMod, CoverMod, CanvasMod, ChipMod];
+const MODULES = [ParaMod, InboxMod, CoverMod, CanvasMod, ChipMod, HomeMod];
 
 module.exports = class Claude extends Plugin {
   async onload() {

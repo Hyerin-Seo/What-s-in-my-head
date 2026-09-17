@@ -34,7 +34,11 @@ views:
         - note["유형"] == "할일"
         - not:
             - note["마감"].isEmpty()
-        - note["상태"] != "완료"
+        - or:
+            - note["상태"] == "to do"
+            - note["상태"] == "진행중"
+            - note["상태"] == "확인 필요"
+        - note["마감"] <= today() + "14d"
     order:
       - file
       - 마감
