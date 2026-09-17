@@ -5,7 +5,7 @@ views:
   - type: table
     name: 👍🏻 추천 명작선
     order:
-      - file.file
+      - file
       - 분류
       - 주제
       - 원래 중요도
@@ -30,3 +30,4 @@ views:
     imageAspectRatio: 0.667
     imageFit: cover
     cardSize: 190
+newItemFolder: 4.🗄️(Archive) 보관/웹소설 어시스턴트/꼬동이 관찰일지/[추천 명작] 작품명 추천도 플랫폼 등등

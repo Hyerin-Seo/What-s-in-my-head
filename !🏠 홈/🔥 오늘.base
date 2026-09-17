@@ -95,7 +95,7 @@ views:
     filters:
       and:
         - not:
-            - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관")
+            - file.inFolder("4.🗄️(Archive) 보관/(Library) 망고네 도서관")
     order:
       - file
       - 유형

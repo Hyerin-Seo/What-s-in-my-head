@@ -23,7 +23,7 @@ views:
     name: 📖 책 읽고 남긴 것
     filters:
       and:
-        - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(Book) 서적")
+        - file.inFolder("4.🗄️(Archive) 보관/(Library) 망고네 도서관/(Book) 서적")
     order:
       - file
       - 요약
@@ -37,9 +37,9 @@ views:
     name: 🔧 하네스 백과사전
     filters:
       and:
-        - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전")
+        - file.inFolder("4.🗄️(Archive) 보관/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전")
         - not:
-            - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전/여행_준비_하네스")
+            - file.inFolder("4.🗄️(Archive) 보관/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전/여행_준비_하네스")
     order:
       - file
       - 요약
@@ -52,7 +52,7 @@ views:
     name: ✈️ 여행 하네스 실습
     filters:
       and:
-        - file.inFolder("3.📦(Resource) 자료/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전/여행_준비_하네스")
+        - file.inFolder("4.🗄️(Archive) 보관/(Library) 망고네 도서관/(E-book) 위키 독스/(E-Book) 하네스 엔지니어링 백과사전/여행_준비_하네스")
     order:
       - file
       - 요약
@@ -70,4 +70,4 @@ views:
       - file
       - 분류
       - 상위
-newItemFolder: 3.📦(Resource) 자료/(Library) 망고네 도서관
+newItemFolder: 4.🗄️(Archive) 보관/(Library) 망고네 도서관

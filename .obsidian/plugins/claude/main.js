@@ -158,6 +158,69 @@ function yamlScalar(v) {
   return /^[\s'"[\]{}|>&*!%@`#-]|: |#/.test(v) ? '"' + v.replace(/"/g, '\\"') + '"' : v;
 }
 
+/* ── 보드(.base) 속 경로 ─────────────────────────────────────
+   보드는 새 항목이 갈 폴더(`newItemFolder`)·양식(`newItemTemplate`)·칸반 빠른 추가
+   폴더(`quickAddFolder`)·필터(`file.inFolder("…")`)·칸반 카드 순서(`cardOrders`) 를
+   **볼트 기준 전체 경로 글자**로 들고 있습니다. 베이스가 상대 경로를 안 받아서입니다
+   (obsidian.asar — newItemMenu.open 이 `newItemFolder + "/" + 이름` 을 그대로 씁니다).
+   그래서 폴더가 다른 구역으로 옮겨지면 보드는 옛 경로를 가리킨 채 남고, `+ 새 항목` 을
+   누르면 옵시디언이 **옛 폴더를 다시 만들어** 거기에 넣습니다. 2026-09-17 에 도서관을
+   보관으로 옮긴 뒤 책장·도서관 메모가 3.resource 에 유령 폴더를 만들었습니다.
+
+   경로 자리만 골라 바꾸고 그 밖의 글자는 한 바이트도 안 건드립니다. 보드는 칸반
+   플러그인이 카드 순서를 적어 두는 파일이라 통째로 다시 쓰면 사람이 맞춘 게 날아갑니다.
+   fn(값, 종류) → 새 값. 종류는 newItemFolder · newItemTemplate · quickAddFolder ·
+   inFolder · card. 돌려주는 것은 { text, changes: [[옛 값, 새 값, 종류]…] }. */
+function mapBoardPaths(text, fn) {
+  const nl = eolOf(text);
+  const lines = toLf(text).split("\n");
+  const changes = [];
+  const swap = (v, kind) => {
+    const w = fn(v, kind);
+    if (typeof w === "string" && w && w !== v) { changes.push([v, w, kind]); return w; }
+    return v;
+  };
+  const unquote = (raw) => {
+    if (/^"(?:[^"\\]|\\.)*"$/.test(raw)) { try { return [JSON.parse(raw), true]; } catch (e) {} }
+    if (/^'.*'$/.test(raw)) return [raw.slice(1, -1).replace(/''/g, "'"), true];
+    return [raw, false];
+  };
+  let cardIndent = -1;                       // cardOrders 블록 들여쓰기 (밖이면 -1)
+  for (let i = 0; i < lines.length; i++) {
+    const ln = lines[i];
+    const indent = ln.length - ln.trimStart().length;
+    if (cardIndent >= 0 && ln.trim() && indent <= cardIndent) cardIndent = -1;
+
+    const key = /^(\s*)(newItemFolder|newItemTemplate|quickAddFolder):[ \t]*(.*?)[ \t]*$/.exec(ln);
+    if (key) {
+      const [val, quoted] = unquote(key[3]);
+      if (val) {
+        const w = swap(val, key[2]);
+        if (w !== val) lines[i] = key[1] + key[2] + ": " + (quoted ? JSON.stringify(w) : yamlScalar(w));
+      }
+      continue;
+    }
+    if (/^\s*cardOrders:\s*$/.test(ln)) { cardIndent = indent; continue; }
+
+    let out = ln.replace(/file\.inFolder\(\s*("(?:[^"\\]|\\.)*")\s*\)/g, (all, lit) => {
+      let v;
+      try { v = JSON.parse(lit); } catch (e) { return all; }
+      const w = swap(v, "inFolder");
+      return w === v ? all : "file.inFolder(" + JSON.stringify(w) + ")";
+    });
+    if (out === ln && cardIndent >= 0) {
+      const item = /^(\s*-\s+)(.+?)\s*$/.exec(ln);
+      if (item && item[2].includes("/")) {
+        const [v, quoted] = unquote(item[2]);
+        const w = swap(v, "card");
+        if (w !== v) out = item[1] + (quoted ? JSON.stringify(w) : yamlScalar(w));
+      }
+    }
+    lines[i] = out;
+  }
+  return { text: withEol(lines.join("\n"), nl), changes };
+}
+
 /**
  * 프론트매터의 특정 속성만 바꿔 쓴다.
  * @param data       파일 전체 텍스트
@@ -324,7 +387,8 @@ const STRUCTURAL_KINDS = ["홈", "대시보드", "양식"];
    STRUCTURAL_KINDS 와 따로 둡니다 — 그쪽은 구역 검사 예외라 route.py 와 짝이 맞아야
    합니다 (한쪽만 고치지 마세요). 이 표는 권하기에만 씁니다. */
 const NEVER_SUGGEST_KINDS = ["홈", "대시보드", "양식", "바로가기"];
-const OPT_OUT_KEY = "PARA정리";   // 노트에 `PARA정리: 끔` 이면 건너뜁니다
+const OPT_OUT_KEY = "PARA정리";
+const BORN_MS = 8000;             // 이 안에 온 첫 속성 변화는 양식이 쓴 것으로 봅니다   // 노트에 `PARA정리: 끔` 이면 건너뜁니다
 
 class ParaMod extends Mod {
   constructor(plugin) {
@@ -342,6 +406,8 @@ class ParaMod extends Mod {
     this.busy = new Set();     // 내가 방금 건드린 경로 — 되돌아오는 이벤트를 무시한다
     this.timers = new Map();   // 경로별 디바운스
     this.stampTimers = new Map();
+    this.born = new WeakMap();
+    this.itemTimers = new Map();   // 책 폴더 세우기 — 파일 객체로 붙잡습니다   // 막 태어난 노트 → 태어난 시각 (파일 객체로 붙잡아 이름이 바뀌어도 따라감)
     this.canvasTimers = new Map();
     this.strayTimers = new Map();
     this.topUpTimers = new Map();
@@ -364,8 +430,15 @@ class ParaMod extends Mod {
       this.registerEvent(
         this.app.vault.on("rename", (file, oldPath) => this.onMoved(file, oldPath))
       );
+      // 막 태어난 노트를 기억합니다 — 첫 속성은 양식에서 베낀 것이라 사람이 고른 게 아닙니다
+      this.registerEvent(this.app.vault.on("create", (file) => {
+        if (file instanceof TFile && file.extension === "md") this.born.set(file, Date.now());
+      }));
       // 어느 폴더에서 만들든 인박스와 똑같이 — 속성 없는 노트는 어디에도 안 뜹니다
       this.registerEvent(this.app.vault.on("create", (file) => this.queueStamp(file)));
+      // 책장에 떨어진 책은 책 폴더째로 — 만들 때, 그리고 새 항목 창에서 제목을 지을 때
+      this.registerEvent(this.app.vault.on("create", (file) => this.queueItemFolder(file)));
+      this.registerEvent(this.app.vault.on("rename", (file) => this.queueItemFolder(file)));
       // 캔버스는 속성을 가질 수 없어 어느 보드에도 못 뜹니다 — 옆에 노트를 세웁니다
       this.registerEvent(this.app.vault.on("create", (file) => this.queueCanvas(file)));
       // 경로를 두 번 붙여 생긴 빈 구역 폴더 — 남의 플러그인이 흘리고 갑니다
@@ -381,9 +454,21 @@ class ParaMod extends Mod {
           this.projectRenames = this.projectRenames || [];
           this.projectRenames.push({ oldPath, newPath: file.path });
         }
-        this.queueBoardSync(file, oldPath);
+        // 보드 속 경로를 먼저 따라가게 하고, 프로젝트 보드 정리는 그 뒤에 돕니다.
+        // 순서가 거꾸로면 정리가 옛 이름의 프로젝트 뷰를 지우고 새 뷰를 만들어서
+        // 사람이 맞춰 둔 칸 설정이 날아갑니다.
+        if (this.settings.followBoardPaths) this.queuePathFollow(oldPath, file.path);
+        else this.queueBoardSync(file, oldPath);
       }));
       this.registerEvent(this.app.vault.on("delete", (file) => this.queueBoardSync(file)));
+      // 옵시디언 밖에서 옮겨진 폴더(git pull 등)는 rename 이 아니라 사라짐 + 생김으로 옵니다
+      const boardTouch = (file) => {
+        if (file instanceof TFolder || (file instanceof TFile && file.extension === "base")) {
+          this.queueBoardRepair();
+        }
+      };
+      this.registerEvent(this.app.vault.on("create", boardTouch));
+      this.registerEvent(this.app.vault.on("delete", boardTouch));
       // Independent of stamping/AI: one failure there must not stop board maintenance.
       this.queueProjectReconcile("start");
       this.projectPoll = setInterval(() => {
@@ -395,6 +480,11 @@ class ParaMod extends Mod {
       // 켜질 때 한 번 정리합니다. 명령을 따로 누르지 않아도 되게.
       // (메타데이터 캐시가 다 읽힐 시간을 조금 줍니다)
       this.startupTimer = setTimeout(async () => {
+        // 보드가 먼저입니다 — 끊긴 경로로 뭔가 만들어지기 전에 고쳐 둡니다
+        if (this.settings.followBoardPaths) {
+          try { await this.repairBoardPaths("start"); }
+          catch (e) { console.error("[Claude] 보드 경로 점검 실패", e); }
+        }
         if (this.settings.sweepOnStart) await this.sweep(true, "start");
         if (this.settings.stampNew) await this.stampAll("start");
         if (this.settings.wrapCanvas) await this.wrapCanvasAll("start");
@@ -504,6 +594,21 @@ class ParaMod extends Mod {
         if (!checking) this.topUpNew(file, "cmd");
         return true;
       },
+    });
+    this.addCommand({
+      id: "item-folder-active",
+      name: "이 책을 책 폴더로 세우기 (📖 제목 + 이미지/)",
+      checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
+        if (!file || file.extension !== "md") return false;
+        if (!checking) this.wrapItemInFolder(file, "cmd");
+        return true;
+      },
+    });
+    this.addCommand({
+      id: "board-paths",
+      name: "보드 경로 점검·고치기 (옮겨진 폴더 따라가기)",
+      callback: () => this.repairBoardPaths("cmd"),
     });
     this.addCommand({
       id: "stray-all",
@@ -636,8 +741,55 @@ class ParaMod extends Mod {
     this.timers.set(path, setTimeout(() => {
       this.timers.delete(path);
       const f = this.app.vault.getAbstractFileByPath(path);
-      if (f instanceof TFile) this.moveByZone(f, "auto");
+      if (f instanceof TFile) this.afterPropertyChange(f);
     }, 1200));
+  }
+
+  /* ── 막 태어난 노트는 **자리가 구역을 정합니다** ────────────────
+     보드의 `+ 새 항목` 은 양식의 속성을 통째로 베낍니다. 양식에 `구역: 3.resource` 가
+     박혀 있으면 새 노트도 그걸 달고 태어나는데, 그건 사람이 고른 구역이 아니라 **양식을
+     만들던 때의 자리**입니다. 2026-09-17 에 도서관을 보관으로 옮긴 뒤, 책장이 새 책을
+     보관 폴더에 제대로 만들었는데도 양식의 `구역: 3.resource` 를 보고 이 기능이 그 책을
+     3.resource 최상단으로 **도로 옮겨 버렸습니다.**
+
+     그래서 태어난 뒤 첫 한 번은 속성을 믿지 않고 **파일을 옮기는 대신 `구역` 을 폴더에
+     맞춰 고쳐 씁니다.** "PARA 폴더 안에서 태어날 때는 자리가 정한다" 는 규칙 그대로입니다.
+     딱 한 번뿐입니다 — 그다음부터 사람이 `구역` 을 바꾸면 원래대로 파일이 따라갑니다. */
+  async afterPropertyChange(file) {
+    const t = this.born.get(file);
+    if (t !== undefined) {
+      this.born.delete(file);
+      if (Date.now() - t < BORN_MS) {
+        await this.claimBirthZone(file);
+        return;
+      }
+    }
+    await this.moveByZone(file, "auto");
+  }
+
+  /** 막 태어난 노트의 `구역` 을 사는 폴더의 구역으로. 고쳤으면 true */
+  async claimBirthZone(file) {
+    if (this.isExcluded(file.path)) return false;
+    const here = this.zoneOfPath(file.path);
+    if (!here) return false;
+    const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
+    if (!fm || str(fm[OPT_OUT_KEY]) === "끔") return false;
+    const said = str(fm["구역"]);
+    if (!said || said === here) return false;
+    this.busy.add(file.path);
+    try {
+      await this.app.vault.process(file, (data) => setProps(data, { "구역": here }));
+    } finally {
+      const p = file.path;
+      setTimeout(() => this.busy.delete(p), 2000);
+    }
+    console.log("[PARA] 막 태어난 노트 — 옮기지 않고 구역을 자리에 맞춤: " + file.path +
+                "  (" + said + " → " + here + ")");
+    if (this.settings.notice) {
+      new Notice("🏷 " + file.basename + "\n양식의 구역(" + said + ") 대신 태어난 자리(" + here + ")로", 5000);
+    }
+    this.refreshStatus();
+    return true;
   }
 
   onunload() {
@@ -654,6 +806,10 @@ class ParaMod extends Mod {
     this.strayTimers.clear();
     for (const t of this.topUpTimers.values()) clearTimeout(t);
     this.topUpTimers.clear();
+    clearTimeout(this.pathFollowTimer);
+    clearTimeout(this.boardRepairTimer);
+    for (const t of this.itemTimers.values()) clearTimeout(t);
+    this.itemTimers.clear();
     clearTimeout(this.boardTimer);
   }
 
@@ -1105,6 +1261,8 @@ class ParaMod extends Mod {
     if (str(fm[OPT_OUT_KEY]) === "끔") return false;
 
     const props = {};
+    // 양식에서 베낀 `구역` 이 태어난 자리와 다르면 자리를 따릅니다 (afterPropertyChange 주석)
+    if (str(fm["구역"]) && str(fm["구역"]) !== zoneKey) props["구역"] = zoneKey;
     if (!str(fm["작성일"])) props["작성일"] = todayYmd();
     const cur = Array.isArray(fm["분류"]) ? fm["분류"].filter(Boolean)
               : (str(fm["분류"]) ? [str(fm["분류"])] : []);
@@ -1172,19 +1330,321 @@ class ParaMod extends Mod {
   queueTopUp(file) {
     if (!this.settings.topUpNew) return;
     if (!(file instanceof TFile) || file.extension !== "md") return;
+    // 경로가 아니라 **파일 객체**로 붙잡습니다. 새 항목 창은 열리자마자 제목을 고치게
+    // 해서, 2초 안에 이름이 바뀌면 경로로는 파일을 못 찾았습니다 (작성일이 빈 채로 남음).
     const path = file.path;
+    const alive = () => this.app.vault.getAbstractFileByPath(file.path) === file;
     clearTimeout(this.topUpTimers.get(path));
     this.topUpTimers.set(path, setTimeout(async () => {
       this.topUpTimers.delete(path);
       for (let i = 0; i < 12; i++) {
-        const f = this.app.vault.getAbstractFileByPath(path);
-        if (!(f instanceof TFile)) return;
-        if ((this.app.metadataCache.getFileCache(f) || {}).frontmatter) break;
+        if (!alive()) return;
+        if ((this.app.metadataCache.getFileCache(file) || {}).frontmatter) break;
         await sleep(250);
       }
-      const f = this.app.vault.getAbstractFileByPath(path);
-      if (f instanceof TFile) await this.topUpNew(f, "auto");
+      if (alive()) await this.topUpNew(file, "auto");
     }, 2000));
+  }
+
+  /* ── 한 항목 = 폴더 하나 (책장) ───────────────────────────────
+     책은 `(Book) 서적/<제목>/📖 <제목>.md` 와 `<제목>/이미지/` 로 삽니다 (42권 전부 이 모양).
+     `커버: 이미지/표지.jpg` 도 **책 폴더 기준 상대 경로**라 폴더가 있어야 표지가 붙습니다.
+     그런데 보드의 `+ 새 항목` 은 `newItemFolder` 에 **파일 하나만** 떨굽니다 — 폴더도,
+     `이미지/` 도, `📖 ` 도 없이. 그래서 표지를 넣을 자리가 없었습니다.
+
+     설정의 **폴더째 담는 보드** 에 적힌 보드(기본 `📚 망고네 책장`)가 새 항목을 떨구는
+     폴더 바로 아래에 노트가 생기거나 이름이 바뀌면, 제목으로 폴더를 세우고 옮깁니다.
+
+       (Book) 서적/달러구트 꿈 백화점.md
+         → (Book) 서적/달러구트 꿈 백화점/📖 달러구트 꿈 백화점.md
+           (Book) 서적/달러구트 꿈 백화점/이미지/
+
+     - 떨구는 폴더는 **보드의 `newItemFolder` 에서 읽습니다.** 경로를 여기 적지 않습니다 —
+       도서관이 구역을 옮겨도 보드 경로가 따라가니(`mapBoardPaths`) 이것도 따라갑니다.
+     - 이름이 아직 `무제` 면 기다립니다. 새 항목 창에서 제목을 적으면 이름 바꾸기가 오고,
+       그때 폴더를 세웁니다.
+     - 본문이 비어 있으면 그 보드의 양식 본문을 깔아 줍니다 (`+` 는 속성만 베낍니다). */
+
+  /** 폴더째 담는 보드들 → [{ shelf: 떨구는 폴더, template: 양식 경로, board }] */
+  async itemFolderShelves() {
+    const names = new Set((this.settings.folderPerItemBoards || [])
+      .map((x) => String(x).trim()).filter(Boolean));
+    if (!names.size) return [];
+    const out = [];
+    for (const f of this.app.vault.getFiles()) {
+      if (f.extension !== "base" || !names.has(f.basename)) continue;
+      let text;
+      try { text = await this.app.vault.read(f); } catch (e) { continue; }
+      let shelf = "", template = "";
+      mapBoardPaths(text, (v, kind) => {
+        if (kind === "newItemFolder") shelf = v;
+        if (kind === "newItemTemplate") template = v;
+        return v;
+      });
+      if (shelf) out.push({ shelf, template, board: f });
+    }
+    return out;
+  }
+
+  queueItemFolder(file) {
+    if (!(file instanceof TFile) || file.extension !== "md") return;
+    if (!(this.settings.folderPerItemBoards || []).length) return;
+    clearTimeout(this.itemTimers.get(file));
+    this.itemTimers.set(file, setTimeout(() => {
+      this.itemTimers.delete(file);
+      this.wrapItemInFolder(file, "auto").catch((e) => console.error("[Claude] 책 폴더 세우기 실패", e));
+    }, 2500));
+  }
+
+  async wrapItemInFolder(file, caller) {
+    if (this.app.vault.getAbstractFileByPath(file.path) !== file) return false;
+    if (file.basename.startsWith("!(Template)")) return false;
+    const parent = file.parent ? file.parent.path : "";
+    const hit = (await this.itemFolderShelves()).find((s) => s.shelf === parent);
+    if (!hit) {
+      if (caller === "cmd") new Notice("폴더째 담는 보드가 새 항목을 떨구는 폴더에 있는 노트가 아닙니다.");
+      return false;
+    }
+    const title = file.basename.replace(/^📖\s*/, "").trim();
+    if (!title || /^(무제|Untitled)( \d+)?$/i.test(title)) return false;   // 아직 제목 전
+    const dir = normalizePath(parent + "/" + title);
+    const target = normalizePath(dir + "/📖 " + title + ".md");
+    if (this.app.vault.getAbstractFileByPath(target)) {
+      new Notice("📚 " + title + "\n같은 책이 이미 있어서 폴더로 안 옮겼습니다:\n" + target, 9000);
+      return false;
+    }
+    const existing = this.app.vault.getAbstractFileByPath(dir);
+    if (existing && !(existing instanceof TFolder)) return false;
+    try {
+      if (!existing) await this.app.vault.createFolder(dir);
+      const img = normalizePath(dir + "/" + ATT_SUBDIR);
+      if (!this.app.vault.getAbstractFileByPath(img)) await this.app.vault.createFolder(img);
+    } catch (e) {
+      console.error("[Claude] 책 폴더 만들기 실패", dir, e);
+      return false;
+    }
+    const was = file.path;
+    this.busy.add(was); this.busy.add(target);
+    try {
+      await this.app.fileManager.renameFile(file, target);
+    } finally {
+      setTimeout(() => { this.busy.delete(was); this.busy.delete(target); }, 2000);
+    }
+
+    // 본문이 비었으면 보드 양식의 본문을
+    if (hit.template) {
+      const tpl = this.app.vault.getAbstractFileByPath(hit.template);
+      if (tpl instanceof TFile) {
+        try {
+          const body = templateBodyText(await this.app.vault.read(tpl));
+          if (body) {
+            await this.app.vault.process(file, (data) =>
+              bodyOf(data).trim() ? data : data.replace(/\s*$/, "") + "\n\n" + body);
+          }
+        } catch (e) { console.error("[Claude] 책 양식 본문 깔기 실패", e); }
+      }
+    }
+    if (caller === "cmd" || this.settings.notice) {
+      new Notice("📚 " + title + "\n책 폴더를 세웠습니다 — 표지는 `이미지/표지.jpg` 로 넣으세요", 6000);
+    }
+    return true;
+  }
+
+  /* ── 보드 속 경로가 폴더를 따라가게 ─────────────────────────
+     보드는 경로를 글자로 들고 있어서(`mapBoardPaths` 주석) 폴더가 옮겨지면 끊깁니다.
+     두 갈래로 붙잡습니다.
+
+       옵시디언 안에서 옮김   rename 이 옵니다 → 옛 경로로 시작하는 자리를 새 경로로
+       옵시디언 밖에서 옮김   git pull 같은 것. 사라짐 + 생김으로만 옵니다 → 켤 때와
+                            폴더가 생기거나 사라질 때 보드를 점검해서 고칩니다
+
+     점검은 **같은 하위 경로가 다른 구역에 있는지**로 봅니다. PARA 는 폴더를 통째로
+     구역 사이에서 옮기는 일이 흔해서(자료였다가 보관, 자료였다가 프로젝트), 옮겨도
+     구역 폴더 아래의 모양은 그대로이기 때문입니다.
+
+       경로가 없다          다른 구역에 같은 하위 경로가 **하나뿐**이면 그쪽으로
+       경로가 있긴 하다      보드가 사는 구역에 쌍둥이가 있고, 경로는 다른 구역이면
+                            그쪽으로 — 끊긴 경로로 `+` 를 눌러 다시 생긴 유령일 수 있어서
+       보드와 같은 구역     믿습니다. 안 바꿉니다
+       여럿이거나 없다       안 바꾸고 알립니다 (사람이 골라야 합니다) */
+
+  /** 모든 보드에 경로 바꾸기를 적용합니다. [[보드, changes]…] */
+  async remapBoards(fn) {
+    const done = [];
+    for (const f of this.app.vault.getFiles()) {
+      if (f.extension !== "base") continue;
+      let text;
+      try { text = await this.app.vault.read(f); } catch (e) { continue; }
+      if (!mapBoardPaths(text, (v, k) => fn(v, k, f)).changes.length) continue;
+      let changes = [];
+      try {
+        await this.app.vault.process(f, (data) => {
+          const r = mapBoardPaths(data, (v, k) => fn(v, k, f));
+          if (!r.changes.length) return data;
+          parseYaml(toLf(r.text));              // 깨지면 던져서 안 씁니다
+          changes = r.changes;
+          return r.text;
+        });
+      } catch (e) {
+        console.error("[Claude] 보드 경로 고치기 실패", f.path, e);
+        continue;
+      }
+      if (changes.length) done.push([f, changes]);
+    }
+    return done;
+  }
+
+  queuePathFollow(oldPath, newPath) {
+    if (!oldPath || oldPath === newPath) return;
+    (this.pathMoves = this.pathMoves || []).push({ oldPath, newPath });
+    clearTimeout(this.pathFollowTimer);
+    this.pathFollowTimer = setTimeout(() => {
+      this.followMoves()
+        .catch((e) => console.error("[Claude] 보드 경로 따라가기 실패", e))
+        .finally(() => this.queueProjectReconcile());
+    }, 400);
+  }
+
+  async followMoves() {
+    // 폴더를 옮기면 안의 파일마다 rename 이 또 옵니다 — 폴더 하나로 설명되는 건 접습니다
+    const moves = (this.pathMoves || []).splice(0).sort((a, b) => a.oldPath.length - b.oldPath.length);
+    const kept = [];
+    for (const m of moves) {
+      const covered = kept.some((k) => m.oldPath.startsWith(k.oldPath + "/") &&
+        m.newPath === k.newPath + m.oldPath.slice(k.oldPath.length));
+      if (!covered) kept.push(m);
+    }
+    if (!kept.length) return [];
+    const longest = kept.slice().sort((a, b) => b.oldPath.length - a.oldPath.length);
+    const done = await this.remapBoards((v) => {
+      for (const m of longest) {
+        if (v === m.oldPath) return m.newPath;
+        if (v.startsWith(m.oldPath + "/")) return m.newPath + v.slice(m.oldPath.length);
+      }
+      return v;
+    });
+
+    // 프로젝트 보드의 뷰 이름은 곧 폴더 이름입니다. 최상위 프로젝트 폴더 이름이 바뀌면
+    // 뷰 이름도 같이 바꿔야 정리(syncViews)가 그 뷰를 "없어진 프로젝트" 로 지우지 않습니다.
+    const renamed = kept.filter((m) => {
+      const a = m.oldPath.split("/"), b = m.newPath.split("/");
+      return a.length === 2 && b.length === 2 && a[0] === PROJECT_ZONE && b[0] === PROJECT_ZONE;
+    });
+    const board = this.app.vault.getAbstractFileByPath(PROJECT_BOARD);
+    if (renamed.length && board instanceof TFile) {
+      try {
+        await this.app.vault.process(board, (data) => {
+          const nl = eolOf(data);
+          let lines = toLf(data).split("\n");
+          for (const m of renamed) {
+            const oldName = m.oldPath.split("/")[1], newName = m.newPath.split("/")[1];
+            lines = lines.map((ln) => {
+              const n = /^(\s+name:\s*)(.*?)\s*$/.exec(ln);
+              if (!n) return ln;
+              let v = n[2];
+              if (/^"(?:[^"\\]|\\.)*"$/.test(v)) { try { v = JSON.parse(v); } catch (e) {} }
+              return v === oldName ? n[1] + JSON.stringify(newName) : ln;
+            });
+          }
+          const out = withEol(lines.join("\n"), nl);
+          parseYaml(toLf(out));
+          return out;
+        });
+      } catch (e) { console.error("[Claude] 프로젝트 뷰 이름 따라가기 실패", e); }
+    }
+    this.reportBoardFix("폴더를 따라 보드 경로를 고쳤습니다", done, [], new Map(), "auto");
+    return done;
+  }
+
+  /** 이 경로가 옮겨진 곳 — { to } 고칠 곳 · { broken } 알릴 것 · { keep } 그대로 */
+  boardPathTarget(v, board) {
+    const seg = v.split("/");
+    if (seg.length < 2 || !ZONE_BY_FOLDER[seg[0]]) return { keep: true };
+    const rest = seg.slice(1).join("/");
+    const twins = ZONES.map((z) => z.folder + "/" + rest)
+      .filter((p) => p !== v && this.app.vault.getAbstractFileByPath(p));
+    if (!this.app.vault.getAbstractFileByPath(v)) {
+      if (twins.length === 1) return { to: twins[0] };
+      return { broken: twins.length ? "여러 구역에 같은 경로 — " + twins.join(" · ") : "어디에도 없음" };
+    }
+    const bz = board.path.split("/")[0];
+    if (!ZONE_BY_FOLDER[bz] || bz === seg[0]) return { keep: true };
+    const home = twins.filter((p) => p.split("/")[0] === bz);
+    return home.length === 1 ? { to: home[0] } : { keep: true };
+  }
+
+  queueBoardRepair() {
+    if (!this.settings.followBoardPaths) return;
+    clearTimeout(this.boardRepairTimer);
+    this.boardRepairTimer = setTimeout(() => {
+      this.repairBoardPaths("auto").catch((e) => console.error("[Claude] 보드 경로 점검 실패", e));
+    }, 3000);                                    // git pull 처럼 몰려오는 것을 한 번에
+  }
+
+  async repairBoardPaths(caller) {
+    const broken = new Map();
+    const done = await this.remapBoards((v, kind, board) => {
+      if (kind === "card") return v;             // 카드 순서는 틀려도 칸에는 제대로 뜹니다
+      const t = this.boardPathTarget(v, board);
+      if (t.broken) broken.set(board.path + "\u0000" + v, [board.path, kind, v, t.broken]);
+      return t.to || v;
+    });
+    const added = await this.fillMissingNewItemFolders();
+    this.reportBoardFix("보드 경로를 고쳤습니다", done, added, broken, caller);
+    return { done, added, broken: [...broken.values()] };
+  }
+
+  /* `newItemFolder` 가 없는 보드는 `+ 새 항목` 이 양식 폴더 → 필터 폴더 → 옵시디언의
+     기본 위치(인박스) 순으로 떨어집니다. 보관의 `작가 요구사항 파악` 에서 누른 것이
+     인박스로 간 게 그것입니다. 구역 폴더 **안에 사는** 보드는 보드가 사는 폴더를 넣어
+     줍니다 — 이 볼트는 보드를 그 노트들 옆에 둡니다. 홈 보드는 빼서 인박스로 가게 둡니다
+     ("모르면 인박스"). 한 번 넣은 값은 위의 따라가기가 계속 맞춰 줍니다. */
+  async fillMissingNewItemFolders() {
+    const done = [];
+    for (const f of this.app.vault.getFiles()) {
+      if (f.extension !== "base" || !f.parent) continue;
+      if (!this.zoneOfPath(f.path) || this.isExcluded(f.path)) continue;
+      let text;
+      try { text = await this.app.vault.read(f); } catch (e) { continue; }
+      if (/^newItemFolder:/m.test(toLf(text))) continue;
+      const dir = f.parent.path;
+      try {
+        await this.app.vault.process(f, (data) => {
+          const nl = eolOf(data), lf = toLf(data);
+          if (/^newItemFolder:/m.test(lf)) return data;
+          const out = lf.replace(/\s*$/, "") + "\nnewItemFolder: " + JSON.stringify(dir) + "\n";
+          parseYaml(out);
+          return withEol(out, nl);
+        });
+        done.push([f, dir]);
+      } catch (e) { console.error("[Claude] 보드 새 항목 폴더 넣기 실패", f.path, e); }
+    }
+    return done;
+  }
+
+  reportBoardFix(title, done, added, broken, caller) {
+    const lines = [];
+    for (const [f, changes] of done) {
+      for (const [a, b, kind] of changes) lines.push(f.basename + " · " + kind + "\n    " + a + "\n  → " + b);
+    }
+    for (const [f, dir] of added) lines.push(f.basename + " · newItemFolder 없음\n  → " + dir);
+    const lost = [...broken.values()];
+    if (lines.length) console.log("[Claude] " + title + "\n" + lines.join("\n"));
+    if (lost.length) {
+      console.warn("[Claude] 고칠 수 없는 보드 경로\n" +
+        lost.map(([b, kind, v, why]) => b + " · " + kind + "\n    " + v + "\n    " + why).join("\n"));
+    }
+    const boards = new Set([...done.map((d) => d[0].basename), ...added.map((a) => a[0].basename)]);
+    if (boards.size && (caller === "cmd" || this.settings.notice)) {
+      new Notice("🗂️ " + title + " — 보드 " + boards.size + "장\n" + [...boards].join(" · ") +
+        "\n(자세한 건 개발자 콘솔)", 9000);
+    }
+    if (lost.length) {
+      new Notice("⚠ 보드 경로 " + lost.length + "곳을 못 고쳤습니다 — 옮겨 간 곳을 모르거나 여럿입니다.\n" +
+        lost.slice(0, 4).map(([b, , v]) => b.split("/").pop() + " · " + v.split("/").pop()).join("\n") +
+        "\n(명령 팔레트 `보드 경로 점검·고치기`)", 0);
+    }
+    if (!boards.size && !lost.length && caller === "cmd") new Notice("보드 경로가 전부 맞습니다. ✔");
   }
 
   /* ── 안쪽에 생긴 구역 이름 폴더 치우기 ─────────────────────
@@ -1537,13 +1997,16 @@ class ParaMod extends Mod {
     if (oldPath === newPath) return;
     const dir = this.app.vault.getAbstractFileByPath(newPath);
     if (!(dir instanceof TFolder) || !newPath.startsWith(PROJECT_ZONE + "/")) return;
-    for (const board of dir.children.filter(f => f instanceof TFile && f.extension === "base")) {
-      await this.app.vault.process(board, data => {
-        const oldFilter = "file.inFolder(" + JSON.stringify(oldPath) + ")";
-        if (!data.includes(oldFilter)) return data;
-        // Preserve user column/card settings while repairing the board's folder scope.
-        return data.split(oldPath).join(newPath);
-      });
+    // 보드 속 경로는 `followMoves` 가 볼트의 모든 보드에서 고칩니다 (예전엔 여기서
+    // 이 폴더 안의 보드만 고쳤습니다). 설정에서 그걸 꺼 뒀을 때만 여기서 합니다.
+    if (!this.settings.followBoardPaths) {
+      for (const board of dir.children.filter(f => f instanceof TFile && f.extension === "base")) {
+        await this.app.vault.process(board, data => {
+          const oldFilter = "file.inFolder(" + JSON.stringify(oldPath) + ")";
+          if (!data.includes(oldFilter)) return data;
+          return data.split(oldPath).join(newPath);
+        });
+      }
     }
     // 이름도 따라갑니다 — 보드 이름이 곧 폴더 이름이라서요. 플러그인이 지은 이름일
     // 때만 바꿉니다. 프로젝트 최상위 폴더에만 해당합니다 (하위 폴더는 프로젝트가 아님).
@@ -2335,6 +2798,31 @@ ParaMod.prototype.displaySettings = function (c) {
     }));
 
   new Setting(c)
+    .setName("보드 속 경로가 옮겨진 폴더를 따라간다")
+    .setDesc("보드는 새 항목 폴더·양식·필터를 전체 경로 글자로 들고 있어서, 폴더를 다른 " +
+             "구역으로 옮기면 끊기고 `+ 새 항목` 이 옛 폴더를 다시 만듭니다. 옵시디언 안에서 " +
+             "옮기면 바로 따라가고, 밖에서 옮긴 것(git pull 등)은 켤 때·폴더가 생기거나 " +
+             "사라질 때 점검해서 다른 구역의 같은 경로로 고칩니다. 새 항목 폴더가 없는 " +
+             "보드에는 보드가 사는 폴더를 넣습니다 (홈 보드 제외).")
+    .addToggle((t) => t.setValue(s.followBoardPaths).onChange(async (v) => {
+      s.followBoardPaths = v; await this.save();
+    }));
+
+  new Setting(c)
+    .setName("폴더째 담는 보드")
+    .setDesc("한 줄에 보드 이름 하나 (확장자 없이). 이 보드에서 `+ 새 항목` 으로 만든 노트는 " +
+             "제목을 짓는 순간 `<제목>/📖 <제목>.md` 와 `<제목>/이미지/` 로 세워집니다. " +
+             "책처럼 표지를 `이미지/` 에 넣는 것만 여기 적으세요.")
+    .addTextArea((t) => {
+      t.inputEl.rows = 2;
+      t.inputEl.style.width = "100%";
+      t.setValue((s.folderPerItemBoards || []).join("\n")).onChange(async (v) => {
+        s.folderPerItemBoards = v.split("\n").map((x) => x.trim()).filter(Boolean);
+        await this.save();
+      });
+    });
+
+  new Setting(c)
     .setName("경로가 두 번 붙어 생긴 빈 폴더를 치운다")
     .setDesc("구역 폴더 이름(`1.🎯(Project) 프로젝트` 등)이 다른 폴더 **안**에 나타나면 " +
              "경로를 두 번 붙인 흔적입니다. 칸반 빠른 추가(+)가 그런 빈 폴더를 흘리고 가는데, " +
@@ -2603,6 +3091,9 @@ class InboxMod extends Mod {
     if (!this.folderTarget(folder)) {
       // 인박스 **바로 아래** 폴더는 자료가 아니라 새 칸입니다. 조용히 넘기면
       // "던졌는데 아무 반응이 없다" 가 되니 무엇으로 봤는지는 알려 줍니다.
+      // 인박스 **밖** 폴더는 상관없는 일입니다. 예전엔 이 확인이 없어서 3.resource 에
+      // 폴더가 생겨도 "인박스의 새 칸으로 봅니다" 가 떴습니다.
+      if (!path.startsWith(INBOX + "/")) return;
       const parts = path.split("/").slice(1);
       if (parts.length === 1 && !SKIP_DIRS.includes(parts[0]) && this.settings.notice) {
         new Notice("📂 " + folder.name + "\n인박스의 새 칸으로 봅니다 (핀보드 탭이 됩니다).\n"
@@ -3957,6 +4448,8 @@ const DEFAULTS = {
     wrapCanvas: true,      // 캔버스 옆에 노트를 세운다 (캔버스는 속성을 못 가진다)
     sweepStrayZoneFolders: true, // 경로가 두 번 붙어 생긴 빈 구역 폴더를 휴지통으로
     topUpNew: true,        // 양식에서 태어난 노트의 빈 작성일·분류를 자리와 오늘로
+    followBoardPaths: true, // 보드 속 경로가 옮겨진 폴더를 따라가게 (+ 새 항목 폴더 채우기)
+    folderPerItemBoards: ["📚 망고네 책장"], // 새 항목을 폴더째(제목/📖 제목 + 이미지/) 세우는 보드
     authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
     syncProjectViews: true, // 프로젝트·담당자별 필터 뷰를 프로젝트 보드에 자동으로 만든다
     people: ["Rin", "민규 서"], // 칸반에 늘 두는 담당자. 일이 없어도 탭은 있습니다
