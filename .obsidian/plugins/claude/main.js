@@ -774,6 +774,7 @@ class ParaMod extends Mod {
     if (!here) return false;
     const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
     if (!fm || str(fm[OPT_OUT_KEY]) === "끔") return false;
+    if (STRUCTURAL_KINDS.includes(str(fm["유형"]))) return false;   // 대문·양식은 자리가 곧 역할
     const said = str(fm["구역"]);
     if (!said || said === here) return false;
     this.busy.add(file.path);
@@ -1257,6 +1258,10 @@ class ParaMod extends Mod {
     if (!zoneKey) return false;
     const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
     if (!fm) return false;                                  // 속성이 아예 없으면 stamp() 몫
+    // 대문·대시보드·양식은 **만든 게 아니라 되살린 것**일 수 있습니다. 2026-09-17 에 실수로 지운
+    // `3. resource` 를 되살렸더니 빈 `작성일` 에 오늘이 박혔습니다 — 되살리기도 "생김" 으로 오니까요.
+    // 이 셋은 작성일·분류가 비어 있는 게 맞는 노트라 채우지 않습니다.
+    if (STRUCTURAL_KINDS.includes(str(fm["유형"]))) return false;
     if (!str(fm["구역"]) && !str(fm["유형"])) return false;   // 이것도 stamp() 몫
     if (str(fm[OPT_OUT_KEY]) === "끔") return false;
 
