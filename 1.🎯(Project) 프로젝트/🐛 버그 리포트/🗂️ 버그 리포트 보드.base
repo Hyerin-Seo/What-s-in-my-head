@@ -29,6 +29,12 @@ views:
         - 히스토리
     columnColors:
       note.상태: {}
+    cardOrders:
+      note.상태:
+        to do: []
+        확인 필요:
+          - 1.🎯(Project) 프로젝트/🐛 버그 리포트/(PARA보내기)하위 디렉토리로 이동 못함.md
+          - 1.🎯(Project) 프로젝트/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
   - type: kanban-view
     name: 👤 Rin
     filters:
