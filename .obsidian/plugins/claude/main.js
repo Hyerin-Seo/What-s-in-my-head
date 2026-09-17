@@ -50,6 +50,46 @@ const LIST_KEYS = ["분류", "주제", "담당", "작성자"];
 const EXTRA_KEYS = { "할일": ["일정"] };
 const EXTRA_HEAD = "# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──";
 
+/* ── 줄끝(CRLF) ───────────────────────────────────────────────
+   윈도우에서 만든 노트는 줄끝이 `\r\n` 일 수 있습니다. 프론트매터를 `---\n` 으로만
+   찾으면 그런 노트는 **조용히 건너뜁니다** — 속성이 안 써지는데 오류도 안 납니다.
+   이 볼트에서 제일 나쁜 실패입니다 (안 보이는 채로 틀림). 그래서 다루기 전에 LF 로
+   펴고, 돌려줄 때 원래 줄끝으로 되돌립니다.
+
+   `git config core.autocrlf` 가 `true` 라 **다시 클론하면 전부 CRLF 로 내려옵니다.**
+   `.gitattributes` 로 `eol=lf` 를 못박아 뒀지만, 그래도 코드가 견뎌야 합니다. */
+function eolOf(text) { return text.includes("\r\n") ? "\r\n" : "\n"; }
+function toLf(text) { return text.indexOf("\r") < 0 ? text : text.replace(/\r\n/g, "\n"); }
+function withEol(text, nl) { return nl === "\r\n" ? text.replace(/\n/g, "\r\n") : text; }
+
+/** 프론트매터를 뺀 본문 (줄끝은 LF 로 펴서 돌려줍니다) */
+function bodyOf(text) {
+  const t = toLf(text);
+  if (!t.startsWith("---\n")) return t;
+  const end = t.indexOf("\n---", 3);
+  if (end < 0) return t;
+  const nl = t.indexOf("\n", end + 1);
+  return nl < 0 ? "" : t.slice(nl + 1);
+}
+
+/* 양식 본문에서 **맨 앞 `%%` 블록**은 떼어 냅니다. 거기 적는 것은 *양식 자신에게*
+   하는 말이라("이건 틀이다") 새 노트가 물려받을 이유가 없습니다. 뒤에 붙은 `%%`
+   블록은 *채우는 사람에게* 하는 말이라 그대로 갑니다 — 인박스 양식이 그 모양입니다.
+   위치로 가릅니다. 표시를 따로 두면 그 표시를 또 외워야 합니다. */
+function templateBodyText(text) {
+  let lines = bodyOf(text).split("\n");
+  while (lines.length && !lines[0].trim()) lines.shift();
+  // 닫는 `%%` 는 **그 줄에 그것만** 있는 줄입니다. 글 안에 적힌 `%%` 에 안 속게.
+  if (lines.length && lines[0].trim() === "%%") {
+    let i = 1;
+    while (i < lines.length && lines[i].trim() !== "%%") i++;
+    lines = lines.slice(i + 1);
+    while (lines.length && !lines[0].trim()) lines.shift();
+  }
+  const body = lines.join("\n").replace(/\s+$/, "");
+  return body ? body + "\n" : "";
+}
+
 /** 옵시디언이 본문에 그려주는 이미지 확장자 (obsidian.asar 의 목록과 같게) */
 const IMG_EXT = ["bmp", "png", "jpg", "jpeg", "gif", "svg", "webp", "avif"];
 
@@ -127,11 +167,13 @@ function yamlScalar(v) {
  *                   있는 동안은 이름도 남아 있어야 합니다.
  */
 function setProps(data, props, addAuthor) {
-  if (!data.startsWith("---\n")) return data;
-  const end = data.indexOf("\n---", 3);
+  const nl = eolOf(data);
+  const text = toLf(data);
+  if (!text.startsWith("---\n")) return data;
+  const end = text.indexOf("\n---", 3);
   if (end < 0) return data;
-  const lines = data.slice(4, end + 1).split("\n");
-  const rest = data.slice(end + 1);
+  const lines = text.slice(4, end + 1).split("\n");
+  const rest = text.slice(end + 1);
   const keys = Object.keys(props);
   const done = new Set();
   const out = [];
@@ -179,7 +221,7 @@ function setProps(data, props, addAuthor) {
     out.splice(at, 0, ...add);
   }
 
-  return "---\n" + out.join("\n") + rest;
+  return withEol("---\n" + out.join("\n") + rest, nl);
 }
 
 /* ── 모듈 바탕 ────────────────────────────────────────────
@@ -274,6 +316,14 @@ const NOT_PROJECT = ["이미지", "image", "attachment", "첨부"];
    삽니다. 어느 보드도 이걸 유형으로 안 거르니 "그 구역에 없는 유형" 이라고 할 게
    아닙니다. route.py 의 --repair 도 같은 셋을 예외로 둡니다. */
 const STRUCTURAL_KINDS = ["홈", "대시보드", "양식"];
+
+/* 이웃이 쓴다고 **권하면 안 되는** 유형 — 한 폴더에 하나뿐인 대문·틀입니다.
+   `(Library) 망고네 도서관` 의 이웃은 `🏠 도서관 홈` 한 장뿐이라, 거기서 새로 만든
+   노트에 "같은 폴더는 바로가기 를 씁니다" 를 권했고 그대로 눌러서 캔버스 노트가
+   홈의 🔖 바로가기 카드에 끼어 버렸습니다. 대문은 늘리는 것이 아닙니다.
+   STRUCTURAL_KINDS 와 따로 둡니다 — 그쪽은 구역 검사 예외라 route.py 와 짝이 맞아야
+   합니다 (한쪽만 고치지 마세요). 이 표는 권하기에만 씁니다. */
+const NEVER_SUGGEST_KINDS = ["홈", "대시보드", "양식", "바로가기"];
 const OPT_OUT_KEY = "PARA정리";   // 노트에 `PARA정리: 끔` 이면 건너뜁니다
 
 class ParaMod extends Mod {
@@ -293,6 +343,8 @@ class ParaMod extends Mod {
     this.timers = new Map();   // 경로별 디바운스
     this.stampTimers = new Map();
     this.canvasTimers = new Map();
+    this.strayTimers = new Map();
+    this.topUpTimers = new Map();
 
     // 왼쪽 리본 — 언제든 누를 수 있는 자리
     this.addRibbonIcon("folder-symlink", "PARA 구역 정리 — 안 맞는 것 보기", () => this.audit());
@@ -316,6 +368,10 @@ class ParaMod extends Mod {
       this.registerEvent(this.app.vault.on("create", (file) => this.queueStamp(file)));
       // 캔버스는 속성을 가질 수 없어 어느 보드에도 못 뜹니다 — 옆에 노트를 세웁니다
       this.registerEvent(this.app.vault.on("create", (file) => this.queueCanvas(file)));
+      // 경로를 두 번 붙여 생긴 빈 구역 폴더 — 남의 플러그인이 흘리고 갑니다
+      this.registerEvent(this.app.vault.on("create", (file) => this.queueStrayFolder(file)));
+      // 양식에서 태어난 노트 — 양식이 비워 둔 작성일·분류를 자리와 오늘로 채웁니다
+      this.registerEvent(this.app.vault.on("create", (file) => this.queueTopUp(file)));
       // 프로젝트 폴더를 만들면 전용 보드와 프로젝트 보드의 필터 뷰를 함께 만듭니다.
       this.registerEvent(this.app.vault.on("create", (file) => {
         this.queueBoardSync(file);
@@ -342,6 +398,7 @@ class ParaMod extends Mod {
         if (this.settings.sweepOnStart) await this.sweep(true, "start");
         if (this.settings.stampNew) await this.stampAll("start");
         if (this.settings.wrapCanvas) await this.wrapCanvasAll("start");
+        if (this.settings.sweepStrayZoneFolders) await this.sweepStrayFoldersAll("start");
         if (this.settings.authorFromName) await this.fillAuthorAll("start");
         this.refreshStatus();
         // 위치는 맞는데 유형·상태·분류가 옛 구역 값인 노트가 있으면 목록을 바로 엽니다.
@@ -437,6 +494,21 @@ class ParaMod extends Mod {
       id: "canvas-all",
       name: "볼트 전체 — 혼자 있는 캔버스를 노트로 세우기",
       callback: () => this.wrapCanvasAll("cmd"),
+    });
+    this.addCommand({
+      id: "topup-active",
+      name: "이 노트 빈 칸 채우기 (작성일·분류)",
+      checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
+        if (!file || file.extension !== "md") return false;
+        if (!checking) this.topUpNew(file, "cmd");
+        return true;
+      },
+    });
+    this.addCommand({
+      id: "stray-all",
+      name: "볼트 전체 — 경로가 두 번 붙어 생긴 빈 폴더 치우기",
+      callback: () => this.sweepStrayFoldersAll("cmd"),
     });
     this.addCommand({
       id: "sweep",
@@ -578,6 +650,10 @@ class ParaMod extends Mod {
     this.stampTimers.clear();
     for (const t of this.canvasTimers.values()) clearTimeout(t);
     this.canvasTimers.clear();
+    for (const t of this.strayTimers.values()) clearTimeout(t);
+    this.strayTimers.clear();
+    for (const t of this.topUpTimers.values()) clearTimeout(t);
+    this.topUpTimers.clear();
     clearTimeout(this.boardTimer);
   }
 
@@ -828,7 +904,7 @@ class ParaMod extends Mod {
       await this.app.vault.process(file, (data) => setProps(data, props));
     } else {
       await this.app.vault.process(file, (data) => {
-        if (data.startsWith("---\n")) return data;   // 그 사이에 생겼으면 물러난다
+        if (toLf(data).startsWith("---\n")) return data;   // 그 사이에 생겼으면 물러난다
         const out = ["---"];
         for (const k of STD) {
           if (k === "유형" && p.kind) out.push("유형: " + p.kind);
@@ -869,7 +945,8 @@ class ParaMod extends Mod {
     for (const sib of (parent ? parent.children : [])) {
       if (!(sib instanceof TFile) || sib === file || sib.extension !== "md") continue;
       const k = str(((this.app.metadataCache.getFileCache(sib) || {}).frontmatter || {})["유형"]);
-      if (k) tally.set(k, (tally.get(k) || 0) + 1);
+      // 대문·틀은 한 폴더에 하나뿐입니다 — 이웃이 그거라고 새 노트도 그건 아닙니다
+      if (k && !NEVER_SUGGEST_KINDS.includes(k)) tally.set(k, (tally.get(k) || 0) + 1);
     }
     let best = "", n = 0;
     for (const [k, v] of tally) if (v > n) { best = k; n = v; }
@@ -993,6 +1070,205 @@ class ParaMod extends Mod {
     let n = 0;
     for (const f of todo) if (await this.fillAuthor(f, "sweep")) n++;
     new Notice("✍ 작성자를 " + n + "개 채웠습니다. (파일 이름 앞머리 기준)", 8000);
+  }
+
+  /* ── 양식에서 태어난 노트의 빈 칸 채우기 ──────────────────
+     `stamp()` 는 **프론트매터가 아예 없는** 노트만 봅니다. 보드의 `+` 로 만든 노트는
+     양식의 프론트매터를 통째로 물려받아 `유형`·`구역`·`상태` 가 이미 차 있으니
+     그 그물에 안 걸립니다. 그런데 **양식이 비워 둔 칸은 영영 빈 채로 남습니다** —
+     `작성일` 과 `분류` 가 그렇습니다. 보드에서 만든 할일마다 작성일이 없고, PARA 구축
+     폴더에서 만들었는데 분류가 비어 있는 게 그 때문이었습니다.
+
+     자리와 시각은 **사실**이라 채웁니다. 그 둘뿐입니다.
+
+     | 칸 | 무엇으로 | 확실한가 |
+     | --- | --- | --- |
+     | `작성일` | 오늘 | 확실 — 오늘 만든 노트입니다 |
+     | `분류` | 같은 폴더 이웃이 쓰는 값 → 없으면 상위 폴더 이름 중 그 구역이 쓰는 것 | 관찰. 없으면 **비워 둡니다** |
+
+     `요약`·`주제`·`작성자` 는 안 건드립니다 — 그건 내용을 읽어야 아는 것이라
+     자리가 말해 주지 않습니다.
+
+     **만들 때 딱 한 번만** 봅니다. 사람이 나중에 분류를 지웠는데 다시 채워 넣으면
+     그건 고쳐 주는 게 아니라 되돌리는 것입니다. 그래서 `metadataCache changed` 가
+     아니라 `vault create` 에만 붙습니다. */
+
+  async topUpNew(file, caller) {
+    if (!(file instanceof TFile) || file.extension !== "md") return false;
+    if (this.isExcluded(file.path)) return false;
+    if (file.basename.startsWith("!(Template)")) return false;
+    const zoneKey = this.zoneOfPath(file.path);
+    if (!zoneKey) return false;
+    const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter;
+    if (!fm) return false;                                  // 속성이 아예 없으면 stamp() 몫
+    if (!str(fm["구역"]) && !str(fm["유형"])) return false;   // 이것도 stamp() 몫
+    if (str(fm[OPT_OUT_KEY]) === "끔") return false;
+
+    const props = {};
+    if (!str(fm["작성일"])) props["작성일"] = todayYmd();
+    const cur = Array.isArray(fm["분류"]) ? fm["분류"].filter(Boolean)
+              : (str(fm["분류"]) ? [str(fm["분류"])] : []);
+    if (!cur.length) {
+      const guess = this.classFor(file, zoneKey);           // 지어내지 않습니다
+      if (guess) props["분류"] = [guess];
+    }
+    // 본문이 비어 있으면 양식의 틀을 깔아 줍니다 (`+` 는 속성만 베낍니다)
+    let body = "";
+    let raw = "";
+    try { raw = await this.app.vault.read(file); } catch (e) { raw = ""; }
+    if (!bodyOf(raw).trim()) body = await this.templateBody(file, str(fm["유형"]));
+
+    if (!Object.keys(props).length && !body) {
+      if (caller === "cmd") new Notice("채울 빈 칸이 없습니다 — 작성일·분류·본문이 이미 차 있습니다.");
+      return false;
+    }
+
+    await this.app.vault.process(file, (data) => {
+      let out = Object.keys(props).length ? setProps(data, props) : data;
+      // 기다리는 사이에 뭔가 적었으면 본문은 건드리지 않습니다
+      if (body && !bodyOf(out).trim()) out = out.replace(/\s*$/, "") + "\n\n" + body;
+      return out;
+    });
+    if (caller === "cmd" || this.settings.notice) {
+      const what = Object.entries(props)
+        .map(([k, v]) => k + " → " + (Array.isArray(v) ? v.join(" · ") : v));
+      if (body) what.push("본문 틀");
+      new Notice("🏷 " + file.basename + "\n" + what.join("   "), 5000);
+    }
+    this.refreshStatus();
+    return true;
+  }
+
+  /* 보드의 `+` 는 양식의 **속성만** 베끼고 본문은 빈 채로 둡니다 (obsidian.asar 확인 —
+     `vault.create(경로, "")` 로 빈 파일을 만든 뒤 `processFrontMatter` 로 속성만 넣습니다).
+     그래서 양식에 적어 둔 틀이 새 노트에 하나도 안 옵니다. 반쪽만 베끼는 것이라 채웁니다.
+
+     어느 양식인지는 **자리**가 정합니다 — 노트가 앉은 폴더부터 구역 폴더까지 거슬러
+     올라가며 `!(Template) …` 을 찾고, **그 폴더에 하나뿐일 때만** 씁니다. 둘이면
+     어느 쪽인지 사람만 압니다. 유형이 다르면 그것도 안 씁니다. */
+
+  /** 이 노트가 물려받을 양식 본문 — 없으면 빈 문자열 */
+  async templateBody(file, kind) {
+    let dir = file.parent;
+    while (dir && dir.path.split("/").length >= 1 && this.zoneOfPath(dir.path + "/x")) {
+      const forms = dir.children.filter((f) =>
+        f instanceof TFile && f.extension === "md" && f.basename.startsWith("!(Template)"));
+      if (forms.length === 1 && forms[0].path !== file.path) {
+        const form = forms[0];
+        const fk = str(((this.app.metadataCache.getFileCache(form) || {}).frontmatter || {})["유형"]);
+        if (!kind || !fk || fk === kind) {
+          try { return templateBodyText(await this.app.vault.read(form)); }
+          catch (e) { return ""; }
+        }
+        return "";                       // 유형이 다른 양식 — 더 위로 올라가지 않습니다
+      }
+      if (forms.length > 1) return "";    // 헷갈리면 안 합니다
+      dir = dir.parent;
+    }
+    return "";
+  }
+
+  /** 만들자마자는 아직 양식의 속성이 안 들어와 있습니다 — 캐시가 읽을 때까지 기다립니다 */
+  queueTopUp(file) {
+    if (!this.settings.topUpNew) return;
+    if (!(file instanceof TFile) || file.extension !== "md") return;
+    const path = file.path;
+    clearTimeout(this.topUpTimers.get(path));
+    this.topUpTimers.set(path, setTimeout(async () => {
+      this.topUpTimers.delete(path);
+      for (let i = 0; i < 12; i++) {
+        const f = this.app.vault.getAbstractFileByPath(path);
+        if (!(f instanceof TFile)) return;
+        if ((this.app.metadataCache.getFileCache(f) || {}).frontmatter) break;
+        await sleep(250);
+      }
+      const f = this.app.vault.getAbstractFileByPath(path);
+      if (f instanceof TFile) await this.topUpNew(f, "auto");
+    }, 2000));
+  }
+
+  /* ── 안쪽에 생긴 구역 이름 폴더 치우기 ─────────────────────
+     구역 폴더(`1.🎯(Project) 프로젝트` 같은 다섯)는 **볼트 최상단에만** 있을 수
+     있습니다. 그 이름이 다른 폴더 **안**에 나타났다면 경로를 두 번 붙인 것입니다.
+
+     칸반 빠른 추가(+)가 그랬습니다. `<quickAddFolder>/<제목>` 전체 경로를 넘기고
+     옵시디언이 그 앞에 `newItemFolder` 를 또 붙여서
+     `…/🚚 PARA/1.🎯(Project) 프로젝트/🚚 PARA/제목.md` 로 만듭니다. 카드는 칸반이
+     제자리로 옮겨 주니 **빈 폴더만 남습니다.** 그 빈 폴더 이름이 하필 `분류` 와 같아서
+     PARA 보내기의 도착 자리까지 망가뜨렸습니다 (`destFolder` 주석 참고).
+
+     칸반 쪽 한 줄은 고쳤지만 **그 플러그인을 업데이트하면 되돌아갑니다.** 남의 코드에
+     기대지 않으려고 여기서도 치웁니다. 조건은 셋 다 만족할 때뿐입니다.
+
+       ① 폴더 이름이 구역 폴더 이름과 똑같다
+       ② 최상단이 아니다 (= 다른 폴더 안에 있다)
+       ③ 하위까지 **파일이 하나도 없다**
+
+     그리고 지우지 않고 **휴지통으로 보냅니다** (`trashFile` — 사람이 정한 휴지통
+     설정을 따릅니다). 이 볼트의 규칙은 삭제는 사람이 한다는 것이고, 빈 껍데기라도
+     되돌릴 길은 남겨 둡니다. */
+
+  /** 안쪽에 생긴 구역 이름 폴더인가 */
+  isStrayZoneFolder(folder) {
+    if (!(folder instanceof TFolder)) return false;
+    if (folder.path.split("/").length < 2) return false;   // 최상단 = 진짜 구역 폴더
+    return Boolean(ZONE_BY_FOLDER[folder.name]);
+  }
+
+  /** 하위까지 뒤져 파일이 하나라도 있나 */
+  hasAnyFile(folder) {
+    for (const c of folder.children) {
+      if (c instanceof TFolder) { if (this.hasAnyFile(c)) return true; }
+      else return true;
+    }
+    return false;
+  }
+
+  async sweepStrayFolder(path, caller) {
+    const f = this.app.vault.getAbstractFileByPath(path);
+    if (!this.isStrayZoneFolder(f)) return false;
+    if (this.hasAnyFile(f)) {
+      if (caller === "cmd") new Notice("안에 파일이 있어 안 치웁니다:\n" + path, 8000);
+      return false;
+    }
+    try {
+      await this.app.fileManager.trashFile(f);
+    } catch (e) {
+      console.error("[Claude] 헛 폴더 치우기 실패", path, e);
+      return false;
+    }
+    if (caller === "cmd" || this.settings.notice) {
+      new Notice("🧹 경로가 두 번 붙어 생긴 빈 폴더를 치웠습니다:\n" + path, 7000);
+    }
+    return true;
+  }
+
+  /** 생기자마자는 못 치웁니다 — 바로 그 안에 노트가 만들어지는 중입니다.
+      칸반이 카드를 제자리로 옮길 때까지 기다렸다가, 그래도 비어 있으면 치웁니다. */
+  queueStrayFolder(folder) {
+    if (!this.settings.sweepStrayZoneFolders) return;
+    if (!this.isStrayZoneFolder(folder)) return;
+    const path = folder.path;
+    clearTimeout(this.strayTimers.get(path));
+    this.strayTimers.set(path, setTimeout(() => {
+      this.strayTimers.delete(path);
+      this.sweepStrayFolder(path, "auto");
+    }, 8000));
+  }
+
+  strayZoneFolders() {
+    return this.app.vault.getAllLoadedFiles().filter((f) => this.isStrayZoneFolder(f));
+  }
+
+  async sweepStrayFoldersAll(caller) {
+    const todo = this.strayZoneFolders();
+    if (!todo.length) {
+      if (caller !== "start") new Notice("안쪽에 생긴 구역 이름 폴더가 없습니다. ✔");
+      return;
+    }
+    let n = 0;
+    for (const f of todo) if (await this.sweepStrayFolder(f.path, "sweep")) n++;
+    if (n) new Notice("🧹 경로가 두 번 붙어 생긴 빈 폴더 " + n + "개를 치웠습니다.", 8000);
   }
 
   /* ── 캔버스도 카드가 되게 ─────────────────────────────────
@@ -2048,6 +2324,27 @@ ParaMod.prototype.displaySettings = function (c) {
     }));
 
   new Setting(c)
+    .setName("양식에서 만든 노트의 빈 칸을 채운다 (작성일·분류·본문)")
+    .setDesc("보드의 `+` 는 양식의 **속성만** 베끼고 본문은 빈 채로 둡니다. 게다가 속성이 " +
+             "이미 차 있어서 `속성 붙이기` 의 그물에도 안 걸립니다. **만들 때 한 번만** — " +
+             "작성일은 오늘, 분류는 같은 폴더 이웃이 쓰는 값으로 (없으면 비워 둡니다), " +
+             "본문은 그 폴더(없으면 위 폴더)의 양식 틀로. 양식 맨 앞의 `%%` 블록은 " +
+             "양식 자신에게 하는 말이라 안 따라갑니다. `요약`·`주제`·`작성자` 는 안 건드립니다.")
+    .addToggle((t) => t.setValue(s.topUpNew).onChange(async (v) => {
+      s.topUpNew = v; await this.save();
+    }));
+
+  new Setting(c)
+    .setName("경로가 두 번 붙어 생긴 빈 폴더를 치운다")
+    .setDesc("구역 폴더 이름(`1.🎯(Project) 프로젝트` 등)이 다른 폴더 **안**에 나타나면 " +
+             "경로를 두 번 붙인 흔적입니다. 칸반 빠른 추가(+)가 그런 빈 폴더를 흘리고 가는데, " +
+             "그 이름이 `분류` 와 같으면 PARA 보내기의 도착 자리까지 망가집니다. " +
+             "**하위까지 파일이 하나도 없을 때만** 휴지통으로 보냅니다.")
+    .addToggle((t) => t.setValue(s.sweepStrayZoneFolders).onChange(async (v) => {
+      s.sweepStrayZoneFolders = v; await this.save();
+    }));
+
+  new Setting(c)
     .setName("프로젝트·담당자가 늘면 보드에 뷰를 붙인다")
     .setDesc("`" + PROJECT_ZONE + "` 바로 아래 폴더가 곧 프로젝트입니다. " +
              "새로 만들면 그 프로젝트만 거르는 칸반 뷰가 프로젝트 보드에 붙습니다. " +
@@ -3027,11 +3324,13 @@ function isNonFileCover(v) {
    `processFrontMatter` 는 YAML을 통째로 다시 써서 `# ── 이외 속성 ──` 주석줄이
    날아갈 수 있습니다. 그래서 건드릴 줄만 바꿉니다. */
 function setCoverLine(data, value) {
-  if (!data.startsWith("---\n")) return null;
-  const end = data.indexOf("\n---", 3);
+  const nl = eolOf(data);
+  const text = toLf(data);
+  if (!text.startsWith("---\n")) return null;
+  const end = text.indexOf("\n---", 3);
   if (end < 0) return null;
-  const lines = data.slice(4, end + 1).split("\n");
-  const rest = data.slice(end + 1);
+  const lines = text.slice(4, end + 1).split("\n");
+  const rest = text.slice(end + 1);
   const out = [];
   let found = false;
 
@@ -3046,7 +3345,7 @@ function setCoverLine(data, value) {
     }
   }
   if (!found) return null;      // 커버 속성이 없는 노트는 손대지 않는다
-  return "---\n" + out.join("\n") + rest;
+  return withEol("---\n" + out.join("\n") + rest, nl);
 }
 
 class CoverMod extends Mod {
@@ -3656,6 +3955,8 @@ const DEFAULTS = {
     askAfterMove: true,    // 옮긴 뒤 유형·상태·분류가 안 맞으면 물어본다
     stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
     wrapCanvas: true,      // 캔버스 옆에 노트를 세운다 (캔버스는 속성을 못 가진다)
+    sweepStrayZoneFolders: true, // 경로가 두 번 붙어 생긴 빈 구역 폴더를 휴지통으로
+    topUpNew: true,        // 양식에서 태어난 노트의 빈 작성일·분류를 자리와 오늘로
     authorFromName: true,  // 파일 이름 앞머리 `(rin)` 으로 작성자를 채운다
     syncProjectViews: true, // 프로젝트·담당자별 필터 뷰를 프로젝트 보드에 자동으로 만든다
     people: ["Rin", "민규 서"], // 칸반에 늘 두는 담당자. 일이 없어도 탭은 있습니다
