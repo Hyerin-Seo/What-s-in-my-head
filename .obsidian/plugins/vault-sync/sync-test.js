@@ -180,6 +180,49 @@ const ok = async (name, fn) => { await fn(); n++; console.log("  ✅ " + name); 
     clean(rin); clean(mango);
   });
 
+  await ok("fix-by-mango 에서 누르면 — 묻고, main 으로 옮겨서 합침 (안 올린 커밋·커밋 안 한 변경까지)", async () => {
+    sh(mango, "checkout", "-q", "-b", "fix-by-mango");
+    sh(mango, "push", "-q", "-u", "origin", "fix-by-mango");
+    edit(mango, note, "## 이게 뭐였더라", "## 이게 뭐였더라 — 브랜치에서");
+    sh(mango, "commit", "-q", "-am", "브랜치 작업 (안 올림)");
+    edit(mango, note, "요약: 처음", "요약: 브랜치에서 고침"); // 커밋 안 한 변경
+    edit(rin, note, "상태: to do", "상태: 진행중");
+    await syncRepo({ cwd: rin, git: "git", pick: never });
+
+    // 취소 — 아무것도 안 바뀜 (커밋도 안 함)
+    const before = sh(mango, "rev-parse", "HEAD");
+    const c = await syncRepo({ cwd: mango, git: "git", pick: never, askBranch: async () => null });
+    assert.strictEqual(c.cancelled, true);
+    assert.strictEqual(sh(mango, "rev-parse", "HEAD"), before);
+    assert.ok(sh(mango, "status", "--porcelain").trim(), "커밋 안 한 변경이 그대로 있어야 함");
+
+    let asked = null;
+    const r = await syncRepo({ cwd: mango, git: "git", pick: never, askBranch: async (b, m) => { asked = [b, m]; return "main"; } });
+    assert.deepStrictEqual(asked, ["fix-by-mango", "main"]);
+    assert.strictEqual(sh(mango, "symbolic-ref", "--short", "HEAD").trim(), "main");
+    assert.ok(r.message.includes("fix-by-mango → main"), r.message);
+    assert.ok(sh(mango, "branch", "--list", "fix-by-mango").trim(), "브랜치는 남아 있어야 함");
+    await syncRepo({ cwd: rin, git: "git", pick: never });
+    const s = get(rin, note);
+    assert.ok(s.includes("상태: 진행중") && s.includes("요약: 브랜치에서 고침") && s.includes("— 브랜치에서"), s);
+    assert.strictEqual(s, get(mango, note));
+    // 이제 main 이라 다시 묻지 않습니다
+    await syncRepo({ cwd: mango, git: "git", pick: never, askBranch: async () => { throw new Error("main 인데 물었음"); } });
+    noMarkers(mango); clean(mango); clean(rin);
+  });
+
+  await ok("실험 브랜치에서 '그대로' 를 고르면 — 그 브랜치로 올림 (main 은 그대로)", async () => {
+    sh(rin, "checkout", "-q", "-b", "실험");
+    put(rin, "실험 노트.md", "해 보는 중\n");
+    const mainBefore = sh(rin, "rev-parse", "origin/main");
+    const r = await syncRepo({ cwd: rin, git: "git", pick: never, askBranch: async () => "stay" });
+    assert.strictEqual(r.branch, "실험");
+    assert.strictEqual(sh(rin, "ls-remote", "origin", "refs/heads/실험").trim().split("\t")[0], sh(rin, "rev-parse", "HEAD").trim());
+    sh(rin, "fetch", "-q", "origin");
+    assert.strictEqual(sh(rin, "rev-parse", "origin/main"), mainBefore);
+    sh(rin, "checkout", "-q", "main");
+  });
+
   console.log("\n" + n + "개 다 통과");
 })().catch((e) => { console.error("\n❌ " + (e.stack || e)); process.exitCode = 1; })
   .finally(() => rmTree(root));

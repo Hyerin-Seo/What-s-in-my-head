@@ -785,13 +785,45 @@ async function buildMergeCommit(g, plan, picks, { gitDir, message }) {
 }
 
 /**
- * 버튼 한 번. 돌려주는 것은 사람에게 보일 한 줄과 숫자들.
- *   pick(plan)      고를 게 있을 때 부름 → picks 이거나 null(취소)
- *   onBeforePush()  시험용 — 올리기 직전에 끼어들 자리
+ * 둘 다 새 것이 있을 때 합친 커밋을 만듭니다 (볼트는 아직 안 바꿈). 고르기 창에서 취소하면 null.
  */
-async function syncRepo({ cwd, git, names, pick, now, onBeforePush, tries = 3 }) {
+async function mergeWith(g, { cwd, git, nm, head, theirs, pick, me, now, gitDir, stats }) {
+  const plan = planMerge({ cwd, git, ours: head, theirs, names: nm });
+  plan.git = git;
+  let picks = {};
+  const todo = plan.items.filter((it) => !it.result.ok);
+  if (todo.length) {
+    picks = await pick(plan);
+    if (!picks) return null;
+  }
+  const them = (await g(["log", "-1", "--format=%an", theirs])).stdout.trim();
+  const pickedLines = [];
+  for (const it of todo) for (const c of it.result.conflicts) {
+    const side = (picks[it.path] || {})[c.id];
+    pickedLines.push("고름: " + it.name + " › " + c.id + " ← " + (side === "both" ? "둘 다" : it.sides[side].who + " 쪽"));
+  }
+  const autoLines = plan.items.filter((it) => it.result.ok).map((it) => "알아서 합침: " + it.name + " — " + autoNote(it));
+  stats.received += +(await g(["rev-list", "--count", head + ".." + theirs])).stdout.trim();
+  stats.auto += plan.items.length - todo.length;
+  stats.picked += pickedLines.length;
+  return buildMergeCommit(g, plan, picks, {
+    gitDir,
+    message: { title: "🔀 동기화 합침 · " + me + " ← " + (nm[them] || them) + " · " + stamp(now), body: autoLines.concat(pickedLines).join("\n") || "git 이 알아서 합침" },
+  });
+}
+
+/**
+ * 버튼 한 번. 돌려주는 것은 사람에게 보일 한 줄과 숫자들.
+ *   pick(plan)                고를 게 있을 때 부름 → picks 이거나 null(취소)
+ *   askBranch(지금, main)     main 이 아닌 브랜치에서 눌렀을 때 → "main" | "stay" | null(취소)
+ *                             없으면 지금 브랜치 그대로 (시험·예전 동작)
+ *   onBeforePush()            시험용 — 올리기 직전에 끼어들 자리
+ */
+async function syncRepo({ cwd, git, names, pick, askBranch, mainBranch = "main", now, onBeforePush, tries = 3 }) {
   const nm = Object.assign({}, DEFAULT_NAMES, names || {});
   const g = (args, o = {}) => gitAsync(args, Object.assign({ cwd, git }, o));
+  const isAnc = async (a, b) => (await g(["merge-base", "--is-ancestor", a, b], { okCodes: [0, 1] })).code === 0;
+  const refOf = async (r) => (await g(["rev-parse", "--verify", "-q", r], { okCodes: [0, 1] })).stdout.trim();
   const gitDir = (await g(["rev-parse", "--absolute-git-dir"])).stdout.trim();
   const fs = require("fs"), nodePath = require("path");
 
@@ -802,61 +834,87 @@ async function syncRepo({ cwd, git, names, pick, now, onBeforePush, tries = 3 })
     }
   }
   if ((await g(["ls-files", "-u"])).stdout.trim()) throw new Error("충돌이 풀리지 않은 파일이 있어서 멈췄습니다.");
-  const branch = (await g(["symbolic-ref", "--short", "-q", "HEAD"], { okCodes: [0, 1] })).stdout.trim();
+  let branch = (await g(["symbolic-ref", "--short", "-q", "HEAD"], { okCodes: [0, 1] })).stdout.trim();
   if (!branch) throw new Error("브랜치 위가 아닙니다 (detached HEAD). 브랜치로 돌아간 뒤 다시 누르세요.");
-  const remote = (await g(["config", "--get", "branch." + branch + ".remote"], { okCodes: [0, 1] })).stdout.trim() || "origin";
-  const merge = (await g(["config", "--get", "branch." + branch + ".merge"], { okCodes: [0, 1] })).stdout.trim() || "refs/heads/" + branch;
-  const upName = merge.replace(/^refs\/heads\//, "");
-  const upRef = "refs/remotes/" + remote + "/" + upName;
-  const meRaw = (await g(["config", "--get", "user.name"], { okCodes: [0, 1] })).stdout.trim();
+  const cfg = async (k) => (await g(["config", "--get", k], { okCodes: [0, 1] })).stdout.trim();
+  let remote = (await cfg("branch." + branch + ".remote")) || "origin";
+  let merge = (await cfg("branch." + branch + ".merge")) || "refs/heads/" + branch;
+  let upRef = "refs/remotes/" + remote + "/" + merge.replace(/^refs\/heads\//, "");
+  const meRaw = await cfg("user.name");
   const me = nm[meRaw] || meRaw || "나";
+  const ctx = { cwd, git, nm, pick, me, now, gitDir };
+
+  // main 이 아닌 브랜치 — 두 사람이 서로 다른 브랜치를 주고받으면 서로의 변경이 안 보입니다. 묻습니다.
+  let toMain = false;
+  if (branch !== mainBranch && askBranch) {
+    const ans = await askBranch(branch, mainBranch);
+    if (!ans) return { cancelled: true, branch, message: "취소했습니다 — 아무것도 안 바꿨습니다." };
+    toMain = ans === "main";
+  }
 
   const stats = { committed: 0, received: 0, sent: 0, auto: 0, picked: 0, branch };
   stats.committed = (await commitLocal(g, me, now)) || 0;
+  const cancelled = () => Object.assign(stats, { cancelled: true, message: "취소했습니다 — 볼트는 그대로입니다." + (stats.committed ? " (내 변경은 커밋만 해 두었습니다. 다음 동기화 때 같이 올라갑니다)" : "") });
+
+  const fetchUp = async (m, ref) => {
+    try {
+      await g(["fetch", "--quiet", remote, "+" + m + ":" + ref], { timeoutMs: 180000 });
+    } catch (e) {
+      if (/couldn't find remote ref/i.test(e.stderr || "")) return; // 원격에 아직 없는 브랜치 — 올리기만
+      throw new Error("가져오기에 실패했습니다 — 인터넷·로그인을 확인해 주세요.\n" + (e.stderr || e.message).trim().split("\n").slice(-2).join("\n"));
+    }
+  };
+
+  // ② main 으로 옮기기 — 지금 브랜치의 작업(방금 커밋한 것까지)을 원격 main 과 합친 뒤 main 으로 넘어갑니다.
+  //    지금 브랜치는 지우지 않고 그대로 둡니다.
+  if (toMain) {
+    const mainMerge = "refs/heads/" + mainBranch, mainUp = "refs/remotes/" + remote + "/" + mainBranch;
+    await fetchUp(mainMerge, mainUp);
+    const up = await refOf(mainUp), local = await refOf(mainMerge);
+    const head = await refOf("HEAD");
+    if (local && !(up && await isAnc(local, up)) && !(await isAnc(local, head))) {
+      throw new Error("이 컴퓨터의 " + mainBranch + " 에 아직 안 올린 커밋이 있어서 멈췄습니다 — 섞이지 않게요. " + mainBranch + " 로 옮긴 뒤 동기화를 눌러 주세요.");
+    }
+    let target = head;
+    if (up && !(await isAnc(up, head))) {
+      if (await isAnc(head, up)) {
+        stats.received += +(await g(["rev-list", "--count", head + ".." + up])).stdout.trim();
+        target = up;
+      } else {
+        target = await mergeWith(g, Object.assign({ head, theirs: up, stats }, ctx));
+        if (!target) return cancelled();
+      }
+    }
+    await g(["branch", "-f", mainBranch, target]);
+    try {
+      await g(["checkout", "-q", mainBranch]);
+    } catch (e) {
+      throw new Error("main 으로 넘어가는 사이에 노트가 또 바뀌어서 멈췄습니다. 볼트는 그대로입니다 — 동기화를 한 번 더 누르세요.");
+    }
+    if (up) await g(["branch", "--set-upstream-to=" + remote + "/" + mainBranch, mainBranch]);
+    stats.movedFrom = branch;
+    branch = stats.branch = mainBranch;
+    merge = mainMerge;
+    upRef = mainUp;
+  }
 
   for (let round = 1; round <= tries; round++) {
     // ③ 가져오기
-    try {
-      await g(["fetch", "--quiet", remote, "+" + merge + ":" + upRef], { timeoutMs: 180000 });
-    } catch (e) {
-      if (/couldn't find remote ref/i.test(e.stderr || "")) { /* 원격에 아직 없는 브랜치 — 올리기만 */ }
-      else throw new Error("가져오기에 실패했습니다 — 인터넷·로그인을 확인해 주세요.\n" + (e.stderr || e.message).trim().split("\n").slice(-2).join("\n"));
-    }
-    const hasUp = (await g(["rev-parse", "--verify", "-q", upRef], { okCodes: [0, 1] })).stdout.trim();
-    const head = (await g(["rev-parse", "HEAD"])).stdout.trim();
+    await fetchUp(merge, upRef);
+    const hasUp = await refOf(upRef);
+    const head = await refOf("HEAD");
 
     // ④ 무엇을 할지
     if (hasUp) {
-      const isAnc = async (a, b) => (await g(["merge-base", "--is-ancestor", a, b], { okCodes: [0, 1] })).code === 0;
       if (await isAnc(head, upRef)) {
         if (head !== hasUp) {
           stats.received += +(await g(["rev-list", "--count", head + ".." + upRef])).stdout.trim();
           await fastForward(g, upRef);
         }
       } else if (!(await isAnc(upRef, head))) {
-        // 둘 다 새 것이 있음 — 합칩니다
-        const plan = planMerge({ cwd, git, ours: head, theirs: hasUp, names: nm });
-        plan.git = git;
-        let picks = {};
-        const todo = plan.items.filter((it) => !it.result.ok);
-        if (todo.length) {
-          picks = await pick(plan);
-          if (!picks) return Object.assign(stats, { cancelled: true, message: "취소했습니다 — 볼트는 그대로입니다." + (stats.committed ? " (내 변경은 커밋만 해 두었습니다. 다음 동기화 때 같이 올라갑니다)" : "") });
-        }
-        const them = (await g(["log", "-1", "--format=%an", hasUp])).stdout.trim();
-        const pickedLines = [];
-        for (const it of todo) for (const c of it.result.conflicts) {
-          const side = (picks[it.path] || {})[c.id];
-          pickedLines.push("고름: " + it.name + " › " + c.id + " ← " + (side === "both" ? "둘 다" : it.sides[side].who + " 쪽"));
-        }
-        const autoLines = plan.items.filter((it) => it.result.ok).map((it) => "알아서 합침: " + it.name + " — " + autoNote(it));
-        stats.received += +(await g(["rev-list", "--count", head + ".." + hasUp])).stdout.trim();
-        stats.auto += plan.items.length - todo.length;
-        stats.picked += pickedLines.length;
-        const commit = await buildMergeCommit(g, plan, picks, {
-          gitDir,
-          message: { title: "🔀 동기화 합침 · " + me + " ← " + (nm[them] || them) + " · " + stamp(now), body: autoLines.concat(pickedLines).join("\n") || "git 이 알아서 합침" },
-        });
+        // ⑤ 둘 다 새 것이 있음 — 합칩니다
+        const commit = await mergeWith(g, Object.assign({ head, theirs: hasUp, stats }, ctx));
+        if (!commit) return cancelled();
         await fastForward(g, commit);
       }
     }
@@ -881,7 +939,8 @@ async function syncRepo({ cwd, git, names, pick, now, onBeforePush, tries = 3 })
   if (stats.sent) bits.push("올린 커밋 " + stats.sent + "개");
   if (stats.auto) bits.push("알아서 합친 파일 " + stats.auto + "개");
   if (stats.picked) bits.push("고른 곳 " + stats.picked + "개");
-  stats.message = "✓ 동기화 (" + branch + ") — " + (bits.join(" · ") || "이미 같습니다");
+  stats.message = "✓ 동기화 (" + (stats.movedFrom ? stats.movedFrom + " → " : "") + branch + ") — " + (bits.join(" · ") || "이미 같습니다")
+    + (stats.movedFrom ? "\n이제 " + branch + " 에 있습니다. " + stats.movedFrom + " 브랜치는 그대로 남겨 두었습니다." : "");
   return stats;
 }
 
@@ -1014,11 +1073,46 @@ if (obsidian) {
     }
   }
 
+  /** main 이 아닌 브랜치에서 눌렀을 때 — 두 사람이 다른 브랜치를 주고받으면 서로 안 보입니다 */
+  class BranchModal extends obsidian.Modal {
+    constructor(app, branch, main, resolve) {
+      super(app);
+      this.branch = branch;
+      this.main = main;
+      this.resolve = resolve;
+      this.answered = false;
+    }
+    onOpen() {
+      this.modalEl.classList.add("vs-modal");
+      this.titleEl.setText("지금 " + this.branch + " 브랜치에 있습니다");
+      const wrap = h(this.contentEl, "div", "vs-pick");
+      h(wrap, "div", null, "Rin 과 민규 서는 " + this.main + " 하나로 주고받습니다. 이 브랜치로 올리면 상대에게 안 보입니다.");
+      h(wrap, "div", "vs-summary", this.main + " 으로 옮기면: 이 브랜치의 작업을 전부 커밋하고, " + this.main + " 을 가져와 규칙대로 합친 뒤(충돌만 묻습니다) " + this.main + " 으로 넘어가 올립니다. " + this.branch + " 브랜치는 지우지 않고 그대로 둡니다.");
+      const foot = h(wrap, "div", "vs-foot");
+      h(foot, "span", "vs-count");
+      const answer = (v) => { this.answered = true; this.resolve(v); this.close(); };
+      h(foot, "button", null, "취소").addEventListener("click", () => this.close());
+      h(foot, "button", null, this.branch + " 그대로 동기화").addEventListener("click", () => answer("stay"));
+      h(foot, "button", "mod-cta", this.main + " 으로 옮겨서 합치기").addEventListener("click", () => answer("main"));
+    }
+    onClose() {
+      this.contentEl.empty();
+      if (!this.answered) this.resolve(null);
+    }
+  }
+
   class VaultSyncPlugin extends obsidian.Plugin {
     async onload() {
       this.settings = Object.assign({}, DEFAULTS, await this.loadData());
       this.busy = false;
       this.addRibbonIcon("git-merge", "동기화 (충돌 한 번에)", () => this.sync());
+      // 리본이 안 보이는 화면도 있어서 아래 상태 표시줄에도 둡니다
+      this.statusEl = this.addStatusBarItem();
+      this.statusEl.classList.add("mod-clickable", "vs-status");
+      this.statusEl.setAttribute("aria-label", "동기화 — 커밋·가져오기·합치기·올리기");
+      this.statusEl.setAttribute("data-tooltip-position", "top");
+      this.statusEl.setText("🔀 동기화");
+      this.statusEl.addEventListener("click", () => this.sync());
       this.addCommand({ id: "sync", name: "동기화 — 커밋·가져오기·합치기·올리기", callback: () => this.sync() });
       this.addCommand({ id: "restore", name: "되돌리기 — 이전 시점의 모습으로 (올리지는 않음)", callback: () => this.restore() });
       this.addCommand({
@@ -1042,21 +1136,32 @@ if (obsidian) {
       const git = this.gitOrNotice();
       if (!git) return;
       this.busy = true;
-      const working = new obsidian.Notice("🔀 동기화 중…", 0);
+      this.statusEl.setText("🔀 동기화 중…");
+      let working = null;
+      const show = () => { if (!working) working = new obsidian.Notice("🔀 동기화 중…", 0); };
+      const hide = () => { if (working) { working.hide(); working = null; } };
       try {
         await this.saveOpenFiles();
+        show();
         const r = await syncRepo({
           cwd: this.cwd, git, names: this.settings.names,
-          pick: (plan) => { working.hide(); return this.pick(plan); },
+          pick: async (plan) => { hide(); const p = await this.pick(plan); show(); return p; },
+          askBranch: async (branch, main) => {
+            hide();
+            const v = await new Promise((resolve) => new BranchModal(this.app, branch, main, resolve).open());
+            show();
+            return v;
+          },
         });
-        working.hide();
+        hide();
         new obsidian.Notice(r.message, 8000);
       } catch (e) {
-        working.hide();
+        hide();
         console.error("[vault-sync]", e);
         new obsidian.Notice("동기화를 멈췄습니다.\n" + e.message, 15000);
       } finally {
         this.busy = false;
+        this.statusEl.setText("🔀 동기화");
       }
     }
 
