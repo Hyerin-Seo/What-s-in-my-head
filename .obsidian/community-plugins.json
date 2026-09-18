@@ -9,5 +9,6 @@
   "dataview",
   "customjs",
   "calendar-bases",
-  "claude"
+  "claude",
+  "vault-sync"
 ]
