@@ -114,5 +114,5 @@ views:
       - 일정
       - 마감
       - 작성자
-newItemFolder: "1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현"
-newItemTemplate: "1.🎯(Project) 프로젝트/!(Template) 새 할 일.md"
+newItemFolder: 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현
+newItemTemplate: 1.🎯(Project) 프로젝트/!(Template) 새 할 일.md
