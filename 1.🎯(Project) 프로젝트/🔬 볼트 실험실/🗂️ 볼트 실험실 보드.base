@@ -29,6 +29,12 @@ views:
         - 히스토리
     columnColors:
       note.상태: {}
+    cardOrders:
+      note.상태:
+        to do: []
+        진행중:
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/다음 회의를 속기하고 meeting-notes 스킬로 할일 배포까지 해 보기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/gtd + para + ai 아 이놈들을 대체 어떻게 알잘딱하게 엮을 것인가에 대하여 샹.md
   - type: kanban-view
     name: 👤 Rin
     filters:

@@ -705,7 +705,9 @@ function renderPicker(root, plan, { onApply, onCancel, applyLabel }) {
 function gitAsync(args, { cwd, git, input, env, timeoutMs = 120000, okCodes = [0] }) {
   return new Promise((resolve, reject) => {
     const cp = require("child_process");
-    let p, out = "", err = "", done = false;
+    // 조각(Buffer)을 모았다가 한 번에 글자로 — 조각마다 바꾸면 한글 한 글자가 두 조각에 걸칠 때 깨집니다
+    let p, outB = [], errB = [], done = false;
+    const out = () => Buffer.concat(outB).toString("utf8"), err = () => Buffer.concat(errB).toString("utf8");
     const finish = (fn) => { if (!done) { done = true; clearTimeout(timer); fn(); } };
     try {
       p = cp.spawn(git || "git", ["-c", "core.quotepath=false"].concat(args), {
@@ -714,12 +716,12 @@ function gitAsync(args, { cwd, git, input, env, timeoutMs = 120000, okCodes = [0
       });
     } catch (e) { reject(e); return; }
     const timer = setTimeout(() => finish(() => { try { p.kill(); } catch (e) { /* 이미 끝남 */ } reject(new Error("git " + args[0] + " 이 " + Math.round(timeoutMs / 1000) + "초 넘게 안 끝나서 멈췄습니다")); }), timeoutMs);
-    p.stdout.on("data", (d) => { out += d.toString("utf8"); });
-    p.stderr.on("data", (d) => { err += d.toString("utf8"); });
+    p.stdout.on("data", (d) => { outB.push(d); });
+    p.stderr.on("data", (d) => { errB.push(d); });
     p.on("error", (e) => finish(() => reject(e)));
     p.on("close", (code) => finish(() => {
-      if (okCodes.includes(code)) resolve({ code, stdout: out, stderr: err });
-      else { const e = new Error("git " + args.join(" ") + " → " + code + "\n" + err.trim()); e.code = code; e.stderr = err; reject(e); }
+      if (okCodes.includes(code)) resolve({ code, stdout: out(), stderr: err() });
+      else { const e = new Error("git " + args.join(" ") + " → " + code + "\n" + err().trim()); e.code = code; e.stderr = err(); reject(e); }
     }));
     if (input != null) p.stdin.end(input, "utf8"); else p.stdin.end();
   });
@@ -984,12 +986,135 @@ async function restoreTo({ cwd, git, names, point, now }) {
 }
 
 // ─────────────────────────────────────────────────────────────
+//  동기화 기록 — 커밋마다 바뀐 파일을 누르면 열리는 링크로
+//    동기화가 끝날 때마다 `!🏠 홈/🔀 최근 동기화.md` 한 장을 통째로 새로 씁니다.
+//    기록 자체는 git 에 이미 있고, 이건 옵시디언에서 읽는 화면일 뿐이라 git 에 안 올립니다
+//    (.gitignore). 각자 컴퓨터에서 같은 git 기록으로 만드니 쌓이지도, 둘이 충돌하지도 않습니다.
+//    동기화마다 노트를 한 장씩 만들면 하루 수십 장이 쌓이고, 그 노트가 또 다음 동기화의 변경이 됩니다.
+// ─────────────────────────────────────────────────────────────
+
+const REPORT_PATH = "!🏠 홈/🔀 최근 동기화.md";
+const REPORT_LIST_FILES = 80;   // 커밋 하나에서 적을 파일 수
+
+/** `git show --name-status -z` → [{ st, path, from }] */
+function parseNameStatusZ(out) {
+  const parts = out.split("\0");
+  const rows = [];
+  for (let i = 0; i < parts.length;) {
+    const st = parts[i++].replace(/^\s+/, "");
+    if (!st) continue;
+    if (/^[RC]/.test(st)) { rows.push({ st: st[0], from: parts[i], path: parts[i + 1] }); i += 2; }
+    else { rows.push({ st: st[0], path: parts[i] }); i += 1; }
+  }
+  return rows;
+}
+
+/** 옵시디언이 여는 볼트 경로 링크. 이름에 [ ] ( ) 가 있어도 되게 마크다운 링크 + 인코딩.
+    옵시디언은 링크 주소를 `decodeURI` 로 풉니다 (obsidian.asar 확인) — `decodeURI` 는 + & , ; = $ @ 의
+    %XX 를 **안 풉니다.** 그래서 이 글자들은 인코딩하지 않고 그대로 둡니다 (`UI + 디자인 + …` 가 그 예). */
+const encPath = (p) => p.split("/").map((s) => encodeURIComponent(s)
+  .replace(/[()!'*]/g, (c) => "%" + c.charCodeAt(0).toString(16).toUpperCase())
+  .replace(/%(2B|26|2C|3B|3D|24|40)/g, (m, h) => String.fromCharCode(parseInt(h, 16)))).join("/");
+const mdEsc = (s) => s.replace(/([\[\]\\*])/g, "\\$1");
+const baseOf = (p) => p.split("/").pop().replace(/\.md$/, "");
+const linkTo = (p) => "[" + mdEsc(baseOf(p)) + "](" + encPath(p) + ")";
+const folderOf = (p) => { const s = p.split("/"); return s.length > 1 ? s[s.length - 2] : ""; };
+
+const isSetting = (p) => p.startsWith(".obsidian/") || /^\.git/.test(p) || !p.includes("/") && !p.endsWith(".md");
+
+/** 파일 한 줄 — 누르면 그 파일이 열립니다 */
+function reportFile(row) {
+  const icon = { A: "🆕", M: "✏️", D: "🗑", R: "➡️", C: "📄", T: "✏️" }[row.st] || "·";
+  const where = folderOf(row.path) ? " · `" + folderOf(row.path) + "`" : "";
+  if (row.st === "D") return "- " + icon + " ~~" + mdEsc(baseOf(row.path)) + "~~ (지움)" + where;
+  if (row.st === "R") return "- " + icon + " " + mdEsc(baseOf(row.from)) + " → " + linkTo(row.path) + where;
+  return "- " + icon + " " + linkTo(row.path) + where;
+}
+
+/**
+ * 최근 며칠의 커밋으로 기록 한 장을 만듭니다 (파일은 안 씀 — 글자만 돌려줌).
+ *   before  이번 동기화를 누르기 전의 HEAD. 주면 그 뒤로 **상대가** 만든 커밋을 맨 위에 따로 모읍니다.
+ */
+async function buildReport({ cwd, git, names, before, days = 7, maxCommits = 40, now }) {
+  const nm = Object.assign({}, DEFAULT_NAMES, names || {});
+  const g = (args, o = {}) => gitAsync(args, Object.assign({ cwd, git }, o));
+  const meRaw = (await g(["config", "--get", "user.name"], { okCodes: [0, 1] })).stdout.trim();
+  const log = (await g(["log", "--since=" + days + ".days.ago", "-n", String(maxCommits),
+    "--format=%H%x09%P%x09%an%x09%ct%x09%s", "HEAD"])).stdout.trim().split("\n").filter(Boolean);
+  const fresh = new Set(before
+    ? (await g(["rev-list", before + "..HEAD"], { okCodes: [0, 128] })).stdout.trim().split("\n").filter(Boolean)
+    : []);
+
+  const commits = [];
+  for (const l of log) {
+    const [hash, parents, an, ct, subject] = l.split("\t");
+    const c = { hash, merge: parents.split(" ").length > 1, an, who: nm[an] || an, when: fmtTime(+ct), subject };
+    c.received = fresh.has(hash) && an !== meRaw && !c.merge;
+    if (c.merge) {
+      c.body = (await g(["log", "-1", "--format=%b", hash])).stdout.trim().split("\n").filter(Boolean);
+    } else {
+      c.rows = parseNameStatusZ((await g(["show", "--format=", "-M", "--name-status", "-z", hash])).stdout);
+    }
+    commits.push(c);
+  }
+
+  const L = [
+    "---", "유형: 대시보드", "구역: 0.inbox", "분류:", "주제:", "상태:",
+    "요약: 동기화할 때마다 vault-sync 가 새로 쓰는 변경 기록 — 커밋별로 바뀐 파일 링크",
+    "작성일:", "마감:", "커버:", "상위:", "링크:", "담당:", "작성자:", "---",
+    "%% vault-sync 가 동기화할 때마다 통째로 새로 씁니다 — 고쳐도 다음 동기화 때 덮입니다. git 에는 안 올라갑니다 (.gitignore). %%",
+    "",
+    "# 🔀 최근 동기화",
+    "",
+    "마지막으로 새로 쓴 때 **" + stamp(now) + "** · 최근 " + days + "일 · 커밋 " + commits.length + "개",
+    "",
+    "노트 이름을 누르면 그 노트가 열립니다. 🆕 새로 · ✏️ 고침 · ➡️ 옮김·이름 바뀜 · 🗑 지움",
+    "",
+  ];
+
+  const noteRows = (c) => c.rows.filter((r) => !isSetting(r.path));
+  if (before) {
+    const got = commits.filter((c) => c.received);
+    L.push("## 🆕 이번 동기화에서 받은 것", "");
+    if (!got.length) L.push("새로 받은 것은 없습니다. 아래는 최근 기록입니다.", "");
+    for (const c of got) {
+      const rows = noteRows(c);
+      L.push("**" + c.who + " · " + c.when + "** — 파일 " + c.rows.length + "개");
+      for (const r of rows.slice(0, REPORT_LIST_FILES)) L.push(reportFile(r));
+      if (rows.length > REPORT_LIST_FILES) L.push("- … 그 밖 " + (rows.length - REPORT_LIST_FILES) + "개");
+      L.push("");
+    }
+  }
+
+  L.push("## 커밋별", "");
+  for (const c of commits) {
+    if (c.merge) {
+      L.push("### " + c.when + " · 🔀 합침 · " + c.subject.replace(/^🔀 동기화 합침 · /, "").replace(/ · \d\d-\d\d \d\d:\d\d$/, ""), "");
+      for (const b of c.body.slice(0, 20)) L.push("- " + b);
+      L.push("");
+      continue;
+    }
+    const rows = noteRows(c), settings = c.rows.filter((r) => isSetting(r.path));
+    L.push("### " + c.when + " · " + c.who + (c.received ? " · 🆕 이번에 받음" : "") + " — 파일 " + c.rows.length + "개", "");
+    if (!/^🔀 /.test(c.subject)) L.push("> " + c.subject, "");
+    for (const r of rows.slice(0, REPORT_LIST_FILES)) L.push(reportFile(r));
+    if (rows.length > REPORT_LIST_FILES) L.push("- … 그 밖 " + (rows.length - REPORT_LIST_FILES) + "개");
+    if (settings.length) {
+      L.push("", "> [!gear]- ⚙️ 설정·플러그인 파일 " + settings.length + "개");
+      for (const r of settings.slice(0, 40)) L.push("> - " + r.st + " `" + r.path + "`");
+    }
+    L.push("");
+  }
+  return L.join("\n") + "\n";
+}
+
+// ─────────────────────────────────────────────────────────────
 //  플러그인
 // ─────────────────────────────────────────────────────────────
 
-const DEFAULTS = { git: "git", names: {} };
+const DEFAULTS = { git: "git", names: {}, report: true, reportDays: 7 };
 
-const api = { mergeFile, mergeBlock, parseBlock, splitFm, splitHunks, gitMergeFile, resolveGit, planMerge, finishItem, renderPicker, syncRepo, listPoints, changedSince, restoreTo, DEFAULT_NAMES };
+const api = { mergeFile, mergeBlock, parseBlock, splitFm, splitHunks, gitMergeFile, resolveGit, planMerge, finishItem, renderPicker, syncRepo, listPoints, changedSince, restoreTo, buildReport, parseNameStatusZ, REPORT_PATH, DEFAULT_NAMES };
 
 if (obsidian) {
   class PickModal extends obsidian.Modal {
@@ -1115,6 +1240,7 @@ if (obsidian) {
       this.statusEl.addEventListener("click", () => this.sync());
       this.addCommand({ id: "sync", name: "동기화 — 커밋·가져오기·합치기·올리기", callback: () => this.sync() });
       this.addCommand({ id: "restore", name: "되돌리기 — 이전 시점의 모습으로 (올리지는 않음)", callback: () => this.restore() });
+      this.addCommand({ id: "report", name: "동기화 기록 보기 — 바뀐 노트와 줄 비교", callback: () => this.openReport(true) });
       this.addCommand({
         id: "preview-picker",
         name: "고르기 창 미리 보기 — 지난 충돌로 (아무것도 안 바꿈)",
@@ -1143,6 +1269,8 @@ if (obsidian) {
       try {
         await this.saveOpenFiles();
         show();
+        // 누르기 전 자리 — 기록에서 "이번에 받은 것" 을 가려내려고
+        const before = (await gitAsync(["rev-parse", "-q", "--verify", "HEAD"], { cwd: this.cwd, git, okCodes: [0, 1] })).stdout.trim();
         const r = await syncRepo({
           cwd: this.cwd, git, names: this.settings.names,
           pick: async (plan) => { hide(); const p = await this.pick(plan); show(); return p; },
@@ -1155,6 +1283,13 @@ if (obsidian) {
         });
         hide();
         new obsidian.Notice(r.message, 8000);
+        // 기록은 몇 초 걸려서 뒤에서 씁니다 — 동기화 결과를 기다리게 하지 않으려고
+        if (!r.cancelled) this.writeReport(before).then((wrote) => {
+          if (!wrote) return;
+          const n = new obsidian.Notice("📋 바뀐 것 보기 — 눌러서 🔀 최근 동기화 열기", 12000);
+          const el = n.noticeEl || n.messageEl || n.containerEl;
+          if (el) { el.style.cursor = "pointer"; el.addEventListener("click", () => this.openReport(false)); }
+        });
       } catch (e) {
         hide();
         console.error("[vault-sync]", e);
@@ -1186,6 +1321,28 @@ if (obsidian) {
           this.busy = false;
         }
       }).open();
+    }
+
+    /** 기록 한 장을 새로 씁니다. 실패해도 동기화는 이미 끝났으니 알리기만 합니다. 썼으면 true */
+    async writeReport(before) {
+      if (!this.settings.report) return false;
+      const git = this.gitOrNotice();
+      if (!git) return false;
+      try {
+        const text = await buildReport({ cwd: this.cwd, git, names: this.settings.names, before, days: this.settings.reportDays });
+        await this.app.vault.adapter.write(REPORT_PATH, text);
+        return true;
+      } catch (e) {
+        console.error("[vault-sync] 동기화 기록", e);
+        new obsidian.Notice("동기화는 끝났지만 기록을 못 썼습니다.\n" + e.message, 10000);
+        return false;
+      }
+    }
+
+    /** 기록 열기 — 명령에서 부르면 지금 기록으로 새로 쓴 뒤 엽니다 */
+    async openReport(refresh) {
+      if (refresh && !(await this.writeReport(null))) return;
+      await this.app.workspace.openLinkText(REPORT_PATH, "", false);
     }
 
     gitOrNotice() {

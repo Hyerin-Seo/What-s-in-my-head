@@ -5,7 +5,7 @@
 "use strict";
 const assert = require("assert");
 const os = require("os"), fs = require("fs"), path = require("path"), cp = require("child_process");
-const { syncRepo, restoreTo, listPoints } = require("./main.js");
+const { syncRepo, restoreTo, listPoints, buildReport } = require("./main.js");
 
 const root = fs.mkdtempSync(path.join(os.tmpdir(), "vault-sync-test-"));
 const sh = (cwd, ...args) => {
@@ -221,6 +221,26 @@ const ok = async (name, fn) => { await fn(); n++; console.log("  ✅ " + name); 
     sh(rin, "fetch", "-q", "origin");
     assert.strictEqual(sh(rin, "rev-parse", "origin/main"), mainBefore);
     sh(rin, "checkout", "-q", "main");
+  });
+
+  await ok("동기화 기록 — 상대가 바꾼 노트가 맨 위에, 누르면 열리는 링크로", async () => {
+    await syncRepo({ cwd: mango, git: "git", pick: never });
+    await syncRepo({ cwd: rin, git: "git", pick: never });
+    const before = sh(rin, "rev-parse", "HEAD").trim();
+    const card = "1.🎯(Project) 프로젝트/[할일] 새 카드 (민규 서) + 메모 & 정리.md";   // [ ] ( ) + & 가 든 이름도 열려야 합니다
+    put(mango, card, "---\n유형: 할일\n상태: to do\n---\n처음 적은 줄\n");
+    put(mango, note, get(mango, note) + "\n민규 서가 더한 줄\n");
+    put(rin, "린 메모.md", "린이 쓴 것\n");
+    await syncRepo({ cwd: mango, git: "git", pick: never });
+    await syncRepo({ cwd: rin, git: "git", pick: never });
+    const t = await buildReport({ cwd: rin, git: "git", before });
+    const [top, rest] = t.split("## 커밋별");
+    assert.ok(top.includes("## 🆕 이번 동기화에서 받은 것") && top.includes("민규 서"), top);
+    assert.ok(!top.includes("린 메모"), "내 커밋이 '받은 것' 에 섞임");
+    const links = [...top.matchAll(/\]\(([^)\s]+)\)/g)].map((m) => decodeURI(m[1]));   // 옵시디언이 링크를 푸는 방식 그대로
+    assert.ok(links.includes(card) && links.includes(note), links.join(" | "));
+    assert.ok(top.includes("\\[할일\\] 새 카드 (민규 서)"), "링크 글자의 [ ] 를 안 막음");
+    assert.ok(rest.includes("린 메모"), "내 커밋도 커밋별에는 있어야 함");
   });
 
   console.log("\n" + n + "개 다 통과");
