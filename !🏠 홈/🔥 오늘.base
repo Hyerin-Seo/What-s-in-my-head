@@ -76,6 +76,8 @@ views:
       유형: Filled
     columnSize:
       file.file: 407
+      note.작성자: 173
+      note.분류: 160
       note.마감: 229
   - type: table
     name: 📥 인박스
