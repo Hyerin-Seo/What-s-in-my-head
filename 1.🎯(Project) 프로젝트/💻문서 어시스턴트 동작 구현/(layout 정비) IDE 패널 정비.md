@@ -24,8 +24,14 @@
 ![[Pasted image 20260921102127.png]]
 - Layout 컴포넌트 구현하기
 - Package로 발라내기
-- 
+- Layout 컴포넌트들 재구성하기
 
 ## 다음 행동
 
-- [ ]
+### 1. Toolbar 정리
+
+### 2. Workspace 정리
+
+### 3. Left Sidebar 정리
+
+### 4. 
