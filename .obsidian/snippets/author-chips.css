@@ -75,6 +75,19 @@
   display: none;
 }
 
+/* ── 칸반 카드의 작성자 줄에는 종류 표시만 ─────────────────────
+   카드 한 줄 = 질문 하나 (2026-09-21 Rin 요청). 담당 줄은 "누가 하나",
+   작성자 줄은 "특별한 일인가" 만 답합니다. 사람·AI 칩은 카드에서만 숨기고
+   속성·표에는 그대로 있습니다. 종류 표시가 없는 카드는 작성자 줄이 통째로 빠집니다.
+   종류 표시를 늘리면 아래 두 규칙의 이름 목록에 같이 더하세요. */
+.obk-card-property[data-label="note.작성자"]:not(:has(.internal-link[data-href="bug"], .internal-link[data-href="챙길 일"])) {
+  display: none;
+}
+
+.obk-card-property[data-label="note.작성자"] .value-list-container > :not([data-href="bug"]):not([data-href="챙길 일"]):not(:has(.internal-link[data-href="bug"], .internal-link[data-href="챙길 일"])) {
+  display: none;
+}
+
 /* ── 사람 ─────────────────────────────────────────────────── */
 
 .internal-link[data-href="민규 서"] {
@@ -91,7 +104,7 @@
    `작성자` 는 원래 "누가 썼나" 입니다. `bug` 는 사람이 아니라 **종류 표시**인데,
    칸반 카드에서 제일 눈에 띄는 칩이 이것이라 여기에 답니다 (2026-09-16 요청).
    `🐛 버그 리포트` 프로젝트의 양식이 기본값으로 넣습니다. 사람 이름을 같이 적으면
-   `bug` 뒤에 붙어서 둘 다 보입니다. */
+   `bug` 뒤에 붙습니다 — 칸반 카드에서는 이름은 숨고 `bug` 만 보입니다. */
 
 .internal-link[data-href="bug"] {
   background: color-mix(in srgb, var(--color-red) 16%, transparent) !important;
