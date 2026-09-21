@@ -41,6 +41,11 @@ def abspath(r): return os.path.join(V, r.replace("/", os.sep))
 def walk_md():
     for root, dirs, files in os.walk(V):
         dirs[:] = [d for d in dirs if d not in (".obsidian", ".trash")]
+        # 에이전트 스킬(SKILL.md 가 있는 폴더)은 노트가 아닙니다 — 플러그인의 inAgentSkill 과 같은 기준.
+        # 안 빼면 --repair --write 가 SKILL.md 에 볼트 속성 13종을 박아 스킬을 망가뜨립니다.
+        if "SKILL.md" in files:
+            dirs[:] = []
+            continue
         for f in files:
             if f.endswith(".md"): yield os.path.join(root, f)
 

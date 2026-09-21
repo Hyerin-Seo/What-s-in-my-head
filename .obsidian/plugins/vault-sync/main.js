@@ -994,7 +994,7 @@ async function restoreTo({ cwd, git, names, point, now }) {
 // ─────────────────────────────────────────────────────────────
 
 const REPORT_PATH = "!🏠 홈/🔀 최근 동기화.md";
-const REPORT_LIST_FILES = 80;   // 커밋 하나에서 적을 파일 수
+const REPORT_LIST_FILES = 15;   // 커밋 하나에서 적을 파일 수 — 넘으면 "그 밖 N개"
 
 /** `git show --name-status -z` → [{ st, path, from }] */
 function parseNameStatusZ(out) {
@@ -1035,7 +1035,7 @@ function reportFile(row) {
  * 최근 며칠의 커밋으로 기록 한 장을 만듭니다 (파일은 안 씀 — 글자만 돌려줌).
  *   before  이번 동기화를 누르기 전의 HEAD. 주면 그 뒤로 **상대가** 만든 커밋을 맨 위에 따로 모읍니다.
  */
-async function buildReport({ cwd, git, names, before, days = 7, maxCommits = 40, now }) {
+async function buildReport({ cwd, git, names, before, days = 7, maxCommits = 15, now }) {  // 15 ≈ 둘이 하루에 누르는 동기화 수
   const nm = Object.assign({}, DEFAULT_NAMES, names || {});
   const g = (args, o = {}) => gitAsync(args, Object.assign({ cwd, git }, o));
   const meRaw = (await g(["config", "--get", "user.name"], { okCodes: [0, 1] })).stdout.trim();
@@ -1101,7 +1101,8 @@ async function buildReport({ cwd, git, names, before, days = 7, maxCommits = 40,
     if (rows.length > REPORT_LIST_FILES) L.push("- … 그 밖 " + (rows.length - REPORT_LIST_FILES) + "개");
     if (settings.length) {
       L.push("", "> [!gear]- ⚙️ 설정·플러그인 파일 " + settings.length + "개");
-      for (const r of settings.slice(0, 40)) L.push("> - " + r.st + " `" + r.path + "`");
+      for (const r of settings.slice(0, REPORT_LIST_FILES)) L.push("> - " + r.st + " `" + r.path + "`");
+      if (settings.length > REPORT_LIST_FILES) L.push("> - … 그 밖 " + (settings.length - REPORT_LIST_FILES) + "개");
     }
     L.push("");
   }
