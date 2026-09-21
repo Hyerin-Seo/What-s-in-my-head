@@ -16,12 +16,14 @@ filters:
 formulas:
   일정시작: if(note["유형"] == "휴가", date(note["작성일"]), if(note["일정"].isEmpty(), date(note["마감"]), date(note["일정"])))
   구분: if(note["유형"] == "휴가", "🏖️ 근무표", if(note["일정"].isEmpty(), "⏰ 마감", "📅 하는 날"))
+  아이콘: if(note["유형"] == "휴가", "🏖️", if(note["일정"].isEmpty(), "⏰", "📅"))
 views:
   - type: calendar
     name: 📅 이번 달
     order:
       - file
-      - formula.구분
+      - formula.아이콘
+      - 담당
     startDate: formula.일정시작
     endDate: note.마감
     weekStartDay: sunday

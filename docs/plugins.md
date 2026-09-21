@@ -15,7 +15,7 @@
 | `snippets/author-chips.css` | 담당·작성자 색 칩 (AI는 🤖 · 버그는 🐛 · 챙길 일은 🧺 표시) |
 | `snippets/heading-link.css` | 제목 링크를 노션처럼 (호버 때만 배경) |
 | `snippets/maruburi.css` | 마루 부리 폰트 |
-| `snippets/calendar-fix.css` | 임베드 안에서 달력이 절반만 그려지던 것 보정 |
+| `snippets/calendar-fix.css` | 임베드 안에서 달력이 절반만 그려지던 것 보정 · 일정 한 줄(아이콘+제목) · 담당 색(Rin 보라 · 민규 서 파랑) |
 | `plugins/kanban-bases-view` | 칸반. 카드를 끌면 프론트매터가 바뀜. **한 줄 고쳐 뒀습니다** — `docs/project-board.md` 의 **칸반 빠른 추가(+)가 빈 폴더를 흘리던 것** |
 | `plugins/claude` | **직접 만든 것 다섯을 묶은 하나.** 아래 표를 보세요 |
 | `scripts/inbox.py` | 인박스 감싸기 + `agy` 로 `요약`·`주제` 채우기 |

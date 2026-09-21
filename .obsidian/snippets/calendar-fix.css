@@ -34,3 +34,71 @@
 .bases-calendar-container .fc-scroller {
   overflow-x: visible !important;
 }
+
+/* ── 일정 한 칸을 한 줄로, 색은 담당 사람으로 (2026-09-21 Rin 요청) ─────────
+   달력 플러그인에는 색 옵션이 없습니다. 대신 `📅 달력.base` 의 달력 뷰가 제목 뒤에
+   `formula.아이콘`(⏰ 마감 · 📅 하는 날 · 🏖️ 근무표) 과 `담당` 을 싣고, 여기서
+     - 아이콘은 제목 앞으로 옮기고
+     - 담당 칩은 숨기되 그 이름으로 왼쪽 줄과 바탕을 칠합니다 (칸반 칩과 같은 색).
+   담당 칩이 DOM 에 있어야 색이 잡히니 뷰의 order 에서 `담당` 을 빼지 마세요.
+   속성 칸에는 이름표가 없어서 순서(1번째 = 아이콘)로 고릅니다 — order 를 바꾸면 여기도. */
+
+body .bases-calendar-container .fc-event {
+  --ev: var(--text-faint);
+  background-color: color-mix(in srgb, var(--ev) 12%, var(--background-primary)) !important;
+  box-shadow: inset 3px 0 0 var(--ev) !important;
+}
+
+body .bases-calendar-container .fc-event:has(.bases-calendar-event-properties .internal-link[data-href="Rin"]) {
+  --ev: var(--color-purple);
+}
+
+body .bases-calendar-container .fc-event:has(.bases-calendar-event-properties .internal-link[data-href="민규 서"]) {
+  --ev: var(--color-blue);
+}
+
+/* 둘이 같이 맡은 일 — 보라·파랑 두 줄 */
+body .bases-calendar-container .fc-event:has(.bases-calendar-event-properties .internal-link[data-href="Rin"]):has(.bases-calendar-event-properties .internal-link[data-href="민규 서"]) {
+  --ev: color-mix(in srgb, var(--color-purple) 50%, var(--color-blue));
+  box-shadow: inset 3px 0 0 var(--color-purple), inset 6px 0 0 var(--color-blue) !important;
+}
+
+/* 여러 날에 걸친 일정은 시작 칸만 진하게 — 다음 주로 넘어간 토막은 흐리게 */
+body .bases-calendar-container .fc-event:not(.fc-event-start) {
+  opacity: 0.5;
+}
+
+/* 한 줄: [아이콘] 제목… */
+.bases-calendar-container .bases-calendar-event-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 6px 3px 9px;
+}
+
+.bases-calendar-container .bases-calendar-event-title {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bases-calendar-container .bases-calendar-event-title .internal-link {
+  color: var(--text-normal) !important;
+  text-decoration: none !important;
+}
+
+.bases-calendar-container .bases-calendar-event-properties {
+  order: -1;
+  flex: none;
+}
+
+.bases-calendar-container .bases-calendar-event-property {
+  padding: 0;
+}
+
+.bases-calendar-container .bases-calendar-event-properties > .bases-calendar-event-property:nth-child(n+2) {
+  display: none;
+}
