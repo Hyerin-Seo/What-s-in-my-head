@@ -44,7 +44,12 @@ views:
       note.상태:
         to do:
           - 1.🎯(Project) 프로젝트/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
-        진행중: []
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/레퍼런스 훑어보고 뜯어 볼 도구 하나 고르기.md
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/은행에 법인카드 발급 서류 물어보고 신청하기.md
+        진행중:
+          - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/(layout 정비) IDE 패널 정비.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/다음 회의를 속기하고 meeting-notes 스킬로 할일 배포까지 해 보기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/gtd + para + ai 아 이놈들을 대체 어떻게 알잘딱하게 엮을 것인가에 대하여 샹.md
         확인 필요:
           - 0.📥 인박스/🥭 망고 인박스/[개발 요청] 옵시디언 에이전트 백엔드 워크플로우 세팅하기.md
   - type: kanban-view
@@ -330,6 +335,31 @@ views:
       - 마감
       - 작성자
     quickAddFolder: 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현
+    groupByProperty: note.상태
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    columnOrders:
+      note.상태:
+        - to do
+        - 진행중
+        - 확인 필요
+        - 완료
+        - 퍼즈
+        - 히스토리
+    columnColors:
+      note.상태: {}
+  - type: kanban-view
+    name: 🧺 챙길 일
+    filters:
+      and:
+        - file.inFolder("1.🎯(Project) 프로젝트/🧺 챙길 일")
+    order:
+      - 담당
+      - 일정
+      - 마감
+      - 작성자
+    quickAddFolder: 1.🎯(Project) 프로젝트/🧺 챙길 일
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover

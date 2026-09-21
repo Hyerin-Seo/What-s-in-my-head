@@ -12,7 +12,7 @@
 | `snippets/wide-page.css` | 전체폭 · 임베드 안 칸반 열 폭 |
 | `snippets/library-cards.css` | 베이스 카드 = 노션 갤러리 모양 |
 | `snippets/kanban-labels.css` | 칸반 빈 열 이름 바꾸기 (`Uncategorized` → 한글) |
-| `snippets/author-chips.css` | 담당·작성자 색 칩 (AI는 🤖 · 버그는 🐛 표시) |
+| `snippets/author-chips.css` | 담당·작성자 색 칩 (AI는 🤖 · 버그는 🐛 · 챙길 일은 🧺 표시) |
 | `snippets/heading-link.css` | 제목 링크를 노션처럼 (호버 때만 배경) |
 | `snippets/maruburi.css` | 마루 부리 폰트 |
 | `snippets/calendar-fix.css` | 임베드 안에서 달력이 절반만 그려지던 것 보정 |

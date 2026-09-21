@@ -104,6 +104,22 @@
   font-size: 9px !important;
 }
 
+/* ── 사람이 아닌 것 — 챙길 일 표시 ────────────────────────
+   `🧺 챙길 일` 프로젝트(회사 행정 · 가족 일 · 개인 잡무)의 카드에 답니다. `bug` 와 같은 방법 —
+   그 폴더 양식이 `작성자` 에 `"[[챙길 일]]"` 을 기본으로 넣습니다 (2026-09-21 요청).
+   노랑은 흰 바탕에서 글자가 흐려서, 글자색만 본문색과 섞어 진하게 합니다. */
+
+.internal-link[data-href="챙길 일"] {
+  background: color-mix(in srgb, var(--color-yellow) 22%, transparent) !important;
+  color: color-mix(in srgb, var(--color-yellow) 60%, var(--text-normal)) !important;
+  font-weight: 600 !important;
+}
+
+.internal-link[data-href="챙길 일"]::before {
+  content: "🧺" !important;
+  font-size: 9px !important;
+}
+
 /* ── AI — 사람과 색 계열을 나눠서 한눈에 구분되게 ──────────── */
 
 .internal-link[data-href="Claude"] {
