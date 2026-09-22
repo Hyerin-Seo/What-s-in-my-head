@@ -61,5 +61,7 @@ views:
         direction: ASC
     summaries:
       유형: Filled
+    columnSize:
+      file.file: 488
 newItemFolder: 0.📥 인박스/🥭 망고 인박스
 newItemTemplate: 0.📥 인박스/!(Template) 새 인박스 노트.md
