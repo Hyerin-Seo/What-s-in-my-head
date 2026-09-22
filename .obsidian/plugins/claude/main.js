@@ -5277,7 +5277,8 @@ function nowStamp() {
 /** 콜아웃 제목에 들어갈 한 줄 — 링크·블록 기호가 섞이면 콜아웃이 깨집니다 */
 function cleanQuote(s) {
   const one = String(s || "").replace(/\[\[#\^c-[a-z0-9]+\|💬\]\]/g, "")
-    .replace(/\[\[|\]\]/g, "").replace(/[|^]/g, "").replace(/^[-*+]\s+|^\d+\.\s+|^#+\s+/, "")
+    .replace(/\[\[|\]\]/g, "").replace(/[|^]/g, "").trim()
+    .replace(/^([-*+]|\d+\.)\s+/, "").replace(/^\[[ xX]\]\s+/, "").replace(/^#+\s+/, "")   // 글머리·할일 칸·제목 기호
     .replace(/\s+/g, " ").trim();
   return one.length > 60 ? one.slice(0, 60) + "…" : (one || "(빈 줄)");
 }
@@ -5600,8 +5601,9 @@ class CommentMod extends Mod {
           if (th.resolved) continue;
           let mine = -1, call = -1;
           th.msgs.forEach((m, i) => {
-            if (m.who === me) mine = i;
-            else if (m.text.replace(/\s+/g, "").toLowerCase().includes(key)) call = i;
+            // 나를 부른 것 — 내가 나를 부른 "나중에 볼 것" 도 셉니다. 부르지 않고 답하거나 해결하면 빠집니다
+            if (m.text.replace(/\s+/g, "").toLowerCase().includes(key)) call = i;
+            else if (m.who === me) mine = i;
           });
           if (call > mine) out.push({ file: f, thread: th, msg: th.msgs[call] });
         }
@@ -5622,42 +5624,64 @@ class CommentMod extends Mod {
       (Rin 은 `개똥이 머릿속`, 민규 서는 `What-s-in-my-head` 처럼 기기마다 폴더 이름이 다릅니다) */
   async registerVault() {
     const me = this.me(), name = this.app.vault.getName();
-    if (!me || !name || (this.settings.vaults || {})[me] === name) return;
+    if (!me || !name || this.vaults()[me] === name) return;   // 기본값과 같으면 파일을 안 건드립니다 (동기화 충돌 방지)
     this.settings.vaults = Object.assign({}, this.settings.vaults, { [me]: name });
     await this.save();
   }
 
-  /** 그 사람 볼트에서 이 노트를 여는 https 주소 — 슬랙은 `obsidian://` 을 눌리게 안 해 줘서 중계 주소를 씁니다 */
-  noteLink(file, person) {
-    const tpl = String(this.settings.linkTemplate || "").trim();
-    const vault = (this.settings.vaults || {})[person];
-    if (!tpl || !vault) return "";
-    return tpl.replace("{vault}", encodeURIComponent(vault))
-              .replace("{file}", encodeURIComponent(file.path.replace(/\.md$/, "")));
+  /** 사람 → 볼트 이름. 기본값(두 사람)에 기기가 적어 둔 것을 얹습니다 — 저장된 표가 기본값을 통째로 덮지 않게 */
+  vaults() { return Object.assign({}, DEFAULTS.comment.vaults, this.settings.vaults); }
+
+  /** 이 노트를 여는 https 주소 하나 — 슬랙은 `obsidian://` 을 눌리게 안 해 줘서 중계 페이지를 거칩니다.
+      볼트 이름 후보를 **다 담습니다.** 채널은 둘 다 보는데 받는 사람 볼트 이름 하나만 넣었더니, 다른 사람이 누르면
+      "Vault not found" 가 떴습니다 (2026-09-22). 중계 페이지가 누른 사람이 한 번 고른 볼트를 기억해서 엽니다. */
+  noteLink(file) {
+    // 비어 있으면 기본 중계 페이지 — 예전 코드가 빈 값을 data.json 에 적어 둬서 링크가 안 붙었습니다. 링크를 끄려면 `끔`.
+    const raw = String(this.settings.linkTemplate || "").trim();
+    if (raw === "끔") return "";
+    const tpl = raw || DEFAULTS.comment.linkTemplate;
+    const names = [...new Set(Object.values(this.vaults()).filter(Boolean))];
+    if (!tpl || !names.length) return "";
+    return tpl.replace("{file}", encodeURIComponent(file.path.replace(/\.md$/, "")))
+              .replace("{vaults}", names.map((v) => "v=" + encodeURIComponent(v)).join("&"))
+              .replace("{vault}", encodeURIComponent(names[0]));   // 예전 틀 — 후보 하나만
   }
 
-  /** 슬랙에 보낼 메시지 — 누가 누구를 · 한 말 · 무엇에 · 어느 노트 순서로 한눈에 */
+  /** 슬랙에 보낼 메시지 — **댓글 내용이 주인공**입니다. 누가·누구·어디·링크는 작고 흐리게.
+      예전엔 `누가 → 누구` 줄과 댓글이 같은 크기에 멘션 칩까지 둘 다 있어서 뭐가 중요한지 헷갈렸습니다 (2026-09-22 Rin).
+
+        작게   💬 Rin → @서민규                 알림(멘션)은 이 줄로 갑니다
+        크게   현재 볼트 문제점 세 가지 이상 대보시오.
+        작게   코멘트 단 자리의 제목 · 윗줄 · 그 줄 · 아랫줄
+        작게   📄 노트 · 폴더   옵시디언에서 열기 →                                    */
   slackPayload(file, quote, who, text, called, ctx) {
     const ids = this.settings.slackIds || {};
     const esc = (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    const reEsc = (v) => v.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const tag = (p) => (ids[p] ? "<@" + ids[p] + ">" : "*@" + esc(p) + "*");
-    // 본문의 `@민규서` 도 슬랙 멘션으로 — 글자로 두면 누구를 부른 건지 눈에 안 들어옵니다
-    let body = esc(text);
+    const self = called.length === 1 && called[0] === who;
+    const byline = self ? "📌  *" + esc(who) + "* 의 나중에 볼 것  " + tag(who)
+                        : "💬  *" + esc(who) + "*  →  " + called.map(tag).join(" ");
+    // 댓글 — 150자 안의 한 줄이면 큰 제목(header), 길거나 여러 줄이면 굵은 문단.
+    // `@민규서` 같은 언급은 위 작은 줄에 이미 있으니 여기선 빼고 할 말만 (언급뿐이면 그대로 둠)
+    const reEsc = (v) => v.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    let said = String(text);
     for (const p of this.people()) {
-      const re = new RegExp("@" + [...p.replace(/\s+/g, "")].map(reEsc).join("\\s*"), "gi");
-      body = body.replace(re, tag(p));
+      said = said.replace(new RegExp("@" + [...p.replace(/\s+/g, "")].map(reEsc).join("\\s*"), "gi"), " ");
     }
-    if (body.length > 2800) body = body.slice(0, 2800) + "…";
+    said = said.split("\n").map((l) => l.replace(/[ \t]+/g, " ").trim()).join("\n").trim() || String(text).trim();
+    const hero = said.length <= 150 && !said.includes("\n")
+      ? { type: "header", text: { type: "plain_text", text: said, emoji: true } }
+      : { type: "section", text: { type: "mrkdwn", text: said.slice(0, 2800).split("\n")
+          .map((l) => (l.trim() ? "*" + esc(l.trim().replace(/\*/g, "＊")) + "*" : "")).join("\n") } };
     const folder = file.parent && file.parent.path !== "/" ? file.parent.name : "";
-    const links = called.map((p) => [p, this.noteLink(file, p)]).filter((x) => x[1]);
-    const open = links.length === 1 ? "   <" + links[0][1] + "|옵시디언에서 열기 →>"
-      : links.map(([p, u]) => "   <" + u + "|" + esc(p) + " 볼트에서 열기 →>").join("");
+    const link = this.noteLink(file);
+    const open = link ? "   <" + link + "|옵시디언에서 열기 →>" : "";
     return {
-      text: esc(who) + " 님이 불렀어요 " + called.map(tag).join(" ") + " — " + esc(text).slice(0, 140),
+      // 알림 미리보기(푸시)에 뜨는 글 — 여기서도 댓글이 먼저
+      text: esc(said).slice(0, 140) + "  — " + (self ? "📌 " + tag(who) : esc(who) + " → " + called.map(tag).join(" ")),
       blocks: [
-        { type: "section", text: { type: "mrkdwn", text: "💬  *" + esc(who) + "*  →  " + called.map(tag).join(" ") } },
-        { type: "section", text: { type: "mrkdwn", text: body } },
+        { type: "context", elements: [{ type: "mrkdwn", text: byline }] },
+        hero,
         { type: "context", elements: [{ type: "mrkdwn", text: ctx
           ? [ctx.head && "*" + esc(ctx.head) + "*", ctx.before && esc(ctx.before),
              "*" + esc(ctx.line) + "*   ← 💬", ctx.after && esc(ctx.after)].filter(Boolean).join("\n")
@@ -5669,8 +5693,13 @@ class CommentMod extends Mod {
   }
 
   async notify(file, quote, who, text, id) {
-    const called = this.mentions(text).filter((p) => p !== who);
-    if (!called.length) return;
+    // 자기 자신을 불러도 보냅니다 — "나중에 볼 것" 으로 슬랙에 남겨 두는 용도 (2026-09-22 Rin 요청)
+    const called = this.mentions(text);
+    if (!called.length) {
+      // 아무 말 없이 넘기면 "알림이 안 간다" 가 고장처럼 보입니다
+      new Notice("💬 남겼습니다 (부른 사람 없음 — 알림 안 감)", 5000);
+      return;
+    }
     const url = this.webhook();
     if (!url) {
       new Notice("💬 " + called.join(" · ") + " 님을 불렀습니다.\n슬랙 웹훅이 없는 기기라 옵시디언 안(🔔)에서만 " +
@@ -5750,9 +5779,10 @@ class CommentMod extends Mod {
     new Setting(c)
       .setName("바로 가기 주소 틀")
       .setDesc("슬랙 알림에 `옵시디언에서 열기 →` 를 답니다. 슬랙은 obsidian:// 을 눌리게 안 해 줘서 https 중계 주소를 씁니다. " +
-               "{vault} 와 {file} 자리에 받는 사람의 볼트 이름과 노트 경로가 들어갑니다. 비우면 링크를 안 답니다. " +
+               "{file} 자리에 노트 경로, {vaults} 자리에 볼트 이름 후보들이 들어가고, 중계 페이지가 누른 사람이 고른 볼트로 엽니다. " +
+               "비우면 기본 중계 페이지(hyerin-seo.github.io/obsidian-comment-repository), `끔` 이면 링크를 안 답니다. " +
                "두 기기가 같이 씁니다.")
-      .addText((t) => t.setPlaceholder("https://…/#vault={vault}&file={file}")
+      .addText((t) => t.setPlaceholder(DEFAULTS.comment.linkTemplate)
         .setValue(this.settings.linkTemplate || "")
         .onChange(async (v) => { this.settings.linkTemplate = v.trim(); await this.save(); }));
     new Setting(c)
@@ -5987,9 +6017,10 @@ const DEFAULTS = {
   comment: {
     // 슬랙 멤버 ID — 비밀 아님, 두 기기가 같이 씁니다. 웹훅 주소(비밀)는 여기 말고 기기별 localStorage.
     slackIds: { "Rin": "U09LDCUNWAF", "민규 서": "U09LPA180CC" },
-    vaults: {},         // 사람 → 그 기기의 볼트 이름. 각 기기가 켤 때 자기 것을 적습니다 (바로 가기 링크용)
+    // 사람 → 그 기기의 볼트 이름 (바로 가기 링크용). 다르면 각 기기가 켤 때 자기 것을 덧적습니다
+    vaults: { "Rin": "개똥이 머릿속", "민규 서": "What-s-in-my-head" },
     // 슬랙의 `옵시디언에서 열기 →` 주소 틀. 중계 페이지는 github.com/Hyerin-Seo/obsidian-comment-repository (비우면 링크 없음)
-    linkTemplate: "https://hyerin-seo.github.io/obsidian-comment-repository/#vault={vault}&file={file}",
+    linkTemplate: "https://hyerin-seo.github.io/obsidian-comment-repository/#file={file}&{vaults}",
   },
 };
 
