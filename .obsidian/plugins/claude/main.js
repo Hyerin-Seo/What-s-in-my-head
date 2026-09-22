@@ -286,6 +286,23 @@ function mapBoardPaths(text, fn) {
   return { text: withEol(lines.join("\n"), nl), changes };
 }
 
+/** 프론트매터에서 **값이 적힌** 칸 이름들 — 스칼라가 비지 않았거나 목록 항목이 있는 칸.
+    메타데이터 캐시가 아직 못 읽은 파일(동기화로 막 들어온 것)도 글자로 직접 봅니다. */
+function filledKeys(data) {
+  const t = toLf(data);
+  const out = new Set();
+  if (!t.startsWith("---\n")) return out;
+  const end = t.indexOf("\n---", 3);
+  if (end < 0) return out;
+  const lines = t.slice(4, end + 1).split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    const m = /^([^\s#][^:]*):[ \t]*(.*)$/.exec(lines[i]);
+    if (!m) continue;
+    if (m[2].trim() || (i + 1 < lines.length && /^\s+-\s*\S/.test(lines[i + 1]))) out.add(m[1].trim());
+  }
+  return out;
+}
+
 /**
  * 프론트매터의 특정 속성만 바꿔 쓴다.
  * @param data       파일 전체 텍스트
@@ -1246,10 +1263,23 @@ class ParaMod extends Mod {
       if (p.state) props["상태"] = p.state;
       if (p.cls) props["분류"] = [p.cls];
       for (const k of (EXTRA_KEYS[p.kind] || [])) props[k] = "";
-      await this.app.vault.process(file, (data) => setProps(data, props));
+      let wrote = false;
+      await this.app.vault.process(file, (data) => {
+        const has = filledKeys(data);
+        if (has.has("구역") || has.has("유형")) return data;     // 그 사이 채워졌으면 물러난다
+        // **적힌 값은 안 덮습니다.** 예전엔 13종을 전부 빈 값으로 넘겨서, 구역·유형만 빈 노트의
+        // 요약·주제 같은 값까지 지울 수 있었습니다 (2026-09-22 발견).
+        const add = {};
+        for (const [k, v] of Object.entries(props)) if (!has.has(k)) add[k] = v;
+        wrote = true;
+        return setProps(data, add);
+      });
+      if (!wrote) return false;
     } else {
+      let wrote = false;
       await this.app.vault.process(file, (data) => {
         if (toLf(data).startsWith("---\n")) return data;   // 그 사이에 생겼으면 물러난다
+        wrote = true;
         const out = ["---"];
         for (const k of STD) {
           if (k === "유형" && p.kind) out.push("유형: " + p.kind);
@@ -1267,6 +1297,9 @@ class ParaMod extends Mod {
         out.push("---", "");
         return out.join("\n") + data;
       });
+      // 물러났으면 알림도 없습니다. 동기화로 노트 수십 장이 한꺼번에 들어오면 옵시디언이 속성을 읽기 전에
+      // 여기로 와서, 이미 유형이 있는 노트마다 "유형을 고르라" 알림이 떴습니다 (2026-09-22 회의 안건 24장).
+      if (!wrote) return false;
     }
 
     if (this.settings.authorFromName) await this.fillAuthor(file, "stamp");
