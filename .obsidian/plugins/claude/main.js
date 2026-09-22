@@ -31,7 +31,7 @@
  */
 const {
   Plugin, PluginSettingTab, Setting, Notice, Modal, Menu,
-  TFile, TFolder, normalizePath, parseYaml, Keymap, requestUrl,
+  TFile, TFolder, normalizePath, parseYaml, Keymap, requestUrl, ItemView,
 } = require("obsidian");
 
 /* ══ 공통 도우미 ══════════════════════════════════════════ */
@@ -5368,7 +5368,11 @@ class CommentMod extends Mod {
     this.statusEl = this.addStatusBarItem();
     this.statusEl.addClass("mod-clickable");
     this.statusEl.style.display = "none";
-    this.statusEl.onclick = () => new CommentPingsModal(this.app, this).open();
+    this.statusEl.onclick = () => this.openPanel();
+
+    // 오른쪽 💬 토론 패널 — 노션의 "토론" 처럼 댓글을 한곳에서 보고 답합니다
+    this.plugin.registerView(COMMENT_VIEW, (leaf) => new CommentPanelView(leaf, this));
+    this.addRibbonIcon("message-square", "💬 토론 패널", () => this.openPanel());
 
     this.registerEvent(this.app.workspace.on("editor-menu", (menu, editor, view) => {
       if (!view || !view.file) return;
@@ -5383,7 +5387,7 @@ class CommentMod extends Mod {
     });
     this.addCommand({
       id: "list",
-      name: "이 노트의 코멘트 보기",
+      name: "토론 패널 열기 (이 노트의 댓글)",
       checkCallback: (checking) => {
         const f = this.app.workspace.getActiveFile();
         if (!f || f.extension !== "md") return false;
@@ -5393,8 +5397,8 @@ class CommentMod extends Mod {
     });
     this.addCommand({
       id: "pings",
-      name: "나를 부른 코멘트 보기",
-      callback: () => new CommentPingsModal(this.app, this).open(),
+      name: "나를 부른 코멘트 보기 (토론 패널)",
+      callback: () => this.openPanel(),
     });
 
     // 💬 를 누르면 그 스레드 창 — 읽기 모드는 링크로, 편집 모드는 글자 자리로 찾습니다
@@ -5411,10 +5415,29 @@ class CommentMod extends Mod {
       }
       this.flushOutbox();
       this.registerVault();
+
+      // 토론 패널은 지금 보는 노트를 따라갑니다
+      this.registerEvent(this.app.workspace.on("active-leaf-change", (leaf) => {
+        const v = this.panel();
+        if (!v || !leaf || leaf.view === v) return;
+        if (leaf.view && leaf.view.getViewType && leaf.view.getViewType() === "markdown") v.setFile(leaf.view.file);
+      }));
+      this.registerEvent(this.app.workspace.on("file-open", (f) => { const v = this.panel(); if (v && f) v.setFile(f); }));
+      this.registerEvent(this.app.vault.on("modify", (f) => {
+        const v = this.panel();
+        if (!v || !v.file || f.path !== v.file.path) return;
+        clearTimeout(this.panelTimer);
+        this.panelTimer = setTimeout(() => v.render(), 400);
+      }));
+      // 기기마다 처음 한 번은 패널을 열어 둡니다 — 있는 줄 모르면 못 씁니다
+      if (!this.app.loadLocalStorage("claude-comment-panel-seen")) {
+        this.app.saveLocalStorage("claude-comment-panel-seen", "1");
+        this.openPanel();
+      }
     });
   }
 
-  onunload() { clearTimeout(this.scanTimer); }
+  onunload() { clearTimeout(this.scanTimer); clearTimeout(this.panelTimer); }
 
   /* ── 누구 ─────────────────────────────────────────────── */
 
@@ -5536,16 +5559,73 @@ class CommentMod extends Mod {
 
   async threads(file) { return parseThreads(await this.app.vault.read(file)); }
 
-  async openThread(file, id) {
-    const th = (await this.threads(file)).find((t) => t.id === id);
-    if (!th) { new Notice("💬 이 코멘트의 스레드가 노트 아래에 없습니다 (" + id + ")"); return; }
-    this.withMe(() => new CommentThreadModal(this.app, this, { file, quote: th.quote, thread: th }).open());
+  /** 💬 를 눌렀을 때 · 🔔 에서 · 명령에서 — 다 오른쪽 토론 패널로 모읍니다 (예전엔 팝업이었습니다) */
+  async openThread(file, id) { return this.openPanel(file, id); }
+  async openList(file) { return this.openPanel(file); }
+
+  panel() {
+    const leaf = this.app.workspace.getLeavesOfType(COMMENT_VIEW)[0];
+    return leaf && leaf.view instanceof CommentPanelView ? leaf.view : null;
   }
 
-  async openList(file) {
-    const list = await this.threads(file);
-    if (!list.length) { new Notice("💬 이 노트에는 코멘트가 없습니다.\n글을 골라 우클릭 → 💬 코멘트 달기"); return; }
-    new CommentListModal(this.app, this, file, list).open();
+  refreshPanel() { const v = this.panel(); if (v) v.render(); }
+
+  /** 오른쪽 사이드바에 토론 패널을 열고 (없으면 만들고) 그 노트 · 그 스레드를 보여 줍니다 */
+  async openPanel(file, focusId, jumpToo) {
+    const ws = this.app.workspace;
+    let leaf = ws.getLeavesOfType(COMMENT_VIEW)[0];
+    if (!leaf) {
+      leaf = ws.getRightLeaf(false);
+      await leaf.setViewState({ type: COMMENT_VIEW, active: false });
+    }
+    await ws.revealLeaf(leaf);
+    const v = leaf.view;
+    if (!(v instanceof CommentPanelView)) return null;
+    if (file) v.file = file;
+    v.focusId = focusId || null;
+    if (jumpToo && file && focusId) await this.jump(file, focusId);
+    await v.render();
+    return v;
+  }
+
+  /** 본문의 그 💬 자리로 — 노트가 안 열려 있으면 엽니다 */
+  async jump(file, id) {
+    const ws = this.app.workspace;
+    let leaf = ws.getLeavesOfType("markdown").find((l) => l.view && l.view.file === file);
+    if (!leaf) { leaf = ws.getLeaf(false); await leaf.openFile(file); }
+    ws.setActiveLeaf(leaf, { focus: true });
+    const line = toLf(await this.app.vault.read(file)).split("\n")
+      .findIndex((l) => l.includes("[[#^" + id + "|💬]]"));
+    if (line < 0) return;
+    const view = leaf.view;
+    try {
+      if (view.getMode && view.getMode() === "source" && view.editor) {
+        view.editor.setCursor({ line, ch: 0 });
+        view.editor.scrollIntoView({ from: { line, ch: 0 }, to: { line, ch: 0 } }, true);
+      } else {
+        leaf.setEphemeralState({ line });
+      }
+    } catch (e) { /* 못 옮겨도 노트는 열렸습니다 */ }
+  }
+
+  /** 패널의 `＋ 댓글 달기` — 그 노트의 편집 화면에서 고른 글(없으면 커서 줄)에 답니다 */
+  startInFile(file) {
+    const leaf = this.app.workspace.getLeavesOfType("markdown").find((l) => l.view && l.view.file === file);
+    const view = leaf && leaf.view;
+    if (!view || !view.editor || (view.getMode && view.getMode() !== "source")) {
+      new Notice("💬 노트를 편집 모드로 열고, 댓글 달 글을 고르거나 그 줄에 커서를 둔 뒤 다시 누르세요.", 7000);
+      return;
+    }
+    this.startFromEditor(view.editor, view);
+  }
+
+  /** 메시지 글 — `@이름` 만 색을 입힙니다 */
+  renderText(el, text) {
+    for (const part of String(text).split(/(@\S+)/)) {
+      if (!part) continue;
+      if (part.startsWith("@") && this.mentions(part).length) el.createSpan({ cls: "cmt-at", text: part });
+      else el.appendText(part);
+    }
   }
 
   onClick(evt) {
@@ -5614,6 +5694,7 @@ class CommentMod extends Mod {
     this.statusEl.setText("🔔 " + out.length);
     this.statusEl.setAttribute("aria-label", "나를 부른 코멘트 " + out.length + "개 — 눌러서 보기");
     this.statusEl.setAttribute("data-tooltip-position", "top");
+    this.refreshPanel();
   }
 
   /* ── 슬랙 ─────────────────────────────────────────────── */
@@ -5825,12 +5906,7 @@ class CommentThreadModal extends Modal {
       const top = box.createEl("div");
       top.createEl("span", { cls: "cmt-who", text: m.who });
       top.createEl("span", { cls: "cmt-when", text: m.when });
-      const body = box.createEl("div", { cls: "cmt-text" });
-      for (const part of m.text.split(/(@\S+)/)) {
-        if (!part) continue;
-        if (part.startsWith("@") && this.mod.mentions(part).length) body.createEl("span", { cls: "cmt-at", text: part });
-        else body.appendText(part);
-      }
+      this.mod.renderText(box.createEl("div", { cls: "cmt-text" }), m.text);
     }
 
     const ta = contentEl.createEl("textarea", {
@@ -5881,52 +5957,155 @@ class CommentThreadModal extends Modal {
   onClose() { this.contentEl.empty(); }
 }
 
-/** 이 노트의 스레드 목록 */
-class CommentListModal extends Modal {
-  constructor(app, mod, file, list) {
-    super(app);
-    this.mod = mod; this.file = file; this.list = list;
+/* ── 오른쪽 💬 토론 패널 ─────────────────────────────────────
+   노션의 "토론" 처럼 — 지금 노트의 댓글을 한곳에서 보고 그 자리에서 답합니다.
+   예전엔 슬랙(알림) · 노트 맨 아래(읽기) · 팝업(답글) 세 군데를 오가서 "새롭고 숙달이 안 돼서 불편하다" 는
+   말이 나왔습니다 (2026-09-22 민규 서 → Rin). 저장은 그대로 노트 안이고, 패널은 그걸 보여 주고 고치는 창입니다.
+
+     🔔 나를 부른 것      볼트 전체. 누르면 그 노트로 가서 그 스레드를 강조
+     💬 지금 노트          열린 스레드마다 카드 — 인용(누르면 본문 그 자리로) · 메시지 · 답글 칸 · ✅ 해결
+     ▸ ✅ 해결됨 N         접혀 있음. 펼치면 ↩ 다시 열기                                                   */
+const COMMENT_VIEW = "claude-comment-panel";
+
+class CommentPanelView extends ItemView {
+  constructor(leaf, mod) {
+    super(leaf);
+    this.mod = mod;
+    this.file = null;       // 보여 줄 노트 — 마지막으로 본 마크다운
+    this.focusId = null;    // 강조할 스레드
+    this.showDone = false;  // 해결된 것 펼치기
+    this.drafts = {};       // 쓰다 만 답글 — 다시 그려도 안 날아가게
+    this.pending = false;   // 답글을 쓰는 동안 미뤄 둔 다시 그리기
   }
-  onOpen() {
-    this.modalEl.addClass("claude-cmt-modal");
-    this.titleEl.setText("💬 " + this.file.basename + " — 코멘트 " + this.list.length + "개");
-    for (const th of this.list) {
-      const last = th.msgs[th.msgs.length - 1];
-      const it = this.contentEl.createEl("div", { cls: "cmt-item" + (th.resolved ? " is-done" : "") });
-      it.createEl("div", { cls: "cmt-quote", text: (th.resolved ? "✅ " : "") + th.quote });
-      if (last) it.createEl("div", { cls: "cmt-sub", text: last.who + " · " + last.when + " — " + last.text.slice(0, 80) });
-      it.onclick = () => { this.close(); this.mod.openThread(this.file, th.id); };
+  getViewType() { return COMMENT_VIEW; }
+  getDisplayText() { return "💬 토론"; }
+  getIcon() { return "message-square"; }
+
+  async onOpen() {
+    this.contentEl.addClass("claude-cmt-panel");
+    const f = this.app.workspace.getActiveFile();
+    if (f && f.extension === "md") this.file = f;
+    await this.render();
+  }
+
+  setFile(file) {
+    if (!file || file.extension !== "md" || file === this.file) return;
+    this.file = file;
+    this.focusId = null;
+    this.render();
+  }
+
+  async render() {
+    const el = this.contentEl;
+    const file = this.file && this.app.vault.getAbstractFileByPath(this.file.path);
+    let threads = [];
+    if (file instanceof TFile) {
+      try { threads = parseThreads(await this.app.vault.cachedRead(file)); } catch (e) { threads = []; }
+    }
+    // 답글을 쓰는 중이면 다시 그리지 않고 미뤄 둡니다 — 커서와 쓰던 글이 날아가지 않게.
+    // 읽기(await) **뒤에** 봅니다. 앞에서 보면 읽는 사이에 답글 칸을 누른 걸 놓치고 판을 갈아엎습니다.
+    const act = document.activeElement;
+    if (act && act.tagName === "TEXTAREA" && el.contains(act)) { this.pending = true; return; }
+    this.pending = false;
+    el.empty();
+
+    const pings = this.mod.pings || [];
+    if (pings.length) {
+      const box = el.createDiv({ cls: "cmt-pings" });
+      box.createDiv({ cls: "cmt-sec", text: "🔔 나를 부른 것 " + pings.length });
+      for (const p of pings) {
+        const it = box.createDiv({ cls: "cmt-ping" });
+        it.createDiv({ cls: "cmt-ping-text", text: p.msg.text.split("\n")[0].slice(0, 80) });
+        it.createDiv({ cls: "cmt-sub", text: p.msg.who + " · " + p.file.basename });
+        it.onclick = () => this.mod.openPanel(p.file, p.thread.id, true);
+      }
+    }
+
+    el.createDiv({ cls: "cmt-sec", text: file instanceof TFile ? "💬 " + file.basename
+                                                                : "💬 노트를 열면 그 노트의 댓글이 여기 보입니다" });
+    if (!(file instanceof TFile)) return;
+
+    const open = threads.filter((t) => !t.resolved);
+    const done = threads.filter((t) => t.resolved);
+    if (!open.length) {
+      el.createDiv({ cls: "cmt-empty", text: done.length ? "열린 댓글이 없어요." : "아직 댓글이 없어요." });
+    }
+    for (const th of open) this.card(el, file, th);
+    if (done.length) {
+      const t = el.createDiv({ cls: "cmt-done-toggle", text: (this.showDone ? "▾" : "▸") + " ✅ 해결됨 " + done.length });
+      t.onclick = () => { this.showDone = !this.showDone; this.render(); };
+      if (this.showDone) for (const th of done) this.card(el, file, th);
+    }
+    const add = el.createEl("button", { cls: "cmt-add", text: "＋ 댓글 달기 (고른 글 · 안 골랐으면 커서 줄)" });
+    add.onclick = () => this.mod.startInFile(file);
+
+    if (this.focusId) {
+      const f = el.querySelector('[data-cid="' + this.focusId + '"]');
+      if (f) { f.addClass("is-focus"); f.scrollIntoView({ block: "center" }); }
     }
   }
-  onClose() { this.contentEl.empty(); }
-}
 
-/** 나를 부른 코멘트 */
-class CommentPingsModal extends Modal {
-  constructor(app, mod) { super(app); this.mod = mod; }
-  async onOpen() {
-    this.modalEl.addClass("claude-cmt-modal");
-    await this.mod.scan();
-    const list = this.mod.pings;
-    const me = this.mod.me();
-    this.titleEl.setText("🔔 " + (me || "나") + " 를 부른 코멘트 " + list.length + "개");
-    if (!list.length) {
-      this.contentEl.createEl("p", { cls: "cmt-sub", text: "답할 것이 없습니다. 다른 사람이 남긴 건 🔀 동기화 뒤에 뜹니다." });
+  card(el, file, th) {
+    const c = el.createDiv({ cls: "cmt-card" + (th.resolved ? " is-done" : "") });
+    c.setAttribute("data-cid", th.id);
+    const q = c.createDiv({ cls: "cmt-card-quote", text: th.quote });
+    q.setAttribute("aria-label", "본문 그 자리로");
+    q.onclick = () => this.mod.jump(file, th.id);
+    for (const m of th.msgs) {
+      const box = c.createDiv({ cls: "cmt-msg" });
+      const top = box.createDiv();
+      top.createSpan({ cls: "cmt-who", text: m.who });
+      top.createSpan({ cls: "cmt-when", text: m.when.slice(5) });
+      this.mod.renderText(box.createDiv({ cls: "cmt-text" }), m.text);
+    }
+    if (th.resolved) {
+      const r = c.createEl("button", { cls: "cmt-mini", text: "↩ 다시 열기" });
+      r.onclick = async () => { await this.mod.setResolved(file, th, false); this.mod.scan(); };
       return;
     }
-    for (const p of list) {
-      const it = this.contentEl.createEl("div", { cls: "cmt-item" });
-      it.createEl("div", { cls: "cmt-quote", text: p.thread.quote });
-      it.createEl("div", { cls: "cmt-sub", text: "📄 " + p.file.basename + " · " + p.msg.who + " · " + p.msg.when +
-                                                   " — " + p.msg.text.slice(0, 80) });
-      it.onclick = async () => {
-        this.close();
-        await this.app.workspace.getLeaf(false).openFile(p.file);
-        this.mod.openThread(p.file, p.thread.id);
+
+    const ta = c.createEl("textarea", { attr: { rows: "1", placeholder: "답글 — @ 로 부르기 · Ctrl+Enter" } });
+    ta.value = this.drafts[th.id] || "";
+    ta.oninput = () => { this.drafts[th.id] = ta.value; };
+    ta.onblur = () => { if (this.pending) setTimeout(() => this.render(), 50); };
+    const row = c.createDiv({ cls: "cmt-row" });
+    for (const p of this.mod.people()) {
+      const b = row.createEl("button", { cls: "cmt-mini", text: "@" + p });
+      b.onmousedown = (e) => e.preventDefault();   // 답글 칸의 커서를 안 뺏기게
+      b.onclick = () => {
+        const tag = "@" + p.replace(/\s+/g, "") + " ";
+        const s = ta.selectionStart;
+        ta.value = ta.value.slice(0, s) + tag + ta.value.slice(ta.selectionEnd);
+        this.drafts[th.id] = ta.value;
+        ta.focus();
+        ta.selectionStart = ta.selectionEnd = s + tag.length;
       };
     }
+    row.createSpan({ cls: "cmt-grow" });
+    const res = row.createEl("button", { cls: "cmt-mini", text: "✅ 해결" });
+    res.onclick = async () => { await this.mod.setResolved(file, th, true); this.mod.scan(); };
+    const send = row.createEl("button", { cls: "cmt-mini mod-cta", text: "답글" });
+    const submit = () => {
+      const text = ta.value.trim();
+      if (!text) { ta.focus(); return; }
+      send.disabled = true;
+      this.mod.withMe(async (who) => {
+        try {
+          if (await this.mod.reply(file, th, who, text)) { delete this.drafts[th.id]; ta.value = ""; }
+        } catch (e) {
+          new Notice("💬 못 남겼습니다 — " + e.message, 8000);
+        }
+        send.disabled = false;
+        ta.blur();
+        this.focusId = th.id;
+        this.mod.scan();
+      });
+    };
+    send.onclick = submit;
+    ta.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); submit(); }
+    });
   }
-  onClose() { this.contentEl.empty(); }
 }
 
 /** 이 기기를 쓰는 사람을 한 번 묻는다 */

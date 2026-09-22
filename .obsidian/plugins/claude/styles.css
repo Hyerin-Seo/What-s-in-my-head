@@ -258,3 +258,34 @@
 .claude-cmt-modal .cmt-item:hover { background: var(--background-modifier-hover); }
 .claude-cmt-modal .cmt-item.is-done { opacity: .6; }
 .claude-cmt-modal .cmt-sub { color: var(--text-muted); font-size: var(--font-ui-smaller); margin-top: 3px; }
+
+/* ── 💬 토론 패널 (오른쪽 사이드바) ──────────────────────────────
+   노션의 "토론" 처럼 지금 노트의 댓글을 모아 보고 그 자리에서 답합니다. */
+.claude-cmt-panel { padding: 6px 10px 24px; font-size: var(--font-ui-small); }
+.claude-cmt-panel .cmt-sec { font-weight: 600; margin: 10px 2px 8px; color: var(--text-normal); word-break: break-all; }
+.claude-cmt-panel .cmt-pings { background: var(--background-secondary); border-radius: 8px; padding: 1px 8px 6px; margin-bottom: 4px; }
+.claude-cmt-panel .cmt-ping { padding: 6px 6px; border-radius: 6px; cursor: pointer; }
+.claude-cmt-panel .cmt-ping:hover { background: var(--background-modifier-hover); }
+.claude-cmt-panel .cmt-ping-text { color: var(--text-normal); }
+.claude-cmt-panel .cmt-sub { color: var(--text-faint); font-size: var(--font-ui-smaller); margin-top: 2px; }
+.claude-cmt-panel .cmt-card { border: 1px solid var(--background-modifier-border); border-radius: 8px;
+  padding: 8px 10px; margin-bottom: 10px; background: var(--background-primary); }
+.claude-cmt-panel .cmt-card.is-focus { outline: 2px solid var(--interactive-accent); outline-offset: -1px; }
+.claude-cmt-panel .cmt-card.is-done { opacity: .6; }
+.claude-cmt-panel .cmt-card-quote { border-left: 3px solid var(--interactive-accent); padding: 1px 0 1px 8px;
+  color: var(--text-muted); font-size: var(--font-ui-smaller); cursor: pointer; margin-bottom: 4px; }
+.claude-cmt-panel .cmt-card-quote:hover { color: var(--text-normal); }
+.claude-cmt-panel .cmt-msg { padding: 5px 0 3px; }
+.claude-cmt-panel .cmt-msg + .cmt-msg { border-top: 1px solid var(--background-modifier-border); }
+.claude-cmt-panel .cmt-who { font-weight: 600; }
+.claude-cmt-panel .cmt-when { color: var(--text-faint); font-size: var(--font-ui-smaller); margin-left: 6px; }
+.claude-cmt-panel .cmt-text { white-space: pre-wrap; margin-top: 2px; color: var(--text-normal); }
+.claude-cmt-panel .cmt-at { color: var(--text-accent); font-weight: 600; }
+.claude-cmt-panel textarea { width: 100%; margin-top: 6px; min-height: 32px; resize: vertical; font-size: var(--font-ui-small); }
+.claude-cmt-panel textarea:focus { min-height: 66px; }
+.claude-cmt-panel .cmt-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-top: 4px; }
+.claude-cmt-panel .cmt-mini { font-size: var(--font-ui-smaller); padding: 2px 8px; height: auto; }
+.claude-cmt-panel .cmt-grow { flex: 1; }
+.claude-cmt-panel .cmt-done-toggle { cursor: pointer; color: var(--text-muted); margin: 8px 2px; }
+.claude-cmt-panel .cmt-empty { color: var(--text-muted); padding: 6px 2px 10px; }
+.claude-cmt-panel .cmt-add { width: 100%; margin-top: 6px; }
