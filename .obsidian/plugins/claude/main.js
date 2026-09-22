@@ -201,6 +201,12 @@ function meaningfulText(raw) {
     .replace(/\s+/g, "");
 }
 
+/** 속성 칸에 적힌 게 있나 — 목록이면 빈 항목을 뺀 뒤로 봅니다 */
+function filledProp(v) {
+  if (Array.isArray(v)) return v.some((x) => String(x == null ? "" : x).trim());
+  return Boolean(String(v == null ? "" : v).trim());
+}
+
 /* ── 프론트매터를 줄 단위로 고쳐 쓴다 ──────────────────────────
    **넷이 같이 쓰는 유일한 쓰기 함수입니다.** 예전에는 para-mover 와 inbox-auto 가
    각자 복사본을 갖고 있었고, 한쪽만 고치면 그때부터 어긋났습니다. 묶은 이유의 절반이
@@ -4105,11 +4111,7 @@ class InboxMod extends Mod {
     if (file.basename.startsWith("!(Template)")) return false;
     const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {};
     if (STRUCTURAL_KINDS.includes(String(fm["유형"] || ""))) return false;   // 핀보드(홈)·대시보드·양식
-    const sum = String(fm["요약"] || "").trim();
-    const topics = fm["주제"];
-    const hasTopics = Array.isArray(topics) ? topics.filter(Boolean).length > 0
-                                            : Boolean(String(topics || "").trim());
-    return !(sum && hasTopics);
+    return !(filledProp(fm["요약"]) && filledProp(fm["주제"]));
   }
 
   /** 대기줄을 한 건씩 비운다 (동시 실행 금지 — 연달아 부르면 막힌다) */
@@ -4279,15 +4281,29 @@ class InboxMod extends Mod {
     // `작성자` 는 **기본이 비어 있습니다.** 요약 한 줄을 채운 것과 그 노트를 쓴 것은
     // 다릅니다. 게다가 요약을 쓰는 건 agy(Antigravity)라 `Claude` 는 사실도 아니었습니다.
     // 적고 싶으면 설정 → Claude → 인박스 자동 감싸기 → `작성자에 적을 이름` 에 넣으세요.
+    //
+    // **빈 칸만 채웁니다.** 요약·주제 중 하나라도 비면 agy 를 부르는데, 예전엔 받은 둘을 다 썼습니다.
+    // 그래서 요약만 비어 있던 회의록의 사람이 적은 `주제` 가 agy 키워드로 통째로 바뀌었습니다
+    // (2026-09-21, 보관에서 인박스로 옮긴 `2026.09.22 회의 안건`). agy 가 도는 몇 분 사이에
+    // 사람이 채웠을 수도 있으니 쓰기 직전에 다시 봅니다.
+    const now = (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {};
+    const patch = {};
+    if (summary && !filledProp(now["요약"])) patch["요약"] = summary;
+    if (topics.length && !filledProp(now["주제"])) patch["주제"] = topics;
+    if (!Object.keys(patch).length) {
+      console.log("[인박스] " + file.path + " — 그사이 요약·주제가 채워져 agy 결과를 안 씁니다");
+      return;
+    }
     const who = String(this.settings.aiAuthor || "").trim();
     await this.app.vault.process(file, (data) =>
-      setProps(data, { "요약": summary, "주제": topics }, who ? "[[" + who + "]]" : ""));
+      setProps(data, patch, who ? "[[" + who + "]]" : ""));
 
     if (this.settings.notice) {
-      new Notice("🤖 " + file.basename + "\n" + summary, 6000);
+      new Notice("🤖 " + file.basename + "\n" + (patch["요약"] || "주제만 채움"), 6000);
     }
-    console.log("[인박스] " + file.path + "\n  요약: " + summary +
-                "\n  주제: " + topics.join(" · "));
+    console.log("[인박스] " + file.path +
+                (patch["요약"] ? "\n  요약: " + patch["요약"] : "") +
+                (patch["주제"] ? "\n  주제: " + patch["주제"].join(" · ") : ""));
   }
 
   /** 본문 임베드·링크에서 첨부 파일 찾기 */
