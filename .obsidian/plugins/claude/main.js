@@ -5327,6 +5327,31 @@ function threadAppendix(content, id, quote, who, when, text) {
          block.join("\n") + "\n";
 }
 
+/** 코멘트를 단 자리의 앞뒤 — 슬랙에서 동기화 없이도 "어디에 단 건지" 보이게.
+    { head: 그 위 제목, before: 바로 윗줄, line: 단 줄, after: 바로 아랫줄 } — 제목·%%·--- 를 넘지 않습니다 */
+function commentContext(content, id) {
+  const lines = toLf(content).split("\n");
+  const at = lines.findIndex((l) => l.includes("[[#^" + id + "|💬]]"));
+  if (at < 0) return null;
+  const clean = (l) => l.replace(/\s*\[\[#\^c-[a-z0-9]+\|💬\]\]/g, "").trim();
+  const cut = (t) => (t.length > 160 ? t.slice(0, 160) + "…" : t);
+  const wall = (l) => /^#{1,6}\s/.test(l) || l.startsWith("%%") || l.trim() === "---";
+  const near = (step) => {
+    for (let i = at + step; i >= 0 && i < lines.length; i += step) {
+      if (wall(lines[i])) return "";
+      const t = clean(lines[i]);
+      if (t) return cut(t);
+    }
+    return "";
+  };
+  let head = "";
+  for (let i = at - 1; i >= 0; i--) {
+    if (lines[i].trim() === "---") break;
+    if (/^#{1,6}\s/.test(lines[i])) { head = clean(lines[i]).replace(/^#+\s*/, ""); break; }
+  }
+  return { head: cut(head), before: near(-1), line: cut(clean(lines[at])), after: near(1) };
+}
+
 class CommentMod extends Mod {
   constructor(plugin) {
     super(plugin, "comment");
@@ -5384,6 +5409,7 @@ class CommentMod extends Mod {
         this.registerEvent(this.app.vault.on(ev, rescan));
       }
       this.flushOutbox();
+      this.registerVault();
     });
   }
 
@@ -5461,7 +5487,7 @@ class CommentMod extends Mod {
         editor.replaceRange(threadAppendix(editor.getValue(), id, quote, who, nowStamp(), text),
                             { line: last, ch: editor.getLine(last).length });
         if (typeof view.save === "function") await view.save();
-        await this.notify(file, quote, who, text);
+        await this.notify(file, quote, who, text, id);
       } }).open();
     });
   }
@@ -5495,7 +5521,7 @@ class CommentMod extends Mod {
     const ok = await this.editThread(file, thread.id, (lines, th) =>
       lines.splice(th.bodyEnd, 0, ">", ...commentLines(who, nowStamp(), text)));
     if (!ok) { new Notice("💬 스레드를 못 찾았습니다 — 동기화로 바뀌었을 수 있습니다."); return false; }
-    await this.notify(file, thread.quote, who, text);
+    await this.notify(file, thread.quote, who, text, thread.id);
     return true;
   }
 
@@ -5592,7 +5618,57 @@ class CommentMod extends Mod {
 
   webhook() { return String(this.app.loadLocalStorage(LS_HOOK) || "").trim(); }
 
-  async notify(file, quote, who, text) {
+  /** 이 기기의 볼트 이름을 이름표에 적어 둔다 — 바로 가기 링크는 **받는 사람의** 볼트 이름으로 만들어야 열립니다
+      (Rin 은 `개똥이 머릿속`, 민규 서는 `What-s-in-my-head` 처럼 기기마다 폴더 이름이 다릅니다) */
+  async registerVault() {
+    const me = this.me(), name = this.app.vault.getName();
+    if (!me || !name || (this.settings.vaults || {})[me] === name) return;
+    this.settings.vaults = Object.assign({}, this.settings.vaults, { [me]: name });
+    await this.save();
+  }
+
+  /** 그 사람 볼트에서 이 노트를 여는 https 주소 — 슬랙은 `obsidian://` 을 눌리게 안 해 줘서 중계 주소를 씁니다 */
+  noteLink(file, person) {
+    const tpl = String(this.settings.linkTemplate || "").trim();
+    const vault = (this.settings.vaults || {})[person];
+    if (!tpl || !vault) return "";
+    return tpl.replace("{vault}", encodeURIComponent(vault))
+              .replace("{file}", encodeURIComponent(file.path.replace(/\.md$/, "")));
+  }
+
+  /** 슬랙에 보낼 메시지 — 누가 누구를 · 한 말 · 무엇에 · 어느 노트 순서로 한눈에 */
+  slackPayload(file, quote, who, text, called, ctx) {
+    const ids = this.settings.slackIds || {};
+    const esc = (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const reEsc = (v) => v.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const tag = (p) => (ids[p] ? "<@" + ids[p] + ">" : "*@" + esc(p) + "*");
+    // 본문의 `@민규서` 도 슬랙 멘션으로 — 글자로 두면 누구를 부른 건지 눈에 안 들어옵니다
+    let body = esc(text);
+    for (const p of this.people()) {
+      const re = new RegExp("@" + [...p.replace(/\s+/g, "")].map(reEsc).join("\\s*"), "gi");
+      body = body.replace(re, tag(p));
+    }
+    if (body.length > 2800) body = body.slice(0, 2800) + "…";
+    const folder = file.parent && file.parent.path !== "/" ? file.parent.name : "";
+    const links = called.map((p) => [p, this.noteLink(file, p)]).filter((x) => x[1]);
+    const open = links.length === 1 ? "   <" + links[0][1] + "|옵시디언에서 열기 →>"
+      : links.map(([p, u]) => "   <" + u + "|" + esc(p) + " 볼트에서 열기 →>").join("");
+    return {
+      text: esc(who) + " 님이 불렀어요 " + called.map(tag).join(" ") + " — " + esc(text).slice(0, 140),
+      blocks: [
+        { type: "section", text: { type: "mrkdwn", text: "💬  *" + esc(who) + "*  →  " + called.map(tag).join(" ") } },
+        { type: "section", text: { type: "mrkdwn", text: body } },
+        { type: "context", elements: [{ type: "mrkdwn", text: ctx
+          ? [ctx.head && "*" + esc(ctx.head) + "*", ctx.before && esc(ctx.before),
+             "*" + esc(ctx.line) + "*   ← 💬", ctx.after && esc(ctx.after)].filter(Boolean).join("\n")
+          : "“" + esc(quote) + "” 에 단 코멘트" }] },
+        { type: "context", elements: [{ type: "mrkdwn",
+          text: "📄 *" + esc(file.basename) + "*" + (folder ? "  ·  " + esc(folder) : "") + open }] },
+      ],
+    };
+  }
+
+  async notify(file, quote, who, text, id) {
     const called = this.mentions(text).filter((p) => p !== who);
     if (!called.length) return;
     const url = this.webhook();
@@ -5601,20 +5677,15 @@ class CommentMod extends Mod {
                  "보입니다 — 동기화 후.", 7000);
       return;
     }
-    const ids = this.settings.slackIds || {};
-    const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    const msg = called.map((p) => (ids[p] ? "<@" + ids[p] + ">" : "@" + p)).join(" ") +
-      "  *" + esc(who) + "* 님이 옵시디언 코멘트에서 불렀어요\n" +
-      "📄 " + esc(file.path.replace(/\.md$/, "")) + "\n" +
-      "> " + esc(quote) + "\n" +
-      esc(text) + "\n" +
-      "_옵시디언에서 보려면 둘 다 🔀 동기화_";
+    let ctx = null;
+    try { ctx = id ? commentContext(await this.app.vault.read(file), id) : null; } catch (e) { /* 앞뒤 글 없이 */ }
+    const payload = this.slackPayload(file, quote, who, text, called, ctx);
     try {
-      await this.postSlack(url, msg);
+      await this.postSlack(url, payload);
       new Notice("💬 슬랙으로 알렸습니다 — " + called.join(" · "), 5000);
     } catch (e) {
       const q = this.app.loadLocalStorage(LS_OUTBOX) || [];
-      q.push({ text: msg, at: Date.now() });
+      q.push({ payload, at: Date.now() });
       this.app.saveLocalStorage(LS_OUTBOX, q.slice(-50));
       console.error("[코멘트] 슬랙 알림 실패", e);
       new Notice("💬 슬랙 알림을 못 보냈습니다 — 다음에 옵시디언을 켤 때 다시 보냅니다.\n" +
@@ -5622,9 +5693,11 @@ class CommentMod extends Mod {
     }
   }
 
-  async postSlack(url, text) {
+  /** payload 는 `{ text, blocks }` 또는 글자 하나 */
+  async postSlack(url, payload) {
+    const body = typeof payload === "string" ? { text: payload } : payload;
     const r = await requestUrl({ url, method: "POST", contentType: "application/json",
-                                 body: JSON.stringify({ text }), throw: false });
+                                 body: JSON.stringify(body), throw: false });
     if (r.status < 200 || r.status >= 300) {
       throw new Error("슬랙 " + r.status + " " + String(r.text || "").slice(0, 120));
     }
@@ -5636,7 +5709,7 @@ class CommentMod extends Mod {
     if (!url || !q.length) return;
     const left = [];
     for (const m of q) {
-      try { await this.postSlack(url, m.text); } catch (e) { left.push(m); }
+      try { await this.postSlack(url, m.payload || m.text); } catch (e) { left.push(m); }
     }
     this.app.saveLocalStorage(LS_OUTBOX, left.length ? left : null);
     if (q.length > left.length) new Notice("💬 밀린 슬랙 알림 " + (q.length - left.length) + "건을 보냈습니다", 6000);
@@ -5650,7 +5723,7 @@ class CommentMod extends Mod {
         d.addOption("", "(고르기)");
         for (const p of this.people()) d.addOption(p, p);
         d.setValue(this.me());
-        d.onChange((v) => { this.app.saveLocalStorage(LS_ME, v || null); this.scan(); });
+        d.onChange((v) => { this.app.saveLocalStorage(LS_ME, v || null); this.scan(); this.registerVault(); });
       });
     new Setting(c)
       .setName("슬랙 웹훅 주소")
@@ -5665,11 +5738,23 @@ class CommentMod extends Mod {
         const url = this.webhook();
         if (!url) { new Notice("웹훅 주소를 먼저 넣으세요."); return; }
         try {
-          await this.postSlack(url, "🔔 옵시디언 코멘트 알림 시험 — " + (this.me() || "이름 모름") + " 의 컴퓨터에서");
+          // 실제 알림과 같은 모양으로 — 지금 연 노트를 예시로 씁니다
+          const me = this.me() || "이름 모름";
+          const f = this.app.workspace.getActiveFile() || this.app.vault.getMarkdownFiles()[0];
+          await this.postSlack(url, this.slackPayload(f, "알림 모양 시험", me,
+            "옵시디언 코멘트 알림 시험이에요 — " + me + " 의 컴퓨터에서", [me]));
           new Notice("✔ 슬랙에 시험 메시지를 보냈습니다.");
           this.flushOutbox();
         } catch (e) { new Notice("✖ " + e.message, 9000); }
       }));
+    new Setting(c)
+      .setName("바로 가기 주소 틀")
+      .setDesc("슬랙 알림에 `옵시디언에서 열기 →` 를 답니다. 슬랙은 obsidian:// 을 눌리게 안 해 줘서 https 중계 주소를 씁니다. " +
+               "{vault} 와 {file} 자리에 받는 사람의 볼트 이름과 노트 경로가 들어갑니다. 비우면 링크를 안 답니다. " +
+               "두 기기가 같이 씁니다.")
+      .addText((t) => t.setPlaceholder("https://…/#vault={vault}&file={file}")
+        .setValue(this.settings.linkTemplate || "")
+        .onChange(async (v) => { this.settings.linkTemplate = v.trim(); await this.save(); }));
     new Setting(c)
       .setName("슬랙 사용자 ID")
       .setDesc("한 줄에 `이름 = ID`. 이름은 칸반 담당자 명단과 같게 적습니다. " +
@@ -5902,6 +5987,9 @@ const DEFAULTS = {
   comment: {
     // 슬랙 멤버 ID — 비밀 아님, 두 기기가 같이 씁니다. 웹훅 주소(비밀)는 여기 말고 기기별 localStorage.
     slackIds: { "Rin": "U09LDCUNWAF", "민규 서": "U09LPA180CC" },
+    vaults: {},         // 사람 → 그 기기의 볼트 이름. 각 기기가 켤 때 자기 것을 적습니다 (바로 가기 링크용)
+    // 슬랙의 `옵시디언에서 열기 →` 주소 틀. 중계 페이지는 github.com/Hyerin-Seo/obsidian-comment-repository (비우면 링크 없음)
+    linkTemplate: "https://hyerin-seo.github.io/obsidian-comment-repository/#vault={vault}&file={file}",
   },
 };
 
