@@ -1251,6 +1251,9 @@ if (obsidian) {
 
     get cwd() { return this.app.vault.adapter.getBasePath(); }
 
+    /** git 이름 → 사람 이름표 (기본 + 설정). claude 플러그인의 코멘트가 "이 컴퓨터 = 누구" 를 짐작할 때 씁니다 */
+    get names() { return Object.assign({}, DEFAULT_NAMES, this.settings.names || {}); }
+
     /** 열어 둔 노트를 먼저 저장 — 옵시디언은 조금 뒤에 저장해서, 방금 친 글자가 커밋에서 빠질 수 있습니다 */
     async saveOpenFiles() {
       for (const leaf of this.app.workspace.getLeavesOfType("markdown")) {

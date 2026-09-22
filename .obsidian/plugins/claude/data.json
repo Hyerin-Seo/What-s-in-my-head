@@ -3,12 +3,38 @@
     "para": true,
     "inbox": true,
     "cover": true,
-    "canvas": true
+    "canvas": true,
+    "chip": true,
+    "home": true,
+    "comment": true
   },
   "para": {
     "autoMove": true,
+    "sweepOnStart": true,
+    "askAfterMove": true,
+    "stampNew": true,
+    "wrapCanvas": true,
+    "sweepStrayZoneFolders": true,
+    "topUpNew": true,
+    "followBoardPaths": true,
+    "followFolderNames": true,
+    "folderPerItemBoards": [
+      "📚 망고네 책장"
+    ],
+    "authorFromName": true,
+    "syncProjectViews": true,
+    "people": [
+      "Rin",
+      "민규 서"
+    ],
+    "authorPrefix": {
+      "rin": "Rin",
+      "gen": "Gemini",
+      "seo": "민규 서"
+    },
     "writeBack": true,
     "useClassFolder": true,
+    "moveByClass": true,
     "notice": true,
     "landing": {
       "0.inbox": "0.📥 인박스/🥭 망고 인박스",
@@ -20,28 +46,46 @@
     "exclude": [
       "!🏠 홈",
       "3.📦(Resource) 자료/!Template"
-    ],
-    "sweepOnStart": true,
-    "askAfterMove": true,
-    "syncProjectViews": true
+    ]
   },
   "inbox": {
     "auto": true,
+    "template": "0.📥 인박스/!(Template) 새 인박스 노트.md",
+    "newFolder": "0.📥 인박스/🥭 망고 인박스",
     "notice": true,
     "ai": true,
     "aiAuthor": "",
     "gapMs": 4000,
-    "agy": "agy"
+    "agy": "agy",
+    "agyTimeoutMs": 330000
   },
   "cover": {
     "auto": true,
+    "fillOnStart": true,
+    "fixBroken": true,
     "notice": false,
     "exclude": [
       "!🏠 홈",
       "3.📦(Resource) 자료/!Template"
-    ],
-    "fillOnStart": true,
-    "fixBroken": true
+    ]
   },
-  "canvas": {}
+  "canvas": {},
+  "chip": {
+    "props": [
+      "상태"
+    ],
+    "dateProps": [
+      "마감",
+      "일정"
+    ]
+  },
+  "home": {
+    "note": "🏠 홈"
+  },
+  "comment": {
+    "slackIds": {
+      "Rin": "U09LDCUNWAF",
+      "민규 서": "U09LPA180CC"
+    }
+  }
 }

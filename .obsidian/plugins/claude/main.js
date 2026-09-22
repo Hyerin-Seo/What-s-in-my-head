@@ -31,7 +31,7 @@
  */
 const {
   Plugin, PluginSettingTab, Setting, Notice, Modal, Menu,
-  TFile, TFolder, normalizePath, parseYaml, Keymap,
+  TFile, TFolder, normalizePath, parseYaml, Keymap, requestUrl,
 } = require("obsidian");
 
 /* ══ 공통 도우미 ══════════════════════════════════════════ */
@@ -5230,10 +5230,610 @@ HomeMod.prototype.displaySettings = function (c) {
 };
 
 
+/* ══════════════════════════════════════════════════════════
+   코멘트 · @언급 · 슬랙 알림
+   ══════════════════════════════════════════════════════════
+
+   노션 댓글처럼 — 글을 골라 코멘트를 달고 `@Rin` `@민규서` 로 부르면 그 사람에게 알림이
+   갑니다. 옵시디언에는 이 기능이 없어서 만들었습니다 (2026-09-22, Rin 요청).
+
+   어디에 두나 — **노트 안**입니다.
+     본문 그 자리   ` [[#^c-xxxx|💬]]`  마우스를 올리면 옵시디언 기본 미리보기로 스레드가 보이고,
+                    누르면 답글·해결 창이 뜹니다.
+     노트 맨 아래   `## 💬 코멘트` 밑에 스레드 하나 = 콜아웃 하나 + 블록 id
+
+       > [!comment]+ 💬 고른 글
+       > **민규 서** · 2026-09-22 10:30
+       > 프로세스 중에 … @Rin
+       >
+       > **Rin** · 2026-09-22 11:02
+       > 저번에 얘기 했을 때 …
+
+       ^c-mfu3x2k1
+
+   노트 안에 있으니 동기화로 그대로 넘어가고, 에이전트도 읽고, 줄 단위로 합쳐집니다.
+   따로 파일(JSON)에 두면 동기화 충돌이 났을 때 사람이 못 풉니다.
+
+   알림은 두 갈래입니다.
+     슬랙      남기는 순간 부른 사람에게. 내용까지 같이 가서 동기화 전에도 읽힙니다.
+               NovelAI 워크스페이스의 Incoming Webhook 주소가 있어야 합니다. 주소는 비밀이라
+               **기기마다** 넣고 git 에 안 올립니다 (app.saveLocalStorage). 없으면 건너뜁니다.
+     옵시디언  아래 상태바 `🔔 N` — 나를 불렀는데 내가 아직 답 안 한 스레드. 동기화로 받은 뒤 뜹니다.
+
+   "나" 는 기기마다 정합니다. 처음엔 git 의 user.name 을 vault-sync 이름표로 바꿔 짐작하고,
+   모르면 한 번 묻습니다. */
+const COMMENT_HEAD = "## 💬 코멘트";
+const COMMENT_ANCHOR = /\[\[#\^(c-[a-z0-9]+)\|💬\]\]/g;
+const LS_ME = "claude-comment-me";
+const LS_HOOK = "claude-comment-webhook";
+const LS_OUTBOX = "claude-comment-outbox";
+
+function nowStamp() {
+  const d = new Date(), p = (n) => String(n).padStart(2, "0");
+  return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()) +
+         " " + p(d.getHours()) + ":" + p(d.getMinutes());
+}
+
+/** 콜아웃 제목에 들어갈 한 줄 — 링크·블록 기호가 섞이면 콜아웃이 깨집니다 */
+function cleanQuote(s) {
+  const one = String(s || "").replace(/\[\[#\^c-[a-z0-9]+\|💬\]\]/g, "")
+    .replace(/\[\[|\]\]/g, "").replace(/[|^]/g, "").replace(/^[-*+]\s+|^\d+\.\s+|^#+\s+/, "")
+    .replace(/\s+/g, " ").trim();
+  return one.length > 60 ? one.slice(0, 60) + "…" : (one || "(빈 줄)");
+}
+
+/** 메시지 하나를 콜아웃 줄로 */
+function commentLines(who, when, text) {
+  return ["> **" + who + "** · " + when].concat(
+    toLf(String(text)).trim().split("\n").map((l) => (l.trim() ? "> " + l : ">")));
+}
+
+/** 노트 글에서 코멘트 스레드들을 읽는다 — 줄 번호(start · bodyEnd · end)까지 */
+function parseThreads(text) {
+  const lines = toLf(text).split("\n");
+  const out = [];
+  for (let i = 0; i < lines.length; i++) {
+    const head = /^>\s*\[!comment\]([+-]?)\s*(.*)$/.exec(lines[i]);
+    if (!head) continue;
+    let j = i + 1;
+    while (j < lines.length && lines[j].startsWith(">")) j++;
+    let k = j;
+    while (k < lines.length && !lines[k].trim()) k++;
+    const idm = k < lines.length ? /^\^(c-[a-z0-9]+)$/.exec(lines[k].trim()) : null;
+    if (!idm) { i = j - 1; continue; }
+    const title = head[2].trim();
+    const msgs = [];
+    let cur = null;
+    for (const raw of lines.slice(i + 1, j)) {
+      const b = raw.replace(/^>\s?/, "");
+      const h = /^\*\*(.+?)\*\*\s*·\s*(\d{4}-\d{2}-\d{2}(?: \d{2}:\d{2})?)\s*$/.exec(b);
+      if (h) { cur = { who: h[1], when: h[2], text: "" }; msgs.push(cur); continue; }
+      if (cur) cur.text += (cur.text ? "\n" : "") + b;
+    }
+    for (const m of msgs) m.text = m.text.trim();
+    out.push({ id: idm[1], quote: title.replace(/^(💬|✅)\s*/, ""), resolved: title.startsWith("✅"),
+               msgs, start: i, bodyEnd: j, end: k });
+    i = k;
+  }
+  return out;
+}
+
+/** 노트 끝에 붙일 새 스레드 (제목 줄이 없으면 제목부터) */
+function threadAppendix(content, id, quote, who, when, text) {
+  const t = toLf(content);
+  const hasHead = t.split("\n").some((l) => l.trim() === COMMENT_HEAD);
+  const block = ["> [!comment]+ 💬 " + quote].concat(commentLines(who, when, text), ["", "^" + id]);
+  return (t.endsWith("\n") ? "" : "\n") + (hasHead ? "\n" : "\n" + COMMENT_HEAD + "\n\n") +
+         block.join("\n") + "\n";
+}
+
+class CommentMod extends Mod {
+  constructor(plugin) {
+    super(plugin, "comment");
+    this.title = "코멘트 · @언급";
+    this.icon = "💬";
+    this.blurb = "글을 골라 우클릭 → 💬 코멘트 달기. `@이름` 으로 부르면 그 사람에게 슬랙 알림이 가고 " +
+      "(웹훅 주소를 넣은 기기에서), 옵시디언 아래 상태바에 🔔 로도 뜹니다. 스레드는 노트 맨 아래 " +
+      "`## 💬 코멘트` 에 쌓입니다.";
+  }
+
+  onload() {
+    this.pings = [];
+    this.statusEl = this.addStatusBarItem();
+    this.statusEl.addClass("mod-clickable");
+    this.statusEl.style.display = "none";
+    this.statusEl.onclick = () => new CommentPingsModal(this.app, this).open();
+
+    this.registerEvent(this.app.workspace.on("editor-menu", (menu, editor, view) => {
+      if (!view || !view.file) return;
+      menu.addItem((i) => i.setTitle("💬 코멘트 달기").setIcon("message-square")
+        .onClick(() => this.startFromEditor(editor, view)));
+    }));
+    this.addCommand({
+      id: "add",
+      name: "코멘트 달기 (고른 글 · 안 골랐으면 이 줄)",
+      icon: "message-square",
+      editorCallback: (editor, view) => this.startFromEditor(editor, view),
+    });
+    this.addCommand({
+      id: "list",
+      name: "이 노트의 코멘트 보기",
+      checkCallback: (checking) => {
+        const f = this.app.workspace.getActiveFile();
+        if (!f || f.extension !== "md") return false;
+        if (!checking) this.openList(f);
+        return true;
+      },
+    });
+    this.addCommand({
+      id: "pings",
+      name: "나를 부른 코멘트 보기",
+      callback: () => new CommentPingsModal(this.app, this).open(),
+    });
+
+    // 💬 를 누르면 그 스레드 창 — 읽기 모드는 링크로, 편집 모드는 글자 자리로 찾습니다
+    this.registerDomEvent(document, "click", (evt) => this.onClick(evt), { capture: true });
+
+    const rescan = () => {
+      clearTimeout(this.scanTimer);
+      this.scanTimer = setTimeout(() => this.scan(), 2500);
+    };
+    this.app.workspace.onLayoutReady(() => {
+      rescan();
+      for (const ev of ["modify", "create", "delete", "rename"]) {
+        this.registerEvent(this.app.vault.on(ev, rescan));
+      }
+      this.flushOutbox();
+    });
+  }
+
+  onunload() { clearTimeout(this.scanTimer); }
+
+  /* ── 누구 ─────────────────────────────────────────────── */
+
+  /** 부를 수 있는 사람 — 칸반 담당자 명단과 같은 것 (같은 표를 두 군데 두지 않습니다) */
+  people() { return ((this.plugin.settings.para || {}).people || []).filter(Boolean); }
+
+  /** 이 기기를 쓰는 사람 */
+  me() {
+    const saved = this.app.loadLocalStorage(LS_ME);
+    if (saved) return String(saved);
+    const g = this.guessMe();
+    if (g) this.app.saveLocalStorage(LS_ME, g);
+    return g;
+  }
+
+  /** git user.name → vault-sync 이름표 (Hyerin-Seo → Rin, knee2420 → 민규 서) */
+  guessMe() {
+    try {
+      const fs = require("fs"), nodePath = require("path"), os = require("os");
+      const base = this.app.vault.adapter.getBasePath();
+      const vs = this.app.plugins.plugins["vault-sync"];
+      // vault-sync 의 settings.names 는 사람이 더한 것뿐이고 기본 표는 따로라, 합친 `names` 를 씁니다
+      const names = (vs && (vs.names || (vs.settings && vs.settings.names))) || {};
+      for (const p of [nodePath.join(base, ".git", "config"), nodePath.join(os.homedir(), ".gitconfig")]) {
+        if (!fs.existsSync(p)) continue;
+        const m = /\[user\][^[]*?^\s*name\s*=\s*(.+)$/m.exec(fs.readFileSync(p, "utf8"));
+        if (!m) continue;
+        const git = m[1].trim();
+        if (names[git]) return names[git];
+        if (this.people().includes(git)) return git;
+      }
+    } catch (e) { /* 모르면 묻습니다 */ }
+    return "";
+  }
+
+  /** 이름을 모르면 한 번 묻고 이어서 한다 */
+  withMe(then) {
+    const me = this.me();
+    if (me) { then(me); return; }
+    new CommentWhoModal(this.app, this, (who) => {
+      this.app.saveLocalStorage(LS_ME, who);
+      then(who);
+    }).open();
+  }
+
+  /** 글에서 부른 사람들 — `@Rin` `@민규서` `@민규 서` 다 알아듣습니다 */
+  mentions(text) {
+    const flat = String(text || "").replace(/\s+/g, "").toLowerCase();
+    return this.people().filter((p) => flat.includes("@" + p.replace(/\s+/g, "").toLowerCase()));
+  }
+
+  /* ── 쓰기 ─────────────────────────────────────────────── */
+
+  startFromEditor(editor, view) {
+    const file = view && view.file;
+    if (!file) return;
+    const to = editor.getCursor("to");
+    const picked = editor.somethingSelected();
+    // 이미 💬 가 붙은 줄에서 고르지 않고 부르면 그 스레드로
+    if (!picked) {
+      const hit = new RegExp(COMMENT_ANCHOR.source).exec(editor.getLine(to.line));
+      if (hit) { this.openThread(file, hit[1]); return; }
+    }
+    const quote = cleanQuote(picked ? editor.getSelection() : editor.getLine(to.line));
+    this.withMe((who) => {
+      new CommentThreadModal(this.app, this, { file, quote, thread: null, onSubmit: async (text) => {
+        const id = "c-" + Date.now().toString(36);
+        const at = picked ? to : { line: to.line, ch: editor.getLine(to.line).length };
+        editor.replaceRange(" [[#^" + id + "|💬]]", at);
+        const last = editor.lastLine();
+        editor.replaceRange(threadAppendix(editor.getValue(), id, quote, who, nowStamp(), text),
+                            { line: last, ch: editor.getLine(last).length });
+        if (typeof view.save === "function") await view.save();
+        await this.notify(file, quote, who, text);
+      } }).open();
+    });
+  }
+
+  /** 열어 둔 창을 먼저 저장 — 방금 친 글자가 파일 고쳐 쓰기에 덮이지 않게 */
+  async saveOpen(file) {
+    for (const leaf of this.app.workspace.getLeavesOfType("markdown")) {
+      const v = leaf.view;
+      if (v && v.file === file && typeof v.save === "function") {
+        try { await v.save(); } catch (e) { /* 다음 저장 때 */ }
+      }
+    }
+  }
+
+  /** 스레드 줄을 고친다 — fn(lines, thread) 가 lines 를 바꿉니다 */
+  async editThread(file, id, fn) {
+    await this.saveOpen(file);
+    let ok = false;
+    await this.app.vault.process(file, (data) => {
+      const lines = toLf(data).split("\n");
+      const th = parseThreads(lines.join("\n")).find((t) => t.id === id);
+      if (!th) return data;
+      fn(lines, th);
+      ok = true;
+      return withEol(lines.join("\n"), eolOf(data));
+    });
+    return ok;
+  }
+
+  async reply(file, thread, who, text) {
+    const ok = await this.editThread(file, thread.id, (lines, th) =>
+      lines.splice(th.bodyEnd, 0, ">", ...commentLines(who, nowStamp(), text)));
+    if (!ok) { new Notice("💬 스레드를 못 찾았습니다 — 동기화로 바뀌었을 수 있습니다."); return false; }
+    await this.notify(file, thread.quote, who, text);
+    return true;
+  }
+
+  async setResolved(file, thread, done) {
+    return this.editThread(file, thread.id, (lines, th) => {
+      lines[th.start] = "> [!comment]" + (done ? "- ✅ " : "+ 💬 ") + th.quote;
+    });
+  }
+
+  /* ── 보기 ─────────────────────────────────────────────── */
+
+  async threads(file) { return parseThreads(await this.app.vault.read(file)); }
+
+  async openThread(file, id) {
+    const th = (await this.threads(file)).find((t) => t.id === id);
+    if (!th) { new Notice("💬 이 코멘트의 스레드가 노트 아래에 없습니다 (" + id + ")"); return; }
+    this.withMe(() => new CommentThreadModal(this.app, this, { file, quote: th.quote, thread: th }).open());
+  }
+
+  async openList(file) {
+    const list = await this.threads(file);
+    if (!list.length) { new Notice("💬 이 노트에는 코멘트가 없습니다.\n글을 골라 우클릭 → 💬 코멘트 달기"); return; }
+    new CommentListModal(this.app, this, file, list).open();
+  }
+
+  onClick(evt) {
+    const t = evt.target instanceof Element ? evt.target : null;
+    if (!t || evt.button !== 0 || evt.ctrlKey || evt.metaKey) return;
+    const leaf = this.app.workspace.getLeavesOfType("markdown")
+      .find((l) => l.view && l.view.containerEl.contains(t));
+    const file = leaf && leaf.view.file;
+    if (!file) return;
+    let id = null;
+    const a = t.closest("a.internal-link");
+    if (a) {
+      const m = /^#\^(c-[a-z0-9]+)$/.exec(a.getAttribute("data-href") || "");
+      if (m) id = m[1];
+    } else if (t.closest(".cm-hmd-internal-link")) {
+      id = this.idNear(leaf.view, t);
+    }
+    if (!id) return;
+    evt.preventDefault();
+    evt.stopPropagation();
+    this.openThread(file, id);
+  }
+
+  /** 편집 화면에서 누른 자리에 가장 가까운 💬 */
+  idNear(view, el) {
+    try {
+      const cm = view.editor && view.editor.cm;
+      if (!cm) return null;
+      const pos = cm.posAtDOM(el);
+      const line = cm.state.doc.lineAt(pos);
+      const re = new RegExp(COMMENT_ANCHOR.source, "g");
+      let m, best = null, dist = Infinity;
+      while ((m = re.exec(line.text))) {
+        const s = line.from + m.index, e = s + m[0].length;
+        const d = pos < s ? s - pos : pos > e ? pos - e : 0;
+        if (d < dist) { dist = d; best = m[1]; }
+      }
+      return dist <= 40 ? best : null;
+    } catch (e) { return null; }
+  }
+
+  /** 나를 불렀는데 내가 그 뒤로 답을 안 한 스레드 (해결한 것은 빼고) */
+  async scan() {
+    const me = this.me();
+    const out = [];
+    if (me) {
+      const key = "@" + me.replace(/\s+/g, "").toLowerCase();
+      for (const f of this.app.vault.getMarkdownFiles()) {
+        let text;
+        try { text = await this.app.vault.cachedRead(f); } catch (e) { continue; }
+        if (!text.includes("[!comment]")) continue;
+        for (const th of parseThreads(text)) {
+          if (th.resolved) continue;
+          let mine = -1, call = -1;
+          th.msgs.forEach((m, i) => {
+            if (m.who === me) mine = i;
+            else if (m.text.replace(/\s+/g, "").toLowerCase().includes(key)) call = i;
+          });
+          if (call > mine) out.push({ file: f, thread: th, msg: th.msgs[call] });
+        }
+      }
+    }
+    this.pings = out;
+    this.statusEl.style.display = out.length ? "" : "none";
+    this.statusEl.setText("🔔 " + out.length);
+    this.statusEl.setAttribute("aria-label", "나를 부른 코멘트 " + out.length + "개 — 눌러서 보기");
+    this.statusEl.setAttribute("data-tooltip-position", "top");
+  }
+
+  /* ── 슬랙 ─────────────────────────────────────────────── */
+
+  webhook() { return String(this.app.loadLocalStorage(LS_HOOK) || "").trim(); }
+
+  async notify(file, quote, who, text) {
+    const called = this.mentions(text).filter((p) => p !== who);
+    if (!called.length) return;
+    const url = this.webhook();
+    if (!url) {
+      new Notice("💬 " + called.join(" · ") + " 님을 불렀습니다.\n슬랙 웹훅이 없는 기기라 옵시디언 안(🔔)에서만 " +
+                 "보입니다 — 동기화 후.", 7000);
+      return;
+    }
+    const ids = this.settings.slackIds || {};
+    const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const msg = called.map((p) => (ids[p] ? "<@" + ids[p] + ">" : "@" + p)).join(" ") +
+      "  *" + esc(who) + "* 님이 옵시디언 코멘트에서 불렀어요\n" +
+      "📄 " + esc(file.path.replace(/\.md$/, "")) + "\n" +
+      "> " + esc(quote) + "\n" +
+      esc(text) + "\n" +
+      "_옵시디언에서 보려면 둘 다 🔀 동기화_";
+    try {
+      await this.postSlack(url, msg);
+      new Notice("💬 슬랙으로 알렸습니다 — " + called.join(" · "), 5000);
+    } catch (e) {
+      const q = this.app.loadLocalStorage(LS_OUTBOX) || [];
+      q.push({ text: msg, at: Date.now() });
+      this.app.saveLocalStorage(LS_OUTBOX, q.slice(-50));
+      console.error("[코멘트] 슬랙 알림 실패", e);
+      new Notice("💬 슬랙 알림을 못 보냈습니다 — 다음에 옵시디언을 켤 때 다시 보냅니다.\n" +
+                 String(e.message || e).slice(0, 120), 9000);
+    }
+  }
+
+  async postSlack(url, text) {
+    const r = await requestUrl({ url, method: "POST", contentType: "application/json",
+                                 body: JSON.stringify({ text }), throw: false });
+    if (r.status < 200 || r.status >= 300) {
+      throw new Error("슬랙 " + r.status + " " + String(r.text || "").slice(0, 120));
+    }
+  }
+
+  async flushOutbox() {
+    const url = this.webhook();
+    const q = this.app.loadLocalStorage(LS_OUTBOX) || [];
+    if (!url || !q.length) return;
+    const left = [];
+    for (const m of q) {
+      try { await this.postSlack(url, m.text); } catch (e) { left.push(m); }
+    }
+    this.app.saveLocalStorage(LS_OUTBOX, left.length ? left : null);
+    if (q.length > left.length) new Notice("💬 밀린 슬랙 알림 " + (q.length - left.length) + "건을 보냈습니다", 6000);
+  }
+
+  displaySettings(c) {
+    new Setting(c)
+      .setName("이 컴퓨터를 쓰는 사람")
+      .setDesc("코멘트에 적히는 이름이고, 🔔 는 이 이름을 부른 것을 셉니다. 기기마다 따로 저장됩니다 (git 에 안 올라감).")
+      .addDropdown((d) => {
+        d.addOption("", "(고르기)");
+        for (const p of this.people()) d.addOption(p, p);
+        d.setValue(this.me());
+        d.onChange((v) => { this.app.saveLocalStorage(LS_ME, v || null); this.scan(); });
+      });
+    new Setting(c)
+      .setName("슬랙 웹훅 주소")
+      .setDesc("NovelAI 워크스페이스의 Incoming Webhook 주소 (https://hooks.slack.com/services/…). " +
+               "비밀이라 이 컴퓨터에만 저장되고 git 에 안 올라갑니다. 비우면 슬랙 알림을 안 보냅니다.")
+      .addText((t) => {
+        t.inputEl.type = "password";
+        t.setPlaceholder("https://hooks.slack.com/services/…").setValue(this.webhook())
+          .onChange((v) => this.app.saveLocalStorage(LS_HOOK, v.trim() || null));
+      })
+      .addButton((b) => b.setButtonText("시험 보내기").onClick(async () => {
+        const url = this.webhook();
+        if (!url) { new Notice("웹훅 주소를 먼저 넣으세요."); return; }
+        try {
+          await this.postSlack(url, "🔔 옵시디언 코멘트 알림 시험 — " + (this.me() || "이름 모름") + " 의 컴퓨터에서");
+          new Notice("✔ 슬랙에 시험 메시지를 보냈습니다.");
+          this.flushOutbox();
+        } catch (e) { new Notice("✖ " + e.message, 9000); }
+      }));
+    new Setting(c)
+      .setName("슬랙 사용자 ID")
+      .setDesc("한 줄에 `이름 = ID`. 이름은 칸반 담당자 명단과 같게 적습니다. " +
+               "ID 는 슬랙 프로필 → ⋮ → 멤버 ID 복사. 이건 비밀이 아니라 두 기기가 같이 씁니다.")
+      .addTextArea((t) => {
+        t.setValue(Object.entries(this.settings.slackIds || {}).map(([k, v]) => k + " = " + v).join("\n"));
+        t.onChange(async (v) => {
+          const o = {};
+          for (const l of v.split("\n")) {
+            const m = /^(.+?)\s*=\s*(U[A-Z0-9]+)\s*$/.exec(l.trim());
+            if (m) o[m[1]] = m[2];
+          }
+          this.settings.slackIds = o;
+          await this.save();
+        });
+      });
+  }
+}
+
+/** 스레드 창 — 새 코멘트(thread 없음)도, 있는 스레드의 답글도 여기서 */
+class CommentThreadModal extends Modal {
+  constructor(app, mod, opts) {
+    super(app);
+    this.mod = mod;
+    this.opts = opts;
+  }
+
+  onOpen() {
+    const { contentEl } = this;
+    const { file, quote, thread } = this.opts;
+    this.modalEl.addClass("claude-cmt-modal");
+    this.titleEl.setText(thread && thread.resolved ? "✅ 해결된 코멘트" : "💬 코멘트");
+    contentEl.createEl("div", { cls: "cmt-quote", text: quote });
+    contentEl.createEl("div", { cls: "cmt-file", text: "📄 " + file.basename });
+
+    for (const m of (thread ? thread.msgs : [])) {
+      const box = contentEl.createEl("div", { cls: "cmt-msg" });
+      const top = box.createEl("div");
+      top.createEl("span", { cls: "cmt-who", text: m.who });
+      top.createEl("span", { cls: "cmt-when", text: m.when });
+      const body = box.createEl("div", { cls: "cmt-text" });
+      for (const part of m.text.split(/(@\S+)/)) {
+        if (!part) continue;
+        if (part.startsWith("@") && this.mod.mentions(part).length) body.createEl("span", { cls: "cmt-at", text: part });
+        else body.appendText(part);
+      }
+    }
+
+    const ta = contentEl.createEl("textarea", {
+      attr: { placeholder: thread ? "답글 — @ 로 부르기 · Ctrl+Enter 로 남기기" : "코멘트 — @ 로 부르기 · Ctrl+Enter 로 남기기" },
+    });
+    const row = contentEl.createEl("div", { cls: "cmt-row" });
+    for (const p of this.mod.people()) {
+      const b = row.createEl("button", { text: "@" + p });
+      b.onclick = () => {
+        const tag = "@" + p.replace(/\s+/g, "") + " ";
+        const s = ta.selectionStart;
+        ta.value = ta.value.slice(0, s) + tag + ta.value.slice(ta.selectionEnd);
+        ta.focus();
+        ta.selectionStart = ta.selectionEnd = s + tag.length;
+      };
+    }
+    row.createEl("span", { cls: "cmt-grow" });
+    if (thread) {
+      const r = row.createEl("button", { text: thread.resolved ? "↩ 다시 열기" : "✅ 해결" });
+      r.onclick = async () => {
+        await this.mod.setResolved(file, thread, !thread.resolved);
+        this.close();
+        this.mod.scan();
+      };
+    }
+    const send = row.createEl("button", { text: "남기기", cls: "mod-cta" });
+    const submit = async () => {
+      const text = ta.value.trim();
+      if (!text) { ta.focus(); return; }
+      send.disabled = true;
+      try {
+        if (thread) await this.mod.reply(file, thread, this.mod.me(), text);
+        else await this.opts.onSubmit(text);
+        this.close();
+        this.mod.scan();
+      } catch (e) {
+        send.disabled = false;
+        new Notice("💬 못 남겼습니다 — " + e.message, 8000);
+      }
+    };
+    send.onclick = submit;
+    ta.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); submit(); }
+    });
+    setTimeout(() => ta.focus(), 0);
+  }
+
+  onClose() { this.contentEl.empty(); }
+}
+
+/** 이 노트의 스레드 목록 */
+class CommentListModal extends Modal {
+  constructor(app, mod, file, list) {
+    super(app);
+    this.mod = mod; this.file = file; this.list = list;
+  }
+  onOpen() {
+    this.modalEl.addClass("claude-cmt-modal");
+    this.titleEl.setText("💬 " + this.file.basename + " — 코멘트 " + this.list.length + "개");
+    for (const th of this.list) {
+      const last = th.msgs[th.msgs.length - 1];
+      const it = this.contentEl.createEl("div", { cls: "cmt-item" + (th.resolved ? " is-done" : "") });
+      it.createEl("div", { cls: "cmt-quote", text: (th.resolved ? "✅ " : "") + th.quote });
+      if (last) it.createEl("div", { cls: "cmt-sub", text: last.who + " · " + last.when + " — " + last.text.slice(0, 80) });
+      it.onclick = () => { this.close(); this.mod.openThread(this.file, th.id); };
+    }
+  }
+  onClose() { this.contentEl.empty(); }
+}
+
+/** 나를 부른 코멘트 */
+class CommentPingsModal extends Modal {
+  constructor(app, mod) { super(app); this.mod = mod; }
+  async onOpen() {
+    this.modalEl.addClass("claude-cmt-modal");
+    await this.mod.scan();
+    const list = this.mod.pings;
+    const me = this.mod.me();
+    this.titleEl.setText("🔔 " + (me || "나") + " 를 부른 코멘트 " + list.length + "개");
+    if (!list.length) {
+      this.contentEl.createEl("p", { cls: "cmt-sub", text: "답할 것이 없습니다. 다른 사람이 남긴 건 🔀 동기화 뒤에 뜹니다." });
+      return;
+    }
+    for (const p of list) {
+      const it = this.contentEl.createEl("div", { cls: "cmt-item" });
+      it.createEl("div", { cls: "cmt-quote", text: p.thread.quote });
+      it.createEl("div", { cls: "cmt-sub", text: "📄 " + p.file.basename + " · " + p.msg.who + " · " + p.msg.when +
+                                                   " — " + p.msg.text.slice(0, 80) });
+      it.onclick = async () => {
+        this.close();
+        await this.app.workspace.getLeaf(false).openFile(p.file);
+        this.mod.openThread(p.file, p.thread.id);
+      };
+    }
+  }
+  onClose() { this.contentEl.empty(); }
+}
+
+/** 이 기기를 쓰는 사람을 한 번 묻는다 */
+class CommentWhoModal extends Modal {
+  constructor(app, mod, done) { super(app); this.mod = mod; this.done = done; }
+  onOpen() {
+    this.titleEl.setText("이 컴퓨터를 쓰는 사람은?");
+    this.contentEl.createEl("p", { cls: "setting-item-description",
+      text: "코멘트에 적힐 이름입니다. 한 번만 묻고 이 기기에 기억합니다 (설정 → Claude → 코멘트 에서 바꿈)." });
+    const row = this.contentEl.createEl("div", { cls: "cmt-row" });
+    for (const p of this.mod.people()) {
+      const b = row.createEl("button", { text: p, cls: "mod-cta" });
+      b.onclick = () => { this.close(); this.done(p); };
+    }
+  }
+  onClose() { this.contentEl.empty(); }
+}
+
 /* ══ 설정 기본값 ══════════════════════════════════════════
    모듈별로 칸을 나눠 담습니다. 예전 네 플러그인의 data.json 을 그대로 옮겨 왔습니다. */
 const DEFAULTS = {
-  modules: { para: true, inbox: true, cover: true, canvas: true, chip: true, home: true },
+  modules: { para: true, inbox: true, cover: true, canvas: true, chip: true, home: true, comment: true },
 
   para: {
     autoMove: true,        // 구역 속성을 고치면 바로 옮긴다
@@ -5298,6 +5898,11 @@ const DEFAULTS = {
   home: {
     note: "🏠 홈",               // 홈 노트 **이름**. 경로가 아니라서 폴더를 옮겨도 찾습니다
   },
+
+  comment: {
+    // 슬랙 멤버 ID — 비밀 아님, 두 기기가 같이 씁니다. 웹훅 주소(비밀)는 여기 말고 기기별 localStorage.
+    slackIds: { "Rin": "U09LDCUNWAF", "민규 서": "U09LPA180CC" },
+  },
 };
 
 /** 저장된 값을 기본값 위에 얹는다 (landing 처럼 한 겹 더 들어간 것까지) */
@@ -5355,7 +5960,7 @@ class ClaudeTab extends PluginSettingTab {
 }
 
 /* ══ 본체 ════════════════════════════════════════════════ */
-const MODULES = [ParaMod, InboxMod, CoverMod, CanvasMod, ChipMod, HomeMod];
+const MODULES = [ParaMod, InboxMod, CoverMod, CanvasMod, ChipMod, HomeMod, CommentMod];
 
 module.exports = class Claude extends Plugin {
   async onload() {

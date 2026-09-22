@@ -350,7 +350,7 @@ views:
     columnColors:
       note.상태: {}
   - type: kanban-view
-    name: "😎😎Second-Brain의 맛"
+    name: 😎😎Second-Brain의 맛
     filters:
       and:
         - file.inFolder("1.🎯(Project) 프로젝트/😎😎Second-Brain의 맛")
