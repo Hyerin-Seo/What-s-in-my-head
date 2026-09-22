@@ -744,6 +744,28 @@ async function fastForward(g, to) {
   }
 }
 
+/**
+ * 빈 폴더 지키기 — git 은 **파일만** 기록해서 빈 폴더는 동기화로 안 넘어갑니다.
+ * 빈 폴더마다 빈 `.gitkeep` 을 넣어 폴더째 넘깁니다. 옵시디언은 점으로 시작하는 파일을 트리에 안 보여 줍니다.
+ * (2026-09-22 — 민규 서 쪽의 `A2.scratch(ideation)` · `A1.collection` 하위 빈 폴더가 Rin 쪽 트리에 없었습니다)
+ * 점으로 시작하는 폴더(.git · .obsidian · .trash …)는 안 들어갑니다. 넣은 개수를 돌려줍니다.
+ * 폴더를 지우면 `.gitkeep` 도 같이 지워지고, 받는 쪽에선 git 이 빈 폴더를 치웁니다.
+ */
+function keepEmptyFolders(root) {
+  const fs = require("fs"), nodePath = require("path");
+  let n = 0;
+  const walk = (dir) => {
+    let ents;
+    try { ents = fs.readdirSync(dir, { withFileTypes: true }); } catch (e) { return; }
+    for (const e of ents) if (e.isDirectory() && !e.name.startsWith(".")) walk(nodePath.join(dir, e.name));
+    if (dir !== root && ents.length === 0) {
+      try { fs.writeFileSync(nodePath.join(dir, ".gitkeep"), ""); n++; } catch (e) { /* 못 넣으면 그 폴더만 안 넘어감 */ }
+    }
+  };
+  walk(root);
+  return n;
+}
+
 /** 지금 바뀐 것을 전부 커밋. 바뀐 게 없으면 null */
 async function commitLocal(g, who, now) {
   const st = (await g(["status", "--porcelain"])).stdout;
@@ -855,6 +877,7 @@ async function syncRepo({ cwd, git, names, pick, askBranch, mainBranch = "main",
   }
 
   const stats = { committed: 0, received: 0, sent: 0, auto: 0, picked: 0, branch };
+  keepEmptyFolders(cwd);                   // 빈 폴더도 넘어가게 — 커밋 전에
   stats.committed = (await commitLocal(g, me, now)) || 0;
   const cancelled = () => Object.assign(stats, { cancelled: true, message: "취소했습니다 — 볼트는 그대로입니다." + (stats.committed ? " (내 변경은 커밋만 해 두었습니다. 다음 동기화 때 같이 올라갑니다)" : "") });
 
@@ -1115,7 +1138,7 @@ async function buildReport({ cwd, git, names, before, days = 7, maxCommits = 15,
 
 const DEFAULTS = { git: "git", names: {}, report: true, reportDays: 7 };
 
-const api = { mergeFile, mergeBlock, parseBlock, splitFm, splitHunks, gitMergeFile, resolveGit, planMerge, finishItem, renderPicker, syncRepo, listPoints, changedSince, restoreTo, buildReport, parseNameStatusZ, REPORT_PATH, DEFAULT_NAMES };
+const api = { keepEmptyFolders, mergeFile, mergeBlock, parseBlock, splitFm, splitHunks, gitMergeFile, resolveGit, planMerge, finishItem, renderPicker, syncRepo, listPoints, changedSince, restoreTo, buildReport, parseNameStatusZ, REPORT_PATH, DEFAULT_NAMES };
 
 if (obsidian) {
   class PickModal extends obsidian.Modal {

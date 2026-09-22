@@ -243,6 +243,20 @@ const ok = async (name, fn) => { await fn(); n++; console.log("  ✅ " + name); 
     assert.ok(rest.includes("린 메모"), "내 커밋도 커밋별에는 있어야 함");
   });
 
+  await ok("빈 폴더도 넘어감 — 민규 서가 만든 빈 폴더가 Rin 트리에 (점 폴더는 안 건드림)", async () => {
+    const a2 = "99.🥸(Agent) 작업 공간/회의 안건/A2.scratch(ideation)";
+    const raw = "99.🥸(Agent) 작업 공간/회의 안건/A1.collection/raw";
+    fs.mkdirSync(path.join(mango, a2), { recursive: true });
+    fs.mkdirSync(path.join(mango, raw), { recursive: true });
+    fs.mkdirSync(path.join(mango, ".trash/빈 것"), { recursive: true });
+    await syncRepo({ cwd: mango, git: "git", pick: never });
+    await syncRepo({ cwd: rin, git: "git", pick: never });
+    assert.ok(fs.existsSync(path.join(rin, a2)), "A2 가 안 넘어옴");
+    assert.ok(fs.existsSync(path.join(rin, raw)), "A1.collection/raw 가 안 넘어옴");
+    assert.ok(!fs.existsSync(path.join(mango, ".trash/빈 것/.gitkeep")), "점 폴더 안에 .gitkeep 을 넣음");
+    clean(rin);
+  });
+
   console.log("\n" + n + "개 다 통과");
 })().catch((e) => { console.error("\n❌ " + (e.stack || e)); process.exitCode = 1; })
   .finally(() => rmTree(root));

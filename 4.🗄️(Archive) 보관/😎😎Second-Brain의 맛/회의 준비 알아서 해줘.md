@@ -1,6 +1,6 @@
 ---
 유형: 할일
-구역: 1.project
+구역: 4.archive
 분류:
   - 😎😎Second-Brain의 맛
 주제:
