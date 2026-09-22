@@ -277,6 +277,13 @@ def ask_agy(note_rel, body, att_rel):
     raise RuntimeError(str(last)[:300])
 
 
+def filled(v):
+    """속성 칸에 적힌 게 있나 — 목록이면 빈 항목을 뺀 뒤로 봅니다"""
+    if isinstance(v, list):
+        return any(str(x).strip() for x in v if x is not None)
+    return bool(str(v).strip()) if v is not None else False
+
+
 def ai():
     done = []
     targets = []
@@ -289,7 +296,7 @@ def ai():
         fm, body = read_fm(p)
         if fm is None or fm.get("유형") == "대시보드":
             continue
-        if fm.get("요약") and fm.get("주제"):
+        if filled(fm.get("요약")) and filled(fm.get("주제")):
             continue
 
         att = None
@@ -312,8 +319,11 @@ def ai():
             print("   !! %s" % e)
             continue
 
-        fm["요약"] = got["요약"]
-        fm["주제"] = got["주제"]
+        # 빈 칸만 채웁니다 — 사람이 적은 주제를 agy 키워드로 덮어쓰던 것 (플러그인 askAgy 와 같은 규칙)
+        if not filled(fm.get("요약")):
+            fm["요약"] = got["요약"]
+        if not filled(fm.get("주제")):
+            fm["주제"] = got["주제"]
         if AI_AUTHOR:
             cur = fm.get("작성자") or []
             if not isinstance(cur, list):
@@ -322,10 +332,10 @@ def ai():
                 cur.append(AI_AUTHOR)
             fm["작성자"] = cur
         write_fm(p, fm, body)
-        done.append((f, got["요약"], got["주제"]))
+        done.append((f, fm["요약"], fm["주제"]))
         time.sleep(3)          # 연달아 부르면 막힌다
-        print("   요약: %s" % got["요약"])
-        print("   주제: %s" % " · ".join(got["주제"]))
+        print("   요약: %s" % fm["요약"])
+        print("   주제: %s" % " · ".join(map(str, fm["주제"] or [])))
     return done
 
 
