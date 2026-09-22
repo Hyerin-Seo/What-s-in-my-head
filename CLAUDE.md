@@ -19,6 +19,7 @@
 | 보드(`.base`)를 만들거나 고친다 · 보드로 링크를 건다 | `docs/boards.md` |
 | 플러그인(`plugins/claude` 등) · CSS 스니펫 · 스크립트 · 상태 칩 | `docs/plugins.md` |
 | 회의록을 정리·배포한다 · 스킬을 쓰거나 만든다 | `docs/meetings-and-skills.md` → `skills/` |
+| 노트에 코멘트를 달거나 답한다 · @언급 · 슬랙 알림 | `docs/comments.md` |
 | 이상해 보이는데 버그인지 모르겠다 | `docs/known-gaps.md` |
 
 ## 어떤 일이든 지키는 것 — 틀려도 오류가 안 나고 조용히 깨집니다
