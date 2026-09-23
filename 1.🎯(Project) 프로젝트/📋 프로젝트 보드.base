@@ -322,6 +322,31 @@ views:
         - 히스토리
     columnColors:
       note.상태: {}
+  - type: kanban-view
+    name: "🤔R&D 스피린트 프로젝트 관리기법 도입"
+    filters:
+      and:
+        - file.inFolder("1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입")
+    order:
+      - 담당
+      - 일정
+      - 마감
+      - 작성자
+    quickAddFolder: 1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입
+    groupByProperty: note.상태
+    imageProperty: note.커버
+    imageFit: cover
+    imageAspectRatio: 0.667
+    columnOrders:
+      note.상태:
+        - to do
+        - 진행중
+        - 확인 필요
+        - 완료
+        - 퍼즈
+        - 히스토리
+    columnColors:
+      note.상태: {}
   - type: table
     name: ⏰ 마감 가까운 순
     filters:
