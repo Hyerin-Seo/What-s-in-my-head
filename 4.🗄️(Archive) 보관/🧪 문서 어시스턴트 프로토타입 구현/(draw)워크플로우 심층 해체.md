@@ -3,7 +3,7 @@ excalidraw-plugin: parsed
 tags:
   - excalidraw
 유형: 할일
-구역: 1.project
+구역: 4.archive
 분류:
   - 🧪 문서 어시스턴트 프로토타입 구현
 주제:

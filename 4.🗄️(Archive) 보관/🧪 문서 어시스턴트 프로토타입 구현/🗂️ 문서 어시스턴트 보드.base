@@ -2,7 +2,7 @@ filters:
   and:
     - file.ext == "md"
     - note["유형"] == "할일"
-    - file.inFolder("1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현")
+    - file.inFolder("4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현")
 views:
   - type: kanban-view
     name: 🗂️ 칸반
@@ -11,7 +11,7 @@ views:
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+    quickAddFolder: 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -28,21 +28,21 @@ views:
       note.상태:
         진행중: []
         완료:
-          - 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현/(Draw)에이전트 시대 업무 환경 변화.md
+          - 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현/(Draw)에이전트 시대 업무 환경 변화.md
     columnColors:
       note.상태: {}
   - type: kanban-view
     name: 👤 Rin
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현")
+        - file.inFolder("4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현")
         - note["담당"].contains("[[Rin]]")
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+    quickAddFolder: 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -61,14 +61,14 @@ views:
     name: 👤 민규 서
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현")
+        - file.inFolder("4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현")
         - note["담당"].contains("[[민규 서]]")
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+    quickAddFolder: 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -87,14 +87,14 @@ views:
     name: 👤 미할당
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현")
+        - file.inFolder("4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현")
         - note["담당"].isEmpty()
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+    quickAddFolder: 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -135,5 +135,5 @@ views:
     imageAspectRatio: 0.667
     imageFit: cover
     cardSize: 210
-newItemFolder: 1.🎯(Project) 프로젝트/🧪 문서 어시스턴트 프로토타입 구현
+newItemFolder: 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현
 newItemTemplate: 1.🎯(Project) 프로젝트/!(Template) 새 할 일.md
