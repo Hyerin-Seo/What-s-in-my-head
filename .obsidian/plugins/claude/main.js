@@ -2265,7 +2265,12 @@ class ParaMod extends Mod {
       "  and:",
       '    - file.ext == "md"',
       '    - note["유형"] == "할일"',
-      '    - note["구역"] == "1.project"',
+      // 구역은 안 겁니다. 폴더 보드는 `inFolder` 로 이미 그 폴더만 봅니다. 프로젝트
+      // 구역에 있는 동안은 구역 줄이 아무것도 안 거르고, 폴더가 보관으로 나가는
+      // 순간에는 **판을 통째로 비웁니다** — 보관에서 그 프로젝트가 어디까지 갔는지
+      // 봐야 다시 끌어올릴지 정할 수 있는데 그걸 못 보게 됩니다.
+      // (2026-09-23 😎😎Second-Brain의 맛 · 할일 8장이 통째로 안 보였습니다)
+      // 구역으로 거르는 것은 `📋 프로젝트 보드` 입니다 — 거긴 프로젝트 것만 모으는 판이라 맞습니다.
       '    - file.inFolder("' + path + '")',
       "    - not:",
       '        - file.name.startsWith("!(Template)")',
@@ -2557,7 +2562,13 @@ class ParaMod extends Mod {
           const match = rules[0].match(/^file\.inFolder\(("(?:[^"\\]|\\.)*")\)$/);
           if (!match) continue;
           const target = JSON.parse(match[1]);
-          if (!target.startsWith(PROJECT_ZONE + "/")) continue;
+          // 구역 밖을 가리켜도 지웁니다. 프로젝트 폴더가 보관으로 나가면 `followMoves`
+          // 가 **이 뷰의 경로까지** 새 자리로 고쳐 줍니다. 그래서 "프로젝트 구역 안을
+          // 가리킬 때만 지운다" 로 두면 보관을 가리키는 탭이 영영 남습니다. 남은 탭은
+          // 빈 판인 데다 `quickAddFolder` 가 보관 폴더라, `+` 를 누르면 보관에 할일이
+          // 생겨 구역 경고가 납니다. (2026-09-23 문서 어시스턴트·Second-Brain의 맛)
+          // 지우는 것은 **이름이 그 폴더 이름 그대로인** 한 줄짜리 칸반뿐입니다 —
+          // 플러그인이 지은 모양입니다. 사람이 만든 뷰는 위 조건에서 이미 빠집니다.
           if (view.name !== target.split("/").pop()) continue;
           if (!current.has(target)) lines.splice(start, end - start);
         }

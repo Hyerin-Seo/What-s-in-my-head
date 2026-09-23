@@ -9,6 +9,7 @@
   "showUnsupportedFiles": true,
   "userIgnoreFilters": [
     "skills/",
-    "/!\\(Template\\)/"
+    "/!\\(Template\\)/",
+    "99.🥸(Agent) 작업 공간/"
   ]
 }

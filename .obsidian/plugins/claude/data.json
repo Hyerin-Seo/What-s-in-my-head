@@ -45,7 +45,8 @@
     },
     "exclude": [
       "!🏠 홈",
-      "3.📦(Resource) 자료/!Template"
+      "3.📦(Resource) 자료/!Template",
+      "99.🥸(Agent) 작업 공간"
     ]
   },
   "inbox": {
@@ -66,7 +67,8 @@
     "notice": false,
     "exclude": [
       "!🏠 홈",
-      "3.📦(Resource) 자료/!Template"
+      "3.📦(Resource) 자료/!Template",
+      "99.🥸(Agent) 작업 공간"
     ]
   },
   "canvas": {},

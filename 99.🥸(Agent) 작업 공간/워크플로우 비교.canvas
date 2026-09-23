@@ -1,0 +1,449 @@
+{
+	"nodes": [
+		{
+			"id": "title",
+			"type": "text",
+			"x": 0,
+			"y": -700,
+			"width": 1300,
+			"height": 330,
+			"text": "# 🔁 회의 한 바퀴\n**사람은 속기만 쓰고 · 에이전트는 99 에 초안을 쓰고 · 사람이 체크한 것만 볼트로 나간다**\n\n- 99 에이전트 작업 공간은 **샌드박스** — 옵시디언 제외된 파일이라 보드·검색에 안 뜸\n- 사람이 만지는 곳은 셋: **회의록** · 회의록 안의 **AI 정리 체크** · **프로젝트 칸반**\n- 에이전트에게 하는 말은 셋: \"정리해줘\" · \"반영해줘\" · \"다음 회의 준비해줘\"\n- 규칙 정본: `skills/meeting-notes/SKILL.md`"
+		},
+		{
+			"id": "legend",
+			"type": "text",
+			"x": 1360,
+			"y": -700,
+			"width": 560,
+			"height": 330,
+			"text": "## 색\n- 🟩 초록 — 🧑 사람이 하는 일\n- 🟦 청록 — 🤖 에이전트가 하는 일\n- 🟪 보라 — 📄 파일 · 노트\n- 🟨 노랑 — 🧠 학습\n- 🟧 주황 선 — ↻ 다음 회의로 돌아가는 길\n- 회색 — 저절로 되는 것 (베이스 표)"
+		},
+		{
+			"id": "ref",
+			"type": "text",
+			"x": 1980,
+			"y": -700,
+			"width": 660,
+			"height": 330,
+			"text": "## 빌려 온 것\n| Notion · Mem | 여기 |\n| --- | --- |\n| Notes · Transcript 탭 | 속기 · 자료 |\n| Summary 탭 (따로 둠) | 🤖 AI 정리 (99, 끼워 보임) |\n| action item → 사람이 태스크로 | 체크 → \"반영해줘\" |\n| Mem Heads Up | ⏮ 지난 회의에서 넘어온 것 · 사전 준비 |\n| custom instructions · Retry | 스킬 · \"다시 정리해줘\" |"
+		},
+		{
+			"id": "h1",
+			"type": "text",
+			"x": 0,
+			"y": -250,
+			"width": 360,
+			"height": 90,
+			"text": "## 1 Pre · 회의 전"
+		},
+		{
+			"id": "h2",
+			"type": "text",
+			"x": 460,
+			"y": -250,
+			"width": 340,
+			"height": 90,
+			"text": "## 2 Live · 회의 중"
+		},
+		{
+			"id": "h3",
+			"type": "text",
+			"x": 860,
+			"y": -250,
+			"width": 440,
+			"height": 90,
+			"text": "## 3 Post · 정리"
+		},
+		{
+			"id": "h4",
+			"type": "text",
+			"x": 1360,
+			"y": -250,
+			"width": 360,
+			"height": 90,
+			"text": "## 체크"
+		},
+		{
+			"id": "h5",
+			"type": "text",
+			"x": 1780,
+			"y": -250,
+			"width": 380,
+			"height": 90,
+			"text": "## 반영"
+		},
+		{
+			"id": "h6",
+			"type": "text",
+			"x": 2220,
+			"y": -250,
+			"width": 420,
+			"height": 90,
+			"text": "## 4 Action · 처리"
+		},
+		{
+			"id": "gL1",
+			"type": "group",
+			"x": -40,
+			"y": -30,
+			"width": 2720,
+			"height": 470,
+			"label": "🧑 회의록 — 사람이 보는 한 장 (4.🗄️ 보관/회의록)"
+		},
+		{
+			"id": "gL2",
+			"type": "group",
+			"x": -40,
+			"y": 480,
+			"width": 2720,
+			"height": 440,
+			"label": "🤖 99 샌드박스 — 에이전트만 씀 · 볼트 보드·검색에 안 뜸"
+		},
+		{
+			"id": "gL3",
+			"type": "group",
+			"x": -40,
+			"y": 960,
+			"width": 2720,
+			"height": 320,
+			"label": "📦 볼트 — 인박스 · 프로젝트"
+		},
+		{
+			"id": "gL4",
+			"type": "group",
+			"x": -40,
+			"y": 1320,
+			"width": 2720,
+			"height": 330,
+			"label": "🧠 학습 — 쓸수록 정리가 정확해짐"
+		},
+		{
+			"id": "p_prev",
+			"type": "text",
+			"x": 0,
+			"y": 20,
+			"width": 360,
+			"height": 380,
+			"text": "### ⏮ 지난 회의에서 넘어온 것\n**저절로 뜨는 표** — 손 안 댐\n\n- ⏳ 아직 안 된 것\n- ✅ 요 7일 사이 끝난 것\n\n`주제: 회의 할 일` 인 할일을 찾음\n(Mem 의 Heads Up)"
+		},
+		{
+			"id": "p_live",
+			"type": "text",
+			"x": 460,
+			"y": 20,
+			"width": 340,
+			"height": 260,
+			"text": "### ✍️ 속기 · 자료\n**사람만 씀**\n\n들리는 대로.\n할 일이면 줄 앞에 `→`",
+			"color": "4"
+		},
+		{
+			"id": "p_embed",
+			"type": "text",
+			"x": 1360,
+			"y": 20,
+			"width": 360,
+			"height": 320,
+			"text": "### 🤖 AI 정리 칸\n99 의 AI 정리를 **끼워서 보여 줌**\n\n사람이 그 자리에서 네모 체크\n→ 99 원본이 바뀜\n(시험으로 확인 ✅)",
+			"color": "4"
+		},
+		{
+			"id": "p_out",
+			"type": "text",
+			"x": 1780,
+			"y": 20,
+			"width": 380,
+			"height": 220,
+			"text": "### ✅ 정한 것 · ⏭ 다음 회의로\n체크한 줄만 들어옴\n직접 써도 됨"
+		},
+		{
+			"id": "p_tasks",
+			"type": "text",
+			"x": 2220,
+			"y": 20,
+			"width": 420,
+			"height": 220,
+			"text": "### 이 회의에서 나온 할 일\n**저절로 뜨는 표**\n`상위` 가 이 회의록인 할일"
+		},
+		{
+			"id": "s_prep",
+			"type": "text",
+			"x": 0,
+			"y": 530,
+			"width": 360,
+			"height": 350,
+			"text": "### 📋 사전 준비 (A2)\n\"다음 회의 준비해줘\"\n\n재료\n- ⏭ 다음 회의로\n- 지난번 안 고른 줄\n- 안 끝난 회의 할 일\n- 안건 카드\n\n목표 · 결과물은 비워 둠 → 사람",
+			"color": "5"
+		},
+		{
+			"id": "s_sort",
+			"type": "text",
+			"x": 860,
+			"y": 530,
+			"width": 440,
+			"height": 160,
+			"text": "### 🤖 \"정리해줘\"\n속기 줄마다 번호 → 분류표 (A3 작업 기억)",
+			"color": "5"
+		},
+		{
+			"id": "s_ai",
+			"type": "text",
+			"x": 860,
+			"y": 720,
+			"width": 440,
+			"height": 180,
+			"text": "### 📄 AI 정리 (A5) — 후보 **전부**\n`〔할 일〕` `〔확인 필요〕` `〔결정〕` `〔다음 안건〕`\n거르지 않음 · 줄 끝에 속기 번호",
+			"color": "6"
+		},
+		{
+			"id": "s_card",
+			"type": "text",
+			"x": 1360,
+			"y": 560,
+			"width": 360,
+			"height": 200,
+			"text": "### 📄 안건 카드 (A1)\n무거운 `〔확인 필요〕` 에만\n7단 구조로 깊게",
+			"color": "6"
+		},
+		{
+			"id": "s_apply",
+			"type": "text",
+			"x": 1780,
+			"y": 530,
+			"width": 380,
+			"height": 360,
+			"text": "### 🤖 \"반영해줘\" — 체크한 줄만\n\n- `〔할 일〕` → **할일 노트**\n- `〔결정〕` `〔확인 필요〕` → ✅ 정한 것\n- `〔다음 안건〕` → ⏭ 다음 회의로\n- 안 고른 줄 → **채택 기록**",
+			"color": "5"
+		},
+		{
+			"id": "v_inbox",
+			"type": "text",
+			"x": 1780,
+			"y": 1000,
+			"width": 380,
+			"height": 240,
+			"text": "### 📄 📝 회의록 인박스\n할일 노트 · `미처리`\n`주제: 회의 할 일`\n`상위: <회의록>`",
+			"color": "6"
+		},
+		{
+			"id": "v_proj",
+			"type": "text",
+			"x": 2220,
+			"y": 1000,
+			"width": 420,
+			"height": 240,
+			"text": "### 🧑 📤 PARA로 보내기\n→ 프로젝트 칸반에서 처리\n→ `완료`",
+			"color": "4"
+		},
+		{
+			"id": "l_ok",
+			"type": "text",
+			"x": 860,
+			"y": 1370,
+			"width": 440,
+			"height": 240,
+			"text": "### 🧑 승인 → SKILL.md 에 한 줄\n다음 \"정리해줘\" 부터 적용\n**사람 승인 없이 스킬은 안 바뀜**",
+			"color": "4"
+		},
+		{
+			"id": "l_prop",
+			"type": "text",
+			"x": 1360,
+			"y": 1370,
+			"width": 360,
+			"height": 240,
+			"text": "### 💡 스킬 수정 제안 (A4)\n같은 모양이 **두 번** 보이면\n에이전트가 제안",
+			"color": "3"
+		},
+		{
+			"id": "l_log",
+			"type": "text",
+			"x": 1780,
+			"y": 1370,
+			"width": 380,
+			"height": 240,
+			"text": "### 📒 채택 기록\n`skills/meeting-notes/채택 기록.md`\n뽑음 · 고름 · 안 고른 줄 · 못 뽑은 것",
+			"color": "3"
+		},
+		{
+			"id": "loop",
+			"type": "text",
+			"x": 0,
+			"y": 1720,
+			"width": 2640,
+			"height": 150,
+			"text": "## ↻ 다음 주 회의로\n**⏭ 다음 회의로** · 지난번 **안 고른 줄** · **안 끝난 회의 할 일** → 다음 회의록 맨 위 ⏮ 표와 사전 준비로 돌아옴",
+			"color": "2"
+		},
+		{
+			"id": "gEx",
+			"type": "group",
+			"x": 2760,
+			"y": -30,
+			"width": 560,
+			"height": 1900,
+			"label": "🔎 실제로 한 바퀴 — 2026.09.22 주간"
+		},
+		{
+			"id": "ex",
+			"type": "text",
+			"x": 2800,
+			"y": 20,
+			"width": 480,
+			"height": 900,
+			"text": "### 2026.09.22 주간 회의록\n[[2026.09.22 주간 회의록]]\n\n| | |\n| --- | --- |\n| 속기 | 9줄 |\n| AI 정리 후보 | 16 |\n| 체크 | 5 |\n| 할일 노트 | 2 → 🔬 볼트 실험실 (진행중 1 · 완료 1) |\n| 정한 것 | 1 |\n| 다음 회의로 | 2 |\n| 안 고른 줄 | 11 → 채택 기록 |\n\n- AI 정리: [[2026.09.22 주간 회의록 — AI 정리]]\n- 사전 준비: [[사전 준비_추가 회의]]\n- 작업 기억: [[2026.09.22 주간 회의록 — 작업 기억]]\n\n**채택 기록에서 본 것**\n어제 못 한 일을 할 일 4개로 쪼갠 건 0/4,\n같은 내용의 다음 안건 한 줄은 골라짐 → 지켜볼 것"
+		},
+		{
+			"id": "was",
+			"type": "text",
+			"x": 2800,
+			"y": 960,
+			"width": 480,
+			"height": 650,
+			"text": "### 🗑️ 그 전에 해 봤다가 버린 것\n\n- 회의록 **✅ 표 → 배포** — 쓰기 불편, 인박스에서 또 고름\n- 카드 13장 + **칸반** — 무겁고, 칸반이 사라지자 헷갈림\n- 99 를 **속성으로** 막기 — 다른 에이전트 카드 32장이 보드에 샘\n- 에이전트가 **회의록에 직접** 결정을 씀 — 샌드박스 원칙 위반\n\n옛 파일은 99 의 `A1.collection/history/` 에 있습니다",
+			"color": "1"
+		}
+	],
+	"edges": [
+		{
+			"id": "e0",
+			"fromNode": "s_prep",
+			"fromSide": "top",
+			"toNode": "p_prev",
+			"toSide": "bottom"
+		},
+		{
+			"id": "e1",
+			"fromNode": "p_prev",
+			"fromSide": "right",
+			"toNode": "p_live",
+			"toSide": "left",
+			"label": "회의"
+		},
+		{
+			"id": "e2",
+			"fromNode": "p_live",
+			"fromSide": "bottom",
+			"toNode": "s_sort",
+			"toSide": "top",
+			"label": "\"정리해줘\""
+		},
+		{
+			"id": "e3",
+			"fromNode": "s_sort",
+			"fromSide": "bottom",
+			"toNode": "s_ai",
+			"toSide": "top"
+		},
+		{
+			"id": "e4",
+			"fromNode": "s_ai",
+			"fromSide": "right",
+			"toNode": "p_embed",
+			"toSide": "bottom",
+			"label": "끼워 보임"
+		},
+		{
+			"id": "e5",
+			"fromNode": "s_ai",
+			"fromSide": "right",
+			"toNode": "s_card",
+			"toSide": "left"
+		},
+		{
+			"id": "e6",
+			"fromNode": "p_embed",
+			"fromSide": "right",
+			"toNode": "s_apply",
+			"toSide": "top",
+			"label": "체크 → \"반영해줘\""
+		},
+		{
+			"id": "e7",
+			"fromNode": "s_apply",
+			"fromSide": "top",
+			"toNode": "p_out",
+			"toSide": "bottom"
+		},
+		{
+			"id": "e8",
+			"fromNode": "s_apply",
+			"fromSide": "bottom",
+			"toNode": "v_inbox",
+			"toSide": "top",
+			"label": "할일 노트"
+		},
+		{
+			"id": "e9",
+			"fromNode": "s_apply",
+			"fromSide": "left",
+			"toNode": "l_log",
+			"toSide": "left",
+			"label": "안 고른 줄"
+		},
+		{
+			"id": "e10",
+			"fromNode": "v_inbox",
+			"fromSide": "right",
+			"toNode": "v_proj",
+			"toSide": "left"
+		},
+		{
+			"id": "e11",
+			"fromNode": "v_proj",
+			"fromSide": "top",
+			"toNode": "p_tasks",
+			"toSide": "bottom",
+			"label": "저절로 뜸"
+		},
+		{
+			"id": "e12",
+			"fromNode": "v_proj",
+			"fromSide": "right",
+			"toNode": "loop",
+			"toSide": "right",
+			"label": "완료 · 미완",
+			"color": "2"
+		},
+		{
+			"id": "e13",
+			"fromNode": "loop",
+			"fromSide": "left",
+			"toNode": "p_prev",
+			"toSide": "left",
+			"label": "⏮ 표",
+			"color": "2"
+		},
+		{
+			"id": "e14",
+			"fromNode": "loop",
+			"fromSide": "left",
+			"toNode": "s_prep",
+			"toSide": "left",
+			"label": "사전 준비 재료",
+			"color": "2"
+		},
+		{
+			"id": "e15",
+			"fromNode": "l_log",
+			"fromSide": "left",
+			"toNode": "l_prop",
+			"toSide": "right"
+		},
+		{
+			"id": "e16",
+			"fromNode": "l_prop",
+			"fromSide": "left",
+			"toNode": "l_ok",
+			"toSide": "right"
+		},
+		{
+			"id": "e17",
+			"fromNode": "l_ok",
+			"fromSide": "top",
+			"toNode": "s_ai",
+			"toSide": "bottom",
+			"label": "더 정확한 정리",
+			"color": "3"
+		}
+	]
+}
