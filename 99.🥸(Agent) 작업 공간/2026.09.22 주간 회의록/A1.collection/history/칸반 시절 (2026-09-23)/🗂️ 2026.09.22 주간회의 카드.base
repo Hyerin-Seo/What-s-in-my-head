@@ -1,0 +1,36 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection")
+    - not:
+        - file.name.startsWith("!(Template)")
+views:
+  - type: kanban-view
+    name: 🗂️ 고르기
+    order:
+      - 유형
+      - 담당
+      - 마감
+      - 요약
+    quickAddFolder: 99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection
+    groupByProperty: note.선별
+    columnOrders:
+      note.선별:
+        - 검토 중
+        - picked
+        - paused
+        - history
+    columnColors:
+      note.선별: {}
+    cardOrders:
+      note.선별:
+        검토 중: []
+        paused:
+          - 99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection/녹음 원본 데이터를 넣어 테스트하기.md
+          - 99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection/작업 공간 비우는 시점·원본 사본 규칙 정해 99 README 에 적기.md
+          - 99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection/녹음 원본에서 todo 솎아내기.md
+          - 99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection/working memory·meta 를 Area 관리 영역으로 옮기기.md
+        history:
+          - 99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection/캘린더 추가하기.md
+          - 99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection/PARA 구역마다 무엇이 들어가는지 skill 로 쓰기.md
+          - 99.🥸(Agent) 작업 공간/2026.09.22 주간회의/A1.collection/다녀와서 추가 회의 열기.md

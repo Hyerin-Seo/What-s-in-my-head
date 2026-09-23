@@ -2,7 +2,6 @@ filters:
   and:
     - file.ext == "md"
     - note["유형"] == "할일"
-    - note["구역"] == "1.project"
     - file.inFolder("4.🗄️(Archive) 보관/😎😎Second-Brain의 맛")
     - not:
         - file.name.startsWith("!(Template)")
