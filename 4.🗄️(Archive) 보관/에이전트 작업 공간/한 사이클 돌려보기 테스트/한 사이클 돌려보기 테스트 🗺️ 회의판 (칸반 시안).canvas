@@ -1,0 +1,46 @@
+{
+	"nodes":[
+		{"id":"hint-usage","type":"text","x":0,"y":-560,"width":3040,"height":500,"color":"3","text":"## 🗺️ 회의판 — 외울 건 한마디: **\"판 정리해줘\"**\n\n1. **회의 전** — \"판 정리해줘\" → ⏮ 칸에 지난 회의 할 일이 깔림. 끝났거나 버릴 것은 **✅ 끝 · 버림**, 이번에 다룰 것은 **🔁 이번에 다룸** 으로 끌기\n2. **회의 중** — ✍️ 속기 칸에 그냥 타이핑 (정리하지 말고 들리는 대로)\n3. **회의 뒤** — \"판 정리해줘\" → 🤖 검토 중 칸에 안건 카드와 노란 포스트잇(단순 할 일 · 연락)이 깔림\n4. **끌기**\n   - 쓸 카드 → 🟢 고름 · 미룰 것 → ⏸ 보류 · 버릴 것 → 🗑 안 씀 (옆에 이유 포스트잇 한 장)\n   - 할 일 → 📤 인박스로. 포스트잇 한 장 = 할 일 하나. 사람 말로 한 줄, `@Rin 금요일까지` 처럼 담당 · 날짜도 됨\n   - 정한 것 → ✅ 정한 것 · 다음에 얘기할 것 → ⏭ 다음 회의로 (포스트잇을 새로 붙여도 됨)\n5. **다 끌었으면** \"판 정리해줘\" → 반영하고 한 줄로 보고. 🗑 가 있으면 카드를 다시 뽑아 🤖 칸에 놓음\n6. **끝나면** \"판 정리해줘\" 가 스킬 올리기 · 보관을 할지 물어봄\n\n_포스트잇 = 빈 곳 더블클릭 · 반영된 것은 **초록색**이 되고 끝에 `✔` 가 붙음 · 에이전트가 판을 고치는 동안엔 판을 잠깐 두기_"},
+		{"id":"col-prev","type":"group","x":0,"y":0,"width":560,"height":700,"label":"⏮ 지난 회의에서 넘어온 것 — 🤖 채움","color":"2"},
+		{"id":"col-prev-done","type":"group","x":0,"y":740,"width":270,"height":360,"label":"✅ 끝 · 버림","color":"4"},
+		{"id":"col-prev-again","type":"group","x":290,"y":740,"width":270,"height":360,"label":"🔁 이번에 다룸","color":"2"},
+		{"id":"col-sok","type":"group","x":600,"y":0,"width":640,"height":1100,"label":"✍️ 속기"},
+		{"id":"col-review","type":"group","x":1280,"y":0,"width":560,"height":1100,"label":"🤖 검토 중","color":"5"},
+		{"id":"col-pick","type":"group","x":1880,"y":0,"width":560,"height":520,"label":"🟢 고름","color":"4"},
+		{"id":"col-hold","type":"group","x":1880,"y":580,"width":270,"height":520,"label":"⏸ 보류"},
+		{"id":"col-drop","type":"group","x":2170,"y":580,"width":270,"height":520,"label":"🗑 안 씀 (+이유 포스트잇)","color":"1"},
+		{"id":"col-inbox","type":"group","x":2480,"y":0,"width":560,"height":1100,"label":"📤 인박스로 — 포스트잇 한 장 = 할 일 하나","color":"6"},
+		{"id":"col-decided","type":"group","x":0,"y":1160,"width":1220,"height":420,"label":"✅ 정한 것","color":"4"},
+		{"id":"col-next","type":"group","x":1280,"y":1160,"width":1760,"height":420,"label":"⏭ 다음 회의로","color":"2"},
+		{"id":"n-prev-1","type":"file","file":"1.🎯(Project) 프로젝트/🔬 볼트 실험실/속기를 넣으면 A5 안건 카드가 나오는 회의 skill 만들기.md","x":40,"y":60,"width":480,"height":200},
+		{
+			"id":"n-prev-2",
+			"type":"text",
+			"text":"🔄 위 할 일 — 진행중 · Rin · 처음 09.22 · 🔁 1",
+			"x":40,
+			"y":280,
+			"width":480,
+			"height":70,
+			"color":null
+		},
+		{"id":"n-prev-3","type":"file","file":"1.🎯(Project) 프로젝트/🔬 볼트 실험실/인박스 안에 회의록 인박스 만들기.md","x":40,"y":370,"width":480,"height":200},
+		{"id":"n-prev-4","type":"text","text":"❓ 어제 하기로 하고 못 한 것 — PARA skill · 녹음 원본 · todo 솎기 · 캘린더 (⏭ 09.22) · 🔁 1 ✔ 체크함","x":20,"y":790,"width":230,"height":150,"color":"4"},
+		{"id":"n-prev-5","type":"text","text":"❓ 확인 필요 네 가지 (⏭ 09.22) · 🔁 1 ✔ 체크함","x":20,"y":950,"width":230,"height":120,"color":"4"},
+		{"id":"n-sok","type":"file","file":"4.🗄️(Archive) 보관/회의록/2026.09/한 사이클 돌려보기 테스트.md","x":620,"y":40,"width":600,"height":1040,"subpath":"#속기"},
+		{"id":"n-note-1","type":"text","text":"〔할 일〕 파이프라인 구조 도식 공유 — @화자A (3)","x":1320,"y":60,"width":480,"height":110,"color":"3"},
+		{"id":"n-note-2","type":"text","text":"〔할 일〕 프론트 UI 에 파이프라인 실시간 상태 확인 붙이기 — @화자A (3)","x":1320,"y":190,"width":480,"height":110,"color":"3"},
+		{"id":"n-note-3","type":"text","text":"〔할 일〕 오후 2시 중간 싱크 — 화자 A · B · 2026-09-28 (10)","x":1320,"y":320,"width":480,"height":110,"color":"3"},
+		{"id":"n-note-4","type":"text","text":"〔정한 것〕 청크 단위로 잘라 요약한 뒤 취합하는 방식으로 스크립트를 고친다 (3 · 4)","x":1320,"y":450,"width":480,"height":110,"color":"3"},
+		{"id":"n-note-5","type":"text","text":"〔정한 것〕 업무 분장 — B: 파이프라인 · 메타데이터 / A: 도식 · UI (3 · 8 · 9)","x":1320,"y":580,"width":480,"height":110,"color":"3"},
+		{"id":"n-note-6","type":"text","text":"〔정한 것〕 막히는 게 있으면 슬랙으로 바로 연락 (10)","x":1320,"y":710,"width":480,"height":110,"color":"3"},
+		{"id":"n-card-11","type":"file","file":"4.🗄️(Archive) 보관/에이전트 작업 공간/한 사이클 돌려보기 테스트/A5.outputs/1.1_회의록_자동화_LLM_파이프라인_안정화.md","x":1900,"y":40,"width":520,"height":140,"color":"4"},
+		{"id":"n-card-21","type":"file","file":"4.🗄️(Archive) 보관/에이전트 작업 공간/한 사이클 돌려보기 테스트/A5.outputs/2.1_PARA_분류_기준과_데일리_노트의_자리.md","x":1900,"y":200,"width":520,"height":140,"color":"4"},
+		{"id":"n-card-23","type":"file","file":"4.🗄️(Archive) 보관/에이전트 작업 공간/한 사이클 돌려보기 테스트/A5.outputs/2.3_회의록을_볼트로_보내는_루틴과_떨어질_자리.md","x":1900,"y":360,"width":520,"height":140,"color":"4"},
+		{"id":"n-card-22","type":"file","file":"4.🗄️(Archive) 보관/에이전트 작업 공간/한 사이클 돌려보기 테스트/A1.collection/paused/2.2_팀_공용_볼트_메타데이터_포맷_통일.md","x":1895,"y":640,"width":240,"height":300,"color":"4"},
+		{"id":"n-dec-1","type":"text","text":"llm 정상화 ✔ 회의록에 있음","x":40,"y":1220,"width":480,"height":90,"color":"4"},
+		{"id":"n-next-1","type":"text","text":"2.1이랑 2.3 ✔ 회의록에 있음","x":1320,"y":1220,"width":480,"height":90,"color":"4"}
+	],
+	"edges":[
+		{"id":"e-prev-1","fromNode":"n-prev-1","fromSide":"bottom","toNode":"n-prev-2","toSide":"top"}
+	]
+}

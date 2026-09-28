@@ -20,6 +20,7 @@
 | `plugins/claude` | **직접 만든 것 다섯을 묶은 하나.** 아래 표를 보세요 |
 | `scripts/inbox.py` | 인박스 감싸기 + `agy` 로 `요약`·`주제` 채우기 |
 | `plugins/dataview` | 인박스 대시보드(핀보드)가 쓰는 유일한 외부 플러그인 |
+| `plugins/meeting-board` | **회의판 모양만.** 이름이 `회의판.canvas` 로 끝나는 캔버스에 `mb-board` 클래스를 붙이고, `styles.css` 가 FigJam 같은 포스트잇으로 칠함 (파스텔 · 그림자 · 큰 글씨 · 색 = 사람: 6 보라 Rin · 5 파랑 민규 서 · 3 노랑 AI · 4 초록 끝남 · 2 주황 밀림 · 1 분홍 ❓). 왼쪽에 **포스트잇 더미**(보라 Rin · 파랑 민규 서 · 크림 누구든) — 끌어다 놓거나 누르면 그 색 포스트잇이 생김 (문서에 없는 캔버스 API `createTextNode` 사용 — 옵시디언이 바꾸면 더미만 멈추고 알림). 모양은 캔버스 파일을 안 건드림. **안 쓰면 끄거나 폴더째 지우면 끝** — 규칙은 `skills/meeting-notes/SKILL.md` 2.1 (2026-09-28) |
 | `plugins/vault-sync` | 🔀 동기화 버튼 (git 커밋·가져오기·합치기·올리기). git 은 빈 폴더를 모르니 **커밋 전에 빈 폴더마다 `.gitkeep` 을 넣어** 폴더째 넘깁니다 (옵시디언 트리엔 안 보임, 2026-09-22). 시험: `node sync-test.js` · `node test.js` |
 
 ### `plugins/claude` — 직접 만든 기능 여섯이 한 플러그인
