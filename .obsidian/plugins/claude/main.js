@@ -1112,7 +1112,12 @@ class ParaMod extends Mod {
       out.push(["유형", "“" + kind + "” 은 " + zoneKey + " 에 없는 유형입니다. 보드가 유형으로 거릅니다"]);
     }
     const allowedStates = KIND_STATES[kind];
-    if (state && allowedStates && !allowedStates.includes(state)) {
+    // 리소스(3.resource)의 상태는 안 셉니다 (2026-09-28 Rin). 에이전트들이 조사 카드에
+    // `진행 중` · `완료` 를 쓰는데 그게 틀린 게 아니라 자료에 진척이 붙은 것이라, 시작할 때마다
+    // 수십 장짜리 목록을 여는 건 소음이었습니다. 대신 `🪄 리소스 모음집` 의 상태 칸반이
+    // 세 값만 보여 주고, 나머지는 같은 보드의 `⚠️ 상태 안 맞음` 탭에 모입니다.
+    if (zoneKey === "3.resource") { /* 상태 검사 건너뜀 — 유형·분류는 그대로 검사 */ }
+    else if (state && allowedStates && !allowedStates.includes(state)) {
       out.push(["상태", "“" + state + "” 은 유형 " + kind + " 이 쓰는 값이 아닙니다"]);
     }
     // 상태를 지우면 칸반의 미분류 칸에만 남고, 상태로 거르는 보드에서는 통째로 빠집니다.

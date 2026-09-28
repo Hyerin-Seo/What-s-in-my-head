@@ -10,6 +10,11 @@ filters:
 views:
   - type: kanban-view
     name: 🚦 상태 칸반
+    filters:
+      or:
+        - note["상태"] == "검토 중"
+        - note["상태"] == "picked"
+        - note["상태"] == "언젠가·아마도"
     order:
       - 분류
       - 요약
@@ -23,7 +28,6 @@ views:
         - 검토 중
         - picked
         - 언젠가·아마도
-        - Uncategorized
     cardOrders:
       note.상태: {}
     columnColors:
@@ -46,6 +50,24 @@ views:
         direction: DESC
     summaries:
       유형: Filled
+  - type: table
+    name: ⚠️ 상태 안 맞음
+    filters:
+      and:
+        - not:
+            - note["상태"].isEmpty()
+        - note["상태"] != "검토 중"
+        - note["상태"] != "picked"
+        - note["상태"] != "언젠가·아마도"
+    order:
+      - file
+      - 상태
+      - 분류
+      - 작성자
+      - 작성일
+    sort:
+      - property: 상태
+        direction: ASC
   - type: kanban-view
     name: ✅ picked 만
     filters:
@@ -97,6 +119,11 @@ views:
         - 망고AI UI, 생산성 향상 UI
         - 망고AI UI, 생산성 향상 UI, 자료 조사 UI
         - NovelAI UI, 망고AI UI, 자료 조사 UI
+        - R&D 프로젝트 매니징, 망고독_Discoverying, researches
+        - R&D 프로젝트 매니징, FoundationKnowledge
+        - R&D 프로젝트 매니징
+        - R&D 프로젝트 매니징, 망고독_Discoverying, artifacts, lean_canvas
+        - R&D 프로젝트 매니징, 망고독_Discoverying
     cardOrders:
       note.분류: {}
     columnColors:
