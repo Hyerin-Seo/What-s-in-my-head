@@ -1,0 +1,136 @@
+/* 회의판 — `회의판.canvas` 로 끝나는 캔버스(.mb-board)에만 적용. 다른 캔버스는 그대로. */
+
+/* 캔버스 색 6개를 파스텔로 바꿈 — 색 = 누가 · 무엇
+   1 분홍 ❓ 확인 · 2 주황 밀림/진행 중 · 3 노랑 🤖 AI · 4 초록 끝남/반영됨 · 5 파랑 민규 서 · 6 보라 Rin */
+.mb-board {
+  --canvas-color-1: 247, 193, 193;
+  --canvas-color-2: 250, 199, 117;
+  --canvas-color-3: 255, 229, 143;
+  --canvas-color-4: 192, 221, 151;
+  --canvas-color-5: 181, 212, 244;
+  --canvas-color-6: 206, 203, 246;
+  --mb-ink: #2c2c2a;
+  --mb-cream: 250, 244, 226;
+}
+
+/* 포스트잇 = 제목(#)이 없는 글 카드 · 파일 카드 */
+.mb-board .canvas-node:not(.canvas-node-group) .canvas-node-container {
+  background: rgb(var(--canvas-color, var(--mb-cream)));
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.14), 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+.mb-board .canvas-node:not(.canvas-node-group):not(.is-themed) .canvas-node-container {
+  background: rgb(var(--mb-cream));
+}
+.mb-board .canvas-node:not(.canvas-node-group) .canvas-node-content,
+.mb-board .canvas-node:not(.canvas-node-group) .canvas-node-content .markdown-preview-view,
+.mb-board .canvas-node:not(.canvas-node-group) .canvas-node-content .cm-editor {
+  background: transparent;
+  color: var(--mb-ink);
+  --text-normal: var(--mb-ink);
+  --text-muted: #5f5e5a;
+  --link-color: #3c3489;
+}
+.mb-board .canvas-node:not(.canvas-node-group) .canvas-node-content {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Nanum Pen Script", "Nanum Pen", var(--font-text);
+}
+.mb-board .canvas-node:not(.canvas-node-group) .canvas-node-content p { margin: 0 0 0.4em; }
+
+/* 살짝 기울기 — 포스트잇 느낌. 선택 중엔 똑바로 */
+.mb-board .canvas-node:not(.canvas-node-group):nth-child(3n) .canvas-node-container { transform: rotate(-1.2deg); }
+.mb-board .canvas-node:not(.canvas-node-group):nth-child(3n+1) .canvas-node-container { transform: rotate(0.8deg); }
+.mb-board .canvas-node.is-focused .canvas-node-container,
+.mb-board .canvas-node.is-selected .canvas-node-container { transform: none; }
+
+/* 제목 카드(# · ## 로 시작) = 종이 위에 쓴 큰 글씨, 상자 없음 */
+.mb-board .canvas-node:not(.canvas-node-group):has(.markdown-preview-view h1, .markdown-preview-view h2) .canvas-node-container {
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+.mb-board .canvas-node:has(.markdown-preview-view h1) h1,
+.mb-board .canvas-node:has(.markdown-preview-view h2) h2 {
+  color: var(--text-normal);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* 접힌 모서리 · 올리면 살짝 들림 — "떼어 붙인" 느낌 */
+.mb-board .canvas-node:not(.canvas-node-group) .canvas-node-container { position: relative; }
+.mb-board .canvas-node:not(.canvas-node-group) .canvas-node-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0 50%, rgba(255, 255, 255, 0.6) 50% 100%);
+  border-top-left-radius: 6px;
+  pointer-events: none;
+}
+.mb-board .canvas-node:not(.canvas-node-group):has(.markdown-preview-view h1, .markdown-preview-view h2) .canvas-node-container::after { display: none; }
+.mb-board .canvas-node:not(.canvas-node-group):hover .canvas-node-container {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 구역(그룹) = 넓은 파스텔 판, 테두리 없음 */
+.mb-board .canvas-node-group .canvas-node-container {
+  background: rgba(var(--canvas-color, 180, 178, 169), 0.22);
+  border: none;
+  border-radius: 20px;
+}
+/* 구역 이름 — 옵시디언은 색 있는 구역의 이름을 구역 색으로 칠해서 파스텔이면 안 보임. 글자는 늘 진하게 */
+.mb-board .canvas-group-label,
+.mb-board .canvas-node-group.is-themed .canvas-group-label,
+.mb-board .is-themed .canvas-group-label {
+  font-size: 22px !important;
+  font-weight: 700;
+  background: transparent !important;
+  color: var(--text-normal) !important;
+}
+
+/* 포스트잇 더미 (왼쪽) — 끌어다 놓거나 누르면 그 색 포스트잇 */
+.mb-board .mb-pads {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 12px 16px;
+  background: var(--background-primary);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+.mb-board .mb-pads-title { font-size: 11px; color: var(--text-muted); }
+.mb-board .mb-pad {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 6px;
+  font-size: 11px;
+  color: #2c2c2a;
+  cursor: grab;
+  border-radius: 3px;
+  background: rgb(250, 244, 226);
+  box-shadow: 3px 3px 0 -1px rgb(236, 228, 205), 6px 6px 0 -2px rgb(222, 212, 184), 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.12s ease;
+}
+.mb-board .mb-pad[data-color="6"] {
+  background: rgb(206, 203, 246);
+  box-shadow: 3px 3px 0 -1px rgb(186, 182, 236), 6px 6px 0 -2px rgb(166, 160, 224), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.mb-board .mb-pad[data-color="5"] {
+  background: rgb(181, 212, 244);
+  box-shadow: 3px 3px 0 -1px rgb(160, 196, 234), 6px 6px 0 -2px rgb(139, 180, 224), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.mb-board .mb-pad:hover { transform: translate(-2px, -3px) rotate(-4deg); }
+.mb-board .mb-pad:active { cursor: grabbing; }
