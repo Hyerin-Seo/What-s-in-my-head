@@ -9,7 +9,7 @@
   "dataview",
   "customjs",
   "calendar-bases",
-  "claude",
   "vault-sync",
-  "meeting-board"
+  "meeting-board",
+  "claude"
 ]

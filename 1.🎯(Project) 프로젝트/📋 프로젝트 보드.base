@@ -348,7 +348,7 @@ views:
     columnColors:
       note.상태: {}
   - type: kanban-view
-    name: "🐕망고독 R&D 프로젝트 관리"
+    name: 🐕망고독 R&D 프로젝트 관리
     filters:
       and:
         - file.inFolder("1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리")
