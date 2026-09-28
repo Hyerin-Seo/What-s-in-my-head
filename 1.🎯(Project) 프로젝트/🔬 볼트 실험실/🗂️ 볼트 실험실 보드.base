@@ -37,6 +37,7 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/레퍼런스 훑어보고 뜯어 볼 도구 하나 고르기.md
         확인 필요:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/다음 회의를 속기하고 meeting-notes 스킬로 할일 배포까지 해 보기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/속기를 넣으면 A5 안건 카드가 나오는 회의 skill 만들기.md
   - type: kanban-view
     name: 👤 Rin
     filters:

@@ -323,7 +323,7 @@ views:
     columnColors:
       note.상태: {}
   - type: kanban-view
-    name: "🤔R&D 스피린트 프로젝트 관리기법 도입"
+    name: 🤔R&D 스피린트 프로젝트 관리기법 도입
     filters:
       and:
         - file.inFolder("1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입")
