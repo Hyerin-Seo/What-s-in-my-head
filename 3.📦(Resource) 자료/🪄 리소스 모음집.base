@@ -15,6 +15,7 @@ views:
         - note["상태"] == "검토 중"
         - note["상태"] == "picked"
         - note["상태"] == "언젠가·아마도"
+        - note["상태"] == "히스토리"
     order:
       - 분류
       - 요약
@@ -28,6 +29,7 @@ views:
         - 검토 중
         - picked
         - 언젠가·아마도
+        - 히스토리
     cardOrders:
       note.상태: {}
     columnColors:
@@ -59,6 +61,7 @@ views:
         - note["상태"] != "검토 중"
         - note["상태"] != "picked"
         - note["상태"] != "언젠가·아마도"
+        - note["상태"] != "히스토리"
     order:
       - file
       - 상태
