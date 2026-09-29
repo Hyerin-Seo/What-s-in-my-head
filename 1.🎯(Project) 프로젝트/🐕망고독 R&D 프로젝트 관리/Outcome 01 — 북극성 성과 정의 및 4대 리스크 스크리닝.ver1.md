@@ -11,7 +11,7 @@
   - Cursor 모델
   - Document Builder
   - Document Composer
-상태: 확인 필요
+상태: 퍼즈
 요약: "망고독 디스커버리 1단계 최상위 Outcome 합의문 — 'Cursor for Document Building' 키 컨셉 기반: 챗봇 방식을 끝내고 커서처럼 수많은 백데이터를 인덱싱해 30장 완제품 문서를 생각의 속도로 직조하는 북극성 성과 지표와 4대 리스크 스크리닝"
 작성일: 2026-09-28
 마감:
