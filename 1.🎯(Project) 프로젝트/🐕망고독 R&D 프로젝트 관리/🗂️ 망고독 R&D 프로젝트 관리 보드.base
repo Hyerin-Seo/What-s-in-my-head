@@ -30,9 +30,14 @@ views:
       note.상태: {}
     cardOrders:
       note.상태:
-        to do: []
+        to do:
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(gen)Risk 02 — Usability Risk (Composer 인터랙션 및 조작성 검증).md
         진행중:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/🎯 (Outcome) 북극성 Outcome 정의 및 4대 리스크 스크리닝.md
+        확인 필요:
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Outcome 01 — 북극성 성과 정의 및 4대 리스크 스크리닝.ver1.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(gen)Risk 01 — Value Risk (전환 가치 및 지불 의향 검증).md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/프로토타입 01 — 바이브 코딩(Vibe Coding) 인터랙티브 프로토타입 (정성적 WTS·WTP 실측 프로토콜).md
   - type: kanban-view
     name: 👤 Rin
     filters:
