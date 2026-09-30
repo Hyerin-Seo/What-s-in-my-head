@@ -8,7 +8,7 @@
 | 파일 | 무엇 |
 | --- | --- |
 | `scripts/route.py` | 인박스·이동·수리·정리 도구. 프론트매터를 읽고 쓰는 유일한 스크립트 |
-| `types.json` | 속성 타입 고정 (`담당`·`분류`·`주제`·`작성자`=multitext, `마감`·`일정`=date) |
+| `types.json` | 속성 타입 고정 (`담당`·`분류`·`주제`·`작성자`=multitext, `마감`·`일정`·`시작`=date) |
 | `snippets/wide-page.css` | 전체폭 · 임베드 안 칸반 열 폭 |
 | `snippets/library-cards.css` | 베이스 카드 = 노션 갤러리 모양 |
 | `snippets/kanban-labels.css` | 칸반 빈 열 이름 바꾸기 (`Uncategorized` → 한글) |

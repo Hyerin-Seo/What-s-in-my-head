@@ -5,6 +5,7 @@
     "담당": "multitext",
     "작성자": "multitext",
     "마감": "date",
-    "일정": "date"
+    "일정": "date",
+    "시작": "date"
   }
 }
