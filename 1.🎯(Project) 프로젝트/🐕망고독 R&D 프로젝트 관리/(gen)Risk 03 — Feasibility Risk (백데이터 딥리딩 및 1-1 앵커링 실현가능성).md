@@ -2,9 +2,7 @@
 유형: 자료
 구역: 1.project
 분류:
-  - R&D 프로젝트 매니징
-  - 망고독_Discoverying
-  - risks
+  - 🐕망고독 R&D 프로젝트 관리
 주제:
   - Product Discovery
   - SVPG

@@ -3,8 +3,6 @@
 구역: 1.project
 분류:
   - 🐕망고독 R&D 프로젝트 관리
-  - prototypes
-  - value
 주제:
   - 바이브 코딩
   - Vibe Coding
