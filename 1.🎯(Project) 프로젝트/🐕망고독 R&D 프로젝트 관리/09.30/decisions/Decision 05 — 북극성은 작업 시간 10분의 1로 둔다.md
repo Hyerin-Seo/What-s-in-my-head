@@ -3,8 +3,6 @@
 구역: 1.project
 분류:
   - 🐕망고독 R&D 프로젝트 관리
-  - "09.30"
-  - decisions
 주제:
   - 결정 사항
   - 북극성 Outcome
