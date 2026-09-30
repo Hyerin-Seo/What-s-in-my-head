@@ -28,6 +28,15 @@ views:
         - 히스토리
     columnColors:
       note.상태: {}
+    cardOrders:
+      note.상태:
+        to do:
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/10.20~10.24 할머니 서울 일정.md
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026.10.19 오전 11시 대동병원 방문.md
+        히스토리:
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026. 10.14 오후 2시반 연세척병원 방문.md
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026.09.29 모름시 연세척병원 큰엄마 허리 수술.md
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/은행에 법인카드 발급 서류 물어보고 신청하기.md
   - type: kanban-view
     name: 👤 Rin
     filters:
