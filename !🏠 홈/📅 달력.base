@@ -14,9 +14,10 @@ filters:
             - not:
                 - note["일정"].isEmpty()
 formulas:
-  일정시작: if(note["유형"] == "휴가", date(note["작성일"]), if(note["일정"].isEmpty(), date(note["마감"]), date(note["일정"])))
-  구분: if(note["유형"] == "휴가", "🏖️ 근무표", if(note["일정"].isEmpty(), "⏰ 마감", "📅 하는 날"))
-  아이콘: if(note["유형"] == "휴가", "🏖️", if(note["일정"].isEmpty(), "⏰", "📅"))
+  달력시작: if(note["유형"] == "휴가", date(note["작성일"]), if(!note["일정"].isEmpty(), date(note["일정"]), if(!note["시작"].isEmpty(), date(note["시작"]), date(note["마감"]))))
+  달력끝: if(note["유형"] == "휴가" || note["일정"].isEmpty(), if(!note["마감"].isEmpty(), date(note["마감"])))
+  구분: if(note["유형"] == "휴가", "🏖️ 근무표", if(!note["일정"].isEmpty(), "📅 일정", if(!note["시작"].isEmpty(), "⏳ 기간", "⏰ 마감")))
+  아이콘: if(note["유형"] == "휴가", "🏖️", if(!note["일정"].isEmpty(), "📅", if(!note["시작"].isEmpty(), "⏳", "⏰")))
 views:
   - type: calendar
     name: 📅 이번 달
@@ -24,8 +25,8 @@ views:
       - file
       - formula.아이콘
       - 담당
-    startDate: formula.일정시작
-    endDate: note.마감
+    startDate: formula.달력시작
+    endDate: formula.달력끝
     weekStartDay: sunday
   - type: table
     name: 📋 날짜 순
@@ -33,12 +34,14 @@ views:
       - file
       - formula.구분
       - 상태
-      - formula.일정시작
+      - formula.달력시작
+      - formula.달력끝
       - 일정
+      - 시작
       - 마감
       - 담당
     sort:
-      - property: 마감
+      - property: formula.달력시작
         direction: ASC
     summaries:
       유형: Filled
