@@ -1,14 +1,13 @@
 ---
-
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+tags:
+  - excalidraw
 유형: 할일
 구역: 1.project
 분류:
   - 🐕망고독 R&D 프로젝트 관리
 주제:
-상태: to do
+상태: 진행중
 요약:
 작성일: 2026-09-30
 마감:
