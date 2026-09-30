@@ -29,6 +29,7 @@ views:
         - note["유형"] == "할일"
         - note["구역"] == "1.project"
         - note["상태"] != "완료"
+        - note["상태"] != "결정 사항"
     order:
       - file
       - 상태

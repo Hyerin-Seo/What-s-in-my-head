@@ -220,6 +220,8 @@ function filledProp(v) {
 /** 값 한 줄 — 볼트 관례: 빈 값은 맨 칸, 위키링크·특수문자 시작은 따옴표 */
 function yamlScalar(v) {
   if (!v) return "";
+  // `09.30` 같은 폴더 이름이 분류에 들어가면 YAML 이 숫자 9.3 으로 읽습니다 (2026-09-30) — 숫자 · 참거짓 모양도 따옴표
+  if (/^[-+]?(\d[\d_]*)?(\.\d+)?([eE][-+]?\d+)?$/.test(v) || /^(true|false|null|yes|no|on|off|~)$/i.test(v)) return JSON.stringify(v);
   return /^[\s'"[\]{}|>&*!%@`#-]|: |#/.test(v) ? '"' + v.replace(/"/g, '\\"') + '"' : v;
 }
 
@@ -453,7 +455,7 @@ const KIND_STATES = {
   /* 진행 상황 순서. 칸반 칸이 이 순서 그대로입니다.
      예전의 `위임함`·`일정 있음`·`기한만` 은 진행 상황이 아니라 **누가·언제** 라서
      칸에서 빼고 속성으로 옮겼습니다 (담당 · 마감). */
-  "할일": ["to do", "진행중", "확인 필요", "완료", "퍼즈", "히스토리"],
+  "할일": ["to do", "진행중", "확인 필요", "완료", "퍼즈", "히스토리", "결정 사항"],
   /* `히스토리` 는 다 보고 치워둔 자료 (2026-09-28 Rin). 보관으로 보낼지는 사람이 나중에 정리하며 정합니다 */
   "자료": ["검토 중", "picked", "언젠가·아마도", "히스토리"],
   "레퍼런스": ["검토 중", "picked", "언젠가·아마도", "히스토리"],
@@ -465,6 +467,11 @@ const KIND_STATES = {
   "홈": [], "바로가기": [], "대시보드": [],
 };
 const ALL_KINDS = Object.keys(KIND_STATES);
+/* `결정 사항` 은 칸반에 안 띄우는 할일 상태입니다 (2026-09-30 Rin) — 회의에서 정한 것을 프로젝트 폴더에 두되
+   진행할 일이 아니라서 칸이 없습니다. 칸반 플러그인은 모르는 값을 **새 칸으로 붙이고 보드에 저장**하므로,
+   칸 목록에서 빼는 것만으로는 안 숨고 보드 필터(`note["상태"] != "결정 사항"`)가 같이 있어야 합니다. */
+const KANBAN_HIDDEN_STATES = ["결정 사항"];
+const KANBAN_STATES = KIND_STATES["할일"].filter((s) => !KANBAN_HIDDEN_STATES.includes(s));
 
 /* 이 유형은 위치가 곧 역할이라 옮기지 않습니다 */
 /* 같은 구역 안에서도 분류로 폴더를 맞추는 구역 — 인박스(판단 전)·보관(분류는 기록)은 뺍니다 */
@@ -2271,6 +2278,7 @@ class ParaMod extends Mod {
       "  and:",
       '    - file.ext == "md"',
       '    - note["유형"] == "할일"',
+      ...KANBAN_HIDDEN_STATES.map((v) => '    - note["상태"] != "' + v + '"'),
       // 구역은 안 겁니다. 폴더 보드는 `inFolder` 로 이미 그 폴더만 봅니다. 프로젝트
       // 구역에 있는 동안은 구역 줄이 아무것도 안 거르고, 폴더가 보관으로 나가는
       // 순간에는 **판을 통째로 비웁니다** — 보관에서 그 프로젝트가 어디까지 갔는지
@@ -2296,7 +2304,7 @@ class ParaMod extends Mod {
       "    columnOrders:",
       "      note.상태:",
     ];
-    for (const state of (KIND_STATES["할일"] || [])) L.push("        - " + state);
+    for (const state of KANBAN_STATES) L.push("        - " + state);
     L.push("    columnColors:", "      note.상태: {}");
     // 프로젝트 전용 보드는 처음부터 세 담당자 보기까지 함께 만듭니다.
     // 일이 없어도 탭이 있어야 "아직 배정된 일이 없다"를 확인할 수 있습니다.
@@ -2443,7 +2451,7 @@ class ParaMod extends Mod {
     L.push("    imageProperty: note.커버", "    imageFit: cover",
            "    imageAspectRatio: 0.667");
     L.push("    columnOrders:", "      note.상태:");
-    for (const c of (KIND_STATES["할일"] || [])) L.push("        - " + c);
+    for (const c of KANBAN_STATES) L.push("        - " + c);
     L.push("    columnColors:", "      note.상태: {}");
     return L;
   }
@@ -2502,7 +2510,7 @@ class ParaMod extends Mod {
     L.push("    imageProperty: note.커버", "    imageFit: cover",
            "    imageAspectRatio: 0.667");
     L.push("    columnOrders:", "      note.상태:");
-    for (const c of (KIND_STATES["할일"] || [])) L.push("        - " + c);
+    for (const c of KANBAN_STATES) L.push("        - " + c);
     L.push("    columnColors:", "      note.상태: {}");
     return L;
   }
