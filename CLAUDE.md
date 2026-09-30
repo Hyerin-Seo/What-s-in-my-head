@@ -18,7 +18,7 @@
 | 할일 · 칸반 · 담당자 뷰 · 캔버스 · 버그 리포트 | `docs/project-board.md` |
 | 보드(`.base`)를 만들거나 고친다 · 보드로 링크를 건다 | `docs/boards.md` |
 | 플러그인(`plugins/claude` 등) · CSS 스니펫 · 스크립트 · 상태 칩 | `docs/plugins.md` |
-| 회의록을 정리한다 (지난 회의 점검 · 안건 카드 · 튜닝 · 보관) · 스킬을 쓰거나 만든다 | `docs/meetings-and-skills.md` → `skills/` |
+| 회의록을 정리한다 (지난 회의 점검 · 안건 카드 · 결정 카드 · 튜닝 · 보관) · 스킬을 쓰거나 만든다 | `docs/meetings-and-skills.md` → `skills/` |
 | 노트에 코멘트를 달거나 답한다 · @언급 · 슬랙 알림 | `docs/comments.md` |
 | 이상해 보이는데 버그인지 모르겠다 | `docs/known-gaps.md` |
 
