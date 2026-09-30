@@ -2,6 +2,7 @@ filters:
   and:
     - file.ext == "md"
     - note["유형"] == "할일"
+    - note["상태"] != "결정 사항"
     - file.inFolder("4.🗄️(Archive) 보관/여행 관련")
     - not:
         - file.name.startsWith("!(Template)")

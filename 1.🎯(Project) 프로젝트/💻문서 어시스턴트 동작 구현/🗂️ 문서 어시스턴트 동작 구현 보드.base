@@ -2,6 +2,7 @@ filters:
   and:
     - file.ext == "md"
     - note["유형"] == "할일"
+    - note["상태"] != "결정 사항"
     - file.inFolder("1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현")
     - not:
         - file.name.startsWith("!(Template)")
