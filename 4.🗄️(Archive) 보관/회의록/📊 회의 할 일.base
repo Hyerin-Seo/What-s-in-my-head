@@ -2,7 +2,10 @@ filters:
   and:
     - file.ext == "md"
     - note["유형"] == "할일"
-    - note["주제"].contains("회의 할 일")
+    - note["상태"] != "결정 사항"
+    - or:
+        - file.folder.contains("/discussions/")
+        - note["주제"].contains("회의 할 일")
     - not:
         - file.name.startsWith("!(Template)")
 views:
@@ -88,12 +91,15 @@ views:
   - type: table
     name: 📝 회의별
     order:
+      - file.folder
       - 상위
       - file
       - 상태
       - 담당
       - 마감
     sort:
+      - property: file.folder
+        direction: DESC
       - property: 상위
         direction: DESC
   - type: table
