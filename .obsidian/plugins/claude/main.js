@@ -45,6 +45,14 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     파일 이름만 보면 `!(Template) 근무표 품의서/[품의서] 제목.md` 같은 **폴더째 양식**이 빠집니다. */
 const isTemplatePath = (path) => /(^|\/)!\(Template\)/.test(path);
 
+/** 에이전트 작업 공간인가 — 경로의 **어느 조각이든** 폴더 이름이 `99.🥸(Agent) 작업 공간` 입니다.
+    AI 가 쓴 후보를 두는 샌드박스라 옮기지도, 속성을 채우지도, 어긋남으로 잡지도 않습니다.
+    볼트 맨 위에만 있지 않고 프로젝트 폴더 안에도 둡니다. 설정의 `제외 폴더` 는 볼트 맨 위
+    기준 앞머리로만 맞춰서 안쪽 것을 놓쳤습니다 — 후보 노트(`유형: 메모`)가 ⚠ PARA 에
+    "1.project 에 있음" 으로 떴습니다 (2026-10-01). 그래서 양식처럼 이름으로 가립니다. */
+const AGENT_WORKSPACE = "99.🥸(Agent) 작업 공간";
+const inAgentWorkspace = (path) => path.split("/").includes(AGENT_WORKSPACE);
+
 /** 폴더 이름을 견줄 **열쇠** — 이모지·띄어쓰기·대소문자를 뺀 글자만 남깁니다.
     `✏️문서 어시스턴트 에디터 목업` 과 `문서 어시스턴트 에디터 목업` 이 같은 열쇠가 됩니다.
     이모지만으로 된 이름은 빈 열쇠라 아무것과도 안 맞습니다. */
@@ -825,6 +833,7 @@ class ParaMod extends Mod {
     if (path.split("/").length < 2) return true;   // 최상위 파일은 손대지 않는다
     if (inAgentSkill(this.app, path)) return true;  // 에이전트 스킬 — 노트가 아닙니다
     if (isTemplatePath(path)) return true;          // 양식 — 틀이지 노트가 아닙니다
+    if (inAgentWorkspace(path)) return true;        // 에이전트 작업 공간 — 어느 깊이에 있든
     return (this.settings.exclude || []).some(
       (ex) => ex && (path === ex || path.startsWith(ex + "/"))
     );
@@ -2473,6 +2482,7 @@ class ParaMod extends Mod {
     const seen = new Set();
     for (const f of this.app.vault.getMarkdownFiles()) {
       if (!f.path.startsWith(base)) continue;
+      if (inAgentWorkspace(f.path)) continue;        // 후보 할 일의 담당으로 뷰를 만들지 않습니다
       const fm = (this.app.metadataCache.getFileCache(f) || {}).frontmatter || {};
       if (str(fm["유형"]) !== "할일") continue;
       const raw = fm["담당"];
@@ -4666,6 +4676,7 @@ class CoverMod extends Mod {
   isExcluded(path) {
     if (inAgentSkill(this.app, path)) return true;  // 에이전트 스킬 — 커버를 안 붙입니다
     if (isTemplatePath(path)) return true;          // 양식 — 커버를 안 붙입니다
+    if (inAgentWorkspace(path)) return true;        // 에이전트 작업 공간 — 어느 깊이에 있든
     return (this.settings.exclude || []).some(
       (ex) => ex && (path === ex || path.startsWith(ex + "/"))
     );
