@@ -1,0 +1,41 @@
+/* 최종 기술 블로그 노트에만 적용. cssclasses: techblog-final */
+.techblog-final {
+  --file-line-width: 720px;
+  --background-primary: #ffffff;
+  --background-secondary: #f5f7f9;
+  --text-normal: #333b43;
+  --text-muted: #6c7680;
+  --text-accent: #387abb;
+  --code-background: #f5f7f9;
+  --code-normal: #46515d;
+  --table-border-color: #e5e9ed;
+  --font-text: 'LG Smart UI', 'Malgun Gothic', sans-serif;
+  --font-monospace: Consolas, 'Malgun Gothic', monospace;
+  --h1-size: 2em;
+  --h2-size: 1.4em;
+  --h3-size: 1.1em;
+  color: #333b43;
+  background: #ffffff;
+}
+.techblog-final.markdown-preview-view { padding: 48px 28px 80px; }
+.techblog-final .markdown-preview-sizer { max-width: 720px; margin-inline: auto; }
+.techblog-final p, .techblog-final li { font-size: 16px; line-height: 1.9; }
+.techblog-final h1, .techblog-final h2, .techblog-final h3 { color: #202a34; font-weight: 700; letter-spacing: -.025em; }
+.techblog-final h1 { line-height: 1.4; margin-bottom: 16px; }
+.techblog-final h2 { margin-top: 44px; margin-bottom: 18px; line-height: 1.5; }
+.techblog-final h3 { margin-top: 30px; margin-bottom: 12px; line-height: 1.55; }
+.techblog-final pre, .techblog-final .HyperMD-codeblock { background: #f5f7f9 !important; color: #46515d; }
+.techblog-final pre { border: 0; border-radius: 2px; padding: 20px 24px; margin-block: 20px; box-shadow: none; }
+.techblog-final pre code { font-family: Consolas, 'Malgun Gothic', monospace; font-size: 13px; line-height: 1.75; background: transparent; white-space: pre-wrap; overflow-wrap: anywhere; }
+.techblog-final :not(pre) > code { background: #f2f5f7; color: #46515d; font-size: .86em; border-radius: 2px; padding: 2px 4px; }
+.techblog-final img { display: block; max-width: 100%; height: auto; margin: 26px auto; border-radius: 0; }
+.techblog-final .internal-embed.image-embed { display: block; }
+.techblog-final table { width: 100%; font-size: 14px; margin-block: 22px; }
+.techblog-final th { background: #f5f7f9; color: #28333e; }
+.techblog-final td, .techblog-final th { padding: 11px 13px; line-height: 1.7; }
+.techblog-final .callout { background: #f5f8fb; border: 0; border-left: 3px solid #91b0d6; border-radius: 0; padding: 16px 20px; }
+@media (max-width: 600px) {
+  .techblog-final.markdown-preview-view { padding-inline: 16px; }
+  .techblog-final pre { padding: 16px; }
+  .techblog-final table { font-size: 12px; }
+}

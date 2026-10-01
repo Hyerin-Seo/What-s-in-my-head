@@ -281,8 +281,7 @@ views:
     cardOrders:
       note.상태:
         진행중: []
-        to do:
-          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
+        to do: []
         완료:
           - 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현/(Draw)기초 설계.md
           - 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현/(Draw)에이전트 시대 업무 환경 변화.md
