@@ -31,9 +31,7 @@ views:
       note.상태: {}
     cardOrders:
       note.상태:
-        to do:
-          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
-          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(comment) 코멘트 alert에서 본문 페이지로 갈 수 있는 방법이 음슴.md
+        to do: []
         확인 필요: []
         진행중: []
         완료:
@@ -56,6 +54,8 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/route.py --repair 가 skills 폴더의 스킬 파일을 어긋났다고 잡는다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/인박스 핀보드 카드에 노트 제목이 안 나온다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/인박스로 옮긴 노트의 주제가 agy 키워드로 바뀐다.md
+        퍼즈:
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
   - type: kanban-view
     name: 👤 Rin
     filters:
