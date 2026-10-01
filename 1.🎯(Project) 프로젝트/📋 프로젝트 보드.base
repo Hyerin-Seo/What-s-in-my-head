@@ -39,7 +39,6 @@ views:
         - 완료
         - 퍼즈
         - 히스토리
-        - 결정 사항
     columnColors:
       note.상태: {}
     cardOrders:
