@@ -4,7 +4,7 @@ filters:
     - note["유형"] == "할일"
     - note["상태"] != "결정 사항"
     - note["구역"] == "1.project"
-    - file.inFolder("1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입")
+    - file.inFolder("4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입")
     - not:
         - file.name.startsWith("!(Template)")
 views:
@@ -15,7 +15,7 @@ views:
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입
+    quickAddFolder: 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -34,14 +34,14 @@ views:
     name: 👤 Rin
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입")
+        - file.inFolder("4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입")
         - note["담당"].contains("[[Rin]]")
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입
+    quickAddFolder: 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -60,14 +60,14 @@ views:
     name: 👤 민규 서
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입")
+        - file.inFolder("4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입")
         - note["담당"].contains("[[민규 서]]")
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입
+    quickAddFolder: 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -86,14 +86,14 @@ views:
     name: 👤 미할당
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입")
+        - file.inFolder("4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입")
         - note["담당"].isEmpty()
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입
+    quickAddFolder: 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -115,5 +115,5 @@ views:
       - 일정
       - 마감
       - 작성자
-newItemFolder: 1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입
+newItemFolder: 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입
 newItemTemplate: 1.🎯(Project) 프로젝트/!(Template) 새 할 일.md

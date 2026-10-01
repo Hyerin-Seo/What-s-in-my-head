@@ -45,11 +45,74 @@ views:
     cardOrders:
       note.상태:
         to do:
-          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/망고독_옵시디언_스마트시스템_구축사례_기술블로그_작성해보기.md
+          - 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입/R&D 프로젝트 개념도_짜깁기.md
+          - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/99.🥸(Agent) 작업 공간/README.md
+          - 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입/SVPG(인스파이어드)기반 프로젝트 개념도.md
         진행중:
-          - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/(layout 정비) IDE 패널 정비.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(Draw)MangoDoc - Structure.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/empowered_첫 실전 테스트용 문서 양식 및 백데이터 모킹 세트 정제.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/usablility_사용성 담당 첫 실전 테스트 문서 및 백데이터 요건.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Value 검증 방법 짜기_모의 고객군.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_검증_작업 시간 10분의 1 실측 기준선 정의.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_모의 타겟군과 검증 후보군 선정.md
         확인 필요:
-          - 0.📥 인박스/🥭 망고 인박스/[개발 요청] 옵시디언 에이전트 백엔드 워크플로우 세팅하기.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/empowered_유튜브·하네스 기반 에이전트 협업(co-working) 노하우 선별 및 전수.md
+        퍼즈:
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/🎯 (Outcome) 북극성 Outcome 정의 및 4대 리스크 스크리닝.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/궁금한 질문 하나를 에이전트에게 맡겨 리서치 보고서 한 장 받아 보기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/데스크톱 반려 AI에게 맡길 일 하나 정해 클로드에게 시제품 부탁하기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/레퍼런스 훑어보고 뜯어 볼 도구 하나 고르기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/하루치 git 커밋으로 퇴근 보고 초안 뽑아 보기.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Outcome 01 — 북극성 성과 정의 및 4대 리스크 스크리닝.ver1.md
+        히스토리:
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026. 10.14 오후 2시반 연세척병원 방문.md
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026.09.29 모름시 연세척병원 큰엄마 허리 수술.md
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/은행에 법인카드 발급 서류 물어보고 신청하기.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/프로토타입 01 — 바이브 코딩(Vibe Coding) 인터랙티브 프로토타입 (정성적 WTS·WTP 실측 프로토콜).md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/Mem·Saner 30분씩 써 보고 우리 볼트에 가져올 기능 3개 적기.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 속성 패널 및 속성 뷰 인스펙터 구축.md
+          - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/(layout 정비) IDE 패널 정비.md
+        완료:
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(개발 요청) 버그리포트 - 자동 작성기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(calendar)날짜 표시 버그.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(comment)대댓글은 슬랙 알람 안됨요.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(Inbox) 대시보드 삽입 이슈.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(modal&화면split)상세 창이 안열림&split 시 칸반 이동 안됨.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(PARA보내기)하위 디렉토리로 이동 못함.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/(rin) 그래서 우리가 무엇을 먼저 자동화 해야하는가.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/(seo) editor-workspace 실험.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 레퍼런스 뷰 좌측 패널 및 모달 시스템.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 리소스 매니저 패널 및 뷰모드 레이아웃 배치.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 페이지 뷰 수평 스크롤 및 그리드 뷰 모드 구현.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/3. resource 표의 보드 링크를 눌러도 보드가 안 열린다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/09.30 같은 폴더 이름이 분류에 숫자 9.3 으로 들어간다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/고친 버그 3개(칸반 빈 폴더·작성자 고정·빈 분류) 확인하기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/다음 회의를 속기하고 meeting-notes 스킬로 할일 배포까지 해 보기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/동기화할 때 한글 파일 이름이 가끔 깨진 글자로 나올 수 있다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/레퍼런스 카드의 UI + 디자인 레퍼런스 링크가 안 열린다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/망고네 도서관 base에서 신규 추가 누르면 기존 폴더가 아닌 새로운 이상한 폴더를 만들어서 하위로 꼽힌다.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/망고독 Outcome 01·린 캔버스 — 이해한 것과 민규 서에게 물어볼 것.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/보드에서 만든 카드의 작성자가 Claude 로 찍힌다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/스크립트로 고친 노트에 속성이 조용히 안 써진다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/인박스 안에 회의록 인박스 만들기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/인박스 핀보드 카드에 노트 제목이 안 나온다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/인박스로 옮긴 노트의 주제가 agy 키워드로 바뀐다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/지운 글 퍼먹기 먐먐 캔버스와 .bak 이 자꾸 되살아난다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/책장에서 책을 추가해도 책 폴더와 이미지 폴더가 안 생긴다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/칸반 + 를 누르면 빈 폴더가 두 겹 생긴다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/캔버스를 만들어도 어느 보드에도 안 뜬다.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/프로젝트 폴더를 보관으로 옮겨도 프로젝트 보드에 탭이 남는다.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/ai 사용성 사양잡기.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/ai 패널 사양잡기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/Claude가 바꾼 실험실 정리 확인하기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/gtd + para + ai 아 이놈들을 대체 어떻게 알잘딱하게 엮을 것인가에 대하여 샹.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_rectangular_styling.md
+          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_scrollbar_and_thumbnails.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/pull 받기 전 마지막 점검.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/route.py --repair 가 skills 폴더의 스킬 파일을 어긋났다고 잡는다.md
   - type: kanban-view
     name: 🔬 볼트 실험실
     filters:
@@ -331,31 +394,6 @@ views:
       - 마감
       - 작성자
     quickAddFolder: 1.🎯(Project) 프로젝트/🧺 챙길 일
-    groupByProperty: note.상태
-    imageProperty: note.커버
-    imageFit: cover
-    imageAspectRatio: 0.667
-    columnOrders:
-      note.상태:
-        - to do
-        - 진행중
-        - 확인 필요
-        - 완료
-        - 퍼즈
-        - 히스토리
-    columnColors:
-      note.상태: {}
-  - type: kanban-view
-    name: 🤔R&D 스피린트 프로젝트 관리기법 도입
-    filters:
-      and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입")
-    order:
-      - 담당
-      - 일정
-      - 마감
-      - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🤔R&D 스피린트 프로젝트 관리기법 도입
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
