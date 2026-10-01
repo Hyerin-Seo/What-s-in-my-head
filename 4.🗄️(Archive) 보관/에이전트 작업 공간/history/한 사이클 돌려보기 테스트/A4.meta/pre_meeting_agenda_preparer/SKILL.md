@@ -1,12 +1,16 @@
 ---
 name: pre_meeting_agenda_preparer
-description: "비정형 회의 속기나 회의 안건 문서(@경로)를 입력받아, 기존 사양 이유-핵심 분석-모범 사례-핵심 쟁점-해결 방향의 6단계 규격을 갖춘 개별 사전 회의 안건 카드로 구조화하여 대상 디렉터리에 등록하는 스킬"
+description: "비정형 회의 속기나 회의 안건 문서(@경로)를 입력받아, 기존 사양 이유-핵심 분석-모범 사례-핵심 쟁점-해결 방향까지 7단계 규격을 갖춘 개별 사전 회의 안건 카드로 구조화하여 대상 디렉터리에 등록하는 스킬"
 ---
 
 # 사전 회의 안건 카드 준비기 (pre_meeting_agenda_preparer)
 
+> **정본은 여기(`skills/pre_meeting_agenda_preparer/`)입니다** — 2026-09-28 `2026.09.22 회의 안건` 의 `A4.meta` 사본에서 올렸습니다.
+> 회의마다 `skills/meeting-notes` 가 이 폴더를 작업 공간 `A4.meta/` 로 **복사**하고, 튜닝은 그 사본에서만 합니다.
+> 사본에서 나아진 규칙은 사람이 승인해야 여기로 올라옵니다 (`skills/meeting-notes/SKILL.md` 6절).
+
 본 스킬은 `What-s-in-my-head` 볼트의 **회의 관리 및 에이전트 협업 체계**를 기반으로 작동합니다.  
-날것의 거친 회의 속기(Raw Notes)나 비정형 회의 안건 문서를 입력받아, **회의에 참석하는 팀원이 안건의 배경과 쟁점을 즉시 파악하고 의사결정할 수 있도록 6단계 표준 규격을 갖춘 개별 안건 카드로 구조화**하여 지정된 작업 디렉터리에 등록합니다.
+날것의 거친 회의 속기(Raw Notes)나 비정형 회의 안건 문서를 입력받아, **회의에 참석하는 팀원이 안건의 배경과 쟁점을 즉시 파악하고 의사결정할 수 있도록 7단계 표준 규격을 갖춘 개별 안건 카드로 구조화**하여 지정된 작업 디렉터리에 등록합니다.
 
 ---
 
@@ -36,7 +40,7 @@ description: "비정형 회의 속기나 회의 안건 문서(@경로)를 입력
 ```yaml
 ---
 유형: 메모
-구역: 
+구역: 4.archive
 분류:
   - 회의록
 주제:
@@ -50,7 +54,8 @@ description: "비정형 회의 속기나 회의 안건 문서(@경로)를 입력
 상위: "[[<원본 회의 문서명>]]"
 링크: 
 담당: 
-작성자: 
+작성자:
+  - "[[<자기 이름 — Claude · Codex · Gemini …>]]"
 PARA정리: 끔
 ---
 ```
@@ -76,6 +81,8 @@ PARA정리: 끔
 
 > **속기 원문**
 > - *<회의 속기에서 발췌한 날것의 발언 원문 그대로 인용>*
+>
+> **할 일 후보** — <누가 손을 움직일 일이 드러나면 한 줄: 무엇 — 담당 · 마감. 없으면 이 두 줄을 지움>
 
 ---
 
@@ -129,9 +136,9 @@ PARA정리: 끔
 ## 4. 참조 리소스 (Resources)
 
 * **표준 마스터 템플릿**:
-  * [agenda_card_template.md](4.🗄️(Archive)%20보관/에이전트%20작업%20공간/2026.09.22%20회의%20안건/A4.meta/pre_meeting_agenda_preparer/templates/agenda_card_template.md) : 개별 안건 카드 생성을 위한 뼈대 템플릿
+  * [agenda_card_template.md](4.🗄️(Archive)%20보관/에이전트%20작업%20공간/history/한%20사이클%20돌려보기%20테스트/A4.meta/pre_meeting_agenda_preparer/templates/agenda_card_template.md) : 개별 안건 카드 생성을 위한 뼈대 템플릿
 * **실전 안건 카드 완성 샘플**:
-  * [sample_agenda_output.md](4.🗄️(Archive)%20보관/에이전트%20작업%20공간/2026.09.22%20회의%20안건/A4.meta/pre_meeting_agenda_preparer/examples/sample_agenda_output.md) : 실무에서 도출된 표준 6단계 안건 카드 완성본 예시
+  * [sample_agenda_output.md](4.🗄️(Archive)%20보관/에이전트%20작업%20공간/history/한%20사이클%20돌려보기%20테스트/A4.meta/pre_meeting_agenda_preparer/examples/sample_agenda_output.md) : 실무에서 도출된 표준 7단계 안건 카드 완성본 예시
 
 ---
 

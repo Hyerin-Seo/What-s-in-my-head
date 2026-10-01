@@ -1,72 +1,12 @@
 {
-	"nodes": [
-		{
-			"id": "title",
-			"type": "text",
-			"x": 0,
-			"y": -240,
-			"width": 1600,
-			"height": 150,
-			"text": "# <회의록 이름> — 오늘 뭘 정할까?"
-		},
-		{
-			"id": "hint-usage",
-			"type": "text",
-			"x": 1660,
-			"y": -320,
-			"width": 580,
-			"height": 280,
-			"text": "**외울 건 한마디 — \"판 정리해줘\"**\n\n- 💬 에 말하면서 포스트잇 — **왼쪽 더미에서 끌어오기** (보라 Rin · 파랑 민규 서 · 크림 누구든)\n- 쓸 건 ✅ · 📤 · ⏭ 로 끌기 · 버릴 건 `❌ 이유`\n- 투표는 ♥ · 👍 치기\n- ⏮ 은 `✅` 끝 · `❌` 버림 · 그냥 두면 계속\n- 초록 = 반영됨"
-		},
-		{
-			"id": "zone-prev",
-			"type": "group",
-			"x": 0,
-			"y": 0,
-			"width": 620,
-			"height": 960,
-			"label": "⏮ 지난번에 하기로 한 것",
-			"color": "2"
-		},
-		{
-			"id": "zone-talk",
-			"type": "group",
-			"x": 680,
-			"y": 0,
-			"width": 1560,
-			"height": 960,
-			"label": "💬 오늘 나온 이야기",
-			"color": "6"
-		},
-		{
-			"id": "zone-decided",
-			"type": "group",
-			"x": 0,
-			"y": 1020,
-			"width": 620,
-			"height": 520,
-			"label": "✅ 정했다",
-			"color": "4"
-		},
-		{
-			"id": "zone-todo",
-			"type": "group",
-			"x": 680,
-			"y": 1020,
-			"width": 760,
-			"height": 520,
-			"label": "📤 할 일 — 인박스로",
-			"color": "5"
-		},
-		{
-			"id": "zone-next",
-			"type": "group",
-			"x": 1480,
-			"y": 1020,
-			"width": 760,
-			"height": 520,
-			"label": "⏭ 다음에"
-		}
+	"nodes":[
+		{"id":"title","type":"text","x":0,"y":-240,"width":1600,"height":150,"text":"# <회의록 이름> — 오늘 뭘 정할까?"},
+		{"id":"hint-usage","type":"text","x":1660,"y":-320,"width":580,"height":280,"text":"**외울 건 한마디 — \"판 정리해줘\"**\n\n- 💬 에 말하면서 포스트잇 — **왼쪽 더미에서 끌어오기** (보라 Rin · 파랑 민규 서 · 크림 누구든)\n- 쓸 건 ✅ · 📤 · ⏭ 로 끌기 · 버릴 건 `❌ 이유`\n- 투표는 ♥ · 👍 치기\n- ⏮ 은 `✅` 끝 · `❌` 버림 · 그냥 두면 계속\n- 초록 = 반영됨"},
+		{"id":"zone-prev","type":"group","x":0,"y":0,"width":620,"height":960,"label":"⏮ 지난번에 하기로 한 것","color":"2"},
+		{"id":"zone-talk","type":"group","x":680,"y":0,"width":1560,"height":960,"label":"💬 오늘 나온 이야기","color":"6"},
+		{"id":"zone-decided","type":"group","x":0,"y":1020,"width":620,"height":520,"label":"✅ 정했다","color":"4"},
+		{"id":"zone-todo","type":"group","x":680,"y":1020,"width":760,"height":520,"label":"📤 할 일 — 인박스로","color":"5"},
+		{"id":"zone-next","type":"group","x":1480,"y":1020,"width":760,"height":520,"label":"⏭ 다음에"}
 	],
-	"edges": []
+	"edges":[]
 }
