@@ -38,9 +38,23 @@ MARK = "# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ─
 
 def rel(p): return os.path.relpath(p, V).replace("\\", "/")
 def abspath(r): return os.path.join(V, r.replace("/", os.sep))
-def walk_md():
+# 에이전트 작업 공간 — AI 가 쓴 후보를 두는 샌드박스. 볼트 맨 위에도, 프로젝트 폴더 안에도 있습니다.
+# 플러그인의 inAgentWorkspace 와 같은 기준 — 깊이와 상관없이 폴더 이름으로 가립니다.
+AGENT_WS = "99.🥸(Agent) 작업 공간"
+# 한 바퀴 끝난 99 를 보관하는 곳. 플러그인 제외 목록(data.json 의 para.exclude)에도 있습니다.
+AGENT_ARCHIVE = "4.🗄️(Archive) 보관/에이전트 작업 공간"
+def keep_dir(d):
+    """점으로 시작하는 폴더(.obsidian · .trash · .git · .claude)는 옵시디언도 안 읽습니다.
+    안 빼면 `.claude/worktrees/` 의 볼트 사본 천여 장이 통째로 수리 대상에 들어옵니다."""
+    return not d.startswith(".")
+
+def walk_md(agent=False):
+    """노트를 훑습니다. agent=True 면 에이전트 작업 공간 안까지 (첨부를 누가 쓰는지 볼 때)."""
     for root, dirs, files in os.walk(V):
-        dirs[:] = [d for d in dirs if d not in (".obsidian", ".trash")]
+        dirs[:] = [d for d in dirs if keep_dir(d) and (agent or d != AGENT_WS)]
+        if not agent and rel(root) == AGENT_ARCHIVE:
+            dirs[:] = []
+            continue
         # 에이전트 스킬(SKILL.md 가 있는 폴더)은 노트가 아닙니다 — 플러그인의 inAgentSkill 과 같은 기준.
         # 안 빼면 --repair --write 가 SKILL.md 에 볼트 속성 13종을 박아 스킬을 망가뜨립니다.
         if "SKILL.md" in files:
@@ -51,7 +65,7 @@ def walk_md():
 
 ATT_BY_NAME = collections.defaultdict(list)
 for root, dirs, files in os.walk(V):
-    dirs[:] = [d for d in dirs if d not in (".obsidian", ".trash")]
+    dirs[:] = [d for d in dirs if keep_dir(d)]
     for f in files:
         if os.path.splitext(f)[1].lower() in ATT:
             ATT_BY_NAME[f].append(rel(os.path.join(root, f)))
@@ -77,7 +91,7 @@ def other_users(att_rel, exclude):
     name = os.path.basename(att_rel)
     qn = urllib.parse.quote(name)
     users = []
-    for p in walk_md():
+    for p in walk_md(agent=True):
         if os.path.abspath(p) == os.path.abspath(exclude): continue
         s = io.open(p, encoding="utf-8", errors="replace").read()
         if name in s or qn in s: users.append(rel(p))
