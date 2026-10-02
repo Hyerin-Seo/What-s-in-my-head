@@ -40,6 +40,7 @@ views:
         - 퍼즈
         - 히스토리
         - pause
+        - 진행 중
     columnColors:
       note.상태: {}
     cardOrders:
@@ -54,8 +55,7 @@ views:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Value 검증 방법 짜기_모의 고객군.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_검증_작업 시간 10분의 1 실측 기준선 정의.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_모의 타겟군과 검증 후보군 선정.md
-        확인 필요:
-          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/프로젝트 폴더 안의 99 작업 공간 노트가 ⚠ PARA 와 보드에 뜬다.md
+        확인 필요: []
         퍼즈:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/🎯 (Outcome) 북극성 Outcome 정의 및 4대 리스크 스크리닝.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/궁금한 질문 하나를 에이전트에게 맡겨 리서치 보고서 한 장 받아 보기.md
