@@ -4614,6 +4614,78 @@ function setCoverLine(data, value) {
   return withEol("---\n" + out.join("\n") + rest, nl);
 }
 
+/* ── 캔버스 미리보기 그림 ─────────────────────────────────────
+   캔버스 노트(캔버스 옆에 세운 노트)는 본문에 `![[x.canvas]]` 만 있어서 커버가 비고,
+   칸반 카드가 글자만 뜹니다 (2026-10-02 Rin). 옵시디언이 본문에 그려 주는 미리보기는
+   화면일 뿐 파일이 아니라 커버로 못 씁니다. 그래서 캔버스 파일(노드 자리 · 크기 · 색 ·
+   연결선)을 읽어 **같은 모양의 SVG 를 직접 그려** `이미지/<캔버스 이름> (캔버스 미리보기).svg`
+   로 두고 그걸 커버에 넣습니다. 글자는 안 그립니다 — 미리보기와 같은 블록 지도입니다.
+   3:2 판에 여백을 두고 통째로 넣습니다 (칸반 카드가 `cover` 로 잘라도 가장자리가 안 잘리게). */
+const CANVAS_COVER_TAIL = " (캔버스 미리보기).svg";
+const CANVAS_COLORS = { "1": "#e93147", "2": "#ec7500", "3": "#e0ac00", "4": "#08b94e", "5": "#00bfbc", "6": "#7852ee" };
+function canvasColor(c) {
+  if (!c) return null;
+  if (CANVAS_COLORS[c]) return CANVAS_COLORS[c];
+  return /^#[0-9a-f]{3,8}$/i.test(c) ? c : null;
+}
+function canvasPreviewSvg(json) {
+  let d;
+  try { d = JSON.parse(json); } catch (e) { return null; }
+  const ok = (n) => n && [n.x, n.y, n.width, n.height].every((v) => typeof v === "number" && isFinite(v)) && n.width > 0 && n.height > 0;
+  const nodes = (d && Array.isArray(d.nodes) ? d.nodes : []).filter(ok);
+  if (!nodes.length) return null;
+  const W = 900, H = 600, PAD = 40;
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const n of nodes) {
+    x0 = Math.min(x0, n.x); y0 = Math.min(y0, n.y);
+    x1 = Math.max(x1, n.x + n.width); y1 = Math.max(y1, n.y + n.height);
+  }
+  const k = Math.min((W - 2 * PAD) / (x1 - x0), (H - 2 * PAD) / (y1 - y0));
+  const ox = (W - (x1 - x0) * k) / 2 - x0 * k, oy = (H - (y1 - y0) * k) / 2 - y0 * k;
+  const r = (v) => Math.round(v * 10) / 10;
+  const box = (n) => ({ x: n.x * k + ox, y: n.y * k + oy, w: Math.max(2, n.width * k), h: Math.max(2, n.height * k) });
+  const groups = nodes.filter((n) => n.type === "group").sort((a, b) => b.width * b.height - a.width * a.height);
+  const cards = nodes.filter((n) => n.type !== "group");
+  const inGroup = (n) => groups.some((g) => {
+    const cx = n.x + n.width / 2, cy = n.y + n.height / 2;
+    return cx >= g.x && cx <= g.x + g.width && cy >= g.y && cy <= g.y + g.height;
+  });
+  const rect = (b, rx, attrs) => '<rect x="' + r(b.x) + '" y="' + r(b.y) + '" width="' + r(b.w) + '" height="' + r(b.h) +
+    '" rx="' + r(Math.min(rx, b.w / 2, b.h / 2)) + '" ' + attrs + '/>';
+  const out = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + W + " " + H + '" width="' + W + '" height="' + H + '">',
+    '<rect width="' + W + '" height="' + H + '" fill="#ffffff"/>'];
+
+  for (const g of groups) {
+    const c = canvasColor(g.color) || "#8a8a8a";
+    out.push(rect(box(g), 8, 'fill="' + c + '" fill-opacity="0.3" stroke="' + c + '" stroke-opacity="0.85" stroke-width="1.5"'));
+  }
+
+  const byId = new Map(nodes.map((n) => [n.id, n]));
+  const SIDE = { top: [0.5, 0, 0, -1], bottom: [0.5, 1, 0, 1], left: [0, 0.5, -1, 0], right: [1, 0.5, 1, 0] };
+  const anchor = (n, side) => {
+    const b = box(n), a = SIDE[side] || [0.5, 0.5, 0, 0];
+    return { x: b.x + b.w * a[0], y: b.y + b.h * a[1], nx: a[2], ny: a[3] };
+  };
+  for (const e of (Array.isArray(d.edges) ? d.edges : [])) {
+    const a = byId.get(e.fromNode), b = byId.get(e.toNode);
+    if (!a || !b) continue;
+    const p = anchor(a, e.fromSide), q = anchor(b, e.toSide);
+    const t = Math.max(14, Math.hypot(q.x - p.x, q.y - p.y) * 0.4);
+    out.push('<path d="M' + r(p.x) + " " + r(p.y) + " C" + r(p.x + p.nx * t) + " " + r(p.y + p.ny * t) + " " +
+      r(q.x + q.nx * t) + " " + r(q.y + q.ny * t) + " " + r(q.x) + " " + r(q.y) +
+      '" fill="none" stroke="' + (canvasColor(e.color) || "#9a9a9a") + '" stroke-width="3" stroke-linecap="round"/>');
+  }
+
+  for (const n of cards) {
+    const c = canvasColor(n.color);
+    if (c) out.push(rect(box(n), 5, 'fill="' + c + '" fill-opacity="0.72" stroke="' + c + '" stroke-width="1"'));
+    else if (inGroup(n)) out.push(rect(box(n), 5, 'fill="#ffffff" fill-opacity="0.62"'));
+    else out.push(rect(box(n), 5, 'fill="#000000" fill-opacity="0.08"'));
+  }
+  out.push("</svg>");
+  return out.join("\n") + "\n";
+}
+
 class CoverMod extends Mod {
   constructor(plugin) {
     super(plugin, "cover");
@@ -4629,6 +4701,10 @@ class CoverMod extends Mod {
     this.app.workspace.onLayoutReady(() => {
       this.registerEvent(
         this.app.metadataCache.on("changed", (file) => this.queue(file))
+      );
+      // 캔버스는 마크다운이 아니라 `changed` 가 안 옵니다 — 파일이 바뀌는 것을 직접 봅니다
+      this.registerEvent(
+        this.app.vault.on("modify", (file) => this.queueCanvas(file))
       );
 
       // "changed" 는 노트를 **고칠 때만** 옵니다. 그래서 이미 있던 노트는 손대기 전까지
@@ -4706,6 +4782,65 @@ class CoverMod extends Mod {
     return null;
   }
 
+  /** 본문에 끼워 넣은 첫 캔버스 — 캔버스 노트가 이 모양입니다 */
+  firstCanvas(file) {
+    const cache = this.app.metadataCache.getFileCache(file) || {};
+    for (const em of cache.embeds || []) {
+      const dest = this.app.metadataCache.getFirstLinkpathDest(
+        em.link.split("#")[0], file.path);
+      if (dest && dest.extension === "canvas") return dest;
+    }
+    return null;
+  }
+
+  canvasCoverPath(cv) {
+    const dir = cv.parent && cv.parent.path && cv.parent.path !== "/" ? cv.parent.path + "/" : "";
+    return normalizePath(dir + ATT_SUBDIR + "/" + cv.basename + CANVAS_COVER_TAIL);
+  }
+
+  /** 캔버스 미리보기 그림을 만들거나 새로 그립니다. 그릴 게 없으면(빈 캔버스) null */
+  async canvasCover(cv) {
+    if (!(cv instanceof TFile)) return null;
+    let svg = null;
+    try { svg = canvasPreviewSvg(await this.app.vault.read(cv)); } catch (e) { return null; }
+    if (!svg) return null;
+    const path = this.canvasCoverPath(cv);
+    const had = this.app.vault.getAbstractFileByPath(path);
+    if (had instanceof TFile) {
+      if ((await this.app.vault.read(had)) !== svg) await this.app.vault.modify(had, svg);
+      return had;
+    }
+    const dir = path.slice(0, path.lastIndexOf("/"));
+    if (!this.app.vault.getAbstractFileByPath(dir)) {
+      try { await this.app.vault.createFolder(dir); } catch (e) { /* 그사이 생겼으면 그대로 */ }
+    }
+    try { return await this.app.vault.create(path, svg); } catch (e) { return null; }
+  }
+
+  queueCanvas(file) {
+    if (!this.settings.auto || this.settings.canvas === false) return;
+    if (!(file instanceof TFile) || file.extension !== "canvas") return;
+    const key = "canvas:" + file.path;
+    clearTimeout(this.timers.get(key));
+    this.timers.set(key, setTimeout(() => {
+      this.timers.delete(key);
+      const f = this.app.vault.getAbstractFileByPath(file.path);
+      if (f instanceof TFile) this.refreshCanvas(f);
+    }, 3000));
+  }
+
+  /** 캔버스를 고쳤을 때 — 그림이 이미 있으면 새로 그리고, 없으면 옆 노트의 빈 커버를 채웁니다 */
+  async refreshCanvas(cv) {
+    if (this.isExcluded(cv.path)) return;
+    if (this.app.vault.getAbstractFileByPath(this.canvasCoverPath(cv)) instanceof TFile) {
+      await this.canvasCover(cv);
+      return;
+    }
+    const dir = cv.parent && cv.parent.path && cv.parent.path !== "/" ? cv.parent.path + "/" : "";
+    const note = this.app.vault.getAbstractFileByPath(normalizePath(dir + cv.basename + ".md"));
+    if (note instanceof TFile) this.fill(note, "auto");
+  }
+
   /** 왜 안 채웠는지 문자열, 채웠으면 true */
   async fill(file, caller) {
     if (this.isExcluded(file.path)) return this.why(caller, "제외 폴더");
@@ -4730,7 +4865,9 @@ class CoverMod extends Mod {
       // 여기까지 왔으면 깨진 커버. 아래에서 본문 첫 이미지로 갈아 끼웁니다.
     }
 
-    const img = this.firstImage(file);
+    let img = this.firstImage(file);
+    // 이미지는 없는데 캔버스가 끼워져 있으면 (캔버스 노트) 그 미리보기 그림을 만들어 씁니다
+    if (!img && this.settings.canvas !== false) img = await this.canvasCover(this.firstCanvas(file));
     if (!img) return this.why(caller, "본문에 이미지가 없음 — 비워 둡니다");
 
     const text = this.app.metadataCache.fileToLinktext(img, file.path);
@@ -4794,6 +4931,14 @@ CoverMod.prototype.displaySettings = function (c) {
              "본문 첫 이미지로 갈아 끼웁니다. 외부 주소(http)나 색상값(#rrggbb)은 그대로 둡니다.")
     .addToggle((t) => t.setValue(s.fixBroken).onChange(async (v) => {
       s.fixBroken = v; await this.save();
+    }));
+
+  new Setting(c)
+    .setName("캔버스 노트는 캔버스 미리보기를 커버로")
+    .setDesc("본문에 이미지는 없고 캔버스가 끼워져 있으면, 캔버스의 블록 지도를 그림으로 만들어 " +
+             "`이미지/<캔버스 이름> (캔버스 미리보기).svg` 에 두고 커버에 넣습니다. 캔버스를 고치면 그림도 새로 그립니다.")
+    .addToggle((t) => t.setValue(s.canvas !== false).onChange(async (v) => {
+      s.canvas = v; await this.save();
     }));
 
   new Setting(c)
@@ -6248,6 +6393,7 @@ const DEFAULTS = {
     auto: true,
     fillOnStart: true,   // 켤 때 밀린 것을 한 번 채운다
     fixBroken: true,     // 없는 파일을 가리키는 커버는 비어 있는 것으로 본다
+    canvas: true,        // 캔버스 노트는 캔버스 미리보기 그림을 만들어 커버로 (2026-10-02)
     notice: false,       // 조용히 채웁니다
     exclude: ["!🏠 홈", "3.📦(Resource) 자료/!Template"],
   },
