@@ -22,3 +22,14 @@
 
 ![[Pasted image 20261002205504.png]]
 
+
+## Figma for VSCode
+
+https://help.figma.com/hc/ko/articles/15023121296151-Figma-for-VS-Code
+![[006_VSCode (1).mp4.gif]]
+
+## Figma Dev mode
+
+https://www.figma.com/ko-kr/dev-mode/
+
+![[Pasted image 20261002210110.png]]
