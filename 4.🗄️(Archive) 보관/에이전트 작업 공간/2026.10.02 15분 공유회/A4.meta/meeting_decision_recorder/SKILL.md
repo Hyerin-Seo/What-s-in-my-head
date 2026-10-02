@@ -141,5 +141,5 @@ PARA정리: 끔
 
 ## 6. 참조
 
-- [decision_card_template.md](./templates/decision_card_template.md) — 뼈대
-- [sample_decision_output.md](./examples/sample_decision_output.md) — `2026.09.29 주간 회의록` 의 "한 달 스프린트 · 10월 30일" 로 만든 예시
+- [decision_card_template.md](4.🗄️(Archive)%20보관/에이전트%20작업%20공간/2026.10.02%2015분%20공유회/A4.meta/meeting_decision_recorder/templates/decision_card_template.md) — 뼈대
+- [sample_decision_output.md](4.🗄️(Archive)%20보관/에이전트%20작업%20공간/2026.10.02%2015분%20공유회/A4.meta/meeting_decision_recorder/examples/sample_decision_output.md) — `2026.09.29 주간 회의록` 의 "한 달 스프린트 · 10월 30일" 로 만든 예시

@@ -39,6 +39,7 @@ views:
         - 완료
         - 퍼즈
         - 히스토리
+        - pause
     columnColors:
       note.상태: {}
     cardOrders:
@@ -53,7 +54,8 @@ views:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Value 검증 방법 짜기_모의 고객군.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_검증_작업 시간 10분의 1 실측 기준선 정의.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_모의 타겟군과 검증 후보군 선정.md
-        확인 필요: []
+        확인 필요:
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/프로젝트 폴더 안의 99 작업 공간 노트가 ⚠ PARA 와 보드에 뜬다.md
         퍼즈:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/🎯 (Outcome) 북극성 Outcome 정의 및 4대 리스크 스크리닝.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/궁금한 질문 하나를 에이전트에게 맡겨 리서치 보고서 한 장 받아 보기.md
@@ -109,6 +111,11 @@ views:
           - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_scrollbar_and_thumbnails.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/pull 받기 전 마지막 점검.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/route.py --repair 가 skills 폴더의 스킬 파일을 어긋났다고 잡는다.md
+          - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026.10.19 오전 11시 대동병원 방문.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/기술 블로그 시리즈 목차 정하기 (우아한 기술 블로그 구조 분석).md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/회의록 decision SKILL 피드백 요청.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/empowered_첫 실전 테스트용 문서 양식 및 백데이터 모킹 세트 정제.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/(최종본) 회의록을 에이전트의 기억으로 만들기 — Rules와 Skills.md
   - type: kanban-view
     name: 🔬 볼트 실험실
     filters:
