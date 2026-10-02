@@ -39,23 +39,16 @@ views:
         - 완료
         - 퍼즈
         - 히스토리
-        - pause
-        - 진행 중
     columnColors:
       note.상태: {}
     cardOrders:
       note.상태:
-        to do:
-          - 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입/R&D 프로젝트 개념도_짜깁기.md
-          - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/99.🥸(Agent) 작업 공간/README.md
-          - 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입/SVPG(인스파이어드)기반 프로젝트 개념도.md
+        to do: []
         진행중:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(Draw)MangoDoc - Structure.md
-          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/usablility_사용성 담당 첫 실전 테스트 문서 및 백데이터 요건.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.10.02/new todo/value_Recipe 사양의 고객 검증.md
+        확인 필요:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Value 검증 방법 짜기_모의 고객군.md
-          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_검증_작업 시간 10분의 1 실측 기준선 정의.md
-          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_모의 타겟군과 검증 후보군 선정.md
-        확인 필요: []
         퍼즈:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/🎯 (Outcome) 북극성 Outcome 정의 및 4대 리스크 스크리닝.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/궁금한 질문 하나를 에이전트에게 맡겨 리서치 보고서 한 장 받아 보기.md
@@ -63,6 +56,8 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/레퍼런스 훑어보고 뜯어 볼 도구 하나 고르기.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/하루치 git 커밋으로 퇴근 보고 초안 뽑아 보기.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Outcome 01 — 북극성 성과 정의 및 4대 리스크 스크리닝.ver1.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.10.02/new todo/scope_제품 범위_구상(스케치) 단계를 넣을까 디벨롭 단계부터인가.md
         히스토리:
           - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026. 10.14 오후 2시반 연세척병원 방문.md
           - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026.09.29 모름시 연세척병원 큰엄마 허리 수술.md
@@ -74,6 +69,7 @@ views:
           - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/(layout 정비) IDE 패널 정비.md
         완료:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(개발 요청) 버그리포트 - 자동 작성기.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/usablility_사용성 담당 첫 실전 테스트 문서 및 백데이터 요건.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(calendar)날짜 표시 버그.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(comment)대댓글은 슬랙 알람 안됨요.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(Inbox) 대시보드 삽입 이슈.md
@@ -116,6 +112,11 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/회의록 decision SKILL 피드백 요청.md
           - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/empowered_첫 실전 테스트용 문서 양식 및 백데이터 모킹 세트 정제.md
           - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/(최종본) 회의록을 에이전트의 기억으로 만들기 — Rules와 Skills.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/기술 블로그 쓰면서 너낀점. 😟.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/망고독_옵시디언_스마트시스템_구축사례_기술블로그_작성해보기.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/프로젝트 폴더 안의 99 작업 공간 노트가 ⚠ PARA 와 보드에 뜬다.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/empowered_유튜브·하네스 기반 에이전트 협업(co-working) 노하우 선별 및 전수.md
+          - 1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/개열받는 포인트.md
   - type: kanban-view
     name: 🔬 볼트 실험실
     filters:
