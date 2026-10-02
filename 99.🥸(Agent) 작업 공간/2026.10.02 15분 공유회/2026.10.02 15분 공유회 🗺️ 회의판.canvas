@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","x":0,"y":-240,"width":1600,"height":150,"text":"# 2026.10.02 15분 공유회 — 오늘 뭘 정할까?"},
+		{"id":"hint-usage","type":"text","x":1660,"y":-320,"width":580,"height":280,"text":"**외울 건 한마디 — \"판 정리해줘\"**\n\n- 💬 에 말하면서 포스트잇 — **왼쪽 더미에서 끌어오기** (보라 Rin · 파랑 민규 서 · 크림 누구든)\n- 쓸 건 ✅ · 📤 · ⏭ 로 끌기 · 버릴 건 `❌ 이유`\n- 투표는 ♥ · 👍 치기\n- ⏮ 은 `✅` 끝 · `❌` 버림 · 그냥 두면 계속\n- 초록 = 반영됨"},
+		{"id":"zone-prev","type":"group","x":0,"y":0,"width":620,"height":960,"label":"⏮ 지난번에 하기로 한 것","color":"2"},
+		{"id":"zone-talk","type":"group","x":680,"y":0,"width":1560,"height":960,"label":"💬 오늘 나온 이야기","color":"6"},
+		{"id":"zone-decided","type":"group","x":0,"y":1020,"width":620,"height":520,"label":"✅ 정했다","color":"4"},
+		{"id":"zone-todo","type":"group","x":680,"y":1020,"width":760,"height":520,"label":"📤 할 일 — 인박스로","color":"5"},
+		{"id":"zone-next","type":"group","x":1480,"y":1020,"width":760,"height":520,"label":"⏭ 다음에"},
+		{"id":"talk-card-1-1","type":"text","x":720,"y":60,"width":240,"height":200,"color":"3","text":"🤖 1.1 범위 — 구상(스케치) 단계를 넣을까?\n\n[[1.1_범위_구상_단계를_넣을까_디벨롭_단계부터인가|자세히]]"},
+		{"id":"talk-card-1-2","type":"text","x":980,"y":60,"width":240,"height":200,"color":"3","text":"🤖 1.2 레시피 검증 — 통과 · 중단 기준은?\n\n[[1.2_레시피_검증_통과와_중단_기준을_무엇으로|자세히]]"},
+		{"id":"talk-card-1-3","type":"text","x":1240,"y":60,"width":240,"height":200,"color":"3","text":"🤖 1.3 빈칸 채우기 화면 — 채팅과 뭐가 달라야?\n\n[[1.3_빈칸_채우기_화면_채팅과_무엇이_달라야_하나|자세히]]"},
+		{"id":"talk-card-D1","type":"text","x":1500,"y":60,"width":240,"height":200,"color":"3","text":"🤖 결정 D1 이번 한 달은 \"커서의 효용을 문서 작업자에게\" 하나에 집중\n\n[[D1_이번_한_달은_커서의_효용을_문서_작업자에게_하나에_집중한다|자세히]]"},
+		{"id":"talk-card-D2","type":"text","x":1760,"y":60,"width":240,"height":200,"color":"3","text":"🤖 결정 D2 컴포넌트로 쪼개 위험한 것부터 — 레시피 검증이 먼저\n\n[[D2_컴포넌트로_쪼개_위험한_것부터_레시피_검증이_먼저|자세히]]"},
+		{"id":"talk-note-1","type":"text","x":720,"y":300,"width":240,"height":120,"color":"3","text":"🤖 할 일? Codex 더 써 보고 리뷰 — Rin"},
+		{"id":"talk-note-2","type":"text","x":980,"y":300,"width":240,"height":120,"color":"3","text":"🤖 다음에? 실습 과제를 기술 블로그에서 바꿀지"}
+	],
+	"edges":[]
+}
