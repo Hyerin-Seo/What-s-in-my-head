@@ -38,8 +38,8 @@
 		{"id":"rework_2","type":"text","text":"불편의 원인 잘못 짚음\n노잼 소재 → 예시만 추가","x":15,"y":940,"width":310,"height":100},
 		{"id":"rework_3","type":"text","text":"검토·정정 부담 누적\n약 2시간 40분 → 채택 0","x":355,"y":940,"width":310,"height":100},
 		{"id":"claude_sources","type":"text","text":"근거 · Claude 작업 기록\n[[2026-10-01 기술 블로그 쓰기 시도 — 폐기 기록]]\n[[기술 블로그 시리즈 목차 — 작업 기억]]","x":-360,"y":1070,"width":720,"height":130},
-		{"id":"066ed23880eb4fe2","x":-1880,"y":-627,"width":560,"height":1522,"type":"file","file":"1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/기술 블로그 쓰면서 너낀점. 😟.md"},
-		{"id":"8a4a47cb3ad1905b","x":1320,"y":-627,"width":1040,"height":1827,"type":"file","file":"1.🎯(Project) 프로젝트/🍟에이전트와 기술 블로그를 써보즈아/(최종본) 회의록을 에이전트의 기억으로 만들기 — Rules와 Skills.md"}
+		{"id":"066ed23880eb4fe2","x":-1880,"y":-627,"width":560,"height":1522,"type":"file","file":"4.🗄️(Archive) 보관/🍟에이전트와 기술 블로그를 써보즈아/기술 블로그 쓰면서 너낀점. 😟.md"},
+		{"id":"8a4a47cb3ad1905b","x":1320,"y":-627,"width":1040,"height":1827,"type":"file","file":"4.🗄️(Archive) 보관/🍟에이전트와 기술 블로그를 써보즈아/(최종본) 회의록을 에이전트의 기억으로 만들기 — Rules와 Skills.md"}
 	],
 	"edges":[
 		{"id":"root_nuance","fromNode":"center","fromSide":"left","toNode":"nuance","toSide":"right","toEnd":"none","color":"6"},
