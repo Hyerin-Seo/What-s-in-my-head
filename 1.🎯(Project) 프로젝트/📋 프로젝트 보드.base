@@ -45,10 +45,8 @@ views:
       note.상태:
         to do: []
         진행중:
-          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(Draw)MangoDoc - Structure.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.10.02/new todo/value_Recipe 사양의 고객 검증.md
-        확인 필요:
-          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Value 검증 방법 짜기_모의 고객군.md
+        확인 필요: []
         퍼즈:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/🎯 (Outcome) 북극성 Outcome 정의 및 4대 리스크 스크리닝.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/궁금한 질문 하나를 에이전트에게 맡겨 리서치 보고서 한 장 받아 보기.md
@@ -58,15 +56,17 @@ views:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Outcome 01 — 북극성 성과 정의 및 4대 리스크 스크리닝.ver1.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(인박스-cli 연동)인박스 cli 연동 안됨쓰.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.10.02/new todo/scope_제품 범위_구상(스케치) 단계를 넣을까 디벨롭 단계부터인가.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/value_검증_작업 시간 10분의 1 실측 기준선 정의.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/Value 검증 방법 짜기_모의 고객군.md
         히스토리:
           - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026. 10.14 오후 2시반 연세척병원 방문.md
           - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026.09.29 모름시 연세척병원 큰엄마 허리 수술.md
           - 1.🎯(Project) 프로젝트/🧺 챙길 일/은행에 법인카드 발급 서류 물어보고 신청하기.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/프로토타입 01 — 바이브 코딩(Vibe Coding) 인터랙티브 프로토타입 (정성적 WTS·WTP 실측 프로토콜).md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/Mem·Saner 30분씩 써 보고 우리 볼트에 가져올 기능 3개 적기.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 속성 패널 및 속성 뷰 인스펙터 구축.md
-          - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/(layout 정비) IDE 패널 정비.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[할일] 속성 패널 및 속성 뷰 인스펙터 구축.md
+          - 4.🗄️(Archive) 보관/💻문서 어시스턴트 동작 구현/(layout 정비) IDE 패널 정비.md
         완료:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(개발 요청) 버그리포트 - 자동 작성기.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/usablility_사용성 담당 첫 실전 테스트 문서 및 백데이터 요건.md
@@ -76,11 +76,6 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(modal&화면split)상세 창이 안열림&split 시 칸반 이동 안됨.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(PARA보내기)하위 디렉토리로 이동 못함.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/(rin) 그래서 우리가 무엇을 먼저 자동화 해야하는가.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/(seo) editor-workspace 실험.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 레퍼런스 뷰 좌측 패널 및 모달 시스템.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 리소스 매니저 패널 및 뷰모드 레이아웃 배치.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 페이지 뷰 수평 스크롤 및 그리드 뷰 모드 구현.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/3. resource 표의 보드 링크를 눌러도 보드가 안 열린다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/09.30 같은 폴더 이름이 분류에 숫자 9.3 으로 들어간다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/고친 버그 3개(칸반 빈 폴더·작성자 고정·빈 분류) 확인하기.md
@@ -99,12 +94,8 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/칸반 + 를 누르면 빈 폴더가 두 겹 생긴다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/캔버스를 만들어도 어느 보드에도 안 뜬다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/프로젝트 폴더를 보관으로 옮겨도 프로젝트 보드에 탭이 남는다.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/ai 사용성 사양잡기.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/ai 패널 사양잡기.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/Claude가 바꾼 실험실 정리 확인하기.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/gtd + para + ai 아 이놈들을 대체 어떻게 알잘딱하게 엮을 것인가에 대하여 샹.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_rectangular_styling.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_scrollbar_and_thumbnails.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/pull 받기 전 마지막 점검.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/route.py --repair 가 skills 폴더의 스킬 파일을 어긋났다고 잡는다.md
           - 1.🎯(Project) 프로젝트/🧺 챙길 일/2026.10.19 오전 11시 대동병원 방문.md
@@ -171,7 +162,7 @@ views:
       note.상태:
         to do:
           - 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입/R&D 프로젝트 개념도_짜깁기.md
-          - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/99.🥸(Agent) 작업 공간/README.md
+          - 4.🗄️(Archive) 보관/💻문서 어시스턴트 동작 구현/99.🥸(Agent) 작업 공간/README.md
           - 4.🗄️(Archive) 보관/🤔R&D 스피린트 프로젝트 관리기법 도입/SVPG(인스파이어드)기반 프로젝트 개념도.md
         진행중:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.09.29/new todo/usablility_사용성 담당 첫 실전 테스트 문서 및 백데이터 요건.md
@@ -189,9 +180,9 @@ views:
           - 1.🎯(Project) 프로젝트/🧺 챙길 일/은행에 법인카드 발급 서류 물어보고 신청하기.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/프로토타입 01 — 바이브 코딩(Vibe Coding) 인터랙티브 프로토타입 (정성적 WTS·WTP 실측 프로토콜).md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/Mem·Saner 30분씩 써 보고 우리 볼트에 가져올 기능 3개 적기.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 속성 패널 및 속성 뷰 인스펙터 구축.md
-          - 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현/(layout 정비) IDE 패널 정비.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[할일] 속성 패널 및 속성 뷰 인스펙터 구축.md
+          - 4.🗄️(Archive) 보관/💻문서 어시스턴트 동작 구현/(layout 정비) IDE 패널 정비.md
         완료:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(개발 요청) 버그리포트 - 자동 작성기.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(calendar)날짜 표시 버그.md
@@ -200,7 +191,7 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(modal&화면split)상세 창이 안열림&split 시 칸반 이동 안됨.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(PARA보내기)하위 디렉토리로 이동 못함.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/(rin) 그래서 우리가 무엇을 먼저 자동화 해야하는가.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/3. resource 표의 보드 링크를 눌러도 보드가 안 열린다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/고친 버그 3개(칸반 빈 폴더·작성자 고정·빈 분류) 확인하기.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/다음 회의를 속기하고 meeting-notes 스킬로 할일 배포까지 해 보기.md
@@ -316,87 +307,21 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/칸반 + 를 누르면 빈 폴더가 두 겹 생긴다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/캔버스를 만들어도 어느 보드에도 안 뜬다.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/pull 받기 전 마지막 점검.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 페이지 뷰 수평 스크롤 및 그리드 뷰 모드 구현.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[할일] 페이지 뷰 수평 스크롤 및 그리드 뷰 모드 구현.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(개발 요청) 버그리포트 - 자동 작성기.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(modal&화면split)상세 창이 안열림&split 시 칸반 이동 안됨.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/(PARA보내기)하위 디렉토리로 이동 못함.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 리소스 매니저 패널 및 뷰모드 레이아웃 배치.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_rectangular_styling.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_scrollbar_and_thumbnails.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 레퍼런스 뷰 좌측 패널 및 모달 시스템.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/ai 패널 사양잡기.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/(seo) editor-workspace 실험.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[할일] 리소스 매니저 패널 및 뷰모드 레이아웃 배치.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_rectangular_styling.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_scrollbar_and_thumbnails.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/[할일] 레퍼런스 뷰 좌측 패널 및 모달 시스템.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/ai 패널 사양잡기.md
+          - 4.🗄️(Archive) 보관/✏️문서 어시스턴트 에디터 목업/(seo) editor-workspace 실험.md
         확인 필요: []
         퍼즈:
           - 4.🗄️(Archive) 보관/🧪 문서 어시스턴트 프로토타입 구현/(draw) 볼트 칸반을 참고해 비동기 지시 스토리보드 VER2 이어 그리기.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/데스크톱 반려 AI에게 맡길 일 하나 정해 클로드에게 시제품 부탁하기.md
-  - type: kanban-view
-    name: ✏️문서 어시스턴트 에디터 목업
-    filters:
-      and:
-        - file.inFolder("1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업")
-    order:
-      - 담당
-      - 일정
-      - 마감
-      - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업
-    groupByProperty: note.상태
-    imageProperty: note.커버
-    imageFit: cover
-    imageAspectRatio: 0.667
-    columnOrders:
-      note.상태:
-        - to do
-        - 진행중
-        - 확인 필요
-        - 완료
-        - 퍼즈
-        - 히스토리
-    columnColors:
-      note.상태: {}
-    cardOrders:
-      note.상태:
-        진행중:
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/(seo) editor-workspace 실험.md
-        to do: []
-        완료:
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 페이지 뷰 수평 스크롤 및 그리드 뷰 모드 구현.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[개발 요청] Inbox - 일괄 PARA 보내기 기능.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 리소스 매니저 패널 및 뷰모드 레이아웃 배치.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_rectangular_styling.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/patch_note_resource_manager_scrollbar_and_thumbnails.md
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 레퍼런스 뷰 좌측 패널 및 모달 시스템.md
-        확인 필요:
-          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/고친 버그 3개(칸반 빈 폴더·작성자 고정·빈 분류) 확인하기.md
-        퍼즈:
-          - 1.🎯(Project) 프로젝트/✏️문서 어시스턴트 에디터 목업/[할일] 바인더 아웃라인 및 3단 탭 전환 구현.md
-  - type: kanban-view
-    name: 💻문서 어시스턴트 동작 구현
-    filters:
-      and:
-        - file.inFolder("1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현")
-    order:
-      - 담당
-      - 일정
-      - 마감
-      - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/💻문서 어시스턴트 동작 구현
-    groupByProperty: note.상태
-    imageProperty: note.커버
-    imageFit: cover
-    imageAspectRatio: 0.667
-    columnOrders:
-      note.상태:
-        - to do
-        - 진행중
-        - 확인 필요
-        - 완료
-        - 퍼즈
-        - 히스토리
-    columnColors:
-      note.상태: {}
   - type: kanban-view
     name: 🧺 챙길 일
     filters:
