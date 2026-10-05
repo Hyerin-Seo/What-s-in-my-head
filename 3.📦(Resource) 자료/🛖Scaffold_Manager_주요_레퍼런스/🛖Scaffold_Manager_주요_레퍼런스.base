@@ -1,0 +1,63 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] == "레퍼런스"
+    - file.inFolder("3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스")
+views:
+  - type: cards
+    name: 🪄 단계별
+    groupBy:
+      property: 상태
+      direction: ASC
+    order:
+      - file
+      - 요약
+      - 주제
+      - 평가
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 210
+  - type: cards
+    name: 🗂️ 주제별
+    groupBy:
+      property: 주제
+      direction: ASC
+    order:
+      - file
+      - 요약
+      - 평가
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: contain
+    cardSize: 180
+  - type: cards
+    name: 🔥 강추
+    filters:
+      and:
+        - note["평가"] == "강추"
+    order:
+      - file
+      - 요약
+    image: 커버
+    imageAspectRatio: 0.667
+    imageFit: cover
+    cardSize: 250
+  - type: table
+    name: 📊 모든 레퍼런스
+    order:
+      - file
+      - 상태
+      - 주제
+      - 평가
+      - 요약
+      - 링크
+      - 담당
+      - 작성자
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: DESC
+    summaries:
+      유형: Filled
+newItemFolder: 3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스

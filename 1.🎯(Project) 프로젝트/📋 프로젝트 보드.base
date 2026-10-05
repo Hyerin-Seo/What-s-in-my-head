@@ -44,10 +44,10 @@ views:
     cardOrders:
       note.상태:
         to do:
-          - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/스캐폴드 최소 Component 사양 뽑기.md
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/충돌 66개 하나하나 풀어야함 ㅠ.md
         진행중:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/discussions/26.10.02/new todo/value_Recipe 사양의 고객 검증.md
+          - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/구현_scaffold_Manager.md
         확인 필요: []
         퍼즈:
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/🎯 (Outcome) 북극성 Outcome 정의 및 4대 리스크 스크리닝.md

@@ -122,6 +122,7 @@ PARA 는 폴더가 통째로 **R → A, R → P** 로 옮겨 다니는 게 정�
 - `2.🌱(Area) 관리 영역/불편하다 불편해/🪄 불편하다 불편해.base`
 - `3.📦(Resource) 자료/이런게 필요해!/🪄 이런게 필요해.base`
 - `3.📦(Resource) 자료/💡 브레인스토밍/💡 브레인스토밍.base`
+- `3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/🛖Scaffold_Manager_주요_레퍼런스.base`
 - `3.📦(Resource) 자료/🪄 리소스 모음집.base`
 - `4.🗄️(Archive) 보관/(Library) 망고네 도서관/📓 도서관 메모.base`
 - `4.🗄️(Archive) 보관/(Library) 망고네 도서관/📚 망고네 책장.base`
