@@ -57,6 +57,18 @@
   overflow-wrap: anywhere;
 }
 
+.vs-bulk {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+}
+.vs-bulk-label {
+  margin-right: 4px;
+}
+
 .vs-conflict {
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-m);

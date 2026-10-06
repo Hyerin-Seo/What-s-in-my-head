@@ -77,6 +77,23 @@ ok("CRLF 로 들어와도 속성을 가르고, 내 쪽 줄끝으로 돌려준다
   assert.strictEqual(r.text, crlf(fm("상태: 진행중", "요약: b")));
 });
 
+ok("엑스칼리드로우 그림 — 겹친 곳이 여럿이어도 본문은 통째로 한 번만 묻는다. '섞기'는 없다", () => {
+  const draw = (...rows) => "\n# Excalidraw Data\n\n## Drawing\n```compressed-json\n" + rows.join("\n") + "\n```\n%%";
+  const head = (s) => fm("excalidraw-plugin: parsed", "상태: " + s);
+  const base = head("to do") + draw("AAAA", "keep1", "BBBB", "keep2", "CCCC");
+  const ours = head("진행중") + draw("aaaa", "keep1", "bbbb", "keep2", "cccc");
+  const theirs = head("to do") + draw("1111", "keep1", "2222", "keep2", "3333");
+  const r = mergeFile("d.md", base, ours, theirs);
+  assert.strictEqual(r.conflicts.length, 1);
+  assert.strictEqual(r.conflicts[0].kind, "whole");
+  const r2 = mergeFile("d.md", base, ours, theirs, { choices: { [r.conflicts[0].id]: "theirs" } });
+  assert.strictEqual(r2.ok, true);
+  // 속성은 내 쪽에서 바꾼 것이 살고, 그림은 상대 쪽 것 그대로
+  assert.strictEqual(r2.text, head("진행중") + draw("1111", "keep1", "2222", "keep2", "3333"));
+  // 한쪽만 그림을 만졌으면 안 묻는다
+  assert.strictEqual(mergeFile("d.md", base, ours, head("완료") + draw("AAAA", "keep1", "BBBB", "keep2", "CCCC")).conflicts.map((c) => c.id).join(), "상태");
+});
+
 console.log("보드(.base)");
 
 const view = (name, cards, extra = []) => [

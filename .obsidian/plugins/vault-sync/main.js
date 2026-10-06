@@ -382,8 +382,24 @@ function mergeMd(b, o, t, ctx) {
       fm = mergeItem(w(B.fm), w(O.fm), w(T.fm), ctx, ["프론트매터"]) || [];
     }
   }
-  const body = mergeText(B.body, O.body, T.body, ctx, "본문");
+  const body = isDrawing(O.fm) || isDrawing(T.fm)
+    ? mergeWhole(B.body, O.body, T.body, ctx, "그림")
+    : mergeText(B.body, O.body, T.body, ctx, "본문");
   return (fm ? "---\n" + (fm.length ? fm.join("\n") + "\n" : "") + "---\n" : "") + body;
+}
+
+/** 엑스칼리드로우 노트 (`excalidraw-plugin: parsed`). 본문이 그림 한 장을 압축한 글자(`compressed-json`)라
+    겹친 곳마다 따로 고르거나 '둘 다' 로 이으면 압축이 깨져 그림이 안 열립니다. 속성은 그대로 하나씩 견주고,
+    본문은 **통째로 한쪽만** 고릅니다 — 2026-10-02 그림 하나를 둘이 만졌더니 겹친 곳이 66개 나왔습니다. */
+const isDrawing = (fm) => Boolean(fm) && fm.some((l) => /^excalidraw-plugin[ \t]*:/.test(l));
+
+function mergeWhole(b, o, t, ctx, label) {
+  if (o === t) return o;
+  if (o === b) return t;
+  if (t === b) return o;
+  const pick = ctx.choices[label];
+  ctx.conflicts.push({ id: label, kind: "whole", path: [label], base: null, ours: null, theirs: null, choice: pick || null });
+  return pick === "theirs" ? t : o;
 }
 
 function mergeBase(b, o, t, ctx) {
@@ -625,6 +641,7 @@ function renderPicker(root, plan, { onApply, onCancel, applyLabel }) {
 
   const list = h(wrap, "div", "vs-list");
   const buttons = [];
+  const choosers = {};
   let current = null;
   for (const [it, c] of todo) {
     if (current !== it) {
@@ -633,12 +650,24 @@ function renderPicker(root, plan, { onApply, onCancel, applyLabel }) {
       h(f, "div", "vs-file-name", (it.type === "file" ? "📁 " : "📄 ") + it.name.replace(/\.md$/, ""));
       if (it.dir) h(f, "div", "vs-file-dir", it.dir);
       it._el = f;
+      // 한 파일에 고를 곳이 여럿이면 한쪽으로 한 번에. 미리 골라 두는 것이 아니라 사람이 누르는 단추입니다
+      const cs = it.result.conflicts.length;
+      if (cs > 1) {
+        const bulk = h(f, "div", "vs-bulk");
+        h(bulk, "span", "vs-bulk-label", "이 파일 " + cs + "곳 한 번에");
+        const mine = (choosers[it.path] = { ours: [], theirs: [] });
+        for (const side of ["ours", "theirs"]) {
+          h(bulk, "button", null, "전부 " + it.sides[side].who + " 것")
+            .addEventListener("click", () => { for (const fn of mine[side]) fn(true); update(); });
+        }
+      }
     }
     const box = h(it._el, "div", "vs-conflict");
     const head = h(box, "div", "vs-label");
     const key = c.path[c.path.length - 1];
     h(head, "span", "vs-key",
       c.kind === "file" ? "한쪽은 남기고 한쪽은 지웠습니다"
+        : c.kind === "whole" ? "그림 — 둘이 다르게 고쳤습니다. 섞으면 깨져서 한쪽 것을 통째로 씁니다"
         : c.kind === "text" ? (c.path[0] === "본문" ? "본문 — 같은 곳을 둘이 다르게 고침" : "같은 곳을 둘이 다르게 고침")
           : c.path.join(" › "));
     if (c.kind === "prop" && c.base) h(head, "span", "vs-base", "원래: " + showValue(c.base, key).split("\n").join(", "));
@@ -648,6 +677,7 @@ function renderPicker(root, plan, { onApply, onCancel, applyLabel }) {
       const s = it.sides[side];
       let val;
       if (c.kind === "file") val = s.exists ? (it.blobs[side] && it.blobs[side].binary ? "이쪽 파일로" : "남기기") : "지우기";
+      else if (c.kind === "whole") val = "이쪽 그림으로";
       else if (c.kind === "text") val = (c[side] || []).join("\n") || "(비움)";
       else val = showValue(c[side], key);
       return { pick: side, val, meta: s.who + (s.when ? " · " + s.when : "") };
@@ -660,12 +690,13 @@ function renderPicker(root, plan, { onApply, onCancel, applyLabel }) {
       b.setAttribute("tabindex", "0");
       h(b, c.kind === "text" && ch.pick !== "both" ? "pre" : "div", "vs-val", ch.val);
       if (ch.meta) h(b, "div", "vs-meta", ch.meta);
-      const choose = () => {
+      const choose = (quiet) => {
         (picks[it.path] = picks[it.path] || {})[c.id] = ch.pick;
         for (const x of opts.querySelectorAll(".vs-opt")) x.classList.toggle("is-picked", x === b);
         box.classList.add("is-done");
-        update();
+        if (quiet !== true) update();
       };
+      if (choosers[it.path] && ch.pick !== "both") choosers[it.path][ch.pick].push(choose);
       b.addEventListener("click", choose);
       b.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); choose(); } });
       buttons.push(b);
