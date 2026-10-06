@@ -31,7 +31,9 @@ views:
     cardOrders:
       note.상태:
         to do: []
-        진행중: []
+        진행중:
+          - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/스캐폴드 최소 Component 사양 뽑기.md
+          - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/Workflowy_분석및적용.md
         완료:
           - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/레퍼런스 사이트 및 자료 정리.md
   - type: kanban-view
