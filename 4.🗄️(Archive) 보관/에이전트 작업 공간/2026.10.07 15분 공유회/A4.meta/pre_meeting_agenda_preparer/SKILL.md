@@ -136,9 +136,9 @@ PARA정리: 끔
 ## 4. 참조 리소스 (Resources)
 
 * **표준 마스터 템플릿**:
-  * [agenda_card_template.md](./templates/agenda_card_template.md) : 개별 안건 카드 생성을 위한 뼈대 템플릿
+  * [agenda_card_template.md](4.🗄️(Archive)%20보관/에이전트%20작업%20공간/2026.10.07%2015분%20공유회/A4.meta/pre_meeting_agenda_preparer/templates/agenda_card_template.md) : 개별 안건 카드 생성을 위한 뼈대 템플릿
 * **실전 안건 카드 완성 샘플**:
-  * [sample_agenda_output.md](./examples/sample_agenda_output.md) : 실무에서 도출된 표준 7단계 안건 카드 완성본 예시
+  * [sample_agenda_output.md](4.🗄️(Archive)%20보관/에이전트%20작업%20공간/2026.10.07%2015분%20공유회/A4.meta/pre_meeting_agenda_preparer/examples/sample_agenda_output.md) : 실무에서 도출된 표준 7단계 안건 카드 완성본 예시
 
 ---
 
