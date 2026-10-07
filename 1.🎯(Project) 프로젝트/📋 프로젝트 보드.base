@@ -104,6 +104,8 @@ views:
           - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/프로젝트 폴더 안의 99 작업 공간 노트가 ⚠ PARA 와 보드에 뜬다.md
           - 1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(Draw)MangoDoc - Structure.md
           - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/레퍼런스 사이트 및 자료 정리.md
+          - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/스캐폴드 매니저 핵심 레퍼런스 12선 벤치마킹 검토.md
+          - 1.🎯(Project) 프로젝트/🔬 볼트 실험실/🐛 버그 리포트/충돌 66개 하나하나 풀어야함 ㅠ.md
   - type: kanban-view
     name: 🔬 볼트 실험실
     filters:
