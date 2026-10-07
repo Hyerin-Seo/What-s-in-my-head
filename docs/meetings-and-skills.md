@@ -19,7 +19,7 @@
 **사람이 외울 명령은 "판 정리해줘" 하나입니다** (2026-09-28) — 회의마다 `🗺️ 회의판.canvas` 에 Miro · FigJam 처럼 포스트잇을 붙이고 구역(⏮ · 💬 · ✅ · 📤 · ⏭)으로 끌면, 에이전트가 구역을 읽고 반영합니다 (스킬 2.1).
 포스트잇 모양은 따로 뺀 플러그인 `.obsidian/plugins/gaeddong-meeting-board` 가 입힙니다 — 끄거나 폴더를 지우면 평범한 캔버스로 돌아갑니다.
 Notion AI Meeting Notes · Mem(Heads Up) · MeetingMind(참석자 추적 · 회의 이력 · 대시보드) 를 빌렸습니다.
-설계 그림은 `4.🗄️(Archive) 보관/_에이전트 작업 공간/🔁 회의 이어가기 설계 (MeetingMind 3기능).canvas`.
+설계 그림은 `4.🗄️(Archive) 보관/_에이전트 작업 공간/history/🔁 회의 이어가기 설계 (MeetingMind 3기능).canvas`.
 
 > **볼트 맨 위 `skills/meeting-notes/SKILL.md` 가 정본입니다.**
 > "이 회의록 정리해줘" · "다시 뽑아줘" · "지난 회의 점검해줘" · "스킬 올려줘" 를 받으면 그 파일부터 읽으세요. 여기에 다시 적지 않습니다 —
