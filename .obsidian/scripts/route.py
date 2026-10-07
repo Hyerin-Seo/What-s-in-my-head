@@ -42,7 +42,7 @@ def abspath(r): return os.path.join(V, r.replace("/", os.sep))
 # 플러그인의 inAgentWorkspace 와 같은 기준 — 깊이와 상관없이 폴더 이름으로 가립니다.
 AGENT_WS = "99.🥸(Agent) 작업 공간"
 # 한 바퀴 끝난 99 를 보관하는 곳. 플러그인 제외 목록(data.json 의 para.exclude)에도 있습니다.
-AGENT_ARCHIVE = "4.🗄️(Archive) 보관/에이전트 작업 공간"
+AGENT_ARCHIVE = "4.🗄️(Archive) 보관/_에이전트 작업 공간"
 def keep_dir(d):
     """점으로 시작하는 폴더(.obsidian · .trash · .git · .claude)는 옵시디언도 안 읽습니다.
     안 빼면 `.claude/worktrees/` 의 볼트 사본 천여 장이 통째로 수리 대상에 들어옵니다."""

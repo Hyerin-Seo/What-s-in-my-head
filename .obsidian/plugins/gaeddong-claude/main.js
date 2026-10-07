@@ -6377,6 +6377,12 @@ const DEFAULTS = {
 };
 
 /** 저장된 값을 기본값 위에 얹는다 (landing 처럼 한 겹 더 들어간 것까지) */
+/* 2026-10-07 보관의 `에이전트 작업 공간` → `_에이전트 작업 공간` (탐색기 맨 위에 뜨게).
+   옵시디언이 켜진 채로 이름이 바뀌면 메모리의 옛 설정이 data.json 을 다시 덮을 수 있어서 여기서도 고칩니다. */
+const EXCLUDE_RENAMED = {
+  "4.🗄️(Archive) 보관/에이전트 작업 공간": "4.🗄️(Archive) 보관/_에이전트 작업 공간",
+};
+
 function mergeSettings(saved) {
   const out = JSON.parse(JSON.stringify(DEFAULTS));
   if (!saved || typeof saved !== "object") return out;
@@ -6386,6 +6392,12 @@ function mergeSettings(saved) {
     const landing = Object.assign({}, out[k].landing, saved[k].landing);
     Object.assign(out[k], saved[k]);
     if (out[k].landing) out[k].landing = landing;
+  }
+  // 이름이 바뀐 제외 폴더 — 저장된 설정에 옛 이름이 남아 있어도 새 이름으로 읽습니다.
+  for (const k of Object.keys(out)) {
+    if (out[k] && Array.isArray(out[k].exclude)) {
+      out[k].exclude = out[k].exclude.map((x) => EXCLUDE_RENAMED[x] || x);
+    }
   }
   return out;
 }
