@@ -59,7 +59,7 @@ grep -rl '^  - 세컨드 브레인' --include='*.md' .
 
 ## 자동으로 되는 것들
 
-볼트 안에 직접 만든 옵시디언 플러그인 하나(`.obsidian/plugins/claude`)가 돌고 있습니다.
+볼트 안에 직접 만든 옵시디언 플러그인 하나(`.obsidian/plugins/gaeddong-claude`)가 돌고 있습니다.
 
 | 기능 | 무엇을 하나 |
 | --- | --- |

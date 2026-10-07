@@ -10,6 +10,6 @@
   "customjs",
   "calendar-bases",
   "gaeddong-sync",
-  "meeting-board",
-  "claude"
+  "gaeddong-meeting-board",
+  "gaeddong-claude"
 ]

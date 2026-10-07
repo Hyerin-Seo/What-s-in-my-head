@@ -4238,7 +4238,7 @@ class InboxMod extends Mod {
 
   /** 실패를 파일에 남깁니다. 알림은 몇 초면 사라지고, 콘솔은 옵시디언을 끄면 지워져서
       다른 컴퓨터에서 "왜 안 되지" 를 쫓을 길이 없었습니다.
-      `.obsidian/plugins/claude/agy.log` — git 에는 안 올라갑니다 (.gitignore). */
+      `.obsidian/plugins/gaeddong-claude/agy.log` — git 에는 안 올라갑니다 (.gitignore). */
   logAgy(notePath, cmd, message) {
     try {
       const fs = require("fs"), nodePath = require("path");
@@ -5345,7 +5345,7 @@ ChipMod.prototype.displaySettings = function (c) {
   new Setting(c)
     .setName("칩으로 그릴 속성")
     .setDesc("한 줄에 하나. 베이스 표·카드의 그 칸에 값을 적어 둬서 CSS가 색을 고릅니다. " +
-             "색은 `plugins/claude/styles.css` 에 값별로 적혀 있습니다 — " +
+             "색은 `plugins/gaeddong-claude/styles.css` 에 값별로 적혀 있습니다 — " +
              "여기에 속성을 더해도 거기에 색이 없으면 회색 칩이 됩니다.")
     .addTextArea((t) => {
       t.inputEl.rows = 3;
