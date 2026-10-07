@@ -6,7 +6,7 @@ author: Marty Cagan
 category: Product
 tags: [product-manager, product-owner]
 source: SVPG (svpg.com)
-유형: 책
+유형: 자료
 구역: 4.archive
 분류:
   - (Library) 망고네 도서관
@@ -16,7 +16,7 @@ source: SVPG (svpg.com)
 작성일: 2026-09-23
 마감:
 커버:
-상위:
+상위: "[[📖 SVPG(인스파이어드)]]"
 링크:
 담당:
 작성자:
