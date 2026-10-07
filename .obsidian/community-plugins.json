@@ -9,7 +9,7 @@
   "dataview",
   "customjs",
   "calendar-bases",
-  "vault-sync",
-  "meeting-board",
-  "claude"
+  "gaeddong-sync",
+  "gaeddong-meeting-board",
+  "gaeddong-claude"
 ]

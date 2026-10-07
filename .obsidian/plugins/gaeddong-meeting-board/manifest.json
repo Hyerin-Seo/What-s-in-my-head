@@ -1,7 +1,7 @@
 {
-  "id": "meeting-board",
+  "id": "gaeddong-meeting-board",
   "name": "회의판 — 포스트잇 캔버스",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "minAppVersion": "1.10.2",
   "description": "이름이 '회의판.canvas' 로 끝나는 캔버스만 FigJam 처럼 보이게 합니다 — 꽉 찬 파스텔 포스트잇 · 큰 글씨 · 사람별 색(Rin 보라 · 민규 서 파랑 · AI 노랑). 다른 캔버스는 그대로입니다. 모양만 바꾸는 플러그인이라 따로 뺐습니다 — 안 쓰면 끄거나 이 폴더를 지우세요.",
   "author": "개똥이 머릿속",

@@ -17,7 +17,7 @@
 | 인박스를 처리한다 · 첨부·폴더를 넣는다 · PARA로 보낸다 | `docs/inbox.md` |
 | 할일 · 칸반 · 담당자 뷰 · 캔버스 · 버그 리포트 | `docs/project-board.md` |
 | 보드(`.base`)를 만들거나 고친다 · 보드로 링크를 건다 | `docs/boards.md` |
-| 플러그인(`plugins/claude` 등) · CSS 스니펫 · 스크립트 · 상태 칩 | `docs/plugins.md` |
+| 플러그인(`plugins/gaeddong-claude` 등) · CSS 스니펫 · 스크립트 · 상태 칩 | `docs/plugins.md` |
 | 회의록을 정리한다 (지난 회의 점검 · 안건 카드 · 결정 카드 · 튜닝 · 보관) · 스킬을 쓰거나 만든다 | `docs/meetings-and-skills.md` → `skills/` |
 | 노트에 코멘트를 달거나 답한다 · @언급 · 슬랙 알림 | `docs/comments.md` |
 | 이상해 보이는데 버그인지 모르겠다 | `docs/known-gaps.md` |
@@ -45,7 +45,7 @@
 - **`processFrontMatter` 로 프론트매터를 다시 쓰지 마세요.** YAML을 객체로 파싱해서 통째로
   다시 쓰기 때문에 `# ── 이외 속성 ──` 주석줄과 원래 줄 모양이 살아남는다는 보장이 없습니다.
   칸반 드래그가 그 방식을 쓰는데, `유형: 할일` 노트 15개에는 이미 그 주석줄이 없습니다.
-  속성 한두 개만 고칠 때는 **그 줄만** 바꾸세요 (`plugins/claude` 의 `setProps` 가 그렇게 합니다).
+  속성 한두 개만 고칠 때는 **그 줄만** 바꾸세요 (`plugins/gaeddong-claude` 의 `setProps` 가 그렇게 합니다).
 - `CLAUDE.md` 는 **볼트 최상단에 있어야 합니다.** 폴더 안으로 옮기면 에이전트가 못 읽습니다.
 - 폴더 이름을 바꾸면 노트 안의 **전체 경로 링크**도 같이 고쳐야 합니다
   (`![[1.🎯(Project) 프로젝트/…/이미지/x.png]]` 같은 것). 안 고치면 이미지가 깨집니다.

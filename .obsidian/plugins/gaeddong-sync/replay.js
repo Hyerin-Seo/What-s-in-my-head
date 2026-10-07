@@ -1,8 +1,8 @@
 // 과거 머지 다시 돌리기 — git 이 충돌이라고 한 파일을 이 규칙으로 합쳐 보고,
 // 그때 사람이 실제로 커밋한 결과와 견줍니다.
-//   node .obsidian/plugins/vault-sync/replay.js          전부
-//   node .obsidian/plugins/vault-sync/replay.js 8587c5d  머지 하나
-//   node .obsidian/plugins/vault-sync/replay.js --json   고르기 창 시험용 계획을 JSON 으로 (가장 최근에 고를 게 있던 머지)
+//   node .obsidian/plugins/gaeddong-sync/replay.js          전부
+//   node .obsidian/plugins/gaeddong-sync/replay.js 8587c5d  머지 하나
+//   node .obsidian/plugins/gaeddong-sync/replay.js --json   고르기 창 시험용 계획을 JSON 으로 (가장 최근에 고를 게 있던 머지)
 // 브랜치·작업 폴더·인덱스는 안 건드립니다. (`git merge-tree --write-tree` 가 계산용 트리 객체를
 // .git/objects 에 남기는데, 어디에도 안 이어져서 git 이 나중에 스스로 치웁니다)
 "use strict";
