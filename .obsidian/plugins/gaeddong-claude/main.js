@@ -1119,6 +1119,10 @@ class ParaMod extends Mod {
     // 자리라서 유형·상태·분류가 "안 맞는" 게 정상입니다. 검사하지 않습니다.
     // (`상태: 미처리` 도 인박스 전용 값이라 유형별 표에 없습니다)
     if (zoneKey === "0.inbox") return out;
+    // 리소스 · 보관도 검사하지 않습니다 (2026-10-07 Rin · 민규 서). 반짝이는 것을 모아 두는 곳과
+    // 치워 둔 곳이라 유형·상태·분류를 확인할 필요가 없습니다. 폴더를 통째로 옮기면 그 안의
+    // 유형 빈 그림 같은 것마다 창이 떴습니다. 검사는 프로젝트 · 관리 영역에만 남습니다.
+    if (zoneKey === "3.resource" || zoneKey === "4.archive") return out;
 
     if (!kind) {
       // 유형이 없으면 어느 보드도 이 노트를 안 거릅니다. 안 보이는 게 제일 나쁩니다.
@@ -1129,29 +1133,23 @@ class ParaMod extends Mod {
     if (kind && allowedKinds && !allowedKinds.includes(kind)) {
       out.push(["유형", "“" + kind + "” 은 " + zoneKey + " 에 없는 유형입니다. 보드가 유형으로 거릅니다"]);
     }
-    const allowedStates = KIND_STATES[kind];
-    // 리소스(3.resource)의 상태는 안 셉니다 (2026-09-28 Rin). 에이전트들이 조사 카드에
-    // `진행 중` · `완료` 를 쓰는데 그게 틀린 게 아니라 자료에 진척이 붙은 것이라, 시작할 때마다
-    // 수십 장짜리 목록을 여는 건 소음이었습니다. 대신 `🪄 리소스 모음집` 의 상태 칸반이
-    // 세 값만 보여 주고, 나머지는 같은 보드의 `⚠️ 상태 안 맞음` 탭에 모입니다.
-    if (zoneKey === "3.resource") { /* 상태 검사 건너뜀 — 유형·분류는 그대로 검사 */ }
-    else if (state && allowedStates && !allowedStates.includes(state)) {
+    // 상태는 **할일만** 봅니다 (2026-10-07). 틀린 상태가 실제로 뭔가를 깨는 곳은 칸반뿐입니다 —
+    // 목록에 없는 값은 새 칸이 되어 보드에 저장되고, 빈 값은 카드가 사라집니다.
+    // 메모·책·자료의 상태는 어느 보드도 그렇게 거르지 않으니 마음대로 적거나 비워도 됩니다
+    // (회의록 메모의 `완료` 를 어긋남으로 잡던 것이 소음이었습니다).
+    if (kind === "할일" && state && !KIND_STATES["할일"].includes(state)) {
       out.push(["상태", "“" + state + "” 은 유형 " + kind + " 이 쓰는 값이 아닙니다"]);
     }
     // 상태를 지우면 칸반의 미분류 칸에만 남고, 상태로 거르는 보드에서는 통째로 빠집니다.
     // 쓰다 보면 지웁니다. 그래서 어긋남으로 잡습니다 — 단 **할일만** 입니다.
     // 책·자료의 빈 상태는 원래 그런 것이고(도서관 책 여덟 권이 그렇습니다) 쫓아다닐 일이
     // 아닙니다. 칸반에서 카드가 사라지는 것은 할일에서만 생기는 일입니다.
-    if (!state && kind === "할일" && zoneKey !== "4.archive") {
+    if (!state && kind === "할일") {
       out.push(["상태", "비어 있습니다 — 칸반 미분류 칸에만 남고 상태로 거르는 보드에서 빠집니다"]);
     }
-    // 보관(4.archive)에서는 옛 분류를 그대로 둡니다 — 어디서 왔는지가 기록이니까요.
-    // 보관은 P·A·R 이 아닌 것이고, 이름표를 지울 이유가 없습니다.
-    if (zoneKey !== "4.archive") {
-      const clsZones = this.zonesOfFolderName(cls);
-      if (cls && clsZones.length && !clsZones.includes(zoneKey)) {
-        out.push(["분류", "“" + cls + "” 은 " + clsZones.join("·") + " 의 묶음입니다"]);
-      }
+    const clsZones = this.zonesOfFolderName(cls);
+    if (cls && clsZones.length && !clsZones.includes(zoneKey)) {
+      out.push(["분류", "“" + cls + "” 은 " + clsZones.join("·") + " 의 묶음입니다"]);
     }
     return out;
   }
