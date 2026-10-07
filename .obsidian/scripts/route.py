@@ -225,15 +225,11 @@ if "--fill" in sys.argv:
     sys.exit()
 
 # ── --repair : 사용자가 직접 옮긴 노트 고치기 ────────────────
-# 구역별로 올 수 있는 유형. 여기 없으면 사람이 고쳐야 한다.
-# 리소스 · 보관은 유형을 검사하지 않는다 (2026-10-07). 플러그인 `mismatches` 와 같이 간다.
-ZONE_KINDS = {
-    "1.project": {"할일"},
-    "2.area": {"원칙", "기업", "휴가", "자료", "레퍼런스", "아이디어", "메모", "홈", "양식"},
-}
+# 유형은 구역으로 가리지 않는다 (2026-10-07). 태어날 때 정한 정체성이고 옮겨도 그대로다.
+# 플러그인 `mismatches` 와 같이 간다 — 한쪽만 고치지 말 것.
 
 if "--repair" in sys.argv:
-    bad, kind_warn = [], []
+    bad = []
     for p in walk_md():
         r = rel(p)
         if r.startswith(INB + "/"): continue
@@ -241,16 +237,10 @@ if "--repair" in sys.argv:
         if not fm: continue
         want = zone_of_path(r)
         cur = (fm.get("구역") or "").strip().strip('"')
-        kind = (fm.get("유형") or "").strip().strip('"')
         miss = [k for k in STD if k not in fm]
 
         # 티어 폴더 안이면 상태도 폴더를 따라간다
         state_fix = None   # 상태 폴더가 없어졌다. 상태는 속성이 정본.
-
-        # 유형이 구역과 안 맞으면 알려만 준다 (폴더만 보고는 못 정한다)
-        allowed = ZONE_KINDS.get(want)
-        if kind and allowed and kind not in allowed and kind not in ("홈", "대시보드", "양식"):
-            kind_warn.append((r, kind, want))
 
         if cur == want and not miss and not state_fix: continue
         bad.append((r, cur or "(없음)", want, len(miss), state_fix))
@@ -267,12 +257,6 @@ if "--repair" in sys.argv:
     for r, c, w, m, sf in bad[:30]:
         extra = ("  상태 → " + sf) if sf else ""
         print("   %-46s %s → %s  (빠진 속성 %d)%s" % (r[-46:], c, w, m, extra))
-
-    if kind_warn:
-        print("\n!! 유형이 구역과 안 맞는 노트 %d개 — 유형은 폴더만 보고 못 정합니다." % len(kind_warn))
-        print("   보드는 폴더가 아니라 유형으로 거릅니다. 유형을 안 고치면 옛 보드에 계속 뜹니다.")
-        for r, k, w in kind_warn[:20]:
-            print("   %-46s 유형 %s 인데 %s 에 있음" % (r[-46:], k, w))
 
     print("\n" + ("[완료]" if WRITE else "[미리보기] --write 로 실행" if bad else ""))
     sys.exit()
