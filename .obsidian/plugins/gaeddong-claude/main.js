@@ -449,9 +449,8 @@ for (const z of ZONES) {
   ZONE_BY_FOLDER[z.folder] = z;
 }
 
-/* 구역별로 있을 수 있는 유형 — route.py 의 ZONE_KINDS 와 같은 표.
-   보드는 폴더가 아니라 `유형` 으로 거르므로, 구역만 옮기고 유형을 안 고치면
-   옛 보드에 계속 뜹니다. 그래서 알려만 줍니다 (자동으로 안 고칩니다). */
+/* 구역이 **주로 쓰는** 유형 — 검사하는 표가 아닙니다 (2026-10-07). 새 노트가 태어날 때와
+   인박스에서 나갈 때 유형을 권하는 데만 씁니다. 그 뒤로는 어느 구역에 어떤 유형이 있어도 됩니다. */
 const ZONE_KINDS = {
   "1.project": ["할일"],
   "2.area": ["원칙", "기업", "휴가", "자료", "레퍼런스", "아이디어", "메모", "홈", "양식"],
@@ -627,11 +626,7 @@ class ParaMod extends Mod {
         if (this.settings.authorFromName) await this.fillAuthorAll("start");
         if (this.settings.followFolderNames) await this.syncClassNames("start");
         this.refreshStatus();
-        // 위치는 맞는데 유형·상태·분류가 옛 구역 값인 노트가 있으면 목록을 바로 엽니다.
-        // (알림은 사라져 버려서 쓸모가 없습니다)
-        if (this.settings.askAfterMove && !this.modalOpen && this.countMismatched()) {
-          this.audit();
-        }
+        // 목록을 저절로 열지 않습니다 (2026-10-07). 상태바 숫자만 보이고, 누르면 열립니다.
       }, 4000);
     });
 
@@ -1106,50 +1101,26 @@ class ParaMod extends Mod {
      파일은 옮겨졌는데 이 셋이 옛 구역 값 그대로면 보드가 옛날대로 뜹니다.
      기계적으로 정할 수 있는 건 정하고(분류), 판단이 필요한 건(유형) 묻습니다. */
 
-  /** 이 노트가 지금 구역에 안 맞는 곳 — [무엇, 왜] 목록 */
+  /** 이 노트가 보드에 제대로 안 뜨는 곳 — [무엇, 왜] 목록.
+      **할일의 상태 하나만 봅니다** (2026-10-07 Rin). `유형` 은 태어날 때 받은 정체성이라
+      구역을 옮겨도 그대로이고, 구역마다 "있을 수 있는 유형" 을 따지지 않습니다. P·A·R 은
+      언제든 오가는 것인데, 옮길 때마다 유형·상태·분류를 물으니 폴더 옮기기가 겁나는 일이
+      됐습니다. 남긴 것은 칸반이 실제로 깨지는 경우뿐입니다 — 목록에 없는 상태는 새 칸이
+      되어 보드에 저장되고, 빈 상태는 카드가 사라집니다. */
   mismatches(file) {
     const fm = (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {};
     const zoneKey = this.zoneOfPath(file.path);
-    const kind = str(fm["유형"]);
     const state = str(fm["상태"]);
-    const cls = str(fm["분류"]);
     const out = [];
 
-    // 인박스는 아무것도 정해지지 않은 곳입니다. 마구 던져 두고 판단은 나중에 하는
-    // 자리라서 유형·상태·분류가 "안 맞는" 게 정상입니다. 검사하지 않습니다.
-    // (`상태: 미처리` 도 인박스 전용 값이라 유형별 표에 없습니다)
-    if (zoneKey === "0.inbox") return out;
-    // 리소스 · 보관도 검사하지 않습니다 (2026-10-07 Rin · 민규 서). 반짝이는 것을 모아 두는 곳과
-    // 치워 둔 곳이라 유형·상태·분류를 확인할 필요가 없습니다. 폴더를 통째로 옮기면 그 안의
-    // 유형 빈 그림 같은 것마다 창이 떴습니다. 검사는 프로젝트 · 관리 영역에만 남습니다.
-    if (zoneKey === "3.resource" || zoneKey === "4.archive") return out;
+    // 프로젝트 · 관리 영역만 봅니다. 인박스는 판단 전이고, 리소스 · 보관은 확인할 필요가 없습니다.
+    if (zoneKey !== "1.project" && zoneKey !== "2.area") return out;
+    if (str(fm["유형"]) !== "할일") return out;
 
-    if (!kind) {
-      // 유형이 없으면 어느 보드도 이 노트를 안 거릅니다. 안 보이는 게 제일 나쁩니다.
-      out.push(["유형", "비어 있습니다 — 보드는 유형으로 거르므로 어디에도 안 뜹니다"]);
-      return out;
-    }
-    const allowedKinds = STRUCTURAL_KINDS.includes(kind) ? null : ZONE_KINDS[zoneKey];
-    if (kind && allowedKinds && !allowedKinds.includes(kind)) {
-      out.push(["유형", "“" + kind + "” 은 " + zoneKey + " 에 없는 유형입니다. 보드가 유형으로 거릅니다"]);
-    }
-    // 상태는 **할일만** 봅니다 (2026-10-07). 틀린 상태가 실제로 뭔가를 깨는 곳은 칸반뿐입니다 —
-    // 목록에 없는 값은 새 칸이 되어 보드에 저장되고, 빈 값은 카드가 사라집니다.
-    // 메모·책·자료의 상태는 어느 보드도 그렇게 거르지 않으니 마음대로 적거나 비워도 됩니다
-    // (회의록 메모의 `완료` 를 어긋남으로 잡던 것이 소음이었습니다).
-    if (kind === "할일" && state && !KIND_STATES["할일"].includes(state)) {
-      out.push(["상태", "“" + state + "” 은 유형 " + kind + " 이 쓰는 값이 아닙니다"]);
-    }
-    // 상태를 지우면 칸반의 미분류 칸에만 남고, 상태로 거르는 보드에서는 통째로 빠집니다.
-    // 쓰다 보면 지웁니다. 그래서 어긋남으로 잡습니다 — 단 **할일만** 입니다.
-    // 책·자료의 빈 상태는 원래 그런 것이고(도서관 책 여덟 권이 그렇습니다) 쫓아다닐 일이
-    // 아닙니다. 칸반에서 카드가 사라지는 것은 할일에서만 생기는 일입니다.
-    if (!state && kind === "할일") {
+    if (!state) {
       out.push(["상태", "비어 있습니다 — 칸반 미분류 칸에만 남고 상태로 거르는 보드에서 빠집니다"]);
-    }
-    const clsZones = this.zonesOfFolderName(cls);
-    if (cls && clsZones.length && !clsZones.includes(zoneKey)) {
-      out.push(["분류", "“" + cls + "” 은 " + clsZones.join("·") + " 의 묶음입니다"]);
+    } else if (!KIND_STATES["할일"].includes(state)) {
+      out.push(["상태", "“" + state + "” 은 칸반에 없는 칸입니다"]);
     }
     return out;
   }
@@ -1182,25 +1153,10 @@ class ParaMod extends Mod {
     return best;
   }
 
-  /** 옮긴 직후 — 안 맞는 게 있으면 한 번에 고치는 창을 띄운다 */
-  afterZoneChange(file) {
-    if (this.batchSending) return;                 // 일괄 보내기 중 — 끝나고 한 번에 알립니다
-    const bad = this.mismatches(file);
-    if (!bad.length) return;
-    if (!this.settings.askAfterMove || this.modalOpen) {
-      // 알림은 저절로 사라지니 눌러서 바로 열 수 있게 하고, 안 사라지게 둡니다 (0 = 직접 닫기)
-      const nt = new Notice(
-        "⚠ " + file.basename + "\n" + bad.map((b) => b[0]).join("·") + " 가 새 구역과 안 맞습니다.\n" +
-        "여기를 눌러 고치기", 0);
-      nt.noticeEl.style.cursor = "pointer";
-      nt.noticeEl.onclick = () => {
-        nt.hide();
-        new FixModal(this.app, this, file, this.mismatches(file)).open();
-      };
-      return;
-    }
-    new FixModal(this.app, this, file, bad).open();
-  }
+  /** 옮긴 직후 — **아무것도 묻지 않습니다** (2026-10-07 Rin). 옮기면 `구역`(과 `분류`)만
+      바뀌고 유형·상태는 그대로입니다. 폴더를 통째로 옮기면 파일마다 창과 안 사라지는 알림이
+      떠서 수십 장이 쌓였습니다. 할일의 상태가 어긋난 것은 상태바 `⚠ PARA` 숫자로만 보입니다. */
+  afterZoneChange(file) {}
 
   /* ── 새 노트 속성 채우기 ──────────────────────────────────
      인박스만 자동이고 나머지는 손으로, 일 이유가 없습니다. GTD 볼트라 "할머니한테
@@ -1352,7 +1308,7 @@ class ParaMod extends Mod {
 
     const msg = "🏷 " + file.basename + "\n" + zoneKey + " 은 유형을 고를 수 있습니다." +
       (best ? "\n같은 폴더는 “" + best + "” 를 씁니다 — 눌러서 넣기" : "\n눌러서 고르기");
-    const nt = new Notice(msg, 0);          // 저절로 사라지면 놓칩니다
+    const nt = new Notice(msg, 8000);       // 권할 뿐입니다 — 안 누르면 사라집니다 (2026-10-07)
     nt.noticeEl.style.cursor = "pointer";
     nt.noticeEl.onclick = async () => {
       nt.hide();
@@ -1509,13 +1465,21 @@ class ParaMod extends Mod {
 
     const props = {};
     // 양식에서 베낀 `구역` 이 태어난 자리와 다르면 자리를 따릅니다 (afterPropertyChange 주석)
-    if (str(fm["구역"]) && str(fm["구역"]) !== zoneKey) props["구역"] = zoneKey;
+    // `구역` 이 아예 없어도 자리를 적습니다 — 구역 필터가 없는 보드의 `+` 는 구역을 안 넣습니다
+    if (str(fm["구역"]) !== zoneKey) props["구역"] = zoneKey;
     if (!str(fm["작성일"])) props["작성일"] = todayYmd();
     const cur = Array.isArray(fm["분류"]) ? fm["분류"].filter(Boolean)
               : (str(fm["분류"]) ? [str(fm["분류"])] : []);
     if (!cur.length) {
       const guess = this.classFor(file, zoneKey);           // 지어내지 않습니다
       if (guess) props["분류"] = [guess];
+    }
+    // 보드의 `+` 는 **그 보드가 아는 칸**(필터에 걸린 값 · 보이는 열)만 넣습니다. 양식이 안 물린
+    // 보드에서 만든 노트는 표준 13종이 반쯤 없는 채로 태어났습니다 (2026-10-07 브레인스토밍 ·
+    // Scaffold 레퍼런스의 `무제`). 없는 칸만 빈 값으로 엽니다 — 적힌 값은 안 건드립니다.
+    for (const k of STD) {
+      if (k in fm || k in props) continue;
+      props[k] = LIST_KEYS.includes(k) ? [] : "";
     }
     // 본문이 비어 있으면 양식의 틀을 깔아 줍니다 (`+` 는 속성만 베낍니다)
     let body = "";
@@ -2737,22 +2701,22 @@ class ParaMod extends Mod {
      구역만 바꾸고 유형을 안 고치면 파일만 옮겨지고 옛 보드에 그대로 뜹니다.
      (그래서 이 창은 옮긴 뒤에 뜨는 FixModal 을 미리 앞당겨 놓은 것과 같습니다) */
 
-  /** 그 구역에 놓을 수 있는 유형 */
+  /** 고를 수 있는 유형 — 어느 구역이든 전부입니다. 그 구역이 주로 쓰는 것을 앞에 둘 뿐입니다 */
   kindsForZone(zoneKey) {
-    const base = ZONE_KINDS[zoneKey];
-    if (base) return base;
-    // 보관은 P·A·R 이 아닌 것이 오는 자리라 유형을 가리지 않습니다
-    return ALL_KINDS.filter((k) => !NEVER_MOVE_KINDS.includes(k));
+    const first = ZONE_KINDS[zoneKey] || [];
+    const all = ALL_KINDS.filter((k) => !NEVER_MOVE_KINDS.includes(k));
+    return first.concat(all.filter((k) => !first.includes(k)));
   }
 
   /** 옮길 때 붙일 상태 — 지금 값이 그 유형에서도 쓰이면 그대로 둡니다 */
   stateFor(zoneKey, kind, now) {
-    const ok = KIND_STATES[kind] || [];
-    if (!ok.length) return "";                          // 상태를 안 쓰는 유형은 비운다
+    // 할일이 아니면 상태는 사람이 적은 그대로 둡니다 — 보드가 그걸로 거르지 않습니다.
+    // `미처리` 만 뺍니다. 인박스 전용 값이라 나가면 뜻이 없습니다.
+    if (kind !== "할일") return now === "미처리" ? "" : now;
+    const ok = KIND_STATES["할일"];
     if (ok.includes(now)) return now;
-    // 보관으로 치우는 할일 · 자료는 "히스토리" (= 끝났고 치워둔 것)
-    if (zoneKey === "4.archive" && ok.includes("히스토리")) return "히스토리";
-    return ok[0];                                       // 미처리 → 검토 중 · 진행중 …
+    // 보관으로 치우는 할일은 "히스토리" (= 끝났고 치워둔 것)
+    return zoneKey === "4.archive" ? "히스토리" : ok[0];    // 미처리 → to do
   }
 
   /** 그 구역의 노트들이 **실제로 쓰는** 분류 — 많이 쓰는 순서. 지어내지 않습니다 */
@@ -2890,7 +2854,7 @@ class FixModal extends Modal {
   render() {
     const c = this.contentEl;
     c.empty();
-    c.createEl("h3", { text: "구역이 바뀌었습니다 — 속성도 맞출까요?" });
+    c.createEl("h3", { text: "이 노트 속성 맞추기" });
     c.createEl("p", {
       text: this.file.basename + "  ·  지금 구역: " + this.zoneKey,
       cls: "setting-item-description",
@@ -2901,13 +2865,12 @@ class FixModal extends Modal {
       ul.createEl("li").setText(what + " — " + why);
     }
     c.createEl("p", {
-      text: "보드는 폴더가 아니라 유형·상태로 거릅니다. 이걸 안 맞추면 파일만 옮겨지고 " +
-            "옛 보드에 그대로 뜹니다.",
+      text: "칸반은 할일의 상태로 칸을 정합니다. 상태만 칸에 있는 값으로 맞추면 됩니다.",
       cls: "setting-item-description",
     });
 
-    // 유형 — 그 구역에 있을 수 있는 것만
-    const kinds = ZONE_KINDS[this.zoneKey] || ALL_KINDS;
+    // 유형 — 구역으로 가리지 않습니다. 지금 값이 그대로 골라져 있습니다
+    const kinds = this.plugin.kindsForZone(this.zoneKey);
     new Setting(c).setName("유형").setDesc("이건 사람이 정해야 합니다 — 추측하지 않습니다")
       .addDropdown((d) => {
         const opts = {};
@@ -2996,10 +2959,12 @@ class SendModal extends Modal {
     return this.plugin.kindsForZone(this.zone);
   }
 
-  /** 구역이 바뀌면 유형·상태를 그 구역에서 말이 되는 값으로 */
+  /** 유형은 옮겨도 그대로입니다. **인박스에서 나갈 때만** 그 구역이 주로 쓰는 유형을 권합니다 —
+      인박스는 아직 정체성을 안 정한 자리라, 프로젝트로 보내면 할일이 되는 게 자연스럽습니다. */
   sync() {
-    const ks = this.kinds();
-    if (!ks.includes(this.kind)) this.kind = ks[0] || this.origKind;
+    const rec = ZONE_KINDS[this.zone];
+    if (this.from === "0.inbox" && rec) this.kind = rec.includes(this.origKind) ? this.origKind : rec[0];
+    else if (!this.kind) this.kind = (rec && rec[0]) || "";
     this.state = this.plugin.stateFor(this.zone, this.kind, this.state);
   }
 
@@ -3160,10 +3125,13 @@ class BatchSendModal extends Modal {
 
   fm(file) { return (this.app.metadataCache.getFileCache(file) || {}).frontmatter || {}; }
 
-  /** 고른 구역에 **그대로는 못 가는** 노트 — 유형이 그 구역에 없습니다 */
+  /** 유형을 새로 정해 줄 노트 — **인박스에서 나가는 것 중** 그 구역이 주로 쓰는 유형이 아닌 것.
+      다른 구역에서 온 노트는 유형을 그대로 들고 갑니다. */
   misfits() {
-    const ks = this.plugin.kindsForZone(this.zone);
-    return this.files.filter((f) => !ks.includes(str(this.fm(f)["유형"])));
+    const rec = ZONE_KINDS[this.zone];
+    if (!rec) return [];
+    return this.files.filter((f) => this.plugin.zoneOfPath(f.path) === "0.inbox" &&
+                                    !rec.includes(str(this.fm(f)["유형"])));
   }
 
   /** 노트마다 실제로 쓸 유형·상태 */
@@ -3212,11 +3180,11 @@ class BatchSendModal extends Modal {
     const ks = this.plugin.kindsForZone(this.zone);
     const misfits = this.misfits();
     if (!misfits.length) {
-      new Setting(c).setName("유형").setDesc("각자 지금 유형 그대로 — " + this.files.length + "개 모두 이 구역에 맞습니다");
+      new Setting(c).setName("유형").setDesc("각자 지금 유형 그대로 갑니다 — " + this.files.length + "개");
     } else {
       if (!ks.includes(this.fixKind)) this.fixKind = ks[0] || "";
       new Setting(c).setName("유형 — 안 맞는 " + misfits.length + "개")
-        .setDesc("이 구역에 없는 유형입니다: " +
+        .setDesc("인박스에서 나가는데 이 구역이 주로 쓰는 유형이 아닙니다: " +
           misfits.slice(0, 4).map((f) => f.basename + " (" + (str(this.fm(f)["유형"]) || "비어 있음") + ")").join(", ") +
           (misfits.length > 4 ? " 외 " + (misfits.length - 4) + "개" : "") + ". 이 노트들에만 줍니다")
         .addDropdown((d) => {
@@ -3319,7 +3287,7 @@ class BatchSendModal extends Modal {
       (failed.length ? "\n못 보낸 것 " + failed.length + "개: " + failed.map((f) => f.basename).join(", ") : ""), 8000);
     const odd = sent.filter((f) => this.plugin.mismatches(f).length);
     if (odd.length) {
-      new Notice("⚠ " + odd.length + "개는 유형·상태·분류가 새 구역과 안 맞습니다.\n상태바의 ⚠ PARA 를 눌러 고치세요.", 10000);
+      new Notice("⚠ " + odd.length + "개는 할일의 상태가 칸반 칸과 안 맞습니다.\n상태바의 ⚠ PARA 를 눌러 고치세요.", 10000);
     }
     this.plugin.refreshStatus();
     if (this.onSent) this.onSent(sent, failed);
@@ -3381,14 +3349,6 @@ ParaMod.prototype.displaySettings = function (c) {
              "밀린 것을 켤 때 자동으로 옮깁니다. 명령을 따로 누를 필요가 없습니다.")
     .addToggle((t) => t.setValue(s.sweepOnStart).onChange(async (v) => {
       s.sweepOnStart = v; await this.save();
-    }));
-
-  new Setting(c)
-    .setName("옮긴 뒤 속성을 물어본다")
-    .setDesc("구역이 바뀌었는데 유형·상태·분류가 옛 구역 값이면 한 번에 맞추는 창을 띄웁니다. " +
-             "끄면 알림만 뜹니다.")
-    .addToggle((t) => t.setValue(s.askAfterMove).onChange(async (v) => {
-      s.askAfterMove = v; await this.save();
     }));
 
   new Setting(c)
@@ -6345,7 +6305,6 @@ const DEFAULTS = {
   para: {
     autoMove: true,        // 구역 속성을 고치면 바로 옮긴다
     sweepOnStart: true,    // 켜질 때 밀린 것을 한 번 정리한다
-    askAfterMove: true,    // 옮긴 뒤 유형·상태·분류가 안 맞으면 물어본다
     stampNew: true,        // 어느 폴더에서 만들든 속성 13종을 바로 붙인다
     wrapCanvas: true,      // 캔버스 옆에 노트를 세운다 (캔버스는 속성을 못 가진다)
     sweepStrayZoneFolders: true, // 경로가 두 번 붙어 생긴 빈 구역 폴더를 휴지통으로

@@ -114,5 +114,5 @@ views:
       - 일정
       - 마감
       - 작성자
-newItemFolder: "4.🗄️(Archive) 보관/여행 관련"
-newItemTemplate: "1.🎯(Project) 프로젝트/!(Template) 새 할 일.md"
+newItemFolder: 4.🗄️(Archive) 보관/여행 관련
+newItemTemplate: 1.🎯(Project) 프로젝트/!(Template) 새 할 일.md
