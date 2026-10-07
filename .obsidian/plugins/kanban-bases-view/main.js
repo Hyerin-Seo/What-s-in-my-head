@@ -188,8 +188,7 @@ function renderCardCover(coverEl, entry, filePath, ctx) {
   return true;
 }
 function createCard(entry, ctx, cb) {
-  const cardEl = ctx.doc.createElement("div");
-  cardEl.className = CSS_CLASSES.CARD;
+  const cardEl = createDiv({ cls: CSS_CLASSES.CARD });
   const filePath = entry.file.path;
   cardEl.setAttribute(DATA_ATTRIBUTES.ENTRY_PATH, filePath);
   if (ctx.imagePropertyId) {
@@ -458,8 +457,7 @@ async function createQuickAddCard(title, columnValue, swimlaneValue, ctx, cb) {
   }
 }
 function createAddButton(columnValue, swimlaneValue, ctx, cb) {
-  const btn = ctx.doc.createElement("div");
-  btn.className = CSS_CLASSES.COLUMN_ADD_BTN;
+  const btn = createDiv({ cls: CSS_CLASSES.COLUMN_ADD_BTN });
   btn.setAttribute(
     "aria-label",
     swimlaneValue ? `Add card to column: ${columnValue} in lane: ${swimlaneValue}` : `Add card to column: ${columnValue}`
@@ -504,9 +502,8 @@ function applyColumnColor(columnEl, colorName) {
   columnEl.style.setProperty("--obk-column-accent-color", cssVar);
   columnEl.setAttribute(DATA_ATTRIBUTES.COLUMN_COLOR, colorName);
 }
-function createRemoveButton(doc, value, onRemove) {
-  const btn = doc.createElement("div");
-  btn.className = CSS_CLASSES.COLUMN_REMOVE_BTN;
+function createRemoveButton(value, onRemove) {
+  const btn = createDiv({ cls: CSS_CLASSES.COLUMN_REMOVE_BTN });
   btn.setAttribute("aria-label", `Remove column: ${value}`);
   btn.setAttribute("role", "button");
   btn.textContent = "\xD7";
@@ -517,8 +514,7 @@ function createRemoveButton(doc, value, onRemove) {
   return btn;
 }
 function createColumn(value, entries, options, ctx, cb) {
-  const columnEl = ctx.doc.createElement("div");
-  columnEl.className = CSS_CLASSES.COLUMN;
+  const columnEl = createDiv({ cls: CSS_CLASSES.COLUMN });
   columnEl.setAttribute(DATA_ATTRIBUTES.COLUMN_VALUE, value);
   const colorName = ctx.prefs.columnColors[value] ?? null;
   cb.applyColumnColor(columnEl, colorName);
@@ -538,7 +534,7 @@ function createColumn(value, entries, options, ctx, cb) {
     headerEl.appendChild(cb.createAddButton(value, options.swimlaneValue ?? null));
   }
   if (ctx.globallyEmptyColumns.has(value)) {
-    headerEl.appendChild(createRemoveButton(ctx.doc, value, () => cb.onRemoveColumn(value, columnEl)));
+    headerEl.appendChild(createRemoveButton(value, () => cb.onRemoveColumn(value, columnEl)));
   }
   const bodyEl = columnEl.createDiv({ cls: CSS_CLASSES.COLUMN_BODY });
   bodyEl.setAttribute(DATA_ATTRIBUTES.SORTABLE_CONTAINER, "true");
@@ -557,7 +553,7 @@ function patchColumnCards(columnEl, newEntries, ctx, cb) {
   const existingRemoveBtn = headerEl?.querySelector(`.${CSS_CLASSES.COLUMN_REMOVE_BTN}`) ?? null;
   const showRemoveButton = !!columnValue && ctx.globallyEmptyColumns.has(columnValue);
   if (headerEl && showRemoveButton && !existingRemoveBtn && columnValue) {
-    headerEl.appendChild(createRemoveButton(ctx.doc, columnValue, () => cb.onRemoveColumn(columnValue, columnEl)));
+    headerEl.appendChild(createRemoveButton(columnValue, () => cb.onRemoveColumn(columnValue, columnEl)));
   } else if (!showRemoveButton && existingRemoveBtn) {
     existingRemoveBtn.remove();
   }
@@ -635,8 +631,7 @@ function getOrderedSwimlaneValues(liveValues, swimlaneOrder) {
   return [...ordered, ...newOnes];
 }
 function buildSwimlaneElement(laneValue, laneEntries, orderedColumnValues, ctx, cb) {
-  const laneEl = ctx.doc.createElement("div");
-  laneEl.className = CSS_CLASSES.SWIMLANE;
+  const laneEl = createDiv({ cls: CSS_CLASSES.SWIMLANE });
   laneEl.setAttribute(DATA_ATTRIBUTES.SWIMLANE_VALUE, laneValue);
   const isCollapsed = ctx.collapsedLanes.has(laneValue);
   if (isCollapsed) laneEl.classList.add(CSS_CLASSES.SWIMLANE_COLLAPSED);
@@ -3014,6 +3009,20 @@ var KanbanView = class extends import_obsidian5.BasesView {
      */
     this._dragging = false;
     this._activeCardPath = null;
+    /**
+     * Cross-cell drops whose frontmatter write has not been confirmed by the
+     * query yet, mapped to the write chain that led to the card's current cell:
+     * `intermediateKeys` are every cell the query may still transiently report
+     * while catching up (each drop's source cell and earlier destinations), and
+     * `toKey` is the destination of the latest write. The frontmatter write
+     * triggers a re-render before the Bases query has caught up with the new
+     * property value, so the very next render still reports a just-dropped
+     * card under a cell it has since left. While that lasts, reconciliation
+     * defers to the drop instead of the stale view; the pending move is
+     * consumed once the query reports the card in the latest destination, in a
+     * cell no write in the chain produced (an external change), or not at all.
+     */
+    this._pendingMoves = /* @__PURE__ */ new Map();
     this.scrollEl = scrollEl2;
     this.containerEl = scrollEl2.createDiv({ cls: CSS_CLASSES.VIEW_CONTAINER });
     this.legacyData = legacyData;
@@ -3090,6 +3099,7 @@ var KanbanView = class extends import_obsidian5.BasesView {
   _loadPrefs(propertyId, swimlanePropertyId) {
     this._prefsPropertyId = propertyId;
     this._prefsSwimlanePropertyId = swimlanePropertyId;
+    this._pendingMoves.clear();
     const swimlaneScopedKey = swimlanePropertyId ? this.swimlanePrefsKey(propertyId, swimlanePropertyId) : null;
     const rawOrders = this.config?.get("columnOrders");
     const allOrders = isColumnOrders(rawOrders) ? rawOrders : {};
@@ -3676,7 +3686,6 @@ var KanbanView = class extends import_obsidian5.BasesView {
   }
   _buildColumnCtx() {
     return {
-      doc: this.containerEl.doc,
       card: this._buildCardCtx(),
       cardCb: this._buildCardCallbacks(),
       prefs: { columnColors: this._prefs.columnColors },
@@ -3700,7 +3709,6 @@ var KanbanView = class extends import_obsidian5.BasesView {
   _buildCardCtx() {
     return {
       app: this.app,
-      doc: this.containerEl.doc,
       groupByPropertyId: this.groupByPropertyId,
       cardTitlePropertyId: this.cardTitlePropertyId,
       imagePropertyId: this.imagePropertyId,
@@ -3727,11 +3735,9 @@ var KanbanView = class extends import_obsidian5.BasesView {
   openColorPicker(anchorEl, columnEl, columnValue) {
     this.activeColorPicker?.remove();
     this.activeColorPicker = null;
-    const popover = anchorEl.doc.createElement("div");
-    popover.className = CSS_CLASSES.COLUMN_COLOR_POPOVER;
+    const popover = createDiv({ cls: CSS_CLASSES.COLUMN_COLOR_POPOVER });
     const currentColor = columnEl.getAttribute(DATA_ATTRIBUTES.COLUMN_COLOR);
-    const noneSwatch = anchorEl.doc.createElement("div");
-    noneSwatch.className = `${CSS_CLASSES.COLUMN_COLOR_SWATCH} ${CSS_CLASSES.COLUMN_COLOR_NONE}`;
+    const noneSwatch = popover.createDiv({ cls: [CSS_CLASSES.COLUMN_COLOR_SWATCH, CSS_CLASSES.COLUMN_COLOR_NONE] });
     if (!currentColor) noneSwatch.classList.add(CSS_CLASSES.COLUMN_COLOR_SWATCH_ACTIVE);
     noneSwatch.title = "No color";
     noneSwatch.addEventListener("click", () => {
@@ -3741,10 +3747,8 @@ var KanbanView = class extends import_obsidian5.BasesView {
       popover.remove();
       this.activeColorPicker = null;
     });
-    popover.appendChild(noneSwatch);
     for (const color of COLOR_PALETTE) {
-      const swatch = anchorEl.doc.createElement("div");
-      swatch.className = CSS_CLASSES.COLUMN_COLOR_SWATCH;
+      const swatch = popover.createDiv({ cls: CSS_CLASSES.COLUMN_COLOR_SWATCH });
       swatch.style.background = color.cssVar;
       swatch.title = color.name;
       if (currentColor === color.name) swatch.classList.add(CSS_CLASSES.COLUMN_COLOR_SWATCH_ACTIVE);
@@ -3755,7 +3759,6 @@ var KanbanView = class extends import_obsidian5.BasesView {
         popover.remove();
         this.activeColorPicker = null;
       });
-      popover.appendChild(swatch);
     }
     const rect = anchorEl.getBoundingClientRect();
     popover.style.top = `${rect.bottom + 4}px`;
@@ -3923,6 +3926,11 @@ var KanbanView = class extends import_obsidian5.BasesView {
         if (oldBody) this._prefs.cardOrders[oldKey] = getColumnPaths(oldBody);
       }
       this._prefs.cardOrders[newKey] = getColumnPaths(evt.to);
+      if (oldKey !== newKey) {
+        const prior = this._pendingMoves.get(entryPath);
+        const intermediateKeys = prior ? [.../* @__PURE__ */ new Set([...prior.intermediateKeys, prior.toKey, oldKey])] : [oldKey];
+        this._pendingMoves.set(entryPath, { intermediateKeys, toKey: newKey });
+      }
       this._persistPrefs();
     }
     const entry = this._entryMap.get(entryPath);
@@ -3957,6 +3965,7 @@ var KanbanView = class extends import_obsidian5.BasesView {
       });
     } catch (error) {
       console.error("Error updating entry property:", error);
+      this._pendingMoves.delete(entryPath);
       this.render();
     }
   }
@@ -4062,31 +4071,76 @@ var KanbanView = class extends import_obsidian5.BasesView {
     return livePathToKey;
   }
   /**
-   * Remove card order entries that no longer describe where a card lives.
+   * True while `path` has a pending cross-cell drop that the query has not
+   * confirmed yet. The query lags behind the frontmatter writes a drop
+   * triggers, so the live data briefly reports a just-dropped card under a
+   * cell it has since left; while it does, the drop wins over the stale
+   * view. The pending move is consumed — and this returns false for good —
+   * once the query reports the card in the latest write's destination, in a
+   * cell no write in the chain produced (an external change), or not at all.
+   */
+  _deferredByPendingMove(path, liveKey) {
+    const pending = this._pendingMoves.get(path);
+    if (pending === void 0) return false;
+    if (liveKey === void 0 || liveKey === pending.toKey) {
+      this._pendingMoves.delete(path);
+      return false;
+    }
+    if (pending.intermediateKeys.includes(liveKey)) {
+      return true;
+    }
+    this._pendingMoves.delete(path);
+    return false;
+  }
+  /**
+   * Reconcile card order entries with where the live data says each card is.
    *
    * A card's cell is derived from its group-by property, which can change
    * without any drag: a script rewrites the frontmatter, another device syncs,
    * or the user edits the note directly. handleCardDrop only rewrites the two
-   * cells it sees, so those paths linger in their old cell's list indefinitely
-   * and every later drag rewrites the accumulated cruft back into the Base.
+   * cells it sees, so a path relocated by other means would linger in its old
+   * cell's list indefinitely — and every later drag rewrites the accumulated
+   * cruft back into the Base. When the live data positively places a path in a
+   * different cell, its entry is MOVED there (appended at the end) rather than
+   * just dropped, so the card keeps a recorded slot in its current cell.
    *
-   * Pruning is deliberately conservative — a path is only dropped when the live
-   * data positively places it somewhere else. A path that is merely absent from
-   * the dataset is kept, because absence is ambiguous: the card may be hidden by
-   * the Base's own filters, or the query may not have caught up yet, and its
-   * manual order has to survive both. Entries for deleted files therefore linger,
-   * which is harmless — applyCardOrder skips paths it cannot resolve — and is a
-   * far better failure mode than silently dropping a live card's slot.
+   * Two safety valves keep this honest:
+   * - A path with a pending cross-cell drop defers to the drop until the
+   *   query confirms it. The query lags behind the frontmatter writes that
+   *   drops trigger, so the live data briefly reports a just-dropped card
+   *   under a cell it has since left — reconciling against that stale view
+   *   would silently undo the drop. Once the query reports the latest
+   *   destination (or a cell no drop wrote, or no card at all), the pending
+   *   move is consumed and normal reconciliation resumes.
+   * - A path that is merely absent from the dataset is kept, because absence
+   *   is ambiguous: the card may be hidden by the Base's own filters, or the
+   *   query may not have caught up yet, and its manual order has to survive
+   *   both. Entries for deleted files therefore linger, which is harmless —
+   *   applyCardOrder skips paths it cannot resolve — and is a far better
+   *   failure mode than silently dropping a live card's slot.
    *
    * @returns true if anything changed and prefs need persisting.
    */
   _pruneCardOrders(livePathToKey) {
     let changed = false;
     for (const [key, paths] of Object.entries(this._prefs.cardOrders)) {
-      const kept = paths.filter((path) => {
+      const kept = [];
+      for (const path of paths) {
         const liveKey = livePathToKey.get(path);
-        return liveKey === void 0 || liveKey === key;
-      });
+        if (this._deferredByPendingMove(path, liveKey)) {
+          kept.push(path);
+          continue;
+        }
+        if (liveKey === void 0 || liveKey === key) {
+          kept.push(path);
+          continue;
+        }
+        const target = this._prefs.cardOrders[liveKey] ?? (this._prefs.cardOrders[liveKey] = []);
+        if (!target.includes(path)) {
+          target.push(path);
+          changed = true;
+        }
+      }
       if (kept.length !== paths.length) {
         this._prefs.cardOrders[key] = kept;
         changed = true;

@@ -1,13 +1,13 @@
 // 동기화 버튼 시험 — 임시 폴더에 가짜 원격 저장소와 Rin·민규 서 복제본 둘을 만들고,
 // 둘이 서로 부딪치게 고친 뒤 버튼 로직(syncRepo)을 돌립니다.
-//   node .obsidian/plugins/vault-sync/sync-test.js
+//   node .obsidian/plugins/gaeddong-sync/sync-test.js
 // 이 볼트와 GitHub 는 안 건드립니다. 끝나면 임시 폴더를 치웁니다.
 "use strict";
 const assert = require("assert");
 const os = require("os"), fs = require("fs"), path = require("path"), cp = require("child_process");
 const { syncRepo, restoreTo, listPoints, buildReport } = require("./main.js");
 
-const root = fs.mkdtempSync(path.join(os.tmpdir(), "vault-sync-test-"));
+const root = fs.mkdtempSync(path.join(os.tmpdir(), "gaeddong-sync-test-"));
 const sh = (cwd, ...args) => {
   const r = cp.spawnSync("git", args, { cwd, encoding: "utf8" });
   if (r.status) throw new Error("git " + args.join(" ") + "\n" + r.stderr);

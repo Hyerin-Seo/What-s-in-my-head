@@ -5475,7 +5475,7 @@ HomeMod.prototype.displaySettings = function (c) {
                **기기마다** 넣고 git 에 안 올립니다 (app.saveLocalStorage). 없으면 건너뜁니다.
      옵시디언  아래 상태바 `🔔 N` — 나를 불렀는데 내가 아직 답 안 한 스레드. 동기화로 받은 뒤 뜹니다.
 
-   "나" 는 기기마다 정합니다. 처음엔 git 의 user.name 을 vault-sync 이름표로 바꿔 짐작하고,
+   "나" 는 기기마다 정합니다. 처음엔 git 의 user.name 을 gaeddong-sync 이름표로 바꿔 짐작하고,
    모르면 한 번 묻습니다. */
 const COMMENT_HEAD = "## 💬 코멘트";
 const COMMENT_ANCHOR = /\[\[#\^(c-[a-z0-9]+)\|💬\]\]/g;
@@ -5668,13 +5668,13 @@ class CommentMod extends Mod {
     return g;
   }
 
-  /** git user.name → vault-sync 이름표 (Hyerin-Seo → Rin, knee2420 → 민규 서) */
+  /** git user.name → gaeddong-sync 이름표 (Hyerin-Seo → Rin, knee2420 → 민규 서) */
   guessMe() {
     try {
       const fs = require("fs"), nodePath = require("path"), os = require("os");
       const base = this.app.vault.adapter.getBasePath();
-      const vs = this.app.plugins.plugins["vault-sync"];
-      // vault-sync 의 settings.names 는 사람이 더한 것뿐이고 기본 표는 따로라, 합친 `names` 를 씁니다
+      const vs = this.app.plugins.plugins["gaeddong-sync"];
+      // gaeddong-sync 의 settings.names 는 사람이 더한 것뿐이고 기본 표는 따로라, 합친 `names` 를 씁니다
       const names = (vs && (vs.names || (vs.settings && vs.settings.names))) || {};
       for (const p of [nodePath.join(base, ".git", "config"), nodePath.join(os.homedir(), ".gitconfig")]) {
         if (!fs.existsSync(p)) continue;

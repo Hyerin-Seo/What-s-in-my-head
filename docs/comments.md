@@ -90,7 +90,7 @@ https 페이지를 한 번 거쳐 `obsidian://open?vault=…&file=…` 로 넘�
 ## 이 컴퓨터를 쓰는 사람
 
 코멘트에 적히는 이름이고, `🔔` 는 이 이름을 부른 것을 셉니다.
-처음엔 git 의 `user.name` 을 vault-sync 이름표로 바꿔 짐작합니다 (`Hyerin-Seo → Rin`, `knee2420 → 민규 서`).
+처음엔 git 의 `user.name` 을 gaeddong-sync 이름표로 바꿔 짐작합니다 (`Hyerin-Seo → Rin`, `knee2420 → 민규 서`).
 모르면 처음 코멘트를 달 때 한 번 묻습니다. 바꾸려면 설정의 `이 컴퓨터를 쓰는 사람`.
 
 부를 수 있는 사람은 **칸반 담당자 명단**(설정 → PARA 구역 정리 → 칸반에 늘 두는 담당자)과 같습니다.

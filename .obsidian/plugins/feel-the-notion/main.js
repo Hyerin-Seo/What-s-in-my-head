@@ -22,7 +22,7 @@ __export(main_exports, {
   default: () => NotionBlock
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian7 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 
 // src/settings.ts
 var import_obsidian2 = require("obsidian");
@@ -77,6 +77,7 @@ var en = {
   "menu.bullet": "Bulleted list",
   "menu.numbered": "Numbered list",
   "menu.blockquote": "Quote",
+  "menu.blankLine": "Insert a new line",
   "menu.code": "Code block",
   "menu.math": "Math block",
   "menu.divider": "Divider",
@@ -218,6 +219,7 @@ var zh = {
   "menu.bullet": "\u65E0\u5E8F\u5217\u8868",
   "menu.numbered": "\u6709\u5E8F\u5217\u8868",
   "menu.blockquote": "\u5F15\u7528",
+  "menu.blankLine": "\u63D2\u5165\u65B0\u884C",
   "menu.code": "\u4EE3\u7801\u5757",
   "menu.math": "\u6570\u5B66\u5757",
   "menu.divider": "\u5206\u5272\u7EBF",
@@ -359,6 +361,7 @@ var zhTw = {
   "menu.bullet": "\u7121\u5E8F\u6E05\u55AE",
   "menu.numbered": "\u6709\u5E8F\u6E05\u55AE",
   "menu.blockquote": "\u5F15\u7528",
+  "menu.blankLine": "\u63D2\u5165\u65B0\u884C",
   "menu.code": "\u7A0B\u5F0F\u78BC\u5340\u584A",
   "menu.math": "\u6578\u5B78\u5340\u584A",
   "menu.divider": "\u5206\u5272\u7DDA",
@@ -475,6 +478,10 @@ var BUILTIN_ITEMS = [
   { id: "h3", sectionKey: "headings", labelKey: "menu.h3", icon: "heading-3", keywords: ["h3", "#3", "title"] },
   { id: "h4", sectionKey: "headings", labelKey: "menu.h4", icon: "heading-4", keywords: ["h4", "#4", "title"] },
   { id: "h5", sectionKey: "headings", labelKey: "menu.h5", icon: "heading-5", keywords: ["h5", "#5", "title"] },
+  // First under the headings, and deliberately so: it is the way out of a
+  // table or code block that has taken the end of the note, so it has to be
+  // reachable without scrolling or typing a query.
+  { id: "blank", sectionKey: "insert", labelKey: "menu.blankLine", icon: "corner-down-left", keywords: ["blank", "empty", "line", "new line", "space", "spacer", "break", "enter"] },
   // "check list" with the space is in the keywords deliberately: the matcher
   // tests the query as one substring, so a two-word query matches nothing
   // unless a keyword contains the space too.
@@ -531,13 +538,46 @@ function resolveMenuItems(builtins, custom, order, hidden, translate) {
     if (!hiddenSet.has(id))
       result.push(item);
   }
+  const rank = /* @__PURE__ */ new Map();
+  builtins.forEach((item, i) => rank.set(item.id, i));
   for (const [id, item] of pool) {
     if (placed.has(id))
       continue;
-    if (!hiddenSet.has(id))
+    placed.add(id);
+    if (hiddenSet.has(id))
+      continue;
+    const home = rank.get(id);
+    if (home === void 0) {
       result.push(item);
+      continue;
+    }
+    result.splice(slotFor(result, rank, home), 0, item);
   }
   return result;
+}
+function slotFor(result, rank, home) {
+  let afterAt = -1;
+  let afterRank = -Infinity;
+  let beforeAt = -1;
+  let beforeRank = Infinity;
+  for (let i = 0; i < result.length; i++) {
+    const other = rank.get(result[i].id);
+    if (other === void 0)
+      continue;
+    if (other < home && other > afterRank) {
+      afterRank = other;
+      afterAt = i;
+    }
+    if (other > home && other < beforeRank) {
+      beforeRank = other;
+      beforeAt = i;
+    }
+  }
+  if (afterAt !== -1)
+    return afterAt + 1;
+  if (beforeAt !== -1)
+    return beforeAt;
+  return result.length;
 }
 function reorderIds(order, from, to) {
   const next = [...order];
@@ -708,6 +748,188 @@ var InsertCommandModal = class extends import_obsidian.Modal {
   }
 };
 
+// src/bulletDepth.ts
+var import_state = require("@codemirror/state");
+var LEGAL_MARKERS = ["-", "*", "+"];
+function markerForDepth(depth, markers) {
+  return markers[(depth - 1) % markers.length];
+}
+var RE_BLANK = /^[ \t]*$/;
+var RE_UL = /^([ \t]*)([-*+])([ \t]+|$)/;
+var RE_OL = /^([ \t]*)(\d{1,9})([.)])([ \t]+|$)/;
+var RE_HR = /^[ \t]*((\*[ \t]*){3,}|(-[ \t]*){3,}|(_[ \t]*){3,})$/;
+var RE_FENCE = /^[ \t]*(`{3,}|~{3,})/;
+function splitLines(text) {
+  const lines = [];
+  let start = 0;
+  for (let i = 0; i <= text.length; i++) {
+    if (i === text.length || text[i] === "\n") {
+      lines.push({ start, end: i, text: text.slice(start, i) });
+      start = i + 1;
+    }
+  }
+  return lines;
+}
+function indentColumn(ws, tabSize) {
+  let col = 0;
+  for (const ch of ws)
+    col = ch === "	" ? col + tabSize - col % tabSize : col + 1;
+  return col;
+}
+function computeSkip(lines) {
+  const skip = new Array(lines.length).fill(false);
+  let i = 0;
+  if (lines.length && lines[0].text.trim() === "---") {
+    let j = 1;
+    while (j < lines.length && lines[j].text.trim() !== "---")
+      j++;
+    if (j < lines.length) {
+      for (let k = 0; k <= j; k++)
+        skip[k] = true;
+      i = j + 1;
+    }
+  }
+  let fenceChar = null;
+  for (; i < lines.length; i++) {
+    const m = RE_FENCE.exec(lines[i].text);
+    if (fenceChar === null) {
+      if (m) {
+        fenceChar = m[1][0];
+        skip[i] = true;
+      }
+    } else {
+      skip[i] = true;
+      if (m && m[1][0] === fenceChar)
+        fenceChar = null;
+    }
+  }
+  return skip;
+}
+function classify(rawText) {
+  var _a, _b;
+  const text = rawText.endsWith("\r") ? rawText.slice(0, -1) : rawText;
+  if (RE_BLANK.test(text))
+    return { kind: "blank" };
+  if (RE_HR.test(text))
+    return { kind: "other" };
+  const ul = RE_UL.exec(text);
+  if (ul)
+    return { kind: "ul", indent: ul[1], markerOffset: ul[1].length, marker: ul[2] };
+  const ol = RE_OL.exec(text);
+  if (ol)
+    return { kind: "ol", indent: ol[1] };
+  if (/^[ \t]/.test(text))
+    return { kind: "cont", indent: (_b = (_a = /^[ \t]*/.exec(text)) == null ? void 0 : _a[0]) != null ? _b : "" };
+  return { kind: "other" };
+}
+function lineIndexAt(lines, offset) {
+  let lo = 0;
+  let hi = lines.length - 1;
+  while (lo < hi) {
+    const mid = lo + hi >> 1;
+    if (offset > lines[mid].end)
+      lo = mid + 1;
+    else
+      hi = mid;
+  }
+  return lo;
+}
+function emitBlock(lines, info, from, to, tabSize, markers, out) {
+  const stack = [];
+  for (let i = from; i <= to; i++) {
+    const inf = info[i];
+    if (inf.kind !== "ul" && inf.kind !== "ol")
+      continue;
+    const col = indentColumn(inf.indent, tabSize);
+    while (stack.length && stack[stack.length - 1] >= col)
+      stack.pop();
+    stack.push(col);
+    if (inf.kind !== "ul")
+      continue;
+    const want = markerForDepth(stack.length, markers);
+    if (inf.marker !== want) {
+      const pos = lines[i].start + inf.markerOffset;
+      out.push({ from: pos, to: pos + 1, insert: want });
+    }
+  }
+}
+function planRewrites(text, from, to, tabSize, markers) {
+  if (!markers.length)
+    return [];
+  const lines = splitLines(text);
+  const skip = computeSkip(lines);
+  const info = lines.map((l, i2) => skip[i2] ? { kind: "other" } : classify(l.text));
+  let start = lineIndexAt(lines, from);
+  let end = lineIndexAt(lines, to);
+  while (start > 0 && info[start - 1].kind !== "other")
+    start--;
+  while (end < lines.length - 1 && info[end + 1].kind !== "other")
+    end++;
+  const out = [];
+  let i = start;
+  while (i <= end) {
+    if (info[i].kind === "other") {
+      i++;
+      continue;
+    }
+    let j = i;
+    while (j + 1 <= end && info[j + 1].kind !== "other")
+      j++;
+    emitBlock(lines, info, i, j, tabSize, markers, out);
+    i = j + 1;
+  }
+  return out;
+}
+function resolveBulletMarkers(order, hidden) {
+  const full = [];
+  for (const marker of [...order, ...LEGAL_MARKERS]) {
+    if (LEGAL_MARKERS.includes(marker) && !full.includes(marker))
+      full.push(marker);
+  }
+  const on = full.filter((marker) => !hidden.includes(marker));
+  return on.length ? on : [full[0]];
+}
+function touchesList(doc, from, to) {
+  const text = doc.sliceString(doc.lineAt(from).from, doc.lineAt(to).to);
+  return text.split("\n").some((line) => {
+    const kind = classify(line).kind;
+    return kind === "ul" || kind === "ol";
+  });
+}
+function bulletDepthExtension(getMarkers) {
+  return import_state.EditorState.transactionFilter.of((tr) => {
+    if (!tr.docChanged)
+      return tr;
+    const markers = getMarkers();
+    if (!markers)
+      return tr;
+    if (tr.startState.doc.length === 0)
+      return tr;
+    let fromA = Infinity;
+    let toA = -1;
+    let from = Infinity;
+    let to = -1;
+    tr.changes.iterChangedRanges((startA, endA, startB, endB) => {
+      fromA = Math.min(fromA, startA);
+      toA = Math.max(toA, endA);
+      from = Math.min(from, startB);
+      to = Math.max(to, endB);
+    });
+    if (to < 0)
+      return tr;
+    if (!touchesList(tr.startState.doc, fromA, toA) && !touchesList(tr.newDoc, from, to))
+      return tr;
+    const changes = planRewrites(
+      tr.newDoc.toString(),
+      from,
+      to,
+      tr.startState.tabSize || 4,
+      markers
+    );
+    return changes.length ? [tr, { changes, sequential: true }] : tr;
+  });
+}
+
 // src/settings.ts
 var DEFAULT_SETTINGS = {
   enabled: true,
@@ -748,13 +970,22 @@ var DEFAULT_SETTINGS = {
   insertCustom: [],
   // OFF by default, as asked: an attachment reads as a link unless it is
   // explicitly meant to render inline.
-  embedAttachments: false
+  embedAttachments: false,
+  // OFF by default: it writes to the user's notes, changing characters they
+  // typed, which nothing else in the plugin does without being asked.
+  bulletDepth: false,
+  // Empty for the same reason insertOrder is: resolveBulletMarkers fills in
+  // whatever an order does not name.
+  bulletOrder: [],
+  bulletHidden: []
 };
 var BlockPluginSettingTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     /** The insert-menu list, repainted on its own so display() is never needed. */
     this.insertListEl = null;
+    /** The bullet marker list, repainted in place for the same reason. */
+    this.bulletListEl = null;
     this.plugin = plugin;
   }
   display() {
@@ -814,6 +1045,7 @@ var BlockPluginSettingTab = class extends import_obsidian2.PluginSettingTab {
       this.plugin.settings.blockKeys = value;
       await this.plugin.saveSettings();
     }));
+    this.renderBulletDepth(containerEl);
     new import_obsidian2.Setting(containerEl).setName("Insert menu").setHeading();
     new import_obsidian2.Setting(containerEl).setName('Show the "+" handle').setDesc("The button beside the drag handle that opens the insert menu.").addToggle((toggle) => toggle.setValue(this.plugin.settings.plusHandle).onChange(async (value) => {
       this.plugin.settings.plusHandle = value;
@@ -843,6 +1075,85 @@ var BlockPluginSettingTab = class extends import_obsidian2.PluginSettingTab {
     }));
     new import_obsidian2.Setting(containerEl).setName(t("settings.insertItems.name")).setDesc(t("settings.insertItems.desc")).setHeading();
     this.renderInsertItemList(containerEl);
+  }
+  renderBulletDepth(containerEl) {
+    var _a;
+    new import_obsidian2.Setting(containerEl).setName("Bullet depth markers").setHeading();
+    new import_obsidian2.Setting(containerEl).setName("Match bullet markers to nesting depth").setDesc(
+      "Rewrites the marker in the file as you indent: the first level uses the first marker below, the next level the second, and the cycle repeats. Bullets show as \u25CF \u25CB \u25AA by depth. Only lists you edit are changed. Numbered lists, code blocks and frontmatter are left alone."
+    ).addToggle((toggle) => toggle.setValue(this.plugin.settings.bulletDepth).onChange(async (value) => {
+      this.plugin.settings.bulletDepth = value;
+      await this.plugin.saveSettings();
+    }));
+    const plugins = this.app.plugins;
+    if ((_a = plugins == null ? void 0 : plugins.plugins) == null ? void 0 : _a["bullet-depth-markers"]) {
+      containerEl.createDiv({
+        cls: "ftn-setting-warning",
+        text: "The standalone Bullet Depth Markers plugin is also enabled. Disable one of them, or their marker sequences will overwrite each other."
+      });
+    }
+    this.bulletListEl = containerEl.createDiv({ cls: "ftn-insert-item-list" });
+    this.refreshBulletList();
+  }
+  /**
+   * The three markers as reorderable rows, each with its own switch.
+   *
+   * Same shape as the insert-menu list, and for the same reason: the order
+   * is a permutation, and which rows are on is separate from where they sit,
+   * so switching one off and on again puts it back where it was.
+   */
+  refreshBulletList() {
+    const listEl = this.bulletListEl;
+    if (!listEl)
+      return;
+    listEl.empty();
+    const settings = this.plugin.settings;
+    const order = resolveBulletMarkers(settings.bulletOrder, []);
+    const enabled = resolveBulletMarkers(settings.bulletOrder, settings.bulletHidden);
+    const names = { "-": "Dash", "*": "Asterisk", "+": "Plus" };
+    order.forEach((marker, index) => {
+      const isOn = enabled.includes(marker);
+      const row = listEl.createDiv({ cls: "ftn-insert-item-row", attr: { draggable: "true" } });
+      (0, import_obsidian2.setIcon)(row.createSpan({ cls: "ftn-insert-item-grip" }), "grip-vertical");
+      row.createEl("code", { cls: "ftn-bullet-marker", text: marker });
+      const textEl = row.createDiv({ cls: "ftn-insert-item-text" });
+      textEl.createDiv({ cls: "ftn-insert-item-label", text: names[marker] });
+      textEl.createDiv({
+        cls: "ftn-insert-item-source",
+        text: isOn ? `Level ${enabled.indexOf(marker) + 1}` : "Not used"
+      });
+      const toggle = row.createDiv({ cls: "ftn-insert-item-controls" }).createEl("input", { attr: { type: "checkbox" } });
+      toggle.checked = isOn;
+      toggle.disabled = isOn && enabled.length === 1;
+      toggle.addEventListener("change", () => {
+        const hidden = settings.bulletHidden.filter((m) => m !== marker);
+        settings.bulletHidden = toggle.checked ? hidden : [...hidden, marker];
+        void this.plugin.saveSettings();
+        this.refreshBulletList();
+      });
+      row.addEventListener("dragstart", (event) => {
+        var _a;
+        (_a = event.dataTransfer) == null ? void 0 : _a.setData("text/plain", String(index));
+        row.addClass("is-dragging");
+      });
+      row.addEventListener("dragend", () => row.removeClass("is-dragging"));
+      row.addEventListener("dragover", (event) => {
+        event.preventDefault();
+        row.addClass("is-drop-target");
+      });
+      row.addEventListener("dragleave", () => row.removeClass("is-drop-target"));
+      row.addEventListener("drop", (event) => {
+        var _a;
+        event.preventDefault();
+        row.removeClass("is-drop-target");
+        const from = Number((_a = event.dataTransfer) == null ? void 0 : _a.getData("text/plain"));
+        if (from === index)
+          return;
+        settings.bulletOrder = reorderIds(order, from, index);
+        void this.plugin.saveSettings();
+        this.refreshBulletList();
+      });
+    });
   }
   /**
    * The insert menu's rows, reorderable and individually switchable.
@@ -1329,6 +1640,9 @@ function insertBlock(plugin, view, lineNo, targetType, remove) {
         insertText = "> ";
         break;
       case "paragraph":
+        insertText = "";
+        break;
+      case "blank":
         insertText = "";
         break;
       case "code":
@@ -2078,6 +2392,196 @@ function normaliseTrigger(raw) {
   return (_a = Array.from(trimmed)[0]) != null ? _a : null;
 }
 
+// src/dragRange.ts
+var TAB_WIDTH = 4;
+function indentWidth(text) {
+  let width = 0;
+  for (const ch of text) {
+    if (ch === " ")
+      width += 1;
+    else if (ch === "	")
+      width += TAB_WIDTH;
+    else
+      break;
+  }
+  return width;
+}
+function indentString(text) {
+  var _a, _b;
+  return (_b = (_a = /^[ \t]*/.exec(text)) == null ? void 0 : _a[0]) != null ? _b : "";
+}
+function isBlank(text) {
+  return text.trim() === "";
+}
+function isBlockStart(text) {
+  return /^[ \t]*([-*+]|\d+[.)])[ \t]/.test(text) || // list item or task
+  /^[ \t]*#{1,6}[ \t]/.test(text) || // heading
+  /^[ \t]*>/.test(text) || // blockquote
+  /^[ \t]*(```|~~~|\$\$)/.test(text);
+}
+function findBlockStart(doc, lineNo) {
+  let start = lineNo;
+  while (start > 1) {
+    const current = doc.line(start);
+    if (isBlockStart(current.text))
+      break;
+    const previous = doc.line(start - 1);
+    if (isBlank(previous.text))
+      break;
+    if (indentWidth(current.text) <= indentWidth(previous.text))
+      break;
+    start--;
+  }
+  return start;
+}
+function findBlockEnd(doc, start) {
+  const baseIndent = indentWidth(doc.line(start).text);
+  let end = start;
+  while (end < doc.lines) {
+    const next = doc.line(end + 1);
+    if (isBlank(next.text))
+      break;
+    if (indentWidth(next.text) <= baseIndent)
+      break;
+    end++;
+  }
+  return end;
+}
+function trimBlankEdges(doc, first, last) {
+  while (first < last && isBlank(doc.line(first).text))
+    first++;
+  while (last > first && isBlank(doc.line(last).text))
+    last--;
+  return [first, last];
+}
+function toRange(doc, first, last, isFence) {
+  return {
+    from: doc.line(first).from,
+    to: doc.line(last).to,
+    firstLine: first,
+    lastLine: last,
+    indent: indentWidth(doc.line(first).text),
+    isFence
+  };
+}
+function resolveDragRange(doc, lineNo, granularity, selection) {
+  var _a, _b, _c, _d;
+  const spans = findFenceSpans(doc);
+  if (selection) {
+    for (const range of selection.ranges) {
+      if (range.empty)
+        continue;
+      const first = doc.lineAt(range.from).number;
+      const last = doc.lineAt(range.to).number;
+      if (first === last)
+        continue;
+      if (lineNo >= first && lineNo <= last) {
+        const [f, l] = trimBlankEdges(doc, first, last);
+        const wideFirst = (_b = (_a = spans.get(f)) == null ? void 0 : _a.firstLine) != null ? _b : f;
+        const wideLast = (_d = (_c = spans.get(l)) == null ? void 0 : _c.lastLine) != null ? _d : l;
+        const span2 = spans.get(wideFirst);
+        const whollyOneFence = span2 !== void 0 && span2.firstLine === wideFirst && span2.lastLine === wideLast;
+        return toRange(doc, wideFirst, wideLast, whollyOneFence);
+      }
+    }
+  }
+  const span = spans.get(lineNo);
+  if (span)
+    return toRange(doc, span.firstLine, span.lastLine, true);
+  if (granularity === "paragraph" && !isBlank(doc.line(lineNo).text)) {
+    const start = findBlockStart(doc, lineNo);
+    const end = findBlockEnd(doc, start);
+    return toRange(doc, start, end, false);
+  }
+  return toRange(doc, lineNo, lineNo, false);
+}
+function isListItem(text) {
+  return /^[ \t]*([-*+]|\d+[.)])[ \t]/.test(text);
+}
+function detectIndentUnit(doc, fallback = 4) {
+  let smallest = Infinity;
+  const limit = Math.min(doc.lines, 500);
+  for (let n = 1; n <= limit; n++) {
+    const width = indentWidth(doc.line(n).text);
+    if (width > 0 && width < smallest)
+      smallest = width;
+  }
+  return smallest === Infinity ? fallback : smallest;
+}
+function allowedIndents(doc, dropLineNo, unit) {
+  let prev = null;
+  for (let n = Math.min(dropLineNo - 1, doc.lines); n >= 1; n--) {
+    const text = doc.line(n).text;
+    if (!isBlank(text)) {
+      prev = text;
+      break;
+    }
+  }
+  if (prev === null)
+    return [0];
+  const prevIndent = indentWidth(prev);
+  if (!isListItem(prev) && prevIndent === 0)
+    return [0];
+  const deepest = prevIndent + (isListItem(prev) ? unit : 0);
+  const levels = [];
+  for (let i = 0; i <= deepest; i += unit)
+    levels.push(i);
+  return levels.length > 0 ? levels : [0];
+}
+function pickIndent(allowed, desired) {
+  return allowed.reduce(
+    (best, candidate) => Math.abs(candidate - desired) < Math.abs(best - desired) ? candidate : best,
+    allowed[0]
+  );
+}
+function reindentBlock(text, fromIndent, toIndent) {
+  const delta = toIndent - fromIndent;
+  if (delta === 0)
+    return text;
+  return text.split("\n").map((line) => {
+    if (isBlank(line))
+      return "";
+    const current = indentWidth(line);
+    const body = line.slice(indentString(line).length);
+    return " ".repeat(Math.max(0, current + delta)) + body;
+  }).join("\n");
+}
+var GHOST_TEXT_LIMIT = 50;
+function countBlocks(doc, firstLine, lastLine) {
+  const spans = findFenceSpans(doc);
+  let count = 0;
+  let n = firstLine;
+  while (n <= lastLine) {
+    if (isBlank(doc.line(n).text)) {
+      n++;
+      continue;
+    }
+    const span = spans.get(n);
+    const end = span ? span.lastLine : findBlockEnd(doc, findBlockStart(doc, n));
+    count++;
+    n = Math.max(end, n) + 1;
+  }
+  return count;
+}
+function describeDragGhost(text, blockCount, blocksLabel) {
+  if (blockCount > 1)
+    return blocksLabel.replace("{n}", String(blockCount));
+  const flat = text.trim();
+  return flat.length > GHOST_TEXT_LIMIT ? `${flat.slice(0, GHOST_TEXT_LIMIT)}...` : flat;
+}
+
+// src/blankLine.ts
+var TABLE_ROW = /^[ \t]*\|/;
+function blankLineAfter(doc, lineNo) {
+  if (TABLE_ROW.test(doc.line(lineNo).text)) {
+    let end = lineNo;
+    while (end < doc.lines && TABLE_ROW.test(doc.line(end + 1).text))
+      end++;
+    return end;
+  }
+  return resolveDragRange(doc, lineNo, "paragraph").lastLine;
+}
+
 // src/notionInsertMenu.ts
 var CALLOUT_OPTIONS2 = [
   { type: "note", label: "note" },
@@ -2244,6 +2748,8 @@ var NotionBlockInsertMenu = class {
     };
   }
   builtinAction(id) {
+    if (id === "blank")
+      return () => this.insertBlankLine();
     if (id === "toc")
       return () => this.insertTableOfContents();
     if (id === "page")
@@ -2441,6 +2947,24 @@ var NotionBlockInsertMenu = class {
   insert(type) {
     insertBlock(this.plugin, this.view, this.lineNo, type, this.removeRange());
   }
+  /**
+   * "Insert a new line", which lands after the whole block rather than after
+   * the line it was invoked on.
+   *
+   * The `+` handle sits on whichever line the pointer is over, so on a table
+   * that is usually a middle row, and inserting there would cut the table in
+   * half — the exact failure this row exists to fix.
+   *
+   * Typing the query is the exception. The caret is already on the line the
+   * user means, and the `/query` still has to be deleted from it: resolving
+   * to a block end would put the insert on one line and the deletion on
+   * another, and planInsert reads both off the same line.
+   */
+  insertBlankLine() {
+    const remove = this.removeRange();
+    const lineNo = remove ? this.lineNo : blankLineAfter(this.view.state.doc, this.lineNo);
+    insertBlock(this.plugin, this.view, lineNo, "blank", remove);
+  }
   insertTableOfContents() {
     insertTableOfContents(this.view, this.lineNo, this.removeRange());
   }
@@ -2581,184 +3105,6 @@ var NotionBlockInsertMenu = class {
   }
 };
 
-// src/dragRange.ts
-var TAB_WIDTH = 4;
-function indentWidth(text) {
-  let width = 0;
-  for (const ch of text) {
-    if (ch === " ")
-      width += 1;
-    else if (ch === "	")
-      width += TAB_WIDTH;
-    else
-      break;
-  }
-  return width;
-}
-function indentString(text) {
-  var _a, _b;
-  return (_b = (_a = /^[ \t]*/.exec(text)) == null ? void 0 : _a[0]) != null ? _b : "";
-}
-function isBlank(text) {
-  return text.trim() === "";
-}
-function isBlockStart(text) {
-  return /^[ \t]*([-*+]|\d+[.)])[ \t]/.test(text) || // list item or task
-  /^[ \t]*#{1,6}[ \t]/.test(text) || // heading
-  /^[ \t]*>/.test(text) || // blockquote
-  /^[ \t]*(```|~~~|\$\$)/.test(text);
-}
-function findBlockStart(doc, lineNo) {
-  let start = lineNo;
-  while (start > 1) {
-    const current = doc.line(start);
-    if (isBlockStart(current.text))
-      break;
-    const previous = doc.line(start - 1);
-    if (isBlank(previous.text))
-      break;
-    if (indentWidth(current.text) <= indentWidth(previous.text))
-      break;
-    start--;
-  }
-  return start;
-}
-function findBlockEnd(doc, start) {
-  const baseIndent = indentWidth(doc.line(start).text);
-  let end = start;
-  while (end < doc.lines) {
-    const next = doc.line(end + 1);
-    if (isBlank(next.text))
-      break;
-    if (indentWidth(next.text) <= baseIndent)
-      break;
-    end++;
-  }
-  return end;
-}
-function trimBlankEdges(doc, first, last) {
-  while (first < last && isBlank(doc.line(first).text))
-    first++;
-  while (last > first && isBlank(doc.line(last).text))
-    last--;
-  return [first, last];
-}
-function toRange(doc, first, last, isFence) {
-  return {
-    from: doc.line(first).from,
-    to: doc.line(last).to,
-    firstLine: first,
-    lastLine: last,
-    indent: indentWidth(doc.line(first).text),
-    isFence
-  };
-}
-function resolveDragRange(doc, lineNo, granularity, selection) {
-  var _a, _b, _c, _d;
-  const spans = findFenceSpans(doc);
-  if (selection) {
-    for (const range of selection.ranges) {
-      if (range.empty)
-        continue;
-      const first = doc.lineAt(range.from).number;
-      const last = doc.lineAt(range.to).number;
-      if (first === last)
-        continue;
-      if (lineNo >= first && lineNo <= last) {
-        const [f, l] = trimBlankEdges(doc, first, last);
-        const wideFirst = (_b = (_a = spans.get(f)) == null ? void 0 : _a.firstLine) != null ? _b : f;
-        const wideLast = (_d = (_c = spans.get(l)) == null ? void 0 : _c.lastLine) != null ? _d : l;
-        const span2 = spans.get(wideFirst);
-        const whollyOneFence = span2 !== void 0 && span2.firstLine === wideFirst && span2.lastLine === wideLast;
-        return toRange(doc, wideFirst, wideLast, whollyOneFence);
-      }
-    }
-  }
-  const span = spans.get(lineNo);
-  if (span)
-    return toRange(doc, span.firstLine, span.lastLine, true);
-  if (granularity === "paragraph" && !isBlank(doc.line(lineNo).text)) {
-    const start = findBlockStart(doc, lineNo);
-    const end = findBlockEnd(doc, start);
-    return toRange(doc, start, end, false);
-  }
-  return toRange(doc, lineNo, lineNo, false);
-}
-function isListItem(text) {
-  return /^[ \t]*([-*+]|\d+[.)])[ \t]/.test(text);
-}
-function detectIndentUnit(doc, fallback = 4) {
-  let smallest = Infinity;
-  const limit = Math.min(doc.lines, 500);
-  for (let n = 1; n <= limit; n++) {
-    const width = indentWidth(doc.line(n).text);
-    if (width > 0 && width < smallest)
-      smallest = width;
-  }
-  return smallest === Infinity ? fallback : smallest;
-}
-function allowedIndents(doc, dropLineNo, unit) {
-  let prev = null;
-  for (let n = Math.min(dropLineNo - 1, doc.lines); n >= 1; n--) {
-    const text = doc.line(n).text;
-    if (!isBlank(text)) {
-      prev = text;
-      break;
-    }
-  }
-  if (prev === null)
-    return [0];
-  const prevIndent = indentWidth(prev);
-  if (!isListItem(prev) && prevIndent === 0)
-    return [0];
-  const deepest = prevIndent + (isListItem(prev) ? unit : 0);
-  const levels = [];
-  for (let i = 0; i <= deepest; i += unit)
-    levels.push(i);
-  return levels.length > 0 ? levels : [0];
-}
-function pickIndent(allowed, desired) {
-  return allowed.reduce(
-    (best, candidate) => Math.abs(candidate - desired) < Math.abs(best - desired) ? candidate : best,
-    allowed[0]
-  );
-}
-function reindentBlock(text, fromIndent, toIndent) {
-  const delta = toIndent - fromIndent;
-  if (delta === 0)
-    return text;
-  return text.split("\n").map((line) => {
-    if (isBlank(line))
-      return "";
-    const current = indentWidth(line);
-    const body = line.slice(indentString(line).length);
-    return " ".repeat(Math.max(0, current + delta)) + body;
-  }).join("\n");
-}
-var GHOST_TEXT_LIMIT = 50;
-function countBlocks(doc, firstLine, lastLine) {
-  const spans = findFenceSpans(doc);
-  let count = 0;
-  let n = firstLine;
-  while (n <= lastLine) {
-    if (isBlank(doc.line(n).text)) {
-      n++;
-      continue;
-    }
-    const span = spans.get(n);
-    const end = span ? span.lastLine : findBlockEnd(doc, findBlockStart(doc, n));
-    count++;
-    n = Math.max(end, n) + 1;
-  }
-  return count;
-}
-function describeDragGhost(text, blockCount, blocksLabel) {
-  if (blockCount > 1)
-    return blocksLabel.replace("{n}", String(blockCount));
-  const flat = text.trim();
-  return flat.length > GHOST_TEXT_LIMIT ? `${flat.slice(0, GHOST_TEXT_LIMIT)}...` : flat;
-}
-
 // src/frameScheduler.ts
 var FrameScheduler = class {
   constructor(win) {
@@ -2816,7 +3162,7 @@ function planBlockMove(doc, source, toLineNo, targetIndent) {
 
 // src/blockFold.ts
 var import_view = require("@codemirror/view");
-var import_state = require("@codemirror/state");
+var import_state2 = require("@codemirror/state");
 
 // src/foldRange.ts
 function headingLevel(text) {
@@ -2850,8 +3196,8 @@ function headingSection(doc, lineNo, level) {
 }
 
 // src/blockFold.ts
-var foldBlockEffect = import_state.StateEffect.define();
-var unfoldBlockEffect = import_state.StateEffect.define();
+var foldBlockEffect = import_state2.StateEffect.define();
+var unfoldBlockEffect = import_state2.StateEffect.define();
 var FoldEllipsisWidget = class extends import_view.WidgetType {
   toDOM(view) {
     const el = document.createElement("span");
@@ -2877,7 +3223,7 @@ var FoldEllipsisWidget = class extends import_view.WidgetType {
   }
 };
 var foldMark = import_view.Decoration.replace({ widget: new FoldEllipsisWidget() });
-var foldField = import_state.StateField.define({
+var foldField = import_state2.StateField.define({
   create: () => import_view.Decoration.none,
   update(folds, tr) {
     folds = folds.map(tr.changes);
@@ -3228,9 +3574,14 @@ function isInsideHandleZone(m, x, y, side) {
   const rightSlack = side === "right" ? HANDLE_SIDE_SLACK : OPPOSITE_SIDE_SLACK;
   return x >= -leftSlack && x <= m.viewWidth + rightSlack;
 }
-function handleOffsetX(m, side) {
+function lineOffsetInScroller(anchor) {
+  const { lineLeft, foldLeft, scrollerLeft, scrollerClientLeft, scrollLeft } = anchor;
+  const leftmost = foldLeft == null ? lineLeft : Math.min(lineLeft, foldLeft);
+  return leftmost - scrollerLeft - scrollerClientLeft + scrollLeft;
+}
+function handleOffsetX(m, side, lineOffsetLeft = m.contentOffsetLeft) {
   if (side !== "right")
-    return m.contentOffsetLeft - HANDLE_LEFT_GAP;
+    return lineOffsetLeft - HANDLE_LEFT_GAP;
   const past = m.contentOffsetLeft + m.contentWidth + HANDLE_RIGHT_GAP;
   return Math.min(past, m.viewWidth - HANDLE_ROW_WIDTH - 4);
 }
@@ -3456,9 +3807,17 @@ var blockHandlesExtension = (plugin) => import_view2.ViewPlugin.fromClass(class 
       viewHeight: viewRect.height,
       contentLeft: contentRect.left,
       contentWidth: contentRect.width,
-      contentOffsetLeft: view.contentDOM.offsetLeft,
+      contentOffsetLeft: lineOffsetInScroller({
+        lineLeft: contentRect.left,
+        scrollerLeft: scrollerRect.left,
+        scrollerClientLeft: view.scrollDOM.clientLeft,
+        scrollLeft: view.scrollDOM.scrollLeft
+      }),
       scrollerTop: scrollerRect.top,
-      scrollTop: view.scrollDOM.scrollTop
+      scrollerLeft: scrollerRect.left,
+      scrollerClientLeft: view.scrollDOM.clientLeft,
+      scrollTop: view.scrollDOM.scrollTop,
+      scrollLeft: view.scrollDOM.scrollLeft
     };
     return this.metrics;
   }
@@ -3509,7 +3868,7 @@ var blockHandlesExtension = (plugin) => import_view2.ViewPlugin.fromClass(class 
    * the line, which happens if this fires before the view's first layout.
    */
   updatePosition(view) {
-    var _a, _b;
+    var _a, _b, _c;
     if (this.hoveredLine === null || !this.handleEl)
       return false;
     try {
@@ -3525,11 +3884,28 @@ var blockHandlesExtension = (plugin) => import_view2.ViewPlugin.fromClass(class 
       let top = coords.top - m.scrollerTop + m.scrollTop;
       const lineHeight = coords.bottom - coords.top;
       top += (lineHeight - this.handleHeight) / 2;
-      const left = handleOffsetX(m, plugin.settings.handleSide);
+      let lineOffsetLeft = m.contentOffsetLeft;
+      if (plugin.settings.handleSide === "left") {
+        const node = view.domAtPos(line.from).node;
+        const element = node.nodeType === 1 ? node : node.parentElement;
+        const lineElement = element == null ? void 0 : element.closest(".cm-line");
+        if (lineElement && view.contentDOM.contains(lineElement)) {
+          const foldRect = (_a = lineElement.querySelector(".collapse-indicator")) == null ? void 0 : _a.getBoundingClientRect();
+          const foldLeft = foldRect && foldRect.width > 0 && foldRect.height > 0 ? foldRect.left : null;
+          lineOffsetLeft = lineOffsetInScroller({
+            lineLeft: lineElement.getBoundingClientRect().left,
+            foldLeft,
+            scrollerLeft: m.scrollerLeft,
+            scrollerClientLeft: m.scrollerClientLeft,
+            scrollLeft: m.scrollLeft
+          });
+        }
+      }
+      const left = handleOffsetX(m, plugin.settings.handleSide, lineOffsetLeft);
       this.hoveredBand = { top: coords.top, bottom: (endCoords != null ? endCoords : coords).bottom };
       if (this.plusHandleShown !== plugin.settings.plusHandle) {
         this.plusHandleShown = plugin.settings.plusHandle;
-        (_a = this.addButton) == null ? void 0 : _a.toggle(plugin.settings.plusHandle);
+        (_b = this.addButton) == null ? void 0 : _b.toggle(plugin.settings.plusHandle);
       }
       if (this.sideShown !== plugin.settings.handleSide) {
         this.sideShown = plugin.settings.handleSide;
@@ -3539,7 +3915,7 @@ var blockHandlesExtension = (plugin) => import_view2.ViewPlugin.fromClass(class 
       const foldState = !foldOffsets ? "none" : isFoldActiveAt(view, foldOffsets.from) ? "folded" : "unfolded";
       if (this.foldShown !== foldState) {
         this.foldShown = foldState;
-        (_b = this.foldButton) == null ? void 0 : _b.toggle(foldState !== "none");
+        (_c = this.foldButton) == null ? void 0 : _c.toggle(foldState !== "none");
         if (this.foldButton && foldState !== "none") {
           (0, import_obsidian6.setIcon)(this.foldButton, foldState === "folded" ? "chevron-right" : "chevron-down");
           this.foldButton.setAttribute(
@@ -3695,7 +4071,7 @@ var blockHandlesExtension = (plugin) => import_view2.ViewPlugin.fromClass(class 
 
 // src/hideSyntax.ts
 var import_view3 = require("@codemirror/view");
-var import_state2 = require("@codemirror/state");
+var import_state3 = require("@codemirror/state");
 
 // src/markerRanges.ts
 var PAIRED = ["***", "___", "**", "__", "==", "~~", "*", "_"];
@@ -3808,7 +4184,7 @@ function findMarkerRanges(lineText, lineFrom = 0) {
 // src/hideSyntax.ts
 var hiddenMarker = import_view3.Decoration.replace({});
 function buildDecorations(view) {
-  const builder = new import_state2.RangeSetBuilder();
+  const builder = new import_state3.RangeSetBuilder();
   const fencedLines = findFencedLines(view.state.doc);
   for (const { from, to } of view.visibleRanges) {
     let pos = from;
@@ -3858,7 +4234,7 @@ function hideSyntaxExtension(plugin) {
 
 // src/blockSelection.ts
 var import_view4 = require("@codemirror/view");
-var import_state3 = require("@codemirror/state");
+var import_state4 = require("@codemirror/state");
 var blockSelected = import_view4.Decoration.line({ class: "ftn-block-selected" });
 function selectedLines(doc, ranges) {
   const lines = /* @__PURE__ */ new Set();
@@ -3881,10 +4257,10 @@ function snapRangeToBlocks(doc, range) {
   const last = doc.lineAt(range.to);
   if (first.number === last.number)
     return range;
-  return range.anchor <= range.head ? import_state3.EditorSelection.range(first.from, last.to) : import_state3.EditorSelection.range(last.to, first.from);
+  return range.anchor <= range.head ? import_state4.EditorSelection.range(first.from, last.to) : import_state4.EditorSelection.range(last.to, first.from);
 }
 function buildDecorations2(view) {
-  const builder = new import_state3.RangeSetBuilder();
+  const builder = new import_state4.RangeSetBuilder();
   const doc = view.state.doc;
   for (const n of selectedLines(doc, view.state.selection.ranges)) {
     const line = doc.line(n);
@@ -3929,7 +4305,7 @@ function blockSelectionExtension(plugin) {
         if (!changed)
           return false;
         view.dispatch({
-          selection: import_state3.EditorSelection.create(snapped, view.state.selection.mainIndex),
+          selection: import_state4.EditorSelection.create(snapped, view.state.selection.mainIndex),
           // Selection-only, so it must not create an undo entry.
           scrollIntoView: false
         });
@@ -3940,7 +4316,7 @@ function blockSelectionExtension(plugin) {
 }
 
 // src/blockKeymap.ts
-var import_state4 = require("@codemirror/state");
+var import_state5 = require("@codemirror/state");
 var import_view5 = require("@codemirror/view");
 
 // src/blockCommands.ts
@@ -4011,7 +4387,7 @@ function planBackspace(doc, pos, unit) {
 }
 
 // src/blockKeymap.ts
-var blockKeymapExtension = (plugin) => import_state4.Prec.highest(
+var blockKeymapExtension = (plugin) => import_state5.Prec.highest(
   import_view5.keymap.of([
     {
       key: "Mod-a",
@@ -4025,7 +4401,7 @@ var blockKeymapExtension = (plugin) => import_state4.Prec.highest(
         if (!plan)
           return false;
         view.dispatch({
-          selection: import_state4.EditorSelection.single(plan.from, plan.to),
+          selection: import_state5.EditorSelection.single(plan.from, plan.to),
           userEvent: "select.block"
         });
         return true;
@@ -4047,7 +4423,7 @@ var blockKeymapExtension = (plugin) => import_state4.Prec.highest(
           return false;
         view.dispatch({
           changes: plan.changes,
-          selection: import_state4.EditorSelection.cursor(plan.anchor),
+          selection: import_state5.EditorSelection.cursor(plan.anchor),
           scrollIntoView: true,
           userEvent: "delete.backward"
         });
@@ -4181,26 +4557,100 @@ var slashMenuExtension = (plugin) => import_view6.ViewPlugin.fromClass(
   }
 );
 
+// src/whatsNew.ts
+var RELEASE_NOTES = {
+  version: "0.7.0",
+  items: [
+    "Bullet depth markers are built in. Child bullets get their own marker in the file, - then * then +, and a matching \u25CF \u25CB \u25AA on screen. Off by default: turn it on under Settings \u2192 Feel the Notion \u2192 Bullet depth markers.",
+    "The marker sequence can be reordered by dragging, and any marker switched off.",
+    `This card. It shows once per update and can be reopened from the command palette with "Show what's new".`
+  ]
+};
+function shouldShowWhatsNew(hadSavedData, lastSeen, current, notesVersion) {
+  return hadSavedData && lastSeen !== current && notesVersion === current;
+}
+
+// src/whatsNewModal.ts
+var import_obsidian7 = require("obsidian");
+var WhatsNewModal = class extends import_obsidian7.Modal {
+  constructor(app, notes, onDismiss) {
+    super(app);
+    this.notes = notes;
+    this.onDismiss = onDismiss;
+  }
+  onOpen() {
+    this.modalEl.addClass("ftn-whats-new");
+    this.titleEl.setText(`What's new in Feel the Notion ${this.notes.version}`);
+    const list = this.contentEl.createEl("ul");
+    for (const item of this.notes.items)
+      list.createEl("li", { text: item });
+    new import_obsidian7.Setting(this.contentEl).addButton((button) => button.setButtonText("Dismiss").setCta().onClick(() => this.close()));
+  }
+  onClose() {
+    this.contentEl.empty();
+    this.onDismiss();
+  }
+};
+
 // src/main.ts
-var NotionBlock = class extends import_obsidian7.Plugin {
+var NotionBlock = class extends import_obsidian8.Plugin {
   async onload() {
-    await this.loadSettings();
+    const hadSavedData = await this.loadSettings();
     this.registerEditorExtension([
       blockHandlesExtension(this),
       hideSyntaxExtension(this),
       blockSelectionExtension(this),
       blockKeymapExtension(this),
       slashMenuExtension(this),
-      blockFoldExtension()
+      blockFoldExtension(),
+      bulletDepthExtension(() => this.bulletMarkers())
     ]);
+    this.syncBulletClass();
     this.addCommand({
       id: "open-insert-menu",
       name: t("command.openInsertMenu"),
       editorCallback: (editor) => this.openInsertMenuAtCursor(editor)
     });
+    this.addCommand({
+      id: "show-whats-new",
+      name: "Show what's new",
+      callback: () => this.openWhatsNew()
+    });
     this.addSettingTab(new BlockPluginSettingTab(this.app, this));
+    this.app.workspace.onLayoutReady(() => this.maybeShowWhatsNew(hadSavedData));
   }
   onunload() {
+    document.body.removeClass("ftn-bullet-depth");
+  }
+  /** The marker sequence while bullet depth markers are on, null while off. */
+  bulletMarkers() {
+    const s = this.settings;
+    if (!s.enabled || !s.bulletDepth)
+      return null;
+    return resolveBulletMarkers(s.bulletOrder, s.bulletHidden);
+  }
+  /**
+   * The ● ○ ▪ styling is plain CSS, so it is switched by a body class rather
+   * than by registering anything: off, the stylesheet matches nothing.
+   */
+  syncBulletClass() {
+    document.body.toggleClass("ftn-bullet-depth", this.bulletMarkers() !== null);
+  }
+  maybeShowWhatsNew(hadSavedData) {
+    const current = this.manifest.version;
+    if (shouldShowWhatsNew(hadSavedData, this.settings.lastSeenVersion, current, RELEASE_NOTES.version)) {
+      this.openWhatsNew();
+      return;
+    }
+    if (this.settings.lastSeenVersion !== current)
+      void this.markWhatsNewSeen();
+  }
+  openWhatsNew() {
+    new WhatsNewModal(this.app, RELEASE_NOTES, () => void this.markWhatsNewSeen()).open();
+  }
+  async markWhatsNewSeen() {
+    this.settings.lastSeenVersion = this.manifest.version;
+    await this.saveData(this.settings);
   }
   openInsertMenuAtCursor(editor) {
     const view = editor.cm;
@@ -4218,12 +4668,15 @@ var NotionBlock = class extends import_obsidian7.Plugin {
       { avoid: { top: coords.top, bottom: coords.bottom }, keepEditorFocus: true }
     );
   }
+  /** Returns whether saved settings existed, which is how an update is told from a fresh install. */
   async loadSettings() {
     const data = await this.loadData();
     this.settings = Object.assign({}, DEFAULT_SETTINGS, data);
+    return data !== null;
   }
   async saveSettings() {
     await this.saveData(this.settings);
+    this.syncBulletClass();
     this.app.workspace.updateOptions();
   }
 };

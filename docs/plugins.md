@@ -21,7 +21,18 @@
 | `scripts/inbox.py` | 인박스 감싸기 + `agy` 로 `요약`·`주제` 채우기 |
 | `plugins/dataview` | 인박스 대시보드(핀보드)가 쓰는 유일한 외부 플러그인 |
 | `plugins/meeting-board` | **회의판 모양만.** 이름이 `회의판.canvas` 로 끝나는 캔버스에 `mb-board` 클래스를 붙이고, `styles.css` 가 FigJam 같은 포스트잇으로 칠함 (파스텔 · 그림자 · 큰 글씨 · 색 = 사람: 6 보라 Rin · 5 파랑 민규 서 · 3 노랑 AI · 4 초록 끝남 · 2 주황 밀림 · 1 분홍 ❓). 왼쪽에 **포스트잇 더미**(보라 Rin · 파랑 민규 서 · 크림 누구든) — 끌어다 놓거나 누르면 그 색 포스트잇이 생김 (문서에 없는 캔버스 API `createTextNode` 사용 — 옵시디언이 바꾸면 더미만 멈추고 알림). 모양은 캔버스 파일을 안 건드림. **안 쓰면 끄거나 폴더째 지우면 끝** — 규칙은 `skills/meeting-notes/SKILL.md` 2.1 (2026-09-28) |
-| `plugins/vault-sync` | 🔀 동기화 버튼 (git 커밋·가져오기·합치기·올리기). git 은 빈 폴더를 모르니 **커밋 전에 빈 폴더마다 `.gitkeep` 을 넣어** 폴더째 넘깁니다 (옵시디언 트리엔 안 보임, 2026-09-22). 시험: `node sync-test.js` · `node test.js` |
+| `plugins/gaeddong-sync` | 🔀 동기화 버튼 (git 커밋·가져오기·합치기·올리기). git 은 빈 폴더를 모르니 **커밋 전에 빈 폴더마다 `.gitkeep` 을 넣어** 폴더째 넘깁니다 (옵시디언 트리엔 안 보임, 2026-09-22). 시험: `node sync-test.js` · `node test.js`. 2026-10-07 까지는 `vault-sync` 였습니다 (아래 **직접 만든 플러그인의 id**) |
+
+### 직접 만든 플러그인의 id — 커뮤니티 목록에 없는 이름으로
+
+옵시디언의 플러그인 업데이트는 **id 만 봅니다.** 커뮤니티 목록에 같은 id 의 플러그인이 있고 그쪽 버전이 높으면,
+`모두 업데이트` 가 우리 `main.js` · `manifest.json` · `styles.css` 를 그쪽 것으로 덮어씁니다. 오류도 안 납니다.
+2026-10-06 에 `vault-sync` 가 남의 `VaultSync` 로 덮여 🔀 동기화 버튼이 사라졌고, 그래서 `gaeddong-sync` 로 바꿨습니다.
+
+- 새로 만드는 플러그인의 id 는 **`gaeddong-` 로 시작**합니다. 만들기 전에 [커뮤니티 목록](https://raw.githubusercontent.com/obsidianmd/obsidian-releases/master/community-plugins.json)에 같은 id 가 없는지 봅니다.
+- `claude` · `meeting-board` 는 2026-10-07 기준 목록에 없습니다. 누가 그 이름으로 올리면 같은 일이 납니다 — 플러그인 목록에 **직접 만든 것의 업데이트**가 뜨면 누르지 말고 id 부터 바꿉니다.
+- 업데이트로 덮였으면 git 에서 꺼냅니다 — `git checkout HEAD -- .obsidian/plugins/<id>`.
+- 손으로 고쳐 둔 커뮤니티 플러그인(`kanban-bases-view` 의 한 줄)은 업데이트하면 고친 줄이 날아갑니다. 업데이트한 뒤 `[개똥이 머릿속 수정]` 을 찾아 없으면 다시 넣습니다.
 
 ### `plugins/claude` — 직접 만든 기능 여섯이 한 플러그인
 

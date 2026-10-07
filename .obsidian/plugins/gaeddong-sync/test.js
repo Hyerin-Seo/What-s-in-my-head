@@ -1,5 +1,5 @@
 // 합치기 규칙 시험 — 일부러 만든 사례로 규칙 하나씩.
-//   node .obsidian/plugins/vault-sync/test.js
+//   node .obsidian/plugins/gaeddong-sync/test.js
 // 볼트 파일은 안 건드립니다. (본문 합치기에 git merge-file 을 쓰니 git 은 있어야 합니다)
 "use strict";
 const assert = require("assert");

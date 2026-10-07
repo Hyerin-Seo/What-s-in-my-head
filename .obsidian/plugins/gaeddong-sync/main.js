@@ -301,7 +301,7 @@ const M_OURS = "<".repeat(MARK) + " ours", M_BASE = "|".repeat(MARK) + " base", 
 
 function gitMergeFile(b, o, t, gitCmd) {
   const fs = require("fs"), os = require("os"), nodePath = require("path"), cp = require("child_process");
-  const dir = fs.mkdtempSync(nodePath.join(os.tmpdir(), "vault-sync-"));
+  const dir = fs.mkdtempSync(nodePath.join(os.tmpdir(), "gaeddong-sync-"));
   try {
     const put = (n, s) => { const p = nodePath.join(dir, n); fs.writeFileSync(p, s, "utf8"); return p; };
     const po = put("ours", o), pb = put("base", b), pt = put("theirs", t);
@@ -816,7 +816,7 @@ async function commitLocal(g, who, now) {
  */
 async function buildMergeCommit(g, plan, picks, { gitDir, message }) {
   const nodePath = require("path");
-  const index = nodePath.join(gitDir, "vault-sync-index");
+  const index = nodePath.join(gitDir, "gaeddong-sync-index");
   const env = { GIT_INDEX_FILE: index };
   try {
     await g(["read-tree", plan.tree], { env });
@@ -1114,9 +1114,9 @@ async function buildReport({ cwd, git, names, before, days = 7, maxCommits = 15,
 
   const L = [
     "---", "유형: 대시보드", "구역: 0.inbox", "분류:", "주제:", "상태:",
-    "요약: 동기화할 때마다 vault-sync 가 새로 쓰는 변경 기록 — 커밋별로 바뀐 파일 링크",
+    "요약: 동기화할 때마다 gaeddong-sync 가 새로 쓰는 변경 기록 — 커밋별로 바뀐 파일 링크",
     "작성일:", "마감:", "커버:", "상위:", "링크:", "담당:", "작성자:", "---",
-    "%% vault-sync 가 동기화할 때마다 통째로 새로 씁니다 — 고쳐도 다음 동기화 때 덮입니다. git 에는 안 올라갑니다 (.gitignore). %%",
+    "%% gaeddong-sync 가 동기화할 때마다 통째로 새로 씁니다 — 고쳐도 다음 동기화 때 덮입니다. git 에는 안 올라갑니다 (.gitignore). %%",
     "",
     "# 🔀 최근 동기화",
     "",
@@ -1350,7 +1350,7 @@ if (obsidian) {
         });
       } catch (e) {
         hide();
-        console.error("[vault-sync]", e);
+        console.error("[gaeddong-sync]", e);
         new obsidian.Notice("동기화를 멈췄습니다.\n" + e.message, 15000);
       } finally {
         this.busy = false;
@@ -1373,7 +1373,7 @@ if (obsidian) {
           const r = await restoreTo({ cwd: this.cwd, git, names: this.settings.names, point });
           new obsidian.Notice(r.message, 10000);
         } catch (e) {
-          console.error("[vault-sync]", e);
+          console.error("[gaeddong-sync]", e);
           new obsidian.Notice("되돌리기를 멈췄습니다.\n" + e.message, 15000);
         } finally {
           this.busy = false;
@@ -1391,7 +1391,7 @@ if (obsidian) {
         await this.app.vault.adapter.write(REPORT_PATH, text);
         return true;
       } catch (e) {
-        console.error("[vault-sync] 동기화 기록", e);
+        console.error("[gaeddong-sync] 동기화 기록", e);
         new obsidian.Notice("동기화는 끝났지만 기록을 못 썼습니다.\n" + e.message, 10000);
         return false;
       }
