@@ -56,7 +56,7 @@
 | 설계 — MeetingMind 3기능(속기 · AI 정리 · 이어지는 회의)을 볼트에                | [[🔁 회의 이어가기 설계 (MeetingMind 3기능).canvas\|🔁 설계 캔버스]]                                 |
 | 회의 한 바퀴 규칙 — 지난 회의 점검 · 끈 맞추기 · 카드 아님 · 튜닝 · 보관 · 회의판          | [[skills/meeting-notes/SKILL\|meeting-notes 스킬]] · [[docs/meetings-and-skills\|docs]] |
 | 안건 카드 스킬 정본 (회의마다 A4.meta 로 복사해 튜닝)                            | [[skills/pre_meeting_agenda_preparer/SKILL\|pre_meeting_agenda_preparer]]             |
-| 회의록 양식 다시 씀 (참석 기본값 Rin · 민규 서)                                | [[4.🗄️(Archive) 보관/회의록/!(Template) 회의록\|회의록 양식]]                                     |
+| 회의록 양식 다시 씀 (참석 기본값 Rin · 민규 서)                                | [[4.🗄️(Archive) 보관/_회의록/!(Template) 회의록\|회의록 양식]]                                     |
 | 회의 할 일 양식 — `주제: 회의 할 일` 이 다음 회의로 돌아오는 끈                       | [[0.📥 인박스/!(Template) 회의 할 일\|회의 할 일 양식]]                                            |
 | 회의 할 일 대시보드                                                    | [[📊 회의 할 일.base\|📊 회의 할 일]]                                                         |
 | 회의판 — FigJam 처럼 포스트잇 캔버스, 명령은 "판 정리해줘" 하나                      | [[한 사이클 돌려보기 테스트 🗺️ 회의판.canvas\|🗺️ 데모 판]] · 플러그인 `.obsidian/plugins/gaeddong-meeting-board`  |

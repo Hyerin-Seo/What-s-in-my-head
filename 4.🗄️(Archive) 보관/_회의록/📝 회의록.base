@@ -14,5 +14,5 @@ views:
     sort:
       - property: 작성일
         direction: DESC
-newItemFolder: 4.🗄️(Archive) 보관/회의록
-newItemTemplate: 4.🗄️(Archive) 보관/회의록/!(Template) 회의록.md
+newItemFolder: 4.🗄️(Archive) 보관/_회의록
+newItemTemplate: 4.🗄️(Archive) 보관/_회의록/!(Template) 회의록.md
