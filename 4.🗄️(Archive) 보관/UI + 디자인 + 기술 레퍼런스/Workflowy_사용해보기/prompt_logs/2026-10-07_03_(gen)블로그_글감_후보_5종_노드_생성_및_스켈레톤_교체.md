@@ -1,6 +1,6 @@
 ---
 유형: 자료
-구역: 3.resource
+구역: 4.archive
 분류:
   - Workflowy_사용해보기
 주제:
