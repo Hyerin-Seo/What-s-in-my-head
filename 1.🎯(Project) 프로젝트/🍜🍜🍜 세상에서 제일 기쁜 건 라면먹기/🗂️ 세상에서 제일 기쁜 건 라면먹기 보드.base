@@ -114,5 +114,5 @@ views:
       - 일정
       - 마감
       - 작성자
-newItemFolder: "1.🎯(Project) 프로젝트/🍜🍜🍜 세상에서 제일 기쁜 건 라면먹기"
-newItemTemplate: "1.🎯(Project) 프로젝트/!(Template) 새 할 일.md"
+newItemFolder: 1.🎯(Project) 프로젝트/🍜🍜🍜 세상에서 제일 기쁜 건 라면먹기
+newItemTemplate: 1.🎯(Project) 프로젝트/!(Template) 새 할 일.md
