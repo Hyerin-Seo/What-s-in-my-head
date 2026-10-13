@@ -4783,7 +4783,17 @@ function useRowSelection(flattenedNodes) {
 	]);
 	(0, import_react.useEffect)(() => {
 		if (!hasSelection) return;
+		const isInsideTree = (el) => {
+			if (el instanceof Element && el.closest("[data-outline-tree]")) return true;
+			const active = win.document.activeElement;
+			if (active instanceof Element && active.closest("[data-outline-tree]")) return true;
+			return false;
+		};
 		const handleKeyDown = (e) => {
+			if (!isInsideTree(e.target)) {
+				clearSelection();
+				return;
+			}
 			const active = win.document.activeElement;
 			const isTyping = active instanceof HTMLElement && (active.isContentEditable || active.tagName === "INPUT" || active.tagName === "TEXTAREA");
 			const isModifier = e.ctrlKey || e.metaKey;
@@ -4855,6 +4865,7 @@ function useRowSelection(flattenedNodes) {
 			}
 		};
 		const handlePaste = (e) => {
+			if (!isInsideTree(e.target)) return;
 			const active = win.document.activeElement;
 			if (active instanceof HTMLElement && (active.isContentEditable || active.tagName === "INPUT" || active.tagName === "TEXTAREA")) return;
 			const selectedIds = api.getState().selectedNodeIds;
@@ -4867,11 +4878,22 @@ function useRowSelection(flattenedNodes) {
 				}
 			}
 		};
+		const handleOutsidePointerDown = (e) => {
+			const target = e.target;
+			if (target instanceof Element && !target.closest("[data-outline-tree]")) clearSelection();
+		};
+		const handleBlur = () => {
+			clearSelection();
+		};
 		win.addEventListener("keydown", handleKeyDown);
 		win.addEventListener("paste", handlePaste);
+		win.addEventListener("mousedown", handleOutsidePointerDown);
+		win.addEventListener("blur", handleBlur);
 		return () => {
 			win.removeEventListener("keydown", handleKeyDown);
 			win.removeEventListener("paste", handlePaste);
+			win.removeEventListener("mousedown", handleOutsidePointerDown);
+			win.removeEventListener("blur", handleBlur);
 		};
 	}, [
 		hasSelection,
@@ -4942,6 +4964,7 @@ var OutlineTree = () => {
 		}
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		"data-outline-tree": true,
 		className: "flex flex-col py-2 [--outline-line-gap:var(--list-spacing,0.075em)]",
 		onMouseDown: handleMouseDown,
 		onDragOver: handleContainerDragOver,

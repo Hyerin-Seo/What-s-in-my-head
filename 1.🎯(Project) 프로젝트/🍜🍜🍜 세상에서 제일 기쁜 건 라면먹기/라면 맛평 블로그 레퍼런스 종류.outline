@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "id": "nWXuNfBN2r0g",
+  "title": "라면 맛평 블로그 레퍼런스 종류",
+  "rootNodes": [
+    {
+      "id": "o1sP03wZoKAX",
+      "text": "제목 없음 개요",
+      "children": [
+        {
+          "id": "Yq5hRhNNHhdC",
+          "text": "핵심 아이디어와 생각의 흐름을 여기에 작성하세요",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1791874586189,
+          "updatedAt": 1791875850274
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791874586189,
+      "updatedAt": 1791875794146
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791874586189,
+  "updatedAt": 1791875850275
+}
