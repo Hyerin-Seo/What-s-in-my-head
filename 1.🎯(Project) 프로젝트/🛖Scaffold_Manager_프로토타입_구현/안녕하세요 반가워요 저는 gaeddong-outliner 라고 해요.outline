@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "id": "4iTYevj4kiUh",
+  "title": "안녕하세요 반가워요 저는 gaeddong-outliner 라고 해요",
+  "rootNodes": [
+    {
+      "id": "GRUZsCt74jql",
+      "text": "outliner 추가 되고 충돌 테스트 중",
+      "children": [
+        {
+          "id": "iqOlpfMSm45i",
+          "text": "shift + 지우기 이런 커서 조작들이 안되네여... 이런 에디터 기능은 신경쓰지 않겠어여",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1791853030029,
+          "updatedAt": 1791855163485
+        },
+        {
+          "id": "HmdL4yP8pXXd",
+          "text": "Outline 만들 때 다른 관리 카드가 생성이 안되네여..",
+          "children": [],
+          "createdAt": 1791853109001,
+          "updatedAt": 1791855163938
+        },
+        {
+          "id": "sBXWUNwSzkIr",
+          "text": "이미지를 붙여넣을 수 있어여",
+          "children": [],
+          "file": {
+            "target": "image (3) 1.png"
+          },
+          "createdAt": 1791853229106,
+          "updatedAt": 1791855164902
+        },
+        {
+          "id": "LEog2DhTpzgJ",
+          "text": "조작 같은 것들은 문제가 없어여",
+          "children": [
+            {
+              "id": "OnL6bJtXCtSP",
+              "text": "메뉴바도 잘 떠여",
+              "children": [],
+              "createdAt": 1791853185090,
+              "updatedAt": 1791855177803
+            },
+            {
+              "id": "iD2Lc43PNFfk",
+              "text": "더 써도 되나여",
+              "children": [],
+              "createdAt": 1791854054889,
+              "updatedAt": 1791855184277
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791853139763,
+          "updatedAt": 1791855166843
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791853030029,
+      "updatedAt": 1791853089850
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791853030029,
+  "updatedAt": 1791855184277
+}

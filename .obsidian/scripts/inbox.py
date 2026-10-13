@@ -153,10 +153,10 @@ def wrap():
             if not os.path.isfile(p):
                 continue
             stem, ext = os.path.splitext(f)
-            # 캔버스는 첨부가 아니라 문서다. 그런데 Dataview 는 .canvas 를 색인하지 않아
+            # 캔버스·아웃라인은 첨부가 아니라 문서다. 그런데 Dataview 는 .canvas·.outline 을 색인하지 않아
             # 대시보드에 아예 안 뜬다. 그래서 래퍼 노트만 만들고 **파일은 안 옮긴다.**
-            is_canvas = ext.lower() == ".canvas"
-            if ext.lower() not in ATT and not is_canvas:
+            is_doc = ext.lower() in {".canvas", ".outline"}
+            if ext.lower() not in ATT and not is_doc:
                 if not f.endswith((".md", ".base")):
                     skipped.append(f)
                 continue
@@ -168,8 +168,8 @@ def wrap():
                 continue
             planned.add(note)
 
-            # 캔버스는 제자리에, 나머지 첨부는 `이미지/` 로
-            newrel = (os.path.relpath(p, V).replace(os.sep, "/") if is_canvas
+            # 캔버스·아웃라인은 제자리에, 나머지 첨부는 `이미지/` 로
+            newrel = (os.path.relpath(p, V).replace(os.sep, "/") if is_doc
                       else "%s/%s" % (attrel_dir, f))
             size = human_size(os.path.getsize(p))
             made.append((os.path.relpath(p, os.path.join(V, INBOX)).replace(os.sep, "/"),
@@ -177,7 +177,7 @@ def wrap():
             if not WRITE:
                 continue
 
-            if not is_canvas:
+            if not is_doc:
                 os.makedirs(img, exist_ok=True)
                 shutil.move(p, os.path.join(img, f))
             fm = {k: "" for k in STD}
@@ -187,7 +187,7 @@ def wrap():
             lt = link_text(newrel)
             # 원본을 누를 수 있게 항상 링크를 답니다 (미리보기만으론 원본을 못 엽니다)
             open_line = "📎 원본 열기 → [[%s]]" % lt
-            if is_canvas or ext.lower() in IMG:
+            if is_doc or ext.lower() in IMG:
                 preview = "![[%s]]" % lt
             elif ext.lower() in EMBED:
                 preview = "![[%s#height=700]]" % lt
