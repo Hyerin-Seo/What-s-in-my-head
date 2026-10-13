@@ -709,17 +709,17 @@ class ParaMod extends Mod {
     });
     this.addCommand({
       id: "canvas-active",
-      name: "이 캔버스를 노트로 세우기 (보드에 뜨게)",
+      name: "이 캔버스/아웃라인을 노트로 세우기 (보드에 뜨게)",
       checkCallback: (checking) => {
         const file = this.app.workspace.getActiveFile();
-        if (!file || file.extension !== "canvas") return false;
+        if (!file || (file.extension !== "canvas" && file.extension !== "outline")) return false;
         if (!checking) this.wrapCanvas(file, "cmd");
         return true;
       },
     });
     this.addCommand({
       id: "canvas-all",
-      name: "볼트 전체 — 혼자 있는 캔버스를 노트로 세우기",
+      name: "볼트 전체 — 혼자 있는 캔버스/아웃라인을 노트로 세우기",
       callback: () => this.wrapCanvasAll("cmd"),
     });
     this.addCommand({
@@ -770,12 +770,12 @@ class ParaMod extends Mod {
 
     this.registerEvent(
       this.app.workspace.on("file-menu", (menu, file) => {
-        if (!(file instanceof TFile) || file.extension !== "canvas") return;
+        if (!(file instanceof TFile) || (file.extension !== "canvas" && file.extension !== "outline")) return;
         if (!this.canvasPlan(file)) return;      // 이미 세워져 있거나 구역 폴더 밖
         menu.addItem((i) =>
           i.setSection("action")
             .setTitle("노트로 세우기 (보드에 뜨게)")
-            .setIcon("lucide-layout-dashboard")
+            .setIcon(file.extension === "outline" ? "lucide-list-tree" : "lucide-layout-dashboard")
             .onClick(() => this.wrapCanvas(file, "cmd"))
         );
       })
@@ -2101,9 +2101,9 @@ class ParaMod extends Mod {
     return normalizePath((dir ? dir + "/" : "") + file.basename + ".md");
   }
 
-  /** 노트로 세울 캔버스인가 — 아니면 null */
+  /** 노트로 세울 캔버스/아웃라인인가 — 아니면 null */
   canvasPlan(file) {
-    if (!(file instanceof TFile) || file.extension !== "canvas") return null;
+    if (!(file instanceof TFile) || (file.extension !== "canvas" && file.extension !== "outline")) return null;
     if (this.isExcluded(file.path)) return null;
     const zoneKey = this.zoneOfPath(file.path);
     if (!zoneKey) return null;                       // 구역 폴더 밖
@@ -2138,17 +2138,20 @@ class ParaMod extends Mod {
     }
     out.push("---", "");
 
-    // 노트와 캔버스는 **이름이 같습니다.** 링크에 확장자가 없으면 이 노트로 되돌아옵니다.
+    // 노트와 캔버스/아웃라인은 **이름이 같습니다.** 링크에 확장자가 없으면 이 노트로 되돌아옵니다.
     // fileToLinktext 는 마크다운이 아닌 것에 확장자를 남깁니다.
     const link = this.app.metadataCache.fileToLinktext(file, p.notePath);
+    const isOutline = file.extension === "outline";
+    const headerTitle = isOutline ? "📑 아웃라인 열기" : "🖼 캔버스 열기";
+    const targetKind = isOutline ? "아웃라인" : "캔버스";
     const body = [
-      "🖼 캔버스 열기 → [[" + link + "]]",
+      headerTitle + " → [[" + link + "]]",
       "",
       "%%",
-      "보드에 뜨는 카드가 이 노트입니다. 캔버스는 속성을 가질 수 없어서 — 프론트매터를",
-      "읽어 주는 건 마크다운뿐입니다 — 옆에 노트를 세웁니다. 캔버스 파일은 제자리에",
-      "그대로 있습니다. 이 노트를 지우면 캔버스가 보드에서 다시 사라집니다.",
-      "무엇을 그린 것인지 `요약` 에 한 줄 적어 두면 3주 뒤에 도움이 됩니다.",
+      `보드에 뜨는 카드가 이 노트입니다. ${targetKind}은 속성을 가질 수 없어서 — 프론트매터를`,
+      `읽어 주는 건 마크다운뿐입니다 — 옆에 노트를 세웁니다. ${targetKind} 파일은 제자리에`,
+      `그대로 있습니다. 이 노트를 지우면 ${targetKind}이 보드에서 다시 사라집니다.`,
+      "무엇을 작성/정리한 것인지 `요약` 에 한 줄 적어 두면 3주 뒤에 도움이 됩니다.",
       "%%",
       "",
       "![[" + link + "]]",
@@ -2161,7 +2164,7 @@ class ParaMod extends Mod {
     const what = [p.kind || "유형 비움", p.zoneKey, p.state, p.cls].filter(Boolean).join(" · ");
     if (p.kind) {
       if (caller === "cmd" || this.settings.notice) {
-        new Notice("🖼 " + file.name + "\n보드에 뜨게 노트로 세웠습니다 — " + what, 6000);
+        new Notice((isOutline ? "📑 " : "🖼 ") + file.name + "\n보드에 뜨게 노트로 세웠습니다 — " + what, 6000);
       }
     } else if (note instanceof TFile) {
       // 고를 여지가 있는 구역입니다 — 지어내지 않고 이웃이 쓰는 값을 권합니다
@@ -2174,7 +2177,7 @@ class ParaMod extends Mod {
   /** 캔버스를 만들면 옆에 노트를 세웁니다 (다 써질 때까지 잠깐 기다립니다) */
   queueCanvas(file) {
     if (!this.settings.wrapCanvas) return;
-    if (!(file instanceof TFile) || file.extension !== "canvas") return;
+    if (!(file instanceof TFile) || (file.extension !== "canvas" && file.extension !== "outline")) return;
     const path = file.path;
     clearTimeout(this.canvasTimers.get(path));
     this.canvasTimers.set(path, setTimeout(() => {
@@ -3675,10 +3678,11 @@ class InboxMod extends Mod {
     const ext = (file.extension || "").toLowerCase();
     if (NEVER.includes(ext)) return null;
     if (!this.inInbox(file.path)) return null;
-    // canvas 는 문서지만 Dataview 가 색인하지 않아 보드에 안 뜬다 → 노트만 만든다
+    // canvas·outline 은 문서지만 Dataview 가 색인하지 않아 보드에 안 뜬다 → 노트만 만든다
     const isCanvas = ext === "canvas";
-    if (!isCanvas && !WRAP_EXT.includes(ext)) return null;
-    return { ext, isCanvas };
+    const isDoc = ext === "canvas" || ext === "outline";
+    if (!isDoc && !WRAP_EXT.includes(ext)) return null;
+    return { ext, isCanvas, isDoc };
   }
 
   queue(file) {
@@ -3736,9 +3740,9 @@ class InboxMod extends Mod {
 
     const size = file.stat ? file.stat.size : 0;
 
-    // 첨부를 `이미지/` 로 (캔버스는 제자리)
+    // 첨부를 `이미지/` 로 (캔버스·아웃라인은 제자리)
     let attFile = file;
-    if (!t.isCanvas) {
+    if (!t.isDoc) {
       const attDir = normalizePath(`${dir}/${ATT_SUBDIR}`);
       if (!(this.app.vault.getAbstractFileByPath(attDir) instanceof TFolder)) {
         try { await this.app.vault.createFolder(attDir); } catch (e) { /* 이미 있으면 무시 */ }
@@ -3762,7 +3766,7 @@ class InboxMod extends Mod {
     // 우클릭 → 기본 앱으로 열기 / 폴더에서 보기 로 갑니다.
     const openLine = `📎 원본 열기 → [[${link}]]`;
     let preview = "";
-    if (t.isCanvas || IMG.includes(t.ext)) preview = `![[${link}]]`;
+    if (t.isDoc || IMG.includes(t.ext)) preview = `![[${link}]]`;
     else if (EMBEDDABLE.includes(t.ext)) preview = `![[${link}#height=700]]`;
     else preview = "> 옵시디언이 이 형식은 미리보기를 못 합니다. " +
                    "위 링크를 눌러 들어간 뒤 우클릭 → `기본 앱으로 열기`.";
