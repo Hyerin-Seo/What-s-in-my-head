@@ -169,7 +169,7 @@
           ],
           "isFolded": true,
           "createdAt": 1791865738321,
-          "updatedAt": 1791866133156
+          "updatedAt": 1791871151778
         },
         {
           "id": "IwGRJmkqKHOm",
@@ -194,7 +194,7 @@
           ],
           "isFolded": true,
           "createdAt": 1791865738321,
-          "updatedAt": 1791867925504
+          "updatedAt": 1791871154952
         },
         {
           "id": "KtixRCs4faNl",
@@ -227,9 +227,9 @@
               "updatedAt": 1791867403111
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
-          "updatedAt": 1791867923874
+          "updatedAt": 1791871161414
         },
         {
           "id": "Va3ONxj4BjCz",
@@ -328,7 +328,7 @@
           "updatedAt": 1791867032842
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791867426072
     },
@@ -448,7 +448,7 @@
       ],
       "isFolded": true,
       "createdAt": 1791865738321,
-      "updatedAt": 1791867687418
+      "updatedAt": 1791871111689
     },
     {
       "id": "sQM6emHssSLS",
@@ -543,7 +543,7 @@
           "updatedAt": 1791867928981
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791868043730
     },
@@ -728,19 +728,12 @@
               ],
               "isFolded": true,
               "createdAt": 1791868978898,
-              "updatedAt": 1791869664851
+              "updatedAt": 1791870611583
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
-          "updatedAt": 1791869962163
-        },
-        {
-          "id": "nzv0tO4ltFZC",
-          "text": "",
-          "children": [],
-          "createdAt": 1791869962154,
-          "updatedAt": 1791869969761
+          "updatedAt": 1791870591460
         },
         {
           "id": "savVgacNmeP5",
@@ -752,21 +745,61 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791867062741,
-              "updatedAt": 1791867062741
+              "updatedAt": 1791870839185
+            },
+            {
+              "id": "19elayQVHZAN",
+              "text": "사이드 패널 view",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261013145346.png"
+              },
+              "createdAt": 1791870826328,
+              "updatedAt": 1791870938122
+            },
+            {
+              "id": "YjfIY011vRf5",
+              "text": "PDF 사이드 패널 VIEW",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261013145538.png"
+              },
+              "createdAt": 1791870938112,
+              "updatedAt": 1791870949871
+            },
+            {
+              "id": "N3vkhTPs2wUn",
+              "text": "PDF 예시",
+              "children": [],
+              "file": {
+                "target": "koica 스타일.pdf"
+              },
+              "createdAt": 1791870841879,
+              "updatedAt": 1791870934069
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791867062741,
-          "updatedAt": 1791868541853
+          "updatedAt": 1791871066039
+        },
+        {
+          "id": "Ykl5TDg7I2Sa",
+          "text": "탭 여러 개 띄우기",
+          "children": [],
+          "file": {
+            "target": "Pasted image 20261013145714.png"
+          },
+          "createdAt": 1791871034306,
+          "updatedAt": 1791871063121
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791868540229
     },
     {
       "id": "fW2y7dzFocbZ",
-      "text": "7. ⚡ 핵심 단축키 요약",
+      "text": "6. ⚡ 핵심 단축키 요약",
       "children": [
         {
           "id": "i5w2SmksGljW",
@@ -790,7 +823,7 @@
           "children": [],
           "isFolded": false,
           "createdAt": 1791865738321,
-          "updatedAt": 1791868906555
+          "updatedAt": 1791871033402
         },
         {
           "id": "o7goIxf7Id1T",
@@ -825,23 +858,16 @@
           "isCompleted": true,
           "completedAt": 1791868878409,
           "createdAt": 1791868846090,
-          "updatedAt": 1791868878409
+          "updatedAt": 1791871085444
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
-      "updatedAt": 1791868824762
-    },
-    {
-      "id": "8dRXRjfmGiwu",
-      "text": "8. Context 메뉴",
-      "children": [],
-      "createdAt": 1791866851691,
-      "updatedAt": 1791867297209
+      "updatedAt": 1791871073773
     },
     {
       "id": "4zXmNz1OXf6w",
-      "text": "9. ⚙️ 플러그인 환경설정 (Settings)",
+      "text": "7. ⚙️ 플러그인 환경설정 (Settings)",
       "children": [
         {
           "id": "9NqMQSXzHYm0",
@@ -882,20 +908,20 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791867062741,
-              "updatedAt": 1791867172057
+              "updatedAt": 1791871090494
             }
           ],
           "isFolded": false,
           "createdAt": 1791867062741,
-          "updatedAt": 1791867283106
+          "updatedAt": 1791871101824
         }
       ],
       "isFolded": true,
       "createdAt": 1791867062741,
-      "updatedAt": 1791867633968
+      "updatedAt": 1791871104311
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1791865738321,
-  "updatedAt": 1791869969761
+  "updatedAt": 1791871161415
 }
