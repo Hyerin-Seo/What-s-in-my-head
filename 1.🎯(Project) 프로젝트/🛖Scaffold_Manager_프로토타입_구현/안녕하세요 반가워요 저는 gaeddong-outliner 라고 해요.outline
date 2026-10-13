@@ -13,14 +13,14 @@
           "children": [],
           "isFolded": false,
           "createdAt": 1791853030029,
-          "updatedAt": 1791855163485
+          "updatedAt": 1791868918371
         },
         {
           "id": "HmdL4yP8pXXd",
           "text": "Outline 만들 때 다른 관리 카드가 생성이 안되네여..",
           "children": [],
           "createdAt": 1791853109001,
-          "updatedAt": 1791855163938
+          "updatedAt": 1791868050913
         },
         {
           "id": "sBXWUNwSzkIr",
@@ -41,14 +41,14 @@
               "text": "메뉴바도 잘 떠여",
               "children": [],
               "createdAt": 1791853185090,
-              "updatedAt": 1791855177803
+              "updatedAt": 1791861124814
             },
             {
               "id": "iD2Lc43PNFfk",
               "text": "더 써도 되나여",
               "children": [],
               "createdAt": 1791854054889,
-              "updatedAt": 1791855184277
+              "updatedAt": 1791861009423
             }
           ],
           "isFolded": false,
@@ -63,5 +63,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791853030029,
-  "updatedAt": 1791855184277
+  "updatedAt": 1791868918371
 }
