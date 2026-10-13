@@ -64,7 +64,7 @@
           ],
           "isFolded": true,
           "createdAt": 1791886528919,
-          "updatedAt": 1791887222874
+          "updatedAt": 1791894132716
         },
         {
           "id": "HRdhYppkGshg",
@@ -76,7 +76,7 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791889097958,
-              "updatedAt": 1791892100000
+              "updatedAt": 1791894129901
             },
             {
               "id": "dIcT2rEcIpE1",
@@ -99,7 +99,7 @@
                   "updatedAt": 1791892500000
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791892500000,
               "updatedAt": 1791892500000
             },
@@ -124,9 +124,9 @@
                   "updatedAt": 1791892100000
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791889700000,
-              "updatedAt": 1791892100000
+              "updatedAt": 1791894137030
             },
             {
               "id": "WsLeAfUi0201",
@@ -149,7 +149,7 @@
                   "updatedAt": 1791892100000
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791889700000,
               "updatedAt": 1791892100000
             },
@@ -174,7 +174,7 @@
                   "updatedAt": 1791892100000
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791889097958,
               "updatedAt": 1791892100000
             },
@@ -226,7 +226,7 @@
               ],
               "isFolded": true,
               "createdAt": 1791892100000,
-              "updatedAt": 1791892100000
+              "updatedAt": 1791893800867
             },
             {
               "id": "MsEw5zuNJeD0",
@@ -251,7 +251,7 @@
               ],
               "isFolded": true,
               "createdAt": 1791889097958,
-              "updatedAt": 1791892100000
+              "updatedAt": 1791894502916
             },
             {
               "id": "mEtAcAcHe050",
@@ -276,12 +276,12 @@
               ],
               "isFolded": true,
               "createdAt": 1791889097958,
-              "updatedAt": 1791892100000
+              "updatedAt": 1791900665571
             }
           ],
           "isFolded": false,
           "createdAt": 1791889097958,
-          "updatedAt": 1791893694242
+          "updatedAt": 1791894504454
         },
         {
           "id": "eDiToReNgIn03",
@@ -393,12 +393,12 @@
               ],
               "isFolded": true,
               "createdAt": 1791892300000,
-              "updatedAt": 1791892300000
+              "updatedAt": 1791900672154
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791892300000,
-          "updatedAt": 1791892300000
+          "updatedAt": 1791907038429
         },
         {
           "id": "sNOaKBBCgsuZ",
@@ -632,7 +632,7 @@
           ],
           "isFolded": true,
           "createdAt": 1791886528919,
-          "updatedAt": 1791890000000
+          "updatedAt": 1791894063356
         },
         {
           "id": "qK1JFx8i9V7q",
@@ -747,7 +747,7 @@
               "updatedAt": 1791891225113
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791886528919,
           "updatedAt": 1791891219322
         },
@@ -905,9 +905,653 @@
               "updatedAt": 1791893731258
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791891300000,
-          "updatedAt": 1791891300000
+          "updatedAt": 1791894541076
+        },
+        {
+          "id": "oBsSyStEmAr08",
+          "text": "🏗️ 8. 옵시디언 시스템 & 프레임워크 아키텍처 관점 (System Architecture : App 싱글톤 6대 공인 코어 모듈 심층 해부)",
+          "children": [
+            {
+              "id": "oBsSyStEmDf0",
+              "text": "💡 [관점 정의] : 옵시디언 최상위 App 싱글톤 객체가 직접 거느리는 6대 공인 프로퍼티(Workspace, Vault, MetadataCache, FileManager, Keymap, Scope)의 책임 분리와 상호작용 메커니즘을 컴퓨터 공학적으로 완벽히 해부하는 총론 관점",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791892900000,
+              "updatedAt": 1791892900000
+            },
+            {
+              "id": "mOdUlE1wOrKs",
+              "text": "1️⃣ Workspace : 화면 공간 & 레이아웃 계층 트리 관리자",
+              "children": [
+                {
+                  "id": "wOrKsPaCeSp1",
+                  "text": "WorkspaceWindow ➔ WorkspaceSplit ➔ WorkspaceTabs ➔ WorkspaceLeaf 슬롯 계층 트리 구조와 윈도우 매니지먼트",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                },
+                {
+                  "id": "vIeWlIfEcYc2",
+                  "text": "Component ➔ View ➔ ItemView ➔ TextFileView 클래스 상속 계층과 Leaf 수명주기(open/close/detach) 훅",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892900000,
+              "updatedAt": 1791892900000
+            },
+            {
+              "id": "mOdUlE2vAuLt",
+              "text": "2️⃣ Vault : 가상 파일 시스템(VFS) & 저수준 물리 I/O 드라이버",
+              "children": [
+                {
+                  "id": "vFsAbStRaCt1",
+                  "text": "OS 네이티브 fs 접근을 차단하고 데스크톱/모바일을 단일화하는 TFile / TFolder 가상 파일 추상화 레이어",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                },
+                {
+                  "id": "sYnCcOnFlIc2",
+                  "text": "텍스트/바이너리 원자적(Atomic) I/O 파일 읽기·쓰기와 Obsidian Sync 동기화 충돌 방어 메커니즘",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892900000,
+              "updatedAt": 1791892900000
+            },
+            {
+              "id": "mOdUlE3mEtAd",
+              "text": "3️⃣ MetadataCache : 인메모리 지식 관계망 색인 DB",
+              "children": [
+                {
+                  "id": "iNmEmOrYiNd1",
+                  "text": "디스크를 매번 읽지 않고 메모리에서 0초 응답하는 CachedMetadata (Frontmatter, Tags, Links, Headings) 구조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                },
+                {
+                  "id": "eVeNtDrIvEn2",
+                  "text": "전역 백링크 맵(resolvedLinks / unresolvedLinks)과 실시간 그래프 뷰 동기화 이벤트(changed, resolve) 파이프라인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892900000,
+              "updatedAt": 1791892900000
+            },
+            {
+              "id": "mOdUlE4fIlEm",
+              "text": "4️⃣ FileManager : 고수준 파일 의미론 & 링크 무결성 보존 관리자",
+              "children": [
+                {
+                  "id": "rEnAmErEfAc1",
+                  "text": "파일명 변경/이동 시 볼트 전체의 위키링크를 자동 역추적하여 일괄 수정하는 링크 리팩토링 엔진 (renameFile)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                },
+                {
+                  "id": "pRoCeSsFrOn2",
+                  "text": "YAML Frontmatter 무손실 안전 파싱·주입(processFrontMatter) 및 첨부파일 스마트 라우팅 경로 계산",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791892900000,
+              "updatedAt": 1791892900000
+            },
+            {
+              "id": "mOdUlE5kEyMa",
+              "text": "5️⃣ Keymap : 전역 단축키 & 키보드 이벤트 디스패처",
+              "children": [
+                {
+                  "id": "kEyMaPpInGd1",
+                  "text": "OS/플랫폼별 키 조합(Mod, Ctrl, Cmd, Alt, Shift) 정규화와 커맨드 실행 파이프라인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                },
+                {
+                  "id": "cOmMaNdBiNd2",
+                  "text": "전역 핫키 충돌 감지와 우선순위 해결 알고리즘 및 커맨드 팔레트 연동 메커니즘",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892900000,
+              "updatedAt": 1791892900000
+            },
+            {
+              "id": "mOdUlE6sCoPe",
+              "text": "6️⃣ Scope : 이벤트 전파 제어 & 포커스 격리벽 (Scope Guard)",
+              "children": [
+                {
+                  "id": "sCoPeTrEeCa1",
+                  "text": "DOM 캡처링/버블링 단계에서 특정 UI(모달, 전용 에디터) 내부로 키보드 이벤트를 가두는 스코프 계층 트리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                },
+                {
+                  "id": "eVeNtIsOlAt2",
+                  "text": "옵시디언 전역 단축키와의 간섭 방어 : 에디터 입력창 백스페이스 먹통을 원천 차단하는 이벤트 가로채기(keys, registerScopeEvent)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892900000,
+                  "updatedAt": 1791892900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892900000,
+              "updatedAt": 1791892900000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791892900000,
+          "updatedAt": 1791892900000
+        },
+        {
+          "id": "sEcTiOn09cOrE",
+          "text": "⚙️ 9. 에디터 인터랙션 및 키보드 트리 제어 (Editor Interaction 및 Keyboard Tree Control)",
+          "children": [
+            {
+              "id": "sEcTiOn09dEf0",
+              "text": "💡 [섹션 정의] : 에디터 Leaf 내부 렌더링부터 Enter·Backspace·Tab 트랜잭션, 커서 복원, 전역 핫키 충돌을 막는 스코프 격리까지의 상호작용 체계",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            },
+            {
+              "id": "nInE1tReEsTa",
+              "text": "1️⃣ 계층형 트리 상태 머신과 정규화 불변 모델 (Tree State 및 Normalization)",
+              "children": [
+                {
+                  "id": "bElOnG09_1a",
+                  "text": "🏛️ [소속 모듈: Workspace] : 옵시디언 에디터 Leaf 내부에 렌더링되며, 뷰 활성화·비활성화 수명주기에 맞춰 메모리 상태 유지 및 가비지 컬렉션 관리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG09_1b",
+                  "text": "🏛️ [소속 모듈: Vault] : 노드가 수천 개로 커져도 단일 파일 단위의 원자적 직렬화·역직렬화(I/O)와 결합",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "nInE1tReEsTa1",
+                  "text": "노드가 수천 개여도 리렌더링 폭포수를 막는 정규화된(Normalized) 노드 맵과 Immer 불변 상태 관리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896499925
+                },
+                {
+                  "id": "nInE1tReEsTa2",
+                  "text": "접기/펼치기, 불릿 줌인(Zoom-in/호이스트), 서브노트, 블록 변환(Turn into)을 지탱하는 순수 변형 함수 체계",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896437929
+            },
+            {
+              "id": "nInE2tRaNsAc",
+              "text": "2️⃣ 트리 트랜잭션 알고리즘 (Transaction Engine)",
+              "children": [
+                {
+                  "id": "bElOnG09_2a",
+                  "text": "🏛️ [소속 모듈: Scope] : Enter(분할 생성), Backspace(삭제 병합), Tab/Shift+Tab(들여쓰기/내어쓰기) 시 옵시디언 전역 키 동작을 가로채고 격리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG09_2b",
+                  "text": "🏛️ [소속 모듈: Keymap] : 옵시디언 기본 단축키(Tab, Shift+Tab 등)와 충돌하지 않도록 에디터 전용 키보드 디스패치 제어",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791907118893
+                },
+                {
+                  "id": "bElOnG09_2c",
+                  "text": "🏛️ [소속 모듈: Workspace] : 트랜잭션 실행 후 현재 활성 Leaf 내의 에디터 DOM과 스크롤 상태를 동기화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791907118893
+                },
+                {
+                  "id": "nInE2tRaNsAc1",
+                  "text": "Enter(분할 생성), Backspace(삭제 병합), Tab/Shift+Tab(들여쓰기/내어쓰기)의 순수 트리 트랜잭션 알고리즘",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791907118893
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791907154394
+            },
+            {
+              "id": "nInE3kEyBoAr",
+              "text": "3️⃣ 키보드 오케스트레이션과 커서 복원 엔진 (Keyboard 및 Caret Engine)",
+              "children": [
+                {
+                  "id": "bElOnG09_3a",
+                  "text": "🏛️ [소속 모듈: Scope] : 방향키(Arrow Up/Down/Left/Right) 및 Home/End 이동 시 옵시디언 전역 내비게이션 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG09_3b",
+                  "text": "🏛️ [소속 모듈: Workspace] : 옵시디언 Leaf 활성·포커스 전환 시에도 손실 없는 커서 위치(Caret) 복원 및 React 가상 렌더링 연동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "nInE3kEyBoAr1",
+                  "text": "트리 구조 변경 후 정확한 텍스트 커서 위치와 포커스를 복원하는 Caret 복원 패턴 및 React 가상 렌더링",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            },
+            {
+              "id": "nInE4mUlTiSe",
+              "text": "4️⃣ 다중 선택 상태 머신과 로컬 DnD 파이프라인 (Multi-Select 및 Local DnD)",
+              "children": [
+                {
+                  "id": "bElOnG09_4a",
+                  "text": "🏛️ [소속 모듈: Workspace] : 옵시디언 에디터 Leaf 내부 마우스 드래그·포인터 이벤트를 뷰 상대좌표로 계산하고 플로팅 바 렌더링",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG09_4b",
+                  "text": "🏛️ [소속 모듈: Scope] : Shift/Cmd 다중 노드 선택 중 발생하는 클릭·선택 이벤트가 옵시디언 전역 파일 탐색기나 다른 분할창으로 전파되지 않도록 차단",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "nInE4mUlTiSe1",
+                  "text": "드래그 앤 드롭(DnD) 및 Shift 범위 선택으로 동작하는 다중 선택(Multi-Select) 플로팅 바 상태 머신",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            },
+            {
+              "id": "nInE5sCoPeGu",
+              "text": "5️⃣ 호스트 간섭 방어와 스코프 가드 (Scope Guard 및 Isolation)",
+              "children": [
+                {
+                  "id": "bElOnG09_5a",
+                  "text": "🏛️ [소속 모듈: Scope] : isInsideTree 기반 영역 검사로 옵시디언 캡처링 단계에서 stopPropagation을 실행하여 전역 핫키 침범을 완벽 차단",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG09_5b",
+                  "text": "🏛️ [소속 모듈: Keymap] : 사용자가 커스텀 등록한 옵시디언 전역 단축키와 에디터 내부 편집 키보드 간의 충돌 우선순위 분기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "nInE5sCoPeGu1",
+                  "text": "옵시디언 타이틀·댓글창에서 백스페이스가 먹통 되는 참사 방지 : isInsideTree 기반 영역 타겟 검사",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "nInE5sCoPeGu2",
+                  "text": "옵시디언 전역 핫키와 내 에디터 단축키 충돌을 막는 캡처링 단계 stopPropagation 이벤트 격리벽",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791893100000,
+          "updatedAt": 1791896200000
+        },
+        {
+          "id": "sEcTiOn10hOsT",
+          "text": "🔌 10. 멀티 프로젝션 및 호스트 어댑터 연동 (Multi-Projection 및 Platform Adapters)",
+          "children": [
+            {
+              "id": "sEcTiOn10dEf0",
+              "text": "💡 [섹션 정의] : 내부 트리를 캔버스·마크다운 등 이종 포맷으로 변환·투영하고, 옵시디언 6대 공인 모듈과 수명주기에 결합하는 플랫폼 어댑터 연동 해부",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            },
+            {
+              "id": "tEn1cRoSsMoD",
+              "text": "1️⃣ 이종 포맷 상호운용성 및 임베드 투영 (.canvas 및 .md)",
+              "children": [
+                {
+                  "id": "bElOnG10_1a",
+                  "text": "🏛️ [소속 모듈: Workspace] : MarkdownPostProcessor 및 CodeBlockProcessor를 등록하여 일반 마크다운 문서 및 캔버스 2차원 공간 노드 내에 아웃라이너 뷰 동적 투영",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "tEn1cRoSsMoD1",
+                  "text": "MarkdownPostProcessor/CodeBlockProcessor 개입 원리와 Canvas 2차원 공간 노드 바인딩 구조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "tEn1cRoSsMoD2",
+                  "text": "🛠️ [실제 구현 기능] : 마크다운 내 높이 350px 아웃라이너 위젯(```vibe-outline), 본문 인라인 임베드(![`[문서.outline]`]), 특정 섹션 앵커 줌 임베드(![`[문서.outline#노드ID]`]), 캔버스(.canvas) 카드 드래그 임베드",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896513712
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            },
+            {
+              "id": "tEn2lInKnAvI",
+              "text": "2️⃣ 크로스 모달리티 지식 연결망 및 딥링크 (Link Resolver 및 Cross-File)",
+              "children": [
+                {
+                  "id": "bElOnG10_2a",
+                  "text": "🏛️ [소속 모듈: MetadataCache] : 불릿 내부의 [[위키링크]]를 인메모리 링크 인덱스로 실시간 조회·해석(Link Resolver) 및 [[파일검색]] 자동완성(EditorSuggest) 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG10_2b",
+                  "text": "🏛️ [소속 모듈: FileManager] : 링크 클릭 시 대상 파일 경로를 정규화하고 확장자 생략 링크 우선 매핑 및 파일 이름 변경 시 링크 무결성 리팩토링",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG10_2c",
+                  "text": "🏛️ [소속 모듈: Workspace] : 마우스 호버 시 실시간 미디어·문서 미리보기 팝오버(HoverParent)를 띄우고 클릭 시 해당 Leaf로 포커스 다이렉트 점프",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791900658625
+                },
+                {
+                  "id": "tEn2lInKnAvI1",
+                  "text": "옵시디언 링크 해석기(Link Resolver)와 팝오버 브릿지(HoverParent, EditorSuggest)의 동작 원리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "tEn2lInKnAvI2",
+                  "text": "🛠️ [실제 구현 기능] : 미디어 실시간 미리보기(Ctrl+마우스 호버), 확장자 생략 링크 우선 매핑([[문서명]]), 특정 불릿 다이렉트 점프([[문서명#노드ID]]), [[파일검색]] 자동완성",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896508180
+            },
+            {
+              "id": "tEn3dIcT2rEc",
+              "text": "3️⃣ 사전에서 레시피로 : API 역추적 및 어댑터 격리 패턴",
+              "children": [
+                {
+                  "id": "bElOnG10_3a",
+                  "text": "🏛️ [소속 모듈: Workspace] : 분할창·리본·메뉴 등 파편화된 UI 슬롯을 조합하기 위해 'this.app.workspace' 기반 인터페이스 역추적",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG10_3b",
+                  "text": "🏛️ [소속 모듈: Vault] : 저수준 파일 I/O API를 순수 비즈니스 로직과 분리하기 위해 저장소 어댑터 인터페이스로 격리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "tEn3dIcT2rEc1",
+                  "text": "공식 문서의 파편화된 낱개 API(사전)를 내 기능 요구사항(레시피)으로 번역하고 조합하는 3단계 엔지니어링 루틴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "tEn3dIcT2rEc2",
+                  "text": "🛠️ [실제 적용 전략] : '기능 기획(Top-Down) ➔ obsidian.d.ts 인터페이스 역추적 ➔ 어댑터 패턴으로 비즈니스 로직 격리'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            },
+            {
+              "id": "tEn4wOrKsViE",
+              "text": "4️⃣ 화면 뷰 라이프사이클 바인딩 (Workspace 뷰 바인딩)",
+              "children": [
+                {
+                  "id": "bElOnG10_4a",
+                  "text": "🏛️ [소속 모듈: Workspace] : 좌측 리본 아이콘(addRibbonIcon), 우클릭 메뉴(file-menu), 사이드바 패널(getRightLeaf), 스마트 탭 전환(revealLeaf), registerExtensions 및 커스텀 TextFileView 수명주기 통제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG10_4b",
+                  "text": "🏛️ [소속 모듈: Keymap] : 커맨드 팔레트와 옵시디언 핫키 설정창에 노출되는 플러그인 전역 단축키(addCommand) 등록 및 관리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "tEn4wOrKsViE1",
+                  "text": "'this.app' 전역 인프라 : 좌측 리본 아이콘(addRibbonIcon), 우클릭 메뉴(file-menu), 전역 단축키(addCommand)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "tEn4wOrKsViE2",
+                  "text": "화면 슬롯 할당 : getRightLeaf 사이드바 패널, 멀티 탭 분할, 중복 방지 스마트 탭 전환(revealLeaf)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "tEn4wOrKsViE3",
+                  "text": "파일 뷰 수명주기 : registerExtensions 더블클릭 로딩, setViewData/getViewData/requestSave 무손실 자동저장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            },
+            {
+              "id": "tEn5vAuLtFiL",
+              "text": "5️⃣ 가상 파일 I/O 및 메타 동기화 어댑터 (Vault 및 FileManager)",
+              "children": [
+                {
+                  "id": "bElOnG10_5a",
+                  "text": "🏛️ [소속 모듈: Vault] : 가상 파일 시스템(TFile, TFolder)을 통한 비동기 원자적 파일 읽기·쓰기·생성 및 Obsidian Sync 충돌 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "bElOnG10_5b",
+                  "text": "🏛️ [소속 모듈: FileManager] : 파일 이름 변경(renameFile) 추적 및 1+1 동기화 메타 카드의 Frontmatter 속성 무결성 유지(processFrontMatter)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "tEn5vAuLtFiL1",
+                  "text": "TFile/TFolder 가상 파일 추상화와 링크 무결성 보존(processFrontMatter, renameFile)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "tEn5vAuLtFiL2",
+                  "text": "🛠️ [실제 구현 기능] : .outline 생성 시 속성(.base/FrontMatter) 동기화용 .md 카드 자동 1+1 생성, Obsidian Sync 충돌 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "tEn5vAuLtFiL3",
+                  "text": "볼트 내 파일(PDF, MD, .canvas, 이미지 등) 끌어다 놓기(DnD) 및 클립보드(Ctrl+V) 이미지 자동 저장 파이프라인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            },
+            {
+              "id": "tEn6mEtAcAcH",
+              "text": "6️⃣ 인메모리 지식 그래프 및 속성 색인 연동 (MetadataCache)",
+              "children": [
+                {
+                  "id": "bElOnG10_6a",
+                  "text": "🏛️ [소속 모듈: MetadataCache] : 디스크 I/O 없이 메모리에서 CachedMetadata를 실시간 조회하고 changed, resolve 이벤트로 우측 백링크 패널, 글로벌 그래프 뷰, #outline 전역 태그 및 Bases/Dataview 속성 색인 실시간 연동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791896200000
+                },
+                {
+                  "id": "tEn6mEtAcAcH1",
+                  "text": "디스크를 읽지 않는 CachedMetadata 구조와 실시간 링크 관계망 이벤트(changed, resolve)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                },
+                {
+                  "id": "tEn6mEtAcAcH2",
+                  "text": "🛠️ [실제 구현 기능] : 우측 백링크 패널 참조 정상 표시, 글로벌 그래프 뷰(Graph View) 시각화, #outline 전역 태그 및 Bases/Dataview 속성 색인 연동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791893100000,
+                  "updatedAt": 1791893100000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791893100000,
+              "updatedAt": 1791896200000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791893100000,
+          "updatedAt": 1791896200000
         }
       ],
       "isFolded": false,
@@ -917,5 +1561,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791886528919,
-  "updatedAt": 1791893741405
+  "updatedAt": 1791907154394
 }
