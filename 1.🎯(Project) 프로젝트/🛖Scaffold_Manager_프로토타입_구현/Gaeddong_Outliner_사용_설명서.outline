@@ -1,0 +1,1009 @@
+{
+  "version": "1.0.0",
+  "id": "HT0dyoiXG0yA",
+  "title": "Gaeddong_Outliner_사용_설명서",
+  "rootNodes": [
+    {
+      "id": "nr94njOfxOMY",
+      "text": "1. 🚀 시작하기",
+      "children": [
+        {
+          "id": "NKers0Yb1cQL",
+          "text": "새 아웃라인 만들기",
+          "children": [
+            {
+              "id": "43zaMR0gXw7d",
+              "text": "[리본 아이콘 클릭] : 좌측 리본 바에서 아웃라이너 열기",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "Pasted image 20261013122431.png"
+              },
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865811912
+            },
+            {
+              "id": "P9jaohouFryZ",
+              "text": "[우클릭] : 파일 탐색기 우클릭 → [새 아웃라인 만들기] 선택",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            },
+            {
+              "id": "FSHp5fAhqURA",
+              "text": "확장자: .outline 으로 자동 생성",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866071043
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791865738321
+        },
+        {
+          "id": "WnCcAayfsjQi",
+          "text": "보드 관리 카드 (자동 1+1 연동)",
+          "children": [
+            {
+              "id": "2TNdn5EwlzGP",
+              "text": ".outline 생성 시 동일한 이름의 .md 카드가 함께 생성됨",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            },
+            {
+              "id": "92nJVtgLW9Or",
+              "text": "프로젝트 보드와 핀보드에 아웃라인이 바로 표시되는 역할",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865748469
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791865812315
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791865738321,
+      "updatedAt": 1791867462255
+    },
+    {
+      "id": "ApYTR5nmPJXw",
+      "text": "2. 🧩 주요 화면 구성과 핵심 기능",
+      "children": [
+        {
+          "id": "8nyZGyYONgMQ",
+          "text": "🔍 접기와 집중 (포커스)",
+          "children": [
+            {
+              "id": "DbugX9qIfJKR",
+              "text": "접기 / 펼치기",
+              "children": [
+                {
+                  "id": "d2d7jKk7ueOW",
+                  "text": "[화살표(>) 클릭] : 하위 내용 숨기기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791865738321,
+                  "updatedAt": 1791866661276
+                },
+                {
+                  "id": "xVMlTloPEWTb",
+                  "text": "접어두면 트리가 한눈에 깔끔해짐",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791865738321,
+                  "updatedAt": 1791865738321
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            },
+            {
+              "id": "5bcLI5h86uaj",
+              "text": "포커스 모드 (Zoom In)",
+              "children": [
+                {
+                  "id": "8t2QZGnRFIUc",
+                  "text": "[불릿(•) 클릭] : 그 항목 하나만 화면에 꽉 차게 보기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791865738321,
+                  "updatedAt": 1791866661710
+                },
+                {
+                  "id": "TLjxe9vn9RnT",
+                  "text": "[Breadcrumb 클릭] : 원래 전체 트리로 빠져나오기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791865738321,
+                  "updatedAt": 1791866663947
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791867426072
+        },
+        {
+          "id": "raiiPinaojfW",
+          "text": "🔍 줌(Zoom) & 동적 헤더",
+          "children": [
+            {
+              "id": "DER6BY247yCp",
+              "text": "브레드크럼 + Zoom 실행 화면",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261013133541.png"
+              },
+              "createdAt": 1791866141546,
+              "updatedAt": 1791866164247
+            },
+            {
+              "id": "269RIvo2bBju",
+              "text": "[불릿 클릭] : 그 항목 하나가 최상위 대제목(HEAD)으로 확대",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866169636
+            },
+            {
+              "id": "pW9SyasS539Z",
+              "text": "브레드크럼(Breadcrumbs) : 상위 맥락 경로 및 원클릭 복귀",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866161974
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791871151778
+        },
+        {
+          "id": "IwGRJmkqKHOm",
+          "text": "📋 뷰 모드 전환 (트리 ↔ 보드)",
+          "children": [
+            {
+              "id": "NJaiDOFvRpCJ",
+              "text": "트리 뷰 : 생각을 계층적으로 빠르게 분해하는 기본 불릿 모드",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            },
+            {
+              "id": "aXooQpDQmXlN",
+              "text": "보드 뷰 (칸반) : 부모 항목이 '열', 자식이 '카드'가 되는 칸반 보드 모드",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791871154952
+        },
+        {
+          "id": "KtixRCs4faNl",
+          "text": "⚪ 불릿(Bullet) & 호버 툴바",
+          "children": [
+            {
+              "id": "QWN2I3WtoQa7",
+              "text": "호버 메뉴 (Context Menu)",
+              "children": [
+                {
+                  "id": "IJxCk5KprwwH",
+                  "text": "[⋯ 호버/클릭] 또는 [불릿 우클릭] : 컨텍스트 메뉴 열기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "BqKu2JhUEpxt",
+                  "text": "[Ctrl + Enter] : 완료 처리 / 취소",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "T5peNX4uwFfu",
+                  "text": "[Shift + Enter] : 서브노트(Note) 추가 / 편집",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "cvO0imPA2C2a",
+                  "text": "[파일 붙이기 / 떼기] : 볼트 내 파일(PDF/이미지 등) 첨부 및 분리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "0QkPPj12Q3rx",
+                  "text": "[복제 / 이동] : 불릿 복사 및 다른 위치로 트리 이동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "HS0S6KOHXdxJ",
+                  "text": "[종류 바꾸기] : 블록 형태(제목, 문단, 할 일, 인용, 코드, 구분선, 보드) 변환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "kPhHoSnYJAFe",
+                  "text": "[전체 펼치기 / 접기] : 하위 모든 계층 일괄 토글",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "rjJ0FEuzU7fz",
+                  "text": "[내부 링크 복사] : 위키링크 서브 앵커([[파일명#노드ID]]) 클립보드 복사",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "as8RtWTS39ir",
+                  "text": "[내보내기] : 텍스트 파일(.txt)로 저장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "iJxN11eq8xYy",
+                  "text": "[Delete / Ctrl+Shift+Backspace] : 불릿 및 하위 항목 삭제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                }
+              ],
+              "file": {
+                "target": "Pasted image 20261013133835.png"
+              },
+              "createdAt": 1791866315274,
+              "updatedAt": 1791872098558,
+              "isFolded": true
+            },
+            {
+              "id": "7HLrYULsgMRL",
+              "text": "[불릿 드래그] : 위치 이동 핸들이자 줌인 트리거",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791867298877
+            },
+            {
+              "id": "hroKy7tbZ8Gz",
+              "text": "[마우스 호버] : 좌측에 마우스 올릴 때 뜨는 액션 툴바 (추가/삭제/전환)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791867403111
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791872059041
+        },
+        {
+          "id": "Va3ONxj4BjCz",
+          "text": "📝 부연설명 서브노트 (Note 필드)",
+          "children": [
+            {
+              "id": "MNN5ay6magFJ",
+              "text": "불릿 아래에 달리는 전용 서브 텍스트 영역",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866428564
+            },
+            {
+              "id": "LPChndnkQ5T2",
+              "text": "[Shift + Enter] : 제목 밑에 장문 메모나 주석 추가",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866394822
+            },
+            {
+              "id": "UvjhVnQsByAu",
+              "text": "테두리 없이 자연스럽게 읽히는 서브타이틀 형태",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866409434
+            }
+          ],
+          "isFolded": true,
+          "note": "여기가 서브 노트. \n두 줄 이상 가면 알아서 줄임 표시",
+          "createdAt": 1791865738321,
+          "updatedAt": 1791867922812
+        },
+        {
+          "id": "xNSbv2QQoepb",
+          "text": "🔄 블록 종류 자유 변환 (Turn Into)",
+          "children": [
+            {
+              "id": "noVyoCip60zg",
+              "text": "노션 스타일의 다양한 블록 형태로 원클릭 전환",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866452139
+            },
+            {
+              "id": "eD4QHEp9JI1d",
+              "text": "지원 블록 : 불릿, 제목(H1~H3), 할 일(Todo), 문단, 인용구, 코드, 구분선",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "code",
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866445662
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791867041546
+        },
+        {
+          "id": "mI6UX92IG4PR",
+          "text": "🧲 다중 선택 플로팅 바 (Multi-select)",
+          "children": [
+            {
+              "id": "3nAdAcSyOMgj",
+              "text": "다중 선택 + 플로팅 스샷",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261013134248.png"
+              },
+              "createdAt": 1791866568345,
+              "updatedAt": 1791866584460
+            },
+            {
+              "id": "d1dlj7mAdfTc",
+              "text": "여러 불릿 선택 시 화면 하단에 뜨는 일괄 조작 바",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866553244
+            },
+            {
+              "id": "JqNPVa6CCZbA",
+              "text": "일괄 완료, 일괄 복제, 일괄 이동, 일괄 삭제 지원",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866553456
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791867032842
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791865738321,
+      "updatedAt": 1791867426072
+    },
+    {
+      "id": "XFYvkO8n0LkG",
+      "text": "3. ⌨️ 키보드로 작성하기 & 조작 검증",
+      "children": [
+        {
+          "id": "AQJVX2qTYnOG",
+          "text": "줄바꿈과 항목 생성",
+          "children": [
+            {
+              "id": "8ZAgqFzwpFva",
+              "text": "[Enter] : 바로 아래에 새 항목 만들기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866642615
+            },
+            {
+              "id": "KURagO1pstrS",
+              "text": "[Backspace] : 빈 줄에서 항목 삭제하고 윗줄로 합치기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866643542
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791866641976
+        },
+        {
+          "id": "EOsYfmGaER4X",
+          "text": "계층 이동 (들여쓰기)",
+          "children": [
+            {
+              "id": "ktXz1EKrNy28",
+              "text": "[Tab] : 오른쪽으로 들여쓰기 (하위 항목)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866645454
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791866644039
+        },
+        {
+          "id": "KbKGv60YiQVQ",
+          "text": "계층 이동 (내어쓰기)",
+          "children": [
+            {
+              "id": "4aDfOK5glzzE",
+              "text": "[Shift + Tab] : 왼쪽으로 내어쓰기 (상위 항목)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791866624520
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791866611459,
+          "updatedAt": 1791866649053
+        },
+        {
+          "id": "m14iLpWLUQrw",
+          "text": "순서 바꾸기",
+          "children": [
+            {
+              "id": "Gs7OnJHkxYR0",
+              "text": "[Alt + ↑ / ↓] : 현재 항목을 위/아래로 이동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791865738321
+        },
+        {
+          "id": "BhkQraB0BOMD",
+          "text": "조작 검증 및 메모",
+          "children": [
+            {
+              "id": "3XILkfSkNdD0",
+              "text": "메뉴바도 잘 떠여 (좌측 호버 메뉴바 정상 작동)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            },
+            {
+              "id": "ZpDodmB26lq4",
+              "text": "조작 같은 것들은 문제가 없어여",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            },
+            {
+              "id": "TS08tt6rgqWE",
+              "text": "[Shift + Backspace] 등 일부 특수 커서 조작 유의",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791865738321
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791866626985
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791865738321,
+      "updatedAt": 1791871111689
+    },
+    {
+      "id": "sQM6emHssSLS",
+      "text": "4. ✍️ 미디어, 첨부파일 연결",
+      "children": [
+        {
+          "id": "H9R9xuYNubLt",
+          "text": "지식 연결과 이미지, 각종 파일 첨부",
+          "children": [
+            {
+              "id": "aETN1L5BRLGU",
+              "text": "[[노트 이름]] : 옵시디언 볼트 내 다른 노트 링크",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791867933405
+            },
+            {
+              "id": "0TuxrVCqaXfc",
+              "text": "#outline 태그 설정 가능",
+              "children": [],
+              "createdAt": 1791866940669,
+              "updatedAt": 1791867495349
+            },
+            {
+              "id": "8ZIscJQscbAv",
+              "text": "[Ctrl + V] : 이미지를 붙여넣을 수 있어여",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "image (3) 1.png"
+              },
+              "createdAt": 1791865738321,
+              "updatedAt": 1791867787927
+            },
+            {
+              "id": "tN9ueJ8hKFUK",
+              "text": "[DnD] 기능",
+              "children": [
+                {
+                  "id": "sLqwGTyIZ2BS",
+                  "text": "옵시디언 내 다른 파일 끌어오기 가능 (PDF, MD, .canvas, .base, jpg, png 등등)",
+                  "children": [],
+                  "isFolded": false,
+                  "file": {
+                    "target": "Pasted image 20261013134537.png"
+                  },
+                  "createdAt": 1791866700380,
+                  "updatedAt": 1791867799380
+                },
+                {
+                  "id": "Z7Yykz5D5sxY",
+                  "text": "끌어다 붙인 예시 - [[Spine_배포_스토리지_모듈화_아키텍처.canvas]]",
+                  "children": [],
+                  "createdAt": 1791867515665,
+                  "updatedAt": 1791867840547
+                },
+                {
+                  "id": "h9HIelsz3aLt",
+                  "text": "외부 파일 끌어다 붙이기 가능",
+                  "children": [],
+                  "createdAt": 1791867717901,
+                  "updatedAt": 1791867843277
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791867787920,
+              "updatedAt": 1791867851052
+            },
+            {
+              "id": "VwIGQJZK8KHH",
+              "text": "[Ctrl + 마우스 호버] : 미디어 및 링크 실시간 미리보기 팝업",
+              "children": [
+                {
+                  "id": "it16zZ5lx51u",
+                  "text": "스샷",
+                  "children": [],
+                  "file": {
+                    "target": "Pasted image 20261013135934.png"
+                  },
+                  "createdAt": 1791867574201,
+                  "updatedAt": 1791867589618
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791867062741,
+              "updatedAt": 1791867937309
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791867928981
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791865738321,
+      "updatedAt": 1791868043730
+    },
+    {
+      "id": "oOzwULO7oa69",
+      "text": "5. 🖼️ 옵시디언의 다른 object 와 연동하기",
+      "children": [
+        {
+          "id": "0pdtpcRcpm1Q",
+          "text": "캔버스(Canvas)에 넣기",
+          "children": [
+            {
+              "id": "2dRZYcEHO6HC",
+              "text": "캔버스에 임베드된 .outline의 모습",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261013140643.png"
+              },
+              "createdAt": 1791868003246,
+              "updatedAt": 1791868269402
+            },
+            {
+              "id": "ofg6cbCpNmT5",
+              "text": "[드래그 앤 드롭] : 캔버스 화면으로 .outline 파일을 끌어다 놓기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791867948076
+            },
+            {
+              "id": "UYhYG0EOEq3i",
+              "text": "카드 안에서 왼쪽 정렬로 깔끔하게 열림",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791865738321,
+              "updatedAt": 1791868270418
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791868266476
+        },
+        {
+          "id": "U8CCgYyjYIw4",
+          "text": "일반 마크다운 노트에 넣기",
+          "children": [
+            {
+              "id": "RT19Xgsnfs5y",
+              "text": "1. 📦 마크다운 본문 인라인 임베드 (Inline Embed)",
+              "children": [
+                {
+                  "id": "0zChpF4f5ZRp",
+                  "text": "노트 본문에 ![`[파일명.outline]`] 입력",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791865738321,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "7lFdyiSRN2QC",
+                  "text": "문서 중간에 인터랙티브 아웃라인이 바로 임베드됨",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791865738321,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "XqRIWzpeBQPL",
+                  "text": "[특정 노드 앵커 줌] : ![`[파일명.outline#노드ID]`] 로 특정 섹션만 확대(Zoom) 임베드",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791868978898,
+              "updatedAt": 1791868978898
+            },
+            {
+              "id": "pNnyUkvgVJFr",
+              "text": "2. 🎛️ 코드블록 위젯 임베드 (Code Block Widget)",
+              "children": [
+                {
+                  "id": "HaBWHghoYmNk",
+                  "text": "```vibe-outline 코드블록 문법 지원 (마크다운 내 위젯 임베드)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "kbIYCJjvBNjH",
+                  "text": "[뷰 모드 지정] : view: board(보드 뷰) 또는 view: bullets(불릿 트리) 옵션",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "8tH8dFDqzXF9",
+                  "text": "[높이 조절] : height: 350px 등 스크롤 뷰포트 높이 직접 지정",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791868978898,
+              "updatedAt": 1791868978898
+            },
+            {
+              "id": "VNw6HaiWLVgM",
+              "text": "3. 🔗 링크 해석기 & 호버 팝오버 (Resolver & Suggest)",
+              "children": [
+                {
+                  "id": "viirLXWUqA7k",
+                  "text": "[Ctrl + 마우스 호버] : 위키링크 위에 올리면 아웃라인 실시간 미리보기 팝업",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "jhRnSy1WvD6C",
+                  "text": "확장자 생략 링크 : [[문서명]] 입력 시 .outline 확장자 자동 우선 해석",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "ZyDoyeHjUpMV",
+                  "text": "[클릭] : [[문서명#노드ID]] 서브 앵커로 특정 불릿 다이렉트 점프",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "jbwl0ly4TJJV",
+                  "text": "[[[ 자동완성] : 불릿 편집 중 [[ 입력 시 볼트 내 파일 목록 자동완성 팝업",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791868978898,
+              "updatedAt": 1791868978898
+            },
+            {
+              "id": "esPZuycTpguv",
+              "text": "4. 🕸️ 지식 그래프 및 양방향 백링크 (Knowledge Graph & Backlinks)",
+              "children": [
+                {
+                  "id": "RoDu5gK52bOH",
+                  "text": "옵시디언 MetadataCache 실시간 색인 연동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "U9xpHyYeejgL",
+                  "text": "[그래프 뷰] : 아웃라인과 마크다운 노트 간의 연결 관계 시각화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                },
+                {
+                  "id": "Zef9sTALsSOT",
+                  "text": "[백링크 패널] : 우측 사이드바 백링크에 아웃라인 참조 정상 표시",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791868978898,
+                  "updatedAt": 1791868978898
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791868978898,
+              "updatedAt": 1791870611583
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791870591460
+        },
+        {
+          "id": "savVgacNmeP5",
+          "text": "우측 사이드바에 띄우기",
+          "children": [
+            {
+              "id": "UKvpixVas97f",
+              "text": "[클릭 / 패널 열기] : 메인 글을 보며 사이드바 팝업으로 아웃라인 대조",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791867062741,
+              "updatedAt": 1791870839185
+            },
+            {
+              "id": "19elayQVHZAN",
+              "text": "사이드 패널 view",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261013145346.png"
+              },
+              "createdAt": 1791870826328,
+              "updatedAt": 1791870938122
+            },
+            {
+              "id": "YjfIY011vRf5",
+              "text": "PDF 사이드 패널 VIEW",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261013145538.png"
+              },
+              "createdAt": 1791870938112,
+              "updatedAt": 1791870949871
+            },
+            {
+              "id": "N3vkhTPs2wUn",
+              "text": "PDF 예시",
+              "children": [],
+              "file": {
+                "target": "koica 스타일.pdf"
+              },
+              "createdAt": 1791870841879,
+              "updatedAt": 1791870934069
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791867062741,
+          "updatedAt": 1791871066039
+        },
+        {
+          "id": "Ykl5TDg7I2Sa",
+          "text": "탭 여러 개 띄우기",
+          "children": [],
+          "file": {
+            "target": "Pasted image 20261013145714.png"
+          },
+          "createdAt": 1791871034306,
+          "updatedAt": 1791871063121
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791865738321,
+      "updatedAt": 1791868540229
+    },
+    {
+      "id": "fW2y7dzFocbZ",
+      "text": "6. ⚡ 핵심 단축키 요약",
+      "children": [
+        {
+          "id": "i5w2SmksGljW",
+          "text": "[Enter] : 새 항목 추가",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791868823617
+        },
+        {
+          "id": "w8GmYE1b16b7",
+          "text": "[Tab] : 하위 레벨로 들여쓰기",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791865738321
+        },
+        {
+          "id": "OKv6soJuDwEA",
+          "text": "[Shift + Tab] : 상위 레벨로 내어쓰기",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791871033402
+        },
+        {
+          "id": "o7goIxf7Id1T",
+          "text": "[Shift + Enter] : 부연설명 서브노트(Note) 열기",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791868885137
+        },
+        {
+          "id": "0kVvmlIgXHP3",
+          "text": "[미구현][Alt + ↑ / ↓] : 항목 순서 위아래 이동",
+          "children": [],
+          "isFolded": false,
+          "isCompleted": true,
+          "completedAt": 1791868883596,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791868883596
+        },
+        {
+          "id": "tYBZuMZM9Vqn",
+          "text": "[불릿(•) 클릭] : 그 항목만 확대(Zoom)해서 보기",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1791865738321,
+          "updatedAt": 1791868881068
+        },
+        {
+          "id": "dSVwu7iqaBmK",
+          "text": "[미구현][Ctrl + Enter] : 완료 처리",
+          "children": [],
+          "isCompleted": true,
+          "completedAt": 1791868878409,
+          "createdAt": 1791868846090,
+          "updatedAt": 1791871085444
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791865738321,
+      "updatedAt": 1791872193301
+    },
+    {
+      "id": "4zXmNz1OXf6w",
+      "text": "7. ⚙️ 플러그인 환경설정 (Settings)",
+      "children": [
+        {
+          "id": "9NqMQSXzHYm0",
+          "text": "화면 표시(Display) 옵션 설정",
+          "children": [
+            {
+              "id": "zcJM4fO70584",
+              "text": "1) 커뮤니티 플러그인 -> 개똥 outliner -> 설정",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "Pasted image 20261013135226.png"
+              },
+              "createdAt": 1791867144857,
+              "updatedAt": 1791867260580
+            },
+            {
+              "id": "xOXIBXJg8ky7",
+              "text": "2) 각 형식에 맞는 옵션 선택(제목만 | 작게 | 크게)",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261013135418.png"
+              },
+              "createdAt": 1791867258994,
+              "updatedAt": 1791867282057
+            },
+            {
+              "id": "IGFuLHJNg1O0",
+              "text": "설정창에서 기본 뷰 모드(불릿 / 보드) 선택 가능",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791867062741,
+              "updatedAt": 1791867258241
+            },
+            {
+              "id": "ELacwZN0pxJ5",
+              "text": "에디터 레이아웃 및 디스플레이 커스텀",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791867062741,
+              "updatedAt": 1791871090494
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791867062741,
+          "updatedAt": 1791871101824
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791867062741,
+      "updatedAt": 1791872192926
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791865738321,
+  "updatedAt": 1791872193301
+}
