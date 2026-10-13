@@ -39,9 +39,9 @@
               "updatedAt": 1791866071043
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
-          "updatedAt": 1791865738321
+          "updatedAt": 1791872419648
         },
         {
           "id": "WnCcAayfsjQi",
@@ -61,17 +61,17 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791865738321,
-              "updatedAt": 1791865748469
+              "updatedAt": 1791872440681
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791865812315
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
-      "updatedAt": 1791867462255
+      "updatedAt": 1791872420413
     },
     {
       "id": "ApYTR5nmPJXw",
@@ -132,7 +132,7 @@
               "updatedAt": 1791865738321
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791867426072
         },
@@ -167,7 +167,7 @@
               "updatedAt": 1791866161974
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791871151778
         },
@@ -192,9 +192,9 @@
               "updatedAt": 1791865738321
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
-          "updatedAt": 1791871154952
+          "updatedAt": 1791872434146
         },
         {
           "id": "KtixRCs4faNl",
@@ -285,12 +285,12 @@
                   "updatedAt": 1791872098558
                 }
               ],
+              "isFolded": false,
               "file": {
                 "target": "Pasted image 20261013133835.png"
               },
               "createdAt": 1791866315274,
-              "updatedAt": 1791872098558,
-              "isFolded": true
+              "updatedAt": 1791872098558
             },
             {
               "id": "7HLrYULsgMRL",
@@ -309,7 +309,7 @@
               "updatedAt": 1791867403111
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791872059041
         },
@@ -339,13 +339,13 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791865738321,
-              "updatedAt": 1791866409434
+              "updatedAt": 1791872574909
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "note": "여기가 서브 노트. \n두 줄 이상 가면 알아서 줄임 표시",
           "createdAt": 1791865738321,
-          "updatedAt": 1791867922812
+          "updatedAt": 1791872429311
         },
         {
           "id": "xNSbv2QQoepb",
@@ -370,7 +370,7 @@
               "updatedAt": 1791866445662
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791867041546
         },
@@ -405,12 +405,12 @@
               "updatedAt": 1791866553456
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791867032842
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791867426072
     },
@@ -453,7 +453,7 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791865738321,
-              "updatedAt": 1791866645454
+              "updatedAt": 1791872659114
             }
           ],
           "isFolded": false,
@@ -487,10 +487,10 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791865738321,
-              "updatedAt": 1791865738321
+              "updatedAt": 1791872671407
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791865738321
         },
@@ -520,7 +520,7 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791865738321,
-              "updatedAt": 1791865738321
+              "updatedAt": 1791872716520
             }
           ],
           "isFolded": false,
@@ -528,7 +528,7 @@
           "updatedAt": 1791866626985
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791871111689
     },
@@ -564,7 +564,7 @@
                 "target": "image (3) 1.png"
               },
               "createdAt": 1791865738321,
-              "updatedAt": 1791867787927
+              "updatedAt": 1791872647475
             },
             {
               "id": "tN9ueJ8hKFUK",
@@ -592,11 +592,12 @@
                   "id": "h9HIelsz3aLt",
                   "text": "외부 파일 끌어다 붙이기 가능",
                   "children": [],
+                  "isFolded": false,
                   "createdAt": 1791867717901,
                   "updatedAt": 1791867843277
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791867787920,
               "updatedAt": 1791867851052
             },
@@ -615,17 +616,17 @@
                   "updatedAt": 1791867589618
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791867062741,
               "updatedAt": 1791867937309
             }
           ],
           "isFolded": false,
           "createdAt": 1791865738321,
-          "updatedAt": 1791867928981
+          "updatedAt": 1791872713391
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791868043730
     },
@@ -664,7 +665,7 @@
               "updatedAt": 1791868270418
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791868266476
         },
@@ -875,7 +876,7 @@
           "updatedAt": 1791871063121
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791868540229
     },
@@ -940,10 +941,10 @@
           "isCompleted": true,
           "completedAt": 1791868878409,
           "createdAt": 1791868846090,
-          "updatedAt": 1791871085444
+          "updatedAt": 1791872870009
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791872193301
     },
@@ -998,12 +999,12 @@
           "updatedAt": 1791871101824
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791867062741,
       "updatedAt": 1791872192926
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1791865738321,
-  "updatedAt": 1791872193301
+  "updatedAt": 1791872870009
 }
