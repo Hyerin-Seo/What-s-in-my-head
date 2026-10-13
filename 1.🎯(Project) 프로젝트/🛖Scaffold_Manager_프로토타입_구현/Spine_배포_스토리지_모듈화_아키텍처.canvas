@@ -19,7 +19,8 @@
 		{"id":"node_new_plugin_engine","type":"text","text":"Spine Plugin Engine (플러그인 백단 엔진)\n\n• [코어 내장]: 번들된 outliner-core 연산 엔진 포함\n• [Reconciler]: 외부(agy-ide) 파일 변경 감지 & 뷰 상태 보존 diff\n• [Crash-Safe Parser]: 에이전트 수정 시 문법 오염 격리 방화벽\n• [Context Extractor]: 블록 ID & 서브트리 맥락 데이터 추출","x":450,"y":-640,"width":700,"height":220,"color":"4"},
 		{"id":"code_new_plugin_summary","type":"text","text":"```\n[\"🧩 옵시디언 독립 플러그인 2계층 아키텍처 (Engine ↔ View)\"]\n\tCoreBundle[\"packages/outliner-core\"] ──(빌드 시 번들 포함)──▶ Engine\n\tEngine[\"1. Spine Plugin Engine (백단 연산 & 에이전트 안전망)\"]\n\t   ▲ (내부 전용 통신: 상태 갱신 / 렌더 지시)\n\t   ▼\n\tView[\"2. Spine Plugin View (FileView 껍데기 & 화면 렌더러)\"]\n```","x":410,"y":-940,"width":1580,"height":150,"color":"4"},
 		{"id":"node_new_vault_storage","type":"text","text":"Vault Outline Storage (.outline JSON 파일)\n\n• 옵시디언 볼트 디스크에 영속화되는 순수 논리적 트리 JSON\n• DTO 무손실 전송의 정본이자 플러그인과 린터가 공유하는 로컬 파일","x":1400,"y":75,"width":800,"height":160,"color":"4"},
-		{"id":"node_new_plugin_view","type":"text","text":"Spine Plugin View (화면 뷰 / FileView)\n\n• [Obsidian FileView 껍데기]: 탭 생명주기 및 DOM 마운트\n• [순수 프리젠터]: 오직 'Spine Plugin Engine'하고만 통신\n• [키스트로크 캡처]: 사용자 Tab/Enter 입력을 엔진에 전달\n• [상태 보존 렌더]: 엔진 지시에 따라 커서/줌 뎁스 유지 렌더","x":1540,"y":-640,"width":700,"height":220,"color":"4"}
+		{"id":"node_new_plugin_view","type":"text","text":"Spine Plugin View (화면 뷰 / FileView)\n\n• [Obsidian FileView 껍데기]: 탭 생명주기 및 DOM 마운트\n• [순수 프리젠터]: 오직 'Spine Plugin Engine'하고만 통신\n• [키스트로크 캡처]: 사용자 Tab/Enter 입력을 엔진에 전달\n• [상태 보존 렌더]: 엔진 지시에 따라 커서/줌 뎁스 유지 렌더","x":1540,"y":-640,"width":700,"height":220,"color":"4"},
+		{"id":"aae128ad4825fccb","x":-1120,"y":-1600,"width":480,"height":400,"type":"file","file":"1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/안녕하세요 반가워요 저는 gaeddong-outliner 라고 해요.outline"}
 	],
 	"edges":[
 		{"id":"e_manual_io_to_ast_dto","fromNode":"node_mod_manual_io","fromSide":"bottom","toNode":"node_mod_ast_dto","toSide":"top","color":"2","label":"명시적 Import/Export 트리거"},
