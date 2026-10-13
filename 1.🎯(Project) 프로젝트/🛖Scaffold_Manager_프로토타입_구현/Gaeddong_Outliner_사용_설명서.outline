@@ -214,11 +214,13 @@
                 },
                 {
                   "id": "BqKu2JhUEpxt",
-                  "text": "[Ctrl + Enter] : 완료 처리 / 취소",
+                  "text": "[미구현][Ctrl + Enter] : 완료 처리 / 취소",
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791872098558,
-                  "updatedAt": 1791872098558
+                  "updatedAt": 1791872586579,
+                  "isCompleted": true,
+                  "completedAt": 1791872586579
                 },
                 {
                   "id": "T5peNX4uwFfu",
@@ -230,11 +232,11 @@
                 },
                 {
                   "id": "cvO0imPA2C2a",
-                  "text": "[파일 붙이기 / 떼기] : 볼트 내 파일(PDF/이미지 등) 첨부 및 분리",
+                  "text": "[파일 붙이기] : 볼트 내 파일(PDF/이미지 등) 첨부 및 분리",
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791872098558,
-                  "updatedAt": 1791872098558
+                  "updatedAt": 1791872595845
                 },
                 {
                   "id": "0QkPPj12Q3rx",
@@ -242,7 +244,7 @@
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791872098558,
-                  "updatedAt": 1791872098558
+                  "updatedAt": 1791872599557
                 },
                 {
                   "id": "HS0S6KOHXdxJ",
@@ -250,7 +252,7 @@
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791872098558,
-                  "updatedAt": 1791872098558
+                  "updatedAt": 1791872985142
                 },
                 {
                   "id": "kPhHoSnYJAFe",
@@ -258,23 +260,27 @@
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791872098558,
-                  "updatedAt": 1791872098558
+                  "updatedAt": 1791872602010
                 },
                 {
                   "id": "rjJ0FEuzU7fz",
-                  "text": "[내부 링크 복사] : 위키링크 서브 앵커([[파일명#노드ID]]) 클립보드 복사",
+                  "text": "[미구현][내부 링크 복사] : 위키링크 서브 앵커([[파일명#노드ID]]) 클립보드 복사",
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791872098558,
-                  "updatedAt": 1791872098558
+                  "updatedAt": 1791872619131,
+                  "isCompleted": true,
+                  "completedAt": 1791872619131
                 },
                 {
                   "id": "as8RtWTS39ir",
-                  "text": "[내보내기] : 텍스트 파일(.txt)로 저장",
+                  "text": "[미구현][내보내기] : 텍스트 파일(.txt)로 저장",
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791872098558,
-                  "updatedAt": 1791872098558
+                  "updatedAt": 1791872619131,
+                  "isCompleted": true,
+                  "completedAt": 1791872619131
                 },
                 {
                   "id": "iJxN11eq8xYy",
@@ -282,7 +288,7 @@
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791872098558,
-                  "updatedAt": 1791872098558
+                  "updatedAt": 1791872620303
                 }
               ],
               "isFolded": false,
@@ -290,7 +296,8 @@
                 "target": "Pasted image 20261013133835.png"
               },
               "createdAt": 1791866315274,
-              "updatedAt": 1791872098558
+              "updatedAt": 1791872098558,
+              "isFolded": false
             },
             {
               "id": "7HLrYULsgMRL",
@@ -298,7 +305,7 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1791865738321,
-              "updatedAt": 1791867298877
+              "updatedAt": 1791872620749
             },
             {
               "id": "hroKy7tbZ8Gz",
@@ -878,7 +885,7 @@
       ],
       "isFolded": false,
       "createdAt": 1791865738321,
-      "updatedAt": 1791868540229
+      "updatedAt": 1791873224643
     },
     {
       "id": "fW2y7dzFocbZ",
@@ -946,7 +953,7 @@
       ],
       "isFolded": false,
       "createdAt": 1791865738321,
-      "updatedAt": 1791872193301
+      "updatedAt": 1791873234702
     },
     {
       "id": "4zXmNz1OXf6w",
@@ -1001,10 +1008,10 @@
       ],
       "isFolded": false,
       "createdAt": 1791867062741,
-      "updatedAt": 1791872192926
+      "updatedAt": 1791873223933
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1791865738321,
-  "updatedAt": 1791872870009
+  "updatedAt": 1791873234702
 }
