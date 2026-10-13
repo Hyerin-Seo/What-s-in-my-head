@@ -54,7 +54,7 @@
                   "children": [],
                   "isFolded": false,
                   "createdAt": 1791886528919,
-                  "updatedAt": 1791887289269
+                  "updatedAt": 1791892289269
                 }
               ],
               "isFolded": true,
@@ -79,8 +79,33 @@
               "updatedAt": 1791892100000
             },
             {
+              "id": "dIcT2rEcIpE1",
+              "text": "1️⃣ 사전(Dictionary)에서 레시피(Recipe)로 : 옵시디언 공식 API 명세서를 내 프로젝트에 알맞게 적용하는 실전 방법론",
+              "children": [
+                {
+                  "id": "dIcTrOuTiN01",
+                  "text": "공식 문서의 파편화된 낱개 API(사전)를 내 기능 요구사항(레시피)으로 번역하고 조합하는 3단계 엔지니어링 루틴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892500000,
+                  "updatedAt": 1791892500000
+                },
+                {
+                  "id": "dIcTaDaPtR02",
+                  "text": "🛠️ [실제 적용 전략] : '기능 기획(Top-Down) ➔ obsidian.d.ts 인터페이스 역추적 ➔ 어댑터 패턴으로 비즈니스 로직 격리'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892500000,
+                  "updatedAt": 1791892500000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892500000,
+              "updatedAt": 1791892500000
+            },
+            {
               "id": "ApPl4M0dEl81",
-              "text": "1️⃣ 전역 멘탈 모델과 App 싱글톤 인프라 (this.app)",
+              "text": "2️⃣ 전역 멘탈 모델과 App 싱글톤 인프라 (this.app)",
               "children": [
                 {
                   "id": "aPpM4nAgE101",
@@ -105,7 +130,7 @@
             },
             {
               "id": "WsLeAfUi0201",
-              "text": "2️⃣ 화면(UI) 레이아웃과 WorkspaceLeaf 슬롯 시스템",
+              "text": "3️⃣ 화면(UI) 레이아웃과 WorkspaceLeaf 슬롯 시스템",
               "children": [
                 {
                   "id": "lEaFsL0t0202",
@@ -130,7 +155,7 @@
             },
             {
               "id": "oAqLf5VoOIZN",
-              "text": "3️⃣ 커스텀 에디터와 확장자 바인딩 (TextFileView & registerExtensions)",
+              "text": "4️⃣ 커스텀 에디터와 확장자 바인딩 (TextFileView & registerExtensions)",
               "children": [
                 {
                   "id": "tXtFiLeViEw1",
@@ -155,7 +180,7 @@
             },
             {
               "id": "mDkInLiNePr4",
-              "text": "4️⃣ 이종 포맷 상호운용성 & 임베드 : .md 인라인 침투부터 .canvas 노드 연계까지 (Cross-Modal Transclusion & Canvas Integration)",
+              "text": "5️⃣ 이종 포맷 상호운용성 & 임베드 : .md 인라인 침투부터 .canvas 노드 연계까지 (Cross-Modal Transclusion & Canvas Integration)",
               "children": [
                 {
                   "id": "mDkPoStPrOc1",
@@ -180,7 +205,7 @@
             },
             {
               "id": "lInKpOpOvEr5",
-              "text": "5️⃣ 크로스 모달리티 지식 연결망 : 이종 포맷 간 위키링크와 서브 앵커 (Link Resolver & Cross-File Navigation)",
+              "text": "6️⃣ 크로스 모달리티 지식 연결망 : 이종 포맷 간 위키링크와 서브 앵커 (Link Resolver & Cross-File Navigation)",
               "children": [
                 {
                   "id": "lInKrEsOlVe1",
@@ -205,7 +230,7 @@
             },
             {
               "id": "MsEw5zuNJeD0",
-              "text": "6️⃣ 데이터 I/O와 가상 파일 시스템 (Vault & FileManager)",
+              "text": "7️⃣ 데이터 I/O와 가상 파일 시스템 (Vault & FileManager)",
               "children": [
                 {
                   "id": "smXvaijRdAHC",
@@ -230,7 +255,7 @@
             },
             {
               "id": "mEtAcAcHe050",
-              "text": "7️⃣ 인메모리 색인과 지식 그래프 (MetadataCache)",
+              "text": "8️⃣ 인메모리 색인과 지식 그래프 (MetadataCache)",
               "children": [
                 {
                   "id": "44WuUwApAy0b",
@@ -256,7 +281,7 @@
           ],
           "isFolded": false,
           "createdAt": 1791889097958,
-          "updatedAt": 1791892100000
+          "updatedAt": 1791893694242
         },
         {
           "id": "eDiToReNgIn03",
@@ -845,7 +870,7 @@
               ],
               "isFolded": true,
               "createdAt": 1791891300000,
-              "updatedAt": 1791891300000
+              "updatedAt": 1791893741405
             },
             {
               "id": "nAtIvEpOlI03",
@@ -870,7 +895,14 @@
               ],
               "isFolded": true,
               "createdAt": 1791891300000,
-              "updatedAt": 1791892021784
+              "updatedAt": 1791893731525
+            },
+            {
+              "id": "vzf51lnoJ5ar",
+              "text": "[[Gaeddong_Outliner_사용_설명서.outline]] -> 이거 순서대로 설명 + 구현 원리 + 쭉",
+              "children": [],
+              "createdAt": 1791893696790,
+              "updatedAt": 1791893731258
             }
           ],
           "isFolded": false,
@@ -885,5 +917,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791886528919,
-  "updatedAt": 1791893091811
+  "updatedAt": 1791893741405
 }
