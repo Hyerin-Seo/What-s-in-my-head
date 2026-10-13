@@ -5,7 +5,7 @@
   "rootNodes": [
     {
       "id": "qFemukr3ZK26",
-      "text": "📌 레퍼런스 분석 : 유피노트 — 옵시디언 플러그인 개발 가이드",
+      "text": "📌 레퍼런스 분석 : [1] 유피노트 — 옵시디언 플러그인 개발 가이드",
       "children": [
         {
           "id": "pbLD0XWM2WYp",
@@ -38,7 +38,7 @@
           ],
           "isFolded": false,
           "createdAt": 1791877201893,
-          "updatedAt": 1791879392737
+          "updatedAt": 1791880584029
         },
         {
           "id": "tJ9uINJdX6GU",
@@ -178,8 +178,9 @@
             }
           ],
           "isFolded": true,
+          "note": "타깃이나 주제별로 더 쪼개서 아에 여러 편도 가능하겠네",
           "createdAt": 1791878469467,
-          "updatedAt": 1791879396878
+          "updatedAt": 1791880665151
         },
         {
           "id": "RQriuZLzCwor",
@@ -489,7 +490,7 @@
           ],
           "isFolded": true,
           "createdAt": 1791877201893,
-          "updatedAt": 1791879398781
+          "updatedAt": 1791879895180
         },
         {
           "id": "ahoDc7V6qo3A",
@@ -664,7 +665,7 @@
           ],
           "isFolded": true,
           "createdAt": 1791877386292,
-          "updatedAt": 1791878579075
+          "updatedAt": 1791880437559
         },
         {
           "id": "Du0Eevsky3tF_parent",
@@ -739,15 +740,15 @@
           ],
           "isFolded": true,
           "createdAt": 1791878828527,
-          "updatedAt": 1791879392045
+          "updatedAt": 1791886535118
         }
       ],
       "isFolded": false,
       "createdAt": 1791877201893,
-      "updatedAt": 1791879394828
+      "updatedAt": 1791880586341
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1791877201893,
-  "updatedAt": 1791879398781
+  "updatedAt": 1791886535118
 }

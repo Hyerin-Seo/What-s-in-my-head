@@ -413,16 +413,16 @@ views:
     columnColors:
       note.상태: {}
   - type: kanban-view
-    name: "🥸옵시디언 플러그인 개발하기"
+    name: "🥸옵시디언 플러그인 개발하는 법 글쓰기"
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하기")
+        - file.inFolder("1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기")
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하기
+    quickAddFolder: 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover

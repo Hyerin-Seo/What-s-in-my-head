@@ -66,7 +66,7 @@
           ],
           "isFolded": false,
           "createdAt": 1791865738321,
-          "updatedAt": 1791865812315
+          "updatedAt": 1791892620515
         }
       ],
       "isFolded": false,
@@ -104,7 +104,7 @@
               ],
               "isFolded": false,
               "createdAt": 1791865738321,
-              "updatedAt": 1791865738321
+              "updatedAt": 1791892631421
             },
             {
               "id": "5bcLI5h86uaj",
@@ -132,7 +132,7 @@
               "updatedAt": 1791865738321
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791867426072
         },
@@ -167,7 +167,7 @@
               "updatedAt": 1791866161974
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791871151778
         },
@@ -217,10 +217,10 @@
                   "text": "[미구현][Ctrl + Enter] : 완료 처리 / 취소",
                   "children": [],
                   "isFolded": false,
-                  "createdAt": 1791872098558,
-                  "updatedAt": 1791872586579,
                   "isCompleted": true,
-                  "completedAt": 1791872586579
+                  "completedAt": 1791872586579,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872586579
                 },
                 {
                   "id": "T5peNX4uwFfu",
@@ -267,20 +267,20 @@
                   "text": "[미구현][내부 링크 복사] : 위키링크 서브 앵커([[파일명#노드ID]]) 클립보드 복사",
                   "children": [],
                   "isFolded": false,
-                  "createdAt": 1791872098558,
-                  "updatedAt": 1791872619131,
                   "isCompleted": true,
-                  "completedAt": 1791872619131
+                  "completedAt": 1791872619131,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872619131
                 },
                 {
                   "id": "as8RtWTS39ir",
                   "text": "[미구현][내보내기] : 텍스트 파일(.txt)로 저장",
                   "children": [],
                   "isFolded": false,
-                  "createdAt": 1791872098558,
-                  "updatedAt": 1791872619131,
                   "isCompleted": true,
-                  "completedAt": 1791872619131
+                  "completedAt": 1791872619131,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872619131
                 },
                 {
                   "id": "iJxN11eq8xYy",
@@ -296,8 +296,7 @@
                 "target": "Pasted image 20261013133835.png"
               },
               "createdAt": 1791866315274,
-              "updatedAt": 1791872098558,
-              "isFolded": false
+              "updatedAt": 1791872098558
             },
             {
               "id": "7HLrYULsgMRL",
@@ -417,7 +416,7 @@
           "updatedAt": 1791867032842
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791867426072
     },
@@ -535,7 +534,7 @@
           "updatedAt": 1791866626985
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791871111689
     },
@@ -633,7 +632,7 @@
           "updatedAt": 1791872713391
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791868043730
     },
@@ -1013,5 +1012,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791865738321,
-  "updatedAt": 1791873234702
+  "updatedAt": 1791892651896
 }

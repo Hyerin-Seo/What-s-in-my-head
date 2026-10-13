@@ -1,0 +1,889 @@
+{
+  "version": "1.0.0",
+  "id": "voXWEoLknUo9",
+  "title": "글감 후보군",
+  "rootNodes": [
+    {
+      "id": "g7CBckl5xSzq",
+      "text": "📌 옵시디언 플러그인 개발 글쓰기 — 다각적 글감 후보군",
+      "children": [
+        {
+          "id": "0DBLNzNgFF6Y",
+          "text": "🎯 1. 의사결정 & 전략 관점 (Decision-Making : 헛고생하지 않는 문제 해결 사다리)",
+          "children": [
+            {
+              "id": "btBEcaUuscpp",
+              "text": "1️⃣ 문제 해결의 에스컬레이션 사다리 (Escalation Ladder)",
+              "children": [
+                {
+                  "id": "8R9JZwhbr9Sg",
+                  "text": "CSS ➔ 커뮤니티 플러그인 ➔ 스크립트 ➔ 직접 개발 : 내 요구사항의 적정 해결 수단 판별법",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791886528919,
+                  "updatedAt": 1791887229708
+                },
+                {
+                  "id": "7NbUK56oXKmk",
+                  "text": "Dataview / QuickAdd / Templater로 풀 수 있는 한계선은 정확히 어디까지인가? + 어떤 기능을 구현할 수 있나",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791886528919,
+                  "updatedAt": 1791887275320
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791886528919,
+              "updatedAt": 1791886528919
+            },
+            {
+              "id": "hvhaF24zdxyO",
+              "text": "2️⃣ 플러그인 개발의 기회비용과 ROI",
+              "children": [
+                {
+                  "id": "M8RRp6vr5Gke",
+                  "text": "'만들 것인가, 조합할 것인가' : 오픈소스 유지보수 비용과 개인 생산성의 손익분기점",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791886528919,
+                  "updatedAt": 1791887286401
+                },
+                {
+                  "id": "DhdHBgUfDnRQ",
+                  "text": "바닐라 JS로 가볍게 끝낼 것인가, React/TypeScript 풀스택 빌드를 세울 것인가의 결정 기준",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791886528919,
+                  "updatedAt": 1791887289269
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791886528919,
+              "updatedAt": 1791892014128
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791886528919,
+          "updatedAt": 1791887222874
+        },
+        {
+          "id": "HRdhYppkGshg",
+          "text": "🏗️ 2. 내부 구조 & 아키텍처 관점 (Architecture : 호스트 연동과 생태계 침투 원리)",
+          "children": [
+            {
+              "id": "QqUGms04FqXT",
+              "text": "💡 [관점 정의] : App 객체를 중심으로 화면(Workspace/View), 이종 포맷(.md/.canvas/.base) 상호운용성, 지식 연결망, 그리고 데이터(Vault/Cache)가 맞물려 돌아가는 내부 뼈대를 이해하여 원하는 기능을 자유자재로 구현하는 관점",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791889097958,
+              "updatedAt": 1791892100000
+            },
+            {
+              "id": "ApPl4M0dEl81",
+              "text": "1️⃣ 전역 멘탈 모델과 App 싱글톤 인프라 (this.app)",
+              "children": [
+                {
+                  "id": "aPpM4nAgE101",
+                  "text": "'this.app'의 4대 관제탑(workspace, vault, metadataCache, fileManager)과 Service Locator 패턴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889700000,
+                  "updatedAt": 1791892100000
+                },
+                {
+                  "id": "aPpImPlFt002",
+                  "text": "🛠️ [실제 구현 기능] : 좌측 리본 아이콘 클릭(addRibbonIcon), 탐색기 우클릭 메뉴(file-menu), 전역 단축키/명령어 등록(addCommand)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889700000,
+              "updatedAt": 1791892100000
+            },
+            {
+              "id": "WsLeAfUi0201",
+              "text": "2️⃣ 화면(UI) 레이아웃과 WorkspaceLeaf 슬롯 시스템",
+              "children": [
+                {
+                  "id": "lEaFsL0t0202",
+                  "text": "'View를 만들기 전에 Leaf부터 이해하라' : 탭·사이드바·팝아웃 분할의 기본 단위와 슬롯 메커니즘",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889700000,
+                  "updatedAt": 1791892100000
+                },
+                {
+                  "id": "lEaFImPlFt02",
+                  "text": "🛠️ [실제 구현 기능] : 우측 사이드바 패널에 대조 뷰 띄우기(getRightLeaf), 멀티 탭 분할 작업, 중복 방지 스마트 탭 전환(revealLeaf)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889700000,
+              "updatedAt": 1791892100000
+            },
+            {
+              "id": "oAqLf5VoOIZN",
+              "text": "3️⃣ 커스텀 에디터와 확장자 바인딩 (TextFileView & registerExtensions)",
+              "children": [
+                {
+                  "id": "tXtFiLeViEw1",
+                  "text": "파일 바인딩 전용 뷰 라이프사이클(getViewData, setViewData, requestSave)과 자동 저장 메커니즘",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889097958,
+                  "updatedAt": 1791892100000
+                },
+                {
+                  "id": "tXtFImPlFt02",
+                  "text": "🛠️ [실제 구현 기능] : 탐색기에서 .outline 파일 더블클릭 시 전용 아웃라이너 화면으로 즉시 로딩(registerExtensions), 노드 편집 즉시 백그라운드 무손실 자동 저장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889097958,
+              "updatedAt": 1791892100000
+            },
+            {
+              "id": "mDkInLiNePr4",
+              "text": "4️⃣ 이종 포맷 상호운용성 & 임베드 : .md 인라인 침투부터 .canvas 노드 연계까지 (Cross-Modal Transclusion & Canvas Integration)",
+              "children": [
+                {
+                  "id": "mDkPoStPrOc1",
+                  "text": "MarkdownPostProcessor/CodeBlockProcessor 개입 원리와 Canvas 2차원 공간 노드 바인딩 구조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                },
+                {
+                  "id": "mDkImPlFt002",
+                  "text": "🛠️ [실제 구현 기능] : 마크다운 내 높이 350px 아웃라이너 위젯(```vibe-outline), 본문 인라인 임베드(![[문서.outline]]), 특정 섹션 앵커 줌 임베드(![[문서.outline#노드ID]]), 캔버스(.canvas) 카드 드래그 임베드",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892100000,
+              "updatedAt": 1791892100000
+            },
+            {
+              "id": "lInKpOpOvEr5",
+              "text": "5️⃣ 크로스 모달리티 지식 연결망 : 이종 포맷 간 위키링크와 서브 앵커 (Link Resolver & Cross-File Navigation)",
+              "children": [
+                {
+                  "id": "lInKrEsOlVe1",
+                  "text": "옵시디언 링크 해석기(Link Resolver)와 팝오버 브릿지(HoverParent, EditorSuggest)의 동작 원리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                },
+                {
+                  "id": "lInKImPlFt02",
+                  "text": "🛠️ [실제 구현 기능] : 미디어 실시간 미리보기(Ctrl+마우스 호버), 확장자 생략 링크 우선 매핑([[문서명]]), 특정 불릿 다이렉트 점프([[문서명#노드ID]]), [[파일검색]] 자동완성",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892100000,
+              "updatedAt": 1791892100000
+            },
+            {
+              "id": "MsEw5zuNJeD0",
+              "text": "6️⃣ 데이터 I/O와 가상 파일 시스템 (Vault & FileManager)",
+              "children": [
+                {
+                  "id": "smXvaijRdAHC",
+                  "text": "TFile/TFolder 가상 파일 추상화와 링크 무결성 보존(processFrontMatter, renameFile)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889097958,
+                  "updatedAt": 1791892100000
+                },
+                {
+                  "id": "vAuLtImPlFt2",
+                  "text": "🛠️ [실제 구현 기능] : .outline 생성 시 속성(.base/FrontMatter) 동기화용 .md 카드 자동 1+1 생성, 볼트 내 파일(PDF/이미지 등) DnD 첨부, Obsidian Sync 동기화 충돌 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889097958,
+              "updatedAt": 1791892100000
+            },
+            {
+              "id": "mEtAcAcHe050",
+              "text": "7️⃣ 인메모리 색인과 지식 그래프 (MetadataCache)",
+              "children": [
+                {
+                  "id": "44WuUwApAy0b",
+                  "text": "디스크를 읽지 않는 CachedMetadata 구조와 실시간 링크 관계망 이벤트(changed, resolve)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889097958,
+                  "updatedAt": 1791892100000
+                },
+                {
+                  "id": "cAcHeImPlFt2",
+                  "text": "🛠️ [실제 구현 기능] : 우측 사이드바 백링크 패널 참조 정상 표시, 글로벌 그래프 뷰(Graph View) 거미줄 연결망 시각화, #outline 전역 태그 및 Dataview/Bases 속성 색인 연동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892100000,
+                  "updatedAt": 1791892100000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889097958,
+              "updatedAt": 1791892100000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791889097958,
+          "updatedAt": 1791892100000
+        },
+        {
+          "id": "eDiToReNgIn03",
+          "text": "⌨️ 3. 에디터 엔진 & 인터랙션 아키텍처 관점 (Editor Engine : 계층형 트리 조작과 키보드 제어)",
+          "children": [
+            {
+              "id": "eDiToRdEfIn01",
+              "text": "💡 [관점 정의] : 옵시디언이 제공하는 빈 뷰(View) 컨테이너 안에 계층형 트리 상태 머신, 키보드 트랜잭션, 호스트 간섭 방어, 그리고 드래그앤드롭 파이프라인을 구축하여 살아 움직이는 에디터 엔진을 완성하는 관점",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791892300000,
+              "updatedAt": 1791892300000
+            },
+            {
+              "id": "tReEsTaTeMc01",
+              "text": "1️⃣ 계층형 트리 상태 머신과 불변 데이터 모델링 (Tree State & Normalization)",
+              "children": [
+                {
+                  "id": "nOrMaLiZeDm01",
+                  "text": "노드가 수천 개여도 리렌더링 폭포수를 막는 정규화된(Normalized) 노드 맵과 Immer 불변 상태 관리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892300000,
+                  "updatedAt": 1791892300000
+                },
+                {
+                  "id": "tRaNsFoRmFn02",
+                  "text": "접기/펼치기, 불릿 줌인(Zoom-in/호이스트), 서브노트, 블록 종류 변환(Turn into)을 지탱하는 순수 변형(Transform) 함수 체계",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892300000,
+                  "updatedAt": 1791892300000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892300000,
+              "updatedAt": 1791892300000
+            },
+            {
+              "id": "kEyBoArDeNg02",
+              "text": "2️⃣ 키보드 오케스트레이션과 커서 트랜잭션 (Keyboard & Caret Engine)",
+              "children": [
+                {
+                  "id": "tReEtRaNsAc01",
+                  "text": "Enter(분할 생성), Backspace(삭제 병합), Tab/Shift+Tab(들여쓰기/내어쓰기)의 트리 트랜잭션 알고리즘",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892300000,
+                  "updatedAt": 1791892300000
+                },
+                {
+                  "id": "cArEtTrAcKi02",
+                  "text": "트리 구조 변경 후 정확한 텍스트 커서 위치와 포커스를 복원하는 Caret 복원 패턴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892300000,
+                  "updatedAt": 1791892300000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892300000,
+              "updatedAt": 1791892300000
+            },
+            {
+              "id": "eVeNtGuArD003",
+              "text": "3️⃣ 호스트 앱 간섭 방어와 포커스 격리 (Event Interception & Scope Guard)",
+              "children": [
+                {
+                  "id": "iSiNsIdEtRe1",
+                  "text": "옵시디언 타이틀·댓글창에서 백스페이스가 먹통 되는 참사 방지 : isInsideTree 기반 영역 타겟 검사",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892300000,
+                  "updatedAt": 1791892300000
+                },
+                {
+                  "id": "sToPpRoPaGa02",
+                  "text": "옵시디언 전역 핫키와 내 에디터 단축키 충돌을 막는 캡처링 단계 stopPropagation 이벤트 격리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892300000,
+                  "updatedAt": 1791892300000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892300000,
+              "updatedAt": 1791892300000
+            },
+            {
+              "id": "mUlTiSeLdNd4",
+              "text": "4️⃣ 다중 선택 상태 머신과 드래그 앤 드롭 파이프라인 (Multi-Select & DnD)",
+              "children": [
+                {
+                  "id": "fLoAtInGbAr1",
+                  "text": "드래그 앤 드롭(DnD) 및 Shift 범위 선택으로 동작하는 다중 선택(Multi-Select) 플로팅 바 상태 머신",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892300000,
+                  "updatedAt": 1791892300000
+                },
+                {
+                  "id": "dNdAtTaChMe2",
+                  "text": "볼트 내 파일(PDF, MD, .canvas, 이미지 등) 끌어다 놓기와 클립보드(Ctrl+V) 이미지 자동 저장 파이프라인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791892300000,
+                  "updatedAt": 1791892300000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791892300000,
+              "updatedAt": 1791892300000
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791892300000,
+          "updatedAt": 1791892300000
+        },
+        {
+          "id": "sNOaKBBCgsuZ",
+          "text": "🧭 4. 생태계 레퍼런스 & 나침반 관점 (Ecosystem : 공인 자료 지도와 커뮤니티 활용법)",
+          "children": [
+            {
+              "id": "eCoSyStEmDef0",
+              "text": "💡 [관점 정의] : 파편화된 인터넷 자료에 휘둘리지 않고, 신뢰할 수 있는 공식 1차 자료 맵과 글로벌 커뮤니티 집단지성을 200% 활용하여 막힘없이 개발하는 관점",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791889900000,
+              "updatedAt": 1791889900000
+            },
+            {
+              "id": "pRiMaRySrC01",
+              "text": "1️⃣ 공식 1차 자료 지도 (Primary Sources Navigation)",
+              "children": [
+                {
+                  "id": "oBsIdIaNaPi1",
+                  "text": "삽질 시간을 90% 줄여주는 공식 레퍼런스 4대 저장소 : obsidian-api, docs, sample-plugin, obsidian-releases",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889900000,
+                  "updatedAt": 1791889900000
+                },
+                {
+                  "id": "tYpEdTsNeT02",
+                  "text": "가장 신뢰할 수 있는 단 하나의 정본 : obsidian.d.ts 타입 정의와 릴리즈 태그별 변경점 읽는 법",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889900000,
+                  "updatedAt": 1791889900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889900000,
+              "updatedAt": 1791889900000
+            },
+            {
+              "id": "dIsCoRdDeV02",
+              "text": "2️⃣ 디스코드 커뮤니티 실전 공략 (#plugin-dev 활용술)",
+              "children": [
+                {
+                  "id": "dScRdChAnL01",
+                  "text": "Obsidian Official Discord 채널 지형도 : #plugin-dev, #plugin-advanced, #dev-announcements의 역할 분담",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889900000,
+                  "updatedAt": 1791889900000
+                },
+                {
+                  "id": "sRcHaNdMrE02",
+                  "text": "5분 만에 해결책을 건져내는 디스코드 고급 검색 연산자(in:, from:, has:)와 답변율을 높이는 MRE 질문 에티켓",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889900000,
+                  "updatedAt": 1791889900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889900000,
+              "updatedAt": 1791889900000
+            },
+            {
+              "id": "hUbAnDfOrM03",
+              "text": "3️⃣ 비공식 위키 & 포럼 백과사전 (Obsidian Hub & Forum)",
+              "children": [
+                {
+                  "id": "oBsIdIaNhUb1",
+                  "text": "공식 문서 너머의 집단지성 : Obsidian Hub(publish.obsidian.md/hub)가 제공하는 비공식 API 가이드와 쇼케이스",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889900000,
+                  "updatedAt": 1791889900000
+                },
+                {
+                  "id": "fOrUmArChV02",
+                  "text": "장기적인 아키텍처 토론과 RFC의 보고 : 공식 포럼(Developers & API 카테고리) 아카이브 탐색법",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889900000,
+                  "updatedAt": 1791889900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889900000,
+              "updatedAt": 1791889900000
+            },
+            {
+              "id": "cOdEsEaRcI04",
+              "text": "4️⃣ 1,500개 오픈소스 플러그인 레퍼런스 발굴술 (Code Search)",
+              "children": [
+                {
+                  "id": "cOmPlUgInJ01",
+                  "text": "community-plugins.json을 활용해 내가 만들려는 기능과 유사한 오픈소스 프로젝트 역추적하기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889900000,
+                  "updatedAt": 1791889900000
+                },
+                {
+                  "id": "gItHuBcOdS02",
+                  "text": "GitHub Code Search 정밀 쿼리로 특정 API(TextFileView, MarkdownPostProcessor)의 실전 모범 사례 핀포인트하기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791889900000,
+                  "updatedAt": 1791889900000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791889900000,
+              "updatedAt": 1791889900000
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791886528919,
+          "updatedAt": 1791890603453
+        },
+        {
+          "id": "5tehg7INC3I5",
+          "text": "🛡️ 5. 로컬 개발 환경 & 엔지니어링 DX 관점 (Developer Workflow : 샌드박스부터 테스트까지)",
+          "children": [
+            {
+              "id": "dEvWOrKfLoWd0",
+              "text": "💡 [관점 정의] : 내 실제 볼트를 오염시키지 않는 안전한 격리 환경부터 0초 피드백 루프, 빌드 최적화, TDD 및 모바일 디버깅까지 완결형 엔지니어링 파이프라인을 구축하는 관점",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791890000000,
+              "updatedAt": 1791890000000
+            },
+            {
+              "id": "zErOfEeDbAcK1",
+              "text": "1️⃣ 올인원 개발 환경 구축 (Zero-Fatigue Workflow)",
+              "children": [
+                {
+                  "id": "aToZeNvSeT01",
+                  "text": "0초 피드백 루프를 만드는 옵시디언 모던 개발 환경 세팅 A to Z : 샌드박스 격리부터 esbuild watch, Hot Reload, DevTools 연동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890000000,
+                  "updatedAt": 1791890000000
+                },
+                {
+                  "id": "sYmLiNkGiT02",
+                  "text": "'.obsidian/plugins/'에 직접 Git 파지 마라 : 독립 프로젝트 디렉터리와 테스트 볼트 간의 심볼릭 링크 및 자동 배포 파이프라인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890000000,
+                  "updatedAt": 1791890000000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791890000000,
+              "updatedAt": 1791890000000
+            },
+            {
+              "id": "bUnDlEeNgIn2",
+              "text": "2️⃣ 번들링 & 빌드 엔지니어링 (Asset & Bundling Pipeline)",
+              "children": [
+                {
+                  "id": "eSbUiLdCtM01",
+                  "text": "단일 JS·CSS 제약을 돌파하는 esbuild 번들링 커스텀 파이프라인 : React, Tailwind, Lucide 아이콘 패키징",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890000000,
+                  "updatedAt": 1791890000000
+                },
+                {
+                  "id": "tReEsHaKeA02",
+                  "text": "외부 CDN 없는 샌드박스 환경에서 번들 사이즈를 100KB 이하로 줄이는 트리쉐이킹(Tree-shaking)과 인라인 에셋 최적화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890000000,
+                  "updatedAt": 1791890000000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791890000000,
+              "updatedAt": 1791890000000
+            },
+            {
+              "id": "tDdMoCkInG03",
+              "text": "3️⃣ 테스트 자동화 & 품질 보증 (TDD & Mocking Strategy)",
+              "children": [
+                {
+                  "id": "vItEsTmOcK01",
+                  "text": "옵시디언 플러그인도 TDD가 가능한가? : Vitest와 'app.vault' 가상 객체 모킹(Mocking) 전략",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890000000,
+                  "updatedAt": 1791890000000
+                },
+                {
+                  "id": "uNiTtEsTaR02",
+                  "text": "Electron을 띄우지 않고 CLI에서 비즈니스 로직과 데이터 파서를 1초 만에 검증하는 단위 테스트 아키텍처",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890000000,
+                  "updatedAt": 1791890000000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791890000000,
+              "updatedAt": 1791890000000
+            },
+            {
+              "id": "mObIlEdX0004",
+              "text": "4️⃣ 모바일 & 크로스플랫폼 DX (Cross-Platform Remote Debugging)",
+              "children": [
+                {
+                  "id": "cApAcItOrD01",
+                  "text": "데스크톱에선 잘 되는데 왜 폰에선 터질까? : iOS·Android 모바일 런타임(Capacitor)과 데스크톱(Electron)의 치명적 환경 차이",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890000000,
+                  "updatedAt": 1791890000000
+                },
+                {
+                  "id": "sAfArIdEvT02",
+                  "text": "모바일 옵시디언 원격 디버깅 완벽 가이드 : Safari Web Inspector & Chrome DevTools 유선 연결 디버깅 및 모바일 테스트 볼트 동기화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890000000,
+                  "updatedAt": 1791890000000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791890000000,
+              "updatedAt": 1791890000000
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791886528919,
+          "updatedAt": 1791890000000
+        },
+        {
+          "id": "qK1JFx8i9V7q",
+          "text": "📦 6. 커뮤니티 플러그인 등록 & 공식 규격 관점 (Registry & Specification : 공식 마켓플레이스 승인 가이드)",
+          "children": [
+            {
+              "id": "rEgIsTrYdEf0",
+              "text": "💡 [관점 정의] : 내가 만든 플러그인을 옵시디언 공식 '커뮤니티 플러그인' 카탈로그에 성공적으로 등록하기 위해 반드시 충족해야 하는 필수 파일 규격, 심사 기준, 그리고 PR 제출 절차를 완벽히 숙지하는 관점",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791890200000,
+              "updatedAt": 1791890200000
+            },
+            {
+              "id": "mAnIfEsTsP01",
+              "text": "1️⃣ 메타데이터 & 호환성 규격 (manifest.json & versions.json)",
+              "children": [
+                {
+                  "id": "mAnIfEsTfL01",
+                  "text": "커뮤니티 등록을 위한 메타데이터 규격서 : manifest.json 필수 필드 스펙과 네이밍 절대 금기어('Obsidian' 금지)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890200000,
+                  "updatedAt": 1791890200000
+                },
+                {
+                  "id": "vErSiOnSmP02",
+                  "text": "내 플러그인과 옵시디언 앱 버전 간의 호환성 맵 : versions.json의 역할과 누락 시 발생하는 검색 제외 문제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890200000,
+                  "updatedAt": 1791890200000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791890200000,
+              "updatedAt": 1791890200000
+            },
+            {
+              "id": "rElEaSeAsS02",
+              "text": "2️⃣ 릴리즈 산출물 패키징 규격 (GitHub Release Assets)",
+              "children": [
+                {
+                  "id": "tHrEeAsSeT01",
+                  "text": "옵시디언 마켓이 인식하는 배포 규격 : 3대 필수 에셋(main.js, manifest.json, styles.css) 패키징 룰",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890200000,
+                  "updatedAt": 1791890200000
+                },
+                {
+                  "id": "nOzIpTaGrL02",
+                  "text": "zip 압축 파일 업로드 금지 원칙과 git tag-버전 문자열 100% 일치 규격",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890200000,
+                  "updatedAt": 1791890200000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791890200000,
+              "updatedAt": 1791890200000
+            },
+            {
+              "id": "cOrErEvIeW03",
+              "text": "3️⃣ 코어 팀 공식 심사 기준 해설 (plugin-review.md)",
+              "children": [
+                {
+                  "id": "pLuGiNrEvW01",
+                  "text": "코어 팀 리뷰어가 실제로 검사하는 것들 : 공식 심사 가이드라인(plugin-review.md) 보안·코드 조항 완벽 해설",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890200000,
+                  "updatedAt": 1791890200000
+                },
+                {
+                  "id": "iNnErHtMlF02",
+                  "text": "첫 PR에서 80%가 지적받는 단골 탈락 사유 : innerHTML 사용 금지(createEl 대체), 외부 CDN 스크립트 차단, 라이선스 명시",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890200000,
+                  "updatedAt": 1791890200000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791890200000,
+              "updatedAt": 1791890200000
+            },
+            {
+              "id": "pRsUbMiSsN04",
+              "text": "4️⃣ 실전 등록 절차와 PR 제출 매뉴얼 (obsidian-releases PR)",
+              "children": [
+                {
+                  "id": "oBsReLeAsP01",
+                  "text": "내 플러그인을 목록에 올리는 마지막 단계 : obsidian-releases 포크 및 community-plugins.json 등록 실전 매뉴얼",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890200000,
+                  "updatedAt": 1791890200000
+                },
+                {
+                  "id": "aLpHaOrDeR02",
+                  "text": "알파벳 순서(Alphabetical order) 엄격 정렬 규칙, PR 템플릿 작성 요령, 그리고 리뷰 피드백 대응 루틴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791890200000,
+                  "updatedAt": 1791890200000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791890200000,
+              "updatedAt": 1791891225113
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791886528919,
+          "updatedAt": 1791891219322
+        },
+        {
+          "id": "cAsEsTuDy006",
+          "text": "🚀 7. 실전 프로젝트 케이스 스터디 (Case Study : 나만의 전용 에디터 개발 풀스토리)",
+          "children": [
+            {
+              "id": "cAsEsTuDyDf0",
+              "text": "💡 [관점 정의] : 마크다운의 한계를 넘어 전용 포맷(.outline)과 노드 기반 에디터를 옵시디언 위에 구현해낸 실제 프로젝트의 설계와 구현 경험을 입체적으로 복기하는 관점",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791891300000,
+              "updatedAt": 1791892016505
+            },
+            {
+              "id": "pLaNaRcHdEc1",
+              "text": "1️⃣ 기획 & 아키텍처 의사결정 (독자 포맷과 상호운용성 설계)",
+              "children": [
+                {
+                  "id": "fOrMaTdEc001",
+                  "text": "마크다운 파싱의 한계를 넘어선 전용 포맷(.outline)의 탄생",
+                  "children": [
+                    {
+                      "id": "oUtLiNeReAs1",
+                      "text": "왜 기존 Obsidian Outliner 대신 새 포맷을 팠는가 : 들여쓰기 붕괴 방지와 불릿별 고유 ID 기반 앵커 줌(Zoom) 지원",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791891500000,
+                      "updatedAt": 1791891500000
+                    },
+                    {
+                      "id": "jSoNtReEsPe2",
+                      "text": "불릿별 서브노트(Note), 블록 변환(Turn into Todo/Code), 첨부파일 메타데이터를 안정적으로 영속화하기 위한 JSON 트리 설계",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791891500000,
+                      "updatedAt": 1791891922409
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1791891500000,
+                  "updatedAt": 1791891500000
+                },
+                {
+                  "id": "iNtErOpErAb2",
+                  "text": "외딴섬이 되지 않기 위한 옵시디언 생태계 상호운용성(Interoperability) 기획",
+                  "children": [
+                    {
+                      "id": "cAnVaSeMbEd1",
+                      "text": "전용 파일 뷰어의 고립 한계 극복 : 캔버스(Canvas) 드래그 임베드와 마크다운 본문 인라인 임베드(![`[문서.outline#노드ID]`])",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791891500000,
+                      "updatedAt": 1791891919285
+                    },
+                    {
+                      "id": "oNePlUsOnEc2",
+                      "text": "보드 관리 카드 자동 1+1 연동 : .outline 생성 시 동일 이름의 .md 카드가 함께 생성되어 프로젝트 핀보드에 즉시 연결되는 워크플로우",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791891500000,
+                      "updatedAt": 1791891919750
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1791891500000,
+                  "updatedAt": 1791891500000
+                },
+                {
+                  "id": "mOnOrEpOdEc3",
+                  "text": "호스트 비의존 모노레포(Monorepo) 아키텍처 결단",
+                  "children": [
+                    {
+                      "id": "tHrEeTiErAr1",
+                      "text": "플러그인 로직에 옵시디언 API를 섞지 마라 : outliner-core(엔진) ➔ outliner-editor(UI) ➔ outliner-obsidian(호스트 어댑터) 3단 분리",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791891500000,
+                      "updatedAt": 1791891500000
+                    },
+                    {
+                      "id": "lOnGeViTySt2",
+                      "text": "옵시디언에 종속되지 않고 데스크톱/웹 어디든 이식 가능한 영구 지속성(Longevity) 확보 전략",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791891500000,
+                      "updatedAt": 1791891500000
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1791891500000,
+                  "updatedAt": 1791891935832
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791891300000,
+              "updatedAt": 1791891500000
+            },
+            {
+              "id": "vIeWbRiDgE02",
+              "text": "2️⃣ 뷰 통합 & 라이프사이클 바인딩 (TextFileView & React 브릿지)",
+              "children": [
+                {
+                  "id": "tXtFiLeReAc1",
+                  "text": "TextFileView와 React의 결합 : 옵시디언의 구식 DOM 수명주기 위에 모던 React 에디터를 얹는 실전 브릿지 패턴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791891300000,
+                  "updatedAt": 1791891300000
+                },
+                {
+                  "id": "aUtOsAvEcLn2",
+                  "text": "setViewData/getViewData와 디바운싱 자동 저장(requestSave) 연동, 그리고 unmount 클린업 메모리 누수 방어",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791891300000,
+                  "updatedAt": 1791891300000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791891300000,
+              "updatedAt": 1791891300000
+            },
+            {
+              "id": "nAtIvEpOlI03",
+              "text": "3️⃣ 네이티브 일체감 & 스타일링 (CSS 변수 매핑과 테마 폴리싱)",
+              "children": [
+                {
+                  "id": "cSsVaRmApP01",
+                  "text": "옵시디언의 순정 기능처럼 느껴지게 만들기 : 전역 CSS 변수 100% 매핑과 다크/라이트모드 무결점 대응",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791891300000,
+                  "updatedAt": 1791891300000
+                },
+                {
+                  "id": "uIeLiGhTfX02",
+                  "text": "커스텀 에디터 UI가 겉돌지 않도록 네이티브 폰트, 스크롤바, 컨텍스트 메뉴 스타일을 일체화한 폴리싱 테크닉",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791891300000,
+                  "updatedAt": 1791891300000
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791891300000,
+              "updatedAt": 1791892021784
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791891300000,
+          "updatedAt": 1791891300000
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791886528919,
+      "updatedAt": 1791892001405
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791886528919,
+  "updatedAt": 1791893091811
+}
