@@ -202,13 +202,95 @@
           "children": [
             {
               "id": "QWN2I3WtoQa7",
-              "text": "호버 메뉴 스샷",
-              "children": [],
+              "text": "호버 메뉴 (Context Menu)",
+              "children": [
+                {
+                  "id": "IJxCk5KprwwH",
+                  "text": "[⋯ 호버/클릭] 또는 [불릿 우클릭] : 컨텍스트 메뉴 열기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "BqKu2JhUEpxt",
+                  "text": "[Ctrl + Enter] : 완료 처리 / 취소",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "T5peNX4uwFfu",
+                  "text": "[Shift + Enter] : 서브노트(Note) 추가 / 편집",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "cvO0imPA2C2a",
+                  "text": "[파일 붙이기 / 떼기] : 볼트 내 파일(PDF/이미지 등) 첨부 및 분리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "0QkPPj12Q3rx",
+                  "text": "[복제 / 이동] : 불릿 복사 및 다른 위치로 트리 이동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "HS0S6KOHXdxJ",
+                  "text": "[종류 바꾸기] : 블록 형태(제목, 문단, 할 일, 인용, 코드, 구분선, 보드) 변환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "kPhHoSnYJAFe",
+                  "text": "[전체 펼치기 / 접기] : 하위 모든 계층 일괄 토글",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "rjJ0FEuzU7fz",
+                  "text": "[내부 링크 복사] : 위키링크 서브 앵커([[파일명#노드ID]]) 클립보드 복사",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "as8RtWTS39ir",
+                  "text": "[내보내기] : 텍스트 파일(.txt)로 저장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                },
+                {
+                  "id": "iJxN11eq8xYy",
+                  "text": "[Delete / Ctrl+Shift+Backspace] : 불릿 및 하위 항목 삭제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791872098558,
+                  "updatedAt": 1791872098558
+                }
+              ],
               "file": {
                 "target": "Pasted image 20261013133835.png"
               },
               "createdAt": 1791866315274,
-              "updatedAt": 1791866328267
+              "updatedAt": 1791872098558,
+              "isFolded": true
             },
             {
               "id": "7HLrYULsgMRL",
@@ -227,9 +309,9 @@
               "updatedAt": 1791867403111
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
-          "updatedAt": 1791871161414
+          "updatedAt": 1791872059041
         },
         {
           "id": "Va3ONxj4BjCz",
@@ -328,7 +410,7 @@
           "updatedAt": 1791867032842
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791867426072
     },
@@ -863,7 +945,7 @@
       ],
       "isFolded": true,
       "createdAt": 1791865738321,
-      "updatedAt": 1791871073773
+      "updatedAt": 1791872193301
     },
     {
       "id": "4zXmNz1OXf6w",
@@ -918,10 +1000,10 @@
       ],
       "isFolded": true,
       "createdAt": 1791867062741,
-      "updatedAt": 1791871104311
+      "updatedAt": 1791872192926
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1791865738321,
-  "updatedAt": 1791871161415
+  "updatedAt": 1791872193301
 }
