@@ -20,35 +20,54 @@
           "text": "Outline 만들 때 다른 관리 카드가 생성이 안되네여..",
           "children": [],
           "createdAt": 1791853109001,
-          "updatedAt": 1791855163938
-        },
-        {
-          "id": "sBXWUNwSzkIr",
-          "text": "이미지를 붙여넣을 수 있어여",
-          "children": [],
-          "file": {
-            "target": "image (3) 1.png"
-          },
-          "createdAt": 1791853229106,
-          "updatedAt": 1791855164902
+          "updatedAt": 1791859914881
         },
         {
           "id": "LEog2DhTpzgJ",
           "text": "조작 같은 것들은 문제가 없어여",
           "children": [
             {
-              "id": "OnL6bJtXCtSP",
-              "text": "메뉴바도 잘 떠여",
-              "children": [],
-              "createdAt": 1791853185090,
-              "updatedAt": 1791855177803
-            },
-            {
               "id": "iD2Lc43PNFfk",
               "text": "더 써도 되나여",
               "children": [],
               "createdAt": 1791854054889,
-              "updatedAt": 1791855184277
+              "updatedAt": 1791859943728
+            },
+            {
+              "id": "OnL6bJtXCtSP",
+              "text": "메뉴바도 잘 떠여",
+              "children": [],
+              "createdAt": 1791853185090,
+              "updatedAt": 1791860326168,
+              "nodeType": "bullet",
+              "isCompleted": true,
+              "completedAt": 1791860326168
+            },
+            {
+              "id": "1w52MqVZbWBV",
+              "text": "키보드 튕기는데?",
+              "children": [],
+              "createdAt": 1791859956319,
+              "updatedAt": 1791860315578,
+              "isCompleted": false
+            },
+            {
+              "id": "HrGq6hLVxju7",
+              "text": "이게 뭐지",
+              "children": [],
+              "createdAt": 1791859960819,
+              "updatedAt": 1791860323356,
+              "nodeType": "bullet",
+              "isCompleted": false
+            },
+            {
+              "id": "c5ilUVTLfuR5",
+              "text": "이거 방긍 위로 가던데",
+              "children": [],
+              "createdAt": 1791859962876,
+              "updatedAt": 1791860329227,
+              "nodeType": "todo",
+              "isCompleted": false
             }
           ],
           "isFolded": false,
@@ -59,9 +78,35 @@
       "isFolded": false,
       "createdAt": 1791853030029,
       "updatedAt": 1791853089850
+    },
+    {
+      "id": "CakHGhGEmOee",
+      "text": "",
+      "children": [
+        {
+          "id": "iWPvMBUodxpg",
+          "text": "진짜 개웃기다 ㅋㅋㅋㅋㅋ",
+          "children": [],
+          "createdAt": 1791860071327,
+          "updatedAt": 1791860117773
+        },
+        {
+          "id": "sBXWUNwSzkIr",
+          "text": "이미지를 붙여넣을 수 있어여",
+          "children": [],
+          "file": {
+            "target": "image (3) 1.png"
+          },
+          "createdAt": 1791853229106,
+          "updatedAt": 1791860088878
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791859970269,
+      "updatedAt": 1791859970796
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1791853030029,
-  "updatedAt": 1791855184277
+  "updatedAt": 1791860329228
 }
