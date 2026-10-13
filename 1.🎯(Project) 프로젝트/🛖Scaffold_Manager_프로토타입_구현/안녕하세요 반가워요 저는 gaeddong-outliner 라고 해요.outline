@@ -13,14 +13,14 @@
           "children": [],
           "isFolded": false,
           "createdAt": 1791853030029,
-          "updatedAt": 1791868918371
+          "updatedAt": 1791873125862
         },
         {
           "id": "HmdL4yP8pXXd",
           "text": "Outline 만들 때 다른 관리 카드가 생성이 안되네여..",
           "children": [],
           "createdAt": 1791853109001,
-          "updatedAt": 1791868050913
+          "updatedAt": 1791873193225
         },
         {
           "id": "sBXWUNwSzkIr",
@@ -96,5 +96,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791853030029,
-  "updatedAt": 1791868918371
+  "updatedAt": 1791873193225
 }
