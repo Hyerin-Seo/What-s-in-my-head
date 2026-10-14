@@ -413,7 +413,7 @@ views:
     columnColors:
       note.상태: {}
   - type: kanban-view
-    name: "🥸옵시디언 플러그인 개발하는 법 글쓰기"
+    name: 🥸옵시디언 플러그인 개발하는 법 글쓰기
     filters:
       and:
         - file.inFolder("1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기")

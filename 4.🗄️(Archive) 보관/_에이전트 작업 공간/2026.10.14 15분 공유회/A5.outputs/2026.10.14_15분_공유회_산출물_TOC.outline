@@ -78,6 +78,23 @@
               "isFolded": false,
               "createdAt": 1791958539636,
               "updatedAt": 1791958539636
+            },
+            {
+              "id": "j9F28gKdmL01",
+              "text": "✅ [[D4_아웃라이너에_Git_사상을_이식한다_스테이징_Diff대조_브랜치캔버스]]",
+              "children": [
+                {
+                  "id": "mQ71xPnd09B2",
+                  "text": "🧪 [[EXP07_아웃라이너_Git_사상_이식_스테이징_Diff_브랜치_캔버스_프로토타입]] (로컬 스테이징 · 인라인 Diff · 캔버스 브랜칭)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791958539636,
+                  "updatedAt": 1791958539636
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791958539636,
+              "updatedAt": 1791958539636
             }
           ],
           "isFolded": false,
