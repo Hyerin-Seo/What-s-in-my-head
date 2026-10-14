@@ -1,0 +1,221 @@
+{
+  "version": "1.0.0",
+  "id": "ujYEi5UE7pJi",
+  "title": "2026.10.14_공유회_산출물_연결구조_TOC",
+  "rootNodes": [
+    {
+      "id": "NhLVCwWxMXWh",
+      "text": "[[2026.10.14 15분 공유회]] (상위 허브)",
+      "children": [
+        {
+          "id": "jaUeey84ylRw",
+          "text": "🌐 [Cluster 1] 버전 관리 및 화면 전환 (Branching & View Flip)",
+          "children": [
+            {
+              "id": "k9deSWcvA4D1",
+              "text": "[[1.1_버전업을_화면에서_무엇으로_받칠까_줌_안_버전_탭이냐_캔버스_전환이냐]]",
+              "children": [
+                {
+                  "id": "uzTItBbSA6oQ",
+                  "text": "🔗 연계 안건 ➔ [[1.2_95점_감각을_AI에_무엇으로_넘길까_채팅이냐_화면이냐]]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791957673823,
+                  "updatedAt": 1791957673823
+                },
+                {
+                  "id": "DdZrEHgdRlbp",
+                  "text": "🧪 파생 실험 ➔ [[EXP01_줌_안_버전_탭_인터랙션_프로토타입]]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791957673823,
+                  "updatedAt": 1791957673823
+                },
+                {
+                  "id": "V5Nm78VsgWEP",
+                  "text": "🧪 파생 실험 ➔ [[EXP02_아웃라인_캔버스_보드뷰_플립_전환_프로토타입]]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791957673823,
+                  "updatedAt": 1791957673823
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957673823,
+          "updatedAt": 1791957673823
+        },
+        {
+          "id": "VyY3SjudDahY",
+          "text": "🌐 [Cluster 2] 작업자 감각 전달 및 인라인 레퍼런스 (Intent & In-line Annotation)",
+          "children": [
+            {
+              "id": "JbKAfi49trZJ",
+              "text": "[[1.2_95점_감각을_AI에_무엇으로_넘길까_채팅이냐_화면이냐]]",
+              "children": [
+                {
+                  "id": "sqZFZIemkyQU",
+                  "text": "🔗 연계 안건 ➔ [[1.1_버전업을_화면에서_무엇으로_받칠까_줌_안_버전_탭이냐_캔버스_전환이냐]]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791957673823,
+                  "updatedAt": 1791957673823
+                },
+                {
+                  "id": "tcfGtatvaq7R",
+                  "text": "✅ 귀결 결정 ➔ [[D2_레퍼런스는_아웃라인_위에_어노테이션으로_붙이는_방식을_해_본다]]",
+                  "children": [
+                    {
+                      "id": "DoWGusns1XaL",
+                      "text": "🧪 파생 실험 ➔ [[EXP04_아웃라인_노드_인라인_어노테이션_코멘트_프로토타입]]",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791957673823,
+                      "updatedAt": 1791957673823
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1791957673823,
+                  "updatedAt": 1791957673823
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957673823,
+          "updatedAt": 1791957673823
+        },
+        {
+          "id": "qp3cJdu8LIKa",
+          "text": "🌐 [Cluster 3] 레퍼런스 역공학, 템플릿 고정 및 듀얼 뷰 (Reverse Engineering & Split View)",
+          "children": [
+            {
+              "id": "TqQhs1JVCRqF",
+              "text": "[[1.3_레퍼런스_블로그를_뼈대째_따서_빈칸_채우기로_쓸까]]",
+              "children": [
+                {
+                  "id": "YXKJVnqtnMCx",
+                  "text": "🧪 파생 실험 ➔ [[EXP05_레퍼런스_문서_뼈대_역공학_및_빈칸_채우기_템플릿_실험]]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791957673823,
+                  "updatedAt": 1791957673823
+                },
+                {
+                  "id": "Cqw3wElgvxnI",
+                  "text": "✅ 귀결 결정 ➔ [[D1_서식은_템플릿으로_먼저_준다_비정형_문서도_템플릿을_고정한다]]",
+                  "children": [
+                    {
+                      "id": "EJZPoL25xzrI",
+                      "text": "🧪 파생 실험 ➔ [[EXP06_비정형_문서_작성을_위한_고정_템플릿_및_3스텝_파이프라인_실험]]",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791957673823,
+                      "updatedAt": 1791957673823
+                    },
+                    {
+                      "id": "Nk8eP6Mi1bH7",
+                      "text": "✅ 연계 결정 ➔ [[D3_아웃라인_가독성을_각_잡고_올린다_읽는_건_오른쪽_미리보기로]]",
+                      "children": [
+                        {
+                          "id": "EwlJglyj1vsL",
+                          "text": "🧪 파생 실험 ➔ [[EXP03_좌측_아웃라인_우측_실시간_미리보기_분할_뷰_실험]]",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1791957673823,
+                          "updatedAt": 1791957673823
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1791957673823,
+                      "updatedAt": 1791957673823
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1791957673823,
+                  "updatedAt": 1791957673823
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957673823,
+          "updatedAt": 1791957673823
+        },
+        {
+          "id": "JTmXTCF6XkSL",
+          "text": "📊 [파일 간 상호 링크 매트릭스 (Cross-Link Summary)]",
+          "children": [
+            {
+              "id": "RW9L9axgYHv2",
+              "text": "[[1.1_버전업을_화면에서_무엇으로_받칠까_줌_안_버전_탭이냐_캔버스_전환이냐]] ➔ [[1.2_95점_감각을_AI에_무엇으로_넘길까_채팅이냐_화면이냐]] · [[EXP01_줌_안_버전_탭_인터랙션_프로토타입]] · [[EXP02_아웃라인_캔버스_보드뷰_플립_전환_프로토타입]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            },
+            {
+              "id": "KTkH0NMu35mi",
+              "text": "[[1.2_95점_감각을_AI에_무엇으로_넘길까_채팅이냐_화면이냐]] ➔ [[1.1_버전업을_화면에서_무엇으로_받칠까_줌_안_버전_탭이냐_캔버스_전환이냐]] · [[D2_레퍼런스는_아웃라인_위에_어노테이션으로_붙이는_방식을_해_본다]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            },
+            {
+              "id": "tOrmTruZgpJn",
+              "text": "[[1.3_레퍼런스_블로그를_뼈대째_따서_빈칸_채우기로_쓸까]] ➔ [[D1_서식은_템플릿으로_먼저_준다_비정형_문서도_템플릿을_고정한다]] · [[EXP05_레퍼런스_문서_뼈대_역공학_및_빈칸_채우기_템플릿_실험]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            },
+            {
+              "id": "SFvQgt7VAKAt",
+              "text": "[[D1_서식은_템플릿으로_먼저_준다_비정형_문서도_템플릿을_고정한다]] ➔ [[1.3_레퍼런스_블로그를_뼈대째_따서_빈칸_채우기로_쓸까]] · [[D3_아웃라인_가독성을_각_잡고_올린다_읽는_건_오른쪽_미리보기로]] · [[EXP06_비정형_문서_작성을_위한_고정_템플릿_및_3스텝_파이프라인_실험]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            },
+            {
+              "id": "89xUTro5htVn",
+              "text": "[[D2_레퍼런스는_아웃라인_위에_어노테이션으로_붙이는_방식을_해_본다]] ➔ [[1.2_95점_감각을_AI에_무엇으로_넘길까_채팅이냐_화면이냐]] · [[EXP04_아웃라인_노드_인라인_어노테이션_코멘트_프로토타입]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            },
+            {
+              "id": "rQxU7FiCXwJa",
+              "text": "[[D3_아웃라인_가독성을_각_잡고_올린다_읽는_건_오른쪽_미리보기로]] ➔ [[D1_서식은_템플릿으로_먼저_준다_비정형_문서도_템플릿을_고정한다]] · [[EXP03_좌측_아웃라인_우측_실시간_미리보기_분할_뷰_실험]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957673823,
+              "updatedAt": 1791957673823
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957673823,
+          "updatedAt": 1791957673823
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791957673823,
+      "updatedAt": 1791957673823
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791957673823,
+  "updatedAt": 1791957673823
+}
