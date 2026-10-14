@@ -525,6 +525,15 @@ function previousSiblingExcept(tree, targetId, skip) {
 	for (let i = siblings.indexOf(targetId) - 1; i >= 0; i--) if (!skip.has(siblings[i])) return siblings[i];
 	return null;
 }
+/** `targetId` 바로 뒤의 형제 중 `skip` 에 없는 가장 가까운 것 */
+function nextSiblingExcept(tree, targetId, skip) {
+	const parentId = tree.nodes.get(targetId)?.parentId;
+	const siblings = parentId == null ? [] : tree.nodes.get(parentId)?.childIds ?? [];
+	const startIndex = siblings.indexOf(targetId);
+	if (startIndex === -1) return null;
+	for (let i = startIndex + 1; i < siblings.length; i++) if (!skip.has(siblings[i])) return siblings[i];
+	return null;
+}
 /**
 * 노드들을 대상 기준 자리로 옮기는 요청. 대상이 없으면 빈 배열이다.
 * 대상에 `ROOT_ID` 를 주면 맨 위 단계의 맨 앞(inside-start) 또는 맨 끝(inside)이다.
@@ -632,6 +641,26 @@ function outdentRequests(tree, id) {
 		under: parentId,
 		inside: false
 	}];
+}
+/**
+* 노드(들)를 이전 형제 위('up') 또는 다음 형제 아래('down')로 한 칸 옮기는 요청.
+* 더 이상 위/아래로 갈 수 없으면 빈 배열이다.
+*/
+function stepMoveRequests(tree, ids, direction) {
+	const topmost = getTopmostIds(tree, ids);
+	if (topmost.length === 0) return [];
+	const moving = new Set(topmost);
+	if (direction === "up") {
+		const firstId = topmost[0];
+		const previous = previousSiblingExcept(tree, firstId, moving);
+		if (!previous) return [];
+		return moveRequests(tree, topmost, previous, "before");
+	} else {
+		const lastId = topmost[topmost.length - 1];
+		const next = nextSiblingExcept(tree, lastId, moving);
+		if (!next) return [];
+		return moveRequests(tree, topmost, next, "after");
+	}
 }
 /** 중첩 노드들을 새로 만들 노드의 입력으로 바꾼다. id 와 시각은 버린다. (엔진이 새로 정한다) */
 function toNodeInputs(nodes) {
@@ -779,18 +808,22 @@ function getTargetName(target) {
 function flattenTree(rootNodes, zoomedId, options) {
 	let displayNodes = rootNodes;
 	let basePath = [];
+	let baseAncestorCompleted = false;
 	if (zoomedId) {
 		const target = findNode(rootNodes, zoomedId);
 		if (target) {
 			displayNodes = target.children;
-			basePath = getPath(rootNodes, zoomedId).map((n) => n.id);
+			const pathNodes = getPath(rootNodes, zoomedId);
+			basePath = pathNodes.map((n) => n.id);
+			baseAncestorCompleted = pathNodes.some((n) => n.isCompleted === true);
 		}
 	}
 	const result = [];
 	const hideCompleted = options?.hideCompleted ?? false;
-	function traverse(nodes, depth, parentId, currentPath) {
+	function traverse(nodes, depth, parentId, currentPath, ancestorCompleted) {
 		for (const node of nodes) {
-			if (hideCompleted && node.isCompleted) continue;
+			const isSelfCompleted = node.isCompleted === true;
+			if (hideCompleted && (isSelfCompleted || ancestorCompleted)) continue;
 			const nodePath = [...currentPath, node.id];
 			const hasChildren = node.children.length > 0;
 			const isFolded = !!node.isFolded;
@@ -801,12 +834,13 @@ function flattenTree(rootNodes, zoomedId, options) {
 				parentId,
 				hasChildren,
 				isFolded,
-				path: nodePath
+				path: nodePath,
+				isAncestorCompleted: ancestorCompleted
 			});
-			if (hasChildren && !isFolded) traverse(node.children, depth + 1, node.id, nodePath);
+			if (hasChildren && !isFolded) traverse(node.children, depth + 1, node.id, nodePath, ancestorCompleted || isSelfCompleted);
 		}
 	}
-	traverse(displayNodes, 0, zoomedId || null, basePath);
+	traverse(displayNodes, 0, zoomedId || null, basePath, baseAncestorCompleted);
 	return result;
 }
 //#endregion
@@ -1345,6 +1379,17 @@ function createOutlineEditorStore(document) {
 				}
 				const requests = targetId !== null ? moveRequests(tree, topmost, targetId, position) : moveRequests(tree, topmost, ROOT_ID, position === "inside-start" ? position : "inside");
 				apply(requests);
+				return true;
+			},
+			moveNodesStep: (ids, direction) => {
+				const requests = stepMoveRequests(currentTree(), ids, direction);
+				if (requests.length === 0) return false;
+				const currentFocused = get().focusedNodeId;
+				const currentCaret = get().targetCaretOffset;
+				apply(requests, {
+					focusedNodeId: currentFocused,
+					targetCaretOffset: currentCaret
+				});
 				return true;
 			},
 			duplicateNodes: (sourceIds) => transact(() => {
@@ -2607,7 +2652,7 @@ var X = createLucideIcon("x", [["path", {
 * - 화살표: 클릭은 한 단계 접기/펼치기, 더블클릭은 하위 전체 접기/펼치기
 * - 불릿 점: 호버 링, 좌클릭 줌인, 우클릭 노드 메뉴, 잡고 끌면 이동 (Alt 를 누른 채 놓으면 복제)
 */
-var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isTodo = false, isDotSubtle = false, onToggleFold, onToggleFoldDeep, onZoom, onOpenMenu, onToggleCompleted, onDragStart, onDragEnd }) => {
+var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isAncestorCompleted = false, isTodo = false, isDotSubtle = false, onToggleFold, onToggleFoldDeep, onZoom, onOpenMenu, onToggleCompleted, onDragStart, onDragEnd }) => {
 	const menuAnchor = (el) => {
 		const rect = el.getBoundingClientRect();
 		return {
@@ -2663,7 +2708,7 @@ var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isTodo = fals
 				},
 				className: "w-5 h-5 flex items-center justify-center rounded-full ring-0 ring-(--interactive-accent)/0 hover:bg-(--background-modifier-hover) hover:ring-4 hover:ring-(--interactive-accent)/40 transition-all duration-150 cursor-grab active:cursor-grabbing group/dot",
 				title: "클릭: 줌인 · 끌기: 이동 (Alt: 복제) · 우클릭: 메뉴",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: `rounded-full transition-all duration-150 ${isCompleted ? "opacity-50" : ""} ${isDotSubtle && !hasChildren ? "opacity-0 group-hover/row:opacity-100" : ""} ${hasChildren && isFolded ? "w-3 h-3 bg-(--interactive-accent) ring-2 ring-(--interactive-accent)/30" : hasChildren ? "w-2.5 h-2.5 bg-(--text-muted) ring-1 ring-(--background-modifier-border-hover) group-hover/dot:bg-(--interactive-accent)" : "w-1.5 h-1.5 bg-(--text-faint) group-hover/dot:bg-(--interactive-accent)"}` })
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: `rounded-full transition-all duration-150 ${isCompleted || isAncestorCompleted ? "opacity-50" : ""} ${isDotSubtle && !hasChildren ? "opacity-0 group-hover/row:opacity-100" : ""} ${hasChildren && isFolded ? "w-3 h-3 bg-(--interactive-accent) ring-2 ring-(--interactive-accent)/30" : hasChildren ? "w-2.5 h-2.5 bg-(--text-muted) ring-1 ring-(--background-modifier-border-hover) group-hover/dot:bg-(--interactive-accent)" : "w-1.5 h-1.5 bg-(--text-faint) group-hover/dot:bg-(--interactive-accent)"}` })
 			}),
 			isTodo && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				type: "button",
@@ -3007,6 +3052,18 @@ var WEB_URL_PATTERN = /https?:\/\/\S+/i;
 function hasLinkOrTag(text) {
 	return WIKILINK_PATTERN.test(text) || TAG_PATTERN.test(text) || MARKDOWN_LINK_PATTERN.test(text) || WEB_URL_PATTERN.test(text);
 }
+/**
+* 불릿 텍스트가 옵시디언 마크다운 렌더러에 의해 <ol>, <ul>, <h1>, <blockquote> 등의 블록 요소로
+* 오인 파싱되는 것을 원천 차단하기 위해, 첫머리의 블록 트리거 문자들을 이스케이프한다.
+*/
+function toInlineMarkdown(text) {
+	let inline = text.replace(/^(\s*)(\d+)\.(?=\s)/, "$1$2\\.");
+	inline = inline.replace(/^(\s*)([-*+])(?=\s)/, "$1\\$2");
+	inline = inline.replace(/^(\s*)(#{1,6})(?=\s)/, "$1\\$2");
+	inline = inline.replace(/^(\s*)(>+)(?=\s)/, "$1\\$2");
+	inline = inline.replace(/^(\s*)([-*+]\s*\[[ xX]\])/, "$1\\$2");
+	return inline;
+}
 /** 입력칸의 글자 기준 위치에 캐럿을 둔다. */
 function placeCaret(el, offset) {
 	try {
@@ -3028,7 +3085,8 @@ var MarkdownBulletView = ({ text, renderMarkdown, openLink, hoverLink, className
 		if (!container) return;
 		const staging = container.ownerDocument.createElement("div");
 		let isStale = false;
-		Promise.resolve(renderMarkdown(text, staging)).then(() => {
+		const safeText = toInlineMarkdown(text);
+		Promise.resolve(renderMarkdown(safeText, staging)).then(() => {
 			if (!isStale) container.replaceChildren(...Array.from(staging.childNodes));
 		});
 		return () => {
@@ -3070,13 +3128,13 @@ var MarkdownBulletView = ({ text, renderMarkdown, openLink, hoverLink, className
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 		ref: containerRef,
 		"data-node-id": nodeId,
-		className: `${className} cursor-text select-text [&>p]:m-0 [&>p]:inline`,
+		className: `${className} cursor-text select-text [&_*]:inline [&_*]:m-0 [&_*]:p-0 [&_p]:m-0 [&_p]:inline [&_ol]:m-0 [&_ol]:p-0 [&_ol]:list-none [&_ul]:m-0 [&_ul]:p-0 [&_ul]:list-none [&_li]:inline [&_a.tag]:inline-flex [&_a.internal-link]:inline-flex`,
 		onClick: handleClick,
 		onMouseOver: handleMouseOver,
 		onMouseDown: handleMouseDown
 	});
 };
-var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = false, onKeyDown }) => {
+var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = false, isAncestorCompleted = false, onKeyDown }) => {
 	const ref = (0, import_react.useRef)(null);
 	/** 포커스 해제 확인을 기다리는 중이면, 그것을 취소하는 함수 */
 	const cancelBlurCheck = (0, import_react.useRef)(null);
@@ -3175,7 +3233,8 @@ var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = fa
 		}, 120);
 		cancelBlurCheck.current = () => win.clearTimeout(timer);
 	};
-	const commonClassName = `flex-1 py-(--outline-line-gap) px-1.5 min-h-[calc(1lh+2*var(--outline-line-gap))] font-[var(--font-text-theme)] leading-[1.7] tracking-[-0.005em] rounded hover:bg-(--background-modifier-hover) focus:bg-(--background-modifier-hover)/60 focus:ring-1 focus:ring-(--interactive-accent)/50 transition-colors break-words whitespace-pre-wrap ${NODE_TEXT_SIZE[nodeType]} ${TYPE_STYLES[nodeType]} ${isCompleted ? "text-(--text-muted) opacity-60 line-through decoration-(--background-modifier-border-hover)" : nodeType === "quote" ? "text-(--text-muted) italic" : "text-(--text-normal)"}`;
+	const isInheritedCompleted = !isCompleted && isAncestorCompleted;
+	const commonClassName = `flex-1 py-(--outline-line-gap) px-1.5 min-h-[calc(1lh+2*var(--outline-line-gap))] font-[var(--font-text-theme)] leading-[1.7] tracking-[-0.005em] rounded hover:bg-(--background-modifier-hover) focus:bg-(--background-modifier-hover)/60 focus:ring-1 focus:ring-(--interactive-accent)/50 transition-colors break-words whitespace-pre-wrap ${NODE_TEXT_SIZE[nodeType]} ${TYPE_STYLES[nodeType]} ${isCompleted ? "text-(--text-muted) opacity-60 line-through decoration-(--background-modifier-border-hover)" : isInheritedCompleted ? "text-(--text-muted) opacity-60" : nodeType === "quote" ? "text-(--text-muted) italic" : "text-(--text-normal)"}`;
 	if (!isFocused && hasFormatting && renderMarkdown) return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MarkdownBulletView, {
 		text: initialText,
 		renderMarkdown,
@@ -3493,6 +3552,7 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 		}
 		if (e.key === "Enter" && isModifier && !e.nativeEvent.isComposing) {
 			e.preventDefault();
+			e.stopPropagation();
 			toggleCompleted(nodeId);
 			return;
 		}
@@ -3532,7 +3592,27 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 			store.joinWithPrevious(nodeId, prevId, mergedText, caretOffset);
 			return;
 		}
-		if (e.key === "ArrowUp" && !e.shiftKey) {
+		if (e.key === "ArrowUp" && e.altKey && !e.shiftKey) {
+			e.preventDefault();
+			e.stopPropagation();
+			store.setFocus(nodeId, caretPos);
+			if (store.moveNodesStep([nodeId], "up")) winOf(targetElement).requestAnimationFrame(() => {
+				targetElement.focus();
+				store.setFocus(nodeId, caretPos);
+			});
+			return;
+		}
+		if (e.key === "ArrowDown" && e.altKey && !e.shiftKey) {
+			e.preventDefault();
+			e.stopPropagation();
+			store.setFocus(nodeId, caretPos);
+			if (store.moveNodesStep([nodeId], "down")) winOf(targetElement).requestAnimationFrame(() => {
+				targetElement.focus();
+				store.setFocus(nodeId, caretPos);
+			});
+			return;
+		}
+		if (e.key === "ArrowUp" && !e.shiftKey && !e.altKey) {
 			const prevId = getNextFocusId(flattenedNodes, nodeId, "up");
 			if (prevId) {
 				e.preventDefault();
@@ -3540,7 +3620,7 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 			}
 			return;
 		}
-		if (e.key === "ArrowDown" && !e.shiftKey) {
+		if (e.key === "ArrowDown" && !e.shiftKey && !e.altKey) {
 			if (flattenedNodes.find((n) => n.id === nodeId)?.node.note) {
 				e.preventDefault();
 				startNoteEdit(nodeId);
@@ -3873,6 +3953,7 @@ var OutlineRow = ({ item, navigableNodes, isSelected, isDragging, dropPosition, 
 					hasChildren: item.hasChildren,
 					isFolded: item.isFolded,
 					isCompleted,
+					isAncestorCompleted: item.isAncestorCompleted,
 					isTodo: nodeType === "todo",
 					isDotSubtle: nodeType === "paragraph",
 					onToggleFold: () => toggleFold(item.id),
@@ -3898,6 +3979,7 @@ var OutlineRow = ({ item, navigableNodes, isSelected, isDragging, dropPosition, 
 							initialText: node.text,
 							nodeType,
 							isCompleted,
+							isAncestorCompleted: item.isAncestorCompleted,
 							onKeyDown: handleKeyDown
 						}), node.viewMode === "board" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 							className: "ml-2 flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] text-(--text-accent) bg-(--interactive-accent)/10 border border-(--interactive-accent)/20 select-none",
@@ -4743,7 +4825,19 @@ function useRowSelection(flattenedNodes) {
 				store.redo();
 				return;
 			}
-			if (e.key === "ArrowUp" && !e.shiftKey) {
+			if (e.key === "ArrowUp" && e.altKey && !e.shiftKey) {
+				e.preventDefault();
+				e.stopPropagation();
+				store.moveNodesStep(selectedIds, "up");
+				return;
+			}
+			if (e.key === "ArrowDown" && e.altKey && !e.shiftKey) {
+				e.preventDefault();
+				e.stopPropagation();
+				store.moveNodesStep(selectedIds, "down");
+				return;
+			}
+			if (e.key === "ArrowUp" && !e.shiftKey && !e.altKey) {
 				e.preventDefault();
 				e.stopPropagation();
 				const firstId = selectedIds[0];
@@ -4752,7 +4846,7 @@ function useRowSelection(flattenedNodes) {
 				store.setFocus(targetId, 0);
 				return;
 			}
-			if (e.key === "ArrowDown" && !e.shiftKey) {
+			if (e.key === "ArrowDown" && !e.shiftKey && !e.altKey) {
 				e.preventDefault();
 				e.stopPropagation();
 				const lastId = selectedIds[selectedIds.length - 1];
@@ -4826,6 +4920,8 @@ var OutlineTree = () => {
 	const selectedNodeIds = useEditorStore((s) => s.selectedNodeIds);
 	const addBulletAtEnd = useEditorStore((s) => s.addBulletAtEnd);
 	const clearSelection = useEditorStore((s) => s.clearSelection);
+	const store = useEditorStore((s) => s);
+	const win = useEditorWindow();
 	const { canAttach, isDraggingFile, dropOnTree } = useFileAttach();
 	const { menu, menuRef, openMenu, closeMenu } = useContextMenu();
 	const { dragIds, dropTarget, startDrag, dragOverRow, dropOnRow, endDrag } = useDragAndDrop();
@@ -4835,6 +4931,38 @@ var OutlineTree = () => {
 	}, [rootNodes, activeRootId]);
 	const navigableNodes = (0, import_react.useMemo)(() => flattenedNodes.filter((n) => n.node.nodeType !== "divider"), [flattenedNodes]);
 	const { handleMouseDown } = useRowSelection(flattenedNodes);
+	(0, import_react.useEffect)(() => {
+		const handleCaptureKeyDown = (e) => {
+			if (store.selectedNodeIds.length > 0) return;
+			const active = win.document.activeElement;
+			if (!(active instanceof HTMLElement)) return;
+			const rowEl = active.closest("[data-node-id]");
+			if (!rowEl) return;
+			const nodeId = rowEl.dataset.nodeId;
+			if (!nodeId) return;
+			const isModifier = e.ctrlKey || e.metaKey;
+			if (e.key === "Enter" && isModifier && !e.shiftKey && !e.isComposing) {
+				e.preventDefault();
+				e.stopPropagation();
+				store.toggleCompleted(nodeId);
+				return;
+			}
+			if ((e.key === "ArrowUp" || e.key === "ArrowDown") && e.altKey && !e.shiftKey) {
+				e.preventDefault();
+				e.stopPropagation();
+				const caretPos = getCaretCharacterOffsetWithin(active);
+				const direction = e.key === "ArrowUp" ? "up" : "down";
+				store.setFocus(nodeId, caretPos);
+				if (store.moveNodesStep([nodeId], direction)) win.requestAnimationFrame(() => {
+					active.focus();
+					store.setFocus(nodeId, caretPos);
+				});
+				return;
+			}
+		};
+		win.addEventListener("keydown", handleCaptureKeyDown, true);
+		return () => win.removeEventListener("keydown", handleCaptureKeyDown, true);
+	}, [win, store]);
 	const handlers = (0, import_react.useMemo)(() => ({
 		openMenu,
 		startDrag,

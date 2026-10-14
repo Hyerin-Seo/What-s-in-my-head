@@ -2032,12 +2032,56 @@
   }
 }
 
-.vibe-outliner .\[\&\>p\]\:m-0 > p {
+.vibe-outliner .\[\&_\*\]\:m-0 * {
   margin: 0;
 }
 
-.vibe-outliner .\[\&\>p\]\:inline > p {
+.vibe-outliner .\[\&_\*\]\:inline * {
   display: inline;
+}
+
+.vibe-outliner .\[\&_\*\]\:p-0 * {
+  padding: 0;
+}
+
+.vibe-outliner .\[\&_a\.internal-link\]\:inline-flex a.internal-link, .vibe-outliner .\[\&_a\.tag\]\:inline-flex a.tag {
+  display: inline-flex;
+}
+
+.vibe-outliner .\[\&_li\]\:inline li {
+  display: inline;
+}
+
+.vibe-outliner .\[\&_ol\]\:m-0 ol {
+  margin: 0;
+}
+
+.vibe-outliner .\[\&_ol\]\:list-none ol {
+  list-style-type: none;
+}
+
+.vibe-outliner .\[\&_ol\]\:p-0 ol {
+  padding: 0;
+}
+
+.vibe-outliner .\[\&_p\]\:m-0 p {
+  margin: 0;
+}
+
+.vibe-outliner .\[\&_p\]\:inline p {
+  display: inline;
+}
+
+.vibe-outliner .\[\&_ul\]\:m-0 ul {
+  margin: 0;
+}
+
+.vibe-outliner .\[\&_ul\]\:list-none ul {
+  list-style-type: none;
+}
+
+.vibe-outliner .\[\&_ul\]\:p-0 ul {
+  padding: 0;
 }
 
 .vibe-outliner [contenteditable]:focus {
@@ -2058,6 +2102,19 @@
 
 .vibe-outliner .outline-menu-pop {
   animation: .11s ease-out outline-menu-pop;
+}
+
+.vibe-outliner [data-node-id] p, .vibe-outliner [data-node-id] ol, .vibe-outliner [data-node-id] ul, .vibe-outliner [data-node-id] li, .vibe-outliner [data-node-id] blockquote, .vibe-outliner [data-node-id] h1, .vibe-outliner [data-node-id] h2, .vibe-outliner [data-node-id] h3, .vibe-outliner [data-node-id] h4, .vibe-outliner [data-node-id] h5, .vibe-outliner [data-node-id] h6 {
+  line-height: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline !important;
+}
+
+.vibe-outliner [data-node-id] a.tag, .vibe-outliner [data-node-id] a.internal-link {
+  vertical-align: baseline !important;
+  align-items: center !important;
+  display: inline-flex !important;
 }
 
 .vibe-outliner {
@@ -2107,6 +2164,30 @@
   padding-block: 0 !important;
 }
 
+.vibe-outliner [data-row-text] *, .vibe-outliner [data-node-id] * {
+  margin: 0 !important;
+  margin-block: 0 !important;
+  margin-inline: 0 !important;
+  padding-block: 0 !important;
+  list-style: none !important;
+}
+
+.vibe-outliner [data-row-text] p, .vibe-outliner [data-row-text] ol, .vibe-outliner [data-row-text] ul, .vibe-outliner [data-row-text] li, .vibe-outliner [data-row-text] blockquote, .vibe-outliner [data-row-text] h1, .vibe-outliner [data-row-text] h2, .vibe-outliner [data-row-text] h3, .vibe-outliner [data-row-text] h4, .vibe-outliner [data-row-text] h5, .vibe-outliner [data-row-text] h6 {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline !important;
+}
+
+.vibe-outliner [data-row-text] a.tag, .vibe-outliner [data-row-text] a.internal-link {
+  vertical-align: baseline !important;
+  align-items: center !important;
+  line-height: 1.2 !important;
+  display: inline-flex !important;
+}
+
 .vibe-outliner a.internal-link {
   color: var(--link-color, var(--text-accent, #7057ff)) !important;
   background-color: var(--text-accent, #7057ff) !important;
@@ -2136,7 +2217,6 @@
   font-weight: 500 !important;
   text-decoration: none !important;
   transition: all .15s ease-in-out !important;
-  display: inline !important;
 }
 
 .vibe-outliner a.internal-link:hover {
@@ -2158,6 +2238,51 @@
   .vibe-outliner a.internal-link:hover {
     box-shadow: 0 0 0 1px color-mix(in srgb, var(--text-accent, #7057ff) 20%, transparent) !important;
   }
+}
+
+.vibe-outliner a.tag {
+  color: var(--tag-color, var(--text-accent, #7057ff)) !important;
+  background-color: var(--tag-background, var(--text-accent, #7057ff)) !important;
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+  .vibe-outliner a.tag {
+    background-color: var(--tag-background, color-mix(in srgb, var(--text-accent, #7057ff) 12%, transparent)) !important;
+  }
+}
+
+.vibe-outliner a.tag {
+  border: 1px solid var(--text-accent, #7057ff) !important;
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+  .vibe-outliner a.tag {
+    border: 1px solid color-mix(in srgb, var(--text-accent, #7057ff) 20%, transparent) !important;
+  }
+}
+
+.vibe-outliner a.tag {
+  border-radius: var(--tag-radius, 4px) !important;
+  cursor: pointer !important;
+  margin: 0 .15em !important;
+  padding: .05em .4em !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: all .15s ease-in-out !important;
+}
+
+.vibe-outliner a.tag:hover {
+  background-color: var(--text-accent, #7057ff) !important;
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+  .vibe-outliner a.tag:hover {
+    background-color: color-mix(in srgb, var(--text-accent, #7057ff) 22%, transparent) !important;
+  }
+}
+
+.vibe-outliner a.tag:hover {
+  border-color: var(--text-accent, #7057ff) !important;
 }
 
 @property --tw-translate-x {

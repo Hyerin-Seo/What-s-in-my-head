@@ -71,14 +71,6 @@
           "text": "🏗️ 2. 내부 구조 & 아키텍처 관점 (Architecture : 호스트 연동과 생태계 침투 원리)",
           "children": [
             {
-              "id": "QqUGms04FqXT",
-              "text": "💡 [관점 정의] : App 객체를 중심으로 화면(Workspace/View), 이종 포맷(.md/.canvas/.base) 상호운용성, 지식 연결망, 그리고 데이터(Vault/Cache)가 맞물려 돌아가는 내부 뼈대를 이해하여 원하는 기능을 자유자재로 구현하는 관점",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1791889097958,
-              "updatedAt": 1791894129901
-            },
-            {
               "id": "dIcT2rEcIpE1",
               "text": "1️⃣ 사전(Dictionary)에서 레시피(Recipe)로 : 옵시디언 공식 API 명세서를 내 프로젝트에 알맞게 적용하는 실전 방법론",
               "children": [
@@ -279,22 +271,15 @@
               "updatedAt": 1791900665571
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
+          "note": "💡 [관점 정의] : App 객체를 중심으로 화면(Workspace/View), 이종 포맷(.md/.canvas/.base) 상호운용성, 지식 연결망, 그리고 데이터(Vault/Cache)가 맞물려 돌아가는 내부 뼈대를 이해하여 원하는 기능을 자유자재로 구현하는 관점",
           "createdAt": 1791889097958,
-          "updatedAt": 1791894504454
+          "updatedAt": 1791939741067
         },
         {
           "id": "eDiToReNgIn03",
           "text": "⌨️ 3. 에디터 엔진 & 인터랙션 아키텍처 관점 (Editor Engine : 계층형 트리 조작과 키보드 제어)",
           "children": [
-            {
-              "id": "eDiToRdEfIn01",
-              "text": "💡 [관점 정의] : 옵시디언이 제공하는 빈 뷰(View) 컨테이너 안에 계층형 트리 상태 머신, 키보드 트랜잭션, 호스트 간섭 방어, 그리고 드래그앤드롭 파이프라인을 구축하여 살아 움직이는 에디터 엔진을 완성하는 관점",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1791892300000,
-              "updatedAt": 1791892300000
-            },
             {
               "id": "tReEsTaTeMc01",
               "text": "1️⃣ 계층형 트리 상태 머신과 불변 데이터 모델링 (Tree State & Normalization)",
@@ -397,8 +382,9 @@
             }
           ],
           "isFolded": false,
+          "note": "💡 [관점 정의] : 옵시디언이 제공하는 빈 뷰(View) 컨테이너 안에 계층형 트리 상태 머신, 키보드 트랜잭션, 호스트 간섭 방어, 그리고 드래그앤드롭 파이프라인을 구축하여 살아 움직이는 에디터 엔진을 완성하는 관점",
           "createdAt": 1791892300000,
-          "updatedAt": 1791907038429
+          "updatedAt": 1791939886696
         },
         {
           "id": "sNOaKBBCgsuZ",
@@ -914,14 +900,6 @@
           "text": "🏗️ 8. 옵시디언 시스템 & 프레임워크 아키텍처 관점 (System Architecture : App 싱글톤 6대 공인 코어 모듈 심층 해부)",
           "children": [
             {
-              "id": "oBsSyStEmDf0",
-              "text": "💡 [관점 정의] : 옵시디언 최상위 App 싱글톤 객체가 직접 거느리는 6대 공인 프로퍼티(Workspace, Vault, MetadataCache, FileManager, Keymap, Scope)의 책임 분리와 상호작용 메커니즘을 컴퓨터 공학적으로 완벽히 해부하는 총론 관점",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1791892900000,
-              "updatedAt": 1791892900000
-            },
-            {
               "id": "mOdUlE1wOrKs",
               "text": "1️⃣ Workspace : 화면 공간 & 레이아웃 계층 트리 관리자",
               "children": [
@@ -1017,7 +995,7 @@
                   "updatedAt": 1791892900000
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1791892900000,
               "updatedAt": 1791892900000
             },
@@ -1073,21 +1051,14 @@
             }
           ],
           "isFolded": false,
+          "note": "💡 [관점 정의] : 옵시디언 최상위 App 싱글톤 객체가 직접 거느리는 6대 공인 프로퍼티(Workspace, Vault, MetadataCache, FileManager, Keymap, Scope)의 책임 분리와 상호작용 메커니즘을 컴퓨터 공학적으로 완벽히 해부하는 총론 관점",
           "createdAt": 1791892900000,
-          "updatedAt": 1791892900000
+          "updatedAt": 1791939759004
         },
         {
           "id": "sEcTiOn09cOrE",
           "text": "⚙️ 9. 에디터 인터랙션 및 키보드 트리 제어 (Editor Interaction 및 Keyboard Tree Control)",
           "children": [
-            {
-              "id": "sEcTiOn09dEf0",
-              "text": "💡 [섹션 정의] : 에디터 Leaf 내부 렌더링부터 Enter·Backspace·Tab 트랜잭션, 커서 복원, 전역 핫키 충돌을 막는 스코프 격리까지의 상호작용 체계",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1791893100000,
-              "updatedAt": 1791896200000
-            },
             {
               "id": "nInE1tReEsTa",
               "text": "1️⃣ 계층형 트리 상태 머신과 정규화 불변 모델 (Tree State 및 Normalization)",
@@ -1279,21 +1250,14 @@
             }
           ],
           "isFolded": false,
+          "note": "- 💡 [섹션 정의] : 에디터 Leaf 내부 렌더링부터 Enter·Backspace·Tab 트랜잭션, 커서 복원, 전역 핫키 충돌을 막는 스코프 격리까지의 상호작용 체계",
           "createdAt": 1791893100000,
-          "updatedAt": 1791896200000
+          "updatedAt": 1791939769126
         },
         {
           "id": "sEcTiOn10hOsT",
           "text": "🔌 10. 멀티 프로젝션 및 호스트 어댑터 연동 (Multi-Projection 및 Platform Adapters)",
           "children": [
-            {
-              "id": "sEcTiOn10dEf0",
-              "text": "💡 [섹션 정의] : 내부 트리를 캔버스·마크다운 등 이종 포맷으로 변환·투영하고, 옵시디언 6대 공인 모듈과 수명주기에 결합하는 플랫폼 어댑터 연동 해부",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1791893100000,
-              "updatedAt": 1791896200000
-            },
             {
               "id": "tEn1cRoSsMoD",
               "text": "1️⃣ 이종 포맷 상호운용성 및 임베드 투영 (.canvas 및 .md)",
@@ -1550,8 +1514,9 @@
             }
           ],
           "isFolded": false,
+          "note": "💡 [섹션 정의] : 내부 트리를 캔버스·마크다운 등 이종 포맷으로 변환·투영하고, 옵시디언 6대 공인 모듈과 수명주기에 결합하는 플랫폼 어댑터 연동 해부",
           "createdAt": 1791893100000,
-          "updatedAt": 1791896200000
+          "updatedAt": 1791939777525
         }
       ],
       "isFolded": false,
@@ -1561,5 +1526,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791886528919,
-  "updatedAt": 1791907154394
+  "updatedAt": 1791939937724
 }
