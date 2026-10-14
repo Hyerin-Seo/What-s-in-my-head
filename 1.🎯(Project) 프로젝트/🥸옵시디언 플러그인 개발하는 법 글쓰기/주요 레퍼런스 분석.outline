@@ -177,7 +177,7 @@
               "updatedAt": 1791879348879
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "note": "타깃이나 주제별로 더 쪼개서 아에 여러 편도 가능하겠네",
           "createdAt": 1791878469467,
           "updatedAt": 1791880665151
@@ -207,7 +207,7 @@
                   "updatedAt": 1791878259881
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791878259881,
               "updatedAt": 1791878259881
             },
@@ -750,5 +750,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791877201893,
-  "updatedAt": 1791893268161
+  "updatedAt": 1791947858641
 }

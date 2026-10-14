@@ -64,7 +64,7 @@
               "updatedAt": 1791872440681
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791892620515
         }
@@ -192,7 +192,7 @@
               "updatedAt": 1791865738321
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791872434146
         },
@@ -315,7 +315,7 @@
               "updatedAt": 1791867403111
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791872059041
         },
@@ -348,7 +348,7 @@
               "updatedAt": 1791872574909
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "note": "여기가 서브 노트. \n두 줄 이상 가면 알아서 줄임 표시",
           "createdAt": 1791865738321,
           "updatedAt": 1791872429311
@@ -416,7 +416,7 @@
           "updatedAt": 1791867032842
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791867426072
     },
@@ -445,7 +445,7 @@
               "updatedAt": 1791866643542
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791866641976
         },
@@ -534,7 +534,7 @@
           "updatedAt": 1791866626985
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791871111689
     },
@@ -882,7 +882,7 @@
           "updatedAt": 1791871063121
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791873224643
     },
@@ -1005,12 +1005,12 @@
           "updatedAt": 1791871101824
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791867062741,
       "updatedAt": 1791873223933
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1791865738321,
-  "updatedAt": 1791892651896
+  "updatedAt": 1791948061663
 }

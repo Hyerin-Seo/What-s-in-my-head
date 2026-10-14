@@ -62,7 +62,7 @@
               "updatedAt": 1791892014128
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791886528919,
           "updatedAt": 1791894132716
         },
@@ -271,10 +271,11 @@
               "updatedAt": 1791900665571
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "note": "💡 [관점 정의] : App 객체를 중심으로 화면(Workspace/View), 이종 포맷(.md/.canvas/.base) 상호운용성, 지식 연결망, 그리고 데이터(Vault/Cache)가 맞물려 돌아가는 내부 뼈대를 이해하여 원하는 기능을 자유자재로 구현하는 관점",
+          "viewMode": "bullets",
           "createdAt": 1791889097958,
-          "updatedAt": 1791939741067
+          "updatedAt": 1791949842632
         },
         {
           "id": "eDiToReNgIn03",
@@ -301,7 +302,7 @@
                   "updatedAt": 1791892300000
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791892300000,
               "updatedAt": 1791892300000
             },
@@ -1513,18 +1514,19 @@
               "updatedAt": 1791896200000
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "note": "💡 [섹션 정의] : 내부 트리를 캔버스·마크다운 등 이종 포맷으로 변환·투영하고, 옵시디언 6대 공인 모듈과 수명주기에 결합하는 플랫폼 어댑터 연동 해부",
           "createdAt": 1791893100000,
           "updatedAt": 1791939777525
         }
       ],
       "isFolded": false,
+      "viewMode": "bullets",
       "createdAt": 1791886528919,
-      "updatedAt": 1791892001405
+      "updatedAt": 1791949802920
     }
   ],
-  "defaultView": "bullets",
+  "defaultView": "board",
   "createdAt": 1791886528919,
-  "updatedAt": 1791956347620
+  "updatedAt": 1791949842632
 }
