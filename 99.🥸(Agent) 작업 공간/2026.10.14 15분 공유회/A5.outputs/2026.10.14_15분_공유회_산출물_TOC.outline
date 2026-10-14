@@ -1,0 +1,174 @@
+{
+  "version": "1.0.0",
+  "id": "WGHCDzQDROpx",
+  "title": "2026.10.14_15분_공유회_산출물_TOC",
+  "rootNodes": [
+    {
+      "id": "bSsAGqdsNEC4",
+      "text": "[[2026.10.14 15분 공유회]] (아웃라이너 도그푸딩 회의)",
+      "children": [
+        {
+          "id": "Z7SEqn0mUNOR",
+          "text": "🚨 [발단] 아웃라이너 도그푸딩 실사용 고통 토로",
+          "children": [
+            {
+              "id": "jqe5WN05Wfrg",
+              "text": "\"세 번을 갈아엎어야 하고 전혀 편해졌다는 느낌이 없다\" (불편 발굴 60% · 분석 요령 30% · 버그 테스트 10%)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791958539636,
+              "updatedAt": 1791958539636
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791958539636,
+          "updatedAt": 1791958539636
+        },
+        {
+          "id": "DmB4unO5AIJr",
+          "text": "1. [가독성 한계 돌파] 아웃라인 본체와 읽기 전용 뷰어의 관심사 분리",
+          "children": [
+            {
+              "id": "iD9ITcjpK82F",
+              "text": "✅ [[D3_아웃라인_가독성을_각_잡고_올린다_읽는_건_오른쪽_미리보기로]]",
+              "children": [
+                {
+                  "id": "LksU71nhFGsR",
+                  "text": "🧪 [[EXP03_좌측_아웃라인_우측_실시간_미리보기_분할_뷰_실험]] (좌측 아웃라인 편집 + 우측 실시간 마크다운 미리보기)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791958539636,
+                  "updatedAt": 1791958539636
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791958539636,
+              "updatedAt": 1791958539636
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791958539636,
+          "updatedAt": 1791958539636
+        },
+        {
+          "id": "0hTrEUCI9QDp",
+          "text": "2. [버전업 대조 피로 해결] 듀얼 줌 분할 뷰를 대체할 화면 인터랙션",
+          "children": [
+            {
+              "id": "hx8djBAXhAmL",
+              "text": "🎯 [[1.1_버전업을_화면에서_무엇으로_받칠까_줌_안_버전_탭이냐_캔버스_전환이냐]]",
+              "children": [
+                {
+                  "id": "HIJc5XhxPAcM",
+                  "text": "🧪 [선택 A] [[EXP01_줌_안_버전_탭_인터랙션_프로토타입]] (줌 인 노드 내 [v1][v2][+] 탭 스위칭)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791958539636,
+                  "updatedAt": 1791958539636
+                },
+                {
+                  "id": "dwoOsGc28hQo",
+                  "text": "🧪 [선택 B] [[EXP02_아웃라인_캔버스_보드뷰_플립_전환_프로토타입]] (2차원 캔버스 플립 전환 & 가지치기)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791958539636,
+                  "updatedAt": 1791958539636
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791958539636,
+              "updatedAt": 1791958539636
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791958539636,
+          "updatedAt": 1791958539636
+        },
+        {
+          "id": "WAuj6bWETb8y",
+          "text": "3. [주관적 감각 전달] 70점 AI 뼈대에 작업자의 10~20% 에고/뉘앙스를 넘기는 법",
+          "children": [
+            {
+              "id": "XOvrJjY6B3OE",
+              "text": "🎯 [[1.2_95점_감각을_AI에_무엇으로_넘길까_채팅이냐_화면이냐]]",
+              "children": [
+                {
+                  "id": "pCoDysjsXEax",
+                  "text": "✅ [후반부 합의로 귀결] [[D2_레퍼런스는_아웃라인_위에_어노테이션으로_붙이는_방식을_해_본다]]",
+                  "children": [
+                    {
+                      "id": "qqlsd7aXvoll",
+                      "text": "🧪 [[EXP04_아웃라인_노드_인라인_어노테이션_코멘트_프로토타입]] (피그마식 노드 위치 인라인 코멘트 핀)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1791958539636,
+                      "updatedAt": 1791958539636
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1791958539636,
+                  "updatedAt": 1791958539636
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791958539636,
+              "updatedAt": 1791958539636
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791958539636,
+          "updatedAt": 1791958539636
+        },
+        {
+          "id": "RC8pY0sK1XlH",
+          "text": "4. [글쓰기 공정 및 레퍼런스 혁신] 백지 상태 극복과 비정형 문서 통제",
+          "children": [
+            {
+              "id": "Mut7chzbBud1",
+              "text": "🎯 [[1.3_레퍼런스_블로그를_뼈대째_따서_빈칸_채우기로_쓸까]]",
+              "children": [
+                {
+                  "id": "USgYlSSVts5P",
+                  "text": "🧪 [[EXP05_레퍼런스_문서_뼈대_역공학_및_빈칸_채우기_템플릿_실험]] (Figma식 와꾸 파싱 & 슬롯 채우기)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791958539636,
+                  "updatedAt": 1791958539636
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791958539636,
+              "updatedAt": 1791958539636
+            },
+            {
+              "id": "lDrVryF93Oza",
+              "text": "✅ [[D1_서식은_템플릿으로_먼저_준다_비정형_문서도_템플릿을_고정한다]]",
+              "children": [
+                {
+                  "id": "LJ02PtwqI8vR",
+                  "text": "🧪 [[EXP06_비정형_문서_작성을_위한_고정_템플릿_및_3스텝_파이프라인_실험]] (컨셉 ➔ 섹션 매핑 ➔ 인라인 집필 3스텝)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791958539636,
+                  "updatedAt": 1791958539636
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791958539636,
+              "updatedAt": 1791958539636
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791958539636,
+          "updatedAt": 1791958539636
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791958539636,
+      "updatedAt": 1791958539636
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791958539636,
+  "updatedAt": 1791958539636
+}

@@ -1,0 +1,409 @@
+{
+  "version": "1.0.0",
+  "id": "GtmfR0oFH1vq",
+  "title": "2026.10.14_공유회_산출물_TOC",
+  "rootNodes": [
+    {
+      "id": "6mLD3XhBmjUs",
+      "text": "🎯 [안건 카드 (3건)] — 회의에서 구조적 의사결정이 필요한 핵심 쟁점",
+      "children": [
+        {
+          "id": "Us6dHa6RlQac",
+          "text": "1.1 버전업을 화면에서 무엇으로 받칠까 — 줌 안 버전 탭이냐 캔버스 전환이냐",
+          "children": [
+            {
+              "id": "X99MqRNUjArs",
+              "text": "🎯 결정 질문 : 매번 3번 갈아엎는 버전업 작업을 화면에서 무엇으로 먼저 받칠까?",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "YKdDzstlXvqp",
+              "text": "💡 선택지 A (권장) : 줌한 노드 밑에 버전 1·2 스테이징 탭 배치 (최소 PoC)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "PV547GRyEV2A",
+              "text": "💡 선택지 B : 1차원 아웃라인 ↔ 2차원 캔버스 플립 전환으로 갈래 조망 및 가지치기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "G5G3TiY0RQ2i",
+          "text": "1.2 사람이 보는 95점 감각을 AI에 무엇으로 넘길까 — 채팅이냐 화면이냐",
+          "children": [
+            {
+              "id": "L3JIdqZQR6ic",
+              "text": "🎯 결정 질문 : 레퍼런스로 못 채우는 10~20% 사람의 감각(에고/핀트)을 AI에 무엇으로 넘길까?",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "ZKEiRVoBMqZC",
+              "text": "💡 선택지 A (권장) : 화면에서 노드/영역을 골라 의도(인텐트)를 태깅해 전달",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "2yC0xaamUyMw",
+              "text": "💡 선택지 B : 우선 채팅창에서 대화로 버무리고 패턴 누적 후 화면 사양화",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "RTN3igMqawPL",
+          "text": "1.3 레퍼런스 블로그를 뼈대째 따서 빈칸 채우기로 쓸까",
+          "children": [
+            {
+              "id": "ptZLKG5ZmDCQ",
+              "text": "🎯 결정 질문 : 잘 쓰인 레퍼런스 문서를 뼈대째 따서 빈칸 채우기 템플릿으로 쓸까?",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "sO62VUj4Ylzm",
+              "text": "💡 선택지 A (권장) : 피그마처럼 구조(와꾸)를 싹 따서 빈칸(Slot) 서식으로 자동 파싱",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "aZbItalbntXJ",
+              "text": "💡 선택지 B : 레퍼런스 분석 틀로 낱개 분석 후 사람이 손으로 목차 재구성",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791957491977,
+      "updatedAt": 1791957491977
+    },
+    {
+      "id": "RKmV32J88udH",
+      "text": "✅ [결정 카드 (3건)] — 회의에서 합의 완료된 제품 원칙 및 확정 사양",
+      "children": [
+        {
+          "id": "nrdVHWLDPFTQ",
+          "text": "D1 서식은 템플릿으로 먼저 준다 — 비정형 문서도 템플릿을 고정한다",
+          "children": [
+            {
+              "id": "4Z2dUZNpmFf2",
+              "text": "📜 결정 사항 : 정형 문서는 기존 프로토타입 다듬기, 비정형(블로그/뉴스레터)도 표준 템플릿 고정 + 미리보기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "gtyEPJ2WQOg9",
+              "text": "🧐 합의 이유 : 비정형 글도 3스텝(컨셉 ➔ 섹션 매핑 ➔ 인라인 집필) 공정이 필요하며, 틀이 없으면 무한 발산함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "9omLKF6WW5aj",
+          "text": "D2 레퍼런스는 아웃라인 위에 인라인 어노테이션으로 붙인다",
+          "children": [
+            {
+              "id": "SrvvIZo8IPcy",
+              "text": "📜 결정 사항 : 별도 분석 보고서나 외부 링크 대신, 노드 위치에 코멘트 핀(팝오버)으로 직접 부착",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "NLxQy7GmaxYG",
+              "text": "🧐 합의 이유 : 문맥 전환(창 띄우기)을 없애고, 피그마/슬라이드처럼 뉘앙스를 보며 집필하기 위함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "PVi9eG3nYuH7",
+          "text": "D3 아웃라인 가독성을 각 잡고 올린다 — 읽는 건 오른쪽 미리보기로",
+          "children": [
+            {
+              "id": "P0Pf5M0gA6Og",
+              "text": "📜 결정 사항 : 아웃라인 본체에 무리한 서식을 넣지 않고, 우측에 문서형 실시간 마크다운 미리보기 분할 배치",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "IrKHa8yhAUom",
+              "text": "🧐 합의 이유 : 아웃라이너의 빠른 키보드 조작감 유지 + 읽는 사람의 시각적 피로도/가독성 완벽 분리",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791957491977,
+      "updatedAt": 1791957491977
+    },
+    {
+      "id": "OZzdEVA2eO3c",
+      "text": "🧪 [UI/UX 실험 프로토타입 (6건)] — 현장 고통 기반 즉시 검증 과제 (EXP)",
+      "children": [
+        {
+          "id": "hPWivlRMsbXH",
+          "text": "EXP01 줌 안 버전 탭 인터랙션 프로토타입",
+          "children": [
+            {
+              "id": "Flw7Q70XH2W9",
+              "text": "🧐 왜 필요한가 : 수동 듀얼 줌 분할 뷰의 시선 피로도 극복 & 3번 갈아엎기 작업 안전장치",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "H8a40ybPsKdl",
+              "text": "🔬 실험 가설 : 줌 인 화면 헤더 밑 [v1][v2][+] 탭으로 즉시 스위칭하여 비교 피로도 최소화",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "Weg9cHiwyQJW",
+              "text": "🛠️ 구현 명세 : 줌 인 탭 바, 하위 트리 분기 복제, Alt+1/2 탭 스위칭 단축키",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "F0JelukfSTVZ",
+          "text": "EXP02 아웃라인 캔버스 보드뷰 플립 전환 프로토타입",
+          "children": [
+            {
+              "id": "EDpuuaerYvG7",
+              "text": "🧐 왜 필요한가 : 1차원 수직 트리에서 아이디어가 2~3갈래 분기될 때의 시각적 한계 & 멘탈 모델 불일치",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "ELkHEnNW2pd5",
+              "text": "🔬 실험 가설 : 버튼 하나로 2차원 캔버스로 플립하여 갈래를 조망하고 불필요한 가지를 쳐내기(Pruning)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "M4EGNb9R5JrY",
+              "text": "🛠️ 구현 명세 : 툴바 원클릭 뷰 토글, React Flow 기반 브랜치 카드 배치, 캔버스-트리 실시간 동기화",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "r6Etu2MHZbJv",
+          "text": "EXP03 좌측 아웃라인 우측 실시간 미리보기 분할 뷰 실험",
+          "children": [
+            {
+              "id": "0nJTkqxdWiuJ",
+              "text": "🧐 왜 필요한가 : 텍스트가 많아질 때 아웃라이너 가독성 극악화 (읽는 데 머리 쥐가 난다)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "RMyI01nhp7pV",
+              "text": "🔬 실험 가설 : 편집 도구(좌측 트리)와 열람 도구(우측 실시간 마크다운 렌더링)의 관심사 분리",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "LdigwQryDHXu",
+              "text": "🛠️ 구현 명세 : 5:5 분할 패널, 커서 포커스 노드 실시간 오토 스크롤 및 하이라이트 동기화",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "R0U2ELCmmLsz",
+          "text": "EXP04 아웃라인 노드 인라인 어노테이션 코멘트 프로토타입",
+          "children": [
+            {
+              "id": "XueUB9NSnTi2",
+              "text": "🧐 왜 필요한가 : 레퍼런스 분석 보고서 쓰느라 본문 못 쓰는 주객전도 & 창 전환 문맥 단절",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "SoLm4YP7agdC",
+              "text": "🔬 실험 가설 : 피그마/노션처럼 노드 위치에 레퍼런스 캡처와 뉘앙스 메모를 코멘트 풍선으로 인라인 부착",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "Eo3BZhCIvzdC",
+              "text": "🛠️ 구현 명세 : 노드 호버 핀 버튼, 어노테이션 팝오버, 사이드 레퍼런스 레일 연동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "vXLuSgXYZrwC",
+          "text": "EXP05 레퍼런스 문서 뼈대 역공학 및 빈칸 채우기 템플릿 실험",
+          "children": [
+            {
+              "id": "W4zlt33F5dny",
+              "text": "🧐 왜 필요한가 : 백지 상태에서 목차 잡는 고통 & 이미 70~80% 완성된 레퍼런스 존재",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "YceiVTPWwI8q",
+              "text": "🔬 실험 가설 : 레퍼런스 URL의 시각적 위계/섹션을 그대로 복제해 본문만 빈칸(Slot)으로 뚫어주기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "Fkxa00lAzlgX",
+              "text": "🛠️ 구현 명세 : 레퍼런스 임포트 파서, 슬롯 플레이스홀더 자동 삽입, 불필요 섹션 [X] 원클릭 삭제",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        },
+        {
+          "id": "2ieGHs90IURZ",
+          "text": "EXP06 비정형 문서 작성을 위한 고정 템플릿 및 3스텝 파이프라인 실험",
+          "children": [
+            {
+              "id": "Xyl5hygLZw1o",
+              "text": "🧐 왜 필요한가 : 비정형 글(블로그/뉴스레터)의 무한 발산과 전혀 편해지지 않는다는 고통",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "XpilWx9T34Lk",
+              "text": "🔬 실험 가설 : 표준 템플릿 고정 + 3스텝(컨셉 ➔ 섹션 매핑 ➔ 인라인 집필) 순서 강제로 조기 발산 차단",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            },
+            {
+              "id": "gZ7oWpqh6wO5",
+              "text": "🛠️ 구현 명세 : 프리셋 템플릿 선택기(위계 Lock), 상단 Step Bar 진행 인디케이터, 단계별 프롬프트 어시스턴트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791957491977,
+              "updatedAt": 1791957491977
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791957491977,
+          "updatedAt": 1791957491977
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791957491977,
+      "updatedAt": 1791957491977
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791957491977,
+  "updatedAt": 1791957491977
+}
