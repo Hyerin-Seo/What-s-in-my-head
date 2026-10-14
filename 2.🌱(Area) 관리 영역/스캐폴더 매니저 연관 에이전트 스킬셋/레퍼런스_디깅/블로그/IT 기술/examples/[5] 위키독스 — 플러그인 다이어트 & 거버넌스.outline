@@ -1,0 +1,607 @@
+{
+  "version": "1.0.0",
+  "id": "7b211695e83c",
+  "title": "[5] 위키독스 — 플러그인 다이어트 & 거버넌스",
+  "rootNodes": [
+    {
+      "id": "XYtPkIcrImAG",
+      "text": "📌 레퍼런스 분석 : [5] 위키독스 — 플러그인 다이어트 & 거버넌스 (종합 단행본 교재 챕터)",
+      "children": [
+        {
+          "id": "9uds79ZTjoql",
+          "text": "🔗 원문 메타 정보 & 선정 개요",
+          "children": [
+            {
+              "id": "ZtCQ5lj9XNOF",
+              "text": "출처 URL : https://wikidocs.net/345857",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "ang7D4xMJDOy",
+              "text": "원문 제목 : 10-2. 플러그인 다이어트 — Obsidian 활용 가이드",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "3w57qewCiwOd",
+              "text": "채택 이유 : 옵시디언 전반을 다루는 종합 단행본(A to Z)의 한 챕터로서, 볼트 운영 중 발생하는 플러그인 비대화를 체계적으로 다이어트하고 정기 점검하는 실전 유지보수 거버넌스 표준 규격 제시",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "Wt0wCNyECH1g",
+          "text": "🎯 1. 타깃 페르소나 & 가치 제안 전략 (Strategy: Who & Why)",
+          "children": [
+            {
+              "id": "Gp6EA8CAf1MK",
+              "text": "📢 1. 단 하나의 핵심 메시지 (Core Message & Promise)",
+              "children": [
+                {
+                  "id": "mL0wB4LXYGUN",
+                  "text": "[핵심 선언] : '플러그인 다이어트는 기능을 포기하는 것이 아니라, 볼트의 고장 지점(Failure Points)을 줄이고 운영 자유를 되찾는 일이다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "PPttxvbgo4MY",
+                  "text": "[약속(Promise)] : 시간이 흐르며 플러그인이 과도하게 쌓여 무거워진 볼트를 '실제 사용 흔적과 운영 비용'을 기준으로 안전하고 가볍게 정돈하는 체계적 다이어트 방법론 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "sua8nM6pYzcR",
+                  "text": "[인식 전환(Mindset)] : '플러그인 수가 곧 볼트의 능력' ➔ '플러그인은 부채(Debt)이자 고장 지점이며, 설명 가능한 최소 의존성만이 장기 생존한다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "HftiNtHQLipe",
+              "text": "👥 2. 주요 대상 독자 (Target Persona)",
+              "children": [
+                {
+                  "id": "OJLk12o4owir",
+                  "text": "볼트를 사용하다 보니 플러그인이 지나치게 늘어나 시작 속도가 느려지고 모바일에서 튕겨 피로감을 느끼는 사용자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "FsuZgL7IwWBO",
+                  "text": "종합 가이드를 통해 옵시디언을 체계적으로 익히며 장기적인 볼트 관리 루틴을 수립하려는 독자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "8a1FOCaNa9W8",
+              "text": "🚧 3. 독자가 마주하는 3대 핵심 장벽 (Core Barriers)",
+              "children": [
+                {
+                  "id": "eMzZPIJCrscG",
+                  "text": "[심리적 손실 회피 장벽] : 언젠가 쓸 것 같아 안 쓰면서도 켜 두는 '익숙함과 필요함의 착각'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "EtxZlovZnOr7",
+                  "text": "[의존성 연쇄 붕괴 공포] : 플러그인을 껐다가 템플릿, 쿼리, 일지 데이터가 깨질까 봐 두려워 아무것도 건드리지 못하는 마비 상태",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "EkCw8Ulr0Waa",
+                  "text": "[다이어트 후 요요 현상] : 한 번 지웠다가도 새 플러그인이 나오면 무비판적으로 다시 깔아 볼트가 재비대해지는 반복 피로",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "PwNKvGDkndzP",
+              "text": "💡 4. 돌파 전략 & 단행본 챕터의 가치 제안 (Value Proposition)",
+              "children": [
+                {
+                  "id": "096sbxpi3z2r",
+                  "text": "[삭제 대신 비활성화 실험] : 바로 삭제하지 않고 평소 작업 주기 동안 꺼두어 복구 비용을 0으로 만드는 안전선 샌드박스",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "7EGJPVlbSsfz",
+                  "text": "[5대 후보 판정 매트릭스] : 사용 빈도, 대체 가능성, 속도 영향, 모바일 안정성, 설정 기억 비용의 5대 정량 지표 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "MX7HnKqiVrmE",
+                  "text": "[3단 그룹 분류 체계] : 핵심(Core: Templater, Dataview) / 보조(Support) / 제거 후보(Candidate)의 문서화 구조 확립",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "W1naohoeCW6o",
+                  "text": "[무엇을 대체하는가 룰] : 새 플러그인 도입 시 '무엇을 대체하는가?'를 자문하는 거버넌스 방어벽 구축",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "kj6UamqTgDgt",
+          "text": "🎬 2. 논지 전개 & 교육공학적 교재 설계 관점 (Instructional Design & Curriculum)",
+          "children": [
+            {
+              "id": "5rxUTuwQA5C3",
+              "text": "1️⃣ 개념 정의 (Concept Definition) : '기능의 포기가 아니라 고장 지점의 축소입니다'",
+              "children": [
+                {
+                  "id": "onUg0xWiMQg5",
+                  "text": "교재 프레임 : '쓸 수 있는 기능'과 '계속 감당할 수 있는 기능'의 차이를 명확히 짚어 문제의식 확립",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "WwSP8ftFH8ib",
+              "text": "2️⃣ 8단계 실전 워크플로우 (Instructional Flow) : '목록 ➔ 흔적 ➔ 기준 ➔ 비활성화 ➔ 대체 ➔ 문서화 ➔ 정리 ➔ 정기 점검'",
+              "children": [
+                {
+                  "id": "WK1LApidyoKp",
+                  "text": "교재 프레임 : 무작정 삭제를 막고, 감사부터 정기 점검까지 이어지는 8단계 정밀 수술 절차 순차 전개",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "aJUhUyvGRKRw",
+              "text": "3️⃣ 5대 적용 시나리오 (Contextual Scenarios) : 입문기, 모바일, 팀 공유, 원고 볼트, 장기 볼트",
+              "children": [
+                {
+                  "id": "sRHKPe2uZl2d",
+                  "text": "교재 프레임 : 독자의 볼트 운영 환경에 따른 5가지 시나리오별 맞춤 기준 제시",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "Guq1A4iGMV3d",
+              "text": "4️⃣ 즉시 복사 가능한 4대 실습 템플릿 (Hands-on Practice Cards)",
+              "children": [
+                {
+                  "id": "YOA9MAtY7XRK",
+                  "text": "교재 프레임 : 플러그인 감사 로그, YAML 그룹 메모, 비활성화 체크리스트, 모바일 점검표 코드블록 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "HmJKxlTXJjlt",
+              "text": "5️⃣ 7대 주의점과 안티패턴 처방 (Troubleshooting & Anti-Patterns)",
+              "children": [
+                {
+                  "id": "jxAW3Jjt63Tw",
+                  "text": "교재 프레임 : 바로 삭제, 체감 판단 등 7대 원인-해결 쌍을 체계적으로 처방",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "y3r0mDXc3Oy8",
+              "text": "🎯 구조 총평 & 시사점",
+              "children": [
+                {
+                  "id": "F5pSbxK35AZs",
+                  "text": "개별 아티클의 감정선 유도가 아니라, [개념 ➔ 워크플로우 ➔ 시나리오 ➔ 체크포인트 ➔ 실습 ➔ 비교표 ➔ 주의점]으로 이어지는 완성도 높은 단행본 교재 단원 설계 템플릿(Instructional Design Pattern)의 전형",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "NRo5txFUbnvu",
+          "text": "🎨 3. 시각적 배치 & 전자책(Web Book) 텍스트 문법 관점 (Visual: Layout & Rhythm)",
+          "children": [
+            {
+              "id": "EC4FVKriUnGV",
+              "text": "📖 1. 활자 중심의 정적인 인쇄 교재 호흡",
+              "children": [
+                {
+                  "id": "o7AlPPcqaPO5",
+                  "text": "[교재 특성 반영] : 이 글은 블로그가 아니라 '책'이므로 이미지나 화려한 콜아웃이 거의 없고, 활자 중심의 정적인 인쇄 교재 호흡 유지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "YCE2Ku1ZHG5J",
+              "text": "📑 2. 체계적인 H2/H3 단락화 & 원인-해결 대조 블록",
+              "children": [
+                {
+                  "id": "03aHZLbM3rw9",
+                  "text": "[교과서형 계층화] : 위키독스 목차 트리와 연동되는 엄격한 계층 구조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "1QX1ARINU0Xc",
+                  "text": "[원인-해결 대조] : 주의점마다 '원인: ...' / '해결: ...'의 대조 블록을 기계적으로 반복하여 처방전 전달",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "JOgBfiTnsDIB",
+              "text": "📊 3. 2대 핵심 비교 매트릭스 표 (Comparative Matrix Tables)",
+              "children": [
+                {
+                  "id": "soKmeehVD0bH",
+                  "text": "[후보 판정 기준 비교표] : 기준 ➔ 이렇게 보세요 ➔ 이런 신호를 찾으세요 (3열) 테이블",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "4gy22712NrL7",
+                  "text": "[핵심·보조·실험군 비교표] : 그룹 ➔ 이렇게 운영하세요 ➔ 이 점을 확인하세요 (3열) 테이블",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "KrGJ4egokw1I",
+              "text": "🧱 4. 명제-해설 2단 들여쓰기 호흡",
+              "children": [
+                {
+                  "id": "doHktyVeFoUR",
+                  "text": "[시각적 앵커링] : 핵심 명제 아래 들여쓰기로 부연 해설을 배치하여 교재형 가독성 극대화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "igCxLuvQ8fqp",
+          "text": "📖 4. 원문 본문 핵심 콘텐츠 (Content: 목차 & 한 줄 요약)",
+          "children": [
+            {
+              "id": "TTc1sOkT3OKp",
+              "text": "1. 핵심 개념",
+              "children": [
+                {
+                  "id": "ZFMUx4SI1IcY",
+                  "text": "1️⃣ 고장 지점 축소 : 플러그인 수는 능력이 아니라 유지보수 난도와 잠재적 결함을 의미",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "XFzHwzWYfeaE",
+                  "text": "2️⃣ 의존성과 사용 흔적 : 개수보다 의존성 깊이가 중요하며 최근 사용 흔적이 가장 정직한 기준",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "NCkMxDD0yFhI",
+                  "text": "3️⃣ 비활성화 우선 원칙 : 삭제보다 시험 비활성화 기간을 거쳐 복구 비용 최소화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "bMf9kkAvwlOq",
+              "text": "2. 실전 워크플로우 (8단계)",
+              "children": [
+                {
+                  "id": "rXxib6KYHfYT",
+                  "text": "1️⃣~4️⃣ 진단 및 실험 : 플러그인 목록화 ➔ 최근 흔적 확인 ➔ 5대 기준 점수화 ➔ 비활성화 실험",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "jx8ZdoA5DNsh",
+                  "text": "5️⃣~8️⃣ 확정 및 루틴화 : 대체 경로 확정 ➔ 핵심 플러그인 문서화 ➔ 설정/단축키 정리 ➔ 정기 감사 루틴 편입",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "n4ag0HrMOCqz",
+              "text": "3. 적용 시나리오 & 운영 체크포인트",
+              "children": [
+                {
+                  "id": "j4cLEs50VYPq",
+                  "text": "1️⃣ 5대 시나리오 : 입문기 과설치, 모바일 중심, 팀 협업, 원고 집필, 장기 볼트 맞춤 기준",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "wetqpO8nwQ0w",
+                  "text": "2️⃣ 7대 체크포인트 : 역할 1줄 기술, 사용 흔적 우선, 모바일 비용 점검, 핵심 문서화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "zagTi0cfewhm",
+              "text": "4. 바로 해볼 실습 & 비교 표",
+              "children": [
+                {
+                  "id": "vemzxpEiaUJO",
+                  "text": "1️⃣ 4대 실습 예시 : 감사 로그, 핵심 분류 메모(YAML), 비활성화 체크리스트, 모바일 점검",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "gS7GeLKN2HMp",
+                  "text": "2️⃣ 2대 비교표 : 5대 후보 판정 매트릭스 및 핵심/보조/실험군 그룹 운영표",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "b6aykCZ6kl0N",
+              "text": "5. 7대 주의할 점 (원인과 해결)",
+              "children": [
+                {
+                  "id": "VSHZnMPCLPGg",
+                  "text": "1️⃣ 안티패턴 방어 : 즉시 삭제 금지, 체감 배제, 핵심 의존성 파악, 설정 흔적 제거 등 7대 원인-해결 쌍 제시",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "1lHcbxjAxgQC",
+          "text": "🛠️ 5. 블로그가 전달하는 핵심 기술 스펙 & 필수 지식 (Technical Specs)",
+          "children": [
+            {
+              "id": "d4SgoWSNoROv",
+              "text": "1️⃣ 옵시디언 런타임 제한 모드 디버깅",
+              "children": [
+                {
+                  "id": "CGLHQ5fLh5BB",
+                  "text": "[제한 모드 안전 격리] : 제한 모드(Restricted Mode) 해제 시 커뮤니티 플러그인을 일괄 켜지 않고 대기 상태로 유지하는 격리 스펙",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "qdoR6ejSDp0C",
+                  "text": "[점진적 활성화 기법] : 플러그인을 1개씩 순차 활성화하며 메모리 릭 및 이벤트 충돌 원인을 좁히는 이진 탐색(Bisect) 디버깅",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "G1N233fHezEy",
+              "text": "2️⃣ 볼트 설정 잔여물 정리",
+              "children": [
+                {
+                  "id": "elhQpiA8hgYw",
+                  "text": "[설정 잔재(Artifacts) 제거] : 비활성화 후에도 단축키(hotkeys.json), 모듈 템플릿, 명령 팔레트에 남는 잔여 흔적 정리 프로토콜",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "yDmiDdRZnDh4",
+                  "text": "[데이터 비종속성 원칙] : 특정 플러그인이 제거되어도 원본 마크다운 텍스트와 프론트매터가 온전히 읽혀야 한다는 데이터 영속성 원칙",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "94QHD8Pz1Eld",
+              "text": "3️⃣ 플러그인 의존성 분류 체계",
+              "children": [
+                {
+                  "id": "MLXUxFfXiKSY",
+                  "text": "[3티어 분류 체계] : core(필수 구조 의존) / support(보조 편의) / candidate-disable(제거 후보) 거버넌스",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791976181631,
+      "updatedAt": 1791976181631
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791976181631,
+  "updatedAt": 1791979431378
+}

@@ -1,0 +1,687 @@
+{
+  "version": "1.0.0",
+  "id": "4a732441f1af",
+  "title": "[3] 나동 — 실전 플러그인 개발기(Time Manager)",
+  "rootNodes": [
+    {
+      "id": "g8S9SWZhMEOv",
+      "text": "📌 레퍼런스 분석 : [3] 나동 — 실전 플러그인 개발기(Time Manager)",
+      "children": [
+        {
+          "id": "HWk2sPpJe2Cx",
+          "text": "🔗 원문 메타 정보 & 선정 개요",
+          "children": [
+            {
+              "id": "BVObfuq0NtkC",
+              "text": "출처 URL : https://bananajeong.tistory.com/2104",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "Zw0kPeJi6DRP",
+              "text": "원문 제목 : Obsidian 옵시디언 플러그인 개발기 — Time Manager",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "iJsjH9vSWyOx",
+              "text": "채택 이유 : 튜토리얼 수준을 넘어 '실제 문제 정의 ➔ 정규식 기반 마크다운 파서 ➔ 픽셀 타임라인 렌더링 ➔ MVP 피처 가지치기 ➔ 공식 커뮤니티 릴리즈 PR 봇 트러블슈팅'까지 실전 제품의 전체 라이프사이클을 담은 현장감 100% 개발 회고 레퍼런스",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791973790862,
+          "updatedAt": 1791973790862
+        },
+        {
+          "id": "rlq24JK8RWFL",
+          "text": "🎯 1. 타깃 페르소나 & 가치 제안 전략 (Strategy: Who & Why)",
+          "children": [
+            {
+              "id": "GnjMR9q5tbfi",
+              "text": "📢 1. 단 하나의 핵심 메시지 (Core Message & Promise)",
+              "children": [
+                {
+                  "id": "bUTnVU0fWOKk",
+                  "text": "[핵심 선언] : '옵시디언 플러그인 개발, 거창한 엔진이 아니라 내 일상의 진짜 불편함을 마크다운 한 줄로 파싱하는 것에서 시작된다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "C1mcHpNvVomX",
+                  "text": "[약속(Promise)] : 빈 껍데기 예제가 아닌, 실제로 작동하는 플러그인을 바닥부터 만들어 커뮤니티에 제출하기까지 마주치는 모든 현실적 엔지니어링 의사결정의 답안지 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "FodEDdToSBAT",
+                  "text": "[인식 전환(Mindset)] : '복잡한 데스크톱 SDK 앱 개발' ➔ '평소 쓰던 마크다운 텍스트를 파싱하고 CSS로 시각화하는 프론트엔드 DOM 확장 놀이터'로 프레이밍 전환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "piRckVrXO6wr",
+              "text": "👥 2. 주요 대상 독자 (Target Persona)",
+              "children": [
+                {
+                  "id": "nl3b3mhXbDmr",
+                  "text": "기본 튜토리얼은 마쳤으나 '그래서 실제로 어떤 기능을 어떻게 구현해야 하지?'라며 실전 도메인 로직 구현에 막힌 개발자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "J0rmOMlfGl8R",
+                  "text": "데일리 노트의 텍스트 데이터를 읽어와 우측 사이드바에 시각적 대시보드나 타임라인을 띄우고 싶은 프론트엔드/주니어 엔지니어",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "7VXf3KWe1nXf",
+              "text": "🚧 3. 독자가 마주하는 3대 핵심 장벽 (Core Barriers)",
+              "children": [
+                {
+                  "id": "OUZ5n77kc2Ok",
+                  "text": "[파싱 & 상태 관리 장벽] : 옵시디언 가상 파일 시스템에서 노트 텍스트를 어디서부터 어디까지 읽고 어떻게 객체화해야 하는지 모르는 막막함",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "YDvIpFCJOvvt",
+                  "text": "[기능 비대화(Scope Creep) 장벽] : 타이머, 예상/실제 시간 등 온갖 기능을 다 넣으려다 인터럽트와 복잡도에 짓눌려 개발이 좌초되는 문제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "3ryVjq9WuP6w",
+                  "text": "[릴리즈 검수 반려 장벽] : GitHub 릴리즈 및 community-plugins.json PR 과정에서 공식 템플릿과 봇 검증 기준을 몰라 반려당하는 좌절",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "oz9Gz95C7Pc5",
+              "text": "💡 4. 돌파 전략 & 메인 컨셉 (Value Proposition)",
+              "children": [
+                {
+                  "id": "C0bQPStb5pnD",
+                  "text": "[섹션 한정 3단 정규식 파서] : 노트 전체가 아닌 ## Timeline 섹션만 읽고 태스크-카테고리-소요시간을 분리하는 실전 파싱 레시피 공개",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "tj72cvnWNeYX",
+                  "text": "[2px/min 좌표 렌더링 공식] : 복잡한 캔버스 라이브러리 없이 순수 CSS pixel(top, height) 기반으로 1분마다 빨간 선을 갱신하는 담백한 시각화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "YznBqWATo4j9",
+                  "text": "[MVP 피처 컷(Feature Cut) 결단] : [est/act] 타이머 기능을 과감히 버리고 단일 dur로 수렴시켜 실제 쓸 수 있는 프로덕트로 정제한 회고 공유",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "nOwpmqczSLBe",
+                  "text": "[PR 봇 실패 자폭기 및 복구법] : 봇 에러(공식 템플릿 누락, LICENSE 부재) 경험과 해결 과정을 솔직히 공개해 독자의 시행착오 제로화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973790862,
+          "updatedAt": 1791973790862
+        },
+        {
+          "id": "NHXB2mhnoeu8",
+          "text": "🎬 2. 논지 전개 & 독자 중심 스토리라이닝 관점 (Narrative: Flow & Emotion)",
+          "children": [
+            {
+              "id": "YRr50Ij8KslK",
+              "text": "1️⃣ 1. 격한 공감대 형성 (Pain Point Hook) : '오늘 회사에서 8시간 동안 뭘 했지?'",
+              "children": [
+                {
+                  "id": "MN44gxMsjshX",
+                  "text": "심리적 허들 : '플러그인 아이디어가 마땅치 않은데 남들은 뭘 만들지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "4pT2u9XLlPft",
+                  "text": "스토리라이닝 기법 : 저자 본인의 직장 생활 속 실제 통증(퇴근할 때 허무함, 마음에 드는 플러그인 부재)을 생생히 토로하여 독자의 깊은 공감과 문제의식 환기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "3gger1cVdKzA",
+              "text": "2️⃣ 2. 직관적 최종 결과물 선제 투척 (Show, Don't Tell) : '이렇게 마크다운을 치면 우측에 뜹니다'",
+              "children": [
+                {
+                  "id": "qdBR9dkcJclB",
+                  "text": "심리적 허들 : '그래서 대체 뭘 만드는 건데?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "HbfPCuuG0yPf",
+                  "text": "스토리라이닝 기법 : 복잡한 아키텍처 설명 대신 실제 데일리 노트 마크다운 예시와 완성된 우측 사이드바 타임라인/카테고리 막대그래프 캡처를 전면에 배치해 시각적 호기심 극대화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "cY3hV532rZFB",
+              "text": "3️⃣ 3. 엔지니어링 고민의 단계적 해부 (Engineering Deep Dive) : '파싱 ➔ 렌더링 ➔ MVP 결단'",
+              "children": [
+                {
+                  "id": "U2fndCq6lODd",
+                  "text": "심리적 허들 : '마크다운을 어떻게 파싱하지? 픽셀 배치는 어떻게 하지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "uBBZLS1UbAoG",
+                  "text": "스토리라이닝 기법 : ASCII 다이어그램으로 문법을 해부하고 3단계 정규식, 분당 2px 공식, setInterval/clearInterval 메모리 누수 방지, est/act를 dur로 깎아낸 피처 컷 과정을 솔직히 고백하여 개발자적 신뢰 확보",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "oc3lc1M7JnLo",
+              "text": "4️⃣ 4. 현실의 벽과 실패 극복 드라마 (Real Struggle & Overcoming) : '봇한테 가차 없이 까였습니다'",
+              "children": [
+                {
+                  "id": "VzpdGU3VDSGr",
+                  "text": "심리적 허들 : '커뮤니티 플러그인 등록은 어떻게 하고, 혹시 반려당하면 어쩌지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "OAgpKpYzRUre",
+                  "text": "스토리라이닝 기법 : PR 제출 봇의 가차 없는 에러 피드백 화면과 라이선스/템플릿 보정 후 재제출한 경험을 공유해 독자에게 '실수해도 괜찮다'는 심리적 안전망 구축",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "n0LSDqA60uNB",
+              "text": "5️⃣ 5. 시대적 회고와 다음 도약 (Inspirational Closure) : 'AI 시대, 아이디어가 살아남는다'",
+              "children": [
+                {
+                  "id": "J77h1C8avRd0",
+                  "text": "심리적 허들 : '플러그인 하나 만들었다고 내 개발 인생에 무슨 의미가 있을까?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "x7COFR7XFffY",
+                  "text": "스토리라이닝 기법 : '지레 겁먹고 안 했던 플러그인 만들기를 완수했다, 이제 프론트엔드 엔지니어라는 명함도 뗄 수 있다'는 진솔한 회고와 오픈소스 링크로 영감과 용기 선사",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "FCwKcUDOZxpf",
+              "text": "🎯 스토리라이닝 총평 & 핵심 시사점",
+              "children": [
+                {
+                  "id": "cShdkZOT6PIM",
+                  "text": "교과서적인 튜토리얼이 아닌, [고통 발견 ➔ 프로덕트 데모 ➔ 3대 구현 고민과 결단 ➔ 공식 PR 반려와 재도전 ➔ 시대적 성장 회고]로 이어지는 입체적이고 흡인력 높은 실전 개발 드라마(Developer's Journey)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973790862,
+          "updatedAt": 1791973790862
+        },
+        {
+          "id": "GscHHhc4nY2o",
+          "text": "🎨 3. 시각적 배치 & 블로그 편집 문법 관점 (Visual: Layout & Rhythm)",
+          "children": [
+            {
+              "id": "za8SFUeuoj5P",
+              "text": "📐 1. ASCII 다이어그램 기반의 구문 시각화 (ASCII Grammar Mapping)",
+              "children": [
+                {
+                  "id": "8aw19U4HnFgk",
+                  "text": "[아스키 토큰 트리] : 문법 설명 시 줄글 대신 텍스트 아스키 다이어그램(│ └─)을 사용하여 한눈에 토큰 구조(완료여부, 시작시간, 태스크명, 카테고리, 소요시간) 파악",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "bbZN6afa8TeR",
+                  "text": "[시각적 해설 압축] : 긴 설명글 없이 코드 블록 1개로 문법 스펙 정의 종결",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "PX7kqYV2fa9l",
+              "text": "🖼️ 2. 마크다운 원문과 렌더링 UI의 1:1 병렬 대조 (Source-to-View Pairing)",
+              "children": [
+                {
+                  "id": "mLkN9xqosRMk",
+                  "text": "[입출력 직결 배치] : 코드 블록(## Timeline ...) 바로 밑에 옵시디언 실제 렌더링 캡처(사이드바 타임라인, 카테고리 그래프)를 교차 배치",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "Isgz5L6vgLhh",
+                  "text": "[인과관계 증명] : 마크다운 한 줄이 어떻게 UI 요소로 치환되는지 뇌내 시뮬레이션 지원",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "JVsP7y7zy64e",
+              "text": "💬 3. 개발자의 솔직한 독백체와 이모지 리듬감 (Authentic Developer Voice)",
+              "children": [
+                {
+                  "id": "J80Z0AzZSWOo",
+                  "text": "[친근한 구어체] : 정형화된 존댓말 대신 '만들다 보니까 인터럽트가 많이 걸린다는 것을 깨닫고', '봇한테 바로 에러를 받았다 ㅠ.ㅠ' 등 생생한 개발자 톤앤매너",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "2jdTpZg4J27g",
+                  "text": "[스토리 몰입도 증대] : 독자가 실제 옆자리 동료의 개발 회고를 듣는 듯한 몰입감 형성",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "mD4sPyx2H2y6",
+              "text": "⚙️ 4. 실패-수정 Before/After 코드 대조 (Refactoring Journey)",
+              "children": [
+                {
+                  "id": "oW6UnOOS3S9X",
+                  "text": "[설계 단순화 증명] : 초기 설계('- [ ] 10:00 기능 개발 [est:: 120] [act:: 95]')와 최종 설계('- [ ] 10:00 기능 개발 2h')를 나란히 배치",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "t2Qr3px7aqDx",
+                  "text": "[피처 컷 설득력] : 복잡도를 제거하고 본질에 집중하는 엔지니어링 의사결정 과정을 시각적으로 설득",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973790862,
+          "updatedAt": 1791973790862
+        },
+        {
+          "id": "trYGANcvafzO",
+          "text": "📖 4. 원문 본문 핵심 콘텐츠 (Content: 목차 & 한 줄 요약)",
+          "children": [
+            {
+              "id": "ByMHH8bE49G1",
+              "text": "1. 왜 만들었나",
+              "children": [
+                {
+                  "id": "mSaPUuKXEeFw",
+                  "text": "1️⃣ 일상 속 문제의식 : 회사에서 8시간을 보내고도 하루가 허무하게 증발하는 통증 포착",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "QcnxfSzzJtip",
+                  "text": "2️⃣ 프로덕트 정의 : 데일리 노트 기반 태스크 시각 타임라인 및 카테고리 추적기(Time Manager)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "g8cf4RrqW6vf",
+              "text": "2. 어떻게 동작하나",
+              "children": [
+                {
+                  "id": "DHrUsvOyBj5E",
+                  "text": "1️⃣ 마크다운 구문 : ## Timeline 헤딩 아래 시간, 태스크명, @카테고리, 소요시간(30m/2h) 표기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "Qb4wQABC0UPR",
+                  "text": "2️⃣ UI 인터랙션 : 우측 사이드바 시각 타임라인 렌더링, 체크박스 토글 연동, 카테고리별 막대그래프 통계",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "uL7ztKiMAPz6",
+              "text": "3. 개발하면서 고민했던 것들",
+              "children": [
+                {
+                  "id": "E3AA0EKfJyr1",
+                  "text": "1️⃣ 마크다운 파싱 : 3단계 정규식 파서, ## Timeline 섹션 스코핑, 모호성 제거를 위한 시간 단위(h/m) 강제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "sRt0qZYlNvwZ",
+                  "text": "2️⃣ 타임라인 렌더링 : 분당 2px 좌표 배치, 소요시간 누락 시 자동 갭 계산, 1분 주기 빨간 현재선 타이머 자원 해제(clearInterval)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "BytjJ2SD8gjd",
+                  "text": "3️⃣ MVP 피처 가지치기 : 복잡한 타이머/예상시간(est/act) 제거 및 단순한 단일 dur 필드로 리팩토링",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "R2pflPVjnA7J",
+              "text": "4. 커뮤니티 플러그인 등록 과정",
+              "children": [
+                {
+                  "id": "0H7PuGJ4T1XS",
+                  "text": "1️⃣ 필수 요건 : manifest.json, Release 빌드 산출물 3종, LICENSE 파일, 영문 README",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "0bd1KHWNxaW3",
+                  "text": "2️⃣ 릴리즈 PR 및 봇 트러블슈팅 : obsidian-releases 포크 후 PR 생성, 공식 체크리스트 템플릿 미준수 반려 및 수정 후 재제출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "QvXgjUd1DyXu",
+              "text": "5. 앞으로 & 회고",
+              "children": [
+                {
+                  "id": "gdPwunFo1xWI",
+                  "text": "1️⃣ 로드맵 : 드래그 앤 드롭 시간 조정, 주간 통계 뷰 확장 계획",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "9YsDQnf18YWa",
+                  "text": "2️⃣ 성장 회고 : AI 시대 아이디어 실현의 가치, 낯선 생태계 도전을 통한 엔지니어로서의 지평 확장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973790862,
+          "updatedAt": 1791973790862
+        },
+        {
+          "id": "sGpJQ65J9zE7",
+          "text": "🛠️ 5. 블로그가 전달하는 핵심 기술 스펙 & 필수 지식 (Technical Specs)",
+          "children": [
+            {
+              "id": "RiS2k0QqkTqA",
+              "text": "1️⃣ 실전 텍스트 파싱 및 정규식 아키텍처 (Parser Design)",
+              "children": [
+                {
+                  "id": "n8hYDcXc8AlV",
+                  "text": "[3단계 파이프라인] : 라인 기본 분리 ➔ 카테고리 태그(@work 등) 추출 ➔ 후행 소요시간(TRAILING_TIME_RE) 추출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "ALXtON3EoFxd",
+                  "text": "[스코프 한정 탐색] : 전체 노트가 아닌 특정 헤더(## Timeline) 진입/이탈 플래그 기반 파싱 성능 최적화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "dj4Leg6T7ivg",
+                  "text": "[데이터 정규화] : 1h30m, 1h, 30m의 다양한 입력값을 정수 분(Minutes) 단위로 단일화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "4AV2c88qimlT",
+              "text": "2️⃣ 픽셀 기반 커스텀 뷰 렌더링 및 라이프사이클 (Custom View & Memory)",
+              "children": [
+                {
+                  "id": "XMTdxxNMy411",
+                  "text": "[좌표 매핑 공식] : top = (startMin - dayStartMin) * PX_PER_MIN, 최소 블록 높이 보정(Math.max(..., 28))",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "9Uo6Gn7TMGCr",
+                  "text": "[메모리 누수 방지] : onOpen()의 window.setInterval 타이머를 onClose()에서 반드시 clearInterval로 명시적 해제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            },
+            {
+              "id": "5a5bzApSM1OC",
+              "text": "3️⃣ 공식 커뮤니티 등록 프로토콜 (Release Governance)",
+              "children": [
+                {
+                  "id": "cnCYBOXpazyS",
+                  "text": "[4대 필수 아티팩트] : manifest.json, main.js, styles.css, LICENSE",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                },
+                {
+                  "id": "6ErSWF3oSEFR",
+                  "text": "[PR 심사 자동화 규격] : 'Add plugin: <id>' 명명 규칙, 공식 PR 체크리스트 템플릿 준수, CI 봇 자동 검증 통과",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973790862,
+                  "updatedAt": 1791973790862
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973790862,
+              "updatedAt": 1791973790862
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973790862,
+          "updatedAt": 1791973790862
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791973790862,
+      "updatedAt": 1791973790862
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791973790862,
+  "updatedAt": 1791979431378
+}

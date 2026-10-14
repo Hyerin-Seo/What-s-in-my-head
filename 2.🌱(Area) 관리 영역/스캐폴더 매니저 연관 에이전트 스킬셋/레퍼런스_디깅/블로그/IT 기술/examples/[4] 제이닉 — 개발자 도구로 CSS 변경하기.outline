@@ -1,0 +1,621 @@
+{
+  "version": "1.0.0",
+  "id": "ee6fc7835369",
+  "title": "[4] 제이닉 — 개발자 도구로 CSS 변경하기",
+  "rootNodes": [
+    {
+      "id": "AwHvo0T16Dmd",
+      "text": "📌 레퍼런스 분석 : [4] 제이닉 — 개발자 도구로 CSS 변경하기 (백과사전형 마이크로 가이드)",
+      "children": [
+        {
+          "id": "hiuBvDIwaNwW",
+          "text": "🔗 원문 메타 정보 & 선정 개요",
+          "children": [
+            {
+              "id": "ddXPnBfScBNN",
+              "text": "출처 URL : https://kaminik.tistory.com/entry/옵시디언-심화-개발자-도구로-CSS변경하기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "IjwikcqRxExA",
+              "text": "원문 제목 : 옵시디언 심화: 개발자 도구로 CSS변경하기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "11Ziysp553mP",
+              "text": "채택 이유 : 350여 개 글을 보유한 '옵시디언 종합 백과사전' 블로그에서, 사용자가 원하는 화면 요소의 색상/스타일을 개발자 도구(DevTools)로 즉시 짚어내고 CSS 스니펫으로 저장할 수 있도록 안내하는 백과사전식 마이크로 실전 가이드(Reference Manual)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "2ArcIZXeZ9iY",
+          "text": "🎯 1. 타깃 페르소나 & 가치 제안 전략 (Strategy: Who & Why)",
+          "children": [
+            {
+              "id": "Ir58IhvaeD1D",
+              "text": "📢 1. 단 하나의 핵심 메시지 (Core Message & Promise)",
+              "children": [
+                {
+                  "id": "v2ZW30lJerrI",
+                  "text": "[핵심 선언] : '옵시디언의 화면 요소는 모두 웹 DOM이다 — 개발자 도구(Ctrl+Shift+I)로 1분 만에 원하는 글자 색을 찾아 바꿀 수 있다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "pgoBHA6N5SM6",
+                  "text": "[약속(Promise)] : 복잡한 코드 작성 없이 화면 요소를 클릭해 색상을 실시간 테스트하고 스니펫에 영구 저장하는 가장 단순한 시각적 커스텀 매뉴얼 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "14weysvhShPo",
+                  "text": "[인식 전환(Mindset)] : '테마가 주는 대로만 쓰는 수동적 독자' ➔ '내 눈에 거슬리는 특정 스타일 하나쯤은 직접 짚어 고치는 능동적 사용자'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "HVFRTmn6RGOc",
+              "text": "👥 2. 주요 대상 독자 (Target Persona)",
+              "children": [
+                {
+                  "id": "w1qtUfHNHCha",
+                  "text": "사전에서 예쁜 테마나 스니펫을 찾아 쓰다가, 특정 헤딩 색상이나 폰트가 마음에 안 들어 직접 살짝 고치고 싶은 일반 및 중급 사용자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "r5OeO3m7Xbb5",
+                  "text": "블로그 내 29개의 CSS Snippets를 내 볼트에 맞춰 응용·수정하고 싶은 독자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "Lu1B1siPctCm",
+              "text": "🚧 3. 독자가 마주하는 3대 핵심 장벽 (Core Barriers)",
+              "children": [
+                {
+                  "id": "vqsncuE44nlo",
+                  "text": "[선택자 식별 장벽] : 바꾸고 싶은 글자나 헤딩이 내부적으로 어떤 CSS 클래스인지 알 수 없어 헤매는 답답함",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "zf6gAZ7SZEl9",
+                  "text": "[휘발성 혼란] : 개발자 도구에서 바꾼 스타일이 재부팅이나 새로고침 시 원래대로 사라지는 혼선",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "VRkTfVk9Dfji",
+                  "text": "[스니펫 반영 번거로움] : 찾은 코드를 옵시디언 파일 구조에 어떻게 영구 반영해야 하는지 모르는 동선 분절",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "WKy6PcKVeFFE",
+              "text": "💡 4. 돌파 전략 & 복합 가치 제안 (Value Proposition)",
+              "children": [
+                {
+                  "id": "lVycAgxbjWH1",
+                  "text": "[단독 즉시 유용성] : 화살표 검사 도구로 3초 만에 요소 타깃팅 ➔ color: blue로 즉시 실시간 확인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "XJlHtIPTm7U9",
+                  "text": "[사전 내 선수 지식(Prerequisite) 게이트] : 단독 팁에 그치지 않고, 블로그 내 29개 CSS 스니펫과 테마를 자유자재로 다루기 위한 필수 사전 지식 역할 수행",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "Smav2NTrpvyK",
+                  "text": "[임시 프리뷰와 영구 저장의 분리] : [DevTools = 실시간 확인용] vs [CSS Snippet = 영구 저장소]의 명확한 역할 정의",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "QznDk40Ma20F",
+                  "text": "[CSS Editor 연동] : 외부 메모장을 오가지 않고 'Edit Css snippet' 명령어로 옵시디언 내부에서 원스톱 반영",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "ahfncZDS1L2B",
+          "text": "🎬 2. 논지 전개 & 사전식 기능 설명 관점 (Narrative: Flow & Emotion)",
+          "children": [
+            {
+              "id": "TrfbpjADkawV",
+              "text": "1️⃣ 본질 규명과 도구 소환 : '옵시디언은 웹 기술 기반입니다. 개발자 도구를 여세요'",
+              "children": [
+                {
+                  "id": "sA4vzeNQ0zS0",
+                  "text": "사용자 허들 : '데스크톱 앱인데 화면 색상을 어떻게 건드리지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "Yj0abQUqBJsK",
+                  "text": "사전식 설명 : Electron 기반이라는 배경을 1줄로 명시하고, 단축키(Ctrl+Shift+I) 하나로 크롬 개발자 도구를 즉시 띄우며 진입",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "ktkkMinflyzx",
+              "text": "2️⃣ 3초 타깃팅 포인터 : '화살표를 누르고 바꾸고 싶은 글자를 클릭하세요'",
+              "children": [
+                {
+                  "id": "fNYJ4rWogZ63",
+                  "text": "사용자 허들 : '수많은 태그 중 내가 바꿀 요소를 어떻게 찾지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "0r1DCtCrYmgz",
+                  "text": "사전식 설명 : '화살표 아이콘 클릭 ➔ 화면 요소 클릭'이라는 직관적 물리 행동 2단계로 시선 동선 단순화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "isYEF23FO54J",
+              "text": "3️⃣ 실시간 즉각 반영 : 'blue로 치는 순간 파란색으로 변합니다'",
+              "children": [
+                {
+                  "id": "LygdS9yqX8w9",
+                  "text": "사용자 허들 : '실제로 바뀌는지 어떻게 확인하지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "AReHfmb4bq9C",
+                  "text": "사전식 설명 : 속성창에서 color: blue 입력 시 에디터 헤딩 색상이 실시간 반응하는 GIF를 제시하여 불필요한 줄글 없이 확인 종결",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "XjePsGdCZdLv",
+              "text": "4️⃣ 휘발성 경고와 스니펫 영구 저장 : '새로고침하면 날아갑니다. 스니펫에 넣으세요'",
+              "children": [
+                {
+                  "id": "Nf3p2LQ4K24r",
+                  "text": "사용자 허들 : '재부팅하면 왜 원래대로 돌아가지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "GCieqbMv1WmI",
+                  "text": "사전식 설명 : 임시 프리뷰와 영구 저장의 차이를 명시하고, CSS Editor 플러그인 명령어로 스니펫에 안착시키는 실무 매듭 완성",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "0k5nbnHGK9RX",
+              "text": "🎯 서사 총평 & 시사점",
+              "children": [
+                {
+                  "id": "ryM9Wch2MhkE",
+                  "text": "인위적인 기승전결 드라마나 카타르시스를 배제하고, [도구 열기 ➔ 요소 찍기 ➔ 실시간 확인 ➔ 스니펫 영구 저장]으로 직결되는 사전식 무마찰 기능 매뉴얼(Action-Only Reference Manual)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "IwWf71Lwhj29",
+          "text": "🎨 3. 시각적 배치 & 백과사전 스킨 문법 관점 (Visual: Layout & Rhythm)",
+          "children": [
+            {
+              "id": "NPHvu2uzTpOv",
+              "text": "🎬 1. GIF 동영상 기반의 인터랙션 증명",
+              "children": [
+                {
+                  "id": "4ZBlE4JPV0eX",
+                  "text": "[살아있는 증거] : 마우스 포인터가 색상을 바꾸고 헤딩이 반응하는 짧은 움직이는 짤(GIF)로 백 마디 설명 대체",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "BmV5NJflleyl",
+                  "text": "[설명 글자수 최소화] : 설명글 대신 작동 화면 자체로 인지 부하 0화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "LDm6ECLphhBM",
+              "text": "🔍 2. 마우스 커서 중심의 미시적 캡처",
+              "children": [
+                {
+                  "id": "kstrocQ79stf",
+                  "text": "[초점 집중] : 200~400px 단위의 작은 부분 캡처(검사 버튼, CSS 입력칸)로 독자의 시각적 초점 유도",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "tfWvRgxqTDkd",
+                  "text": "[시선 이탈 방지] : 넓은 화면에서 헤매지 않도록 클릭 대상만 정확히 클로즈업",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "eyk6hrP35PqF",
+              "text": "✂️ 3. 초단문 지침형 캡션",
+              "children": [
+                {
+                  "id": "tYIZ7XYvYQ0T",
+                  "text": "[1행동 1문장] : 문단당 1~2문장의 단문('이 화살표를 클릭합니다', '수정하려는 요소에 마우스를 가져가 클릭합니다')으로 즉각 행동 유도",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "EenM0VUITx4O",
+                  "text": "[읽는 시간 0초] : 글을 읽게 하지 않고 화면을 보며 마우스를 움직이게 만듦",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "cgWG7ywcpDrt",
+              "text": "🏛️ 4. 백과사전 셸(Shell) 시스템에 조화롭게 안착된 마이크로 카드",
+              "children": [
+                {
+                  "id": "lIS1Ee8AUh3z",
+                  "text": "[스킨 시스템 조화] : 상단 메뉴, 350개 좌측 카테고리, 목차 프레임과 자연스럽게 결합된 컴팩트한 엔트리 구조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "El1ISPhvJcDu",
+                  "text": "[독립성보다 소속감] : 글 단독의 완결성보다 백과사전 전체의 한 파트로 기능",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "oSbrR4pvDvRm",
+              "text": "🔗 5. 사전식 상호참조(Cross-Reference) 하이퍼링크",
+              "children": [
+                {
+                  "id": "Wjbc6bzkQm1D",
+                  "text": "[위키식 See Also] : 글 말미 '테마 세팅', 'CSS Snippets 적용하기' 링크를 위키의 '같이 보기'처럼 유기적으로 배치",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "FP1LTYdGcrW8",
+          "text": "📖 4. 원문 본문 핵심 콘텐츠 (Content: 목차 & 한 줄 요약)",
+          "children": [
+            {
+              "id": "wNTyNhkHwzWh",
+              "text": "1. 개요",
+              "children": [
+                {
+                  "id": "tAn75UONJAYf",
+                  "text": "1️⃣ Electron 아키텍처 : 옵시디언은 웹 기술 기반 앱으로 웹 개발자 도구와 동일한 기능 지원",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "0RyGaWJc8zMH",
+              "text": "2. 개발자 도구 열기",
+              "children": [
+                {
+                  "id": "dJunWOsfkNZX",
+                  "text": "1️⃣ 단축키 : Ctrl+Shift+I (macOS: Cmd+Opt+I)로 DevTools 호출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "Z4zqDCI02rsd",
+                  "text": "2️⃣ 활용 범위 : HTML DOM 검사, CSS 실시간 수정, Dataview/Templater 스크립트 디버깅",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "kmTNw3ryLtFT",
+                  "text": "3️⃣ 화면 구성 : 상단 HTML 구조 창 + 하단 CSS 스타일 패널",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "VZ8OkfR0gV0S",
+              "text": "3. CSS 수정",
+              "children": [
+                {
+                  "id": "NTGA7YCh7TjP",
+                  "text": "1️⃣ 요소 선택 (Inspect) : 좌측 상단 화살표 아이콘 클릭 후 수정 대상(헤딩 등) 클릭",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "FNFSIcTZsVnF",
+                  "text": "2️⃣ 실시간 스타일 확인 : 속성창에서 color: blue 등 실시간 변경 및 프리뷰",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "q7anKZf6romu",
+                  "text": "3️⃣ 주의사항 (Caveat) : DevTools 변경사항은 임시 확인용이며 새로고침 시 초기화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "Ja8FZ63qylAV",
+                  "text": "4️⃣ 영구 적용 (Persistence) : 변경 요소 복사 후 Edit Css snippet 명령어로 스니펫에 추가",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "9lvWx7zM4rnL",
+              "text": "4. 관련 글 연계",
+              "children": [
+                {
+                  "id": "OOqTCQHT7yqR",
+                  "text": "1️⃣ 기초 연계 : 테마 세팅 가이드 및 CSS Snippets 적용법 문서 링크 상호참조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        },
+        {
+          "id": "5C4VgLC1R2Tw",
+          "text": "🛠️ 5. 블로그가 전달하는 핵심 기술 스펙 & 필수 지식 (Technical Specs)",
+          "children": [
+            {
+              "id": "j6YzBbJ29Mox",
+              "text": "1️⃣ Electron 개발자 도구 기본 런타임",
+              "children": [
+                {
+                  "id": "8imjVBTgcb1S",
+                  "text": "[호출 단축키] : Windows/Linux Ctrl+Shift+I, macOS Cmd+Opt+I",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "wSSmOLCf58WQ",
+                  "text": "[패널 구성] : 상단 Elements(DOM 검사) + 하단 Styles(스타일 실시간 수정)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            },
+            {
+              "id": "2UVwPfpQFWOB",
+              "text": "2️⃣ 옵시디언 CSS 스니펫 메커니즘",
+              "children": [
+                {
+                  "id": "UULLM7yGw1lM",
+                  "text": "[임시 프리뷰 vs 영구 반영] : 메모리 렌더 트리 임시 프리뷰(DevTools) vs 파일 기반 CSS 재주입(.obsidian/snippets/*.css)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                },
+                {
+                  "id": "pggvhN8HX4j1",
+                  "text": "[CSS Editor 생태계 도구] : 옵시디언 내부에서 스니펫 파일을 즉시 열고 편집하는 플러그인 연동 규격",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791976181631,
+                  "updatedAt": 1791976181631
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791976181631,
+              "updatedAt": 1791976181631
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791976181631,
+          "updatedAt": 1791976181631
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791976181631,
+      "updatedAt": 1791976181631
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791976181631,
+  "updatedAt": 1791979431378
+}

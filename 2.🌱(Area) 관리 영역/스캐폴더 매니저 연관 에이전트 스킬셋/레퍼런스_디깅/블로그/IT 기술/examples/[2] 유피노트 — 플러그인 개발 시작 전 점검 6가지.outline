@@ -1,0 +1,745 @@
+{
+  "version": "1.0.0",
+  "id": "0b1ef6ef65b4",
+  "title": "[2] 유피노트 — 플러그인 개발 시작 전 점검 6가지",
+  "rootNodes": [
+    {
+      "id": "Ok4XUuIpgrvM",
+      "text": "📌 레퍼런스 분석 : [2] 유피노트 — 플러그인 개발 시작 전 점검 6가지",
+      "children": [
+        {
+          "id": "ceT0GxL7hR0u",
+          "text": "🔗 원문 메타 정보 & 선정 개요",
+          "children": [
+            {
+              "id": "4rGNRJrn53Ow",
+              "text": "출처 URL : https://uppinote.tistory.com/5",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "Wi1i0I7lT8ZY",
+              "text": "원문 제목 : Obsidian 플러그인 개발, 시작 전에 꼭 확인할 6가지",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "0CXqRXsMMQdU",
+              "text": "채택 이유 : 개발 착수 전 '스니펫 vs 플러그인 경계 판별, 중복 아이디어 검증, 파일 구조화, 설정 설계' 등 낭비 없는 개발을 보장하는 프리-코딩(Pre-Coding) 점검 표준 가이드",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973003172,
+          "updatedAt": 1791973003172
+        },
+        {
+          "id": "hM6dNXQgqn0q",
+          "text": "🎯 1. 타깃 페르소나 & 가치 제안 전략 (Strategy: Who & Why)",
+          "children": [
+            {
+              "id": "rd7L9e8IyaxR",
+              "text": "📢 1. 단 하나의 핵심 메시지 (Core Message & Promise)",
+              "children": [
+                {
+                  "id": "001XcW556TLp",
+                  "text": "[핵심 선언] : '무작정 코드부터 치지 마라 — 10분의 기획 점검이 10시간의 삽질을 막아준다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "xGUbYW3rwwhQ",
+                  "text": "[약속(Promise)] : 개발 도중 '이걸 왜 굳이 플러그인으로 만들었지?' 혹은 '기존에 이미 더 좋은 게 있네?'라며 좌절하고 폐기하는 사태 사전 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "OJ1iVrejIvBd",
+                  "text": "[인식 전환(Mindset)] : '개발 = 코드 작성' ➔ '개발 = 문제 정의와 최소 스펙(MVP)의 경계 긋기'로 프레이밍 전환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "6gZaA4P5sxb6",
+              "text": "👥 2. 주요 대상 독자 (Target Persona)",
+              "children": [
+                {
+                  "id": "4YZVGaH1bm8M",
+                  "text": "막연히 '옵시디언 플러그인 한번 만들어볼까?' 하는 아이디어는 있지만 구체적인 스펙과 구조를 어떻게 잡아야 할지 모르는 입문자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "E1mMHS4PkPfA",
+                  "text": "CSS 스니펫이나 기존 플러그인으로 해결 가능한 문제를 굳이 복잡한 TS 플러그인으로 개발하려는 낭비를 방지하고 싶은 개발자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "p9ihwiKp6UNU",
+              "text": "🚧 3. 독자가 마주하는 3대 핵심 장벽 (Core Barriers)",
+              "children": [
+                {
+                  "id": "KLZYmG6kz9U5",
+                  "text": "[오버엔지니어링 장벽] : CSS/스니펫으로 충분한 UI 변경을 무리하게 무거운 플러그인으로 개발하려다 지치는 함정",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "Y4m2JkIPQghK",
+                  "text": "[바퀴의 재발명 장벽] : 커뮤니티에 이미 존재하는 완성도 높은 플러그인의 존재를 모르고 중복 개발하는 낭비",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "fS3y49R6JX2a",
+                  "text": "[피처 크립(Feature Creep) 장벽] : '이것도 넣고 저것도 넣자' 하다가 시작도 못 하고 기획 단계에서 침몰하는 완벽주의 불안",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "SYKsyrb15fch",
+              "text": "💡 4. 돌파 전략 & 메인 컨셉 (Value Proposition)",
+              "children": [
+                {
+                  "id": "1JwhTtxKs14V",
+                  "text": "[3분 필터링 매트릭스] : 기능(JS) vs 스타일(CSS) vs 코어 기능의 명확한 3분할 비교표 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "dpfjm8jIh5x1",
+                  "text": "[3대 자문 체크리스트] : 불편함 출발 ➔ 디렉토리 검색 ➔ 시나리오 한정의 3단계 검증 프로세스 확립",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "dlS1dUyObEhQ",
+                  "text": "[표준 파일 맵 제공] : 복잡한 공식 템플릿의 10개 파일 역할을 한눈에 파악하는 조감도 표 제시",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "6qPtXm4Ph5y3",
+                  "text": "[실제 출시작 아키텍처 전수] : 저자의 실제 런칭작(Auto Note Importer)을 바탕으로 검증된 설정 UI 및 유틸 분리 패턴 공개",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791973003172,
+          "updatedAt": 1791973003172
+        },
+        {
+          "id": "7zzsiiFleMFk",
+          "text": "🎬 2. 논지 전개 & 독자 중심 스토리라이닝 관점 (Narrative: Flow & Emotion)",
+          "children": [
+            {
+              "id": "RiP5BRRfZRbo",
+              "text": "1️⃣ 1. 형태 정의 (Boundary Check) : '내가 만들려는 게 진짜 플러그인이 맞나요?'",
+              "children": [
+                {
+                  "id": "mW4KBRV7tEdu",
+                  "text": "심리적 허들 : '플러그인과 CSS 스니펫, 코어 플러그인은 뭐가 다른 거지? 내가 뭘 만들어야 하지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "FOEf9lm6jqUO",
+                  "text": "스토리라이닝 기법 : 3종 비교표로 정의와 추천 시점을 명쾌하게 대조한 뒤, '기능인가 스타일인가? 기능이면 플러그인!'이라는 단도직입적 콜아웃으로 혼란 종식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "DVIWwMIs14Sm",
+              "text": "2️⃣ 2. 바퀴의 재발명 및 기획 침몰 차단 (Validation) : '진짜 필요한가? 이것도 넣어야지에 빠지지 마세요'",
+              "children": [
+                {
+                  "id": "sau9ymeFJQxo",
+                  "text": "심리적 허들 : '만들었는데 아무도 안 쓰면 어쩌지? 기존에 있으면 어쩌지? 기능을 어디까지 넣어야 하지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "ExA6XqGXCXRK",
+                  "text": "스토리라이닝 기법 : [내 불편함(Airtable 복붙) ➔ 디렉토리 검색 ➔ 시나리오 타깃팅]의 3단계 깔때기를 제시하고, '이것도 넣어야지를 하다 보면 끝이 없다'는 명언형 콜아웃으로 완벽주의 경계",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "gOe7BlOZiXrC",
+              "text": "3️⃣ 3. 공식 문서 탐색 부담 완화 (Curated Specs) : '공식 문서에서 딱 이 4가지만 눈에 익히세요'",
+              "children": [
+                {
+                  "id": "fl4BPmLFandL",
+                  "text": "심리적 허들 : '공식 개발자 문서는 영문에 너무 방대해서 어디서부터 봐야 할지 엄두가 안 난다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "Jb5135QokYzG",
+                  "text": "스토리라이닝 기법 : 방대한 영문 문서를 통독하라는 대신 Plugin 생명주기, addCommand, addSettingTab, TFile/TFolder 4개 핵심 인터페이스만 콕 집어 큐레이션",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "9yaItQqmMrad",
+              "text": "4️⃣ 4. 실전 도구 표준화와 치트키 선제 노출 (Toolchain Setup) : '도구 고민 끝내고 deploy 스크립트 챙기세요'",
+              "children": [
+                {
+                  "id": "2RRHToDDdTVF",
+                  "text": "심리적 허들 : 'IDE는 뭘 쓰고 빌드는 어떻게 하고 테스트는 어디서 해야 하지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "9S6Px3J19y9e",
+                  "text": "스토리라이닝 기법 : 4개 표준 환경(VSCode, npm, esbuild, 별도 볼트 복사)을 표로 제시하고, 반복 복사를 없애주는 deploy 스크립트를 조기 노출하여 신뢰도 확보",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "XAma34ezonjx",
+              "text": "5️⃣ 5. 블랙박스 파일 해체 (Demystification) : '샘플 플러그인의 10개 파일, 한 표로 정리 끝'",
+              "children": [
+                {
+                  "id": "wDiWYY3yDXq7",
+                  "text": "심리적 허들 : '템플릿을 열었더니 json, mjs, rc 파일이 너무 많아서 뭐가 뭔지 두렵다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "o8LRzlQieqnJ",
+                  "text": "스토리라이닝 기법 : 10개 주요 파일의 역할과 기능을 1:1 매칭 표로 완벽 해체하여 미지의 공포를 통제 가능한 영역으로 전환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "cb8emOQY7x33",
+              "text": "6️⃣ 6. 실전 노하우 투척과 시리즈 록인 (Real-world Blueprint & Hook) : '실제 출시작의 아키텍처를 그대로 베끼세요'",
+              "children": [
+                {
+                  "id": "4RmCurWutIFi",
+                  "text": "심리적 허들 : '파일이 커지면 어디에 어떻게 쪼개 넣어야 하지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "M06vdvqtYdF4",
+                  "text": "스토리라이닝 기법 : 저자의 실제 런칭작(Auto Note Importer)의 실전 설정 구조와 2대 분리 전략(settings.ts, utils.ts)을 공개해 실전성 부여 후 다음 편(환경 세팅 및 코드 작성)으로 자연스럽게 록인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "HYnhfy1nIXWV",
+              "text": "🎯 스토리라이닝 총평 & 핵심 시사점",
+              "children": [
+                {
+                  "id": "6jnHncCj2Dy4",
+                  "text": "코딩 진입 직전의 방황과 낭비를 막기 위해 [형태 판별 ➔ 타당성 검증 ➔ 핵심 인터페이스 ➔ 도구 표준 ➔ 파일 구조 해부 ➔ 실전 분리 패턴]으로 이어지는 정교한 사전 브리핑(Pre-Flight Checklist) 구조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973003172,
+          "updatedAt": 1791973003172
+        },
+        {
+          "id": "h1lM9rk0sJkj",
+          "text": "🎨 3. 시각적 배치 & 블로그 편집 문법 관점 (Visual: Layout & Rhythm)",
+          "children": [
+            {
+              "id": "vROcOZoXHfzI",
+              "text": "📊 1. 표(Table) 중심의 고밀도 스캐닝 레이아웃 (Table-Driven Scanability)",
+              "children": [
+                {
+                  "id": "NuXLDu6wBPcA",
+                  "text": "[총 4개 핵심 비교표 배치] : [3종 비교표] ➔ [개발 도구 세팅표] ➔ [10대 파일 역할표] ➔ [코드 분리표]로 긴 서술 없이 1초 스캐닝 보장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "bS9EKhOVjDRI",
+                  "text": "[코드 대신 구조화된 데이터] : 시리즈 2편(6번 글)이 코드/캡처 중심이었다면, 1편은 표를 주 무기로 삼아 지식의 구조적 밀도 극대화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "HZmWtvVLWchz",
+              "text": "🧱 2. 통일된 4단 모듈 조립 공식 (Consistent Block Anatomy)",
+              "children": [
+                {
+                  "id": "vAGrCybuIEIW",
+                  "text": "[블록 표준 사이클] : [이모지 번호 헤더 (🧩 1., ✅ 2., ...)] ➔ [H4 서브헤딩] ➔ [표 or 불릿 or 코드] ➔ [결론 콜아웃 인용구]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "AJGqSdbS2c2D",
+                  "text": "[시리즈 일관성] : 1편과 2편 간 동일한 시각 리듬을 유지하여 연재물 전체의 완성도와 브랜드 아이덴티티 구축",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "7qVOwLTKZOlV",
+              "text": "💬 3. 촌철살인 인용구(Callout Punchline)를 통한 의사결정 강제",
+              "children": [
+                {
+                  "id": "NGwBVuQEeEbW",
+                  "text": "[단도직입 판정] : '내가 만들고 싶은 건 기능인가 스타일인가? 👉 기능이라면 플러그인이 맞습니다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "f3pEILhhI8bo",
+                  "text": "[스코프 경고] : '\"이것도 넣어야지\"를 하다보면 끝이 없습니다'로 독자의 욕심을 물리적으로 통제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "Ecy6CbSpXou1",
+              "text": "⏸️ 4. 시각적 쉼표(<hr>)와 점진적 정보 노출 (Progressive Disclosure)",
+              "children": [
+                {
+                  "id": "JvFK1xckq2L7",
+                  "text": "[체크오프 리듬] : 6개 항목 사이마다 수평선을 배치해 체크리스트를 하나씩 완료해 나가는 심리적 리듬 부여",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "xfmPAHXtKFVD",
+                  "text": "[추상에서 구체로] : 개념(1, 2) ➔ 도구/문서(3, 4) ➔ 파일 구조(5) ➔ 아키텍처 패턴(6)으로 정보 깊이를 점진적 심화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973003172,
+          "updatedAt": 1791973003172
+        },
+        {
+          "id": "KXZUITjohgw5",
+          "text": "📖 4. 원문 본문 핵심 콘텐츠 (Content: 목차 & 한 줄 요약)",
+          "children": [
+            {
+              "id": "fUY2g4vStrlH",
+              "text": "1. 플러그인 vs 스니펫 vs 코어 플러그인",
+              "children": [
+                {
+                  "id": "KRHQoHhdDJ0X",
+                  "text": "1️⃣ 3대 구성 요소 비교 : 코어 플러그인(수정 불가 내장 기능), CSS 스니펫(디자인 변경), 커뮤니티 플러그인(새 기능 구현)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "aEY7lQsU9gYV",
+                  "text": "2️⃣ 의사결정 기준 : 외형/스타일만 바꾼다면 CSS 스니펫, 새로운 데이터/인터랙션/로직을 다룬다면 플러그인 채택",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "lM37c4BrERAT",
+              "text": "2. 진짜 필요한 플러그인인가? 먼저 따져보자",
+              "children": [
+                {
+                  "id": "STvfHAdSOGkm",
+                  "text": "1️⃣ 문제 인식 : 매번 반복되는 나만의 불편함(예: Airtable 데이터 복사-붙여넣기)에서 아이디어 도출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "zvjOhHGSkNUR",
+                  "text": "2️⃣ 사전 조사 : Obsidian Plugin Directory 검색을 통한 유사 플러그인 확인 및 차별점 도출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "P7vs7kpZWnch",
+                  "text": "3️⃣ 시나리오 확정 : 사용자 타깃과 상황을 좁혀 무한 기능 확장(Scope Creep) 사전 차단",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "y7HLrhHqb5pq",
+              "text": "3. 공식 문서를 꼭 훑어보자",
+              "children": [
+                {
+                  "id": "eKLvzWzef0YS",
+                  "text": "1️⃣ 공식 리소스 : Obsidian Developer Docs 및 공식 sample-plugin 레포지토리 링크",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "CUooYh5rA27l",
+                  "text": "2️⃣ 4대 핵심 개념 : Plugin 생명주기(onload/onunload), addCommand, addSettingTab, TFile/TFolder",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "fwPrxD5pq1Gw",
+              "text": "4. 개발 환경과 구조, 이렇게 준비했다",
+              "children": [
+                {
+                  "id": "C8nWHG6X06Hb",
+                  "text": "1️⃣ 추천 도구 체인 : VSCode, npm, esbuild, 별도 볼트 복사 배포",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "ZQ4nMfQ2XE9p",
+                  "text": "2️⃣ 자동화 스크립트 : package.json의 deploy 명령어(npm run build && cp ...) 선제 구축",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "Kdx2HHR14wp6",
+              "text": "5. Sample Plugin 구조 한눈에 보기",
+              "children": [
+                {
+                  "id": "CY0o0iPd01gK",
+                  "text": "1️⃣ 10대 핵심 파일 매핑 : manifest.json(메타), main.ts(엔트리), esbuild(빌드), tsconfig, eslint 등",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "raeFfPTYTBUA",
+                  "text": "2️⃣ 커스터마이징 출발점 : 공식 샘플 플러그인을 기초 골격으로 삼아 점진적 확장 권장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "dRb5SKMZEYrR",
+              "text": "6. 설정 구조와 템플릿 설계 – 제 경험을 바탕으로 추천하는 방식",
+              "children": [
+                {
+                  "id": "3eQT9Xiii9tN",
+                  "text": "1️⃣ 설정 구조화 : 폴더 경로, 파일명 포맷, 템플릿 경로, 자동/수동 동기화 옵션 정의",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "IsI6NrZxsD7P",
+                  "text": "2️⃣ 2대 파일 분리 전략 : 설정 UI를 담당하는 settings.ts와 공통 로직을 담는 utils.ts로 모듈 분리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973003172,
+          "updatedAt": 1791973003172
+        },
+        {
+          "id": "yes4DSXWB1aW",
+          "text": "🛠️ 5. 블로그가 전달하는 핵심 기술 스펙 & 필수 지식 (Technical Specs)",
+          "children": [
+            {
+              "id": "lAm0DBcORlQK",
+              "text": "1️⃣ 플러그인 유형 판별 & 사전 검증 기준 (Decision Matrix & Scoping)",
+              "children": [
+                {
+                  "id": "z1jQBlUNASdt",
+                  "text": "[스니펫 vs 플러그인 경계] : CSS 스타일 주입(styles.css / CSS Snippet) vs TypeScript 로직 실행(main.ts) 분리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "33a0tlWQkbOk",
+                  "text": "[아이디어 검증 3단계] : 불편함 포착 ➔ 공식 디렉토리 중복 체크 ➔ 타깃 시나리오 및 MVP 경계 한정",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "N13xu1Gww3Y9",
+              "text": "2️⃣ 공식 SDK 핵심 API 접점 4종 (Core SDK Entry Points)",
+              "children": [
+                {
+                  "id": "HQSKaltWR2aP",
+                  "text": "[생명주기] : Plugin 클래스 상속 및 onload() / onunload() 자원 해제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "zmRMvSlxVK4l",
+                  "text": "[사용자 인터랙션] : addCommand()(명령어 팔레트 연동)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "9W3bQBfxdse8",
+                  "text": "[환경설정] : addSettingTab()(설정 화면 연동)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "7wNyf1hsndWl",
+                  "text": "[파일시스템 추상화] : 옵시디언 가상 파일 시스템 객체 TFile, TFolder",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            },
+            {
+              "id": "uSwjYcS7583E",
+              "text": "3️⃣ 개발 툴체인 및 권장 모듈 구조 (Tooling & Modularization)",
+              "children": [
+                {
+                  "id": "TFlkiUFK4pkO",
+                  "text": "[표준 도구 스택] : VSCode + npm + esbuild",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                },
+                {
+                  "id": "cs5AM7fVKIvX",
+                  "text": "[모듈 책임 분리(SRP)] : main.ts(진입점 및 이벤트) / settings.ts(설정 UI) / utils.ts(순수 함수 유틸리티) 3단 분리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791973003172,
+                  "updatedAt": 1791973003172
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791973003172,
+              "updatedAt": 1791973003172
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791973003172,
+          "updatedAt": 1791973003172
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1791973003172,
+      "updatedAt": 1791973003172
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791973003172,
+  "updatedAt": 1791979431378
+}

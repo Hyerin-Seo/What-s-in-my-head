@@ -1,0 +1,258 @@
+{
+  "version": "1.0.0",
+  "id": "tplDiggerIT01",
+  "title": "template",
+  "rootNodes": [
+    {
+      "id": "tplRoot0001",
+      "text": "📌 [레퍼런스 디깅] {작성자/블로그명} — {글 제목}",
+      "children": [
+        {
+          "id": "tplMeta0001",
+          "text": "🔗 0. 원문 메타 정보 & 작성 맥락 (Context & Environment)",
+          "children": [
+            {
+              "id": "tplMetaU001",
+              "text": "출처 URL : {원문 링크}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplMetaT002",
+              "text": "원문 제목 : {원문 그대로의 정식 표제}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplMetaA003",
+              "text": "작성자 / 게시 플랫폼 : {작성자명 / 티스토리, 벨로그, 미디엄, 개인 위키 등}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplMetaE004",
+              "text": "환경적 맥락과 포지셔닝 : {단독 포스트인지, 사이트 전체가 백과사전식인 환경의 일부인지, 단행본 교재의 1개 챕터인지 등 배경 환경과 그것이 글의 분량/호흡에 미친 영향 서술}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplMetaW005",
+              "text": "채택 이유 : {이 레퍼런스의 어떤 구조적 탁월함이나 관점을 해부하기 위해 선정했는가}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplMetaS006",
+              "text": "플랫폼 셸(Shell) 배제 메모 : {플랫폼 기본 UI/사이드바 등 본문 분석에서 걸러낸 외적 스킨 요소 기록}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791979482000,
+          "updatedAt": 1791979482000
+        },
+        {
+          "id": "tplTarget0001",
+          "text": "🎯 1. 타깃 독자 & 가치 제안 (Who & Why)",
+          "children": [
+            {
+              "id": "tplTgtL001",
+              "text": "독자의 현실적 눈높이 : {과장된 전문가/해커 프레이밍을 배제하고, 글이 요구하는 비개발자/입문자/실무자 수준의 실제 선수 지식 서술}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplTgtP002",
+              "text": "독자의 현실적 결핍(Pain Point) : {작업자가 겪는 막막함, 설정 실패의 두려움, 무거워진 볼트 등 현실적인 고통 포착 방식 서술}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplTgtO003",
+              "text": "단 하나의 약속과 가치(Outcome Promise) : {글을 끝까지 따라 했을 때 독자의 손에 남는 구체적 결과물과 효능감}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791979482000,
+          "updatedAt": 1791979482000
+        },
+        {
+          "id": "tplNarr0001",
+          "text": "🎬 2. 논지 전개 & 독자 중심 스토리라이닝 (Narrative Flow & Logic)",
+          "children": [
+            {
+              "id": "tplNarS001",
+              "text": "논리적 전개 단계(Step-by-Step Architecture) : {도입부 주의 환기 ➔ 심리적 안전망/환경 격리 ➔ 최소 성공 실습 ➔ 최종 검증 및 행동 유도 등 실제 글의 빌드업 단계 서술}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplNarT002",
+              "text": "섹션 간 전환 및 연결(Transition Devices) : {이전 단계에서 다음 단계로 넘어갈 때 독자의 이탈을 방어하는 논리적 이음새 설계}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplNarE003",
+              "text": "서사적 호흡과 톤앤매너 : {억지 드라마를 배제한 본래 글의 텍스처 — 담백한 테크니컬 가이드 / 친절한 페어 튜터 / 실전 개발 회고 등 고유 톤}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791979482000,
+          "updatedAt": 1791979482000
+        },
+        {
+          "id": "tplVis0001",
+          "text": "🎨 3. 시각적 배치 & 편집 문법 (Visual Chunking & Pacing)",
+          "children": [
+            {
+              "id": "tplVisR001",
+              "text": "시각 자료의 개입 타이밍과 역할 : {텍스트 피로도를 낮추기 위해 스크린샷, 다이어그램, 전후(Before/After) 비교가 어떤 의도로 배치되었는가}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplVisC002",
+              "text": "정보 청킹(Chunking) 장치 : {콜아웃 박스, 코드 블록, 불릿 리스트, 넘버링 스텝 등 인지 부하를 분절하는 구체적 서식 장치}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplVisA003",
+              "text": "시선 정지점(Anchor Points) : {스크롤을 빠르게 내리며 훑어볼 때 눈길이 자연스럽게 머무는 핵심 시각 앵커}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791979482000,
+          "updatedAt": 1791979482000
+        },
+        {
+          "id": "tplCnt0001",
+          "text": "📖 4. 원문 본문 핵심 콘텐츠 (Content Deconstruction)",
+          "children": [
+            {
+              "id": "tplCntH001",
+              "text": "원문 실제 목차 계층(H1, H2, H3) 복원 : {원문의 뼈대 목차 구조를 누락 없이 나열}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplCntS002",
+              "text": "섹션별 핵심 메시지 요약 : {각 목차 덩어리가 실제로 전달하는 내용과 역할을 1~2줄 객관적 요약}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791979482000,
+          "updatedAt": 1791979482000
+        },
+        {
+          "id": "tplSpec0001",
+          "text": "🛠️ 5. 핵심 기술 스펙 & 팩트 추출 (Technical Specs & Facts)",
+          "children": [
+            {
+              "id": "tplSpcF001",
+              "text": "원문 등장 핵심 API / 도구 / 설정값 : {본문과 코드에 실제로 명시된 기술 팩트만 객관적 추출}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplSpcC002",
+              "text": "필수 코드 스니펫 및 파라미터 : {원문의 핵심 코드 블록과 파라미터 기록}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplSpcE003",
+              "text": "의도적으로 생략된 기술 범위(선 긋기) : {글쓴이가 독자의 인지 과부하를 막기 위해 과감히 생략한 심화 영역 기록 (환각 방지)}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791979482000,
+          "updatedAt": 1791979482000
+        },
+        {
+          "id": "tplIns0001",
+          "text": "💡 6. 스캐폴더 관점의 시사점 (Insights for Scaffolding)",
+          "children": [
+            {
+              "id": "tplInsB001",
+              "text": "벤치마킹할 탁월한 구조적 장치 : {독자를 편안하게 몰입시킨 설계 기법}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            },
+            {
+              "id": "tplInsL002",
+              "text": "한계점 및 개선 가능 지점 : {만약 이 구조를 참고해 새 문서를 스캐폴딩한다면 보완해야 할 지점}",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791979482000,
+              "updatedAt": 1791979482000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791979482000,
+          "updatedAt": 1791979482000
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791979482000,
+      "updatedAt": 1791979482000
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791979482000,
+  "updatedAt": 1791979482000
+}
