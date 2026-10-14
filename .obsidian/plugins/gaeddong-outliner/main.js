@@ -77,1149 +77,622 @@ function generateNodeId() {
 	return id;
 }
 //#endregion
-//#region ../../node_modules/.pnpm/immer@11.1.21/node_modules/immer/dist/immer.mjs
-var NOTHING = Symbol.for("immer-nothing");
-var DRAFTABLE = Symbol.for("immer-draftable");
-var DRAFT_STATE = Symbol.for("immer-state");
-function die(error, ...args) {
-	throw new Error(`[Immer] minified error nr: ${error}. Full error at: https://bit.ly/3cXEKWf`);
-}
-var O = Object;
-var getPrototypeOf = O.getPrototypeOf;
-var CONSTRUCTOR = "constructor";
-var PROTOTYPE = "prototype";
-var CONFIGURABLE = "configurable";
-var ENUMERABLE = "enumerable";
-var WRITABLE = "writable";
-var VALUE = "value";
-var isDraft = (value) => !!value && !!value[DRAFT_STATE];
-function isDraftable(value) {
-	if (!value) return false;
-	return isPlainObject(value) || isArray(value) || !!value[DRAFTABLE] || !!value[CONSTRUCTOR]?.[DRAFTABLE] || isMap(value) || isSet(value);
-}
-var objectCtorString = O[PROTOTYPE][CONSTRUCTOR].toString();
-var cachedCtorStrings = /* @__PURE__ */ new WeakMap();
-function isPlainObject(value) {
-	if (!value || !isObjectish(value)) return false;
-	const proto = getPrototypeOf(value);
-	if (proto === null || proto === O[PROTOTYPE]) return true;
-	const Ctor = O.hasOwnProperty.call(proto, CONSTRUCTOR) && proto[CONSTRUCTOR];
-	if (Ctor === Object) return true;
-	if (!isFunction(Ctor)) return false;
-	let ctorString = cachedCtorStrings.get(Ctor);
-	if (ctorString === void 0) {
-		ctorString = Function.toString.call(Ctor);
-		cachedCtorStrings.set(Ctor, ctorString);
-	}
-	return ctorString === objectCtorString;
-}
-function each(obj, iter, strict = true) {
-	if (getArchtype(obj) === 0) (strict ? Reflect.ownKeys(obj) : O.keys(obj)).forEach((key) => {
-		iter(key, obj[key], obj);
-	});
-	else obj.forEach((entry, index) => iter(index, entry, obj));
-}
-function getArchtype(thing) {
-	const state = thing[DRAFT_STATE];
-	return state ? state.type_ : isArray(thing) ? 1 : isMap(thing) ? 2 : isSet(thing) ? 3 : 0;
-}
-var has = (thing, prop, type = getArchtype(thing)) => type === 2 ? thing.has(prop) : O[PROTOTYPE].hasOwnProperty.call(thing, prop);
-var get = (thing, prop, type = getArchtype(thing)) => type === 2 ? thing.get(prop) : thing[prop];
-var set = (thing, propOrOldValue, value, type = getArchtype(thing)) => {
-	if (type === 2) thing.set(propOrOldValue, value);
-	else if (type === 3) thing.add(value);
-	else thing[propOrOldValue] = value;
-};
-function is(x, y) {
-	if (x === y) return x !== 0 || 1 / x === 1 / y;
-	else return x !== x && y !== y;
-}
-var isArray = Array.isArray;
-var isMap = (target) => target instanceof Map;
-var isSet = (target) => target instanceof Set;
-var isObjectish = (target) => typeof target === "object";
-var isFunction = (target) => typeof target === "function";
-var isBoolean = (target) => typeof target === "boolean";
-function isArrayIndex(value) {
-	const n = +value;
-	return Number.isInteger(n) && String(n) === value;
-}
-var latest = (state) => state.copy_ || state.base_;
-var getFinalValue = (state) => state.modified_ ? state.copy_ : state.base_;
-function shallowCopy(base, strict) {
-	if (isMap(base)) return new Map(base);
-	if (isSet(base)) return new Set(base);
-	if (isArray(base)) return Array[PROTOTYPE].slice.call(base);
-	const isPlain = isPlainObject(base);
-	if (strict === true || strict === "class_only" && !isPlain) {
-		const descriptors = O.getOwnPropertyDescriptors(base);
-		delete descriptors[DRAFT_STATE];
-		let keys = Reflect.ownKeys(descriptors);
-		for (let i = 0; i < keys.length; i++) {
-			const key = keys[i];
-			const desc = descriptors[key];
-			if (desc[WRITABLE] === false) {
-				desc[WRITABLE] = true;
-				desc[CONFIGURABLE] = true;
-			}
-			if (desc.get || desc.set) descriptors[key] = {
-				[CONFIGURABLE]: true,
-				[WRITABLE]: true,
-				[ENUMERABLE]: desc[ENUMERABLE],
-				[VALUE]: base[key]
-			};
-		}
-		return O.create(getPrototypeOf(base), descriptors);
-	} else {
-		const proto = getPrototypeOf(base);
-		if (proto !== null && isPlain) return { ...base };
-		const obj = O.create(proto);
-		return O.assign(obj, base);
-	}
-}
-function freeze(obj, deep = false) {
-	if (isFrozen(obj) || isDraft(obj) || !isDraftable(obj)) return obj;
-	if (getArchtype(obj) > 1) O.defineProperties(obj, {
-		set: dontMutateMethodOverride,
-		add: dontMutateMethodOverride,
-		clear: dontMutateMethodOverride,
-		delete: dontMutateMethodOverride
-	});
-	O.freeze(obj);
-	if (deep) each(obj, (_key, value) => {
-		freeze(value, true);
-	}, false);
-	return obj;
-}
-function dontMutateFrozenCollections() {
-	die(2);
-}
-var dontMutateMethodOverride = { [VALUE]: dontMutateFrozenCollections };
-function isFrozen(obj) {
-	if (obj === null || !isObjectish(obj)) return true;
-	return O.isFrozen(obj);
-}
-var PluginMapSet = "MapSet";
-var PluginPatches = "Patches";
-var PluginArrayMethods = "ArrayMethods";
-var plugins = {};
-function getPlugin(pluginKey) {
-	const plugin = plugins[pluginKey];
-	if (!plugin) die(0, pluginKey);
-	return plugin;
-}
-var isPluginLoaded = (pluginKey) => !!plugins[pluginKey];
-var currentScope;
-var getCurrentScope = () => currentScope;
-var createScope = (parent_, immer_) => ({
-	drafts_: [],
-	parent_,
-	immer_,
-	canAutoFreeze_: true,
-	unfinalizedDrafts_: 0,
-	handledSet_: /* @__PURE__ */ new Set(),
-	processedForPatches_: /* @__PURE__ */ new Set(),
-	mapSetPlugin_: isPluginLoaded(PluginMapSet) ? getPlugin(PluginMapSet) : void 0,
-	arrayMethodsPlugin_: isPluginLoaded(PluginArrayMethods) ? getPlugin(PluginArrayMethods) : void 0
-});
-function usePatchesInScope(scope, patchListener) {
-	if (patchListener) {
-		scope.patchPlugin_ = getPlugin(PluginPatches);
-		scope.patches_ = [];
-		scope.inversePatches_ = [];
-		scope.patchListener_ = patchListener;
-	}
-}
-function revokeScope(scope) {
-	leaveScope(scope);
-	scope.drafts_.forEach(revokeDraft);
-	scope.drafts_ = null;
-}
-function leaveScope(scope) {
-	if (scope === currentScope) currentScope = scope.parent_;
-}
-var enterScope = (immer2) => currentScope = createScope(currentScope, immer2);
-function revokeDraft(draft) {
-	const state = draft[DRAFT_STATE];
-	if (state.type_ === 0 || state.type_ === 1) state.revoke_();
-	else state.revoked_ = true;
-}
-function processResult(result, scope) {
-	scope.unfinalizedDrafts_ = scope.drafts_.length;
-	const baseDraft = scope.drafts_[0];
-	if (result !== void 0 && result !== baseDraft) {
-		if (baseDraft[DRAFT_STATE].modified_) {
-			revokeScope(scope);
-			die(4);
-		}
-		if (isDraftable(result)) result = finalize(scope, result);
-		const { patchPlugin_ } = scope;
-		if (patchPlugin_) patchPlugin_.generateReplacementPatches_(baseDraft[DRAFT_STATE].base_, result, scope);
-	} else result = finalize(scope, baseDraft);
-	maybeFreeze(scope, result, true);
-	revokeScope(scope);
-	if (scope.patches_) scope.patchListener_(scope.patches_, scope.inversePatches_);
-	return result !== NOTHING ? result : void 0;
-}
-function finalize(rootScope, value) {
-	if (isFrozen(value)) return value;
-	const state = value[DRAFT_STATE];
-	if (!state) return handleValue(value, rootScope.handledSet_, rootScope);
-	if (!isSameScope(state, rootScope)) return value;
-	if (!state.modified_) return state.base_;
-	if (!state.finalized_) {
-		const { callbacks_ } = state;
-		if (callbacks_) while (callbacks_.length > 0) callbacks_.pop()(rootScope);
-		generatePatchesAndFinalize(state, rootScope);
-	}
-	return state.copy_;
-}
-function maybeFreeze(scope, value, deep = false) {
-	if (!scope.parent_ && scope.immer_.autoFreeze_ && scope.canAutoFreeze_) freeze(value, deep);
-}
-function markStateFinalized(state) {
-	state.finalized_ = true;
-	state.scope_.unfinalizedDrafts_--;
-}
-var isSameScope = (state, rootScope) => state.scope_ === rootScope;
-var EMPTY_LOCATIONS_RESULT = [];
-function updateDraftInParent(parent, draftValue, finalizedValue, originalKey) {
-	const parentCopy = latest(parent);
-	const parentType = parent.type_;
-	if (originalKey !== void 0) {
-		if (get(parentCopy, originalKey, parentType) === draftValue) {
-			set(parentCopy, originalKey, finalizedValue, parentType);
-			return;
-		}
-	}
-	if (!parent.draftLocations_) {
-		const draftLocations = parent.draftLocations_ = /* @__PURE__ */ new Map();
-		each(parentCopy, (key, value) => {
-			if (isDraft(value)) {
-				const keys = draftLocations.get(value) || [];
-				keys.push(key);
-				draftLocations.set(value, keys);
-			}
-		});
-	}
-	const locations = parent.draftLocations_.get(draftValue) ?? EMPTY_LOCATIONS_RESULT;
-	for (const location of locations) set(parentCopy, location, finalizedValue, parentType);
-}
-function registerChildFinalizationCallback(parent, child, key) {
-	parent.callbacks_.push(function childCleanup(rootScope) {
-		const state = child;
-		if (!state || !isSameScope(state, rootScope)) return;
-		rootScope.mapSetPlugin_?.fixSetContents(state);
-		const finalizedValue = getFinalValue(state);
-		updateDraftInParent(parent, state.draft_ ?? state, finalizedValue, key);
-		generatePatchesAndFinalize(state, rootScope);
-	});
-}
-function generatePatchesAndFinalize(state, rootScope) {
-	if (state.modified_ && !state.finalized_ && (state.type_ === 3 || state.type_ === 1 && state.allIndicesReassigned_ || (state.assigned_?.size ?? 0) > 0)) {
-		const { patchPlugin_ } = rootScope;
-		if (patchPlugin_) {
-			const basePath = patchPlugin_.getPath(state);
-			if (basePath) patchPlugin_.generatePatches_(state, basePath, rootScope);
-		}
-		markStateFinalized(state);
-	}
-}
-function handleCrossReference(target, key, value) {
-	const { scope_ } = target;
-	if (isDraft(value)) {
-		const state = value[DRAFT_STATE];
-		if (isSameScope(state, scope_)) state.callbacks_.push(function crossReferenceCleanup() {
-			prepareCopy(target);
-			updateDraftInParent(target, value, getFinalValue(state), key);
-		});
-	} else if (isDraftable(value)) target.callbacks_.push(function nestedDraftCleanup() {
-		const targetCopy = latest(target);
-		if (target.type_ === 3) {
-			if (targetCopy.has(value)) handleValue(value, scope_.handledSet_, scope_);
-		} else if (get(targetCopy, key, target.type_) === value) {
-			if (scope_.drafts_.length > 1 && (target.assigned_.get(key) ?? false) === true && target.copy_) handleValue(get(target.copy_, key, target.type_), scope_.handledSet_, scope_);
-		}
-	});
-}
-function handleValue(target, handledSet, rootScope) {
-	if (!rootScope.immer_.autoFreeze_ && rootScope.unfinalizedDrafts_ < 1) return target;
-	if (isDraft(target) || handledSet.has(target) || !isDraftable(target) || isFrozen(target)) return target;
-	handledSet.add(target);
-	each(target, (key, value) => {
-		if (isDraft(value)) {
-			const state = value[DRAFT_STATE];
-			if (isSameScope(state, rootScope)) {
-				set(target, key, getFinalValue(state), target.type_);
-				markStateFinalized(state);
-			}
-		} else if (isDraftable(value)) handleValue(value, handledSet, rootScope);
-	});
-	return target;
-}
-function createProxyProxy(base, parent) {
-	const baseIsArray = isArray(base);
-	const state = {
-		type_: baseIsArray ? 1 : 0,
-		scope_: parent ? parent.scope_ : getCurrentScope(),
-		modified_: false,
-		finalized_: false,
-		assigned_: void 0,
-		parent_: parent,
-		base_: base,
-		draft_: null,
-		copy_: null,
-		revoke_: null,
-		isManual_: false,
-		callbacks_: void 0
-	};
-	let target = state;
-	let traps = objectTraps;
-	if (baseIsArray) {
-		target = [state];
-		traps = arrayTraps;
-	}
-	const { revoke, proxy } = Proxy.revocable(target, traps);
-	state.draft_ = proxy;
-	state.revoke_ = revoke;
-	return [proxy, state];
-}
-var objectTraps = {
-	get(state, prop) {
-		if (prop === DRAFT_STATE) return state;
-		let arrayPlugin = state.scope_.arrayMethodsPlugin_;
-		const isArrayWithStringProp = state.type_ === 1 && typeof prop === "string";
-		if (isArrayWithStringProp) {
-			if (arrayPlugin?.isArrayOperationMethod(prop)) return arrayPlugin.createMethodInterceptor(state, prop);
-		}
-		const source = latest(state);
-		if (!has(source, prop, state.type_)) return readPropFromProto(state, source, prop);
-		const value = source[prop];
-		if (state.finalized_ || !isDraftable(value)) return value;
-		if (isArrayWithStringProp && state.operationMethod && arrayPlugin?.isMutatingArrayMethod(state.operationMethod) && isArrayIndex(prop)) return value;
-		if (value === peek(state.base_, prop) || isRelocatedBaseRef(state, prop, value)) {
-			prepareCopy(state);
-			const childKey = state.type_ === 1 ? +prop : prop;
-			const childDraft = createProxy(state.scope_, value, state, childKey);
-			return state.copy_[childKey] = childDraft;
-		}
-		return value;
-	},
-	has(state, prop) {
-		return prop in latest(state);
-	},
-	ownKeys(state) {
-		return Reflect.ownKeys(latest(state));
-	},
-	set(state, prop, value) {
-		const desc = getDescriptorFromProto(latest(state), prop);
-		if (desc?.set) {
-			desc.set.call(state.draft_, value);
-			return true;
-		}
-		if (!state.modified_) {
-			const current2 = peek(latest(state), prop);
-			const currentState = current2?.[DRAFT_STATE];
-			if (currentState && currentState.base_ === value) {
-				state.copy_[prop] = value;
-				state.assigned_.delete(prop);
-				return true;
-			}
-			if (is(value, current2) && (value !== void 0 || has(state.base_, prop, state.type_))) return true;
-			prepareCopy(state);
-			markChanged(state);
-		}
-		if (state.copy_[prop] === value && (value !== void 0 || has(state.copy_, prop, state.type_)) || Number.isNaN(value) && Number.isNaN(state.copy_[prop])) return true;
-		state.copy_[prop] = value;
-		state.assigned_.set(prop, true);
-		handleCrossReference(state, prop, value);
-		return true;
-	},
-	deleteProperty(state, prop) {
-		prepareCopy(state);
-		if (peek(state.base_, prop) !== void 0 || prop in state.base_) {
-			state.assigned_.set(prop, false);
-			markChanged(state);
-		} else state.assigned_.delete(prop);
-		if (state.copy_) delete state.copy_[prop];
-		return true;
-	},
-	getOwnPropertyDescriptor(state, prop) {
-		const owner = latest(state);
-		const desc = Reflect.getOwnPropertyDescriptor(owner, prop);
-		if (!desc) return desc;
-		return {
-			[WRITABLE]: true,
-			[CONFIGURABLE]: state.type_ !== 1 || prop !== "length",
-			[ENUMERABLE]: desc[ENUMERABLE],
-			[VALUE]: owner[prop]
-		};
-	},
-	defineProperty() {
-		die(11);
-	},
-	getPrototypeOf(state) {
-		return getPrototypeOf(state.base_);
-	},
-	setPrototypeOf() {
-		die(12);
-	}
-};
-var arrayTraps = {};
-for (let key in objectTraps) {
-	let fn = objectTraps[key];
-	arrayTraps[key] = function() {
-		const args = arguments;
-		args[0] = args[0][0];
-		return fn.apply(this, args);
-	};
-}
-arrayTraps.deleteProperty = function(state, prop) {
-	return arrayTraps.set.call(this, state, prop, void 0);
-};
-arrayTraps.set = function(state, prop, value) {
-	return objectTraps.set.call(this, state[0], prop, value, state[0]);
-};
-function peek(draft, prop) {
-	const state = draft[DRAFT_STATE];
-	return (state ? latest(state) : draft)[prop];
-}
-function isRelocatedBaseRef(state, prop, value) {
-	if (state.type_ !== 1 || !state.allIndicesReassigned_ || state.assigned_?.get(prop) || !isDraftable(value) || value[DRAFT_STATE]) return false;
-	return state.baseRefs_.has(value);
-}
-function readPropFromProto(state, source, prop) {
-	const desc = getDescriptorFromProto(source, prop);
-	return desc ? VALUE in desc ? desc[VALUE] : desc.get?.call(state.draft_) : void 0;
-}
-function getDescriptorFromProto(source, prop) {
-	if (!(prop in source)) return void 0;
-	let proto = getPrototypeOf(source);
-	while (proto) {
-		const desc = Object.getOwnPropertyDescriptor(proto, prop);
-		if (desc) return desc;
-		proto = getPrototypeOf(proto);
-	}
-}
-function markChanged(state) {
-	if (!state.modified_) {
-		state.modified_ = true;
-		if (state.parent_) markChanged(state.parent_);
-	}
-}
-function prepareCopy(state) {
-	if (!state.copy_) {
-		state.assigned_ = /* @__PURE__ */ new Map();
-		state.copy_ = shallowCopy(state.base_, state.scope_.immer_.useStrictShallowCopy_);
-	}
-}
-var Immer2 = class {
-	constructor(config) {
-		this.autoFreeze_ = true;
-		this.useStrictShallowCopy_ = false;
-		this.useStrictIteration_ = false;
-		/**
-		* The `produce` function takes a value and a "recipe function" (whose
-		* return value often depends on the base state). The recipe function is
-		* free to mutate its first argument however it wants. All mutations are
-		* only ever applied to a __copy__ of the base state.
-		*
-		* Pass only a function to create a "curried producer" which relieves you
-		* from passing the recipe function every time.
-		*
-		* Only plain objects and arrays are made mutable. All other objects are
-		* considered uncopyable.
-		*
-		* Note: This function is __bound__ to its `Immer` instance.
-		*
-		* @param {any} base - the initial state
-		* @param {Function} recipe - function that receives a proxy of the base state as first argument and which can be freely modified
-		* @param {Function} patchListener - optional function that will be called with all the patches produced here
-		* @returns {any} a new state, or the initial state if nothing was modified
-		*/
-		this.produce = (base, recipe, patchListener) => {
-			if (isFunction(base) && !isFunction(recipe)) {
-				const defaultBase = recipe;
-				recipe = base;
-				const self = this;
-				return function curriedProduce(base2 = defaultBase, ...args) {
-					return self.produce(base2, (draft) => recipe.call(this, draft, ...args));
-				};
-			}
-			if (!isFunction(recipe)) die(6);
-			if (patchListener !== void 0 && !isFunction(patchListener)) die(7);
-			let result;
-			if (isDraftable(base)) {
-				const scope = enterScope(this);
-				const proxy = createProxy(scope, base, void 0);
-				let hasError = true;
-				try {
-					result = recipe(proxy);
-					hasError = false;
-				} finally {
-					if (hasError) revokeScope(scope);
-					else leaveScope(scope);
-				}
-				usePatchesInScope(scope, patchListener);
-				return processResult(result, scope);
-			} else if (!base || !isObjectish(base)) {
-				result = recipe(base);
-				if (result === void 0) result = base;
-				if (result === NOTHING) result = void 0;
-				if (this.autoFreeze_) freeze(result, true);
-				if (patchListener) {
-					const p = [];
-					const ip = [];
-					getPlugin(PluginPatches).generateReplacementPatches_(base, result, {
-						patches_: p,
-						inversePatches_: ip
-					});
-					patchListener(p, ip);
-				}
-				return result;
-			} else die(1, base);
-		};
-		this.produceWithPatches = (base, recipe) => {
-			if (isFunction(base)) return (state, ...args) => this.produceWithPatches(state, (draft) => base(draft, ...args));
-			let patches, inversePatches;
-			return [
-				this.produce(base, recipe, (p, ip) => {
-					patches = p;
-					inversePatches = ip;
-				}),
-				patches,
-				inversePatches
-			];
-		};
-		if (isBoolean(config?.autoFreeze)) this.setAutoFreeze(config.autoFreeze);
-		if (isBoolean(config?.useStrictShallowCopy)) this.setUseStrictShallowCopy(config.useStrictShallowCopy);
-		if (isBoolean(config?.useStrictIteration)) this.setUseStrictIteration(config.useStrictIteration);
-	}
-	createDraft(base) {
-		if (!isDraftable(base)) die(8);
-		if (isDraft(base)) base = current(base);
-		const scope = enterScope(this);
-		const proxy = createProxy(scope, base, void 0);
-		proxy[DRAFT_STATE].isManual_ = true;
-		leaveScope(scope);
-		return proxy;
-	}
-	finishDraft(draft, patchListener) {
-		const state = draft && draft[DRAFT_STATE];
-		if (!state || !state.isManual_) die(9);
-		const { scope_: scope } = state;
-		usePatchesInScope(scope, patchListener);
-		return processResult(void 0, scope);
-	}
-	/**
-	* Pass true to automatically freeze all copies created by Immer.
-	*
-	* By default, auto-freezing is enabled.
-	*/
-	setAutoFreeze(value) {
-		this.autoFreeze_ = value;
-	}
-	/**
-	* Pass true to enable strict shallow copy.
-	*
-	* By default, immer does not copy the object descriptors such as getter, setter and non-enumrable properties.
-	*/
-	setUseStrictShallowCopy(value) {
-		this.useStrictShallowCopy_ = value;
-	}
-	/**
-	* Pass false to use faster iteration that skips non-enumerable properties
-	* but still handles symbols for compatibility.
-	*
-	* By default, strict iteration is enabled (includes all own properties).
-	*/
-	setUseStrictIteration(value) {
-		this.useStrictIteration_ = value;
-	}
-	shouldUseStrictIteration() {
-		return this.useStrictIteration_;
-	}
-	applyPatches(base, patches) {
-		let i;
-		for (i = patches.length - 1; i >= 0; i--) {
-			const patch = patches[i];
-			if (patch.path.length === 0 && patch.op === "replace") {
-				base = patch.value;
-				break;
-			}
-		}
-		if (i > -1) patches = patches.slice(i + 1);
-		const applyPatchesImpl = getPlugin(PluginPatches).applyPatches_;
-		if (isDraft(base)) return applyPatchesImpl(base, patches);
-		return this.produce(base, (draft) => applyPatchesImpl(draft, patches));
-	}
-};
-function createProxy(rootScope, value, parent, key) {
-	const [draft, state] = isMap(value) ? getPlugin(PluginMapSet).proxyMap_(value, parent) : isSet(value) ? getPlugin(PluginMapSet).proxySet_(value, parent) : createProxyProxy(value, parent);
-	(parent?.scope_ ?? getCurrentScope()).drafts_.push(draft);
-	state.callbacks_ = parent?.callbacks_ ?? [];
-	state.key_ = key;
-	if (parent && key !== void 0) registerChildFinalizationCallback(parent, state, key);
-	else state.callbacks_.push(function rootDraftCleanup(rootScope2) {
-		rootScope2.mapSetPlugin_?.fixSetContents(state);
-		const { patchPlugin_ } = rootScope2;
-		if (state.modified_ && patchPlugin_) patchPlugin_.generatePatches_(state, [], rootScope2);
-	});
-	return draft;
-}
-function current(value) {
-	if (!isDraft(value)) die(10, value);
-	return currentImpl(value);
-}
-function currentImpl(value) {
-	if (!isDraftable(value) || isFrozen(value)) return value;
-	const state = value[DRAFT_STATE];
-	let copy;
-	let strict = true;
-	if (state) {
-		if (!state.modified_) return state.base_;
-		state.finalized_ = true;
-		copy = shallowCopy(value, state.scope_.immer_.useStrictShallowCopy_);
-		strict = state.scope_.immer_.shouldUseStrictIteration();
-	} else copy = shallowCopy(value, true);
-	each(copy, (key, childValue) => {
-		set(copy, key, currentImpl(childValue));
-	}, strict);
-	if (state) state.finalized_ = false;
-	return copy;
-}
-globalThis.Iterator?.from;
-var produce = new Immer2().produce;
-//#endregion
-//#region ../../packages/outliner-core/src/outline/internal/locate.ts
-/** 특정 노드의 부모, 형제 목록, 인덱스를 탐색 */
-function findParentAndSiblings(nodes, targetId, parent = null) {
-	for (let i = 0; i < nodes.length; i++) {
-		if (nodes[i].id === targetId) return {
-			parent,
-			index: i,
-			siblings: nodes
-		};
-		const found = findParentAndSiblings(nodes[i].children, targetId, nodes[i]);
-		if (found) return found;
-	}
-	return null;
-}
-//#endregion
-//#region ../../packages/outliner-core/src/outline/queries/find.ts
-/** 트리 전체에서 특정 ID의 노드를 재귀 탐색 */
-function findNode(nodes, targetId) {
-	for (const node of nodes) {
-		if (node.id === targetId) return node;
-		const found = findNode(node.children, targetId);
-		if (found) return found;
-	}
-	return null;
-}
-/** 위/아래 방향키 이동 시 다음 타깃 노드 ID 계산 */
-function getNextFocusId(flattened, currentId, direction) {
-	const currentIndex = flattened.findIndex((item) => item.id === currentId);
-	if (currentIndex === -1) return null;
-	if (direction === "up") return currentIndex > 0 ? flattened[currentIndex - 1].id : null;
-	else return currentIndex < flattened.length - 1 ? flattened[currentIndex + 1].id : null;
-}
-//#endregion
-//#region ../../packages/outliner-core/src/outline/transforms/arrange.ts
+//#region ../../packages/outliner-core/src/outline/model/flatTree.ts
 /**
-* @file arrange.ts
-* @description 여러 노드를 한꺼번에 재배치·복제·접기 하는 연산자 (마우스 조작용)
+* @file flatTree.ts
+* @description ID 트리 모델 (Workflowy 방식) — 실행 중 불릿 트리의 원본
 *
-* 드래그 앤 드롭, "이동" 메뉴, 여러 불릿 선택 후 묶음 조작이 모두 이 함수들을 쓴다.
-* 놓을 자리는 "대상 노드 기준 어디에"로 표현한다.
+* 파일(.outline)은 중첩 트리로 저장하지만, 실행 중에는 노드를 id 로 지목하는 ID 트리를 원본으로 쓴다.
+* - 가상 뿌리 노드(ROOT_ID) 하나 아래에 모든 불릿이 달린다. (Workflowy 의 "Home")
+* - 올리기(importTree): 중첩 트리 → ID 트리. 파일을 읽었을 때 한 번.
+* - 내리기(projectTree): ID 트리 → 중첩 트리. 화면과 파일 저장이 읽는 모양.
+*   바뀌지 않은 가지는 이전에 내려 준 객체를 그대로 다시 쓴다.
+*
+* 트리를 바꾸는 일은 여기서 하지 않는다. 바꾸는 길은 패치 엔진(transforms/patch.ts) 하나다.
 */
+/** 가상 뿌리 노드의 id. 파일에는 저장되지 않는다. */
+var ROOT_ID = "root";
+function rootNode(childIds) {
+	return {
+		id: ROOT_ID,
+		text: "",
+		parentId: null,
+		childIds
+	};
+}
+function sameItems(a, b) {
+	if (a.length !== b.length) return false;
+	for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
+	return true;
+}
+/**
+* 중첩 트리를 ID 트리로 올린다.
+* 파일에 같은 id 가 두 번 나오면(또는 뿌리 id 와 겹치면) 뒤에 나온 쪽에 새 id 를 준다. 내용은 버리지 않는다.
+*/
+function importTree(rootNodes) {
+	const nodes = /* @__PURE__ */ new Map();
+	const byId = /* @__PURE__ */ new Map();
+	const seen = /* @__PURE__ */ new Set([ROOT_ID]);
+	function walk(list, parentId) {
+		return list.map((node) => {
+			const reassigned = seen.has(node.id);
+			const id = reassigned ? generateNodeId() : node.id;
+			seen.add(id);
+			const children = Array.isArray(node.children) ? node.children : [];
+			const childIds = walk(children, id);
+			const flat = {
+				...node,
+				id,
+				parentId,
+				childIds
+			};
+			delete flat.children;
+			nodes.set(id, flat);
+			if (!reassigned && children === node.children) byId.set(id, {
+				flat,
+				node
+			});
+			return id;
+		});
+	}
+	nodes.set(ROOT_ID, rootNode(walk(rootNodes, ROOT_ID)));
+	return {
+		tree: { nodes },
+		projection: {
+			roots: rootNodes,
+			byId
+		}
+	};
+}
+/**
+* ID 트리를 중첩 트리로 내린다.
+* `previous` 를 넘기면, 그때와 달라지지 않은 노드(자신과 하위 전체가 그대로인 노드)는 같은 객체를 돌려준다.
+*/
+function projectTree(tree, previous) {
+	const byId = /* @__PURE__ */ new Map();
+	function build(id) {
+		const flat = tree.nodes.get(id);
+		if (!flat) return null;
+		const children = [];
+		for (const childId of flat.childIds) {
+			const child = build(childId);
+			if (child) children.push(child);
+		}
+		const before = previous?.byId.get(id);
+		if (before && before.flat === flat && sameItems(before.node.children, children)) {
+			byId.set(id, before);
+			return before.node;
+		}
+		const rest = { ...flat };
+		delete rest.id;
+		delete rest.text;
+		delete rest.parentId;
+		delete rest.childIds;
+		const node = {
+			id: flat.id,
+			text: flat.text,
+			children,
+			...rest
+		};
+		byId.set(id, {
+			flat,
+			node
+		});
+		return node;
+	}
+	const roots = [];
+	for (const id of tree.nodes.get("root")?.childIds ?? []) {
+		const node = build(id);
+		if (node) roots.push(node);
+	}
+	return {
+		roots: previous && sameItems(previous.roots, roots) ? previous.roots : roots,
+		byId
+	};
+}
+/** 불릿 하나를 찾는다. 가상 뿌리는 불릿이 아니므로 돌려주지 않는다. */
+function getFlatNode(tree, id) {
+	return id === "root" ? void 0 : tree.nodes.get(id);
+}
+/** `id` 가 `ancestorId` 자신이거나 그 하위에 있는지 */
+function isInSubtree(tree, ancestorId, id) {
+	let current = id;
+	while (current !== null) {
+		if (current === ancestorId) return true;
+		current = tree.nodes.get(current)?.parentId ?? null;
+	}
+	return false;
+}
+/** 노드와 그 하위 전체의 id (문서 순서) */
+function collectSubtreeIds(tree, id) {
+	const result = [];
+	const stack = [id];
+	while (stack.length > 0) {
+		const current = stack.pop();
+		const node = tree.nodes.get(current);
+		if (!node) continue;
+		result.push(current);
+		for (let i = node.childIds.length - 1; i >= 0; i--) stack.push(node.childIds[i]);
+	}
+	return result;
+}
 /**
 * 고른 노드들 중 "맨 위" 노드만 문서 순서대로 남긴다.
 * (부모와 자식을 함께 골랐다면 부모만 옮기면 자식은 따라온다)
 */
-function getTopmostNodeIds(rootNodes, ids) {
-	const wanted = new Set(ids);
+function getTopmostIds(tree, ids) {
+	const wanted = new Set(ids.filter((id) => id !== "root" && tree.nodes.has(id)));
 	const result = [];
-	function traverse(nodes) {
-		for (const node of nodes) if (wanted.has(node.id)) result.push(node.id);
-		else if (node.children.length > 0) traverse(node.children);
+	if (wanted.size === 0) return result;
+	function walk(id) {
+		for (const childId of tree.nodes.get(id)?.childIds ?? []) if (wanted.has(childId)) result.push(childId);
+		else walk(childId);
 	}
-	traverse(rootNodes);
+	walk(ROOT_ID);
 	return result;
 }
-/** 대상이 옮기려는 노드 자신이거나 그 하위에 있는지 (그런 자리로는 옮길 수 없다) */
-function isInsideAny(rootNodes, sourceIds, targetId) {
-	return sourceIds.some((id) => {
-		if (id === targetId) return true;
-		const source = findNode(rootNodes, id);
-		return source !== null && findNode(source.children, targetId) !== null;
-	});
-}
-/** 초안 트리의 지정한 자리에 노드들을 끼워 넣는다. 대상을 못 찾으면 false */
-function insertAt(draft, nodes, targetId, position) {
-	if (targetId === null) {
-		if (position === "inside-start") draft.unshift(...nodes);
-		else draft.push(...nodes);
-		return true;
-	}
-	const lookup = findParentAndSiblings(draft, targetId);
-	if (!lookup) return false;
-	if (position === "before") lookup.siblings.splice(lookup.index, 0, ...nodes);
-	else if (position === "after") lookup.siblings.splice(lookup.index + 1, 0, ...nodes);
-	else {
-		const target = lookup.siblings[lookup.index];
-		if (position === "inside-start") target.children.unshift(...nodes);
-		else target.children.push(...nodes);
-		target.isFolded = false;
-		target.updatedAt = Date.now();
-	}
-	return true;
-}
-function cloneWithNewIds(node, now) {
-	return {
-		...node,
-		id: generateNodeId(),
-		children: node.children.map((child) => cloneWithNewIds(child, now)),
-		createdAt: now,
-		updatedAt: now
-	};
-}
 /**
-* 노드들을 대상 기준 자리로 옮긴다. (`targetId` 가 null 이면 맨 위 단계)
-* 자기 자신이나 자신의 하위로 옮기려는 시도는 실패로 처리한다.
+* `source` 트리의 접힘 상태를 `tree` 에 옮겨 입힌다. (양쪽에 다 있는 노드만)
+* 접기·펼치기는 화면 상태라서, 실행 취소로 예전 트리를 되살릴 때 지금 접어 둔 모양은 유지한다.
 */
-function moveNodes(rootNodes, sourceIds, targetId, position) {
-	const topmost = getTopmostNodeIds(rootNodes, sourceIds);
-	if (topmost.length === 0) return {
-		success: false,
-		newNodes: rootNodes
-	};
-	if (targetId !== null) {
-		if (!findNode(rootNodes, targetId) || isInsideAny(rootNodes, topmost, targetId)) return {
-			success: false,
-			newNodes: rootNodes
-		};
+function withFoldStateOf(tree, source) {
+	let nodes = null;
+	for (const [id, node] of tree.nodes) {
+		const other = source.nodes.get(id);
+		if (!other || !!other.isFolded === !!node.isFolded) continue;
+		nodes ??= new Map(tree.nodes);
+		nodes.set(id, {
+			...node,
+			isFolded: !!other.isFolded
+		});
 	}
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const now = Date.now();
-		const detached = [];
-		for (const id of topmost) {
-			const lookup = findParentAndSiblings(draft, id);
-			if (!lookup) continue;
-			const [node] = lookup.siblings.splice(lookup.index, 1);
-			node.updatedAt = now;
-			detached.push(node);
+	return nodes ? { nodes } : tree;
+}
+//#endregion
+//#region ../../packages/outliner-core/src/outline/transforms/patch.ts
+/**
+* @file patch.ts
+* @description 패치 엔진 — ID 트리를 바꾸는 유일한 길 (Workflowy 의 tree_patch 와 같은 규칙)
+*
+* 규칙 (Workflowy 에서 실제로 확인한 동작을 그대로 따른다)
+* - 요청은 순서대로 실행하고, 뒤 요청은 앞 요청의 결과를 이어받는다.
+* - 요청은 서로 독립이다. 하나가 실패해도 나머지는 적용되고, 결과는 요청마다 따로 돌려준다.
+* - "안"에 넣는 삽입·이동은 맨 앞 자식 자리에 놓는다. 여러 개는 준 순서 그대로 놓인다.
+* - 자기 자신이나 자기 하위 밑으로 옮기려는 노드는 건너뛴다. (아무 일도 없고, 결과는 성공이다)
+* - 부모와 자식을 함께 옮기면 각자 따로 옮겨져 자식이 부모에서 빠져나온다.
+* - 하위가 있는 노드는 `recursively` 없이는 삭제하지 않는다.
+* - 이동은 옮긴 노드의 수정 시각만 바꾼다. 옛 부모·새 부모는 건드리지 않는다.
+* - 새 노드의 id 는 엔진이 만든다.
+*
+* 부모·자식 연결(parentId, childIds)은 이 파일의 `detach` / `attach` 두 곳에서만 고친다.
+* 바뀐 것이 없으면 받은 트리를 그대로(같은 객체) 돌려준다.
+*/
+var OK$1 = { ok: true };
+var notFound = (id) => ({
+	ok: false,
+	error: `Can't find id: ${id}`
+});
+var fail = (error) => ({
+	ok: false,
+	error
+});
+/** 고치는 동안의 트리. 처음 고칠 때에만 노드 표를 복사한다. */
+var Draft = class {
+	nodes = null;
+	base;
+	now;
+	newId;
+	constructor(base, now, newId) {
+		this.base = base;
+		this.now = now;
+		this.newId = newId;
+	}
+	get(id) {
+		return (this.nodes ?? this.base.nodes).get(id);
+	}
+	/** 불릿을 찾는다. 가상 뿌리는 불릿이 아니다. */
+	bullet(id) {
+		return id === "root" ? void 0 : this.get(id);
+	}
+	set(node) {
+		this.nodes ??= new Map(this.base.nodes);
+		this.nodes.set(node.id, node);
+	}
+	remove(id) {
+		this.nodes ??= new Map(this.base.nodes);
+		this.nodes.delete(id);
+	}
+	view() {
+		return this.nodes ? { nodes: this.nodes } : this.base;
+	}
+	/** 노드들을 지금 부모의 자식 목록에서 뗀다. (노드의 parentId 는 `attach` 가 새로 적는다) */
+	detach(ids) {
+		const byParent = /* @__PURE__ */ new Map();
+		for (const id of ids) {
+			const parentId = this.get(id)?.parentId;
+			if (parentId == null) continue;
+			const group = byParent.get(parentId) ?? /* @__PURE__ */ new Set();
+			group.add(id);
+			byParent.set(parentId, group);
 		}
-		success = insertAt(draft, detached, targetId, position);
-	});
-	return success ? {
-		success,
-		newNodes
-	} : {
-		success: false,
-		newNodes: rootNodes
-	};
-}
-/**
-* 노드들을 복제해 각 원본의 바로 아래에 둔다. (하위 트리 포함, id 는 모두 새로 발급)
-*/
-function duplicateNodes(rootNodes, sourceIds) {
-	const topmost = getTopmostNodeIds(rootNodes, sourceIds);
-	const createdIds = [];
-	return {
-		createdIds,
-		newNodes: produce(rootNodes, (draft) => {
-			const now = Date.now();
-			for (const id of topmost) {
-				const lookup = findParentAndSiblings(draft, id);
-				if (!lookup) continue;
-				const copy = cloneWithNewIds(lookup.siblings[lookup.index], now);
-				lookup.siblings.splice(lookup.index + 1, 0, copy);
-				createdIds.push(copy.id);
-			}
-		})
-	};
-}
-/**
-* 노드들의 복제본을 대상 기준 자리에 둔다. 원본은 그대로 남는다. (Alt+드래그)
-*/
-function duplicateNodesTo(rootNodes, sourceIds, targetId, position) {
-	const topmost = getTopmostNodeIds(rootNodes, sourceIds);
-	const createdIds = [];
-	if (topmost.length === 0) return {
-		success: false,
-		newNodes: rootNodes,
-		createdIds
-	};
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const now = Date.now();
-		const copies = [];
-		for (const id of topmost) {
-			const source = findNode(draft, id);
-			if (source) copies.push(cloneWithNewIds(source, now));
+		for (const [parentId, group] of byParent) {
+			const parent = this.get(parentId);
+			if (!parent) continue;
+			this.set({
+				...parent,
+				childIds: parent.childIds.filter((id) => !group.has(id))
+			});
 		}
-		success = insertAt(draft, copies, targetId, position);
-		if (success) createdIds.push(...copies.map((c) => c.id));
+	}
+	/**
+	* 떼어 둔(또는 새로 만든) 노드들을 부모의 자식 목록 `index` 자리에 순서대로 단다.
+	* `touch` 면 단 노드의 수정 시각을 지금으로 바꾼다. 부모의 수정 시각은 바꾸지 않는다.
+	*/
+	attach(ids, parentId, index, touch) {
+		const parent = this.get(parentId);
+		if (!parent) return;
+		const childIds = [...parent.childIds];
+		childIds.splice(index, 0, ...ids);
+		this.set({
+			...parent,
+			childIds
+		});
+		for (const id of ids) {
+			const node = this.get(id);
+			if (!node) continue;
+			this.set(touch ? {
+				...node,
+				parentId,
+				updatedAt: this.now
+			} : {
+				...node,
+				parentId
+			});
+		}
+	}
+	/** 안으로 넣은 것이 보이도록 펼친다. 접힘은 화면 상태라 수정 시각을 바꾸지 않는다. */
+	unfold(id) {
+		const node = this.bullet(id);
+		if (node?.isFolded) this.set({
+			...node,
+			isFolded: false
+		});
+	}
+};
+/** 새 노드들을 하위째 만들어 표에 올리고, 맨 위 단계의 id 를 돌려준다. (부모에 다는 것은 `attach` 가 한다) */
+function materialize(draft, items, parentId) {
+	return items.map((item) => {
+		const id = draft.newId();
+		const data = { ...item };
+		delete data.children;
+		delete data.id;
+		draft.set({
+			...data,
+			id,
+			parentId,
+			childIds: materialize(draft, item.children ?? [], id),
+			createdAt: draft.now,
+			updatedAt: draft.now
+		});
+		return id;
 	});
-	return success ? {
-		success,
-		newNodes,
-		createdIds
-	} : {
-		success: false,
-		newNodes: rootNodes,
+}
+/** 노드 하나의 필드를 고친다. `change` 가 같은 객체를 돌려주면 바뀐 것이 없다는 뜻이다. */
+function edit(draft, id, change, touch = true) {
+	const node = draft.bullet(id);
+	if (!node) return notFound(id);
+	const next = change(node);
+	if (next !== node) draft.set(touch ? {
+		...next,
+		updatedAt: draft.now
+	} : next);
+	return OK$1;
+}
+function insert(draft, targetId, items, place) {
+	const target = draft.get(targetId);
+	if (!target) return notFound(targetId);
+	if (place !== "inside" && target.parentId === null) return fail("Can't insert next to root");
+	if (items.length === 0) return {
+		ok: true,
 		createdIds: []
 	};
-}
-/**
-* 노드와 그 하위 전체를 한 번에 접거나 펼친다.
-*/
-function setFoldDeep(rootNodes, targetId, isFolded) {
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const target = findNode(draft, targetId);
-		if (!target) return;
-		function apply(node) {
-			if (node.children.length > 0) node.isFolded = isFolded;
-			node.children.forEach(apply);
-		}
-		apply(target);
-		success = true;
-	});
+	const parentId = place === "inside" ? targetId : target.parentId;
+	const createdIds = materialize(draft, items, parentId);
+	if (place === "inside") {
+		draft.attach(createdIds, parentId, 0, false);
+		draft.unfold(parentId);
+	} else {
+		const index = draft.get(parentId).childIds.indexOf(targetId);
+		draft.attach(createdIds, parentId, place === "after" ? index + 1 : index, false);
+	}
 	return {
-		success,
-		newNodes
+		ok: true,
+		createdIds
 	};
 }
-/** 노드와 그 하위에 접힌 곳이 하나도 없는지 (전부 펼쳐진 상태인지) */
-function isFullyExpanded(node) {
-	if (node.children.length === 0) return true;
-	return !node.isFolded && node.children.every(isFullyExpanded);
+function move(draft, ids, under, inside) {
+	const anchor = draft.get(under);
+	if (!anchor) return notFound(under);
+	if (!inside && anchor.parentId === null) return fail("Can't move next to root");
+	for (const id of ids) if (!draft.bullet(id)) return id === "root" ? fail("Can't move root") : notFound(id);
+	const tree = draft.view();
+	const moving = [...new Set(ids)].filter((id) => !isInSubtree(tree, id, under));
+	if (moving.length === 0) return OK$1;
+	const parentId = inside ? under : anchor.parentId;
+	const movingSet = new Set(moving);
+	const current = draft.get(parentId).childIds;
+	const rest = current.filter((id) => !movingSet.has(id));
+	const index = inside ? 0 : rest.indexOf(under) + 1;
+	if (!(moving.every((id) => draft.get(id).parentId === parentId) && current.length === rest.length + moving.length && moving.every((id, i) => current[index + i] === id))) {
+		draft.detach(moving);
+		draft.attach(moving, parentId, index, true);
+	}
+	if (inside) draft.unfold(under);
+	return OK$1;
+}
+function remove(draft, id, recursively) {
+	const node = draft.bullet(id);
+	if (!node) return id === "root" ? fail("Can't delete root") : notFound(id);
+	if (node.childIds.length > 0 && !recursively) return fail(`Target has children: ${id}`);
+	const doomed = collectSubtreeIds(draft.view(), id);
+	draft.detach([id]);
+	for (const doomedId of doomed) draft.remove(doomedId);
+	return OK$1;
+}
+function setFold(draft, id, isFolded, deep) {
+	if (!draft.get(id) || id === "root" && !deep) return notFound(id);
+	const targets = deep ? collectSubtreeIds(draft.view(), id) : [id];
+	for (const targetId of targets) {
+		const node = draft.bullet(targetId);
+		if (!node || deep && node.childIds.length === 0) continue;
+		if (!!node.isFolded !== isFolded) draft.set({
+			...node,
+			isFolded
+		});
+	}
+	return OK$1;
+}
+/** 필드 하나를 정하거나(값이 있으면) 지운다(undefined 면). 바뀐 것이 없으면 받은 노드 그대로 돌려준다. */
+function withField(node, key, value) {
+	if (node[key] === value) return node;
+	const next = { ...node };
+	if (value === void 0) delete next[key];
+	else next[key] = value;
+	return next;
+}
+function run(draft, request) {
+	switch (request.op) {
+		case "replace": return edit(draft, request.id, (node) => withField(node, "text", request.text));
+		case "complete": return edit(draft, request.id, (node) => node.isCompleted ? node : {
+			...node,
+			isCompleted: true,
+			completedAt: draft.now
+		});
+		case "uncomplete": return edit(draft, request.id, (node) => node.isCompleted ? withField({
+			...node,
+			isCompleted: false
+		}, "completedAt", void 0) : node);
+		case "insert_after": return insert(draft, request.targetId, request.items, request.inside ? "inside" : "after");
+		case "insert_before": return insert(draft, request.targetId, request.items, "before");
+		case "move": return move(draft, request.ids, request.under, request.inside ?? true);
+		case "delete": return remove(draft, request.id, request.recursively ?? false);
+		case "set_note": return edit(draft, request.id, (node) => withField(node, "note", request.note || void 0));
+		case "set_node_type": return edit(draft, request.id, (node) => withField(node, "nodeType", request.nodeType));
+		case "set_file": return edit(draft, request.id, (node) => withField(node, "file", request.file));
+		case "set_view_mode": return edit(draft, request.id, (node) => withField(node, "viewMode", request.viewMode));
+		case "set_fold": return setFold(draft, request.id, request.isFolded, request.deep ?? false);
+	}
 }
 /**
-* 노드에 줌인했을 때 쓸 보기 방식(불릿/보드)을 지정하거나 해제한다.
+* ID 트리에 요청들을 순서대로 적용한다.
+* 실패한 요청은 그 요청만 실패로 돌려주고, 나머지는 그대로 적용한다.
 */
-function setNodesViewMode(rootNodes, targetIds, viewMode) {
-	let count = 0;
-	const targetSet = new Set(targetIds);
-	const newNodes = produce(rootNodes, (draft) => {
-		function traverse(nodes) {
-			for (const node of nodes) {
-				if (targetSet.has(node.id) && node.viewMode !== viewMode) {
-					if (viewMode === void 0) delete node.viewMode;
-					else node.viewMode = viewMode;
-					node.updatedAt = Date.now();
-					count++;
-				}
-				if (node.children.length > 0) traverse(node.children);
-			}
-		}
-		traverse(draft);
-	});
+function applyPatch(tree, requests, options = {}) {
+	const draft = new Draft(tree, options.now ?? Date.now(), options.generateId ?? generateNodeId);
+	const results = requests.map((request) => run(draft, request));
 	return {
-		count,
-		newNodes
+		tree: draft.view(),
+		results
 	};
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/transforms/node.ts
+//#region ../../packages/outliner-core/src/outline/transforms/requests.ts
 /**
-* @file node.ts
-* @description immer 기반 고성능 불변 트리 노드 변형 엔진 (Transform)
+* @file requests.ts
+* @description 편집 동작을 패치 요청으로 옮기는 번역기
+*
+* 패치 엔진은 "기준 노드의 뒤 / 앞 / 안(맨 앞)"만 안다. (Workflowy 와 같은 말)
+* 들여쓰기, "맨 끝 자식으로", "바로 위로" 같은 편집 화면의 말은 여기서 그 세 가지로 풀어 쓴다.
+* 여기 함수들은 트리를 바꾸지 않고 요청만 만든다. 적용은 `applyPatch` 가 한다.
 */
-/** 타깃 노드 바로 다음에 새 형제 노드 삽입 */
-function insertAfter(rootNodes, targetId, initialText = "") {
-	let createdNode = null;
-	return {
-		newNodes: produce(rootNodes, (draft) => {
-			const newNode = {
-				id: generateNodeId(),
-				text: initialText,
-				children: [],
-				createdAt: Date.now(),
-				updatedAt: Date.now()
-			};
-			createdNode = newNode;
-			const lookup = findParentAndSiblings(draft, targetId);
-			if (!lookup) draft.push(newNode);
-			else lookup.siblings.splice(lookup.index + 1, 0, newNode);
-		}),
-		createdNode
-	};
+/** 접혀 있는 부모의 맨 앞이 아닌 자리에 넣을 때, 넣은 것이 보이도록 펼치는 요청 */
+function unfoldRequests(tree, parentId) {
+	return getFlatNode(tree, parentId)?.isFolded ? [{
+		op: "set_fold",
+		id: parentId,
+		isFolded: false
+	}] : [];
 }
-/** 특정 부모의 마지막 자식으로 노드 추가 */
-function appendChild(rootNodes, parentId, initialText = "") {
-	let createdNode = null;
-	return {
-		newNodes: produce(rootNodes, (draft) => {
-			const newNode = {
-				id: generateNodeId(),
-				text: initialText,
-				children: [],
-				createdAt: Date.now(),
-				updatedAt: Date.now()
-			};
-			createdNode = newNode;
-			const lookup = findParentAndSiblings(draft, parentId);
-			if (!lookup) draft.push(newNode);
-			else {
-				const target = lookup.siblings[lookup.index];
-				target.children.push(newNode);
-				target.isFolded = false;
-			}
-		}),
-		createdNode
-	};
+/** `parentId` 의 자식 중 `skip` 에 없는 마지막 것 */
+function lastChildExcept(parent, skip) {
+	for (let i = parent.childIds.length - 1; i >= 0; i--) if (!skip.has(parent.childIds[i])) return parent.childIds[i];
+	return null;
+}
+/** `targetId` 바로 앞의 형제 중 `skip` 에 없는 가장 가까운 것 */
+function previousSiblingExcept(tree, targetId, skip) {
+	const parentId = tree.nodes.get(targetId)?.parentId;
+	const siblings = parentId == null ? [] : tree.nodes.get(parentId)?.childIds ?? [];
+	for (let i = siblings.indexOf(targetId) - 1; i >= 0; i--) if (!skip.has(siblings[i])) return siblings[i];
+	return null;
+}
+/** `targetId` 바로 뒤의 형제 중 `skip` 에 없는 가장 가까운 것 */
+function nextSiblingExcept(tree, targetId, skip) {
+	const parentId = tree.nodes.get(targetId)?.parentId;
+	const siblings = parentId == null ? [] : tree.nodes.get(parentId)?.childIds ?? [];
+	const startIndex = siblings.indexOf(targetId);
+	if (startIndex === -1) return null;
+	for (let i = startIndex + 1; i < siblings.length; i++) if (!skip.has(siblings[i])) return siblings[i];
+	return null;
 }
 /**
-* 들여쓰기 (Indent): 현재 노드를 바로 윗 형제 노드의 마지막 자식으로 이동
+* 노드들을 대상 기준 자리로 옮기는 요청. 대상이 없으면 빈 배열이다.
+* 대상에 `ROOT_ID` 를 주면 맨 위 단계의 맨 앞(inside-start) 또는 맨 끝(inside)이다.
 */
-function indentNode(rootNodes, targetId) {
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const lookup = findParentAndSiblings(draft, targetId);
-		if (!lookup || lookup.index === 0) return;
-		const { siblings, index } = lookup;
-		const prevSibling = siblings[index - 1];
-		const [targetNode] = siblings.splice(index, 1);
-		prevSibling.children.push(targetNode);
-		prevSibling.isFolded = false;
-		success = true;
-	});
-	return {
-		success,
-		newNodes
-	};
-}
-/**
-* 다중 노드 일괄 들여쓰기 (Batch Indent)
-* - 각 최상위 선택 노드를 순서대로 바로 윗 형제의 자식으로 이동
-*/
-function indentNodes(rootNodes, targetIds) {
-	const topmost = getTopmostNodeIds(rootNodes, targetIds);
-	if (topmost.length === 0) return {
-		count: 0,
-		newNodes: rootNodes
-	};
-	let count = 0;
-	let currentNodes = rootNodes;
-	for (const id of topmost) {
-		const res = indentNode(currentNodes, id);
-		if (res.success) {
-			currentNodes = res.newNodes;
-			count++;
+function moveRequests(tree, ids, targetId, position) {
+	const target = tree.nodes.get(targetId);
+	if (!target || ids.length === 0) return [];
+	const moving = new Set(ids);
+	switch (position) {
+		case "after": return [{
+			op: "move",
+			ids,
+			under: targetId,
+			inside: false
+		}];
+		case "inside-start": return [{
+			op: "move",
+			ids,
+			under: targetId,
+			inside: true
+		}];
+		case "before": {
+			const previous = previousSiblingExcept(tree, targetId, moving);
+			if (previous) return [{
+				op: "move",
+				ids,
+				under: previous,
+				inside: false
+			}];
+			return target.parentId === null ? [] : [{
+				op: "move",
+				ids,
+				under: target.parentId,
+				inside: true
+			}];
+		}
+		case "inside": {
+			const last = lastChildExcept(target, moving);
+			if (!last) return [{
+				op: "move",
+				ids,
+				under: targetId,
+				inside: true
+			}];
+			return [{
+				op: "move",
+				ids,
+				under: last,
+				inside: false
+			}, ...unfoldRequests(tree, targetId)];
 		}
 	}
-	return {
-		count,
-		newNodes: currentNodes
-	};
 }
 /**
-* 내어쓰기 (Outdent): 현재 노드를 부모의 다음 형제 위치로 승격
+* 새 노드들을 대상 기준 자리에 넣는 요청. 대상이 없으면 빈 배열이다.
+* 만들어진 노드의 id 는 첫 번째 요청의 결과(`createdIds`)에 담긴다.
 */
-function outdentNode(rootNodes, targetId) {
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const lookup = findParentAndSiblings(draft, targetId);
-		if (!lookup || !lookup.parent) return;
-		const parentLookup = findParentAndSiblings(draft, lookup.parent.id);
-		if (!parentLookup) return;
-		const [targetNode] = lookup.siblings.splice(lookup.index, 1);
-		parentLookup.siblings.splice(parentLookup.index + 1, 0, targetNode);
-		success = true;
-	});
-	return {
-		success,
-		newNodes
-	};
-}
-/**
-* 다중 노드 일괄 내어쓰기 (Batch Outdent)
-* - 선택된 노드들을 부모의 다음 형제 위치로 원래 순서를 유지하며 승격
-*/
-function outdentNodes(rootNodes, targetIds) {
-	const topmost = getTopmostNodeIds(rootNodes, targetIds);
-	if (topmost.length === 0) return {
-		count: 0,
-		newNodes: rootNodes
-	};
-	let count = 0;
-	let currentNodes = rootNodes;
-	for (let i = topmost.length - 1; i >= 0; i--) {
-		const id = topmost[i];
-		const res = outdentNode(currentNodes, id);
-		if (res.success) {
-			currentNodes = res.newNodes;
-			count++;
+function insertRequests(tree, targetId, position, items) {
+	const target = tree.nodes.get(targetId);
+	if (!target) return [];
+	switch (position) {
+		case "after": return [{
+			op: "insert_after",
+			targetId,
+			items
+		}];
+		case "before": return [{
+			op: "insert_before",
+			targetId,
+			items
+		}];
+		case "inside-start": return [{
+			op: "insert_after",
+			targetId,
+			items,
+			inside: true
+		}];
+		case "inside": {
+			const last = target.childIds.at(-1);
+			if (last === void 0) return [{
+				op: "insert_after",
+				targetId,
+				items,
+				inside: true
+			}];
+			return [{
+				op: "insert_after",
+				targetId: last,
+				items
+			}, ...unfoldRequests(tree, targetId)];
 		}
 	}
-	return {
-		count,
-		newNodes: currentNodes
-	};
+}
+/** 들여쓰기: 바로 위 형제의 마지막 자식으로 옮기는 요청. 위 형제가 없으면 빈 배열이다. */
+function indentRequests(tree, id) {
+	const previous = previousSiblingExcept(tree, id, /* @__PURE__ */ new Set());
+	return previous ? moveRequests(tree, [id], previous, "inside") : [];
+}
+/** 내어쓰기: 부모의 바로 다음 형제로 옮기는 요청. 이미 맨 위 단계면 빈 배열이다. */
+function outdentRequests(tree, id) {
+	const parentId = getFlatNode(tree, id)?.parentId;
+	return parentId == null || parentId === "root" ? [] : [{
+		op: "move",
+		ids: [id],
+		under: parentId,
+		inside: false
+	}];
 }
 /**
-* 노드 단일 삭제
+* 노드(들)를 이전 형제 위('up') 또는 다음 형제 아래('down')로 한 칸 옮기는 요청.
+* 더 이상 위/아래로 갈 수 없으면 빈 배열이다.
 */
-function deleteNode(rootNodes, targetId) {
-	let deletedNode = null;
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const lookup = findParentAndSiblings(draft, targetId);
-		if (!lookup) return;
-		const [deleted] = lookup.siblings.splice(lookup.index, 1);
-		deletedNode = deleted;
-		success = true;
-	});
-	return {
-		success,
-		newNodes,
-		deletedNode
-	};
+function stepMoveRequests(tree, ids, direction) {
+	const topmost = getTopmostIds(tree, ids);
+	if (topmost.length === 0) return [];
+	const moving = new Set(topmost);
+	if (direction === "up") {
+		const firstId = topmost[0];
+		const previous = previousSiblingExcept(tree, firstId, moving);
+		if (!previous) return [];
+		return moveRequests(tree, topmost, previous, "before");
+	} else {
+		const lastId = topmost[topmost.length - 1];
+		const next = nextSiblingExcept(tree, lastId, moving);
+		if (!next) return [];
+		return moveRequests(tree, topmost, next, "after");
+	}
 }
-/**
-* 다중 노드 일괄 삭제 (Batch Delete)
-*/
-function deleteNodes(rootNodes, targetIds) {
-	if (targetIds.length === 0) return {
-		count: 0,
-		newNodes: rootNodes
-	};
-	let count = 0;
-	const targetSet = new Set(targetIds);
-	const newNodes = produce(rootNodes, (draft) => {
-		function purge(nodes) {
-			for (let i = nodes.length - 1; i >= 0; i--) {
-				const node = nodes[i];
-				if (targetSet.has(node.id)) {
-					nodes.splice(i, 1);
-					count++;
-				} else if (node.children.length > 0) purge(node.children);
-			}
-		}
-		purge(draft);
+/** 중첩 노드들을 새로 만들 노드의 입력으로 바꾼다. id 와 시각은 버린다. (엔진이 새로 정한다) */
+function toNodeInputs(nodes) {
+	return nodes.map((node) => {
+		const input = { ...node };
+		delete input.id;
+		delete input.createdAt;
+		delete input.updatedAt;
+		return {
+			...input,
+			children: toNodeInputs(node.children ?? [])
+		};
 	});
-	return {
-		count,
-		newNodes
-	};
 }
-/**
-* 노드 텍스트 갱신
-*/
-function updateNodeText(rootNodes, targetId, newText) {
-	let success = false;
-	let updatedNode;
-	const newNodes = produce(rootNodes, (draft) => {
-		const lookup = findParentAndSiblings(draft, targetId);
-		if (!lookup) return;
-		const node = lookup.siblings[lookup.index];
-		node.text = newText;
-		node.updatedAt = Date.now();
-		updatedNode = node;
-		success = true;
-	});
+/** 트리의 노드 하나를 하위째 복제할 때 쓸 입력. 없는 노드면 null */
+function subtreeInput(tree, id) {
+	const node = getFlatNode(tree, id);
+	if (!node) return null;
+	const input = { ...node };
+	delete input.id;
+	delete input.parentId;
+	delete input.childIds;
+	delete input.createdAt;
+	delete input.updatedAt;
+	const children = [];
+	for (const childId of node.childIds) {
+		const child = subtreeInput(tree, childId);
+		if (child) children.push(child);
+	}
 	return {
-		success,
-		newNodes,
-		updatedNode
-	};
-}
-/**
-* 노드 서식 타입 일괄 변경 (Heading, To-do, Bullet 등)
-*/
-function setNodesType(rootNodes, targetIds, nodeType) {
-	if (targetIds.length === 0) return {
-		count: 0,
-		newNodes: rootNodes
-	};
-	let count = 0;
-	const targetSet = new Set(targetIds);
-	const newNodes = produce(rootNodes, (draft) => {
-		function traverse(nodes) {
-			for (const node of nodes) {
-				if (targetSet.has(node.id)) {
-					node.nodeType = nodeType;
-					node.updatedAt = Date.now();
-					count++;
-				}
-				if (node.children.length > 0) traverse(node.children);
-			}
-		}
-		traverse(draft);
-	});
-	return {
-		count,
-		newNodes
-	};
-}
-/**
-* 노드 완료 상태 일괄 토글/설정
-*/
-function toggleNodesCompleted(rootNodes, targetIds, forceState) {
-	if (targetIds.length === 0) return {
-		count: 0,
-		newNodes: rootNodes
-	};
-	let count = 0;
-	const targetSet = new Set(targetIds);
-	const now = Date.now();
-	const newNodes = produce(rootNodes, (draft) => {
-		function traverse(nodes) {
-			for (const node of nodes) {
-				if (targetSet.has(node.id)) {
-					const nextState = typeof forceState === "boolean" ? forceState : !node.isCompleted;
-					node.isCompleted = nextState;
-					node.completedAt = nextState ? now : void 0;
-					node.updatedAt = now;
-					count++;
-				}
-				if (node.children.length > 0) traverse(node.children);
-			}
-		}
-		traverse(draft);
-	});
-	return {
-		count,
-		newNodes
-	};
-}
-/**
-* 노드 부연 설명(노트) 갱신. 빈 문자열이면 노트를 없앤다.
-*/
-function setNodeNote(rootNodes, targetId, note) {
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const lookup = findParentAndSiblings(draft, targetId);
-		if (!lookup) return;
-		const node = lookup.siblings[lookup.index];
-		if (note === "") delete node.note;
-		else node.note = note;
-		node.updatedAt = Date.now();
-		success = true;
-	});
-	return {
-		success,
-		newNodes
-	};
-}
-/**
-* 노드 접기/펼치기 토글
-*/
-function toggleFold(rootNodes, targetId, forceState) {
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const lookup = findParentAndSiblings(draft, targetId);
-		if (!lookup) return;
-		const node = lookup.siblings[lookup.index];
-		node.isFolded = typeof forceState === "boolean" ? forceState : !node.isFolded;
-		success = true;
-	});
-	return {
-		success,
-		newNodes
+		...input,
+		children
 	};
 }
 //#endregion
@@ -1244,27 +717,22 @@ function mergeTextAtCaret(prevText, currText) {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/transforms/file.ts
-/**
-* @file file.ts
-* @description 불릿에 딸린 파일을 붙이고, 떼고, 고치는 변형 (Transform)
-*/
-/** 불릿에 파일을 붙인다. `file` 이 null 이면 뗀다. */
-function setNodeFile(rootNodes, targetId, file) {
-	let success = false;
-	const newNodes = produce(rootNodes, (draft) => {
-		const lookup = findParentAndSiblings(draft, targetId);
-		if (!lookup) return;
-		const node = lookup.siblings[lookup.index];
-		if (file === null) delete node.file;
-		else node.file = file;
-		node.updatedAt = Date.now();
-		success = true;
-	});
-	return {
-		success,
-		newNodes
-	};
+//#region ../../packages/outliner-core/src/outline/queries/find.ts
+/** 트리 전체에서 특정 ID의 노드를 재귀 탐색 */
+function findNode(nodes, targetId) {
+	for (const node of nodes) {
+		if (node.id === targetId) return node;
+		const found = findNode(node.children, targetId);
+		if (found) return found;
+	}
+	return null;
+}
+/** 위/아래 방향키 이동 시 다음 타깃 노드 ID 계산 */
+function getNextFocusId(flattened, currentId, direction) {
+	const currentIndex = flattened.findIndex((item) => item.id === currentId);
+	if (currentIndex === -1) return null;
+	if (direction === "up") return currentIndex > 0 ? flattened[currentIndex - 1].id : null;
+	else return currentIndex < flattened.length - 1 ? flattened[currentIndex + 1].id : null;
 }
 //#endregion
 //#region ../../packages/outliner-core/src/outline/queries/path.ts
@@ -1280,6 +748,27 @@ function getPath(nodes, targetId) {
 		return null;
 	}
 	return dfs(nodes, []) || [];
+}
+//#endregion
+//#region ../../packages/outliner-core/src/outline/queries/subtree.ts
+/**
+* 고른 노드들 중 "맨 위" 노드만 문서 순서대로 남긴다.
+* (부모와 자식을 함께 골랐다면 부모만 다루면 자식은 따라온다)
+*/
+function getTopmostNodeIds(rootNodes, ids) {
+	const wanted = new Set(ids);
+	const result = [];
+	function traverse(nodes) {
+		for (const node of nodes) if (wanted.has(node.id)) result.push(node.id);
+		else if (node.children.length > 0) traverse(node.children);
+	}
+	traverse(rootNodes);
+	return result;
+}
+/** 노드와 그 하위에 접힌 곳이 하나도 없는지 (전부 펼쳐진 상태인지) */
+function isFullyExpanded(node) {
+	if (node.children.length === 0) return true;
+	return !node.isFolded && node.children.every(isFullyExpanded);
 }
 //#endregion
 //#region ../../packages/outliner-core/src/outline/queries/fileTarget.ts
@@ -1319,18 +808,22 @@ function getTargetName(target) {
 function flattenTree(rootNodes, zoomedId, options) {
 	let displayNodes = rootNodes;
 	let basePath = [];
+	let baseAncestorCompleted = false;
 	if (zoomedId) {
 		const target = findNode(rootNodes, zoomedId);
 		if (target) {
 			displayNodes = target.children;
-			basePath = getPath(rootNodes, zoomedId).map((n) => n.id);
+			const pathNodes = getPath(rootNodes, zoomedId);
+			basePath = pathNodes.map((n) => n.id);
+			baseAncestorCompleted = pathNodes.some((n) => n.isCompleted === true);
 		}
 	}
 	const result = [];
 	const hideCompleted = options?.hideCompleted ?? false;
-	function traverse(nodes, depth, parentId, currentPath) {
+	function traverse(nodes, depth, parentId, currentPath, ancestorCompleted) {
 		for (const node of nodes) {
-			if (hideCompleted && node.isCompleted) continue;
+			const isSelfCompleted = node.isCompleted === true;
+			if (hideCompleted && (isSelfCompleted || ancestorCompleted)) continue;
 			const nodePath = [...currentPath, node.id];
 			const hasChildren = node.children.length > 0;
 			const isFolded = !!node.isFolded;
@@ -1341,12 +834,13 @@ function flattenTree(rootNodes, zoomedId, options) {
 				parentId,
 				hasChildren,
 				isFolded,
-				path: nodePath
+				path: nodePath,
+				isAncestorCompleted: ancestorCompleted
 			});
-			if (hasChildren && !isFolded) traverse(node.children, depth + 1, node.id, nodePath);
+			if (hasChildren && !isFolded) traverse(node.children, depth + 1, node.id, nodePath, ancestorCompleted || isSelfCompleted);
 		}
 	}
-	traverse(displayNodes, 0, zoomedId || null, basePath);
+	traverse(displayNodes, 0, zoomedId || null, basePath, baseAncestorCompleted);
 	return result;
 }
 //#endregion
@@ -1404,6 +898,131 @@ function toOutlineText(nodes) {
 	return lines.join("\n");
 }
 //#endregion
+//#region ../../packages/outliner-core/src/outline/views/text/parseOutlineToNodes.ts
+/**
+* @file parseOutlineToNodes.ts
+* @description 들여쓴 텍스트, Markdown 중첩 목록, 또는 JSON 데이터를 계층적 OutlineNode 트리로 파싱
+*/
+/** 노드 트리의 모든 ID를 새로 발급하여 복제 */
+function cloneTreeWithNewIds(nodes) {
+	const now = Date.now();
+	return nodes.map((node) => ({
+		...node,
+		id: generateNodeId(),
+		createdAt: now,
+		updatedAt: now,
+		children: cloneTreeWithNewIds(node.children ?? [])
+	}));
+}
+/** JSON 텍스트에서 노드 트리를 감지하여 복원 */
+function tryParseJsonNodes(text) {
+	const trimmed = text.trim();
+	if (!trimmed.startsWith("[") && !trimmed.startsWith("{")) return null;
+	try {
+		const parsed = JSON.parse(trimmed);
+		if (Array.isArray(parsed) && parsed.length > 0 && typeof parsed[0] === "object" && parsed[0] !== null && "text" in parsed[0]) return cloneTreeWithNewIds(parsed);
+		if (typeof parsed === "object" && parsed !== null && "rootNodes" in parsed && Array.isArray(parsed.rootNodes)) return cloneTreeWithNewIds(parsed.rootNodes);
+	} catch {}
+	return null;
+}
+/** 한 줄의 들여쓰기 공백 수 및 불릿/체크박스/파일 파싱 */
+function parseLine(line) {
+	if (line.trim().length === 0) return null;
+	let indent = 0;
+	let idx = 0;
+	while (idx < line.length) {
+		const ch = line[idx];
+		if (ch === " ") {
+			indent += 1;
+			idx++;
+		} else if (ch === "	") {
+			indent += 2;
+			idx++;
+		} else break;
+	}
+	const content = line.slice(idx);
+	let isBullet = false;
+	let boxCompleted;
+	let isDivider = false;
+	let text = content;
+	const bulletMatch = /^(?:[-*+]|\d+\.)\s+/.exec(text);
+	if (bulletMatch) {
+		isBullet = true;
+		text = text.slice(bulletMatch[0].length);
+	}
+	if (text.trim() === "---" || text.trim() === "***") {
+		isDivider = true;
+		text = "";
+	}
+	const checkMatch = /^\[([ xX])\]\s*/.exec(text);
+	if (checkMatch) {
+		boxCompleted = checkMatch[1].toLowerCase() === "x";
+		text = text.slice(checkMatch[0].length);
+	}
+	let fileTarget;
+	const embedMatch = /!\[\[([^\]]+)\]\]\s*$/.exec(text);
+	if (embedMatch) {
+		fileTarget = embedMatch[1];
+		text = text.slice(0, embedMatch.index).trim();
+	} else {
+		const urlMatch = /(https?:\/\/\S+)\s*$/.exec(text);
+		if (urlMatch && isWebTarget(urlMatch[1])) {
+			fileTarget = urlMatch[1];
+			text = text.slice(0, urlMatch.index).trim();
+		}
+	}
+	return {
+		indent,
+		rawText: line,
+		isBullet,
+		boxCompleted,
+		isDivider,
+		fileTarget,
+		cleanedText: text
+	};
+}
+/**
+* 들여쓴 텍스트나 Markdown 목록 문자열을 OutlineNode 트리로 파싱
+*/
+function parseOutlineToNodes(rawText) {
+	const jsonNodes = tryParseJsonNodes(rawText);
+	if (jsonNodes) return jsonNodes;
+	const lines = rawText.split(/\r?\n/);
+	const now = Date.now();
+	const roots = [];
+	const stack = [];
+	for (const line of lines) {
+		const info = parseLine(line);
+		if (!info) continue;
+		if (!info.isBullet && !info.isDivider && stack.length > 0 && info.indent > stack[stack.length - 1].indent) {
+			const lastNode = stack[stack.length - 1].node;
+			lastNode.note = lastNode.note ? `${lastNode.note}\n${info.cleanedText}` : info.cleanedText;
+			continue;
+		}
+		let nodeType = "bullet";
+		if (info.isDivider) nodeType = "divider";
+		else if (info.boxCompleted !== void 0) nodeType = "todo";
+		const newNode = {
+			id: generateNodeId(),
+			text: info.cleanedText,
+			nodeType,
+			isCompleted: info.boxCompleted,
+			file: info.fileTarget ? { target: info.fileTarget } : void 0,
+			children: [],
+			createdAt: now,
+			updatedAt: now
+		};
+		while (stack.length > 0 && stack[stack.length - 1].indent >= info.indent) stack.pop();
+		if (stack.length === 0) roots.push(newNode);
+		else stack[stack.length - 1].node.children.push(newNode);
+		stack.push({
+			indent: info.indent,
+			node: newNode
+		});
+	}
+	return roots;
+}
+//#endregion
 //#region ../../packages/outliner-core/src/workspace/model/defaults.ts
 /**
 * @file defaults.ts
@@ -1444,9 +1063,18 @@ function createDefaultProject(title = "새 스캐폴드", initialNodes) {
 * @file editorStore.ts
 * @description 편집 화면 하나의 상태와 불릿 편집 액션 (호스트 비의존)
 *
-* 편집 화면은 스캐폴드 하나만 안다. 불릿 트리 자체는 이 스토어가 갖지 않고,
-* 호스트가 넘겨준 문서 창구(`OutlineDocumentPort`)로 읽고 쓴다. 그래서 데이터의 주인은 언제나 호스트 하나다.
-* 이 스토어가 직접 갖는 것은 파일에 저장되지 않는 화면 상태(줌·포커스·캐럿·선택)뿐이다.
+* 편집 화면은 스캐폴드 하나만 안다. 불릿 트리는 호스트가 넘겨준 문서 창구(`OutlineDocumentPort`)로 읽고 쓴다.
+* 그래서 저장되는 데이터의 주인은 언제나 호스트 하나다.
+*
+* 편집하는 동안에는 호스트의 중첩 트리를 ID 트리로 올려 두고, 모든 편집을 패치 엔진(`applyPatch`)으로 한다.
+* 바뀐 결과는 중첩 트리로 내려 호스트에 돌려준다. 이 스토어가 직접 갖는 것은
+* 파일에 저장되지 않는 화면 상태(줌·포커스·캐럿·선택)와 실행 취소 기록뿐이다.
+*
+* 실행 취소는 일반 편집기처럼 동작한다.
+* - 사용자가 한 번 한 동작은 한 번에 되돌아간다. (여러 요청을 `batch` 로 묶으면 한 동작이다)
+* - 바뀐 것이 없으면 기록하지 않는다.
+* - 접기·펼치기는 화면 상태라 기록하지 않고, 되돌릴 때에도 지금 접어 둔 모양을 유지한다.
+* - 밖에서 파일이 바뀌면(다른 화면의 편집, 파일 다시 읽기) 기록을 비운다. 예전 트리로 덮어쓰지 않기 위해서다.
 *
 * 독립 앱은 앱 전체에 하나, 옵시디언 플러그인은 탭마다 하나씩 만든다.
 */
@@ -1457,190 +1085,412 @@ var RESET_EDITOR_VIEW = {
 	noteEditingNodeId: null,
 	selectedNodeIds: []
 };
+var MAX_HISTORY = 100;
+/** 같은 불릿에 이 간격 안으로 이어 친 글자는 실행 취소 한 번으로 묶는다. */
+var TYPING_MERGE_MS = 800;
+var createdIdsOf = (result) => result?.ok ? result.createdIds ?? [] : [];
+/** 두 글자의 달라진 구간이 `text` 안에서 끝나는 자리. 되돌린 뒤 캐럿을 둘 곳이다. */
+function changeEnd(text, other) {
+	let suffix = 0;
+	const limit = Math.min(text.length, other.length);
+	while (suffix < limit && text[text.length - 1 - suffix] === other[other.length - 1 - suffix]) suffix++;
+	return text.length - suffix;
+}
 function createOutlineEditorStore(document) {
 	return createStore((set, get) => {
-		const roots = () => document.getRoots();
-		/** 불릿 트리를 바꾸는 유일한 길. 바꾼 트리는 호스트에 돌려주고, 화면 상태만 여기서 고친다. */
-		const commit = (nextRoots, view = {}) => {
-			document.commitRoots(nextRoots);
-			if (Object.keys(view).length > 0) set(view);
+		let session = null;
+		let transaction = null;
+		const past = [];
+		const future = [];
+		let lastTyping = null;
+		const clearHistory = () => {
+			past.length = 0;
+			future.length = 0;
+			lastTyping = null;
+		};
+		/** 호스트의 지금 트리에 맞는 세션. 밖에서 트리가 바뀌었으면 다시 올리고 기록을 비운다. */
+		const sync = () => {
+			const hostRoots = document.getRoots();
+			if (!session || session.hostRoots !== hostRoots) {
+				session = {
+					hostRoots,
+					...importTree(hostRoots)
+				};
+				clearHistory();
+			}
+			return session;
+		};
+		const currentTree = () => transaction?.tree ?? sync().tree;
+		const nodeOf = (id) => getFlatNode(currentTree(), id);
+		const currentView = () => {
+			const state = get();
+			return {
+				activeRootId: state.activeRootId,
+				focusedNodeId: state.focusedNodeId,
+				targetCaretOffset: state.targetCaretOffset,
+				noteEditingNodeId: state.noteEditingNodeId,
+				selectedNodeIds: state.selectedNodeIds
+			};
+		};
+		/** 바뀐 트리를 중첩 꼴로 내려 호스트에 돌려준다. 호스트에 트리를 넘기는 유일한 곳. */
+		const publish = (tree) => {
+			const projection = projectTree(tree, sync().projection);
+			session = {
+				hostRoots: projection.roots,
+				tree,
+				projection
+			};
+			document.commitRoots(projection.roots);
+		};
+		/** 화면 상태를 바꾼다. 동작 중이면 바뀐 트리가 호스트에 돌아간 뒤에 한꺼번에 반영한다. */
+		const setView = (view) => {
+			if (transaction) Object.assign(transaction.view, view);
+			else set(view);
+		};
+		const remember = (stack, snapshot) => {
+			stack.push(snapshot);
+			if (stack.length > MAX_HISTORY) stack.shift();
+		};
+		/**
+		* 한 동작을 실행한다. 안에서 한 모든 편집을 끝날 때 한 번에 기록하고 돌려준다.
+		* 이미 동작 중이면 그 동작에 합쳐진다.
+		*/
+		const transact = (fn) => {
+			if (transaction) return fn();
+			const startTree = sync().tree;
+			const startView = currentView();
+			const running = {
+				tree: startTree,
+				view: {},
+				edited: false,
+				typingIn: null
+			};
+			transaction = running;
+			try {
+				return fn();
+			} finally {
+				transaction = null;
+				if (running.tree !== startTree) {
+					const now = Date.now();
+					if (running.edited) {
+						if (!(running.typingIn !== null && lastTyping !== null && lastTyping.targetId === running.typingIn && now - lastTyping.at < TYPING_MERGE_MS)) {
+							remember(past, {
+								tree: startTree,
+								view: startView
+							});
+							future.length = 0;
+						}
+						lastTyping = running.typingIn ? {
+							targetId: running.typingIn,
+							at: now
+						} : null;
+					}
+					publish(running.tree);
+				}
+				if (Object.keys(running.view).length > 0) set(running.view);
+			}
+		};
+		/** 패치 요청을 지금 동작에 적용한다. 불릿 트리를 바꾸는 유일한 길. */
+		const apply = (requests, view = {}, typingIn = null) => transact(() => {
+			const running = transaction;
+			const outcome = applyPatch(running.tree, requests);
+			if (outcome.tree !== running.tree) {
+				if (requests.some((request) => request.op !== "set_fold")) {
+					running.typingIn = running.edited ? null : typingIn;
+					running.edited = true;
+				}
+				running.tree = outcome.tree;
+			}
+			Object.assign(running.view, view);
+			return outcome.results;
+		});
+		/** 기록해 둔 트리로 돌아간다. (실행 취소·다시 실행 공통) */
+		const restore = (from, to) => {
+			if (transaction) return false;
+			const current = sync();
+			const snapshot = from.pop();
+			if (!snapshot) return false;
+			remember(to, {
+				tree: current.tree,
+				view: currentView()
+			});
+			lastTyping = null;
+			const tree = withFoldStateOf(snapshot.tree, current.tree);
+			const view = { ...snapshot.view };
+			const focusedId = view.focusedNodeId;
+			const restored = focusedId ? getFlatNode(tree, focusedId) : void 0;
+			const replaced = focusedId ? getFlatNode(current.tree, focusedId) : void 0;
+			if (restored && replaced && restored.text !== replaced.text) view.targetCaretOffset = changeEnd(restored.text, replaced.text);
+			publish(tree);
+			set(view);
 			return true;
 		};
+		const insertAt = (targetId, position, items, view = () => ({})) => transact(() => {
+			const createdIds = createdIdsOf(apply(insertRequests(currentTree(), targetId, position, items))[0]);
+			if (createdIds.length > 0) apply([], view(createdIds));
+			return createdIds;
+		});
+		/** 대상 바로 뒤에 넣는다. 대상이 없으면 맨 위 단계의 맨 끝에 넣는다. */
+		const insertAfterOrAtEnd = (targetId, items, view) => targetId && nodeOf(targetId) ? insertAt(targetId, "after", items, view) : insertAt(ROOT_ID, "inside", items, view);
+		const focusFirst = (createdIds) => ({
+			focusedNodeId: createdIds[0],
+			targetCaretOffset: 0
+		});
 		return {
 			...RESET_EDITOR_VIEW,
-			getRoots: roots,
+			getRoots: () => document.getRoots(),
+			getTree: currentTree,
 			setDefaultView: (view) => document.setDefaultView(view),
-			resetView: () => set(RESET_EDITOR_VIEW),
-			insertAfter: (targetId, text = "") => {
-				const { newNodes, createdNode } = insertAfter(roots(), targetId, text);
-				commit(newNodes, {
-					focusedNodeId: createdNode.id,
-					targetCaretOffset: 0
-				});
-				return createdNode.id;
+			resetView: () => {
+				clearHistory();
+				set(RESET_EDITOR_VIEW);
 			},
-			appendChild: (parentId, text = "") => {
-				const { newNodes, createdNode } = appendChild(roots(), parentId, text);
-				commit(newNodes, {
-					focusedNodeId: createdNode.id,
-					targetCaretOffset: 0
-				});
-				return createdNode.id;
+			applyPatch: (requests, view) => apply(requests, view),
+			batch: (fn) => transact(() => fn(get())),
+			undo: () => restore(past, future),
+			redo: () => restore(future, past),
+			canUndo: () => {
+				sync();
+				return past.length > 0;
 			},
+			canRedo: () => {
+				sync();
+				return future.length > 0;
+			},
+			insertAfter: (targetId, text = "") => insertAfterOrAtEnd(targetId, [{ text }], focusFirst)[0] ?? null,
+			insertNodes: (targetId, nodes) => insertAfterOrAtEnd(targetId, toNodeInputs(nodes), (createdIds) => ({
+				...focusFirst(createdIds),
+				selectedNodeIds: []
+			})),
+			replaceNodes: (targetIds, nodes) => transact(() => {
+				if (nodes.length === 0) {
+					get().deleteNodes(targetIds);
+					return [];
+				}
+				const topmost = getTopmostIds(currentTree(), targetIds);
+				if (topmost.length === 0) return get().insertNodes(null, nodes);
+				const createdIds = insertAt(topmost[0], "before", toNodeInputs(nodes), (ids) => ({
+					...focusFirst(ids),
+					selectedNodeIds: []
+				}));
+				apply(topmost.map((id) => ({
+					op: "delete",
+					id,
+					recursively: true
+				})));
+				return createdIds;
+			}),
+			appendChild: (parentId, text = "") => insertAt(nodeOf(parentId) ? parentId : "root", "inside", [{ text }], focusFirst)[0] ?? null,
+			splitNode: (targetId, before, after) => transact(() => {
+				if (!nodeOf(targetId)) return null;
+				apply([{
+					op: "replace",
+					id: targetId,
+					text: before
+				}]);
+				return insertAt(targetId, "after", [{ text: after }], focusFirst)[0] ?? null;
+			}),
+			joinWithPrevious: (targetId, previousId, mergedText, caretOffset) => transact(() => {
+				if (!nodeOf(previousId)) return false;
+				const [removed] = apply([{
+					op: "delete",
+					id: targetId
+				}]);
+				if (!removed.ok) return false;
+				apply([{
+					op: "replace",
+					id: previousId,
+					text: mergedText
+				}], {
+					focusedNodeId: previousId,
+					targetCaretOffset: caretOffset,
+					selectedNodeIds: []
+				});
+				return true;
+			}),
 			indent: (targetId) => {
-				const res = indentNode(roots(), targetId);
-				if (!res.success) return false;
-				return commit(res.newNodes, { focusedNodeId: targetId });
+				const requests = indentRequests(currentTree(), targetId);
+				if (requests.length === 0) return false;
+				apply(requests, { focusedNodeId: targetId });
+				return true;
 			},
-			indentNodes: (targetIds) => {
-				const res = indentNodes(roots(), targetIds);
-				if (res.count === 0) return false;
-				return commit(res.newNodes);
-			},
+			indentNodes: (targetIds) => transact(() => {
+				let count = 0;
+				for (const id of getTopmostIds(currentTree(), targetIds)) {
+					const requests = indentRequests(currentTree(), id);
+					if (requests.length === 0) continue;
+					apply(requests);
+					count++;
+				}
+				return count > 0;
+			}),
 			outdent: (targetId) => {
-				const res = outdentNode(roots(), targetId);
-				if (!res.success) return false;
-				return commit(res.newNodes, { focusedNodeId: targetId });
+				const requests = outdentRequests(currentTree(), targetId);
+				if (requests.length === 0) return false;
+				apply(requests, { focusedNodeId: targetId });
+				return true;
 			},
-			outdentNodes: (targetIds) => {
-				const res = outdentNodes(roots(), targetIds);
-				if (res.count === 0) return false;
-				return commit(res.newNodes);
-			},
-			deleteNode: (targetId) => {
-				const res = deleteNode(roots(), targetId);
-				if (!res.success) return false;
-				return commit(res.newNodes);
-			},
+			outdentNodes: (targetIds) => transact(() => {
+				let count = 0;
+				for (const id of getTopmostIds(currentTree(), targetIds).reverse()) {
+					const requests = outdentRequests(currentTree(), id);
+					if (requests.length === 0) continue;
+					apply(requests);
+					count++;
+				}
+				return count > 0;
+			}),
+			deleteNode: (targetId) => apply([{
+				op: "delete",
+				id: targetId,
+				recursively: true
+			}])[0].ok,
 			updateText: (targetId, text) => {
-				const res = updateNodeText(roots(), targetId, text);
-				if (!res.success) return;
-				commit(res.newNodes);
+				apply([{
+					op: "replace",
+					id: targetId,
+					text
+				}], {}, targetId);
 			},
 			toggleFold: (targetId) => {
-				const res = toggleFold(roots(), targetId);
-				if (!res.success) return;
-				commit(res.newNodes);
+				const node = nodeOf(targetId);
+				if (node) apply([{
+					op: "set_fold",
+					id: targetId,
+					isFolded: !node.isFolded
+				}]);
 			},
 			setFoldDeep: (targetId, isFolded) => {
-				const res = setFoldDeep(roots(), targetId, isFolded);
-				if (!res.success) return;
-				commit(res.newNodes);
+				apply([{
+					op: "set_fold",
+					id: targetId,
+					isFolded,
+					deep: true
+				}]);
 			},
-			addBulletAtEnd: () => {
-				const { activeRootId } = get();
-				const current = roots();
-				if (activeRootId && findNode(current, activeRootId)) return get().appendChild(activeRootId, "");
-				if (current.length > 0) return get().insertAfter(current[current.length - 1].id, "");
-				const now = Date.now();
-				const node = {
-					id: generateNodeId(),
-					text: "",
-					children: [],
-					createdAt: now,
-					updatedAt: now
-				};
-				commit([node], {
-					focusedNodeId: node.id,
-					targetCaretOffset: 0
-				});
-				return node.id;
-			},
+			addBulletAtEnd: () => get().appendChild(get().activeRootId ?? "root", ""),
 			moveNodes: (sourceIds, targetId, position) => {
-				const res = moveNodes(roots(), sourceIds, targetId, position);
-				if (!res.success) return false;
-				return commit(res.newNodes);
+				const tree = currentTree();
+				const topmost = getTopmostIds(tree, sourceIds);
+				if (topmost.length === 0) return false;
+				if (targetId !== null) {
+					if (!getFlatNode(tree, targetId)) return false;
+					if (topmost.some((id) => isInSubtree(tree, id, targetId))) return false;
+				}
+				const requests = targetId !== null ? moveRequests(tree, topmost, targetId, position) : moveRequests(tree, topmost, ROOT_ID, position === "inside-start" ? position : "inside");
+				apply(requests);
+				return true;
 			},
-			duplicateNodes: (sourceIds) => {
-				const res = duplicateNodes(roots(), sourceIds);
-				if (res.createdIds.length === 0) return [];
-				commit(res.newNodes, { selectedNodeIds: [] });
-				return res.createdIds;
+			moveNodesStep: (ids, direction) => {
+				const requests = stepMoveRequests(currentTree(), ids, direction);
+				if (requests.length === 0) return false;
+				const currentFocused = get().focusedNodeId;
+				const currentCaret = get().targetCaretOffset;
+				apply(requests, {
+					focusedNodeId: currentFocused,
+					targetCaretOffset: currentCaret
+				});
+				return true;
 			},
+			duplicateNodes: (sourceIds) => transact(() => {
+				const createdIds = [];
+				for (const id of getTopmostIds(currentTree(), sourceIds)) {
+					const copy = subtreeInput(currentTree(), id);
+					if (copy) createdIds.push(...insertAt(id, "after", [copy]));
+				}
+				if (createdIds.length > 0) apply([], { selectedNodeIds: [] });
+				return createdIds;
+			}),
 			duplicateNodesTo: (sourceIds, targetId, position) => {
-				const res = duplicateNodesTo(roots(), sourceIds, targetId, position);
-				if (!res.success) return false;
-				return commit(res.newNodes, { selectedNodeIds: [] });
+				const tree = currentTree();
+				const copies = getTopmostIds(tree, sourceIds).map((id) => subtreeInput(tree, id)).filter((copy) => copy !== null);
+				if (copies.length === 0) return false;
+				return (targetId !== null ? insertAt(targetId, position, copies, () => ({ selectedNodeIds: [] })) : insertAt(ROOT_ID, position === "inside-start" ? position : "inside", copies, () => ({ selectedNodeIds: [] }))).length > 0;
 			},
 			deleteNodes: (targetIds) => {
-				const res = deleteNodes(roots(), targetIds);
-				if (res.count === 0) return false;
-				return commit(res.newNodes, { selectedNodeIds: [] });
+				const topmost = getTopmostIds(currentTree(), targetIds);
+				if (topmost.length === 0) return false;
+				apply(topmost.map((id) => ({
+					op: "delete",
+					id,
+					recursively: true
+				})), { selectedNodeIds: [] });
+				return true;
 			},
 			setNodesType: (targetIds, nodeType) => {
-				const typed = setNodesType(roots(), targetIds, nodeType);
-				const res = setNodesViewMode(typed.newNodes, targetIds, void 0);
-				if (typed.count === 0 && res.count === 0) return;
-				commit(res.newNodes);
+				apply(targetIds.flatMap((id) => [{
+					op: "set_node_type",
+					id,
+					nodeType
+				}, {
+					op: "set_view_mode",
+					id
+				}]));
 			},
 			setNodesViewMode: (targetIds, viewMode) => {
-				const res = setNodesViewMode(roots(), targetIds, viewMode);
-				if (res.count === 0) return;
-				commit(res.newNodes);
+				apply(targetIds.map((id) => ({
+					op: "set_view_mode",
+					id,
+					viewMode
+				})));
 			},
 			setNodesCompleted: (targetIds) => {
-				const current = roots();
-				const res = toggleNodesCompleted(current, targetIds, !targetIds.every((id) => findNode(current, id)?.isCompleted === true));
-				if (res.count === 0) return;
-				commit(res.newNodes);
+				const allCompleted = targetIds.every((id) => nodeOf(id)?.isCompleted === true);
+				apply(targetIds.map((id) => ({
+					op: allCompleted ? "uncomplete" : "complete",
+					id
+				})));
 			},
-			selectNodes: (nodeIds) => set({ selectedNodeIds: nodeIds }),
+			selectNodes: (nodeIds) => setView({ selectedNodeIds: nodeIds }),
 			clearSelection: () => {
-				if (get().selectedNodeIds.length > 0) set({ selectedNodeIds: [] });
+				if (get().selectedNodeIds.length > 0) setView({ selectedNodeIds: [] });
 			},
 			toggleCompleted: (targetId) => {
-				const res = toggleNodesCompleted(roots(), [targetId]);
-				if (res.count === 0) return;
-				commit(res.newNodes);
+				const node = nodeOf(targetId);
+				if (node) apply([{
+					op: node.isCompleted ? "uncomplete" : "complete",
+					id: targetId
+				}]);
 			},
 			setNote: (targetId, note) => {
-				const res = setNodeNote(roots(), targetId, note);
-				if (!res.success) return;
-				commit(res.newNodes);
+				apply([{
+					op: "set_note",
+					id: targetId,
+					note
+				}]);
 			},
-			attachFiles: (targetId, targets) => {
-				let current = roots();
-				const target = findNode(current, targetId);
+			attachFiles: (targetId, targets) => transact(() => {
+				const target = nodeOf(targetId);
 				if (!target || targets.length === 0) return [];
-				const attached = [];
-				const attach = (nodeId, fileTarget) => {
-					const res = setNodeFile(current, nodeId, { target: fileTarget });
-					if (!res.success) return;
-					current = res.newNodes;
-					attached.push(nodeId);
-				};
+				const fileBullet = (fileTarget) => ({
+					text: "",
+					file: { target: fileTarget }
+				});
 				if (target.text === "" && !target.file) {
-					attach(targetId, targets[0]);
-					let previousId = targetId;
-					for (const fileTarget of targets.slice(1)) {
-						const { newNodes, createdNode } = insertAfter(current, previousId, "");
-						current = newNodes;
-						attach(createdNode.id, fileTarget);
-						previousId = createdNode.id;
-					}
-				} else {
-					for (const fileTarget of targets) {
-						const { newNodes, createdNode } = appendChild(current, targetId, "");
-						current = newNodes;
-						attach(createdNode.id, fileTarget);
-					}
-					if (target.isFolded) current = toggleFold(current, targetId, false).newNodes;
+					apply([{
+						op: "set_file",
+						id: targetId,
+						file: { target: targets[0] }
+					}]);
+					const attached = [targetId];
+					for (const fileTarget of targets.slice(1)) attached.push(...insertAt(attached[attached.length - 1], "after", [fileBullet(fileTarget)]));
+					return attached;
 				}
-				if (attached.length > 0) commit(current);
-				return attached;
-			},
+				return insertAt(targetId, "inside", targets.map(fileBullet));
+			}),
 			detachFile: (targetId) => {
-				const res = setNodeFile(roots(), targetId, null);
-				if (!res.success) return;
-				commit(res.newNodes);
+				apply([{
+					op: "set_file",
+					id: targetId
+				}]);
 			},
-			startNoteEdit: (nodeId) => set({ noteEditingNodeId: nodeId }),
-			endNoteEdit: () => set({ noteEditingNodeId: null }),
-			setZoom: (nodeId) => set({
+			startNoteEdit: (nodeId) => setView({ noteEditingNodeId: nodeId }),
+			endNoteEdit: () => setView({ noteEditingNodeId: null }),
+			setZoom: (nodeId) => setView({
 				activeRootId: nodeId,
 				focusedNodeId: nodeId
 			}),
-			setFocus: (nodeId, caretOffset) => set({
+			setFocus: (nodeId, caretOffset) => setView({
 				focusedNodeId: nodeId,
 				targetCaretOffset: nodeId && caretOffset !== void 0 ? caretOffset : null,
 				...nodeId ? { selectedNodeIds: [] } : {}
@@ -2802,7 +2652,7 @@ var X = createLucideIcon("x", [["path", {
 * - 화살표: 클릭은 한 단계 접기/펼치기, 더블클릭은 하위 전체 접기/펼치기
 * - 불릿 점: 호버 링, 좌클릭 줌인, 우클릭 노드 메뉴, 잡고 끌면 이동 (Alt 를 누른 채 놓으면 복제)
 */
-var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isTodo = false, isDotSubtle = false, onToggleFold, onToggleFoldDeep, onZoom, onOpenMenu, onHandleEnter, onHandleLeave, onToggleCompleted, onDragStart, onDragEnd }) => {
+var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isAncestorCompleted = false, isTodo = false, isDotSubtle = false, onToggleFold, onToggleFoldDeep, onZoom, onOpenMenu, onToggleCompleted, onDragStart, onDragEnd }) => {
 	const menuAnchor = (el) => {
 		const rect = el.getBoundingClientRect();
 		return {
@@ -2817,11 +2667,6 @@ var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isTodo = fals
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				type: "button",
 				tabIndex: -1,
-				onMouseEnter: (e) => {
-					const { x, y } = menuAnchor(e.currentTarget);
-					onHandleEnter(x, y);
-				},
-				onMouseLeave: onHandleLeave,
 				onClick: (e) => {
 					e.stopPropagation();
 					const { x, y } = menuAnchor(e.currentTarget);
@@ -2863,7 +2708,7 @@ var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isTodo = fals
 				},
 				className: "w-5 h-5 flex items-center justify-center rounded-full ring-0 ring-(--interactive-accent)/0 hover:bg-(--background-modifier-hover) hover:ring-4 hover:ring-(--interactive-accent)/40 transition-all duration-150 cursor-grab active:cursor-grabbing group/dot",
 				title: "클릭: 줌인 · 끌기: 이동 (Alt: 복제) · 우클릭: 메뉴",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: `rounded-full transition-all duration-150 ${isCompleted ? "opacity-50" : ""} ${isDotSubtle && !hasChildren ? "opacity-0 group-hover/row:opacity-100" : ""} ${hasChildren && isFolded ? "w-3 h-3 bg-(--interactive-accent) ring-2 ring-(--interactive-accent)/30" : hasChildren ? "w-2.5 h-2.5 bg-(--text-muted) ring-1 ring-(--background-modifier-border-hover) group-hover/dot:bg-(--interactive-accent)" : "w-1.5 h-1.5 bg-(--text-faint) group-hover/dot:bg-(--interactive-accent)"}` })
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: `rounded-full transition-all duration-150 ${isCompleted || isAncestorCompleted ? "opacity-50" : ""} ${isDotSubtle && !hasChildren ? "opacity-0 group-hover/row:opacity-100" : ""} ${hasChildren && isFolded ? "w-3 h-3 bg-(--interactive-accent) ring-2 ring-(--interactive-accent)/30" : hasChildren ? "w-2.5 h-2.5 bg-(--text-muted) ring-1 ring-(--background-modifier-border-hover) group-hover/dot:bg-(--interactive-accent)" : "w-1.5 h-1.5 bg-(--text-faint) group-hover/dot:bg-(--interactive-accent)"}` })
 			}),
 			isTodo && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				type: "button",
@@ -2938,6 +2783,7 @@ function useFileAttach() {
 	const insertAfter = useEditorStore((s) => s.insertAfter);
 	const appendChild = useEditorStore((s) => s.appendChild);
 	const addBulletAtEnd = useEditorStore((s) => s.addBulletAtEnd);
+	const batch = useEditorStore((s) => s.batch);
 	const pickAndAttach = (0, import_react.useCallback)(async (nodeId) => {
 		if (!files) return;
 		try {
@@ -2979,34 +2825,37 @@ function useFileAttach() {
 		if (items.length === 0) return false;
 		const targetNode = findNode(getRoots(), targetId);
 		if (!targetNode) return false;
-		if (targetNode.text.trim() === "" && !targetNode.file) {
-			const first = items[0];
-			let lastCreatedId = targetId;
-			if (first.fileTarget) attachFiles(targetId, [first.fileTarget]);
-			else if (first.text) updateText(targetId, first.text);
-			for (const item of items.slice(1)) {
-				const newId = insertAfter(lastCreatedId, item.text ?? "");
-				if (newId) {
-					lastCreatedId = newId;
-					if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
-				}
-			}
-		} else {
-			let lastCreatedId = null;
-			for (const item of items) if (!lastCreatedId) {
-				const newId = appendChild(targetId, item.text ?? "");
-				if (newId) {
-					lastCreatedId = newId;
-					if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
+		const isTargetEmpty = targetNode.text.trim() === "" && !targetNode.file;
+		batch(() => {
+			if (isTargetEmpty) {
+				const first = items[0];
+				let lastCreatedId = targetId;
+				if (first.fileTarget) attachFiles(targetId, [first.fileTarget]);
+				else if (first.text) updateText(targetId, first.text);
+				for (const item of items.slice(1)) {
+					const newId = insertAfter(lastCreatedId, item.text ?? "");
+					if (newId) {
+						lastCreatedId = newId;
+						if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
+					}
 				}
 			} else {
-				const newId = insertAfter(lastCreatedId, item.text ?? "");
-				if (newId) {
-					lastCreatedId = newId;
-					if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
+				let lastCreatedId = null;
+				for (const item of items) if (!lastCreatedId) {
+					const newId = appendChild(targetId, item.text ?? "");
+					if (newId) {
+						lastCreatedId = newId;
+						if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
+					}
+				} else {
+					const newId = insertAfter(lastCreatedId, item.text ?? "");
+					if (newId) {
+						lastCreatedId = newId;
+						if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
+					}
 				}
 			}
-		}
+		});
 		return true;
 	}, [
 		files,
@@ -3014,7 +2863,8 @@ function useFileAttach() {
 		attachFiles,
 		updateText,
 		insertAfter,
-		appendChild
+		appendChild,
+		batch
 	]);
 	const dropOnTree = (0, import_react.useCallback)(async (e) => {
 		if (!files) return false;
@@ -3030,28 +2880,31 @@ function useFileAttach() {
 			return false;
 		}
 		if (items.length === 0) return false;
-		let lastCreatedId = null;
-		for (const item of items) if (!lastCreatedId) {
-			const newId = addBulletAtEnd();
-			if (newId) {
-				lastCreatedId = newId;
-				if (item.text) updateText(newId, item.text);
-				if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
+		batch(() => {
+			let lastCreatedId = null;
+			for (const item of items) if (!lastCreatedId) {
+				const newId = addBulletAtEnd();
+				if (newId) {
+					lastCreatedId = newId;
+					if (item.text) updateText(newId, item.text);
+					if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
+				}
+			} else {
+				const newId = insertAfter(lastCreatedId, item.text ?? "");
+				if (newId) {
+					lastCreatedId = newId;
+					if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
+				}
 			}
-		} else {
-			const newId = insertAfter(lastCreatedId, item.text ?? "");
-			if (newId) {
-				lastCreatedId = newId;
-				if (item.fileTarget) attachFiles(newId, [item.fileTarget]);
-			}
-		}
+		});
 		return true;
 	}, [
 		files,
 		addBulletAtEnd,
 		updateText,
 		insertAfter,
-		attachFiles
+		attachFiles,
+		batch
 	]);
 	return {
 		canAttach: files !== void 0,
@@ -3061,6 +2914,96 @@ function useFileAttach() {
 		pasteClipboardFiles,
 		dropOnNode,
 		dropOnTree
+	};
+}
+//#endregion
+//#region ../../packages/outliner-editor/src/model/useOutlineClipboard.ts
+/**
+* @file useOutlineClipboard.ts
+* @description Electron/옵시디언 및 브라우저 호환 고신뢰도 아웃라인 클립보드(복사·잘라내기·붙여넣기) 훅
+*/
+var OUTLINE_CLIPBOARD_MIME = "application/x-vibe-outline+json";
+/** Electron 및 브라우저 환경에서 제스처 만료 없이 100% 텍스트를 클립보드에 쓰는 헬퍼 */
+async function writeTextReliably(win, text) {
+	if (win.navigator.clipboard?.writeText) try {
+		await win.navigator.clipboard.writeText(text);
+		return true;
+	} catch {}
+	try {
+		const doc = win.document;
+		const textArea = doc.createElement("textarea");
+		textArea.value = text;
+		textArea.style.position = "fixed";
+		textArea.style.left = "-9999px";
+		textArea.style.top = "-9999px";
+		textArea.style.opacity = "0";
+		doc.body.appendChild(textArea);
+		textArea.focus();
+		textArea.select();
+		const copied = doc.execCommand("copy");
+		doc.body.removeChild(textArea);
+		return copied;
+	} catch {
+		return false;
+	}
+}
+function useOutlineClipboard() {
+	const store = useEditorStore((s) => s);
+	const api = useEditorApi();
+	const win = useEditorWindow();
+	const { pasteClipboardFiles } = useFileAttach();
+	/** 대상 노드들을 클립보드에 복사 */
+	const copyNodes = (0, import_react.useCallback)(async (nodeIds) => {
+		if (nodeIds.length === 0) return false;
+		const roots = api.getState().getRoots();
+		const nodes = getTopmostNodeIds(roots, nodeIds).map((id) => findNode(roots, id)).filter((n) => n !== null);
+		if (nodes.length === 0) return false;
+		const plainText = toOutlineText(nodes);
+		return writeTextReliably(win, plainText);
+	}, [api, win]);
+	return {
+		copyNodes,
+		cutNodes: (0, import_react.useCallback)(async (nodeIds) => {
+			if (nodeIds.length === 0) return false;
+			const topmost = getTopmostNodeIds(api.getState().getRoots(), nodeIds);
+			if (topmost.length === 0) return false;
+			await copyNodes(nodeIds);
+			store.deleteNodes(topmost);
+			store.clearSelection();
+			return true;
+		}, [
+			api,
+			copyNodes,
+			store
+		]),
+		pasteFromDataTransfer: (0, import_react.useCallback)(async (targetId, clipboardData, replaceIds) => {
+			if (extractFilesFromClipboard(clipboardData).length > 0 && targetId) {
+				await pasteClipboardFiles(targetId, clipboardData);
+				return true;
+			}
+			const text = clipboardData.getData("text/plain");
+			if (!text || text.trim().length === 0) return false;
+			const incomingNodes = parseOutlineToNodes(text);
+			if (incomingNodes.length === 0) return false;
+			if (replaceIds && replaceIds.length > 0) store.replaceNodes(replaceIds, incomingNodes);
+			else store.insertNodes(targetId, incomingNodes);
+			return true;
+		}, [pasteClipboardFiles, store]),
+		pasteFromClipboard: (0, import_react.useCallback)(async (targetId, replaceIds) => {
+			try {
+				if (!win.navigator.clipboard?.readText) return false;
+				const text = await win.navigator.clipboard.readText();
+				if (!text || text.trim().length === 0) return false;
+				const incomingNodes = parseOutlineToNodes(text);
+				if (incomingNodes.length === 0) return false;
+				if (replaceIds && replaceIds.length > 0) store.replaceNodes(replaceIds, incomingNodes);
+				else store.insertNodes(targetId, incomingNodes);
+				return true;
+			} catch (err) {
+				console.error("클립보드 읽기 실패:", err);
+				return false;
+			}
+		}, [store, win])
 	};
 }
 //#endregion
@@ -3109,6 +3052,18 @@ var WEB_URL_PATTERN = /https?:\/\/\S+/i;
 function hasLinkOrTag(text) {
 	return WIKILINK_PATTERN.test(text) || TAG_PATTERN.test(text) || MARKDOWN_LINK_PATTERN.test(text) || WEB_URL_PATTERN.test(text);
 }
+/**
+* 불릿 텍스트가 옵시디언 마크다운 렌더러에 의해 <ol>, <ul>, <h1>, <blockquote> 등의 블록 요소로
+* 오인 파싱되는 것을 원천 차단하기 위해, 첫머리의 블록 트리거 문자들을 이스케이프한다.
+*/
+function toInlineMarkdown(text) {
+	let inline = text.replace(/^(\s*)(\d+)\.(?=\s)/, "$1$2\\.");
+	inline = inline.replace(/^(\s*)([-*+])(?=\s)/, "$1\\$2");
+	inline = inline.replace(/^(\s*)(#{1,6})(?=\s)/, "$1\\$2");
+	inline = inline.replace(/^(\s*)(>+)(?=\s)/, "$1\\$2");
+	inline = inline.replace(/^(\s*)([-*+]\s*\[[ xX]\])/, "$1\\$2");
+	return inline;
+}
 /** 입력칸의 글자 기준 위치에 캐럿을 둔다. */
 function placeCaret(el, offset) {
 	try {
@@ -3130,7 +3085,8 @@ var MarkdownBulletView = ({ text, renderMarkdown, openLink, hoverLink, className
 		if (!container) return;
 		const staging = container.ownerDocument.createElement("div");
 		let isStale = false;
-		Promise.resolve(renderMarkdown(text, staging)).then(() => {
+		const safeText = toInlineMarkdown(text);
+		Promise.resolve(renderMarkdown(safeText, staging)).then(() => {
 			if (!isStale) container.replaceChildren(...Array.from(staging.childNodes));
 		});
 		return () => {
@@ -3172,17 +3128,18 @@ var MarkdownBulletView = ({ text, renderMarkdown, openLink, hoverLink, className
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 		ref: containerRef,
 		"data-node-id": nodeId,
-		className: `${className} cursor-text select-text [&>p]:m-0 [&>p]:inline`,
+		className: `${className} cursor-text select-text [&_*]:inline [&_*]:m-0 [&_*]:p-0 [&_p]:m-0 [&_p]:inline [&_ol]:m-0 [&_ol]:p-0 [&_ol]:list-none [&_ul]:m-0 [&_ul]:p-0 [&_ul]:list-none [&_li]:inline [&_a.tag]:inline-flex [&_a.internal-link]:inline-flex`,
 		onClick: handleClick,
 		onMouseOver: handleMouseOver,
 		onMouseDown: handleMouseDown
 	});
 };
-var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = false, onKeyDown }) => {
+var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = false, isAncestorCompleted = false, onKeyDown }) => {
 	const ref = (0, import_react.useRef)(null);
 	/** 포커스 해제 확인을 기다리는 중이면, 그것을 취소하는 함수 */
 	const cancelBlurCheck = (0, import_react.useRef)(null);
 	const { renderMarkdown, openLink, hoverLink, attachSuggest } = useOutlineHost();
+	const store = useEditorStore((s) => s);
 	const focusedNodeId = useEditorStore((s) => s.focusedNodeId);
 	const targetCaretOffset = useEditorStore((s) => s.targetCaretOffset);
 	const updateText = useEditorStore((s) => s.updateText);
@@ -3192,7 +3149,10 @@ var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = fa
 	const hasFormatting = hasLinkOrTag(initialText);
 	const setInputRef = (el) => {
 		ref.current = el;
-		if (el && el.textContent !== initialText) el.textContent = initialText;
+		if (el && el.textContent !== initialText) {
+			el.textContent = initialText;
+			if (el.ownerDocument.activeElement === el) placeCaret(el, targetCaretOffset ?? initialText.length);
+		}
 	};
 	(0, import_react.useEffect)(() => {
 		if (ref.current && ref.current.textContent !== initialText) ref.current.textContent = initialText;
@@ -3243,6 +3203,21 @@ var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = fa
 		if (selected && isWebTarget(pastedText) && !/\s/.test(pastedText)) {
 			e.preventDefault();
 			e.currentTarget.ownerDocument.execCommand("insertText", false, `[${selected}](${pastedText})`);
+			return;
+		}
+		const rawClipboardText = e.clipboardData.getData("text/plain");
+		const jsonClipboardText = e.clipboardData.getData(OUTLINE_CLIPBOARD_MIME);
+		const textToExamine = jsonClipboardText || rawClipboardText;
+		if (textToExamine && (textToExamine.includes("\n") || jsonClipboardText)) {
+			const parsedNodes = parseOutlineToNodes(textToExamine);
+			if (parsedNodes.length > 0) {
+				e.preventDefault();
+				const currentText = (e.currentTarget.textContent || "").trim();
+				const current = getFlatNode(store.getTree(), nodeId);
+				if (currentText === "" && current !== void 0 && current.childIds.length === 0 && !current.file && !current.note) store.replaceNodes([nodeId], parsedNodes);
+				else store.insertNodes(nodeId, parsedNodes);
+				return;
+			}
 		}
 	};
 	const handleBlur = (e) => {
@@ -3258,7 +3233,8 @@ var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = fa
 		}, 120);
 		cancelBlurCheck.current = () => win.clearTimeout(timer);
 	};
-	const commonClassName = `flex-1 py-(--outline-line-gap) px-1.5 min-h-[calc(1lh+2*var(--outline-line-gap))] font-[var(--font-text-theme)] leading-[1.7] tracking-[-0.005em] rounded hover:bg-(--background-modifier-hover) focus:bg-(--background-modifier-hover)/60 focus:ring-1 focus:ring-(--interactive-accent)/50 transition-colors break-words whitespace-pre-wrap ${NODE_TEXT_SIZE[nodeType]} ${TYPE_STYLES[nodeType]} ${isCompleted ? "text-(--text-muted) opacity-60 line-through decoration-(--background-modifier-border-hover)" : nodeType === "quote" ? "text-(--text-muted) italic" : "text-(--text-normal)"}`;
+	const isInheritedCompleted = !isCompleted && isAncestorCompleted;
+	const commonClassName = `flex-1 py-(--outline-line-gap) px-1.5 min-h-[calc(1lh+2*var(--outline-line-gap))] font-[var(--font-text-theme)] leading-[1.7] tracking-[-0.005em] rounded hover:bg-(--background-modifier-hover) focus:bg-(--background-modifier-hover)/60 focus:ring-1 focus:ring-(--interactive-accent)/50 transition-colors break-words whitespace-pre-wrap ${NODE_TEXT_SIZE[nodeType]} ${TYPE_STYLES[nodeType]} ${isCompleted ? "text-(--text-muted) opacity-60 line-through decoration-(--background-modifier-border-hover)" : isInheritedCompleted ? "text-(--text-muted) opacity-60" : nodeType === "quote" ? "text-(--text-muted) italic" : "text-(--text-normal)"}`;
 	if (!isFocused && hasFormatting && renderMarkdown) return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MarkdownBulletView, {
 		text: initialText,
 		renderMarkdown,
@@ -3478,7 +3454,7 @@ function useNodeActions() {
 		const topmost = getTopmostNodeIds(roots, nodeIds);
 		if (topmost.length === 0) return false;
 		const hasChildren = topmost.some((id) => (findNode(roots, id)?.children.length ?? 0) > 0);
-		const message = topmost.length > 1 ? `불릿 ${topmost.length}개와 그 하위 항목을 모두 삭제하시겠습니까? 되돌릴 수 없습니다.` : "이 불릿과 하위 항목을 모두 삭제하시겠습니까? 되돌릴 수 없습니다.";
+		const message = topmost.length > 1 ? `불릿 ${topmost.length}개와 그 하위 항목을 모두 삭제하시겠습니까?` : "이 불릿과 하위 항목을 모두 삭제하시겠습니까?";
 		if ((topmost.length > 1 || hasChildren) && !await host.confirm(message)) return false;
 		return deleteNodes(topmost);
 	}, [
@@ -3539,13 +3515,44 @@ function getCaretCharacterOffsetWithin(element) {
 function useKeyOrchestrator(nodeId, flattenedNodes) {
 	const store = useEditorStore((s) => s);
 	const { toggleCompleted, startNoteEdit, removeNode } = useNodeActions();
+	const { copyNodes, cutNodes } = useOutlineClipboard();
 	return { handleKeyDown: (0, import_react.useCallback)((e) => {
 		const targetElement = e.currentTarget;
 		const caretPos = getCaretCharacterOffsetWithin(targetElement);
 		const currentText = targetElement.textContent || "";
 		const isModifier = e.ctrlKey || e.metaKey;
+		if (e.key.toLowerCase() === "z" && isModifier && !e.shiftKey && !e.nativeEvent.isComposing) {
+			e.preventDefault();
+			store.undo();
+			return;
+		}
+		if (isModifier && (e.key.toLowerCase() === "z" && e.shiftKey || e.key.toLowerCase() === "y") && !e.nativeEvent.isComposing) {
+			e.preventDefault();
+			store.redo();
+			return;
+		}
+		if (e.key.toLowerCase() === "a" && isModifier && !e.nativeEvent.isComposing) {
+			const sel = winOf(targetElement).getSelection();
+			if ((sel ? sel.toString() : "").length === currentText.length) {
+				e.preventDefault();
+				sel?.removeAllRanges();
+				store.selectNodes([nodeId]);
+				return;
+			}
+		}
+		if (e.key.toLowerCase() === "c" && isModifier && e.shiftKey && !e.nativeEvent.isComposing) {
+			e.preventDefault();
+			copyNodes([nodeId]);
+			return;
+		}
+		if (e.key.toLowerCase() === "x" && isModifier && e.shiftKey && !e.nativeEvent.isComposing) {
+			e.preventDefault();
+			cutNodes([nodeId]);
+			return;
+		}
 		if (e.key === "Enter" && isModifier && !e.nativeEvent.isComposing) {
 			e.preventDefault();
+			e.stopPropagation();
 			toggleCompleted(nodeId);
 			return;
 		}
@@ -3555,9 +3562,9 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 			return;
 		}
 		if (e.key === "Backspace" && isModifier && e.shiftKey) {
-			e.preventDefault();
 			const current = flattenedNodes.find((n) => n.id === nodeId);
 			if (!current) return;
+			e.preventDefault();
 			const prevId = getNextFocusId(flattenedNodes, nodeId, "up");
 			const prevTextLength = flattenedNodes.find((n) => n.id === prevId)?.node.text.length ?? 0;
 			removeNode(current).then((removed) => {
@@ -3568,9 +3575,7 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 		if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) {
 			e.preventDefault();
 			const { before, after } = splitTextAtCaret(currentText, caretPos);
-			store.updateText(nodeId, before);
-			const createdId = store.insertAfter(nodeId, after);
-			if (createdId) store.setFocus(createdId, 0);
+			store.splitNode(nodeId, before, after);
 			return;
 		}
 		if (e.key === "Tab") {
@@ -3583,19 +3588,31 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 			const prevId = getNextFocusId(flattenedNodes, nodeId, "up");
 			if (!prevId) return;
 			e.preventDefault();
-			const prevText = flattenedNodes.find((n) => n.id === prevId)?.node.text || "";
-			if (currentText.length === 0) {
-				if (store.deleteNode(nodeId)) store.setFocus(prevId, prevText.length);
-			} else {
-				const { mergedText, caretOffset } = mergeTextAtCaret(prevText, currentText);
-				if (store.deleteNode(nodeId)) {
-					store.updateText(prevId, mergedText);
-					store.setFocus(prevId, caretOffset);
-				}
-			}
+			const { mergedText, caretOffset } = mergeTextAtCaret(flattenedNodes.find((n) => n.id === prevId)?.node.text || "", currentText);
+			store.joinWithPrevious(nodeId, prevId, mergedText, caretOffset);
 			return;
 		}
-		if (e.key === "ArrowUp" && !e.shiftKey) {
+		if (e.key === "ArrowUp" && e.altKey && !e.shiftKey) {
+			e.preventDefault();
+			e.stopPropagation();
+			store.setFocus(nodeId, caretPos);
+			if (store.moveNodesStep([nodeId], "up")) winOf(targetElement).requestAnimationFrame(() => {
+				targetElement.focus();
+				store.setFocus(nodeId, caretPos);
+			});
+			return;
+		}
+		if (e.key === "ArrowDown" && e.altKey && !e.shiftKey) {
+			e.preventDefault();
+			e.stopPropagation();
+			store.setFocus(nodeId, caretPos);
+			if (store.moveNodesStep([nodeId], "down")) winOf(targetElement).requestAnimationFrame(() => {
+				targetElement.focus();
+				store.setFocus(nodeId, caretPos);
+			});
+			return;
+		}
+		if (e.key === "ArrowUp" && !e.shiftKey && !e.altKey) {
 			const prevId = getNextFocusId(flattenedNodes, nodeId, "up");
 			if (prevId) {
 				e.preventDefault();
@@ -3603,7 +3620,7 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 			}
 			return;
 		}
-		if (e.key === "ArrowDown" && !e.shiftKey) {
+		if (e.key === "ArrowDown" && !e.shiftKey && !e.altKey) {
 			if (flattenedNodes.find((n) => n.id === nodeId)?.node.note) {
 				e.preventDefault();
 				startNoteEdit(nodeId);
@@ -3622,7 +3639,9 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 		store,
 		toggleCompleted,
 		startNoteEdit,
-		removeNode
+		removeNode,
+		copyNodes,
+		cutNodes
 	]) };
 }
 //#endregion
@@ -3934,14 +3953,13 @@ var OutlineRow = ({ item, navigableNodes, isSelected, isDragging, dropPosition, 
 					hasChildren: item.hasChildren,
 					isFolded: item.isFolded,
 					isCompleted,
+					isAncestorCompleted: item.isAncestorCompleted,
 					isTodo: nodeType === "todo",
 					isDotSubtle: nodeType === "paragraph",
 					onToggleFold: () => toggleFold(item.id),
 					onToggleFoldDeep: () => setFoldDeep(item.id, isFullyExpanded(node)),
 					onZoom: () => zoomIn(item.id),
 					onOpenMenu: (x, y) => handlers.openMenu(item.id, x, y),
-					onHandleEnter: (x, y) => handlers.hoverOpenMenu(item.id, x, y),
-					onHandleLeave: handlers.hoverLeaveMenu,
 					onToggleCompleted: () => toggleCompleted(item.id),
 					onDragStart: (e) => handlers.startDrag(e, item),
 					onDragEnd: handlers.endDrag
@@ -3961,6 +3979,7 @@ var OutlineRow = ({ item, navigableNodes, isSelected, isDragging, dropPosition, 
 							initialText: node.text,
 							nodeType,
 							isCompleted,
+							isAncestorCompleted: item.isAncestorCompleted,
 							onKeyDown: handleKeyDown
 						}), node.viewMode === "board" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 							className: "ml-2 flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] text-(--text-accent) bg-(--interactive-accent)/10 border border-(--interactive-accent)/20 select-none",
@@ -4172,7 +4191,7 @@ var MenuItem = ({ icon, label, hint, danger, disabled, trailing, onSelect }) => 
 	]
 });
 var Separator = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "my-1 border-t border-(--background-modifier-border)" });
-var OutlineContextMenu = ({ item, targetIds, x, y, menuRef, onClose, onRequestMove, onMouseEnter, onMouseLeave }) => {
+var OutlineContextMenu = ({ item, targetIds, x, y, menuRef, onClose, onRequestMove }) => {
 	const actions = useNodeActions();
 	const { canAttach, pickAndAttach } = useFileAttach();
 	const detachFile = useEditorStore((s) => s.detachFile);
@@ -4210,8 +4229,6 @@ var OutlineContextMenu = ({ item, targetIds, x, y, menuRef, onClose, onRequestMo
 			width: MENU_WIDTH
 		},
 		onContextMenu: (e) => e.preventDefault(),
-		onMouseEnter,
-		onMouseLeave,
 		className: "outline-menu-pop fixed z-[100] py-1 max-h-[calc(100vh-16px)] overflow-y-auto rounded-lg bg-(--background-secondary)/95 border border-(--background-modifier-border) backdrop-blur-md shadow-2xl shadow-black/60 select-none",
 		children: [
 			!isSingle && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -4519,67 +4536,25 @@ var OutlineSelectionBar = ({ selectedIds, onRequestMove, onClear }) => {
 * @file useContextMenu.ts
 * @description 불릿 노드 메뉴의 열림 상태(대상 노드·위치) 및 닫힘 조건 관리 훅
 *
-* 메뉴는 두 가지 방법으로 열린다.
-* - 고정 열기: 불릿 점 우클릭, "⋯" 손잡이 클릭. 바깥을 누르거나 Esc 를 눌러야 닫힌다.
-* - 호버 열기: "⋯" 손잡이에 마우스를 올리면 잠시 뒤 열리고, 손잡이와 메뉴를 모두 벗어나면 닫힌다.
+* 메뉴는 명시적인 클릭 동작으로만 열린다:
+* - "⋯" 손잡이 클릭 (열려있으면 토글로 닫힘)
+* - 불릿 점 우클릭
+* 바깥을 누르거나 Esc를 누르면 닫힌다.
 */
-var HOVER_OPEN_DELAY_MS = 220;
-var HOVER_CLOSE_DELAY_MS = 280;
 function useContextMenu() {
 	const win = useEditorWindow();
 	const [menu, setMenu] = (0, import_react.useState)(null);
 	const menuRef = (0, import_react.useRef)(null);
-	const openTimer = (0, import_react.useRef)(null);
-	const closeTimer = (0, import_react.useRef)(null);
-	const clearOpenTimer = () => {
-		if (openTimer.current !== null) window.clearTimeout(openTimer.current);
-		openTimer.current = null;
-	};
-	const clearCloseTimer = () => {
-		if (closeTimer.current !== null) window.clearTimeout(closeTimer.current);
-		closeTimer.current = null;
-	};
+	/** 메뉴 열기 (동일 노드 다시 클릭 시 토글 닫힘) */
 	const openMenu = (0, import_react.useCallback)((nodeId, x, y) => {
-		clearOpenTimer();
-		clearCloseTimer();
-		setMenu({
+		setMenu((current) => current?.nodeId === nodeId ? null : {
 			nodeId,
 			x,
-			y,
-			pinned: true
+			y
 		});
 	}, []);
 	const closeMenu = (0, import_react.useCallback)(() => {
-		clearOpenTimer();
-		clearCloseTimer();
 		setMenu(null);
-	}, []);
-	/** 손잡이에 마우스가 올라왔다: 잠시 뒤 그 자리에 메뉴를 연다. */
-	const hoverOpen = (0, import_react.useCallback)((nodeId, x, y) => {
-		clearCloseTimer();
-		clearOpenTimer();
-		openTimer.current = window.setTimeout(() => {
-			setMenu((current) => current?.pinned ? current : {
-				nodeId,
-				x,
-				y,
-				pinned: false
-			});
-		}, HOVER_OPEN_DELAY_MS);
-	}, []);
-	/** 손잡이나 메뉴에서 마우스가 벗어났다: 잠시 뒤 호버로 열린 메뉴를 닫는다. */
-	const hoverLeave = (0, import_react.useCallback)(() => {
-		clearOpenTimer();
-		clearCloseTimer();
-		closeTimer.current = window.setTimeout(() => {
-			setMenu((current) => current && !current.pinned ? null : current);
-		}, HOVER_CLOSE_DELAY_MS);
-	}, []);
-	/** 메뉴 위에 마우스가 머문다: 닫기를 취소한다. */
-	const hoverStay = (0, import_react.useCallback)(() => clearCloseTimer(), []);
-	(0, import_react.useEffect)(() => () => {
-		clearOpenTimer();
-		clearCloseTimer();
 	}, []);
 	(0, import_react.useEffect)(() => {
 		if (!menu) return;
@@ -4609,10 +4584,7 @@ function useContextMenu() {
 		menu,
 		menuRef,
 		openMenu,
-		closeMenu,
-		hoverOpen,
-		hoverLeave,
-		hoverStay
+		closeMenu
 	};
 }
 //#endregion
@@ -4720,8 +4692,7 @@ function useRowSelection(flattenedNodes) {
 	const clearSelection = useEditorStore((s) => s.clearSelection);
 	const hasSelection = useEditorStore((s) => s.selectedNodeIds.length > 0);
 	const store = useEditorStore((s) => s);
-	const { removeNodes } = useNodeActions();
-	const { pasteClipboardFiles } = useFileAttach();
+	const { copyNodes, cutNodes, pasteFromDataTransfer, pasteFromClipboard } = useOutlineClipboard();
 	const api = useEditorApi();
 	const win = useEditorWindow();
 	const anchorId = (0, import_react.useRef)(null);
@@ -4783,99 +4754,125 @@ function useRowSelection(flattenedNodes) {
 	]);
 	(0, import_react.useEffect)(() => {
 		if (!hasSelection) return;
-		const isInsideTree = (el) => {
-			if (el instanceof Element && el.closest("[data-outline-tree]")) return true;
-			const active = win.document.activeElement;
-			if (active instanceof Element && active.closest("[data-outline-tree]")) return true;
-			return false;
-		};
 		const handleKeyDown = (e) => {
-			if (!isInsideTree(e.target)) {
+			const active = win.document.activeElement;
+			if (active instanceof HTMLElement && active !== win.document.body && !active.closest("[data-outline-tree]") && (active.isContentEditable || active.tagName === "INPUT" || active.tagName === "TEXTAREA")) {
 				clearSelection();
 				return;
 			}
-			const active = win.document.activeElement;
-			const isTyping = active instanceof HTMLElement && (active.isContentEditable || active.tagName === "INPUT" || active.tagName === "TEXTAREA");
 			const isModifier = e.ctrlKey || e.metaKey;
 			const selectedIds = api.getState().selectedNodeIds;
 			if (selectedIds.length === 0) return;
 			if (e.key === "Escape") {
 				e.preventDefault();
+				e.stopPropagation();
 				clearSelection();
 				return;
 			}
 			if (e.key === "Tab") {
 				e.preventDefault();
+				e.stopPropagation();
 				if (e.shiftKey) store.outdentNodes(selectedIds);
 				else store.indentNodes(selectedIds);
 				return;
 			}
 			if (e.key === "Enter" && isModifier && !e.isComposing) {
 				e.preventDefault();
+				e.stopPropagation();
 				store.setNodesCompleted(selectedIds);
 				return;
 			}
-			if ((e.key === "Delete" || e.key === "Backspace") && !isTyping) {
+			if (e.key === "Delete" || e.key === "Backspace") {
 				e.preventDefault();
-				removeNodes(selectedIds);
+				e.stopPropagation();
+				store.deleteNodes(selectedIds);
+				store.clearSelection();
 				return;
 			}
-			if (isModifier && e.key.toLowerCase() === "c" && !isTyping) {
-				const roots = api.getState().getRoots();
-				const nodes = getTopmostNodeIds(roots, selectedIds).map((id) => findNode(roots, id)).filter((n) => n !== null);
-				if (nodes.length > 0) {
-					e.preventDefault();
-					const text = toOutlineText(nodes);
-					win.navigator.clipboard.writeText(text);
-				}
-				return;
-			}
-			if (isModifier && e.key.toLowerCase() === "x" && !isTyping) {
-				const roots = api.getState().getRoots();
-				const nodes = getTopmostNodeIds(roots, selectedIds).map((id) => findNode(roots, id)).filter((n) => n !== null);
-				if (nodes.length > 0) {
-					e.preventDefault();
-					const text = toOutlineText(nodes);
-					win.navigator.clipboard.writeText(text);
-					removeNodes(selectedIds);
-				}
-				return;
-			}
-			if (e.key === "ArrowUp" && !e.shiftKey && !isTyping) {
+			if (isModifier && e.key.toLowerCase() === "c") {
 				e.preventDefault();
+				e.stopPropagation();
+				copyNodes(selectedIds);
+				return;
+			}
+			if (isModifier && e.key.toLowerCase() === "x") {
+				e.preventDefault();
+				e.stopPropagation();
+				const firstId = selectedIds[0];
+				const prevFocusId = getNextFocusId(rows.current, firstId, "up");
+				copyNodes(selectedIds).then(() => {
+					store.deleteNodes(selectedIds);
+					store.clearSelection();
+					if (prevFocusId) store.setFocus(prevFocusId, 0);
+				});
+				return;
+			}
+			if (isModifier && e.key.toLowerCase() === "v") {
+				e.preventDefault();
+				e.stopPropagation();
+				pasteFromClipboard(selectedIds[0], selectedIds);
+				return;
+			}
+			if (isModifier && e.key.toLowerCase() === "z" && !e.shiftKey) {
+				e.preventDefault();
+				e.stopPropagation();
+				store.undo();
+				return;
+			}
+			if (isModifier && (e.key.toLowerCase() === "z" && e.shiftKey || e.key.toLowerCase() === "y")) {
+				e.preventDefault();
+				e.stopPropagation();
+				store.redo();
+				return;
+			}
+			if (e.key === "ArrowUp" && e.altKey && !e.shiftKey) {
+				e.preventDefault();
+				e.stopPropagation();
+				store.moveNodesStep(selectedIds, "up");
+				return;
+			}
+			if (e.key === "ArrowDown" && e.altKey && !e.shiftKey) {
+				e.preventDefault();
+				e.stopPropagation();
+				store.moveNodesStep(selectedIds, "down");
+				return;
+			}
+			if (e.key === "ArrowUp" && !e.shiftKey && !e.altKey) {
+				e.preventDefault();
+				e.stopPropagation();
 				const firstId = selectedIds[0];
 				const targetId = getNextFocusId(rows.current, firstId, "up") ?? firstId;
 				clearSelection();
 				store.setFocus(targetId, 0);
 				return;
 			}
-			if (e.key === "ArrowDown" && !e.shiftKey && !isTyping) {
+			if (e.key === "ArrowDown" && !e.shiftKey && !e.altKey) {
 				e.preventDefault();
+				e.stopPropagation();
 				const lastId = selectedIds[selectedIds.length - 1];
 				const targetId = getNextFocusId(rows.current, lastId, "down") ?? lastId;
 				clearSelection();
 				store.setFocus(targetId, 0);
 				return;
 			}
-			if (isModifier && e.key.toLowerCase() === "a" && !isTyping) {
+			if (isModifier && e.key.toLowerCase() === "a") {
 				e.preventDefault();
+				e.stopPropagation();
 				const allIds = rows.current.map((n) => n.id);
 				selectNodes(allIds);
 				return;
 			}
 		};
 		const handlePaste = (e) => {
-			if (!isInsideTree(e.target)) return;
 			const active = win.document.activeElement;
-			if (active instanceof HTMLElement && (active.isContentEditable || active.tagName === "INPUT" || active.tagName === "TEXTAREA")) return;
+			if (active instanceof HTMLElement && active !== win.document.body && !active.closest("[data-outline-tree]") && (active.isContentEditable || active.tagName === "INPUT" || active.tagName === "TEXTAREA")) return;
 			const selectedIds = api.getState().selectedNodeIds;
 			if (selectedIds.length === 0) return;
-			const targetId = selectedIds[selectedIds.length - 1];
+			const targetId = selectedIds[0];
 			if (e.clipboardData) {
-				if (extractFilesFromClipboard(e.clipboardData).length > 0) {
-					e.preventDefault();
-					pasteClipboardFiles(targetId, e.clipboardData);
-				}
+				e.preventDefault();
+				e.stopPropagation();
+				pasteFromDataTransfer(targetId, e.clipboardData, selectedIds);
 			}
 		};
 		const handleOutsidePointerDown = (e) => {
@@ -4885,25 +4882,27 @@ function useRowSelection(flattenedNodes) {
 		const handleBlur = () => {
 			clearSelection();
 		};
-		win.addEventListener("keydown", handleKeyDown);
-		win.addEventListener("paste", handlePaste);
+		win.addEventListener("keydown", handleKeyDown, true);
+		win.addEventListener("paste", handlePaste, true);
 		win.addEventListener("mousedown", handleOutsidePointerDown);
 		win.addEventListener("blur", handleBlur);
 		return () => {
-			win.removeEventListener("keydown", handleKeyDown);
-			win.removeEventListener("paste", handlePaste);
+			win.removeEventListener("keydown", handleKeyDown, true);
+			win.removeEventListener("paste", handlePaste, true);
 			win.removeEventListener("mousedown", handleOutsidePointerDown);
 			win.removeEventListener("blur", handleBlur);
 		};
 	}, [
 		hasSelection,
 		clearSelection,
-		removeNodes,
+		copyNodes,
+		cutNodes,
+		pasteFromClipboard,
+		pasteFromDataTransfer,
 		selectNodes,
 		store,
 		api,
-		win,
-		pasteClipboardFiles
+		win
 	]);
 	return { handleMouseDown };
 }
@@ -4921,8 +4920,10 @@ var OutlineTree = () => {
 	const selectedNodeIds = useEditorStore((s) => s.selectedNodeIds);
 	const addBulletAtEnd = useEditorStore((s) => s.addBulletAtEnd);
 	const clearSelection = useEditorStore((s) => s.clearSelection);
+	const store = useEditorStore((s) => s);
+	const win = useEditorWindow();
 	const { canAttach, isDraggingFile, dropOnTree } = useFileAttach();
-	const { menu, menuRef, openMenu, closeMenu, hoverOpen, hoverLeave, hoverStay } = useContextMenu();
+	const { menu, menuRef, openMenu, closeMenu } = useContextMenu();
 	const { dragIds, dropTarget, startDrag, dragOverRow, dropOnRow, endDrag } = useDragAndDrop();
 	const [moveSourceIds, setMoveSourceIds] = (0, import_react.useState)(null);
 	const flattenedNodes = (0, import_react.useMemo)(() => {
@@ -4930,18 +4931,46 @@ var OutlineTree = () => {
 	}, [rootNodes, activeRootId]);
 	const navigableNodes = (0, import_react.useMemo)(() => flattenedNodes.filter((n) => n.node.nodeType !== "divider"), [flattenedNodes]);
 	const { handleMouseDown } = useRowSelection(flattenedNodes);
+	(0, import_react.useEffect)(() => {
+		const handleCaptureKeyDown = (e) => {
+			if (store.selectedNodeIds.length > 0) return;
+			const active = win.document.activeElement;
+			if (!(active instanceof HTMLElement)) return;
+			const rowEl = active.closest("[data-node-id]");
+			if (!rowEl) return;
+			const nodeId = rowEl.dataset.nodeId;
+			if (!nodeId) return;
+			const isModifier = e.ctrlKey || e.metaKey;
+			if (e.key === "Enter" && isModifier && !e.shiftKey && !e.isComposing) {
+				e.preventDefault();
+				e.stopPropagation();
+				store.toggleCompleted(nodeId);
+				return;
+			}
+			if ((e.key === "ArrowUp" || e.key === "ArrowDown") && e.altKey && !e.shiftKey) {
+				e.preventDefault();
+				e.stopPropagation();
+				const caretPos = getCaretCharacterOffsetWithin(active);
+				const direction = e.key === "ArrowUp" ? "up" : "down";
+				store.setFocus(nodeId, caretPos);
+				if (store.moveNodesStep([nodeId], direction)) win.requestAnimationFrame(() => {
+					active.focus();
+					store.setFocus(nodeId, caretPos);
+				});
+				return;
+			}
+		};
+		win.addEventListener("keydown", handleCaptureKeyDown, true);
+		return () => win.removeEventListener("keydown", handleCaptureKeyDown, true);
+	}, [win, store]);
 	const handlers = (0, import_react.useMemo)(() => ({
 		openMenu,
-		hoverOpenMenu: hoverOpen,
-		hoverLeaveMenu: hoverLeave,
 		startDrag,
 		dragOverRow,
 		dropOnRow,
 		endDrag
 	}), [
 		openMenu,
-		hoverOpen,
-		hoverLeave,
 		startDrag,
 		dragOverRow,
 		dropOnRow,
@@ -4997,9 +5026,7 @@ var OutlineTree = () => {
 				y: menu.y,
 				menuRef,
 				onClose: closeMenu,
-				onRequestMove: setMoveSourceIds,
-				onMouseEnter: hoverStay,
-				onMouseLeave: hoverLeave
+				onRequestMove: setMoveSourceIds
 			}),
 			moveSourceIds && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(OutlineMoveDialog, {
 				sourceIds: moveSourceIds,

@@ -1,0 +1,754 @@
+{
+  "version": "1.0.0",
+  "id": "rgCvwDM8ugMp",
+  "title": "주요 레퍼런스 분석",
+  "rootNodes": [
+    {
+      "id": "qFemukr3ZK26",
+      "text": "📌 레퍼런스 분석 : [1] 유피노트 — 옵시디언 플러그인 개발 가이드",
+      "children": [
+        {
+          "id": "pbLD0XWM2WYp",
+          "text": "🔗 원문 메타 정보 & 선정 개요",
+          "children": [
+            {
+              "id": "31JQivMvbGnt",
+              "text": "출처 URL : https://uppinote.tistory.com/6",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791877201893,
+              "updatedAt": 1791877201893
+            },
+            {
+              "id": "w1GUjuwoqNt7",
+              "text": "원문 제목 : Obsidian 플러그인 개발 환경 세팅과 첫 번째 코드 작성 가이드",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791877201893,
+              "updatedAt": 1791879360694
+            },
+            {
+              "id": "b6WrgrAXsYSy",
+              "text": "채택 이유 : 개발 환경 격리, 시각적 전달력, 최소 API 인터페이스, 온보딩 UX를 모두 갖춘 최적의 표준 가이드",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1791877201893,
+              "updatedAt": 1791877201893
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791877201893,
+          "updatedAt": 1791880584029
+        },
+        {
+          "id": "tJ9uINJdX6GU",
+          "text": "🎯 1. 타깃 페르소나 & 가치 제안 전략 (Strategy: Who & Why)",
+          "children": [
+            {
+              "id": "93SpCnJmfIKb",
+              "text": "📢 1. 단 하나의 핵심 메시지 (Core Message & Promise)",
+              "children": [
+                {
+                  "id": "5C8d3vY0iC7P",
+                  "text": "[핵심 선언] : '이론 몰라도 10분이면 충분하다 — 당신도 오늘부터 옵시디언 생산자다'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879383512
+                },
+                {
+                  "id": "ji5HiJzOhtcK",
+                  "text": "[약속(Promise)] : 방대한 공식 문서 대신 10분 내에 내 화면에 뜨는 '첫 알림 팝업' 보장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                },
+                {
+                  "id": "MFq4LWqTlbee",
+                  "text": "[인식 전환(Mindset)] : '시니어 개발자의 전유물' ➔ '누구나 당장 시작할 수 있는 놀이터'로 프레이밍 전환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879348879,
+              "updatedAt": 1791879348879
+            },
+            {
+              "id": "kgXgUXyO5TjR",
+              "text": "👥 2. 주요 대상 독자 (Target Persona)",
+              "children": [
+                {
+                  "id": "V7YDKMs2EZYO",
+                  "text": "옵시디언 환경에 익숙하며 '나만의 작은 기능 하나'를 직접 만들고 싶은 파워 유저 및 주니어 개발자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                },
+                {
+                  "id": "L3Uzf1qaNhUe",
+                  "text": "Git/터미널 기본은 알지만 Electron 아키텍처 및 옵시디언 전용 내부 SDK는 처음인 초심자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879348879,
+              "updatedAt": 1791879385250
+            },
+            {
+              "id": "rahT1b8FSGB6",
+              "text": "🚧 3. 독자가 마주하는 3대 핵심 장벽 (Core Barriers)",
+              "children": [
+                {
+                  "id": "Qw7NpZxfFC22",
+                  "text": "[블랙박스 장벽] 방대한 영문 공식 문서와 복잡한 번들러 세팅에 대한 이론적 압박감",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                },
+                {
+                  "id": "7ZUVrE7jZrrg",
+                  "text": "[데이터 오염 공포] 개발/실험 중 주력 볼트의 소중한 노트가 깨지거나 날아갈까 봐 생기는 불안",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                },
+                {
+                  "id": "ZIqdv9cZXlnA",
+                  "text": "[반복 배포 피로도] 코드 수정마다 파일 복사-붙여넣기 및 재부팅을 반복해야 하는 노가다 피로",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879348879,
+              "updatedAt": 1791879348879
+            },
+            {
+              "id": "fIEXYoTCYkEA",
+              "text": "💡 4. 돌파 전략 & 메인 컨셉 (Value Proposition)",
+              "children": [
+                {
+                  "id": "CfJ6coIPSXf7",
+                  "text": "[직선형 패스트트랙] 이론 강의를 배제하고 공식 템플릿 복제로 즉시 시작",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                },
+                {
+                  "id": "mpVOzGvNqmkc",
+                  "text": "[선제적 안전선] 독립 테스트 볼트 권장으로 심리적 안도감 및 신뢰 확보",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                },
+                {
+                  "id": "3gL1OUb7CgUp",
+                  "text": "[원클릭 치트키] 지루함이 오기 직전 npm run deploy로 루틴 단축",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                },
+                {
+                  "id": "HrppHClZNmay",
+                  "text": "[즉각적 도파민] 5줄 코드로 10분 내에 Notice 팝업을 띄우는 첫 성공 체험(Aha Moment) 선사",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879348879,
+                  "updatedAt": 1791879348879
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879348879,
+              "updatedAt": 1791879348879
+            }
+          ],
+          "isFolded": true,
+          "note": "타깃이나 주제별로 더 쪼개서 아에 여러 편도 가능하겠네",
+          "createdAt": 1791878469467,
+          "updatedAt": 1791880665151
+        },
+        {
+          "id": "RQriuZLzCwor",
+          "text": "🎬 2. 논지 전개 & 독자 중심 스토리라이닝 관점 (Narrative: Flow & Emotion)",
+          "children": [
+            {
+              "id": "5WVhIngrHGog",
+              "text": "1️⃣ 1. 진입 장벽 분쇄 (Friction 0) : '바닥부터 짜지 말고, 템플릿 버튼만 누르세요'",
+              "children": [
+                {
+                  "id": "egjKnykYtNcD",
+                  "text": "심리적 허들 : '플러그인 개발? 번들러 세팅부터 옵시디언 내부 구조까지 공부할 게 너무 많지 않을까?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                },
+                {
+                  "id": "BveyEyHwITXM",
+                  "text": "스토리라이닝 기법 : 이론/원리 일체 생략하고 공식 템플릿 [Use this template] 버튼 하나로 진입 저항감(Friction)을 0으로 만듦",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791878259881,
+              "updatedAt": 1791878259881
+            },
+            {
+              "id": "x2mCGeKTB8WR",
+              "text": "2️⃣ 2. 선제적 안전선 긋기 (Safety First) : '데이터 날릴 걱정은 하지 마세요'",
+              "children": [
+                {
+                  "id": "Oz4Vaa6PuCj9",
+                  "text": "심리적 허들 : '개발하다 실수해서 주력 볼트에 있는 내 소중한 노트들이 깨지거나 유실되면 어쩌지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                },
+                {
+                  "id": "VmJXxmxhP3w5",
+                  "text": "스토리라이닝 기법 : 1단계 직후 인용구 상자로 독립 테스트 볼트 격리를 강력 권고하여 심리적 불안 선제 해소 및 글의 신뢰도 확보",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791878259881,
+              "updatedAt": 1791878259881
+            },
+            {
+              "id": "NiRD2M7egmTL",
+              "text": "3️⃣ 3. 피로감 예측과 치트키 투척 (Automation) : '귀찮으시죠? 스크립트로 날려 드립니다'",
+              "children": [
+                {
+                  "id": "bMrEP6WktX6P",
+                  "text": "심리적 허들 : '빌드하고 파일 3개 찾아서 복사하고 붙여넣고... 이걸 매번 하라고? 너무 귀찮은데...'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                },
+                {
+                  "id": "UMY0jYuqdDCi",
+                  "text": "스토리라이닝 기법 : 수동 복사를 1회 보여준 직후 지루함이 극대화되는 타이밍에 [npm run deploy] 치트키를 제시해 자동화의 쾌감으로 반전",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791878259881,
+              "updatedAt": 1791878259881
+            },
+            {
+              "id": "WQ4ZwchMRDQd",
+              "text": "4️⃣ 4. 즉각적 도파민 공급 (Aha Moment) : '코드 5줄로 즉각적인 성공 체험 안겨주기'",
+              "children": [
+                {
+                  "id": "13WClBHzeF5l",
+                  "text": "심리적 허들 : '그래서 내가 짠 게 진짜 옵시디언 화면에서 돌아가긴 하는 거야?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                },
+                {
+                  "id": "aaiWTK4OkSBr",
+                  "text": "스토리라이닝 기법 : 코드 단 5줄(addCommand + Notice)과 [Cmd + P] 실행 후 보라색 알림 캡처로 10분 내에 개발자 성공 체험(서사적 클라이맥스) 달성",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791878259881,
+              "updatedAt": 1791878259881
+            },
+            {
+              "id": "iJIkA2O16XjF",
+              "text": "5️⃣ 5. 선택권 부여(Opt-in)를 통한 피로도 완화 : '(선택) 설정 탭 추가'",
+              "children": [
+                {
+                  "id": "x7igiM21SEsu",
+                  "text": "심리적 허들 : '알림은 띄웠는데 뒤에 또 긴 내용이 이어지면 너무 지칠 것 같은데...'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                },
+                {
+                  "id": "TShLmL2xl9kj",
+                  "text": "스토리라이닝 기법 : '필수'가 아닌 '(선택)' 표기로 심리적 탈출구를 제공해 완주 실패감 방지 및 적극적 독자에게만 보너스 트랙 개방",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791878259881,
+              "updatedAt": 1791878259881
+            },
+            {
+              "id": "iV5Bhmv6x74J",
+              "text": "6️⃣ 6. 인지적 종결(Closure)과 시리즈 후킹 : '딱 3단어만 외우고 퇴근하세요'",
+              "children": [
+                {
+                  "id": "9P9UfQHKahCh",
+                  "text": "심리적 허들 : '오늘 많은 걸 보긴 했는데, 내일부터 혼자 개발할 때 뭘 기억해야 하지?'",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                },
+                {
+                  "id": "l2YiqoTkp7uV",
+                  "text": "스토리라이닝 기법 : [코드 수정 → deploy → 새로고침] 3단계 행동 공식 하나만 뇌리에 각인시키고 다음 편(공식 배포) 예고로 록인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791878259881,
+              "updatedAt": 1791878259881
+            },
+            {
+              "id": "WRQC1VwZzjyK",
+              "text": "🎯 스토리라이닝 총평 & 핵심 시사점",
+              "children": [
+                {
+                  "id": "A2IgZEYle60d",
+                  "text": "이론 이해 후 코딩을 요구하는 학술형이 아닌, [저항감 제거 → 안전선 구축 → 피로 치트키 → 즉각 도파민 → 선택 심화 → 3단 공식 종결]의 게임 튜토리얼형 감정선 제어",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791878259881,
+                  "updatedAt": 1791878259881
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791878259881,
+              "updatedAt": 1791878259881
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791878259881,
+          "updatedAt": 1791878608321
+        },
+        {
+          "id": "s3OSSNEChH7b",
+          "text": "🎨 3. 시각적 배치 & 블로그 편집 문법 관점 (Visual: Layout & Rhythm)",
+          "children": [
+            {
+              "id": "bo9bsU99KGG1",
+              "text": "📏 1. 문단 길이와 호흡 통제 (Micro-Length & Breath)",
+              "children": [
+                {
+                  "id": "w1hGSJOxIK0u",
+                  "text": "[1액션 = 1줄 원칙] : 모든 텍스트 블록을 40~60자 내외 단문으로 통제 (3줄 이상 장문 줄글 0개)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                },
+                {
+                  "id": "NPEMlhBDcn77",
+                  "text": "[행동 즉시 유도] : '읽는(Reading)' 시간을 없애고 즉각 '다음 행동(Doing)'으로 시선을 직결",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879127274,
+              "updatedAt": 1791879127274
+            },
+            {
+              "id": "aKUT2wBoNYpl",
+              "text": "🧱 2. 4단 모듈 조립 공식 (Block Anatomy)",
+              "children": [
+                {
+                  "id": "sVlcCvXN3Bfr",
+                  "text": "[표준 블록 사이클] : [헤더 이정표] → [1줄 행동 트리거] → [코드/캡처 객체] → [콜아웃 인용구]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                },
+                {
+                  "id": "1r5r9BhpHGeK",
+                  "text": "[예측 가능성 극대화] : 소주제마다 동일한 시각 패턴을 기계적으로 반복 노출해 인지 피로 차단",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879127274,
+              "updatedAt": 1791879127274
+            },
+            {
+              "id": "Ax5vci7dAMVd",
+              "text": "⚖️ 3. 정보 밀도 및 여백 비율 (Visual Density & Ratio)",
+              "children": [
+                {
+                  "id": "KP8zqNEcXOWt",
+                  "text": "[3:7 황금 비율] : 순수 텍스트 줄글 30% 미만 vs 비주얼 객체(코드·이미지·콜아웃·선) 70% 이상",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                },
+                {
+                  "id": "hr34dgDvhqTV",
+                  "text": "[글자 덩어리 차단] : F자 스캐닝 시 숨 막히는 텍스트 벽(Wall of Text)을 없애고 여백과 리듬 확보",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879127274,
+              "updatedAt": 1791879127274
+            },
+            {
+              "id": "vLrv6vOwHpFW",
+              "text": "👀 4. 시선 동선 단축 설계 (Eye-Tracking Control)",
+              "children": [
+                {
+                  "id": "WMUoCip7rf7e",
+                  "text": "[코드 내 인라인 주석 완결] : 코드 아래 별도 해설을 없애고 코드 내 주석(# ...)으로 시선 왕복 차단",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                },
+                {
+                  "id": "WaBXnDFx4J7a",
+                  "text": "[불릿의 클릭 동선화] : 목록(ul)을 개념 나열이 아닌 [메뉴 → 하위 메뉴 → 버튼 활성화] 동선으로 활용",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879127274,
+              "updatedAt": 1791879127274
+            },
+            {
+              "id": "mdipBOV9Qvne",
+              "text": "⏸️ 5. 인지적 쉼표와 완료 매듭 (Punctuation & Closure)",
+              "children": [
+                {
+                  "id": "GY9M9y5fvwZe",
+                  "text": "[대단계별 <hr> 절단] : ✅ 1.~6. 단계 종료마다 수평선을 강제 삽입하여 독자의 뇌를 단계별로 리셋",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                },
+                {
+                  "id": "3n8D3xQSnLUW",
+                  "text": "[시각적 완료 증명] : 줄글 설명 대신 최종 결과 캡처(Notice 팝업, Settings 창)로 완료 피드백 즉각 각인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791879127274,
+                  "updatedAt": 1791879127274
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791879127274,
+              "updatedAt": 1791879127274
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791877201893,
+          "updatedAt": 1791879895180
+        },
+        {
+          "id": "ahoDc7V6qo3A",
+          "text": "📖 4. 원문 본문 핵심 콘텐츠 (Content: 목차 & 한 줄 요약)",
+          "children": [
+            {
+              "id": "XyBBVyHtRmV1",
+              "text": "1. 플러그인 프로젝트 시작하기",
+              "children": [
+                {
+                  "id": "4TsZvOLJWDXs",
+                  "text": "1️⃣ 템플릿 레포 생성 : 공식 obsidian-sample-plugin 템플릿 기반으로 새 레포지토리 생성 및 로컬 clone",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                },
+                {
+                  "id": "pTYJCMbBrdEb",
+                  "text": "2️⃣ 플러그인 정보 수정 : manifest.json 및 package.json의 ID·이름·버전 설정 ('Obsidian' 단어 사용 주의)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791877386292,
+              "updatedAt": 1791877386292
+            },
+            {
+              "id": "6G6sLo5MHnj6",
+              "text": "2. 개발 환경 세팅",
+              "children": [
+                {
+                  "id": "2RGs3KrOFBnK",
+                  "text": "1️⃣ 런타임 & 의존성 : Node.js LTS(최소 16 이상) 설치 및 npm install 필수 패키지 구성",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                },
+                {
+                  "id": "S572KrWKstlz",
+                  "text": "2️⃣ CI/CD 자동화 : GitHub Actions 기반 플러그인 자동 빌드 및 릴리즈 워크플로우(release.yml) 설정",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                },
+                {
+                  "id": "Os5ql9b9TvwT",
+                  "text": "3️⃣ 에디터 환경 : ESLint(문법 검사), Prettier(가시성), indent-rainbow 등 개발 생산성 확장 설치",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791877386292,
+              "updatedAt": 1791877386292
+            },
+            {
+              "id": "q8OBbHVvxRY5",
+              "text": "3. 빌드 & 테스트 환경 구성",
+              "children": [
+                {
+                  "id": "4seIHTJO4ZpY",
+                  "text": "1️⃣ 빌드 및 볼트 복사 : npm run build 산출물(main.js, manifest, styles)을 타겟 볼트 폴더로 복사",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                },
+                {
+                  "id": "fdSMlhixrneB",
+                  "text": "2️⃣ deploy 스크립트 구축 : 빌드와 복사를 단일 명령어(npm run deploy)로 묶어 개발 반복 피로도 제거",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                },
+                {
+                  "id": "5nvSckLtC9hf",
+                  "text": "3️⃣ 옵시디언 활성화 : 설정 → 커뮤니티 플러그인 목록에서 샘플 플러그인 토글 활성화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791877386292,
+              "updatedAt": 1791877386292
+            },
+            {
+              "id": "FKQQNEg9um1o",
+              "text": "4. 첫 번째 명령어 추가 실습",
+              "children": [
+                {
+                  "id": "ESu3mYMg8E4X",
+                  "text": "1️⃣ addCommand 구현 : onload()에 Show Hello Notice 명령어 및 Notice('Hello World') 등록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                },
+                {
+                  "id": "qPCrMZmHTX3R",
+                  "text": "2️⃣ 재배포 및 동작 확인 : npm run deploy 후 [Cmd + P] 팔레트에서 실행하여 우측 상단 알림 팝업 검증",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791877386292,
+              "updatedAt": 1791877386292
+            },
+            {
+              "id": "tmB2kKywjTna",
+              "text": "5. (선택) 설정 탭 추가 실습",
+              "children": [
+                {
+                  "id": "uQcmhoxNOvKk",
+                  "text": "1️⃣ SettingTab UI 생성 : PluginSettingTab과 Setting 컴포넌트로 텍스트 입력창 UI 구성",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                },
+                {
+                  "id": "Dmr7Qt2CofTK",
+                  "text": "2️⃣ addSettingTab 등록 : main.ts에서 세팅 탭을 인스턴스화하고 옵시디언 환경설정 창 연동 확인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791877386292,
+              "updatedAt": 179187738826656
+            },
+            {
+              "id": "cQ4tnXq8T2Ar",
+              "text": "6. 개발 루틴 정리",
+              "children": [
+                {
+                  "id": "moBvA2v3T9sH",
+                  "text": "🔄 3단계 무한 루프 : 1. 코드 수정 → 2. npm run deploy → 3. 옵시디언 커뮤니티 플러그인 새로고침 후 테스트",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                },
+                {
+                  "id": "bB3zAbT20K6K",
+                  "text": "⚠️ 실무 주의사항 : 개발 중 console.log를 적극 활용하되 실제 공식 배포 시에는 반드시 제거",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877386292,
+                  "updatedAt": 1791877386292
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791877386292,
+              "updatedAt": 1791877386292
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1791877386292,
+          "updatedAt": 1791880437559
+        },
+        {
+          "id": "Du0Eevsky3tF_parent",
+          "text": "🛠️ 5. 블로그가 전달하는 핵심 기술 스펙 & 필수 지식 (Technical Specs)",
+          "children": [
+            {
+              "id": "Du0Eevsky3tF",
+              "text": "1️⃣ 핵심 개발 아키텍처 & 안전성 원칙 (Architecture & Safety)",
+              "children": [
+                {
+                  "id": "PzOqRe0DDJCd",
+                  "text": "[저장소 격리 원칙] : 볼트 내부(.obsidian/plugins) 직접 clone 지양, 독립 프로젝트 폴더에서 소스 관리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877201893,
+                  "updatedAt": 1791877201893
+                },
+                {
+                  "id": "4OWjKueAWevH",
+                  "text": "[원클릭 주입 파이프라인] : npm run deploy(빌드 + 결과물 복사) 스크립트로 타겟 볼트 배포 루틴 일원화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877201893,
+                  "updatedAt": 1791877201893
+                },
+                {
+                  "id": "JYpeuRF9kU8F",
+                  "text": "[데이터 오염 방지] : 개발/실험 중 전역 이벤트 충돌이나 데이터 손상을 방어하기 위한 전용 테스트 볼트 운용",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877201893,
+                  "updatedAt": 1791877201893
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791877201893,
+              "updatedAt": 1791877201893
+            },
+            {
+              "id": "zrfMDxIODE42",
+              "text": "2️⃣ 옵시디언 API 최소 스펙 & 인터페이스 (API & Extensibility)",
+              "children": [
+                {
+                  "id": "h2T6sCe2TPtg",
+                  "text": "[핵심 생명주기] : onload() 기반의 가장 담백한 최소 플러그인 뼈대(Boilerplate) 제시",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877201893,
+                  "updatedAt": 1791877201893
+                },
+                {
+                  "id": "uogpA0miXcgo",
+                  "text": "[2대 핵심 접점] : Command Palette(addCommand)와 Settings Tab(addSettingTab)의 표준 구현",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877201893,
+                  "updatedAt": 1791877201893
+                },
+                {
+                  "id": "BE0QWuCCIJxc",
+                  "text": "[공식 생태계 규격] : manifest.json의 'Obsidian' 단어 사용 금지 등 커뮤니티 릴리즈 심사 가이드라인 선반영",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1791877201893,
+                  "updatedAt": 1791877201893
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1791877201893,
+              "updatedAt": 1791879109972
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1791878828527,
+          "updatedAt": 1791886535118
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1791877201893,
+      "updatedAt": 1791880586341
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1791877201893,
+  "updatedAt": 1791893268161
+}
