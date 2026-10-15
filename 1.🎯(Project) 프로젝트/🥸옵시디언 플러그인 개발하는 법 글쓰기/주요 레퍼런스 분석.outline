@@ -921,7 +921,7 @@
               "updatedAt": 1791973003172
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791973003172,
           "updatedAt": 1791973003172
         },
@@ -1373,7 +1373,7 @@
               "updatedAt": 1791973003172
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791973003172,
           "updatedAt": 1791973003172
         },
@@ -1656,7 +1656,7 @@
               "updatedAt": 1791973790862
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791973790862,
           "updatedAt": 1791973790862
         },
@@ -1836,7 +1836,7 @@
                   "updatedAt": 1791973790862
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1791973790862,
               "updatedAt": 1791973790862
             },
@@ -1861,7 +1861,7 @@
                   "updatedAt": 1791973790862
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1791973790862,
               "updatedAt": 1791973790862
             },
@@ -1945,7 +1945,7 @@
                   "updatedAt": 1791973790862
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1791973790862,
               "updatedAt": 1791973790862
             },
@@ -2003,7 +2003,7 @@
                   "updatedAt": 1791973790862
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791973790862,
               "updatedAt": 1791973790862
             },
@@ -2155,7 +2155,7 @@
           "updatedAt": 1791973790862
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791973790862,
       "updatedAt": 1791973790862
     },
@@ -3185,7 +3185,7 @@
                   "updatedAt": 1791976181631
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791976181631,
               "updatedAt": 1791976181631
             },
@@ -3210,7 +3210,7 @@
                   "updatedAt": 1791976181631
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791976181631,
               "updatedAt": 1791976181631
             },
@@ -3235,7 +3235,7 @@
                   "updatedAt": 1791976181631
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1791976181631,
               "updatedAt": 1791976181631
             },
@@ -3370,5 +3370,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791877201893,
-  "updatedAt": 1792036547961
+  "updatedAt": 1792049954753
 }
