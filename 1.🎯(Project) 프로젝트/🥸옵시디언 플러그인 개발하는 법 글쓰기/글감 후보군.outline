@@ -775,11 +775,447 @@
                   "isFolded": false,
                   "createdAt": 1791893100000,
                   "updatedAt": 1791893100000
+                },
+                {
+                  "id": "CrXPs5zqIaFg",
+                  "text": "중심 소재",
+                  "children": [
+                    {
+                      "id": "y24s65gnaxjk",
+                      "text": "1. \"노션이나 워크플로위는 데이터를 어떻게 저장할까?\" — 트리 구조를 중첩 JSON 대신 Flat(평탄화)하게 설계하는 이유",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "h7ezQbsaFM5a",
+                      "text": "2. \"불릿 하나 타이핑할 때마다 왜 전체 트리가 리렌더링될까?\" — 렌더링 지옥 탈출과 세분화된 선택자(Selector) 구독",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "rv6OIpM6PmGh",
+                      "text": "3. \"리액트에서 깊은 트리 상태 다룰 때 Immer가 진짜 치트키인 이유\" — 깊은 복사(Deep Clone) 오버헤드 없이 불변성 지키기",
+                      "children": [
+                        {
+                          "id": "AJlWwxq9Tne0",
+                          "text": "📚 메인 레퍼런스 : [3] 나동 — 실전 플러그인 개발기(Time Manager)",
+                          "children": [],
+                          "isFolded": false,
+                          "note": "💡 [벤치마킹 포인트] : 1) 실패-수정 Before/After 코드 대조, 2) 엔지니어링 딥다이브 서사(삽질 ➔ 실패 ➔ 구원), 3) 다른 옵션과의 비교를 통한 기술 도입 설득력",
+                          "createdAt": 1792027624600,
+                          "updatedAt": 1792034352406
+                        },
+                        {
+                          "id": "sijvsb5F1PG2",
+                          "text": "🎯 1. 타깃 페르소나 & 가치 제안 전략 (Strategy: Who & Why)",
+                          "children": [
+                            {
+                              "id": "dq8zuICbfYf0",
+                              "text": "📢 1. 단 하나의 핵심 메시지 (Core Message & Promise)",
+                              "children": [
+                                {
+                                  "id": "YikZwz1updZd",
+                                  "text": "[핵심 선언] : '옵시디언 플러그인에 계층형 트리 상태를 넣으려다 마주친 불변성의 벽: 왜 결국 Immer를 선택할 수밖에 없었는가'",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                },
+                                {
+                                  "id": "8rZI9NPQxAm5",
+                                  "text": "[약속(Promise)] : 깊은 객체를 다루다 겪은 실제 고통(스프레드 괄호 지옥과 자체 헬퍼 함수의 한계)부터, 왜 결국 Immer를 도입해야만 60fps를 되찾을 수 있는지에 대한 명쾌한 엔지니어링 답안지 제공",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792036238607
+                                },
+                                {
+                                  "id": "P778pHFiuxFJ",
+                                  "text": "[인식 전환(Mindset)] : '불변성은 코드를 더럽히는 귀찮은 숙제' ➔ 'Immer라는 투명 먹지를 만나는 순간 개발 생산성과 렌더링 성능을 동시에 챙기는 가장 쉬운 치트키'",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1792034352406,
+                              "updatedAt": 1792034352406
+                            },
+                            {
+                              "id": "IeveZnlZBE9X",
+                              "text": "👥 2. 주요 대상 독자 (Target Persona)",
+                              "children": [
+                                {
+                                  "id": "ocComxHivMTN",
+                                  "text": "옵시디언 플러그인에서 리액트를 쓰다가 ...state 스프레드 괄호 지옥에 갇혀본 초중급 개발자",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                },
+                                {
+                                  "id": "NLeQqYyRv9Vy",
+                                  "text": "\"Immer라는 걸 들어는 봤는데 정확히 뭐하는 녀석인지, 왜 쓰는지\" 감이 안 오는 프론트엔드 입문자",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                },
+                                {
+                                  "id": "uWRHbYM2GHBL",
+                                  "text": "계층형 데이터(트리, 폴더, 아웃라이너, 중첩 설정)를 다룰 때 타이핑 렉이 걸려 이유를 몰라 헤매던 개발자",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1792034352406,
+                              "updatedAt": 1792034352406
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1792034352406,
+                          "updatedAt": 1792034352406
+                        },
+                        {
+                          "id": "vCRvWCJlxVcZ",
+                          "text": "📖 본문 핵심 콘텐츠 (Content: 목차 & 한 줄 요약)",
+                          "children": [
+                            {
+                              "id": "n4IQvSs65Uoh",
+                              "text": "1. 내가 직면한 문제",
+                              "children": [
+                                {
+                                  "id": "O5AOoMsm6xNg",
+                                  "text": "1️⃣ 어떤 기능을 개발 중이었나 : 옵시디언 플러그인 안에서 계층 구조(하위 메모, 폴더형 노드)를 다루는 리액트 트리 화면 구현",
+                                  "children": [
+                                    {
+                                      "id": "WDS1CFBIlZRT",
+                                      "text": "마크다운 기본 글머리 기호(- )의 한계와 일상의 답답함 - 단순 텍스트로는 깊은 생각의 위계를 정리하기 힘들었다",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "nodeType": "quote",
+                                      "createdAt": 1792036612961,
+                                      "updatedAt": 1792037527502
+                                    },
+                                    {
+                                      "id": "gQzdEnRQSp69",
+                                      "text": "Workflowy를 접하고 느낀 강렬한 영감 - \"이거다! 옵시디언 사이드바에 나만의 React 계층형 아웃라이너를 직접 만들자\"",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792036612961,
+                                      "updatedAt": 1792037664107
+                                    },
+                                    {
+                                      "id": "jNanyZDKspH8",
+                                      "text": "문제가 터질 수밖에 없었던 운영 시나리오 - 4~5단계 깊은 위계에서 Tab(들여쓰기), Enter, 고속 타이핑이 쉼 없이 연타되는 에디터 환경",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792037664107,
+                                      "updatedAt": 1792037664107
+                                    },
+                                    {
+                                      "id": "4GZ11Zd2HCp7",
+                                      "text": "[🖼️ 이미지] Workflowy 스타일로 깊은 위계가 빽빽하게 펼쳐진 실제 옵시디언 사이드바 작업 화면 - 4~5단계 깊은 위계 보여주기",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792036612961,
+                                      "updatedAt": 1792037961968,
+                                      "note": "[연출 방향] 옵시디언 사이드바 패널에 4~5단계로 접히고 펼쳐진 수백 개 노드의 대규모 트리 실사용 화면 캡처\n[연출 의도] 토이 프로젝트가 아닌 실전 수준의 깊은 중첩 데이터 복잡도를 직관적으로 체감시켜, 대규모 트리 렌더링 환경의 현실감 전달"
+                                    },
+                                    {
+                                      "id": "RvqWuc647vu9",
+                                      "text": "[🖼️ 이미지] 옵시디언 이중 탭(Split View)과 특정 하위 노드로 파고든 Zoom 연동 화면",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792037885267,
+                                      "updatedAt": 1792037961968,
+                                      "note": "[연출 방향] 왼쪽 탭에는 전체 트리 아웃라인, 오른쪽 탭에는 특정 3~4단계 노드로 줌인된 상세 작업 뷰가 나란히 열려 있는 분할 화면 캡처\n[연출 의도] 단일 뷰가 아니라 다중 탭에서 동일한 트리 상태를 공유하며 실시간으로 줌인/줌아웃 및 동기화가 이루어져야 하는 가혹한 상태 공유 환경 강조"
+                                    },
+                                    {
+                                      "id": "tAh7IvKBy3q8",
+                                      "text": "[🖼️ 이미지] 마우스로 노드를 떼어내어 다른 위계로 붙이는 드래그 앤 드롭(D&D) 조작 화면",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792037885267,
+                                      "updatedAt": 1792037961968,
+                                      "note": "[연출 방향] 마우스 커서로 특정 하위 노드를 드래그하여 다른 부모 노드의 자식으로 이동시키는 드롭 인디케이터(파란 선) 표시 캡처\n[연출 의도] 단순 텍스트 수정을 넘어 트리 구조 자체를 떼어내고 붙이는(Reparenting) 동적 구조 변이가 빈번히 일어나는 조작 시나리오 제시"
+                                    }
+                                  ],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792037885267
+                                },
+                                {
+                                  "id": "S76atKVT035D",
+                                  "text": "2️⃣ 그 중 뭐가 문제였나 : 리액트 불변성 규칙 때문에 깊은 노드 하나 바꾸려다 마주친 5단계 스프레드(...) 괄호 지옥과 타이핑 렉",
+                                  "children": [
+                                    {
+                                      "id": "IG5ERaTi95o7",
+                                      "text": "[🖼️ 이미지] 깊은 4단계 노드에서 빠른 타이핑 시 글자가 씹히고 뚝뚝 끊기는 타이핑 렉",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792037309502,
+                                      "updatedAt": 1792037961968,
+                                      "note": "[연출 방향] 4단계 깊이 노드에서 빠른 키보드 입력 시 글자가 즉시 뜨지 않고 버벅거리거나 한글 자모가 분리되는 순간을 포착한 GIF/화면 캡처\n[연출 의도] 불변성 갱신 오버헤드로 인해 사용자가 겪는 가장 치명적인 UX 고통(타이핑 딜레이)을 생생하게 체감시켜 독자 공감 유발"
+                                    },
+                                    {
+                                      "id": "sJfgjIbNf9cW",
+                                      "text": "[💻 코드] 노드 하나 바꾸려다 탄생한 우하향 5단 스프레드(...) 피라미드 코드",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792037309502,
+                                      "updatedAt": 1792037309502
+                                    },
+                                    {
+                                      "id": "fg45yUQBzT9E",
+                                      "text": "[🖼️ 이미지] 글자 하나 칠 때마다 트리 전체가 시뻘겋게 재렌더링되는 React Profiler 화면 - 원인은 불필요한 전체 리렌더링 폭탄",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792037309502,
+                                      "updatedAt": 1792037961968,
+                                      "note": "[연출 방향] React DevTools의 렌더링 하이라이트를 켠 상태에서, 글자 하나 칠 때 사이드바 전체 노드가 빨간색으로 번쩍이는 프로파일러/화면 캡처\n[연출 의도] 타이핑 렉의 기술적 원인이 '참조 갱신 실패로 인한 트리 전체 리렌더링 폭탄' 때문임을 시각적으로 명백하게 입증"
+                                    }
+                                  ],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792037309502
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1792034352406,
+                              "updatedAt": 1792034352406
+                            },
+                            {
+                              "id": "R8zdvfWmHEBk",
+                              "text": "2. 라이브러리 없이 어떻게든 버텨보려 했던 대중적인 시도들",
+                              "children": [
+                                {
+                                  "id": "jEi9VjhdmwOG",
+                                  "text": "1️⃣ 직접 수정과 강제 리렌더링의 유혹 : node.text = ... 로 고치고 더미 상태로 강제 렌더링을 유발해보던 꼼수의 한계",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792036238607,
+                                  "updatedAt": 1792036238607
+                                },
+                                {
+                                  "id": "MI5kh5yNsQAz",
+                                  "text": "2️⃣ 국룰 스프레드(...) 연산자의 늪 : 1단계는 편하지만 2~3단계 깊어지자마자 괄호 지옥과 데이터 증발로 무너지던 순간",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792036238607,
+                                  "updatedAt": 1792036238607
+                                },
+                                {
+                                  "id": "fpJBbP5cjStG",
+                                  "text": "3️⃣ 커스텀 복사 헬퍼 함수의 덫 : 외부 라이브러리 없이 직접 재귀 함수를 짜서 해결하려다 코드가 산으로 가던 경험",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792036238607,
+                                  "updatedAt": 1792036238607
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1792036238607,
+                              "updatedAt": 1792036238607
+                            },
+                            {
+                              "id": "70eyXv2LIuc7",
+                              "text": "3. 구원투수 Immer의 본질과 해결 원리",
+                              "children": [
+                                {
+                                  "id": "ybYBSZhVg1St",
+                                  "text": "1️⃣ 투명 먹지(Draft) 비유 : 원본은 안전하게 두고, 마음껏 낙서할 수 있는 '가상 복사본'을 깔아주는 원리",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                },
+                                {
+                                  "id": "8JAdVkzU4XZO",
+                                  "text": "2️⃣ Proxy와 구조적 공유 : 바뀐 노드 가지만 새로 잇고, 바뀌지 않은 수천 개 노드는 기존 참조를 그대로 재사용하여 60fps를 지키는 비결",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1792034352406,
+                              "updatedAt": 1792034352406
+                            },
+                            {
+                              "id": "7PhoSqDGCiZF",
+                              "text": "4. 실전 검증: Before vs After 대조",
+                              "children": [
+                                {
+                                  "id": "XVtRicHbvTpx",
+                                  "text": "1️⃣ 코드의 변화 : 15줄짜리 복잡한 중첩 스프레드 괴물 코드 ➔ 단 3줄짜리 직관적 코드로 압축",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                },
+                                {
+                                  "id": "rv2p3Q0IWBZs",
+                                  "text": "2️⃣ 성능과 체감의 변화 : 타이핑할 때마다 전체 트리가 다시 그려지던 렉이 사라지고 60fps로 매끄럽게 반응하는 순간",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1792034352406,
+                              "updatedAt": 1792034352406
+                            },
+                            {
+                              "id": "7tDGBCeu2cB9",
+                              "text": "5. 결론: 이런 상황이라면 당장 Immer를 도입하라",
+                              "children": [
+                                {
+                                  "id": "wkk70Mb9lhM1",
+                                  "text": "1️⃣ 도입 체크리스트 : 얕은 1단계 상태는 기본 useState, 2단계 이상 깊은 중첩 객체(트리/목록/설정)는 무조건 Immer",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                },
+                                {
+                                  "id": "l7I2s4C0CWCg",
+                                  "text": "2️⃣ 도입 시 이것만은 주의하자 : getter/setter 남용 금지, 비동기 함수 안에서 draft 탈출 주의점 등 실전 팁",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1792034352406,
+                                  "updatedAt": 1792034352406
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1792034352406,
+                              "updatedAt": 1792034352406
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1792034352406,
+                          "updatedAt": 1792034352406
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792034352406
+                    },
+                    {
+                      "id": "trb8v108yObg",
+                      "text": "4. \"워크플로위의 핵심 기능인 '불릿 줌인(Zoom-in)', 리액트로 가장 쉽게 구현하는 법\" — 데이터를 자르지 않고 화면만 좁히는 가상 루트",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "HM13LBFCHvP4",
+                      "text": "5. \"트리 구조 에디터에서 '실행 취소(Ctrl+Z)' 구현이 악명 높은 이유와 해결책\" — 전체 스냅샷 대신 가벼운 패치로 타임머신 만들기",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "d9mtNQQjJvi2",
+                      "text": "6. \"수천 개 불릿을 접었다 펼쳐도 렉이 없는 비결\" — 접힌 노드를 효율적으로 건너뛰는 가시성 트리 평탄화(Flatten) 알고리즘",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "jJgpcBRrZLuB",
+                      "text": "7. \"에디터 만들 때 '접기/펼치기' 상태는 어디에 저장해야 할까?\" — 문서 원본 데이터와 뷰(UI) 상태를 분리하는 기준",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "R5H42IvANoYl",
+                      "text": "8. \"배열 인덱스로 트리를 관리하다가 마주친 대참사\" — 노드를 삭제·이동해도 족보가 꼬이지 않는 고유 식별자(NanoID) 전략",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "APmQ7xVr8ejx",
+                      "text": "9. \"화면을 직접 건드리지 마라: 모든 트리 조작을 '순수 함수'로 격리했을 때 얻는 이점\" — 버그 없이 예측 가능한 상태 머신",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "ksP73Pmrv8Zd",
+                      "text": "10. \"일반 불릿을 체크박스나 인용구로 바꾸기: 블록 변환(Turn into)의 비밀\" — 트리 계층을 깨지 않는 유연한 노드 스키마",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "nVfaTpW6eESX",
+                      "text": "11. \"불릿 제목은 가볍게, 본문은 묵직하게: 서브노트 때문에 느려진 에디터 살려내기\" — 가벼운 트리 탐색을 위한 데이터 지연 로딩",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "ysPORkMsAzlR",
+                      "text": "12. \"자식이 부모가 되는 순환 참조 버그 막는 법\" — 서브트리 이동 시 에디터 크래시를 원천 차단하는 족보 검사기",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "FTmHamYUo80k",
+                      "text": "13. \"1만 개 불릿도 60fps로 스크롤하기: 가상 리스트(Virtual Scroll)와 트리의 결합\" — 화면에 보이는 불릿만 그리는 최적화",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "Yq8dQs9FV34f",
+                      "text": "14. \"옵시디언 탭을 껐다 켜도 작업하던 트리 상태 그대로 살리는 법\" — Leaf 생명주기와 메모리 상태 유지의 모든 것",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    },
+                    {
+                      "id": "HU0r2XNKTaHs",
+                      "text": "15. \"빠르게 타이핑하다 창을 닫아도 글이 안 날아가는 비결\" — 초고속 메모리 상태와 느린 파일 저장(Vault)의 원자적 동기화",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792026201267,
+                      "updatedAt": 1792027078409
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1792026201267,
+                  "updatedAt": 1792026201267
                 }
               ],
               "isFolded": false,
               "createdAt": 1791893100000,
-              "updatedAt": 1791970000000
+              "updatedAt": 1792026201267
             },
             {
               "id": "nInE2tRaNsAc",
@@ -826,7 +1262,7 @@
                   "updatedAt": 1791907118893
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1791893100000,
               "updatedAt": 1791970000000
             },
@@ -867,7 +1303,7 @@
                   "updatedAt": 1791893100000
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1791893100000,
               "updatedAt": 1791970000000
             },
@@ -908,7 +1344,7 @@
                   "updatedAt": 1791893100000
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1791893100000,
               "updatedAt": 1791970000000
             },
@@ -962,7 +1398,7 @@
               "updatedAt": 1791970000000
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "note": "- 💡 [섹션 정의 & 소속] : 본체는 '자체 엔진(@vibe/outliner-core, @vibe/outliner-editor)'에 온전히 소속되며, 에디터 Leaf 내부 렌더링부터 Enter·Backspace·Tab 트랜잭션, 커서 복원, 전역 핫키 충돌을 막는 스코프 격리까지 옵시디언 호스트의 외생적 인터럽트(Interrupt from: Scope/Keymap/Workspace/Vault)를 방어하는 상호작용 체계",
           "createdAt": 1791893100000,
           "updatedAt": 1791939769126
@@ -1240,5 +1676,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791886528919,
-  "updatedAt": 1791991679171
+  "updatedAt": 1792037961968
 }

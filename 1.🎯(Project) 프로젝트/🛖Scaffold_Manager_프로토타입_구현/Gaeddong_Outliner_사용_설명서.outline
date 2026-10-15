@@ -69,7 +69,7 @@
           "updatedAt": 1791892620515
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791872420413
     },
@@ -462,7 +462,7 @@
               "updatedAt": 1791872659114
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791866644039
         },
@@ -479,7 +479,7 @@
               "updatedAt": 1791866624520
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791866611459,
           "updatedAt": 1791866649053
         },
@@ -496,7 +496,7 @@
               "updatedAt": 1791872671407
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791865738321
         },
@@ -529,12 +529,12 @@
               "updatedAt": 1791872716520
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1791865738321,
           "updatedAt": 1791866626985
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791871111689
     },
@@ -924,13 +924,12 @@
         },
         {
           "id": "0kVvmlIgXHP3",
-          "text": "[미구현][Alt + ↑ / ↓] : 항목 순서 위아래 이동",
+          "text": "[Alt + ↑ / ↓] : 항목 순서 위아래 이동",
           "children": [],
           "isFolded": false,
-          "isCompleted": true,
-          "completedAt": 1791868883596,
+          "isCompleted": false,
           "createdAt": 1791865738321,
-          "updatedAt": 1791868883596
+          "updatedAt": 1792029837978
         },
         {
           "id": "tYBZuMZM9Vqn",
@@ -942,15 +941,14 @@
         },
         {
           "id": "dSVwu7iqaBmK",
-          "text": "[미구현][Ctrl + Enter] : 완료 처리",
+          "text": "[Ctrl + Enter] : 완료 처리",
           "children": [],
-          "isCompleted": true,
-          "completedAt": 1791868878409,
+          "isCompleted": false,
           "createdAt": 1791868846090,
-          "updatedAt": 1791872870009
+          "updatedAt": 1792029841481
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1791865738321,
       "updatedAt": 1791873234702
     },
@@ -1012,5 +1010,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791865738321,
-  "updatedAt": 1791952409861
+  "updatedAt": 1792029862500
 }
