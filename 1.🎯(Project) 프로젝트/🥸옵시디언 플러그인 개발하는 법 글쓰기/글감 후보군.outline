@@ -1388,139 +1388,643 @@
                               "text": "3. 구원투수 Immer의 본질과 해결 원리",
                               "children": [
                                 {
-                                  "id": "ybYBSZhVg1St",
-                                  "text": "1️⃣ 투명 먹지(Draft) 비유 : 원본은 안전하게 두고, 마음껏 낙서할 수 있는 '가상 복사본'을 깔아주는 원리",
-                                  "children": [],
-                                  "isFolded": false,
-                                  "createdAt": 1792034352406,
-                                  "updatedAt": 1792034352406
-                                },
-                                {
-                                  "id": "8JAdVkzU4XZO",
-                                  "text": "2️⃣ Proxy와 구조적 공유 : 바뀐 노드 가지만 새로 잇고, 바뀌지 않은 수천 개 노드는 기존 참조를 그대로 재사용하여 60fps를 지키는 비결",
-                                  "children": [],
-                                  "isFolded": false,
-                                  "createdAt": 1792034352406,
-                                  "updatedAt": 1792034352406
-                                },
-                                {
-                                  "id": "W26jLovjoASe",
-                                  "text": "3️⃣ 왜 깊은 트리에서는 Immer여야만 하는가 : 실전 개발과 유지보수를 구원하는 5대 핵심 효용",
+                                  "id": "EVIC0iOAo177",
+                                  "text": "1️⃣ What is Immer : Proxy 기반의 자동 불변성 관리 엔진",
                                   "children": [
                                     {
-                                      "id": "UnUWCaMxWcVc",
-                                      "text": "🥇 [DX & 생산성] 불변성을 잊고 날것의 자바스크립트로 코딩해도 100% 안전한 불변성 보장 (700줄 ➔ 15줄 종결)",
+                                      "id": "StVy8umrNFf1",
+                                      "text": "불변성 규칙을 지키면서도 객체나 배열을 평소 자바스크립트 문법(mutable)대로 직접 수정할 수 있게 해주는 라이브러리",
                                       "children": [],
                                       "isFolded": false,
-                                      "createdAt": 1792047619803,
-                                      "updatedAt": 1792047619803
+                                      "createdAt": 1792051482604,
+                                      "updatedAt": 1792051482604
                                     },
                                     {
-                                      "id": "1ulNX5DvXPRH",
-                                      "text": "🥈 [성능 & 60fps] Proxy 기반 구조적 공유(Structural Sharing)로 리렌더링 폭포수 원천 차단",
+                                      "id": "TH96DnGORL3q",
+                                      "text": "핵심 동작 메커니즘 : JS 표준 Proxy가 프로퍼티 수정을 가로채 바뀐 경로만 새 객체로 만들고, 안 바뀐 노드는 기존 참조를 유지(구조적 공유)",
                                       "children": [],
                                       "isFolded": false,
-                                      "createdAt": 1792047619803,
-                                      "updatedAt": 1792047619803
+                                      "createdAt": 1792051482604,
+                                      "updatedAt": 1792051482604
                                     },
                                     {
-                                      "id": "GO9FjtleDvHT",
-                                      "text": "🥉 [안정성 & 무결성] D&D 트리 재배치 시 발생하는 인덱스 시프트·자식 노드 증발 버그 영구 박멸",
+                                      "id": "59S99ampePSZ",
+                                      "text": "공식 문서 : [immerjs.github.io/immer](https://immerjs.github.io/immer/)",
                                       "children": [],
                                       "isFolded": false,
-                                      "createdAt": 1792047619803,
-                                      "updatedAt": 1792047619803
+                                      "createdAt": 1792051482604,
+                                      "updatedAt": 1792051482604
                                     },
                                     {
-                                      "id": "FcNYSoX51wW1",
-                                      "text": "4️⃣ [유지보수 & 확장성] 노드 메타데이터 필드가 10개 늘어나도 트리 조작 로직 수정 0줄 보장",
+                                      "id": "ka9mqEQii7ZY",
+                                      "text": "공식 GitHub : [github.com/immerjs/immer](https://github.com/immerjs/immer) (Star 26k+ / 주간 다운로드 수천만 회)",
                                       "children": [],
                                       "isFolded": false,
-                                      "createdAt": 1792047619803,
-                                      "updatedAt": 1792047619803
+                                      "createdAt": 1792051482604,
+                                      "updatedAt": 1792051482604
                                     },
                                     {
-                                      "id": "fzTv1ZvXLeiU",
-                                      "text": "5️⃣ [아키텍처 확장성] produceWithPatches를 통한 무제한 실행 취소/다시 실행(Undo/Redo) 단 10줄 공짜 획득",
+                                      "id": "Fq2HA0kng0XL",
+                                      "text": "공식 철학/구조 설명 : [Immer Architecture & Design](https://immerjs.github.io/immer/design) (Proxy를 활용한 구조적 공유 동작 원리가 다이어그램과 함께 상세히 서술된 공식 기술 문서)",
                                       "children": [],
                                       "isFolded": false,
-                                      "createdAt": 1792047619803,
-                                      "updatedAt": 1792047619803
+                                      "createdAt": 1792051482604,
+                                      "updatedAt": 1792051482604
+                                    },
+                                    {
+                                      "id": "rAdjUV1ihRRe",
+                                      "text": "[🗺️ 다이어그램] Proxy 기반 구조적 공유(Structural Sharing) 메모리 참조 맵",
+                                      "children": [
+                                        {
+                                          "id": "18R7nmMbTjSs",
+                                          "text": "![[3. 구원투수 Immer의 본질과 해결 원리 첨부 자료 모음#Proxy 기반 구조적 공유(Structural Sharing) 메모리 참조 맵]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792051482604,
+                                          "updatedAt": 1792051482604
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792051482604,
+                                      "updatedAt": 1792051482604
                                     }
                                   ],
                                   "isFolded": true,
-                                  "createdAt": 1792047619803,
-                                  "updatedAt": 1792047619803
+                                  "createdAt": 1792051324019,
+                                  "updatedAt": 1792051482604
+                                },
+                                {
+                                  "id": "QHHjjLd8O1eu",
+                                  "text": "2️⃣ 왜 깊은 트리에서는 Immer여야만 하는가 : 실전 개발과 유지보수를 구원하는 3대 핵심 효용",
+                                  "children": [
+                                    {
+                                      "id": "SpWDixYXNmGf",
+                                      "text": "🥇 [코드 생산성과 DX] 400줄짜리 재귀 slice·filter 지옥 ➔ push, splice로 1~2줄 종결",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792051324019,
+                                      "updatedAt": 1792051324019
+                                    },
+                                    {
+                                      "id": "r3W4AVLeUM88",
+                                      "text": "🥈 [렌더링 성능과 60fps] Proxy 구조적 공유로 변경 없는 형제 노드 참조 보존 (연쇄 리렌더링 폭포수 원천 차단)",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792051324019,
+                                      "updatedAt": 1792051324019
+                                    },
+                                    {
+                                      "id": "6eRcCfKMok8U",
+                                      "text": "🥉 [스키마 무결성과 유지보수] 속성 복사 누락으로 인한 데이터 증발(undefined) 참사 원천 방지 및 필드 확장 시 수정 0줄",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792051324019,
+                                      "updatedAt": 1792051324019
+                                    },
+                                    {
+                                      "id": "u7GsJSNid31e",
+                                      "text": "[💻 코드] 순수 스프레드 불변 재귀 방식의 Tab 들여쓰기 구현 (70줄 복사·슬라이스 지옥)",
+                                      "children": [
+                                        {
+                                          "id": "Bubr2iLl7aQV",
+                                          "text": "![[3. 구원투수 Immer의 본질과 해결 원리 첨부 자료 모음#순수 스프레드 불변 재귀 방식의 Tab 들여쓰기 코드 (70줄)]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792051324019,
+                                          "updatedAt": 1792051324019
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792051324019,
+                                      "updatedAt": 1792051324019
+                                    },
+                                    {
+                                      "id": "QLmTtsxYEq5e",
+                                      "text": "[💻 코드] Immer 도입 후의 Tab 들여쓰기 구현 (단 2줄 네이티브 문법 종결)",
+                                      "children": [
+                                        {
+                                          "id": "VjVeLFFUWLhY",
+                                          "text": "![[3. 구원투수 Immer의 본질과 해결 원리 첨부 자료 모음#Immer 도입 후의 Tab 들여쓰기 코드 (단 2줄)]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792051324019,
+                                          "updatedAt": 1792051324019
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792051324019,
+                                      "updatedAt": 1792051324019
+                                    }
+                                  ],
+                                  "isFolded": true,
+                                  "createdAt": 1792051324019,
+                                  "updatedAt": 1792051324019
+                                },
+                                {
+                                  "id": "WxBTPxiAsMAz",
+                                  "text": "3️⃣ 실전에서 딱 이것만 쓰면 끝나는 Immer 핵심 문법과 실무 주의점",
+                                  "children": [
+                                    {
+                                      "id": "CZFx2O3MskAP",
+                                      "text": "1) 리액트 useState 결합 패턴과 클로저 버그 방어",
+                                      "children": [
+                                        {
+                                          "id": "UjSp82hdTXPw",
+                                          "text": "기본형 대신 setTree(produce(draft => ...)) 커링을 써야 하는 이유 : 항상 보장된 최신 상태(prev)를 참조하여 Stale State 클로저 버그를 원천 차단",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052115062,
+                                          "updatedAt": 1792052115062
+                                        },
+                                        {
+                                          "id": "bpFRywxHwX9i",
+                                          "text": "[💡 팁] useState 자체를 완벽히 대체하는 useImmer(use-immer 패키지) 훅 활용법",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052115062,
+                                          "updatedAt": 1792052115062
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052115062,
+                                      "updatedAt": 1792052115062
+                                    },
+                                    {
+                                      "id": "espBJwuE38C5",
+                                      "text": "2) 리액트 금기 문법의 해금 : 파괴적 메서드 3대장 (push, splice, delete)",
+                                      "children": [
+                                        {
+                                          "id": "8tZqX8ZUnpcr",
+                                          "text": "복잡한 map·filter·스프레드 체이닝 대신 push(삽입), splice(삭제·끼워넣기), delete(속성 제거) 등 네이티브 가변 메서드 완전 허용",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052115062,
+                                          "updatedAt": 1792052115062
+                                        },
+                                        {
+                                          "id": "NT3Anv37Cl0B",
+                                          "text": "배열 원본을 훼손하지 않고 Immer가 뒤에서 복사본을 만들어주므로 자바스크립트 표준 문법 그대로 직관적 사고 가능",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052115062,
+                                          "updatedAt": 1792052115062
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052115062,
+                                      "updatedAt": 1792052115062
+                                    },
+                                    {
+                                      "id": "dERh7QCg3jP3",
+                                      "text": "3) 실무에서 반드시 마주치는 2대 주의사항과 동작 원리",
+                                      "children": [
+                                        {
+                                          "id": "uAp3XxHr4wy0",
+                                          "text": "return과 draft 수정 혼용 금지 : 아무것도 반환하지 않으면 draft 채택, 반환값이 있으면 그 값을 채택하는 양자택일 규칙 위반 시 런타임 에러 발생",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052115062,
+                                          "updatedAt": 1792052115062
+                                        },
+                                        {
+                                          "id": "OExtdPsqnpXd",
+                                          "text": "콘솔 디버깅 시 current(draft) 필수 : draft는 Proxy 객체이므로 console.log(draft)로는 속성을 볼 수 없고 current() 스냅샷으로 확인해야 함",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052115062,
+                                          "updatedAt": 1792052115062
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052115062,
+                                      "updatedAt": 1792052115062
+                                    },
+                                    {
+                                      "id": "SIDF54O8uzUF",
+                                      "text": "[💻 치트시트] 리액트 useState 커링과 splice 기반의 실전 트리 조작 치트시트",
+                                      "children": [
+                                        {
+                                          "id": "puFdxT5wqQAL",
+                                          "text": "![[3. 구원투수 Immer의 본질과 해결 원리 첨부 자료 모음#리액트 useState 커링과 splice 기반의 실전 트리 조작 치트시트]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052115062,
+                                          "updatedAt": 1792052115062
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052115062,
+                                      "updatedAt": 1792052115062
+                                    }
+                                  ],
+                                  "isFolded": true,
+                                  "createdAt": 1792051324019,
+                                  "updatedAt": 1792052115062
+                                },
+                                {
+                                  "id": "2zaxGFDFFnoG",
+                                  "text": "4️⃣ 그렇다면 내 프로젝트에서 pick한 기능들 (실전 아웃라이너 에디터 적용 사례)",
+                                  "children": [
+                                    {
+                                      "id": "onVoY0x9HWm7",
+                                      "text": "1) produce 커링 기반 단일 상태 파이프라인 (키보드 인터랙션 일원화)",
+                                      "children": [
+                                        {
+                                          "id": "KYHR5ZOcSekI",
+                                          "text": "[💻 코드] 키보드 인터랙션(Enter, Backspace, Tab) 단일 트랜잭션 구현 코드",
+                                          "children": [
+                                            {
+                                              "id": "BykZiYHxXHTn",
+                                              "text": "![[3. 구원투수 Immer의 본질과 해결 원리 첨부 자료 모음#키보드 인터랙션(Enter, Backspace, Tab) 단일 트랜잭션 구현 코드]]",
+                                              "children": [],
+                                              "isFolded": false,
+                                              "createdAt": 1792051823307,
+                                              "updatedAt": 1792051823307
+                                            }
+                                          ],
+                                          "isFolded": true,
+                                          "createdAt": 1792051823307,
+                                          "updatedAt": 1792051823307
+                                        }
+                                      ],
+                                      "isFolded": false,
+                                      "createdAt": 1792051823307,
+                                      "updatedAt": 1792051823307
+                                    },
+                                    {
+                                      "id": "9jeyA0pInVM1",
+                                      "text": "2) splice를 이용한 마우스 드래그 앤 드롭(D&D) 2줄 노드 재배치",
+                                      "children": [
+                                        {
+                                          "id": "POQ3SWL5hOoZ",
+                                          "text": "[💻 코드] 순환 참조 방어 검사와 detach/attach 2단계 D&D 구현 코드",
+                                          "children": [
+                                            {
+                                              "id": "yF04tXDceuGk",
+                                              "text": "![[3. 구원투수 Immer의 본질과 해결 원리 첨부 자료 모음#순환 참조 방어 검사와 detach/attach 2단계 D&D 구현 코드]]",
+                                              "children": [],
+                                              "isFolded": false,
+                                              "createdAt": 1792051823307,
+                                              "updatedAt": 1792051823307
+                                            }
+                                          ],
+                                          "isFolded": true,
+                                          "createdAt": 1792051823307,
+                                          "updatedAt": 1792051823307
+                                        }
+                                      ],
+                                      "isFolded": false,
+                                      "createdAt": 1792051823307,
+                                      "updatedAt": 1792051823307
+                                    },
+                                    {
+                                      "id": "UMLimhyhR6cu",
+                                      "text": "3) produceWithPatches 사상의 초경량 무제한 Undo / Redo 스택",
+                                      "children": [
+                                        {
+                                          "id": "cEXGyBxL0Wyo",
+                                          "text": "[💻 코드] 트랜잭션 기반 히스토리 스냅샷 및 타이핑 병합 Undo/Redo 구현 코드",
+                                          "children": [
+                                            {
+                                              "id": "fh1jMOramAol",
+                                              "text": "![[3. 구원투수 Immer의 본질과 해결 원리 첨부 자료 모음#트랜잭션 기반 히스토리 스냅샷 및 타이핑 병합 Undo/Redo 구현 코드]]",
+                                              "children": [],
+                                              "isFolded": false,
+                                              "createdAt": 1792051823307,
+                                              "updatedAt": 1792051823307
+                                            }
+                                          ],
+                                          "isFolded": true,
+                                          "createdAt": 1792051823307,
+                                          "updatedAt": 1792051823307
+                                        }
+                                      ],
+                                      "isFolded": false,
+                                      "createdAt": 1792051823307,
+                                      "updatedAt": 1792051823307
+                                    },
+                                    {
+                                      "id": "bRchmy88Vlth",
+                                      "text": "4) 스키마 독립적 메타데이터 확장 (Extensible Node Schema)",
+                                      "children": [
+                                        {
+                                          "id": "qglVOuEgOhAn",
+                                          "text": "[💻 코드] 10종 블록 타입 변환 및 메타데이터 독립 제어 구현 코드",
+                                          "children": [
+                                            {
+                                              "id": "iNUJhFRWxG4j",
+                                              "text": "![[3. 구원투수 Immer의 본질과 해결 원리 첨부 자료 모음#10종 블록 타입 변환 및 메타데이터 독립 제어 구현 코드]]",
+                                              "children": [],
+                                              "isFolded": false,
+                                              "createdAt": 1792051823307,
+                                              "updatedAt": 1792051823307
+                                            }
+                                          ],
+                                          "isFolded": true,
+                                          "createdAt": 1792051823307,
+                                          "updatedAt": 1792051823307
+                                        }
+                                      ],
+                                      "isFolded": false,
+                                      "createdAt": 1792051823307,
+                                      "updatedAt": 1792051823307
+                                    }
+                                  ],
+                                  "isFolded": true,
+                                  "createdAt": 1792051823307,
+                                  "updatedAt": 1792051823307
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "createdAt": 1792034352406,
-                              "updatedAt": 1792047619803
+                              "updatedAt": 1792051823307
                             },
                             {
                               "id": "7PhoSqDGCiZF",
                               "text": "4. 실전 검증: Before vs After 대조",
                               "children": [
                                 {
-                                  "id": "XVtRicHbvTpx",
-                                  "text": "1️⃣ 코드의 변화 : 15줄짜리 복잡한 중첩 스프레드 괴물 코드 ➔ 단 3줄짜리 직관적 코드로 압축",
-                                  "children": [],
-                                  "isFolded": false,
-                                  "createdAt": 1792034352406,
-                                  "updatedAt": 1792034352406
+                                  "id": "rIQ1HQ7ih5po",
+                                  "text": "1️⃣ [코드 생산성 & 유지보수 대조] 400줄 복사 지옥 ➔ 단 11줄 종결 (개발자의 삶)",
+                                  "children": [
+                                    {
+                                      "id": "j4xl1D7ioVxn",
+                                      "text": "자체 스프레드 재귀(400줄) vs Immer(11줄) : 평균 36배 코드 압축 및 복잡한 인덱스 계산 완전 제거",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052456954,
+                                      "updatedAt": 1792052456954
+                                    },
+                                    {
+                                      "id": "3sEskPvEePio",
+                                      "text": "스키마 확장성 비교 : 속성 10개 추가 시 자체 구현은 5개 헬퍼 전수 수정 vs Immer는 수정 0줄 보장(OCP 달성)",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052456954,
+                                      "updatedAt": 1792052456954
+                                    },
+                                    {
+                                      "id": "wnxcblsQwopm",
+                                      "text": "[💻 코드] Before : 순수 스프레드 재귀 방식의 D&D 트리 이동 구현 (120줄 복사·슬라이스 지옥)",
+                                      "children": [
+                                        {
+                                          "id": "w2ujOQZve30A",
+                                          "text": "![[4. 실전 검증 Before vs After 대조 첨부 자료 모음#Before : 순수 스프레드 재귀 방식의 D&D 트리 이동 코드 (120줄)]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052456954,
+                                          "updatedAt": 1792052456954
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052456954,
+                                      "updatedAt": 1792052456954
+                                    },
+                                    {
+                                      "id": "TRdBMQleSPMo",
+                                      "text": "[💻 코드] After : Immer 도입 후의 D&D 트리 이동 구현 (단 2줄 네이티브 종결)",
+                                      "children": [
+                                        {
+                                          "id": "qVw49yTZf7q1",
+                                          "text": "![[4. 실전 검증 Before vs After 대조 첨부 자료 모음#After : Immer 도입 후의 D&D 트리 이동 코드 (단 2줄)]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052456954,
+                                          "updatedAt": 1792052456954
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052456954,
+                                      "updatedAt": 1792052456954
+                                    }
+                                  ],
+                                  "isFolded": true,
+                                  "createdAt": 1792052356338,
+                                  "updatedAt": 1792052456954
                                 },
                                 {
-                                  "id": "rv2p3Q0IWBZs",
-                                  "text": "2️⃣ 성능과 체감의 변화 : 타이핑할 때마다 전체 트리가 다시 그려지던 렉이 사라지고 60fps로 매끄럽게 반응하는 순간",
-                                  "children": [],
-                                  "isFolded": false,
-                                  "createdAt": 1792034352406,
-                                  "updatedAt": 1792034352406
+                                  "id": "vZe6MJDLeaUO",
+                                  "text": "2️⃣ [실측 렌더링 성능 대조] 18fps 추락 ➔ 60fps 무결점 방어 (객관적 숫자의 증명)",
+                                  "children": [
+                                    {
+                                      "id": "OhEuVXXPePU9",
+                                      "text": "노드 200개 규모 실측 비교 : 입력 지연 85ms ➔ 12ms(7배 단축), 렌더 커밋 시간 52.4ms ➔ 4.8ms(11배 단축)",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052356338,
+                                      "updatedAt": 1792052356338
+                                    },
+                                    {
+                                      "id": "kkzNnoqqmy1N",
+                                      "text": "불필요 리렌더링 폭포수 차단 : 200개 중 198개(99%) 연쇄 렌더링 ➔ 직계 조상 4개 노드만 렌더링(98% 렌더 스킵)",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052356338,
+                                      "updatedAt": 1792052356338
+                                    },
+                                    {
+                                      "id": "Qv3WHjAIdW5T",
+                                      "text": "[📊 지표] 노드 200개 기준 실측 렌더링 성능 Before vs After 대조표",
+                                      "children": [
+                                        {
+                                          "id": "dPFnrSJ6my4y",
+                                          "text": "![[4. 실전 검증 Before vs After 대조 첨부 자료 모음#노드 200개 기준 실측 렌더링 성능 Before vs After 대조표]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052356338,
+                                          "updatedAt": 1792052356338
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052356338,
+                                      "updatedAt": 1792052356338
+                                    },
+                                    {
+                                      "id": "b16HtMV1b00M",
+                                      "text": "[🖼️ 이미지] React Profiler 화면 대조 (200개 전체 시뻘건 렌더링 ➔ 타겟 4개만 녹색으로 가볍게 렌더링)",
+                                      "children": [
+                                        {
+                                          "id": "iLwe5U1kRUcP",
+                                          "text": "![[4. 실전 검증 Before vs After 대조 첨부 자료 모음#React Profiler Before vs After 대조 화면]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052356338,
+                                          "updatedAt": 1792052356338
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052356338,
+                                      "updatedAt": 1792052356338
+                                    }
+                                  ],
+                                  "isFolded": true,
+                                  "createdAt": 1792052356338,
+                                  "updatedAt": 1792052356338
+                                },
+                                {
+                                  "id": "X1TFyGzJUG3M",
+                                  "text": "3️⃣ [사용자 체감 & UX 대조] 한글 자모 깨짐 ➔ 초당 400타 무결점 타이핑 (사용자의 삶)",
+                                  "children": [
+                                    {
+                                      "id": "1W5HyAiTcz6h",
+                                      "text": "입력 렉 및 자모 분리 완전 해결 : 85ms 지연으로 인한 브라우저 IME 끊김(\"ㅇㅗㅂㅅㅣ...\") ➔ 초당 400타 고속 연타에도 자모 분리 0건",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052356338,
+                                      "updatedAt": 1792052356338
+                                    },
+                                    {
+                                      "id": "HVUQ44WuuKdD",
+                                      "text": "대규모 트리 스케일링 체감 : 노드가 300~500개로 불어나도 메모장처럼 가볍고 즉각 반응하는 네이티브급 반응속도 확보",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052356338,
+                                      "updatedAt": 1792052356338
+                                    },
+                                    {
+                                      "id": "xqxgoOEvqODu",
+                                      "text": "[🖼️ 이미지] 고속 타이핑 시 한글 조합 UX Before vs After 대조 화면",
+                                      "children": [
+                                        {
+                                          "id": "PtVw3cqw2u4V",
+                                          "text": "![[4. 실전 검증 Before vs After 대조 첨부 자료 모음#고속 타이핑 시 한글 조합 UX Before vs After 대조 화면]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052356338,
+                                          "updatedAt": 1792052356338
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052356338,
+                                      "updatedAt": 1792052356338
+                                    }
+                                  ],
+                                  "isFolded": true,
+                                  "createdAt": 1792052356338,
+                                  "updatedAt": 1792052356338
                                 }
                               ],
                               "isFolded": true,
                               "createdAt": 1792034352406,
-                              "updatedAt": 1792034352406
+                              "updatedAt": 1792052456954
                             },
                             {
                               "id": "7tDGBCeu2cB9",
                               "text": "5. 결론: 이런 상황이라면 당장 Immer를 도입하라",
                               "children": [
                                 {
-                                  "id": "wkk70Mb9lhM1",
-                                  "text": "1️⃣ 도입 체크리스트 : 얕은 1단계 상태는 기본 useState, 2단계 이상 깊은 중첩 객체(트리/목록/설정)는 무조건 Immer",
-                                  "children": [],
+                                  "id": "iYgtwNfPoHq5",
+                                  "text": "1️⃣ [선택 기준] immer 의 선택 기준 — 딱 정해드립니다! (이런 분들은 추천 vs 굳이 쓸 필요 없어요잉)",
+                                  "children": [
+                                    {
+                                      "id": "x4YLapSbJKXB",
+                                      "text": "👍 이런 분들은 당장 도입하세요 : 2~3단계 이상 깊은 중첩 객체(아웃라이너 트리·디렉터리), 빈번한 D&D 및 계층 이동, 경량 Undo/Redo 스택, 확장형 메타데이터",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052767633,
+                                      "updatedAt": 1792052767633
+                                    },
+                                    {
+                                      "id": "gOchQVFIvR7Z",
+                                      "text": "✋ 이런 분들은 굳이 쓸 필요 없어요잉 : 1단계 얕은 폼 상태(기본 useState로 충분), 초고속 3D 게임 루프, 이미 Redux Toolkit(RTK) 쓰고 있는 분",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052767633,
+                                      "updatedAt": 1792052767633
+                                    },
+                                    {
+                                      "id": "Hu2ReX5fF6h2",
+                                      "text": "[📊 매트릭스] Immer 선택 기준 종합 가이드 매트릭스 (이런 분은 추천 vs 굳이 쓸 필요 없어요잉)",
+                                      "children": [
+                                        {
+                                          "id": "QXsAHEdiXzLR",
+                                          "text": "![[5. 결론 이런 상황이라면 당장 Immer를 도입하라 첨부 자료 모음#Immer 선택 기준 종합 가이드 매트릭스 (이런 분은 추천 vs 굳이 쓸 필요 없어요잉)]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052767633,
+                                          "updatedAt": 1792052767633
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052767633,
+                                      "updatedAt": 1792052767633
+                                    }
+                                  ],
                                   "isFolded": false,
-                                  "createdAt": 1792034352406,
-                                  "updatedAt": 1792034352406
+                                  "createdAt": 1792052767633,
+                                  "updatedAt": 1792052767633
                                 },
                                 {
-                                  "id": "l7I2s4C0CWCg",
-                                  "text": "2️⃣ 도입 시 이것만은 주의하자 : getter/setter 남용 금지, 비동기 함수 안에서 draft 탈출 주의점 등 실전 팁",
-                                  "children": [],
+                                  "id": "aAzVwLGn4nPe",
+                                  "text": "2️⃣ [포스팅 3줄 요약] 긴 글을 관통하는 3대 핵심 교훈 (TL;DR)",
+                                  "children": [
+                                    {
+                                      "id": "97IwhhR4VX8A",
+                                      "text": "1. 스프레드 지옥과의 작별 : 400줄짜리 재귀 복사 알고리즘으로 더 이상 개발자의 주의력과 시간을 낭비하지 마라",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052767633,
+                                      "updatedAt": 1792052767633
+                                    },
+                                    {
+                                      "id": "DhujAarNK0a1",
+                                      "text": "2. 생산성과 60fps의 양립 : Proxy 기반 '구조적 공유'로 코드 36배 압축과 렌더링 98% 스킵을 동시에 쟁취하라",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052767633,
+                                      "updatedAt": 1792052767633
+                                    },
+                                    {
+                                      "id": "9w9F6GTqZqYb",
+                                      "text": "3. 모던 리액트의 본질 : 불변성의 족쇄는 라이브러리에 맡기고, 개발자는 직관적인 자바스크립트 표준 문법으로 코딩하라",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052767633,
+                                      "updatedAt": 1792052767633
+                                    }
+                                  ],
                                   "isFolded": false,
-                                  "createdAt": 1792034352406,
-                                  "updatedAt": 1792034352406
+                                  "createdAt": 1792052767633,
+                                  "updatedAt": 1792052767633
+                                },
+                                {
+                                  "id": "l2kDnlZW1MEI",
+                                  "text": "3️⃣ [최종 완성 UX] 렉 없이 물 흐르듯 동작하는 나만의 옵시디언 아웃라이너 (GIF 연출)",
+                                  "children": [
+                                    {
+                                      "id": "vHnuEpclRfSr",
+                                      "text": "500개 노드 대규모 트리에서도 60fps 무결점 반응 : Enter/Tab 고속 연타와 대규모 D&D 재배치가 메모장처럼 즉각 반응하는 최종 상태",
+                                      "children": [],
+                                      "isFolded": false,
+                                      "createdAt": 1792052767633,
+                                      "updatedAt": 1792052767633
+                                    },
+                                    {
+                                      "id": "JZqMac6JOAZR",
+                                      "text": "[🖼️ 이미지 / GIF] 수백 개 노드 환경에서 고속 타이핑과 D&D가 60fps로 매끄럽게 동작하는 실제 에디터 화면",
+                                      "children": [
+                                        {
+                                          "id": "aT7Zw4IkhEKL",
+                                          "text": "![[5. 결론 이런 상황이라면 당장 Immer를 도입하라 첨부 자료 모음#수백 개 노드 환경에서 고속 타이핑과 D&D가 60fps로 매끄럽게 동작하는 실제 에디터 화면]]",
+                                          "children": [],
+                                          "isFolded": false,
+                                          "createdAt": 1792052767633,
+                                          "updatedAt": 1792052767633
+                                        }
+                                      ],
+                                      "isFolded": true,
+                                      "createdAt": 1792052767633,
+                                      "updatedAt": 1792052767633
+                                    }
+                                  ],
+                                  "isFolded": false,
+                                  "createdAt": 1792052767633,
+                                  "updatedAt": 1792052767633
                                 }
                               ],
                               "isFolded": true,
                               "createdAt": 1792034352406,
-                              "updatedAt": 1792034352406
-                            },
-                            {
-                              "id": "Y9Rc71fAtwwx",
-                              "text": "추가 고려해보면 좋을 것 같은 요소들",
-                              "children": [
-                                {
-                                  "id": "VDIYJqtcLSXe",
-                                  "text": "immer 의 선택 기준 - 딱 정해드립니다 이런 분들은 추천해요, 이런 분들은 굳이 쓸 필요없어요잉",
-                                  "children": [],
-                                  "createdAt": 1792047022664,
-                                  "updatedAt": 1792047057040
-                                }
-                              ],
-                              "createdAt": 1792047013816,
-                              "updatedAt": 1792047022441
+                              "updatedAt": 1792052767633
                             }
                           ],
                           "isFolded": false,
@@ -2097,5 +2601,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791886528919,
-  "updatedAt": 1792050463361
+  "updatedAt": 1792052912713
 }
