@@ -19167,8 +19167,7 @@ function extractOutlineMetadata(text) {
 */
 async function syncOutlineMetadata(app, file) {
 	try {
-		const content = await app.vault.read(file);
-		const metadata = extractOutlineMetadata(content);
+		const metadata = extractOutlineMetadata(await app.vault.read(file));
 		const cacheManager = app.metadataCache;
 		if (typeof cacheManager.setFileCache === "function") cacheManager.setFileCache(file, metadata);
 		else if (cacheManager.fileCache) cacheManager.fileCache[file.path] = metadata;
@@ -19194,7 +19193,6 @@ async function syncOutlineMetadata(app, file) {
 		cacheManager.resolvedLinks[file.path] = fileResolved;
 		cacheManager.unresolvedLinks[file.path] = fileUnresolved;
 		if (typeof cacheManager.trigger === "function") {
-			cacheManager.trigger("changed", file, content, metadata);
 			cacheManager.trigger("resolve", file);
 			for (const targetPath of Object.keys(fileResolved)) {
 				const dest = app.vault.getAbstractFileByPath(targetPath);
@@ -19974,6 +19972,7 @@ function useEmbedFileSync({ app, file, debounceMs = 300 }) {
 			try {
 				const text = await app.vault.read(file);
 				if (text === lastWrittenTextRef.current) return;
+				if (saveTimerRef.current !== null) return;
 				const state = readOutlineText(text, file.basename);
 				if (state.project) {
 					setProject(state.project);
@@ -20247,7 +20246,7 @@ var LivePreviewEmbedWatcher = class {
 	roots = /* @__PURE__ */ new Map();
 	observer = null;
 	eventRefs = [];
-	scheduled = false;
+	debounceTimer = null;
 	constructor(app) {
 		this.app = app;
 	}
@@ -20266,25 +20265,32 @@ var LivePreviewEmbedWatcher = class {
 		this.eventRefs.push(this.app.workspace.on("layout-change", () => this.requestScan()), this.app.workspace.on("active-leaf-change", () => this.requestScan()));
 	}
 	destroy() {
+		if (this.debounceTimer !== null) {
+			window.clearTimeout(this.debounceTimer);
+			this.debounceTimer = null;
+		}
 		this.observer?.disconnect();
 		this.observer = null;
 		this.eventRefs.forEach((ref) => this.app.workspace.offref(ref));
 		this.eventRefs = [];
-		this.roots.forEach((root, embedEl) => {
+		this.roots.forEach(({ root, container }, embedEl) => {
 			try {
 				root.unmount();
 			} catch {}
+			container.remove();
+			this.restoreNativeChildren(embedEl);
 			delete embedEl.dataset[MOUNTED_FLAG];
 		});
 		this.roots.clear();
 	}
 	requestScan() {
-		if (this.scheduled) return;
-		this.scheduled = true;
-		requestAnimationFrame(() => {
-			this.scheduled = false;
-			if (this.observer) this.scan();
-		});
+		if (this.debounceTimer !== null) window.clearTimeout(this.debounceTimer);
+		this.debounceTimer = window.setTimeout(() => {
+			this.debounceTimer = null;
+			requestAnimationFrame(() => {
+				if (this.observer) this.scan();
+			});
+		}, 100);
 	}
 	scan() {
 		document.querySelectorAll(".internal-embed:not([data-vibe-live-embed-mounted=\"true\"]), .file-embed:not([data-vibe-live-embed-mounted=\"true\"])").forEach((embedEl) => {
@@ -20295,13 +20301,23 @@ var LivePreviewEmbedWatcher = class {
 		this.unmountEmbed(node);
 		node.querySelectorAll("[data-vibe-live-embed-mounted=\"true\"]").forEach((child) => this.unmountEmbed(child));
 	}
+	restoreNativeChildren(embedEl) {
+		Array.from(embedEl.children).forEach((child) => {
+			if (child instanceof HTMLElement && child.classList.contains("vibe-outliner-native-hidden")) {
+				child.classList.remove("vibe-outliner-native-hidden");
+				child.style.display = "";
+			}
+		});
+	}
 	unmountEmbed(embedEl) {
-		const root = this.roots.get(embedEl);
-		if (!root) return;
+		const entry = this.roots.get(embedEl);
+		if (!entry) return;
 		try {
-			root.unmount();
+			entry.root.unmount();
 		} catch {}
+		entry.container.remove();
 		this.roots.delete(embedEl);
+		this.restoreNativeChildren(embedEl);
 		delete embedEl.dataset[MOUNTED_FLAG];
 	}
 	resolveTarget(embedEl) {
@@ -20345,14 +20361,27 @@ var LivePreviewEmbedWatcher = class {
 		if (!resolved) return;
 		const { file, anchor } = resolved;
 		embedEl.dataset[MOUNTED_FLAG] = "true";
-		embedEl.empty();
 		embedEl.addClass("vibe-outliner-embed-container");
 		embedEl.removeClass("mod-generic");
 		embedEl.style.display = "block";
 		embedEl.style.width = "100%";
 		embedEl.style.minHeight = "160px";
-		const root = (0, import_client.createRoot)(embedEl);
-		this.roots.set(embedEl, root);
+		Array.from(embedEl.children).forEach((child) => {
+			if (child instanceof HTMLElement && !child.classList.contains("vibe-outliner-mount-root")) {
+				child.classList.add("vibe-outliner-native-hidden");
+				child.style.display = "none";
+			}
+		});
+		const mountContainer = document.createElement("div");
+		mountContainer.className = "vibe-outliner-mount-root";
+		mountContainer.style.width = "100%";
+		mountContainer.style.height = "100%";
+		embedEl.appendChild(mountContainer);
+		const root = (0, import_client.createRoot)(mountContainer);
+		this.roots.set(embedEl, {
+			root,
+			container: mountContainer
+		});
 		root.render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(OutlineInline, {
 			app: this.app,
 			file,
@@ -20457,10 +20486,20 @@ function registerOutlineMarkdownEmbedProcessor(app, registerProcessor) {
 			if (!(targetFile instanceof obsidian.TFile) || targetFile.extension !== "outline") return;
 			if (embedEl.dataset["vibeLiveEmbedMounted"] === "true") return;
 			embedEl.dataset[EMBED_MOUNTED_FLAG] = "true";
-			embedEl.empty();
 			embedEl.addClass("vibe-outliner-embed-container");
 			embedEl.removeClass("mod-generic");
-			mountOutline(embedEl, ctx, /* @__PURE__ */ (0, import_jsx_runtime.jsx)(OutlineInline, {
+			Array.from(embedEl.children).forEach((child) => {
+				if (child instanceof HTMLElement && !child.classList.contains("vibe-outliner-mount-root")) {
+					child.classList.add("vibe-outliner-native-hidden");
+					child.style.display = "none";
+				}
+			});
+			const mountContainer = document.createElement("div");
+			mountContainer.className = "vibe-outliner-mount-root";
+			mountContainer.style.width = "100%";
+			mountContainer.style.height = "100%";
+			embedEl.appendChild(mountContainer);
+			mountOutline(mountContainer, ctx, /* @__PURE__ */ (0, import_jsx_runtime.jsx)(OutlineInline, {
 				app,
 				file: targetFile,
 				zoomNodeId: anchor?.trim(),
