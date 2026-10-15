@@ -41,8 +41,7 @@ views:
           - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/Workflowy_분석및적용.md
           - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/Spine_배포_스토리지_모듈화_아키텍처.md
           - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/(gen)Spine_모듈화_아키텍처_및_호스트_어댑터_설계_draft1.md
-        확인 필요:
-          - 1.🎯(Project) 프로젝트/🛖Scaffold_Manager_프로토타입_구현/역설계 일단 읽기.md
+        확인 필요: []
   - type: kanban-view
     name: 👤 Rin
     filters:

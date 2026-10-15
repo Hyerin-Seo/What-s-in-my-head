@@ -1,0 +1,872 @@
+{
+  "version": "1.0.0",
+  "id": "vLPdbcWtJwkn",
+  "title": "소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기",
+  "rootNodes": [
+    {
+      "id": "gEEac2CwHOdk",
+      "text": "🧬 0. 30개 레퍼런스를 꿰뚫는 [3대 종족 분류법 (Tribe)]",
+      "children": [
+        {
+          "id": "rCwdgrc9xkFa",
+          "text": "1종족. 극단적 자유파 (Workflowy, Figma, Heptabase) [모토: \"백지를 줄 테니 네 맘대로 날뛰어라\"]",
+          "children": [
+            {
+              "id": "tLE8ZpqRHncP",
+              "text": "압도적 장점: 파일·양식에 갇히지 않는 무한한 사고의 자유도",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "6IrP65VckGy6",
+              "text": "치명적 한계: 자유가 너무 높아 초보자는 빈 화면 앞에서 뇌정지(백지 공포) 발생",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "CGAH4TcetwYF",
+          "text": "2종족. 엄격한 규칙·슬롯파 (PandaDoc, Overleaf, Scrivener) [모토: \"틀과 토큰을 줄 테니 빈칸만 채워라\"]",
+          "children": [
+            {
+              "id": "EORwy46jEfgS",
+              "text": "압도적 장점: 비즈니스·학술 규격에 100% 부합하는 완벽한 문서 품질 보장",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "JQp6JC3JqKOw",
+              "text": "치명적 한계: 첫 진입장벽이 너무 높고 규칙이 숨 막혀 가벼운 아이디어 발상 불가",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "nKck1n9UjW77",
+          "text": "3종족. 레고 블록 조립파 (Notion, Puck, Framer) [모토: \"표준 블록을 줄 테니 위아래로 쌓아라\"]",
+          "children": [
+            {
+              "id": "fWQK2O5fkjoY",
+              "text": "압도적 장점: 드래그 앤 드롭으로 코딩 없이 예쁜 결과물을 뚝딱 조립",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "CdV57bbKSZjC",
+              "text": "치명적 한계: 서식 꾸미기와 블록 배치에 매몰되어 글의 논리 뼈대(아웃라인) 상실",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "5PfdDH5nuddG",
+          "text": "🛖 Scaffold Manager의 승부 포지션: 1종족(가벼운 불릿 시작) + 2종족(슬롯·점수판 검증) + AI 에이전트의 유일한 하이브리드",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1792047256316,
+      "updatedAt": 1792047256316
+    },
+    {
+      "id": "WzultsGqpVWF",
+      "text": "🏛️ 1. 80%의 전형성 측정표 (업계 표준선 카운팅)",
+      "children": [
+        {
+          "id": "JIwdcXXcyySM",
+          "text": "🦴 겉면(UI)을 찢은 3대 핵심 뼈대 (설계도 - Skeleton Architecture)",
+          "children": [
+            {
+              "id": "TqbjDOVPXq1t",
+              "text": "소속 종족 [객관식: 1.극단적 자유파 / 2.엄격한 규칙·슬롯파 / 3.레고 블록 조립파]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "fsgnOBNhGocd",
+              "text": "문서 구조 뼈대 [객관식: 1.단일 무한 트리 / 2.독립 파일·폴더 분리형 / 3.2D 무한 캔버스 / 4.관계형 DB 테이블]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "yKBcK2mWPuhL",
+              "text": "데이터 연결 뼈대 [객관식: 1.단방향 부모-자식 위계 / 2.양방향 링크(그래프) / 3.블록 실시간 미러(동기화) / 4.평면 좌표(X,Y)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "tYQDLoIptspE",
+              "text": "슬롯 규격 뼈대 [객관식: 1.자유 비정형 텍스트 / 2.정형 속성 슬롯(Key-Value) / 3.고정 템플릿 빈칸(토큰)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "mSPtvWDhage9",
+          "text": "생각의 최소 단위 (원자 형태와 용량)",
+          "children": [
+            {
+              "id": "rNNpLzzAdeoc",
+              "text": "최소 단위 형태 [객관식: 불릿 / 블록 / 카드 / 캔버스 / 문서]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "F2lYB57x0Nos",
+              "text": "1개 단위당 권장 글자 수 [수치: 자]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "7Y03fmzK1tY1",
+              "text": "한 화면(100% 줌) 동시 노출 단위 개수 [수치: 개]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "hYvYhVXKL2ly",
+          "text": "화면 분할과 조망 구조",
+          "children": [
+            {
+              "id": "RKGyrExBwcrq",
+              "text": "화면 면적 비율 [수치: 좌측 탐색기 % : 중앙 작업판 % : 우측 속성창 % (합계 100%)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "iC8bL5zv2PvU",
+              "text": "최대 지원 계층 깊이 [수치: Depth 레벨 수]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "ZVvKbCVbMLFO",
+              "text": "주력 인터랙션 방식 [객관식: 1.100% 키보드 단축키 중심 / 2.마우스 드래그앤드롭 중심 / 3.슬래시(/) 명령어 팝업 중심]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "Nnd0FTnnbXKD",
+          "text": "속도와 마찰 (백지 공포 해소력)",
+          "children": [
+            {
+              "id": "rSoHEXRh1wa0",
+              "text": "첫 결과물 생성까지 걸리는 시간 [수치: 초]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "CSvfIfT5A9VO",
+              "text": "첫 결과물 생성까지의 클릭 횟수 [수치: 회]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "A7aY6Z6ySMu0",
+              "text": "빈 슬롯(Placeholder) 가이드 방식 [객관식: 1.질문형 프롬프트 예시 / 2.회색 가이드 문장 / 3.필수 입력 경고 테두리 / 4.단순 커서 깜빡임]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "pWTUsIC3vcht",
+              "text": "키보드 단축키 커버리지 비율 [수치: %]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "WElsjAOn7cHf",
+          "text": "도파민 점수판 (진척도 피드백)",
+          "children": [
+            {
+              "id": "kNLoLtjfNtTO",
+              "text": "진행 상황 계측기 형태 [객관식: 단어·글자 수 카운터 / 체크박스 / 프로그레스 바 / 없음]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "KjbhNXiHWUeW",
+              "text": "조작 후 화면 반응 속도 [수치: 밀리초(ms)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1792047256316,
+      "updatedAt": 1792047256316
+    },
+    {
+      "id": "cmAs7agNsOTv",
+      "text": "🚀 2. 20%의 변주 측정표 (최적의 새로움 카운팅)",
+      "children": [
+        {
+          "id": "AJVDqo5iZMIE",
+          "text": "자유와 제약의 배합비",
+          "children": [
+            {
+              "id": "s2SH0UdN0Pwu",
+              "text": "사용자 자유 편집 영역 비율 [수치: %]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "D6pR60CyIasR",
+              "text": "시스템 고정·잠금 영역 비율 [수치: %] (자유 + 제약 = 100%)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "t7QzZeYzi53S",
+              "text": "규칙 위반 시 경고·오류창 발생 횟수 [수치: 회]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "ntzrCGzuKWhc",
+          "text": "단 하나의 시그니처 무기",
+          "children": [
+            {
+              "id": "HpEqzZfLHppt",
+              "text": "시그니처 인터랙션 1개 명칭 [단답형: 기능명 (예: 무한 줌인 / 양방향 링크 / 블록 D&D / 미러 동기화)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "3N48a7UJbuZC",
+              "text": "1시간 작업 중 시그니처 기능 발동 횟수 [수치: 회]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "Pe079PxGiOc1",
+              "text": "시그니처 기능 호출에 필요한 키 입력·클릭 수 [수치: 타수 또는 클릭 수]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "Lo05WDRXeOqs",
+          "text": "이종 도메인 교배 (뿌리 추적)",
+          "children": [
+            {
+              "id": "5KXqs2eEp8UP",
+              "text": "차용한 원본 도메인 [객관식: 소프트웨어 개발(Git/IDE) / 게임 / 영상·음향 / 법률·회계 / 위키백과]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "kTSUBQIrwzJh",
+              "text": "훔쳐온 핵심 메커니즘 1개 명칭 [단답형: 메커니즘명]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "mugA8kC6jJYq",
+          "text": "출처와 투명성 검증 (환각·오류 방지 장치)",
+          "children": [
+            {
+              "id": "RNMPJB1cDqfO",
+              "text": "슬롯 데이터의 근거·출처(Cite) 강제성 [객관식: 1.문단별 필수 강제 / 2.인라인 각주 지원 / 3.출처 기능 없음]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "J5hKUUrad2vx",
+              "text": "시스템 내장 검증 규칙(Validation Rule) 수 [수치: 팩트·서식 누락을 잡아내는 규칙 개수]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "CQ9xDIGNHSHr",
+          "text": "의도된 트레이드오프 (손익 계산서)",
+          "children": [
+            {
+              "id": "2P5MyURdwOAI",
+              "text": "극단적 90% 몰빵 장점 1개 [단답형: 특성명]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "CXUkyZlBZ7Ly",
+              "text": "그 대가로 쿨하게 버린 기능 1개 [단답형: 결핍 요소 (예: 서식 꾸미기 포기, 모바일 포기, 백지 자유도 포기)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1792047256316,
+      "updatedAt": 1792047256316
+    },
+    {
+      "id": "QbFfSK5Q07t8",
+      "text": "🤝 3. 인간 vs AI 분업비 측정표 (작업 지분율 & 검토 비용)",
+      "children": [
+        {
+          "id": "nRerFMniONjs",
+          "text": "단계별 작업 지분율 [합계 100%]",
+          "children": [
+            {
+              "id": "i6CNilVKB1Yi",
+              "text": "뼈대(목차·스캐폴드) 설계 [수치: 인간 % : 툴·AI % (합계 100%)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "r9ger6iXRmgB",
+              "text": "살(본문·슬롯) 채우기 [수치: 인간 % : 툴·AI % (합계 100%)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "PYWX1FQRw8Ai",
+              "text": "검증 및 퇴고(오타·팩트 체크) [수치: 인간 % : 툴·AI % (합계 100%)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "mIi0UQS1mwjT",
+          "text": "협업 파이프라인 정밀도",
+          "children": [
+            {
+              "id": "TPo3DuA2kgiU",
+              "text": "아웃라인 생성 방식 [객관식: 1.인간 100% 타이핑 / 2.인간 키워드 입력 후 AI 뼈대 제안 / 3.고정 템플릿 선택]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "Lw32mR0IdzOk",
+              "text": "AI 출력물 수용 방식(검토 피로도) [객관식: 1.통째로 붙여넣기 / 2.슬롯 단위 수락·거절(Diff) / 3.인라인 탭 자동완성]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "KCe2q0bAfHq6",
+              "text": "문서 1개당 AI에게 위임 가능한 정형 슬롯 개수 [수치: 개]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "7mKJHFOaX6Id",
+              "text": "인간의 최종 승인이 필요한 필수 관문(Gate) 개수 [수치: 개]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1792047256316,
+      "updatedAt": 1792047256316
+    },
+    {
+      "id": "OduFetaRacFH",
+      "text": "🎯 4. [원심분리기 실측] Workflowy (무한 줌인 아웃라이너)",
+      "children": [
+        {
+          "id": "OhE4k6K3ZJ1N",
+          "text": "🏛️ 1. 80%의 전형성 실측치",
+          "children": [
+            {
+              "id": "MmrKdgwTlR07",
+              "text": "겉면을 찢은 3대 핵심 뼈대: 1종족(극단적 자유파) / 단일 무한 트리 / 부모-자식 위계 + 실시간 블록 미러 / 자유 비정형 텍스트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "MbbvMkskR0C4",
+              "text": "생각의 최소 단위: 불릿 (Bullet Node) [1개 단위 권장: 10~40자 단문 / 한 화면 동시 노출: 30개]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "lRnkPaXuHLGl",
+              "text": "화면 분할과 조망: 탐색기 0%(접힘) : 중앙 작업판 100% : 속성창 0% [최대 깊이: 무한(Infinite) / 주력: 100% 키보드 단축키]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "FbhTWw3IiOgD",
+              "text": "조작 속도와 마찰: 첫 결과물까지 0.5초 / 클릭 0회(즉시 타이핑) / 가이드 방식: 단순 커서 깜빡임 / 키보드 커버리지: 95%",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "uamvLvyYhevd",
+              "text": "도파민 점수판: 취소선 체크박스(Ctrl+Enter) [반응 속도: 16ms 즉시 로컬 렌더링]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "YvH72iiNGmDF",
+          "text": "🚀 2. 20%의 변주 실측치",
+          "children": [
+            {
+              "id": "1XkfCQB2Y5jh",
+              "text": "자유와 제약 비율: 사용자 자유 90% vs 시스템 제약 10%(모든 데이터는 불릿 트리 강제) [위반 에러: 0회]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "BN2BPQceKBfd",
+              "text": "단 하나의 시그니처 무기: 무한 줌인(Click-to-Zoom) [1시간당 50회 발동 / 클릭 1회(불릿 점) 또는 Alt+→ 1타]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "jjLo7V7Ft6dD",
+              "text": "이종 도메인 교배: 개발 도메인의 UNIX 디렉토리 트리 (cd 명령어의 하위 폴더 진입 메커니즘을 줌인으로 시각화)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "JYHhQ3R5Ef5S",
+              "text": "출처와 투명성 검증: 출처 기능 없음(자유 텍스트) / 시스템 검증 규칙: 0개",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "CG1G3ZkOJKRd",
+              "text": "의도된 트레이드오프: 90% 몰빵(단일 무한 문서의 극단적 인지 집중) vs 쿨하게 버린 10%(인쇄 서식·표 레이아웃 완전 포기)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        },
+        {
+          "id": "vIi7coletr9T",
+          "text": "🤝 3. 인간 vs AI 분업비 실측치",
+          "children": [
+            {
+              "id": "A5POD7K6ZkxL",
+              "text": "단계별 지분율: 뼈대 설계(인간 100% : AI 0%) / 내용 채우기(인간 90% : AI 10%) / 검증(인간 100% : AI 0%)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            },
+            {
+              "id": "KiPxs7gQKKVP",
+              "text": "협업 파이프라인: 아웃라인 100% 인간 타이핑 / AI 수용: 인라인 탭 또는 별도 메뉴 / 위임 슬롯: 0개 / 필수 관문: 0개",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792047256316,
+              "updatedAt": 1792047256316
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792047256316,
+          "updatedAt": 1792047256316
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1792047256316,
+      "updatedAt": 1792047256316
+    },
+    {
+      "id": "9ihSWtZNGpkP",
+      "text": "🏗️ 5. 론 프리드먼의 《역설계》 ➔ Scaffold Manager 1:1 아키텍처 매칭 청사진",
+      "children": [
+        {
+          "id": "IpXCQG3yNmQ3",
+          "text": "1. [불패의 4단 조립 블록] ➔ Scaffold Manager의 '슬롯 파이프라인 (Recipe)'",
+          "children": [
+            {
+              "id": "Yu4L3hI5EB98",
+              "text": "원심분리기 공식: [일화(호기심)] ➔ [상식 파괴(죄책감 해소)] ➔ [과학적 원리(신뢰)] ➔ [수치 도구(실행)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "jg1GoSbN2IGf",
+              "text": "Scaffold Manager 4대 슬롯 파이프라인: Slot 1 [훅/맥락] ➔ Slot 2 [문제/결핍] ➔ Slot 3 [핵심 메커니즘] ➔ Slot 4 [행동/액션]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "7PPWXO1ED47K",
+              "text": "사용자 인지 전환: 글을 백지에서 쓰려고 애쓰지 않고, 80% 검증된 슬롯을 레고처럼 채우도록 통제감(Sense of Control) 부여",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "z6aMfvGlhLpf",
+              "text": "온보딩 가이드: \"1번 슬롯에 단어 하나만 던지세요. 나머지는 에이전트와 슬롯 시스템이 조립합니다\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792052546129,
+          "updatedAt": 1792052546129
+        },
+        {
+          "id": "Ca0k64jL2xwX",
+          "text": "2. [자유 vs 통제의 딜레마] ➔ 듀얼 뷰포트 (좌측 Linear 레일 ↔ 우측 Figma 샌드박스)",
+          "children": [
+            {
+              "id": "PskcoHdtDwtl",
+              "text": "론 프리드먼의 해법 (스파지아리 원칙): 버려진 창고(샌드박스)에서 모의 훈련하고, 실전에선 스톱워치 레일만 달린다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "KMPZvPQxREb8",
+              "text": "좌측 레일 (80% 엄격한 통제 / Linear + PandaDoc + Gaeddong Outliner): 절대로 레이아웃이 흐트러지지 않는 키보드 퍼스트 아웃라이너 (Tab, Enter 0ms 점프)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "A9ep9n2CgWTE",
+              "text": "우측 샌드박스 (20% 무한 자유 / Figma + Heptabase + AI Playground): 이미지, 링크, 거친 낙서 메모를 마구 던져두는 비선형적 2D 캔버스",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "aNlk60Llamhx",
+              "text": "결합 인터랙션 (Snap to Slot): 우측에서 굴러다니는 아이디어 조각을 좌측 슬롯으로 드래그하면 즉시 구조화된 텍스트로 바인딩(Binding)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792052546129,
+          "updatedAt": 1792052546129
+        },
+        {
+          "id": "Ca71XkpbuMYC",
+          "text": "3. [12대 레퍼런스 족보 엮기] ➔ 글쓰기 타임라인 순서로 결합된 단일 컨베이어 벨트",
+          "children": [
+            {
+              "id": "uxGOdZp1T38r",
+              "text": "1단계 [무한 발산 / 재료 수집] (Figma, Heptabase): 무한 캔버스에서 온갖 레퍼런스와 잡생각을 자유롭게 투척",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "VUb1R9HqJsrN",
+              "text": "2단계 [구조 추천 / 에이전트] (CopilotKit, DSPy): 에이전트가 흩어진 메모를 읽어 4대 슬롯에 들어갈 최적의 후보 3개 자동 추출",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "Bf4DlkVCTYpB",
+              "text": "3단계 [초고속 결정 / 인간 통제] (Linear, Workflowy): 마우스 없이 키보드(Enter 수락 / Esc 기각)로 0ms만에 뼈대 확정",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "AYQKCvq3ELFR",
+              "text": "4단계 [조판 & 무결성 / 완성] (PandaDoc, Overleaf): 확정된 아웃라인 슬롯이 흐트러짐 없는 A4/웹 최종본으로 실시간 렌더링",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792052546129,
+          "updatedAt": 1792052546129
+        },
+        {
+          "id": "CQUL0qNJtllw",
+          "text": "4. [구글 독스처럼 전 분야 적용] ➔ '인지적 인터페이스'의 메타 스키마 (Node-Slot-Binding)",
+          "children": [
+            {
+              "id": "faNgANhUkYq3",
+              "text": "구글 독스의 한계 극복: 단순 문단(Paragraph)을 넘어 '인지적 길잡이 슬롯'을 제공하여 백지의 공포 원천 차단",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "AIqE8XwpMuRs",
+              "text": "3계층 메타 데이터 모델: Recipe(문서 템플릿) ➔ SlotDefinition(슬롯 규격 & 검증) ➔ OutlinerNode(본문 바인딩 노드)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "2j7DH2p3foIC",
+              "text": "도메인 애그노스틱(Domain-Agnostic) 확장: 소설가(기승전결), PM(배경-문제-가설-지표), 개발자(요구사항-아키텍처-API-예외), 칼럼(일화-상식파괴-원리-행동)으로 레시피만 교체",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792052546129,
+          "updatedAt": 1792052546129
+        },
+        {
+          "id": "ldWldxPZqiie",
+          "text": "5. [사용자 설득 온보딩 전략] ➔ '글쓰기가 아니라, 4칸 레고 조립입니다'",
+          "children": [
+            {
+              "id": "hOSUGJebNJ87",
+              "text": "1단계 [죄책감 해소]: \"당신이 글을 못 쓰는 게 아닙니다. 백지(Empty Page)에서 시작하라는 에디터가 뇌를 마비시킨 것입니다\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "9x7BM7QM0IyN",
+              "text": "2단계 [통제감 부여]: \"빈 종이를 마주하지 마세요. 80% 뼈대 위에 오직 당신만의 20% 아이디어만 던지세요\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "lzekJICQe30o",
+              "text": "3단계 [즉각적 점수판]: \"슬롯 진척도 [도입: 완료 ➔ 문제: 완료 ➔ 원리: 작성중 ➔ 행동: 대기] (75% 완성)\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792052546129,
+          "updatedAt": 1792052546129
+        },
+        {
+          "id": "I8tqg9Q6x1uo",
+          "text": "6. [ProtoPie로 입증된 레퍼런스 챕터별 특화 관점]",
+          "children": [
+            {
+              "id": "MCweefk9RWhK",
+              "text": "ProtoPie의 정수: 1장 [비즈니스 설계도] (모바일/웹 UI ➔ 자동차/IoT 신시장 전이) + 3장 [최적의 새로움 MAYA] (80% 타임라인 + 20% 하드웨어 센서 트리거)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            },
+            {
+              "id": "J5GrzVWB4QoM",
+              "text": "Scaffold Manager 융합 공식: Heptabase(창고) ➔ Workflowy(1장 뼈대) ➔ PandaDoc(2장 슬롯) ➔ Linear(4장 점수판) ➔ ProtoPie(3장 변주)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792052546129,
+              "updatedAt": 1792052546129
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792052546129,
+          "updatedAt": 1792052546129
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792052546129,
+      "updatedAt": 1792052546129
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792042313649,
+  "updatedAt": 1792052634511
+}
