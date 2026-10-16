@@ -1,0 +1,206 @@
+{
+  "version": "1.0.0",
+  "id": "k9X4mP2vL1wQ",
+  "title": "2026.10.15_15분_공유회_산출물_TOC",
+  "rootNodes": [
+    {
+      "id": "n7B3zR8tY5uI",
+      "text": "[[2026.10.15 15분 공유회]] (아웃라이너 AI 협업 도그푸딩 회의)",
+      "children": [
+        {
+          "id": "d2E6sA9fG1hK",
+          "text": "🚨 [발단] AI 협업 실사용의 2대 병목 토로",
+          "children": [
+            {
+              "id": "p4L8kM1nO3vX",
+              "text": "발화자 3: \"AI가 모호하게 '다 굿굿' 무한 확산만 해줘서 매듭이 안 지어지고 선택 장애만 극대화된다\" (역설계·원심분리기 작업 고통)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            },
+            {
+              "id": "w9Q2rT5yU7iO",
+              "text": "발화자 1: \"95% 모르는 내용을 짤 때 와꾸는 잡았지만, 부분 디렉션과 레퍼런스 주입 타이밍이 막막했다\" (Immer 기술블로그 도그푸딩)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792070160000,
+          "updatedAt": 1792070160000
+        },
+        {
+          "id": "c1V5bN8mK2jH",
+          "text": "1. [수렴과 결정 장애 극복] 무한 확산 방지와 섹션별 체크완료·단일 수렴",
+          "children": [
+            {
+              "id": "x3Z7aS9dF2gH",
+              "text": "🎯 [[1.1_수렴을_무엇으로_받칠까_순서대로_줌_들어가_완료_치기냐_AI가_하나로_좁혀_주기냐]]",
+              "children": [
+                {
+                  "id": "q6W1eR4tY8uI",
+                  "text": "🧪 [선택 B] [[EXP09_선택_피로_차단용_AI_단일안_수렴_권고_및_근거_제시_에이전트_실험]] (다수 나열 대신 단일안+기각사유+자가비판 강제)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792070160000,
+                  "updatedAt": 1792070160000
+                },
+                {
+                  "id": "m2N5bV8cX1zA",
+                  "text": "🧪 [화면 내비게이션] [[EXP15_줌_인_포커스_유지용_좌측_사이드_목차_레일_인터랙션_프로토타입]] (줌 인 시에도 좌측 PPT형 1·2·3·4 목차 레일로 즉시 점프)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792070160000,
+                  "updatedAt": 1792070160000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792070160000,
+          "updatedAt": 1792070160000
+        },
+        {
+          "id": "h4J8kL2mN6bV",
+          "text": "2. [정밀 제어와 기준점 보호] 개발자 도구 수준의 노드 픽스(Lock) 및 인라인 Diff",
+          "children": [
+            {
+              "id": "v9C3xZ7aS1dF",
+              "text": "🎯 [[1.2_AI에_이_부분만_이렇게를_무엇으로_시킬까_골라_짚기_어노테이션_버전_비교]]",
+              "children": [
+                {
+                  "id": "y5U1iO4pA8sD",
+                  "text": "🧪 [선택 A] [[EXP10_아웃라인_다중_노드_동시_선택_및_일괄_AI_디렉션_프로토타입]] (Ctrl+클릭 비연속 멀티 셀렉션 & 일괄 지시) [picked]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792070160000,
+                  "updatedAt": 1792070160000
+                },
+                {
+                  "id": "f2G6hJ9kL3mN",
+                  "text": "🧪 [선택 B] [[EXP11_코드_편집기_스타일_아웃라인_인라인_Diff_대조_및_부분_승인_실험]] (Cursor식 인라인 Diff로 변경점 파악 독해 피로 80% 단축 및 노드별 Accept/Reject)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792070160000,
+                  "updatedAt": 1792070160000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            },
+            {
+              "id": "t7Y2uI5oP9aS",
+              "text": "🧪 [사후 논의 구체화] [[EXP08_노드_픽스_잠금_및_영역_지정_다중_버전_생성_프로토타입]] (확정 노드는 인용 블록 핀 꽂기로 불변 고정 + 미확정 영역만 3개 버전 분기)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792070160000,
+          "updatedAt": 1792070160000
+        },
+        {
+          "id": "r4E8wQ1tY6uI",
+          "text": "3. [지식 체화와 레퍼런스 사양화] 도서 저자 페르소나와 인플라이트(In-flight) 역주입",
+          "children": [
+            {
+              "id": "z3X7cV2bN6mK",
+              "text": "🎯 [[1.3_책을_넣으면_작가_페르소나까지_입힐까]]",
+              "children": [
+                {
+                  "id": "b9N4mV1cX5zZ",
+                  "text": "🧪 [[EXP12_책_원문_장절_근거_기반_저자_페르소나_롤플레이_인터뷰_에이전트_실험]] (원문 장·절 Citation 부착 저자 롤플레이 인터뷰어)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792070160000,
+                  "updatedAt": 1792070160000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            },
+            {
+              "id": "k2J6hG9fD3sA",
+              "text": "🎯 [[1.4_레퍼런스를_어디까지_쓸까_느낌만이냐_뼈대까지냐_찾기는_누구_몫이냐]]",
+              "children": [
+                {
+                  "id": "p8O3iU7yT1rE",
+                  "text": "🧪 [[EXP13_작업_중간_단계_역방향_레퍼런스_주입_및_밀도_구성_스타일_추출_실험]] (3-노드 앵커 후 역주입 + 텍스트 탈락 3대 스타일 DNA 추출)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792070160000,
+                  "updatedAt": 1792070160000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792070160000,
+          "updatedAt": 1792070160000
+        },
+        {
+          "id": "a5S9dF2gH7jK",
+          "text": "4. [작업 공간의 청정도 유지] 캔버스 시각 오염 방지와 실시간 서식 스캔",
+          "children": [
+            {
+              "id": "m1N6bV9cX3zA",
+              "text": "🎯 [[1.6_작업_화면을_무엇으로_받칠까_옆_미리보기냐_캔버스냐_바로_붙이기냐]]",
+              "children": [
+                {
+                  "id": "u8I2oP5aS9dF",
+                  "text": "🧪 [[EXP14_AI_캔버스_시각_오염_방지를_위한_작업_영역_격리_및_클린_뷰_프로토타입]] (인간 캔버스와 AI 고스트 드로어 2중 레이어 격리)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792070160000,
+                  "updatedAt": 1792070160000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            },
+            {
+              "id": "t4R8eW1qY6uI",
+              "text": "🎯 [[1.5_모르는_내용을_쓸_때_읽는_사람_눈과_사실_확인을_무엇으로_할까]]",
+              "children": [
+                {
+                  "id": "h7J2kL5mN9bV",
+                  "text": "🧪 [검증 과제] 아웃라인 트리와 최종 독자 출판물 서식(WYSIWYG) 실시간 스캔 분할 뷰 연동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792070160000,
+                  "updatedAt": 1792070160000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792070160000,
+              "updatedAt": 1792070160000
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792070160000,
+          "updatedAt": 1792070160000
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792070160000,
+      "updatedAt": 1792070160000
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792070160000,
+  "updatedAt": 1792070160000
+}
