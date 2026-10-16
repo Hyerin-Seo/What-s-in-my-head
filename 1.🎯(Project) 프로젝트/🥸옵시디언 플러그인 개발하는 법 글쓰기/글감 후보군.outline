@@ -1233,7 +1233,7 @@
                                   "updatedAt": 1792037961968
                                 }
                               ],
-                              "isFolded": true,
+                              "isFolded": false,
                               "createdAt": 1792034352406,
                               "updatedAt": 1792050268228
                             },
@@ -1379,7 +1379,7 @@
                                   "updatedAt": 1792050128346
                                 }
                               ],
-                              "isFolded": true,
+                              "isFolded": false,
                               "createdAt": 1792048691300,
                               "updatedAt": 1792050343741
                             },
@@ -1735,7 +1735,7 @@
                                   "updatedAt": 1792051823307
                                 }
                               ],
-                              "isFolded": true,
+                              "isFolded": false,
                               "createdAt": 1792034352406,
                               "updatedAt": 1792051823307
                             },
@@ -2601,5 +2601,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791886528919,
-  "updatedAt": 1792052912713
+  "updatedAt": 1792122648657
 }
