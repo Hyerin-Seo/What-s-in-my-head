@@ -36,7 +36,7 @@
 
 ---
 
-*주요 레퍼런스* - [[(web&강추)GitHub]] Commit & Pull Request Diff (초록/빨강 변경점 대조) · GitKraken / 캔버스 브랜치 시각화
+*주요 레퍼런스* - [[(web&강추)GitHub]] Commit & Pull Request Diff (초록/빨강 변경점 대조) · GitKraken / 캔버스 브랜치 시각화 [[#^c-mvafrz4g|💬]]
 
 ### EXP07 — 아웃라이너 Git 사상 이식 (로컬 스테이징 · 인라인 Diff 대조 · 브랜치 캔버스 시각화)
 
@@ -74,3 +74,11 @@
 > - **미니 히스토리 서랍 롤백**: 수락 후에도 우측 미니 서랍에서 이전 스냅샷을 열어 언제든 단일 노드 롤백 가능
 
 ---
+
+## 💬 코멘트
+
+> [!comment]+ 💬 *주요 레퍼런스* - (web&강추)GitHub Commit & Pull Request Diff (초록/빨강…
+> **Rin** · 2026-10-16 12:57
+> 아니 래퍼런스 목록에 git이 없쟌소!!! 링크가 비어있잖소 심지어!!!!!! @민규서 @민규서
+
+^c-mvafrz4g
