@@ -6,27 +6,27 @@
 <text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">글감 후보군</text>
 <circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
 <text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📌 옵시디언 플러그인 개발 글쓰기 — 다각적 글감 후보군</text>
-<circle cx="58" cy="127" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="127" r="4.5" fill="#7c5cff"/>
+<circle cx="58" cy="127" r="4.5" fill="#3a3a40"/>
 <text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🎯 1. 의사결정 &amp; 전략 관점 (Decision-Making : 헛고생하…</text>
-<circle cx="58" cy="160" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="160" r="4.5" fill="#7c5cff"/>
-<text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🧭 2. 생태계 레퍼런스 &amp; 나침반 관점 (Ecosystem : 공인 자…</text>
-<circle cx="58" cy="193" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="193" r="4.5" fill="#7c5cff"/>
-<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🛡️ 3. 로컬 개발 환경 &amp; 엔지니어링 DX 관점 (Developer Wo…</text>
-<circle cx="58" cy="226" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="226" r="4.5" fill="#7c5cff"/>
-<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📦 4. 커뮤니티 플러그인 등록 &amp; 공식 규격 관점 (Registry…</text>
-<circle cx="58" cy="259" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="259" r="4.5" fill="#7c5cff"/>
-<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🚀 5. 실전 프로젝트 케이스 스터디 (Case Study : 나만의…</text>
-<circle cx="58" cy="292" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="292" r="4.5" fill="#7c5cff"/>
-<text x="75" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🏗️ 6. 옵시디언 시스템 &amp; 프레임워크 아키텍처 관점 (Syste…</text>
-<circle cx="58" cy="325" r="4.5" fill="#3a3a40"/>
-<text x="75" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">⚙️ 7. 에디터 인터랙션 및 키보드 트리 제어 (Editor Inter…</text>
-<circle cx="82" cy="358" r="4.5" fill="#3a3a40"/>
-<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1️⃣ 계층형 트리 상태 머신과 정규화 불변 모델 (Tree Sta…</text>
+<circle cx="82" cy="160" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="160" r="4.5" fill="#7c5cff"/>
+<text x="99" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1️⃣ 문제 해결의 에스컬레이션 사다리 (Escalation Ladd…</text>
+<circle cx="82" cy="193" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="193" r="4.5" fill="#7c5cff"/>
+<text x="99" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2️⃣ 플러그인 개발의 기회비용과 ROI</text>
+<circle cx="58" cy="226" r="4.5" fill="#3a3a40"/>
+<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🧭 2. 생태계 레퍼런스 &amp; 나침반 관점 (Ecosystem : 공인 자…</text>
+<circle cx="82" cy="259" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="259" r="4.5" fill="#7c5cff"/>
+<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1️⃣ 공식 1차 자료 지도 (Primary Sources Navigation)</text>
+<circle cx="82" cy="292" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="292" r="4.5" fill="#7c5cff"/>
+<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2️⃣ 디스코드 커뮤니티 실전 공략 (#plugin-dev 활용술)</text>
+<circle cx="82" cy="325" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="325" r="4.5" fill="#7c5cff"/>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">3️⃣ 비공식 위키 &amp; 포럼 백과사전 (Obsidian Hub &amp; Forum…</text>
+<circle cx="82" cy="358" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="358" r="4.5" fill="#7c5cff"/>
+<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">4️⃣ 1,500개 오픈소스 플러그인 레퍼런스 발굴술 (Code…</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>

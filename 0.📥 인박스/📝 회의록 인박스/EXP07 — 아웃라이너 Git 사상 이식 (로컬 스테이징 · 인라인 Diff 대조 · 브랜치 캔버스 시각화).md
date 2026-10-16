@@ -36,7 +36,7 @@
 
 ---
 
-*주요 레퍼런스* - [[(web&강추)GitHub]] Commit & Pull Request Diff (초록/빨강 변경점 대조) · GitKraken / 캔버스 브랜치 시각화 [[#^c-mvafrz4g|💬]]
+*주요 레퍼런스* - [[(web&강추)Git]] Commit & Pull Request Diff (초록/빨강 변경점 대조) · GitKraken / 캔버스 브랜치 시각화 [[#^c-mvafrz4g|💬]]
 
 ### EXP07 — 아웃라이너 Git 사상 이식 (로컬 스테이징 · 인라인 Diff 대조 · 브랜치 캔버스 시각화)
 

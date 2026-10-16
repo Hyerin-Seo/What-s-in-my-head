@@ -28,7 +28,7 @@
               "updatedAt": 1792047256316
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792047256316,
           "updatedAt": 1792047256316
         },
@@ -53,7 +53,7 @@
               "updatedAt": 1792047256316
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792047256316,
           "updatedAt": 1792047256316
         },
@@ -78,7 +78,7 @@
               "updatedAt": 1792047256316
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792047256316,
           "updatedAt": 1792047256316
         },
@@ -91,7 +91,7 @@
           "updatedAt": 1792047256316
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1792047256316,
       "updatedAt": 1792047256316
     },
@@ -136,7 +136,7 @@
               "updatedAt": 1792047256316
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792047256316,
           "updatedAt": 1792047256316
         },
@@ -169,7 +169,7 @@
               "updatedAt": 1792047256316
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792047256316,
           "updatedAt": 1792047256316
         },
@@ -202,7 +202,7 @@
               "updatedAt": 1792047256316
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792047256316,
           "updatedAt": 1792047256316
         },
@@ -243,7 +243,7 @@
               "updatedAt": 1792047256316
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792047256316,
           "updatedAt": 1792047256316
         },
@@ -268,12 +268,12 @@
               "updatedAt": 1792047256316
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792047256316,
           "updatedAt": 1792047256316
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1792047256316,
       "updatedAt": 1792047256316
     },
@@ -423,7 +423,7 @@
           "updatedAt": 1792047256316
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1792047256316,
       "updatedAt": 1792047256316
     },
@@ -506,7 +506,7 @@
           "updatedAt": 1792047256316
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1792047256316,
       "updatedAt": 1792047256316
     },
@@ -643,8 +643,140 @@
       "updatedAt": 1792047256316
     },
     {
+      "id": "K9TD416zftTO",
+      "text": "🎯 5. [원심분리기 실측] Git (체크포인트 · 인라인 Diff · 캔버스 브랜칭)",
+      "children": [
+        {
+          "id": "p7nEZM1wK594",
+          "text": "🏛️ 1. 80%의 전형성 실측치",
+          "children": [
+            {
+              "id": "o9ZgX21iF5Zs",
+              "text": "겉면을 찢은 3대 핵심 뼈대: 3종족(레고 조립 & 안전망·통제파) / DAG(단방향 비순환 그래프) / 부모-자식 커밋 스냅샷 체인",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "QA9Rj5CUnwB5",
+              "text": "생각의 최소 단위: Commit 및 Hunk (변경 텍스트 조각) [1개 단위 권장: 노드/단락 단위 / 한 화면 동시 노출: Diff 대조선]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "j73C0dGhlAcR",
+              "text": "화면 분할과 조망: 작업 영역(아웃라인) 50% : 인라인 Diff 대조 50% [최대 브랜치 깊이: 무한 / 주력: 키보드 단축키 + 원클릭 채택]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "RTdcXmPgdE0J",
+              "text": "조작 속도와 마찰: 변경 감지 0ms / Diff 렌더링 즉시 발생 / 조작 방식: 인라인 취소선·하이라이트 / 키보드 커버리지: 90%",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "RfsYQj6Q5pH1",
+              "text": "도파민 점수판: [✓ Accept] 채택 시 녹색 하이라이트가 깔끔한 본문 텍스트로 찰칵 스냅 고정 [반응 속도: 16ms 즉시 로컬 렌더링]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792132819331,
+          "updatedAt": 1792132819331
+        },
+        {
+          "id": "p2BULLcb6I7u",
+          "text": "🚀 2. 20%의 변주 실측치",
+          "children": [
+            {
+              "id": "79zC4ov9iNsZ",
+              "text": "자유와 제약 비율: 사용자 자유 80% vs 시스템 제약 20%(체크포인트 이전 상태는 절대 손상되지 않는 불변성 보장)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "tEQyNhwSoEtn",
+              "text": "단 하나의 시그니처 무기: 초록/빨강 인라인 Diff + 노드 단위 체리픽 부분 승인 [전체 재독서 피로도 제로화]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "uAjmMbDtl8yo",
+              "text": "이종 도메인 교배: 개발자의 VCS(코드 형상 관리) 사상 ➔ 비전형적 텍스트 글쓰기 및 목차 기획 인터페이스로 전이",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "99fq78suVWr7",
+              "text": "출처와 투명성 검증: 변경 이력(누가, 언제, 왜 바꿨는가)의 100% 추적 가능성 [EXP07 / EXP08 / EXP11 연결]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "6zBbV4ILC8oL",
+              "text": "의도된 트레이드오프 (린의 설계 피드백): 90% 몰빵(명시적 체크포인트 커밋 중심의 확실한 안전망) vs 쿨하게 버린 10%(모든 타이핑의 마이크로 자동저장 배제)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792132819331,
+          "updatedAt": 1792132819331
+        },
+        {
+          "id": "HiJiXwNp0jF4",
+          "text": "🤝 3. 인간 vs AI 분업비 실측치",
+          "children": [
+            {
+              "id": "CO1CpHBxK9Bd",
+              "text": "단계별 지분율: 뼈대 기획(인간 80% : AI 20%) / 대안 발산(인간 20% : AI 80%) / 최종 채택·검증(인간 100% : AI 0%)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            },
+            {
+              "id": "s6px0dXY9LTM",
+              "text": "협업 파이프라인: AI는 Pull Request 제안자(초록/빨강 Diff 제안) / 인간은 Code Reviewer(Accept/Reject 게이트 승인) / 보호 앵커: 노드 픽스(Ctrl+L)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792132819331,
+              "updatedAt": 1792132819331
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792132819331,
+          "updatedAt": 1792132819331
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792132819331,
+      "updatedAt": 1792132819331
+    },
+    {
       "id": "9ihSWtZNGpkP",
-      "text": "🏗️ 5. 론 프리드먼의 《역설계》 ➔ Scaffold Manager 1:1 아키텍처 매칭 청사진",
+      "text": "🏗️ 6. 론 프리드먼의 《역설계》 ➔ Scaffold Manager 1:1 아키텍처 매칭 청사진",
       "children": [
         {
           "id": "IpXCQG3yNmQ3",
@@ -861,12 +993,12 @@
           "updatedAt": 1792052546129
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1792052546129,
       "updatedAt": 1792052546129
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792042313649,
-  "updatedAt": 1792058372450
+  "updatedAt": 1792132819331
 }
