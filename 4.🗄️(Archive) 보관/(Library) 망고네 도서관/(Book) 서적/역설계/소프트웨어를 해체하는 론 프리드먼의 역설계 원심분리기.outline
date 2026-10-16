@@ -91,7 +91,7 @@
           "updatedAt": 1792047256316
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1792047256316,
       "updatedAt": 1792047256316
     },
@@ -273,7 +273,7 @@
           "updatedAt": 1792047256316
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1792047256316,
       "updatedAt": 1792047256316
     },
@@ -423,7 +423,7 @@
           "updatedAt": 1792047256316
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1792047256316,
       "updatedAt": 1792047256316
     },
@@ -506,7 +506,7 @@
           "updatedAt": 1792047256316
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1792047256316,
       "updatedAt": 1792047256316
     },
@@ -868,5 +868,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1792042313649,
-  "updatedAt": 1792052634511
+  "updatedAt": 1792058372450
 }
