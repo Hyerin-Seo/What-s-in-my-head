@@ -62,7 +62,7 @@
               "updatedAt": 1791892014128
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791886528919,
           "updatedAt": 1791894132716
         },
@@ -171,7 +171,7 @@
               "updatedAt": 1791889900000
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "note": "💡 [관점 정의] : 파편화된 인터넷 자료에 휘둘리지 않고, 신뢰할 수 있는 공식 1차 자료 맵과 글로벌 커뮤니티 집단지성을 200% 활용하여 막힘없이 개발하는 관점",
           "createdAt": 1791886528919,
           "updatedAt": 1791971340820
@@ -289,7 +289,7 @@
               "updatedAt": 1791890000000
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791886528919,
           "updatedAt": 1791894063356
         },
@@ -406,7 +406,7 @@
               "updatedAt": 1791891225113
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791886528919,
           "updatedAt": 1791891219322
         },
@@ -564,7 +564,7 @@
               "updatedAt": 1791893731258
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791891300000,
           "updatedAt": 1791894541076
         },
@@ -723,7 +723,7 @@
               "updatedAt": 1791892900000
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "note": "💡 [관점 정의] : 옵시디언 최상위 App 싱글톤 객체가 직접 거느리는 6대 공인 프로퍼티(Workspace, Vault, MetadataCache, FileManager, Keymap, Scope)의 책임 분리와 상호작용 메커니즘을 컴퓨터 공학적으로 완벽히 해부하는 총론 관점",
           "createdAt": 1791892900000,
           "updatedAt": 1791939759004

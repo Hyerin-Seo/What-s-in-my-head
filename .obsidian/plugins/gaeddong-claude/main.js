@@ -4648,6 +4648,101 @@ function canvasPreviewSvg(json) {
   return out.join("\n") + "\n";
 }
 
+/* ── 아웃라인 미리보기 그림 ───────────────────────────────────
+   아웃라인 노트도 본문이 `![[x.outline]]` 하나라 칸반 카드가 글자만 떴습니다 (2026-10-16 민규 서).
+   캔버스와 같은 방식으로 `.outline` 파일(JSON 트리)을 읽어 미리보기처럼 **제목 + 불릿 목록**을
+   SVG 로 그립니다. 캔버스와 달리 글자를 그립니다 — 아웃라인은 글자가 곧 모양입니다.
+   접힌 노드의 자식은 안 그리고(미리보기와 같음), 판에 들어가는 줄까지만 그린 뒤 아래를 흐립니다. */
+const OUTLINE_COVER_TAIL = " (아웃라인 미리보기).svg";
+const SVG_FONT = "'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif";
+function xmlEsc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+/** 마크다운 꾸밈을 걷고 보이는 글자만 */
+function outlinePlain(t) {
+  return String(t || "")
+    .replace(/!\[\[[^\]]*\]\]/g, "").replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/\[\[([^\]|]*)\|([^\]]*)\]\]/g, "$2")
+    .replace(/\[\[([^\]]*)\]\]/g, (m, a) => a.split("#")[0].split("/").pop().replace(/\.md$/, ""))
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/(\*\*|__|~~|==)(.+?)\1/g, "$2").replace(/`([^`]*)`/g, "$1")
+    .replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+}
+/** 글자 폭 어림 (em) — 한글·한자는 1, 이모지는 조금 더, 라틴은 반쯤 */
+function charEm(ch) {
+  const c = ch.codePointAt(0);
+  if (c === 0x200d || (c >= 0xfe00 && c <= 0xfe0f)) return 0;
+  if (c >= 0x1f000 || (c >= 0x2600 && c <= 0x27bf)) return 1.15;
+  if ((c >= 0x1100 && c <= 0x11ff) || (c >= 0x2e80 && c <= 0x9fff) || (c >= 0xac00 && c <= 0xd7af) ||
+      (c >= 0xf900 && c <= 0xfaff) || (c >= 0xff00 && c <= 0xffef)) return 1;
+  if (ch === " ") return 0.3;
+  return /[A-Z0-9]/.test(ch) ? 0.62 : 0.52;
+}
+function fitText(s, px, size) {
+  const max = px / size;
+  let w = 0, out = "";
+  for (const ch of s) {
+    w += charEm(ch);
+    if (w > max - 1) return out.trimEnd() + "…";
+    out += ch;
+  }
+  return out;
+}
+function outlinePreviewSvg(json, fallbackTitle) {
+  let d;
+  try { d = JSON.parse(json); } catch (e) { return null; }
+  const roots = d && Array.isArray(d.rootNodes) ? d.rootNodes : [];
+  if (!roots.length) return null;
+  const W = 600, H = 400, PAD = 26, HEAD = 66, TOP = HEAD + 34, LH = 33, FS = 18, IND = 24;
+  const maxRows = Math.floor((H - TOP + LH - 14) / LH);
+  const rows = [];
+  (function walk(ns, depth) {
+    for (const n of ns) {
+      if (rows.length >= maxRows) return;
+      const kids = Array.isArray(n.children) ? n.children : [];
+      rows.push({ n, depth, kids: kids.length, folded: !!n.isFolded && kids.length > 0 });
+      if (!n.isFolded) walk(kids, depth + 1);
+    }
+  })(roots, 0);
+
+  const out = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + W + " " + H + '" width="' + W + '" height="' + H + '">',
+    '<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>' +
+      '<stop offset="1" stop-color="#fff"/></linearGradient></defs>',
+    '<rect width="' + W + '" height="' + H + '" fill="#ffffff"/>',
+    '<rect width="' + W + '" height="' + HEAD + '" fill="#f6f6f8"/>',
+    '<line x1="0" y1="' + HEAD + '" x2="' + W + '" y2="' + HEAD + '" stroke="#e4e4e8"/>',
+    '<text x="' + PAD + '" y="' + (HEAD / 2 + 9) + '" font-family="' + SVG_FONT + '" font-size="25" font-weight="700" fill="#1f1f24">' +
+      xmlEsc(fitText(outlinePlain(d.title || fallbackTitle || ""), W - 2 * PAD, 25)) + "</text>"];
+
+  rows.forEach((row, i) => {
+    const y = TOP + i * LH, bx = PAD + 8 + row.depth * IND, tx = bx + 17;
+    const n = row.n;
+    if (n.nodeType === "divider") {
+      out.push('<line x1="' + bx + '" y1="' + (y - 6) + '" x2="' + (W - PAD) + '" y2="' + (y - 6) + '" stroke="#d4d4da" stroke-width="1.5"/>');
+      return;
+    }
+    const done = n.isCompleted === true;
+    if (n.nodeType === "todo" || n.isCompleted !== undefined) {
+      out.push('<rect x="' + (bx - 6.5) + '" y="' + (y - 13) + '" width="13" height="13" rx="3" fill="' + (done ? "#7c5cff" : "none") +
+        '" stroke="' + (done ? "#7c5cff" : "#9a9aa3") + '" stroke-width="1.5"/>');
+      if (done) out.push('<path d="M' + (bx - 3.5) + " " + (y - 6.5) + " l2.5 2.5 l4.5 -5" + '" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>');
+    } else if (row.folded) {
+      out.push('<circle cx="' + bx + '" cy="' + (y - 6) + '" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>');
+      out.push('<circle cx="' + bx + '" cy="' + (y - 6) + '" r="4.5" fill="#7c5cff"/>');
+    } else {
+      out.push('<circle cx="' + bx + '" cy="' + (y - 6) + '" r="' + (row.kids ? 4.5 : 3) + '" fill="' + (row.kids ? "#3a3a40" : "#9a9aa3") + '"/>');
+    }
+    const text = fitText(outlinePlain(n.text), W - PAD - tx, FS);
+    if (text) {
+      out.push('<text x="' + tx + '" y="' + y + '" font-family="' + SVG_FONT + '" font-size="' + FS + '" fill="' + (done ? "#9a9aa3" : "#2b2b31") + '"' +
+        (done ? ' text-decoration="line-through"' : "") + ">" + xmlEsc(text) + "</text>");
+    }
+  });
+  out.push('<rect x="0" y="' + (H - 48) + '" width="' + W + '" height="48" fill="url(#f)"/>');
+  out.push("</svg>");
+  return out.join("\n") + "\n";
+}
+
 class CoverMod extends Mod {
   constructor(plugin) {
     super(plugin, "cover");
@@ -4744,27 +4839,31 @@ class CoverMod extends Mod {
     return null;
   }
 
-  /** 본문에 끼워 넣은 첫 캔버스 — 캔버스 노트가 이 모양입니다 */
+  /** 본문에 끼워 넣은 첫 캔버스·아웃라인 — 캔버스 노트·아웃라인 노트가 이 모양입니다 */
   firstCanvas(file) {
     const cache = this.app.metadataCache.getFileCache(file) || {};
     for (const em of cache.embeds || []) {
       const dest = this.app.metadataCache.getFirstLinkpathDest(
         em.link.split("#")[0], file.path);
-      if (dest && dest.extension === "canvas") return dest;
+      if (dest && (dest.extension === "canvas" || dest.extension === "outline")) return dest;
     }
     return null;
   }
 
   canvasCoverPath(cv) {
     const dir = cv.parent && cv.parent.path && cv.parent.path !== "/" ? cv.parent.path + "/" : "";
-    return normalizePath(dir + ATT_SUBDIR + "/" + cv.basename + CANVAS_COVER_TAIL);
+    return normalizePath(dir + ATT_SUBDIR + "/" + cv.basename +
+      (cv.extension === "outline" ? OUTLINE_COVER_TAIL : CANVAS_COVER_TAIL));
   }
 
-  /** 캔버스 미리보기 그림을 만들거나 새로 그립니다. 그릴 게 없으면(빈 캔버스) null */
+  /** 캔버스·아웃라인 미리보기 그림을 만들거나 새로 그립니다. 그릴 게 없으면(빈 파일) null */
   async canvasCover(cv) {
     if (!(cv instanceof TFile)) return null;
     let svg = null;
-    try { svg = canvasPreviewSvg(await this.app.vault.read(cv)); } catch (e) { return null; }
+    try {
+      const raw = await this.app.vault.read(cv);
+      svg = cv.extension === "outline" ? outlinePreviewSvg(raw, cv.basename) : canvasPreviewSvg(raw);
+    } catch (e) { return null; }
     if (!svg) return null;
     const path = this.canvasCoverPath(cv);
     const had = this.app.vault.getAbstractFileByPath(path);
@@ -4781,7 +4880,7 @@ class CoverMod extends Mod {
 
   queueCanvas(file) {
     if (!this.settings.auto || this.settings.canvas === false) return;
-    if (!(file instanceof TFile) || file.extension !== "canvas") return;
+    if (!(file instanceof TFile) || (file.extension !== "canvas" && file.extension !== "outline")) return;
     const key = "canvas:" + file.path;
     clearTimeout(this.timers.get(key));
     this.timers.set(key, setTimeout(() => {
@@ -4828,7 +4927,7 @@ class CoverMod extends Mod {
     }
 
     let img = this.firstImage(file);
-    // 이미지는 없는데 캔버스가 끼워져 있으면 (캔버스 노트) 그 미리보기 그림을 만들어 씁니다
+    // 이미지는 없는데 캔버스·아웃라인이 끼워져 있으면 (캔버스·아웃라인 노트) 그 미리보기 그림을 만들어 씁니다
     if (!img && this.settings.canvas !== false) img = await this.canvasCover(this.firstCanvas(file));
     if (!img) return this.why(caller, "본문에 이미지가 없음 — 비워 둡니다");
 
@@ -4896,9 +4995,10 @@ CoverMod.prototype.displaySettings = function (c) {
     }));
 
   new Setting(c)
-    .setName("캔버스 노트는 캔버스 미리보기를 커버로")
-    .setDesc("본문에 이미지는 없고 캔버스가 끼워져 있으면, 캔버스의 블록 지도를 그림으로 만들어 " +
-             "`이미지/<캔버스 이름> (캔버스 미리보기).svg` 에 두고 커버에 넣습니다. 캔버스를 고치면 그림도 새로 그립니다.")
+    .setName("캔버스·아웃라인 노트는 미리보기를 커버로")
+    .setDesc("본문에 이미지는 없고 캔버스나 아웃라인이 끼워져 있으면, 캔버스는 블록 지도를, 아웃라인은 제목과 불릿 목록을 " +
+             "그림으로 만들어 `이미지/<이름> (캔버스 미리보기).svg` · `(아웃라인 미리보기).svg` 에 두고 커버에 넣습니다. " +
+             "원본을 고치면 그림도 새로 그립니다.")
     .addToggle((t) => t.setValue(s.canvas !== false).onChange(async (v) => {
       s.canvas = v; await this.save();
     }));
@@ -6354,7 +6454,7 @@ const DEFAULTS = {
     auto: true,
     fillOnStart: true,   // 켤 때 밀린 것을 한 번 채운다
     fixBroken: true,     // 없는 파일을 가리키는 커버는 비어 있는 것으로 본다
-    canvas: true,        // 캔버스 노트는 캔버스 미리보기 그림을 만들어 커버로 (2026-10-02)
+    canvas: true,        // 캔버스·아웃라인 노트는 미리보기 그림을 만들어 커버로 (캔버스 2026-10-02 · 아웃라인 10-16)
     notice: false,       // 조용히 채웁니다
     exclude: ["!🏠 홈", "3.📦(Resource) 자료/!Template"],
   },
