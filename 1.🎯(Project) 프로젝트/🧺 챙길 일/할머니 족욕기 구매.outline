@@ -1,0 +1,822 @@
+{
+  "version": "1.0.0",
+  "id": "uFlbkhIzc860",
+  "title": "할머니 족욕기 구매",
+  "rootNodes": [
+    {
+      "id": "cJlfOS9ljdVk",
+      "text": "족욕기 구매 시 고려 요소",
+      "children": [
+        {
+          "id": "Oume4iO3OXG0",
+          "text": "1. 설치 공간 및 규격",
+          "children": [
+            {
+              "id": "oismgAySDXMd",
+              "text": "가로, 세로, 높이",
+              "children": [],
+              "createdAt": 1792292001365,
+              "updatedAt": 1792292006290
+            },
+            {
+              "id": "b6pmWE9G8ude",
+              "text": "무게 및 용량",
+              "children": [],
+              "createdAt": 1792292006910,
+              "updatedAt": 1792292753800
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792291573407,
+          "updatedAt": 1792291781822
+        },
+        {
+          "id": "9euvE7csWCWa",
+          "text": "2. 전원 및 에너지 소모",
+          "children": [
+            {
+              "id": "kFQ5XPuFtQoP",
+              "text": "전원 공급 방식",
+              "children": [
+                {
+                  "id": "Fv1vJUzWyVWK",
+                  "text": "유선 직결 vs 무선 배터리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792293060429,
+                  "updatedAt": 1792293060429
+                },
+                {
+                  "id": "xHck1dwbJjB4",
+                  "text": "전원 코드선 길이",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792293060429,
+                  "updatedAt": 1792293060429
+                },
+                {
+                  "id": "vTKPALxOQnSr",
+                  "text": "착탈식(분리형) 전원 코드 유무",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792293060429,
+                  "updatedAt": 1792293060429
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792293060429,
+              "updatedAt": 1792293060429
+            },
+            {
+              "id": "Aoyl49Fe0U6C",
+              "text": "소비전력 및 유지비",
+              "children": [
+                {
+                  "id": "ry3G3VmbNzO3",
+                  "text": "정격 소비전력(W)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792293060429,
+                  "updatedAt": 1792293060429
+                },
+                {
+                  "id": "LEgmSkzx5RMD",
+                  "text": "월 예상 전기요금",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792293060429,
+                  "updatedAt": 1792293060429
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792293060429,
+              "updatedAt": 1792293060429
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792291573407,
+          "updatedAt": 1792293060429
+        },
+        {
+          "id": "Jlcz5gpz6cpL",
+          "text": "3. 제공 기능",
+          "children": [
+            {
+              "id": "szMpz8rP5JqJ",
+              "text": "배수 및 이동 편의성",
+              "children": [
+                {
+                  "id": "WMOMSczhrMn2",
+                  "text": "하단 배수 밸브/호스 유무",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                },
+                {
+                  "id": "Q9pMxV8EuZrP",
+                  "text": "이동 바퀴(캐스터) & 캐리어 손잡이",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292843448,
+              "updatedAt": 1792292843448
+            },
+            {
+              "id": "ZqljW9ctviUj",
+              "text": "조작 편의성",
+              "children": [
+                {
+                  "id": "sJQDnuIs8jRP",
+                  "text": "무선 리모컨 제공 여부",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                },
+                {
+                  "id": "90RjTvLyLmU1",
+                  "text": "직관적인 조작 패널",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292843448,
+              "updatedAt": 1792292843448
+            },
+            {
+              "id": "YlkZSnPbjuq5",
+              "text": "세척 및 위생 관리",
+              "children": [
+                {
+                  "id": "H0sSikPSn3vV",
+                  "text": "마사지 롤러/바닥판 분리 가능 여부",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                },
+                {
+                  "id": "YwmdUIfTLlRt",
+                  "text": "내장 UV 살균 기능",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292843448,
+              "updatedAt": 1792292843448
+            },
+            {
+              "id": "MWlxHLtaJN4u",
+              "text": "안전 및 자동 제어",
+              "children": [
+                {
+                  "id": "OkgwK8cI1MmA",
+                  "text": "PTC 분리 가열 방식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                },
+                {
+                  "id": "e6jepnsWiCxn",
+                  "text": "자동 타이머 & 물 부족 감지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292843448,
+              "updatedAt": 1792292843448
+            },
+            {
+              "id": "BEUMbQG29rX5",
+              "text": "보관 및 덮개",
+              "children": [
+                {
+                  "id": "xjnWAZpgL46A",
+                  "text": "전용 상단 덮개 유무",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                },
+                {
+                  "id": "JtXzQQe5LceD",
+                  "text": "전원 코드 정리 홀더",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292843448,
+                  "updatedAt": 1792292843448
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292843448,
+              "updatedAt": 1792292843448
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792291809168,
+          "updatedAt": 1792292843448
+        },
+        {
+          "id": "Ut2OsUpqImNJ",
+          "text": "4. 실사용 체감 요소",
+          "children": [
+            {
+              "id": "fp2OHb4Rvttl",
+              "text": "소음 및 바닥 진동",
+              "children": [
+                {
+                  "id": "p02muyBfXqxU",
+                  "text": "모터/버블 구동 소음",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                },
+                {
+                  "id": "Papla55WISQy",
+                  "text": "바닥 층간 진동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292951600,
+              "updatedAt": 1792292951600
+            },
+            {
+              "id": "7Pjtq23jbygf",
+              "text": "발바닥 자극 강도",
+              "children": [
+                {
+                  "id": "xGY8mB4AJxrL",
+                  "text": "지압 롤러 통증 여부",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                },
+                {
+                  "id": "4NmohHQ14EGl",
+                  "text": "발 크기 수용성 & 안착감",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292951600,
+              "updatedAt": 1792292951600
+            },
+            {
+              "id": "9cwpiYYpKx76",
+              "text": "온도 도달 속도 및 열 쏠림",
+              "children": [
+                {
+                  "id": "bymSvrPPFXtW",
+                  "text": "초기 가열 속도",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                },
+                {
+                  "id": "lXSDywRL58N6",
+                  "text": "국소 부위 열 쏠림 방지 (온수 순환)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292951600,
+              "updatedAt": 1792292951600
+            },
+            {
+              "id": "w5xzZCCyHL3V",
+              "text": "수위 높이",
+              "children": [
+                {
+                  "id": "M14Kvdt0l8UX",
+                  "text": "발목/복사뼈 잠김 깊이",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292951600,
+              "updatedAt": 1792292951600
+            },
+            {
+              "id": "uOs1gbVw8yBs",
+              "text": "자세 편안함 및 물 튐 방지",
+              "children": [
+                {
+                  "id": "KKyDDAm62OK5",
+                  "text": "착좌 시 무릎/허리 각도",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                },
+                {
+                  "id": "lxSjRK65aTWD",
+                  "text": "버블 가동 시 물 튐 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292951600,
+              "updatedAt": 1792292951600
+            },
+            {
+              "id": "PGv8A8MMKbzI",
+              "text": "초기 발열 냄새",
+              "children": [
+                {
+                  "id": "idAvwwwNyUcm",
+                  "text": "고온 가열 시 화학 냄새",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792292951600,
+                  "updatedAt": 1792292951600
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792292951600,
+              "updatedAt": 1792292951600
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792291814645,
+          "updatedAt": 1792292951600
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792291732878,
+      "updatedAt": 1792291768178
+    },
+    {
+      "id": "JUtJImVXkiAz",
+      "text": "제품 유형별 특징",
+      "children": [
+        {
+          "id": "uoaBbMRt68CO",
+          "text": "습식 (일반 온수형)",
+          "children": [
+            {
+              "id": "4rXrNOLhPdWX",
+              "text": "해당 유형만의 고유 기능",
+              "children": [
+                {
+                  "id": "ixTRAvuQP9eP",
+                  "text": "온수에 발을 푹 담그는 강력한 혈액순환 및 피로 해소 체감",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "fEjTB8dSO6Fa",
+                  "text": "수중 공기방울(버블) 및 수중 자동 롤러 마사지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            },
+            {
+              "id": "4kzcq17M6VlU",
+              "text": "해당 유형 선택 시 발생하는 트레이드오프",
+              "children": [
+                {
+                  "id": "z2pjm0gC26vy",
+                  "text": "만수 시 8~12kg의 물 나르기 및 배수 부담 (허리/손목 부담)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "MkwWPYKHigjI",
+                  "text": "물때, 각질, 롤러 분리 세척 등 정기적인 청소 관리 번거로움",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792292319974,
+          "updatedAt": 1792294300675
+        },
+        {
+          "id": "Mue4FLK0kKo4",
+          "text": "습식 (접이식)",
+          "children": [
+            {
+              "id": "UmpX3tNb1gnN",
+              "text": "해당 유형만의 고유 기능",
+              "children": [
+                {
+                  "id": "rbk412mbgcfL",
+                  "text": "실리콘 폴딩 구조로 틈새(10~15cm) 수납 및 공간 절약 극대화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "uHWLkyWLJn42",
+                  "text": "상대적으로 가벼운 본체 무게",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            },
+            {
+              "id": "XxROPgvSQWEY",
+              "text": "해당 유형 선택 시 발생하는 트레이드오프",
+              "children": [
+                {
+                  "id": "imaHKm3nebvr",
+                  "text": "실리콘 주름 부위의 물때·곰팡이 청소 난이도 증가",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "NliYWZhUk49Q",
+                  "text": "하드쉘 대비 내구성 약함 및 물 채운 상태에서 형태 흔들림",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792292319974,
+          "updatedAt": 1792294300675
+        },
+        {
+          "id": "JUAg7nuc11EA",
+          "text": "건식 (원목형)",
+          "children": [
+            {
+              "id": "kSt8k2pVmfi6",
+              "text": "해당 유형만의 고유 기능",
+              "children": [
+                {
+                  "id": "4QJLX6N0Z2ic",
+                  "text": "물 나르기/버리기 완전 제로 (소파 옆에 두고 전원 버튼만 누르면 즉시 사용)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "dajDYHT5EjJg",
+                  "text": "편백/삼나무 원목 특유의 피톤치드 향 및 가구형 인테리어 조화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            },
+            {
+              "id": "rtoj6wDHwb8T",
+              "text": "해당 유형 선택 시 발생하는 트레이드오프",
+              "children": [
+                {
+                  "id": "KFw7PA4s3gxh",
+                  "text": "온수 특유의 젖는 시원함 및 수중 버블 체감 없음",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "X30SbwVK4tcy",
+                  "text": "접거나 숨길 수 없는 큰 부피와 무게 (고정 거치 공간 필수)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792292319974,
+          "updatedAt": 1792294300675
+        },
+        {
+          "id": "1Vd9bQtwQXPs",
+          "text": "스팀 (증기형)",
+          "children": [
+            {
+              "id": "4BYubhXLFjEw",
+              "text": "해당 유형만의 고유 기능",
+              "children": [
+                {
+                  "id": "eM15Wyn8zPp4",
+                  "text": "소량의 물(200~300ml)만으로 사우나 같은 고온 미세 증기 족욕",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "gpkJ0YOeyzzD",
+                  "text": "물 나르는 무게 부담 없이 촉촉한 온열감 확보",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            },
+            {
+              "id": "JWRKvaje0KvL",
+              "text": "해당 유형 선택 시 발생하는 트레이드오프",
+              "children": [
+                {
+                  "id": "7RmvG2nJIqq5",
+                  "text": "물속에 발을 풍덩 담그는 압력감 및 수중 마사지 부재",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "UDDk6j28vvDg",
+                  "text": "미세 증기 노즐의 석회질/물때 누적 및 세척 관리 필요",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792292319974,
+          "updatedAt": 1792294300675
+        },
+        {
+          "id": "yttNxqsya6v3",
+          "text": "건식 (부츠/워머형)",
+          "children": [
+            {
+              "id": "yzt5x4haJAQr",
+              "text": "해당 유형만의 고유 기능",
+              "children": [
+                {
+                  "id": "VrrNdbNxA6Yl",
+                  "text": "패브릭 소재로 매우 가볍고 침대/소파/책상 어디서든 자유롭게 이동 사용",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "MKqIzzL8OJlc",
+                  "text": "가장 저렴한 가격대와 간편한 보관",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            },
+            {
+              "id": "UKfA88JWNC1U",
+              "text": "해당 유형 선택 시 발생하는 트레이드오프",
+              "children": [
+                {
+                  "id": "FYhydJueYene",
+                  "text": "땀 배출이나 깊은 피로 해소보다는 단순 '발 보온/난로'에 가까움",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                },
+                {
+                  "id": "Zv3XrkFHHhZ1",
+                  "text": "내부 패브릭 내피의 세탁 및 위생 관리 한계",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792294300675,
+                  "updatedAt": 1792294300675
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792294300675,
+              "updatedAt": 1792294300675
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792292319974,
+          "updatedAt": 1792294300675
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792292319974,
+      "updatedAt": 1792293547667
+    },
+    {
+      "id": "sUDRKscEuWxS",
+      "text": "핵심 선정 기준 (할머니 맞춤 우선순위)",
+      "children": [
+        {
+          "id": "ABsE0TaZDYPy",
+          "text": "확정 노선: 습식 족욕기 (온수 체감 필수 / 건식 제외)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1792294582937,
+          "updatedAt": 1792294582937
+        },
+        {
+          "id": "Q6CblBEiwZU2",
+          "text": "1순위: 필수 조건 (Must-Have)",
+          "children": [
+            {
+              "id": "5LrMsiXe8mbF",
+              "text": "통 들지 않는 직배수 구조 (하단 배수 밸브/호스 필수, 허리 부담 제로)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792294582937,
+              "updatedAt": 1792294582937
+            },
+            {
+              "id": "WMmxhG8qxTQo",
+              "text": "화장실 습기/물기 감전 차단 (PTC 분리 가열, 누전 차단 및 방수 안전)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792294582937,
+              "updatedAt": 1792294582937
+            },
+            {
+              "id": "g3dRUVSVKwqd",
+              "text": "공간 절약 및 보관 편의성 (비사용 시 접어서 틈새 보관하거나 가볍게 치울 수 있는 규격)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792294738064,
+              "updatedAt": 1792294738064
+            },
+            {
+              "id": "Z6bwdLh6A64c",
+              "text": "단신 어르신 맞춤 높이 규격 (높이 20~25cm 내외 / 발 넣기 편하고 오금 압박 없는 로우 프로파일)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792294810889,
+              "updatedAt": 1792294810889
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792294582937,
+          "updatedAt": 1792294582937
+        },
+        {
+          "id": "9ysmQTnorPhi",
+          "text": "2순위: 우대 조건 (Nice-to-Have)",
+          "children": [
+            {
+              "id": "sheBDgwsf52d",
+              "text": "선 최소화 및 착탈식 코드 (치렁치렁한 선 배제, 본체 분리형 전원 코드 or 무선 구동)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792294582937,
+              "updatedAt": 1792294738064
+            },
+            {
+              "id": "kPdKtPePnLTj",
+              "text": "한겨울 보온 유지 히터 및 상단 보온 덮개 (식지 않는 온열감 유지)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792294810889,
+              "updatedAt": 1792294810889
+            },
+            {
+              "id": "G42cSYbRcATK",
+              "text": "어르신 맞춤 직관적 조작 (허리 숙이지 않는 상단 버튼 or 큰 한글 버튼)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792294582937,
+              "updatedAt": 1792294582937
+            },
+            {
+              "id": "FesH3b29YWA6",
+              "text": "샤워기 온수 직수 급수 용이성 (가열 기다리지 않고 바로 사용)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792294582937,
+              "updatedAt": 1792294582937
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792294582937,
+          "updatedAt": 1792294582937
+        },
+        {
+          "id": "yt5J0fkK3V1C",
+          "text": "3순위: 절대 제외 조건 (Deal-Breaker)",
+          "children": [
+            {
+              "id": "kmuZRRTjeT0G",
+              "text": "지지 프레임(락킹) 없는 무골조 접이식 (발 디딜 때 통 무너짐 및 화상 위험)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792295060806,
+              "updatedAt": 1792295060806
+            },
+            {
+              "id": "B71fZfQE63Fo",
+              "text": "건식 족욕기 (물 없음 / 족욕하는 맛 부재)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792295060806,
+              "updatedAt": 1792295060806
+            },
+            {
+              "id": "bvilz14tvdb7",
+              "text": "사우나식(스팀) 족욕기 (온수에 발 담그는 체감 없음)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792295060806,
+              "updatedAt": 1792295060806
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792294582937,
+          "updatedAt": 1792295060806
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792294582937,
+      "updatedAt": 1792294582937
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792291573407,
+  "updatedAt": 1792295401999
+}

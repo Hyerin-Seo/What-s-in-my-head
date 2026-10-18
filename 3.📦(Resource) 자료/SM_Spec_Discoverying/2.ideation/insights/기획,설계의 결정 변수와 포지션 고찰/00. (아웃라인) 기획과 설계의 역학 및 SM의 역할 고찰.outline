@@ -1,0 +1,544 @@
+{
+  "version": "1.0.0",
+  "id": "kwAqWDfs5Wpb",
+  "title": "00. (아웃라인) 기획과 설계의 역학 및 SM의 역할 고찰",
+  "rootNodes": [
+    {
+      "id": "lC4I2DRp4UPP",
+      "text": "🌲 기획과 설계의 역학 및 SM의 역할 고찰 (사유의 궤적)",
+      "children": [
+        {
+          "id": "G4g113wj9xo2",
+          "text": "🎯 1부. 문제의 발단 : 기획(Why & What)과 설계(How & Detail)의 본질적 격차",
+          "children": [
+            {
+              "id": "gCkknoAawS0i",
+              "text": "1. 두 렌즈의 시선 차이 : 의도의 지도(기획) vs 시스템의 뼈대(설계)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "JH3lqnItkfkv",
+              "text": "2. 본질적 격차 : 기획에서 설계로 직행할 때 터지는 공수 산정 실패와 비용 폭발",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "BnqTMgr8aRvT",
+              "text": "3. 작업 중간체 : 기획과 설계가 격돌하는 공통 아레나 [[매크로 아웃라인]] ➔ 단일 실행 슬라이스 [[마이크로 아웃라인]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792138668683,
+          "updatedAt": 1792138668683
+        },
+        {
+          "id": "lXIFicaA5Ube",
+          "text": "🚪 2부. 첫 번째 의문 : 기획과 설계 개입의 안전지대 임계선 (The Threshold)",
+          "children": [
+            {
+              "id": "KhlBeXGTTLBK",
+              "text": "1. 문제 의식 : 모든 작업이 기획과 설계를 하는 것은 아니다 — 그렇다면 경계선은 어디인가?",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "0LkLsQPw0vS2",
+              "text": "2. 핵심 카드 연결 : [[(gen)01. (임계선) 기획과 설계 개입의 4대 안전지대]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "Cchzqv6jfWPq",
+              "text": "3. 4대 안전지대 임계선 판별",
+              "children": [
+                {
+                  "id": "lOmzf4g0wswi",
+                  "text": "• 가역성과 실패 비용 : 5초 롤백(양방향 문) vs 전면 재작업(일방향 문)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                },
+                {
+                  "id": "K1E7WnBLQ0ba",
+                  "text": "• 인지 부하와 워킹 메모리 : 뇌 용량 7±2 충족 vs 인지 과부하로 인한 외부 뇌 강제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                },
+                {
+                  "id": "KbkOM8BamsRm",
+                  "text": "• 지식 숙련도의 격차 : 100% 장악한 근육 기억 vs 30~40%만 아는 미지의 영역",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                },
+                {
+                  "id": "jim7RusxhLx8",
+                  "text": "• 위임과 협업 : 나 혼자 완결하는 암묵지 vs 타인 및 AI 에이전트 위임용 형식지 계약",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792138668683,
+          "updatedAt": 1792138668683
+        },
+        {
+          "id": "nSwPT89axhK7",
+          "text": "🧱 3부. 결정적 돌파구 : 선택이 아닌 절대적 필수 조건 (기반 종속성)",
+          "children": [
+            {
+              "id": "O7W7MUwojK4b",
+              "text": "1. 질문의 심화 : 선택(권장) 조건이 아닌, 무조건 기획·설계를 해야만 하는 절대적 필수 조건은 무엇인가?",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "RT1kE1icOIqa",
+              "text": "2. 핵심 카드 연결 : [[(gen)02. (필수조건) 기반 종속성과 연쇄 붕괴 위험]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "UmI3mE1jAtLe",
+              "text": "3. 말단(Leaf Node) vs 기반(Foundation & Contract)의 본질적 분기",
+              "children": [
+                {
+                  "id": "J6lmRyhZb36H",
+                  "text": "• 말단 작업 (Leaf) : 실패해도 그 지점만 5초 만에 수정 완료 ➔ 기획·설계 선택 (즉시 실행)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                },
+                {
+                  "id": "cuhAS7ZeQZjI",
+                  "text": "• 기반 작업 (Foundation) : 상위 작업과 타자가 딛고 올라설 발판 ➔ 기획·설계 100% 강제 (생존 조건)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                },
+                {
+                  "id": "SajuyqF632cv",
+                  "text": "• 연쇄 붕괴의 위험 (Cascade Failure) : 기반의 1도 오차는 상위 모든 산출물의 도미노 폐기를 초래",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792138668683,
+          "updatedAt": 1792138668683
+        },
+        {
+          "id": "lC4kL5XuWOwF",
+          "text": "🧭 4부. 심층 다각화 : 작업을 지배하는 4대 보편 준거군 (The 4 Sets of Criteria)",
+          "children": [
+            {
+              "id": "2n5IQgbIAckl",
+              "text": "📦 (차원 1) 결과물의 형태 (What & Value) : 물건의 물리적 성질",
+              "children": [
+                {
+                  "id": "lLksmKmWQKzi",
+                  "text": "핵심 카드 연결 : [[(gen)03-1. (준거-결과물) 결과물의 형태를 가르는 4대 보편 준거]]",
+                  "children": [
+                    {
+                      "id": "WLneVkbV6zZc",
+                      "text": "매체의 물성 : 언제든 주무르는 점토(Clay) vs 굳으면 깨야 하는 콘크리트(Concrete)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141388808
+                    },
+                    {
+                      "id": "2TsoAR3rxXwH",
+                      "text": "가치의 원천 : 사람을 흔드는 감응·통찰(Resonance) vs 결함 제로(Defect-Free)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141388809
+                    },
+                    {
+                      "id": "Yw6n2W4fGWvq",
+                      "text": "복제의 의도 : 장인의 단발성 작업(One-off) vs 대량 복제 프로토콜(SOP)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141388809
+                    },
+                    {
+                      "id": "5BNYhWX1s7My",
+                      "text": "환경적 제약 : 사회적 약속과 합의(Convention) vs 타협 없는 자연 물리법칙(Physics)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141388809
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792141380726
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "tTAEukMWIgl5",
+              "text": "👤 (차원 2) 기획·설계 주체 (Who & Governance) : 뇌와 조직의 정성적 성향",
+              "children": [
+                {
+                  "id": "fSiJ1pDiGEow",
+                  "text": "• 핵심 카드 연결 : [[(gen)03-2. (준거-주체) 기획·설계 주체의 성향을 가르는 4대 정성 준거]]",
+                  "children": [
+                    {
+                      "id": "b7134z2JYfAX",
+                      "text": "인지 진입점 : 손끝 파편에서 역산하는 상향식(Bottom-Up) vs 숲을 먼저 세우는 하향식(Top-Down)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141362581
+                    },
+                    {
+                      "id": "qzNR07w4Rhf2",
+                      "text": "안전감 원천 : 우연과 돌파구를 신뢰하는 발견(Emergence) vs 모든 변수를 가두는 통제(Control)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141364440
+                    },
+                    {
+                      "id": "CoBXdR6y2Vtb",
+                      "text": "내적 동기 : 왜 푸는가에 불타는 목적(Why) vs 어떻게 맞물리는가에 불타는 구조(How)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141365315
+                    },
+                    {
+                      "id": "nzxi15ro8Pol",
+                      "text": "완결성 기준 : 목적 달성 시 손을 털고 릴리즈하는 실용적 만족 vs 단 0.1mm도 타협 않는 편집증적 완결",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141366029
+                    },
+                    {
+                      "id": "KyKqnubVRPdh",
+                      "text": "• 거버넌스 권한 : 1인 전결의 자율권 vs 다자간 합의와 감사 추적성",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792139587541
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "9ipAuFg8G53K",
+              "text": "🌍 (차원 3) 외생적 환경 (When & Context) : 밖에서 짓누르는 외기압",
+              "children": [
+                {
+                  "id": "1m7aUQdCTLOz",
+                  "text": "• 핵심 카드 연결 : [[(gen)03-3. (준거-환경) 외생적 환경이 강제하는 4대 보편 준거]]",
+                  "children": [
+                    {
+                      "id": "KuB58hT7mnh6",
+                      "text": "• 시간적 런웨이 : 넉넉한 탐색 버퍼(Buffer) vs 시한폭탄 데드라인(Hard Deadline)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792139590486
+                    },
+                    {
+                      "id": "nB0cVihMi7MS",
+                      "text": "• 자원·예산 한계 : 낭비를 감당할 수 있는 풍요(Abundance) vs 1바이트도 아껴야 하는 극빈(Resource Cap)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792139590486
+                    },
+                    {
+                      "id": "K5uIVClg3G1O",
+                      "text": "• 피드백 지연 시간 : 1시간 만의 즉각 반응(Instant Loop) vs 6개월 뒤의 판정(Delayed Ground Truth)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792139590486
+                    },
+                    {
+                      "id": "oOXJJHOwxp8m",
+                      "text": "• 생태계 변동성 : 10년간 변함없는 반석(Static) vs 분기마다 바뀌는 난기류 빙하(Turbulent)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792139590486
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "IKBgOApJ5qXH",
+              "text": "🎯 (차원 4) 이용 대상 (Whom & Audience) : 결과물이 닿을 최종 인터페이스",
+              "children": [
+                {
+                  "id": "qoQvJKv6c6uQ",
+                  "text": "• 핵심 카드 연결 : [[(gen)03-4. (준거-대상) 이용 대상(수용자)을 판별하는 4대 보편 준거]]",
+                  "children": [
+                    {
+                      "id": "XrLloxgb3oS7",
+                      "text": "• 수용자 거리 : 나 혼자 쓰고 버린다(Self) vs 불특정 다수의 타자가 쓴다(Others)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141399655
+                    },
+                    {
+                      "id": "Iw2ocSak2YFu",
+                      "text": "• 수용자 숙련도 : 척하면 아는 전문가(Expert) vs 낯설고 이탈하기 쉬운 초심자(Novice)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141399655
+                    },
+                    {
+                      "id": "0yCxJnGwGtWl",
+                      "text": "• 수용자 본성 : 스키마만 맞으면 되는 기계(Machine) vs 주의력과 공감이 필요한 인간 뇌(Human Brain)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141399655
+                    },
+                    {
+                      "id": "mPCEg82E4XyD",
+                      "text": "• 수용자 관여도 : 스쳐 지나가는 관객(Casual) vs 생존과 돈이 걸린 당사자(Mission-Critical)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792138668683,
+                      "updatedAt": 1792141399655
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138668683
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "BUDChYT9ohTB",
+              "text": "⚙️ (도출 및 처방) 4대 차원이 산출하는 작업 방식 (How & Flow)과 SM의 동적 레버",
+              "children": [
+                {
+                  "id": "mpev5LCev3aC",
+                  "text": "• 핵심 카드 연결 : [[(gen)03-5. (처방-작업방식) 4대 차원이 결정하는 작업 방식과 SM의 처방 레버]]",
+                  "children": [
+                    {
+                      "id": "m6K0k8gJ52jS",
+                      "text": "• 인과율의 원칙 : 작업 방식은 독립 입력(준거)이 아니라 4대 차원의 상호작용 함수 f(What, Who, When, Whom)가 도출하는 종속 변수이자 처방",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792141626476,
+                      "updatedAt": 1792141626476
+                    },
+                    {
+                      "id": "xBxNjs1IpPPK",
+                      "text": "• 3대 대표 작업 방식 스펙트럼 : (1) 탐색적 스캐폴딩(점토형) vs (2) 엄격한 블루프린트(콘크리트형) vs (3) 하이브리드 완충(계약 잠금형)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792141626476,
+                      "updatedAt": 1792141626476
+                    },
+                    {
+                      "id": "xYyURCl9oC55",
+                      "text": "• SM의 임피던스 매칭 : 주체의 인지 부하와 시스템의 치명적 리스크 사이에서 작업 방식 레버를 조율하는 지휘자",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792141626476,
+                      "updatedAt": 1792141626476
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792141626476,
+                  "updatedAt": 1792141626476
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792141626476,
+              "updatedAt": 1792141626476
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792138668683,
+          "updatedAt": 1792141626476
+        },
+        {
+          "id": "4kMkqnhomnbj",
+          "text": "🏛️ 5부. 통합 및 학계 검증 : 5대 차원 통합 프레임워크와 거장들의 이론",
+          "children": [
+            {
+              "id": "zCmxHhAwH9nQ",
+              "text": "1. 통합 프레임워크 연결 : [[(gen)04. (통합) 작업을 결정하는 5대 차원 통합 프레임워크]]",
+              "children": [
+                {
+                  "id": "teihZ8GNHay2",
+                  "text": "5대 축(What, Who, Whom, When, How)의 종합 판정 매트릭스 및 고농도 백신 처방 공식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138863228
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "2E8f4gYRScf2",
+              "text": "2. 학계 거장 이론 연결 : [[(gen)05. (이론) 학계 5대 거장과 산업 표준 이론]]",
+              "children": [
+                {
+                  "id": "4mLR7ctBCPcQ",
+                  "text": "• Alistair Cockburn (Crystal Grid) : 팀 규모 × 결함 치명도 ➔ 결과물(What)과 매핑",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138834835
+                },
+                {
+                  "id": "444bncxJx81Y",
+                  "text": "• Dave Snowden (Cynefin Framework) : 문제 공간의 인과관계(Complicated vs Complex) ➔ 프로세스(How)와 매핑",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138834836
+                },
+                {
+                  "id": "xecKmCrK4epB",
+                  "text": "• Fred Brooks (Complexity Theory) : 개념적 무결성(Conceptual Integrity) ➔ 주체(Who)와 매핑",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138834836
+                },
+                {
+                  "id": "QimTnnU33V4E",
+                  "text": "• Donald Reinertsen & Barry Boehm : 지연 비용(CoD) 및 위험 주도 원칙 ➔ 환경(When)과 매핑",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138834836
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792138668683,
+          "updatedAt": 1792138668683
+        },
+        {
+          "id": "CxS8rddhubkM",
+          "text": "💡 6부. 결론 : SM(스펙 매니저 / 시스템 매니저)의 존재 이유와 역할",
+          "children": [
+            {
+              "id": "jyc4thCdpyYt",
+              "text": "1. 오버 엔지니어링 vs 언더 엔지니어링의 함정 극복",
+              "children": [
+                {
+                  "id": "7MdD1B9Ah8yl",
+                  "text": " 점토에 콘크리트 도면을 들이대면 질식하고, 콘크리트에 점토 스케치를 들이대면 참사가 난다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792138668683,
+                  "updatedAt": 1792138854877
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792138668683
+            },
+            {
+              "id": "bTQPvwbGDc7J",
+              "text": "2. SM의 본질적 사명 : (팀의 인지 부하)와 (시스템의 치명적 리스크)를 통제하기 위해 조절하는 동적 레버(Dynamic Lever)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792141626476
+            },
+            {
+              "id": "LTRvTYmeP54y",
+              "text": "3. 캔버스와의 연계 : (매니지먼트/운영) ➔ (기획/설계) ➔ (실행) 사이의 유기적 통제권과 인터페이스 확립",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792138668683,
+              "updatedAt": 1792141626476
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792138668683,
+          "updatedAt": 1792138668683
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792138668683,
+      "updatedAt": 1792138668683
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792138679756,
+  "updatedAt": 1792141664254
+}
