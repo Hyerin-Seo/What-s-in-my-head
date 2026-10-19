@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"card_0_0","type":"text","text":"### 🔗 원문 메타 정보\n\n**분석 대상**: Git / Things 3 / Workflowy\n**도려낼 20%**: 롤백 불안증 제로화 안전망","x":30,"y":80,"width":320,"height":200,"color":"6"},
+		{"id":"card_0_1","type":"text","text":"### 🏛️ 3대 종족 판별\n\n• **1종족 자유파** (Workflowy): 무한 발상 vs 백지 공포\n• **2종족 규칙파** (PandaDoc): 무결성 vs 발상 질식\n• **3종족 레고파** (Notion): 조립 쾌감 vs 뼈대 상실","x":30,"y":305,"width":320,"height":200,"color":"6"},
+		{"id":"card_0_2","type":"text","text":"### 🛖 승부 포지셔닝\n\n**Scaffold Manager 공식**:\n`1종족(불릿 시작)` + `2종족(슬롯 검증)` + `3종족(스냅 바인딩)`의 유일한 하이브리드","x":30,"y":530,"width":320,"height":200,"color":"6"},
+		{"id":"group_0","type":"group","label":"🧬 0. 레퍼런스 정체성 & 3대 종족","x":0,"y":0,"width":380,"height":785,"color":"6"},
+		{"id":"card_1_0","type":"text","text":"### 📢 단 하나의 핵심 약속\n\n> \"무작정 코드부터 치지 마라 — 10분의 기획 점검이 10시간의 삽질을 막아준다\"\n\n방대한 학습 곡선 대신 **10분 내 첫 Aha Moment** 보장","x":490,"y":80,"width":320,"height":200,"color":"1"},
+		{"id":"card_1_1","type":"text","text":"### 🚧 3대 핵심 장벽\n\n❌ **블랙박스 장벽**: 어디서부터 손댈지 막막함\n❌ **데이터 오염 공포**: 소중한 노드가 날아갈까 불안\n❌ **반복 노가다 피로도**: 마우스 동선 & 복붙 루틴","x":490,"y":305,"width":320,"height":200,"color":"1"},
+		{"id":"card_1_2","type":"text","text":"### 💡 3대 돌파 전략\n\n• **패스트트랙**: 공식 템플릿 복제로 저항감 0\n• **선제적 안전선**: 격리 샌드박스로 심리적 안도\n• **원클릭 치트키**: 피로 타이밍에 단축키 투척","x":490,"y":530,"width":320,"height":200,"color":"1"},
+		{"id":"group_1","type":"group","label":"🎯 1. 타깃 페르소나 & 장벽 해체","x":460,"y":0,"width":380,"height":785,"color":"1"},
+		{"id":"card_2_0","type":"text","text":"### 🦴 겉면을 찢은 3대 뼈대\n\n• **문서 구조**: 단일 무한 위계 트리\n• **데이터 연결**: 단방향 부모-자식 위계 체인\n• **슬롯 규격**: 자유 비정형 텍스트 블록","x":950,"y":80,"width":320,"height":200,"color":"4"},
+		{"id":"card_2_1","type":"text","text":"### ⚛️ 생각의 최소 단위\n\n• **원자 형태**: 불릿(Bullet) 및 노드(Node)\n• **권장 글자 수**: 40 ~ 60자 (단문 중심)\n• **한 화면 노출**: 15 ~ 25개 단위","x":950,"y":305,"width":320,"height":200,"color":"4"},
+		{"id":"card_2_2","type":"text","text":"### ⚡ 속도와 마찰 계측\n\n• **첫 결과물 시간**: 0.5초 이내\n• **조작 타수**: 0타 (커서 깜빡임 즉시 진입)\n• **단축키 커버리지**: 90% 이상 (마우스리스)","x":950,"y":530,"width":320,"height":200,"color":"4"},
+		{"id":"group_2","type":"group","label":"🏛️ 2. 80% 전형성 실측 (표준선)","x":920,"y":0,"width":380,"height":785,"color":"4"},
+		{"id":"card_3_0","type":"text","text":"### 🗡️ 단 하나의 시그니처 무기\n\n**초록/빨강 인라인 Diff + 체리픽 부분 승인**\n\n• 발동 빈도: 1시간당 30~50회\n• 호출 비용: AI 수정 제안 즉시 자동 오버레이","x":1410,"y":80,"width":320,"height":200,"color":"2"},
+		{"id":"card_3_1","type":"text","text":"### ⚖️ 의도된 트레이드오프\n\n✨ **90% 몰빵**: 명시적 체크포인트 커밋 기반의 확실한 안전망\n\n🗑️ **버린 10%**: 모든 자잘한 타이핑의 마이크로 자동저장 배제","x":1410,"y":305,"width":320,"height":200,"color":"2"},
+		{"id":"card_3_2","type":"text","text":"### 🧬 이종 도메인 교배\n\n• **차용 도메인**: 소프트웨어 형상 관리(Git)\n• **훔쳐온 메커니즘**: 1차원 아웃라인 ➔ 2차원 캔버스 브랜칭 플립","x":1410,"y":530,"width":320,"height":200,"color":"2"},
+		{"id":"group_3","type":"group","label":"🚀 3. 20% 변주 실측 (MAYA)","x":1380,"y":0,"width":380,"height":785,"color":"2"},
+		{"id":"card_4_0","type":"text","text":"### 1️⃣ 진입 장벽 분쇄 ➔ 2️⃣ 즉각 도파민\n\n• **Friction 0**: 버튼 하나로 즉시 복제 시작\n• **Aha Moment**: 16ms 로컬 렌더링으로 성공 쾌감","x":1870,"y":80,"width":320,"height":200,"color":"5"},
+		{"id":"card_4_1","type":"text","text":"### 3️⃣ 피로 치트키 ➔ 4️⃣ 선택권 부여\n\n• **Automation**: 지루한 타이밍에 단축키 투척\n• **Opt-in**: '(선택)' 표기로 심리적 탈출구","x":1870,"y":305,"width":320,"height":200,"color":"5"},
+		{"id":"card_4_2","type":"text","text":"### 5️⃣ 인지적 종결 (Closure)\n\n`[코드 수정 → deploy → 새로고침]` 3단계 행동 공식 하나만 뇌리에 각인","x":1870,"y":530,"width":320,"height":200,"color":"5"},
+		{"id":"group_4","type":"group","label":"🎬 4. 논지 전개 & 감정 곡선","x":1840,"y":0,"width":380,"height":785,"color":"5"},
+		{"id":"card_5_0","type":"text","text":"### 📏 1액션 = 1줄 & 4단 조립\n\n• **단문 통제**: 40~60자 (장문 줄글 0개)\n• **4단 블록**: `[헤더]` ➔ `[트리거]` ➔ `[객체]` ➔ `[콜아웃]`","x":2330,"y":80,"width":320,"height":200,"color":"3"},
+		{"id":"card_5_1","type":"text","text":"### ⚖️ 3:7 정보 밀도 황금비\n\n• **텍스트 줄글**: 30% 미만\n• **비주얼 객체**: 70% 이상 (코드·표·이미지·콜아웃)","x":2330,"y":305,"width":320,"height":200,"color":"3"},
+		{"id":"card_5_2","type":"text","text":"### 💬 촌철살인 의사결정 콜아웃\n\n> \"내가 만들고 싶은 건 기능인가 스타일인가? 기능이라면 플러그인입니다\"\n> \"'이것도 넣어야지'를 하다 보면 끝이 없습니다\"","x":2330,"y":530,"width":320,"height":200,"color":"3"},
+		{"id":"group_5","type":"group","label":"🎨 5. 시각적 리듬 & 모듈 문법","x":2300,"y":0,"width":380,"height":785,"color":"3"},
+		{"id":"card_6_0","type":"text","text":"### 📊 단계별 작업 지분율\n\n• **뼈대 설계**: 인간 80% : AI 20%\n• **내용 채우기**: 인간 20% : AI 80%\n• **검증 및 퇴고**: 인간 100% : AI 0%","x":2790,"y":80,"width":320,"height":200,"color":"6"},
+		{"id":"card_6_1","type":"text","text":"### 🔄 협업 프로토콜 & 보호 앵커\n\n• **AI**: Pull Request 제안자 (Diff 오버레이)\n• **인간**: Code Reviewer (체리픽 최종 승인)\n• **보호 앵커**: `Ctrl+L (노드 픽스)` 잠금","x":2790,"y":305,"width":320,"height":200,"color":"6"},
+		{"id":"group_6","type":"group","label":"🤝 6. 인간 vs AI 분업비","x":2760,"y":0,"width":380,"height":560,"color":"6"},
+		{"id":"card_7_0","type":"text","text":"### 💾 데이터 엔진 & 🎨 렌더러\n\n• `NodeCheckpointStore`: 해시 기반 로컬 스냅샷\n• `InlineDiffDecorator`: +초록 / -빨강 오버레이\n• `CherryPickToolbar`: [✓ Accept] / [✗ Reject] 단축키","x":3250,"y":80,"width":320,"height":200,"color":"4"},
+		{"id":"card_7_1","type":"text","text":"### 🗺️ 조망 캔버스 & 샌드박스\n\n• `CanvasBranchFlipper`: 아웃라인 ↔ 캔버스 0ms 플립\n• `SafeSandboxVault`: 데이터 오염 방지 격리 공간","x":3250,"y":305,"width":320,"height":200,"color":"4"},
+		{"id":"group_7","type":"group","label":"🛠️ 7. Scaffold Manager 컴포넌트","x":3220,"y":0,"width":380,"height":560,"color":"4"}
+	],
+	"edges":[
+		{"id":"edge_1","fromNode":"group_0","fromSide":"right","toNode":"group_1","toSide":"left","label":"Step 1"},
+		{"id":"edge_2","fromNode":"group_1","fromSide":"right","toNode":"group_2","toSide":"left","label":"Step 2"},
+		{"id":"edge_3","fromNode":"group_2","fromSide":"right","toNode":"group_3","toSide":"left","label":"Step 3"},
+		{"id":"edge_4","fromNode":"group_3","fromSide":"right","toNode":"group_4","toSide":"left","label":"Step 4"},
+		{"id":"edge_5","fromNode":"group_4","fromSide":"right","toNode":"group_5","toSide":"left","label":"Step 5"},
+		{"id":"edge_6","fromNode":"group_5","fromSide":"right","toNode":"group_6","toSide":"left","label":"Step 6"},
+		{"id":"edge_7","fromNode":"group_6","fromSide":"right","toNode":"group_7","toSide":"left","label":"Step 7"}
+	]
+}

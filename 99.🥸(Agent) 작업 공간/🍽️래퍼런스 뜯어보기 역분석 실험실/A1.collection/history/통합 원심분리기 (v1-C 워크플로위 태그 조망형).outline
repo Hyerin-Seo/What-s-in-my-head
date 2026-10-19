@@ -1,0 +1,369 @@
+{
+  "version": "1.0.0",
+  "id": "OjBpZzchc9E6",
+  "title": "통합 원심분리기 (v1-C 워크플로위 태그 조망형)",
+  "rootNodes": [
+    {
+      "id": "6n39jkLLjNYX",
+      "text": "🔬 통합 원심분리기 기준표 #메타 #80_20원칙",
+      "children": [
+        {
+          "id": "erAEQMYkgfSY",
+          "text": "0. 레퍼런스 정체성 #아키텍처 #3대종족",
+          "children": [
+            {
+              "id": "kdGqFdT9yW5m",
+              "text": "🔗 메타 정보 : 대상 제품명 / 출처 URL / 분석 목적 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "LlfD0zRa7bFB",
+              "text": "🏛️ 1종족 #극단적자유파 (Workflowy, Heptabase) : 모토 \"백지에서 날뛰어라\" — 발상 극대화 vs 백지 공포 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "ajVXJpQWwXnZ",
+              "text": "🏛️ 2종족 #엄격규칙파 (PandaDoc, Overleaf) : 모토 \"틀의 빈칸만 채워라\" — 무결성 보장 vs 아이디어 질식 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "xJcNEB3ZbFDP",
+              "text": "🏛️ 3종족 #레고조립파 (Notion, Framer) : 모토 \"표준 블록 쌓아라\" — 조립 직관성 vs 뼈대 상실 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "250iBTXZjRMZ",
+              "text": "🛖 #Scaffold_Manager 포지션 : 1종족(불릿) + 2종족(슬롯) + 3종족(스냅) 하이브리드 #공통",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "AP31BlmMJgFU",
+          "text": "1. 타깃 페르소나 & 심리 장벽 해체 #전략 #페르소나",
+          "children": [
+            {
+              "id": "eqy9SrF0p1iK",
+              "text": "📢 핵심 메시지 : '10분의 기획 점검이 10시간의 삽질을 막는다' #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "f7XkjC4Wd0u8",
+              "text": "👥 주요 타깃 : 기존 도구 결핍에 시달리는 파워 유저 & 빠른 성과를 원하는 입문자 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "Cbwp6RymHxP9",
+              "text": "🚧 3대 핵심 장벽 : #블랙박스장벽 #데이터오염공포 #반복노가다피로 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "YeCfX7iVaCTB",
+              "text": "💡 3대 돌파 전략 : #패스트트랙 #선제적안전선 #outline결핍타격 #공통",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "heT1JyNKeTpj",
+          "text": "2. 80% 전형성 실측치 (업계 표준선) #80퍼센트 #전형성",
+          "children": [
+            {
+              "id": "LsSOLpkgrtiR",
+              "text": "🦴 3대 핵심 뼈대 : 단일 무한 트리 / 부모-자식 위계 / 비정형 텍스트 블록 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "uJS4ewMuCFKP",
+              "text": "⚛️ 생각의 최소 단위 : 불릿(Node) / 권장 40~60자 / 한 화면 15~25개 노출 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "NQtnQe4DJH48",
+              "text": "🖥️ 화면 분할 : 탐색기 0% : 중앙 작업판 100% (최대 깊이 무한 / 100% 키보드 중심) #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "EfLlcVaDJlpi",
+              "text": "⚡ 속도와 마찰 : 첫 결과물 0.5초 / 클릭 0타 / 단축키 커버리지 90% 이상 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "XZxv4lTMYZLb",
+              "text": "🛡️ 안전선 장치 : 데이터 불변성(Immutability) 보장 & 독립 샌드박스 격리 #공통",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "TfTKHnMuhx5G",
+          "text": "3. 20% 변주 실측치 (최적의 새로움) #20퍼센트 #MAYA",
+          "children": [
+            {
+              "id": "rbWOSAn94cY6",
+              "text": "⚖️ 자유 vs 제약 비율 : 사용자 자유 80% vs 시스템 제약 20%(체크포인트 불변성) #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "31YtOXBeEvWv",
+              "text": "🗡️ 시그니처 무기 : 초록/빨강 인라인 Diff + 체리픽 선별 채택 (1시간당 40회 발동) #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "H9IWtjSqr4en",
+              "text": "🧬 이종 도메인 교배 : 개발자 VCS(Git 형상 관리) ➔ 글쓰기 목차 기획으로 전이 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "vlGVyNil3T2W",
+              "text": "⚖️ 트레이드오프 : 90% 몰빵(체크포인트 확실한 안전망) vs 버린 10%(타이핑 자동저장 배제) #공통",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "hvq2iccX1dpw",
+              "text": "🔍 검증과 투명성 : 변경 이력 100% 추적성 & 내장 검증 규칙 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "5GU8AVWV8auK",
+          "text": "4. 논지 전개 & 감정선 제어 #서사 #감정곡선",
+          "children": [
+            {
+              "id": "PmSNtygxirA4",
+              "text": "1️⃣ #진입장벽분쇄 : 템플릿 복제 버튼 하나로 Friction 0 달성 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "uolLhzdsu6iC",
+              "text": "2️⃣ #즉각적도파민 : 16ms 피드백(초록 스냅 하이라이트)으로 첫 성공 체험 #공통",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "PsVufDYyPgVP",
+              "text": "3️⃣ #피로치트키 : 지루함 극대화 타이밍에 원클릭 단축키 투척 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "2gBUChOfnMPP",
+              "text": "4️⃣ #선택권부여 : '(선택)' 표기로 심리적 탈출구 제공하여 완주 실패감 차단 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "VckhjO0QBt4P",
+              "text": "5️⃣ #인지적종결 : [수정 ➔ deploy ➔ 새로고침] 3단계 공식으로 매듭 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "xBKqho9S0ci7",
+          "text": "5. 시각적 리듬 & 모듈 문법 #시각문법 #레이아웃",
+          "children": [
+            {
+              "id": "IubdWTK1tS6M",
+              "text": "📏 1액션 = 1줄 원칙 : 40~60자 단문 통제 & 읽는 시간 즉시 행동 유도 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "oD3FurhmdqHE",
+              "text": "🧱 4단 모듈 조립 : [헤더] ➔ [1줄 트리거] ➔ [객체] ➔ [결론 콜아웃] #공통",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "BwCo6ke7RU8y",
+              "text": "⚖️ 정보 밀도 : 순수 텍스트 30% vs 비주얼 객체 70% 황금비율 #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "7vUrK2gggBgE",
+              "text": "💬 콜아웃 펀치라인 : \"'이것도 넣어야지'를 하다 보면 끝이 없다\" #민규",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "CucEmB9it2Xn",
+          "text": "6. 인간 vs AI 분업비 #분업비 #협업프로토콜",
+          "children": [
+            {
+              "id": "YJzsxAdQQJki",
+              "text": "📊 지분율 : 뼈대(인간 80 : AI 20) / 살 채우기(인간 20 : AI 80) / 최종 검증(인간 100 : AI 0) #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "rsSlS5oqVwu2",
+              "text": "🔄 프로토콜 : AI는 Pull Request 기여자 / 인간은 Cherry-pick 최종 승인자 #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "QyKCfSxuCPi9",
+              "text": "🛡️ 보호 장치 : 완성 노드 파괴 방지 잠금(Ctrl+L 노드 픽스) #Rin",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792392358442,
+  "updatedAt": 1792392358442
+}

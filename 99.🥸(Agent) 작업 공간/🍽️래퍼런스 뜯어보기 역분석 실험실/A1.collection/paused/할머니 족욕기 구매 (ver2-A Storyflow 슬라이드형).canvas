@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"sf_slide1","type":"group","x":0,"y":0,"width":540,"height":800,"color":"1","label":"🎬 SLIDE 01 : 핵심 문제 정의 (Problem Definition)"},
+		{"id":"sf_slide2","type":"group","x":620,"y":0,"width":540,"height":800,"color":"6","label":"📐 SLIDE 02 : 4대 핵심 평가 기준선 (Evaluation Metrics)"},
+		{"id":"sf_slide3","type":"group","x":1240,"y":0,"width":540,"height":800,"color":"2","label":"⚖️ SLIDE 03 : 5대 제품 유형 벤치마크 (Product Spectrum)"},
+		{"id":"sf_slide4","type":"group","x":1860,"y":0,"width":540,"height":800,"color":"3","label":"🎯 SLIDE 04 : 맞춤 판정 깔때기 (Decision Funnel)"},
+		{"id":"sf_slide5","type":"group","x":2480,"y":0,"width":540,"height":800,"color":"4","label":"🏁 SLIDE 05 : 최종 낙점 스펙 (The Solution)"},
+		{"id":"sf_s1_c1","type":"text","text":"### 👵 할머니의 신체 특성 & 위험 요인\n\n- **신체 제약**: 단신 어르신 (일반 족욕기는 높이가 높아 앉았을 때 오금 압박 및 무릎 통증)\n- **근력 제약**: 만수 시 물 무게(8~12kg)를 직접 들어서 변기/욕조에 버리는 것은 **허리 디스크 및 관절 손상 직결**\n- **낙상/감전 위험**: 발에 물 묻은 상태에서 거실-화장실 이동 시 치렁치렁한 전원선에 발 걸림 위험","x":25,"y":60,"width":490,"height":260,"color":"1"},
+		{"id":"sf_s1_c2","type":"text","text":"> [!caution] 핵심 해결 과제\n> \"온수에 발을 푹 담그는 시원한 체감은 100% 살리되,\n> **허리 숙여 들고 나르지 않고**, **발 걸림과 화상 위험이 없는 구조**를 찾아라!\"","x":25,"y":340,"width":490,"height":180,"color":"1"},
+		{"id":"sf_s1_c3","type":"text","text":"#### 👥 분석 참여자\n- **Rin**: \"단순히 발 따뜻한 게 아니라 진짜 물에 담그는 맛이어야 해. 근데 무거우면 절대 안 씀!\"\n- **민규 서**: \"안전이 1순위. 누전 차단 PTC 히터랑 하단 배수 밸브 없으면 아예 리스트에서 빼야 함.\"","x":25,"y":540,"width":490,"height":220,"color":"6"},
+		{"id":"sf_s2_c1","type":"text","text":"### 1. 📐 설치 공간 & 인체 규격\n- 높이 **20~25cm** (발 넣기 편한 로우 프로파일)\n- 비사용 시 가구 틈새(15cm) 보관 가능 여부","x":645,"y":60,"width":490,"height":160,"color":"6"},
+		{"id":"sf_s2_c2","type":"text","text":"### 2. ⚡ 전원 & 누전 안전\n- 본체 분리형 **착탈식 전원 코드**\n- 물과 전기가 격리된 **PTC 분리 가열 모듈**\n- 자동 수위 감지 & 과열 방지 타이머","x":645,"y":240,"width":490,"height":180,"color":"6"},
+		{"id":"sf_s2_c3","type":"text","text":"### 3. 🛠️ 배수 & 위생 편의\n- 통 들 필요 없는 **하단 직배수 호스/밸브**\n- 마사지 롤러 및 바닥판 분리 세척 가능성","x":645,"y":440,"width":490,"height":160,"color":"6"},
+		{"id":"sf_s2_c4","type":"text","text":"### 4. 💡 실체감 & 소음\n- 복사뼈까지 충분히 덮는 수위 높이\n- TV 시청 가능한 저소음 모터 & 온수 순환","x":645,"y":620,"width":490,"height":160,"color":"6"},
+		{"id":"sf_s3_c1","type":"text","text":"### 🪣 1. 습식 일반 하드쉘\n- 장점: 온수 체감 최고, 수중 자동 롤러\n- **치명타**: 만수 시 10kg 들다 허리 나감 (배수구 없으면 탈락)","x":1265,"y":60,"width":490,"height":130,"color":"2"},
+		{"id":"sf_s3_c2","type":"text","text":"### 🧳 2. 습식 접이식 (유력 후보)\n- 장점: 15cm 틈새 수납, 가벼운 무게\n- **주의점**: 저가 무골조는 무너짐 화상 위험 (사이드 락킹 필수)","x":1265,"y":210,"width":490,"height":130,"color":"4"},
+		{"id":"sf_s3_c3","type":"text","text":"### 🪵 3. 건식 원목 사우나\n- 장점: 물 전혀 안 씀, 편백 향\n- **치명타**: 거대 부피(거실 점유) + 물에 담그는 맛 부재","x":1265,"y":360,"width":490,"height":130,"color":"2"},
+		{"id":"sf_s3_c4","type":"text","text":"### ♨️ 4. 스팀 분사형\n- 장점: 물 1컵(200ml)으로 간편\n- **치명타**: 미세관 석회 물때 세척 불가 + 족욕 압력감 부재","x":1265,"y":510,"width":490,"height":130,"color":"2"},
+		{"id":"sf_s3_c5","type":"text","text":"### 🥾 5. 건식 부츠/워머\n- 장점: 초경량, 저렴\n- **치명타**: 땀 차고 단순 발난로 수준","x":1265,"y":660,"width":490,"height":120,"color":"2"},
+		{"id":"sf_s4_c1","type":"text","text":"### 🥇 1순위: 필수 조건 (Must-Have)\n- 통 들지 않는 하단 직배수 밸브/호스 (허리 보호 100%)\n- PTC 분리 가열 누전 차단 구조\n- 단신 맞춤 높이 (20~25cm)","x":1885,"y":60,"width":490,"height":200,"color":"4"},
+		{"id":"sf_s4_c2","type":"text","text":"### 🥈 2순위: 우대 조건 (Nice-to-Have)\n- 착탈식 전원 코드 (이동 시 안전)\n- 보온 덮개 및 직관적 대형 버튼\n- 샤워기 온수 직수 급수 대응","x":1885,"y":280,"width":490,"height":200,"color":"3"},
+		{"id":"sf_s4_c3","type":"text","text":"### 🚫 3순위: 절대 제외 (Deal-Breaker)\n- ❌ 지지 골조 없는 단순 실리콘 접이식 (무너짐 위험)\n- ❌ 물 없는 건식/부츠형 (할머니 니즈 불일치)\n- ❌ 들고 쏟아야 하는 무거운 일반 통","x":1885,"y":500,"width":490,"height":240,"color":"1"},
+		{"id":"sf_s5_c1","type":"text","text":"## 🏆 최종 낙점 모델 규격\n\n### **[하드락킹 폴딩 습식 족욕기]**\n\n1. **수납 + 안전 결합**: 실리콘 접이식이되, 양옆에 단단한 **'사이드 락킹 하드 지지대'**가 있어 발을 디뎌도 절대 주저앉지 않음\n2. **허리 보호 100%**: 바닥면에 **'직배수 밸브 + 원터치 호스'** 기본 장착\n3. **전기 안전**: 착탈식 마그네틱/방수 전원선 + PTC 세라믹 절연 히터","x":2505,"y":60,"width":490,"height":340,"color":"4"},
+		{"id":"sf_s5_c2","type":"text","text":"> [!tip] 실사용 가이드 (선물 시 동봉)\n> 1. 화장실 바닥 샤워기 옆에 제품을 펼쳐 두고 사이드 락을 잠근다.\n> 2. 샤워기 따뜻한 물을 바로 받아 가열 시간을 단축한다.\n> 3. 족욕 후 통을 들지 말고 바닥 배수 호스 마개만 열어 물을 뺀다.\n> 4. 가볍게 헹군 뒤 접어서 세탁기 옆 틈새에 세워 보관한다.","x":2505,"y":420,"width":490,"height":320,"color":"5"},
+		{"id":"sf_banner","type":"text","text":"# 📺 Storyflow 스타일 — 할머니 족욕기 구매 의사결정 피치덱\n> **철학**: \"화이트보드를 주제별 섹션 카드로 나열하고 발표하듯 순차 조망한다.\"\n> 5개의 슬라이드 섹션이 스토리보드처럼 흐르며 문제 ➔ 기준 ➔ 대조 ➔ 필터링 ➔ 해결책으로 귀결됩니다.","x":0,"y":-260,"width":1780,"height":130,"color":"5"}
+	],
+	"edges":[
+		{"id":"sf_edge_1","fromNode":"sf_slide1","fromSide":"right","toNode":"sf_slide2","toSide":"left","color":"5","label":"Step 1 ➔ 2"},
+		{"id":"sf_edge_2","fromNode":"sf_slide2","fromSide":"right","toNode":"sf_slide3","toSide":"left","color":"5","label":"Step 2 ➔ 3"},
+		{"id":"sf_edge_3","fromNode":"sf_slide3","fromSide":"right","toNode":"sf_slide4","toSide":"left","color":"5","label":"Step 3 ➔ 4"},
+		{"id":"sf_edge_4","fromNode":"sf_slide4","fromSide":"right","toNode":"sf_slide5","toSide":"left","color":"5","label":"Step 4 ➔ 5"}
+	]
+}

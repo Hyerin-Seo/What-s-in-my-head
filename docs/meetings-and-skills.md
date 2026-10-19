@@ -51,6 +51,7 @@ Notion AI Meeting Notes · Mem(Heads Up) · MeetingMind(참석자 추적 · 회�
 | `skills/meeting-notes/` | 회의 한 바퀴 — 지난 회의 점검 · 작업 공간 세팅 · 안건 카드 튜닝 · 채택 기록으로 학습 |
 | `skills/pre_meeting_agenda_preparer/` | 속기 → 안건 카드(7단). 정본은 여기, 회의마다 작업 공간 `A4.meta/` 로 복사해 튜닝 (2026-09-28 올림) |
 | `skills/meeting_decision_recorder/` | 속기 → 결정 카드(정한 것 · 기한 · 목표 · 왜 · 어디까지 · 아직 안 정한 것). 안건 카드의 짝, 복사 · 튜닝도 같음 (2026-09-30 Rin) |
+| `skills/outline_file_manager/` | `.outline` 파일을 생성·편집·검증할 때 (Zod 규격 준수 및 짝꿍 md 카드 생성) |
 
 - 일을 받으면 맞는 스킬이 있는지 먼저 보세요 — `skills/*/SKILL.md` 의 `description`.
 - 볼트 루트의 **`AGENTS.md`** 는 `CLAUDE.md` 를 안 읽는 에이전트(Codex 등)의 입구이고 `skills/` 를 가리킵니다.
