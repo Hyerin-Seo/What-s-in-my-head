@@ -1,0 +1,252 @@
+{
+  "version": "1.0.0",
+  "id": "2cvpMDeG0At5",
+  "title": "00. (아웃라인) 창작 활동과 분석·설계의 상호작용 및 황금비율 모델",
+  "rootNodes": [
+    {
+      "id": "O6X4F3HfgRe6",
+      "text": "🌲 창작 활동과 분석·설계의 상호작용 및 황금비율 모델 (아웃라인)",
+      "children": [
+        {
+          "id": "CUqSTnmPDy6a",
+          "text": "🎯 1장. 개념적 정체성 : 창작 활동은 기획·설계에 포함되는가?",
+          "children": [
+            {
+              "id": "S1fxLj5Ii9Wx",
+              "text": "• 핵심 카드 연결 : [[(gen)01. (개념관계) 창작 활동은 기획·설계에 포함되는가 (골격과 생명의 상호작용)]]",
+              "children": [
+                {
+                  "id": "a95feiceMUr5",
+                  "text": "1. 포함되는 영역 : 창작의 내재적 척추 — (Why & What)의 의도와 (How)의 조형 골격",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142780846
+                },
+                {
+                  "id": "HwBvTHBkonPt",
+                  "text": "2. 포함될 수 없는 창작의 고유 영역 : 설계의 통제를 벗어나는 창발(Emergence)과 우연의 수용",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142780846
+                },
+                {
+                  "id": "o79jYr9WNnU4",
+                  "text": "3. 화분(기획/설계)과 식물(창작)의 메타포 : 언더 엔지니어링의 고사와 오버 엔지니어링의 질식 극복",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142780846
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792142702406,
+              "updatedAt": 1792142702406
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792142702406,
+          "updatedAt": 1792142702406
+        },
+        {
+          "id": "Qd2rZ0AC850J",
+          "text": "🎨 2장. 혼합 비율 스펙트럼과 동적 시프트 (The Blend Ratios)",
+          "children": [
+            {
+              "id": "psEe8Jglr2Yy",
+              "text": "• 핵심 카드 연결 : [[(gen)02. (스펙트럼) 작업 유형별 4대 대표 혼합 비율과 동적 시프트]]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792142702406,
+              "updatedAt": 1792142702406
+            },
+            {
+              "id": "1HvTg7VnRSTP",
+              "text": "1. 작업 유형별 4대 대표 혼합 비율",
+              "children": [
+                {
+                  "id": "bp7DiphmdUCC",
+                  "text": "• (1) 순수 발상형 (창작 90% : 분석 10%) : 선행 콘셉트 아이데이션, 브랜드 네이밍, 조각 및 비주얼 아트",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142702406
+                },
+                {
+                  "id": "9nR4W98O9Dts",
+                  "text": "• (2) 경험 조형형 (창작 70% : 분석 30%) : UI/UX 인터랙션, 공간 연출, 신규 프로덕트 멘탈 모델",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142702406
+                },
+                {
+                  "id": "pWB0ONbxRc5u",
+                  "text": "• (3) 솔루션 엔지니어링형 (창작 30% : 분석 70%) : 데이터 시각화 엔진, 아키텍처, 기능성 산업 디자인",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142702406
+                },
+                {
+                  "id": "e2GXBcQf4kkp",
+                  "text": "• (4) 미션 크리티컬형 (창작 10% : 분석 90%) : 금융 결제 엔진, 항공/의료 제어, 대규모 데이터베이스",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142702406
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792142702406,
+              "updatedAt": 1792142702406
+            },
+            {
+              "id": "F24eX4O8nNKe",
+              "text": "2. 동적 시프트 (Dynamic Shift) : 시점과 계층에 따른 비율 이동",
+              "children": [
+                {
+                  "id": "HPq3v2ftCTlH",
+                  "text": "• 시간적 이동 (Phase Shift) : 초기 탐색(80:20) ➔ 중기 코어 구축(20:80) ➔ 후기 폴리싱(50:50)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142702406
+                },
+                {
+                  "id": "HA2NvG0cZNBl",
+                  "text": "• 계층적 이동 (Layer Shift) : 기반 레이어(Foundation 5:95) vs 표면 레이어(Interface 60:40)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142702406
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792142702406,
+              "updatedAt": 1792142702406
+            },
+            {
+              "id": "AKgIe5IZ8dIr",
+              "text": "3. 비율 불일치(Mismatch)로 인한 참사 : 오버 엔지니어링 질식 vs 언더 엔지니어링 붕괴",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792142702406,
+              "updatedAt": 1792142702406
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792142702406,
+          "updatedAt": 1792142702406
+        },
+        {
+          "id": "xNPKqdgbrGAf",
+          "text": "🏛️ 3장. 창작과 분석의 균형을 정립한 학계 4대 거장 이론",
+          "children": [
+            {
+              "id": "IGjFb3doU4sg",
+              "text": "• 핵심 카드 연결 : [[(gen)03. (표준이론) 창작과 분석의 균형을 정립한 학계 4대 거장 이론]]",
+              "children": [
+                {
+                  "id": "Lh3XANYJPyG6",
+                  "text": "1. Barry Boehm : 5대 축 적합성 레이더 차트 (결함 치명도, 변동성, 인력 숙련도, 규모, 조직 문화)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142772877
+                },
+                {
+                  "id": "1iHG2lupcAe5",
+                  "text": "2. 영국 Design Council : 더블 다이아몬드 모델 (Discover-Define-Develop-Deliver의 주기적 호흡)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142772877
+                },
+                {
+                  "id": "kdPSgUzEUAFV",
+                  "text": "3. James G. March : 탐색(Exploration) vs 활용(Exploitation) 양손잡이 조직론",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142772877
+                },
+                {
+                  "id": "aM7xhfzaReVl",
+                  "text": "4. Horst Rittel : 온순한 문제(Tame Problem) vs 고약한 난제(Wicked Problem)의 해결 역학",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142772877
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792142702406,
+              "updatedAt": 1792142702406
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792142702406,
+          "updatedAt": 1792142702406
+        },
+        {
+          "id": "QgW1BTruNCpl",
+          "text": "🎛️ 4장. SM의 동적 처방 : 오디오 믹서 모델과 이중 도구 체계",
+          "children": [
+            {
+              "id": "yk5QUsDKE1z0",
+              "text": "• 핵심 카드 연결 : [[(gen)04. (SM처방) 오디오 믹서로서의 SM과 동적 비율 제어 전략]]",
+              "children": [
+                {
+                  "id": "InCLI3K6tdmM",
+                  "text": "1. 오디오 믹서 모델 : 맥락에 따른 창작 페이더(발산)와 분석 페이더(수렴)의 동적 튜닝",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142770824
+                },
+                {
+                  "id": "8Oe5NSZ1M10a",
+                  "text": "2. 3단계 동적 제어 프로세스 : [진단] ➔ [처방 및 페이더 조율] ➔ [모니터링]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142770824
+                },
+                {
+                  "id": "hHQUsoYhUQUL",
+                  "text": "3. 이중 도구 체계 운영 : 캔버스(Canvas: 창작과 발산의 놀이터)와 아웃라인(Outline: 분석과 수렴의 뼈대)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142770824
+                },
+                {
+                  "id": "rggRS4XbwVkj",
+                  "text": "4. SM의 궁극적 사명 : 창작과 분석의 임피던스 매칭을 완수하는 마에스트로",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792142702406,
+                  "updatedAt": 1792142770824
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792142702406,
+              "updatedAt": 1792142702406
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792142702406,
+          "updatedAt": 1792142702406
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792142702406,
+      "updatedAt": 1792142702406
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792142702406,
+  "updatedAt": 1792142780846
+}
