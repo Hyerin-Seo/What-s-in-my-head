@@ -1,0 +1,1205 @@
+{
+  "version": "1.0.0",
+  "id": "RaFfuC7fGNOh",
+  "title": "통합 원심분리기 (v1-A 시맨틱 노드타입형)",
+  "rootNodes": [
+    {
+      "id": "m18Ag3oEJ0x5",
+      "text": "💡 **원심분리 핵심 공식**: 80% 익숙한 기본기(전형성) + 20% 참신한 변주(최적의 새로움) = 불패의 프로덕트",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "quote",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "y2cvmyqEnzV2",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "3mQ1mjrfWuoT",
+      "text": "🧬 0. 레퍼런스 정체성 & 3대 종족 분류 (Identity & Tribe)",
+      "children": [
+        {
+          "id": "55L2XzdNnMu8",
+          "text": "🔗 [👓 민규] 원문 메타 정보 & 레퍼런스 선정 개요",
+          "children": [
+            {
+              "id": "ITal8lmvwwD7",
+              "text": "[대상] 제품명 / 출처 URL / 분석 일자",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "JPUwlQIrOjL3",
+              "text": "[채택 이유] 이 레퍼런스에서 반드시 도려내고 싶은 '단 하나의 핵심 경험'",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "yqAlLDb0GwJe",
+          "text": "🏛️ [🌸 Rin] 3대 종족 분류 (Tribe Archetype)",
+          "children": [
+            {
+              "id": "GJPCYnif6Jjd",
+              "text": "1종족. **극단적 자유파** (Workflowy, Heptabase) — *\"백지를 줄 테니 마음대로 날뛰어라\"* (사고 자유도 극대화 / 백지 공포 위험)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "7LL38ILZOADC",
+              "text": "2종족. **엄격한 규칙·슬롯파** (PandaDoc, Overleaf) — *\"틀과 토큰을 줄 테니 빈칸만 채워라\"* (무결성 보장 / 아이디어 발상 질식)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "gVzhb0rWWglp",
+              "text": "3종족. **레고 블록 조립파** (Notion, Framer) — *\"표준 블록을 줄 테니 위아래로 쌓아라\"* (조립 직관성 / 뼈대 상실 및 꾸미기 매몰)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "Xftqhr5ZQyKy",
+          "text": "🛖 [🤝 공통] Scaffold Manager 승부 포지셔닝",
+          "children": [
+            {
+              "id": "txKKavNYDgCe",
+              "text": "승부 공식: **1종족(불릿 시작)** + **2종족(슬롯 검증)** + **3종족(스냅 바인딩)**의 유일한 하이브리드",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "zO0BSzIQOnjl",
+              "text": "닻(Anchor): 현재 매일 사용 중인 볼트의 `.outline` 에디터 환경",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "CeDnA6tGXiWy",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "0UqpB1a1iebR",
+      "text": "🎯 1. 타깃 페르소나 & 심리적 장벽 해체 (Strategy: Who & Pain)",
+      "children": [
+        {
+          "id": "V36obJlVUa9G",
+          "text": "📢 [👓 민규] 단 하나의 핵심 메시지 (Core Message & Promise)",
+          "children": [
+            {
+              "id": "TKzH1vXqC434",
+              "text": "[핵심 선언] : 레퍼런스가 사용자에게 주는 단 한 문장의 선언",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "LdB908aBUPcz",
+              "text": "[약속(Promise)] : 방대한 학습 대신 보장하는 즉각적 결과물 약속",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "qu9fl4BhhfKh",
+              "text": "[인식 전환(Mindset)] : 사용자의 고정관념을 깨부수는 프레이밍 전환",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "kvfyHTwjAO9r",
+          "text": "👥 [👓 민규] 주요 대상 타깃 (Target Persona)",
+          "children": [
+            {
+              "id": "8UgOAiyQi3U0",
+              "text": "[페르소나 1] 기존 도구의 특정 결핍에 시달리며 대안을 찾는 파워 유저",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "tZnJhATzJ3I4",
+              "text": "[페르소나 2] 복잡한 이론이나 환경 설정 없이 즉시 결과를 내고 싶은 입문자",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "51yds7nUyok3",
+          "text": "🚧 [👓 민규] 사용자가 마주하는 3대 핵심 장벽 (Core Barriers)",
+          "children": [
+            {
+              "id": "JQC2Pq5vB3Eq",
+              "text": "❌ **[블랙박스 장벽]** 무엇부터 손대야 할지 모르는 막막함과 백지의 공포",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "2hzpZVHAs0lf",
+              "text": "❌ **[데이터 오염/유실 공포]** 기존 작업물이나 완성된 노드가 날아갈까 봐 생기는 불안감",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "mwBPkDZRFlE4",
+              "text": "❌ **[반복 노가다 피로도]** 불필요한 마우스 동선과 복붙 루틴으로 인한 인지 피로",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "EzE2lJqZxGqr",
+          "text": "💡 [🤝 공통] 돌파 전략 & 닻(Anchor) 연계 (Value Proposition)",
+          "children": [
+            {
+              "id": "Dxl7L8Nm7Jwn",
+              "text": "[직선형 패스트트랙] 이론/설정 생략하고 최소 액션으로 즉시 본 작업 진입",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "5EZ0v6xKbVeP",
+              "text": "[선제적 안전선 구축] 마음껏 부수고 실험해도 원본이 안전하다는 면책권 제공",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "x4NhkWT0YDH4",
+              "text": "[.outline 결핍 타격] 현재 우리 볼트의 아웃라이너 고통점과 1:1 결합",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "U35csJ5HVyRK",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "4RFVbV06IE2y",
+      "text": "🏛️ 2. 80%의 전형성 측정표 (The Familiar — 업계 표준선 카운팅)",
+      "children": [
+        {
+          "id": "L43WiD7N1Yec",
+          "text": "🦴 [🌸 Rin] 겉면(UI)을 찢은 3대 핵심 뼈대 (Skeleton Architecture)",
+          "children": [
+            {
+              "id": "DUh7022YQIg3",
+              "text": "문서 구조 뼈대: `단일 무한 트리` / `분리형 파일·폴더` / `2D 무한 캔버스` / `관계형 DB`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "xApncXkcuvLU",
+              "text": "데이터 연결 뼈대: `단방향 부모-자식 위계` / `양방향 링크` / `블록 미러링` / `2D 평면 좌표`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "yMAhMxcS0G25",
+              "text": "슬롯 규격 뼈대: `자유 비정형 텍스트` / `정형 속성 슬롯(Key-Value)` / `고정 템플릿 빈칸`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "8X6VyogeqQgO",
+          "text": "⚛️ [🌸 Rin] 생각의 최소 단위 (원자 형태와 용량)",
+          "children": [
+            {
+              "id": "BbWqi9VONevr",
+              "text": "최소 단위 형태: [불릿 / 블록 / 카드 / 캔버스 노드 / 파일]",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "05Oieb14jDjF",
+              "text": "1개 단위당 권장 글자 수: `[       자]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "PSeDmQI7kQSs",
+              "text": "한 화면(100% 줌) 동시 노출 단위 개수: `[       개]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "mlC7KWoLbxc0",
+          "text": "🖥️ [🌸 Rin + 👓 민규] 화면 분할과 조망 구조 (Viewport Layout)",
+          "children": [
+            {
+              "id": "MX1pQRxJ8Cv1",
+              "text": "화면 면적 비율: 좌측 탐색기 `%` : 중앙 작업판 `%` : 우측 속성/Diff창 `%` (합계 100%)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "l48h9H8oZbDu",
+              "text": "최대 지원 계층 깊이: `Depth [     ] 레벨` (무한 또는 제한)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "gZAvHtO9hqHB",
+              "text": "주력 인터랙션 방식: `100% 키보드 단축키` / `마우스 D&D` / `슬래시(/) 명령어`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "dKTFW0ceCk6k",
+          "text": "⚡ [🌸 Rin] 조작 속도와 마찰 (Friction & Speed)",
+          "children": [
+            {
+              "id": "4uNq4PmP8Ftp",
+              "text": "첫 결과물 생성까지 걸리는 시간: `[     초]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "sgyHqkypjEPG",
+              "text": "첫 결과물 생성까지의 클릭/타수: `[     회]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "lqMx3UQIfdtb",
+              "text": "빈 슬롯(Placeholder) 가이드 방식: `질문형 프롬프트` / `회색 문장` / `테두리 경고` / `단순 커서`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "xfu7HhDpWQax",
+              "text": "키보드 단축키 커버리지 비율: `[     %]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "npthiFaeN6SC",
+          "text": "🛡️ [👓 민규 + 🌸 Rin] 선제적 안전선 긋기 (Safety First)",
+          "children": [
+            {
+              "id": "mU2xIcOLQ8a0",
+              "text": "원본 데이터 불변성(Immutability) 보장 장치 유무",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "isCompleted": false,
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "9MfSMeJjK7jl",
+              "text": "실험용 격리 공간(독립 볼트 / 샌드박스 / 임시 브랜치) 제공 여부",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "isCompleted": false,
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "1dU2Ev6hyc3W",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "4S5VIZAYdd5j",
+      "text": "🚀 3. 20%의 변주 측정표 (MAYA Innovation — 최적의 새로움 실측)",
+      "children": [
+        {
+          "id": "lESEUGGVVfNt",
+          "text": "⚖️ [🌸 Rin] 자유와 제약의 배합비 (Freedom vs Constraints)",
+          "children": [
+            {
+              "id": "UvzpVJszcPJy",
+              "text": "사용자 자유 편집 영역 비율: `[     %]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "g0UDds6SzEqk",
+              "text": "시스템 고정·잠금 영역 비율: `[     %]` (자유 + 제약 = 100%)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "Y2vLzZlGarZK",
+              "text": "규칙 위반 시 경고/오류 차단 방식: `[     회]` (모달 팝업 vs 부드러운 넛지)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "sz8eBbVIiQHB",
+          "text": "🗡️ [🌸 Rin] 단 하나의 시그니처 무기 (Signature Interaction)",
+          "children": [
+            {
+              "id": "A0gZMFKT8YWu",
+              "text": "시그니처 인터랙션 1개 명칭: `[                                      ]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "O1pTI9NRr7m3",
+              "text": "1시간 작업 중 시그니처 기능 발동 빈도: `[     회]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "c2mZTePdHS6f",
+              "text": "시그니처 기능 호출에 필요한 키 입력·클릭 수: `[     타수/클릭]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "jiPXWCXtnFlS",
+          "text": "🧬 [🌸 Rin] 이종 도메인 교배 (Cross-Domain Roots)",
+          "children": [
+            {
+              "id": "OWj7I2weMmYP",
+              "text": "차용한 원본 도메인: `소프트웨어 개발(Git/IDE)` / `게임` / `영상·음향` / `법률·회계` / `건축`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "NLd2Oquw7qnv",
+              "text": "훔쳐온 핵심 메커니즘 1개 명칭: `[                                      ]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "kjbNIiJ5amHJ",
+          "text": "⚖️ [🤝 공통] 의도된 트레이드오프 (손익 계산서 & 포기의 미학)",
+          "children": [
+            {
+              "id": "aTSRveEbeKn1",
+              "text": "✨ **90% 극단적 몰빵 장점 1개**: `[                                    ]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "kcgUO7BPNtxl",
+              "text": "🗑️ **그 대가로 쿨하게 버린 기능 1개**: `[                                ]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "FodimVrGA7kF",
+          "text": "🔍 [🌸 Rin] 출처와 투명성 검증 (Source & Validation)",
+          "children": [
+            {
+              "id": "SHGErktMssuk",
+              "text": "슬롯/데이터 출처(Cite) 강제성: `문단별 필수` / `인라인 각주` / `출처 없음`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "T1lPhBuC9YGF",
+              "text": "시스템 내장 검증 규칙 수: `[     개]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "eKbeKR5ifYej",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "D0ohE6esfjUt",
+      "text": "🎬 4. 논지 전개 & 인지적 감정 곡선 (Narrative: Flow & Emotion)",
+      "children": [
+        {
+          "id": "QiFnakpbWOIM",
+          "text": "1️⃣ [👓 민규] 진입 장벽 분쇄 (Friction 0)",
+          "children": [
+            {
+              "id": "LHQ3Ot5iYUR8",
+              "text": "사용자 허들: *\"공부할 게 너무 많아 시작조차 두렵다\"*",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "06Zj8eYgqDdH",
+              "text": "처방: 이론 일체 생략하고 **원클릭 템플릿 복제**로 진입 저항감 0 달성",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "XEx96KN1t2sz",
+          "text": "2️⃣ [🤝 공통] 즉각적 도파민 공급 (Aha Moment / 16ms 피드백)",
+          "children": [
+            {
+              "id": "Obc83yxuk7d2",
+              "text": "사용자 허들: *\"내가 조작한 게 진짜 제대로 먹히고 있는 건가?\"*",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "bMTZh9RxpUyk",
+              "text": "처방: 조작 즉시 **16ms 로컬 렌더링 피드백(초록 하이라이트)**으로 첫 성공 체험 선사",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "zjulVhxWodvx",
+          "text": "3️⃣ [👓 민규] 피로감 예측과 치트키 투척 (Automation)",
+          "children": [
+            {
+              "id": "vh0d9DGSRhuB",
+              "text": "사용자 허들: *\"이걸 매번 손으로 반복하라고? 너무 지치는데...\"*",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "TsD0WeOZT24e",
+              "text": "처방: 지루함 극대화 타이밍에 **원클릭 자동화 단축키**를 던져 쾌감으로 반전",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "dXP4QNlhkev0",
+          "text": "4️⃣ [👓 민규] 선택권 부여(Opt-in)로 완주 피로 완화",
+          "children": [
+            {
+              "id": "akI1y06lXidi",
+              "text": "사용자 허들: *\"뒤에 또 복잡한 설정이 이어지면 도망치고 싶다\"*",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "6YjZbyt0aFaf",
+              "text": "처방: '필수'가 아닌 **'(선택)'** 표기로 심리적 탈출구 제공, 완주 실패감 원천 차단",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "wh9kuJObgah4",
+          "text": "5️⃣ [👓 민규] 인지적 종결(Closure)과 3단 공식 매듭",
+          "children": [
+            {
+              "id": "Ruc8ungicxft",
+              "text": "사용자 허들: *\"오늘 많은 걸 보긴 했는데, 당장 내일부터 뭘 해야 하지?\"*",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "wVfhXkgIHHFq",
+              "text": "처방: `[코드 수정 → deploy → 새로고침]` 식의 **초간단 3단계 행동 공식** 하나만 각인",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "kevWsGG1J17g",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "V7hu7UifWQ9h",
+      "text": "🎨 5. 시각적 리듬 & 모듈 조립 문법 (Visual: Rhythm & Anatomy)",
+      "children": [
+        {
+          "id": "wUudg4yYWOZX",
+          "text": "📏 [👓 민규] 문단 길이와 호흡 통제 (Micro-Length & Breath)",
+          "children": [
+            {
+              "id": "BR8G2inl3gD5",
+              "text": "**[1액션 = 1줄 원칙]** 모든 텍스트 블록을 40~60자 내외 단문으로 통제 (장문 줄글 0개)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "knvf1TxhFUZc",
+              "text": "**[행동 직결]** '읽는(Reading)' 시간을 없애고 즉각 '다음 행동(Doing)'으로 시선 유도",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "HCnHcTl6yUss",
+          "text": "🧱 [🤝 공통] 4단 모듈 조립 공식 (Block Anatomy)",
+          "children": [
+            {
+              "id": "tg74f7gFC9W6",
+              "text": "민규 서 콘텐츠 공식: `[헤더]` ➔ `[1줄 트리거]` ➔ `[코드/객체]` ➔ `[결론 콜아웃]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "ljploZib4p6V",
+              "text": "Rin 슬롯 공식: `Slot 1[훅]` ➔ `Slot 2[결핍]` ➔ `Slot 3[메커니즘]` ➔ `Slot 4[액션]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "KaLnFZ12hlT2",
+          "text": "⚖️ [👓 민규] 정보 밀도 및 여백 비율 (Visual Density & Ratio)",
+          "children": [
+            {
+              "id": "TQsFg162XzZv",
+              "text": "**[3:7 황금 비율]** 순수 텍스트 줄글 30% 미만 vs 비주얼 객체(코드·표·이미지) 70% 이상",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "RW8aibBDWEvY",
+              "text": "**[텍스트 벽 차단]** F자 스캐닝 시 숨 막히는 글자 덩어리를 없애고 여백과 리듬 확보",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "mDAgrHMHGcWW",
+          "text": "💬 [👓 민규] 촌철살인 인용구(Callout Punchline)를 통한 의사결정 강제",
+          "children": [
+            {
+              "id": "CHl0onNDulfG",
+              "text": "👉 **\"내가 만들고 싶은 건 기능인가 스타일인가? 기능이라면 플러그인입니다\"**",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "24WsIXOPDPKZ",
+              "text": "⚠️ **\"'이것도 넣어야지'를 하다 보면 끝이 없습니다\"**",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "xpFjbBpHvLUS",
+          "text": "⏸️ [👓 민규] 인지적 쉼표(<hr>)와 체크오프 리듬",
+          "children": [
+            {
+              "id": "Acl24PVwIM5s",
+              "text": "대단계 종료마다 `<hr>` 구분선 삽입하여 뇌를 리셋하고 다음 단계로 진입",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "xhsc4hmMQZbg",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "xJKI4Xp1gpBf",
+      "text": "🤝 6. 인간 vs AI 분업비 측정표 (Division of Labor & Collaboration)",
+      "children": [
+        {
+          "id": "9PgQVqFIkPzb",
+          "text": "📊 [🌸 Rin] 단계별 작업 지분율 [합계 100%]",
+          "children": [
+            {
+              "id": "8hh5MhsVHDMU",
+              "text": "1단계. 뼈대(목차·스캐폴드) 설계: `인간 [    ]%` : `AI [    ]%`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "LgvA1vKeMSPz",
+              "text": "2단계. 살(본문·슬롯) 채우기: `인간 [    ]%` : `AI [    ]%`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "HzBjJqAAQEzH",
+              "text": "3단계. 검증 및 최종 퇴고: `인간 [    ]%` : `AI [    ]%`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "jPDG5xxt7hJy",
+          "text": "🔄 [🌸 Rin] 협업 파이프라인 정밀도 (Pipeline Protocol)",
+          "children": [
+            {
+              "id": "ea9tyw4zZf5M",
+              "text": "AI 제안 방식: **Pull Request 모델** (초록/빨강 Diff로 수정안 오버레이)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "oM0QWWP6xs0g",
+              "text": "인간 승인 방식: **Code Reviewer 모델** (단축키 1타 Cherry-pick 부분 승인)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "r5yEzkCtdS1y",
+              "text": "AI에게 위임 가능한 정형 슬롯 개수: `[     개]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "9MNV8VxLVvkt",
+              "text": "인간의 최종 날인이 필요한 필수 관문(Gate) 개수: `[     개]`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "jopSw10FKmYe",
+          "text": "🛡️ [🌸 Rin] 보호 앵커 (Anchor Protection)",
+          "children": [
+            {
+              "id": "bctfhj5gvGH2",
+              "text": "완성 노드가 AI 재생성 시 날아가지 않도록 잠그는 장치: `Ctrl+L (노드 픽스)`",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "0i29DhIa9kAQ",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "zBRXkoIIz5cr",
+      "text": "🛠️ 7. Scaffold Manager 이식 확정 컴포넌트 규격 (Component Specs)",
+      "children": [
+        {
+          "id": "8mxwSoeEBWjD",
+          "text": "💾 [🌸 Rin] 데이터/저장소 엔진",
+          "children": [
+            {
+              "id": "7Vap0WOiKzsr",
+              "text": "`NodeCheckpointStore`: 사용자가 명시적으로 찍은 스냅샷만 해시 단위로 보존",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "G3fPzlCYGScg",
+          "text": "🎨 [🌸 Rin + 👓 민규] 렌더러 & 인터랙션",
+          "children": [
+            {
+              "id": "rz2mHYMqkceZ",
+              "text": "`InlineDiffDecorator`: 텍스트 변경점을 `+ (Green)` / `- (Red)`로 실시간 오버레이",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "qdC4eJnGvfu0",
+              "text": "`CherryPickToolbar`: 노드 옆에 붙는 `[✓ Accept]` / `[✗ Reject]` 키보드 게이트웨이",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "YWhZ0UUK5pod",
+              "text": "`4BlockModuleRenderer`: 4단 모듈 조립 공식에 맞춘 위지윅 카드 렌더링",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "Fuck3V8AcMjb",
+          "text": "🗺️ [🤝 공통] 조망 및 브랜칭",
+          "children": [
+            {
+              "id": "RrTlwtBlG1ek",
+              "text": "`CanvasBranchFlipper`: 1차원 아웃라인과 2차원 대안 브랜치 캔버스 간의 0ms 플립 전환기",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "61m2lxtDNt5h",
+              "text": "`SafeSandboxVault`: 실험 중 주력 데이터를 오염시키지 않는 독립 격리 샌드박스",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h3",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h2",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792392358442,
+  "updatedAt": 1792392445737
+}

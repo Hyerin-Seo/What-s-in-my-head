@@ -4,28 +4,22 @@
 <rect width="600" height="66" fill="#f6f6f8"/>
 <line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
 <text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">소프트웨어를 해체하는 론 프리드먼의 역설계…</text>
-<circle cx="34" cy="94" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="34" cy="94" r="4.5" fill="#7c5cff"/>
-<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🧬 0. 30개 레퍼런스를 꿰뚫는 [3대 종족 분류법 (Tribe)]</text>
-<circle cx="34" cy="127" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="34" cy="127" r="4.5" fill="#7c5cff"/>
-<text x="51" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🏛️ 1. 80%의 전형성 측정표 (업계 표준선 카운팅)</text>
-<circle cx="34" cy="160" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="34" cy="160" r="4.5" fill="#7c5cff"/>
-<text x="51" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🚀 2. 20%의 변주 측정표 (최적의 새로움 카운팅)</text>
-<circle cx="34" cy="193" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="34" cy="193" r="4.5" fill="#7c5cff"/>
-<text x="51" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🤝 3. 인간 vs AI 분업비 측정표 (작업 지분율 &amp; 검토 비용)</text>
-<circle cx="34" cy="226" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="34" cy="226" r="4.5" fill="#7c5cff"/>
-<text x="51" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🎯 4. [원심분리기 실측] Workflowy (무한 줌인 아웃라이너)</text>
-<circle cx="34" cy="259" r="4.5" fill="#3a3a40"/>
-<text x="51" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🎯 5. [원심분리기 실측] Git (체크포인트 · 인라인 Diff · 캔…</text>
-<circle cx="58" cy="292" r="4.5" fill="#3a3a40"/>
-<text x="75" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🏛️ 1. 80%의 전형성 실측치</text>
-<circle cx="82" cy="325" r="3" fill="#9a9aa3"/>
-<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">겉면을 찢은 3대 핵심 뼈대: 3종족(레고 조립 &amp; 안전망·…</text>
-<circle cx="82" cy="358" r="3" fill="#9a9aa3"/>
-<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">생각의 최소 단위: Commit 및 Hunk (변경 텍스트 조각) […</text>
+<circle cx="34" cy="94" r="3" fill="#9a9aa3"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📌 [Notion Callout] 론 프리드먼 《역설계》 사상 — 30개 소…</text>
+<line x1="34" y1="127" x2="574" y2="127" stroke="#d4d4da" stroke-width="1.5"/>
+<circle cx="34" cy="160" r="4.5" fill="#3a3a40"/>
+<text x="51" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🧬 0. 30개 레퍼런스를 꿰뚫는 [3대 종족 분류법 (Tribe)]</text>
+<circle cx="58" cy="193" r="4.5" fill="#3a3a40"/>
+<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🏛️ 3대 종족 아키텍처 판별 (Tribe)</text>
+<circle cx="82" cy="226" r="4.5" fill="#3a3a40"/>
+<text x="99" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1종족. 극단적 자유파 (Workflowy, Figma, Heptabase)</text>
+<circle cx="106" cy="259" r="3" fill="#9a9aa3"/>
+<text x="123" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">모토 : &quot;백지를 줄 테니 네 맘대로 날뛰어라&quot;</text>
+<circle cx="106" cy="292" r="3" fill="#9a9aa3"/>
+<text x="123" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">압도적 장점 : 파일·양식에 갇히지 않는 무한한 사고…</text>
+<circle cx="106" cy="325" r="3" fill="#9a9aa3"/>
+<text x="123" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">치명적 한계 : 자유가 너무 높아 초보자는 빈 화면 앞…</text>
+<circle cx="82" cy="358" r="4.5" fill="#3a3a40"/>
+<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2종족. 엄격한 규칙·슬롯파 (PandaDoc, Overleaf, Scr…</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>

@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"col1_group","type":"group","label":"🎯 Column 1: 전략 닻(Anchor) & 타깃 결핍 해체","x":0,"y":0,"width":520,"height":780,"color":"6"},
+		{"id":"col1_card1","type":"text","text":"## 🧬 0. 3대 종족 판별 & 승부 포지션\n\n• **1종족 자유파** (Workflowy): 무한 발상 vs 백지 공포\n• **2종족 규칙파** (PandaDoc): 무결성 vs 발상 질식\n• **3종족 레고파** (Notion): 조립 쾌감 vs 뼈대 상실\n\n> 🛖 **Scaffold Manager 승부수**:\n> `1종족(불릿 시작)` + `2종족(슬롯 검증)` + `3종족(스냅 바인딩)`","x":30,"y":80,"width":460,"height":280,"color":"6"},
+		{"id":"col1_card2","type":"text","text":"## 🎯 1. 타깃 페르소나 & 3대 장벽\n\n• **단 하나의 핵심 메시지**:\n  *\"무작정 코드부터 치지 마라 — 10분의 기획 점검이 10시간의 삽질을 막아준다\"*\n\n• **타깃 장벽 해체**:\n  1. 블랙박스 장벽 ➔ **패스트트랙 복제**\n  2. 데이터 오염 공포 ➔ **선제적 격리 안전선**\n  3. 반복 노가다 피로 ➔ **원클릭 치트키 단축키**","x":30,"y":400,"width":460,"height":330,"color":"1"},
+		{"id":"col2_group","type":"group","label":"🔬 Column 2: 원심분리 코어 매트릭스 (80% 전형성 vs 20% 변주)","x":640,"y":0,"width":750,"height":780,"color":"5"},
+		{"id":"col2_card_80","type":"text","text":"### 🏛️ 80% 전형성 (The Familiar)\n*\"업계가 검증한 당연한 기본기\"*\n\n• **문서 뼈대**: 단일 무한 위계 트리\n• **데이터 연결**: 단방향 부모-자식 체인\n• **원자 단위**: 불릿(Node), 단문 40~60자\n• **조작 속도**: 첫 결과물 0.5초 / 클릭 0타\n• **단축키 커버리지**: 90% 이상 마우스리스\n• **도파민 피드백**: 16ms 즉시 로컬 렌더링","x":670,"y":80,"width":320,"height":650,"color":"4"},
+		{"id":"col2_card_20","type":"text","text":"### 🚀 20% 변주 (MAYA Innovation)\n*\"우리가 꽂아 넣을 단 하나의 킬러 무기\"*\n\n• **시그니처 무기**:\n  초록/빨강 인라인 Diff + 체리픽 부분 채택\n• **손익 트레이드오프**:\n  ✨ 90% 몰빵: 체크포인트 불변 안전망\n  🗑️ 쿨하게 버림: 타이핑 마이크로 자동저장 배제\n• **이종 도메인 교배**:\n  개발자 Git VCS 사상 ➔ 글쓰기 목차 기획으로 전이\n• **캔버스 브랜칭 플립**: 1D 트리 ↔ 2D 공간 조망","x":1030,"y":80,"width":320,"height":650,"color":"2"},
+		{"id":"col3_group","type":"group","label":"🛠️ Column 3: 인간-AI 분업 & 최종 컴포넌트 스펙","x":1510,"y":0,"width":520,"height":780,"color":"3"},
+		{"id":"col3_card1","type":"text","text":"## 🤝 인간 vs AI 분업 프로토콜\n\n• **지분율**: 뼈대(인간 80 : AI 20) / 채우기(인간 20 : AI 80)\n• **AI 역할**: Pull Request 제안자 (Diff 오버레이)\n• **인간 역할**: Code Reviewer (체리픽 최종 승인)\n• **보호 앵커**: `Ctrl+L (노드 픽스)` 파괴 방지","x":1540,"y":80,"width":460,"height":280,"color":"6"},
+		{"id":"col3_card2","type":"text","text":"## 🛠️ 이식 확정 4대 컴포넌트 스펙\n\n1. `NodeCheckpointStore`: 스냅샷 해시 로컬 저장소\n2. `InlineDiffDecorator`: +초록 / -빨강 실시간 오버레이\n3. `CherryPickToolbar`: [✓ Accept] / [✗ Reject] 단축키 게이트\n4. `CanvasBranchFlipper`: 아웃라인 ↔ 캔버스 0ms 플립 토글","x":1540,"y":400,"width":460,"height":330,"color":"4"}
+	],
+	"edges":[
+		{"id":"edge_b_1","fromNode":"col1_group","fromSide":"right","toNode":"col2_group","toSide":"left","label":"원심분리 투입"},
+		{"id":"edge_b_2","fromNode":"col2_group","fromSide":"right","toNode":"col3_group","toSide":"left","label":"부품 추출 & 스펙 확정"}
+	]
+}

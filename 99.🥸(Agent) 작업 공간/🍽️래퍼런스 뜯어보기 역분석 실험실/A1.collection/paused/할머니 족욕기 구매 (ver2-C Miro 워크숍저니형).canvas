@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"miro_vote_group","type":"group","x":40,"y":720,"width":1760,"height":380,"color":"6","label":"🗳️ Miro 팀 투표 결과 (Rin × 민규 서 합의 보드)"},
+		{"id":"miro_banner","type":"text","text":"# 🟡 Miro 워크숍 스타일 — 할머니 족욕 유저 저니 맵 & 포스트잇 의사결정\n> **철학**: \"제품 스펙을 단순히 나열하지 않고, **할머니의 실제 하루 사용 여정(User Journey)**에 포스트잇을 붙이며 위험 요소를 찾아낸다.\"","x":0,"y":-220,"width":1750,"height":130,"color":"3"},
+		{"id":"j_step1","type":"text","text":"### 🏃 Step 1. 틈새 보관함에서 꺼내기","x":0,"y":-60,"width":320,"height":80,"color":"5"},
+		{"id":"j_step2","type":"text","text":"### 🏃 Step 2. 물 채우기 & 거실 이동","x":360,"y":-60,"width":320,"height":80,"color":"5"},
+		{"id":"j_step3","type":"text","text":"### 🏃 Step 3. 착좌 & 족욕 체감","x":720,"y":-60,"width":320,"height":80,"color":"5"},
+		{"id":"j_step4","type":"text","text":"### 🏃 Step 4. 배수 & 세척 관리","x":1080,"y":-60,"width":320,"height":80,"color":"5"},
+		{"id":"j_step5","type":"text","text":"### 🏃 Step 5. 건조 후 수납하기","x":1440,"y":-60,"width":320,"height":80,"color":"5"},
+		{"id":"stk_1_1","type":"text","text":"📝 **Rin의 메모**\n\"거실에 상시 덩치 큰 족욕기 나와 있으면 할머니가 답답해하셔. 틈새(15cm) 쏙 들어가는 접이식이 제일 좋아.\"","x":0,"y":50,"width":320,"height":140,"color":"3"},
+		{"id":"stk_1_2","type":"text","text":"⚠️ **민규 서의 지적**\n\"본체 무게 자체가 3.5kg 넘으면 꺼낼 때부터 손목 시큰거려하심. 본체 경량화 체크!\"","x":0,"y":210,"width":320,"height":130,"color":"2"},
+		{"id":"stk_2_1","type":"text","text":"🚨 **위험 (Pain Point)**\n\"싱크대나 세면대에서 물 8L 받아서 거실까지 들고 오는 건 절대 불가! 엎지르면 낙상 사고 남.\"","x":360,"y":50,"width":320,"height":140,"color":"1"},
+		{"id":"stk_2_2","type":"text","text":"💡 **해결책 아이디어**\n\"화장실 샤워기 옆에서 바로 온수 받거나, 캐스터 바퀴 + 캐리어 손잡이로 밀고 오기!\"","x":360,"y":210,"width":320,"height":130,"color":"4"},
+		{"id":"stk_2_3","type":"text","text":"⚡ **안전 포스트잇**\n\"전원선 치렁치렁하면 발 걸려 넘어짐. 본체 착탈식 전원선 필수!\"","x":360,"y":360,"width":320,"height":120,"color":"1"},
+		{"id":"stk_3_1","type":"text","text":"📝 **Rin의 체형 관찰**\n\"할머니 키가 단신(153cm)이라 일반 하드쉘은 높아서 오금이 눌려. 높이 22cm 로우 프로파일이어야 편하게 앉으심.\"","x":720,"y":50,"width":320,"height":160,"color":"3"},
+		{"id":"stk_3_2","type":"text","text":"🚨 **치명적 위험!**\n\"무골조 실리콘 접이식에 발 넣다가 통 무너지면 뜨거운 물 쏟아져서 화상 위험 극대화! ➔ **사이드 지지대 락킹 필수**\"","x":720,"y":230,"width":320,"height":170,"color":"1"},
+		{"id":"stk_3_3","type":"text","text":"💡 **온열 체감**\n\"PTC 세라믹 가열로 감전 차단 + 40~42도 자동 유지 기능 확인\"","x":720,"y":420,"width":320,"height":120,"color":"4"},
+		{"id":"stk_4_1","type":"text","text":"🚨 **가장 큰 허리 위험 (핵심)**\n\"족욕 끝나고 물 10kg 들고 변기에 붓다가 노인분들 허리 디스크 가장 많이 다침!\"","x":1080,"y":50,"width":320,"height":150,"color":"1"},
+		{"id":"stk_4_2","type":"text","text":"⭐ **결정적 요구사항**\n\"바닥 배수 밸브 + 연장 드레인 호스로 화장실 바닥에서 뚜껑만 톡 열면 배수 끝나야 함!\"","x":1080,"y":220,"width":320,"height":150,"color":"4"},
+		{"id":"stk_4_3","type":"text","text":"📝 **민규 서의 메모**\n\"마사지 롤러 분리 안 되면 며칠 만에 물때 곰팡이 낌. 분리 세척 체크\"","x":1080,"y":390,"width":320,"height":130,"color":"3"},
+		{"id":"stk_5_1","type":"text","text":"💡 **보관 팁**\n\"샤워기로 안쪽 슥 헹구고 양옆 락 풀어서 누르면 14cm로 납작해짐. 세탁기 옆 틈새 세워두면 끝!\"","x":1440,"y":50,"width":320,"height":160,"color":"4"},
+		{"id":"stk_5_2","type":"text","text":"👍 **최종 합의 도장**\n\"이 여정을 완벽하게 만족하는 유일한 조합: **하드락킹 폴딩 습식 족욕기**\"","x":1440,"y":230,"width":320,"height":150,"color":"4"},
+		{"id":"vc_1","type":"text","text":"### 🪣 일반 하드쉘 습식\n`❌ 탈락 (0표)`\n\n> **탈락/선정 사유**\n> 들어서 배수할 때 허리 파괴 위험","x":70,"y":780,"width":310,"height":280,"color":"1"},
+		{"id":"vc_2","type":"text","text":"### 🧳 하드락킹 접이식 습식\n`🏆 만장일치 채택 (2표 ⭐)`\n\n> **탈락/선정 사유**\n> 틈새 수납 + 락킹 안전 + 직배수 완벽","x":420,"y":780,"width":310,"height":280,"color":"4"},
+		{"id":"vc_3","type":"text","text":"### 🪵 건식 원목 사우나\n`❌ 제외 (0표)`\n\n> **탈락/선정 사유**\n> 부피 거대 + 온수에 담그는 맛 부재","x":770,"y":780,"width":310,"height":280,"color":"2"},
+		{"id":"vc_4","type":"text","text":"### ♨️ 스팀 분사형\n`❌ 탈락 (0표)`\n\n> **탈락/선정 사유**\n> 노즐 석회 물때 청소 불가 + 수압 부재","x":1120,"y":780,"width":310,"height":280,"color":"2"},
+		{"id":"vc_5","type":"text","text":"### 🥾 건식 발난로 부츠\n`❌ 탈락 (0표)`\n\n> **탈락/선정 사유**\n> 땀 차고 족욕 효과 미비","x":1470,"y":780,"width":310,"height":280,"color":"1"}
+	],
+	"edges":[
+		{"id":"miro_j_edge_0","fromNode":"j_step1","fromSide":"right","toNode":"j_step2","toSide":"left","color":"5"},
+		{"id":"miro_j_edge_1","fromNode":"j_step2","fromSide":"right","toNode":"j_step3","toSide":"left","color":"5"},
+		{"id":"miro_j_edge_2","fromNode":"j_step3","fromSide":"right","toNode":"j_step4","toSide":"left","color":"5"},
+		{"id":"miro_j_edge_3","fromNode":"j_step4","fromSide":"right","toNode":"j_step5","toSide":"left","color":"5"},
+		{"id":"miro_edge_solve1","fromNode":"stk_4_2","fromSide":"bottom","toNode":"vc_2","toSide":"top","color":"4","label":"허리 보호 직배수 솔루션"},
+		{"id":"miro_edge_solve2","fromNode":"stk_3_2","fromSide":"bottom","toNode":"vc_2","toSide":"top","color":"4","label":"사이드 락킹 골조로 무너짐 해결"}
+	]
+}

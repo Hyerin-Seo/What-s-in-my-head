@@ -1,0 +1,1302 @@
+{
+  "version": "1.0.0",
+  "id": "ZX54XOcjTlcb",
+  "title": "(통합 원심분리기) 레퍼런스 역설계 통합 기준표",
+  "rootNodes": [
+    {
+      "id": "notion_sf_5001",
+      "text": "📌 [Notion Callout] 론 프리드먼 《역설계》 사상 — 80% 공통 기본기와 20% 킬러 무기로 해체하여 우리 제품의 20% 독창성 포인트를 검증하는 작업대입니다. (각 소제목 끝의 파일명 링크를 클릭하면 원본 문서로 즉시 점프합니다)",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "quote",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5002",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5022",
+      "text": "🧬 0. 레퍼런스 정체성과 3대 종족 분류 (Identity & Tribe)",
+      "children": [
+        {
+          "id": "notion_sf_5005",
+          "text": "🔗 원문 메타 정보 및 분석 목적  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5003",
+              "text": "분석 대상 제품 : [[Git]] / Things 3 / Workflowy / ProtoPie",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5004",
+              "text": "도려낼 20% 핵심 경험 : 작업자의 롤백 불안증을 제로화하는 불변 안전망",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5018",
+          "text": "🏛️ 3대 종족 판별 (Archetype Matrix)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5009",
+              "text": "1종족. 극단적 자유파 (Workflowy, Heptabase, Figma)",
+              "children": [
+                {
+                  "id": "notion_sf_5006",
+                  "text": "모토 : \"백지를 줄 테니 마음대로 날뛰어라\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                },
+                {
+                  "id": "notion_sf_5007",
+                  "text": "장점 : 파일에 갇히지 않는 무한한 발상 자유도",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                },
+                {
+                  "id": "notion_sf_5008",
+                  "text": "한계 : 초보자가 빈 화면 앞에서 겪는 극심한 백지 공포",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5013",
+              "text": "2종족. 엄격한 규칙·슬롯파 (PandaDoc, Overleaf, Scrivener)",
+              "children": [
+                {
+                  "id": "notion_sf_5010",
+                  "text": "모토 : \"틀과 토큰을 줄 테니 빈칸만 채워라\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                },
+                {
+                  "id": "notion_sf_5011",
+                  "text": "장점 : 비즈니스 규격에 100% 부합하는 무결성 보장",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                },
+                {
+                  "id": "notion_sf_5012",
+                  "text": "한계 : 진입장벽이 높고 규칙이 숨 막혀 아이디어 발상 불가",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5017",
+              "text": "3종족. 레고 블록 조립파 (Notion, Framer, Puck)",
+              "children": [
+                {
+                  "id": "notion_sf_5014",
+                  "text": "모토 : \"표준 블록을 줄 테니 위아래로 쌓아라\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                },
+                {
+                  "id": "notion_sf_5015",
+                  "text": "장점 : 직관적인 드래그 앤 드롭 조립 쾌감",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                },
+                {
+                  "id": "notion_sf_5016",
+                  "text": "한계 : 서식 꾸미기에 매몰되어 글의 논리 뼈대 상실",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792397500450,
+                  "updatedAt": 1792397500450
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5021",
+          "text": "🛖 Scaffold Manager 승부 포지셔닝  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5019",
+              "text": "포지션 공식 : 1종족(가벼운 불릿 시작) + 2종족(슬롯 규격 검증) + 3종족(스냅 바인딩)의 유일한 하이브리드",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5020",
+              "text": "작업 닻(Anchor) : 현재 매일 사용하는 볼트의 .outline 에디터 환경",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5023",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5039",
+      "text": "🎯 1. 타깃 페르소나와 심리적 장벽 해체 (Strategy: Who & Pain)",
+      "children": [
+        {
+          "id": "notion_sf_5027",
+          "text": "📢 단 하나의 핵심 메시지 (Core Value Promise)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5024",
+              "text": "핵심 선언 : \"무작정 코드부터 치지 마라 — 10분의 기획 점검이 10시간의 삽질을 막아준다\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5025",
+              "text": "약속(Promise) : 방대한 학습 곡선 대신 10분 내에 체감하는 첫 번째 Aha Moment 보장",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5026",
+              "text": "인식 전환(Mindset) : 복잡한 툴 세팅에 매몰되지 않고 즉각적인 산출물로 연결",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5030",
+          "text": "👥 주요 대상 타깃 (Target Persona)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5028",
+              "text": "페르소나 1 (파워 유저) : 기존 아웃라이너의 Git 안전망 부재와 캔버스 갈증에 시달리는 작업자",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5029",
+              "text": "페르소나 2 (입문자) : 복잡한 환경 설정 없이 즉시 생각을 구조화하고 싶은 사용자",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5034",
+          "text": "🚧 사용자가 마주하는 3대 핵심 장벽 (Core Barriers)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5031",
+              "text": "1. 블랙박스 장벽 : 어디서부터 시작해야 할지 모르는 막막함과 백지의 공포",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5032",
+              "text": "2. 데이터 오염 공포 : 기껏 다듬은 기존 노드가 AI 재생성으로 날아갈까 봐 생기는 불안",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5033",
+              "text": "3. 반복 노가다 피로도 : 매번 복붙하고 다시 확인해야 하는 루틴의 피로",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5038",
+          "text": "💡 3대 돌파 전략 (Counter-Measures)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5035",
+              "text": "직선형 패스트트랙 : 템플릿 복제로 저항감 0 진입",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450,
+              "isCompleted": true,
+              "completedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5036",
+              "text": "선제적 안전선 구축 : 격리 샌드박스로 오염 공포 사전 차단",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450,
+              "isCompleted": true,
+              "completedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5037",
+              "text": "원클릭 치트키 : 피로 극대화 타이밍에 단축키 투척",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450,
+              "isCompleted": true,
+              "completedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5040",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5060",
+      "text": "🏛️ 2. 80%의 전형성 측정표 (The Familiar — 업계 표준선 카운팅)",
+      "children": [
+        {
+          "id": "notion_sf_5044",
+          "text": "🦴 겉면(UI)을 찢은 3대 핵심 뼈대 (Skeleton Architecture)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5041",
+              "text": "문서 아키텍처 : 단일 무한 트리 (Infinite Tree)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5042",
+              "text": "데이터 연결 방식 : 단방향 부모-자식 위계 체인",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5043",
+              "text": "슬롯 규격 뼈대 : 자유 비정형 텍스트 블록",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5048",
+          "text": "⚛️ 생각의 최소 단위 (원자 형태와 용량)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5045",
+              "text": "원자 형태 : 불릿(Bullet) 및 노드(Node)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5046",
+              "text": "권장 글자 수 : 40 ~ 60자 (단문 중심)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5047",
+              "text": "한 화면 동시 노출 개수 : 15 ~ 25개 (100% 줌 기준)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5052",
+          "text": "🖥️ 화면 분할과 조망 구조 (Viewport Layout)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5049",
+              "text": "화면 면적 비율 : 좌측 탐색기 20% : 중앙 작업판 60% : 우측 속성/Diff창 20%",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5050",
+              "text": "최대 계층 깊이 : 3~5 Depth 권장 (무한 지원하되 시각적 가이드)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5051",
+              "text": "주력 인터랙션 : 키보드 단축키 80% + 마우스 D&D 20%",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5056",
+          "text": "⚡ 조작 속도와 마찰 계측 (Friction & Speed)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5053",
+              "text": "첫 결과물 생성 시간 : 0.5초 이내",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5054",
+              "text": "첫 결과물 조작 타수 : 0타 (커서 즉시 진입)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5055",
+              "text": "키보드 단축키 커버리지 : 90% 이상 (마우스리스 조작)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5059",
+          "text": "🛡️ 선제적 안전선 긋기 (Safety First)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5057",
+              "text": "데이터 불변성(Immutability) : 매 타이핑 저장이 아닌 스냅샷 체크포인트 보존",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5058",
+              "text": "실험용 격리 공간 : 주력 데이터를 오염시키지 않는 독립 격리 샌드박스",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5061",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5079",
+      "text": "🚀 3. 20%의 변주 측정표 (MAYA Innovation — 최적의 새로움 실측)",
+      "children": [
+        {
+          "id": "notion_sf_5065",
+          "text": "🗡️ 단 하나의 시그니처 무기 (Signature Weapon)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5062",
+              "text": "무기 명칭 : 초록/빨강 인라인 Diff + 체리픽 선별 승인",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5063",
+              "text": "발동 빈도 : 1시간 작업 중 30~50회 발동",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5064",
+              "text": "호출 비용 : AI 수정 제안 즉시 자동 오버레이 (단축키 0타)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5069",
+          "text": "⚖️ 자유와 제약의 배합비 (Freedom vs Constraints)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5066",
+              "text": "사용자 자유 편집 영역 : 70% (불릿 텍스트 자유 작성)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5067",
+              "text": "시스템 제약·규격 영역 : 30% (슬롯 파이프라인 규격 검증)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5068",
+              "text": "규칙 위반 피드백 : 모달 팝업 대신 부드러운 인라인 넛지",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5072",
+          "text": "⚖️ 의도된 트레이드오프 (손익 계산서 & 포기의 미학)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5070",
+              "text": "90% 극단적 몰빵 : 명시적 체크포인트 커밋 기반의 확실한 안전망",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5071",
+              "text": "쿨하게 버린 10% : 모든 자잘한 타이핑의 마이크로 자동저장 배제",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5075",
+          "text": "🧬 이종 도메인 교배 (Cross-Domain Roots)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5073",
+              "text": "차용 도메인 : 소프트웨어 형상 관리 (Git / VCS)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5074",
+              "text": "전이 메커니즘 : 1차원 아웃라인 ➔ 2차원 캔버스 브랜칭 플립",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5078",
+          "text": "🔍 출처와 투명성 검증 (Source & Validation)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5076",
+              "text": "슬롯/데이터 출처(Cite) 강제성 : 문단별 필수 or 인라인 각주",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5077",
+              "text": "시스템 내장 검증 규칙 수 : 누락을 잡아내는 실시간 린터",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5080",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5096",
+      "text": "🎬 4. 논지 전개와 인지적 감정 곡선 (Narrative: Flow & Emotion)",
+      "children": [
+        {
+          "id": "notion_sf_5083",
+          "text": "1️⃣ 진입 장벽 분쇄 (Friction 0)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5081",
+              "text": "사용자 심리적 허들 : '공부할 게 너무 많아 시작조차 두렵다'",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5082",
+              "text": "처방 기법 : 이론/원리 일체 생략하고 원클릭 템플릿 복제로 저항감 0 달성",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5086",
+          "text": "2️⃣ 즉각적 도파민 공급 (Aha Moment / 16ms 피드백)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5084",
+              "text": "사용자 심리적 허들 : '내가 조작한 게 진짜 제대로 먹히고 있는 건가?'",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5085",
+              "text": "처방 기법 : 조작 즉시 16ms 로컬 렌더링 피드백(성공 팝업, 녹색 스냅 하이라이트)으로 첫 성공 체험 선사",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5089",
+          "text": "3️⃣ 피로감 예측과 치트키 투척 (Automation)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5087",
+              "text": "사용자 심리적 허들 : '이걸 매번 손으로 반복하라고? 너무 지치는데...'",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5088",
+              "text": "처방 기법 : 지루함이 극대화되는 타이밍에 원클릭 자동화 단축키 투척으로 쾌감 반전",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5092",
+          "text": "4️⃣ 선택권 부여 (Opt-in)로 완주 피로 완화  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5090",
+              "text": "사용자 심리적 허들 : '뒤에 또 복잡한 설정이 이어지면 도망치고 싶다'",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5091",
+              "text": "처방 기법 : '필수'가 아닌 '(선택)' 표기로 심리적 탈출구 제공, 완주 실패감 원천 차단",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5095",
+          "text": "5️⃣ 인지적 종결 (Closure)과 3단 공식 매듭  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5093",
+              "text": "사용자 심리적 허들 : '오늘 많은 걸 보긴 했는데, 당장 내일부터 뭘 해야 하지?'",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5094",
+              "text": "처방 기법 : [코드 수정 → deploy → 새로고침] 식의 초간단 3단계 행동 공식 각인",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5097",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5114",
+      "text": "🎨 5. 시각적 리듬과 모듈 조립 문법 (Visual: Rhythm & Anatomy)",
+      "children": [
+        {
+          "id": "notion_sf_5100",
+          "text": "📏 문단 길이와 호흡 통제 (Micro-Length & Breath)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5098",
+              "text": "[1액션 = 1줄 원칙] : 모든 텍스트 블록을 40~60자 내외 단문으로 통제 (장문 줄글 0개)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5099",
+              "text": "[행동 직결] : '읽는(Reading)' 시간을 없애고 즉각 '다음 행동(Doing)'으로 시선 유도",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5104",
+          "text": "🧱 4단 모듈 조립 공식 (Block Anatomy)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5101",
+              "text": "민규 서의 조립 블록 : [이모지 헤더] ➔ [1줄 트리거] ➔ [코드/캡처 객체] ➔ [결론 콜아웃 인용구]",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5102",
+              "text": "Rin의 슬롯 파이프라인 : [Slot 1 훅/맥락] ➔ [Slot 2 문제/결핍] ➔ [Slot 3 핵심 메커니즘] ➔ [Slot 4 행동/액션]",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5103",
+              "text": "반복 효과 : 소주제마다 동일한 시각 패턴을 반복 노출해 뇌의 인지 피로 원천 차단",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5107",
+          "text": "⚖️ 정보 밀도 및 여백 비율 (Visual Density & Ratio)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5105",
+              "text": "[3:7 황금 비율] : 순수 텍스트 30% 미만 vs 비주얼 객체(코드·표·콜아웃) 70% 이상",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5106",
+              "text": "[텍스트 벽 차단] : F자 스캐닝 시 숨 막히는 글자 덩어리를 없애고 여백과 리듬 확보",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5110",
+          "text": "💬 촌철살인 인용구(Callout Punchline)를 통한 의사결정 강제  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5108",
+              "text": "[단도직입 판정] : 양자택일 의사결정을 1초 만에 내려주는 단호한 판정문 배치",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5109",
+              "text": "[스코프 경고] : \"이것도 넣어야지\"를 하다가 기획이 침몰하는 것을 막는 경고 콜아웃",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5113",
+          "text": "⏸️ 인지적 쉼표(<hr>)와 체크오프 리듬 (Progressive Disclosure)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5111",
+              "text": "[단계별 수평선 절단] : 대단계 종료마다 <hr>을 삽입하여 사용자의 뇌를 단계별로 리셋",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5112",
+              "text": "[시각적 완료 증명] : 줄글 대신 최종 결과 캡처로 성공 피드백 즉각 각인",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5115",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5127",
+      "text": "🤝 6. 인간 vs AI 분업비 측정표 (Division of Labor & Collaboration)",
+      "children": [
+        {
+          "id": "notion_sf_5119",
+          "text": "📊 단계별 작업 지분율 [합계 100%]  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5116",
+              "text": "1단계. 뼈대(목차·스캐폴드) 설계 : [인간 80% : AI 20%]",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5117",
+              "text": "2단계. 살(본문·슬롯) 채우기 : [인간 30% : AI 70%]",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5118",
+              "text": "3단계. 검증 및 최종 퇴고 : [인간 90% : AI 10%]",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5124",
+          "text": "🔄 협업 파이프라인 정밀도 (Pipeline Protocol)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5120",
+              "text": "AI 제안 방식 : Pull Request 모델 (인라인 초록/빨강 Diff로 수정안 오버레이)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5121",
+              "text": "인간 승인 방식 : Code Reviewer 모델 (단축키 1타 체리픽 선별 승인)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5122",
+              "text": "AI 위임 정형 슬롯 : 기계적 팩트 체크 및 오타 교정",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5123",
+              "text": "인간 날인 필수 관문 : 전체 저장 전 최소 1회의 명시적 커밋 게이트웨이",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5126",
+          "text": "🛡️ 보호 앵커 (Anchor Protection)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5125",
+              "text": "노드 픽스(Lock) : 기존 완성 노드가 AI 재생성 시 날아가지 않도록 잠그는 장치 (Ctrl+L)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5128",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    },
+    {
+      "id": "notion_sf_5138",
+      "text": "🛠️ 7. Scaffold Manager 이식 확정 컴포넌트 규격 (Component Specs)",
+      "children": [
+        {
+          "id": "notion_sf_5131",
+          "text": "💾 데이터/저장소 엔진 규격 (NodeCheckpointStore)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5129",
+              "text": "`NodeCheckpointStore` : 매 타이핑 저장이 아닌 사용자가 명시적으로 찍은 스냅샷만 해시 단위 보존",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5130",
+              "text": "`SafeSandboxVault` : 실험 중 주력 데이터를 오염시키지 않는 독립 격리 샌드박스",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5135",
+          "text": "🎨 렌더러 & 인터랙션 규격 (InlineDiff & Toolbar)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5132",
+              "text": "`InlineDiffDecorator` : 텍스트 변경점을 `+ (Green)` / `- (Red)`로 실시간 오버레이",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5133",
+              "text": "`CherryPickToolbar` : 노드 옆에 붙는 `[✓ Accept]` / `[✗ Reject]` 키보드 게이트웨이",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            },
+            {
+              "id": "notion_sf_5134",
+              "text": "`4BlockModuleRenderer` : 4단 모듈 조립 공식에 맞춘 위지윅 카드 렌더링",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        },
+        {
+          "id": "notion_sf_5137",
+          "text": "🗺️ 조망 및 브랜칭 규격 (CanvasBranchFlipper)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "notion_sf_5136",
+              "text": "`CanvasBranchFlipper` : 1차원 아웃라인과 2차원 대안 브랜치 캔버스 간의 0ms 플립 전환기",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792397500450,
+          "updatedAt": 1792397500450
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792397500450,
+      "updatedAt": 1792397500450
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792397500450,
+  "updatedAt": 1792397500450
+}

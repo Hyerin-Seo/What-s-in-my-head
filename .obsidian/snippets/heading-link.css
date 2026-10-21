@@ -69,3 +69,34 @@
   box-shadow: 0 0 0 5px var(--heading-link-hover);
   cursor: pointer;
 }
+
+/* ── 4. 아웃라이너 (.vibe-outliner) 안의 작은 출처 링크 ─────────
+   소제목 뒤에 붙는 원본 출처 파일 링크를 은은하고 작은 각주 알약으로 정돈합니다.
+   제목(H1, H2)의 큰 폰트를 상속받아 뚱뚱해지는 것을 막고 11px로 축소합니다. */
+
+.vibe-outliner small a.internal-link,
+.vibe-outliner a.internal-link small,
+.vibe-outliner small .internal-link {
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  padding: 1px 6px !important;
+  border-radius: 4px !important;
+  vertical-align: middle !important;
+  color: var(--text-muted) !important;
+  background-color: var(--background-modifier-hover) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  text-decoration: none !important;
+  opacity: 0.75;
+  transition: opacity 120ms ease, color 120ms ease, background-color 120ms ease;
+}
+
+.vibe-outliner small a.internal-link:hover,
+.vibe-outliner a.internal-link:hover small,
+.vibe-outliner small .internal-link:hover {
+  opacity: 1 !important;
+  color: var(--text-normal) !important;
+  background-color: var(--background-modifier-hover-alt, rgba(128, 128, 128, 0.15)) !important;
+  border-color: var(--interactive-accent) !important;
+}
+

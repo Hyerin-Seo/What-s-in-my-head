@@ -1,0 +1,575 @@
+{
+  "version": "1.0.0",
+  "id": "SZJy72Y2w2hn",
+  "title": "통합 원심분리기 (v1-B 노션 스타일 호흡형)",
+  "rootNodes": [
+    {
+      "id": "a2x3LGrlLaVO",
+      "text": "📌 [Notion Callout] 거대하고 화려한 레퍼런스를 80% 공통 기본기와 20% 킬러 무기로 해체하여 우리 제품의 20% 독창성 포인트를 검증하는 작업대입니다.",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "quote",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "9NXasSTx5R73",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "gyGlRb8SNgub",
+      "text": "🧬 0. 레퍼런스 정체성과 3대 종족 분류",
+      "children": [
+        {
+          "id": "kUxZSEeemto5",
+          "text": "🔗 원문 메타 정보 및 분석 목적",
+          "children": [
+            {
+              "id": "E420lBN94SMP",
+              "text": "분석 대상 제품 : [[Git]] / Things 3 / Workflowy / ProtoPie",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "0ExSPMarWf5p",
+              "text": "도려낼 20% 핵심 경험 : 작업자의 롤백 불안증을 제로화하는 불변 안전망",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "C3Xz6NyCjF7L",
+          "text": "🏛️ 3대 종족 판별 (Archetype Matrix)",
+          "children": [
+            {
+              "id": "AgKdn4foZSDR",
+              "text": "1종족. 극단적 자유파 (Workflowy, Heptabase, Figma)",
+              "children": [
+                {
+                  "id": "KnSZ4hH3HkAl",
+                  "text": "모토 : \"백지를 줄 테니 마음대로 날뛰어라\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                },
+                {
+                  "id": "zRI3qrIj0XQU",
+                  "text": "장점 : 파일에 갇히지 않는 무한한 발상 자유도",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                },
+                {
+                  "id": "Fnp4iziEtzJY",
+                  "text": "한계 : 초보자가 빈 화면 앞에서 겪는 극심한 백지 공포",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "4swPi2PJbIa9",
+              "text": "2종족. 엄격한 규칙·슬롯파 (PandaDoc, Overleaf, Scrivener)",
+              "children": [
+                {
+                  "id": "IClOeQw2tDLP",
+                  "text": "모토 : \"틀과 토큰을 줄 테니 빈칸만 채워라\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                },
+                {
+                  "id": "zQXTeEYXfKsF",
+                  "text": "장점 : 비즈니스 규격에 100% 부합하는 무결성 보장",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                },
+                {
+                  "id": "0AjL5UQO8E6s",
+                  "text": "한계 : 진입장벽이 높고 규칙이 숨 막혀 아이디어 발상 불가",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "HQhMweN59PEq",
+              "text": "3종족. 레고 블록 조립파 (Notion, Framer, Puck)",
+              "children": [
+                {
+                  "id": "WhwrA9ua5dcx",
+                  "text": "모토 : \"표준 블록을 줄 테니 위아래로 쌓아라\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                },
+                {
+                  "id": "8E2DGWiRt1NZ",
+                  "text": "장점 : 직관적인 드래그 앤 드롭 조립 쾌감",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                },
+                {
+                  "id": "rl6lupQN5uMW",
+                  "text": "한계 : 서식 꾸미기에 매몰되어 글의 논리 뼈대 상실",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792392358442,
+                  "updatedAt": 1792392358442
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "0ET79vU6tzQV",
+          "text": "🛖 Scaffold Manager의 승부 포지셔닝",
+          "children": [
+            {
+              "id": "EYM6qgm3cr8d",
+              "text": "포지션 : 1종족(가벼운 불릿 시작) + 2종족(슬롯 규격 검증) + 3종족(스냅 바인딩)의 유일한 하이브리드",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "rm6EGFPOuDC0",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "f3oveCFJRCb7",
+      "text": "🎯 1. 타깃 페르소나와 심리적 장벽 해체",
+      "children": [
+        {
+          "id": "FPpvQPWQp0XH",
+          "text": "📢 핵심 약속 (Core Value Promise)",
+          "children": [
+            {
+              "id": "ig3326W7vorb",
+              "text": "선언 : '무작정 코드부터 치지 마라 — 10분의 기획 점검이 10시간의 삽질을 막아준다'",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "YGyIoIXxl9p9",
+              "text": "약속 : 방대한 학습 곡선 대신 10분 내에 체감하는 첫 번째 Aha Moment 보장",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "NcifvwMFzIy9",
+          "text": "🚧 사용자가 마주하는 3대 핵심 장벽",
+          "children": [
+            {
+              "id": "irvq4oWwUprk",
+              "text": "1. 블랙박스 장벽 : 어디서부터 시작해야 할지 모르는 막막함",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "16eUcNtOgxId",
+              "text": "2. 데이터 오염 공포 : 기껏 다듬은 기존 노드가 AI 재생성으로 날아갈까 봐 생기는 불안",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "hR6597WLpa76",
+              "text": "3. 반복 노가다 피로도 : 매번 복붙하고 다시 확인해야 하는 루틴의 피로",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "UnAGEBlrWM5m",
+          "text": "💡 3대 돌파 전략 (Counter-Measures)",
+          "children": [
+            {
+              "id": "NrvfWGRILLSt",
+              "text": "패스트트랙 : 템플릿 복제로 저항감 0 진입",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "isCompleted": true,
+              "completedAt": 1792392496124,
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392496124
+            },
+            {
+              "id": "hAVZVnpfcmYP",
+              "text": "선제적 안전선 : 격리 샌드박스로 오염 공포 사전 차단",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "isCompleted": true,
+              "completedAt": 1792392358442,
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "oaFg26SK89P7",
+              "text": "원클릭 치트키 : 피로 극대화 타이밍에 단축키 투척",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "isCompleted": true,
+              "completedAt": 1792392358442,
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "oTLRAXLXKi2a",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "Z3C95odlidhg",
+      "text": "🏛️ 2. 80%의 전형성 측정표 (업계 표준선 카운팅)",
+      "children": [
+        {
+          "id": "z6t0zLGDIM0S",
+          "text": "🦴 겉면을 찢은 3대 핵심 뼈대",
+          "children": [
+            {
+              "id": "WoR12FzViy41",
+              "text": "문서 아키텍처 : 단일 무한 트리",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "7DqUdXjlhrDT",
+              "text": "데이터 연결 방식 : 단방향 부모-자식 위계 체인",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "t0kIXR6znoVp",
+              "text": "슬롯 인터페이스 : 자유 비정형 텍스트 블록",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "dAi4q3DCnnmo",
+          "text": "⚛️ 생각의 최소 단위",
+          "children": [
+            {
+              "id": "SA6p3Ie8H8qf",
+              "text": "원자 형태 : 불릿(Bullet) 및 노드(Node)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "N1oj4ojSpLVA",
+              "text": "권장 글자 수 : 40 ~ 60자 (단문 중심)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "SThQyPcd94By",
+              "text": "한 화면 동시 노출 개수 : 15 ~ 25개",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "cwjiloNRmJqi",
+          "text": "⚡ 속도와 마찰 계측",
+          "children": [
+            {
+              "id": "Ege1u9jiMqjE",
+              "text": "첫 결과물 생성 시간 : 0.5초 이내",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "vIhNTFT7zqgr",
+              "text": "첫 결과물 조작 타수 : 0타 (커서 즉시 진입)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "YMwAk3JHjwm8",
+              "text": "단축키 커버리지 : 90% 이상 (마우스리스 조작)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "PRtYX8WjLus8",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    },
+    {
+      "id": "DoNuTSMRhp1J",
+      "text": "🚀 3. 20%의 변주 측정표 (최적의 새로움 실측)",
+      "children": [
+        {
+          "id": "v3smnOBNa9ap",
+          "text": "🗡️ 단 하나의 시그니처 무기",
+          "children": [
+            {
+              "id": "ragRUNhuYrl5",
+              "text": "무기 명칭 : 초록/빨강 인라인 Diff + 체리픽 선별 승인",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "0GtYlzCDc2IR",
+              "text": "발동 빈도 : 1시간 작업 중 30~50회 발동",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "RZmWAW1uxipe",
+              "text": "호출 비용 : AI 수정 제안 즉시 자동 오버레이 (단축키 0타)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "5IumPDEXAOtY",
+          "text": "⚖️ 의도된 트레이드오프 (손익 계산서)",
+          "children": [
+            {
+              "id": "IkpSbVsOMcqu",
+              "text": "90% 극단적 몰빵 : 명시적 체크포인트 커밋 기반의 확실한 안전망",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "0k6QXSJWisjy",
+              "text": "쿨하게 버린 10% : 모든 자잘한 타이핑의 마이크로 자동저장 배제",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        },
+        {
+          "id": "TUlRvuYX7k90",
+          "text": "🧬 이종 도메인 교배 (뿌리 추적)",
+          "children": [
+            {
+              "id": "82d6mzdcVvsk",
+              "text": "차용 도메인 : 소프트웨어 형상 관리(Git / VCS)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            },
+            {
+              "id": "bOp5F6DrWo8R",
+              "text": "전이 메커니즘 : 1차원 아웃라인 ➔ 2차원 캔버스 브랜칭 플립",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792392358442,
+              "updatedAt": 1792392358442
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792392358442,
+          "updatedAt": 1792392358442
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792392358442,
+      "updatedAt": 1792392358442
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792392358442,
+  "updatedAt": 1792392496124
+}
