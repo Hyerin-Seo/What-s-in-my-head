@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">00. (아웃라인) 창작 활동과 분석·설계의 상호…</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🌲 창작 활동과 분석·설계의 상호작용 및 황금비율 모델 (아웃…</text>
+<circle cx="58" cy="127" r="4.5" fill="#3a3a40"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🎯 1장. 개념적 정체성 : 창작 활동은 기획·설계에 포함되…</text>
+<circle cx="82" cy="160" r="4.5" fill="#3a3a40"/>
+<text x="99" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">• 핵심 카드 연결 : (gen)01. (개념관계) 창작 활동은 기…</text>
+<circle cx="106" cy="193" r="3" fill="#9a9aa3"/>
+<text x="123" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 포함되는 영역 : 창작의 내재적 척추 — (Why &amp; Wha…</text>
+<circle cx="106" cy="226" r="3" fill="#9a9aa3"/>
+<text x="123" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2. 포함될 수 없는 창작의 고유 영역 : 설계의 통제를…</text>
+<circle cx="106" cy="259" r="3" fill="#9a9aa3"/>
+<text x="123" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">3. 화분(기획/설계)과 식물(창작)의 메타포 : 언더…</text>
+<circle cx="58" cy="292" r="4.5" fill="#3a3a40"/>
+<text x="75" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🎨 2장. 혼합 비율 스펙트럼과 동적 시프트 (The Blend Rat…</text>
+<circle cx="82" cy="325" r="3" fill="#9a9aa3"/>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">• 핵심 카드 연결 : (gen)02. (스펙트럼) 작업 유형별 4…</text>
+<circle cx="82" cy="358" r="4.5" fill="#3a3a40"/>
+<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 작업 유형별 4대 대표 혼합 비율</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>

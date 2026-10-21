@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">00. (아웃라인) 기획과 설계의 역학 및 SM의…</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🌲 기획과 설계의 역학 및 SM의 역할 고찰 (사유의 궤적)</text>
+<circle cx="58" cy="127" r="4.5" fill="#3a3a40"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🎯 1부. 문제의 발단 : 기획(Why &amp; What)과 설계(How &amp; Det…</text>
+<circle cx="82" cy="160" r="3" fill="#9a9aa3"/>
+<text x="99" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 두 렌즈의 시선 차이 : 의도의 지도(기획) vs 시스템…</text>
+<circle cx="82" cy="193" r="3" fill="#9a9aa3"/>
+<text x="99" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2. 본질적 격차 : 기획에서 설계로 직행할 때 터지는 공수…</text>
+<circle cx="82" cy="226" r="3" fill="#9a9aa3"/>
+<text x="99" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">3. 작업 중간체 : 기획과 설계가 격돌하는 공통 아레나 매…</text>
+<circle cx="58" cy="259" r="4.5" fill="#3a3a40"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🚪 2부. 첫 번째 의문 : 기획과 설계 개입의 안전지대 임계…</text>
+<circle cx="82" cy="292" r="3" fill="#9a9aa3"/>
+<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 문제 의식 : 모든 작업이 기획과 설계를 하는 것은 아…</text>
+<circle cx="82" cy="325" r="3" fill="#9a9aa3"/>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2. 핵심 카드 연결 : (gen)01. (임계선) 기획과 설계 개…</text>
+<circle cx="82" cy="358" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="358" r="4.5" fill="#7c5cff"/>
+<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">3. 4대 안전지대 임계선 판별</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>
