@@ -333,10 +333,10 @@
               "children": [],
               "isFolded": false,
               "nodeType": "todo",
-              "createdAt": 1792397500450,
-              "updatedAt": 1792397500450,
               "isCompleted": true,
-              "completedAt": 1792397500450
+              "completedAt": 1792397500450,
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
             },
             {
               "id": "notion_sf_5036",
@@ -344,10 +344,10 @@
               "children": [],
               "isFolded": false,
               "nodeType": "todo",
-              "createdAt": 1792397500450,
-              "updatedAt": 1792397500450,
               "isCompleted": true,
-              "completedAt": 1792397500450
+              "completedAt": 1792397500450,
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
             },
             {
               "id": "notion_sf_5037",
@@ -355,10 +355,10 @@
               "children": [],
               "isFolded": false,
               "nodeType": "todo",
-              "createdAt": 1792397500450,
-              "updatedAt": 1792397500450,
               "isCompleted": true,
-              "completedAt": 1792397500450
+              "completedAt": 1792397500450,
+              "createdAt": 1792397500450,
+              "updatedAt": 1792397500450
             }
           ],
           "isFolded": false,

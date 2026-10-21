@@ -3,7 +3,7 @@ filters:
     - file.ext == "md"
     - note["유형"] == "할일"
     - note["상태"] != "결정 사항"
-    - file.inFolder("1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기")
+    - file.inFolder("4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기")
     - not:
         - file.name.startsWith("!(Template)")
 views:
@@ -14,7 +14,7 @@ views:
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기
+    quickAddFolder: 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -33,24 +33,24 @@ views:
       note.상태:
         to do: []
         진행중:
-          - 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/레퍼런스 분석 템플릿 만들기.md
-          - 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.md
-          - 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/글감 후보군.md
-          - 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/2026.10.15 outliner 빌더로 기술 블로그 포스팅 글쓰기 공유 준비.md
+          - 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기/레퍼런스 분석 템플릿 만들기.md
+          - 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.md
+          - 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기/글감 후보군.md
+          - 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기/2026.10.15 outliner 빌더로 기술 블로그 포스팅 글쓰기 공유 준비.md
         완료:
-          - 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/outline 개발 및 사용 15분 공유회.md
+          - 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기/outline 개발 및 사용 15분 공유회.md
   - type: kanban-view
     name: 👤 Rin
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기")
+        - file.inFolder("4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기")
         - note["담당"].contains("[[Rin]]")
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기
+    quickAddFolder: 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -69,14 +69,14 @@ views:
     name: 👤 민규 서
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기")
+        - file.inFolder("4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기")
         - note["담당"].contains("[[민규 서]]")
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기
+    quickAddFolder: 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -95,14 +95,14 @@ views:
     name: 👤 미할당
     filters:
       and:
-        - file.inFolder("1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기")
+        - file.inFolder("4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기")
         - note["담당"].isEmpty()
     order:
       - 담당
       - 일정
       - 마감
       - 작성자
-    quickAddFolder: 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기
+    quickAddFolder: 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기
     groupByProperty: note.상태
     imageProperty: note.커버
     imageFit: cover
@@ -124,5 +124,5 @@ views:
       - 일정
       - 마감
       - 작성자
-newItemFolder: 1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기
+newItemFolder: 4.🗄️(Archive) 보관/🥸옵시디언 플러그인 개발하는 법 글쓰기
 newItemTemplate: 1.🎯(Project) 프로젝트/!(Template) 새 할 일.md

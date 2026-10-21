@@ -605,7 +605,7 @@
                       "updatedAt": 1792554073932
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "file": {
                     "target": "Pasted image 20261012164311.png"
                   },
@@ -832,7 +832,7 @@
                       "updatedAt": 1792554073932
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1792554073932,
                   "updatedAt": 1792554073932
                 },
@@ -934,7 +934,7 @@
                       "updatedAt": 1792554073932
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1792554073932,
                   "updatedAt": 1792554073932
                 },
@@ -1025,7 +1025,7 @@
                       "updatedAt": 1792554073932
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1792554073932,
                   "updatedAt": 1792554073932
                 },
@@ -1625,7 +1625,7 @@
                           "updatedAt": 1792554073932
                         }
                       ],
-                      "isFolded": false,
+                      "isFolded": true,
                       "createdAt": 1792554073932,
                       "updatedAt": 1792554073932
                     },
@@ -1917,7 +1917,7 @@
                       "updatedAt": 1792554073932
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "file": {
                     "target": "Pasted image 20261012201934.png"
                   },
@@ -3321,7 +3321,7 @@
               "updatedAt": 1792554073932
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792554073932,
           "updatedAt": 1792554073932
         },
@@ -7807,7 +7807,7 @@
               "updatedAt": 1792554073932
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792554073932,
           "updatedAt": 1792554073932
         },
@@ -7913,7 +7913,7 @@
           "updatedAt": 1792554073932
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "file": {
         "target": "Pasted image 20261012144221.png"
       },
@@ -7923,5 +7923,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1792554073932,
-  "updatedAt": 1792555278134
+  "updatedAt": 1792557592545
 }
