@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"v1_g0","type":"group","x":20,"y":-260,"width":420,"height":620,"color":"6","label":"🏛️ [Phase 0] 종족 판별 및 북극성 포지셔닝"},
+		{"id":"v1_g1","type":"group","x":880,"y":400,"width":420,"height":620,"color":"1","label":"🎯 [Phase 1] 단일 주인공 A라인 & 장벽 해체"},
+		{"id":"v1_g2","type":"group","x":1020,"y":-540,"width":420,"height":620,"color":"4","label":"⚖️ [Phase 2] MAYA 실측 (80% 표준 vs 20% 변주)"},
+		{"id":"v1_g3","type":"group","x":1640,"y":280,"width":420,"height":620,"color":"5","label":"🎬 [Phase 3] 논지 전개 & 시각 조립 문법"},
+		{"id":"v1_g4","type":"group","x":2140,"y":-620,"width":420,"height":620,"color":"6","label":"🧩 [Phase 4] 분업 프로토콜 & C라인 핀셋 추출"},
+		{"id":"v1_c0_1","type":"text","text":"### 🔗 0-1. 원문 메타 & 결핍\n• **분석 대상 레퍼런스**\n• **고른 까닭** (.outline의 어떤 결핍 때문인가)\n• **도려낼 20% 핵심 경험** (롤백 안전망 등)","x":50,"y":-190,"width":360,"height":220,"color":"6"},
+		{"id":"v1_c0_2","type":"text","text":"### 🏛️ 0-2. 3대 종족 판별 & 승부처\n• **1종족 자유파** (Workflowy: 발상 vs 백지공포)\n• **2종족 규칙파** (PandaDoc: 무결성 vs 질식)\n• **3종족 레고파** (Notion: 조립 vs 뼈대 상실)\n• **Scaffold 공식**: 1+2+3 하이브리드 포지셔닝","x":50,"y":70,"width":360,"height":250,"color":"6"},
+		{"id":"v1_c2_1","type":"text","text":"### 🏛️ 2. 80% 전형성 (The Familiar)\n• **겉면 찢은 3대 뼈대** (단일 트리, DAG 등)\n• **생각의 최소 단위** (원자 글자 수 40~60자)\n• **조작 속도와 마찰** (0.5초 첫 결과물, 0타)\n• **짝꿍 지표 결합** (단축키 90% ↔ 손방황 1초)","x":1050,"y":-470,"width":360,"height":220,"color":"4"},
+		{"id":"v1_c2_2","type":"text","text":"### 🚀 3. 20% 변주 (The Novelty)\n• **단 하나의 시그니처 무기** (초록/빨강 Diff 등)\n• **의도된 트레이드오프** (버린 10% vs 몰빵 90%)\n• **리스크 헷지책** (포기로 인한 이탈 방어망)\n• **이종 도메인 교배** (타 산업 사상 수혈)","x":1050,"y":-210,"width":360,"height":250,"color":"2"},
+		{"id":"v1_c3_1","type":"text","text":"### 🎬 4. 5단계 인지 감정 곡선\n• **1️⃣ 진입 장벽 분쇄** (Friction 0 시작)\n• **2️⃣ 즉각적 도파민 공급** (16ms Aha Moment)\n• **3️⃣ 마찰 없는 몰입 유지** (피로 타이밍 자동화)\n• **4️⃣ 선택권 부여** ((선택) 표기로 피로 완화)\n• **5️⃣ 인지적 종결** (3단 공식 매듭짓기)","x":1670,"y":350,"width":360,"height":220,"color":"5"},
+		{"id":"v1_c3_2","type":"text","text":"### 🎨 5. 시각적 리듬 & 모듈 문법\n• **문단 길이와 호흡** (1액션 = 1단문 원칙)\n• **4단 모듈 공식** (`[헤더]`➔`[트리거]`➔`[객체]`➔`[콜아웃]`)\n• **정보 밀도 황금비** (텍스트 30% : 비주얼 70%)\n• **촌철살인 인용구** (의사결정 강제 펀치라인)","x":1670,"y":610,"width":360,"height":250,"color":"3"},
+		{"id":"v1_c4_1","type":"text","text":"### 🤝 6. 인간 vs AI 분업비 실측\n• **작업 지분율** (기획 8:2, 생성 2:8, 검증 10:0)\n• **협업 파이프라인** (Drafter vs Reviewer)\n• **보호 앵커** (`Ctrl+L` 확정 노드 잠금 락)","x":2170,"y":-550,"width":360,"height":220,"color":"6"},
+		{"id":"v1_c4_2","type":"text","text":"### 🏷️ 7. 이 레퍼런스에서 뽑을 핀셋 카드\n• **C1~C5 파이프라인 매핑 카드 5종**\n• **Scaffold 답과 1:1 맞대 보기 대조**\n• **우리 아키텍처 확정 이식 컴포넌트**","x":2170,"y":-290,"width":360,"height":250,"color":"4"},
+		{"id":"v1_c1_1","type":"text","text":"### 📢 1-1. 단 하나의 핵심 약속\n• **핵심 선언** (첫 화면 한 문장)\n• **가치 약속** (사용자가 얻는 궁극적 혜택)\n• **인식 전환** (고객에게 바꾸라는 기존 편견)","x":910,"y":470,"width":360,"height":220,"color":"1"},
+		{"id":"v1_c1_2","type":"text","text":"### 👥 1-2. A라인 주인공 & 3대 장벽\n• **단일 주인공 [A라인]** (누구의 결핍인가)\n• **3대 심리 장벽** (블랙박스, 데이터 오염, 피로)\n• **3대 돌파 전략** (패스트트랙, 안전선, 치트키)","x":910,"y":730,"width":360,"height":250,"color":"1"}
+	],
+	"edges":[
+		{"id":"e_v1_1","fromNode":"v1_c0_2","fromSide":"right","toNode":"v1_c1_2","toSide":"left","label":"종족 포지셔닝 ➔ A라인 주인공 확정"},
+		{"id":"e_v1_2","fromNode":"v1_c1_2","fromSide":"right","toNode":"v1_c2_1","toSide":"left","label":"주인공의 결핍 해소용 표준 80%"},
+		{"id":"e_v1_3","fromNode":"v1_c2_1","fromSide":"bottom","toNode":"v1_c2_2","toSide":"top","label":"표준 위에 20% 변주 결합"},
+		{"id":"e_v1_4","fromNode":"v1_c2_2","fromSide":"right","toNode":"v1_c3_1","toSide":"left","label":"20% 변주를 도파민 감정선으로 연출"},
+		{"id":"e_v1_5","fromNode":"v1_c3_1","fromSide":"bottom","toNode":"v1_c3_2","toSide":"top","label":"감정선을 시각 모듈로 블록화"},
+		{"id":"e_v1_6","fromNode":"v1_c3_2","fromSide":"right","toNode":"v1_c4_1","toSide":"left","label":"모듈 제작을 위한 인간-AI 분업"},
+		{"id":"e_v1_7","fromNode":"v1_c4_1","fromSide":"bottom","toNode":"v1_c4_2","toSide":"top","label":"최종 C라인 핀셋 카드 5종 추출"}
+	]
+}
