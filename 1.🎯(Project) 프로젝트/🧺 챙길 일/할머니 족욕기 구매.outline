@@ -24,6 +24,13 @@
               "children": [],
               "createdAt": 1792292006910,
               "updatedAt": 1792292753800
+            },
+            {
+              "id": "T23C5QDL5ezp",
+              "text": "주 사용 장소(설치 위치)",
+              "children": [],
+              "createdAt": 1792295774599,
+              "updatedAt": 1792295780648
             }
           ],
           "isFolded": true,
@@ -40,11 +47,20 @@
               "children": [
                 {
                   "id": "Fv1vJUzWyVWK",
-                  "text": "유선 직결 vs 무선 배터리",
-                  "children": [],
+                  "text": "유선 직결 vs 무선 배터리 (팩트: 가열/보온 족욕기는 100% 유선 필수, 시중 '무선'은 리모컨 무선 상술)",
+                  "children": [
+                    {
+                      "id": "ItjMSKRaMyrj",
+                      "text": "보온 전력(200~400W) 한계로 충전식 무선 온수기는 시중에 미존재 (오직 220V 유선 가열만 성립)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792296204548,
+                      "updatedAt": 1792296204548
+                    }
+                  ],
                   "isFolded": false,
                   "createdAt": 1792293060429,
-                  "updatedAt": 1792293060429
+                  "updatedAt": 1792296204548
                 },
                 {
                   "id": "xHck1dwbJjB4",
@@ -373,6 +389,36 @@
           "isFolded": true,
           "createdAt": 1792291814645,
           "updatedAt": 1792292951600
+        },
+        {
+          "id": "Ns9lUQBtuwEO",
+          "text": "5. 사용자의 특징",
+          "children": [
+            {
+              "id": "t6rTIRmrCf1e",
+              "text": "연령",
+              "children": [],
+              "createdAt": 1792295883679,
+              "updatedAt": 1792295885034
+            },
+            {
+              "id": "ciB6ALroXiRM",
+              "text": "신체적 특징",
+              "children": [],
+              "createdAt": 1792295885158,
+              "updatedAt": 1792295889020
+            },
+            {
+              "id": "Qi59kalKq9TX",
+              "text": "",
+              "children": [],
+              "createdAt": 1792295889151,
+              "updatedAt": 1792295889151
+            }
+          ],
+          "createdAt": 1792295877111,
+          "updatedAt": 1792295881292,
+          "isFolded": true
         }
       ],
       "isFolded": false,
@@ -742,11 +788,11 @@
           "children": [
             {
               "id": "sheBDgwsf52d",
-              "text": "선 최소화 및 착탈식 코드 (치렁치렁한 선 배제, 본체 분리형 전원 코드 or 무선 구동)",
+              "text": "선 최소화 및 착탈식 코드 (100% 유선 필수이므로 물기 안전을 위한 본체 분리형 전원선 채택)",
               "children": [],
               "isFolded": false,
               "createdAt": 1792294582937,
-              "updatedAt": 1792294738064
+              "updatedAt": 1792296204548
             },
             {
               "id": "kPdKtPePnLTj",
@@ -814,9 +860,76 @@
       "isFolded": false,
       "createdAt": 1792294582937,
       "updatedAt": 1792294582937
+    },
+    {
+      "id": "UX2NJWXl6MMV",
+      "text": "상품 조사 채널 (접근성 현황)",
+      "children": [
+        {
+          "id": "7uOiS2KuZqBK",
+          "text": "접근 가능 사이트",
+          "children": [
+            {
+              "id": "SFIy4nlw3lIy",
+              "text": "다나와 / 에누리 (가격비교 및 상세 제원 DB 조회 가능)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792296052680,
+              "updatedAt": 1792296052680
+            },
+            {
+              "id": "jGwxPwUlMID7",
+              "text": "제조사 공식 홈페이지 (제품 매뉴얼, 공식 기술 사양서 조회 가능)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792296052680,
+              "updatedAt": 1792296052680
+            },
+            {
+              "id": "HJ62HHWiZQnj",
+              "text": "네이버 블로그 / 카페 (실사용자 실측 후기, 내돈내산 리뷰 조회 가능)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792296052680,
+              "updatedAt": 1792296052680
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792296052680,
+          "updatedAt": 1792296052680
+        },
+        {
+          "id": "xbvn75du2YnM",
+          "text": "접근 불가 사이트 (봇 보안 차단)",
+          "children": [
+            {
+              "id": "9fXQu6ENB6HB",
+              "text": "쿠팡 (HTTP 403 Forbidden / 자체 안티봇 방화벽 차단)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792296052680,
+              "updatedAt": 1792296052680
+            },
+            {
+              "id": "XFWlvFyiL4zE",
+              "text": "네이버 스마트스토어 (HTTP 429 Too Many Requests / 봇 요청 제한)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792296052680,
+              "updatedAt": 1792296052680
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792296052680,
+          "updatedAt": 1792296052680
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792296052680,
+      "updatedAt": 1792296052680
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792291573407,
-  "updatedAt": 1792295401999
+  "updatedAt": 1792296204549
 }

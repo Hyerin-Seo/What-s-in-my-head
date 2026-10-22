@@ -4,7 +4,7 @@ excalidraw-plugin: parsed
 tags: [excalidraw]
 
 유형: 할일
-구역: 1.project
+구역: 4.archive
 분류:
   - 🥸옵시디언 플러그인 개발하는 법 글쓰기
 주제:
