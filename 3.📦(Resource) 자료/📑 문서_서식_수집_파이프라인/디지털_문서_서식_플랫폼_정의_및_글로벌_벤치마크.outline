@@ -232,6 +232,7 @@
               "updatedAt": 1792911494729
             }
           ],
+          "isFolded": true,
           "createdAt": 1792911225054,
           "updatedAt": 1792912386405
         },
@@ -286,6 +287,38 @@
               "isFolded": false,
               "createdAt": 1792911584379,
               "updatedAt": 1792911584379
+            },
+            {
+              "id": "SH1GESX7CkYO",
+              "text": "마케팅·브랜딩",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792928815526,
+              "updatedAt": 1792928815526
+            },
+            {
+              "id": "2dD7HQcf8oVy",
+              "text": "리서치·시장조사",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792928815526,
+              "updatedAt": 1792928815526
+            },
+            {
+              "id": "X2y3CHMS9S3c",
+              "text": "운영·매뉴얼",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792928815526,
+              "updatedAt": 1792928815526
+            },
+            {
+              "id": "BLYDnDtqxSKp",
+              "text": "디자인·크리에이티브",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792928815526,
+              "updatedAt": 1792928815526
             }
           ],
           "isFolded": false,
@@ -329,7 +362,7 @@
               "updatedAt": 1792911696939
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792911696939,
           "updatedAt": 1792912386405
         },
@@ -378,7 +411,7 @@
               "updatedAt": 1792911929264
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792911929264,
           "updatedAt": 1792912386405
         },
@@ -419,7 +452,7 @@
               "updatedAt": 1792911929264
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792911929264,
           "updatedAt": 1792912386405
         },
@@ -452,7 +485,7 @@
               "updatedAt": 1792911929264
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792911929264,
           "updatedAt": 1792912386405
         },
@@ -501,7 +534,7 @@
               "updatedAt": 1792912061439
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792912061439,
           "updatedAt": 1792912386405
         },
@@ -550,17 +583,1213 @@
               "updatedAt": 1792912061439
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792912061439,
           "updatedAt": 1792912386405
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1792911159016,
       "updatedAt": 1792912061439
+    },
+    {
+      "id": "ibO4AT4DGwRz",
+      "text": "5. 실제 조사 완료된 수급처 허브 목록 (Verified Source Hubs)",
+      "children": [
+        {
+          "id": "tnlOYT1gx9Lb",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#1. 대한법률구조공단 — 법률서식|대한법률구조공단 법률서식 (국내 공공)]]",
+          "children": [
+            {
+              "id": "BXsEjWUFgEO9",
+              "text": "https://www.klac.or.kr/legalinfo/legalFrm.do",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "AvDvKJB2Egyk",
+              "text": "【무료】 【법률·규약】 【정부·공공 포털】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【국내 표준형】 【개인 이용 한정형】 【공개 다운로드형 · 웹 뷰어 전용형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923466520,
+              "updatedAt": 1792923466520
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923990952
+        },
+        {
+          "id": "Nj0umev3Pm5s",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#2. 법제처 국가법령정보센터 — 별표·서식|법제처 국가법령정보센터 (law.go.kr)]]",
+          "children": [
+            {
+              "id": "qxAbUFNFMzwa",
+              "text": "https://www.law.go.kr/LSW/lsBylSc.do",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "GnJx4xxF7p5f",
+              "text": "【무료】 【법률·규약 · 재무·회계】 【정부·공공 포털】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식】 【국내 표준형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792924316083
+            },
+            {
+              "id": "G0v8FoYIb3WQ",
+              "text": "↳ 파생 입구: [[01. (과금) 무료 서식 수급처 Top 10#4. 국세청 — 세무서식|국세청 세무서식 전용관 (nts.go.kr)]]",
+              "children": [
+                {
+                  "id": "NWRvQxkP0aIR",
+                  "text": "https://www.nts.go.kr/nts/ad/nf/nltFormatApiList.do?mi=40178",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792924316083,
+                  "updatedAt": 1792924316083
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792924316083,
+              "updatedAt": 1792924316083
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792924316083
+        },
+        {
+          "id": "IyNeQ84SPeGc",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#3. 공정거래위원회 — 표준계약서|공정거래위원회 표준계약서 (국내 공공)]]",
+          "children": [
+            {
+              "id": "ou1NJRigjCw7",
+              "text": "https://www.ftc.go.kr/www/selectBbsNttList.do?bordCd=201&key=202",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "ys7W6wrn4jF5",
+              "text": "【무료】 【법률·규약 · 경영·전략】 【정부·공공 포털】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【국내 표준형】 【완전 개방형】 【공개 다운로드형 · 웹 뷰어 전용형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923990952
+        },
+        {
+          "id": "jKtqYgiZckSb",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#5. Common Paper — Standard Contracts|Common Paper (해외 표준계약)]]",
+          "children": [
+            {
+              "id": "6DBS7qyQ3R6L",
+              "text": "https://commonpaper.com/standards/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "p1cabOUY2Q0r",
+              "text": "【무료】 【법률·규약 · 제품·엔지니어링】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【가이드·해설 동반 양식 · 빈 뼈대 양식】 【글로벌 영미권형】 【오픈소스 조건부형】 【공개 다운로드형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923990952
+        },
+        {
+          "id": "ZqPJOMj9KeSe",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#6. Vertex42 — Excel Templates|Vertex42 (해외 스프레드시트)]]",
+          "children": [
+            {
+              "id": "56Cjy5hTsaQr",
+              "text": "https://www.vertex42.com/ExcelTemplates/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "oP7fgL8a4r0H",
+              "text": "【무료】 【재무·회계 · 경영·전략】 【공식 플랫폼】 【스프레드시트 수식형】 【자동화 연산 양식 · 빈 뼈대 양식】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923990952
+        },
+        {
+          "id": "cQICPnpNuOai",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#7. Notion — 공식 템플릿 (@notion)|Notion 공식 템플릿 (@notion) (해외 클라우드)]]",
+          "children": [
+            {
+              "id": "3bpCqzolrpJK",
+              "text": "https://www.notion.com/@notion",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "DrqU51w4YcY0",
+              "text": "【무료】 【경영·전략 · 제품·엔지니어링】 【공식 플랫폼】 【클라우드 블록형】 【실전 완성 사례 · 빈 뼈대 양식】 【크로스보더 다국어형】 【플랫폼 폐쇄형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923990952
+        },
+        {
+          "id": "XdO3GXDkGIzS",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#8. Atlassian — Templates for Confluence|Atlassian Confluence 템플릿 (해외 협업문서)]]",
+          "children": [
+            {
+              "id": "uQK0oCvyzfTe",
+              "text": "https://www.atlassian.com/software/confluence/templates",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "1I9BUMyUtNG7",
+              "text": "【무료】 【제품·엔지니어링 · 경영·전략】 【공식 플랫폼】 【클라우드 블록형】 【가이드·해설 동반 양식 · 실전 완성 사례】 【글로벌 영미권형】 【플랫폼 폐쇄형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923990952
+        },
+        {
+          "id": "RHfb3410iIW3",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#9. LibreOffice — Templates 태그|LibreOffice 템플릿 (해외 오픈포맷)]]",
+          "children": [
+            {
+              "id": "3kJjx397Firs",
+              "text": "https://extensions.libreoffice.org/?Tags%5B%5D=118",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "nP8b6KpDhRtE",
+              "text": "【무료】 【경영·전략 · 재무·회계】 【커뮤니티·포럼】 【문서 텍스트형 · 스프레드시트 수식형 · 슬라이드 시각형】 【빈 뼈대 양식】 【크로스보더 다국어형】 【오픈소스 조건부형】 【공개 다운로드형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923990952
+        },
+        {
+          "id": "11qxnMXfFQRA",
+          "text": "[[01. (과금) 무료 서식 수급처 Top 10#10. SCORE — Small Business Templates|SCORE Small Business Templates (해외 창업/경영)]]",
+          "children": [
+            {
+              "id": "jAhGmJ5VDYia",
+              "text": "https://www.score.org/templates/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "ZZq07FGZsFxc",
+              "text": "【무료】 【경영·전략 · 재무·회계】 【공식 플랫폼】 【문서 텍스트형 · 스프레드시트 수식형 · 고정 인쇄형】 【가이드·해설 동반 양식 · 자동화 연산 양식】 【글로벌 영미권형】 【완전 개방형】 【보안 방어형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923990952
+        },
+        {
+          "id": "Ub4MDBI53URd",
+          "text": "예스폼 (yesform.com)",
+          "children": [
+            {
+              "id": "YULAMvzCvzrE",
+              "text": "[[02. (과금) 유료 서식 수급처 Top 10#1. 예스폼 — 계약서|계약서 허브 (contract.yesform.com)]]",
+              "children": [
+                {
+                  "id": "WsInW7qXaq1i",
+                  "text": "https://contract.yesform.com/",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792924316083,
+                  "updatedAt": 1792924316083
+                },
+                {
+                  "id": "MwHHq1EbMVmS",
+                  "text": "【유료】 【법률·규약 · 경영·전략】 【공식 플랫폼】 【문서 텍스트형】 【가이드·해설 동반 양식 · 실전 완성 사례】 【국내 표준형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792924316083,
+                  "updatedAt": 1792924316083
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792924316083,
+              "updatedAt": 1792924316083
+            },
+            {
+              "id": "JETqaILhejiV",
+              "text": "[[02. (과금) 유료 서식 수급처 Top 10#5. 예스폼 — 사업계획서|사업계획서 허브 (plan.yesform.com)]]",
+              "children": [
+                {
+                  "id": "RaMtylSNy14j",
+                  "text": "https://plan.yesform.com/",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792924316083,
+                  "updatedAt": 1792924316083
+                },
+                {
+                  "id": "jsP1vUUmzSnI",
+                  "text": "【유료】 【경영·전략 · 영업·제안】 【공식 플랫폼】 【슬라이드 시각형】 【실전 완성 사례 · 가이드·해설 동반 양식】 【국내 표준형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792924316083,
+                  "updatedAt": 1792924316083
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792924316083,
+              "updatedAt": 1792924316083
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792924316083
+        },
+        {
+          "id": "eyQKaAo49xfc",
+          "text": "[[02. (과금) 유료 서식 수급처 Top 10#2. 비즈폼 — 엑셀서식|비즈폼 엑셀서식 (국내 스프레드시트)]]",
+          "children": [
+            {
+              "id": "ZP2xh6Kzt5kx",
+              "text": "https://excel.bizforms.co.kr/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "yVwATcmPBGsH",
+              "text": "【유료】 【재무·회계 · 인사·노무】 【공식 플랫폼】 【스프레드시트 수식형】 【자동화 연산 양식】 【국내 표준형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923998277
+        },
+        {
+          "id": "V1eg31zhnWja",
+          "text": "[[02. (과금) 유료 서식 수급처 Top 10#3. 로폼 — 계약서 카탈로그|로폼 계약서 카탈로그 (국내 CaaS)]]",
+          "children": [
+            {
+              "id": "1HT7vPvK4xIy",
+              "text": "https://lawform.io/topic/2",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "TvumkU8O7x66",
+              "text": "【유료】 【법률·규약】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【자동화 연산 양식 · 가이드·해설 동반 양식】 【국내 표준형】 【플랫폼 폐쇄형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923998277
+        },
+        {
+          "id": "KILsDMohuqyN",
+          "text": "[[02. (과금) 유료 서식 수급처 Top 10#4. 해피캠퍼스 — 서식존|해피캠퍼스 서식존 (국내 C2C)]]",
+          "children": [
+            {
+              "id": "U5q6jvlAMWr1",
+              "text": "https://www.happycampus.com/themeSquare/main/?cate1=14114",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "fEz7wjfgnGsQ",
+              "text": "【유료】 【경영·전략 · 법률·규약 · 인사·노무】 【커뮤니티·포럼】 【문서 텍스트형 · 스프레드시트 수식형 · 슬라이드 시각형 · 고정 인쇄형】 【실전 완성 사례 · 빈 뼈대 양식】 【국내 표준형】 【개인 이용 한정형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923998277
+        },
+        {
+          "id": "Lmcv0ranZjYp",
+          "text": "[[02. (과금) 유료 서식 수급처 Top 10#6. Template.net — Agreement Templates|Template.net 계약합의서 (해외 글로벌마켓)]]",
+          "children": [
+            {
+              "id": "GnYcCwpaAljv",
+              "text": "https://www.template.net/editable/agreements",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "ta0CZxbiEUEF",
+              "text": "【유료】 【법률·규약 · 경영·전략】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 실전 완성 사례】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923998277
+        },
+        {
+          "id": "0gmqWvhORHH5",
+          "text": "[[02. (과금) 유료 서식 수급처 Top 10#7. Envato Elements — Presentation Templates|Envato Elements 프레젠테이션 (해외 피치덱)]]",
+          "children": [
+            {
+              "id": "L5YbbSY1SmCL",
+              "text": "https://elements.envato.com/presentation-templates",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "1Ub3vyQcSbl3",
+              "text": "【유료】 【경영·전략 · 영업·제안】 【공식 플랫폼】 【슬라이드 시각형】 【실전 완성 사례】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923998277
+        },
+        {
+          "id": "xmcflGLJrjd5",
+          "text": "[[02. (과금) 유료 서식 수급처 Top 10#8. Formspal — Legal Documents Catalog|Formspal 법률문서 카탈로그 (해외 CaaS)]]",
+          "children": [
+            {
+              "id": "gaGliZS4qgkc",
+              "text": "https://formspal.com/legal-templates/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "N06lbbCOpoAG",
+              "text": "【유료】 【법률·규약 · 경영·전략】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【자동화 연산 양식 · 빈 뼈대 양식】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923998277
+        },
+        {
+          "id": "oMZK00a7bsqE",
+          "text": "[[02. (과금) 유료 서식 수급처 Top 10#9. Wonder.Legal — Templates & Documents|Wonder.Legal 문서 전수트리 (해외 CaaS)]]",
+          "children": [
+            {
+              "id": "tNTMRO8mxv9X",
+              "text": "https://www.wonder.legal/us/choix-modele/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "EIqk8qiUlJvI",
+              "text": "【유료】 【법률·규약 · 인사·노무 · 경영·전략】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【자동화 연산 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【플랫폼 폐쇄형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923998277
+        },
+        {
+          "id": "TUUmvITmECO4",
+          "text": "[[02. (과금) 유료 서식 수급처 Top 10#10. Jotform — Form Templates Directory|Jotform 폼템플릿 (해외 웹폼)]]",
+          "children": [
+            {
+              "id": "wW0CImhBtFiF",
+              "text": "https://www.jotform.com/form-templates/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792922887816,
+              "updatedAt": 1792922887816
+            },
+            {
+              "id": "98fKbSDvGiWp",
+              "text": "【유료】 【영업·제안 · 제품·엔지니어링】 【공식 플랫폼】 【클라우드 블록형 · 고정 인쇄형】 【자동화 연산 양식 · 빈 뼈대 양식】 【크로스보더 다국어형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792923881226,
+              "updatedAt": 1792923881226
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792922657992,
+          "updatedAt": 1792923998277
+        },
+        {
+          "id": "VXoBmn5aI1YH",
+          "text": "[[03. (도메인) 경영·전략 서식 수급처 Top 10#6. 중소벤처기업부 — 기업마당 기업업무용 서식|기업마당 기업업무용 서식 (국내 공공)]]",
+          "children": [
+            {
+              "id": "0oaBxBKX7x0D",
+              "text": "https://www.bizinfo.go.kr/biz/bizb/selectBIZB100View.do",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            },
+            {
+              "id": "xEpodBm8Q8Bm",
+              "text": "【무료】 【경영·전략 · 인사·노무】 【정부·공공 포털】 【문서 텍스트형 · 스프레드시트 수식형 · 고정 인쇄형】 【빈 뼈대 양식】 【국내 표준형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792925419788,
+          "updatedAt": 1792925419788
+        },
+        {
+          "id": "IZ0AcVN8lUGX",
+          "text": "[[03. (도메인) 경영·전략 서식 수급처 Top 10#7. Bplans — Sample Business Plans|Bplans (해외 사업계획서 벤치마크)]]",
+          "children": [
+            {
+              "id": "rUi7CvgpkwVz",
+              "text": "https://www.bplans.com/sample-business-plans/",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            },
+            {
+              "id": "KFUn1c7XdOht",
+              "text": "【무료】 【경영·전략】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【실전 완성 사례】 【글로벌 영미권형】 【개인 이용 한정형】 【웹 뷰어 전용형】",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792925419788,
+          "updatedAt": 1792925419788
+        },
+        {
+          "id": "zjGbYzcbMtFb",
+          "text": "[[03. (도메인) 경영·전략 서식 수급처 Top 10#8. Pitch — Presentation templates|Pitch (해외 피치덱 CaaS)]]",
+          "children": [
+            {
+              "id": "EJGierggygPE",
+              "text": "https://pitch.com/templates",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            },
+            {
+              "id": "tGynNXnGgXk9",
+              "text": "【무료】 【경영·전략 · 영업·제안】 【공식 플랫폼】 【슬라이드 시각형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【완전 개방형】 【회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792925419788,
+          "updatedAt": 1792925419788
+        },
+        {
+          "id": "F4mJbd27EDmj",
+          "text": "[[03. (도메인) 경영·전략 서식 수급처 Top 10#9. Slidebean — Business Presentation Templates|Slidebean (해외 스타트업 IR 피치덱)]]",
+          "children": [
+            {
+              "id": "e7qO7HJWbITO",
+              "text": "https://slidebean.com/templates",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            },
+            {
+              "id": "txWkS9XKmQZ5",
+              "text": "【무료】 【경영·전략 · 재무·회계】 【공식 플랫폼】 【슬라이드 시각형】 【가이드·해설 동반 양식 · 실전 완성 사례】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792925419788,
+          "updatedAt": 1792925419788
+        },
+        {
+          "id": "MHpYbnoMIWdg",
+          "text": "[[03. (도메인) 경영·전략 서식 수급처 Top 10#10. Miro — Strategy & planning templates|Miro (해외 전략기획 캔버스)]]",
+          "children": [
+            {
+              "id": "B5vwTRRpbQ5A",
+              "text": "https://miro.com/templates/strategy-and-planning/",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            },
+            {
+              "id": "ymXHpSWspBku",
+              "text": "【무료】 【경영·전략】 【공식 플랫폼】 【클라우드 블록형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【완전 개방형】 【회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792925419788,
+              "updatedAt": 1792925419788
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792925419788,
+          "updatedAt": 1792925419788
+        },
+        {
+          "id": "UVYKe1tmUuDW",
+          "text": "[[04. (도메인) 법률·규약 서식 수급처 Top 10#6. 대한민국 법원 전자소송 — 양식모음|대한민국 법원 전자소송 양식모음 (국내 공공)]]",
+          "children": [
+            {
+              "id": "k1iaMPxheVZT",
+              "text": "https://ecfs.scourt.go.kr/",
+              "children": [],
+              "createdAt": 1792926698471,
+              "updatedAt": 1792926698471
+            },
+            {
+              "id": "CRphDNtl5NvW",
+              "text": "【무료】 【법률·규약】 【정부·공공 포털】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【국내 표준형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792926698471,
+              "updatedAt": 1792926698471
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792926698471,
+          "updatedAt": 1792926698471
+        },
+        {
+          "id": "YrwA2DnbWGU4",
+          "text": "[[04. (도메인) 법률·규약 서식 수급처 Top 10#7. 대한상사중재원 — 표준계약서 및 중재조항|대한상사중재원 표준계약서 (국내 공공)]]",
+          "children": [
+            {
+              "id": "R4PNFIcU9PzD",
+              "text": "https://www.kcab.or.kr/",
+              "children": [],
+              "createdAt": 1792926727032,
+              "updatedAt": 1792926727032
+            },
+            {
+              "id": "OhUKUjYejave",
+              "text": "【무료】 【법률·규약】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 실전 완성 사례】 【국내 표준형 · 크로스보더 다국어형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792926727032,
+              "updatedAt": 1792926727032
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792926727032,
+          "updatedAt": 1792926727032
+        },
+        {
+          "id": "cQGr5SJzhrZx",
+          "text": "[[04. (도메인) 법률·규약 서식 수급처 Top 10#8. LegalZoom — Legal Forms & Templates|LegalZoom 템플릿 (해외 CaaS)]]",
+          "children": [
+            {
+              "id": "rbPrRRfY7owd",
+              "text": "https://www.legalzoom.com/templates",
+              "children": [],
+              "createdAt": 1792926733176,
+              "updatedAt": 1792926733176
+            },
+            {
+              "id": "c8BPes17BBjy",
+              "text": "【유료】 【법률·규약】 【공식 플랫폼】 【문서 텍스트형 · 클라우드 블록형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792926733176,
+              "updatedAt": 1792926733176
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792926733176,
+          "updatedAt": 1792926733176
+        },
+        {
+          "id": "ApbnsonX2mBl",
+          "text": "[[04. (도메인) 법률·규약 서식 수급처 Top 10#9. LegalTemplates — Legal Documents & Forms|LegalTemplates 비즈니스 서식 (해외 오픈 카탈로그)]]",
+          "children": [
+            {
+              "id": "h0E31XG0F7bE",
+              "text": "https://legaltemplates.net/business-forms/",
+              "children": [],
+              "createdAt": 1792926739299,
+              "updatedAt": 1792926739299
+            },
+            {
+              "id": "Zts81jAOv6OT",
+              "text": "【무료 · 유료】 【법률·규약】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【개인 이용 한정형 · 상업용 라이선스 구매형】 【공개 다운로드형 · 회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792926739299,
+              "updatedAt": 1792926739299
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792926739299,
+          "updatedAt": 1792926739299
+        },
+        {
+          "id": "JeQM6ATxkMZc",
+          "text": "[[04. (도메인) 법률·규약 서식 수급처 Top 10#10. LawDepot — Legal Documents & Templates|LawDepot 법률문서 (글로벌 CaaS)]]",
+          "children": [
+            {
+              "id": "ITBYhfLolP12",
+              "text": "https://www.lawdepot.com/",
+              "children": [],
+              "createdAt": 1792926744744,
+              "updatedAt": 1792926744744
+            },
+            {
+              "id": "f2MiIt4IA7xK",
+              "text": "【무료 · 유료】 【법률·규약】 【공식 플랫폼】 【문서 텍스트형 · 클라우드 블록형】 【가이드·해설 동반 양식 · 자동화 연산 양식】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792926744744,
+              "updatedAt": 1792926744744
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792926744744,
+          "updatedAt": 1792926744744
+        },
+        {
+          "id": "63SK6SAXJWFX",
+          "text": "[[05. (도메인) 재무·회계 서식 수급처 Top 10#6. 금융감독원 전자공시시스템 — DART 공시서식|금융감독원 DART 공시서식 (국내 공공)]]",
+          "children": [
+            {
+              "id": "8qVcmV1Q5dxK",
+              "text": "https://dart.fss.or.kr",
+              "children": [],
+              "createdAt": 1792927208988,
+              "updatedAt": 1792927208988
+            },
+            {
+              "id": "mn73HVXmzorT",
+              "text": "【무료】 【재무·회계】 【정부·공공 포털】 【스프레드시트 수식형 · 문서 텍스트형】 【빈 뼈대 양식 · 실전 완성 사례】 【국내 표준형】 【완전 개방형】 【오픈 인터페이스 연동형】",
+              "children": [],
+              "createdAt": 1792927208988,
+              "updatedAt": 1792927208988
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927208988,
+          "updatedAt": 1792927208988
+        },
+        {
+          "id": "oBT1kz3CWUHl",
+          "text": "[[05. (도메인) 재무·회계 서식 수급처 Top 10#7. Corporate Finance Institute — Financial Modeling Templates|CFI 재무 모델 템플릿 (글로벌 금융)]]",
+          "children": [
+            {
+              "id": "rbsjl2DwC0Ms",
+              "text": "https://corporatefinanceinstitute.com/resources/templates/",
+              "children": [],
+              "createdAt": 1792927216818,
+              "updatedAt": 1792927216818
+            },
+            {
+              "id": "E6lOhFEjRbvL",
+              "text": "【무료 · 유료】 【재무·회계】 【공식 플랫폼】 【스프레드시트 수식형】 【가이드·해설 동반 양식 · 자동화 연산 양식】 【글로벌 영미권형】 【개인 이용 한정형 · 상업용 라이선스 구매형】 【공개 다운로드형 · 회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792927216818,
+              "updatedAt": 1792927216818
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927216818,
+          "updatedAt": 1792927216818
+        },
+        {
+          "id": "5jj3MbvIcIM0",
+          "text": "[[05. (도메인) 재무·회계 서식 수급처 Top 10#8. Spreadsheet123 — Financial Statement Templates|Spreadsheet123 재무제표 템플릿 (해외 스프레드시트)]]",
+          "children": [
+            {
+              "id": "YogXepeWC8DO",
+              "text": "https://www.spreadsheet123.com/ExcelTemplates/financial-statements.html",
+              "children": [],
+              "createdAt": 1792927224801,
+              "updatedAt": 1792927224801
+            },
+            {
+              "id": "Bn2PGE5rBooe",
+              "text": "【무료】 【재무·회계】 【공식 플랫폼】 【스프레드시트 수식형】 【빈 뼈대 양식 · 자동화 연산 양식】 【글로벌 영미권형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792927224801,
+              "updatedAt": 1792927224801
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927224801,
+          "updatedAt": 1792927224801
+        },
+        {
+          "id": "IU1cyPpDRljX",
+          "text": "[[05. (도메인) 재무·회계 서식 수급처 Top 10#9. Microsoft Create — 예산 및 재무 스프레드시트|Microsoft Create 예산 템플릿 (글로벌 오피스)]]",
+          "children": [
+            {
+              "id": "bOY1IskLav2H",
+              "text": "https://create.microsoft.com/ko-kr/templates/budgets",
+              "children": [],
+              "createdAt": 1792927237017,
+              "updatedAt": 1792927237017
+            },
+            {
+              "id": "NaX1TLP01Jq2",
+              "text": "【무료】 【재무·회계】 【공식 플랫폼】 【스프레드시트 수식형 · 클라우드 블록형】 【빈 뼈대 양식 · 자동화 연산 양식】 【국내 표준형 · 글로벌 영미권형】 【완전 개방형】 【공개 다운로드형 · 웹 뷰어 전용형】",
+              "children": [],
+              "createdAt": 1792927237017,
+              "updatedAt": 1792927237017
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927237017,
+          "updatedAt": 1792927237017
+        },
+        {
+          "id": "xuZuyHuGGMq3",
+          "text": "[[05. (도메인) 재무·회계 서식 수급처 Top 10#10. 한국공인회계사회 — 회계·감사 실무 서식|한국공인회계사회 실무서식 (국내 전문기관)]]",
+          "children": [
+            {
+              "id": "sY6iPw6R7fsa",
+              "text": "https://www.kicpa.or.kr",
+              "children": [],
+              "createdAt": 1792927245146,
+              "updatedAt": 1792927245146
+            },
+            {
+              "id": "sThQTht1UftC",
+              "text": "【무료 · 유료】 【재무·회계】 【공식 플랫폼】 【문서 텍스트형 · 스프레드시트 수식형】 【가이드·해설 동반 양식 · 빈 뼈대 양식】 【국내 표준형】 【완전 개방형 · 플랫폼 폐쇄형】 【공개 다운로드형 · 회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792927245146,
+              "updatedAt": 1792927245146
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927245146,
+          "updatedAt": 1792927245146
+        },
+        {
+          "id": "8bEB86QnGUEC",
+          "text": "[[06. (도메인) 인사·노무 서식 수급처 Top 10#6. 고용노동부 — 표준근로계약서 및 행정서식|고용노동부 표준근로계약서 (국내 공공)]]",
+          "children": [
+            {
+              "id": "WEqPBkBGn5ub",
+              "text": "https://www.moel.go.kr",
+              "children": [],
+              "createdAt": 1792927503348,
+              "updatedAt": 1792927503348
+            },
+            {
+              "id": "YS00UZIoWAgo",
+              "text": "【무료】 【인사·노무】 【정부·공공 포털】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【국내 표준형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792927503348,
+              "updatedAt": 1792927503348
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927503348,
+          "updatedAt": 1792927503348
+        },
+        {
+          "id": "58gcGXdgsxDf",
+          "text": "[[06. (도메인) 인사·노무 서식 수급처 Top 10#7. 노사발전재단 — 일터혁신 및 표준계약서 서식|노사발전재단 서식자료실 (국내 공공)]]",
+          "children": [
+            {
+              "id": "oomzyPCwAoBR",
+              "text": "https://www.nosa.or.kr",
+              "children": [],
+              "createdAt": 1792927512487,
+              "updatedAt": 1792927512487
+            },
+            {
+              "id": "ep25EXd2X1PM",
+              "text": "【무료】 【인사·노무】 【공식 플랫폼】 【문서 텍스트형 · 고정 인쇄형】 【가이드·해설 동반 양식 · 실전 완성 사례】 【국내 표준형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792927512487,
+              "updatedAt": 1792927512487
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927512487,
+          "updatedAt": 1792927512487
+        },
+        {
+          "id": "diE8BnNPanSR",
+          "text": "[[06. (도메인) 인사·노무 서식 수급처 Top 10#8. Workable — 1000+ HR Templates & Job Descriptions|Workable HR 템플릿 (글로벌 HR)]]",
+          "children": [
+            {
+              "id": "iJmPsOCXYIUz",
+              "text": "https://resources.workable.com/hr-templates",
+              "children": [],
+              "createdAt": 1792927521648,
+              "updatedAt": 1792927521648
+            },
+            {
+              "id": "71ijHGPz0nYw",
+              "text": "【무료】 【인사·노무】 【공식 플랫폼】 【문서 텍스트형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792927521648,
+              "updatedAt": 1792927521648
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927521648,
+          "updatedAt": 1792927521648
+        },
+        {
+          "id": "5pDe65NjODMl",
+          "text": "[[06. (도메인) 인사·노무 서식 수급처 Top 10#9. 근로복지공단 — 고용·산재보험 및 복지 서식|근로복지공단 서식창구 (국내 공공)]]",
+          "children": [
+            {
+              "id": "vgg6o9zHlcNR",
+              "text": "https://www.comwel.or.kr",
+              "children": [],
+              "createdAt": 1792927530810,
+              "updatedAt": 1792927530810
+            },
+            {
+              "id": "aVCIhZbtRmwj",
+              "text": "【무료】 【인사·노무】 【정부·공공 포털】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【국내 표준형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792927530810,
+              "updatedAt": 1792927530810
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927530810,
+          "updatedAt": 1792927530810
+        },
+        {
+          "id": "ZjRKdX5Opxb8",
+          "text": "[[06. (도메인) 인사·노무 서식 수급처 Top 10#10. 국민건강보험공단 — 4대보험 취득·상실 서식자료실|국민건강보험공단 서식자료실 (국내 공공)]]",
+          "children": [
+            {
+              "id": "5QqwKAqe1mUB",
+              "text": "https://www.nhis.or.kr",
+              "children": [],
+              "createdAt": 1792927542800,
+              "updatedAt": 1792927542800
+            },
+            {
+              "id": "bbOq1JO94c7W",
+              "text": "【무료】 【인사·노무】 【정부·공공 포털】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식】 【국내 표준형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792927542800,
+              "updatedAt": 1792927542800
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927542800,
+          "updatedAt": 1792927542800
+        },
+        {
+          "id": "pV0JXOXmsDxb",
+          "text": "[[07. (도메인) 영업·제안 서식 수급처 Top 10#6. 조달청 — 나라장터 국가종합전자조달 입찰서식|조달청 나라장터 입찰서식 (국내 공공)]]",
+          "children": [
+            {
+              "id": "UV2BaPvwvOgc",
+              "text": "https://www.g2b.go.kr",
+              "children": [],
+              "createdAt": 1792927896653,
+              "updatedAt": 1792927896653
+            },
+            {
+              "id": "MDuL9uWRmtpb",
+              "text": "【무료】 【영업·제안】 【정부·공공 포털】 【문서 텍스트형 · 고정 인쇄형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【국내 표준형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792927896653,
+              "updatedAt": 1792927896653
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927896653,
+          "updatedAt": 1792927896653
+        },
+        {
+          "id": "oKxa60UPSuTK",
+          "text": "[[07. (도메인) 영업·제안 서식 수급처 Top 10#7. Qwilr — 140+ Interactive Business Document Templates|Qwilr 웹 제안서 템플릿 (글로벌 CaaS)]]",
+          "children": [
+            {
+              "id": "QQW3NugtbDRX",
+              "text": "https://qwilr.com/templates/",
+              "children": [],
+              "createdAt": 1792927908154,
+              "updatedAt": 1792927908154
+            },
+            {
+              "id": "nv9HZIa0tumY",
+              "text": "【무료 · 유료】 【영업·제안】 【공식 플랫폼】 【클라우드 블록형 · 슬라이드 시각형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형 · 웹 뷰어 전용형】",
+              "children": [],
+              "createdAt": 1792927908154,
+              "updatedAt": 1792927908154
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927908154,
+          "updatedAt": 1792927908154
+        },
+        {
+          "id": "o8xAaYqHIyTz",
+          "text": "[[07. (도메인) 영업·제안 서식 수급처 Top 10#8. Proposify — Business Proposal & Quote Templates|Proposify 제안서 템플릿 (글로벌 CaaS)]]",
+          "children": [
+            {
+              "id": "1aPLANUJKaSB",
+              "text": "https://www.proposify.com/proposal-templates",
+              "children": [],
+              "createdAt": 1792927920233,
+              "updatedAt": 1792927920233
+            },
+            {
+              "id": "JftI85EO18CK",
+              "text": "【무료 · 유료】 【영업·제안】 【공식 플랫폼】 【문서 텍스트형 · 클라우드 블록형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792927920233,
+              "updatedAt": 1792927920233
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927920233,
+          "updatedAt": 1792927920233
+        },
+        {
+          "id": "i0xpu370yC8p",
+          "text": "[[07. (도메인) 영업·제안 서식 수급처 Top 10#9. HubSpot — Sales & Marketing Resource Library|HubSpot 세일즈 리소스 (글로벌 B2B)]]",
+          "children": [
+            {
+              "id": "3ZCtpHrISoc4",
+              "text": "https://www.hubspot.com/resources",
+              "children": [],
+              "createdAt": 1792927931157,
+              "updatedAt": 1792927931157
+            },
+            {
+              "id": "gF00RPZB9E98",
+              "text": "【무료】 【영업·제안】 【공식 플랫폼】 【스프레드시트 수식형 · 슬라이드 시각형】 【가이드·해설 동반 양식 · 실전 완성 사례】 【글로벌 영미권형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792927931157,
+              "updatedAt": 1792927931157
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927931157,
+          "updatedAt": 1792927931157
+        },
+        {
+          "id": "t6Ngp99gcui6",
+          "text": "[[07. (도메인) 영업·제안 서식 수급처 Top 10#10. Better Proposals — 250+ Professional Proposal Templates|Better Proposals 템플릿 (글로벌 제안서)]]",
+          "children": [
+            {
+              "id": "979218Ivayuw",
+              "text": "https://betterproposals.io/templates",
+              "children": [],
+              "createdAt": 1792927941907,
+              "updatedAt": 1792927941907
+            },
+            {
+              "id": "CEI7BNdATQ2I",
+              "text": "【무료 · 유료】 【영업·제안】 【공식 플랫폼】 【클라우드 블록형 · 문서 텍스트형】 【실전 완성 사례 · 빈 뼈대 양식】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792927941907,
+              "updatedAt": 1792927941907
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792927941907,
+          "updatedAt": 1792927941907
+        },
+        {
+          "id": "6sBbvFDH6u7e",
+          "text": "[[08. (도메인) 제품·엔지니어링 서식 수급처 Top 10#6. Architecture Decision Records (ADR) — 아키텍처 결정 기록 템플릿 체계|Architecture Decision Records (ADR)]]",
+          "children": [
+            {
+              "id": "rfHwNKBQaI85",
+              "text": "https://adr.github.io/",
+              "children": [],
+              "createdAt": 1792928360016,
+              "updatedAt": 1792928360016
+            },
+            {
+              "id": "QhSFvGyLB57Y",
+              "text": "【무료】 【제품·엔지니어링】 【공식 플랫폼】 【문서 텍스트형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【완전 개방형 · 오픈소스 조건부형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792928360016,
+              "updatedAt": 1792928360016
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792928360016,
+          "updatedAt": 1792928360016
+        },
+        {
+          "id": "VYYkgxoqPeKT",
+          "text": "[[08. (도메인) 제품·엔지니어링 서식 수급처 Top 10#7. Linear — Linear Method (프로젝트 및 제품 빌딩 철학)|Linear Method (제품 기획·스펙 가이드)]]",
+          "children": [
+            {
+              "id": "7egNBBnbzAyB",
+              "text": "https://linear.app/method",
+              "children": [],
+              "createdAt": 1792928385935,
+              "updatedAt": 1792928385935
+            },
+            {
+              "id": "dgY1zm7W5rx3",
+              "text": "【무료】 【제품·엔지니어링】 【공식 플랫폼】 【문서 텍스트형 · 클라우드 블록형】 【가이드·해설 동반 양식】 【글로벌 영미권형】 【완전 개방형】 【웹 뷰어 전용형】",
+              "children": [],
+              "createdAt": 1792928385935,
+              "updatedAt": 1792928385935
+            }
+          ],
+          "createdAt": 1792928385935,
+          "updatedAt": 1792928385935
+        },
+        {
+          "id": "D7FnRzSyAoay",
+          "text": "[[08. (도메인) 제품·엔지니어링 서식 수급처 Top 10#8. GitLab — The GitLab Handbook|GitLab Handbook (전사 공개 제품·엔지니어링 가이드)]]",
+          "children": [
+            {
+              "id": "oOCm8H4FIgFc",
+              "text": "https://handbook.gitlab.com/",
+              "children": [],
+              "createdAt": 1792928386279,
+              "updatedAt": 1792928386279
+            },
+            {
+              "id": "HqVSKi4PV7A7",
+              "text": "【무료】 【제품·엔지니어링】 【공식 플랫폼】 【문서 텍스트형 · 클라우드 블록형】 【가이드·해설 동반 양식 · 실전 완성 사례】 【글로벌 영미권형】 【오픈소스 조건부형】 【공개 다운로드형 · 웹 뷰어 전용형】",
+              "children": [],
+              "createdAt": 1792928386279,
+              "updatedAt": 1792928386279
+            }
+          ],
+          "createdAt": 1792928386279,
+          "updatedAt": 1792928386279
+        },
+        {
+          "id": "C3JiuGu5RYOh",
+          "text": "[[08. (도메인) 제품·엔지니어링 서식 수급처 Top 10#9. Slite — Templates for Product & Engineering|Slite Templates (제품 스펙 협업 템플릿)]]",
+          "children": [
+            {
+              "id": "DmqjCbgC9Nr7",
+              "text": "https://slite.com/templates",
+              "children": [],
+              "createdAt": 1792928386607,
+              "updatedAt": 1792928386607
+            },
+            {
+              "id": "KeQUxfK63nDI",
+              "text": "【무료 · 유료】 【제품·엔지니어링】 【공식 플랫폼】 【클라우드 블록형 · 문서 텍스트형】 【빈 뼈대 양식】 【글로벌 영미권형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792928386607,
+              "updatedAt": 1792928386607
+            }
+          ],
+          "createdAt": 1792928386607,
+          "updatedAt": 1792928386607
+        },
+        {
+          "id": "et7tgaWUUtpY",
+          "text": "[[08. (도메인) 제품·엔지니어링 서식 수급처 Top 10#10. Product School — Free Online Resources & Templates for Product Managers|Product School (글로벌 PM 공식 PRD 템플릿)]]",
+          "children": [
+            {
+              "id": "MxPsDarJrtDi",
+              "text": "https://productschool.com/resources",
+              "children": [],
+              "createdAt": 1792928386992,
+              "updatedAt": 1792928386992
+            },
+            {
+              "id": "MbPj1QwhwT1l",
+              "text": "【무료】 【제품·엔지니어링】 【공식 플랫폼】 【문서 텍스트형 · 슬라이드 시각형】 【빈 뼈대 양식 · 가이드·해설 동반 양식】 【글로벌 영미권형】 【완전 개방형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792928386992,
+              "updatedAt": 1792928386992
+            }
+          ],
+          "createdAt": 1792928386992,
+          "updatedAt": 1792928386992
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792922657992,
+      "updatedAt": 1792922657992
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792910941719,
-  "updatedAt": 1792921244049
+  "updatedAt": 1792928709326
 }
