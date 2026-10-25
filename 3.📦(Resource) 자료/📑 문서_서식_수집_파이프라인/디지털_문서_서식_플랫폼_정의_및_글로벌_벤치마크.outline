@@ -1,0 +1,566 @@
+{
+  "version": "1.0.0",
+  "id": "7CWNrw6QvduF",
+  "title": "디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크",
+  "rootNodes": [
+    {
+      "id": "heqoIr8B6Zlz",
+      "text": "1. 공식 업계 명칭 (Industry Terms)",
+      "children": [
+        {
+          "id": "s22AUx6InspX",
+          "text": "문서 템플릿 라이브러리 / 포털 (Document Template Library / Portal)",
+          "children": [
+            {
+              "id": "ePhgmQMbREsp",
+              "text": "가장 보편적인 명칭: 워드, 엑셀, PPT 등의 양식을 카테고리별로 모아두고 검색·다운로드하게 해주는 서비스",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        },
+        {
+          "id": "eRiCjHDJjnyc",
+          "text": "비즈니스 서식 마켓플레이스 (Business Form Marketplace / Repository)",
+          "children": [
+            {
+              "id": "KTsqB6as3Zvr",
+              "text": "기업 실무에 필요한 양식을 유료 구독 또는 건당 결제로 판매하는 디지털 애셋 저장소를 뜻함",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        },
+        {
+          "id": "OeNPr4kYolpz",
+          "text": "DIY 법률 문서 / 리걸폼 서비스 (Legal Forms / DIY Legal Document Platform)",
+          "children": [
+            {
+              "id": "1vy76iHIMcBl",
+              "text": "계약서, 합의서, 정관 등 법적 효력을 갖는 양식에 변호사 해설을 붙여 제공하는 버티컬 영역",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        },
+        {
+          "id": "iF2ru9GjN5eE",
+          "text": "비즈니스 모델의 본질: CaaS (Content-as-a-Service)",
+          "children": [
+            {
+              "id": "M7lH7eCuUH1s",
+              "text": "소프트웨어 기능(Tool)이 아닌 남들이 미리 작성해둔 문서 뼈대와 내용(Content Asset)을 판매하는 디지털 애셋 스토어",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        }
+      ],
+      "createdAt": 1792910941719,
+      "updatedAt": 1792910941719
+    },
+    {
+      "id": "4n71TLe0ksPq",
+      "text": "2. 글로벌 시장의 예스폼들 (해외 대표 서비스)",
+      "children": [
+        {
+          "id": "iDlVwG0kY27E",
+          "text": "① Template.net (글로벌판 예스폼 — 세계 최대 규모)",
+          "children": [
+            {
+              "id": "FlDzHNwIeSCD",
+              "text": "특징: 전 세계에서 가장 트래픽이 높은 글로벌 1위 템플릿 포털",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            },
+            {
+              "id": "PNIMQti4c8Ld",
+              "text": "제공: 비즈니스 계약서, 기획서, 송장, 마케팅 제안서 등 수십만 개의 템플릿을 Word, Google Docs, InDesign 포맷으로 제공 (정액 구독제)",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        },
+        {
+          "id": "PCK8pnH7P51u",
+          "text": "② LegalZoom & Rocket Lawyer (법률·계약 서식의 최강자)",
+          "children": [
+            {
+              "id": "cOivj26SLFIS",
+              "text": "특징: 미국/유럽의 법률 서식 파트를 고도화하여 조 단위 기업가치를 달성한 나스닥 상장사",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            },
+            {
+              "id": "x3TovLjqdOyI",
+              "text": "방식: 표준 계약서, 법인 설립 서류, NDA 템플릿 제공 및 웹 설문 기반 DIY 법률 문서 완성 서비스",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        },
+        {
+          "id": "mfyzWlvYFViG",
+          "text": "③ Vertex42 (글로벌 엑셀/스프레드시트 서식 1위)",
+          "children": [
+            {
+              "id": "PANhJtF9kqeK",
+              "text": "특징: 예스폼의 자동화 엑셀에 해당하는 전문 사이트",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            },
+            {
+              "id": "t11Cl6eVKhVG",
+              "text": "제공: 가계부, 재무제표, 프로젝트 간트차트, 재고관리 등 복잡한 수식이 걸린 엑셀/구글시트 템플릿 전문 배포",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        },
+        {
+          "id": "7HFT4jPcWotc",
+          "text": "④ Envato Elements (디자인·PPT 템플릿 마켓)",
+          "children": [
+            {
+              "id": "4g3GIBoNNGhI",
+              "text": "특징: 예스폼 슬라이드멤버스(PPT 템플릿)의 글로벌 확장판",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            },
+            {
+              "id": "7zB8pc6bwP2a",
+              "text": "제공: 디자이너들이 제작한 사업계획서 피치덱, 회사소개서 슬라이드 템플릿 무제한 다운로드 구독형 플랫폼",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1792910941719,
+      "updatedAt": 1792910941719
+    },
+    {
+      "id": "fh9sjIBSci5C",
+      "text": "3. 국내 대표 플랫폼 (국내 시장 지형도)",
+      "children": [
+        {
+          "id": "U4efSYPPBtpy",
+          "text": "전통 1세대 양대 산맥: 예스폼(Yesform) vs 비즈폼(Bizforms)",
+          "children": [
+            {
+              "id": "vZIGc3rOoeKo",
+              "text": "약 100만 건 이상의 서식 보유, 공통적으로 백지 공포증 회피용 정적 파일 다운로드 모델",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        },
+        {
+          "id": "JxdRiAqPMWxk",
+          "text": "진화형 2.5세대: 로폼(Lawform)",
+          "children": [
+            {
+              "id": "6rkm8HctVTsQ",
+              "text": "정적 파일 다운로드를 넘어 웹 질문 답변형 AI 계약서 자동작성 서비스",
+              "children": [],
+              "createdAt": 1792910941719,
+              "updatedAt": 1792910941719
+            }
+          ],
+          "createdAt": 1792910941719,
+          "updatedAt": 1792910941719
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792910941719,
+      "updatedAt": 1792910941719
+    },
+    {
+      "id": "hv2YWhxfXrYP",
+      "text": "4. 서식 템플릿 수급처 분류 기준 (Data Pipeline Source Types)",
+      "children": [
+        {
+          "id": "lB7AOgYyprpb",
+          "text": "과금 모델 기준 [다중 선택]",
+          "children": [
+            {
+              "id": "JxO0bTDELLJg",
+              "text": "무료",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911392221,
+              "updatedAt": 1792911492870
+            },
+            {
+              "id": "54p7kmnnvln8",
+              "text": "유료",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911392221,
+              "updatedAt": 1792911494729
+            }
+          ],
+          "createdAt": 1792911225054,
+          "updatedAt": 1792912386405
+        },
+        {
+          "id": "LyWFG8CFBi1F",
+          "text": "도메인 기준 [다중 선택]",
+          "children": [
+            {
+              "id": "fORsNF0hkFii",
+              "text": "경영·전략",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911584379,
+              "updatedAt": 1792911584379
+            },
+            {
+              "id": "sqelkayiq5E5",
+              "text": "법률·규약",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911584379,
+              "updatedAt": 1792911584379
+            },
+            {
+              "id": "DQP40RY8WU4y",
+              "text": "재무·회계",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911584379,
+              "updatedAt": 1792911584379
+            },
+            {
+              "id": "XLzLOa7TMWv3",
+              "text": "인사·노무",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911584379,
+              "updatedAt": 1792911584379
+            },
+            {
+              "id": "180hf6HwkT9e",
+              "text": "영업·제안",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911584379,
+              "updatedAt": 1792911584379
+            },
+            {
+              "id": "xqzY3NcEdGGm",
+              "text": "제품·엔지니어링",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911584379,
+              "updatedAt": 1792911584379
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792911584379,
+          "updatedAt": 1792912386405
+        },
+        {
+          "id": "43vcAsvo2t97",
+          "text": "출처 유형 기준 [단일 선택]",
+          "children": [
+            {
+              "id": "cXx4mrIMgOv0",
+              "text": "공식 플랫폼",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911696939,
+              "updatedAt": 1792911696939
+            },
+            {
+              "id": "2LNTWGuaSydz",
+              "text": "커뮤니티·포럼",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911696939,
+              "updatedAt": 1792911696939
+            },
+            {
+              "id": "XmtemMMdQxAV",
+              "text": "개인 미디어·블로그",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911696939,
+              "updatedAt": 1792911696939
+            },
+            {
+              "id": "nIjiWZ5CHCF5",
+              "text": "정부·공공 포털",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911696939,
+              "updatedAt": 1792911696939
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792911696939,
+          "updatedAt": 1792912386405
+        },
+        {
+          "id": "aJYkwmHnWext",
+          "text": "파일 포맷 기준 [다중 선택]",
+          "children": [
+            {
+              "id": "4i6ku5eSR9VI",
+              "text": "문서 텍스트형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "8wKKzEOcOuJQ",
+              "text": "스프레드시트 수식형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "5fpSP7s8I8Di",
+              "text": "슬라이드 시각형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "k7ei8luG9IKx",
+              "text": "클라우드 블록형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "tDLUwp6HQcQB",
+              "text": "고정 인쇄형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792911929264,
+          "updatedAt": 1792912386405
+        },
+        {
+          "id": "y2zFdI9Agluj",
+          "text": "서식 형태 기준 [다중 선택]",
+          "children": [
+            {
+              "id": "fc4oNkOfORnW",
+              "text": "빈 뼈대 양식",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "gz29ORxN1hSQ",
+              "text": "가이드·해설 동반 양식",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "X2h2vECZqYFR",
+              "text": "실전 완성 사례",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "YrK0x1aRfTfo",
+              "text": "자동화 연산 양식",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792911929264,
+          "updatedAt": 1792912386405
+        },
+        {
+          "id": "gvRiiiBv9DxV",
+          "text": "적용 시장 기준 [단일 선택]",
+          "children": [
+            {
+              "id": "jNnPJNsxNZOz",
+              "text": "국내 표준형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "6RReG0eaKhnt",
+              "text": "글로벌 영미권형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            },
+            {
+              "id": "tZOJMUQWbfeP",
+              "text": "크로스보더 다국어형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792911929264,
+              "updatedAt": 1792911929264
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792911929264,
+          "updatedAt": 1792912386405
+        },
+        {
+          "id": "u6rXq6pksFGv",
+          "text": "라이선스 기준 [단일 선택]",
+          "children": [
+            {
+              "id": "c0tDb0mBOhBe",
+              "text": "완전 개방형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            },
+            {
+              "id": "kjS4ZwG4QkPf",
+              "text": "오픈소스 조건부형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            },
+            {
+              "id": "p1SJJJGp1Aun",
+              "text": "개인 이용 한정형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            },
+            {
+              "id": "ChmN1JacuiMc",
+              "text": "상업용 라이선스 구매형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            },
+            {
+              "id": "98MX4f0Uobtm",
+              "text": "플랫폼 폐쇄형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792912061439,
+          "updatedAt": 1792912386405
+        },
+        {
+          "id": "W5CCAt1nx1sc",
+          "text": "수집 방식 기준 [단일 선택]",
+          "children": [
+            {
+              "id": "huNk6Tmuoihu",
+              "text": "공개 다운로드형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            },
+            {
+              "id": "6CmyBtA7YpCt",
+              "text": "회원가입 인증형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            },
+            {
+              "id": "36uvMwAaKFWS",
+              "text": "보안 방어형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            },
+            {
+              "id": "9dApRMpxcuiI",
+              "text": "웹 뷰어 전용형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            },
+            {
+              "id": "OewSQEUeToqm",
+              "text": "오픈 인터페이스 연동형",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792912061439,
+              "updatedAt": 1792912061439
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792912061439,
+          "updatedAt": 1792912386405
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1792911159016,
+      "updatedAt": 1792912061439
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792910941719,
+  "updatedAt": 1792921244049
+}

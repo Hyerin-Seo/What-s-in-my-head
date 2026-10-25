@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "captures": {
+    "무료 서식 허브 01 - 대한법률구조공단 법률서식.png": {
+      "url": "https://www.klac.or.kr/legalinfo/legalFrm.do",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:08:39+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        370,
+        1620
+      ],
+      "size": [
+        1280,
+        1250
+      ],
+      "sha256": "6ad149be4e566b2144e969703bee0d8d4cfdf2dc1293c33a23b4af5e8cb703cf"
+    },
+    "무료 서식 허브 02 - 국가법령정보센터 별표서식.png": {
+      "url": "https://www.law.go.kr/LSW/lsBylSc.do",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:08:46+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1720
+      ],
+      "size": [
+        1280,
+        1720
+      ],
+      "sha256": "04676657a1fd2137105d302faa178aa9522d980430ef7eeec0a4a4c652da8ef1"
+    },
+    "무료 서식 허브 03 - 공정거래위원회 표준계약서.png": {
+      "url": "https://www.ftc.go.kr/www/selectBbsNttList.do?bordCd=201&key=202",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:08:52+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1600
+      ],
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "0514d38b2884210dca552cdb3e42dc0f237569e562f5da89dde51fec10aed82e"
+    },
+    "무료 서식 허브 04 - 국세청 세무서식.png": {
+      "url": "https://www.nts.go.kr/nts/ad/nf/nltFormatApiList.do?mi=40178",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:08:57+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1300
+      ],
+      "size": [
+        1280,
+        1300
+      ],
+      "sha256": "8fed7dbda0db23c37e5eeb9221befbb2c7343184aa638ebe27e7a07d90c0062e"
+    },
+    "무료 서식 허브 05 - Common Paper 표준계약.png": {
+      "url": "https://commonpaper.com/standards/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:04+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1460
+      ],
+      "size": [
+        1280,
+        1460
+      ],
+      "sha256": "e83a0fb27eb9a45be1b110b45e1bc33eb6e17f55e610e4185d722bea23452923"
+    },
+    "무료 서식 허브 06 - Vertex42 엑셀 템플릿.png": {
+      "url": "https://www.vertex42.com/ExcelTemplates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:14+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1000
+      ],
+      "size": [
+        1280,
+        1000
+      ],
+      "sha256": "bd3eccfe2dde4cb09469b403469407f8880ce9d74763f07582e114ccf8d2a572"
+    },
+    "무료 서식 허브 07 - Notion 공식 템플릿.png": {
+      "url": "https://www.notion.com/@notion",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:22+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1180
+      ],
+      "size": [
+        1280,
+        1180
+      ],
+      "sha256": "a3de2b12691aaa2569980f6aee963557bd1b73481b1c47faf4aed7a87e55b1e7"
+    },
+    "무료 서식 허브 08 - Confluence 템플릿.png": {
+      "url": "https://www.atlassian.com/software/confluence/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:32+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1520
+      ],
+      "size": [
+        1280,
+        1520
+      ],
+      "sha256": "fae948d948dc7cae056c1c5033ce2658671d266b5d755786e9da76a5e787fb43"
+    },
+    "무료 서식 허브 09 - LibreOffice 템플릿.png": {
+      "url": "https://extensions.libreoffice.org/?Tags%5B%5D=118",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:43+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1440
+      ],
+      "size": [
+        1280,
+        1440
+      ],
+      "sha256": "c70ebb522a19d52f1660ba70ff24b9e0fd57d32c1d98459a9333bde40cbfc218"
+    },
+    "무료 서식 허브 10 - SCORE 템플릿.png": {
+      "url": "https://www.score.org/templates/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-25T17:09:43+09:00",
+      "reason": "Cloudflare 가 헤드리스 브라우저를 막음 — Claude 데스크톱 내장 브라우저 화면(800px)을 저장, 2026-10-25",
+      "sha256": "6c7e136e7267f6730996835f4942256bc36031dbe1ff039c47cf4d87eb7b116f"
+    },
+    "유료 서식 허브 01 - 예스폼 회사서식.png": {
+      "url": "https://www.yesform.com/z_n/form/company/company_form.php",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:20:40+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "9bd41f6ce4e190e453c4e3a60d65dbc145cc2aba8dcd3df74723ab9e72bd052c"
+    },
+    "유료 서식 허브 01 - 예스폼 계약서.png": {
+      "url": "https://contract.yesform.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:22:09+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "4e6a29a920c5023275ad3eb0c9ab2385fea73fc10d5c2e06ea06607655621330"
+    },
+    "유료 서식 허브 02 - 비즈폼 엑셀서식.png": {
+      "url": "https://excel.bizforms.co.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:23:22+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "325645140393d4fff9db6ccc0426dab827ca8376d4d508f8c4057b106606b014"
+    },
+    "유료 서식 허브 03 - 로폼 스타트업문서.png": {
+      "url": "https://lawform.io/startup",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:24:13+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "1a790686e13e131a687a949fc226dafc43c6749db30ff57f83e1834f663d868b"
+    },
+    "유료 서식 허브 03 - 로폼 자동작성.png": {
+      "url": "https://lawform.io/intro/autodoc",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:24:44+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "f940b4e3b447afa59ac3c92d4a68eaa373d767ca24e934a21db5224f209e3805"
+    },
+    "유료 서식 허브 04 - 해피캠퍼스 서식존.png": {
+      "url": "https://www.happycampus.com/themeSquare/main/?cate1=14114",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:25:13+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "b18054d2254589fcbbabbc88a49fc396a877659efcd817060817de2bb2ec4a63"
+    },
+    "유료 서식 허브 05 - Template.net 비즈니스.png": {
+      "url": "https://www.template.net/business/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:25:50+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "a9c210bb09e1ac02fac43dd019879515f7cfc390f58ca77bc79a0b7eed738c02"
+    },
+    "유료 서식 허브 05 - Template.net 계약합의서.png": {
+      "url": "https://www.template.net/editable/agreements",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:26:17+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "681d42880d8c964a251a8bb5f303c32a5e5cb1cac3733f05a556d2efc75604d6"
+    },
+    "유료 서식 허브 06 - Envato 프레젠테이션.png": {
+      "url": "https://elements.envato.com/presentation-templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:26:41+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "8b971ab52c6672de02005bfdb21cf4d064acbe57dbbd2e21171958321ddef905"
+    },
+    "유료 서식 허브 07 - Rocket Lawyer 비즈니스계약.png": {
+      "url": "https://www.rocketlawyer.com/business-and-contracts",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:27:09+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "9d000ac4b7b1722956b08abf569fb50174a467b7172337128f3a5e6640cb9ec3"
+    },
+    "유료 서식 허브 07 - 슬라이드멤버스 비즈니스PPT.png": {
+      "url": "https://www.slidemembers.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:39:40+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "615075a733647864a22a9574ee4d328a52a09dbd73ad2a7446ca05d39cc49ed1"
+    },
+    "유료 서식 허브 07 - Formspal 법률비즈니스.png": {
+      "url": "https://formspal.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:40:03+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "ec72b7d0a272ca599f935c44a924ab49e89a52db23bb8d94010bc1d2ab62245b"
+    },
+    "유료 서식 허브 08 - WonderLegal 법률문서.png": {
+      "url": "https://www.wonder.legal/us/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:40:49+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "4e91046ebe2794ef98d1a90b2826a6d4b26f4fa5b4d5faa567f06b78f479cf41"
+    },
+    "유료 서식 허브 09 - Jotform 폼템플릿.png": {
+      "url": "https://www.jotform.com/form-templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:41:33+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "83a5b7094b70b1fd20e844ddd1066065d1300a384be74f2e52f77f0b2c64f719"
+    },
+    "유료 서식 허브 10 - 예스폼 사업계획서.png": {
+      "url": "https://plan.yesform.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:42:15+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "4a2d1d6904656f80ac08587daba1d90aa439c210e66eb9458dca2fa6d99641f3"
+    }
+  }
+}
