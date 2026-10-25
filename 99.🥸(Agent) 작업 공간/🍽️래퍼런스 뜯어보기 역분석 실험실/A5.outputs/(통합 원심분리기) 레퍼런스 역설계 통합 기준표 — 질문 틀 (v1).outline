@@ -1,0 +1,1332 @@
+{
+  "version": "1.0.0",
+  "id": "OcoOzYmWNjc6",
+  "title": "(통합 원심분리기) 레퍼런스 역설계 통합 기준표 — 질문 틀 (v1)",
+  "rootNodes": [
+    {
+      "id": "3xYs0SHWDunf",
+      "text": "📌 질문 틀 — 레퍼런스 하나마다 이 아웃라인을 복사해서 콜론(:) 뒤를 채웁니다. 채우는 값은 그 레퍼런스의 값입니다 (Scaffold Manager의 값이 아닙니다). 우리 값은 같은 제목으로 답 아웃라인에 있습니다. 안 맞는 칸은 '해당 없음 — 왜' 라고 적고 넘어갑니다. 그게 틀을 고칠 단서입니다.  <small>[[(통합 원심분리기) 레퍼런스 역설계 통합 기준표 — Scaffold Manager의 답 (v1).outline|(통합 원심분리기) 레퍼런스 역설계 통합 기준표 — Scaffold Manager의 답 (v1).outline]]</small>",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "quote",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "Sm4ikL0Oo4vT",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "MHH1hYVHqM2D",
+      "text": "🧬 0. 레퍼런스 정체성과 3대 종족 분류 (Identity & Tribe)",
+      "children": [
+        {
+          "id": "m0mpmAbgV9In",
+          "text": "🔗 원문 메타 정보 및 분석 목적  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "EOoK4uKAiBIG",
+              "text": "분석 대상 레퍼런스 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "LSUK0nIVs84j",
+              "text": "원본 링크 · 자료 노트 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "UgaZFxE05SZX",
+              "text": "고른 까닭 (.outline 의 어떤 결핍 때문에) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "lG4VWmRA6mxF",
+          "text": "🏛️ 3대 종족 판별 (Archetype Matrix)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "oHNCgUTdj6nY",
+              "text": "소속 종족 (1 · 2 · 3 · 섞임) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "3lOkbzIYAMy7",
+              "text": "판별 근거 (화면이나 규칙에서 본 것 하나) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "faRURF595QOq",
+              "text": "📖 종족 정의 (참고)",
+              "children": [
+                {
+                  "id": "notion_up_6009",
+                  "text": "1종족. 극단적 자유파 (Workflowy, Heptabase, Figma)",
+                  "children": [
+                    {
+                      "id": "notion_up_6006",
+                      "text": "모토 : \"백지를 줄 테니 마음대로 날뛰어라\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    },
+                    {
+                      "id": "notion_up_6007",
+                      "text": "장점 : 파일에 갇히지 않는 무한한 발상 자유도",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    },
+                    {
+                      "id": "notion_up_6008",
+                      "text": "한계 : 초보자가 빈 화면 앞에서 겪는 극심한 백지 공포",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792466015031,
+                  "updatedAt": 1792466015031
+                },
+                {
+                  "id": "notion_up_6013",
+                  "text": "2종족. 엄격한 규칙·슬롯파 (PandaDoc, Overleaf, Scrivener, ai-job-search)",
+                  "children": [
+                    {
+                      "id": "notion_up_6010",
+                      "text": "모토 : \"틀과 토큰을 줄 테니 빈칸만 채워라. 미달 시 즉시 중단\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    },
+                    {
+                      "id": "notion_up_6011",
+                      "text": "장점 : 비즈니스 규격과 무결성에 100% 부합",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    },
+                    {
+                      "id": "notion_up_6012",
+                      "text": "한계 : 진입장벽이 높고 규칙이 숨 막혀 아이디어 발상 불가",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792466015031,
+                  "updatedAt": 1792466015031
+                },
+                {
+                  "id": "notion_up_6017",
+                  "text": "3종족. 레고 블록 조립파 (Notion, Framer, Puck)",
+                  "children": [
+                    {
+                      "id": "notion_up_6014",
+                      "text": "모토 : \"표준 블록을 줄 테니 위아래로 쌓아라\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    },
+                    {
+                      "id": "notion_up_6015",
+                      "text": "장점 : 직관적인 드래그 앤 드롭 조립 쾌감",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    },
+                    {
+                      "id": "notion_up_6016",
+                      "text": "한계 : 서식 꾸미기에 매몰되어 글의 논리 뼈대 상실",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1792466015031,
+                      "updatedAt": 1792466015031
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792466015031,
+                  "updatedAt": 1792466015031
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "feQ3jdcW0rIP",
+          "text": "🛖 Scaffold Manager 승부 포지셔닝  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "wl6oN4LLtji5",
+              "text": "이 레퍼런스가 우리 하이브리드에 보태는 축 (1 · 2 · 3종족 중) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "0DTvrUfFB6vW",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "eBfMVr8SfFKX",
+      "text": "🎯 1. 타깃 페르소나와 심리적 장벽 해체 (Strategy: Who & Pain)",
+      "children": [
+        {
+          "id": "gGAgEp5N26ND",
+          "text": "📢 단 하나의 핵심 메시지 (Core Value Promise)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "vN6TLdmJyq0T",
+              "text": "핵심 선언 (레퍼런스가 첫 화면 · 소개에서 하는 한 문장) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "Xt6878n3PC9E",
+              "text": "약속 (사용자가 얻는 것) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "hy9KIjvtJcfV",
+              "text": "인식 전환 (사용자에게 바꾸라고 하는 생각) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "jpwU7zHzXwoP",
+          "text": "👥 메인 주인공 페르소나 확정 (Core Target Persona)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "uXsKLqlvGSzb",
+              "text": "단일 주인공 [A라인] : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "OP2b9gzX9mWY",
+              "text": "자연 유입 [서브플롯] : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "bfMo0xRKM420",
+          "text": "🚧 사용자가 마주하는 3대 핵심 장벽 (Core Barriers)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "zuJJfXuYmY8R",
+              "text": "장벽 1 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "cT2zRmSmdB98",
+              "text": "장벽 2 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "EQswtSJ9NTpN",
+              "text": "장벽 3 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "Jo26CGYMqLTP",
+          "text": "💡 3대 돌파 전략 (Counter-Measures)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "dxyFnebXg96D",
+              "text": "장벽 1 돌파 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "7SdlrVAZ5SQg",
+              "text": "장벽 2 돌파 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "WiqKI2gb7z9A",
+              "text": "장벽 3 돌파 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "qXRasuPnKKae",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "cUtfde79Z5rT",
+      "text": "🏛️ 2. 80%의 전형성 측정표 (The Familiar — 업계 표준선 카운팅)",
+      "children": [
+        {
+          "id": "5KQ8nOlpbOlh",
+          "text": "🦴 겉면(UI)을 찢은 3대 핵심 뼈대 (Skeleton Architecture)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "Xzu0116Dr39V",
+              "text": "문서 아키텍처 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "7CBURDCWYrCp",
+              "text": "데이터 연결 방식 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "SkNv5ULhGska",
+              "text": "슬롯 규격 뼈대 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "8v627HDzrxkC",
+          "text": "⚛️ 생각의 최소 단위 (원자 형태와 용량)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "PeT9NFQcbTBh",
+              "text": "원자 형태 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "l74pSq1o3Mus",
+              "text": "권장 글자 수 (원자 하나) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "I1MNNoF5JHpA",
+              "text": "한 화면 동시 노출 개수 (100% 줌) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "y1iq5df3csRl",
+          "text": "🖥️ 화면 분할과 조망 구조 (Viewport Layout)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "QvPsoduazM49",
+              "text": "화면 면적 비율 (탐색기 : 작업판 : 보조창) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "Hcg0FHG8TKpu",
+              "text": "최대 계층 깊이 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "QyOaHKuypdrW",
+              "text": "주력 인터랙션 (키보드 : 마우스) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "0wJZmRKW7Cpl",
+          "text": "⚡ 조작 속도와 마찰 계측 (Friction & Speed — 짝꿍 지표 결합)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "nk3KErfHbQ8S",
+              "text": "첫 결과물 생성 시간 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "WupiWqumtPLx",
+              "text": "첫 결과물 조작 타수 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "Gr2T3Eirk5sk",
+              "text": "키보드 단축키 커버리지 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "eaPs31VccVdQ",
+              "text": "짝꿍 지표 (위 수치가 부작용 없이 나왔다는 증거 — 있으면) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "twcWPf8CcI3V",
+          "text": "🛡️ 선제적 안전선 긋기 (Safety First)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "HByB777jW5Ip",
+              "text": "데이터 불변성 (저장 · 되돌리기 단위) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "tQi672BrC14A",
+              "text": "실험용 격리 공간 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "GNP505NG9z2d",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "YH6OCXQCv7d0",
+      "text": "🚀 3. 20%의 변주 측정표 (MAYA Innovation — 최적의 새로움 실측)",
+      "children": [
+        {
+          "id": "uV4zVKtw5wJc",
+          "text": "🗡️ 단 하나의 시그니처 무기 (Signature Weapon)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "0P3Nr3WTInJj",
+              "text": "무기 명칭 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "fjYp2VLIoES9",
+              "text": "발동 빈도 (1시간 작업 중) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "yojckjyl8gCN",
+              "text": "호출 비용 (몇 타 · 몇 클릭) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "7ZH6uUB33yIP",
+          "text": "⚖️ 자유와 제약의 배합비 (Freedom vs Constraints)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "JiNc1ik7kToF",
+              "text": "사용자 자유 편집 영역 (%) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "AJwCC4wYmQPx",
+              "text": "시스템 제약 · 규격 영역 (%) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "6OiL2qS0AH2S",
+              "text": "규칙 위반 피드백 방식 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "W6D2LwM14BAB",
+          "text": "⚖️ 의도된 트레이드오프 & 리스크 헷지책 (Trade-off & Hedge)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "8U1df7s8neDl",
+              "text": "몰빵한 90% : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "CQq9L3kTXc0G",
+              "text": "쿨하게 버린 10% : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "hrOOCW1bOnst",
+              "text": "버린 것 때문에 날 사고를 막는 헷지 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "DbobbP9J9WrI",
+          "text": "🧬 이종 도메인 교배 (Cross-Domain Roots)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "Qro8FsKKwfrd",
+              "text": "차용 도메인 1 (원래 분야 ➔ 가져온 것) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "m3Ic8bp57MrP",
+              "text": "차용 도메인 2 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "Aao1Vuto9C8Y",
+          "text": "🔍 출처와 투명성 검증 (Source & Validation)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "Pi9xmTVyYc7E",
+              "text": "출처(Cite) 강제성 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "Rlq5qEqfI4op",
+              "text": "시스템 내장 검증 규칙 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "g6z0GTiQKHLQ",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "7Q0zAYRTgZGw",
+      "text": "🎬 4. 논지 전개와 인지적 감정 곡선 (Narrative: Flow & Emotion)",
+      "children": [
+        {
+          "id": "lOhiDGOCQflu",
+          "text": "1️⃣ 진입 장벽 분쇄 (Friction 0)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "uUbS2vEtfGgo",
+              "text": "사용자 심리적 허들 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "wbSeLrjuSJGi",
+              "text": "처방 기법 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "PBe3ncVBZMZD",
+          "text": "2️⃣ 즉각적 도파민 공급 (Aha Moment / 16ms 피드백)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "f15RHKKUkauh",
+              "text": "사용자 심리적 허들 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "pVYeXrftQvyF",
+              "text": "처방 기법 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "VTIQRUIzXQUP",
+          "text": "3️⃣ 마찰 없는 몰입 상태 유지 (Flow State Navigation)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "VLYGr13AZ2PH",
+              "text": "사용자 심리적 허들 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "EmKYO2bALYBO",
+              "text": "처방 기법 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "8j4sqQhc821K",
+          "text": "4️⃣ 선택권 부여 (Opt-in)로 완주 피로 완화  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "UQS9gJuBIDwX",
+              "text": "사용자 심리적 허들 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "Q0nb9URBlJnR",
+              "text": "처방 기법 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "9PKD0cFC3ncx",
+          "text": "5️⃣ 인지적 종결 (Closure)과 3단 공식 매듭  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "KRdSoddNd2vu",
+              "text": "사용자 심리적 허들 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "MoqVpsYa1aM4",
+              "text": "처방 기법 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "az4Kd3HQbjBQ",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "sR2itQ6erTel",
+      "text": "🎨 5. 시각적 리듬과 모듈 조립 문법 (Visual: Rhythm & Anatomy)",
+      "children": [
+        {
+          "id": "yoMkblmE7NrJ",
+          "text": "📏 문단 길이와 호흡 통제 (Micro-Length & Breath)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "EhDyWcnieKw4",
+              "text": "블록 하나의 길이 (글이면 문단, 앱이면 카드 · 행 · 노드) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "KvPNmbd0VCP9",
+              "text": "읽기 대신 바로 행동하게 하는 장치 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "l3LISneyHScf",
+          "text": "🧱 4단 모듈 조립 공식 (Block Anatomy)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "RmauC1RkO9Vo",
+              "text": "반복되는 블록 구성 ([ ] ➔ [ ] ➔ [ ] ➔ [ ]) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "cursKCm5qbVj",
+              "text": "반복 효과 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "fLVB1yoD1ixO",
+          "text": "⚖️ 정보 밀도 및 여백 비율 (Visual Density & Ratio)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "T8YQBMtHrQtl",
+              "text": "텍스트 : 비주얼 객체 비율 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "HBFRxRtTLIRA",
+              "text": "텍스트 벽을 막는 장치 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "cSiyGFm5tfgL",
+          "text": "💬 촌철살인 인용구(Callout Punchline)를 통한 의사결정 강제  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "guplq8hbsPys",
+              "text": "결정을 1초 만에 내리게 하는 장치 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "K2ObtNjnXrhY",
+              "text": "스코프 경고 장치 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "ZxgLTLFq6eb5",
+          "text": "⏸️ 인지적 쉼표(<hr>)와 체크오프 리듬 (Progressive Disclosure)  <small>[[1.🎯(Project) 프로젝트/🥸옵시디언 플러그인 개발하는 법 글쓰기/주요 레퍼런스 분석.outline|주요 레퍼런스 분석.outline]]</small>",
+          "children": [
+            {
+              "id": "x1uC6tTqeRQ6",
+              "text": "단계를 끊어 주는 장치 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "6UWbEpoDE8q3",
+              "text": "완료를 보여 주는 방식 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "ZjPMb5GRom4V",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "zE1dgHElcUkG",
+      "text": "🤝 6. 인간 vs AI 분업비 측정표 (Division of Labor & Collaboration)",
+      "children": [
+        {
+          "id": "RhC2n072dVTc",
+          "text": "📊 단계별 작업 지분율 [합계 100%]  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline|소프트웨어를 해체하는 론 프리드먼의 역설계 원심분리기.outline]]</small>",
+          "children": [
+            {
+              "id": "myG3JWjWUDoK",
+              "text": "1단계 뼈대 설계 [인간 : AI] : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "wFEmKGyF3IDD",
+              "text": "2단계 살 채우기 [인간 : AI] : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "VZ1WOBvFd8Kp",
+              "text": "3단계 검증 · 퇴고 [인간 : AI] : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "HYOV3HKuFnsz",
+          "text": "🔄 협업 파이프라인 정밀도 (Pipeline Protocol)  <small>[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]</small>",
+          "children": [
+            {
+              "id": "ceNPBt1dRijq",
+              "text": "AI(또는 시스템) 제안 방식 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "nHQhb5xlCFjW",
+              "text": "인간 승인 방식 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "flIe1IFLUnxJ",
+              "text": "AI에 맡기는 정형 슬롯 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "mkGRwChV6Dfy",
+              "text": "인간 날인 필수 관문 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "MFENXR2UidVx",
+          "text": "🛡️ 보호 앵커 (Anchor Protection)  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "82EDvIhq1rpJ",
+              "text": "사람이 확정한 것을 지키는 장치 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "XgxjpriaJTGX",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    },
+    {
+      "id": "6ysdCKUz3NpL",
+      "text": "🧩 7. 이 레퍼런스에서 뽑을 핀셋 카드 (C라인 매핑)",
+      "children": [
+        {
+          "id": "IUDja287Yo3n",
+          "text": "🏷️ 핀셋 카드  <small>[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지|비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]</small>",
+          "children": [
+            {
+              "id": "ffVCswn0r0zm",
+              "text": "카드 이름 (인터랙션 하나) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "oie1p1CGbgz5",
+              "text": "꽂을 자리 (C1 포집 · C2 구조화 · C3 Git 안전망 · C4 캔버스 변환 · C5 노드 잠금) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "NQXb2eVVhpA7",
+              "text": "없애는 .outline 고통 : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "iNGPJ3RVnPb6",
+              "text": "흐린눈 🕶️ 한 것 (이번엔 안 가져가는 기능) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "tPt5khiTrXSt",
+              "text": "보태는 컴포넌트 (답 7장 중 하나, 없으면 새 이름) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        },
+        {
+          "id": "3n6k9bATBIng",
+          "text": "⚖️ 우리 답과 맞대 보기  <small>[[(통합 원심분리기) 레퍼런스 역설계 통합 기준표 — Scaffold Manager의 답 (v1).outline|(통합 원심분리기) 레퍼런스 역설계 통합 기준표 — Scaffold Manager의 답 (v1).outline]]</small>",
+          "children": [
+            {
+              "id": "2AR2H8sXFGEw",
+              "text": "우리 답과 부딪치는 칸 (장 · 제목) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            },
+            {
+              "id": "oiWswbTgzGzH",
+              "text": "그래서 우리 답을 고칠까 (예 / 아니오 — 왜) : ",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792467849444,
+              "updatedAt": 1792467849444
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1792467849444,
+          "updatedAt": 1792467849444
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1792467849444,
+      "updatedAt": 1792467849444
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792467849444,
+  "updatedAt": 1792467849444
+}
