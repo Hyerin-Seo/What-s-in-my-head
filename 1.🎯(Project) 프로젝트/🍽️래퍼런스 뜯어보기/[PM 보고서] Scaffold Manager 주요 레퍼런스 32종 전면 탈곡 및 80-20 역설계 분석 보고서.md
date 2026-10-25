@@ -28,11 +28,9 @@
   - "[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Workflowy.md]]"
   - "[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web)스크리브너 [조사해야함].md]]"
 담당:
-  - "[[민규 서]]"
   - "[[Rin]]"
 작성자:
   - "[[Antigravity]]"
-# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 일정:
 시작:
 ---
