@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"9adf2639c052fb82","x":-280,"y":-120,"width":250,"height":60,"type":"text","text":"1. Idea"},
+		{"id":"533cad1d16cf6025","type":"text","text":"Goal\n : 문서","x":-280,"y":-440,"width":250,"height":80}
+	],
+	"edges":[]
+}

@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "id": "w29PoUQVySij",
+  "title": "작업 전반 사용 한 방 용어",
+  "rootNodes": [
+    {
+      "id": "GUixH6nOk9bF",
+      "text": "전체 포괄성(Collectively Exhaustive), MECE",
+      "children": [
+        {
+          "id": "4X5IAKJBFvN0",
+          "text": "표현: \"콜렉티브 익조스티브 (Collectively Exhaustive, 전체 포괄성)\"",
+          "children": [],
+          "nodeType": "bullet",
+          "createdAt": 1792837472683,
+          "updatedAt": 1792837472683
+        },
+        {
+          "id": "8WpVYTiDu7Ob",
+          "text": "의미: 맥킨지식 문제 정의의 핵심인 MECE(Mutually Exclusive, Collectively Exhaustive) 중 뒷부분입니다.",
+          "children": [
+            {
+              "id": "HFv89IEGywPI",
+              "text": "Mutually Exclusive: 중복이 없는가?",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1792837472683,
+              "updatedAt": 1792837481079
+            },
+            {
+              "id": "qgLmH8adswOU",
+              "text": "Collectively Exhaustive: 누락이 없는가? (모아놓았을 때 전체를 다 포괄하는가?)",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1792837472683,
+              "updatedAt": 1792837481079
+            }
+          ],
+          "nodeType": "bullet",
+          "createdAt": 1792837472683,
+          "updatedAt": 1792837472683
+        },
+        {
+          "id": "jfrzS6wKO8us",
+          "text": "뉘앙스: \"우리가 세운 5가지 항목을 다 합치면 문제 영역 전체(100%)가 빈틈없이 채워지는가?\"를 물을 때 씁니다.",
+          "children": [],
+          "nodeType": "bullet",
+          "createdAt": 1792837472683,
+          "updatedAt": 1792837472683
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792837399407,
+      "updatedAt": 1792837462992
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792837399407,
+  "updatedAt": 1792837486972
+}

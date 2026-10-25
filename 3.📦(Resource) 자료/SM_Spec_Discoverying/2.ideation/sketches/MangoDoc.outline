@@ -1,0 +1,1496 @@
+{
+  "version": "1.0.0",
+  "id": "M70dPvJbR10j",
+  "title": "MangoDoc",
+  "rootNodes": [
+    {
+      "id": "1g5fRoVdjegs",
+      "text": "핵심 컨셉",
+      "children": [
+        {
+          "id": "RD2R45lO8jNS",
+          "text": "커서처럼 바이브 라이팅으로 복잡하고 분량이 많은 문서 작업을 80프로 이상 줄여주거나 도와주는(시뮬레이터?)",
+          "children": [
+            {
+              "id": "9uKDxeVUf2Og",
+              "text": "커서처럼이란?",
+              "children": [
+                {
+                  "id": "8jfRBz0GSAoO",
+                  "text": "1. 인터랙션의 제어감",
+                  "children": [
+                    {
+                      "id": "8jMWcYl6eYAL",
+                      "text": "Context Grounding(@files, path, lines, media 등등)",
+                      "children": [],
+                      "createdAt": 1792831577560,
+                      "updatedAt": 1792831644897
+                    },
+                    {
+                      "id": "agfg4P8PYzWH",
+                      "text": "linter 설정 및 스킬 제어, 피드백 컨트롤",
+                      "children": [],
+                      "createdAt": 1792831645936,
+                      "updatedAt": 1792831723418
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792831562067,
+                  "updatedAt": 1792831574528
+                },
+                {
+                  "id": "JUupUa1wbUqH",
+                  "text": "2. 실행 영역의 폭발적 확장",
+                  "children": [
+                    {
+                      "id": "JmTDpA7V5o8Z",
+                      "text": "뜻",
+                      "children": [
+                        {
+                          "id": "P708ND3rypf5",
+                          "text": "So What?: 예전에는 **\"내가 아는 것 = 내가 만들 수 있는 것\"**이었습니다. 지식이 부족하면 내 실행력도 거기서 멈췄습니다.",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792836103176,
+                          "updatedAt": 1792836103176
+                        },
+                        {
+                          "id": "K15lv5SBv9KM",
+                          "text": "가치: 이제는 내가 그 도구의 문법이나 세부 스펙을 몰라도, 내 손으로 직접 구현해 볼 수 있습니다. 즉, **\"지식의 부족이 더 이상 내 실행력의 발목을 잡지 않는 상태\"**가 됩니다.",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792836103176,
+                          "updatedAt": 1792836103176
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792836094433,
+                      "updatedAt": 1792836100961
+                    },
+                    {
+                      "id": "1PIvUy1pLERQ",
+                      "text": "유의 표현",
+                      "children": [
+                        {
+                          "id": "X8mQ3V8cvODX",
+                          "text": "「도전의 마찰력 제거」 (망설임 없는 시도)",
+                          "children": [
+                            {
+                              "id": "NaulTB9CffcQ",
+                              "text": "So What?: 새로운 도구나 스킬을 마주했을 때 우리는 항상 \"아, 저거 또 언제 공부해서 쓰지? 나중에 시간 나면 해봐야지\" 하고 포기하거나 뒤로 미뤘습니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1792836138907,
+                              "updatedAt": 1792836138907
+                            },
+                            {
+                              "id": "h7Rp4dyzn9EY",
+                              "text": "가치: 공부하느라 멈추는 시간 없이, **\"궁금한 순간 곧바로 손에 쥐어보고 검증하는 '망설임 없는 실행력'\"**을 얻습니다. 호기심이 포기로 끝나지 않고 무조건 실물로 이어집니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1792836138907,
+                              "updatedAt": 1792836138907
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792836057967,
+                          "updatedAt": 1792836115291
+                        },
+                        {
+                          "id": "PE0S98mWYlNG",
+                          "text": "「결과를 먼저 쥐는 주도권」 (결과 선점의 힘)",
+                          "children": [
+                            {
+                              "id": "lFmfbAQ3CaJZ",
+                              "text": "So What?: 예전에는 수많은 학습과 시행착오를 거친 '맨 마지막'에야 겨우 결과물을 구경할 수 있었습니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1792836167917,
+                              "updatedAt": 1792836167917
+                            },
+                            {
+                              "id": "TTSAUhpOtqX0",
+                              "text": "가치: 이제는 아무것도 모르는 상태에서도 **\"일단 완성된 형태의 결과물을 내 손안에 먼저 쥐고 시작\"**합니다. 검토하고 피드백을 주는 '결과물의 주인' 자리를 시작부터 선점합니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1792836167917,
+                              "updatedAt": 1792836167917
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792836142583,
+                          "updatedAt": 1792836161106
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792836053671,
+                      "updatedAt": 1792836060737
+                    },
+                    {
+                      "id": "mqbQkqgxiODv",
+                      "text": "1.시도 비용의 제로화 (사전 학습·환경 세팅 마찰력 없이 즉시 가동)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792835662260,
+                      "updatedAt": 1792835801173
+                    },
+                    {
+                      "id": "yh0w2oaPkrFb",
+                      "text": "2.결과 선행 역공학 (일단 돌아가는 결과물을 뜯어보며 원리 체득)",
+                      "children": [
+                        {
+                          "id": "EYk85Mgx5Pv4",
+                          "text": "이전의 방식: 이론 공부 ➔ 튜토리얼 ➔ 첫 구현 ➔ 결과 확인 (연역적 접근)",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792835856567,
+                          "updatedAt": 1792835856567
+                        },
+                        {
+                          "id": "IzvJhz3oocee",
+                          "text": "지금의 경험: 일단 돌아가는 결과물 ➔ 만져보고 뜯어보기 ➔ 동작 원리 체득 (귀납적·역공학적 접근)",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792835856567,
+                          "updatedAt": 1792835856567
+                        },
+                        {
+                          "id": "s3Wywg5bgemT",
+                          "text": "밑바닥부터 쌓아 올리는 게 아니라, 일단 돌아가는 프로토타입을 눈앞에 띄워놓고 그것을 뜯어보면서 새로운 스킬을 흡수하는 방식입니다.",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792835856567,
+                          "updatedAt": 1792835856567
+                        },
+                        {
+                          "id": "yujpUf22suqL",
+                          "text": "적합한 표현: 체험형 지식 습득(Hands-on Exploration), 결과 선행 학습(Output-driven Learning)",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792835856567,
+                          "updatedAt": 1792835856567
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792835662260,
+                      "updatedAt": 1792835804382
+                    },
+                    {
+                      "id": "gzcUFdZZjgrD",
+                      "text": "3.도구의 정체성 관점: 「샌드박스 / 플레이그라운드 (Sandbox / Playground)",
+                      "children": [
+                        {
+                          "id": "QxgAMcqSeGwD",
+                          "text": "AI는 완성품을 만들어주는 '공장'이 아니라, **내가 궁금했던 새로운 도구나 스킬을 부담 없이 던져 넣고 결과를 확인해보는 '놀이터(실험실)'**입니다.",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792835844084,
+                          "updatedAt": 1792835844084
+                        },
+                        {
+                          "id": "hrRiSZW4L0zX",
+                          "text": "사용자가 느끼신 매력은 \"내 생각을 완벽히 알아맞혀 줘서\"가 아니라, **\"내가 해보고 싶었던 도전을 가장 빠르게 눈앞의 실물로 튕겨내 주는 반응성\"**에 있습니다.",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792835844084,
+                          "updatedAt": 1792835844084
+                        },
+                        {
+                          "id": "QDsLJV7mbySE",
+                          "text": "적합한 표현: 기술 검증 놀이터(Spike Sandbox), 도전의 안전망(Safety Net for Trial)",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1792835844084,
+                          "updatedAt": 1792835844084
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792835662260,
+                      "updatedAt": 1792835836216
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792835662260,
+                  "updatedAt": 1792836321029
+                },
+                {
+                  "id": "ZCOqsojSRHyM",
+                  "text": "3. 시도 비용의 제로화 (Zero Marginal Cost of Experimentation)",
+                  "children": [
+                    {
+                      "id": "W4fvA7Vt73S3",
+                      "text": "유의 표현",
+                      "children": [
+                        {
+                          "id": "4xq0OdbSyGCq",
+                          "text": "「선(先)결과물 후(後)조율」 (Artifact-First, Refine-Later)",
+                          "children": [
+                            {
+                              "id": "8VLFdGbzX4eC",
+                              "text": "기존 방식: 지식 습득(학습) ➔ 문법/도구 조작(노동) ➔ 결과물 생성",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1792832182432,
+                              "updatedAt": 1792832182432
+                            },
+                            {
+                              "id": "7bO9rOmtutK9",
+                              "text": "바이브 방식: 의도 전달(Intent) ➔ 결과물 즉시 획득(Artifact) ➔ 조율 및 교정(Refinement)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1792832182432,
+                              "updatedAt": 1792832182432
+                            },
+                            {
+                              "id": "L5G4CGC6Zlrg",
+                              "text": "도구를 완전히 마스터해야만 첫 줄을 뗄 수 있었던 전통적 인과관계를 완전히 뒤집어버리는 개념",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1792832182432,
+                              "updatedAt": 1792832182432
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792832131624,
+                          "updatedAt": 1792832170578
+                        },
+                        {
+                          "id": "NOxF42L4DFvc",
+                          "text": "도구 숙련도와 산출물의 디커플링 (Decoupling Tool Mastery from Output)",
+                          "children": [
+                            {
+                              "id": "g7i2WFQqMdCJ",
+                              "text": "마크다운 문법, 복잡한 문서 템플릿, 구조화 방법론 같은 '도구적 숙련도'가 없어도 사용자의 '아이디어 밀도'만으로 최종 산출물에 도달",
+                              "children": [],
+                              "createdAt": 1792832216120,
+                              "updatedAt": 1792832231250
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792832186723,
+                          "updatedAt": 1792832215375
+                        },
+                        {
+                          "id": "183Gus3MNqFE",
+                          "text": "「무(無)에서 유(有)가 아닌, '초안(Draft)에서 완성(Done)으로'」",
+                          "children": [
+                            {
+                              "id": "9iFhLXxcIv2r",
+                              "text": "인간의 뇌는 아무것도 없는 상태에서 무언가를 만들어낼 때 인지 부하가 극대화되지만, 어설프더라도 눈앞에 놓인 결과물을 '비판하고 고치는 작업'에는 압도적으로 뛰어납니다. 커서는 바로 이 인간 뇌의 인지 특성을 파고든 것",
+                              "children": [],
+                              "createdAt": 1792832261983,
+                              "updatedAt": 1792832280336
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792832260730,
+                          "updatedAt": 1792832261417
+                        },
+                        {
+                          "id": "COj73kNPXz46",
+                          "text": "「지식의 런타임 추상화 (Runtime Abstraction of Domain Knowledge)」",
+                          "children": [
+                            {
+                              "id": "a4dmYFICWt5b",
+                              "text": "특정 프레임워크나 라이브러리의 방대한 API 문서를 작업자의 뇌에 미리 로드할 필요 없이, 에이전트가 런타임에 알아서 그 복잡성을 가려주고(추상화하고) 결과만 투명하게 전달하는 메커니즘",
+                              "children": [],
+                              "createdAt": 1792832303459,
+                              "updatedAt": 1792832309810
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792832302171,
+                          "updatedAt": 1792832302886
+                        },
+                        {
+                          "id": "8kNpCnXz3HMk",
+                          "text": "의도 기반 즉시 프로토타이핑 (Intent-driven Instant Materialization)",
+                          "children": [
+                            {
+                              "id": "iIUsGFOXAwEa",
+                              "text": "\"이런 기능이 필요해\", \"이런 내용의 기술 블로그를 쓰고 싶어\"라는 자연어 의도(Intent) 하나만으로, 실행 가능하거나 검토 가능한 형태의 실체(Concrete Prototype)를 즉시 물질화(Materialize)해 내는 능력",
+                              "children": [],
+                              "createdAt": 1792835144778,
+                              "updatedAt": 1792835161904
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792831570200,
+                          "updatedAt": 1792835138065
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792831704765,
+                      "updatedAt": 1792835132503
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792835080639,
+                  "updatedAt": 1792835742968
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792830837744,
+              "updatedAt": 1792830895618
+            },
+            {
+              "id": "khGEFx2jorpq",
+              "text": "바이브 코딩과 바이브 라이팅의 차이점과 그 간극이란?",
+              "children": [
+                {
+                  "id": "sBBIKOR271ES",
+                  "text": "바이브 코딩: 실행 영역 확장을 이끈 5대 진입 비용(마찰력)의 소멸",
+                  "children": [
+                    {
+                      "id": "xfzOSahd9Yma",
+                      "text": "1. 문법과 규칙을 외워야 하는 「인출(Retrieval) 인지 비용」의 소멸",
+                      "children": [
+                        {
+                          "id": "coXhsmYMCQRY",
+                          "text": "이전의 비용: 함수 이름, 파라미터, 문법 규칙을 뇌 메모리에 일일이 로드해야 해서 생각이 문법에 막힘",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792836797963,
+                          "updatedAt": 1792836797963
+                        },
+                        {
+                          "id": "XdYfEafGSmzV",
+                          "text": "줄어든 것: 형식과 문법을 외우는 부하가 0이 되어, \"이걸로 무엇을 해볼까?\"에만 집중",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792836797963,
+                          "updatedAt": 1792836797963
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792836797963,
+                      "updatedAt": 1792836797963
+                    },
+                    {
+                      "id": "wc1hbuvkiOLa",
+                      "text": "2. 시작하기도 전에 지치는 「환경 설정 및 보일러플레이트 비용」의 제거",
+                      "children": [
+                        {
+                          "id": "H8kVAHj8SknB",
+                          "text": "이전의 비용: 초기 세팅, 의존성 설치, 기본 폴더 구조 잡기에 지쳐 본선 시작도 전에 포기",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792836797963,
+                          "updatedAt": 1792836797963
+                        },
+                        {
+                          "id": "0mrnZNitQDRv",
+                          "text": "줄어든 것: '일단 돌아가는 뼈대(Scaffold)'가 즉시 떨어져, 준비 운동에 드는 실행 비용이 사라짐",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792836797963,
+                          "updatedAt": 1792836797963
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792836797963,
+                      "updatedAt": 1792836797963
+                    },
+                    {
+                      "id": "DFHlH4R5FLyH",
+                      "text": "3. \"모르면 어떡하지?\"라는 「탐색 및 검토 스트레스」의 완화",
+                      "children": [
+                        {
+                          "id": "XX3QSahMrK1s",
+                          "text": "이전의 비용: 수많은 문서와 레퍼런스를 뒤지며 \"어느 게 정답이지?\" 검토하느라 에너지를 소모",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792836797963,
+                          "updatedAt": 1792836797963
+                        },
+                        {
+                          "id": "rXDEhqZ02fRs",
+                          "text": "줄어든 것: 완벽한 정답 대신 \"일단 하나 뽑아서 눈으로 보고 판단하자\"로 전환되어 탐색 피로 제거",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792836797963,
+                          "updatedAt": 1792836797963
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792836797963,
+                      "updatedAt": 1792836797963
+                    },
+                    {
+                      "id": "0ytLofS9x1oj",
+                      "text": "4. 실패했을 때의 「복구 및 롤백(Rollback) 비용」의 소멸",
+                      "children": [
+                        {
+                          "id": "oTd8JhS5UjBY",
+                          "text": "이전의 비용: 낯선 도구를 쓰다가 잘못되면 어디서부터 꼬였는지 찾느라 디버깅 지옥에 빠졌습니다. 실패에 대한 두려움 때문에 시도 자체를 꺼리게 되었습니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792836797963,
+                          "updatedAt": 1792836797963
+                        },
+                        {
+                          "id": "x3jp06xFCgAX",
+                          "text": "줄어든 것: 마음에 안 들면 Ctrl+Z를 누르거나 에이전트에게 \"다시 해줘\" 한마디면 원상복구되므로, **'실패해도 리스크가 전혀 없는 상태'**가 되었습니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792836797963,
+                          "updatedAt": 1792836797963
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792836797963,
+                      "updatedAt": 1792836797963
+                    },
+                    {
+                      "id": "H5nPScAMyCke",
+                      "text": "5. 타인의 자산(Git·API·도구)을 소화하는 「외부 결합 비용」의 소멸",
+                      "children": [
+                        {
+                          "id": "DGNhaoFbZ03j",
+                          "text": "1) 깃(Git)과 남의 코드를 두려워하지 않음: 방대한 레포지토리를 직접 다 퍼먹지 않아도, 필요한 핵심 로직만 에이전트가 소화·이식",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792837211932,
+                          "updatedAt": 1792837211932
+                        },
+                        {
+                          "id": "liuXHyTLhbTL",
+                          "text": "2) API 연동에 대한 두려움 해소: 복잡한 호출 규격과 접착제(Glue) 코드를 직접 짜지 않고도 즉시 검증 가능",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792837211932,
+                          "updatedAt": 1792837211932
+                        },
+                        {
+                          "id": "JNtgZoY5jhjS",
+                          "text": "3) 패키지·라이브러리 등 새로운 도구의 자유로운 도입: 의존성 충돌 공포 없이 레고 블록처럼 외부 자산을 조합하는 자유",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792837211932,
+                          "updatedAt": 1792837211932
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792837211932,
+                      "updatedAt": 1792837211932
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792836797963,
+                  "updatedAt": 1792837211932
+                },
+                {
+                  "id": "XkuJTnOpUgkc",
+                  "text": "바이브 라이팅: 5대 비용 대입 시 발생하는 결정적 차이점과 간극",
+                  "children": [
+                    {
+                      "id": "UEC6OSYo1tjM",
+                      "text": "(해당 없음) 1. 문법과 규칙을 외워야 하는 「인출 인지 비용」",
+                      "children": [
+                        {
+                          "id": "e9585mj6teed",
+                          "text": "바이브 코딩: 코드는 엄격한 문법(Syntax)을 따르며, 쉼표 하나나 철자 하나만 틀려도 기계가 거부합니다. 따라서 '문법을 기억해내는 비용'이 거대한 진입 장벽이었고, AI가 대신 쳐주는 것만으로도 직접적인 해방감을 줍니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        },
+                        {
+                          "id": "OWvbHJrUdH7L",
+                          "text": "바이브 라이팅에 대입 시 차이점: 문서 작업자에게는 애초에 '문법 장벽' 자체가 존재하지 않습니다. 일상 언어(자연어)나 서식(표, 다이어그램, 글머리 기호)은 이미 워드, PPT, 엑셀, 노션 같은 GUI 도구로 초등학생도 마우스 클릭 몇 번이면 만듭니다. '문법을 몰라서 글을 못 쓰는 상황' 자체가 없기 때문에 이 항목은 문서 작업에서 유의미한 차이를 만들지 못합니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792839242804,
+                      "updatedAt": 1792839242804
+                    },
+                    {
+                      "id": "q0Jf0eV8eTks",
+                      "text": "(해당 없음) 2. 시작하기도 전에 지치는 「환경 설정 및 보일러플레이트 세팅 비용」",
+                      "children": [
+                        {
+                          "id": "8ZdygUaXgZJD",
+                          "text": "바이브 코딩: 런타임 설치, 의존성 패키지 충돌, 빌드 설정 파일 작성 등 본 작업에 들어가기 전에 세팅해야 할 복잡한 기술적 기반이 거대한 마찰력이었습니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        },
+                        {
+                          "id": "prn1o3pLRjYY",
+                          "text": "바이브 라이팅에 대입 시 차이점: 문서에서는 '세팅'이라는 단계 자체가 비용으로 작용하지 않습니다. 문서는 새 창을 열고 기존 양식을 복사해 넣으면 3초 만에 시작할 수 있습니다. 코딩처럼 \"환경이 안 갖춰져서 시작을 못 하는 일\"은 문서의 세계에 존재하지 않습니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792839242804,
+                      "updatedAt": 1792839242804
+                    },
+                    {
+                      "id": "ZhVSUMyqTNYu",
+                      "text": "(일부 해소) 3. \"모르면 어떡하지?\"라는 「탐색 및 검토 스트레스」",
+                      "children": [
+                        {
+                          "id": "8X71IalRkeaX",
+                          "text": "바이브 코딩: \"이 방법이 맞나?\"를 탐색할 때, 코딩의 특수성은 **'돌아만 가면 된다(기계적 실행)'**입니다. 라이브러리를 붙여서 에러 없이 돌아가면 검토가 끝나므로, AI에게 믿고 맡기는 '위임'이 가능합니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        },
+                        {
+                          "id": "QcWcZqNhZlBn",
+                          "text": "바이브 라이팅에 대입 시 차이점: '돌아간다'는 기계적 기준이 없으므로, 탐색·검토 스트레스가 인간에게 100% 그대로 남습니다. 문서에 들어가는 내용은 실행 여부와 무관한 '의미와 팩트의 문제'입니다. AI가 자료를 찾아와 문장을 써줘도, 그 내용이 사실인지, 맥락에 맞는지, 우리 조직의 의도와 부합하는지를 기계가 판정해 주지 못하므로 인간이 의심하고 다시 찾아보며 검토하는 스트레스가 전혀 줄어들지 않습니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792839242804,
+                      "updatedAt": 1792839381848
+                    },
+                    {
+                      "id": "S9PPQiSKbQac",
+                      "text": "(일부 해소) 4. 실패했을 때의 「복구 및 롤백(Rollback) 비용」",
+                      "children": [
+                        {
+                          "id": "RkEVCf0qdqag",
+                          "text": "바이브 코딩: 컴파일러, 린터, 에러 로그가 실패한 지점을 **'정확한 라인 단위(타깃 검증)'**로 찍어줍니다. 실패가 발생해도 무엇이 잘못되었는지 즉시 알 수 있으므로 롤백하고 다시 시도하는 비용이 0에 수렴합니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        },
+                        {
+                          "id": "nyK6qLKetNmQ",
+                          "text": "바이브 라이팅에 대입 시 차이점: '전수 검사의 저주'로 인해 실패를 발견하는 비용 자체가 극도로 높습니다. 문서에는 빨간 줄을 그어주는 컴파일러가 없습니다. 100개 문장 중 1개의 치명적인 논리 모순이나 왜곡이 숨어 있더라도, **그 1개를 찾아내기 위해 인간이 100개 전체를 정독(전수 검사)**해야 합니다. 망한 것을 확인하는 데 인간의 뇌 에너지가 고스란히 소모되므로 코딩식의 '무위험 롤백'이 성립하지 않습니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792839242804,
+                      "updatedAt": 1792839428423
+                    },
+                    {
+                      "id": "LuDpWuLOO1sR",
+                      "text": "(일부 해소) 5. 타인의 자산(Git·API·도구)을 소화하는 「외부 결합 비용」",
+                      "children": [
+                        {
+                          "id": "FaV5OuFdVVLU",
+                          "text": "바이브 코딩: 남의 코드나 외부 API를 **'블랙박스(Black-box)'**로 다룰 수 있습니다. 내부 원리를 인간이 100% 이해하지 못했더라도, 에이전트가 인터페이스를 맞춰서 돌아가게 연결해 주면 '소화 완료'로 간주하고 위임할 수 있습니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        },
+                        {
+                          "id": "MakP7woTgEUz",
+                          "text": "바이브 라이팅에 대입 시 차이점: 문서에서의 '소화'는 결국 인간의 뇌가 감당해야만 완료되는 '화이트박스(White-box)'의 영역입니다. 타인의 회의록, 이전 기획서, 외부 정책 문서를 AI가 아무리 요약해서 끼워 넣어줘도, 문서 작성자 본인이 그 내용을 진짜로 이해(Internalize)하지 못하면 자기 문서로서 책임질 수 없습니다. 코딩처럼 기계적으로 붙여놓고 \"소화 끝\"이라고 할 수 없으며, 결국 인간이 다 읽고 곱씹어야 하므로 외부 자산 소화 비용은 사라지지 않습니다.",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792839242804,
+                          "updatedAt": 1792839242804
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792839242804,
+                      "updatedAt": 1792839437195
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792839242804,
+                  "updatedAt": 1792839242804
+                },
+                {
+                  "id": "LXeOdVewdpKZ",
+                  "text": "3. 본질적 요구치 대조: 기계의 구동(Execution) vs 인간의 정렬(Alignment) ➔ [[04. (요구치 대조) 기계의 구동(코딩) vs 인간의 정렬(문서)과 차세대 아젠다]]",
+                  "children": [
+                    {
+                      "id": "FhiEkNkq3ahn",
+                      "text": "1. 코드를 잘 짠다는 사람의 요구치: 「기계의 구동과 통제 (Execution)」",
+                      "children": [
+                        {
+                          "id": "6XaiVIN7JxPC",
+                          "text": "소통 대상: 컴퓨터 (런타임/기계) ➔ 목적: 기계가 에러 없이 정확하고, 빠르고, 안정적으로 돌아가게 만드는 것",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        },
+                        {
+                          "id": "5zQedz2mYRJC",
+                          "text": "수용자의 특성: '수용자 독립성' (돌아만 가면 유치원생이든 전문가든 경험하는 기능은 동일 ➔ 단일 빌드로 모두 대응 가능)",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792842072982,
+                          "updatedAt": 1792842072982
+                        },
+                        {
+                          "id": "d8LlroRHLiqY",
+                          "text": "핵심 요구치: 1) 정확성과 모듈화, 2) 추상화(블랙박스화) 능력, 3) 기계 자원의 효율성",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        },
+                        {
+                          "id": "rf8pUQe9JjjT",
+                          "text": "바이브 코딩의 본질: 기계를 부릴 수 있는 영토가 넓어지는 '실행 영역의 확장'이 곧바로 실력이자 혁신",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792840313198,
+                      "updatedAt": 1792840313198
+                    },
+                    {
+                      "id": "F7tIdu3FixHu",
+                      "text": "2. 문서를 잘 만든다는 사람의 요구치: 「인간의 납득과 정렬 (Alignment)」",
+                      "children": [
+                        {
+                          "id": "rKSl24JxfdZA",
+                          "text": "소통 대상: 인간 (동료, 의사결정권자, 고객, 미래의 나) ➔ 목적: 타인의 뇌에 복잡한 생각과 맥락을 오해 없이 이식하여 합의(Consensus)를 이끌어내고 행동(Action)하게 만드는 것",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        },
+                        {
+                          "id": "i8dXMJ51T0p5",
+                          "text": "수용자의 특성: '독자의 수준 종속성' (읽는 사람의 지적 역량·도메인 지식에 따라 명문이 외계어로 전락 ➔ 단일 빌드 불가능)",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792842072982,
+                          "updatedAt": 1792842072982
+                        },
+                        {
+                          "id": "z1P6xjrkB5UF",
+                          "text": "선별력과 요약 (Curation): 100가지 사실을 다 나열하는 것은 무능. 무엇을 버리고 무엇을 남길 것인가? 독자의 유한한 뇌 메모리를 아껴주는 배려",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        },
+                        {
+                          "id": "M9vKeesNVlsB",
+                          "text": "논리의 인과성 (Why): \"왜 이것을 해야 하는가?\" 전제와 결론 사이에 비약이 없고, 읽는 사람이 저절로 납득하게 만드는 서사의 정합성",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        },
+                        {
+                          "id": "hgW2QJ9esGJz",
+                          "text": "독자 눈높이 프레이밍 (Empathy): 읽는 사람의 관점(개발자, 경영진, 고객)에 맞추어 거부감 없이 맥락을 전달하는 언어 선택",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        },
+                        {
+                          "id": "QDcsOLTCSUgA",
+                          "text": "진실성과 책임 (Accountability): \"이 수치 맞아요?\", \"이 결론의 근거가 뭐죠?\"라는 질문에 내 이름과 얼굴로 방어하고 책임지는 태도",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792840313198,
+                      "updatedAt": 1792840313198
+                    },
+                    {
+                      "id": "tl3dUJFt1gfw",
+                      "text": "3. 왜 '실행 영역 확장'이 아젠다가 아닌가?",
+                      "children": [
+                        {
+                          "id": "Qw3KIoKr2FU4",
+                          "text": "문서 작업자에게는 기획서, 사양서, 제안서 등 \"문서 종류의 확장\"은 아무런 가치가 없음",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        },
+                        {
+                          "id": "hbdKcjgcQbmL",
+                          "text": "AI로 100페이지를 찍어내도 조직을 설득하지 못하거나 핵심 논리가 비어 있으면 그저 '읽는 사람의 시간을 빼앗는 공해'에 불과",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1792840313198,
+                          "updatedAt": 1792840313198
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792840313198,
+                      "updatedAt": 1792840313198
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792840313198,
+                  "updatedAt": 1792840313198
+                },
+                {
+                  "id": "KjSCHHKgh7Yv",
+                  "text": "4. 문서의 \"It works!\" 실체: 독자의 승인을 이끄는 4대 런타임 요소 ➔ [[05. (문서의 런타임) 'It works!'의 실체와 4대 승인 메커니즘]]",
+                  "children": [
+                    {
+                      "id": "270bmFK5L4E0",
+                      "text": "1. 구문 파싱 = 인지적 무저항 (Readability): 문맥 걸림돌과 뇌의 파싱 에러(비문) 없이 단숨에 완독",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792841163506,
+                      "updatedAt": 1792841163506
+                    },
+                    {
+                      "id": "WexOcbwrPKXb",
+                      "text": "2. 타입 안전성 = 인과적 정합성 (Consistency): 전제와 결론이 충돌하지 않는 논리적 크래시(모순/비약) 방지",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792841163506,
+                      "updatedAt": 1792841163506
+                    },
+                    {
+                      "id": "SUotjT7c24mA",
+                      "text": "3. 예외 처리 = 반론의 사전 차단 (Pre-emption): 독자가 던질 가장 날카로운 질문 3가지를 본문에서 미리 선제 방어",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792841163506,
+                      "updatedAt": 1792841163506
+                    },
+                    {
+                      "id": "mN3FTyEr2bA5",
+                      "text": "4. 명확한 리턴값 = 선명한 행동 지침 (Action Item): \"그래서 지금 무엇을 결정해야 하는가\"가 즉시 손에 쥐어짐",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792841163506,
+                      "updatedAt": 1792841163506
+                    },
+                    {
+                      "id": "XYvX7ZnwF5G5",
+                      "text": "5. 결론: 코딩의 It works!가 '컴파일 성공'이라면, 문서의 It works!는 '독자의 승인(LGTM/Sign-off)'",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792841163506,
+                      "updatedAt": 1792841163506
+                    },
+                    {
+                      "id": "zLl3u8K622nk",
+                      "text": "[[05. (문서의 런타임) 'It works!'의 실체와 4대 승인 메커니즘#^doc-it-works-table|4대 런타임 요소 비교표 블록 링크]]",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792841163506,
+                      "updatedAt": 1792841163506
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792841163506,
+                  "updatedAt": 1792841163506
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792830895618,
+              "updatedAt": 1792836797963
+            },
+            {
+              "id": "xpVEMRE7phbx",
+              "text": "문서 작업의 본질과 작업자가 느끼는 진짜 핵심 효용이란? ➔ [[06. (효용의 재정의) '문서'라는 도구적 선택지와 2대 귀찮음의 극복]]",
+              "children": [
+                {
+                  "id": "cFEpipErTrnY",
+                  "text": "1. 문서의 본질: '목적'이 아닌 본업(목적)을 돕는 '도구적 선택 사항'",
+                  "children": [
+                    {
+                      "id": "OzPpyLYXF1cn",
+                      "text": "진짜 목적은 '본업(쇼핑몰 창업, 제품 개발, 비즈니스 성공)'이지 문서 자체가 아님 ➔ \"판단만 섰다면 문서 없이 바로 실행하는 것이 언제나 최선\"",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792843111368,
+                      "updatedAt": 1792843644952
+                    },
+                    {
+                      "id": "l8qHguiWP8VO",
+                      "text": "문서는 필수가 아닌 '선택지': 타인 설득(투자/동업), 위험 방어, 미래 복기 등 필요할 때만 목적을 보조하기 위해 선택적으로 작성함",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792843111368,
+                      "updatedAt": 1792843644952
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792843111368,
+                  "updatedAt": 1792843644952
+                },
+                {
+                  "id": "ncakgbz3ftAs",
+                  "text": "2. 외주의 딜레마: '귀찮아서 시켰더니 더 큰 귀찮음이 발생하는 역설'",
+                  "children": [
+                    {
+                      "id": "wz75crZWVNRo",
+                      "text": "1) 설명의 귀찮음 (Context Tax): 내 머릿속 맥락과 팀의 암묵지를 프롬프트로 가르치고 먹이는 피로",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792843111368,
+                      "updatedAt": 1792843111368
+                    },
+                    {
+                      "id": "4H4w5E3wCZhQ",
+                      "text": "2) 검수의 귀찮음 (Inspection Tax): 에이전트가 그럴듯하게 쓴 장황한 글을 한 줄 한 줄 의심하며 전수 검사하는 지옥",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792843111368,
+                      "updatedAt": 1792843111368
+                    },
+                    {
+                      "id": "5W7cbKCBiuxq",
+                      "text": "분노의 회귀: \"고치는 게 더 일이다. 그냥 내가 직접 쓰고 만다!\"",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792843111368,
+                      "updatedAt": 1792843111368
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792843111368,
+                  "updatedAt": 1792843111368
+                },
+                {
+                  "id": "fDyNNmrUXgEO",
+                  "text": "3. 작업자가 체감하는 진짜 핵심 효용 (The True Utility)",
+                  "children": [
+                    {
+                      "id": "xdawMSStxBBB",
+                      "text": "화려한 어휘력과 표현력 늘려주기(3%짜리 치장)는 메인 효용이 아님 (양적 팽창은 도움이 될지 몰라도 질적 핵심이 아님)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792843111368,
+                      "updatedAt": 1792843111368
+                    },
+                    {
+                      "id": "Jn09LqNvcpwB",
+                      "text": "진짜 핵심 효용: 필요에 의해 문서화를 '선택'했을 때, 그것이 본업의 발목을 잡지 않도록 '설명의 피로'와 '검수의 지옥' 없이 내 판단과 목적을 가장 빠르고 신뢰성 있게 뒷받침해 주는 것",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792843111368,
+                      "updatedAt": 1792845296104
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792843111368,
+                  "updatedAt": 1792843111368
+                },
+                {
+                  "id": "DtmSqmlNPhaY",
+                  "text": "4. 문서 작업 필수 영역",
+                  "children": [
+                    {
+                      "id": "JyfbT3HQyjUR",
+                      "text": "1. 효력 트랙 (외재적 권리·책임 강제)",
+                      "children": [
+                        {
+                          "id": "13mjCPbAKPQs",
+                          "text": "1) 법적 효력과 권리 보증 (Legal)",
+                          "children": [
+                            {
+                              "id": "MkwgPjIcRZZm",
+                              "text": "문서화 강제: 법률이나 계약 규정상 문서 형태가 아니면 효력 자체가 발생하지 않고, 분쟁 시 법적 보호 불가",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            },
+                            {
+                              "id": "0yeanyBaPYsH",
+                              "text": "대표적인 문서: 고용 계약서, 공급·매매 계약서, 서비스 약관, 동의서, 인허가 서류",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1792845296104,
+                          "updatedAt": 1792845296104
+                        },
+                        {
+                          "id": "2gXYRMhfwY5W",
+                          "text": "2) 책임 소재와 면책 (Accountability)",
+                          "children": [
+                            {
+                              "id": "9ODfcZI6MyUv",
+                              "text": "문서화 강제: 문제 발생 시 \"누가 승인했고, 왜 이 결정을 내렸는가\"에 대한 물리적 증적(Audit Trail)으로 책임 분산 및 면책",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            },
+                            {
+                              "id": "4eXwAYpPPKmA",
+                              "text": "대표적인 문서: 결재/품의서, 외부 감사 증빙, 안전 점검 기록, 권한 배분 규정",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1792845296104,
+                          "updatedAt": 1792845296104
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792845296104,
+                      "updatedAt": 1792845368968
+                    },
+                    {
+                      "id": "nXNwzf7rLP9j",
+                      "text": "2. 지식 트랙 (사실이 조직 밖에 있음 — 리서치와 표준화)",
+                      "children": [
+                        {
+                          "id": "1BsFsSd6outk",
+                          "text": "3) 객관적 사실의 탐색과 진단 (Discovery & Intelligence)",
+                          "children": [
+                            {
+                              "id": "CTwPRIzHBO97",
+                              "text": "문서화 강제: 조직 밖의 흩어진 외부 사실을 체계적으로 수집·해석하여, 잘못된 가정에 의한 사업 실패 위험을 방어",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            },
+                            {
+                              "id": "hB9Wm1bOzX2m",
+                              "text": "대표적인 문서: 시장조사보고서, 기술동향보고서, 경쟁사 분석, 트렌드/컨설팅 보고서, 정책 보고서",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1792845296104,
+                          "updatedAt": 1792845296104
+                        },
+                        {
+                          "id": "iZ7LI9gQ74rw",
+                          "text": "4) 공인 지식의 정립과 1:N 배포 (Standard & Broadcast)",
+                          "children": [
+                            {
+                              "id": "pZJH3vaHuZiW",
+                              "text": "문서화 강제: 구두 전달 시 발생하는 귓속말 왜곡을 차단하고, 시공간을 초월하여 단일 진실 공급원(SSOT)으로 지식을 자산화",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            },
+                            {
+                              "id": "6MY4qXR9ehsG",
+                              "text": "대표적인 문서: 전사 규정집, 제품 사용 매뉴얼, 학술 논문, 기술 백서, 표준 지침(ISO 15489)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1792845296104,
+                          "updatedAt": 1792845296104
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792845296104,
+                      "updatedAt": 1792845368968
+                    },
+                    {
+                      "id": "ba0xyAmmY9je",
+                      "text": "3. 업무 트랙 (사실이 조직 안에 있음 — 내부 실행 프로세스)",
+                      "children": [
+                        {
+                          "id": "lOnyo2q4tHNR",
+                          "text": "5) 목표와 의사결정의 정렬 (Alignment)",
+                          "children": [
+                            {
+                              "id": "jiEjcIUzBXDF",
+                              "text": "문서화 강제: 머릿속 복잡한 생각과 구조를 타인(팀원/외주) 및 AI와 오차 없이 합의하고 조율하기 위한 상호 계약 매개체",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            },
+                            {
+                              "id": "73CDSJWBwPwm",
+                              "text": "대표적인 문서: 사업계획서, 제안서, PRD, 시스템 아키텍처 설계서, 개발계획서",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1792845296104,
+                          "updatedAt": 1792845296104
+                        },
+                        {
+                          "id": "X6ZwDf2wgSFE",
+                          "text": "6) 실행 경과 추적과 사후 결산 (Tracking & Retrospective)",
+                          "children": [
+                            {
+                              "id": "pq6MqBdmDC05",
+                              "text": "문서화 강제: 조직 내부의 진행 상태를 가시화하여 일탈을 방지하고, 종료 후 성공·실패 원인을 객관적으로 규명하여 회고",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            },
+                            {
+                              "id": "VNfkOGqhNWQO",
+                              "text": "대표적인 문서: 진척/경과 보고서, 릴리즈 일지, 일일 마감, 프로젝트 결산 보고서, 사업 결산 백서",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845296104,
+                              "updatedAt": 1792845296104
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1792845296104,
+                          "updatedAt": 1792845296104
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792845296104,
+                      "updatedAt": 1792845368968
+                    },
+                    {
+                      "id": "bIAVHUoKvDXb",
+                      "text": "4. 에이전트 트랙 (기계 위임과 자율 실행 거버넌스)",
+                      "children": [
+                        {
+                          "id": "gBorzbHH4uuR",
+                          "text": "7) 작업 지시와 실행 규약 (Contract & Grounding)",
+                          "children": [
+                            {
+                              "id": "FqtuQK6Z6Efh",
+                              "text": "문서화 강제: 에이전트의 환각(Hallucination)을 차단하고 결정론적 실행을 보장하기 위해, 작업 의도와 도메인 경계, 도구 규격을 엄격한 기계 가독형 텍스트로 고정",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845486591,
+                              "updatedAt": 1792845486591
+                            },
+                            {
+                              "id": "yja2oY0iE2YM",
+                              "text": "대표적인 문서: 에이전트 지침(AGENTS.md/CLAUDE.md), 스킬 명세서(SKILL.md), 도구 호출 스키마, 시스템 프롬프트, 컨텍스트 주입 명세서",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845486591,
+                              "updatedAt": 1792845486591
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792845486591,
+                          "updatedAt": 1792845486591
+                        },
+                        {
+                          "id": "Cw5p6yzppkAW",
+                          "text": "8) 자율 실행 관측과 승인 원장 (Observability & Governance)",
+                          "children": [
+                            {
+                              "id": "BlJ4p6n5QiNq",
+                              "text": "문서화 강제: 에이전트의 비가역적 변경을 사전에 통제하고, 실행 과정의 추론 근거와 상태 변화를 인간이 추적·검증(인스펙션)하기 위해 기록 강제",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845486591,
+                              "updatedAt": 1792845486591
+                            },
+                            {
+                              "id": "TwhSWBiaWtul",
+                              "text": "대표적인 문서: 실행 계획서(Plan/Task), 텔레메트리 스냅샷(Span/Trace), 승인 요청서(Approval Prompt), 상태 원장(State Ledger), 패치노트",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1792845486591,
+                              "updatedAt": 1792845486591
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1792845486591,
+                          "updatedAt": 1792845486591
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1792845486591,
+                      "updatedAt": 1792845486591
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792844486012,
+                  "updatedAt": 1792845486591
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792830889375,
+              "updatedAt": 1792846096305
+            },
+            {
+              "id": "3wIPVFi53E8i",
+              "text": "지식 노동자에게 AX(에이전트 기반) 작업 환경을 권하는 진짜 핵심 효용 ➔ [['커서처럼'의 본질과 Knowledge-as-Code 기반 AX 부스팅]]",
+              "children": [
+                {
+                  "id": "84j2jscOpvVE",
+                  "text": "핵심 정의: 정보 수집·가공·추적이라는 인지적 잡무에서 완전히 해방되어, 1인의 두뇌로 팀 단위 가설을 동시 병렬 검증·현실화하는 \"판단력의 순도와 실행 반경의 극대화\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792846096305,
+                  "updatedAt": 1792846096305
+                },
+                {
+                  "id": "TP2MJecNufS1",
+                  "text": "1) 정보 물류(Logistics) 노동의 소멸 ➔ '순수 판단(Judgment)'으로의 회귀",
+                  "children": [
+                    {
+                      "id": "q6J7gL4dhEa3",
+                      "text": "기존 노동의 80%: 검색, 복사/붙여넣기, 데이터 전처리, 포맷 변환, 수작업 비교 분석 등 '지식'이 아닌 단순 인지적 잡무(Information Chores)에 뇌 용량을 낭비함",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    },
+                    {
+                      "id": "iV5K3A5tRU6s",
+                      "text": "AX 환경의 효용: 정보의 탐색과 전처리를 에이전트 군단에 완전히 넘기고, 인간은 \"무엇을 선택하고, 어떤 가치를 부여할 것인가\"라는 고유의 판단(Judgment)과 의사결정에만 100% 뇌 자원 집중",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    },
+                    {
+                      "id": "VVyq59glz6JR",
+                      "text": "➔ 지식 노동자가 단순 데이터 수작업 노동자에서 '순수 가치 판단자'로 회귀함",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792846096305,
+                  "updatedAt": 1792846307015
+                },
+                {
+                  "id": "WnH2DDReQKUv",
+                  "text": "2) 실행 반경(Bandwidth)의 폭발적 확장 ➔ '1인 오케스트라'",
+                  "children": [
+                    {
+                      "id": "Qn69jjloiz6E",
+                      "text": "기존의 한계: 머릿속에 좋은 아이디어나 가설이 10개 있어도, 내 몸과 시간(24시간)이 1개뿐이라 결국 1개만 실행하고 9개는 폐기함",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    },
+                    {
+                      "id": "GZoxuktSW7YQ",
+                      "text": "AX 환경의 효용: 에이전트를 자율 서브태스크로 분기시켜 5~10개의 시장 가설, 데이터 분석, 프로토타이핑을 병렬로 동시 구동",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    },
+                    {
+                      "id": "xx1tQR0HP5uQ",
+                      "text": "➔ 1인의 지적 역량이 '팀/부서 단위의 처리량(Throughput)'으로 증폭됨",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792846096305,
+                  "updatedAt": 1792846307015
+                },
+                {
+                  "id": "ZRmHMYh5gUHE",
+                  "text": "3) 생각과 물질화(Realization) 사이의 딜레이 제로화",
+                  "children": [
+                    {
+                      "id": "GN2dgGfdfkRZ",
+                      "text": "기존의 사이클: 아이디어 착상 ➔ 계획 수립 ➔ 개발/디자인 외주 또는 요청 ➔ 수일~수주의 대기 ➔ 피드백",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    },
+                    {
+                      "id": "9pbhYGaLFBsF",
+                      "text": "AX 환경의 효용: 머릿속 아이디어를 자연어로 던지는 즉시, 몇 분 만에 동작하는 프로토타입, 분석 대시보드, 구조화된 인터페이스로 눈앞에 즉시 강림함",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    },
+                    {
+                      "id": "OKslZ0hzJUDe",
+                      "text": "➔ 피드백 루프의 극단적 단축을 통해, 남들이 기획서 쓸 시간에 이미 3번의 실패와 검증을 끝내는 압도적 학습 속도 확보",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792846096305,
+                  "updatedAt": 1792846307015
+                },
+                {
+                  "id": "Z29Bj8ECOTd5",
+                  "text": "4) 뇌의 물리적 한계(7±2) 돌파 ➔ 고차원 복잡계 조망 (High-Dimensional Reasoning)",
+                  "children": [
+                    {
+                      "id": "uxAU21rWLQoJ",
+                      "text": "인간의 한계: 인간 뇌의 작업 기억(Working Memory)은 밀러의 법칙(7±2)에 갇혀 있어, 변수가 10개가 넘어가면 모순을 놓치고 인지 과부하에 빠짐",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    },
+                    {
+                      "id": "iRlY9bnQMfmM",
+                      "text": "AX 환경의 효용: 에이전트 시스템이 수백 개의 상태(State), 히스토리, 다변수 관계를 온전히 기억하고 추적해 줌",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    },
+                    {
+                      "id": "NWffzreqhAjy",
+                      "text": "➔ 지식 노동자는 기억하느라 에너지를 쓰지 않고, 고차원의 복잡계 문제를 위에서 내려다보며 조망(Meta-cognition)할 수 있게 됨",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792846307015,
+                      "updatedAt": 1792846307015
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792846096305,
+                  "updatedAt": 1792846307015
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792846096305,
+              "updatedAt": 1792846609758
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792830746458,
+          "updatedAt": 1792831018910
+        },
+        {
+          "id": "0tW5UG5m9751",
+          "text": "현재 프로토타입을 통해 확인한 것",
+          "children": [
+            {
+              "id": "qmX91vfuz4pO",
+              "text": "기술 블로그 작성",
+              "children": [
+                {
+                  "id": "t62F4x3gq5yA",
+                  "text": "기술 블로그(연재물)의 작성 가능성 확인",
+                  "children": [],
+                  "createdAt": 1792830937120,
+                  "updatedAt": 1792830951525
+                },
+                {
+                  "id": "ZiityeLf0tCH",
+                  "text": "우리 팀 프로젝트 Document  자동화 및 기술 블로그 자동화 가능성 확인",
+                  "children": [],
+                  "createdAt": 1792830951525,
+                  "updatedAt": 1792830974021
+                },
+                {
+                  "id": "9K5PF1tftt1S",
+                  "text": "",
+                  "children": [],
+                  "createdAt": 1792830974257,
+                  "updatedAt": 1792830974257
+                }
+              ],
+              "createdAt": 1792830933628,
+              "updatedAt": 1792830936511
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792830919000,
+          "updatedAt": 1792830933280
+        },
+        {
+          "id": "80tQxJSKSlEI",
+          "text": "기존 지식 기반 AX 프레임워크 및 도구 분석",
+          "children": [
+            {
+              "id": "G2nhJ180YWdr",
+              "text": "1. 기존 지식 기반 AX 툴, 프레임워크 특징",
+              "children": [
+                {
+                  "id": "k1QA0dkJhatz",
+                  "text": "'문서 작성(대필)'을 넘어선 '지식의 코드화(Knowledge-as-Code)' 지향",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "TQ2Er8ykzF5H",
+                  "text": "긴 줄글 대신 원자적 카드·블록·노드로 지식을 모듈화하여 에이전트의 실행 연료(Grounding)로 삼음",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "dAVGI8oICj6T",
+                  "text": "외부 에이전트(Cursor, Claude Code 등) 연동을 위한 인터페이스(CLI, MCP Server, API) 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "Lq6T1Y7CUxPI",
+                  "text": "문서는 본체가 아니라, 구조화된 지식 베이스의 '선택적 뷰(View)'로 취급",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792847585176,
+              "updatedAt": 1792847585176
+            },
+            {
+              "id": "BsWg3uIDNtDT",
+              "text": "2. 대표적인 AX 툴 (글로벌 벤치마크 TOP 5)",
+              "children": [
+                {
+                  "id": "kreMZbUT0Soe",
+                  "text": "Tana: Supertags 기반 객체지향 지식 스키마 & Tana AI 커맨드 워크플로우",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "iSNA1qBYUXxp",
+                  "text": "Heptabase: 원자적 카드(Atomic Cards) + 화이트보드 캔버스 + Desktop CLI/MCP 에이전트 하네스",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "ktv60s3riY8h",
+                  "text": "Dust.tt: 전사 파편 지식(Slack, Notion, GitHub 등) 연결 & 커스텀 자율 에이전트 오케스트레이션",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "WCW3Cn3FUjOw",
+                  "text": "Anytype: 'Everything is an Object' 로컬 퍼스트 객체 지식 OS & Anytype MCP 서버",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "fHnOcoU9YVU8",
+                  "text": "AFFiNE: BlockSuite 기반 Doc-Canvas-Database 경계 파괴 & 블록 단위 AI 변환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792847585176,
+              "updatedAt": 1792847585176
+            },
+            {
+              "id": "tFq9ZKwY1QXg",
+              "text": "3. 한계: 지식 노동자가 결국 쓰지 못하고 포기하는 5대 장벽",
+              "children": [
+                {
+                  "id": "GaCb1eKwCMO9",
+                  "text": "① 선행 스키마의 폭력 (Upfront Schema Burden): 메모 한 줄 적으려는데 DBA/프로그래머 노릇 강요 ➔ 입력 마찰로 생각 단절",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "TXotQtTOw4K4",
+                  "text": "② 공간 배치 피로 (Spatial Layout Exhaustion): 무한 캔버스의 백지 공포증 ➔ 가구 배치 게임(선 잇기, 크기 조절)에 뇌 에너지 고갈",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "km9cDfr7U7FZ",
+                  "text": "③ 유지보수의 주객전도 (The Maintenance Trap): 카드가 쌓일수록 태그 충돌 폭발 ➔ 본업보다 지식 정원 가꾸기에 시간 낭비",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "lQNC39mkBswM",
+                  "text": "④ 개발자 문법의 오만한 강요 (Tech Overhead): 일반 실무자에게 터미널 CLI, JSON 스키마, MCP 서버 포트 바인딩 강요",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                },
+                {
+                  "id": "aaqxFcOxH4UH",
+                  "text": "⑤ '컴파일러'의 부재와 마지막 수작업 (The Missing Compiler Gap): 파편만 늘어놓고, 상사/외부 납품용 최종 문서는 여전히 인간의 복붙 노가다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792847585176,
+                  "updatedAt": 1792847585176
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792847585176,
+              "updatedAt": 1792847585176
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792847585176,
+          "updatedAt": 1792847585176
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792830746458,
+      "updatedAt": 1792830772984
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792830746458,
+  "updatedAt": 1792852339353
+}
