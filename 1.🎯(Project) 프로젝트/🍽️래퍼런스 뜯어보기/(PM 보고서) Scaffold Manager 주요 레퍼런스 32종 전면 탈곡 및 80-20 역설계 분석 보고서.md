@@ -22,7 +22,7 @@
   - "[[3.📦(Resource) 자료/SM_Spec_Discoverying/2.ideation/insights/레퍼런스와 역공학 심층 조사/04. 역공학의 대중화와 Visual Grill-Me (질문 의존성을 부수는 시각적 비계).md]]"
   - "[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]"
   - "[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/역설계 원심분리기 작업의 본질과 실천 로드맵.md]]"
-  - "[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/[통합 원심분리기 분석] AI Job Search (로컬 에이전트 하네스 · Drafter-Reviewer 분업 · 하드 게이팅).md]]"
+  - "[[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(통합 원심분리기 분석) AI Job Search (로컬 에이전트 하네스 · Drafter-Reviewer 분업 · 하드 게이팅).md]]"
   - "[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md]]"
   - "[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Things 3.md]]"
   - "[[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Workflowy.md]]"
@@ -35,7 +35,7 @@
 시작:
 ---
 
-# 📋 [PM 보고서] Scaffold Manager 주요 레퍼런스 32종 전면 탈곡 및 80-20 역설계 분석
+# 📋 (PM 보고서) Scaffold Manager 주요 레퍼런스 32종 전면 탈곡 및 80-20 역설계 분석
 
 > [!abstract] 📢 **PM Executive Summary: 보고의 목적 및 결론 요약**
 > **"우리는 거대한 상용 도구들을 통째로 베끼려다 체하지 않습니다. 32개 레퍼런스에서 업계 표준인 80%의 전형성(Familiarity)을 추출해 튼튼한 바닥을 깔고, 각 도구가 살아남은 20%의 변주(Novelty)를 도려내어, 우리의 유일무이한 20% 킬러 무기인 'Visual Grill-Me × Git 사상 하이브리드 비계'를 완성합니다."**
@@ -341,7 +341,7 @@ sequenceDiagram
 > * 역공학 및 Visual Grill-Me 핵심 명제: [[3.📦(Resource) 자료/SM_Spec_Discoverying/2.ideation/insights/레퍼런스와 역공학 심층 조사/04. 역공학의 대중화와 Visual Grill-Me (질문 의존성을 부수는 시각적 비계).md|04. 역공학의 대중화와 Visual Grill-Me]]
 > * 과거 작업 회고 및 닻 설정: [[비슷한 작업을 이전에 했었지. 그땐 그랬지.md]]
 > * 역설계 작업 본질과 로드맵: [[역설계 원심분리기 작업의 본질과 실천 로드맵.md]]
-> * AI Job Search 심층 분석: [[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/[통합 원심분리기 분석] AI Job Search (로컬 에이전트 하네스 · Drafter-Reviewer 분업 · 하드 게이팅).md|[통합 원심분리기 분석] AI Job Search]]
+> * AI Job Search 심층 분석: [[1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(통합 원심분리기 분석) AI Job Search (로컬 에이전트 하네스 · Drafter-Reviewer 분업 · 하드 게이팅).md|(통합 원심분리기 분석) AI Job Search]]
 > * Git 사상 실측: [[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Git.md|(web&강추)Git.md]]
 > * Things 3 실측: [[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Things 3.md|(web&강추)Things 3.md]]
 > * Workflowy 실측: [[3.📦(Resource) 자료/🛖Scaffold_Manager_주요_레퍼런스/(web&강추)Workflowy.md|(web&강추)Workflowy.md]]

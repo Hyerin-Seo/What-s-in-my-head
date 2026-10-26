@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "id": "5ddvuT3S1Ycf",
+  "title": "일단 끄적여 보는 것임",
+  "rootNodes": [
+    {
+      "id": "OHX5wZ97EGgS",
+      "text": "웹소설 어시스턴트 당시 했던 작업",
+      "children": [
+        {
+          "id": "CCqKD7c9r7L7",
+          "text": "(https://docs.google.com/spreadsheets/d/1xkrTSmRILG_itWXSeJqIoyxLi8Ms3hkpHY8fTc0LjlQ/edit?gid=1914576279#gid=1914576279)",
+          "children": [
+            {
+              "id": "rTWtuLf2PLJD",
+              "text": "스윔 레인 차트를 그렸어. 웹소설 작가의 전체적인 과업을 이해하기 위해서",
+              "children": [],
+              "createdAt": 1792996918887,
+              "updatedAt": 1793000144943
+            },
+            {
+              "id": "22cLzZHxNFSz",
+              "text": "한번 도표로 싹 그리고 난 뒤에 표로 과업 대분류 중뷴류 소분류를 나눠서 조사 진행",
+              "children": [],
+              "createdAt": 1792999756034,
+              "updatedAt": 1793000146823
+            },
+            {
+              "id": "QX7uSaxwGBBP",
+              "text": "그리고 요구사항 설문을 뽑아서 진행했쥐",
+              "children": [],
+              "createdAt": 1792999787144,
+              "updatedAt": 1793000147822
+            },
+            {
+              "id": "ABlwLsOGsGSs",
+              "text": "이건 고작가가 있었기 때문에 가능하다고 봄, 전문가 한명을 그냥 파낸거니까",
+              "children": [],
+              "createdAt": 1792999823273,
+              "updatedAt": 1793000148780
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792996558206,
+          "updatedAt": 1792996895505
+        },
+        {
+          "id": "cN24CK71M2So",
+          "text": "[[📖 시스템을 잘 만들게 하는 기술.md]] 의 JTBD에서 영감을 많이 얻었음",
+          "children": [
+            {
+              "id": "XJkwF45Y2cuF",
+              "text": "밀크쉐이크 일화가 가장 유명하댜",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261026163455.png"
+              },
+              "createdAt": 1793000095457,
+              "updatedAt": 1793000120032
+            }
+          ],
+          "createdAt": 1793000043357,
+          "updatedAt": 1793000088789,
+          "isFolded": false
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792996558206,
+      "updatedAt": 1792996915657
+    },
+    {
+      "id": "ftbRHKUi7gtO",
+      "text": "문서 어시스턴트에서 해야하는 작업",
+      "children": [
+        {
+          "id": "ED0GKZq6zTb7",
+          "text": "",
+          "children": [],
+          "createdAt": 1792999864284,
+          "updatedAt": 1792999864480
+        }
+      ],
+      "createdAt": 1792999850292,
+      "updatedAt": 1792999863489
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792996558206,
+  "updatedAt": 1793000157690
+}
