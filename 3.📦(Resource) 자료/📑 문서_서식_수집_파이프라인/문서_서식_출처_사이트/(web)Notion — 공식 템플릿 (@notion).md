@@ -16,6 +16,7 @@
 상위: "[[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크]]"
 링크:
   - https://www.notion.com/@notion
+  - https://www.notion.com/ko/templates/search?query=meeting
 담당:
   - "[[민규 서]]"
   - "[[Rin]]"
@@ -46,6 +47,7 @@ Notion — 공식 템플릿 (@notion) 공식 서식 수급처 허브.
 ## 1. 허브 뷰 및 서식 카탈로그 구조
 * **보유 서식 건수 및 카테고리**: 노션이 직접 만든 템플릿 572개 (찍은 화면 기준). 목록의 가격 표시가 전부 "Free"다 (한국어 화면에서는 "무료"). 스터디 플래너 · 가계부 · OKR Tracker 등. 최근에는 AI 스킬 · 에이전트 템플릿이 많이 섞여 있다.
 * **공식 사이트 링크**: https://www.notion.com/@notion
+* **회의록 메인 검색 인터페이스**: https://www.notion.com/ko/templates/search?query=meeting
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
 * **지원 파일 포맷**: 클라우드 블록형

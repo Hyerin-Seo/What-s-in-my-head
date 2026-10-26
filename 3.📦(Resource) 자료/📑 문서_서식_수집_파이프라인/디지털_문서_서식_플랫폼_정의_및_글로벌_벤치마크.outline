@@ -20,7 +20,8 @@
             }
           ],
           "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
+          "updatedAt": 1792910941719,
+          "isFolded": true
         },
         {
           "id": "eRiCjHDJjnyc",
@@ -35,7 +36,8 @@
             }
           ],
           "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
+          "updatedAt": 1792910941719,
+          "isFolded": true
         },
         {
           "id": "OeNPr4kYolpz",
@@ -50,7 +52,8 @@
             }
           ],
           "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
+          "updatedAt": 1792910941719,
+          "isFolded": true
         },
         {
           "id": "iF2ru9GjN5eE",
@@ -65,151 +68,16 @@
             }
           ],
           "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
+          "updatedAt": 1792910941719,
+          "isFolded": true
         }
       ],
-      "createdAt": 1792910941719,
-      "updatedAt": 1792910941719
-    },
-    {
-      "id": "4n71TLe0ksPq",
-      "text": "2. 글로벌 시장의 예스폼들 (해외 대표 서비스)",
-      "children": [
-        {
-          "id": "iDlVwG0kY27E",
-          "text": "① Template.net (글로벌판 예스폼 — 세계 최대 규모)",
-          "children": [
-            {
-              "id": "FlDzHNwIeSCD",
-              "text": "특징: 전 세계에서 가장 트래픽이 높은 글로벌 1위 템플릿 포털",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            },
-            {
-              "id": "PNIMQti4c8Ld",
-              "text": "제공: 비즈니스 계약서, 기획서, 송장, 마케팅 제안서 등 수십만 개의 템플릿을 Word, Google Docs, InDesign 포맷으로 제공 (정액 구독제)",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            }
-          ],
-          "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
-        },
-        {
-          "id": "PCK8pnH7P51u",
-          "text": "② LegalZoom & Rocket Lawyer (법률·계약 서식의 최강자)",
-          "children": [
-            {
-              "id": "cOivj26SLFIS",
-              "text": "특징: 미국/유럽의 법률 서식 파트를 고도화하여 조 단위 기업가치를 달성한 나스닥 상장사",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            },
-            {
-              "id": "x3TovLjqdOyI",
-              "text": "방식: 표준 계약서, 법인 설립 서류, NDA 템플릿 제공 및 웹 설문 기반 DIY 법률 문서 완성 서비스",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            }
-          ],
-          "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
-        },
-        {
-          "id": "mfyzWlvYFViG",
-          "text": "③ Vertex42 (글로벌 엑셀/스프레드시트 서식 1위)",
-          "children": [
-            {
-              "id": "PANhJtF9kqeK",
-              "text": "특징: 예스폼의 자동화 엑셀에 해당하는 전문 사이트",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            },
-            {
-              "id": "t11Cl6eVKhVG",
-              "text": "제공: 가계부, 재무제표, 프로젝트 간트차트, 재고관리 등 복잡한 수식이 걸린 엑셀/구글시트 템플릿 전문 배포",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            }
-          ],
-          "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
-        },
-        {
-          "id": "7HFT4jPcWotc",
-          "text": "④ Envato Elements (디자인·PPT 템플릿 마켓)",
-          "children": [
-            {
-              "id": "4g3GIBoNNGhI",
-              "text": "특징: 예스폼 슬라이드멤버스(PPT 템플릿)의 글로벌 확장판",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            },
-            {
-              "id": "7zB8pc6bwP2a",
-              "text": "제공: 디자이너들이 제작한 사업계획서 피치덱, 회사소개서 슬라이드 템플릿 무제한 다운로드 구독형 플랫폼",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            }
-          ],
-          "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
-        }
-      ],
-      "isFolded": true,
-      "createdAt": 1792910941719,
-      "updatedAt": 1792910941719
-    },
-    {
-      "id": "fh9sjIBSci5C",
-      "text": "3. 국내 대표 플랫폼 (국내 시장 지형도)",
-      "children": [
-        {
-          "id": "U4efSYPPBtpy",
-          "text": "전통 1세대 양대 산맥: 예스폼(Yesform) vs 비즈폼(Bizforms)",
-          "children": [
-            {
-              "id": "vZIGc3rOoeKo",
-              "text": "약 100만 건 이상의 서식 보유, 공통적으로 백지 공포증 회피용 정적 파일 다운로드 모델",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            }
-          ],
-          "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
-        },
-        {
-          "id": "JxdRiAqPMWxk",
-          "text": "진화형 2.5세대: 로폼(Lawform)",
-          "children": [
-            {
-              "id": "6rkm8HctVTsQ",
-              "text": "정적 파일 다운로드를 넘어 웹 질문 답변형 AI 계약서 자동작성 서비스",
-              "children": [],
-              "createdAt": 1792910941719,
-              "updatedAt": 1792910941719
-            }
-          ],
-          "createdAt": 1792910941719,
-          "updatedAt": 1792910941719
-        }
-      ],
-      "isFolded": false,
       "createdAt": 1792910941719,
       "updatedAt": 1792910941719
     },
     {
       "id": "hv2YWhxfXrYP",
-      "text": "4. 서식 템플릿 수급처 분류 기준 (Data Pipeline Source Types)",
+      "text": "2. 서식 템플릿 수급처 분류 기준 (Data Pipeline Source Types)",
       "children": [
         {
           "id": "lB7AOgYyprpb",
@@ -535,10 +403,10 @@
             }
           ],
           "isFolded": true,
-          "createdAt": 1792912061439,
-          "updatedAt": 1792989410367,
           "isCompleted": true,
-          "completedAt": 1792989410367
+          "completedAt": 1792989410367,
+          "createdAt": 1792912061439,
+          "updatedAt": 1792989410367
         },
         {
           "id": "W5CCAt1nx1sc",
@@ -586,19 +454,19 @@
             }
           ],
           "isFolded": true,
-          "createdAt": 1792912061439,
-          "updatedAt": 1792989410367,
           "isCompleted": true,
-          "completedAt": 1792989410367
+          "completedAt": 1792989410367,
+          "createdAt": 1792912061439,
+          "updatedAt": 1792989410367
         }
       ],
       "isFolded": false,
       "createdAt": 1792911159016,
-      "updatedAt": 1792912061439
+      "updatedAt": 1792993191861
     },
     {
       "id": "ibO4AT4DGwRz",
-      "text": "5. 실제 조사 완료된 수급처 허브 목록 (Verified Source Hubs)",
+      "text": "3. 실제 조사 완료된 수급처 허브 목록 (Verified Source Hubs)",
       "children": [
         {
           "id": "tnlOYT1gx9Lb",
@@ -2323,9 +2191,9 @@
               "updatedAt": 1792968293150
             }
           ],
+          "isFolded": true,
           "createdAt": 1792968293150,
-          "updatedAt": 1792968293150,
-          "isFolded": true
+          "updatedAt": 1792968293150
         },
         {
           "id": "1mAuZVtnsBIP",
@@ -2346,9 +2214,9 @@
               "updatedAt": 1792968300876
             }
           ],
+          "isFolded": true,
           "createdAt": 1792968300876,
-          "updatedAt": 1792968300876,
-          "isFolded": true
+          "updatedAt": 1792968300876
         },
         {
           "id": "4JH4p3Q5cKu9",
@@ -2369,9 +2237,9 @@
               "updatedAt": 1792968309068
             }
           ],
+          "isFolded": true,
           "createdAt": 1792968309068,
-          "updatedAt": 1792968309068,
-          "isFolded": true
+          "updatedAt": 1792968309068
         },
         {
           "id": "K5VtBj0uIo3a",
@@ -2392,9 +2260,9 @@
               "updatedAt": 1792968317677
             }
           ],
+          "isFolded": true,
           "createdAt": 1792968317677,
-          "updatedAt": 1792968317677,
-          "isFolded": true
+          "updatedAt": 1792968317677
         },
         {
           "id": "76QlHAFdV0mq",
@@ -2415,9 +2283,9 @@
               "updatedAt": 1792968325116
             }
           ],
+          "isFolded": true,
           "createdAt": 1792968325116,
-          "updatedAt": 1792968325116,
-          "isFolded": true
+          "updatedAt": 1792968325116
         },
         {
           "id": "bxknlzD1MVzh",
@@ -2438,9 +2306,9 @@
               "updatedAt": 1792969045579
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969045579,
-          "updatedAt": 1792969045579,
-          "isFolded": true
+          "updatedAt": 1792969045579
         },
         {
           "id": "7Tox53xtS6S4",
@@ -2461,9 +2329,9 @@
               "updatedAt": 1792969055553
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969055553,
-          "updatedAt": 1792969055553,
-          "isFolded": true
+          "updatedAt": 1792969055553
         },
         {
           "id": "C4CvTmjS5hLH",
@@ -2484,9 +2352,9 @@
               "updatedAt": 1792969065771
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969065771,
-          "updatedAt": 1792969065771,
-          "isFolded": true
+          "updatedAt": 1792969065771
         },
         {
           "id": "yixFNsLjXBtG",
@@ -2507,9 +2375,9 @@
               "updatedAt": 1792969108763
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969108763,
-          "updatedAt": 1792969108763,
-          "isFolded": true
+          "updatedAt": 1792969108763
         },
         {
           "id": "FlEWvVvOO00k",
@@ -2530,9 +2398,9 @@
               "updatedAt": 1792969113631
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969113631,
-          "updatedAt": 1792969113631,
-          "isFolded": true
+          "updatedAt": 1792969113631
         },
         {
           "id": "XhKVUXtf5K6u",
@@ -2553,9 +2421,9 @@
               "updatedAt": 1792969118531
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969118531,
-          "updatedAt": 1792969118531,
-          "isFolded": true
+          "updatedAt": 1792969118531
         },
         {
           "id": "JN1pQtZSxaNw",
@@ -2576,9 +2444,9 @@
               "updatedAt": 1792969673168
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969673168,
-          "updatedAt": 1792969673168,
-          "isFolded": true
+          "updatedAt": 1792969673168
         },
         {
           "id": "C5Dbd9CjY3fj",
@@ -2599,9 +2467,9 @@
               "updatedAt": 1792969673466
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969673466,
-          "updatedAt": 1792969673466,
-          "isFolded": true
+          "updatedAt": 1792969673466
         },
         {
           "id": "LX4M5AuQlc5v",
@@ -2622,9 +2490,9 @@
               "updatedAt": 1792969673742
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969673742,
-          "updatedAt": 1792969673742,
-          "isFolded": true
+          "updatedAt": 1792969673742
         },
         {
           "id": "t4ZVzpJ02ZsA",
@@ -2645,9 +2513,9 @@
               "updatedAt": 1792969674045
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969674045,
-          "updatedAt": 1792969674045,
-          "isFolded": true
+          "updatedAt": 1792969674045
         },
         {
           "id": "n2OA9eWKWlyf",
@@ -2668,9 +2536,9 @@
               "updatedAt": 1792969674328
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969674328,
-          "updatedAt": 1792969674328,
-          "isFolded": true
+          "updatedAt": 1792969674328
         },
         {
           "id": "Rz13YneWOPhg",
@@ -2691,9 +2559,9 @@
               "updatedAt": 1792969674628
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969674628,
-          "updatedAt": 1792969674628,
-          "isFolded": true
+          "updatedAt": 1792969674628
         },
         {
           "id": "IABIE38D6M25",
@@ -2714,9 +2582,9 @@
               "updatedAt": 1792969674931
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969674931,
-          "updatedAt": 1792969674931,
-          "isFolded": true
+          "updatedAt": 1792969674931
         },
         {
           "id": "pwfWPKfPuxdQ",
@@ -2737,9 +2605,9 @@
               "updatedAt": 1792969675236
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969675236,
-          "updatedAt": 1792969675236,
-          "isFolded": true
+          "updatedAt": 1792969675236
         },
         {
           "id": "lzdf44USXcRL",
@@ -2760,9 +2628,9 @@
               "updatedAt": 1792969675535
             }
           ],
+          "isFolded": true,
           "createdAt": 1792969675535,
-          "updatedAt": 1792969675535,
-          "isFolded": true
+          "updatedAt": 1792969675535
         },
         {
           "id": "lJvslwbcLsZ5",
@@ -2783,9 +2651,9 @@
               "updatedAt": 1792970011757
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970011757,
-          "updatedAt": 1792970011757,
-          "isFolded": true
+          "updatedAt": 1792970011757
         },
         {
           "id": "NVP0Ioe3FBje",
@@ -2806,9 +2674,9 @@
               "updatedAt": 1792970012073
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970012073,
-          "updatedAt": 1792970012073,
-          "isFolded": true
+          "updatedAt": 1792970012073
         },
         {
           "id": "kpBgGFJTYaqx",
@@ -2829,9 +2697,9 @@
               "updatedAt": 1792970012372
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970012372,
-          "updatedAt": 1792970012372,
-          "isFolded": true
+          "updatedAt": 1792970012372
         },
         {
           "id": "aXLNyk7U4b3K",
@@ -2852,9 +2720,9 @@
               "updatedAt": 1792970012678
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970012678,
-          "updatedAt": 1792970012678,
-          "isFolded": true
+          "updatedAt": 1792970012678
         },
         {
           "id": "mtjhPgoXQT1C",
@@ -2875,9 +2743,9 @@
               "updatedAt": 1792970012944
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970012944,
-          "updatedAt": 1792970012944,
-          "isFolded": true
+          "updatedAt": 1792970012944
         },
         {
           "id": "mydoi5eMAnmT",
@@ -2898,9 +2766,9 @@
               "updatedAt": 1792970763028
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970763028,
-          "updatedAt": 1792970763028,
-          "isFolded": true
+          "updatedAt": 1792970763028
         },
         {
           "id": "1VzJhlj30Ubb",
@@ -2921,9 +2789,9 @@
               "updatedAt": 1792970763384
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970763384,
-          "updatedAt": 1792970763384,
-          "isFolded": true
+          "updatedAt": 1792970763384
         },
         {
           "id": "SYBTO7Jg8tPs",
@@ -2944,9 +2812,9 @@
               "updatedAt": 1792970763708
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970763708,
-          "updatedAt": 1792970763708,
-          "isFolded": true
+          "updatedAt": 1792970763708
         },
         {
           "id": "3agEGWDH92UY",
@@ -2967,9 +2835,9 @@
               "updatedAt": 1792970764033
             }
           ],
+          "isFolded": true,
           "createdAt": 1792970764033,
-          "updatedAt": 1792970764033,
-          "isFolded": true
+          "updatedAt": 1792970764033
         },
         {
           "id": "6O6mB3GBODrl",
@@ -2990,9 +2858,9 @@
               "updatedAt": 1792971075950
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971075950,
-          "updatedAt": 1792971075950,
-          "isFolded": true
+          "updatedAt": 1792971075950
         },
         {
           "id": "DEx1DkdUWOs6",
@@ -3013,9 +2881,9 @@
               "updatedAt": 1792971076253
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971076253,
-          "updatedAt": 1792971076253,
-          "isFolded": true
+          "updatedAt": 1792971076253
         },
         {
           "id": "JDHDTG9CeKCx",
@@ -3036,9 +2904,9 @@
               "updatedAt": 1792971076566
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971076566,
-          "updatedAt": 1792971076566,
-          "isFolded": true
+          "updatedAt": 1792971076566
         },
         {
           "id": "Jfl0wT0iVk8M",
@@ -3059,9 +2927,9 @@
               "updatedAt": 1792971076891
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971076891,
-          "updatedAt": 1792971076891,
-          "isFolded": true
+          "updatedAt": 1792971076891
         },
         {
           "id": "SAplhUZFLXo0",
@@ -3082,9 +2950,9 @@
               "updatedAt": 1792971352711
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971352711,
-          "updatedAt": 1792971352711,
-          "isFolded": true
+          "updatedAt": 1792971352711
         },
         {
           "id": "DUNyM6WnWVS6",
@@ -3105,9 +2973,9 @@
               "updatedAt": 1792971353043
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971353043,
-          "updatedAt": 1792971353043,
-          "isFolded": true
+          "updatedAt": 1792971353043
         },
         {
           "id": "SPnBOlmvJIix",
@@ -3128,9 +2996,9 @@
               "updatedAt": 1792971353369
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971353369,
-          "updatedAt": 1792971353369,
-          "isFolded": true
+          "updatedAt": 1792971353369
         },
         {
           "id": "PeeMz6eCHBR3",
@@ -3151,9 +3019,9 @@
               "updatedAt": 1792971369409
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971369409,
-          "updatedAt": 1792971369409,
-          "isFolded": true
+          "updatedAt": 1792971369409
         },
         {
           "id": "a4KAsHMZsd8s",
@@ -3174,9 +3042,9 @@
               "updatedAt": 1792971939437
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971939437,
-          "updatedAt": 1792971939437,
-          "isFolded": true
+          "updatedAt": 1792971939437
         },
         {
           "id": "Pb9PD0Eer47l",
@@ -3197,9 +3065,9 @@
               "updatedAt": 1792971939765
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971939765,
-          "updatedAt": 1792971939765,
-          "isFolded": true
+          "updatedAt": 1792971939765
         },
         {
           "id": "9ctKZbNe64uR",
@@ -3220,9 +3088,9 @@
               "updatedAt": 1792971940054
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971940054,
-          "updatedAt": 1792971940054,
-          "isFolded": true
+          "updatedAt": 1792971940054
         },
         {
           "id": "inDokTJyjF5m",
@@ -3243,9 +3111,9 @@
               "updatedAt": 1792971940367
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971940367,
-          "updatedAt": 1792971940367,
-          "isFolded": true
+          "updatedAt": 1792971940367
         },
         {
           "id": "YCqU8r0g0TyK",
@@ -3266,9 +3134,9 @@
               "updatedAt": 1792971940681
             }
           ],
+          "isFolded": true,
           "createdAt": 1792971940681,
-          "updatedAt": 1792971940681,
-          "isFolded": true
+          "updatedAt": 1792971940681
         },
         {
           "id": "SKtWG5IPPjxX",
@@ -3318,9 +3186,9 @@
                   "updatedAt": 1792975739038
                 }
               ],
+              "isFolded": true,
               "createdAt": 1792975739038,
-              "updatedAt": 1792975739038,
-              "isFolded": true
+              "updatedAt": 1792975739038
             }
           ],
           "isFolded": true,
@@ -3346,9 +3214,9 @@
               "updatedAt": 1792975748055
             }
           ],
+          "isFolded": true,
           "createdAt": 1792975748055,
-          "updatedAt": 1792975748055,
-          "isFolded": true
+          "updatedAt": 1792975748055
         },
         {
           "id": "VuTXROdmcFW4",
@@ -3369,9 +3237,9 @@
               "updatedAt": 1792975755133
             }
           ],
+          "isFolded": true,
           "createdAt": 1792975755133,
-          "updatedAt": 1792975755133,
-          "isFolded": true
+          "updatedAt": 1792975755133
         },
         {
           "id": "rIO1yB0mopa3",
@@ -3392,9 +3260,9 @@
               "updatedAt": 1792975764453
             }
           ],
+          "isFolded": true,
           "createdAt": 1792975764453,
-          "updatedAt": 1792975764453,
-          "isFolded": true
+          "updatedAt": 1792975764453
         },
         {
           "id": "cpFPzPC0NuZU",
@@ -3415,17 +3283,24 @@
               "updatedAt": 1792975771097
             }
           ],
+          "isFolded": true,
           "createdAt": 1792975771097,
-          "updatedAt": 1792975771097,
-          "isFolded": true
+          "updatedAt": 1792975771097
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1792922657992,
-      "updatedAt": 1792975771097
+      "updatedAt": 1792993188652
+    },
+    {
+      "id": "Cs2QRz8Gk8bs",
+      "text": "",
+      "children": [],
+      "createdAt": 1792993199799,
+      "updatedAt": 1792993199799
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792910941719,
-  "updatedAt": 1792989432391
+  "updatedAt": 1792993199799
 }
