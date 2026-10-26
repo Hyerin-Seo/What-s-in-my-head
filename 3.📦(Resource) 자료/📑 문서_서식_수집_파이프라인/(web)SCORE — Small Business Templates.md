@@ -9,7 +9,7 @@
   - 재무·회계
   - 공식 플랫폼
 상태: 정리
-요약: "SCORE — Small Business Templates — 미국 소상공인 멘토링 비영리단체의 템플릿 41건. SWOT Analysis Worksheet · Business Plan Template for"
+요약: "SCORE — Small Business Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[무료 서식 허브 10 - SCORE 템플릿.png]]"
@@ -35,10 +35,10 @@
 ![[무료 서식 허브 10 - SCORE 템플릿.png]]
 
 SCORE — Small Business Templates 공식 서식 수급처 허브.
-미국 소상공인 멘토링 비영리단체의 템플릿 41건. SWOT Analysis Worksheet · Business Plan Template for a Startup · 12-Month Profit and Loss Projection · Startup Expenses 등 창업 · 재무 양식.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: 미국 소상공인 멘토링 비영리단체의 템플릿 41건. SWOT Analysis Worksheet · Business Plan Template for a Startup · 12-Month Profit and Loss Projection · Startup Expenses 등 창업 · 재무 양식.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://www.score.org/templates/
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -47,11 +47,11 @@ SCORE — Small Business Templates 공식 서식 수급처 허브.
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 완전 개방형
-* **이용 조건 상세**: 확인한 항목(SWOT Analysis Worksheet)은 가입 · 이메일 입력 없이 `Download Template` 버튼이 파일로 바로 연결됐다. 일부 항목에는 "Sponsored by" 표시가 있다.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 사업계획서 · 손익 추정 같은 **창업 실무 양식의 영문 표준형**.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[01. (과금) 무료 서식 수급처 Top 10#10. SCORE — Small Business Templates]]
+* 원천 수급처 카드: [[32. (수집방식) 보안 방어형 수급처 Top 10#1. SCORE — Small Business Templates]]

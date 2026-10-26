@@ -9,7 +9,7 @@
   - 마케팅·브랜딩
   - 공식 플랫폼
 상태: 정리
-요약: "SlidesCarnival — Free Presentation Templates — 상단 로고 `SlidesCarnival`, 메뉴(All Templates, Color, Style, Use Case, AI Tools), 검색창"
+요약: "SlidesCarnival — Free Presentation Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[슬라이드 시각형 허브 08 - SlidesCarnival.png]]"
@@ -35,10 +35,10 @@
 ![[슬라이드 시각형 허브 08 - SlidesCarnival.png]]
 
 SlidesCarnival — Free Presentation Templates 공식 서식 수급처 허브.
-상단 로고 `SlidesCarnival`, 메뉴(All Templates, Color, Style, Use Case, AI Tools), 검색창. 메인 헤드라인 "Free PowerPoint and Google Slides Templates for your Presentations — Now also offering templates for docs and sheets. Free for any use, no registration or download limits." 하단 Featured Template Collections(Editor's Choice, Popular, Education, Business, Marketing) 및 AI 프레젠테이션 메이커 툴.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: 상단 로고 `SlidesCarnival`, 메뉴(All Templates, Color, Style, Use Case, AI Tools), 검색창. 메인 헤드라인 "Free PowerPoint and Google Slides Templates for your Presentations — Now also offering templates for docs and sheets. Free for any use, no registration or download limits." 하단 Featured Template Collections(Editor's Choice, Popular, Education, Business, Marketing) 및 AI 프레젠테이션 메이커 툴.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://www.slidescarnival.com/
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -47,11 +47,11 @@ SlidesCarnival — Free Presentation Templates 공식 서식 수급처 허브.
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 완전 개방형
-* **이용 조건 상세**: 완전 개방형 무료 플랫폼(Free for any use, no registration or download limits). 구글 슬라이드 및 파워포인트 서식 무제한 무료 다운로드 지원.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 저작권 제약 없이 자유롭게 다운로드 가능한 고품질 비즈니스 슬라이드 테마와 컬러 팔레트 규약 수집에 최적이다.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[15. (포맷) 슬라이드 시각형 서식 수급처 Top 10#8. SlidesCarnival — Free Presentation Templates]]
+* 원천 수급처 카드: [[27. (라이선스) 개인 이용 한정형 서식 수급처 Top 10#5. SlidesCarnival — Free Presentation Templates]]

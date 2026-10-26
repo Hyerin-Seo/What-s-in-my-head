@@ -9,7 +9,7 @@
   - 경영·전략
   - 공식 플랫폼
 상태: 정리
-요약: "Vertex42 — Excel Templates — Calendars & Schedules · Budgets & Finance · Home & Family · Project Management ·"
+요약: "Vertex42 — Excel Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[무료 서식 허브 06 - Vertex42 엑셀 템플릿.png]]"
@@ -35,10 +35,10 @@
 ![[무료 서식 허브 06 - Vertex42 엑셀 템플릿.png]]
 
 Vertex42 — Excel Templates 공식 서식 수급처 허브.
-Calendars & Schedules · Budgets & Finance · Home & Family · Project Management · Invoices & Forms · Teachers & Students 대분류 6개, 오른쪽에 TEMPLATE CATEGORIES 목록(Attendance · Business · Inventory · Invoices · Resumes …). 페이지 안내 — 대부분 OpenOffice · Google Sheets 판도 있다.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: Calendars & Schedules · Budgets & Finance · Home & Family · Project Management · Invoices & Forms · Teachers & Students 대분류 6개, 오른쪽에 TEMPLATE CATEGORIES 목록(Attendance · Business · Inventory · Invoices · Resumes …). 페이지 안내 — 대부분 OpenOffice · Google Sheets 판도 있다.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://www.vertex42.com/ExcelTemplates/
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -47,11 +47,11 @@ Calendars & Schedules · Budgets & Finance · Home & Family · Project Managemen
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 개인 이용 한정형
-* **이용 조건 상세**: 무료. 다만 사용권 계약(EULA)에 **"anyone with the link" 공유 · SNS · 문서 공유 서비스 게시 금지**라고 적혀 있다. 가족 · 팀 · 회사 안에서만 공유할 수 있다.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 수식 · 조건부 서식 구조를 **보고 배우는 레퍼런스**로만. 수집해서 다시 배포하면 약관 위반이다.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[01. (과금) 무료 서식 수급처 Top 10#6. Vertex42 — Excel Templates]]
+* 원천 수급처 카드: [[30. (수집방식) 공개 다운로드형 수급처 Top 10#9. Vertex42 — Excel Templates]]

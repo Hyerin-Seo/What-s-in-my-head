@@ -8,7 +8,7 @@
   - 법률·규약
   - 공식 플랫폼
 상태: 정리
-요약: "LegalZoom — Legal Forms & Templates — 헤드라인 'Legal Templates & Documents'. 미국 50개 주 법률에 맞춘 비즈니스 설립(LLC, 법인 정관), 운영계약서(O"
+요약: "LegalZoom — Legal Forms & Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[법률·규약 허브 08 - LegalZoom.png]]"
@@ -34,10 +34,10 @@
 ![[법률·규약 허브 08 - LegalZoom.png]]
 
 LegalZoom — Legal Forms & Templates 공식 서식 수급처 허브.
-헤드라인 "Legal Templates & Documents". 미국 50개 주 법률에 맞춘 비즈니스 설립(LLC, 법인 정관), 운영계약서(Operating Agreement), 주주간 계약, 기밀유지계약서(NDA), 고용계약서 등 영미법계(Common Law) 법률 템플릿 라이브러리.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: 헤드라인 "Legal Templates & Documents". 미국 50개 주 법률에 맞춘 비즈니스 설립(LLC, 법인 정관), 운영계약서(Operating Agreement), 주주간 계약, 기밀유지계약서(NDA), 고용계약서 등 영미법계(Common Law) 법률 템플릿 라이브러리.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://www.legalzoom.com/templates
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -46,11 +46,11 @@ LegalZoom — Legal Forms & Templates 공식 서식 수급처 허브.
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 상업용 라이선스 구매형
-* **이용 조건 상세**: 온라인 템플릿 열람 후 작성 및 커스텀 다운로드는 회원가입 및 상용 라이선스(건당 결제 또는 비즈니스 구독 플랜) 필요.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 영미법계 글로벌 표준 계약서의 구조적 뼈대와 조항(Clause) 변수 바인딩 모델을 분석할 수 있는 글로벌 1위 온라인 리걸 플랫폼의 상업 표준.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[04. (도메인) 법률·규약 서식 수급처 Top 10#8. LegalZoom — Legal Forms & Templates]]
+* 원천 수급처 카드: [[32. (수집방식) 보안 방어형 수급처 Top 10#6. LegalZoom — Legal Forms & Templates]]

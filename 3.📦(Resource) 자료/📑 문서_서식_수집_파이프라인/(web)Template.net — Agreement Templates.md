@@ -9,7 +9,7 @@
   - 경영·전략
   - 공식 플랫폼
 상태: 정리
-요약: "Template.net — Agreement Templates — 상단 브레드크럼 `Home > Templates > Agreement`. Lease Agreement · Non Compete · Rental"
+요약: "Template.net — Agreement Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[유료 서식 허브 05 - Template.net 계약합의서.png]]"
@@ -35,10 +35,10 @@
 ![[유료 서식 허브 05 - Template.net 계약합의서.png]]
 
 Template.net — Agreement Templates 공식 서식 수급처 허브.
-상단 브레드크럼 `Home > Templates > Agreement`. Lease Agreement · Non Compete · Rental · Prenuptial · NDA · Operating Agreement 등 세부 계약 필터와 Edit Online · Word · Google Docs · PDF · Apple Pages 포맷 선택 버튼. Free Construction Agreement · Business Payment · SLA · Sample Business Agreement 등 다채로운 비즈니스 합의서 템플릿 카드 목록이 펼쳐진다.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: 상단 브레드크럼 `Home > Templates > Agreement`. Lease Agreement · Non Compete · Rental · Prenuptial · NDA · Operating Agreement 등 세부 계약 필터와 Edit Online · Word · Google Docs · PDF · Apple Pages 포맷 선택 버튼. Free Construction Agreement · Business Payment · SLA · Sample Business Agreement 등 다채로운 비즈니스 합의서 템플릿 카드 목록이 펼쳐진다.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://www.template.net/editable/agreements
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -47,11 +47,11 @@ Template.net — Agreement Templates 공식 서식 수급처 허브.
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 상업용 라이선스 구매형
-* **이용 조건 상세**: 상단에 `Pricing` 버튼. 기본 무료 샘플을 제공하지만, 상업적 무제한 다운로드 및 전체 Pro 템플릿 라이브러리는 월간/연간 유료 구독 모델.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 영문 비즈니스 계약서의 글로벌 양식 표준과 멀티 포맷(Word, Docs, Pages) 호환 구조를 동시에 수집할 수 있는 해외 최대 마켓.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[02. (과금) 유료 서식 수급처 Top 10#6. Template.net — Agreement Templates]]
+* 원천 수급처 카드: [[32. (수집방식) 보안 방어형 수급처 Top 10#7. Template.net — Agreement Templates]]

@@ -39,7 +39,7 @@
 ---
 ![[재무·회계 허브 09 - Microsoft Create.png]]
 
-마이크로소프트의 공식 통합 템플릿 포털. Word, Excel, PowerPoint 및 예산·재무 템플릿을 망라하는 대표 허브.
+마이크로소프트 공식 통합 템플릿 포털.
 
 ## 1. 대표 포털 개요 및 메인 정보
 * **공식 대표 사이트**: https://create.microsoft.com

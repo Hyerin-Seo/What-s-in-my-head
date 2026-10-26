@@ -9,7 +9,7 @@
   - 재무·회계
   - 커뮤니티·포럼
 상태: 정리
-요약: "Chandoo.org — Excel Dashboards & Free Templates — 상단 Chandoo.org 로고('BECOME AWESOME IN EXCEL'). 좌측 시작 안내(Welcome message, Learn Ex"
+요약: "Chandoo.org — Excel Dashboards & Free Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[스프레드시트 수식형 허브 09 - Chandoo.png]]"
@@ -35,10 +35,10 @@
 ![[스프레드시트 수식형 허브 09 - Chandoo.png]]
 
 Chandoo.org — Excel Dashboards & Free Templates 공식 서식 수급처 허브.
-상단 Chandoo.org 로고("BECOME AWESOME IN EXCEL"). 좌측 시작 안내(Welcome message, Learn Excel Online, FREE Newsletter, Templates) 및 우측 리소스 리스트 "Excel Tips, Tutorials & Downloads for you — Excel Formulas, Project Management using Excel, Excel Dashboards, Free Spreadsheet Templates, Excel Project Management Templates".
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: 상단 Chandoo.org 로고("BECOME AWESOME IN EXCEL"). 좌측 시작 안내(Welcome message, Learn Excel Online, FREE Newsletter, Templates) 및 우측 리소스 리스트 "Excel Tips, Tutorials & Downloads for you — Excel Formulas, Project Management using Excel, Excel Dashboards, Free Spreadsheet Templates, Excel Project Management Templates".
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://chandoo.org/
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -47,11 +47,11 @@ Chandoo.org — Excel Dashboards & Free Templates 공식 서식 수급처 허브
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 완전 개방형
-* **이용 조건 상세**: 20년 이상 누적된 글로벌 엑셀 커뮤니티의 완전 개방형 무료 다운로드 아카이브. 수식 템플릿 및 대시보드 통합문서 무료 배포.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 복잡한 비즈니스 KPI 지표를 단일 스프레드시트 시트에 대시보드화하는 차트/수식 결합 레이아웃의 고전적 교과서.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[14. (포맷) 스프레드시트 수식형 서식 수급처 Top 10#9. Chandoo.org — Excel Dashboards & Free Templates]]
+* 원천 수급처 카드: [[26. (라이선스) 오픈소스 조건부형 서식 수급처 Top 10#9. Chandoo.org — Excel Dashboards & Free Templates]]

@@ -8,7 +8,7 @@
   - 영업·제안
   - 공식 플랫폼
 상태: 정리
-요약: "Proposify — Business Proposal & Quote Templates — 헤드라인 'Business Proposal Templates - Check out our extensive gallery of professio"
+요약: "Proposify — Business Proposal & Quote Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[영업·제안 허브 08 - Proposify Templates.png]]"
@@ -34,10 +34,10 @@
 ![[영업·제안 허브 08 - Proposify Templates.png]]
 
 Proposify — Business Proposal & Quote Templates 공식 서식 수급처 허브.
-헤드라인 "Business Proposal Templates - Check out our extensive gallery of professionally written and beautifully designed business proposal templates". 카테고리(Proposal Templates, Contract Templates, Quote Templates). 에이전시, IT 구축, 케이터링, 건설 등 수백 종의 전문 제안서 갤러리 제공.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: 헤드라인 "Business Proposal Templates - Check out our extensive gallery of professionally written and beautifully designed business proposal templates". 카테고리(Proposal Templates, Contract Templates, Quote Templates). 에이전시, IT 구축, 케이터링, 건설 등 수백 종의 전문 제안서 갤러리 제공.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://www.proposify.com/proposal-templates
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -46,11 +46,11 @@ Proposify — Business Proposal & Quote Templates 공식 서식 수급처 허브
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 상업용 라이선스 구매형
-* **이용 조건 상세**: "Sign Up Free" 제공, 기본 무료 계정 가입 후 템플릿 사용 가능하며 엔터프라이즈 기능은 유료 플랜.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: B2B 세일즈 제안서의 조항 블록화(Modular Content Library) 및 고객의 열람 시간·단락별 체결률 추적 메타데이터를 설계할 때 핵심 벤치마크가 되는 B2B 세일즈 제안 특화 CaaS.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[07. (도메인) 영업·제안 서식 수급처 Top 10#8. Proposify — Business Proposal & Quote Templates]]
+* 원천 수급처 카드: [[33. (수집방식) 웹 뷰어 전용형 수급처 Top 10#6. Proposify — Business Proposal & Quote Templates]]

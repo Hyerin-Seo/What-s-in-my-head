@@ -8,7 +8,7 @@
   - 법률·규약
   - 공식 플랫폼
 상태: 정리
-요약: "LawDepot — Legal Documents & Templates — 24년간 4,100만 건 이상의 법률 문서가 생성된 북미 최대 DIY 법률 플랫폼. 헤드라인 'Legal Forms Made Simple - P"
+요약: "LawDepot — Legal Documents & Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[법률·규약 허브 10 - LawDepot.png]]"
@@ -34,10 +34,10 @@
 ![[법률·규약 허브 10 - LawDepot.png]]
 
 LawDepot — Legal Documents & Templates 공식 서식 수급처 허브.
-24년간 4,100만 건 이상의 법률 문서가 생성된 북미 최대 DIY 법률 플랫폼. 헤드라인 "Legal Forms Made Simple - Print or download your customized legal document in 5-10 minutes". Residential Lease, Power of Attorney, Service Agreement, LLC Operating Agreement, Eviction Notice 등 카테고리별 문답형 법률 서식 제공.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: 24년간 4,100만 건 이상의 법률 문서가 생성된 북미 최대 DIY 법률 플랫폼. 헤드라인 "Legal Forms Made Simple - Print or download your customized legal document in 5-10 minutes". Residential Lease, Power of Attorney, Service Agreement, LLC Operating Agreement, Eviction Notice 등 카테고리별 문답형 법률 서식 제공.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://www.lawdepot.com/
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -46,11 +46,11 @@ LawDepot — Legal Documents & Templates 공식 서식 수급처 허브.
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 상업용 라이선스 구매형
-* **이용 조건 상세**: "Create Free Account" 제공, 첫 1주일 무료 트라이얼을 통해 문서 무료 다운로드 및 편집 가능하며 이후 구독제 전환.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 사용자의 질문 응답에 따라 실시간으로 조항이 동적으로 추가/삭제되는 규칙 기반 법률 문서 렌더링 엔진의 대표적 레퍼런스.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[04. (도메인) 법률·규약 서식 수급처 Top 10#10. LawDepot — Legal Documents & Templates]]
+* 원천 수급처 카드: [[32. (수집방식) 보안 방어형 수급처 Top 10#9. LawDepot — Legal Documents & Templates]]

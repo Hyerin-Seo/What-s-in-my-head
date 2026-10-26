@@ -9,7 +9,7 @@
   - 제품·엔지니어링
   - 공식 플랫폼
 상태: 정리
-요약: "Common Paper — Standard Contracts — Mutual NDA · Terms of Service · Cloud Service Agreement · SLA · DPA · BAA · Prof"
+요약: "Common Paper — Standard Contracts 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[무료 서식 허브 05 - Common Paper 표준계약.png]]"
@@ -35,10 +35,10 @@
 ![[무료 서식 허브 05 - Common Paper 표준계약.png]]
 
 Common Paper — Standard Contracts 공식 서식 수급처 허브.
-Mutual NDA · Terms of Service · Cloud Service Agreement · SLA · DPA · BAA · Professional Services · AI Addendum · Partnership · Software License · Pilot · Design Partner 12종, 그리고 Language Library · Letter of Intent · One-way NDA · Term Sheet · Independent Contractor · Amendment · Statement of Work · Order Form. 분야 탭과 키워드 검색이 있다.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: Mutual NDA · Terms of Service · Cloud Service Agreement · SLA · DPA · BAA · Professional Services · AI Addendum · Partnership · Software License · Pilot · Design Partner 12종, 그리고 Language Library · Letter of Intent · One-way NDA · Term Sheet · Independent Contractor · Amendment · Statement of Work · Order Form. 분야 탭과 키워드 검색이 있다.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://commonpaper.com/standards/
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -47,11 +47,11 @@ Mutual NDA · Terms of Service · Cloud Service Agreement · SLA · DPA · BAA �
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 오픈소스 조건부형
-* **이용 조건 상세**: "released for free under the Creative Commons CC BY 4.0 License" — 출처만 밝히면 수정·상업 이용 가능.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 영문 SaaS 계약서 중 **라이선스가 가장 깨끗한** 묶음. 변호사 위원회가 관리한다고 적혀 있다.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[01. (과금) 무료 서식 수급처 Top 10#5. Common Paper — Standard Contracts]]
+* 원천 수급처 카드: [[33. (수집방식) 웹 뷰어 전용형 수급처 Top 10#2. Common Paper — Standard Contracts]]

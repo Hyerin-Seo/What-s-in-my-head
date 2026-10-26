@@ -9,7 +9,7 @@
   - 경영·전략
   - 공식 플랫폼
 상태: 정리
-요약: "Sheetgo — Workflow & Spreadsheet Templates — 상단 로고 `Sheetgo`, 메뉴(Product, Solutions, Use cases, Pricing). 메인 헤드라인 'Discover w"
+요약: "Sheetgo — Workflow & Spreadsheet Templates 서식 수급처 허브"
 작성일: 2026-10-26
 마감:
 커버: "[[스프레드시트 수식형 허브 07 - Sheetgo.png]]"
@@ -35,10 +35,10 @@
 ![[스프레드시트 수식형 허브 07 - Sheetgo.png]]
 
 Sheetgo — Workflow & Spreadsheet Templates 공식 서식 수급처 허브.
-상단 로고 `Sheetgo`, 메뉴(Product, Solutions, Use cases, Pricing). 메인 헤드라인 "Discover ways to use Sheetgo — From cash flow monitoring to timesheet tracking, find a workflow template for every part of your business." 우측 워크플로우 템플릿 인터랙티브 일러스트레이션. 현금 흐름 모니터링, 타임시트 추적, 재고 관리 시트 템플릿 제공.
+서식 목록 및 다운로드 제공.
 
 ## 1. 허브 뷰 및 서식 카탈로그 구조
-* **보유 서식 건수 및 카테고리**: 상단 로고 `Sheetgo`, 메뉴(Product, Solutions, Use cases, Pricing). 메인 헤드라인 "Discover ways to use Sheetgo — From cash flow monitoring to timesheet tracking, find a workflow template for every part of your business." 우측 워크플로우 템플릿 인터랙티브 일러스트레이션. 현금 흐름 모니터링, 타임시트 추적, 재고 관리 시트 템플릿 제공.
+* **보유 서식 건수 및 카테고리**: 서식 목록 및 다운로드 제공.
 * **공식 사이트 링크**: https://www.sheetgo.com/templates/
 
 ## 2. 제공 포맷 및 다운로드 인터페이스
@@ -47,11 +47,11 @@ Sheetgo — Workflow & Spreadsheet Templates 공식 서식 수급처 허브.
 
 ## 3. 이용 조건 및 라이선스 (공공/상업적 이용 범위)
 * **공식 라이선스/정책**: 개인 이용 한정형
-* **이용 조건 상세**: 프리미엄(Freemium). 기본 스프레드시트 템플릿 무료 복제 지원 및 Sheetgo 데이터 파이프라인 자동화 도구 유료 연계.
+* **이용 조건 상세**: 공식 페이지 정책 준수.
 
 ## 4. 파이프라인 수집·파싱 기술 관점
-* **파이프라인 활용 가이드**: 시트 간 데이터 연결(Sheet-to-Sheet ETL), 자동 병합, 스프레드시트 기반 업무 프로세스 자동화 양식의 훌륭한 레퍼런스.
+* **파이프라인 활용 가이드**: 문서 구조화 및 파싱 벤치마크 데이터로 활용.
 
 ## 5. 원천 레퍼런스 연동
 * 상위 정의: [[디지털_문서_서식_플랫폼_정의_및_글로벌_벤치마크.outline]]
-* 원천 수급처 카드: [[14. (포맷) 스프레드시트 수식형 서식 수급처 Top 10#7. Sheetgo — Workflow & Spreadsheet Templates]]
+* 원천 수급처 카드: [[27. (라이선스) 개인 이용 한정형 서식 수급처 Top 10#10. Sheetgo — Workflow & Spreadsheet Templates]]
