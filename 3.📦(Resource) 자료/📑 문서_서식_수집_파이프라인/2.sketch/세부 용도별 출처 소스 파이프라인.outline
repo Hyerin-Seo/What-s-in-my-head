@@ -1,0 +1,858 @@
+{
+  "version": "1.0.0",
+  "id": "yfdypJoiup4i",
+  "title": "세부 용도별 출처 소스 파이프라인",
+  "rootNodes": [
+    {
+      "id": "kA838rQH7TBO",
+      "text": "세부 용도별 출처 소스 파이프라인 (회의록·의사록 서식 폼)",
+      "children": [
+        {
+          "id": "09Ac11curcWr",
+          "text": "🎯 작업 목적: 시맨틱 큐레이션 및 원자 블록 핸들링 가용성 판별",
+          "children": [
+            {
+              "id": "vooIFFQyYUI0",
+              "text": "1. 본질적 취지: 단순 서식 DB 구축이 아닌, '사용자의 시맨틱 의도에 따른 선별 큐레이션 및 블록 단위 재조립' 맥락에서 파이프라인 정리",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792996464493,
+              "updatedAt": 1792996464493
+            },
+            {
+              "id": "nfhKn0nsHRgr",
+              "text": "2. 핵심 판별 잣대: 겉핥기 썸네일/팝업에 그치지 않고, '우리가 실제로 접근하여 그 구성 요소(원자 블록)까지 직접 손에 쥐고 핸들링할 수 있는가?'를 명확히 판별",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1792996464493,
+              "updatedAt": 1792996464493
+            },
+            {
+              "id": "gslmzDdqorai",
+              "text": "3. 수급처 검증 기준:",
+              "children": [
+                {
+                  "id": "RggKsI3rF0VL",
+                  "text": "• 접근 차단 수급처 필터링: 429 봇 방어, 무한 로딩, 링크 파손(notion.site 등)으로 실제 구성 요소를 열 수 없는 껍데기 수급처는 배제하거나 실제 복제/API 통로 확보 여부 검증",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792996464493,
+                  "updatedAt": 1792996464493
+                },
+                {
+                  "id": "iFsNzdrnsESA",
+                  "text": "• 원자 블록 핸들링 가용성: 필드, 컴포넌트, 레이아웃(속성 칩, 보드, 타임박싱, 결정 로그 등) 단위로 직접 해체·추출·재조립이 가능한 수급처를 중심으로 파이프라인 정예화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792996464493,
+                  "updatedAt": 1792996464493
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1792996464493,
+              "updatedAt": 1792996464493
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792996464493,
+          "updatedAt": 1792996464493
+        },
+        {
+          "id": "rjwcoteGoZjH",
+          "text": "1. 범용 블록형 문서 기반 정통 회의록 허브 (11곳)",
+          "children": [
+            {
+              "id": "QnV6YCkHCrLm",
+              "text": "Notion — 공식 템플릿 (@notion) [무료]",
+              "children": [
+                {
+                  "id": "ey5ZJavGiSIp",
+                  "text": "🚫 판별 결과: 불합격 (사유: 429 봇 방어/notion.site 접근 차단 및 원자 블록 직접 추출 불가 + 웹상에서 볼 수 없음(노션 앱 다운을 받아야지만 가능 + 공유자 관리 부실))",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792998007481,
+                  "updatedAt": 1792998007481
+                },
+                {
+                  "id": "in7ytp4wfXXj",
+                  "text": "수급처 카드: [[(web)Notion — 공식 템플릿 (@notion)]] (https://www.notion.com/@notion)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "67aqkNZSZITP",
+                  "text": "메인 검색 도구 URL: https://www.notion.com/ko/templates/search?query=meeting",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792995231894,
+                  "updatedAt": 1792995231894
+                },
+                {
+                  "id": "0RsQCCheRMPq",
+                  "text": "핵심 폼: Meeting Notes Database, All-Hands, Weekly Sync, 1:1 Meeting 등",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "134On54v60WY",
+                  "text": "특징: 노션 공식 무료 템플릿, 관계형 DB 및 블록 템플릿 결합",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792998069741,
+              "isCompleted": true,
+              "completedAt": 1792998069741
+            },
+            {
+              "id": "qPcBDHbD05Fb",
+              "text": "Atlassian — Templates for Confluence [무료]",
+              "children": [
+                {
+                  "id": "1C82yEjQCFQr",
+                  "text": "수급처 카드: [[(web)Atlassian — Templates for Confluence]] (https://www.atlassian.com/software/confluence/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "9gCuyY3KokXK",
+                  "text": "핵심 폼: Meeting notes, Sprint retrospective, Decisions log, 1-on-1 meeting",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "cnU2dlJwL4XZ",
+                  "text": "특징: 엔터프라이즈 및 IT 표준 회의록 기본 탑재",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "neDzZBeE6RRX",
+              "text": "Slite — Templates for Product & Engineering [무료/유료]",
+              "children": [
+                {
+                  "id": "Ropa15ijlHfH",
+                  "text": "수급처 카드: [[(web)Slite — Templates for Product & Engineering]] (https://slite.com/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "K2NnrL2fQJgV",
+                  "text": "핵심 폼: Meeting notes for product specs, Daily sync",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "uBPaOm0ncQiq",
+                  "text": "특징: 갤러리 메인에 Meeting notes 명시, 개발·프로덕트 스펙 검토 특화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "CKo96VfFH0Fe",
+              "text": "Nuclino — Templates Gallery [무료/유료]",
+              "children": [
+                {
+                  "id": "hDDUePUXrqVA",
+                  "text": "수급처 카드: [[(web)Nuclino — Templates Gallery]] (https://www.nuclino.com/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "0HyEJ7XlLDeP",
+                  "text": "핵심 폼: Meeting Notes, Team Docs, Sprint Planning",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "WHQcaEAkGmrC",
+                  "text": "특징: 초경량 마크다운 블록형 및 지식 그래프 연동 회의록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "nRYAkIZ3Zxqd",
+              "text": "ClickUp — Template Center [무료/유료]",
+              "children": [
+                {
+                  "id": "a8h9JAkAA6Kp",
+                  "text": "수급처 카드: [[(web)ClickUp — Template Center]] (https://clickup.com/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "6BX5P6uMkGfe",
+                  "text": "핵심 폼: Meeting Minutes, Daily Standup, 1-on-1, Board Meeting",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "z3uflNi7B7co",
+                  "text": "특징: 작업(Task) 티켓 및 마일스톤과 자동 연동되는 회의록 폼",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "AIq98g9v2Rtg",
+              "text": "Coda — Templates Gallery [무료/유료]",
+              "children": [
+                {
+                  "id": "h0nzylWl5o60",
+                  "text": "수급처 카드: [[(web)Coda — Templates Gallery]] (https://coda.io/gallery)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "RCdRdOxtV6Yk",
+                  "text": "핵심 폼: Rituals & Meetings, Weekly Team Sync, All-Hands",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "0zb3q1tYzCP9",
+                  "text": "특징: 투표 버튼, 타이머, 액션 아이템 테이블 결합 인터랙티브 문서",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "qKXODE91s7ia",
+              "text": "Craft Docs — Templates Gallery [무료/유료]",
+              "children": [
+                {
+                  "id": "IdipI8AdUIxj",
+                  "text": "수급처 카드: [[(web)Craft Docs — Templates Gallery]] (https://www.craft.do/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "mE9Vh1DJv0Hh",
+                  "text": "핵심 폼: Meeting Notes, 1:1 Catch-up, Executive Briefing",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "TzIEFCyoTzyb",
+                  "text": "특징: 미려한 카드형 블록 문서 및 서브 페이지 중첩 구조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "0MZW7WnqpFPv",
+              "text": "Taskade — AI & Workflows Templates [무료/유료]",
+              "children": [
+                {
+                  "id": "9nA1PqULiPeM",
+                  "text": "수급처 카드: [[(web)Taskade — AI & Workflows Templates]] (https://www.taskade.com/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "QlVDdRwZxdHm",
+                  "text": "핵심 폼: Scrum Standup, Team Meeting Agenda, Executive Meeting Minutes",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "lcyzc8RNwKSe",
+                  "text": "특징: 아웃라인·체크리스트·칸반 전환형 실시간 협업 회의 서식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "s60rofKh0Ub0",
+              "text": "Microsoft Create [무료/유료]",
+              "children": [
+                {
+                  "id": "IVr0XM4YWnQt",
+                  "text": "수급처 카드: [[(web)Microsoft Create]] (https://create.microsoft.com)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "BtJZxzKQy8Xo",
+                  "text": "핵심 폼: Meeting Minutes (Word), Meeting Agenda, Action Items Tracker (Excel)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "EXPSp3Pndj95",
+                  "text": "특징: Word, OneNote, PPT 기반 전 세계 표준 공문서 회의록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "bquOvZkKZEvd",
+              "text": "미리캔버스 — 디자인·문서 템플릿 [무료/유료]",
+              "children": [
+                {
+                  "id": "9ZWx7fzoFVGg",
+                  "text": "수급처 카드: [[(web)미리캔버스 — 디자인·문서 템플릿]] (https://www.miricanvas.com/ko/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "3AdTkyrKCwDJ",
+                  "text": "핵심 폼: 업무 회의록, 주간 회의 서식, 이사회 회의록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "y7Oc9xWsxUhp",
+                  "text": "특징: 국내 기업 환경에 최적화된 한글 표준 회의록 디자인 서식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "7xyphGU8ev1Z",
+              "text": "Obsidian Forum — Share & showcase [무료]",
+              "children": [
+                {
+                  "id": "8pNpG8yk1bCE",
+                  "text": "수급처 카드: [[(web)Obsidian Forum — Share & showcase]] (https://forum.obsidian.md/c/share-showcase/9)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "hSHnq1OHhrNU",
+                  "text": "핵심 폼: Meeting Notes Workflow, Templater 회의록 스니펫",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "mXGd9QWBQ6aD",
+                  "text": "특징: 마크다운 로컬 우선 일자별 회의록 자동 아카이빙",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792994649066,
+          "updatedAt": 1792994649066
+        },
+        {
+          "id": "Rpc1hpt5YUdC",
+          "text": "2. 캔버스·화이트보드·시각형 회의/워크숍 폼 (3곳)",
+          "children": [
+            {
+              "id": "p40V3bwMN0ex",
+              "text": "Miro — Strategy & planning templates [무료]",
+              "children": [
+                {
+                  "id": "raziokSXKcFe",
+                  "text": "수급처 카드: [[(web)Miro — Strategy & planning templates]] (https://miro.com/templates/strategy-and-planning/)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "V5IekemDR6ro",
+                  "text": "핵심 폼: Sprint Retrospective, Daily Standup, Team Meeting Agenda",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "hrIq3MXwhKhf",
+                  "text": "특징: 캔버스 기반 포스트잇 회고 및 실시간 인터랙티브 미팅 보드",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "eDhngBGTalWH",
+              "text": "Visme — Graphic Design & Document Templates [무료/유료]",
+              "children": [
+                {
+                  "id": "hQjIn0GLGPiV",
+                  "text": "수급처 카드: [[(web)Visme — Graphic Design & Document Templates]] (https://www.visme.co/templates/)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "9phWpSFunsKE",
+                  "text": "핵심 폼: Meeting Agenda Presentation, Minutes of Meeting (MOM) Report",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "zQ3FwYAQTqDe",
+                  "text": "특징: 경영진 보고 및 대외 공유용 인포그래픽 회의 요약 양식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "aj9zBmF47UJz",
+              "text": "Venngage — Infographic & Report Templates [무료/유료]",
+              "children": [
+                {
+                  "id": "z6VZ8X1LFcBn",
+                  "text": "수급처 카드: [[(web)Venngage — Infographic & Report Templates]] (https://venngage.com/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "1rSaohsIk4cM",
+                  "text": "핵심 폼: Board Meeting Summary, Executive Agenda Report",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "3ujHoGhFcc2l",
+                  "text": "특징: 시각화 차트와 핵심 안건이 정돈된 비즈니스 미팅 리포트",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792994649066,
+          "updatedAt": 1792994649066
+        },
+        {
+          "id": "ZNkHYbItlrha",
+          "text": "3. 법률·거버넌스 공식 법정 의사록 (2곳)",
+          "children": [
+            {
+              "id": "0qMk56ftRWBp",
+              "text": "LawDepot — Legal Documents & Templates [무료/유료]",
+              "children": [
+                {
+                  "id": "s9Wtxy2QvgZf",
+                  "text": "수급처 카드: [[(web)LawDepot — Legal Documents & Templates]] (https://www.lawdepot.com/)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "Ye7HaNlHxouH",
+                  "text": "핵심 폼: Directors' Meeting Minutes (이사회 의사록), Shareholders' Meeting Minutes (주주총회 의사록)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "3rhM7tXM9BsF",
+                  "text": "특징: 상법 및 법인 거버넌스 준수 공식 법적 의사록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "vZynH2dGolGA",
+              "text": "LegalZoom — Legal Forms & Templates [유료]",
+              "children": [
+                {
+                  "id": "CO5HGlNf2UvG",
+                  "text": "수급처 카드: [[(web)LegalZoom — Legal Forms & Templates]] (https://www.legalzoom.com/templates)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "MXESvYli6UCf",
+                  "text": "핵심 폼: Corporate Minutes (정기/임시 이사회 및 주주총회 회의록)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "Fidva0mUUxqQ",
+                  "text": "특징: 북미 및 글로벌 법인 표준 이사회 결의안 서식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792994649066,
+          "updatedAt": 1792994649066
+        },
+        {
+          "id": "uBRgPmUf7493",
+          "text": "4. 인터랙티브 입력 폼 및 회의록 자동 문서화 (1곳)",
+          "children": [
+            {
+              "id": "VQkrlamJ9Cvi",
+              "text": "Jotform [무료/유료]",
+              "children": [
+                {
+                  "id": "wdqYTXHwIYLw",
+                  "text": "수급처 카드: [[(web)Jotform]] (https://www.jotform.com)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "MRZSHvE51PTU",
+                  "text": "핵심 폼: Meeting Minutes Form, Meeting Feedback Form, 1:1 Form",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "3MLr2vq5NVvZ",
+                  "text": "특징: 웹 설문/필드 입력 즉시 PDF 회의록으로 자동 발행되는 템플릿",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792994649066,
+          "updatedAt": 1792994649066
+        },
+        {
+          "id": "W8IjbyMrmv8O",
+          "text": "5. 회의 운영 절차(SOP) 및 비동기 의사결정 실전 사례 (5곳)",
+          "children": [
+            {
+              "id": "Y8F8kwk5TMBE",
+              "text": "Process Street — Free SOP & Process Templates [무료/유료]",
+              "children": [
+                {
+                  "id": "nynkSOEdSeAV",
+                  "text": "수급처 카드: [[(web)Process Street — Free SOP & Process Templates]] (https://www.process.st/templates/)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "D9LQQs2mJqmJ",
+                  "text": "핵심 폼: Sprint Planning Meeting Process, Board Meeting Prep & Minutes Workflow",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "B5ITiaLQRjJy",
+                  "text": "특징: 회의 준비부터 회의록 작성·승인까지 단계별 인터랙티브 체크리스트",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "Xy9K9m7DKoA2",
+              "text": "SweetProcess — Standard Operating Procedures Software [유료]",
+              "children": [
+                {
+                  "id": "7MmLNj3q2yoR",
+                  "text": "수급처 카드: [[(web)SweetProcess — Standard Operating Procedures Software]] (https://www.sweetprocess.com/)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "6YPhkLWXq89j",
+                  "text": "핵심 폼: Meeting Procedure SOP (회의 주재 및 의사록 작성 표준 절차서)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "xUMLcKtua3yk",
+                  "text": "특징: 팀 내 회의 거버넌스 및 결정사항 트래킹 실무 운영 가이드",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "4PERK7A4APIJ",
+              "text": "GitLab — The GitLab Handbook [무료]",
+              "children": [
+                {
+                  "id": "GMVYilQkrjfy",
+                  "text": "수급처 카드: [[(web)GitLab — The GitLab Handbook]] (https://handbook.gitlab.com/)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "qoM1JI3RHnko",
+                  "text": "핵심 폼: Async Meeting Guide & Live Doc Agenda",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "3Kuk9X6Id3FG",
+                  "text": "특징: 비동기 회의 원칙과 실시간 아젠다 문서 작성 실전 핸드북",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "hGZdayzETe5G",
+              "text": "Lenny's Newsletter — Deeply researched product advice [무료/유료]",
+              "children": [
+                {
+                  "id": "8YbEXY0eaAGK",
+                  "text": "수급처 카드: [[(web)Lenny's Newsletter — Deeply researched product advice]] (https://www.lennysnewsletter.com/)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "wfGaZQ58oW54",
+                  "text": "핵심 폼: 1:1 Meeting Template, Product Review Meeting Template",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "Z3ZEE6VUtQ1x",
+                  "text": "특징: 실리콘밸리 탑티어 리더들의 경영진 싱크 및 프로덕트 리뷰 실전 템플릿",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            },
+            {
+              "id": "DpLBpATefbjG",
+              "text": "Linear — Linear Method [무료]",
+              "children": [
+                {
+                  "id": "OJsDWhOxiVmp",
+                  "text": "수급처 카드: [[(web)Linear — Linear Method (프로젝트 및 제품 빌딩 철학)]] (https://linear.app/method)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "SOYJF7sSKlT1",
+                  "text": "핵심 폼: Async Project Updates & Triage",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                },
+                {
+                  "id": "YFlfY6BmUac0",
+                  "text": "특징: 불필요한 동기 회의를 최소화하고 주간/사이클 단위로 의사결정을 문서화하는 비동기 프레임워크",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792994649066,
+                  "updatedAt": 1792994649066
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792994649066,
+              "updatedAt": 1792994649066
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792994649066,
+          "updatedAt": 1792994649066
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1792994471291,
+      "updatedAt": 1792994673194
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792994471291,
+  "updatedAt": 1792998252524
+}

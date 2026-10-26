@@ -1,0 +1,44 @@
+{
+  "total_rows": 93,
+  "pdf_download_success": 90,
+  "pdf_download_error": 0,
+  "pdf_not_supported_count": 3,
+  "pdf_not_supported_list": [
+    {
+      "페이지": "1",
+      "서식ID": "vform_129290",
+      "제목": "교사회의록 무료서식 다운로드로 손쉽게 작성하기",
+      "상세페이지": "https://www.yesform.com/forms/vform_129290.php",
+      "한글": "O",
+      "워드": "O",
+      "엑셀": "O",
+      "PDF": "",
+      "구글 시트": "O",
+      "구글 문서": ""
+    },
+    {
+      "페이지": "3",
+      "서식ID": "vform_420748",
+      "제목": "[Google Docs] 분기 성과 분석 및 전략 이행 회의록",
+      "상세페이지": "https://www.yesform.com/forms/vform_420748.php",
+      "한글": "",
+      "워드": "",
+      "엑셀": "",
+      "PDF": "",
+      "구글 시트": "",
+      "구글 문서": "O"
+    },
+    {
+      "페이지": "8",
+      "서식ID": "vform_107552",
+      "제목": "무료 상벌위원회 규정 서식 자료 모음",
+      "상세페이지": "https://www.yesform.com/forms/vform_107552.php",
+      "한글": "O",
+      "워드": "O",
+      "엑셀": "",
+      "PDF": "",
+      "구글 시트": "",
+      "구글 문서": "O"
+    }
+  ]
+}

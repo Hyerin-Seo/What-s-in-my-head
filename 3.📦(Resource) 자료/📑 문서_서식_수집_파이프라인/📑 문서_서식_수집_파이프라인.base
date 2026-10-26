@@ -8,16 +8,20 @@ filters:
 views:
   - type: cards
     name: 🪄 단계별
+    filters:
+      and:
+        - 파일포맷.contains("클라우드 블록형")
     groupBy:
-      property: 상태
+      property: 도메인
       direction: ASC
     order:
       - file
-      - 과금모델
       - 도메인
       - 파일포맷
-      - 라이선스
       - 요약
+      - 과금모델
+      - 서식형태
+    sort: []
     image: 커버
     imageAspectRatio: 1.333
     imageFit: cover
@@ -32,7 +36,6 @@ views:
       - 과금모델
       - 도메인
       - 파일포맷
-      - 라이선스
       - 요약
     image: 커버
     imageAspectRatio: 1.333
@@ -48,7 +51,6 @@ views:
       - 과금모델
       - 도메인
       - 파일포맷
-      - 라이선스
       - 요약
     image: 커버
     imageAspectRatio: 1.333
@@ -62,7 +64,6 @@ views:
       - 과금모델
       - 도메인
       - 파일포맷
-      - 라이선스
       - 요약
       - 링크
       - 담당
