@@ -1,0 +1,77 @@
+filters:
+  and:
+    - file.ext == "md"
+    - note["유형"] == "레퍼런스"
+    - file.inFolder("3.📦(Resource) 자료/📑 문서_서식_수집_파이프라인")
+    - not:
+        - file.name.startsWith("!(Template)")
+views:
+  - type: cards
+    name: 🪄 단계별
+    groupBy:
+      property: 상태
+      direction: ASC
+    order:
+      - file
+      - 과금모델
+      - 도메인
+      - 파일포맷
+      - 라이선스
+      - 요약
+    image: 커버
+    imageAspectRatio: 1.333
+    imageFit: cover
+    cardSize: 220
+  - type: cards
+    name: 🗂️ 주제별
+    groupBy:
+      property: 주제
+      direction: ASC
+    order:
+      - file
+      - 과금모델
+      - 도메인
+      - 파일포맷
+      - 라이선스
+      - 요약
+    image: 커버
+    imageAspectRatio: 1.333
+    imageFit: contain
+    cardSize: 200
+  - type: cards
+    name: 🔥 강추
+    filters:
+      and:
+        - note["평가"] == "강추"
+    order:
+      - file
+      - 과금모델
+      - 도메인
+      - 파일포맷
+      - 라이선스
+      - 요약
+    image: 커버
+    imageAspectRatio: 1.333
+    imageFit: cover
+    cardSize: 250
+  - type: table
+    name: 📊 모든 레퍼런스
+    order:
+      - file
+      - 상태
+      - 과금모델
+      - 도메인
+      - 파일포맷
+      - 라이선스
+      - 요약
+      - 링크
+      - 담당
+      - 작성자
+      - 작성일
+    sort:
+      - property: 작성일
+        direction: DESC
+    summaries:
+      유형: Filled
+newItemFolder: 3.📦(Resource) 자료/📑 문서_서식_수집_파이프라인
+newItemTemplate: 3.📦(Resource) 자료/📑 문서_서식_수집_파이프라인/!(Template) 서식 수급처 허브 레퍼런스.md

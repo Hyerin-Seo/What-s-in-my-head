@@ -1,0 +1,2391 @@
+{
+  "version": 1,
+  "captures": {
+    "무료 서식 허브 01 - 대한법률구조공단 법률서식.png": {
+      "url": "https://www.klac.or.kr/legalinfo/legalFrm.do",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:08:39+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        370,
+        1620
+      ],
+      "size": [
+        1280,
+        1250
+      ],
+      "sha256": "6ad149be4e566b2144e969703bee0d8d4cfdf2dc1293c33a23b4af5e8cb703cf"
+    },
+    "무료 서식 허브 02 - 국가법령정보센터 별표서식.png": {
+      "url": "https://www.law.go.kr/LSW/lsBylSc.do",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:08:46+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1720
+      ],
+      "size": [
+        1280,
+        1720
+      ],
+      "sha256": "04676657a1fd2137105d302faa178aa9522d980430ef7eeec0a4a4c652da8ef1"
+    },
+    "무료 서식 허브 03 - 공정거래위원회 표준계약서.png": {
+      "url": "https://www.ftc.go.kr/www/selectBbsNttList.do?bordCd=201&key=202",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:08:52+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1600
+      ],
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "0514d38b2884210dca552cdb3e42dc0f237569e562f5da89dde51fec10aed82e"
+    },
+    "무료 서식 허브 04 - 국세청 세무서식.png": {
+      "url": "https://www.nts.go.kr/nts/ad/nf/nltFormatApiList.do?mi=40178",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:08:57+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1300
+      ],
+      "size": [
+        1280,
+        1300
+      ],
+      "sha256": "8fed7dbda0db23c37e5eeb9221befbb2c7343184aa638ebe27e7a07d90c0062e"
+    },
+    "무료 서식 허브 05 - Common Paper 표준계약.png": {
+      "url": "https://commonpaper.com/standards/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:04+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1460
+      ],
+      "size": [
+        1280,
+        1460
+      ],
+      "sha256": "e83a0fb27eb9a45be1b110b45e1bc33eb6e17f55e610e4185d722bea23452923"
+    },
+    "무료 서식 허브 06 - Vertex42 엑셀 템플릿.png": {
+      "url": "https://www.vertex42.com/ExcelTemplates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:14+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1000
+      ],
+      "size": [
+        1280,
+        1000
+      ],
+      "sha256": "bd3eccfe2dde4cb09469b403469407f8880ce9d74763f07582e114ccf8d2a572"
+    },
+    "무료 서식 허브 07 - Notion 공식 템플릿.png": {
+      "url": "https://www.notion.com/@notion",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:22+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1180
+      ],
+      "size": [
+        1280,
+        1180
+      ],
+      "sha256": "a3de2b12691aaa2569980f6aee963557bd1b73481b1c47faf4aed7a87e55b1e7"
+    },
+    "무료 서식 허브 08 - Confluence 템플릿.png": {
+      "url": "https://www.atlassian.com/software/confluence/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:32+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1520
+      ],
+      "size": [
+        1280,
+        1520
+      ],
+      "sha256": "fae948d948dc7cae056c1c5033ce2658671d266b5d755786e9da76a5e787fb43"
+    },
+    "무료 서식 허브 09 - LibreOffice 템플릿.png": {
+      "url": "https://extensions.libreoffice.org/?Tags%5B%5D=118",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T17:09:43+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1440
+      ],
+      "size": [
+        1280,
+        1440
+      ],
+      "sha256": "c70ebb522a19d52f1660ba70ff24b9e0fd57d32c1d98459a9333bde40cbfc218"
+    },
+    "무료 서식 허브 10 - SCORE 템플릿.png": {
+      "url": "https://www.score.org/templates/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-25T17:09:43+09:00",
+      "reason": "Cloudflare 가 헤드리스 브라우저를 막음 — Claude 데스크톱 내장 브라우저 화면(800px)을 저장, 2026-10-25",
+      "sha256": "6c7e136e7267f6730996835f4942256bc36031dbe1ff039c47cf4d87eb7b116f"
+    },
+    "유료 서식 허브 01 - 예스폼 회사서식.png": {
+      "url": "https://www.yesform.com/z_n/form/company/company_form.php",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:20:40+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "9bd41f6ce4e190e453c4e3a60d65dbc145cc2aba8dcd3df74723ab9e72bd052c"
+    },
+    "유료 서식 허브 01 - 예스폼 계약서.png": {
+      "url": "https://contract.yesform.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:52:04+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        450,
+        1600
+      ],
+      "size": [
+        1280,
+        1150
+      ],
+      "sha256": "601ba01e96c7b5e868d2b1746bf8117192003402f445892134b185cd2540fae2"
+    },
+    "유료 서식 허브 02 - 비즈폼 엑셀서식.png": {
+      "url": "https://excel.bizforms.co.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:23:22+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "325645140393d4fff9db6ccc0426dab827ca8376d4d508f8c4057b106606b014"
+    },
+    "유료 서식 허브 03 - 로폼 스타트업문서.png": {
+      "url": "https://lawform.io/startup",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:24:13+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "1a790686e13e131a687a949fc226dafc43c6749db30ff57f83e1834f663d868b"
+    },
+    "유료 서식 허브 03 - 로폼 자동작성.png": {
+      "url": "https://lawform.io/intro/autodoc",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:53:28+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        650,
+        1850
+      ],
+      "size": [
+        1280,
+        1200
+      ],
+      "sha256": "92d1bce11b480c5c36ed9aa3b8a9384586ccf1c5a20c550c505fc87e1f10d8ec"
+    },
+    "유료 서식 허브 04 - 해피캠퍼스 서식존.png": {
+      "url": "https://www.happycampus.com/themeSquare/main/?cate1=14114",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:25:13+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "b18054d2254589fcbbabbc88a49fc396a877659efcd817060817de2bb2ec4a63"
+    },
+    "유료 서식 허브 05 - Template.net 비즈니스.png": {
+      "url": "https://www.template.net/business/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:25:50+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "a9c210bb09e1ac02fac43dd019879515f7cfc390f58ca77bc79a0b7eed738c02"
+    },
+    "유료 서식 허브 05 - Template.net 계약합의서.png": {
+      "url": "https://www.template.net/editable/agreements",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:26:17+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "681d42880d8c964a251a8bb5f303c32a5e5cb1cac3733f05a556d2efc75604d6"
+    },
+    "유료 서식 허브 06 - Envato 프레젠테이션.png": {
+      "url": "https://elements.envato.com/presentation-templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:26:41+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "8b971ab52c6672de02005bfdb21cf4d064acbe57dbbd2e21171958321ddef905"
+    },
+    "유료 서식 허브 07 - Rocket Lawyer 비즈니스계약.png": {
+      "url": "https://www.rocketlawyer.com/business-and-contracts",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:27:09+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "9d000ac4b7b1722956b08abf569fb50174a467b7172337128f3a5e6640cb9ec3"
+    },
+    "유료 서식 허브 07 - 슬라이드멤버스 비즈니스PPT.png": {
+      "url": "https://www.slidemembers.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:39:40+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "615075a733647864a22a9574ee4d328a52a09dbd73ad2a7446ca05d39cc49ed1"
+    },
+    "유료 서식 허브 07 - Formspal 법률비즈니스.png": {
+      "url": "https://formspal.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:40:03+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "ec72b7d0a272ca599f935c44a924ab49e89a52db23bb8d94010bc1d2ab62245b"
+    },
+    "유료 서식 허브 08 - WonderLegal 법률문서.png": {
+      "url": "https://www.wonder.legal/us/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:40:49+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "4e91046ebe2794ef98d1a90b2826a6d4b26f4fa5b4d5faa567f06b78f479cf41"
+    },
+    "유료 서식 허브 09 - Jotform 폼템플릿.png": {
+      "url": "https://www.jotform.com/form-templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:41:33+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "83a5b7094b70b1fd20e844ddd1066065d1300a384be74f2e52f77f0b2c64f719"
+    },
+    "유료 서식 허브 10 - 예스폼 사업계획서.png": {
+      "url": "https://plan.yesform.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:52:44+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        350,
+        1600
+      ],
+      "size": [
+        1280,
+        1250
+      ],
+      "sha256": "7da36e635681d4bf9f99fa8c7542efba4c7b2f08e24fd61acd918e3c8c97a209"
+    },
+    "유료 서식 허브 03 - 로폼 계약서목록.png": {
+      "url": "https://lawform.io/topic/2",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:57:09+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "fee9c65880dd2970d99a7af688fb7fcf10cafc875de2c0ca53e774a8609af77b"
+    },
+    "유료 서식 허브 08 - WonderLegal 문서목록.png": {
+      "url": "https://www.wonder.legal/us/choix-modele/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:58:13+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "95487481a99cebf4fe30e5bf5b4565a717e78fb046c3c3c5dbb5cdd9cc5bc00d"
+    },
+    "유료 서식 허브 07 - Formspal 법률문서목록.png": {
+      "url": "https://formspal.com/legal-templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T18:58:53+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "aa57e063766424c374dbc59e41b449994592f31f092b43babd4f3baa16a4c3aa"
+    },
+    "경영·전략 허브 06 - 기업마당.png": {
+      "url": "https://www.bizinfo.go.kr/biz/bizb/selectBIZB100View.do",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T19:46:01+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1400
+      ],
+      "size": [
+        1280,
+        1400
+      ],
+      "sha256": "b07d0a5a19817cdb63bcefb531208edfa47fc4c97ce12506ff646d0473e3ba77"
+    },
+    "경영·전략 허브 07 - Bplans.png": {
+      "url": "https://www.bplans.com/sample-business-plans/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T19:46:11+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1400
+      ],
+      "size": [
+        1280,
+        1400
+      ],
+      "sha256": "8776357a662708a31225192588c627f3597d9cf2b2958eaa912ff907ad23aabc"
+    },
+    "경영·전략 허브 08 - Pitch.png": {
+      "url": "https://pitch.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T19:46:25+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1400
+      ],
+      "size": [
+        1280,
+        1400
+      ],
+      "sha256": "a1aa49bba3a0d4dbb4b550653ba98d819c0047bab4bf63c282337486376b1769"
+    },
+    "경영·전략 허브 09 - Slidebean.png": {
+      "url": "https://slidebean.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T19:46:36+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1400
+      ],
+      "size": [
+        1280,
+        1400
+      ],
+      "sha256": "36a02610bbaacfa4587a772ca690d8164bfede985f27b15aae0c6ddfd469fd33"
+    },
+    "경영·전략 허브 10 - Miro.png": {
+      "url": "https://miro.com/templates/strategy-and-planning/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T19:47:00+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1400
+      ],
+      "size": [
+        1280,
+        1400
+      ],
+      "sha256": "465b068b948c48ada089eb6946ca382ffec342ae5070c43fc553c0e049088b5c"
+    },
+    "법률·규약 허브 06 - 대한민국 법원 전자소송.png": {
+      "url": "https://ecfs.scourt.go.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:06:59+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "effa8dff2d0f281a0427bf3990b204a82f5bc21970c0c30cf4270567065ce1eb"
+    },
+    "법률·규약 허브 07 - 대한상사중재원.png": {
+      "url": "https://www.kcab.or.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:07:11+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "4c434cccb6dd86fcf3cf7b0272d2e617621a8c953adb3b22f78779d5ef2d898a"
+    },
+    "법률·규약 허브 08 - LegalZoom.png": {
+      "url": "https://www.legalzoom.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:07:26+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "cae51f6df61a0a58ab8581a6c8c7de61fe1e09a7f94736db2b608f4d32cff981"
+    },
+    "법률·규약 허브 09 - LegalTemplates.png": {
+      "url": "https://legaltemplates.net/business-forms/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:08:31+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "63c3f202d03b4a5797ef3892bef92d607c253afa7ee53af58b863106c40772e9"
+    },
+    "법률·규약 허브 10 - LawDepot.png": {
+      "url": "https://www.lawdepot.com",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:09:32+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "293ba13e7777943bca51bb6e82e5a68c8d0831307e7402e0060bdca3b4806c2a"
+    },
+    "재무·회계 허브 06 - 금융감독원 DART.png": {
+      "url": "https://dart.fss.or.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:17:15+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "c6e206f0d06bab297ba4456a4d11657898f6086ebfef9717e7e720de3f83a0a0"
+    },
+    "재무·회계 허브 07 - CFI Financial Templates.png": {
+      "url": "https://corporatefinanceinstitute.com/resources/templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:17:38+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "f88c6fff87bb24af574ebbc6299eb994e393c93d20a5ad326fdbb55e1899cf2d"
+    },
+    "재무·회계 허브 08 - Spreadsheet123.png": {
+      "url": "https://www.spreadsheet123.com/ExcelTemplates/financial-statements.html",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:17:52+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "73218bcbf7ef6cb5fac02d9780b4e8728052ab853c79abb33782d72e9c4feeb3"
+    },
+    "재무·회계 허브 09 - Microsoft Create.png": {
+      "url": "https://create.microsoft.com/ko-kr/templates/budgets",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:18:09+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "5e4c650d2ea71da9004b22b3f76a7cc5cce7c8e23a55986ede13167a21ac1689"
+    },
+    "재무·회계 허브 10 - 한국공인회계사회.png": {
+      "url": "https://www.kicpa.or.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:18:26+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "430e2f0facde57f4881a124497f9198b0e98f483f2b827b02c63f2e40713d3c4"
+    },
+    "인사·노무 허브 06 - 고용노동부.png": {
+      "url": "https://www.moel.go.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:22:06+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "36083042440b029fb4517cb1843b29fa8983fd2baad804e1fc45349604bcdc4a"
+    },
+    "인사·노무 허브 07 - 노사발전재단.png": {
+      "url": "https://www.nosa.or.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:22:20+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "d7515e657450a990819d9dea590e1cbfa49e673c9e2cc38425084b24bb3c3a70"
+    },
+    "인사·노무 허브 08 - Workable HR Templates.png": {
+      "url": "https://resources.workable.com/hr-templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:22:36+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "aa9bf4ecb1464b3851bd0d934cb934bfb3c5e5f96e66c34f1e7848eeac1e4dff"
+    },
+    "인사·노무 허브 09 - 근로복지공단.png": {
+      "url": "https://www.comwel.or.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:22:47+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "ec572802425bd0cbed45209aed8bb8fb9e2ba8f1725d5f5eb2b85376ec959b02"
+    },
+    "인사·노무 허브 10 - 국민건강보험공단.png": {
+      "url": "https://www.nhis.or.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:23:04+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "91eed30b037655ece6cf30169af321f085afbd906d88200003cccc7d87be6208"
+    },
+    "영업·제안 허브 06 - 조달청 나라장터.png": {
+      "url": "https://www.g2b.go.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:27:20+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "f02e8bc3c6cd6baf7a31b44d5530f12f6d16de2ab39328405e29b77a0429b091"
+    },
+    "영업·제안 허브 07 - Qwilr Templates.png": {
+      "url": "https://qwilr.com/templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:27:43+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "eee1375dd0f8e05f9151cd85de82b990124d749916031b0cebdf5867051212be"
+    },
+    "영업·제안 허브 08 - Proposify Templates.png": {
+      "url": "https://www.proposify.com/proposal-templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:28:02+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "ccfc975f437df9772d59880b5903dccd62ce2134e8629d34bbec2f8de16ae9bc"
+    },
+    "영업·제안 허브 09 - HubSpot Resources.png": {
+      "url": "https://www.hubspot.com/resources",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:28:28+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "4c1a7fd20152526ab40039f11bc18e7517a9b373da5f4c47cc7f7b98d73a39e6"
+    },
+    "영업·제안 허브 10 - Better Proposals.png": {
+      "url": "https://betterproposals.io/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:29:04+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "6f6d1de364f580db8de6c95e92988968d1724a468e220faf01653b40adfae73f"
+    },
+    "제품·엔지니어링 허브 06 - ADR.png": {
+      "url": "https://adr.github.io/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:34:06+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "44a3b24ece88361013fdb08bfe91b0bc87ca51b0ff55899d52caa7b0cfa82c4b"
+    },
+    "제품·엔지니어링 허브 07 - Linear Method.png": {
+      "url": "https://linear.app/method",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:34:22+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "bdfe76c98876886ff088ada2b88ed0e4bb86ab47ac2af2eb1ce240467236d83e"
+    },
+    "제품·엔지니어링 허브 08 - GitLab Handbook.png": {
+      "url": "https://handbook.gitlab.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:34:41+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "7c7498a8e41c35d2d385ce9c689edc71af3e673eb057848cdaa0d48cd396c3ee"
+    },
+    "제품·엔지니어링 허브 09 - Slite Templates.png": {
+      "url": "https://slite.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:35:09+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "0f67968b4c32cc76b2257961e744c50836e9a8f6ca6b2afc34dac24612a91989"
+    },
+    "제품·엔지니어링 허브 10 - Product School.png": {
+      "url": "https://productschool.com/resources",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T20:35:37+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "5af6cb781b1a346599e52bc876fe17c7587d656cd4a79d8925b4d2c07bcb0d75"
+    },
+    "마케팅·브랜딩 허브 06 - Frontify.png": {
+      "url": "https://www.frontify.com/en",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:30:38+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "7f0a191514f44936a98e45300518a6003baa281933ae039b69dd8e247317f36e"
+    },
+    "마케팅·브랜딩 허브 07 - CMI.png": {
+      "url": "https://contentmarketinginstitute.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:30:48+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "cac45c2017e9637817b2d7b04c9f8e13c79af6ac95283ef5f5574f750ce4392d"
+    },
+    "마케팅·브랜딩 허브 08 - Brandfolder.png": {
+      "url": "https://brandfolder.com/resources/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:33:20+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "1c3cdc820e9e69288d9cb2061e6bfbfcb4de7610f41fa687e16a16e03fa31e0d"
+    },
+    "마케팅·브랜딩 허브 09 - Buffer Resources.png": {
+      "url": "https://buffer.com/resources/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:33:38+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "d3998c213791545bfb49c102cb568f3ad45308a21eb75896d2629692a5320e95"
+    },
+    "마케팅·브랜딩 허브 10 - KOBACO.png": {
+      "url": "https://www.kobaco.co.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:33:59+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "f08581ae7281880fbe504366ab04cc9548e4ebcd1009d2c7b2c7b32c573d0eeb"
+    },
+    "리서치·시장조사 허브 06 - SurveyMonkey.png": {
+      "url": "https://www.surveymonkey.com/templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:37:05+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "89bb875734007af6a8c19d536a1e026ef20101004297c517c1d5542c6fbe2dc4"
+    },
+    "리서치·시장조사 허브 07 - CB Insights.png": {
+      "url": "https://www.cbinsights.com/research/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:37:13+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "a695c87dac5f27882c5ed31c65390119a1b4be6ed3323aa137c3eafa8f5e5911"
+    },
+    "리서치·시장조사 허브 08 - Crayon.png": {
+      "url": "https://www.crayon.co/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:37:25+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "6afe21deb67e2680bcc9a0a082dbad75e16225d3f0fd0ea47c0d9b98f551af26"
+    },
+    "리서치·시장조사 허브 09 - Typeform.png": {
+      "url": "https://www.typeform.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:37:31+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "0ffa4ae2bb70068577df02af674502a174cfbf06bad7a16a5a01855b2437627b"
+    },
+    "리서치·시장조사 허브 10 - KDI.png": {
+      "url": "https://eiec.kdi.re.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:37:41+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "78424767ae1c15e5610d71036a913df3f8527c54e33329aff549644b2b617a1d"
+    },
+    "리서치·시장조사 허브 07 - KISTI.png": {
+      "url": "https://www.kisti.re.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:38:06+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "c48278a493029d20b67dc672b641edeebc5dcfce1d443c25de7c72041f71d3f5"
+    },
+    "운영·매뉴얼 허브 06 - Process Street.png": {
+      "url": "https://www.process.st/templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:41:21+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "fee479ce5cbfb691d6b281f6a4eb68954d156ea0f13871ab91abccd6a7c64b94"
+    },
+    "운영·매뉴얼 허브 07 - SweetProcess.png": {
+      "url": "https://www.sweetprocess.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:42:47+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "a85f924433d99a2d01c051fecd6d928ef1ecc7f7996edc9946461ebd3d1d0e4a"
+    },
+    "운영·매뉴얼 허브 08 - Zendesk.png": {
+      "url": "https://www.zendesk.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:43:05+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "d1e20f6d1af4e7c4542edefdf97e214ddcf85443595b6044e2bdf02ab24ae1d3"
+    },
+    "운영·매뉴얼 허브 09 - KOSHA.png": {
+      "url": "https://www.kosha.or.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:43:20+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "08dcd58fadae74822a3a32dce0efbb3a0e488127488d8f2a970e514b5b01cdfd"
+    },
+    "운영·매뉴얼 허브 10 - KSA.png": {
+      "url": "https://www.ksa.or.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:44:08+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "51afa023db16c24e59345a8fc31198b754ec0772c45ecd4a7e564ec5c32c09e5"
+    },
+    "디자인·크리에이티브 허브 06 - Figma Community.png": {
+      "url": "https://www.figma.com/community",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:51:32+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "8ed43bc94bd22ed34f3d1693c9c9359e55ada1f7318a2c6023a5d9903efb89d9"
+    },
+    "디자인·크리에이티브 허브 06 - Untitled UI.png": {
+      "url": "https://www.untitledui.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:51:56+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "e3c57ce4679f0d8f00da08cdf488dec1305c16cdbabb990b8cee31baa147be2e"
+    },
+    "디자인·크리에이티브 허브 07 - Design Systems Repo.png": {
+      "url": "https://designsystemsrepo.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:52:03+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "7b7b4c75823c70ba690efee4b9ba0853d4da3539a6d3f9fad69379854a3ca8ab"
+    },
+    "디자인·크리에이티브 허브 08 - KIDP.png": {
+      "url": "https://kidp.or.kr",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:52:10+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "c557c46382bbf67869ca4d426dcbe59cc4865a497e7e1b661709c70e72f29593"
+    },
+    "디자인·크리에이티브 허브 09 - Open Peeps.png": {
+      "url": "https://www.openpeeps.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:52:19+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "2d3f8e4ce3b71e9c1b628f53e0e22ca5a064884cd92813f4628e4f9016b768f5"
+    },
+    "디자인·크리에이티브 허브 10 - Freebiesbug.png": {
+      "url": "https://freebiesbug.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-25T21:56:47+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        null
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "303851c42ce8e0a977014f277f64b9d4648f3073f05c3a952ebea9676c1fa09c"
+    },
+    "공식 플랫폼 허브 06 - 네이버 한글문서서식.png": {
+      "url": "https://hangeul.naver.com/document",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:38:03+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "2d49b165bd51159471df130c222e31a16983d011f4202d044e0adad0de8a279e"
+    },
+    "공식 플랫폼 허브 07 - 미리캔버스.png": {
+      "url": "https://www.miricanvas.com/ko/templates",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T07:42:19+09:00",
+      "reason": "헤드리스 브라우저 실행 시 지속적 웹소켓 커넥션으로 인한 타임아웃 발생 (실제 렌더링 화면 정상 확보)",
+      "sha256": "5233cf3a4bb5d62d0574147ff42447acb8546a557e68225c9eac8596e8d9a96d"
+    },
+    "공식 플랫폼 허브 08 - Slidesgo.png": {
+      "url": "https://slidesgo.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:42:41+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "bece76b42f109ebb39afa8e2f2f2660f6ad948091f3bcc9d67652fd70ca4e766"
+    },
+    "공식 플랫폼 허브 09 - Venngage.png": {
+      "url": "https://venngage.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:43:12+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "fcd2ca1bee999f82a21c343db46648357dfcbd32320511cdcd50b8a1b9ea4c26"
+    },
+    "공식 플랫폼 허브 10 - Visme.png": {
+      "url": "https://www.visme.co/templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:43:30+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "f511dbc9805f3742c4ab845c4428cb795bd84646402ce5887a61d89b0ad728cf"
+    },
+    "커뮤니티·포럼 허브 05 - GitHub Topics.png": {
+      "url": "https://github.com/topics/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:54:23+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "af80be9d056dd99af549b81263e9eda61c49124f36d9551b74064984d3854001"
+    },
+    "커뮤니티·포럼 허브 06 - 클리앙 팁과강좌.png": {
+      "url": "https://www.clien.net/service/board/lecture",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:54:37+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "0fd677a6f3d488d209c8d10a8c3890de84a5bd815f3291ab0673cf483c6f3421"
+    },
+    "커뮤니티·포럼 허브 07 - Tableau Public.png": {
+      "url": "https://public.tableau.com/app/discover",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:54:52+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "f567cbe40f094791169c881cdc55b53a4514d6add0a968bdb46f610e4b658d7f"
+    },
+    "커뮤니티·포럼 허브 08 - Obsidian Forum.png": {
+      "url": "https://forum.obsidian.md/c/share-showcase/9",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:55:34+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "67273e735c032308b4b7dfa98f91979229eb8f6748b2f6a1e21561dafceb7387"
+    },
+    "커뮤니티·포럼 허브 09 - DEV Community.png": {
+      "url": "https://dev.to/t/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:55:59+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "5ed0daf4d0d8d699a54b9cd3b8a542bc2c343046fbf062424fdcc0766e31ba08"
+    },
+    "커뮤니티·포럼 허브 10 - Hugging Face Spaces.png": {
+      "url": "https://huggingface.co/spaces",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T07:56:18+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1800
+      ],
+      "size": [
+        1280,
+        1800
+      ],
+      "sha256": "952b1460cce7c43662505e35e04ca5285a723353258c467a1ac1e3b2639f80ca"
+    },
+    "개인 미디어·블로그 허브 02 - 오빠두엑셀 자료실.png": {
+      "url": "https://www.oppadu.com/resources/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "fce80aca0c84746b6ce7972461f41372512c6b3875d8fa711bd1226391ff0149"
+    },
+    "개인 미디어·블로그 허브 03 - Untools.png": {
+      "url": "https://untools.co/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "a9a618ba66081fe6f5b3984b30ce36107eff2e2cc55ddebc0935047c62030f88"
+    },
+    "개인 미디어·블로그 허브 04 - Paul Graham Essays.png": {
+      "url": "https://paulgraham.com/articles.html",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "e0aa936c70b1672a0e2ddc052dcaed12489de00a65a9ef36137b7e316f083254"
+    },
+    "개인 미디어·블로그 허브 05 - Julian Shapiro Handbooks.png": {
+      "url": "https://www.julian.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "30675b9f5992fd9e3df3728e40a8f7aa277ed98842855c02f78342c53ebabc37"
+    },
+    "개인 미디어·블로그 허브 06 - Refactoring UI.png": {
+      "url": "https://www.refactoringui.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "7bc1e7409b559c43d03d20a6628ab3dbeb0662174f2b19131a3c85cb46511239"
+    },
+    "개인 미디어·블로그 허브 07 - Lenny Newsletter.png": {
+      "url": "https://www.lennysnewsletter.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "20e79e1127a5477c0980e3e179ce9ed0886ef66dd82a405509bfd8f0cd8ddc72"
+    },
+    "개인 미디어·블로그 허브 08 - Wes Kao.png": {
+      "url": "https://www.weskao.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "7ae30f5c65fb0860c109e8156daf08b8f5c102587a314d97b2dcc533e42e8f75"
+    },
+    "개인 미디어·블로그 허브 09 - Steph Smith.png": {
+      "url": "https://stephsmith.io/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "3415fbb154e357b56dc1ba0a23a56e91430496eede814fbe9b209e22a3f68bcb"
+    },
+    "개인 미디어·블로그 허브 10 - Sahil Bloom.png": {
+      "url": "https://www.sahilbloom.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:07:11+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "3a59e76659f5ada2c8cd8703125a7a496eca860b53fa04f979dd1fce426fdac1"
+    },
+    "정부·공공 포털 허브 06 - 공공데이터포털.png": {
+      "url": "https://www.data.go.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:12:18+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "6dee5a4a697ba5bbb39bc5e8d85e36b4789b327acff15ec42333b343b69e5d77"
+    },
+    "정부·공공 포털 허브 07 - K-Startup 창업지원포털.png": {
+      "url": "https://www.k-startup.go.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:12:18+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "f493f07fa986231fe4670ea605aaffe61149b8c753819b1de97288232b27f250"
+    },
+    "정부·공공 포털 허브 08 - KISA 한국인터넷진흥원.png": {
+      "url": "https://www.kisa.or.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:12:18+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "b7db23ef6b2fd7ce9c0de5f142a1338a9dbe2ab8497b5b04989c6dc1cf80e460"
+    },
+    "정부·공공 포털 허브 09 - KOTRA 무역투자24.png": {
+      "url": "https://www.kotra.or.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:12:18+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "337e73cf2ceabbcbce33df61f43cc1798b41c4be89efb4cb2e5b321e017731c7"
+    },
+    "정부·공공 포털 허브 10 - NIA 한국지능정보사회진흥원.png": {
+      "url": "https://www.nia.or.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:12:18+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "b200b47139bab12b3fa73432a615e4702743c0af490dc6a7feb3b6a9556a86b7"
+    },
+    "문서 텍스트형 허브 06 - Microsoft Create Word.png": {
+      "url": "https://create.microsoft.com/en-us/templates/word",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:24:51+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "ebf694a98d35a37a05bcfaa215f356650f48677f2de9ea333ddf47a6769e3230"
+    },
+    "문서 텍스트형 허브 07 - Apache OpenOffice.png": {
+      "url": "https://templates.openoffice.org/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:24:51+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "21c9f24aa9806b7f70c72c98bfafdd2e5966968032fee28a34bdbf8419eeb7fb"
+    },
+    "문서 텍스트형 허브 08 - Overleaf LaTeX.png": {
+      "url": "https://www.overleaf.com/latex/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:24:51+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "11bab42d8f25d193589af49c57c94b7bae7eaf051f2a619803c37445a6aaf39c"
+    },
+    "문서 텍스트형 허브 09 - WPS Office.png": {
+      "url": "https://template.wps.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:24:51+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "77dc7d325ed93b385d2e501dd85366dc1a2f617b77a813fd37abb1abfaee2038"
+    },
+    "문서 텍스트형 허브 10 - 국가기록원.png": {
+      "url": "https://www.archives.go.kr/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:24:51+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "c1c714a8b7fce5519f7a0e941fce24ec597118b4613afc9b176a9e4ef8dfa908"
+    },
+    "스프레드시트 수식형 허브 06 - Microsoft Create Excel.png": {
+      "url": "https://create.microsoft.com/en-us/templates/excel",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:30:03+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "df69815d6b10897aa713db59f5c54657db93919dbf8ad2dd1060e2a2be81f0d3"
+    },
+    "스프레드시트 수식형 허브 07 - Sheetgo.png": {
+      "url": "https://www.sheetgo.com/templates/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:30:03+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "1f05ec98d33d5848621cdf1b98d4d9de4ba2333b95760a71698a5c18c8dcf602"
+    },
+    "스프레드시트 수식형 허브 08 - Ben Collins.png": {
+      "url": "https://www.benlcollins.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:30:03+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "2908ca516e06e3e3e1197b66437caca31dc2d62b8e03973e1d0b788e50e5405d"
+    },
+    "스프레드시트 수식형 허브 09 - Chandoo.png": {
+      "url": "https://chandoo.org/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:30:03+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "a0fbdf4b79667d37002665763e5d67434762d488929a65e52b8e20882ceeecbb"
+    },
+    "스프레드시트 수식형 허브 10 - Coefficient.png": {
+      "url": "https://coefficient.io/google-sheets-templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:30:03+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "6a57582345c5ab801c4bfe994d6a1dbd50aec23792bcf0bfd6d5e14ed0609723"
+    },
+    "슬라이드 시각형 허브 06 - Microsoft Create PowerPoint.png": {
+      "url": "https://create.microsoft.com/en-us/templates/powerpoint",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:34:34+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "ebf694a98d35a37a05bcfaa215f356650f48677f2de9ea333ddf47a6769e3230"
+    },
+    "슬라이드 시각형 허브 07 - SlideModel.png": {
+      "url": "https://slidemodel.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:34:34+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "a70eae2f27ac084e3c928d9834c909dc5a9738ee62fec6cc05e73d1ef774f75e"
+    },
+    "슬라이드 시각형 허브 08 - SlidesCarnival.png": {
+      "url": "https://www.slidescarnival.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:34:34+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "55402586f7c5f1246f47476976e3c8c52a06a83a909335cc7ae56e0e453c5bd8"
+    },
+    "슬라이드 시각형 허브 09 - SlideTeam.png": {
+      "url": "https://www.slideteam.net/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:34:34+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "a6c4d3e77846216940b35b1350650b7542974c53d6767bff8ad9874b4601ccc4"
+    },
+    "슬라이드 시각형 허브 10 - Presentation Magazine.png": {
+      "url": "https://www.presentationmagazine.com/",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:34:34+09:00",
+      "viewport": [
+        1280,
+        800
+      ],
+      "crop": [
+        0,
+        800
+      ],
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "d674334ffca63eda4e8e314979fea03ca0c172ade1c0ffb64178cffa7ec5725b"
+    },
+    "클라우드 블록형 허브 06 - Coda.png": {
+      "url": "https://coda.io/gallery",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:46:39+09:00",
+      "viewport": [
+        1440,
+        900
+      ],
+      "crop": [
+        0,
+        900
+      ],
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "941fae65ba6f9b3e2e529f4d3d63dbdaf1d194e1685b7372af6b59c05f6f613e"
+    },
+    "클라우드 블록형 허브 07 - ClickUp.png": {
+      "url": "https://clickup.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:46:39+09:00",
+      "viewport": [
+        1440,
+        900
+      ],
+      "crop": [
+        0,
+        900
+      ],
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "33ce3541948e60e9e9fdd1c714fd8559d732645cfd15b67ca1b4a7892d7b4d91"
+    },
+    "클라우드 블록형 허브 08 - Craft Docs.png": {
+      "url": "https://www.craft.do/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:46:39+09:00",
+      "viewport": [
+        1440,
+        900
+      ],
+      "crop": [
+        0,
+        900
+      ],
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "23691f0142b87e634f188b98f5465f5d579b4ef8f3caf3d9d808088c7d3f5603"
+    },
+    "클라우드 블록형 허브 09 - Taskade.png": {
+      "url": "https://www.taskade.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:46:39+09:00",
+      "viewport": [
+        1440,
+        900
+      ],
+      "crop": [
+        0,
+        900
+      ],
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "d7ca87bb352ab26a70016a73f6be4ba4483185708f7f8a1a2ac9e954bdaeb131"
+    },
+    "클라우드 블록형 허브 10 - Nuclino.png": {
+      "url": "https://www.nuclino.com/templates",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-10-26T08:46:40+09:00",
+      "viewport": [
+        1440,
+        900
+      ],
+      "crop": [
+        0,
+        900
+      ],
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "e320387fa54275e027f62b8fc28cd0fa50f3d84e526736e0223ae503b9332800"
+    },
+    "고정 인쇄형 허브 06 - Jotform PDF.png": {
+      "url": "https://www.jotform.com/pdf-templates/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:17+09:00",
+      "reason": "고정 인쇄형 PDF 서식 카탈로그 실측 캡처",
+      "sha256": "10e9570244bb5f07d9c34c68996812e85f37125009ccdde0a89a955692480900"
+    },
+    "고정 인쇄형 허브 07 - PDFescape.png": {
+      "url": "https://www.pdfescape.com/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:23+09:00",
+      "reason": "고정 인쇄형 PDF 온라인 에디터 및 양식 허브 실측 캡처",
+      "sha256": "fc088c6f39067f5cf91e7a73b5e5e4b8dbab73cf586c50893c6d79a8c7f9d29b"
+    },
+    "고정 인쇄형 허브 08 - SampleForms.png": {
+      "url": "https://www.sampleforms.com/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:29+09:00",
+      "reason": "고정 인쇄형 비즈니스 및 법률 PDF 양식 허브 실측 캡처",
+      "sha256": "8170c673448f6456fe83c94ea0b44e6bc139cdd568c79461f01fca6fca9bb56c"
+    },
+    "고정 인쇄형 허브 09 - Signaturely.png": {
+      "url": "https://signaturely.com/contracts/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:35+09:00",
+      "reason": "고정 인쇄형 계약서 및 동의서 PDF 허브 실측 캡처",
+      "sha256": "5390e8d06bcd166591bc9c327f099c37fa67c493d3e14ea8c05bb60cc1f2d44f"
+    },
+    "고정 인쇄형 허브 10 - Formsite.png": {
+      "url": "https://www.formsite.com/templates/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:39+09:00",
+      "reason": "고정 인쇄형 온라인 폼 및 문서 템플릿 실측 캡처",
+      "sha256": "f2285ac2c40241fcc727cd60c50789f0fb9e99b968c5cd5e86e0c67a54862514"
+    }
+  }
+}

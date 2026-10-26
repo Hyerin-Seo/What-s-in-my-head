@@ -1,12 +1,429 @@
 {
   "version": "1.0.0",
   "id": "M70dPvJbR10j",
-  "title": "MangoDoc",
+  "title": "MangoDoc_d1",
   "rootNodes": [
     {
       "id": "1g5fRoVdjegs",
       "text": "핵심 컨셉",
       "children": [
+        {
+          "id": "CYNJorhvGbfR",
+          "text": "핵심 컨셉 한 줄 후보군",
+          "children": [
+            {
+              "id": "szb8FJrREMY1",
+              "text": "1. [1 ➔ 100 프로덕션 & 컴파일러 관점]",
+              "children": [
+                {
+                  "id": "QldpAySTJmcM",
+                  "text": "후보 1: 단 하나의 기획 의도를 결함 없는 방대한 완성형 문서로 빌드하는 문서 엔지니어링 엔진",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792901805863,
+                  "updatedAt": 1792903705740
+                },
+                {
+                  "id": "5pEWOpxfx1qd",
+                  "text": "후보 2: 코딩의 빌드 시스템처럼, 기획자의 '의도(Intent)'를 실제 승인 가능한 '완성형 실체'로 조립해 주는 문서 컴파일러",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792901813077,
+                  "updatedAt": 1792903710323
+                },
+                {
+                  "id": "MATaLTcTxKJL",
+                  "text": "후보 3: 핵심 뼈대 하나로 수십 페이지의 복잡한 문서를 오차 없이 직조(Orchestrate)하는 바이브 다큐먼트 빌더",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792901817853,
+                  "updatedAt": 1792903715909
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792903700522,
+              "updatedAt": 1792903715909
+            },
+            {
+              "id": "hxgbaaizmwV1",
+              "text": "2. [모듈러 조립 & 엔지니어링 관점]",
+              "children": [
+                {
+                  "id": "JyBrkWBuuEvj",
+                  "text": "후보 4: 복잡한 문서를 독립적인 모듈로 쪼개고, 오차 없이 하나로 조립(Assemble)하는 모듈형 문서 컴파일러",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792903726206,
+                  "updatedAt": 1792903726206
+                },
+                {
+                  "id": "lIQfTTyrno3b",
+                  "text": "후보 5: 단건 문서를 쓰듯 가볍게 풀어내고, 100페이지 완성본으로 단단하게 빌드하는 바이브 다큐먼트 시스템",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792903731306,
+                  "updatedAt": 1792903731306
+                },
+                {
+                  "id": "Bnp4Ecty65Wl",
+                  "text": "후보 6: 거대한 비즈니스 문서를 모듈 단위로 스캐폴딩하고 결함 없이 직조해 내는 문서 엔지니어링 엔진",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792903736257,
+                  "updatedAt": 1792903736257
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792903720938,
+              "updatedAt": 1792903726206
+            },
+            {
+              "id": "sILzdc6XbbAl",
+              "text": "3. [생각의 속도와 문서화 속도의 일치 관점 (5대 구현 조건)]",
+              "children": [
+                {
+                  "id": "AXmkhuh3A4hi",
+                  "text": "조건 1. '날것의 생각(Raw Chunk)'을 그대로 삼키는 무마찰 입력 (Zero-Syntax Ingestion)",
+                  "children": [
+                    {
+                      "id": "xXNqmcTpltWm",
+                      "text": "정리해서 넣는 노동의 소멸: 키워드 나열, 거친 메모, 회의 녹취록, 슬랙 캡처 등 비정형 데이터를 형식 없이 던져도 즉시 맥락과 의도로 흡수",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    },
+                    {
+                      "id": "E5pGjGFwG1Hf",
+                      "text": "입력 마찰 제로화: 템플릿 맞추기, 마크다운 문법 정돈 등 사전 가공에 드는 뇌 에너지를 0으로 만들어 생각의 흐름(Flow) 보존",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904388666,
+                  "updatedAt": 1792904388666
+                },
+                {
+                  "id": "7EnRaKHnzxQG",
+                  "text": "조건 2. 의도 즉시 '입체적 뼈대'로 튕겨내기 (Sub-second Scaffolding)",
+                  "children": [
+                    {
+                      "id": "peiQZBtgCBs7",
+                      "text": "백지 공포증(Blank Canvas) 소멸: 단 한 줄의 의도만 던져도 1초 만에 다차원 모듈 뼈대와 캔버스 구조를 즉시 렌더링",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    },
+                    {
+                      "id": "WKgkus2X7P6y",
+                      "text": "검토자/지휘자 위치 선점: 무(無)에서 유(有)를 쓰는 고통을 없애고, 눈앞에 떨어진 구조를 비판·수정·선택하는 주도권 확보",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904388666,
+                  "updatedAt": 1792904388666
+                },
+                {
+                  "id": "y2fMc03pVvkx",
+                  "text": "조건 3. 숲과 나무를 0.1초 만에 오가는 다중 시점 (Multi-scale Semantic Zoom)",
+                  "children": [
+                    {
+                      "id": "ZSmpuHsCuKlu",
+                      "text": "거시 조망(숲)과 미시 편집(나무)의 결합: 캔버스에서 20개 모듈의 인과관계 흐름을 조망하다가, 휠 줌인으로 특정 모듈의 5페이지 줄글을 즉시 인라인 편집",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    },
+                    {
+                      "id": "k10eOfdiLv4M",
+                      "text": "시점 전환 마찰 제로: 화이트보드와 워드프로세서의 경계를 허물어, 전체 구조와 세부 텍스트 사이의 인지적 단절 방지",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904388666,
+                  "updatedAt": 1792904388666
+                },
+                {
+                  "id": "EEIYRUH3laRZ",
+                  "text": "조건 4. 설명하지 않아도 이미 아는 '상시 맥락 인덱싱' (Ambient Grounding)",
+                  "children": [
+                    {
+                      "id": "FclHzvEM6vHG",
+                      "text": "설명의 피로(Context Tax) 제거: 과거 문서, 회의록, 사내 규칙, 기존 운영 데이터를 백그라운드에서 상시 인덱싱",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    },
+                    {
+                      "id": "blvhVTmNF2DT",
+                      "text": "프롬프트리스(Promptless) 지시: \"1호점 기준으로\"라는 짧은 키워드 하나만으로 사내 데이터를 에이전트가 알아서 결합",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904388666,
+                  "updatedAt": 1792904388666
+                },
+                {
+                  "id": "YrUEbVZFVHG3",
+                  "text": "조건 5. 국소 부위 즉시 갱신과 파급 동기화 (In-place Mutation & Ripple Sync)",
+                  "children": [
+                    {
+                      "id": "Z66AnAvuWBeY",
+                      "text": "인라인 즉시 갱신(In-place Diff): 전체 문서를 다시 생성하지 않고, 수정 지시가 떨어진 특정 단락/모듈만 1초 만에 Diff로 즉시 갈아 끼움",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    },
+                    {
+                      "id": "R0jiduHi9tnt",
+                      "text": "모듈 간 자동 정합성 동기화: 한 모듈의 가설/수치(예: 객단가)가 바뀌면, 연결된 다른 모듈(손익 계산서)의 수식과 논리를 실시간 자동 연동 린팅",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904388666,
+                      "updatedAt": 1792904388666
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904388666,
+                  "updatedAt": 1792904388666
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792904388666,
+              "updatedAt": 1792904388666
+            },
+            {
+              "id": "JLowSVKQkGJ4",
+              "text": "4. [시각적 연출과 인지 장악 관점 (내용 4 : 연출 6의 법칙)]",
+              "children": [
+                {
+                  "id": "8NVpS8OsqejX",
+                  "text": "1) 스캔(Scan)의 경제학: 독자는 읽지 않고 3초 만에 스캔한다 (한눈에 안 들어오면 인지 크래시로 독해 포기)",
+                  "children": [
+                    {
+                      "id": "VgQWoWEoZTzy",
+                      "text": "바쁜 의사결정권자는 텍스트 정독을 거부하고 시각 앵커(표, 카드, 다이어그램)만 먼저 포착",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    },
+                    {
+                      "id": "DtkIubcZgKxV",
+                      "text": "기존 LLM의 빽빽한 마크다운 줄글 10페이지가 실무 현장에서 1초 만에 외면당하는 근본 원인",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904654465,
+                  "updatedAt": 1792904654465
+                },
+                {
+                  "id": "8ZeY7SfhWg9W",
+                  "text": "2) 가구 배치 노동(Visual Tax)의 소멸: 글쓰기(40%)보다 박스 치고 선 긋는 배치 노동(60%)에 소진되는 에너지 해방",
+                  "children": [
+                    {
+                      "id": "RgfohjKLWkvY",
+                      "text": "작성자가 파워포인트나 캔버스에서 네모 박스 크기 맞추고 화살표 그리느라 본업 에너지가 고갈되는 현상 차단",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    },
+                    {
+                      "id": "BrsrZ5hiJoYX",
+                      "text": "배치 피로가 사라져야 '생각의 속도'가 멈추지 않고 문서화와 완벽히 동기화됨",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904654465,
+                  "updatedAt": 1792904654465
+                },
+                {
+                  "id": "yWvmafH9Uvgx",
+                  "text": "3) 시맨틱 연출(Semantic Staging): 생각의 구조(대조, 절차, 수치)에 따라 최적의 시각 템플릿으로 즉시 물질화",
+                  "children": [
+                    {
+                      "id": "dCQkwIRzJgSA",
+                      "text": "대립/비교 ➔ 좌우 스플릿 대조 카드로 즉시 렌더링",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    },
+                    {
+                      "id": "RdKxgpPt0TpG",
+                      "text": "시간적 순서 ➔ 3단계 가로형 파이프라인/로드맵 블록으로 즉시 렌더링",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    },
+                    {
+                      "id": "Bh6yvA1I0byi",
+                      "text": "수치/재무 ➔ 하이라이트 KPI 스탯 카드 및 정합성 표로 즉시 렌더링",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    },
+                    {
+                      "id": "OMcZr1VxQU9P",
+                      "text": "모듈 간 관계 ➔ 캔버스 노드와 엣지 그래프로 즉시 조망",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904654465,
+                  "updatedAt": 1792904654465
+                },
+                {
+                  "id": "x9ZNiG9GOAuu",
+                  "text": "4) 캔버스 × 리치 텍스트 결합: 거시적 관계 조망(Canvas)과 미시적 연출(Tiptap)의 무마찰 융합",
+                  "children": [
+                    {
+                      "id": "vGXyosMDvcLF",
+                      "text": "화이트보드와 워드프로세서의 분절을 극복하고, 한 인터페이스 안에서 시각 배치와 고밀도 텍스트가 공존",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792904654465,
+                      "updatedAt": 1792904654465
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792904654465,
+                  "updatedAt": 1792904654465
+                },
+                {
+                  "id": "OQplUg93XydE",
+                  "text": "후보 7: 생각의 알맹이만 던지면, 3초 만에 한눈에 꽂히는 시각적 구조로 빚어내는 비주얼 다큐먼트 빌더",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792904654465,
+                  "updatedAt": 1792904654465
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792904654465,
+              "updatedAt": 1792904654465
+            },
+            {
+              "id": "5lbKxzag5VnM",
+              "text": "5. [제품의 3대 킬러 KPI와 가치 실증 (PandaDoc 벤치마크 기반)]",
+              "children": [
+                {
+                  "id": "CtzilbvNXFc6",
+                  "text": "1) 글로벌 선례(PandaDoc)가 증명한 3대 팩트",
+                  "children": [
+                    {
+                      "id": "k7BviUhxOFdU",
+                      "text": "작성 시간 65% 단축: 템플릿과 CRM 연동으로 실무자 1인당 주당 12시간 행정 노동 세이브",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792908188837,
+                      "updatedAt": 1792908188837
+                    },
+                    {
+                      "id": "T5sniJckZDQ1",
+                      "text": "시각적 연출 시 계약 체결률 +32% 폭증: 줄글 제안서 대비 멀티미디어/시각 블록의 압도적 전환율 증명",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792908188837,
+                      "updatedAt": 1792908188837
+                    },
+                    {
+                      "id": "nS4MDDMKPgcQ",
+                      "text": "의사결정 사이클의 극단적 단축: 전체 문서의 38%가 발송 후 1시간 이내 서명 완료 (당일 클로징)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792908188837,
+                      "updatedAt": 1792908188837
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792908188837,
+                  "updatedAt": 1792908188837
+                },
+                {
+                  "id": "3xouIczJv1EA",
+                  "text": "2) MangoDoc이 지식 노동자에게 입증해야 할 3대 킬러 KPI",
+                  "children": [
+                    {
+                      "id": "qG9EpviQ3qfA",
+                      "text": "① 초안 도출 시간 단축 (Time-to-Draft): 며칠씩 백지에서 끙끙 앓던 시간을 1의 의도에서 1초 만에 100의 뼈대로 단축",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792908188837,
+                      "updatedAt": 1792908188837
+                    },
+                    {
+                      "id": "VAtlX2LU2Fie",
+                      "text": "② 초회 승인 통과율 극대화 (First-pass Approval Rate): 도메인 린터와 사전 예외 방어로 상사/독자의 반려 없는 원패스 LGTM 달성",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792908188837,
+                      "updatedAt": 1792908188837
+                    },
+                    {
+                      "id": "gPewsLKDpdDT",
+                      "text": "③ 시각적 인지 장악 시간 (Time-to-Comprehend): 독자가 100페이지를 읽느라 지치지 않고, 3초 만에 숲과 핵심 수치를 스캔하고 결단하게 만듦",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1792908188837,
+                      "updatedAt": 1792908188837
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1792908188837,
+                  "updatedAt": 1792908188837
+                },
+                {
+                  "id": "7hzAzwk4FRpm",
+                  "text": "후보 8: 작성 시간은 65% 줄이고, 시각적 모듈 앙상블로 독자의 원패스 승인(LGTM)을 이끌어내는 차세대 문서 OS",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908188837,
+                  "updatedAt": 1792908188837
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792908188837,
+              "updatedAt": 1792908188837
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792901799887,
+          "updatedAt": 1792901805863
+        },
         {
           "id": "RD2R45lO8jNS",
           "text": "커서처럼 바이브 라이팅으로 복잡하고 분량이 많은 문서 작업을 80프로 이상 줄여주거나 도와주는(시뮬레이터?)",
@@ -329,7 +746,7 @@
                   "updatedAt": 1792835742968
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1792830837744,
               "updatedAt": 1792830895618
             },
@@ -923,7 +1340,7 @@
                               "updatedAt": 1792845296104
                             }
                           ],
-                          "isFolded": false,
+                          "isFolded": true,
                           "createdAt": 1792845296104,
                           "updatedAt": 1792845296104
                         },
@@ -948,7 +1365,7 @@
                               "updatedAt": 1792845296104
                             }
                           ],
-                          "isFolded": false,
+                          "isFolded": true,
                           "createdAt": 1792845296104,
                           "updatedAt": 1792845296104
                         }
@@ -982,7 +1399,7 @@
                               "updatedAt": 1792845296104
                             }
                           ],
-                          "isFolded": false,
+                          "isFolded": true,
                           "createdAt": 1792845296104,
                           "updatedAt": 1792845296104
                         },
@@ -1007,7 +1424,7 @@
                               "updatedAt": 1792845296104
                             }
                           ],
-                          "isFolded": false,
+                          "isFolded": true,
                           "createdAt": 1792845296104,
                           "updatedAt": 1792845296104
                         }
@@ -1041,7 +1458,7 @@
                               "updatedAt": 1792845296104
                             }
                           ],
-                          "isFolded": false,
+                          "isFolded": true,
                           "createdAt": 1792845296104,
                           "updatedAt": 1792845296104
                         },
@@ -1066,7 +1483,7 @@
                               "updatedAt": 1792845296104
                             }
                           ],
-                          "isFolded": false,
+                          "isFolded": true,
                           "createdAt": 1792845296104,
                           "updatedAt": 1792845296104
                         }
@@ -1289,12 +1706,12 @@
                   "updatedAt": 1792846307015
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1792846096305,
               "updatedAt": 1792846609758
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792830746458,
           "updatedAt": 1792831018910
         },
@@ -1328,6 +1745,7 @@
                   "updatedAt": 1792830974257
                 }
               ],
+              "isFolded": true,
               "createdAt": 1792830933628,
               "updatedAt": 1792830936511
             }
@@ -1377,7 +1795,7 @@
                   "updatedAt": 1792847585176
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1792847585176,
               "updatedAt": 1792847585176
             },
@@ -1426,7 +1844,7 @@
                   "updatedAt": 1792847585176
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1792847585176,
               "updatedAt": 1792847585176
             },
@@ -1475,14 +1893,155 @@
                   "updatedAt": 1792847585176
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1792847585176,
               "updatedAt": 1792847585176
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792847585176,
           "updatedAt": 1792847585176
+        },
+        {
+          "id": "eAurpAHwEkjp",
+          "text": "문서 플랫폼 3대 진화 계보와 MangoDoc의 포지셔닝 (예스폼 ➔ 판다독 ➔ 망고독)",
+          "children": [
+            {
+              "id": "ukya9Xy0lMEG",
+              "text": "1. [1세대] 정적 템플릿 창고 (예스폼 / Yesform)",
+              "children": [
+                {
+                  "id": "JJSXSAPsRiAj",
+                  "text": "패러다임: \"남이 쓴 100만 개 파일 중 골라서 다운받아 네가 직접 고쳐 써라.\" (정적 파일 다운로드)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                },
+                {
+                  "id": "7yOZ6TN6pWY6",
+                  "text": "핵심 효용: 신규 문서 작성 시 백지 공포증(Blank Canvas)과 보일러플레이트 세팅 마찰을 덜어줌",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                },
+                {
+                  "id": "dMMmjVOwyxd2",
+                  "text": "치명적 한계: 다운로드 후 수작업 노가다(내용 채우기/수정)는 100% 인간의 몫, 논리/수식 린팅 및 협업 전무",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792908848268,
+              "updatedAt": 1792908848268
+            },
+            {
+              "id": "d7jZqW7UexRh",
+              "text": "2. [2세대] 거래 서식 웹 자동화 & CPQ (판다독 / PandaDoc)",
+              "children": [
+                {
+                  "id": "MY50iHl2sr8P",
+                  "text": "패러다임: \"문서를 웹 블록으로 만들고, 고객에게 보내 실시간 서명과 결제를 받아라.\" (살아있는 인터랙티브 웹 앱)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                },
+                {
+                  "id": "kTI0CIZZaUYs",
+                  "text": "핵심 효용: 영업 서류(제안·견적·계약) 작성 시간 65% 단축, 멀티미디어 시각 연출로 계약 체결률 +32% 폭증, 1시간 내 서명 38%",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                },
+                {
+                  "id": "8OxLuivQ7MGj",
+                  "text": "치명적 한계: 이미 가격과 제품이 정해진 정형화된 영업 폼(Form)에 국한, 비정형 사고/기획의 조립 불가, A4 세로 인쇄 뷰에 갇힘",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792908848268,
+              "updatedAt": 1792908848268
+            },
+            {
+              "id": "31qFYOWatHX8",
+              "text": "3. [3세대] 지식 엔지니어링 & 바이브 다큐먼트 빌더 (망고독 / MangoDoc)",
+              "children": [
+                {
+                  "id": "i5U80m3U95H5",
+                  "text": "패러다임: \"템플릿을 찾을 필요 없이, 네 날것의 생각만 던지면 즉시 모듈러 뼈대로 스캐폴딩하고, 시각적 연출과 린팅을 거쳐 완성형 실체로 직조한다.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                },
+                {
+                  "id": "P5tEStZJ12rJ",
+                  "text": "핵심 혁신: 비정형 생각(Input) ➔ 시각적 앙상블 모듈 실체(Output), 생각의 속도와 문서화 속도의 일치",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                },
+                {
+                  "id": "JOEEByyzJkuq",
+                  "text": "차별화 무기: 캔버스(숲) × 리치 텍스트(나무)의 시맨틱 줌, 3단계 계층형 린터, 100페이지를 20개 모듈로 결합하는 어셈블리 아키텍처",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792908848268,
+              "updatedAt": 1792908848268
+            },
+            {
+              "id": "8ScpUN41YmS8",
+              "text": "4. 세대별 비교 요약: 정적 창고(1세대) ➔ 영업 자동화(2세대) ➔ 생각의 조립 OS(3세대)",
+              "children": [
+                {
+                  "id": "EawX6pGY20bw",
+                  "text": "1세대(예스폼): 남의 과거 문서를 베끼는 정적 파일 창고",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                },
+                {
+                  "id": "75Daf9a2DbZc",
+                  "text": "2세대(판다독): 영업 거래를 닫는 정형화된 서식 자동화기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                },
+                {
+                  "id": "9QPh8Vi4GeTs",
+                  "text": "3세대(망고독): 내 머릿속 생각을 즉시 최적의 구조와 시각 연출로 빚어내는 지식 엔지니어링 엔진",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792908848268,
+                  "updatedAt": 1792908848268
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792908848268,
+              "updatedAt": 1792908848268
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1792908848268,
+          "updatedAt": 1792908848268
         }
       ],
       "isFolded": false,
@@ -1492,5 +2051,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1792830746458,
-  "updatedAt": 1792898977716
+  "updatedAt": 1792908886589
 }
