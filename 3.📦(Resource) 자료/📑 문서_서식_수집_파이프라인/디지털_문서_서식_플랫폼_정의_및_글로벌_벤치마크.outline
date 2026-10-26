@@ -1073,31 +1073,6 @@
           "updatedAt": 1792923998277
         },
         {
-          "id": "TUUmvITmECO4",
-          "text": "[[02. (과금) 유료 서식 수급처 Top 10#10. Jotform — Form Templates Directory|Jotform 폼템플릿 (해외 웹폼)]]",
-          "children": [
-            {
-              "id": "wW0CImhBtFiF",
-              "text": "https://www.jotform.com/form-templates/",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1792922887816,
-              "updatedAt": 1792922887816
-            },
-            {
-              "id": "98fKbSDvGiWp",
-              "text": "【유료】 【영업·제안 · 제품·엔지니어링】 【공식 플랫폼】 【클라우드 블록형 · 고정 인쇄형】 【자동화 연산 양식 · 빈 뼈대 양식】 【크로스보더 다국어형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1792923881226,
-              "updatedAt": 1792923881226
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1792922657992,
-          "updatedAt": 1792923998277
-        },
-        {
           "id": "VXoBmn5aI1YH",
           "text": "[[03. (도메인) 경영·전략 서식 수급처 Top 10#6. 중소벤처기업부 — 기업마당 기업업무용 서식|기업마당 기업업무용 서식 (국내 공공)]]",
           "children": [
@@ -1397,27 +1372,105 @@
           "updatedAt": 1792927224801
         },
         {
-          "id": "IU1cyPpDRljX",
-          "text": "[[05. (도메인) 재무·회계 서식 수급처 Top 10#9. Microsoft Create — 예산 및 재무 스프레드시트|Microsoft Create 예산 템플릿 (글로벌 오피스)]]",
+          "id": "5AAg9QeWj50V",
+          "text": "Microsoft Create (create.microsoft.com)",
           "children": [
             {
-              "id": "bOY1IskLav2H",
-              "text": "https://create.microsoft.com/ko-kr/templates/budgets",
-              "children": [],
+              "id": "IU1cyPpDRljX",
+              "text": "[[05. (도메인) 재무·회계 서식 수급처 Top 10#9. Microsoft Create — 예산 및 재무 스프레드시트|Microsoft Create 예산 템플릿 (글로벌 오피스)]]",
+              "children": [
+                {
+                  "id": "bOY1IskLav2H",
+                  "text": "https://create.microsoft.com/ko-kr/templates/budgets",
+                  "children": [],
+                  "createdAt": 1792927237017,
+                  "updatedAt": 1792927237017
+                },
+                {
+                  "id": "NaX1TLP01Jq2",
+                  "text": "【무료】 【재무·회계】 【공식 플랫폼】 【스프레드시트 수식형 · 클라우드 블록형】 【빈 뼈대 양식 · 자동화 연산 양식】 【국내 표준형 · 글로벌 영미권형】 【완전 개방형】 【공개 다운로드형 · 웹 뷰어 전용형】",
+                  "children": [],
+                  "createdAt": 1792927237017,
+                  "updatedAt": 1792927237017
+                }
+              ],
+              "isFolded": true,
               "createdAt": 1792927237017,
-              "updatedAt": 1792927237017
+              "updatedAt": 1792974963403
             },
             {
-              "id": "NaX1TLP01Jq2",
-              "text": "【무료】 【재무·회계】 【공식 플랫폼】 【스프레드시트 수식형 · 클라우드 블록형】 【빈 뼈대 양식 · 자동화 연산 양식】 【국내 표준형 · 글로벌 영미권형】 【완전 개방형】 【공개 다운로드형 · 웹 뷰어 전용형】",
-              "children": [],
-              "createdAt": 1792927237017,
-              "updatedAt": 1792927237017
+              "id": "kVswct73nIGP",
+              "text": "[[13. (포맷) 문서 텍스트형 서식 수급처 Top 10#6. Microsoft Create — Word Templates|Microsoft Create Word (글로벌 오피스 공식 Word 템플릿 허브)]]",
+              "children": [
+                {
+                  "id": "fvsPYcix05qw",
+                  "text": "https://create.microsoft.com/en-us/templates/word",
+                  "children": [],
+                  "createdAt": 1792970762690,
+                  "updatedAt": 1792970762690
+                },
+                {
+                  "id": "gyRnGPa6lSMK",
+                  "text": "【무료 · 유료】 【경영·전략 · 운영·매뉴얼】 【공식 플랫폼】 【문서 텍스트형】 【빈 뼈대 양식 · 실전 완성 사례】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+                  "children": [],
+                  "createdAt": 1792970762690,
+                  "updatedAt": 1792970762690
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792970762690,
+              "updatedAt": 1792974970075
+            },
+            {
+              "id": "CzJDmTGYwFwx",
+              "text": "[[14. (포맷) 스프레드시트 수식형 서식 수급처 Top 10#6. Microsoft Create — Excel Templates|Microsoft Create Excel (글로벌 오피스 공식 Excel 수식 템플릿 허브)]]",
+              "children": [
+                {
+                  "id": "X8Ow7WHd8sjD",
+                  "text": "https://create.microsoft.com/en-us/templates/excel",
+                  "children": [],
+                  "createdAt": 1792971075592,
+                  "updatedAt": 1792971075592
+                },
+                {
+                  "id": "35vJ1IAuUM18",
+                  "text": "【무료 · 유료】 【재무·회계 · 경영·전략】 【공식 플랫폼】 【스프레드시트 수식형】 【빈 뼈대 양식 · 자동화 연산 양식】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+                  "children": [],
+                  "createdAt": 1792971075592,
+                  "updatedAt": 1792971075592
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792971075592,
+              "updatedAt": 1792974975163
+            },
+            {
+              "id": "zYIZHjgscyeh",
+              "text": "[[15. (포맷) 슬라이드 시각형 서식 수급처 Top 10#6. Microsoft Create — PowerPoint Templates|Microsoft Create PowerPoint (글로벌 오피스 공식 PowerPoint 템플릿 허브)]]",
+              "children": [
+                {
+                  "id": "RaupfjP9ShsQ",
+                  "text": "https://create.microsoft.com/en-us/templates/powerpoint",
+                  "children": [],
+                  "createdAt": 1792971352256,
+                  "updatedAt": 1792971352256
+                },
+                {
+                  "id": "QSgKt8hfHwkb",
+                  "text": "【무료 · 유료】 【경영·전략 · 영업·제안】 【공식 플랫폼】 【슬라이드 시각형】 【빈 뼈대 양식 · 실전 완성 사례】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+                  "children": [],
+                  "createdAt": 1792971352256,
+                  "updatedAt": 1792971352256
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792971352256,
+              "updatedAt": 1792974980276
             }
           ],
-          "isFolded": true,
-          "createdAt": 1792927237017,
-          "updatedAt": 1792927237017
+          "isFolded": false,
+          "createdAt": 1792974956206,
+          "updatedAt": 1792974980276
         },
         {
           "id": "xuZuyHuGGMq3",
@@ -1714,9 +1767,9 @@
               "updatedAt": 1792928385935
             }
           ],
+          "isFolded": true,
           "createdAt": 1792928385935,
-          "updatedAt": 1792928385935,
-          "isFolded": true
+          "updatedAt": 1792928385935
         },
         {
           "id": "D7FnRzSyAoay",
@@ -1737,9 +1790,9 @@
               "updatedAt": 1792928386279
             }
           ],
+          "isFolded": true,
           "createdAt": 1792928386279,
-          "updatedAt": 1792928386279,
-          "isFolded": true
+          "updatedAt": 1792928386279
         },
         {
           "id": "C3JiuGu5RYOh",
@@ -1760,9 +1813,9 @@
               "updatedAt": 1792928386607
             }
           ],
+          "isFolded": true,
           "createdAt": 1792928386607,
-          "updatedAt": 1792928386607,
-          "isFolded": true
+          "updatedAt": 1792928386607
         },
         {
           "id": "et7tgaWUUtpY",
@@ -1783,9 +1836,9 @@
               "updatedAt": 1792928386992
             }
           ],
+          "isFolded": true,
           "createdAt": 1792928386992,
-          "updatedAt": 1792928386992,
-          "isFolded": true
+          "updatedAt": 1792928386992
         },
         {
           "id": "GM69Z5dpqAks",
@@ -1806,9 +1859,9 @@
               "updatedAt": 1792931754266
             }
           ],
+          "isFolded": true,
           "createdAt": 1792931754266,
-          "updatedAt": 1792931754266,
-          "isFolded": true
+          "updatedAt": 1792931754266
         },
         {
           "id": "IXNlZfpirM6Z",
@@ -1829,9 +1882,9 @@
               "updatedAt": 1792931754601
             }
           ],
+          "isFolded": true,
           "createdAt": 1792931754601,
-          "updatedAt": 1792931754601,
-          "isFolded": true
+          "updatedAt": 1792931754601
         },
         {
           "id": "wXwtduMN7yDw",
@@ -1852,9 +1905,9 @@
               "updatedAt": 1792931754903
             }
           ],
+          "isFolded": true,
           "createdAt": 1792931754903,
-          "updatedAt": 1792931754903,
-          "isFolded": true
+          "updatedAt": 1792931754903
         },
         {
           "id": "se8tA0KW3DC7",
@@ -1875,9 +1928,9 @@
               "updatedAt": 1792931755210
             }
           ],
+          "isFolded": true,
           "createdAt": 1792931755210,
-          "updatedAt": 1792931755210,
-          "isFolded": true
+          "updatedAt": 1792931755210
         },
         {
           "id": "TJ1K2lMK3adg",
@@ -1898,9 +1951,9 @@
               "updatedAt": 1792931755503
             }
           ],
+          "isFolded": true,
           "createdAt": 1792931755503,
-          "updatedAt": 1792931755503,
-          "isFolded": true
+          "updatedAt": 1792931755503
         },
         {
           "id": "OeY96z6sSUtr",
@@ -1921,9 +1974,9 @@
               "updatedAt": 1792932014509
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932014509,
-          "updatedAt": 1792932014509,
-          "isFolded": true
+          "updatedAt": 1792932014509
         },
         {
           "id": "uqezOnSNRzOh",
@@ -1944,9 +1997,9 @@
               "updatedAt": 1792932014848
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932014848,
-          "updatedAt": 1792932014848,
-          "isFolded": true
+          "updatedAt": 1792932014848
         },
         {
           "id": "j7ITSFeTjw1W",
@@ -1967,9 +2020,9 @@
               "updatedAt": 1792932015138
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932015138,
-          "updatedAt": 1792932015138,
-          "isFolded": true
+          "updatedAt": 1792932015138
         },
         {
           "id": "OI8gONZulHab",
@@ -1990,9 +2043,9 @@
               "updatedAt": 1792932015426
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932015426,
-          "updatedAt": 1792932015426,
-          "isFolded": true
+          "updatedAt": 1792932015426
         },
         {
           "id": "vyTBV7JcvtnJ",
@@ -2013,9 +2066,9 @@
               "updatedAt": 1792932015742
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932015742,
-          "updatedAt": 1792932015742,
-          "isFolded": true
+          "updatedAt": 1792932015742
         },
         {
           "id": "rcIcRRZVMdYq",
@@ -2036,9 +2089,9 @@
               "updatedAt": 1792932532114
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932532114,
-          "updatedAt": 1792932532114,
-          "isFolded": true
+          "updatedAt": 1792932532114
         },
         {
           "id": "jx8ngyE61Tyu",
@@ -2059,9 +2112,9 @@
               "updatedAt": 1792932532410
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932532410,
-          "updatedAt": 1792932532410,
-          "isFolded": true
+          "updatedAt": 1792932532410
         },
         {
           "id": "hmr1tJBleLeq",
@@ -2082,9 +2135,9 @@
               "updatedAt": 1792932532731
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932532731,
-          "updatedAt": 1792932532731,
-          "isFolded": true
+          "updatedAt": 1792932532731
         },
         {
           "id": "k6e1R3hNtha8",
@@ -2105,9 +2158,9 @@
               "updatedAt": 1792932533011
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932533011,
-          "updatedAt": 1792932533011,
-          "isFolded": true
+          "updatedAt": 1792932533011
         },
         {
           "id": "Qlcfx1CpyVet",
@@ -2128,9 +2181,9 @@
               "updatedAt": 1792932533328
             }
           ],
+          "isFolded": true,
           "createdAt": 1792932533328,
-          "updatedAt": 1792932533328,
-          "isFolded": true
+          "updatedAt": 1792932533328
         },
         {
           "id": "aXVG6z3FOYRj",
@@ -2151,9 +2204,9 @@
               "updatedAt": 1792933112071
             }
           ],
+          "isFolded": true,
           "createdAt": 1792933112071,
-          "updatedAt": 1792933112071,
-          "isFolded": true
+          "updatedAt": 1792933112071
         },
         {
           "id": "JQ1T15vRUroS",
@@ -2174,9 +2227,9 @@
               "updatedAt": 1792933112399
             }
           ],
+          "isFolded": true,
           "createdAt": 1792933112399,
-          "updatedAt": 1792933112399,
-          "isFolded": true
+          "updatedAt": 1792933112399
         },
         {
           "id": "U7D00NjIQUzj",
@@ -2197,9 +2250,9 @@
               "updatedAt": 1792933112682
             }
           ],
+          "isFolded": true,
           "createdAt": 1792933112682,
-          "updatedAt": 1792933112682,
-          "isFolded": true
+          "updatedAt": 1792933112682
         },
         {
           "id": "L5p8KzJU6EKr",
@@ -2220,9 +2273,9 @@
               "updatedAt": 1792933112998
             }
           ],
+          "isFolded": true,
           "createdAt": 1792933112998,
-          "updatedAt": 1792933112998,
-          "isFolded": true
+          "updatedAt": 1792933112998
         },
         {
           "id": "WzLY54m7bbGq",
@@ -2243,9 +2296,9 @@
               "updatedAt": 1792933113314
             }
           ],
+          "isFolded": true,
           "createdAt": 1792933113314,
-          "updatedAt": 1792933113314,
-          "isFolded": true
+          "updatedAt": 1792933113314
         },
         {
           "id": "adJLJTBM41Qn",
@@ -2798,28 +2851,6 @@
           "updatedAt": 1792970012944
         },
         {
-          "id": "kVswct73nIGP",
-          "text": "[[13. (포맷) 문서 텍스트형 서식 수급처 Top 10#6. Microsoft Create — Word Templates|Microsoft Create Word (글로벌 오피스 공식 Word 템플릿 허브)]]",
-          "children": [
-            {
-              "id": "fvsPYcix05qw",
-              "text": "https://create.microsoft.com/en-us/templates/word",
-              "children": [],
-              "createdAt": 1792970762690,
-              "updatedAt": 1792970762690
-            },
-            {
-              "id": "gyRnGPa6lSMK",
-              "text": "【무료 · 유료】 【경영·전략 · 운영·매뉴얼】 【공식 플랫폼】 【문서 텍스트형】 【빈 뼈대 양식 · 실전 완성 사례】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
-              "children": [],
-              "createdAt": 1792970762690,
-              "updatedAt": 1792970762690
-            }
-          ],
-          "createdAt": 1792970762690,
-          "updatedAt": 1792970762690
-        },
-        {
           "id": "mydoi5eMAnmT",
           "text": "[[13. (포맷) 문서 텍스트형 서식 수급처 Top 10#7. Apache OpenOffice — Templates Repository|Apache OpenOffice (글로벌 오픈소스 ODF/Writer 서식 리포지토리)]]",
           "children": [
@@ -2908,28 +2939,6 @@
           "updatedAt": 1792970764033
         },
         {
-          "id": "CzJDmTGYwFwx",
-          "text": "[[14. (포맷) 스프레드시트 수식형 서식 수급처 Top 10#6. Microsoft Create — Excel Templates|Microsoft Create Excel (글로벌 오피스 공식 Excel 수식 템플릿 허브)]]",
-          "children": [
-            {
-              "id": "X8Ow7WHd8sjD",
-              "text": "https://create.microsoft.com/en-us/templates/excel",
-              "children": [],
-              "createdAt": 1792971075592,
-              "updatedAt": 1792971075592
-            },
-            {
-              "id": "35vJ1IAuUM18",
-              "text": "【무료 · 유료】 【재무·회계 · 경영·전략】 【공식 플랫폼】 【스프레드시트 수식형】 【빈 뼈대 양식 · 자동화 연산 양식】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
-              "children": [],
-              "createdAt": 1792971075592,
-              "updatedAt": 1792971075592
-            }
-          ],
-          "createdAt": 1792971075592,
-          "updatedAt": 1792971075592
-        },
-        {
           "id": "6O6mB3GBODrl",
           "text": "[[14. (포맷) 스프레드시트 수식형 서식 수급처 Top 10#7. Sheetgo — Workflow & Spreadsheet Templates|Sheetgo (글로벌 스프레드시트 워크플로우 및 자동화 시트 템플릿)]]",
           "children": [
@@ -3016,28 +3025,6 @@
           ],
           "createdAt": 1792971076891,
           "updatedAt": 1792971076891
-        },
-        {
-          "id": "zYIZHjgscyeh",
-          "text": "[[15. (포맷) 슬라이드 시각형 서식 수급처 Top 10#6. Microsoft Create — PowerPoint Templates|Microsoft Create PowerPoint (글로벌 오피스 공식 PowerPoint 템플릿 허브)]]",
-          "children": [
-            {
-              "id": "RaupfjP9ShsQ",
-              "text": "https://create.microsoft.com/en-us/templates/powerpoint",
-              "children": [],
-              "createdAt": 1792971352256,
-              "updatedAt": 1792971352256
-            },
-            {
-              "id": "QSgKt8hfHwkb",
-              "text": "【무료 · 유료】 【경영·전략 · 영업·제안】 【공식 플랫폼】 【슬라이드 시각형】 【빈 뼈대 양식 · 실전 완성 사례】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
-              "children": [],
-              "createdAt": 1792971352256,
-              "updatedAt": 1792971352256
-            }
-          ],
-          "createdAt": 1792971352256,
-          "updatedAt": 1792971352256
         },
         {
           "id": "SAplhUZFLXo0",
@@ -3236,14 +3223,158 @@
           ],
           "createdAt": 1792971940681,
           "updatedAt": 1792971940681
+        },
+        {
+          "id": "SKtWG5IPPjxX",
+          "text": "Jotform (jotform.com)",
+          "children": [
+            {
+              "id": "TUUmvITmECO4",
+              "text": "[[02. (과금) 유료 서식 수급처 Top 10#10. Jotform — Form Templates Directory|Jotform 폼템플릿 (해외 웹폼)]]",
+              "children": [
+                {
+                  "id": "wW0CImhBtFiF",
+                  "text": "https://www.jotform.com/form-templates/",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792922887816,
+                  "updatedAt": 1792922887816
+                },
+                {
+                  "id": "98fKbSDvGiWp",
+                  "text": "【유료】 【영업·제안 · 제품·엔지니어링】 【공식 플랫폼】 【클라우드 블록형 · 고정 인쇄형】 【자동화 연산 양식 · 빈 뼈대 양식】 【크로스보더 다국어형】 【상업용 라이선스 구매형】 【회원가입 인증형】",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1792923881226,
+                  "updatedAt": 1792923881226
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1792922657992,
+              "updatedAt": 1792975728477
+            },
+            {
+              "id": "7hwB7jjiDdmy",
+              "text": "[[17. (포맷) 고정 인쇄형 서식 수급처 Top 10#6. Jotform — PDF Templates Directory|Jotform PDF 템플릿 (글로벌 PDF 서식 카탈로그)]]",
+              "children": [
+                {
+                  "id": "sLCGSWYwUEFv",
+                  "text": "https://www.jotform.com/pdf-templates/",
+                  "children": [],
+                  "createdAt": 1792975739038,
+                  "updatedAt": 1792975739038
+                },
+                {
+                  "id": "gBAZH395NjmO",
+                  "text": "【무료 · 유료】 【경영·전략 · 운영·매뉴얼】 【공식 플랫폼】 【고정 인쇄형】 【빈 뼈대 양식】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+                  "children": [],
+                  "createdAt": 1792975739038,
+                  "updatedAt": 1792975739038
+                }
+              ],
+              "createdAt": 1792975739038,
+              "updatedAt": 1792975739038
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1792975723607,
+          "updatedAt": 1792975728477
+        },
+        {
+          "id": "4eMRfnEq9uMk",
+          "text": "[[17. (포맷) 고정 인쇄형 서식 수급처 Top 10#7. PDFescape — Free Online PDF Templates & Forms|PDFescape (온라인 PDF 에디터 및 기본 서식)]]",
+          "children": [
+            {
+              "id": "fjcnMfleZr8G",
+              "text": "https://www.pdfescape.com/",
+              "children": [],
+              "createdAt": 1792975748055,
+              "updatedAt": 1792975748055
+            },
+            {
+              "id": "mTJ0ZwILTx1G",
+              "text": "【무료】 【경영·전략 · 운영·매뉴얼】 【공식 플랫폼】 【고정 인쇄형】 【빈 뼈대 양식】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792975748055,
+              "updatedAt": 1792975748055
+            }
+          ],
+          "createdAt": 1792975748055,
+          "updatedAt": 1792975748055
+        },
+        {
+          "id": "VuTXROdmcFW4",
+          "text": "[[17. (포맷) 고정 인쇄형 서식 수급처 Top 10#8. SampleForms — Free Business & Legal PDF Forms|SampleForms (비즈니스·법률 PDF 양식 갤러리)]]",
+          "children": [
+            {
+              "id": "bu6rDR5HWojc",
+              "text": "https://www.sampleforms.com/",
+              "children": [],
+              "createdAt": 1792975755133,
+              "updatedAt": 1792975755133
+            },
+            {
+              "id": "uBoKHB4Ks0e7",
+              "text": "【무료】 【경영·전략 · 법률·규약】 【공식 플랫폼】 【고정 인쇄형】 【빈 뼈대 양식】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792975755133,
+              "updatedAt": 1792975755133
+            }
+          ],
+          "createdAt": 1792975755133,
+          "updatedAt": 1792975755133
+        },
+        {
+          "id": "rIO1yB0mopa3",
+          "text": "[[17. (포맷) 고정 인쇄형 서식 수급처 Top 10#9. Signaturely — Free Contract & Agreement Templates|Signaturely (온라인 전자서명용 표준 계약서 PDF)]]",
+          "children": [
+            {
+              "id": "MfKa4Q18qMZt",
+              "text": "https://signaturely.com/contracts/",
+              "children": [],
+              "createdAt": 1792975764453,
+              "updatedAt": 1792975764453
+            },
+            {
+              "id": "syz6w79AMUia",
+              "text": "【무료】 【법률·규약 · 경영·전략】 【공식 플랫폼】 【고정 인쇄형】 【가이드·해설 동반 양식】 【글로벌 영미권형】 【개인 이용 한정형】 【공개 다운로드형】",
+              "children": [],
+              "createdAt": 1792975764453,
+              "updatedAt": 1792975764453
+            }
+          ],
+          "createdAt": 1792975764453,
+          "updatedAt": 1792975764453
+        },
+        {
+          "id": "cpFPzPC0NuZU",
+          "text": "[[17. (포맷) 고정 인쇄형 서식 수급처 Top 10#10. Formsite — Online Form & Document Templates|Formsite (온라인 폼 및 인쇄 문서 템플릿 카탈로그)]]",
+          "children": [
+            {
+              "id": "HMRZTYVGogki",
+              "text": "https://www.formsite.com/templates/",
+              "children": [],
+              "createdAt": 1792975771097,
+              "updatedAt": 1792975771097
+            },
+            {
+              "id": "NC1JuMWHUMT3",
+              "text": "【유료】 【경영·전략 · 운영·매뉴얼】 【공식 플랫폼】 【고정 인쇄형】 【빈 뼈대 양식】 【글로벌 영미권형】 【플랫폼 폐쇄형】 【회원가입 인증형】",
+              "children": [],
+              "createdAt": 1792975771097,
+              "updatedAt": 1792975771097
+            }
+          ],
+          "createdAt": 1792975771097,
+          "updatedAt": 1792975771097
         }
       ],
       "isFolded": false,
       "createdAt": 1792922657992,
-      "updatedAt": 1792922657992
+      "updatedAt": 1792975771097
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792910941719,
-  "updatedAt": 1792967451496
+  "updatedAt": 1792977752988
 }

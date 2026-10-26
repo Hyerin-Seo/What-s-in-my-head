@@ -2351,6 +2351,41 @@
         900
       ],
       "sha256": "e320387fa54275e027f62b8fc28cd0fa50f3d84e526736e0223ae503b9332800"
+    },
+    "고정 인쇄형 허브 06 - Jotform PDF.png": {
+      "url": "https://www.jotform.com/pdf-templates/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:17+09:00",
+      "reason": "고정 인쇄형 PDF 서식 카탈로그 실측 캡처",
+      "sha256": "10e9570244bb5f07d9c34c68996812e85f37125009ccdde0a89a955692480900"
+    },
+    "고정 인쇄형 허브 07 - PDFescape.png": {
+      "url": "https://www.pdfescape.com/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:23+09:00",
+      "reason": "고정 인쇄형 PDF 온라인 에디터 및 양식 허브 실측 캡처",
+      "sha256": "fc088c6f39067f5cf91e7a73b5e5e4b8dbab73cf586c50893c6d79a8c7f9d29b"
+    },
+    "고정 인쇄형 허브 08 - SampleForms.png": {
+      "url": "https://www.sampleforms.com/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:29+09:00",
+      "reason": "고정 인쇄형 비즈니스 및 법률 PDF 양식 허브 실측 캡처",
+      "sha256": "8170c673448f6456fe83c94ea0b44e6bc139cdd568c79461f01fca6fca9bb56c"
+    },
+    "고정 인쇄형 허브 09 - Signaturely.png": {
+      "url": "https://signaturely.com/contracts/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:35+09:00",
+      "reason": "고정 인쇄형 계약서 및 동의서 PDF 허브 실측 캡처",
+      "sha256": "5390e8d06bcd166591bc9c327f099c37fa67c493d3e14ea8c05bb60cc1f2d44f"
+    },
+    "고정 인쇄형 허브 10 - Formsite.png": {
+      "url": "https://www.formsite.com/templates/",
+      "source": "visible-browser",
+      "captured_at": "2026-10-26T09:46:39+09:00",
+      "reason": "고정 인쇄형 온라인 폼 및 문서 템플릿 실측 캡처",
+      "sha256": "f2285ac2c40241fcc727cd60c50789f0fb9e99b968c5cd5e86e0c67a54862514"
     }
   }
 }
