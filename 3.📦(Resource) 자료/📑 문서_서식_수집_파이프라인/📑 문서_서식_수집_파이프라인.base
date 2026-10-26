@@ -74,5 +74,7 @@ views:
         direction: DESC
     summaries:
       유형: Filled
+  - type: table
+    name: 뷰
 newItemFolder: 3.📦(Resource) 자료/📑 문서_서식_수집_파이프라인
 newItemTemplate: 3.📦(Resource) 자료/📑 문서_서식_수집_파이프라인/!(Template) 서식 수급처 허브 레퍼런스.md

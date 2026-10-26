@@ -132,7 +132,7 @@
               "updatedAt": 1791865738321
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791867426072
         },
@@ -167,7 +167,7 @@
               "updatedAt": 1791866161974
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791871151778
         },
@@ -192,7 +192,7 @@
               "updatedAt": 1791865738321
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791872434146
         },
@@ -315,7 +315,7 @@
               "updatedAt": 1791867403111
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1791865738321,
           "updatedAt": 1791872059041
         },
@@ -348,7 +348,7 @@
               "updatedAt": 1791872574909
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "note": "여기가 서브 노트. \n두 줄 이상 가면 알아서 줄임 표시",
           "createdAt": 1791865738321,
           "updatedAt": 1791872429311
@@ -534,7 +534,7 @@
           "updatedAt": 1791866626985
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791871111689
     },
@@ -632,7 +632,7 @@
           "updatedAt": 1791872713391
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791868043730
     },
@@ -882,7 +882,7 @@
           "updatedAt": 1791871063121
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791873224643
     },
@@ -948,7 +948,7 @@
           "updatedAt": 1792029841481
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1791865738321,
       "updatedAt": 1791873234702
     },
@@ -1010,5 +1010,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1791865738321,
-  "updatedAt": 1792029862500
+  "updatedAt": 1792996969242
 }
