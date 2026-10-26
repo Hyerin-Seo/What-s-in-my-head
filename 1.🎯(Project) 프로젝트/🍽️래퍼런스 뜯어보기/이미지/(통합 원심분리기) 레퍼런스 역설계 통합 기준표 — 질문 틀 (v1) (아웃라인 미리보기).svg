@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">(통합 원심분리기) 레퍼런스 역설계 통합 기준…</text>
+<circle cx="34" cy="94" r="3" fill="#9a9aa3"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📌 질문 틀 — 레퍼런스 하나마다 이 아웃라인을 복사해서 콜론(…</text>
+<line x1="34" y1="127" x2="574" y2="127" stroke="#d4d4da" stroke-width="1.5"/>
+<circle cx="34" cy="160" r="4.5" fill="#3a3a40"/>
+<text x="51" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🧬 0. 레퍼런스 정체성과 3대 종족 분류 (Identity &amp; Tribe)</text>
+<circle cx="58" cy="193" r="4.5" fill="#3a3a40"/>
+<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🔗 원문 메타 정보 및 분석 목적 주요 레퍼런스 분석.outlin…</text>
+<circle cx="82" cy="226" r="3" fill="#9a9aa3"/>
+<text x="99" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">분석 대상 레퍼런스 :</text>
+<circle cx="82" cy="259" r="3" fill="#9a9aa3"/>
+<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">원본 링크 · 자료 노트 :</text>
+<circle cx="82" cy="292" r="3" fill="#9a9aa3"/>
+<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">고른 까닭 (.outline 의 어떤 결핍 때문에) :</text>
+<circle cx="58" cy="325" r="4.5" fill="#3a3a40"/>
+<text x="75" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🏛️ 3대 종족 판별 (Archetype Matrix) 소프트웨어를 해체…</text>
+<circle cx="82" cy="358" r="3" fill="#9a9aa3"/>
+<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">소속 종족 (1 · 2 · 3 · 섞임) :</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>

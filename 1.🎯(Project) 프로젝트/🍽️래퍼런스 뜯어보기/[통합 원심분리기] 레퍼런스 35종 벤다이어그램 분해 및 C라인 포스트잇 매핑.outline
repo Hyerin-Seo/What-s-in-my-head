@@ -1,0 +1,4312 @@
+{
+  "version": "1.0.0",
+  "id": "4xfU2iHyiwlG",
+  "title": "[통합 원심분리기] 레퍼런스 35종 벤다이어그램 분해 및 C라인 포스트잇 매핑",
+  "rootNodes": [
+    {
+      "id": "ugfaQkbOkAD4",
+      "text": "📌 [역설계 포스트잇 공방] 35종 레퍼런스 전면 탈곡 ➔ 벤다이어그램 도메인 카드 & C라인(C0~C6) 후보 포스트잇 추출 아웃라인",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "quote",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "SibdqFwvJSaK",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "DBIrqzS8GUpP",
+      "text": "🎯 상단 북극성 A·B·C라인 통합 구조 기준대 (7단계 타임라인 파이프라인)",
+      "children": [
+        {
+          "id": "sxSa6hWXH7dw",
+          "text": "A라인 (북극성 가치) : 아웃라이너 글쓰기·기획에서 백지 공포증과 AI 롤백 불안증을 영구히 분쇄하는 Scaffold Manager",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "YmDR3sVk6Tuy",
+          "text": "B라인 (핵심 사용자 페르소나 및 정서) : 생각은 자유롭게 날뛰되, 도구가 먼저 비계(Scaffold)를 대령해 주는 편안함",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "NQQgdHuSvdlS",
+          "text": "C라인 (시간축 실행 파이프라인 7단계)",
+          "children": [
+            {
+              "id": "LLOQpkkQd7uX",
+              "text": "🟨 C0. 사전 비계 & 진단 (Pre-flight / Visual Grill-Me) : 도구가 먼저 3대 질문 틀과 뼈대를 시각적으로 들이밀어 백지 공포 해체",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "QI4vHWD9LpWN",
+              "text": "🟧 C1. 무마찰 포집 (Capture & Stash) : 번뜩이는 생각이나 레퍼런스를 형식 없이 마구 쏟아내고 장롱(Stash)에 임시 보관",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "8bGJZ5msjoLr",
+              "text": "🟦 C2. 위계 구조화 & 포커스 (Structuring & Zoom-in) : 단일 무한 트리 인덴트 및 단일 노드 줌인으로 뼈대 정렬 및 몰입",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "rYgvQ3SiaRR1",
+              "text": "🟪 C3. 2D 공간 조망 & 브랜치 대조 (Spatial Canvas & Branching) : 1D 트리를 2D 캔버스로 플립하여 대안 목차(v1, v2) 나란히 비교",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "AJa8Yq6WzYGU",
+              "text": "🟩 C4. 불변 안전망 & 인라인 Diff (Staging & Safety Net) : Git 명시적 체크포인트, 초록(+)/빨강(-) 인라인 오버레이, 무손실 롤백",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "ydi8IYiedlbu",
+              "text": "🟫 C5. 하드 게이팅 & 노드 잠금 (Gate & Controlled Generation) : 확정 노드 자물쇠(Ctrl+L), Drafter-Reviewer 분업, 빈칸 슬롯 강제",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "pCaVX99kiVLa",
+              "text": "🟥 C6. 선별 수락 & 블록 체결 (Cherry-pick & Assembly & Export) : 노드별 체리픽([✓]/[✗]), 레고 블록 스냅 결합, 최종 아웃라인 마감 매듭",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "bullet",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "UgzDn6ZxmYlc",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "2SsgG5eO9NZg",
+      "text": "🧬 1종족. 극단적 자유파 (Freedom Tribe — 8종 레퍼런스)",
+      "children": [
+        {
+          "id": "6JHiUjED9q6u",
+          "text": "- [[(web&강추)Workflowy]]",
+          "children": [
+            {
+              "id": "5Us27keuBYfN",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "gt9M6ewMtkW0",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "s0awkYj1nctp",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "GhqnYsigNJTS",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "f23zFdgtGSwY",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "Bl4lBzs39GY3",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Q4BZTzlsmCRy",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "7irwztYvzLzE",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "DAo7WsTWC16k",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "D3UvS6VJ19xs",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "q8UyStvMfkmJ",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "aLJftWVrNMEy",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "H6ALSkCFULxL",
+          "text": "- [[(web)Dynalist]]",
+          "children": [
+            {
+              "id": "OZSNUJFqkpcy",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "KTbW5hwXBElw",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "riysUQicMIVH",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "HpMZIXuTnnPB",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "4HGKoZJRNLoq",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "cGSD5zJR8Dta",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "NeBIF1dInHcW",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "LEMNQtybnrwt",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "KBlWqxsnPRTJ",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "GOcEJJA3E6uw",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Sh1dXvuVjRq8",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ltu72JtZ0f2p",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "Bp4TqEZCiYXm",
+          "text": "- [[(book)생각하고 계획하고 일하라 WorkFlowy]]",
+          "children": [
+            {
+              "id": "bLA0Be3bL8Yw",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "FshUGcrW9CzI",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "gehmeSg95HJo",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "A47vagEisyrG",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "3bO2f75BpAEB",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "Yos9DSugXiBd",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "RtXswrfg0pdC",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "z0pFq3Jd9ll2",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "kINOwgc9HXgn",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "9xehJpEASqA5",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "wMAwDnlshpok",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "2D7eetdY7SRZ",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "Oa5SLR5BulUv",
+          "text": "- [[Heptabase(헵타베이스)]]",
+          "children": [
+            {
+              "id": "zo8wpVfbaH0b",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "7VI92UNQGfp3",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "n7Q9r2TxgVgP",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "2rnvXu856HzC",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "hqozAKM59yRv",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "9YgQccZSe3CM",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "9FIx1tKHocvm",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "stgM2zPKGCyW",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "mXTB3dfVgUu9",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "tPXVlOsIjJwS",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "7tUhih2Rabro",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "EyjaW0Cx3JbQ",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "NTcBMG8WuGDi",
+          "text": "- [[(web)flowith.io]]",
+          "children": [
+            {
+              "id": "4bFTlIkhUiD1",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "ZPgabpgkvlli",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "FLW7v05yhbht",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "8HucaH4bToPN",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "UuGiZslDGg3y",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "SScq68K3hZHb",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "R84F9b6ffgDR",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "hekL2dK9gv0F",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "6GyjAqhL3Gx5",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "dQMCZeI043p5",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Glh2XW6GS4GP",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "xLgVkQ9Mynte",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "2SMwRK0IXFn5",
+          "text": "- [[(web)롬리서치[조사해야함]]]",
+          "children": [
+            {
+              "id": "bixS5WkYPw9S",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "O1jTYbvSF4yx",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Ef46sb15fLWF",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "m7XyoHtcDSev",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "USlxGGnDddN2",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "orJmdXf4Ytne",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "e9iKMtNFvK2k",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Q6LsaRwafwqp",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "yqd9bD8jlPGG",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "aeNeAPGB9fzl",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "N7SDWMY1uQ2O",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "jH46wKjqnv5c",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "GPp35OQBaJTo",
+          "text": "- [[(web)logseq [조사해야댐]]]",
+          "children": [
+            {
+              "id": "WHArFwI3BBat",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "W9KQva8y3eKk",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "UTyjQmHqJOnf",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "OtmDyHEFfSqq",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "9pBDVjbKdp5Y",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "4sZ4f8kV5jpN",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "5p6UZ1Jot1qm",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "YAT1gzjmkQTD",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "TC1ysF5UbEvF",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Twyte3HSn14G",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "W1hU69MCwcSt",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "WdZzOTg4MdjA",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "zMaI5Tat94ys",
+          "text": "- [[(web&강추)Figma]]",
+          "children": [
+            {
+              "id": "bxMMXYWNrAb3",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "IzeN6fbSZoFX",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "162fmZdkvmDq",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "IpWc618BDcmb",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "k6VLGSr1qbvs",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "VVTMkSTGu5vz",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "lHgx4VjMuK7F",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "uMIsDrvJ49T7",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "LGVtsIY7MCmZ",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "wUrkTh4FhK8n",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Lq39FEvLC4XN",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "x9LNDX9jJvES",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "bullet",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "qjxpQkyPKznJ",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "ogDpAvRgGaOx",
+      "text": "🛡️ 2종족. 엄격한 규칙·슬롯파 (Rule & Slot Tribe — 12종 레퍼런스)",
+      "children": [
+        {
+          "id": "cRbctAkWrsmc",
+          "text": "- [[(web&강추)Git]]",
+          "children": [
+            {
+              "id": "8ecmHkkrLSaz",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "2gkA4aXfpMQ6",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "7lJl3BegK3fv",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "dSQuPO7JYvjb",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "72G7PfgREjr1",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "AEeQwkwKJLwS",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Jvehrw0PodXU",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "rZ5yhpdJ6HdM",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "THyLoQxWmXwU",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ur4W26w72xWm",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "SbfJLsREI49p",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "RkrRqmbJypaR",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "VJZ5jWv84iwH",
+          "text": "- [[(web&강추)ai-job-search]]",
+          "children": [
+            {
+              "id": "8Tqr5vFXYWWO",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "tpOycAsywk8N",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "xjT4YHFdAz4h",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "H2ow8S3PK6Vi",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "qwJk2b0G2Tob",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "2xWMokT9RnXE",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Cio3zQp6lxVx",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "eXxIQoHpIgVs",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "u1Gz37upwcWZ",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "cuEtCqJ9gOny",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "RXitrKVY5v7O",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "pUz5fQifgyb0",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "LJ1UqN8v6yVB",
+          "text": "- [[(web)스크리브너 [조사해야함]]]",
+          "children": [
+            {
+              "id": "sv6JyCftKuDa",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "zVs3iZDJvvk1",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "fiFH9wyp394O",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "YPiTEotfRpRQ",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "40OwTDgehQ3E",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "Woev3Lr9S7lO",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ytbFqhfZ18ak",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "q0PCDsaHAyn7",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "khbOQywd3kEY",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "1CDhhMvEZ6kg",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "h3TBI7B2eonA",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "GhelXxC2vrFy",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "rzYByu6ixN52",
+          "text": "- [[(web&강추)Overleaf]]",
+          "children": [
+            {
+              "id": "5nSV2QYvBqS7",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "DjNy9e8UZrk9",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "3RfOpDhSL0Tb",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "oGaSYvI3APs1",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "oHeaVRQsvWG0",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "7mozeepnPDt0",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "xdx5wMWzKYcI",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "MksRFHsHdoxQ",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "edsl6saD5uyz",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "VXa3jD2wzwMX",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ogQzFy61HUle",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "cJc9jOb6KRAl",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "EbqxA10GZB6N",
+          "text": "- [[(web&강추)PandaDoc]]",
+          "children": [
+            {
+              "id": "IYBgAsgEVozY",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "6VRi3C5Ajd9P",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "1ckRBpA7idl1",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "MEuTk0UNwCBq",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "NYpd8nI1yJFw",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "SsrLI5m91WT5",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "QW9PLOq1hKRB",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "YzonCAn8c30G",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "n0ufeCnnzT91",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "H8UYkQYD9aDZ",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "p5DmhKDEzB2K",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "XXBWGbYE0jWh",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "yhThFF2lCZtA",
+          "text": "- [[(web)LivingWriter]]",
+          "children": [
+            {
+              "id": "TuNVLLn5pkM4",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "VB234stoVLig",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "JXvUisClF8F7",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "xJHKbY19ybof",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "EFeDQXOZcARW",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "ASZohvZCfmz7",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "rVTiDdh3e03x",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "b3N6R2S3CiWa",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Fr18JdrTfutl",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "3lEu3PbbuSr1",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "msFI1LeQFrpv",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "BeJCfwDd83UY",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "LRJ4S14G1Q5x",
+          "text": "- [[(web)Dabble]]",
+          "children": [
+            {
+              "id": "yAtMCi5KXw5R",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "nc01qEuD6ET2",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Q5rCUg4dKPCm",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "cZWAWKyx4dY6",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "avxXEt2HWcvg",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "qI9GLBqVWcih",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Ic0zRpZmjbDM",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "yuZeIlksuU2N",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "mygcPyFBCkm0",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "yxVqQicHJ3kU",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "kcuV93pZitTB",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "FMOOXKk6M7eq",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "g6nPTR3ItzP3",
+          "text": "- [[(web)Reedy Book Studio]]",
+          "children": [
+            {
+              "id": "EEjW7Kao99c3",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "VNzct7hqfSpO",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "VPKx873eYjN5",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "EPdRmzZr7BiI",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "UqKhLtsvlVaH",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "BA4vTMNNhf75",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ifDyj3Qb9bBm",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "bnQdxpGzR5o1",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "XuAP2Bsg0y0u",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "J3j0VHroWq6M",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "G34DSe75BwfC",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "YkqMsHMfzKx3",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "FjVz8u8i34J7",
+          "text": "- [[(web)어도비 xd & InDesign]]",
+          "children": [
+            {
+              "id": "cDwDI4DLvPoP",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "9YMWZVM7FKee",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "9vwqEYaJbMaz",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "zX8XntlTrBLs",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "7sW7fOxVYqN9",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "ucygT5BmigsQ",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "nNKOZ2awtiEY",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "KAu2JIxNppVC",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "6nIkxJzpRlQj",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "pORuZ9LFostf",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "jFX4JqlEdrzJ",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "HFqgRePixSeh",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "aiE56dsBErB1",
+          "text": "- [[(SEO)바이브 라이팅의 아주 좋은 사례]]",
+          "children": [
+            {
+              "id": "MVMInHczEfyW",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "scCRCTbZf4Fx",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "2UN2teEWhDGZ",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "F2GJ28TNB9l6",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "D6DKblknbU3E",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "PqxXxqKJicfD",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ONxI2vqFt5dh",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "NJR8eOGEwauG",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "lT1RXUu0x1Cd",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "3Aor88KiYQOi",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "LucYgr3Ilq6h",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "D3yZ3k50sYV9",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "2Z92jTbsdPdo",
+          "text": "- [[(seo)클로드코드_아쉬운점1]]",
+          "children": [
+            {
+              "id": "wgYqykmNPIfh",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "yG2FGtVkaJRK",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "CaGxU9BwWnkN",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "3WxUucCrW1ue",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "Euwzx33o016s",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "yaAbyEMJ9Vxp",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "n3HUzp9VhR1e",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "kw3AeHZYs75F",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ZgwHkqyzEFxe",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "EK0P08uJavC2",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "YPZPxzqVEVXM",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "c4kRX2Z5ZoYz",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "wF5vcbIgJ64B",
+          "text": "- [[(seo)바이브코딩 툴(안티그래비티)_아쉬운점1]]",
+          "children": [
+            {
+              "id": "Kwu29wE6IDPD",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "FuWs1ceqfJLN",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "f82hvcneGFW0",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "AFg150l0jyI1",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "gfqU6DtxrtnB",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "LUXQIgMstRsr",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "0d9AEhTgGDo4",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "sPKtilMXUNay",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Kq8cRLoExtTO",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "DvAWoFqPav6Q",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "zsUuPbTQiI9t",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "hG8Bf56TcoDQ",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "bullet",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "ALbite1nUiF3",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "QMcGnWWFo2O5",
+      "text": "🧱 3종족. 레고 블록 조립파 (Block Assembly Tribe — 14종 레퍼런스)",
+      "children": [
+        {
+          "id": "Wu1xP9cFmg14",
+          "text": "- [[(web&강추)Things 3]]",
+          "children": [
+            {
+              "id": "UqqVdWtyZpAt",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "TMAXAMCOXKwQ",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "n9p4aWYQLQCf",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "vJISmFp5aWV3",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "gaFzksrWlOzz",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "c7F4cRU6zIa7",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "CxRnAyYf7ESg",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "1qlxWSbkR7nA",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "7j8W5uCvlgkh",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "xccwqaiHZaSK",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "SuuockJL2n7m",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "7c3WYOxWkyvq",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "W7rUJtgC37mR",
+          "text": "- [[(web&강추)Archify]]",
+          "children": [
+            {
+              "id": "CYi433xcf7ds",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "QNvvxrLDAwzZ",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "MVp5f5BCD2Cu",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "kzAOa43lzzJs",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "Lh3aBDUY5SZB",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "8XwZtohSHn55",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "38lN1X1bK1o4",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "fEy5ww2iFFDA",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "hCXp8ZG2hc3X",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "CCAAS5l6U6Hq",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ojmR2OMMLWAs",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ykI7XRGaWzXr",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "3an7rhDj0Nhn",
+          "text": "- [[(web&강추)Puck]]",
+          "children": [
+            {
+              "id": "RJ8QDJ20V5o9",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "gbsBA6h7WHcD",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "e5B2jrsKrfZU",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "q57c9aGH59ub",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "J5LuBw6UDMmb",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "oWf79VAfRCEj",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "OHgQ6UdspnGz",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "XqedoXY5DB1k",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "jMIix4gLogJn",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "EUbb0xl6cOQN",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "u2xrNUlWH3wM",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "eNyDHoIfZAY6",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "hzP1FONkPVtM",
+          "text": "- [[(web&강추)Framer]]",
+          "children": [
+            {
+              "id": "T4v4fqfaWXHt",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "PPFxXtz7kAvy",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ishuruF6wmIy",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "QcjjIs496anp",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "DvYSeBIVL19u",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "ZIC21y71fwcW",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "zeJ0nitaCvJK",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "yg4Uq2FcHWta",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "7Zpbeivgkbf0",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "KdTUOBM8xvPj",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "iE47188aA66r",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Xtupmml0rtwr",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "24KVbhuew1vX",
+          "text": "- [[(web&강추)Webflow]]",
+          "children": [
+            {
+              "id": "sFRMTuSivBPw",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "QYMJIpJorReI",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "VYZKSS6NNm3F",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "sygVq5K8yySa",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "0LZWlnCrfgSo",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "kz6i3hvE8YPs",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "spVDF92lWAvp",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "O4wN44DoRgFl",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "LDJe25Q2xgXR",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "OXFCAZ6ihvvN",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "XKANeAHbDn6h",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "lPfaF7Oj63Cg",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "oHXJMh6Ur2Hg",
+          "text": "- [[(web&강추)매니패스트]]",
+          "children": [
+            {
+              "id": "7TgiaeoExKOU",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "HaOtGGyUfOXn",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "IGjErW1O8Xru",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "QffJxviv2Sym",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "Cypj2OMWxfe6",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "LntogMATQBHf",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "w1dH5QehtbgI",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "6owXdEDOXksO",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "zXpWocZrQBI0",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ieYZ1ODtyUjj",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "MQKCDoRO9J1D",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "osuS9Qc3XZvQ",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "hL6XxujPnCca",
+          "text": "- [[(web&강추)storyflow]]",
+          "children": [
+            {
+              "id": "lykrLB5gOO27",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "B7wmymU4CSU7",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "pJ2r381eHy49",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "5o423yQ6GGzx",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "zMGEeO4EogAB",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "W48DYsjJMqNi",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "CFCLbw6djXaa",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "bqaIyZc4bBdT",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "HUnjSiqPBsPq",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "EUhtffYob34l",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "kqoUQ0pgJKy1",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "acvSuw5t7fFC",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "lkOaXapwiCIj",
+          "text": "- [[Linear(AI-Design 협업툴)]]",
+          "children": [
+            {
+              "id": "5y4VDIVndPaF",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "rO7E0OLEOWzu",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "mz2r33hh16Ve",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "1qM4TUYtCb94",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "rhfnK4oPcFiL",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "UVNepiTLW5du",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "NWTeLr3CnH2e",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "eIdOHGyrIpp1",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "6BBOqKRb0Mo0",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "XX6nuPypwjLX",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "eUScB0MmMiPc",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "WpHfQN00RNk8",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "z1DFCBCIGBYw",
+          "text": "- [[(web)ProtoPie]]",
+          "children": [
+            {
+              "id": "WNVK0bkQQXR8",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "dwzqqdlMIXDP",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "a2ycV8EHbuTn",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "yahuZPCknEoS",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "MJrX7aYjbBPX",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "lA18xHMYaySL",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "WkXHFPbjkftZ",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "72kc1CadQ7tx",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Z383R0HsDxid",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "2VaTXBUkG3xK",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "OL5ETG4A55KO",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "DjBO6NSSAEP8",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "yhMFH4OKjcwu",
+          "text": "- [[(web&강추)Google Docs]]",
+          "children": [
+            {
+              "id": "mMlrmkHMBQK9",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "EJ4GjQYlVQyH",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "7TdVV2ogTDkr",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "d90P6ulwXlUR",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "QJyoomVlWBdG",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "c0rbBjgOP0UX",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "hwcA3qv6HxoN",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "3M1xrVWK4JeA",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "cVucforRZl5r",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "g8vTBhTtZHzh",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "x58xo8oUdmqE",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "G9eHI8uXWPgf",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "wsgQhhd7P16F",
+          "text": "- [[google_docs_version_control_report.pdf]]",
+          "children": [
+            {
+              "id": "lIcu6fVHYLl5",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "bnXRwbNNHxzd",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "MCH0sp7GjW3L",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Q4uLbcY5Cs6r",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "gh8DRKyUgMd6",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "g7OAnnW13PN9",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "1HA6FDBwyN9j",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "c2gu0fyR4BM3",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "WB3TnEzVcVwS",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "FLLfA73jdAVC",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "OBp1lWNOo6kF",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "cc9cJkaRRoj4",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "ka4Tk1bgaSZp",
+          "text": "- [[(web)Boords]]",
+          "children": [
+            {
+              "id": "0B3VLZn4DUgm",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "uf7KQHSyKRog",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "XEZhVDXAxpsR",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "Ct85YeB0RMKu",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "IYg3MpieA1gQ",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "Vw3kSOlBlQR3",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "db5FJgMPySLZ",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "srfZ5cDONieB",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "F34tKyBxztAw",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "FbM8RBhyCQoJ",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ricz0SlsjItp",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "1VoqVeExD9Ub",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "awQuRcveUrTp",
+          "text": "- [[(web)Boarder]]",
+          "children": [
+            {
+              "id": "EWedbeYmAsMk",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "QXHZVR1obBww",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "uk3BcD9SzBA2",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "uFBGvnuHWL1b",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "GGDo0Zll4wnC",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "canjsfH63Hnn",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ytHmv1wFKEal",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "fqgYstYIgbIE",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "4bnrAjfa0Oce",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "CiV3IoiJavGy",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "djKtDJsqINlK",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "jqGFyeCuN7qu",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "UlTbOnfUpofo",
+          "text": "- [[(web&강추)Clip Studio]]",
+          "children": [
+            {
+              "id": "fS9lmW9fbMOp",
+              "text": "⭕ 벤다이어그램 도메인 카드 (하단 클러스터 추출: 기능/역량)",
+              "children": [
+                {
+                  "id": "P49s6Rr98Gva",
+                  "text": "도메인 1 (핵심 역량/영역) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "22ATgP0yaDBu",
+                  "text": "도메인 2 (인터랙션/사용성) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "ogRd43l9k9BI",
+                  "text": "도메인 3 (데이터/보존 방식) : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            },
+            {
+              "id": "mZZ1L3JmygJy",
+              "text": "🏷️ C라인 파이프라인 매핑 후보 포스트잇 (상단 C0~C6 배치용)",
+              "children": [
+                {
+                  "id": "oY4xU86CfQGu",
+                  "text": "[C0. 사전비계] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "QX2mSj4RQhPE",
+                  "text": "[C1. 무마찰포집] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "2hyF4hpkVkFE",
+                  "text": "[C2. 위계구조화] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "g134NDl5rMzq",
+                  "text": "[C3. 공간조망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "0bfaTVp0th0t",
+                  "text": "[C4. 불변안전망] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "bPjfENBScSMp",
+                  "text": "[C5. 하드게이팅] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                },
+                {
+                  "id": "0DEuJZlIrxvu",
+                  "text": "[C6. 선별체결] 후보 : ",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1792902496550,
+                  "updatedAt": 1792902496550
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1792902496550,
+              "updatedAt": 1792902496550
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "bullet",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "hC6Y5wXolpnw",
+      "text": "",
+      "children": [],
+      "isFolded": false,
+      "nodeType": "divider",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    },
+    {
+      "id": "rymTLbY9YDHh",
+      "text": "🏁 최종 수렴: 벤다이어그램 교차점에서 발라낸 Scaffold Manager MVP 킬러 포스트잇 카드군 (C0~C6 종합 매핑)",
+      "children": [
+        {
+          "id": "X9RCujJRDkJl",
+          "text": "🏷️ 1종족에서 건져 올린 C라인 포스트잇 : ",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "pAGBz0QujkHz",
+          "text": "🏷️ 2종족에서 건져 올린 C라인 포스트잇 : ",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        },
+        {
+          "id": "rDEikXWJZeUE",
+          "text": "🏷️ 3종족에서 건져 올린 C라인 포스트잇 : ",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1792902496550,
+          "updatedAt": 1792902496550
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "bullet",
+      "createdAt": 1792902496550,
+      "updatedAt": 1792902496550
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1792902496550,
+  "updatedAt": 1792902496550
+}
