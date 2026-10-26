@@ -70,7 +70,7 @@
               "updatedAt": 1792554073932
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1792554073932,
           "updatedAt": 1792554073932
         },
@@ -375,7 +375,7 @@
                       "updatedAt": 1792554073932
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "file": {
                     "target": "Pasted image 20261012162106.png"
                   },
@@ -605,7 +605,7 @@
                       "updatedAt": 1792554073932
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "file": {
                     "target": "Pasted image 20261012164311.png"
                   },
@@ -3321,7 +3321,7 @@
               "updatedAt": 1792554073932
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1792554073932,
           "updatedAt": 1792554073932
         },
@@ -3488,7 +3488,7 @@
                           "updatedAt": 1792554073932
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1792554073932,
                       "updatedAt": 1792554073932
                     }
@@ -7807,7 +7807,7 @@
               "updatedAt": 1792554073932
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1792554073932,
           "updatedAt": 1792554073932
         },
@@ -7923,5 +7923,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1792554073932,
-  "updatedAt": 1792557592545
+  "updatedAt": 1792909341798
 }

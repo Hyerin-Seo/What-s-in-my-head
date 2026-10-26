@@ -17,6 +17,7 @@
 | 인박스를 처리한다 · 첨부·폴더를 넣는다 · PARA로 보낸다 | `docs/inbox.md` |
 | 할일 · 칸반 · 담당자 뷰 · 캔버스 · 버그 리포트 | `docs/project-board.md` |
 | 보드(`.base`)를 만들거나 고친다 · 보드로 링크를 건다 | `docs/boards.md` |
+| `.outline` 아웃라인을 만들거나 고친다 | `skills/outline_file_manager/` (루트 `createdAt`·`updatedAt` 필수) |
 | 플러그인(`plugins/gaeddong-claude` 등) · CSS 스니펫 · 스크립트 · 상태 칩 | `docs/plugins.md` |
 | 회의록을 정리한다 (지난 회의 점검 · 안건 카드 · 결정 카드 · 튜닝 · 보관) · 스킬을 쓰거나 만든다 | `docs/meetings-and-skills.md` → `skills/` |
 | 노트에 코멘트를 달거나 답한다 · @언급 · 슬랙 알림 | `docs/comments.md` |
@@ -36,6 +37,7 @@
 - **`구역` 을 바꾸면 파일이 그 폴더로 옮겨집니다. `상태` 로는 절대 안 옮깁니다** — 상태는 속성이 정본이고 상태 폴더는 없습니다. (`docs/para.md`)
 - **옮길 때는 `구역` 만 바뀝니다.** `유형` 은 태어날 때 정한 정체성이라 구역에 맞춰 고치지 않고, `상태` 도 적힌 그대로 둡니다. (`docs/para.md`)
 - **없앤 속성은 되살리지 않습니다** — `중요도` `수정일` `제목` `notion_db` `notion_url` `이동버튼` `직원 ID`. (`docs/properties.md`)
+- **`.outline` 파일은 루트 타임스탬프 필수.** 최상위 객체에 `createdAt`·`updatedAt`(밀리초 정수)이 누락되면 `gaeddong-outliner`가 열리지 않습니다 ("아웃라인 파일 규격이 아니라서…"). 반드시 `skills/outline_file_manager/`를 따르고 짝꿍 `.md` 노트를 세웁니다.
 - **`.base` 에 주석을 달지 않고, 보드로 가는 링크에는 `.base` 를 붙입니다.** (`docs/boards.md`)
 - **양식**(이름에 `!(Template)`)과 **`skills/`** 는 노트가 아닙니다. 옵시디언 "제외된 파일"이라 보드·검색에 안 뜹니다.
 
