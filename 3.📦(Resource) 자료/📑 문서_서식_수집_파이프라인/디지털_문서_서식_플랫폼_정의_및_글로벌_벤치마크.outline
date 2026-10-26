@@ -321,7 +321,7 @@
               "updatedAt": 1792928815526
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792911584379,
           "updatedAt": 1792912386405
         },
@@ -536,7 +536,9 @@
           ],
           "isFolded": true,
           "createdAt": 1792912061439,
-          "updatedAt": 1792912386405
+          "updatedAt": 1792989410367,
+          "isCompleted": true,
+          "completedAt": 1792989410367
         },
         {
           "id": "W5CCAt1nx1sc",
@@ -585,7 +587,9 @@
           ],
           "isFolded": true,
           "createdAt": 1792912061439,
-          "updatedAt": 1792912386405
+          "updatedAt": 1792989410367,
+          "isCompleted": true,
+          "completedAt": 1792989410367
         }
       ],
       "isFolded": false,
@@ -3423,5 +3427,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1792910941719,
-  "updatedAt": 1792984066167
+  "updatedAt": 1792989432391
 }
