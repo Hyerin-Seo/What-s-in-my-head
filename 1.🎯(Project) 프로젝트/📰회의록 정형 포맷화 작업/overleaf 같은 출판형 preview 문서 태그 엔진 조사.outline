@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "id": "hAB9iqvZwQi2",
+  "title": "overleaf 같은 출판형 preview 문서 태그 엔진 조사",
+  "rootNodes": [
+    {
+      "id": "el76tLsFBwv6",
+      "text": "Overleaf 외에 수집·검토해야 할 주요 기술/엔진 지형도",
+      "children": [
+        {
+          "id": "dkh4axjOb75S",
+          "text": "(1) Typst (팁스트) — 최신 벤치마크 1순위",
+          "children": [
+            {
+              "id": "8RPug498vA9A",
+              "text": "개념: 2023년 공개된 '현대판 차세대 LaTeX' (Rust 언어 기반)",
+              "children": []
+            },
+            {
+              "id": "81MMQVcZCWmh",
+              "text": "특징: LaTeX는 무겁고 서버 컴파일이 필요하지만, Typst는 웹 브라우저(WebAssembly) 안에서 0.01초 만에 실시간 A4 미리보기 렌더링",
+              "children": []
+            },
+            {
+              "id": "er1VPlKsihFZ",
+              "text": "적합성: Overleaf의 강력한 조판 능력과 웹 에디터의 가벼움을 동시에 잡을 수 있는 최우선 후보",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "wZfrzEbOlEoy",
+          "text": "(2) Paged.js (CSS Paged Media 표준) — Tiptap과의 가교",
+          "children": [
+            {
+              "id": "o9FF6WJH93ZG",
+              "text": "개념: W3C의 Paged Media 표준을 웹 브라우저에서 구현한 오픈소스 자바스크립트 엔진",
+              "children": []
+            },
+            {
+              "id": "aVtS8AhHqrlm",
+              "text": "특징: Tiptap이 뱉어내는 HTML/DOM을 그대로 받아서 실시간으로 'A4 페이지 나누기, 머리말/꼬리말, 인쇄용 표 고정'을 적용해 인쇄 프리뷰 렌더링",
+              "children": []
+            },
+            {
+              "id": "usHZ439koFer",
+              "text": "적합성: 기존 Tiptap 에디터를 유지하면서 Overleaf 같은 A4 인쇄 프리뷰를 붙이고 싶을 때 쓰는 가장 현실적인 웹 표준 방식",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "88X9xBx0PGLn",
+          "text": "(3) Pandoc (팬독) & AsciiDoc (아스키독)",
+          "children": [
+            {
+              "id": "cVh3df6cvRCO",
+              "text": "개념: 과거 출판이나 기술 문서 작성 시 가장 널리 쓰였던 문서 변환 만능 도구(Pandoc)와 마크다운 상위 호환 태그 언어(AsciiDoc)",
+              "children": []
+            },
+            {
+              "id": "0poLxT1wfFKr",
+              "text": "특징: 마크다운은 복잡한 표 병합이나 정밀한 레이아웃을 표현하지 못하지만, AsciiDoc은 태그 몇 줄로 정교한 표와 서식을 선언 가능",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "C85rhlRjdR2h",
+          "text": "(4) WeasyPrint / PrinceXML",
+          "children": [
+            {
+              "id": "MLYfhkYolIpa",
+              "text": "개념: 웹 페이지를 출판용 고해상도 PDF로 구워내는 서버 사이드 렌더링 전용 조판 엔진",
+              "children": []
+            },
+            {
+              "id": "lemc54sKAsur",
+              "text": "특징: 관공서 증명서나 은행 명세서 같은 정밀 규격 문서 생성에 널리 사용",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793084726429,
+  "updatedAt": 1793084726429
+}

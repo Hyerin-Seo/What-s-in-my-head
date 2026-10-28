@@ -53,7 +53,7 @@
               "updatedAt": 1792996464493
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792996464493,
           "updatedAt": 1792996464493
         },
@@ -443,7 +443,7 @@
               "updatedAt": 1792994649066
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792994649066,
           "updatedAt": 1792994649066
         },
@@ -551,7 +551,7 @@
               "updatedAt": 1792994649066
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792994649066,
           "updatedAt": 1792994649066
         },
@@ -842,17 +842,506 @@
               "updatedAt": 1792994649066
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1792994649066,
           "updatedAt": 1792994649066
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1792994471291,
-      "updatedAt": 1792994673194
+      "updatedAt": 1793006938996
+    },
+    {
+      "id": "7NdDaJphhxcP",
+      "text": "📌 서식 시맨틱 분류 기준 및 원자 필드 선별 체계_v1 (실물 서식 분석 기반)",
+      "children": [
+        {
+          "id": "L5ILPu21KFmM",
+          "text": "서식 정체성",
+          "children": [
+            {
+              "id": "gv3Zfolj00zU",
+              "text": "공식 합의·의결계 (Governance & Resolution)",
+              "children": [
+                {
+                  "id": "PH1oM3MADxDE",
+                  "text": "의결 공증형 의사록 (Procedural Minutes)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793007928164,
+                  "updatedAt": 1793007928164
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793007928164,
+              "updatedAt": 1793007928164
+            },
+            {
+              "id": "czg0udJKWsBr",
+              "text": "실무 운영·실행계 (Operations & Execution)",
+              "children": [
+                {
+                  "id": "d0ncGgLml0dU",
+                  "text": "주간 활동·계획 관리형 (Activity Planner)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793007928164,
+                  "updatedAt": 1793007928164
+                },
+                {
+                  "id": "WNn2J0gJoW5b",
+                  "text": "품질·이슈 대책 통제형 (Issue-Action Tracker)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793007928164,
+                  "updatedAt": 1793007928164
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793007928164,
+              "updatedAt": 1793007928164
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793007928164,
+          "updatedAt": 1793007928164
+        },
+        {
+          "id": "y59xvtUHF27L",
+          "text": "핵심 목적",
+          "children": [
+            {
+              "id": "xKdp3i22ZvCp",
+              "text": "권한 승인 및 증빙 (Authorization & Proof)",
+              "children": [
+                {
+                  "id": "ZqlDiwXAvFhY",
+                  "text": "개회 성수 정족수 확인 및 회의 결의사항의 공식 공증·보관",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793007928164,
+                  "updatedAt": 1793007928164
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793007928164,
+              "updatedAt": 1793007928164
+            },
+            {
+              "id": "yrioppFhIlPQ",
+              "text": "업무 정렬 및 피드백 (Coordination & Alignment)",
+              "children": [
+                {
+                  "id": "BV57PY4PM8ZB",
+                  "text": "주간 단위 교육 활동 실적 리뷰 및 차주 계획 수립, 출석 통계 집계",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793007928164,
+                  "updatedAt": 1793007928164
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793007928164,
+              "updatedAt": 1793007928164
+            },
+            {
+              "id": "KsgpdoP4CmT3",
+              "text": "리스크 통제 및 시정 (Risk Control & Mitigation)",
+              "children": [
+                {
+                  "id": "OsopzxfJAapC",
+                  "text": "공정 진행 상황 점검, 문제 발생 시 대책(Action Item) 도출 및 일정 통제",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793007928164,
+                  "updatedAt": 1793007928164
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793007928164,
+              "updatedAt": 1793007928164
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793007928164,
+          "updatedAt": 1793007928164
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1793006938996,
+      "updatedAt": 1793073220089
+    },
+    {
+      "id": "NUZPR4ZgiPd1",
+      "text": "📌 서식 시맨틱 분류 기준 및 원자 필드 선별 체계_v2 (실물 서식 분석 기반)",
+      "children": [
+        {
+          "id": "jM46xC4QV96l",
+          "text": "1. 회의 목적/정체성 기준 [단일 선택]",
+          "children": [
+            {
+              "id": "IpmHeeoQ6Vse",
+              "text": "공식 의결·공증형 (법적/규약적 효력, 정족수 확인 및 결의문 도출)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "i4MJHboLV1Lo",
+              "text": "업무 조율·루틴형 (과거 실적 점검 ↔ 차기 계획 수립, 정기 싱크)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "0B0NTdhiLlYq",
+              "text": "문제 해결·이슈 통제형 (현장 결함/리스크 식별 ↔ 시정 대책 및 기한 통제)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "lzrXWqF8qhBS",
+              "text": "아이디어 발산·기획형 (브레인스토밍, 신규 피처 탐색, 자유 토론)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "gJhlhCFwh8ns",
+              "text": "전략 심의·평가형 (KPI/성과 분석, 투자 및 계약 심사)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793073662579,
+          "updatedAt": 1793073662579
+        },
+        {
+          "id": "5OwavREUiFRM",
+          "text": "2. 핵심 전달 사항 기준 (1순위 시각 앵커 / Hero Block) [단일 선택]",
+          "children": [
+            {
+              "id": "s25lsE9g08ov",
+              "text": "최종 결정/판결형 (가결·부결, 채택안, 최종 합의문 등 결론 중심)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "3Oz52GVucu7S",
+              "text": "긴급 조치/오너형 (Next Step, 조치 담당자, 즉각 실행 마감일 중심)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "U5e1NFJ8B2hA",
+              "text": "위험 경보/블로커형 (현장 결함, 지연 원인, 시정 대책 이슈 중심)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "Fr0rFwKaJO1t",
+              "text": "핵심 숫자/진척 지표형 (참석수, 달성률, KPI 수치, 통계 매트릭스 중심)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "By3PEoOozVkX",
+              "text": "다음 마일스톤/D-Day형 (공정 파이프라인, 단계별 목표 일자, 다음 체크포인트 중심)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793073662579,
+          "updatedAt": 1793073662579
+        },
+        {
+          "id": "ElvCJICV2Vx7",
+          "text": "3. 결재 및 거버넌스 기준 [단일 선택]",
+          "children": [
+            {
+              "id": "nV4RR5x2kcsX",
+              "text": "다단계 결재형 (담당 → 검토자 → 승인자 등 수직적 결재선)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "GAdPIhfwQ3K5",
+              "text": "양자 대등 공증형 (의장/대표 + 서기/기록자 연서 날인)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "FXfWTlhvOrPQ",
+              "text": "단일 실무 전결형 (작성자/담당자 1인 확인)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "xmwOnor5mFZe",
+              "text": "자율 분산형 (결재선 없음, 참석자 전원 공동 소유 및 태그)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793073662579,
+          "updatedAt": 1793073662579
+        },
+        {
+          "id": "2g4NuzvJgauM",
+          "text": "4. 시간 주기 및 라이프사이클 기준 [단일 선택]",
+          "children": [
+            {
+              "id": "1gn1L0U1DZIr",
+              "text": "일회성 완결형 (작성 후 날인하여 불변으로 동결되는 영구 아카이브)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "ACQosc5mvz48",
+              "text": "주기적 순환형 (주간/월간 단위로 직전 회의록과 다음 회의록이 맞물리는 루프)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "LSBqzwTzNAQk",
+              "text": "파이프라인 종속형 (전체 공정/마일스톤의 특정 단계에 물려있는 진척 기록)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793073662579,
+          "updatedAt": 1793073662579
+        },
+        {
+          "id": "Bl4LUOfIv8mv",
+          "text": "5. 데이터 표현/레이아웃 기준 [다중 선택]",
+          "children": [
+            {
+              "id": "V8dCcvNPqsTD",
+              "text": "서술 줄글 중심형 (안건별 논의 경과 및 최종 결론 서술)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "f9MhC94iU2ZM",
+              "text": "2단 대칭 비교형 (실적 vs 계획, 문제 vs 대책 등 인과/시간 대립쌍)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "S7zqeQjK4JK3",
+              "text": "정량 매트릭스 그리드형 (행×열 다차원 수치 및 인원 통계 집계표)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "swQdoh7VE52h",
+              "text": "프로세스 타임라인형 (4단계 FLOW 마일스톤 및 단계별 목표 일자)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "HCVibmbzOuyN",
+              "text": "액션 티켓 체크리스트형 (Task, 담당자, 기한 중심의 실행 목록)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793073662579,
+          "updatedAt": 1793073662579
+        },
+        {
+          "id": "baUJeou4hpJv",
+          "text": "6. 공식성 및 수신 대상 기준 [단일 선택]",
+          "children": [
+            {
+              "id": "pPZNvjkkKzQW",
+              "text": "법적·대외 공문서형 (외부 감사, 법원, 주주, 관공서 제출용 표준 규격)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "ikWzy3jkBbNy",
+              "text": "사내 공식 보고형 (경영진/의사결정권자 보고용 정돈된 브리핑 서식)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "hPgp1BBTg0rT",
+              "text": "팀 내부 실무 공유형 (실무 참여자 간 빠른 합의 및 실행을 위한 경량 서식)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793073662579,
+          "updatedAt": 1793073662579
+        },
+        {
+          "id": "Yxnwc8lL9WVg",
+          "text": "7. 지원 포맷/에디터 환경 기준 [다중 선택]",
+          "children": [
+            {
+              "id": "ogMcWqkCjcjL",
+              "text": "고정 인쇄형 (PDF, A4 출력용 한글/워드)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "NJX6w1j3fZfU",
+              "text": "수식 계산형 (엑셀, 구글 시트)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "38ll4bMHBSVD",
+              "text": "클라우드 블록형 (노션, 마크다운, 옵시디언 등 동적 블록)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            },
+            {
+              "id": "xmLSKPNsEDuy",
+              "text": "캔버스 시각형 (Miro, Excalidraw, 피그마 등 공간 배치형)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073662579,
+              "updatedAt": 1793073662579
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793073662579,
+          "updatedAt": 1793073662579
+        },
+        {
+          "id": "hcpAvK5Mlfxe",
+          "text": "8. 주 사용 집단/도메인 기준 [다중 선택]",
+          "children": [
+            {
+              "id": "M4qONVlEr5ct",
+              "text": "종교·비영리·자치 단체 (교회, 불교단체, 입주자대표회의, 반상회, 협의회 등)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073997705,
+              "updatedAt": 1793073997705
+            },
+            {
+              "id": "GkB07NVQawP9",
+              "text": "학교·교육·학사 기구 (학교법인 이사회, 교사회, 대학위원회, 입학·학사기구 등)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073997705,
+              "updatedAt": 1793073997705
+            },
+            {
+              "id": "o2jK7KKDMAoL",
+              "text": "기업 거버넌스·주주·임원 (주주총회, 이사회, 임원회의, 창립총회, 사원총회 등)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073997705,
+              "updatedAt": 1793073997705
+            },
+            {
+              "id": "qZ44DIWOS08f",
+              "text": "제조·품질·시공 현장 (공정회의, 품질경영 ISO, 안전보건협의체, 현장점검 등)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073997705,
+              "updatedAt": 1793073997705
+            },
+            {
+              "id": "Gym4LTJ1zU3W",
+              "text": "노사·인사·심의 위원회 (노사협의회, 상벌위원회, 고충처리위원회, 인사심의 등)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073997705,
+              "updatedAt": 1793073997705
+            },
+            {
+              "id": "fnMOY0IAdPSV",
+              "text": "IT·프로덕트·지식 협업 (기획회의, 프로덕트 리뷰, 스프린트, 데일리 싱크 등)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073997705,
+              "updatedAt": 1793073997705
+            },
+            {
+              "id": "FMjLlsAmWpoc",
+              "text": "일반 부서·팀 실무 운영 (부서별 주간회의, 월요회의, 미팅보고서, 일일평가 등)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793073997705,
+              "updatedAt": 1793073997705
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793073997705,
+          "updatedAt": 1793073997705
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793073343987,
+      "updatedAt": 1793073997705
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792994471291,
-  "updatedAt": 1792998252524
+  "updatedAt": 1793073997705
 }
