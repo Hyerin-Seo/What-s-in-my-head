@@ -15,10 +15,9 @@
 링크: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=291370219&ptid=5&utm_source=aladin&utm_medium=wizard&utm_campaign=relbuy&utm_content=product
 담당:
 작성자:
-# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 저자: 장동인
 출판사: 창비
-평점: ⭐️⭐️⭐️⭐️
+평점: ⭐️⭐️
 전체 페이지 수: 276
 완독: false
 웹소설 작가 필독 백과사전 여부: false
