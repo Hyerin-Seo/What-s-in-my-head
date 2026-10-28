@@ -51,7 +51,7 @@ var createStoreImpl = (createState) => {
 };
 var createStore = ((createState) => createState ? createStoreImpl(createState) : createStoreImpl);
 //#endregion
-//#region ../../packages/outliner-core/src/outline/model/version.ts
+//#region ../../packages/outliner/src/core/outline/model/version.ts
 /**
 * @file version.ts
 * @description .outline 파일 포맷 버전 (디스크에 남는 계약의 단일 정의)
@@ -59,7 +59,7 @@ var createStore = ((createState) => createState ? createStoreImpl(createState) :
 /** 포맷이 바뀌면 이 값과 schema.ts 를 함께 올린다. */
 var OUTLINE_FORMAT_VERSION = "1.0.0";
 //#endregion
-//#region ../../packages/outliner-core/src/outline/model/id.ts
+//#region ../../packages/outliner/src/core/outline/model/id.ts
 /**
 * @file id.ts
 * @description 12자리 불변 Base62 Node ID 발급기
@@ -77,7 +77,7 @@ function generateNodeId() {
 	return id;
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/model/flatTree.ts
+//#region ../../packages/outliner/src/core/outline/model/flatTree.ts
 /**
 * @file flatTree.ts
 * @description ID 트리 모델 (Workflowy 방식) — 실행 중 불릿 트리의 원본
@@ -249,7 +249,7 @@ function withFoldStateOf(tree, source) {
 	return nodes ? { nodes } : tree;
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/transforms/patch.ts
+//#region ../../packages/outliner/src/core/outline/transforms/patch.ts
 /**
 * @file patch.ts
 * @description 패치 엔진 — ID 트리를 바꾸는 유일한 길 (Workflowy 의 tree_patch 와 같은 규칙)
@@ -496,7 +496,7 @@ function applyPatch(tree, requests, options = {}) {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/transforms/requests.ts
+//#region ../../packages/outliner/src/core/outline/transforms/requests.ts
 /**
 * @file requests.ts
 * @description 편집 동작을 패치 요청으로 옮기는 번역기
@@ -696,7 +696,7 @@ function subtreeInput(tree, id) {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/transforms/text.ts
+//#region ../../packages/outliner/src/core/outline/transforms/text.ts
 /**
 * @file text.ts
 * @description 텍스트 캐럿 분할 및 병합 변형 (Transform)
@@ -717,12 +717,12 @@ function mergeTextAtCaret(prevText, currText) {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/queries/find.ts
+//#region ../../packages/outliner/src/core/outline/queries/find.ts
 /** 트리 전체에서 특정 ID의 노드를 재귀 탐색 */
-function findNode(nodes, targetId) {
+function findNode$1(nodes, targetId) {
 	for (const node of nodes) {
 		if (node.id === targetId) return node;
-		const found = findNode(node.children, targetId);
+		const found = findNode$1(node.children, targetId);
 		if (found) return found;
 	}
 	return null;
@@ -735,7 +735,7 @@ function getNextFocusId(flattened, currentId, direction) {
 	else return currentIndex < flattened.length - 1 ? flattened[currentIndex + 1].id : null;
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/queries/path.ts
+//#region ../../packages/outliner/src/core/outline/queries/path.ts
 /** 특정 노드까지의 조상 경로(Breadcrumb) 탐색 */
 function getPath(nodes, targetId) {
 	function dfs(currNodes, path) {
@@ -750,7 +750,7 @@ function getPath(nodes, targetId) {
 	return dfs(nodes, []) || [];
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/queries/subtree.ts
+//#region ../../packages/outliner/src/core/outline/queries/subtree.ts
 /**
 * 고른 노드들 중 "맨 위" 노드만 문서 순서대로 남긴다.
 * (부모와 자식을 함께 골랐다면 부모만 다루면 자식은 따라온다)
@@ -771,7 +771,7 @@ function isFullyExpanded(node) {
 	return !node.isFolded && node.children.every(isFullyExpanded);
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/queries/fileTarget.ts
+//#region ../../packages/outliner/src/core/outline/queries/fileTarget.ts
 /**
 * @file fileTarget.ts
 * @description 불릿에 딸린 파일의 주소(target)를 읽는 순수 함수
@@ -799,7 +799,7 @@ function getTargetName(target) {
 	return getTargetPath(target).split("/").pop() || target;
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/views/list/flatten.ts
+//#region ../../packages/outliner/src/core/outline/views/list/flatten.ts
 /**
 * 트리를 1차원 평탄화(Flatten) 배열로 변환하여 불릿 렌더러에 공급
 * - 줌인된 노드가 있으면 해당 노드의 children만 전개
@@ -810,7 +810,7 @@ function flattenTree(rootNodes, zoomedId, options) {
 	let basePath = [];
 	let baseAncestorCompleted = false;
 	if (zoomedId) {
-		const target = findNode(rootNodes, zoomedId);
+		const target = findNode$1(rootNodes, zoomedId);
 		if (target) {
 			displayNodes = target.children;
 			const pathNodes = getPath(rootNodes, zoomedId);
@@ -844,12 +844,12 @@ function flattenTree(rootNodes, zoomedId, options) {
 	return result;
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/views/board/toBoardViewModel.ts
+//#region ../../packages/outliner/src/core/outline/views/board/toBoardViewModel.ts
 function toBoardViewModel(rootNodes, zoomedId, options) {
 	let contextNode = null;
 	let columnSourceNodes = rootNodes;
 	if (zoomedId) {
-		contextNode = findNode(rootNodes, zoomedId);
+		contextNode = findNode$1(rootNodes, zoomedId);
 		if (contextNode) columnSourceNodes = contextNode.children;
 	}
 	const hideCompletedCards = options?.hideCompletedCards ?? false;
@@ -868,7 +868,7 @@ function toBoardViewModel(rootNodes, zoomedId, options) {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/views/text/toOutlineText.ts
+//#region ../../packages/outliner/src/core/outline/views/text/toOutlineText.ts
 var INDENT = "  ";
 function fileText(node) {
 	if (!node.file) return "";
@@ -898,7 +898,7 @@ function toOutlineText(nodes) {
 	return lines.join("\n");
 }
 //#endregion
-//#region ../../packages/outliner-core/src/outline/views/text/parseOutlineToNodes.ts
+//#region ../../packages/outliner/src/core/outline/views/text/parseOutlineToNodes.ts
 /**
 * @file parseOutlineToNodes.ts
 * @description 들여쓴 텍스트, Markdown 중첩 목록, 또는 JSON 데이터를 계층적 OutlineNode 트리로 파싱
@@ -1023,7 +1023,7 @@ function parseOutlineToNodes(rawText) {
 	return roots;
 }
 //#endregion
-//#region ../../packages/outliner-core/src/workspace/model/defaults.ts
+//#region ../../packages/outliner/src/core/workspace/model/defaults.ts
 /**
 * @file defaults.ts
 * @description 워크스페이스 및 프로젝트 기본 팩토리 함수
@@ -1058,7 +1058,7 @@ function createDefaultProject(title = "새 스캐폴드", initialNodes) {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/session/editorStore.ts
+//#region ../../packages/outliner/src/editor/session/editorStore.ts
 /**
 * @file editorStore.ts
 * @description 편집 화면 하나의 상태와 불릿 편집 액션 (호스트 비의존)
@@ -1924,7 +1924,7 @@ var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((expor
 	exports.jsxs = jsxProd;
 }));
 //#endregion
-//#region ../../packages/outliner-editor/src/session/context.tsx
+//#region ../../packages/outliner/src/editor/session/context.tsx
 /**
 * @file context.tsx
 * @description 편집 화면 하나를 감싸는 공급자와, 그 안의 컴포넌트가 쓰는 접근 훅
@@ -1961,6 +1961,12 @@ function useOutlineEditorContext() {
 /** 편집 상태의 일부를 구독한다. */
 function useEditorStore(selector) {
 	return useStore(useOutlineEditorContext().store, selector);
+}
+var noSubscribe = () => () => {};
+/** 이 불릿이 있는 곳의 수 (불릿 자신 포함). 호스트가 미러를 모르면 1 이다. */
+function useMirrorCount(nodeId) {
+	const { host } = useOutlineEditorContext();
+	return (0, import_react.useSyncExternalStore)(host.subscribeMirrors ?? noSubscribe, () => host.mirrorCount?.(nodeId) ?? 1);
 }
 /** 구독하지 않고 그때그때의 편집 상태를 읽을 때 쓴다. (이벤트 처리 안에서) */
 function useEditorApi() {
@@ -2524,6 +2530,63 @@ var MoveRight = createLucideIcon("move-right", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Network = createLucideIcon("network", [
+	["rect", {
+		x: "16",
+		y: "16",
+		width: "6",
+		height: "6",
+		rx: "1",
+		key: "4q2zg0"
+	}],
+	["rect", {
+		x: "2",
+		y: "16",
+		width: "6",
+		height: "6",
+		rx: "1",
+		key: "8cvhb9"
+	}],
+	["rect", {
+		x: "9",
+		y: "2",
+		width: "6",
+		height: "6",
+		rx: "1",
+		key: "1egb70"
+	}],
+	["path", {
+		d: "M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3",
+		key: "1jsf9p"
+	}],
+	["path", {
+		d: "M12 12V8",
+		key: "2874zd"
+	}]
+]);
+/**
+* @license lucide-react v1.39.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var PanelRight = createLucideIcon("panel-right", [["rect", {
+	width: "18",
+	height: "18",
+	x: "3",
+	y: "3",
+	rx: "2",
+	key: "afitv7"
+}], ["path", {
+	d: "M15 3v18",
+	key: "14nvp0"
+}]]);
+/**
+* @license lucide-react v1.39.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Paperclip = createLucideIcon("paperclip", [["path", {
 	d: "m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551",
 	key: "1miecu"
@@ -2644,15 +2707,16 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineBullet.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineBullet.tsx
 /**
 * @file OutlineBullet.tsx
 * @description 아웃라인 한 줄의 왼쪽 조작부: "⋯" 손잡이, 접기 화살표, 불릿 점, (할 일이면) 체크박스
 * - 손잡이: 행에 마우스가 올라오면 보이고, 올리거나 누르면 노드 메뉴가 열린다.
 * - 화살표: 클릭은 한 단계 접기/펼치기, 더블클릭은 하위 전체 접기/펼치기
 * - 불릿 점: 호버 링, 좌클릭 줌인, 우클릭 노드 메뉴, 잡고 끌면 이동 (Alt 를 누른 채 놓으면 복제)
+*   미러가 있는 불릿은 점 대신 다이아몬드로 보인다.
 */
-var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isAncestorCompleted = false, isTodo = false, isDotSubtle = false, onToggleFold, onToggleFoldDeep, onZoom, onOpenMenu, onToggleCompleted, onDragStart, onDragEnd }) => {
+var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isAncestorCompleted = false, isTodo = false, isDotSubtle = false, isMirrored = false, onToggleFold, onToggleFoldDeep, onZoom, onOpenMenu, onToggleCompleted, onDragStart, onDragEnd }) => {
 	const menuAnchor = (el) => {
 		const rect = el.getBoundingClientRect();
 		return {
@@ -2707,8 +2771,8 @@ var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isAncestorCom
 					onOpenMenu(e.clientX, e.clientY);
 				},
 				className: "w-5 h-5 flex items-center justify-center rounded-full ring-0 ring-(--interactive-accent)/0 hover:bg-(--background-modifier-hover) hover:ring-4 hover:ring-(--interactive-accent)/40 transition-all duration-150 cursor-grab active:cursor-grabbing group/dot",
-				title: "클릭: 줌인 · 끌기: 이동 (Alt: 복제) · 우클릭: 메뉴",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: `rounded-full transition-all duration-150 ${isCompleted || isAncestorCompleted ? "opacity-50" : ""} ${isDotSubtle && !hasChildren ? "opacity-0 group-hover/row:opacity-100" : ""} ${hasChildren && isFolded ? "w-3 h-3 bg-(--interactive-accent) ring-2 ring-(--interactive-accent)/30" : hasChildren ? "w-2.5 h-2.5 bg-(--text-muted) ring-1 ring-(--background-modifier-border-hover) group-hover/dot:bg-(--interactive-accent)" : "w-1.5 h-1.5 bg-(--text-faint) group-hover/dot:bg-(--interactive-accent)"}` })
+				title: `${isMirrored ? "미러가 있는 불릿 · " : ""}클릭: 줌인 · 끌기: 이동 (Alt: 복제) · 우클릭: 메뉴`,
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: `transition-all duration-150 ${isMirrored ? "rotate-45 rounded-[2px] !bg-(--interactive-accent)" : "rounded-full"} ${isCompleted || isAncestorCompleted ? "opacity-50" : ""} ${isDotSubtle && !hasChildren ? "opacity-0 group-hover/row:opacity-100" : ""} ${hasChildren && isFolded ? "w-3 h-3 bg-(--interactive-accent) ring-2 ring-(--interactive-accent)/30" : hasChildren ? "w-2.5 h-2.5 bg-(--text-muted) ring-1 ring-(--background-modifier-border-hover) group-hover/dot:bg-(--interactive-accent)" : "w-1.5 h-1.5 bg-(--text-faint) group-hover/dot:bg-(--interactive-accent)"}` })
 			}),
 			isTodo && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				type: "button",
@@ -2725,7 +2789,7 @@ var OutlineBullet = ({ hasChildren, isFolded, isCompleted = false, isAncestorCom
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineDropIndicator.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineDropIndicator.tsx
 /**
 * @file OutlineDropIndicator.tsx
 * @description 끌고 있는 불릿을 놓으면 들어갈 자리를 보여주는 파란 선
@@ -2742,13 +2806,13 @@ var OutlineDropIndicator = ({ position, depth }) => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/session/host.ts
+//#region ../../packages/outliner/src/editor/session/host.ts
 /** 요소가 속한 창. 탭이 다른 창으로 옮겨질 수 있어서 전역 `window` 를 직접 쓰지 않는다. */
 function winOf(node) {
 	return node?.ownerDocument?.defaultView ?? window;
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/attachments/useFileAttach.ts
+//#region ../../packages/outliner/src/editor/attachments/useFileAttach.ts
 /**
 * @file useFileAttach.ts
 * @description 불릿에 파일·소스를 붙이는 길: 파일 고르기, 외부 OS 파일 / 호스트(옵시디언 트리) 드롭, 클립보드 캡처 붙여넣기
@@ -2823,7 +2887,7 @@ function useFileAttach() {
 			return false;
 		}
 		if (items.length === 0) return false;
-		const targetNode = findNode(getRoots(), targetId);
+		const targetNode = findNode$1(getRoots(), targetId);
 		if (!targetNode) return false;
 		const isTargetEmpty = targetNode.text.trim() === "" && !targetNode.file;
 		batch(() => {
@@ -2917,7 +2981,7 @@ function useFileAttach() {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useOutlineClipboard.ts
+//#region ../../packages/outliner/src/editor/model/useOutlineClipboard.ts
 /**
 * @file useOutlineClipboard.ts
 * @description Electron/옵시디언 및 브라우저 호환 고신뢰도 아웃라인 클립보드(복사·잘라내기·붙여넣기) 훅
@@ -2956,7 +3020,7 @@ function useOutlineClipboard() {
 	const copyNodes = (0, import_react.useCallback)(async (nodeIds) => {
 		if (nodeIds.length === 0) return false;
 		const roots = api.getState().getRoots();
-		const nodes = getTopmostNodeIds(roots, nodeIds).map((id) => findNode(roots, id)).filter((n) => n !== null);
+		const nodes = getTopmostNodeIds(roots, nodeIds).map((id) => findNode$1(roots, id)).filter((n) => n !== null);
 		if (nodes.length === 0) return false;
 		const plainText = toOutlineText(nodes);
 		return writeTextReliably(win, plainText);
@@ -3007,7 +3071,7 @@ function useOutlineClipboard() {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineInput.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineInput.tsx
 /**
 * @file OutlineInput.tsx
 * @description plaintext-only contenteditable 기반 초경량 아웃라인 텍스트 입력 에디터
@@ -3259,7 +3323,7 @@ var OutlineInput = ({ nodeId, initialText, nodeType = "bullet", isCompleted = fa
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineNote.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineNote.tsx
 /**
 * @file OutlineNote.tsx
 * @description Workflowy 스타일 불릿 부연설명 노트 (테두리 없는 자연스러운 서브타이틀 & 양방향 캐럿 네비게이션)
@@ -3388,7 +3452,7 @@ var OutlineNote = ({ nodeId, note, flattenedNodes }) => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useNodeActions.ts
+//#region ../../packages/outliner/src/editor/model/useNodeActions.ts
 /**
 * @file useNodeActions.ts
 * @description 불릿(한 개 또는 여러 개)에 대한 빠른 조작 훅
@@ -3453,7 +3517,7 @@ function useNodeActions() {
 		const roots = api.getState().getRoots();
 		const topmost = getTopmostNodeIds(roots, nodeIds);
 		if (topmost.length === 0) return false;
-		const hasChildren = topmost.some((id) => (findNode(roots, id)?.children.length ?? 0) > 0);
+		const hasChildren = topmost.some((id) => (findNode$1(roots, id)?.children.length ?? 0) > 0);
 		const message = topmost.length > 1 ? `불릿 ${topmost.length}개와 그 하위 항목을 모두 삭제하시겠습니까?` : "이 불릿과 하위 항목을 모두 삭제하시겠습니까?";
 		if ((topmost.length > 1 || hasChildren) && !await host.confirm(message)) return false;
 		return deleteNodes(topmost);
@@ -3477,7 +3541,7 @@ function useNodeActions() {
 		}, [setFoldDeep]),
 		exportNodes: (0, import_react.useCallback)((nodeIds) => {
 			const roots = api.getState().getRoots();
-			const nodes = getTopmostNodeIds(roots, nodeIds).map((id) => findNode(roots, id)).filter((node) => node !== null);
+			const nodes = getTopmostNodeIds(roots, nodeIds).map((id) => findNode$1(roots, id)).filter((node) => node !== null);
 			if (nodes.length === 0) return;
 			const baseName = nodes[0].text.trim().replace(/[\\/:*?"<>|]/g, " ").slice(0, 60) || "outline";
 			host.exportText(`${baseName}.md`, toOutlineText(nodes));
@@ -3494,7 +3558,7 @@ function useNodeActions() {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useKeyOrchestrator.ts
+//#region ../../packages/outliner/src/editor/model/useKeyOrchestrator.ts
 /**
 * @file useKeyOrchestrator.ts
 * @description 아웃라인 키보드 인터랙션(Enter, Tab, Backspace, 방향키, 빠른 조작 단축키) 오케스트레이션 훅
@@ -3645,7 +3709,7 @@ function useKeyOrchestrator(nodeId, flattenedNodes) {
 	]) };
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useZoom.ts
+//#region ../../packages/outliner/src/editor/model/useZoom.ts
 /**
 * @file useZoom.ts
 * @description 아웃라인 줌인/줌아웃 및 조상 빵가루 경로 계산 훅
@@ -3654,7 +3718,7 @@ function useZoom() {
 	const rootNodes = useOutlineRoots();
 	const activeRootId = useEditorStore((s) => s.activeRootId);
 	const setZoom = useEditorStore((s) => s.setZoom);
-	const activeNode = activeRootId ? findNode(rootNodes, activeRootId) : null;
+	const activeNode = activeRootId ? findNode$1(rootNodes, activeRootId) : null;
 	const breadcrumb = activeRootId ? getPath(rootNodes, activeRootId) : [];
 	const zoomIn = (nodeId) => {
 		setZoom(nodeId);
@@ -3681,7 +3745,7 @@ function useZoom() {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/attachments/kinds/image/ImageBlock.tsx
+//#region ../../packages/outliner/src/editor/attachments/kinds/image/ImageBlock.tsx
 /**
 * @file ImageBlock.tsx
 * @description 불릿 아래에 그림으로 보이는 이미지 (작게 · 크게)
@@ -3703,7 +3767,7 @@ var ImageBlock = ({ file, size, name, files }) => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/attachments/kinds/image/index.ts
+//#region ../../packages/outliner/src/editor/attachments/kinds/image/index.ts
 /**
 * @file kinds/image/index.ts
 * @description 이미지 종류
@@ -3725,7 +3789,7 @@ var imageKind = {
 	Block: ImageBlock
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/attachments/kinds/link/index.ts
+//#region ../../packages/outliner/src/editor/attachments/kinds/link/index.ts
 /**
 * @file kinds/link/index.ts
 * @description 기본 종류 — 전용 종류가 없는 파일과 웹 주소
@@ -3745,7 +3809,7 @@ var webKind = {
 	Icon: Globe
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/attachments/kinds/pdf/PdfBlock.tsx
+//#region ../../packages/outliner/src/editor/attachments/kinds/pdf/PdfBlock.tsx
 /**
 * @file PdfBlock.tsx
 * @description 불릿 아래에 표지(첫 쪽)로 보이는 PDF (작게 · 크게)
@@ -3804,7 +3868,7 @@ var PdfBlock = ({ file, size, name, files }) => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/attachments/registry.ts
+//#region ../../packages/outliner/src/editor/attachments/registry.ts
 /**
 * @file registry.ts
 * @description 파일 종류 등록부 — 종류를 붙이고 떼는 유일한 자리
@@ -3826,13 +3890,13 @@ var FILE_KINDS = KINDS.filter((kind) => kind.Block).map(({ id, label }) => ({
 	label
 }));
 /** 이 주소를 맡는 종류 */
-function fileKindOf(target) {
+function fileKindOf$1(target) {
 	if (isWebTarget(target)) return webKind;
 	const extension = getTargetExtension(target);
 	return KINDS.find((kind) => kind.extensions.includes(extension)) ?? linkKind;
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/attachments/FileBlock.tsx
+//#region ../../packages/outliner/src/editor/attachments/FileBlock.tsx
 /**
 * @file FileBlock.tsx
 * @description 불릿 아래에 놓이는, 그 불릿에 딸린 파일 한 개
@@ -3846,7 +3910,7 @@ var noSubscription = () => () => {};
 var FileBlock = ({ nodeId, file }) => {
 	const { files } = useOutlineHost();
 	const detachFile = useEditorStore((s) => s.detachFile);
-	const kind = fileKindOf(file.target);
+	const kind = fileKindOf$1(file.target);
 	const name = getTargetName(file.target);
 	const canShowBlock = files !== void 0 && kind.Block !== void 0;
 	const isMissing = files !== void 0 && files.resolveUrl(file.target) === null;
@@ -3893,7 +3957,7 @@ var FileBlock = ({ nodeId, file }) => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineRow.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineRow.tsx
 /**
 * @file OutlineRow.tsx
 * @description 들여쓰기 패딩 + 조작부(손잡이·화살표·불릿 점) + 텍스트 인풋 + 참조 뱃지 + 딸린 파일 + 노트를 결합한 아웃라인 한 줄 뷰
@@ -3905,6 +3969,7 @@ var OutlineRow = ({ item, navigableNodes, isSelected, isDragging, dropPosition, 
 	const setFoldDeep = useEditorStore((s) => s.setFoldDeep);
 	const toggleCompleted = useEditorStore((s) => s.toggleCompleted);
 	const isNoteEditing = useEditorStore((s) => s.noteEditingNodeId === item.id);
+	const mirrorCount = useMirrorCount(item.id);
 	const { zoomIn } = useZoom();
 	const { handleKeyDown } = useKeyOrchestrator(item.id, navigableNodes);
 	const { canAttach, isDraggingFile, dropOnNode } = useFileAttach();
@@ -3956,6 +4021,7 @@ var OutlineRow = ({ item, navigableNodes, isSelected, isDragging, dropPosition, 
 					isAncestorCompleted: item.isAncestorCompleted,
 					isTodo: nodeType === "todo",
 					isDotSubtle: nodeType === "paragraph",
+					isMirrored: mirrorCount > 1,
 					onToggleFold: () => toggleFold(item.id),
 					onToggleFoldDeep: () => setFoldDeep(item.id, isFullyExpanded(node)),
 					onZoom: () => zoomIn(item.id),
@@ -4158,7 +4224,7 @@ var require_react_dom = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_dom_production();
 }));
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineContextMenu.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineContextMenu.tsx
 /**
 * @file OutlineContextMenu.tsx
 * @description 불릿 노드 메뉴 (Workflowy 스타일 다크 테마 플로팅 메뉴)
@@ -4198,6 +4264,7 @@ var OutlineContextMenu = ({ item, targetIds, x, y, menuRef, onClose, onRequestMo
 	const host = useOutlineHost();
 	const win = useEditorWindow();
 	const [isTypeListOpen, setIsTypeListOpen] = (0, import_react.useState)(false);
+	const mirrorCount = useMirrorCount(item.id);
 	const isSingle = targetIds.length === 1;
 	const currentType = item.node.viewMode === "board" ? "board" : item.node.nodeType ?? "bullet";
 	(0, import_react.useLayoutEffect)(() => {
@@ -4231,6 +4298,19 @@ var OutlineContextMenu = ({ item, targetIds, x, y, menuRef, onClose, onRequestMo
 		onContextMenu: (e) => e.preventDefault(),
 		className: "outline-menu-pop fixed z-[100] py-1 max-h-[calc(100vh-16px)] overflow-y-auto rounded-lg bg-(--background-secondary)/95 border border-(--background-modifier-border) backdrop-blur-md shadow-2xl shadow-black/60 select-none",
 		children: [
+			isSingle && mirrorCount > 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "px-3 py-1.5 flex items-center justify-center gap-1.5 text-[11px] text-(--text-muted)",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
+					"미러 ",
+					mirrorCount,
+					"곳에 있음."
+				] }), host.showMirrors && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					type: "button",
+					onClick: run(() => host.showMirrors?.(item.id)),
+					className: "underline underline-offset-2 hover:text-(--text-normal) cursor-pointer",
+					children: "보기"
+				})]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Separator, {})] }),
 			!isSingle && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "px-3 py-1 text-[10px] font-semibold text-(--text-accent)",
 				children: [
@@ -4301,11 +4381,19 @@ var OutlineContextMenu = ({ item, targetIds, x, y, menuRef, onClose, onRequestMo
 				disabled: isSingle && !item.hasChildren,
 				onSelect: run(() => actions.setFoldAll(targetIds, true))
 			}),
-			isSingle && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Separator, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuItem, {
-				icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link2, { className: "w-3.5 h-3.5 text-(--text-muted)" }),
-				label: "내부 링크 복사",
-				onSelect: run(() => void actions.copyNodeLink(item.id))
-			})] }),
+			isSingle && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Separator, {}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuItem, {
+					icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link2, { className: "w-3.5 h-3.5 text-(--text-muted)" }),
+					label: "내부 링크 복사",
+					onSelect: run(() => void actions.copyNodeLink(item.id))
+				}),
+				host.nodeMenuItems?.(item.id).map((extra) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuItem, {
+					icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PanelRight, { className: "w-3.5 h-3.5 text-(--text-muted)" }),
+					label: extra.label,
+					onSelect: run(extra.run)
+				}, extra.label))
+			] }),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuItem, {
 				icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { className: "w-3.5 h-3.5 text-(--text-muted)" }),
 				label: "내보내기 (텍스트 파일)",
@@ -4323,7 +4411,7 @@ var OutlineContextMenu = ({ item, targetIds, x, y, menuRef, onClose, onRequestMo
 	}), host.getPortalRoot());
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useMoveTargets.ts
+//#region ../../packages/outliner/src/editor/model/useMoveTargets.ts
 /**
 * @file useMoveTargets.ts
 * @description "이동" 대화상자에 보여줄 옮길 수 있는 대상 불릿 목록 계산 훅
@@ -4360,7 +4448,7 @@ function useMoveTargets(sourceIds, query) {
 	]);
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineMoveDialog.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineMoveDialog.tsx
 /**
 * @file OutlineMoveDialog.tsx
 * @description "이동" 대화상자 — 옮길 곳(어느 불릿의 하위로, 또는 맨 위 단계로)을 찾아 고른다.
@@ -4457,7 +4545,7 @@ var OutlineMoveDialog = ({ sourceIds, onClose }) => {
 	}), host.getPortalRoot());
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineSelectionBar.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineSelectionBar.tsx
 /**
 * @file OutlineSelectionBar.tsx
 * @description 여러 불릿을 골랐을 때 화면 아래에 뜨는 묶음 조작 막대
@@ -4531,7 +4619,7 @@ var OutlineSelectionBar = ({ selectedIds, onRequestMove, onClear }) => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useContextMenu.ts
+//#region ../../packages/outliner/src/editor/model/useContextMenu.ts
 /**
 * @file useContextMenu.ts
 * @description 불릿 노드 메뉴의 열림 상태(대상 노드·위치) 및 닫힘 조건 관리 훅
@@ -4588,7 +4676,7 @@ function useContextMenu() {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useDragAndDrop.ts
+//#region ../../packages/outliner/src/editor/model/useDragAndDrop.ts
 /**
 * @file useDragAndDrop.ts
 * @description 불릿을 잡고 끌어 순서·계층을 바꾸는 드래그 앤 드롭 계산 훅 (HTML5 Drag and Drop)
@@ -4666,7 +4754,7 @@ function useDragAndDrop() {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useRowSelection.ts
+//#region ../../packages/outliner/src/editor/model/useRowSelection.ts
 /**
 * @file useRowSelection.ts
 * @description 마우스 및 키보드로 여러 불릿을 다중 선택하고 조작하는 선택 훅
@@ -4907,7 +4995,7 @@ function useRowSelection(flattenedNodes) {
 	return { handleMouseDown };
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineTree.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineTree.tsx
 /**
 * @file OutlineTree.tsx
 * @description 평탄화된 아웃라인 노드들을 렌더링하는 컨테이너 컴포넌트
@@ -5041,7 +5129,7 @@ var OutlineTree = () => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineBreadcrumb.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineBreadcrumb.tsx
 /**
 * @file OutlineBreadcrumb.tsx
 * @description 상단 조상 경로(Breadcrumb) 네비게이션 UI 컴포넌트
@@ -5070,7 +5158,7 @@ var OutlineBreadcrumb = ({ className = "mb-3" }) => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useBoardDragAndDrop.ts
+//#region ../../packages/outliner/src/editor/model/useBoardDragAndDrop.ts
 /**
 * @file useBoardDragAndDrop.ts
 * @description 보드에서 카드와 컬럼을 끌어 옮기는 드래그 앤 드롭 계산 훅 (HTML5 Drag and Drop)
@@ -5141,7 +5229,7 @@ function useBoardDragAndDrop() {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineBoard.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineBoard.tsx
 /**
 * @file OutlineBoard.tsx
 * @description Workflowy 사양의 무한 아웃라인 트리 ➔ 2차원 칸반 보드 뷰 컴포넌트
@@ -5461,7 +5549,7 @@ var OutlineBoard = () => {
 	});
 };
 //#endregion
-//#region ../../packages/outliner-editor/src/model/useOutlineView.ts
+//#region ../../packages/outliner/src/editor/model/useOutlineView.ts
 /**
 * @file useOutlineView.ts
 * @description 지금 화면을 불릿으로 볼지 보드로 볼지 결정하는 훅
@@ -5475,7 +5563,7 @@ function useOutlineView() {
 	const activeRootId = useEditorStore((s) => s.activeRootId);
 	const setDefaultView = useEditorStore((s) => s.setDefaultView);
 	const setNodesViewMode = useEditorStore((s) => s.setNodesViewMode);
-	const zoomedNode = activeRootId ? findNode(rootNodes, activeRootId) : null;
+	const zoomedNode = activeRootId ? findNode$1(rootNodes, activeRootId) : null;
 	const view = zoomedNode?.viewMode ?? defaultView ?? "bullets";
 	return {
 		view,
@@ -5492,7 +5580,7 @@ function useOutlineView() {
 	};
 }
 //#endregion
-//#region ../../packages/outliner-editor/src/ui/OutlineHeader.tsx
+//#region ../../packages/outliner/src/editor/ui/OutlineHeader.tsx
 /**
 * @file OutlineHeader.tsx
 * @description 브레드크럼(Breadcrumb) + 동적 줌 HEAD 제목 + 뷰 모드 전환 버튼을 통합한 에디터 헤더 컴포넌트
@@ -5506,7 +5594,7 @@ function useOutlineView() {
 *   - HEAD 위에 조상 경로 브레드크럼(Home > ... > 현재 노드) 표시
 *   - HEAD 제목 = 현재 줌인된 불릿 노드의 text (activeNode.text)
 *   - 제목 변경 시 실시간 및 blur 시 editorStore.updateText(activeRootId, text) 호출
-* - 우측: 뷰 모드(불릿 vs 보드) 토글 버튼 및 사용자 지정 액션 컨트롤
+* - 우측: 뷰 모드(불릿 vs 보드) 토글 버튼, 호스트가 캔버스를 열 수 있으면 캔버스 단추, 사용자 지정 액션 컨트롤
 */
 var HeadTitleField = ({ initialTitle, isZoomed, activeRootId, placeholder, onUpdateRootTitle, updateNodeText }) => {
 	const [draft, setDraft] = (0, import_react.useState)(initialTitle);
@@ -5542,6 +5630,7 @@ var OutlineHeader = ({ rootTitle, onUpdateRootTitle, rootPlaceholder = "문서 �
 	const { isZoomed, activeNode, activeRootId } = useZoom();
 	const { view, toggleView } = useOutlineView();
 	const updateText = useEditorStore((s) => s.updateText);
+	const { openCanvasView } = useOutlineHost();
 	const targetTitle = isZoomed ? activeNode?.text ?? "" : rootTitle;
 	const resetKey = isZoomed ? activeRootId ?? "zoomed" : `root-${rootTitle}`;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -5560,19 +5649,32 @@ var OutlineHeader = ({ rootTitle, onUpdateRootTitle, rootPlaceholder = "문서 �
 				}, resetKey)]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "flex items-center gap-2 shrink-0",
-				children: [showViewToggle && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					type: "button",
-					onClick: toggleView,
-					title: `현재: ${view === "board" ? "칸반 보드 뷰" : "불릿 아웃라인 뷰"}`,
-					className: "flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-(--background-secondary) border border-(--background-modifier-border) hover:border-(--background-modifier-border-hover) text-(--text-muted) hover:text-(--text-normal) text-xs transition-colors cursor-pointer",
-					children: view === "board" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LayoutGrid, { className: "w-3.5 h-3.5 text-(--interactive-accent)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "hidden sm:inline",
-						children: "보드 뷰"
-					})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(List, { className: "w-3.5 h-3.5 text-(--interactive-accent)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "hidden sm:inline",
-						children: "불릿 뷰"
-					})] })
-				}), trailing]
+				children: [
+					showViewToggle && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						type: "button",
+						onClick: toggleView,
+						title: `현재: ${view === "board" ? "칸반 보드 뷰" : "불릿 아웃라인 뷰"}`,
+						className: "flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-(--background-secondary) border border-(--background-modifier-border) hover:border-(--background-modifier-border-hover) text-(--text-muted) hover:text-(--text-normal) text-xs transition-colors cursor-pointer",
+						children: view === "board" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LayoutGrid, { className: "w-3.5 h-3.5 text-(--interactive-accent)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "hidden sm:inline",
+							children: "보드 뷰"
+						})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(List, { className: "w-3.5 h-3.5 text-(--interactive-accent)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "hidden sm:inline",
+							children: "불릿 뷰"
+						})] })
+					}),
+					showViewToggle && openCanvasView && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						type: "button",
+						onClick: () => openCanvasView(activeRootId),
+						title: "캔버스로 펼쳐 보기 (카드는 이 불릿들의 미러)",
+						className: "flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-(--background-secondary) border border-(--background-modifier-border) hover:border-(--background-modifier-border-hover) text-(--text-muted) hover:text-(--text-normal) text-xs transition-colors cursor-pointer",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Network, { className: "w-3.5 h-3.5 text-(--interactive-accent)" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "hidden sm:inline",
+							children: "캔버스 뷰"
+						})]
+					}),
+					trailing
+				]
 			})]
 		})]
 	});
@@ -9188,7 +9290,7 @@ ZodNullable.create;
 ZodEffects.createWithPreprocess;
 ZodPipeline.create;
 //#endregion
-//#region ../../packages/outliner-dto/src/schema/outlineSchema.ts
+//#region ../../packages/outliner/src/dto/schema/outlineSchema.ts
 /**
 * @file schema.ts
 * @description Zod 기반 .outline JSON 스키마 검증기 (데이터 규격 런타임 유효성 보장)
@@ -9240,7 +9342,7 @@ objectType({
 	updatedAt: numberType()
 }).passthrough();
 //#endregion
-//#region ../../packages/outliner-dto/src/schema/workspaceSchema.ts
+//#region ../../packages/outliner/src/dto/schema/workspaceSchema.ts
 /**
 * @file schema.ts
 * @description 워크스페이스 & 프로젝트 Zod 런타임 검증기 (.passthrough() 무손실 규격)
@@ -9268,7 +9370,7 @@ objectType({
 	updatedAt: numberType()
 }).passthrough();
 //#endregion
-//#region ../../packages/outliner-dto/src/project/projectFile.ts
+//#region ../../packages/outliner/src/dto/project/projectFile.ts
 /**
 * @file projectFile.ts
 * @description 프로젝트 1개 <-> 파일 1개의 글자 (순수 함수)
@@ -9324,7 +9426,7 @@ function parseProjectFile(text) {
 	return parseProjectValue(value);
 }
 //#endregion
-//#region ../../packages/outliner-dto/src/vault/fileName.ts
+//#region ../../packages/outliner/src/dto/vault/fileName.ts
 var FORBIDDEN_CHARS = "\\/:*?\"<>|";
 var WINDOWS_RESERVED_NAMES = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i;
 var MAX_BASE_LENGTH = 80;
@@ -9350,7 +9452,7 @@ objectType({
 * @file outlineDocument.ts
 * @description 탭 하나가 열고 있는 .outline 파일의 내용 (탭마다 하나)
 *
-* 옵시디언에서는 파일 그 자체가 관리 단위다. 파일 글자를 `@vibe/outliner-dto` 로 읽어 여기에 올리고,
+* 옵시디언에서는 파일 그 자체가 관리 단위다. 파일 글자를 `@vibe/outliner/dto` 로 읽어 여기에 올리고,
 * 저장할 때 다시 글자로 만든다. 읽지 못한 파일은 내용을 올리지 않고, 저장할 때도 건드리지 않는다.
 */
 function createOutlineDocumentStore() {
@@ -19675,7 +19777,7 @@ function createObsidianHost({ app, getFile, getPortalRoot, component }) {
 * @description .outline 파일 하나를 여는 옵시디언 화면 (탭마다 하나)
 *
 * 파일을 읽고 쓰는 일은 옵시디언이 한다. 이 화면은 옵시디언이 넘겨준 글자를 스캐폴드로 올리고(setViewData),
-* 저장할 때 글자를 돌려준다(getViewData). 편집 화면은 `@vibe/outliner-editor` 를 그대로 쓰며,
+* 저장할 때 글자를 돌려준다(getViewData). 편집 화면은 `@vibe/outliner/editor` 를 그대로 쓰며,
 * 내용(outlineDocument)과 편집 상태(줌·포커스·선택)를 탭마다 따로 갖는다.
 */
 /** 우리 화면의 뿌리와 메뉴·대화상자 자리에 붙는 클래스. 스타일이 이 안으로 가둬져 있다. */
@@ -19688,19 +19790,22 @@ var OutlineFileView = class extends obsidian.TextFileView {
 	portalEl = null;
 	/** 파일을 읽기 전에 받아 둔, 다시 열 때 복원할 줌 위치 */
 	pendingZoomId = null;
-	constructor(leaf) {
+	constructor(leaf, options = {}) {
 		super(leaf);
 		this.editor = createOutlineEditorStore({
 			getRoots: () => this.outline.getState().project?.rootNodes ?? [],
 			commitRoots: (rootNodes) => this.updateProject({ rootNodes }),
 			setDefaultView: (defaultView) => this.updateProject({ defaultView })
 		});
-		this.host = createObsidianHost({
-			app: this.app,
-			getFile: () => this.file,
-			getPortalRoot: () => this.getPortalRoot(),
-			component: this
-		});
+		this.host = {
+			...createObsidianHost({
+				app: this.app,
+				getFile: () => this.file,
+				getPortalRoot: () => this.getPortalRoot(),
+				component: this
+			}),
+			...options.extendHost?.(this)
+		};
 		this.register(this.editor.subscribe((state, previous) => {
 			if (state.activeRootId !== previous.activeRootId) this.app.workspace.requestSaveLayout();
 		}));
@@ -19718,7 +19823,7 @@ var OutlineFileView = class extends obsidian.TextFileView {
 		if (clear) this.editor.getState().resetView();
 		this.outline.setState(readOutlineText(data, this.file?.basename ?? ""), true);
 		const { activeRootId } = this.editor.getState();
-		if (activeRootId && !findNode(this.roots(), activeRootId)) this.editor.getState().setZoom(null);
+		if (activeRootId && !findNode$1(this.roots(), activeRootId)) this.editor.getState().setZoom(null);
 		this.applyPendingZoom();
 		this.render();
 		if (this.file) syncOutlineMetadata(this.app, this.file);
@@ -19762,7 +19867,7 @@ var OutlineFileView = class extends obsidian.TextFileView {
 		if (targetNodeId) this.revealNode(targetNodeId);
 	}
 	revealNode(nodeId) {
-		if (findNode(this.roots(), nodeId)) this.editor.getState().setZoom(nodeId);
+		if (findNode$1(this.roots(), nodeId)) this.editor.getState().setZoom(nodeId);
 		else this.pendingZoomId = nodeId;
 	}
 	async onOpen() {
@@ -19793,7 +19898,7 @@ var OutlineFileView = class extends obsidian.TextFileView {
 		const project = this.outline.getState().project;
 		if (!project) return;
 		const { activeRootId, setNodesViewMode, setDefaultView } = this.editor.getState();
-		const zoomed = activeRootId ? findNode(project.rootNodes, activeRootId) : null;
+		const zoomed = activeRootId ? findNode$1(project.rootNodes, activeRootId) : null;
 		const next = (zoomed?.viewMode ?? project.defaultView ?? "bullets") === "bullets" ? "board" : "bullets";
 		if (zoomed) setNodesViewMode([zoomed.id], next);
 		else setDefaultView(next);
@@ -19824,7 +19929,7 @@ var OutlineFileView = class extends obsidian.TextFileView {
 	}
 	applyPendingZoom() {
 		const id = this.pendingZoomId;
-		if (!id || !findNode(this.roots(), id)) return;
+		if (!id || !findNode$1(this.roots(), id)) return;
 		this.pendingZoomId = null;
 		this.editor.getState().setZoom(id);
 	}
@@ -19928,6 +20033,1555 @@ function registerOutlineCommands(plugin) {
 			const view = app.workspace.getActiveViewOfType(OutlineFileView);
 			if (!view) return false;
 			if (!checking) view.exportAsMarkdown();
+			return true;
+		}
+	});
+}
+//#endregion
+//#region src/mirror/mirrorIndex.ts
+/**
+* @file mirrorIndex.ts
+* @description 보관함 전체의 미러 색인: 아웃라인 불릿과, 그 불릿을 가리키는 캔버스 카드 (실험)
+*
+* 미러: 캔버스 카드가 불릿 하나를 가리키면 그 카드는 불릿의 미러다. 미러는 기본으로 켜져 있다.
+* - 카드 데이터의 `vibeOutline.nodeId` 가 있으면 그 불릿의 미러다. (`off: true` 면 미러를 끈 카드)
+* - 태그가 없는 텍스트 카드는, 글자가 같은 불릿이 보관함에 딱 하나면 그 불릿의 미러로 본다.
+*   (같은 글자의 불릿이 여러 개면 어느 것인지 모르므로 미러로 보지 않는다)
+* - 가리키는 불릿이 지워졌으면 미러가 아니다. (카드는 글자만 남은 보통 카드가 된다)
+*
+* 색인은 파일 내용으로 만든다. 열린 화면의 저장 전 내용은 저장된 뒤에 반영된다.
+*/
+function readLink(value) {
+	const link = value;
+	if (!link || typeof link.nodeId !== "string" || link.nodeId === "") return void 0;
+	return {
+		nodeId: link.nodeId,
+		...typeof link.file === "string" ? { file: link.file } : {},
+		...link.off === true ? { off: true } : {}
+	};
+}
+/** 카드 데이터(화면의 것이든 파일의 것이든)를 색인용으로 읽는다. */
+function toRawCard(data) {
+	const card = data;
+	if (typeof card.id !== "string" || typeof card.type !== "string") return null;
+	return {
+		id: card.id,
+		type: card.type,
+		...typeof card.text === "string" ? { text: card.text } : {},
+		...readLink(card.vibeOutline) ? { link: readLink(card.vibeOutline) } : {}
+	};
+}
+var MirrorIndex = class {
+	app;
+	bullets = /* @__PURE__ */ new Map();
+	bulletIdsByText = /* @__PURE__ */ new Map();
+	outlineBullets = /* @__PURE__ */ new Map();
+	canvasCards = /* @__PURE__ */ new Map();
+	/** 위 두 가지에서 다시 계산하는 것: 불릿마다 켜진 미러 카드, 꺼 둔 카드 */
+	mirrorsByNode = /* @__PURE__ */ new Map();
+	offByNode = /* @__PURE__ */ new Map();
+	listeners = /* @__PURE__ */ new Set();
+	ready = false;
+	constructor(app) {
+		this.app = app;
+	}
+	bullet(nodeId) {
+		return this.bullets.get(nodeId);
+	}
+	bulletsOf(outlinePath) {
+		return (this.outlineBullets.get(outlinePath) ?? []).flatMap((id) => this.bullets.get(id) ?? []);
+	}
+	cardsOf(canvasPath) {
+		return this.canvasCards.get(canvasPath) ?? [];
+	}
+	/** 불릿의 켜진 미러 카드들 */
+	mirrorsOf(nodeId) {
+		return this.mirrorsByNode.get(nodeId) ?? [];
+	}
+	/** 불릿을 가리키지만 미러를 꺼 둔 카드들 */
+	offMirrorsOf(nodeId) {
+		return this.offByNode.get(nodeId) ?? [];
+	}
+	/** 카드가 미러인 불릿. 미러가 아니면(꺼 둠, 짝 없음, 불릿이 지워짐) null */
+	resolve(card) {
+		if (card.link) return !card.link.off && this.bullets.has(card.link.nodeId) ? card.link.nodeId : null;
+		if (card.type !== "text" || !card.text) return null;
+		const ids = this.bulletIdsByText.get(card.text.trim());
+		return ids?.length === 1 ? ids[0] ?? null : null;
+	}
+	onChange(listener) {
+		this.listeners.add(listener);
+		return () => this.listeners.delete(listener);
+	}
+	async build() {
+		for (const file of this.app.vault.getFiles()) if (file.extension === OUTLINE_EXTENSION) await this.readOutline(file);
+		else if (file.extension === "canvas") await this.readCanvas(file);
+		this.ready = true;
+		this.recompute({ kind: "all" });
+	}
+	/** 파일이 만들어지거나 바뀌었을 때 */
+	async update(file) {
+		if (!(file instanceof obsidian.TFile) || !this.ready) return;
+		if (file.extension === OUTLINE_EXTENSION) {
+			await this.readOutline(file);
+			this.recompute({
+				kind: "outline",
+				path: file.path
+			});
+		} else if (file.extension === "canvas") {
+			await this.readCanvas(file);
+			this.recompute({
+				kind: "canvas",
+				path: file.path
+			});
+		}
+	}
+	/** 파일이 지워졌을 때 */
+	remove(path) {
+		if (this.outlineBullets.has(path)) {
+			this.dropOutline(path);
+			this.recompute({
+				kind: "outline",
+				path
+			});
+		} else if (this.canvasCards.delete(path)) this.recompute({
+			kind: "canvas",
+			path
+		});
+	}
+	async readOutline(file) {
+		this.dropOutline(file.path);
+		const parsed = parseProjectFile(await this.app.vault.cachedRead(file));
+		if (!parsed.success) return;
+		const ids = [];
+		const visit = (nodes, ancestors) => {
+			for (const node of nodes) {
+				ids.push(node.id);
+				this.bullets.set(node.id, {
+					nodeId: node.id,
+					outlinePath: file.path,
+					text: node.text,
+					ancestors
+				});
+				visit(node.children, [...ancestors, node.text]);
+			}
+		};
+		visit(parsed.project.rootNodes, []);
+		this.outlineBullets.set(file.path, ids);
+	}
+	dropOutline(path) {
+		for (const id of this.outlineBullets.get(path) ?? []) if (this.bullets.get(id)?.outlinePath === path) this.bullets.delete(id);
+		this.outlineBullets.delete(path);
+	}
+	async readCanvas(file) {
+		try {
+			const data = JSON.parse(await this.app.vault.cachedRead(file));
+			const nodes = Array.isArray(data.nodes) ? data.nodes : [];
+			this.canvasCards.set(file.path, nodes.flatMap((node) => toRawCard(node) ?? []));
+		} catch {
+			this.canvasCards.delete(file.path);
+		}
+	}
+	recompute(change) {
+		this.bulletIdsByText.clear();
+		for (const bullet of this.bullets.values()) {
+			const text = bullet.text.trim();
+			if (!text) continue;
+			const ids = this.bulletIdsByText.get(text);
+			if (ids) ids.push(bullet.nodeId);
+			else this.bulletIdsByText.set(text, [bullet.nodeId]);
+		}
+		this.mirrorsByNode.clear();
+		this.offByNode.clear();
+		for (const [canvasPath, cards] of this.canvasCards) for (const card of cards) {
+			const entry = {
+				canvasPath,
+				cardId: card.id,
+				text: card.text ?? "",
+				byId: Boolean(card.link)
+			};
+			const nodeId = this.resolve(card);
+			if (nodeId) push(this.mirrorsByNode, nodeId, entry);
+			else if (card.link?.off && this.bullets.has(card.link.nodeId)) push(this.offByNode, card.link.nodeId, entry);
+		}
+		this.listeners.forEach((listener) => listener(change));
+	}
+};
+function push(map, key, value) {
+	const list = map.get(key);
+	if (list) list.push(value);
+	else map.set(key, [value]);
+}
+//#endregion
+//#region src/mirror/mirrorCardContent.ts
+/**
+* @file mirrorCardContent.ts
+* @description 미러 카드에 불릿을 아웃라인에서처럼 그린다. (실험)
+* - 글자: 옵시디언 마크다운으로 그린다. [[내부 링크]]는 눌러서 열고, 올려 두면 미리보기가 뜬다.
+* - 딸린 파일: 이미지는 그림으로, PDF 는 첫 쪽 미리보기로, 그 밖의 파일은 이름만. 누르면 아웃라인에서처럼 연다.
+* 글자와 파일은 따로 그린다. 글자만 바뀌면 파일 미리보기(PDF 첫 쪽 그리기)는 다시 하지 않는다.
+*/
+var IMAGE_EXTENSIONS = /* @__PURE__ */ new Set([
+	"png",
+	"jpg",
+	"jpeg",
+	"gif",
+	"webp",
+	"svg",
+	"avif",
+	"bmp"
+]);
+/** PDF 첫 쪽을 그릴 폭 (카드 폭의 두 배쯤이라 확대해도 또렷하다) */
+var PDF_COVER_WIDTH = 480;
+function extensionOf(target) {
+	const path = target.split("#")[0]?.split("?")[0] ?? "";
+	return path.slice(path.lastIndexOf(".") + 1).toLowerCase();
+}
+function fileKindOf(target) {
+	const extension = extensionOf(target);
+	if (IMAGE_EXTENSIONS.has(extension)) return "image";
+	return extension === "pdf" ? "pdf" : "other";
+}
+/** 딸린 파일이 카드에서 차지하는 높이 */
+function fileHeightOf(file) {
+	if (!file) return 0;
+	return fileKindOf(file.target) === "other" ? 28 : 236;
+}
+function fileNameOf(target) {
+	const path = target.split("#")[0] ?? target;
+	return path.slice(path.lastIndexOf("/") + 1);
+}
+var MirrorCardContent = class {
+	el;
+	app;
+	outlinePath;
+	textEl;
+	fileEl;
+	files;
+	component = new obsidian.Component();
+	hoverParent = { hoverPopover: null };
+	shownText = null;
+	shownFile = null;
+	/** 늦게 끝난 그리기가 새 것을 덮지 않게 하는 번호 */
+	textRun = 0;
+	fileRun = 0;
+	constructor(app, outlinePath, doc) {
+		this.app = app;
+		this.outlinePath = outlinePath;
+		this.files = createObsidianFiles({
+			app,
+			getFile: () => {
+				const file = app.vault.getAbstractFileByPath(outlinePath);
+				return file instanceof obsidian.TFile ? file : null;
+			}
+		});
+		this.component.load();
+		this.el = doc.createElement("div");
+		this.el.className = "vibe-outliner-mirror-view";
+		this.textEl = doc.createElement("div");
+		this.textEl.className = "vibe-outliner-mirror-text markdown-rendered";
+		this.fileEl = doc.createElement("div");
+		this.fileEl.className = "vibe-outliner-mirror-file";
+		this.el.append(this.textEl, this.fileEl);
+		this.bindEvents();
+	}
+	/** 불릿 글자와 딸린 파일을 보인다. 바뀐 것만 다시 그린다. */
+	update(text, file) {
+		if (text !== this.shownText) {
+			this.shownText = text;
+			this.renderText(text);
+		}
+		const target = file?.target ?? null;
+		if (target !== this.shownFile) {
+			this.shownFile = target;
+			this.renderFile(file);
+		}
+	}
+	destroy() {
+		this.component.unload();
+		this.el.remove();
+	}
+	async renderText(text) {
+		const run = ++this.textRun;
+		const next = this.textEl.ownerDocument.createElement("div");
+		await obsidian.MarkdownRenderer.render(this.app, text, next, this.outlinePath, this.component);
+		if (run !== this.textRun) return;
+		this.textEl.replaceChildren(...Array.from(next.childNodes));
+	}
+	async renderFile(file) {
+		const run = ++this.fileRun;
+		const doc = this.fileEl.ownerDocument;
+		this.fileEl.replaceChildren();
+		this.fileEl.toggleAttribute("hidden", !file);
+		if (!file) return;
+		const kind = fileKindOf(file.target);
+		const src = kind === "image" ? this.files.resolveUrl(file.target) : kind === "pdf" ? await this.files.thumbnail?.(file.target, PDF_COVER_WIDTH) : null;
+		if (run !== this.fileRun) return;
+		if (src) {
+			const img = doc.createElement("img");
+			img.className = "vibe-outliner-mirror-file-preview";
+			img.src = src;
+			img.alt = fileNameOf(file.target);
+			img.draggable = false;
+			this.fileEl.appendChild(img);
+		}
+		const name = doc.createElement("div");
+		name.className = "vibe-outliner-mirror-file-name";
+		name.textContent = fileNameOf(file.target);
+		this.fileEl.appendChild(name);
+		this.fileEl.dataset.target = file.target;
+	}
+	bindEvents() {
+		this.el.addEventListener("click", (event) => {
+			const target = event.target;
+			const link = target?.closest("a");
+			if (link) {
+				event.preventDefault();
+				event.stopPropagation();
+				const href = link.dataset.href ?? link.getAttribute("href") ?? "";
+				if (link.classList.contains("internal-link")) this.app.workspace.openLinkText(href, this.outlinePath, obsidian.Keymap.isModEvent(event));
+				else if (link.classList.contains("external-link")) window.open(href, "_blank");
+				return;
+			}
+			const fileTarget = target?.closest(".vibe-outliner-mirror-file")?.dataset.target;
+			if (fileTarget) {
+				event.stopPropagation();
+				this.files.open(fileTarget);
+			}
+		});
+		this.el.addEventListener("mouseover", (event) => {
+			const link = event.target?.closest("a.internal-link");
+			if (!(link instanceof HTMLElement)) return;
+			this.app.workspace.trigger("hover-link", {
+				event,
+				source: VIEW_TYPE_OUTLINE,
+				hoverParent: this.hoverParent,
+				targetEl: link,
+				linktext: link.dataset.href ?? link.getAttribute("href") ?? "",
+				sourcePath: this.outlinePath
+			});
+		});
+	}
+};
+//#endregion
+//#region src/mirror/MirrorCards.ts
+/** 입력칸을 올린 카드 (옵시디언의 카드 내용을 감춘다) */
+var LIVE_CLASS = "vibe-outliner-mirror-live";
+/** 카드 데이터의 예비 글자를 맞추기 전에 기다리는 시간 */
+var CACHE_DELAY = 800;
+/** 불릿은 한 줄이다. */
+function toBulletText(text) {
+	return text.replace(/\s*\n\s*/g, " ");
+}
+/** 카드 하나에 올린 불릿 입력칸 */
+var MirrorCardEditor = class {
+	path;
+	nodeId;
+	card;
+	canvas;
+	documents;
+	onMissing;
+	el;
+	content;
+	input;
+	unwatch;
+	cacheTimer = null;
+	constructor(app, card, canvas, target, documents, onMissing) {
+		this.card = card;
+		this.canvas = canvas;
+		this.path = target.path;
+		this.nodeId = target.nodeId;
+		this.documents = documents;
+		this.onMissing = onMissing;
+		const doc = card.nodeEl.ownerDocument;
+		this.el = doc.createElement("div");
+		this.el.className = "vibe-outliner-mirror-editor";
+		this.content = new MirrorCardContent(app, this.path, doc);
+		this.input = doc.createElement("textarea");
+		this.input.className = "vibe-outliner-mirror-input";
+		this.input.spellcheck = false;
+		this.input.tabIndex = -1;
+		this.input.value = card.getData().text ?? "";
+		this.el.append(this.content.el, this.input);
+		this.bindEvents();
+		this.ensureMounted();
+		this.unwatch = documents.watch(this.path, () => this.render());
+		this.render();
+	}
+	/** 옵시디언이 카드를 다시 그려 입력칸이 떨어졌으면 다시 붙인다. */
+	ensureMounted() {
+		const host = this.card.contentEl?.parentElement ?? this.card.nodeEl;
+		if (this.el.parentElement !== host) host.appendChild(this.el);
+		this.card.nodeEl.classList.add(LIVE_CLASS);
+	}
+	destroy() {
+		this.writeCache();
+		if (this.cacheTimer !== null) window.clearTimeout(this.cacheTimer);
+		this.unwatch();
+		this.content.destroy();
+		this.el.remove();
+		this.card.nodeEl.classList.remove(LIVE_CLASS);
+	}
+	get focused() {
+		return this.input.ownerDocument.activeElement === this.input;
+	}
+	/** 불릿을 그린다. 치고 있는 입력칸은 건드리지 않는다. (그 글자가 곧 불릿 글자다) */
+	render() {
+		const node = this.documents.nodeOf(this.path, this.nodeId);
+		if (!node) {
+			if (this.documents.loaded(this.path)) this.onMissing();
+			else this.content.update(this.card.getData().text ?? "", void 0);
+			this.input.readOnly = true;
+			return;
+		}
+		this.input.readOnly = false;
+		if (this.focused) return;
+		this.content.update(node.text, node.file);
+		if (this.input.value !== node.text) this.input.value = node.text;
+		this.scheduleCache();
+	}
+	startEditing() {
+		if (this.input.readOnly) return;
+		this.el.classList.add("is-editing");
+		this.input.focus();
+		this.input.setSelectionRange(this.input.value.length, this.input.value.length);
+	}
+	bindEvents() {
+		const { el, input } = this;
+		el.addEventListener("dblclick", (event) => {
+			event.stopPropagation();
+			event.preventDefault();
+			this.startEditing();
+		});
+		for (const type of [
+			"pointerdown",
+			"mousedown",
+			"wheel"
+		]) el.addEventListener(type, (event) => {
+			if (this.focused) event.stopPropagation();
+		});
+		input.addEventListener("focus", () => {
+			this.canvas.deselectAll?.();
+		});
+		input.addEventListener("keydown", (event) => {
+			event.stopPropagation();
+			if (event.isComposing) return;
+			if (event.key === "Escape" || event.key === "Enter" && !event.shiftKey) {
+				event.preventDefault();
+				input.blur();
+			}
+		});
+		input.addEventListener("input", () => {
+			const text = toBulletText(input.value);
+			if (text !== input.value) input.value = text;
+			this.documents.setText(this.path, this.nodeId, text);
+		});
+		input.addEventListener("blur", () => {
+			this.el.classList.remove("is-editing");
+			this.render();
+			this.writeCache();
+		});
+	}
+	scheduleCache() {
+		if (this.cacheTimer !== null) window.clearTimeout(this.cacheTimer);
+		this.cacheTimer = window.setTimeout(() => this.writeCache(), CACHE_DELAY);
+	}
+	/** 카드 데이터의 예비 글자를 불릿 글자로 맞춘다. (플러그인이 꺼져도 카드에 글자가 보이게) */
+	writeCache() {
+		if (this.cacheTimer !== null) window.clearTimeout(this.cacheTimer);
+		this.cacheTimer = null;
+		if (this.focused || !this.card.nodeEl.isConnected) return;
+		const text = this.documents.textOf(this.path, this.nodeId);
+		const data = this.card.getData();
+		if (text === void 0 || data.text === text) return;
+		this.card.setData({
+			...data,
+			text
+		});
+		this.canvas.requestSave();
+	}
+};
+var MirrorCards = class {
+	app;
+	index;
+	documents;
+	editors = /* @__PURE__ */ new Map();
+	/** 가리키는 불릿이 지워진 카드 -> 그 불릿 (색인이 바뀔 때까지 다시 올리지 않는다) */
+	orphans = /* @__PURE__ */ new Map();
+	observers = /* @__PURE__ */ new Map();
+	eventRefs = [];
+	scanPending = false;
+	constructor(app, index, documents) {
+		this.app = app;
+		this.index = index;
+		this.documents = documents;
+	}
+	init() {
+		this.scan();
+		const schedule = () => this.scheduleScan();
+		this.eventRefs.push(this.app.workspace.on("layout-change", schedule), this.app.workspace.on("active-leaf-change", schedule));
+		const offIndex = this.index.onChange(() => {
+			this.orphans.clear();
+			this.scheduleScan();
+		});
+		return () => {
+			offIndex();
+			this.eventRefs.forEach((ref) => this.app.workspace.offref(ref));
+			this.eventRefs = [];
+			this.observers.forEach((observer) => observer.disconnect());
+			this.observers.clear();
+			this.editors.forEach((editor) => editor.destroy());
+			this.editors.clear();
+		};
+	}
+	/** 캔버스가 카드를 그리고 지우는 동안 여러 번 불리므로, 다음 프레임에 한 번만 본다. */
+	scheduleScan() {
+		if (this.scanPending) return;
+		this.scanPending = true;
+		requestAnimationFrame(() => {
+			this.scanPending = false;
+			this.scan();
+		});
+	}
+	scan() {
+		const present = /* @__PURE__ */ new Set();
+		const containers = /* @__PURE__ */ new Set();
+		for (const leaf of this.app.workspace.getLeavesOfType("canvas")) {
+			const view = leaf.view;
+			const canvas = view.canvas;
+			if (!canvas?.nodes) continue;
+			containers.add(view.containerEl);
+			this.observe(view.containerEl);
+			for (const card of canvas.nodes.values()) {
+				present.add(card);
+				this.update(canvas, card);
+			}
+		}
+		for (const [card, editor] of this.editors) {
+			if (present.has(card)) continue;
+			editor.destroy();
+			this.editors.delete(card);
+		}
+		for (const [container, observer] of this.observers) {
+			if (containers.has(container)) continue;
+			observer.disconnect();
+			this.observers.delete(container);
+		}
+	}
+	/** 카드가 새로 그려지거나 화면 안으로 들어오면 입력칸을 다시 본다. */
+	observe(container) {
+		if (this.observers.has(container)) return;
+		const observer = new MutationObserver(() => this.scheduleScan());
+		observer.observe(container, {
+			childList: true,
+			subtree: true
+		});
+		this.observers.set(container, observer);
+	}
+	update(canvas, card) {
+		const target = this.targetOf(canvas, card);
+		const current = this.editors.get(card);
+		if (current && (!target || current.path !== target.path || current.nodeId !== target.nodeId)) {
+			current.destroy();
+			this.editors.delete(card);
+		}
+		if (!target || this.orphans.get(card) === target.nodeId) return;
+		const existing = this.editors.get(card);
+		if (existing) {
+			existing.ensureMounted();
+			return;
+		}
+		const editor = new MirrorCardEditor(this.app, card, canvas, target, this.documents, () => {
+			this.orphans.set(card, target.nodeId);
+			this.editors.get(card)?.destroy();
+			this.editors.delete(card);
+		});
+		if (this.orphans.get(card) === target.nodeId) editor.destroy();
+		else this.editors.set(card, editor);
+	}
+	/** 카드가 미러인 불릿과 그 파일. 미러가 아니면 null */
+	targetOf(canvas, card) {
+		const raw = toRawCard(card.getData());
+		if (!raw || raw.type !== "text") return null;
+		if (raw.link) {
+			if (raw.link.off) return null;
+			const path = this.index.bullet(raw.link.nodeId)?.outlinePath ?? raw.link.file;
+			return path ? {
+				path,
+				nodeId: raw.link.nodeId
+			} : null;
+		}
+		const nodeId = this.index.resolve(raw);
+		const bullet = nodeId ? this.index.bullet(nodeId) : void 0;
+		if (!nodeId || !bullet) return null;
+		card.setData({
+			...card.getData(),
+			vibeOutline: {
+				nodeId,
+				file: bullet.outlinePath
+			}
+		});
+		canvas.requestSave();
+		return {
+			path: bullet.outlinePath,
+			nodeId
+		};
+	}
+};
+//#endregion
+//#region src/mirror/mirrorSwitch.ts
+/**
+* @file mirrorSwitch.ts
+* @description 미러 켜고 끄기 (실험)
+* - 미러를 끄면: 카드는 그 순간의 불릿 글자를 가진 보통 텍스트 카드가 된다. 그때부터 따로 입력하고 따로 보인다.
+* - 다시 켜면: 카드는 다시 그 불릿을 보여 주고 고치는 창이 된다. (MirrorCards)
+* 미러인 동안 글자는 불릿 하나뿐이라 맞출 것이 없다. 카드 데이터의 글자는 플러그인이 꺼져 있을 때 보일 예비용이다.
+*/
+function applyCardPatch(data, patch) {
+	const next = { ...data };
+	if (patch.text !== void 0) next.text = patch.text;
+	if (patch.link) next.vibeOutline = patch.link;
+	return next;
+}
+/** 열린 캔버스 칸에서 그 파일의 캔버스 */
+function openCanvasOf(app, canvasPath) {
+	for (const leaf of app.workspace.getLeavesOfType("canvas")) {
+		const view = leaf.view;
+		if (view.file?.path === canvasPath && view.canvas?.nodes) return view.canvas;
+	}
+	return null;
+}
+var MirrorSwitch = class {
+	app;
+	index;
+	documents;
+	constructor(app, index, documents) {
+		this.app = app;
+		this.index = index;
+		this.documents = documents;
+	}
+	/** 카드 하나의 미러를 켜거나 끈다. */
+	async setCardMirror(canvasPath, cardId, on) {
+		const card = this.cardData(canvasPath, cardId);
+		if (!card) return;
+		const nodeId = on ? card.link?.nodeId : this.index.resolve(card) ?? card.link?.nodeId;
+		if (!nodeId) return;
+		const bullet = this.index.bullet(nodeId);
+		const outlinePath = bullet?.outlinePath ?? card.link?.file;
+		const link = {
+			nodeId,
+			...outlinePath ? { file: outlinePath } : {},
+			...on ? {} : { off: true }
+		};
+		const text = (outlinePath ? this.documents.textOf(outlinePath, nodeId) : void 0) ?? bullet?.text;
+		await this.writeCard(canvasPath, cardId, {
+			link,
+			...text !== void 0 ? { text } : {}
+		});
+	}
+	/** 불릿의 미러를 모두 끄거나, 꺼 둔 것을 모두 다시 켠다. 바꾼 카드 수를 돌려준다. */
+	async setBulletMirrors(nodeId, on) {
+		const cards = on ? this.index.offMirrorsOf(nodeId) : this.index.mirrorsOf(nodeId);
+		for (const card of cards) await this.setCardMirror(card.canvasPath, card.cardId, on);
+		return cards.length;
+	}
+	/** 카드 데이터 (열린 캔버스면 화면의 것) */
+	cardData(canvasPath, cardId) {
+		const card = openCanvasOf(this.app, canvasPath)?.nodes.get(cardId);
+		if (card) return toRawCard(card.getData());
+		return this.index.cardsOf(canvasPath).find((c) => c.id === cardId) ?? null;
+	}
+	async writeCard(canvasPath, cardId, patch) {
+		const canvas = openCanvasOf(this.app, canvasPath);
+		const node = canvas?.nodes.get(cardId);
+		if (canvas && node) {
+			node.setData(applyCardPatch(node.getData(), patch));
+			canvas.requestSave();
+			return;
+		}
+		const file = this.app.vault.getAbstractFileByPath(canvasPath);
+		if (!(file instanceof obsidian.TFile)) return;
+		await this.app.vault.process(file, (content) => {
+			try {
+				const data = JSON.parse(content);
+				const nodes = data.nodes ?? [];
+				const index = nodes.findIndex((n) => n.id === cardId);
+				const current = nodes[index];
+				if (index === -1 || !current) return content;
+				nodes[index] = applyCardPatch(current, patch);
+				return JSON.stringify(data, null, "	");
+			} catch {
+				return content;
+			}
+		});
+	}
+};
+//#endregion
+//#region src/mirror/outlineCanvas.ts
+/**
+* @file outlineCanvas.ts
+* @description 캔버스 뷰: 아웃라인을 짝 캔버스 파일에 마인드맵으로 펼친다. (실험)
+*
+* 한눈에 읽히게 하는 것이 목적이라 Heptabase 화이트보드의 원칙을 따른다.
+* - 마인드맵: 부모 카드 오른쪽에 자식들을 위아래로 붙여 쌓는다. 선은 부모 오른쪽 → 자식 왼쪽이라 서로 엇갈리지 않는다.
+* - 섹션: 자식이 있는 맨 위 불릿은 이름 붙은 섹션(캔버스 그룹)으로 감싼다. 자식이 없으면 카드 하나로 두었다가
+*   자식이 생기면 섹션이 된다. 맨 위 불릿들은 위에서 아래로 쌓는다.
+* - 화살촉 없는 가는 선, 차분한 카드 (모양은 styles.css 의 `.vibe-outliner-canvas-view`)
+*
+* 짝 캔버스: 아웃라인 옆의 같은 이름 `.canvas` 파일. 없으면 만든다.
+* 카드는 모두 미러라 어디서 고쳐도 같은 불릿이다.
+* 불릿 구조가 바뀌면 다시 늘어놓는다. 단, 사용자가 손으로 옮긴 카드는 그 자리에 둔다.
+* (캔버스 뷰가 놓은 자리를 카드에 적어 두고, 지금 자리와 같으면 손대지 않은 카드로 본다)
+* 손으로 옮긴 카드라도 부모나 섹션이 바뀌면 옛 자리는 뜻이 없으므로 새 자리로 옮긴다.
+* 캔버스 뷰가 만든 것은 id 앞머리(`vo-`)로 알아본다. 사용자가 더한 카드·선·그룹은 건드리지 않는다.
+*/
+var CARD_PREFIX = "vo-";
+var EDGE_PREFIX = "vo-e-";
+var SECTION_PREFIX = "vo-g-";
+/** 짝 캔버스 화면에 붙여 카드·선·섹션 모양을 바꾸는 클래스 */
+var VIEW_CLASS = "vibe-outliner-canvas-view";
+var CARD_WIDTH$1 = 240;
+/** 부모 카드와 자식 카드 사이 (가로) */
+var COLUMN_GAP = 72;
+/** 형제 카드 사이 (세로) */
+var SIBLING_GAP = 16;
+/** 섹션 안쪽 여백, 섹션 사이 */
+var SECTION_PADDING = 40;
+var SECTION_GAP = 96;
+var MIN_HEIGHT = 52;
+var LINE_HEIGHT = 24;
+/** 카드 안쪽 위아래 여백 합 */
+var PADDING_Y = 24;
+/** 글자와 딸린 파일 사이 */
+var FILE_GAP = 8;
+/** 카드 한 줄에 들어가는 글자 폭 (한글 한 글자 = 1, 영문·숫자 = 0.55) */
+var LINE_UNITS = 13;
+/** 불릿 구조가 바뀐 뒤 캔버스를 고치기까지 기다리는 시간 */
+var SYNC_DELAY = 300;
+/** 아웃라인의 짝 캔버스 경로 */
+function companionCanvasPath(outlinePath) {
+	return outlinePath.replace(/\.outline$/, ".canvas");
+}
+function companionOutlinePath(canvasPath) {
+	return canvasPath.replace(/\.canvas$/, ".outline");
+}
+function flatten(nodes, parentId = null, rootId = null, into = []) {
+	for (const node of nodes) {
+		into.push({
+			node,
+			parentId,
+			rootId: rootId ?? node.id
+		});
+		flatten(node.children, node.id, rootId ?? node.id, into);
+	}
+	return into;
+}
+/**
+* 캔버스를 다시 그려야 하는 것: 불릿 구조, 딸린 파일(카드 높이가 바뀐다), 섹션 이름(맨 위 불릿 글자).
+* 다른 글자는 미러 카드가 보여 준다.
+*/
+function structureOf(roots) {
+	return `${flatten(roots).map((b) => `${b.node.id}<${b.parentId ?? ""}:${b.node.file?.target ?? ""}`).join(",")}|${roots.map((root) => root.text).join("\0")}`;
+}
+/** 카드 높이: 글자 줄 수로 어림잡고, 딸린 파일(이미지·PDF 미리보기)이 있으면 그만큼 더한다. */
+function cardHeight(node) {
+	let units = 0;
+	for (const char of node.text) units += char.charCodeAt(0) > 11904 ? 1 : .55;
+	const lines = Math.max(1, Math.ceil(units / LINE_UNITS));
+	const fileHeight = fileHeightOf(node.file);
+	return Math.max(MIN_HEIGHT, PADDING_Y + lines * LINE_HEIGHT + (fileHeight ? fileHeight + FILE_GAP : 0));
+}
+/**
+* 마인드맵 자리: 맨 위 불릿마다 왼쪽에서 오른쪽으로 뻗는 나무. 부모는 자식 묶음의 세로 가운데에 둔다.
+* 맨 위 불릿들은 기준점에서 위에서 아래로 쌓는다. 섹션이 될 것(자식이 있는 것)만 섹션 여백을 둔다.
+*/
+function layoutMindMap(roots, origin) {
+	const heights = /* @__PURE__ */ new Map();
+	const blockOf = (nodes) => nodes.reduce((sum, node) => sum + heightOf(node), 0) + SIBLING_GAP * Math.max(0, nodes.length - 1);
+	const heightOf = (node) => {
+		let height = heights.get(node.id);
+		if (height === void 0) {
+			height = Math.max(cardHeight(node), blockOf(node.children));
+			heights.set(node.id, height);
+		}
+		return height;
+	};
+	const boxes = /* @__PURE__ */ new Map();
+	const place = (node, x, top) => {
+		const span = heightOf(node);
+		const height = cardHeight(node);
+		boxes.set(node.id, {
+			x,
+			y: Math.round(top + (span - height) / 2),
+			width: CARD_WIDTH$1,
+			height
+		});
+		let childTop = top + (span - blockOf(node.children)) / 2;
+		for (const child of node.children) {
+			place(child, x + CARD_WIDTH$1 + COLUMN_GAP, childTop);
+			childTop += heightOf(child) + SIBLING_GAP;
+		}
+	};
+	let top = origin.y;
+	for (const root of roots) {
+		const padding = hasSection(root) ? SECTION_PADDING : 0;
+		place(root, origin.x + SECTION_PADDING, top + padding);
+		top += heightOf(root) + padding * 2 + (padding ? SECTION_GAP : SECTION_GAP / 2);
+	}
+	return boxes;
+}
+/** 섹션으로 감싸는 맨 위 불릿: 자식이 있을 때만 */
+function hasSection(root) {
+	return root.children.length > 0;
+}
+function isGeneratedCard(card) {
+	return card.type === "text" && card.id.startsWith(CARD_PREFIX) && Boolean(card.vibeOutline?.nodeId);
+}
+/** 사용자가 손으로 옮기지 않은 카드인지 (예전에 만든, 자리를 적어 두지 않은 카드도 손대지 않은 것으로 본다) */
+function isUntouched(card) {
+	const auto = card.vibeOutline?.auto;
+	return !auto || Math.abs(auto.x - card.x) < 1 && Math.abs(auto.y - card.y) < 1;
+}
+function underOf(bullet) {
+	return `${bullet.parentId ?? ""}|${bullet.rootId}`;
+}
+/**
+* 캔버스 데이터를 불릿 구조에 맞춘다. 바꾼 것이 있으면 true.
+* `tidy` 면 손으로 옮긴 카드까지 모두 마인드맵 자리로 되돌린다.
+*/
+function syncCanvasData(data, roots, outlinePath, tidy = false) {
+	const before = JSON.stringify(data);
+	const bullets = flatten(roots);
+	const alive = new Set(bullets.map((b) => b.node.id));
+	const removed = /* @__PURE__ */ new Set();
+	data.nodes = data.nodes.filter((card) => {
+		const nodeId = card.vibeOutlineSection?.nodeId ?? card.vibeOutline?.nodeId;
+		if (!card.id.startsWith(CARD_PREFIX) || !nodeId || alive.has(nodeId)) return true;
+		removed.add(card.id);
+		return false;
+	});
+	const origin = data.nodes.find((card) => card.vibeOutlineSection)?.vibeOutlineSection?.origin ?? data.nodes.find((card) => card.vibeOutline?.origin)?.vibeOutline?.origin ?? {
+		x: data.nodes.filter((card) => !card.id.startsWith(CARD_PREFIX)).reduce((max, card) => Math.max(max, card.x + card.width + SECTION_GAP), 0),
+		y: 0
+	};
+	const boxes = layoutMindMap(roots, origin);
+	const cardOf = /* @__PURE__ */ new Map();
+	for (const card of data.nodes) {
+		const link = card.vibeOutline;
+		if (card.type !== "text" || !link?.nodeId) continue;
+		if (link.file !== void 0 && link.file !== outlinePath) continue;
+		const current = cardOf.get(link.nodeId);
+		if (!current || current.vibeOutline?.off && !link.off) cardOf.set(link.nodeId, card);
+	}
+	for (const bullet of bullets) {
+		const box = boxes.get(bullet.node.id);
+		if (!box) continue;
+		const auto = {
+			x: box.x,
+			y: box.y
+		};
+		const under = underOf(bullet);
+		const card = cardOf.get(bullet.node.id);
+		if (!card) {
+			const created = {
+				id: `${CARD_PREFIX}${bullet.node.id}`,
+				type: "text",
+				text: bullet.node.text,
+				...box,
+				vibeOutline: {
+					nodeId: bullet.node.id,
+					file: outlinePath,
+					auto,
+					under,
+					origin
+				}
+			};
+			data.nodes.push(created);
+			cardOf.set(bullet.node.id, created);
+		} else if (isGeneratedCard(card) && (tidy || isUntouched(card) || card.vibeOutline?.under !== under)) {
+			Object.assign(card, box);
+			card.vibeOutline = {
+				...card.vibeOutline,
+				auto,
+				under,
+				origin
+			};
+		} else if (isGeneratedCard(card)) card.height = box.height;
+	}
+	const sectioned = new Set(roots.filter(hasSection).map((root) => root.id));
+	const sections = /* @__PURE__ */ new Map();
+	data.nodes = data.nodes.filter((card) => {
+		const nodeId = card.vibeOutlineSection?.nodeId;
+		if (card.type !== "group" || !card.id.startsWith(SECTION_PREFIX) || !nodeId) return true;
+		if (!sectioned.has(nodeId)) return false;
+		sections.set(nodeId, card);
+		return true;
+	});
+	for (const root of roots) {
+		if (!sectioned.has(root.id)) continue;
+		const cards = bullets.filter((b) => b.rootId === root.id).flatMap((b) => cardOf.get(b.node.id) ?? []);
+		if (cards.length === 0) continue;
+		const left = Math.min(...cards.map((c) => c.x)) - SECTION_PADDING;
+		const top = Math.min(...cards.map((c) => c.y)) - SECTION_PADDING;
+		const right = Math.max(...cards.map((c) => c.x + c.width)) + SECTION_PADDING;
+		const bottom = Math.max(...cards.map((c) => c.y + c.height)) + SECTION_PADDING;
+		const bounds = {
+			x: left,
+			y: top,
+			width: right - left,
+			height: bottom - top
+		};
+		const section = sections.get(root.id);
+		if (section) Object.assign(section, bounds, {
+			label: root.text,
+			vibeOutlineSection: {
+				nodeId: root.id,
+				origin
+			}
+		});
+		else data.nodes.push({
+			id: `${SECTION_PREFIX}${root.id}`,
+			type: "group",
+			label: root.text,
+			...bounds,
+			vibeOutlineSection: {
+				nodeId: root.id,
+				origin
+			}
+		});
+	}
+	data.nodes.sort((a, b) => Number(b.type === "group") - Number(a.type === "group"));
+	const edges = [];
+	for (const bullet of bullets) {
+		const from = bullet.parentId ? cardOf.get(bullet.parentId) : void 0;
+		const to = cardOf.get(bullet.node.id);
+		if (!from || !to) continue;
+		edges.push({
+			id: `${EDGE_PREFIX}${from.id}-${to.id}`,
+			fromNode: from.id,
+			fromSide: "right",
+			toNode: to.id,
+			toSide: "left",
+			toEnd: "none"
+		});
+	}
+	data.edges = [...data.edges.filter((edge) => !edge.id.startsWith(EDGE_PREFIX) && !removed.has(edge.fromNode) && !removed.has(edge.toNode)), ...edges];
+	return JSON.stringify(data) !== before;
+}
+function readCanvasData(text) {
+	try {
+		const parsed = JSON.parse(text);
+		return {
+			...parsed,
+			nodes: Array.isArray(parsed.nodes) ? parsed.nodes : [],
+			edges: Array.isArray(parsed.edges) ? parsed.edges : []
+		};
+	} catch {
+		return {
+			nodes: [],
+			edges: []
+		};
+	}
+}
+var OutlineCanvas = class {
+	app;
+	documents;
+	opener;
+	/** 열려 있는 짝 캔버스 -> 그 아웃라인 문서 지켜보기 */
+	watches = /* @__PURE__ */ new Map();
+	eventRefs = [];
+	constructor(app, documents, opener) {
+		this.app = app;
+		this.documents = documents;
+		this.opener = opener;
+	}
+	init() {
+		this.scan();
+		this.eventRefs.push(this.app.workspace.on("layout-change", () => this.scan()));
+		return () => {
+			this.eventRefs.forEach((ref) => this.app.workspace.offref(ref));
+			this.eventRefs = [];
+			this.watches.forEach((watch) => this.stop(watch));
+			this.watches.clear();
+			for (const leaf of this.app.workspace.getLeavesOfType("canvas")) leaf.view.containerEl.classList.remove(VIEW_CLASS);
+		};
+	}
+	/** 캔버스 뷰 열기: 짝 캔버스를 (없으면 만들어) 불릿 구조에 맞추고 오른쪽 칸에 연다. */
+	async open(leaf, outlineFile, roots, focusId) {
+		const canvasPath = companionCanvasPath(outlineFile.path);
+		const existing = this.app.vault.getAbstractFileByPath(canvasPath);
+		let data;
+		if (existing instanceof obsidian.TFile) data = await this.apply(canvasPath, outlineFile.path, roots);
+		else {
+			data = {
+				nodes: [],
+				edges: []
+			};
+			syncCanvasData(data, roots, outlineFile.path);
+			await this.app.vault.create(canvasPath, JSON.stringify(data, null, "	"));
+		}
+		const card = focusId ? data.nodes.find((c) => c.vibeOutline?.nodeId === focusId && !c.vibeOutline.off) : void 0;
+		await this.opener.openCard(leaf, canvasPath, card?.id ?? null);
+	}
+	/** 손으로 옮긴 카드까지 모두 마인드맵 자리로 다시 늘어놓는다. */
+	async tidy(outlineFile, roots) {
+		const canvasPath = companionCanvasPath(outlineFile.path);
+		if (!(this.app.vault.getAbstractFileByPath(canvasPath) instanceof obsidian.TFile)) return false;
+		await this.apply(canvasPath, outlineFile.path, roots, true);
+		return true;
+	}
+	scan() {
+		const open = /* @__PURE__ */ new Set();
+		for (const leaf of this.app.workspace.getLeavesOfType("canvas")) {
+			const canvasPath = leaf.view.file?.path;
+			const outlinePath = canvasPath ? companionOutlinePath(canvasPath) : null;
+			const isCompanion = canvasPath !== void 0 && outlinePath !== null && this.app.vault.getAbstractFileByPath(outlinePath) instanceof obsidian.TFile;
+			leaf.view.containerEl.classList.toggle(VIEW_CLASS, isCompanion);
+			if (!isCompanion || !canvasPath || !outlinePath) continue;
+			open.add(canvasPath);
+			if (this.watches.has(canvasPath)) continue;
+			const watch = {
+				unwatch: () => {},
+				structure: null,
+				timer: null
+			};
+			this.watches.set(canvasPath, watch);
+			watch.unwatch = this.documents.watch(outlinePath, () => this.schedule(watch, canvasPath, outlinePath));
+			this.schedule(watch, canvasPath, outlinePath);
+		}
+		for (const [canvasPath, watch] of this.watches) {
+			if (open.has(canvasPath)) continue;
+			this.stop(watch);
+			this.watches.delete(canvasPath);
+		}
+	}
+	stop(watch) {
+		watch.unwatch();
+		if (watch.timer !== null) window.clearTimeout(watch.timer);
+	}
+	/** 불릿 구조가 바뀌었을 때만 캔버스를 고친다. (글자만 바뀐 것은 미러 카드가 이미 보여 준다) */
+	schedule(watch, canvasPath, outlinePath) {
+		if (watch.timer !== null) window.clearTimeout(watch.timer);
+		watch.timer = window.setTimeout(() => {
+			watch.timer = null;
+			const roots = this.documents.rootsOf(outlinePath);
+			if (!roots) return;
+			const structure = structureOf(roots);
+			if (structure === watch.structure) return;
+			watch.structure = structure;
+			this.apply(canvasPath, outlinePath, roots);
+		}, SYNC_DELAY);
+	}
+	/** 짝 캔버스를 불릿 구조에 맞춘다. 열려 있으면 화면에서, 닫혀 있으면 파일에서 고친다. */
+	async apply(canvasPath, outlinePath, roots, tidy = false) {
+		const canvas = openCanvasOf(this.app, canvasPath);
+		if (canvas?.getData && canvas.setData) {
+			const data = readCanvasData(JSON.stringify(canvas.getData()));
+			if (syncCanvasData(data, roots, outlinePath, tidy)) {
+				canvas.setData(data);
+				canvas.requestSave();
+			}
+			return data;
+		}
+		let result = {
+			nodes: [],
+			edges: []
+		};
+		const file = this.app.vault.getAbstractFileByPath(canvasPath);
+		if (!(file instanceof obsidian.TFile)) return result;
+		await this.app.vault.process(file, (text) => {
+			result = readCanvasData(text);
+			return syncCanvasData(result, roots, outlinePath, tidy) ? JSON.stringify(result, null, "	") : text;
+		});
+		return result;
+	}
+};
+//#endregion
+//#region src/document/outlineDocuments.ts
+/**
+* @file outlineDocuments.ts
+* @description 아웃라인 문서를 파일마다 메모리에 하나만 둔다. (미러 카드가 불릿을 직접 읽고 고치는 창구)
+*
+* 문서의 주인은 언제나 하나다.
+* - 그 파일을 연 아웃라인 탭이 있으면 탭의 문서가 주인이다. 고치면 탭이 바로 다시 그리고, 저장도 탭이 한다.
+* - 열린 탭이 없으면 여기서 파일을 읽어 문서를 들고 있고, 고치면 잠깐 모았다가 파일에 쓴다.
+* 탭이 열리고 닫히면 주인이 바뀌고, 지켜보는 쪽에는 그대로 알린다. 지켜보는 쪽은 주인이 누구인지 몰라도 된다.
+*/
+/** 열린 탭이 없을 때 고친 것을 파일에 쓰기 전에 모으는 시간 */
+var SAVE_DELAY = 500;
+function findNode(nodes, nodeId) {
+	for (const node of nodes) {
+		if (node.id === nodeId) return node;
+		const found = findNode(node.children, nodeId);
+		if (found) return found;
+	}
+	return null;
+}
+var OutlineDocuments = class {
+	app;
+	entries = /* @__PURE__ */ new Map();
+	workspaceRefs = [];
+	vaultRefs = [];
+	constructor(app) {
+		this.app = app;
+	}
+	/** 탭이 열리고 닫히는 것, 파일이 바뀌는 것을 따라가기 시작한다. 돌려주는 함수로 그만둔다. */
+	init() {
+		const reattach = () => this.entries.forEach((entry, path) => this.attach(path, entry));
+		this.workspaceRefs.push(this.app.workspace.on("layout-change", reattach), this.app.workspace.on("file-open", reattach));
+		this.vaultRefs.push(this.app.vault.on("modify", (file) => void this.onModify(file)), this.app.vault.on("rename", (file, oldPath) => this.onRename(file, oldPath)));
+		return () => {
+			this.workspaceRefs.forEach((ref) => this.app.workspace.offref(ref));
+			this.vaultRefs.forEach((ref) => this.app.vault.offref(ref));
+			this.workspaceRefs = [];
+			this.vaultRefs = [];
+			this.entries.forEach((entry) => this.release(entry));
+			this.entries.clear();
+		};
+	}
+	/** 파일의 문서를 지켜본다. 불릿이 바뀔 때마다 `listener` 를 부른다. 돌려주는 함수로 그만 본다. */
+	watch(path, listener) {
+		let entry = this.entries.get(path);
+		if (!entry) {
+			entry = {
+				listeners: /* @__PURE__ */ new Set(),
+				view: null,
+				held: null,
+				detach: null
+			};
+			this.entries.set(path, entry);
+		}
+		entry.listeners.add(listener);
+		if (!entry.detach) this.attach(path, entry);
+		return () => {
+			const current = this.entries.get(path);
+			if (!current) return;
+			current.listeners.delete(listener);
+			if (current.listeners.size > 0) return;
+			this.release(current);
+			this.entries.delete(path);
+		};
+	}
+	/** 문서를 읽었는지 (읽었는데 불릿이 없으면 그 불릿은 지워진 것이다) */
+	loaded(path) {
+		return Boolean(this.storeOf(path)?.getState().project);
+	}
+	/** 문서의 지금 불릿 트리. 아직 읽지 못했으면 undefined */
+	rootsOf(path) {
+		return this.storeOf(path)?.getState().project?.rootNodes;
+	}
+	/** 불릿 하나 (글자, 딸린 파일 등). 문서를 아직 읽지 못했거나 불릿이 없으면 undefined */
+	nodeOf(path, nodeId) {
+		const roots = this.rootsOf(path);
+		return roots ? findNode(roots, nodeId) ?? void 0 : void 0;
+	}
+	/** 불릿의 지금 글자. 문서를 아직 읽지 못했거나 불릿이 없으면 undefined */
+	textOf(path, nodeId) {
+		const roots = this.storeOf(path)?.getState().project?.rootNodes;
+		return roots ? findNode(roots, nodeId)?.text : void 0;
+	}
+	/** 불릿 글자를 고친다. 주인이 탭이면 탭에서 고친 것과 똑같다. (실행 취소도 탭에 쌓인다) */
+	setText(path, nodeId, text) {
+		const entry = this.entries.get(path);
+		const editor = entry?.view?.editor ?? entry?.held?.editor;
+		if (!editor || this.textOf(path, nodeId) === void 0) return false;
+		editor.getState().updateText(nodeId, text);
+		return true;
+	}
+	storeOf(path) {
+		const entry = this.entries.get(path);
+		return entry?.view?.outline ?? entry?.held?.outline ?? null;
+	}
+	openViewOf(path) {
+		for (const leaf of this.app.workspace.getLeavesOfType(VIEW_TYPE_OUTLINE)) {
+			const view = leaf.view;
+			if (view instanceof OutlineFileView && view.file?.path === path) return view;
+		}
+		return null;
+	}
+	/** 지금 주인을 찾아 구독한다. 주인이 그대로면 아무것도 하지 않는다. */
+	attach(path, entry) {
+		const view = this.openViewOf(path);
+		if (view && view === entry.view && entry.detach) return;
+		if (!view && !entry.view && entry.held && entry.detach) return;
+		entry.detach?.();
+		entry.detach = null;
+		const notify = () => entry.listeners.forEach((listener) => listener());
+		if (view) {
+			if (entry.held) this.flush(entry.held);
+			entry.held = null;
+			entry.view = view;
+			entry.detach = view.outline.subscribe(notify);
+			notify();
+			return;
+		}
+		entry.view = null;
+		const file = this.app.vault.getAbstractFileByPath(path);
+		if (!(file instanceof obsidian.TFile)) return;
+		const held = this.hold(file);
+		entry.held = held;
+		entry.detach = held.outline.subscribe(notify);
+		this.app.vault.read(file).then((text) => {
+			if (entry.held !== held || held.outline.getState().project) return;
+			held.outline.setState(readOutlineText(text, file.basename), true);
+		});
+	}
+	hold(file) {
+		const outline = createOutlineDocumentStore();
+		const held = {
+			file,
+			outline,
+			editor: createOutlineEditorStore({
+				getRoots: () => outline.getState().project?.rootNodes ?? [],
+				commitRoots: (rootNodes) => update({ rootNodes }),
+				setDefaultView: (defaultView) => update({ defaultView })
+			}),
+			lastWritten: null,
+			saveTimer: null
+		};
+		const update = (patch) => {
+			const { project } = outline.getState();
+			if (!project) return;
+			outline.setState({ project: {
+				...project,
+				...patch,
+				updatedAt: Date.now()
+			} });
+			if (held.saveTimer !== null) window.clearTimeout(held.saveTimer);
+			held.saveTimer = window.setTimeout(() => void this.flush(held), SAVE_DELAY);
+		};
+		return held;
+	}
+	async flush(held) {
+		if (held.saveTimer === null) return;
+		window.clearTimeout(held.saveTimer);
+		held.saveTimer = null;
+		const { project } = held.outline.getState();
+		if (!project) return;
+		const text = writeOutlineText(project, held.file.basename);
+		held.lastWritten = text;
+		await this.app.vault.modify(held.file, text);
+	}
+	release(entry) {
+		entry.detach?.();
+		entry.detach = null;
+		if (entry.held) this.flush(entry.held);
+		entry.held = null;
+		entry.view = null;
+	}
+	/** 들고 있는 문서의 파일이 밖에서 바뀌었으면 다시 읽는다. (탭이 주인이면 탭이 알아서 다시 읽는다) */
+	async onModify(file) {
+		const held = this.entries.get(file.path)?.held;
+		if (!held || !(file instanceof obsidian.TFile)) return;
+		const text = await this.app.vault.read(file);
+		if (text === held.lastWritten || held.saveTimer !== null) return;
+		held.outline.setState(readOutlineText(text, file.basename), true);
+	}
+	onRename(file, oldPath) {
+		const entry = this.entries.get(oldPath);
+		if (!entry) return;
+		this.entries.delete(oldPath);
+		this.entries.set(file.path, entry);
+		if (entry.held && file instanceof obsidian.TFile) entry.held.file = file;
+	}
+};
+//#endregion
+//#region src/surfaces/entries/CanvasSelectionSync.ts
+/** 캔버스의 선택이 바뀌는 길목. 있는 것만 감싼다. */
+var SELECTION_METHODS = [
+	"updateSelection",
+	"selectOnly",
+	"select",
+	"deselect",
+	"deselectAll"
+];
+/** 열린 캔버스들 (아직 불러오지 않은 탭은 뺀다) */
+function openCanvases(app) {
+	return app.workspace.getLeavesOfType("canvas").map((leaf) => leaf.view.canvas).filter((canvas) => Boolean(canvas?.nodes));
+}
+/** 고른 것 가운데 카드만 (선은 뺀다) */
+function selectedCards(canvas) {
+	return [...canvas.selection].filter((item) => canvas.nodes.get(item.id) === item);
+}
+var CanvasSelectionSync = class {
+	app;
+	eventRefs = [];
+	/** 지켜보는 아웃라인 탭 -> 구독 해제 */
+	outlineSubs = /* @__PURE__ */ new Map();
+	/** 감싼 캔버스 -> 원래대로 돌리기 */
+	canvasRestores = /* @__PURE__ */ new Map();
+	/** 캔버스마다 마지막으로 본 단일 선택 카드 (같은 선택을 두 번 처리하지 않는다) */
+	lastCard = /* @__PURE__ */ new Map();
+	pendingChecks = /* @__PURE__ */ new Set();
+	/** 우리가 불릿을 고르는 중이면 그 변화를 다시 캔버스로 보내지 않는다. */
+	applyingToOutline = false;
+	/** 명령이 쓰는 값: 마지막으로 만진 아웃라인 탭과, 탭마다 마지막으로 커서를 둔 불릿 */
+	lastView = null;
+	lastBullet = /* @__PURE__ */ new Map();
+	/** (선택) 카드 하나를 골라 도구 막대가 그려질 때마다 불린다. 막대에 단추를 더하는 자리다. */
+	onCardMenu = null;
+	/** 카드 데이터가 미러인 불릿. 미러가 아니면 null (플러그인이 미러 색인으로 채운다) */
+	resolveCard = () => null;
+	constructor(app) {
+		this.app = app;
+	}
+	init() {
+		this.scan();
+		this.eventRefs.push(this.app.workspace.on("layout-change", () => this.scan()), this.app.workspace.on("active-leaf-change", () => this.scan()), this.app.workspace.on("file-open", () => this.scan()));
+	}
+	destroy() {
+		this.eventRefs.forEach((ref) => this.app.workspace.offref(ref));
+		this.eventRefs = [];
+		this.outlineSubs.forEach((unsubscribe) => unsubscribe());
+		this.outlineSubs.clear();
+		this.canvasRestores.forEach((restore) => restore());
+		this.canvasRestores.clear();
+	}
+	/** 탭에서 마지막으로 커서를 둔 불릿. 명령 팔레트를 열면 입력칸 포커스가 떨어져서 따로 기억해 둔다. */
+	bulletOf(view) {
+		const { focusedNodeId } = view.editor.getState();
+		return focusedNodeId ?? this.lastBullet.get(view) ?? null;
+	}
+	scan() {
+		const views = new Set(this.app.workspace.getLeavesOfType(VIEW_TYPE_OUTLINE).map((leaf) => leaf.view).filter((view) => view instanceof OutlineFileView));
+		for (const [view, unsubscribe] of this.outlineSubs) if (!views.has(view)) {
+			unsubscribe();
+			this.outlineSubs.delete(view);
+		}
+		views.forEach((view) => this.watchOutline(view));
+		const canvases = new Set(openCanvases(this.app));
+		for (const [canvas, restore] of this.canvasRestores) if (!canvases.has(canvas)) {
+			restore();
+			this.canvasRestores.delete(canvas);
+		}
+		canvases.forEach((canvas) => this.watchCanvas(canvas));
+	}
+	watchOutline(view) {
+		if (this.outlineSubs.has(view)) return;
+		const unsubscribe = view.editor.subscribe((state, previous) => {
+			let nodeId = null;
+			if (state.focusedNodeId && state.focusedNodeId !== previous.focusedNodeId) nodeId = state.focusedNodeId;
+			else if (state.selectedNodeIds !== previous.selectedNodeIds && state.selectedNodeIds.length === 1) nodeId = state.selectedNodeIds[0] ?? null;
+			if (!nodeId) return;
+			this.lastView = view;
+			this.lastBullet.set(view, nodeId);
+			if (!this.applyingToOutline) this.revealInCanvases(nodeId);
+		});
+		this.outlineSubs.set(view, unsubscribe);
+	}
+	watchCanvas(canvas) {
+		if (this.canvasRestores.has(canvas)) return;
+		const target = canvas;
+		const restores = [];
+		const schedule = () => this.scheduleCanvasCheck(canvas);
+		for (const name of SELECTION_METHODS) {
+			const original = target[name];
+			if (typeof original !== "function") continue;
+			const hadOwn = Object.prototype.hasOwnProperty.call(target, name);
+			target[name] = function(...args) {
+				const result = original.apply(this, args);
+				schedule();
+				return result;
+			};
+			restores.push(() => {
+				if (hadOwn) target[name] = original;
+				else delete target[name];
+			});
+		}
+		const menu = canvas.menu;
+		const originalRender = menu?.render;
+		if (menu && typeof originalRender === "function") {
+			menu.render = (...args) => {
+				const result = originalRender.apply(menu, args);
+				const cards = selectedCards(canvas);
+				if (cards.length === 1 && cards[0] && menu.menuEl) this.onCardMenu?.(canvas, cards[0], menu.menuEl);
+				return result;
+			};
+			restores.push(() => {
+				menu.render = originalRender;
+			});
+		}
+		this.canvasRestores.set(canvas, () => restores.forEach((restore) => restore()));
+	}
+	/** 한 동작 안에서 선택이 여러 번 바뀌므로, 다음 프레임에 한 번만 본다. */
+	scheduleCanvasCheck(canvas) {
+		if (this.pendingChecks.has(canvas)) return;
+		this.pendingChecks.add(canvas);
+		requestAnimationFrame(() => {
+			this.pendingChecks.delete(canvas);
+			this.checkCanvasSelection(canvas);
+		});
+	}
+	checkCanvasSelection(canvas) {
+		const cards = selectedCards(canvas);
+		const card = cards.length === 1 ? cards[0] : void 0;
+		if (!card) {
+			this.lastCard.set(canvas, null);
+			return;
+		}
+		if (this.lastCard.get(canvas) === card.id) return;
+		this.lastCard.set(canvas, card.id);
+		const nodeId = this.resolveCard(card.getData());
+		if (!nodeId) return;
+		for (const view of this.outlineSubs.keys()) if (getFlatNode(view.editor.getState().getTree(), nodeId)) this.revealBullet(view, nodeId);
+	}
+	/** 불릿이 보이게(줌 밖이면 줌아웃, 접힌 조상은 펼침) 한 뒤 골라 두고 가운데로 스크롤한다. 입력 포커스는 가져오지 않는다. */
+	revealBullet(view, nodeId) {
+		const state = view.editor.getState();
+		const tree = state.getTree();
+		if (state.activeRootId && !isInSubtree(tree, state.activeRootId, nodeId)) state.setZoom(null);
+		const folded = [];
+		for (let id = getFlatNode(tree, nodeId)?.parentId; id && id !== "root";) {
+			const parent = getFlatNode(tree, id);
+			if (parent?.isFolded) folded.push(id);
+			id = parent?.parentId ?? null;
+		}
+		this.applyingToOutline = true;
+		try {
+			if (folded.length > 0) state.applyPatch(folded.map((id) => ({
+				op: "set_fold",
+				id,
+				isFolded: false
+			})));
+			state.selectNodes([nodeId]);
+		} finally {
+			this.applyingToOutline = false;
+		}
+		this.lastView = view;
+		this.lastBullet.set(view, nodeId);
+		waitFor(() => view.contentEl.querySelector(`[data-node-id="${CSS.escape(nodeId)}"]`)).then((row) => row?.scrollIntoView({
+			block: "center",
+			behavior: "smooth"
+		}));
+	}
+	revealInCanvases(nodeId) {
+		for (const canvas of this.canvasRestores.keys()) {
+			const card = [...canvas.nodes.values()].find((c) => this.resolveCard(c.getData()) === nodeId);
+			if (!card) continue;
+			if (canvas.selection.size === 1 && canvas.selection.has(card)) continue;
+			this.lastCard.set(canvas, card.id);
+			canvas.selectOnly(card);
+			zoomToCard(canvas, card);
+		}
+	}
+};
+/** `find` 가 값을 돌려줄 때까지 프레임마다 다시 본다. 끝내 없으면 null */
+function waitFor(find, frames = 60) {
+	return new Promise((resolve) => {
+		const tick = (left) => {
+			const found = find();
+			if (found) resolve(found);
+			else if (left <= 0) resolve(null);
+			else requestAnimationFrame(() => tick(left - 1));
+		};
+		tick(frames);
+	});
+}
+/** 카드가 화면의 1/3쯤 차지하게 주변까지 넣어 줌한다. (카드만 꽉 차게 줌하면 너무 크다) */
+function zoomToCard(canvas, card) {
+	if (!canvas.zoomToBbox) {
+		canvas.zoomToSelection();
+		return;
+	}
+	const pad = Math.max(card.width, card.height);
+	canvas.zoomToBbox({
+		minX: card.x - pad,
+		minY: card.y - pad,
+		maxX: card.x + card.width + pad,
+		maxY: card.y + card.height + pad
+	});
+}
+//#endregion
+//#region src/commands/canvasSyncCommands.ts
+/**
+* @file canvasSyncCommands.ts
+* @description 불릿과 캔버스 카드를 짝짓는 명령 (실험)
+* - 불릿을 캔버스 카드로 보내기: 고른 불릿들(없으면 커서를 둔 불릿)을 열린 캔버스에 텍스트 카드로 만든다.
+* - 고른 캔버스 카드를 불릿과 연결: 캔버스에서 고른 카드 하나에 커서를 둔 불릿의 id 를 심는다.
+*/
+var CARD_WIDTH = 260;
+var CARD_HEIGHT = 60;
+function registerCanvasSyncCommands(plugin, sync) {
+	const { app } = plugin;
+	/** 명령 대상 탭: 지금 활성인 아웃라인 탭, 아니면 마지막으로 만진 탭 */
+	const targetView = () => app.workspace.getActiveViewOfType(OutlineFileView) ?? sync.lastView;
+	plugin.addCommand({
+		id: "send-bullets-to-canvas",
+		name: "불릿을 캔버스 카드로 보내기",
+		checkCallback: (checking) => {
+			const view = targetView();
+			const canvas = openCanvases(app)[0];
+			if (!view || !canvas?.createTextNode) return false;
+			const { selectedNodeIds, getTree } = view.editor.getState();
+			const bullet = sync.bulletOf(view);
+			const ids = selectedNodeIds.length > 0 ? selectedNodeIds : bullet ? [bullet] : [];
+			if (ids.length === 0) return false;
+			if (checking) return true;
+			const tree = getTree();
+			const center = canvas.posCenter?.() ?? {
+				x: 0,
+				y: 0
+			};
+			let y = center.y - CARD_HEIGHT / 2;
+			let last = null;
+			for (const nodeId of ids) {
+				const node = getFlatNode(tree, nodeId);
+				if (!node) continue;
+				const card = canvas.createTextNode({
+					pos: {
+						x: center.x - CARD_WIDTH / 2,
+						y
+					},
+					size: {
+						width: CARD_WIDTH,
+						height: CARD_HEIGHT
+					},
+					text: node.text,
+					focus: false,
+					save: false
+				});
+				const link = {
+					nodeId,
+					file: view.file?.path
+				};
+				card.setData({
+					...card.getData(),
+					vibeOutline: link
+				});
+				y += 80;
+				last = card;
+			}
+			canvas.requestSave();
+			if (last) {
+				canvas.selectOnly(last);
+				zoomToCard(canvas, last);
+			}
+			new obsidian.Notice(`캔버스에 카드 ${ids.length}개를 만들었습니다.`);
+			return true;
+		}
+	});
+	plugin.addCommand({
+		id: "link-canvas-card-to-bullet",
+		name: "고른 캔버스 카드를 불릿과 연결",
+		checkCallback: (checking) => {
+			const view = targetView();
+			const bullet = view ? sync.bulletOf(view) : null;
+			const canvas = openCanvases(app).find((c) => selectedCards(c).length === 1);
+			if (!view || !bullet || !canvas) return false;
+			if (checking) return true;
+			const card = selectedCards(canvas)[0];
+			if (!card) return false;
+			const link = {
+				nodeId: bullet,
+				file: view.file?.path
+			};
+			card.setData({
+				...card.getData(),
+				vibeOutline: link
+			});
+			canvas.requestSave();
+			const text = getFlatNode(view.editor.getState().getTree(), bullet)?.text ?? "";
+			new obsidian.Notice(`카드를 불릿 "${text}" 과 연결했습니다.`);
 			return true;
 		}
 	});
@@ -20228,6 +21882,300 @@ var CanvasCardWatcher = class {
 			root.unmount();
 		} catch {}
 		delete nodeEl.dataset[MOUNTED_FLAG$1];
+	}
+};
+//#endregion
+//#region src/mirror/MirrorPanelModal.ts
+/**
+* @file MirrorPanelModal.ts
+* @description 미러 목록 창 (Workflowy 의 "See them" 처럼)
+* - 원본 불릿과 미러 카드가 있는 곳을 "폴더 › 폴더 › 파일 › 조상 불릿 › 불릿" 경로로 보여준다.
+* - 줄을 누르면(또는 Enter) 그곳을 옆 칸에 연다. 아래 단추로 미러를 한꺼번에 끈다.
+*/
+/** 파일 경로를 경로 조각으로: 폴더들 + 확장자를 뺀 파일 이름 */
+function pathSegments(path) {
+	const parts = path.split("/");
+	const name = parts.pop() ?? path;
+	return [...parts, name.replace(/\.[^.]+$/, "")];
+}
+var MirrorPanelModal = class extends obsidian.Modal {
+	heading;
+	places;
+	actions;
+	constructor(app, heading, places, actions) {
+		super(app);
+		this.heading = heading;
+		this.places = places;
+		this.actions = actions;
+	}
+	onOpen() {
+		this.modalEl.addClass("vibe-outliner-mirror-panel");
+		this.titleEl.setText(this.heading);
+		const list = this.contentEl.createDiv({ cls: "vibe-outliner-mirror-list" });
+		this.places.forEach((place, index) => {
+			const row = list.createDiv({
+				cls: `vibe-outliner-mirror-row${place.kind === "source" ? " is-source" : ""}`,
+				attr: {
+					tabindex: "0",
+					role: "button"
+				}
+			});
+			const meta = row.createDiv({ cls: "vibe-outliner-mirror-meta" });
+			meta.createSpan({ text: place.kind === "source" ? "원본 · 아웃라인" : "미러 · 캔버스 카드" });
+			if (place.isOpen) meta.createSpan({
+				cls: "vibe-outliner-mirror-open",
+				text: "열려 있음"
+			});
+			const crumb = row.createDiv({ cls: "vibe-outliner-mirror-crumb" });
+			crumb.createSpan({
+				cls: "vibe-outliner-mirror-index",
+				text: `${index + 1}.`
+			});
+			place.segments.forEach((segment, i) => {
+				if (i > 0) crumb.createSpan({
+					cls: "vibe-outliner-mirror-sep",
+					text: "›"
+				});
+				const isLast = i === place.segments.length - 1;
+				crumb.createSpan({
+					cls: isLast ? "vibe-outliner-mirror-leaf" : "vibe-outliner-mirror-seg",
+					text: segment || "(빈 글자)",
+					attr: { title: segment }
+				});
+			});
+			const go = () => {
+				this.close();
+				place.open();
+			};
+			row.addEventListener("click", go);
+			row.addEventListener("keydown", (event) => {
+				if (event.key === "Enter") go();
+			});
+		});
+		if (this.actions.length > 0) {
+			const footer = this.contentEl.createDiv({ cls: "vibe-outliner-mirror-actions" });
+			for (const action of this.actions) footer.createEl("button", { text: action.label }).addEventListener("click", () => {
+				this.close();
+				action.run();
+			});
+		}
+	}
+	onClose() {
+		this.contentEl.empty();
+	}
+};
+//#endregion
+//#region src/surfaces/entries/SidePeek.ts
+/**
+* @file SidePeek.ts
+* @description 불릿 ↔ 미러 카드를 오른쪽 반쪽 화면에 열기, 그리고 미러 메뉴 (노션의 옆으로 열기처럼, 실험)
+* - 불릿 메뉴: "미러 n곳에 있음. 보기" 머리말, "캔버스에서 보기", "미러 끄기" / "미러 다시 켜기"
+* - 카드 도구 막대 단추·우클릭 메뉴: "아웃라인에서 보기", "미러 보기", "미러 끄기" / "미러 켜기"
+* - 미러가 여러 곳이면 미러 창에서 고른다. 하나면 바로 연다.
+* - 미러 카드에는 모서리에 작은 다이아몬드를 붙인다.
+*
+* 무엇이 미러인지는 미러 색인(mirror/mirrorIndex.ts)이 정한다.
+* 고른 곳이 다른 탭 묶음에 이미 열려 있으면 그 칸을 앞으로 가져오고, 아니면 오른쪽 칸에 연다.
+* 오른쪽 칸은 하나를 계속 다시 쓴다. (열 때마다 화면이 반씩 쪼개지지 않게)
+*/
+var PEEK_BUTTON_CLASS = "vibe-outliner-peek-button";
+var MIRROR_CARD_CLASS = "vibe-outliner-mirror-card";
+/** 막 연 파일이 다 올라오기를 기다리는 프레임 수 (약 2초) */
+var LOAD_FRAMES = 120;
+function canvasOf(leaf) {
+	const canvas = leaf.view.canvas;
+	return canvas?.nodes ? canvas : null;
+}
+function fileOf(leaf) {
+	return leaf.view instanceof obsidian.FileView ? leaf.view.file : null;
+}
+function focusCard(canvas, card) {
+	canvas.selectOnly(card);
+	zoomToCard(canvas, card);
+}
+function shorten(text, max = 24) {
+	return text.length > max ? `${text.slice(0, max)}…` : text;
+}
+var SidePeek = class {
+	app;
+	sync;
+	index;
+	mirrors;
+	/** 옆으로 열 때 다시 쓰는 오른쪽 칸 */
+	asideLeaf = null;
+	constructor(app, sync, index, mirrors) {
+		this.app = app;
+		this.sync = sync;
+		this.index = index;
+		this.mirrors = mirrors;
+	}
+	register(plugin) {
+		this.sync.onCardMenu = (_canvas, card, menuEl) => this.addPeekButton(card, menuEl);
+		const workspace = this.app.workspace;
+		plugin.registerEvent(workspace.on("canvas:node-menu", (menu, card) => this.addCardMenuItems(menu, card)));
+		plugin.register(this.index.onChange(() => this.decorateCanvases()));
+		plugin.registerEvent(this.app.workspace.on("layout-change", () => this.decorateCanvases()));
+	}
+	/** 아웃라인 탭의 편집 화면에 더해 줄 호스트 기능 (다이아몬드 불릿, 메뉴 머리말, 메뉴 항목) */
+	hostFor(view) {
+		return {
+			mirrorCount: (nodeId) => 1 + this.index.mirrorsOf(nodeId).length,
+			subscribeMirrors: (listener) => this.index.onChange(listener),
+			showMirrors: (nodeId) => this.showMirrors(nodeId, view.leaf),
+			nodeMenuItems: (nodeId) => this.bulletMenuItems(view, nodeId)
+		};
+	}
+	bulletMenuItems(view, nodeId) {
+		const on = this.index.mirrorsOf(nodeId).length;
+		const off = this.index.offMirrorsOf(nodeId).length;
+		const items = [];
+		if (on > 0) items.push({
+			label: "캔버스에서 보기",
+			run: () => void this.openCanvasForBullet(view, nodeId)
+		}, {
+			label: `미러 끄기 (카드 ${on}장)`,
+			run: () => void this.setBulletMirrors(nodeId, false)
+		});
+		if (off > 0) items.push({
+			label: `미러 다시 켜기 (카드 ${off}장)`,
+			run: () => void this.setBulletMirrors(nodeId, true)
+		});
+		return items;
+	}
+	async setBulletMirrors(nodeId, on) {
+		const count = await this.mirrors.setBulletMirrors(nodeId, on);
+		new obsidian.Notice(on ? `미러 카드 ${count}장을 다시 켰습니다.` : `미러 카드 ${count}장을 껐습니다.`);
+	}
+	/** 카드가 있는 칸과 파일, 카드가 미러인 불릿 */
+	cardContext(card) {
+		const leaf = this.app.workspace.getLeavesOfType("canvas").find((l) => canvasOf(l)?.nodes.get(card.id) === card) ?? null;
+		const raw = toRawCard(card.getData());
+		return {
+			leaf,
+			raw,
+			canvasPath: leaf ? fileOf(leaf)?.path : void 0,
+			nodeId: raw ? this.index.resolve(raw) : null
+		};
+	}
+	addCardMenuItems(menu, card) {
+		const { leaf, raw, canvasPath, nodeId } = this.cardContext(card);
+		if (!raw || !canvasPath || !leaf) return;
+		if (nodeId) {
+			menu.addItem((item) => item.setTitle("아웃라인에서 보기").setIcon("panel-right").onClick(() => void this.openOutlineForCard(card)));
+			menu.addItem((item) => item.setTitle(`미러 ${1 + this.index.mirrorsOf(nodeId).length}곳 보기`).setIcon("diamond").onClick(() => this.showMirrors(nodeId, leaf)));
+			menu.addItem((item) => item.setTitle("미러 끄기").setIcon("x").onClick(() => void this.mirrors.setCardMirror(canvasPath, card.id, false)));
+		} else if (raw.link?.off && this.index.bullet(raw.link.nodeId)) menu.addItem((item) => item.setTitle("미러 켜기").setIcon("diamond").onClick(() => void this.mirrors.setCardMirror(canvasPath, card.id, true)));
+	}
+	/** 카드 도구 막대에 "아웃라인에서 보기" 단추를 더한다. 미러 카드에만 붙는다. */
+	addPeekButton(card, menuEl) {
+		menuEl.querySelector(`.${PEEK_BUTTON_CLASS}`)?.remove();
+		const raw = toRawCard(card.getData());
+		if (!raw || !this.index.resolve(raw)) return;
+		const button = menuEl.createEl("button", {
+			cls: `clickable-icon ${PEEK_BUTTON_CLASS}`,
+			attr: {
+				"aria-label": "아웃라인에서 보기",
+				"data-tooltip-position": "top"
+			}
+		});
+		(0, obsidian.setIcon)(button, "panel-right");
+		button.addEventListener("click", (event) => {
+			event.stopPropagation();
+			this.openOutlineForCard(card);
+		});
+	}
+	/** 열린 캔버스의 미러 카드에 다이아몬드를 붙이고, 미러가 아닌 카드에서는 뗀다. */
+	decorateCanvases() {
+		for (const canvas of openCanvases(this.app)) canvas.nodes.forEach((card) => {
+			const raw = toRawCard(card.getData());
+			card.nodeEl.classList.toggle(MIRROR_CARD_CLASS, Boolean(raw && this.index.resolve(raw)));
+		});
+	}
+	/** 미러 카드가 하나면 바로 열고, 여러 개면 미러 창을 띄운다. */
+	async openCanvasForBullet(view, nodeId) {
+		const cards = this.index.mirrorsOf(nodeId);
+		const only = cards.length === 1 ? cards[0] : void 0;
+		if (cards.length === 0) new obsidian.Notice("이 불릿의 미러 카드가 없습니다.");
+		else if (only) await this.openCard(view.leaf, only.canvasPath, only.cardId);
+		else this.showMirrors(nodeId, view.leaf);
+	}
+	/** 카드의 원본 불릿을 연다. (원본은 하나뿐이다) */
+	async openOutlineForCard(card) {
+		const { leaf, nodeId } = this.cardContext(card);
+		const bullet = nodeId ? this.index.bullet(nodeId) : void 0;
+		const source = leaf ?? this.app.workspace.getMostRecentLeaf();
+		if (!bullet || !source) {
+			new obsidian.Notice("이 카드는 미러가 아닙니다.");
+			return;
+		}
+		await this.openBullet(source, bullet.outlinePath, bullet.nodeId);
+	}
+	/** 미러 창: 원본 불릿과 미러 카드가 있는 곳을 경로로 보여준다. */
+	showMirrors(nodeId, fromLeaf) {
+		const bullet = this.index.bullet(nodeId);
+		if (!bullet) return;
+		const cards = this.index.mirrorsOf(nodeId);
+		const places = [{
+			kind: "source",
+			segments: [
+				...pathSegments(bullet.outlinePath),
+				...bullet.ancestors,
+				bullet.text
+			],
+			isOpen: Boolean(this.openLeafOf(bullet.outlinePath, fromLeaf)),
+			open: () => void this.openBullet(fromLeaf, bullet.outlinePath, nodeId)
+		}, ...cards.map((card) => ({
+			kind: "card",
+			segments: [...pathSegments(card.canvasPath), card.text],
+			isOpen: Boolean(this.openLeafOf(card.canvasPath, fromLeaf)),
+			open: () => void this.openCard(fromLeaf, card.canvasPath, card.cardId)
+		}))];
+		new MirrorPanelModal(this.app, `"${shorten(bullet.text)}" 미러 ${places.length}곳`, places, cards.length > 0 ? [{
+			label: "미러 모두 끄기",
+			run: () => void this.setBulletMirrors(nodeId, false)
+		}] : []).open();
+	}
+	/** 캔버스를 오른쪽 칸(또는 이미 열린 칸)에 열고, 카드가 있으면 그 카드로 간다. */
+	async openCard(fromLeaf, canvasPath, cardId) {
+		const file = this.app.vault.getAbstractFileByPath(canvasPath);
+		if (!(file instanceof obsidian.TFile)) return;
+		const leaf = await this.leafFor(fromLeaf, file);
+		if (!cardId) return;
+		const canvas = await waitFor(() => canvasOf(leaf)?.nodes.has(cardId) ? canvasOf(leaf) : null, LOAD_FRAMES);
+		const card = canvas?.nodes.get(cardId);
+		if (canvas && card) focusCard(canvas, card);
+	}
+	async openBullet(fromLeaf, outlinePath, nodeId) {
+		const file = this.app.vault.getAbstractFileByPath(outlinePath);
+		if (!(file instanceof obsidian.TFile)) return;
+		const leaf = await this.leafFor(fromLeaf, file);
+		const view = await waitFor(() => leaf.view instanceof OutlineFileView && leaf.view.outline.getState().project ? leaf.view : null, LOAD_FRAMES);
+		if (view) this.sync.revealBullet(view, nodeId);
+	}
+	/**
+	* 파일을 보여줄 칸: 다른 탭 묶음에 이미 열려 있으면 그 칸을 앞으로,
+	* 아니면(안 열렸거나 같은 탭 묶음이라 지금 화면이 가려지면) 오른쪽 칸에 연다.
+	*/
+	async leafFor(fromLeaf, file) {
+		const open = this.openLeafOf(file.path, fromLeaf);
+		if (open) {
+			await this.app.workspace.revealLeaf(open);
+			return open;
+		}
+		const leaf = this.asideOf(fromLeaf);
+		if (fileOf(leaf)?.path !== file.path) await leaf.openFile(file);
+		return leaf;
+	}
+	/** 그 파일을 연 칸 가운데, `fromLeaf` 와 다른 탭 묶음에 있는 것 */
+	openLeafOf(path, fromLeaf) {
+		return [...this.app.workspace.getLeavesOfType("canvas"), ...this.app.workspace.getLeavesOfType("vibe-outline")].find((leaf) => fileOf(leaf)?.path === path && leaf.parent !== fromLeaf.parent) ?? null;
+	}
+	/** 옆으로 열 칸: 전에 연 오른쪽 칸이 남아 있으면 다시 쓰고, 없으면 지금 칸을 세로로 나눈다. */
+	asideOf(source) {
+		const aside = this.asideLeaf;
+		if (aside && aside !== source && aside.view.containerEl.isConnected) return aside;
+		this.asideLeaf = this.app.workspace.createLeafBySplit(source, "vertical");
+		return this.asideLeaf;
 	}
 };
 //#endregion
@@ -20569,10 +22517,19 @@ async function retargetOutlineFiles(app, renamed, oldPath) {
 var VibeOutlinerPlugin = class extends obsidian.Plugin {
 	canvasCardWatcher = null;
 	livePreviewWatcher = null;
+	canvasSelectionSync = null;
+	sidePeek = null;
+	outlineCanvas = null;
 	async onload() {
 		await loadPluginSettings(this);
 		this.addSettingTab(new OutlineSettingTab(this.app, this));
-		this.registerView(VIEW_TYPE_OUTLINE, (leaf) => new OutlineFileView(leaf));
+		this.registerView(VIEW_TYPE_OUTLINE, (leaf) => new OutlineFileView(leaf, { extendHost: (view) => ({
+			...this.sidePeek?.hostFor(view),
+			openCanvasView: (focusId) => {
+				const roots = view.outline.getState().project?.rootNodes;
+				if (view.file && roots) this.outlineCanvas?.open(view.leaf, view.file, roots, focusId);
+			}
+		}) }));
 		this.registerExtensions([OUTLINE_EXTENSION], VIEW_TYPE_OUTLINE);
 		registerOutlineMarkdownEmbedProcessor(this.app, (proc) => {
 			this.registerMarkdownPostProcessor(proc);
@@ -20584,6 +22541,32 @@ var VibeOutlinerPlugin = class extends obsidian.Plugin {
 		});
 		this.canvasCardWatcher = new CanvasCardWatcher(this.app);
 		this.canvasCardWatcher.init();
+		this.canvasSelectionSync = new CanvasSelectionSync(this.app);
+		this.canvasSelectionSync.init();
+		registerCanvasSyncCommands(this, this.canvasSelectionSync);
+		const mirrorIndex = new MirrorIndex(this.app);
+		const documents = new OutlineDocuments(this.app);
+		this.register(documents.init());
+		const mirrorCards = new MirrorCards(this.app, mirrorIndex, documents);
+		this.register(mirrorCards.init());
+		const mirrorSwitch = new MirrorSwitch(this.app, mirrorIndex, documents);
+		this.canvasSelectionSync.resolveCard = (data) => {
+			const card = toRawCard(data);
+			return card ? mirrorIndex.resolve(card) : null;
+		};
+		this.sidePeek = new SidePeek(this.app, this.canvasSelectionSync, mirrorIndex, mirrorSwitch);
+		this.sidePeek.register(this);
+		this.outlineCanvas = new OutlineCanvas(this.app, documents, this.sidePeek);
+		this.register(this.outlineCanvas.init());
+		this.addCommand({
+			id: "tidy-outline-canvas",
+			name: "캔버스 뷰 다시 늘어놓기 (손으로 옮긴 카드까지)",
+			callback: async () => {
+				const view = this.app.workspace.getActiveViewOfType(OutlineFileView) ?? this.canvasSelectionSync?.lastView;
+				const roots = view?.outline.getState().project?.rootNodes;
+				if (!(view?.file && roots ? await this.outlineCanvas?.tidy(view.file, roots) : false)) new obsidian.Notice("아웃라인 탭에서 캔버스 뷰를 먼저 열어 주세요.");
+			}
+		});
 		this.registerHoverLinkSource(VIEW_TYPE_OUTLINE, {
 			display: "Vibe Outliner",
 			defaultMod: true
@@ -20596,6 +22579,13 @@ var VibeOutlinerPlugin = class extends obsidian.Plugin {
 		};
 		this.registerEvent(this.app.vault.on("modify", syncIfOutline));
 		this.registerEvent(this.app.vault.on("create", syncIfOutline));
+		this.registerEvent(this.app.vault.on("modify", (file) => void mirrorIndex.update(file)));
+		this.registerEvent(this.app.vault.on("create", (file) => void mirrorIndex.update(file)));
+		this.registerEvent(this.app.vault.on("delete", (file) => mirrorIndex.remove(file.path)));
+		this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
+			mirrorIndex.remove(oldPath);
+			mirrorIndex.update(file);
+		}));
 		this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
 			if (isOutlinePath(oldPath)) clearOutlineMetadata(this.app, oldPath);
 			syncIfOutline(file);
@@ -20608,12 +22598,20 @@ var VibeOutlinerPlugin = class extends obsidian.Plugin {
 			const files = this.app.vault.getFiles();
 			for (const file of files) if (file.extension === OUTLINE_EXTENSION) syncOutlineMetadata(this.app, file);
 		};
-		if (this.app.workspace.layoutReady) syncAllOutlines();
-		else this.app.workspace.onLayoutReady(syncAllOutlines);
+		const onReady = () => {
+			syncAllOutlines();
+			mirrorIndex.build();
+		};
+		if (this.app.workspace.layoutReady) onReady();
+		else this.app.workspace.onLayoutReady(onReady);
 	}
 	onunload() {
 		this.canvasCardWatcher?.destroy();
 		this.canvasCardWatcher = null;
+		this.canvasSelectionSync?.destroy();
+		this.canvasSelectionSync = null;
+		this.sidePeek = null;
+		this.outlineCanvas = null;
 		this.livePreviewWatcher?.destroy();
 		this.livePreviewWatcher = null;
 	}
