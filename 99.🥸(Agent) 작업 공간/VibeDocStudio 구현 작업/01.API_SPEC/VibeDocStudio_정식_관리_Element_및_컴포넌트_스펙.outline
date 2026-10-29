@@ -1,0 +1,2020 @@
+{
+  "version": "1.0.0",
+  "id": "ztmJRk4FBMYC",
+  "title": "VibeDocStudio_정식_관리_Element_및_컴포넌트_스펙",
+  "rootNodes": [
+    {
+      "id": "P08mT743IIQ5",
+      "text": "📖 VibeDocStudio 소개 (Overview)",
+      "children": [
+        {
+          "id": "gpKICyjXWof4",
+          "text": "[개요] 문서의 틀(레이아웃)과 알맹이(텍스트/데이터)를 분리하여 전문적인 비즈니스 문서를 제작하는 구조화 문서 에디터입니다.",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793237217750,
+          "updatedAt": 1793237217750
+        },
+        {
+          "id": "ZOaNeUOMayYw",
+          "text": "[특징] PandaDoc 및 Maily.to 스타일의 직관적인 블록 캔버스와 AI 작문 비서, 원본 증빙 연결 기능을 통합 제공합니다.",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793237217750,
+          "updatedAt": 1793237217750
+        },
+        {
+          "id": "qVgPE3yLaTQj",
+          "text": "🧱 1. 콘텐츠 블록 (Content Blocks) — 문서에 배치하는 화면 요소",
+          "children": [
+            {
+              "id": "XFMNZN4OvEOU",
+              "text": "텍스트 섹션 (Text Section)",
+              "children": [
+                {
+                  "id": "6WLYeZBUUAJR",
+                  "text": "[사용 목적] 제목과 본문 텍스트가 한 세트로 묶인 가장 표준적인 문서 서식 단위",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "gVFHjxtZ4woH",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "5XMpWyUDq09r",
+                      "text": "제목 슬롯 (Heading Slot)",
+                      "children": [
+                        {
+                          "id": "a6fDH7wabYZE",
+                          "text": "H1~H4 레벨 및 타이포그래피(크기, 줄간격, 색상) 서식 제어",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "w0fUWtnn5OEI",
+                          "text": "문장 정렬 (좌측, 가운데, 우측, 양쪽 정렬)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "GaD9yu8dZ3Vm",
+                          "text": "제목 전용 플레이스홀더 가이드 제공",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "ZUiCtYTxdd8A",
+                      "text": "본문 슬롯 (Body Slot)",
+                      "children": [
+                        {
+                          "id": "3jiYGvfzqoCr",
+                          "text": "리치 텍스트 서식 편집 (볼드, 밑줄, 글자색, 형광펜, 링크, 리스트)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "M1ov5lUXFJg9",
+                          "text": "플로팅 AI 작문 비서 호출 (요약, 번역, 문법 교정, 비즈니스 톤 변환)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "py6PJfluY6kk",
+                          "text": "원본 참고 자료(회의록, PDF 공문 등 백데이터 청크) 1:N 증빙 연결",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "PzefQeLMjqME",
+                      "text": "섹션 프레임 (Block Frame)",
+                      "children": [
+                        {
+                          "id": "z4XeuOGfy2vc",
+                          "text": "좌측 핸들(⋮⋮)을 통한 블록 상/하 순서 재배치",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "GQpGG1C65sbu",
+                          "text": "좌측 [+] 버튼으로 아래에 새 블록 즉시 삽입",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "JtnHBuootSBS",
+                          "text": "우측 ⚙️ 메뉴를 통한 블록 복제, 내용 잠금(Lock), 삭제",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "5hSuJHO7eCC7",
+              "text": "스마트 표 (Smart Table)",
+              "children": [
+                {
+                  "id": "5fCMLqkoKeoZ",
+                  "text": "[사용 목적] 행과 열 격자 형태로 정돈된 데이터, 품목 명세, 견적표 작성",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "8Wdvnl3mWY9d",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "97Vis1oOEN1B",
+                      "text": "테이블 헤더 셀 슬롯 (Header Cell Slot)",
+                      "children": [
+                        {
+                          "id": "SCgblRbWFo47",
+                          "text": "컬럼 명칭 입력 및 굵은 글씨(Bold) 자동 서식화",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "u6r2zm7PlTAf",
+                          "text": "헤더 전용 음영 배경색 및 상/하단 강조 테두리 지정",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "1hCw3K6ZxwI0",
+                          "text": "텍스트 수평(좌/중/우) 및 수직(상/중/하) 정렬",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "RC6GrVPDXaIf",
+                      "text": "데이터 본문 셀 슬롯 (Data Cell Slot)",
+                      "children": [
+                        {
+                          "id": "wiuUcRPPxmvY",
+                          "text": "데이터 텍스트 및 수치 입력",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "ExBOLgh85W7N",
+                          "text": "개별 셀 테두리 선 종류(실선, 파선, 점선, 이중선, 선 없음) 및 두께 설정",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "MF2UHyXomN0n",
+                          "text": "셀 개별 배경색 채우기 및 패딩(여백) 스타일링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "5aVw2oks2O0r",
+                          "text": "슬롯별 원본 백데이터 증빙 바인딩",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "qPyOoCxIBKh8",
+                      "text": "하단 요약 섹션 (Footer Summary Slot)",
+                      "children": [
+                        {
+                          "id": "J7IqJCjiRR7d",
+                          "text": "라벨 슬롯과 수치 슬롯의 1:1 쌍 자동 우측 정렬",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "CrxlJwkOPSot",
+                          "text": "최종 총합계(Total) 항목 굵은 글씨 및 대형 폰트 강조",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "qkzrynFJHjgD",
+                          "text": "합계 항목 상단 구분선 표시",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "da5qUjAOZy35",
+                      "text": "테이블 인터랙션 컨트롤러 (Table Controller)",
+                      "children": [
+                        {
+                          "id": "ZRqfQV9Iu1nh",
+                          "text": "열 경계선 마우스 드래그를 통한 컬럼 너비 실시간 조절",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "bUDXJ0QFE02Q",
+                          "text": "표 우측 하단 모서리 핸들 드래그를 통한 전체 너비 비율 조절",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "DSI4xHbxe8SG",
+                          "text": "컨텍스트 메뉴를 통한 상/하/좌/우 행·열 삽입 및 삭제",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "ywlv5HyDN1qj",
+                          "text": "다중 셀 드래그 선택 및 셀 병합/분할 (Merge & Split)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "55XlLIO7BSLy",
+                          "text": "표 전체 이동 전용 그립 핸들 제공",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "If8LqJyhe1Ym",
+              "text": "2단 / 다단 그리드 (Columns Grid)",
+              "children": [
+                {
+                  "id": "wVEFPwKRL4mT",
+                  "text": "[사용 목적] 콘텐츠를 좌우 2개 이상의 단으로 나누어 나란히 분할 배치하는 레이아웃",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "QMIZ3DwCOTCK",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "ELWl87I4e94Y",
+                      "text": "컬럼 텍스트 슬롯 (Column Text Slot)",
+                      "children": [
+                        {
+                          "id": "WgdultecnxW0",
+                          "text": "컬럼별 독립적인 리치 텍스트 서식 편집",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "uUWWtA8OmIqv",
+                          "text": "컬럼 단위 개별 타이포그래피(폰트, 정렬, 색상) 지정",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "WzbE7hLHImAt",
+                          "text": "슬롯별 독립적인 백데이터 연결",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "o52bZHTAubRp",
+                      "text": "컬럼 이미지 컴포넌트 (Column Image)",
+                      "children": [
+                        {
+                          "id": "w9Cv3x1ZdfMU",
+                          "text": "컬럼 내 이미지(로고, 도면 등) 임베드 렌더링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "MfohLGppGJHX",
+                          "text": "최대 높이(maxHeight), 정렬(좌/중/우), 비율 유지(contain) 제어",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "xUULzyk5c0eP",
+                      "text": "그리드 프레임 (Grid Frame)",
+                      "children": [
+                        {
+                          "id": "MjH0pLbOifUK",
+                          "text": "균등 분할(1fr:1fr) 또는 비율 기반 분할 레이아웃 적용",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "DbS650wppYQ1",
+                          "text": "카드형(테두리 박스) 및 일반 여백형(Plain) 스타일 전환",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "2gbSOiv8uBI5",
+                          "text": "좌측 팔레트에서 원클릭 즉시 추가 및 캔버스 드롭 배치",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "tE3tg1Xx9twy",
+              "text": "단일 텍스트 상자 (Single Text)",
+              "children": [
+                {
+                  "id": "bSmHwcxMV1zQ",
+                  "text": "[사용 목적] 원하는 위치에 자유롭게 배치하는 독립형 리치 텍스트 블록",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "mY3CSolkybpb",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "vP77tiOPEW8q",
+                      "text": "단일 텍스트 슬롯 (Text Slot)",
+                      "children": [
+                        {
+                          "id": "D9cA76OZArNn",
+                          "text": "독립적인 Tiptap 리치 텍스트 서식 편집 (글자 크기, 색상, 정렬)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "1Ua0Nkdo8vfa",
+                          "text": "인라인 AI 작문 비서 호출 및 동적 변수 칩 삽입 지원",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "o03GaCOXbYtC",
+                          "text": "슬롯별 백데이터 증빙 매핑",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "lxlhJkVv27iR",
+                      "text": "배치 컨트롤러 (Placement Frame)",
+                      "children": [
+                        {
+                          "id": "r2gPoYXbQkQd",
+                          "text": "본문 흐름에 따른 일반 흐름(Flow) 배치 지원",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "9AerFLLIN0wE",
+                          "text": "인보이스·영수증처럼 특정 위치에 고정하는 절대 좌표(Frame) 배치 지원",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "xULcRdBXvxWa",
+                          "text": "블록 이동, 복제, 내용 잠금(Lock), 삭제 메뉴 제공",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "36eiDpLeGKj1",
+              "text": "섹션 헤딩 (Section Heading)",
+              "children": [
+                {
+                  "id": "1GfKwWUEtq3q",
+                  "text": "[사용 목적] 문서의 주요 장(Chapter)과 절을 구분하는 시각적 소제목",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "q2mRG76o7JSa",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "nge0hGIkHT63",
+                      "text": "헤딩 텍스트 슬롯 (Heading Slot)",
+                      "children": [
+                        {
+                          "id": "DbfpjdF0QuEm",
+                          "text": "1~4단계 제목 레벨(H1~H4) 프리셋 지정",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "TYjebQt9R02b",
+                          "text": "좌측, 가운데, 우측 텍스트 정렬",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "4pFEBbLGAKVZ",
+                          "text": "볼드 스타일 및 자간 조절",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "DkK6bPOGQB2i",
+                      "text": "장식 밑줄 컴포넌트 (Underline Decoration)",
+                      "children": [
+                        {
+                          "id": "B8JW2UUSg9xH",
+                          "text": "제목 하단 장식선 표시/숨김 토글",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "9dbPM7y9djE1",
+                          "text": "장식 밑줄의 너비, 두께, 색상, 여백 커스터마이징",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "iHDCgAbUSt09",
+              "text": "공식 서식 대제목 (Form Title)",
+              "children": [
+                {
+                  "id": "tCsRy3bgeyjH",
+                  "text": "[사용 목적] 공문서, 회의록, 기안서 최상단에 사용하는 격식 있는 대형 문서 타이틀",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "P3GYdZt82tsw",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "rJzx1KhxZPbA",
+                      "text": "대제목 텍스트 슬롯 (Title Slot)",
+                      "children": [
+                        {
+                          "id": "4vKYb3wGZGZx",
+                          "text": "공식 문서 전용 와이드 자간(0.35em Letter Spacing) 자동 적용",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "BzXBo1AfryTe",
+                          "text": "24px 대형 볼드 타이포그래피 렌더링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "cR8IvrP5FlU1",
+                          "text": "가운데 또는 좌측 정렬 선택",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "gXRla1jOyhT5",
+                      "text": "공식 장식선 컴포넌트 (Official Underline)",
+                      "children": [
+                        {
+                          "id": "riHICRfvGoZ7",
+                          "text": "공문서 표준 규격의 2px 굵은 밑줄 자동 렌더링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "NPW1De3cqmA5",
+                          "text": "문서 폭에 맞춘 최적 너비 자동 배치",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "BbVgStiPlNJm",
+              "text": "복합 서식 프레임 (Composite Form Frame)",
+              "children": [
+                {
+                  "id": "AAjPzEDwFoZB",
+                  "text": "[사용 목적] 여러 개의 세부 서식을 2px 외곽선으로 하나로 묶은 공문서 결재 틀",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "VJG12x5BoFGX",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "nLOVbDUlnQhq",
+                      "text": "서식 섹션 헤더 슬롯 (Section Header Slot)",
+                      "children": [
+                        {
+                          "id": "xUXDnjd23GU3",
+                          "text": "각 서식 구역(참석자, 안건 등)의 소제목 입력",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "oJA9CKgodrxG",
+                          "text": "헤더 전용 음영 배경색 및 볼드 스타일링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "TngwHCwBsT80",
+                      "text": "서식 데이터 셀 슬롯 (Section Cell Slot)",
+                      "children": [
+                        {
+                          "id": "zNK4HYeHptzp",
+                          "text": "고밀도 공문서 셀 텍스트 입력 및 패딩 제어",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "9m0W4N00hS5j",
+                          "text": "공식 서식 전용 날인(인영/서명) 칩 삽입",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "XDwcSIVg29T0",
+                      "text": "복합 외곽 프레임 (Composite Outer Border)",
+                      "children": [
+                        {
+                          "id": "eCifqx9ADuVx",
+                          "text": "2px 두꺼운 외곽 테두리로 다중 서식 섹션 일괄 결합",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "nybgCGPHhjah",
+                          "text": "섹션 간 구분선 스타일(일반선 1px 또는 강조선 2px) 지정",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "xWUtsfAZ02AP",
+                          "text": "섹션별 행/열 추가·삭제 및 셀 병합/분할",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "jHteEDLADwh8",
+              "text": "재무 요약 목록 (Summary List)",
+              "children": [
+                {
+                  "id": "eBPBmTgyDLAb",
+                  "text": "[사용 목적] 견적서, 청구서 하단에 소계, 세액, 최종 합계 금액을 정렬해 보여주는 금액 명세표",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "tI2fvthSVrKk",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "LHwoKKisO420",
+                      "text": "항목 라벨 슬롯 (Item Label Slot)",
+                      "children": [
+                        {
+                          "id": "UU0DkCVyRRPV",
+                          "text": "소계, 부가세, 할인액, 공급가액 등 명칭 입력",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "j97lGOqQcWJe",
+                          "text": "좌측 정렬 텍스트 서식화",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "DxVrcWidMP4B",
+                      "text": "금액 수치 슬롯 (Item Value Slot)",
+                      "children": [
+                        {
+                          "id": "QEkzkRZ1nZTb",
+                          "text": "통화 금액 수치 입력 및 우측 정렬 자동 포맷",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "uot3fzGfZgyB",
+                          "text": "최종 총합계(Total) 항목 굵은 글씨 및 대형 폰트 강조",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "5dRUb5fWHiWL",
+                          "text": "총합계 상단 구분선 표시",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "OsI5V0iw6NgL",
+                      "text": "요약 컨테이너 (Summary Container)",
+                      "children": [
+                        {
+                          "id": "84njxcBKBSSD",
+                          "text": "전체 요약 블록의 정렬(좌/중/우) 및 너비 지정",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "qGZ1Nt9unImM",
+              "text": "제안서 표지 배너 (Cover Banner)",
+              "children": [
+                {
+                  "id": "kLGgiDIkd2jh",
+                  "text": "[사용 목적] 사업 제안서나 프로젝트 기획서의 첫 장을 장식하는 프리미엄 풀사이즈 커버",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "9ELjIiXcdFg4",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "dBFJX52OEyQA",
+                      "text": "메인 헤드라인 슬롯 (Headline Slot)",
+                      "children": [
+                        {
+                          "id": "Nb0YxlnoDn50",
+                          "text": "3xl 대형 볼드 타이틀 입력",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "0hgQ1A8TwP7z",
+                          "text": "다크 배경 전용 화이트 텍스트 에디팅 지원",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "9zEDdjUo9vq5",
+                      "text": "작성자 정보 슬롯 (Prepared By Slot)",
+                      "children": [
+                        {
+                          "id": "7kKpiynVRbY2",
+                          "text": "제안사명, 작성자, 부서, 직책 등 발신자 정보 입력",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "ChQ794TtiNUN",
+                          "text": "반투명 카드 배경 박스 스타일링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "v3hxw3JvPGQc",
+                      "text": "수신자 정보 슬롯 (Prepared For Slot)",
+                      "children": [
+                        {
+                          "id": "v8X8V6bZ4nqh",
+                          "text": "고객사명, 수신인, 담당 부서 등 수신자 정보 입력",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "2bl5L7TlJocP",
+                          "text": "반투명 카드 배경 박스 스타일링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "ikJcOehvmjKj",
+                      "text": "배너 배경 컨테이너 (Banner Container)",
+                      "children": [
+                        {
+                          "id": "LfPvqT1RZGEk",
+                          "text": "다크 아키텍처 그라디언트 테마 렌더링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "jFLE6KB8uyyp",
+                          "text": "상단 카테고리 라벨 표시",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "cXCJSSodnbi0",
+              "text": "이미지 블록 (Image)",
+              "children": [
+                {
+                  "id": "vGs8xkXTs9eV",
+                  "text": "[사용 목적] 회사 로고, 직인 도면, 사진 자료를 문서 내 정확한 위치에 표시하는 블록",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "GassdT44u4CQ",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "5FEKa7PZ8kUa",
+                      "text": "이미지 뷰어 컴포넌트 (Image Element)",
+                      "children": [
+                        {
+                          "id": "WwhktxlXqwEC",
+                          "text": "이미지 경로(src) 기반 정적 렌더링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "jvIyhwiUeRnl",
+                          "text": "비율 유지(contain) 또는 영역 채우기(fill) 지원",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "dFLGKsFOQJZ8",
+                          "text": "대체 텍스트(alt) 설정",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "rrvT5xN4iTFo",
+                      "text": "좌표 프레임 (Frame Box)",
+                      "children": [
+                        {
+                          "id": "DmnpIGQdJD5T",
+                          "text": "페이지 내 절대 좌표(x, y, w, h) 기반 정밀 배치",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "petrU2qRYpie",
+                          "text": "블록 외곽 조작(이동, 복제, 삭제) 메뉴 지원",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793237217750,
+          "updatedAt": 1793237778856
+        },
+        {
+          "id": "BsbkiL5gpIAI",
+          "text": "✍️ 2. 서식 및 날인 필드 (Fillable Fields) — 작성자 할당 및 결재 요소",
+          "children": [
+            {
+              "id": "7tGSmmPKtBuz",
+              "text": "담당자 할당 필드 (Fillable Field)",
+              "children": [
+                {
+                  "id": "kbmmWGOlDc6i",
+                  "text": "[사용 목적] 특정 담당자(Assignee)를 지정하여 서식 내 특정 칸의 작성을 요청하는 전용 입력창",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "8hvuqoY5u9iz",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "nBBfRdOmjn9M",
+                      "text": "담당자 뱃지 컴포넌트 (Assignee Badge)",
+                      "children": [
+                        {
+                          "id": "aH7QlhfVg1oT",
+                          "text": "지정된 담당자 이름(예: \"👤 담당: 서민규\") 시각화",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "OZSuIOQSga6d",
+                          "text": "노란색 대시보드 테마 스타일링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "s9dqh3oUZHo7",
+                      "text": "입력 필드 슬롯 (Field Slot)",
+                      "children": [
+                        {
+                          "id": "YV0HNDyZTIjX",
+                          "text": "4대 입력 모드 지원 (장문 텍스트, 전자 서명, 날짜 선택, KPI 요약)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "WR8NcH1Zwldj",
+                          "text": "담당자 전용 입력 포커스 및 작성 가이드 플레이스홀더 제공",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "83796WbeX14c",
+                      "text": "그룹 외곽선 (Dashed Group Frame)",
+                      "children": [
+                        {
+                          "id": "wy7dMm7KyuCT",
+                          "text": "주의를 환기하는 둥근 점선(Dashed) 테두리 렌더링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "3WJPz2DOgiLw",
+              "text": "공식 관인 날인 칩 (Seal Stamp)",
+              "children": [
+                {
+                  "id": "x5i4xOzX34tV",
+                  "text": "[사용 목적] 공문서나 공식 회의록의 법적·행정적 효력을 증명하는 붉은색 (인) 직인 칩",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "aMhw4730w4vz",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "k9SdICE8cBRd",
+                      "text": "인영 칩 컴포넌트 (Seal Chip Element)",
+                      "children": [
+                        {
+                          "id": "45NsiBRXacej",
+                          "text": "본문 텍스트 흐름에 인라인으로 삽입되는 원자(Atomic) 칩",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "JaOGIRgqSHpS",
+                          "text": "붉은색 볼드 직인 뱃지 렌더링 ((인))",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "BDeg2m3sXxhz",
+                      "text": "정렬 컨트롤러 (Float Alignment)",
+                      "children": [
+                        {
+                          "id": "TfYUCetqHnj6",
+                          "text": "공문서 표준 양식에 맞춘 우측 끝 정렬(Float Right) 자동 배치",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "Q2wWsiOxwTAc",
+                          "text": "백스페이스 실수에 의한 글자 깨짐 방어",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "TuI1ARf6L2wK",
+              "text": "전자 서명 날인 칩 (Signature Stamp)",
+              "children": [
+                {
+                  "id": "OrNqIwK6yZhN",
+                  "text": "[사용 목적] 작성자, 검토자, 승인자의 결재 서명 영역을 명시하는 푸른색 (서명) 칩",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "BohriWX2kKNe",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "dmEnioadEy9Q",
+                      "text": "서명 칩 컴포넌트 (Sign Chip Element)",
+                      "children": [
+                        {
+                          "id": "qIf0tjcTN4Mj",
+                          "text": "본문 텍스트 내 자연스러운 인라인 삽입",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "jEqDxL6VUdE7",
+                          "text": "푸른색 미디엄 뱃지 렌더링 ((서명))",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "vTszfexG14si",
+                      "text": "서명 가이드 (Sign Target)",
+                      "children": [
+                        {
+                          "id": "XbMMHbpRnko4",
+                          "text": "결재 서명 영역 식별 및 날인 위치 안내",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "UrqPLiCy0Z35",
+                          "text": "원자 노드 단위 선택 및 삭제 보호",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793237217750,
+          "updatedAt": 1793237778857
+        },
+        {
+          "id": "wrOo1PzroOri",
+          "text": "⚡ 3. 스마트 생산성 기능 (Smart Features) — 문서 작성을 돕는 핵심 도구",
+          "children": [
+            {
+              "id": "RKGlNnhSWMxe",
+              "text": "동적 변수 치환 칩 (Variables & Tokens)",
+              "children": [
+                {
+                  "id": "SFkPRhYnZpiv",
+                  "text": "[사용 목적] 회사명, 고객명 등 반복되는 핵심 정보를 변수로 등록하여 문서 전체에 자동 반영",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "8DWm79Sap4SE",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "vKe1s4qy6Zxh",
+                      "text": "변수 칩 컴포넌트 (Variable Chip Element)",
+                      "children": [
+                        {
+                          "id": "XDrkz8dcRirR",
+                          "text": "본문 텍스트 내 호박색 둥근 뱃지 인라인 렌더링",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "U1zChYYiAkOV",
+                          "text": "변수명 표시 (예: [Sender.Company], [Client.FirstName])",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "dSsfBlI9m80f",
+                      "text": "전역 동기화 엔진 (Variable Binding Engine)",
+                      "children": [
+                        {
+                          "id": "kmHQJWxRKiDt",
+                          "text": "문서 전역 변수 맵(variables)과의 실시간 데이터 동기화",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "C4q6NRan93Ad",
+                          "text": "템플릿 재사용 시 수신자 정보 변경만으로 문서 전체 텍스트 일괄 치환",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "XhRWAxLfiyjw",
+                          "text": "단일 칩 단위 선택 및 원클릭 삭제 지원",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "lmJpWnE0brOv",
+              "text": "슬롯 전용 인라인 AI 비서 (In-place AI Assistant)",
+              "children": [
+                {
+                  "id": "QVhQ2DGlRkCe",
+                  "text": "[사용 목적] 작성 중인 문장을 블록 내에서 벗어나지 않고 즉석에서 가공·확장",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "c09oj99Ke2kr",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "mH45T8BZwQy2",
+                      "text": "플로팅 액션 바 (Floating Action Toolbar)",
+                      "children": [
+                        {
+                          "id": "3SDw1f5crT7Q",
+                          "text": "텍스트 드래그 선택 시 머리 위에 즉시 나타나는 AI 도구 모음",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "Vd6VZDxucIYs",
+                      "text": "AI 세부 액션 모듈 (AI Action Modules)",
+                      "children": [
+                        {
+                          "id": "TJUGiVTN7TDb",
+                          "text": "요약 (Summarize): 긴 문장을 간결한 핵심 요약문으로 압축",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "FXA76RV9O3ny",
+                          "text": "번역 (Translate): 국문 문장의 자연스러운 영어 변환",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "XYw0SBjcCDn2",
+                          "text": "문법 수정 (Grammar): 맞춤법, 띄어쓰기, 문법 오류 즉시 교정",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "4p5nkM2pD5WF",
+                          "text": "톤 수정 (Tone): 격식 있는 비즈니스 전문 어투로 문체 변환",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "CxwOZDHHLPw0",
+                      "text": "원클릭 치환 컨트롤러 (Replace Action)",
+                      "children": [
+                        {
+                          "id": "EmuyCwuhdHM0",
+                          "text": "AI 제안 결과를 기존 선택 영역에 즉시 덮어쓰기 적용",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "bAD8H9zMdzVa",
+              "text": "원본 백데이터 증빙 보관소 (Backdata Vault)",
+              "children": [
+                {
+                  "id": "tpaIwC3CKGvq",
+                  "text": "[사용 목적] 문서에 작성된 내용이 어떤 원본 회의록이나 PDF 공문을 바탕으로 작성되었는지 근거 입증",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "oMfRpzrHifZh",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "GROaGIEQT9Wc",
+                      "text": "슬롯 데이터 바인딩 앵커 (Slot Anchor)",
+                      "children": [
+                        {
+                          "id": "7hNk5ClS3vsS",
+                          "text": "각 텍스트 슬롯별로 원본 청크를 1:N으로 연결",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "yhHCizGMOvsK",
+                      "text": "우측 인스펙터 증빙 서랍 (Backdata Drawer)",
+                      "children": [
+                        {
+                          "id": "7w25XqxjKLwI",
+                          "text": "슬롯 클릭 시 우측 서랍에서 원본 문서명 및 발췌문(Excerpt) 즉시 열람",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "cSRdD1Tfcixd",
+                          "text": "출처 유형별(PDF, 녹취록, 마크다운, 스프레드시트) 분류 태그 확인",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "HsdzjvB0mDR9",
+                          "text": "신규 참고 자료 원클릭 추가 및 바인딩 관리",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            },
+            {
+              "id": "FLMjFbGnPEen",
+              "text": "캔버스 블록 조작 크롬 (Block Canvas Controls)",
+              "children": [
+                {
+                  "id": "jBDWhnqCGv8z",
+                  "text": "[사용 목적] 마우스 클릭과 드래그만으로 문서 구조를 손쉽게 재구성",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                },
+                {
+                  "id": "VefNiCTkIhId",
+                  "text": "[제공 기능]",
+                  "children": [
+                    {
+                      "id": "gBkzhl1OyOoO",
+                      "text": "좌측 이동 그립 핸들 (⋮⋮ Drag Handle)",
+                      "children": [
+                        {
+                          "id": "EdNgfPWr46Kh",
+                          "text": "마우스 드래그를 통한 블록 상/하 순서 실시간 이동",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "l0ynhVi4AuXb",
+                          "text": "고정 좌표(Frame) 블록의 캔버스 위 자유 드래그 위치 이동",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "9eXjBmod4dNH",
+                      "text": "좌측 빠른 추가 버튼 (+ Quick Add)",
+                      "children": [
+                        {
+                          "id": "JqYf3uYzLmjW",
+                          "text": "마우스 호버 시 노출되는 원클릭 팝업",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "wdR0NyJlGBGL",
+                          "text": "텍스트 섹션, 스마트 표, 다단 그리드, 할당 필드 즉시 삽입",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "Xj55B1DiRpCQ",
+                      "text": "우측 블록 설정 메뉴 (⚙️ Settings Menu)",
+                      "children": [
+                        {
+                          "id": "XnhWhyJ6noK7",
+                          "text": "블록 위로 / 아래로 한 칸 이동",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "g7KUfpkNUxjf",
+                          "text": "동일 블록 원클릭 복제 (Duplicate)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "FBzHzF1liulj",
+                          "text": "실수 편집 방지를 위한 블록 내용 잠금/잠금해제 (Lock/Unlock)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        },
+                        {
+                          "id": "AKRTHofD7F5R",
+                          "text": "블록 원클릭 안전 삭제 (Delete)",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    },
+                    {
+                      "id": "ST6E6OGnVijW",
+                      "text": "드롭 가이드 라인 (Drop Edge Guide)",
+                      "children": [
+                        {
+                          "id": "2GLPbSw6yRuP",
+                          "text": "드래그 앤 드롭 삽입 위치를 시각적으로 안내하는 2px 청색 라인 표시",
+                          "children": [],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1793237217750,
+                          "updatedAt": 1793237217750
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793237217750,
+                      "updatedAt": 1793237217750
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793237217750,
+                  "updatedAt": 1793237217750
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "bullet",
+              "createdAt": 1793237217750,
+              "updatedAt": 1793237217750
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793237217750,
+          "updatedAt": 1793237778857
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "bullet",
+      "createdAt": 1793237217750,
+      "updatedAt": 1793237217750
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793237217750,
+  "updatedAt": 1793237778858
+}

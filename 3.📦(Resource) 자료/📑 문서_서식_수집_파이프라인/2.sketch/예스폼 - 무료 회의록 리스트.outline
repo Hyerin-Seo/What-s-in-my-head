@@ -61,1629 +61,6 @@
           "text": "📑 페이지별 무료 서식 전수 목록 (총 12개 페이지, 93종)",
           "children": [
             {
-              "id": "3E7HcjizgCdr",
-              "text": "📄 01페이지 (23종)",
-              "children": [
-                {
-                  "id": "mLWcf0PsL7le",
-                  "text": "01. [무료 교회회의록 양식 | 무료샘플 다운로드](https://www.yesform.com/forms/vform_128700.php)",
-                  "children": [
-                    {
-                      "id": "6kcliBlXUgLP",
-                      "text": "서식 ID: vform_128700",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "3chUbVhSpxKB",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "kETLrkiEVE4P",
-                      "text": "URL: https://www.yesform.com/forms/vform_128700.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "yGBbz7zy9ISq",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료교회회의록양식무료샘플다운로드.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_무료교회회의록양식무료샘플다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    },
-                    {
-                      "id": "ZrC95HivcohB",
-                      "text": "시맨틱적 특징",
-                      "children": [
-                        {
-                          "id": "ilCU7R0h7gtj",
-                          "text": "1. 입력 매체 및 환경: 수기 현장 완결형 (Physical Pen & Paper)",
-                          "children": [
-                            {
-                              "id": "v7n9iid3mmx8",
-                              "text": "볼펜 필기 인체공학: 성인 손글씨 높이(8~10mm)에 정밀하게 맞춰진 18줄 고정 괘선(줄노트 가이드라인)",
-                              "children": []
-                            },
-                            {
-                              "id": "kj8EsLppLoll",
-                              "text": "현장 즉시 봉인성 (Zero-Latency): 회의 종료 즉시 서기 수기 마감 및 현장 인감 날인 (디지털 후가공 및 재입력 단계 원천 배제)",
-                              "children": []
-                            },
-                            {
-                              "id": "Zo55jkoDeCM7",
-                              "text": "무장비 현장 생존성: 노트북·전원·네트워크가 없는 열악한 야외나 현장에서도 A4 1장과 클립보드만으로 업무 완결",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true,
-                          "updatedAt": 1793079598411
-                        },
-                        {
-                          "id": "nlDTMG8TokRi",
-                          "text": "2. 사고 통제 및 표현 레벨: 표현 억압형 / 자유도 0% (Expressive Constraint)",
-                          "children": [
-                            {
-                              "id": "270ZIEHGHehk",
-                              "text": "사족 및 주관의 거세: 빈 캔버스를 배제하여 작성자의 감정, 사견, 현장 분위기 서술을 물리적으로 박탈",
-                              "children": []
-                            },
-                            {
-                              "id": "OoQa2qWv38Yv",
-                              "text": "건조한 주문(Verdict) 수렴: 회의 과정의 맥락을 소거하고 오직 '공식 결정 문장'만 남기도록 강제",
-                              "children": []
-                            },
-                            {
-                              "id": "jvw0Qb4n260F",
-                              "text": "사후 위조·변조 방어: 고정된 18개 줄 수 통제 및 '이하 여백' 마감을 통해 사후 문구 임의 삽입 차단",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true,
-                          "updatedAt": 1793079598411
-                        },
-                        {
-                          "id": "5BwcXm3HGG4b",
-                          "text": "3. 데이터 구조 및 레이아웃: 단문 조항식 + 고밀도 헤더 (Itemized & Dense)",
-                          "children": [
-                            {
-                              "id": "lLfUBTBFuhXL",
-                              "text": "단문 조항식 원자화 (Clause Atomicity): 1행 1안건 -> 1결과 단위로 딱딱 끊어 치는 조항 단위 기록",
-                              "children": []
-                            },
-                            {
-                              "id": "luvlMRHAf4Jp",
-                              "text": "정형 선언문(Boilerplate) 내장: 정족수 숫자만 채워 넣는 개회 성수 선언문 & 폐회 결의문 슬롯화",
-                              "children": []
-                            },
-                            {
-                              "id": "1MALoJkCppjx",
-                              "text": "가로 6열 고밀도 압축: 본문 손글씨 면적 확보를 위해 상단 6개 메타를 [라벨+입력칸] 3쌍으로 2줄 압축 배치",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true,
-                          "updatedAt": 1793079598411
-                        },
-                        {
-                          "id": "blnBEgOEsrIG",
-                          "text": "4. 핵심 전달체 (Hero Zone): 최종 결의 주문 집중형 (Verdict-Centric)",
-                          "children": [
-                            {
-                              "id": "916taqsDZqvL",
-                              "text": "시선 수직 낙하: 상단 의전 메타 -> 개회 성수 -> 중앙 단일 결의사항 박스로 시선 강제 유도",
-                              "children": []
-                            },
-                            {
-                              "id": "Kw3QJoirTZou",
-                              "text": "결과의 불가역성: '누가 무슨 말을 오갔는가'가 아니라 '무엇이 최종 결정되었는가'만 3초 만에 전달",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true,
-                          "updatedAt": 1793079598411
-                        },
-                        {
-                          "id": "nWSGCQUkQdA7",
-                          "text": "5. 거버넌스 및 책임 귀속: 양자 대등 공증형 (Dual Parity Attestation)",
-                          "children": [
-                            {
-                              "id": "1wGDTe9jXvsl",
-                              "text": "수직 결재선 배제: 상단 수직 결재 박스 대신 최하단 좌우 대칭 날인란 배치",
-                              "children": []
-                            },
-                            {
-                              "id": "JNtsZpdraQAV",
-                              "text": "상호 견제와 공증: 의사 진행자(회장) + 기록 공증자(서기) 2인의 15~20mm 원형 인감 날인 구조",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true,
-                          "updatedAt": 1793079598411
-                        },
-                        {
-                          "id": "a5diD4FUY2wI",
-                          "text": "6. 도메인 스킨 및 치환성: 가변형 어휘 프리셋 (Interchangeable Skin)",
-                          "children": [
-                            {
-                              "id": "EsOuPtLPFHuR",
-                              "text": "표면 어휘: 종교 / 비영리 자치기구 (찬송, 기도, 성경, 설교)",
-                              "children": []
-                            },
-                            {
-                              "id": "9Ok6909NMGYF",
-                              "text": "구조적 범용성: 뼈대 자체가 '불가역적 의결 원장'이므로 상단 어휘만 치환하면 상법상 이사회, 주주총회, 입주자대표회의로 100% 전이 가능",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true,
-                          "updatedAt": 1793079598411
-                        },
-                        {
-                          "id": "vWptCQg0h68A",
-                          "text": "7. 실전 작성 요령 및 방법 (Guidelines & Instructions)",
-                          "children": [
-                            {
-                              "id": "g8kqEXu2aIWc",
-                              "text": "사전 준비: A4 규격 100% 비율 정배율 인쇄, 클립보드 거치, 번짐 없는 흑색 유성 볼펜(0.7~1.0mm) 지참",
-                              "children": []
-                            },
-                            {
-                              "id": "mJ4ICk1YB7tR",
-                              "text": "상단 메타 압축 기입: 일시, 장소, 사회자, 설교자 등 의전 항목을 상단 6열 압축 슬롯에 축약 기입",
-                              "children": []
-                            },
-                            {
-                              "id": "MsSSWbOAljYu",
-                              "text": "개회 정족수 확정: 개회 선언 직전 재적 인원과 실제 출석 인원을 호명 확인하여 개회 성수 선언문 빈칸에 정수로 기입",
-                              "children": []
-                            },
-                            {
-                              "id": "yP36bl4Q8eU8",
-                              "text": "결의사항 단문 기입: 서술형 줄글 금지, '제N호 의안: [안건명] -> 원안 가결(또는 수정 가결/부결)' 형태로 1행 1안건 주문식 기입",
-                              "children": []
-                            },
-                            {
-                              "id": "64C1OCnDryGz",
-                              "text": "마감 및 현장 즉시 날인: 최종 안건 기입 후 잔여 괘선에 '--- 이 하 여 백 ---' 대각선 마감선 처리, 폐회 선언 직후 회장과 서기가 현장에서 즉시 인감 날인",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true,
-                          "updatedAt": 1793079598411
-                        },
-                        {
-                          "id": "h2OyiMLv0gwL",
-                          "text": "8. 문서 이동 궤적 및 주이용 대상: 폐쇄형 내부 완결 (Internal Closed-Loop)",
-                          "children": [
-                            {
-                              "id": "MHSF5cP3xHl0",
-                              "text": "발신 주체 (FROM): 회의 기록 서기 (단일 작성자)",
-                              "children": []
-                            },
-                            {
-                              "id": "c0G341L8Vvdk",
-                              "text": "수신 및 열람 대상 (TO): 회장 및 소속 위원회/당회 내부 구성원 (대외 비공개, 내부 철 보관)",
-                              "children": []
-                            },
-                            {
-                              "id": "eHlFAPVK0LCH",
-                              "text": "독자의 행동 목적: 과거 결의 주문 확인 및 내부 연속성 유지 (사법적/대외적 방어 불요)",
-                              "children": []
-                            }
-                          ]
-                        }
-                      ],
-                      "isFolded": true,
-                      "createdAt": 1793079572948,
-                      "updatedAt": 1793079582798
-                    },
-                    {
-                      "id": "TOQ66B9QcbHe",
-                      "text": "구조적 토폴로지 및 골격 그래프 (AST / Skeleton Graph)",
-                      "children": [
-                        {
-                          "id": "f2tMhbsQFX75",
-                          "text": "루트 골격 트리: Root -> (Header 2x3 Meta Grid) -> (Body Single Container: Rule-18) -> (Footer Dual-Node Attestation)",
-                          "children": []
-                        },
-                        {
-                          "id": "4IjN4sHQju2g",
-                          "text": "컴포넌트 토폴로지: 상단 6열 압축 헤더 -> 중앙 18줄 고정 균등 괘선 슬라이스(단일 텍스트 박스) -> 최하단 좌우 대칭 2개 원형 인감 앵커",
-                          "children": []
-                        },
-                        {
-                          "id": "o3Jj7ZOB1wNN",
-                          "text": "토폴로지 시그니처: Single-Column Ruled-Line List with Dual-Node Footer (단일열 18행 괘선 리스트 + 2인 대칭 날인형)",
-                          "children": []
-                        }
-                      ],
-                      "updatedAt": 1793082223046
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "jD0WskJ0kwj3",
-                  "text": "02. [교사회의록 무료서식 다운로드로 손쉽게 작성하기](https://www.yesform.com/forms/vform_129290.php)",
-                  "children": [
-                    {
-                      "id": "qiupn9zDwkHk",
-                      "text": "서식 ID: vform_129290",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "3tMRSgJzUFj0",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "G9ffTsHEoWJR",
-                      "text": "URL: https://www.yesform.com/forms/vform_129290.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "1lk5pcTiCTjf",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_교사회의록무료서식다운로드로손쉽게작성하기(구글시트변환).pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_교사회의록무료서식다운로드로손쉽게작성하기(구글시트변환).pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "O3jdvYb9rgfp",
-                  "text": "03. [회의록 작성에 유용한 무료 공정회의록 양식 모음](https://www.yesform.com/z_n/forms/view_iso/iso_307173.html)",
-                  "children": [
-                    {
-                      "id": "GCMcsqfmweqD",
-                      "text": "서식 ID: iso_307173",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "vSVsNM6zCEWp",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "zGP8KFLAXbxo",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_307173.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "SKcStO4EwGsW",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_회의록작성에유용한무료공정회의록양식모음.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_회의록작성에유용한무료공정회의록양식모음.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "nmn1ZeJ94bkj",
-                  "text": "04. [입주자대표 회의록 무료양식 샘플 다운로드](https://www.yesform.com/forms/vform_149114.php)",
-                  "children": [
-                    {
-                      "id": "OdRuLJXh9ody",
-                      "text": "서식 ID: vform_149114",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "SBVpkhwpMFAe",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "cETjsHKJ6CsS",
-                      "text": "URL: https://www.yesform.com/forms/vform_149114.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "QTUm2CLjGObz",
-                      "text": "로컬 파일: [[예스폼_입주자대표회의록무료양식샘플다운로드.pdf]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_입주자대표회의록무료양식샘플다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793080451430
-                    },
-                    {
-                      "id": "PrxPKkHDCORr",
-                      "text": "시맨틱적 특징",
-                      "children": [
-                        {
-                          "id": "kmU0nPcG6Tin",
-                          "text": "1. 입력 매체 및 환경: 하이브리드 행정 완결형 (Print & Digital Hybrid / Action-Driven)",
-                          "children": [
-                            {
-                              "id": "CLGm4ytUpvR7",
-                              "text": "출력 현장 서명: 회의 당일 A4 인쇄물에 동대표들이 자필 서명 및 수기 메모 진행",
-                              "children": []
-                            },
-                            {
-                              "id": "w6JrKs09Plpw",
-                              "text": "사후 전산 이중화: 회의 종료 후 관리사무소 직원이 후속 조치 및 처리 결과를 전산(K-apt 등)에 기안·입력하여 바인더 철 보관",
-                              "children": []
-                            },
-                            {
-                              "id": "Q6mE9gktuhug",
-                              "text": "장기 보존성: 입주민 열람 요청 및 구청 감사 대비를 위해 5년 이상 물리적 바인더 보관을 전제한 흑백 고대비 규격",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "bJSXKF0E0yOB",
-                          "text": "2. 사고 통제 및 표현 레벨: 집행 추적 통제형 (Action-Oriented Constraint)",
-                          "children": [
-                            {
-                              "id": "daVh9KrEGKCx",
-                              "text": "인과적 파이프라인 강제: [안건 -> 의결 -> 집행 결과] 3단계로 사고의 흐름을 통제하여 발언 맥락이나 주관적 감정 서술 배제",
-                              "children": []
-                            },
-                            {
-                              "id": "DfIaPVdtzoAv",
-                              "text": "의결과 집행의 강제 분리: 결정 문장과 후속 행정 조치(Action Item) 슬롯을 물리적으로 분리",
-                              "children": []
-                            },
-                            {
-                              "id": "h4vkiHNMKhXm",
-                              "text": "비공식 논의 오염 차단: 법적 효력이 있는 공식 의결과 단순 주민 건의를 격리하기 위한 별도 [기타 협의사항] 슬롯 배치",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "JH3A1pBtp0xA",
-                          "text": "3. 데이터 구조 및 레이아웃: 3열 수평 파이프라인 + 매트릭스 연명부 (Horizontal Pipeline & Multi-Party Grid)",
-                          "children": [
-                            {
-                              "id": "kVJmNXvY0Pjl",
-                              "text": "수평 3열 파이프라인: [회 의 안 건] | [의 결 내 용] | [처 리 결 과]의 가로 3분할 테이블",
-                              "children": []
-                            },
-                            {
-                              "id": "pnYXJrXAaV9c",
-                              "text": "2열 다자 매트릭스 연명부: 하단 30% 면적에 [직책 / 동·호수 / 서명] 3개 필드를 좌우 2열로 배치하여 최대 14명 수용",
-                              "children": []
-                            },
-                            {
-                              "id": "px6Tr7jy9v39",
-                              "text": "초압축 상단 헤더: 제목 하단에 단 1줄의 일시 슬롯과 우측 상단 2단 결재란(총무/회장)만 콤팩트하게 배치",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "1wBeL5Epv3QU",
-                          "text": "4. 핵심 전달체 (Hero Zone): 후속 집행 추적 및 의결 주문 (Action & Verdict Centric)",
-                          "children": [
-                            {
-                              "id": "8nX69wATUwJX",
-                              "text": "시선 수평 이동: 안건 확인 -> 의결 내용 파악 -> 최종 [처리 결과] 확인으로 시선 유도",
-                              "children": []
-                            },
-                            {
-                              "id": "G9F7YQzQgRt7",
-                              "text": "집행 완결성 검증: 입주민 및 감사관 열람 시 '그래서 이 계약/공사가 실제로 어떻게 집행되었는가'를 3초 만에 추적 가능",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "iSS7mNCJ7KNW",
-                          "text": "5. 거버넌스 및 책임 귀속: 이중 거버넌스 + 전원 연명 공증 (Dual Governance & Multi-Signatory Attestation)",
-                          "children": [
-                            {
-                              "id": "uNXGC4nqqnQD",
-                              "text": "상단 행정 결재선: 회의록을 작성·취합한 집행부(관리주체/총무/회장)의 내부 공문서 채택 결재",
-                              "children": []
-                            },
-                            {
-                              "id": "EgBuGxxTEeam",
-                              "text": "하단 법적 연명 공증: 회의에 참석한 개별 대의원(동대표 전원)이 본인 동·호수를 자필 병기하고 직접 서명·날인",
-                              "children": []
-                            },
-                            {
-                              "id": "CjFTt6rqvZTI",
-                              "text": "의결정족수 사법적 입증: 출석 과반수 및 자격 적법성을 물리적으로 증명하여 입주민 간 소송 및 입찰 무효 분쟁 방어",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "6lH6wYGEkzBh",
-                          "text": "6. 도메인 스킨 및 치환성: 집행 추적형 합의체 프리셋 (Action-Item Committee Preset)",
-                          "children": [
-                            {
-                              "id": "XK7AZjDzbisB",
-                              "text": "표면 어휘: 공동주택/아파트 관리 자치기구 (동대표, 동·호수, 입주자대표회의)",
-                              "children": []
-                            },
-                            {
-                              "id": "FKuNp6pm2NVD",
-                              "text": "구조적 범용성: 뼈대 자체가 '합의체 투표 의결 + 실무 부서 후속 조치 추적' 구조이므로, 표면 명칭만 치환하면 기업 내 [프로젝트 운영위원회], [노사협의회], [공동 투자 심의회], [학부모 운영위원회]로 100% 전이 가능",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "uz0sUUrk1Bug",
-                          "text": "7. 실전 작성 요령 및 방법 (Guidelines & Instructions)",
-                          "children": [
-                            {
-                              "id": "uVuzoUpnSXox",
-                              "text": "사전 준비: 관리규약상 소집 공고(회의 7일 전 등) 안건과 일치 여부 대조, 출석 동대표 자격 명부 확인",
-                              "children": []
-                            },
-                            {
-                              "id": "WV9KmB86lRNw",
-                              "text": "상단 메타 및 성원 확인: 회의 개시 시각 기입 및 재적 과반수 출석 여부 확인 후 개회 선언",
-                              "children": []
-                            },
-                            {
-                              "id": "DFhMZzuji0EI",
-                              "text": "3열 파이프라인 단계별 작성: [회의안건]은 안건명 요약, [의결내용]은 찬반 수치 및 주문 기입, [처리결과]는 당일 공란 후 관리주체 집행 완료 시 기입",
-                              "children": []
-                            },
-                            {
-                              "id": "ylryu8DJMljt",
-                              "text": "비공식 협의 격리: 표결에 부치지 않은 주민 건의나 자유 논의는 반드시 하단 '*기타 협의사항' 칸에만 기입",
-                              "children": []
-                            },
-                            {
-                              "id": "Kx0SMv7048EK",
-                              "text": "전원 자필 연명 서명: 폐회 직후 참석한 모든 동대표가 본인 직책 행에 본인 동·호수를 직접 자필로 적고 서명/날인 (대리 서명 절대 금지)",
-                              "children": []
-                            },
-                            {
-                              "id": "tIw086dzFjDg",
-                              "text": "최종 결재 및 보관: 총무/관리소장 확인 후 회장 결재를 득하여 공고문 게시 및 입주민 열람용 영구/장기 바인더에 편철",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "aE3Ibfjclupr",
-                          "text": "8. 문서 이동 궤적 및 주이용 대상: 대외 방어 및 다자 검증 (External Audit & Multi-Consumer)",
-                          "children": [
-                            {
-                              "id": "BUEP4r2aKYyb",
-                              "text": "발신 주체 (FROM): 입주자대표회의 (동대표 전원 합의체)",
-                              "children": []
-                            },
-                            {
-                              "id": "5ZQOxHOmupkP",
-                              "text": "수신 및 열람 대상 (TO): 1차 관리사무소장(공사/계약 집행 독자) -> 2차 전체 입주민(게시판 공람 독자) -> 3차 지자체 감사관 및 법원(분쟁 발생 시 사법적 독자)",
-                              "children": []
-                            },
-                            {
-                              "id": "YfPOnjDhy0FK",
-                              "text": "독자의 행동 목적: 법정 의결정족수 및 대의권 적법성 검증, 계약/공사 처리 결과(Action Item) 현미경 추적",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        }
-                      ],
-                      "isFolded": true
-                    },
-                    {
-                      "id": "suurNbYgAVvt",
-                      "text": "구조적 토폴로지 및 골격 그래프 (AST / Skeleton Graph)",
-                      "children": [
-                        {
-                          "id": "gbAHAiqgabc3",
-                          "text": "루트 골격 트리: Root -> (Header Split: Inline Time + Admin Sign Box) -> (Body 3-Col Pipeline Grid) -> (Isolated Sub-Container) -> (Footer Matrix-2x7)",
-                          "children": []
-                        },
-                        {
-                          "id": "bFetqqQRuyTC",
-                          "text": "컴포넌트 토폴로지: 3열 수평 파이프라인 표(안건 -> 의결 -> 처리결과) -> 하단 비공식 격리 박스 -> 최하단 14개 노드 다자 연명 매트릭스(직책+식별자+서명 3단 서브노드 x 14)",
-                          "children": []
-                        },
-                        {
-                          "id": "vGR8ym5tzD7i",
-                          "text": "토폴로지 시그니처: 3-Column Action-Pipeline Table with 14-Node Multi-Signatory Matrix (3열 파이프라인 표 + 14인 연명 매트릭스형)",
-                          "children": []
-                        }
-                      ],
-                      "updatedAt": 1793082187515
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "AerrySbV0TP1",
-                  "text": "05. [회의록 샘플: 무료 실행위원회 템플릿 다운로드](https://www.yesform.com/forms/vform_346764.php)",
-                  "children": [
-                    {
-                      "id": "gEmm0X5CWJql",
-                      "text": "서식 ID: vform_346764",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "wn6Q83BGWMvP",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "AozOrqB0Xvoq",
-                      "text": "URL: https://www.yesform.com/forms/vform_346764.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "gvTOpMwCRTTK",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_회의록샘플무료실행위원회템플릿다운로드.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_회의록샘플무료실행위원회템플릿다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "m6kI9gfcarsO",
-                  "text": "06. [제조업 회의록 무료 서식 및 ISO 샘플 자료](https://www.yesform.com/z_n/forms/view_iso/iso_151859.html)",
-                  "children": [
-                    {
-                      "id": "MSq0kynLoXpF",
-                      "text": "서식 ID: iso_151859",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "GKuEMczCQVl8",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "FKkHzQ0TalXt",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_151859.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "9OySnsUfa0wv",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_제조업회의록무료서식및ISO샘플자료.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_제조업회의록무료서식및ISO샘플자료.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "0OQlL7L4QwTJ",
-                  "text": "07. [반상회 회의록 무료샘플 및 무료서식 다운로드](https://www.yesform.com/forms/vform_159439.php)",
-                  "children": [
-                    {
-                      "id": "A2ENPZr05jbj",
-                      "text": "서식 ID: vform_159439",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "SdVaCQSw8Gft",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "aWvhROE1Xtw6",
-                      "text": "URL: https://www.yesform.com/forms/vform_159439.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "LGFvGAZknRIy",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_반상회회의록무료샘플및무료서식다운로드.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_반상회회의록무료샘플및무료서식다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    },
-                    {
-                      "id": "OjdaicGg2l2e",
-                      "text": "시맨틱적 특징",
-                      "children": [
-                        {
-                          "id": "UMTJWPomQYvV",
-                          "text": "1. 입력 매체 및 환경: 현장 수기 배포 및 관청 보고형 (Pen-and-Paper Administrative Filing)",
-                          "children": [
-                            {
-                              "id": "NfZKARmSEQj2",
-                              "text": "반장 수기 완결: 노트북이나 전산이 없는 동네 사랑방, 가정집 현장에서 반장이 볼펜으로 직접 수기 작성",
-                              "children": []
-                            },
-                            {
-                              "id": "0BkuaIZEBLkr",
-                              "text": "임석 공무원 현장 날인: 동사무소(주민센터) 파견 공무원이 현장에서 시책 전달을 확인하고 직명, 성명 및 인감 즉시 날인",
-                              "children": []
-                            },
-                            {
-                              "id": "dEw1AF4TzsmB",
-                              "text": "동사무소 제출용 원본: 회의 종료 후 관할 주민센터로 제출되어 행정 통계 및 시책 전달 증빙으로 편철 보관",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "CZc8fI0tq3n3",
-                          "text": "2. 사고 통제 및 표현 레벨: 양방향 행정 중계형 (Bidirectional Administrative Routing)",
-                          "children": [
-                            {
-                              "id": "00qtXJtYHqDF",
-                              "text": "하향식 시책 수용: 정부/지자체 배포 간행물(반상회보 등)의 윤독 사실을 기록하도록 강제하여 상부 지침 수용 통제",
-                              "children": []
-                            },
-                            {
-                              "id": "1dH8SRNm4POW",
-                              "text": "상향식 민원 분리: 자체 결정이 불가능한 도로, 가로등, 청소 등 관청 요구사항을 [건의요망 사항요지]로 명확히 분리",
-                              "children": []
-                            },
-                            {
-                              "id": "K8rBfXz4uBhA",
-                              "text": "소규모 자체 협의 격리: 동네 자체 자치 사항([협의 및 결의사항])과 행정 건의를 분리하여 월권 방지",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "sNo1aQLN49A2",
-                          "text": "3. 데이터 구조 및 레이아웃: 관·민 대칭 분할 + 출석 그리드 (Bilateral Split & Roll-Call Grid)",
-                          "children": [
-                            {
-                              "id": "pYsGDHiUEnpK",
-                              "text": "좌우 비대칭 기능 분할: 좌측은 주민 자치 영역(협의/건의/기타), 우측은 관청 행정 영역(임석공무원/윤독간행물)으로 엄격한 기능 격리",
-                              "children": []
-                            },
-                            {
-                              "id": "k3N4CxOgKAsq",
-                              "text": "3열 15칸 출석 매트릭스: 하단에 [성명 (인)] 3열 5행 테이블을 두어 주민 15명의 단순 출석 및 동원율 체크",
-                              "children": []
-                            },
-                            {
-                              "id": "VpetF7YnA0Lg",
-                              "text": "명예반장/반장 이원 결재: 상단 우측에 주민 대표(반장)와 행정 보조(명예반장/통장) 2인 결재란 배치",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "ifhAVxcyNddG",
-                          "text": "4. 핵심 전달체 (Hero Zone): 건의 요망 및 공무원 입증 (Petition & Attestation Centric)",
-                          "children": [
-                            {
-                              "id": "k4TMIORhblKB",
-                              "text": "행정적 가치 집중: '주민들이 관청에 무엇을 요구했는가([건의요망 사항요지])'와 '공무원이 실제로 참석했는가([임석공무원 날인])'가 최우선 시각적 앵커",
-                              "children": []
-                            },
-                            {
-                              "id": "XqQsqRInY0oc",
-                              "text": "의결권 배제: 예산 승인이나 권리 변동이 없으므로 '주문식 의결' 대신 '건의 및 보고' 전달에 집중",
-                              "children": []
-                            }
-                          ]
-                        },
-                        {
-                          "id": "pBPUMnN8YXEw",
-                          "text": "5. 거버넌스 및 책임 귀속: 관치 보조 및 단순 출석 확인 (Administrative Oversight & Attendance Only)",
-                          "children": [
-                            {
-                              "id": "UQbwj5fJxpdm",
-                              "text": "사법적 표결 불요: 대의원 표결 기구가 아니므로 의결정족수 입증이나 동·호수 자필 병기 불필요",
-                              "children": []
-                            },
-                            {
-                              "id": "UNXrRRHlMm3J",
-                              "text": "관청 감독(Oversight) 공증: 공무원의 임석 도장을 통해 문서의 공적 정당성 확보",
-                              "children": []
-                            },
-                            {
-                              "id": "l0Qb8aSM9VYd",
-                              "text": "출석 증빙(Roll Call): 15인 서명란은 의결권 행사가 아닌 '오늘 모임에 주민이 실제로 모였다'는 단순 집합 증명",
-                              "children": []
-                            }
-                          ]
-                        },
-                        {
-                          "id": "esJEO5GuhS0O",
-                          "text": "6. 도메인 스킨 및 치환성: 타운홀 민원 수렴 프리셋 (Town-Hall & Community Petition Preset)",
-                          "children": [
-                            {
-                              "id": "2LCFwda4Cqd7",
-                              "text": "표면 어휘: 지방 행정 말단 자치 (반상회, 반장, 명예반장, 임석공무원, 윤독간행물)",
-                              "children": []
-                            },
-                            {
-                              "id": "D3aTlvTyZPG2",
-                              "text": "구조적 범용성: 뼈대 자체가 '중앙/본부 시책 전달 + 현장 참여자 고충/건의 수렴 + 감독관 입회' 구조이므로, 표면 어휘만 치환하면 군부대 [소대/중대 간담회], 기업 내 [현장 작업반 고충처리 회의], 프랜차이즈 [가맹점주 간담회], 학교 [학급 자치회]로 100% 전이 가능",
-                              "children": []
-                            }
-                          ]
-                        },
-                        {
-                          "id": "r8g7WRHwU60P",
-                          "text": "7. 실전 작성 요령 및 방법 (Guidelines & Instructions)",
-                          "children": [
-                            {
-                              "id": "OU6B80isctAD",
-                              "text": "사전 준비: 배포할 반상회보(간행물) 수량 확보, 동사무소 파견 공무원 참석 여부 사전 확인, 인쇄물 및 흑색 볼펜 구비",
-                              "children": []
-                            },
-                            {
-                              "id": "jkeMUqS55HhQ",
-                              "text": "일시 및 출석 확인: 회의 시작 시각 기입 후, 참석한 주민들에게 하단 [반원 출석 상황] 15칸에 순서대로 성명을 쓰고 서명/도장(지장)을 받음",
-                              "children": []
-                            },
-                            {
-                              "id": "B9VLeLdNdepj",
-                              "text": "상부 시책 및 간행물 회람: 회의 전반부에 배포된 반상회보를 함께 읽고, [윤독중인간행물] 칸에 해당 간행물 명칭(예: ○○구정소식 제N호)을 명기",
-                              "children": []
-                            },
-                            {
-                              "id": "d4k0pIr0qv6m",
-                              "text": "협의 및 건의 분리 기입: [협의 및 결의사항]에는 골목 청소 등 자체 규칙 기입, [건의요망 사항요지]에는 구청/주민센터 조치가 필요한 민원을 구체적 위치와 함께 축약 기입",
-                              "children": []
-                            },
-                            {
-                              "id": "LcRNldH6GnAZ",
-                              "text": "임석공무원 현장 확인: 참석한 주민센터 공무원에게 작성 내용을 보여주고, 우측 [임석공무원] 소속/직명/성명 칸에 자필 서명 또는 인감 날인을 받음",
-                              "children": []
-                            },
-                            {
-                              "id": "UqatM2DmJrO2",
-                              "text": "최종 결재 및 제출: 반장 날인 후 주민센터에 사본 또는 원본을 제출하여 행정 건의 접수 및 모임 실적 보고 완료",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        },
-                        {
-                          "id": "qrIMDUmKEHgz",
-                          "text": "8. 문서 이동 궤적 및 주이용 대상: 상향 보고 및 관청 중계 (Bottom-Up Reporting & Petition)",
-                          "children": [
-                            {
-                              "id": "ZsmtLUx8wY7F",
-                              "text": "발신 주체 (FROM): 마을 주민 및 반장 (기층 자치 단위)",
-                              "children": []
-                            },
-                            {
-                              "id": "hNlM6nERpfjy",
-                              "text": "수신 및 열람 대상 (TO): 동사무소(주민센터) 담당 공무원 및 관할 구청 행정과",
-                              "children": []
-                            },
-                            {
-                              "id": "bp5jnWwdHQgt",
-                              "text": "독자의 행동 목적: 지역 주민 민원/숙원 과제([건의요망 사항요지]) 접수 및 정부 시책 전달 실적([윤독간행물], 동원율) 행정 통계 반영",
-                              "children": []
-                            }
-                          ],
-                          "isFolded": true
-                        }
-                      ],
-                      "isFolded": true
-                    },
-                    {
-                      "id": "uwlag8DmbzTP",
-                      "text": "구조적 토폴로지 및 골격 그래프 (AST / Skeleton Graph)",
-                      "children": [
-                        {
-                          "id": "M8muTQ5Hko4A",
-                          "text": "루트 골격 트리: Root -> (Header Inline Time + Dual Sign Box) -> (Body Bilateral Split: Stack-3 vs Stack-2) -> (Footer Matrix-3x5)",
-                          "children": []
-                        },
-                        {
-                          "id": "9Yzso3UT9AFT",
-                          "text": "컴포넌트 토폴로지: 좌우 비대칭 2분할 컨테이너(좌측 민간 3단 수직 스택 vs 우측 관청 2단 검인/간행물 스택) -> 최하단 15개 단순 출석 체크 셀(성명+인 x 15)",
-                          "children": []
-                        },
-                        {
-                          "id": "5504wDqmcYhr",
-                          "text": "토폴로지 시그니처: Bilateral Split-Domain Container with 15-Cell Roll-Call Attendance Grid (관·민 비대칭 2분할 컨테이너 + 15인 출석 그리드형)",
-                          "children": []
-                        }
-                      ],
-                      "updatedAt": 1793082245359
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "zGMWw185Ikwr",
-                  "text": "08. [임원회의록 무료서식 및 양식 다운로드 자료](https://www.yesform.com/forms/vform_157371.php)",
-                  "children": [
-                    {
-                      "id": "nHGxFk5WmBEm",
-                      "text": "서식 ID: vform_157371",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "uAS88ey5HC4a",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "P3jHhvVS2F7V",
-                      "text": "URL: https://www.yesform.com/forms/vform_157371.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "DXVXU6WDo22t",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_임원회의록무료서식및양식다운로드자료.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_임원회의록무료서식및양식다운로드자료.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "tHRiYTPTBVYa",
-                  "text": "09. [운영위원 회의록(불교대학) 무료 양식과 샘플자료](https://www.yesform.com/forms/vform_338817.php)",
-                  "children": [
-                    {
-                      "id": "5KSA9bk6H38R",
-                      "text": "서식 ID: vform_338817",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "XWQfNnLRzntl",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "Uyz8aODZNJS0",
-                      "text": "URL: https://www.yesform.com/forms/vform_338817.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "q45D5HbFnSlc",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_운영위원회의록불교대학무료양식과샘플자료.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_운영위원회의록불교대학무료양식과샘플자료.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "KpsayA7KTwv3",
-                  "text": "10. [무료 교회 회의록 양식 및 템플릿 다운로드](https://www.yesform.com/forms/vform_128699.php)",
-                  "children": [
-                    {
-                      "id": "13nf4qn7qCEb",
-                      "text": "서식 ID: vform_128699",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "flTwKiPXYmC2",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "NQDvvzGV7ruN",
-                      "text": "URL: https://www.yesform.com/forms/vform_128699.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "oq1qlgHJlV0R",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료교회회의록양식및템플릿다운로드.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_무료교회회의록양식및템플릿다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "IScyvn5yIjF5",
-                  "text": "11. [교무회의록(불교대학) 무료 양식 및 다양한 무료 샘플 제공](https://www.yesform.com/forms/vform_338755.php)",
-                  "children": [
-                    {
-                      "id": "Dxp0ro52HxWK",
-                      "text": "서식 ID: vform_338755",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "BP9CBKeSzvFV",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "PilCsanwDeLX",
-                      "text": "URL: https://www.yesform.com/forms/vform_338755.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "DbYhCnP4o6yJ",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_교무회의록불교대학무료양식및다양한무료샘플제공.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_교무회의록불교대학무료양식및다양한무료샘플제공.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "lPzWwc5zeLWA",
-                  "text": "12. [무료 주주 회의록 양식 - Annual Meeting Minutes Free Template](https://www.yesform.com/forms/vform_154612.php)",
-                  "children": [
-                    {
-                      "id": "4BuroZPxaLDG",
-                      "text": "서식 ID: vform_154612",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "ld8gLa4dNrDR",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "zunvoJMdlZNp",
-                      "text": "URL: https://www.yesform.com/forms/vform_154612.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "uULI5k3CRdg8",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료주주회의록양식AnnualMeetingMinutesFreeTemplate.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_무료주주회의록양식AnnualMeetingMinutesFreeTemplate.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "Ph6ZKFCc6B7A",
-                  "text": "13. [무료 주주 첫 회의록 양식 및 예문 다운로드](https://www.yesform.com/forms/vform_154609.php)",
-                  "children": [
-                    {
-                      "id": "0kQTxCB7NCTh",
-                      "text": "서식 ID: vform_154609",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "tA0RuFzSRzdn",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "Om063QmYgEeR",
-                      "text": "URL: https://www.yesform.com/forms/vform_154609.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "7SnDUYS6TNLE",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료주주첫회의록양식및예문다운로드.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_무료주주첫회의록양식및예문다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "4XZBO8s8hijL",
-                  "text": "14. [회의록 무료서식 및 양식 모음으로 손쉽게 활용하세요](https://www.yesform.com/z_n/forms/view_iso/iso_308427.html)",
-                  "children": [
-                    {
-                      "id": "JU1Mz5cR2lWl",
-                      "text": "서식 ID: iso_308427",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "cYFFRPHdRiZA",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "hEmI9tIB0tgq",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308427.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "5qb77B1HNNJf",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_회의록무료서식및양식모음으로손쉽게활용하세요.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_회의록무료서식및양식모음으로손쉽게활용하세요.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "zAqk1PonSzzV",
-                  "text": "15. [주간 공정회의록 무료 양식 및 샘플 다운로드](https://www.yesform.com/z_n/forms/view_iso/iso_310570.html)",
-                  "children": [
-                    {
-                      "id": "Fwv2SQdulsJa",
-                      "text": "서식 ID: iso_310570",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "LeDKLZLnDJWd",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "ZUkyYgXV75Gr",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_310570.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "Jxndjyo16yB5",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_주간공정회의록무료양식및샘플다운로드.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_주간공정회의록무료양식및샘플다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "RtzhB54pZtsN",
-                  "text": "16. [무료 안전보건 협의체회의록 서식, 다양한 예문 제공](https://www.yesform.com/z_n/forms/view_iso/iso_308239.html)",
-                  "children": [
-                    {
-                      "id": "kBST1GYd8e7K",
-                      "text": "서식 ID: iso_308239",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "AZx8bUhsGGyl",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "o2D7JFyUsftU",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308239.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "OyqS5YyHktpa",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료안전보건협의체회의록서식다양한예문제공.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_무료안전보건협의체회의록서식다양한예문제공.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "ftROojidbQ97",
-                  "text": "17. [무료 공정 회의록 양식 다운로드 및 활용법](https://www.yesform.com/z_n/forms/view_iso/iso_307395.html)",
-                  "children": [
-                    {
-                      "id": "McTl06RvHw8Q",
-                      "text": "서식 ID: iso_307395",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "sRJV992yzJSa",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "yrC0ZrqAAXdK",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_307395.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "Ckui4BGdcB2Y",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료공정회의록양식다운로드및활용법.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_무료공정회의록양식다운로드및활용법.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "72rNjlhnrbfU",
-                  "text": "18. [교사회의록 작성법과 무료서식 다운로드](https://www.yesform.com/forms/vform_394661.php)",
-                  "children": [
-                    {
-                      "id": "XAevhzKhY70d",
-                      "text": "서식 ID: vform_394661",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "b7OplqaUYch9",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "czbgsxM74eQs",
-                      "text": "URL: https://www.yesform.com/forms/vform_394661.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "Px185aX17Q4A",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_교사회의록작성법과무료서식다운로드.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_교사회의록작성법과무료서식다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "ccD54XxTBNvc",
-                  "text": "19. [학교 법인 이사회 회의록 작성 무료 양식 다운로드](https://www.yesform.com/forms/vform_134057.php)",
-                  "children": [
-                    {
-                      "id": "QoovvyY00KGM",
-                      "text": "서식 ID: vform_134057",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "2V4iJPN3M2rr",
-                      "text": "지원 포맷: 한글, 워드, PDF",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "vWR5WFaMUzdJ",
-                      "text": "URL: https://www.yesform.com/forms/vform_134057.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "5eUr4c8uPKZT",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_학교법인이사회회의록작성무료양식다운로드.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_학교법인이사회회의록작성무료양식다운로드.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "KkXTOt7BHPc1",
-                  "text": "20. [영문 회의록 무료 예문 및 양식, 손쉽게 활용하세요](https://www.yesform.com/z_n/forms/view_iso/iso_308242.html)",
-                  "children": [
-                    {
-                      "id": "eWNOPOJBx5IU",
-                      "text": "서식 ID: iso_308242",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "oKd2rVJIowHf",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "vAJE32KX7S2t",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308242.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "os6GC89ANuvv",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_영문회의록무료예문및양식손쉽게활용하세요.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_영문회의록무료예문및양식손쉽게활용하세요.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "jKBNOygIumAx",
-                  "text": "21. [회의록 무료 양식 및 샘플 다운받기](https://www.yesform.com/z_n/forms/view_iso/iso_308277.html)",
-                  "children": [
-                    {
-                      "id": "CnMoUcPZJTwV",
-                      "text": "서식 ID: iso_308277",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "gGxYhrZWfUnu",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "pptZycdTI56z",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308277.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "z2eA4nWC7EQ9",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_회의록무료양식및샘플다운받기.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_회의록무료양식및샘플다운받기.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "ZTHwUOjrFegn",
-                  "text": "22. [무료 창립 총회 회의록 서식 및 예문 제공](https://www.yesform.com/z_n/forms/view_iso/iso_308263.html)",
-                  "children": [
-                    {
-                      "id": "BeO14rrGJHYA",
-                      "text": "서식 ID: iso_308263",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "eNVr0eVGDRDd",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "3yQQVdLJnTOp",
-                      "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308263.html",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "qayStON4aPLt",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료창립총회회의록서식및예문제공.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_무료창립총회회의록서식및예문제공.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                },
-                {
-                  "id": "wuycPcaL2nAR",
-                  "text": "23. [교육부 회의록 무료 양식 다운로드 및 활용 방법 안내](https://www.yesform.com/forms/vbizf_6005.php)",
-                  "children": [
-                    {
-                      "id": "xaUqjc2jLet4",
-                      "text": "서식 ID: vbizf_6005",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "ZjO6nZsazw2p",
-                      "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "QCHHttezdcil",
-                      "text": "URL: https://www.yesform.com/forms/vbizf_6005.php",
-                      "children": [],
-                      "isFolded": false,
-                      "createdAt": 1793001034898,
-                      "updatedAt": 1793001034898
-                    },
-                    {
-                      "id": "qY8AAbWWOBih",
-                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_교육부회의록무료양식다운로드및활용방법안내.pdf|로컬 PDF 열기]]",
-                      "children": [],
-                      "file": {
-                        "target": "예스폼_downloads/PDF/예스폼_교육부회의록무료양식다운로드및활용방법안내.pdf"
-                      },
-                      "createdAt": 1793005917994,
-                      "updatedAt": 1793005917994
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793001034898,
-                  "updatedAt": 1793005917994
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1793001034898,
-              "updatedAt": 1793001034898
-            },
-            {
               "id": "zcf6ixvei1V6",
               "text": "📄 02페이지 (14종)",
               "children": [
@@ -1726,7 +103,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -1855,7 +232,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -1898,7 +275,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -1941,7 +318,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -1984,7 +361,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2027,7 +404,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2070,7 +447,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2113,7 +490,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2156,7 +533,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2199,7 +576,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2242,7 +619,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2285,7 +662,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 }
@@ -2337,7 +714,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2380,7 +757,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2423,7 +800,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2466,7 +843,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2509,7 +886,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2552,7 +929,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2724,7 +1101,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2772,7 +1149,7 @@
                   "updatedAt": 1793005917994
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793001034898,
               "updatedAt": 1793001034898
             },
@@ -2819,7 +1196,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -2905,7 +1282,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -3125,7 +1502,7 @@
                   "updatedAt": 1793005917994
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793001034898,
               "updatedAt": 1793001034898
             },
@@ -3322,7 +1699,16 @@
                   "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
-                },
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "a1iyzTTVFAu0",
+              "text": "📄 03페이지 (11종)",
+              "children": [
                 {
                   "id": "1fYA6tjAU044",
                   "text": "61. [무료 계약 검토회의록 양식과 활용법 안내](https://www.yesform.com/z_n/forms/view_iso/iso_307164.html)",
@@ -3629,7 +2015,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -3801,7 +2187,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -3973,7 +2359,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -4193,7 +2579,7 @@
                   "updatedAt": 1793005917994
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793001034898,
               "updatedAt": 1793001034898
             },
@@ -4559,7 +2945,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -4645,7 +3031,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -4693,7 +3079,7 @@
                   "updatedAt": 1793005917994
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793001034898,
               "updatedAt": 1793001034898
             },
@@ -4740,7 +3126,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -4783,12 +3169,12 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793001034898,
               "updatedAt": 1793001034898
             }
@@ -4801,9 +3187,1663 @@
       "isFolded": false,
       "createdAt": 1793001034898,
       "updatedAt": 1793001034898
+    },
+    {
+      "id": "3E7HcjizgCdr",
+      "text": "📄 01페이지 (23종)",
+      "children": [
+        {
+          "id": "mLWcf0PsL7le",
+          "text": "01. [무료 교회회의록 양식 | 무료샘플 다운로드](https://www.yesform.com/forms/vform_128700.php)",
+          "children": [
+            {
+              "id": "6kcliBlXUgLP",
+              "text": "서식 ID: vform_128700",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "3chUbVhSpxKB",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "kETLrkiEVE4P",
+              "text": "URL: https://www.yesform.com/forms/vform_128700.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "yGBbz7zy9ISq",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료교회회의록양식무료샘플다운로드.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_무료교회회의록양식무료샘플다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            },
+            {
+              "id": "ZrC95HivcohB",
+              "text": "시맨틱적 특징",
+              "children": [
+                {
+                  "id": "ilCU7R0h7gtj",
+                  "text": "1. 입력 매체 및 환경: 수기 현장 완결형 (Physical Pen & Paper)",
+                  "children": [
+                    {
+                      "id": "v7n9iid3mmx8",
+                      "text": "볼펜 필기 인체공학: 성인 손글씨 높이(8~10mm)에 정밀하게 맞춰진 18줄 고정 괘선(줄노트 가이드라인)",
+                      "children": []
+                    },
+                    {
+                      "id": "kj8EsLppLoll",
+                      "text": "현장 즉시 봉인성 (Zero-Latency): 회의 종료 즉시 서기 수기 마감 및 현장 인감 날인 (디지털 후가공 및 재입력 단계 원천 배제)",
+                      "children": []
+                    },
+                    {
+                      "id": "Zo55jkoDeCM7",
+                      "text": "무장비 현장 생존성: 노트북·전원·네트워크가 없는 열악한 야외나 현장에서도 A4 1장과 클립보드만으로 업무 완결",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true,
+                  "updatedAt": 1793079598411
+                },
+                {
+                  "id": "nlDTMG8TokRi",
+                  "text": "2. 사고 통제 및 표현 레벨: 표현 억압형 / 자유도 0% (Expressive Constraint)",
+                  "children": [
+                    {
+                      "id": "270ZIEHGHehk",
+                      "text": "사족 및 주관의 거세: 빈 캔버스를 배제하여 작성자의 감정, 사견, 현장 분위기 서술을 물리적으로 박탈",
+                      "children": []
+                    },
+                    {
+                      "id": "rA7DdT3Hs1Ec",
+                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료심의위원회규정양식다운로드.pdf|로컬 PDF 열기]]",
+                      "children": [],
+                      "file": {
+                        "target": "예스폼_downloads/PDF/예스폼_무료심의위원회규정양식다운로드.pdf"
+                      },
+                      "createdAt": 1793005917994,
+                      "updatedAt": 1793005917994
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793001034898,
+                  "updatedAt": 1793005917994
+                },
+                {
+                  "id": "G3TroEwvhY8F",
+                  "text": "72. [무료 대학발전기금 조성위원회 규정 양식 샘플 다운로드](https://www.yesform.com/forms/vform_107738.php)",
+                  "children": [
+                    {
+                      "id": "jYy7SuBAgBNI",
+                      "text": "서식 ID: vform_107738",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793001034898,
+                      "updatedAt": 1793001034898
+                    },
+                    {
+                      "id": "py8pGS9WtlJQ",
+                      "text": "지원 포맷: 한글, 워드, PDF",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793001034898,
+                      "updatedAt": 1793001034898
+                    },
+                    {
+                      "id": "jvw0Qb4n260F",
+                      "text": "사후 위조·변조 방어: 고정된 18개 줄 수 통제 및 '이하 여백' 마감을 통해 사후 문구 임의 삽입 차단",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true,
+                  "updatedAt": 1793079598411
+                },
+                {
+                  "id": "5BwcXm3HGG4b",
+                  "text": "3. 데이터 구조 및 레이아웃: 단문 조항식 + 고밀도 헤더 (Itemized & Dense)",
+                  "children": [
+                    {
+                      "id": "lLfUBTBFuhXL",
+                      "text": "단문 조항식 원자화 (Clause Atomicity): 1행 1안건 -> 1결과 단위로 딱딱 끊어 치는 조항 단위 기록",
+                      "children": []
+                    },
+                    {
+                      "id": "luvlMRHAf4Jp",
+                      "text": "정형 선언문(Boilerplate) 내장: 정족수 숫자만 채워 넣는 개회 성수 선언문 & 폐회 결의문 슬롯화",
+                      "children": []
+                    },
+                    {
+                      "id": "1MALoJkCppjx",
+                      "text": "가로 6열 고밀도 압축: 본문 손글씨 면적 확보를 위해 상단 6개 메타를 [라벨+입력칸] 3쌍으로 2줄 압축 배치",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true,
+                  "updatedAt": 1793079598411
+                },
+                {
+                  "id": "blnBEgOEsrIG",
+                  "text": "4. 핵심 전달체 (Hero Zone): 최종 결의 주문 집중형 (Verdict-Centric)",
+                  "children": [
+                    {
+                      "id": "916taqsDZqvL",
+                      "text": "시선 수직 낙하: 상단 의전 메타 -> 개회 성수 -> 중앙 단일 결의사항 박스로 시선 강제 유도",
+                      "children": []
+                    },
+                    {
+                      "id": "Kw3QJoirTZou",
+                      "text": "결과의 불가역성: '누가 무슨 말을 오갔는가'가 아니라 '무엇이 최종 결정되었는가'만 3초 만에 전달",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true,
+                  "updatedAt": 1793079598411
+                },
+                {
+                  "id": "nWSGCQUkQdA7",
+                  "text": "5. 거버넌스 및 책임 귀속: 양자 대등 공증형 (Dual Parity Attestation)",
+                  "children": [
+                    {
+                      "id": "1wGDTe9jXvsl",
+                      "text": "수직 결재선 배제: 상단 수직 결재 박스 대신 최하단 좌우 대칭 날인란 배치",
+                      "children": []
+                    },
+                    {
+                      "id": "JNtsZpdraQAV",
+                      "text": "상호 견제와 공증: 의사 진행자(회장) + 기록 공증자(서기) 2인의 15~20mm 원형 인감 날인 구조",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793001034898,
+                  "updatedAt": 1793005917994
+                },
+                {
+                  "id": "a5diD4FUY2wI",
+                  "text": "6. 도메인 스킨 및 치환성: 가변형 어휘 프리셋 (Interchangeable Skin)",
+                  "children": [
+                    {
+                      "id": "EsOuPtLPFHuR",
+                      "text": "표면 어휘: 종교 / 비영리 자치기구 (찬송, 기도, 성경, 설교)",
+                      "children": []
+                    },
+                    {
+                      "id": "9Ok6909NMGYF",
+                      "text": "구조적 범용성: 뼈대 자체가 '불가역적 의결 원장'이므로 상단 어휘만 치환하면 상법상 이사회, 주주총회, 입주자대표회의로 100% 전이 가능",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true,
+                  "updatedAt": 1793079598411
+                },
+                {
+                  "id": "vWptCQg0h68A",
+                  "text": "7. 실전 작성 요령 및 방법 (Guidelines & Instructions)",
+                  "children": [
+                    {
+                      "id": "g8kqEXu2aIWc",
+                      "text": "사전 준비: A4 규격 100% 비율 정배율 인쇄, 클립보드 거치, 번짐 없는 흑색 유성 볼펜(0.7~1.0mm) 지참",
+                      "children": []
+                    },
+                    {
+                      "id": "mJ4ICk1YB7tR",
+                      "text": "상단 메타 압축 기입: 일시, 장소, 사회자, 설교자 등 의전 항목을 상단 6열 압축 슬롯에 축약 기입",
+                      "children": []
+                    },
+                    {
+                      "id": "MsSSWbOAljYu",
+                      "text": "개회 정족수 확정: 개회 선언 직전 재적 인원과 실제 출석 인원을 호명 확인하여 개회 성수 선언문 빈칸에 정수로 기입",
+                      "children": []
+                    },
+                    {
+                      "id": "yP36bl4Q8eU8",
+                      "text": "결의사항 단문 기입: 서술형 줄글 금지, '제N호 의안: [안건명] -> 원안 가결(또는 수정 가결/부결)' 형태로 1행 1안건 주문식 기입",
+                      "children": []
+                    },
+                    {
+                      "id": "64C1OCnDryGz",
+                      "text": "마감 및 현장 즉시 날인: 최종 안건 기입 후 잔여 괘선에 '--- 이 하 여 백 ---' 대각선 마감선 처리, 폐회 선언 직후 회장과 서기가 현장에서 즉시 인감 날인",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true,
+                  "updatedAt": 1793079598411
+                },
+                {
+                  "id": "h2OyiMLv0gwL",
+                  "text": "8. 문서 이동 궤적 및 주이용 대상: 폐쇄형 내부 완결 (Internal Closed-Loop)",
+                  "children": [
+                    {
+                      "id": "MHSF5cP3xHl0",
+                      "text": "발신 주체 (FROM): 회의 기록 서기 (단일 작성자)",
+                      "children": []
+                    },
+                    {
+                      "id": "c0G341L8Vvdk",
+                      "text": "수신 및 열람 대상 (TO): 회장 및 소속 위원회/당회 내부 구성원 (대외 비공개, 내부 철 보관)",
+                      "children": []
+                    },
+                    {
+                      "id": "eHlFAPVK0LCH",
+                      "text": "독자의 행동 목적: 과거 결의 주문 확인 및 내부 연속성 유지 (사법적/대외적 방어 불요)",
+                      "children": []
+                    }
+                  ]
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793079572948,
+              "updatedAt": 1793079582798
+            },
+            {
+              "id": "TOQ66B9QcbHe",
+              "text": "구조적 토폴로지 및 골격 그래프 (AST / Skeleton Graph)",
+              "children": [
+                {
+                  "id": "f2tMhbsQFX75",
+                  "text": "루트 골격 트리: Root -> (Header 2x3 Meta Grid) -> (Body Single Container: Rule-18) -> (Footer Dual-Node Attestation)",
+                  "children": []
+                },
+                {
+                  "id": "4IjN4sHQju2g",
+                  "text": "컴포넌트 토폴로지: 상단 6열 압축 헤더 -> 중앙 18줄 고정 균등 괘선 슬라이스(단일 텍스트 박스) -> 최하단 좌우 대칭 2개 원형 인감 앵커",
+                  "children": []
+                },
+                {
+                  "id": "o3Jj7ZOB1wNN",
+                  "text": "토폴로지 시그니처: Single-Column Ruled-Line List with Dual-Node Footer (단일열 18행 괘선 리스트 + 2인 대칭 날인형)",
+                  "children": []
+                }
+              ],
+              "updatedAt": 1793082223046
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "jD0WskJ0kwj3",
+          "text": "02. [교사회의록 무료서식 다운로드로 손쉽게 작성하기](https://www.yesform.com/forms/vform_129290.php)",
+          "children": [
+            {
+              "id": "qiupn9zDwkHk",
+              "text": "서식 ID: vform_129290",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "3tMRSgJzUFj0",
+              "text": "지원 포맷: 한글, 워드, 엑셀, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "G9ffTsHEoWJR",
+              "text": "URL: https://www.yesform.com/forms/vform_129290.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "1lk5pcTiCTjf",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_교사회의록무료서식다운로드로손쉽게작성하기(구글시트변환).pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_교사회의록무료서식다운로드로손쉽게작성하기(구글시트변환).pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "O3jdvYb9rgfp",
+          "text": "03. [회의록 작성에 유용한 무료 공정회의록 양식 모음](https://www.yesform.com/z_n/forms/view_iso/iso_307173.html)",
+          "children": [
+            {
+              "id": "GCMcsqfmweqD",
+              "text": "서식 ID: iso_307173",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "vSVsNM6zCEWp",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "zGP8KFLAXbxo",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_307173.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "SKcStO4EwGsW",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_회의록작성에유용한무료공정회의록양식모음.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_회의록작성에유용한무료공정회의록양식모음.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "nmn1ZeJ94bkj",
+          "text": "04. [입주자대표 회의록 무료양식 샘플 다운로드](https://www.yesform.com/forms/vform_149114.php)",
+          "children": [
+            {
+              "id": "OdRuLJXh9ody",
+              "text": "서식 ID: vform_149114",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "SBVpkhwpMFAe",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "cETjsHKJ6CsS",
+              "text": "URL: https://www.yesform.com/forms/vform_149114.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "QTUm2CLjGObz",
+              "text": "로컬 파일: [[예스폼_입주자대표회의록무료양식샘플다운로드.pdf]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_입주자대표회의록무료양식샘플다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793080451430
+            },
+            {
+              "id": "PrxPKkHDCORr",
+              "text": "시맨틱적 특징",
+              "children": [
+                {
+                  "id": "kmU0nPcG6Tin",
+                  "text": "1. 입력 매체 및 환경: 하이브리드 행정 완결형 (Print & Digital Hybrid / Action-Driven)",
+                  "children": [
+                    {
+                      "id": "CLGm4ytUpvR7",
+                      "text": "출력 현장 서명: 회의 당일 A4 인쇄물에 동대표들이 자필 서명 및 수기 메모 진행",
+                      "children": []
+                    },
+                    {
+                      "id": "w6JrKs09Plpw",
+                      "text": "사후 전산 이중화: 회의 종료 후 관리사무소 직원이 후속 조치 및 처리 결과를 전산(K-apt 등)에 기안·입력하여 바인더 철 보관",
+                      "children": []
+                    },
+                    {
+                      "id": "Q6mE9gktuhug",
+                      "text": "장기 보존성: 입주민 열람 요청 및 구청 감사 대비를 위해 5년 이상 물리적 바인더 보관을 전제한 흑백 고대비 규격",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "bJSXKF0E0yOB",
+                  "text": "2. 사고 통제 및 표현 레벨: 집행 추적 통제형 (Action-Oriented Constraint)",
+                  "children": [
+                    {
+                      "id": "daVh9KrEGKCx",
+                      "text": "인과적 파이프라인 강제: [안건 -> 의결 -> 집행 결과] 3단계로 사고의 흐름을 통제하여 발언 맥락이나 주관적 감정 서술 배제",
+                      "children": []
+                    },
+                    {
+                      "id": "DfIaPVdtzoAv",
+                      "text": "의결과 집행의 강제 분리: 결정 문장과 후속 행정 조치(Action Item) 슬롯을 물리적으로 분리",
+                      "children": []
+                    },
+                    {
+                      "id": "h4vkiHNMKhXm",
+                      "text": "비공식 논의 오염 차단: 법적 효력이 있는 공식 의결과 단순 주민 건의를 격리하기 위한 별도 [기타 협의사항] 슬롯 배치",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "JH3A1pBtp0xA",
+                  "text": "3. 데이터 구조 및 레이아웃: 3열 수평 파이프라인 + 매트릭스 연명부 (Horizontal Pipeline & Multi-Party Grid)",
+                  "children": [
+                    {
+                      "id": "kVJmNXvY0Pjl",
+                      "text": "수평 3열 파이프라인: [회 의 안 건] | [의 결 내 용] | [처 리 결 과]의 가로 3분할 테이블",
+                      "children": []
+                    },
+                    {
+                      "id": "pnYXJrXAaV9c",
+                      "text": "2열 다자 매트릭스 연명부: 하단 30% 면적에 [직책 / 동·호수 / 서명] 3개 필드를 좌우 2열로 배치하여 최대 14명 수용",
+                      "children": []
+                    },
+                    {
+                      "id": "px6Tr7jy9v39",
+                      "text": "초압축 상단 헤더: 제목 하단에 단 1줄의 일시 슬롯과 우측 상단 2단 결재란(총무/회장)만 콤팩트하게 배치",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "1wBeL5Epv3QU",
+                  "text": "4. 핵심 전달체 (Hero Zone): 후속 집행 추적 및 의결 주문 (Action & Verdict Centric)",
+                  "children": [
+                    {
+                      "id": "8nX69wATUwJX",
+                      "text": "시선 수평 이동: 안건 확인 -> 의결 내용 파악 -> 최종 [처리 결과] 확인으로 시선 유도",
+                      "children": []
+                    },
+                    {
+                      "id": "G9F7YQzQgRt7",
+                      "text": "집행 완결성 검증: 입주민 및 감사관 열람 시 '그래서 이 계약/공사가 실제로 어떻게 집행되었는가'를 3초 만에 추적 가능",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "iSS7mNCJ7KNW",
+                  "text": "5. 거버넌스 및 책임 귀속: 이중 거버넌스 + 전원 연명 공증 (Dual Governance & Multi-Signatory Attestation)",
+                  "children": [
+                    {
+                      "id": "uNXGC4nqqnQD",
+                      "text": "상단 행정 결재선: 회의록을 작성·취합한 집행부(관리주체/총무/회장)의 내부 공문서 채택 결재",
+                      "children": []
+                    },
+                    {
+                      "id": "EgBuGxxTEeam",
+                      "text": "하단 법적 연명 공증: 회의에 참석한 개별 대의원(동대표 전원)이 본인 동·호수를 자필 병기하고 직접 서명·날인",
+                      "children": []
+                    },
+                    {
+                      "id": "CjFTt6rqvZTI",
+                      "text": "의결정족수 사법적 입증: 출석 과반수 및 자격 적법성을 물리적으로 증명하여 입주민 간 소송 및 입찰 무효 분쟁 방어",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": false
+                },
+                {
+                  "id": "6lH6wYGEkzBh",
+                  "text": "6. 도메인 스킨 및 치환성: 집행 추적형 합의체 프리셋 (Action-Item Committee Preset)",
+                  "children": [
+                    {
+                      "id": "XK7AZjDzbisB",
+                      "text": "표면 어휘: 공동주택/아파트 관리 자치기구 (동대표, 동·호수, 입주자대표회의)",
+                      "children": []
+                    },
+                    {
+                      "id": "FKuNp6pm2NVD",
+                      "text": "구조적 범용성: 뼈대 자체가 '합의체 투표 의결 + 실무 부서 후속 조치 추적' 구조이므로, 표면 명칭만 치환하면 기업 내 [프로젝트 운영위원회], [노사협의회], [공동 투자 심의회], [학부모 운영위원회]로 100% 전이 가능",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "uz0sUUrk1Bug",
+                  "text": "7. 실전 작성 요령 및 방법 (Guidelines & Instructions)",
+                  "children": [
+                    {
+                      "id": "uVuzoUpnSXox",
+                      "text": "사전 준비: 관리규약상 소집 공고(회의 7일 전 등) 안건과 일치 여부 대조, 출석 동대표 자격 명부 확인",
+                      "children": []
+                    },
+                    {
+                      "id": "WV9KmB86lRNw",
+                      "text": "상단 메타 및 성원 확인: 회의 개시 시각 기입 및 재적 과반수 출석 여부 확인 후 개회 선언",
+                      "children": []
+                    },
+                    {
+                      "id": "DFhMZzuji0EI",
+                      "text": "3열 파이프라인 단계별 작성: [회의안건]은 안건명 요약, [의결내용]은 찬반 수치 및 주문 기입, [처리결과]는 당일 공란 후 관리주체 집행 완료 시 기입",
+                      "children": []
+                    },
+                    {
+                      "id": "ylryu8DJMljt",
+                      "text": "비공식 협의 격리: 표결에 부치지 않은 주민 건의나 자유 논의는 반드시 하단 '*기타 협의사항' 칸에만 기입",
+                      "children": []
+                    },
+                    {
+                      "id": "Kx0SMv7048EK",
+                      "text": "전원 자필 연명 서명: 폐회 직후 참석한 모든 동대표가 본인 직책 행에 본인 동·호수를 직접 자필로 적고 서명/날인 (대리 서명 절대 금지)",
+                      "children": []
+                    },
+                    {
+                      "id": "tIw086dzFjDg",
+                      "text": "최종 결재 및 보관: 총무/관리소장 확인 후 회장 결재를 득하여 공고문 게시 및 입주민 열람용 영구/장기 바인더에 편철",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": false
+                },
+                {
+                  "id": "aE3Ibfjclupr",
+                  "text": "8. 문서 이동 궤적 및 주이용 대상: 대외 방어 및 다자 검증 (External Audit & Multi-Consumer)",
+                  "children": [
+                    {
+                      "id": "BUEP4r2aKYyb",
+                      "text": "발신 주체 (FROM): 입주자대표회의 (동대표 전원 합의체)",
+                      "children": []
+                    },
+                    {
+                      "id": "5ZQOxHOmupkP",
+                      "text": "수신 및 열람 대상 (TO): 1차 관리사무소장(공사/계약 집행 독자) -> 2차 전체 입주민(게시판 공람 독자) -> 3차 지자체 감사관 및 법원(분쟁 발생 시 사법적 독자)",
+                      "children": []
+                    },
+                    {
+                      "id": "YfPOnjDhy0FK",
+                      "text": "독자의 행동 목적: 법정 의결정족수 및 대의권 적법성 검증, 계약/공사 처리 결과(Action Item) 현미경 추적",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                }
+              ],
+              "isFolded": true
+            },
+            {
+              "id": "suurNbYgAVvt",
+              "text": "구조적 토폴로지 및 골격 그래프 (AST / Skeleton Graph)",
+              "children": [
+                {
+                  "id": "gbAHAiqgabc3",
+                  "text": "루트 골격 트리: Root -> (Header Split: Inline Time + Admin Sign Box) -> (Body 3-Col Pipeline Grid) -> (Isolated Sub-Container) -> (Footer Matrix-2x7)",
+                  "children": []
+                },
+                {
+                  "id": "bFetqqQRuyTC",
+                  "text": "컴포넌트 토폴로지: 3열 수평 파이프라인 표(안건 -> 의결 -> 처리결과) -> 하단 비공식 격리 박스 -> 최하단 14개 노드 다자 연명 매트릭스(직책+식별자+서명 3단 서브노드 x 14)",
+                  "children": []
+                },
+                {
+                  "id": "vGR8ym5tzD7i",
+                  "text": "토폴로지 시그니처: 3-Column Action-Pipeline Table with 14-Node Multi-Signatory Matrix (3열 파이프라인 표 + 14인 연명 매트릭스형)",
+                  "children": []
+                }
+              ],
+              "updatedAt": 1793082187515
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "AerrySbV0TP1",
+          "text": "05. [회의록 샘플: 무료 실행위원회 템플릿 다운로드](https://www.yesform.com/forms/vform_346764.php)",
+          "children": [
+            {
+              "id": "gEmm0X5CWJql",
+              "text": "서식 ID: vform_346764",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "wn6Q83BGWMvP",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "AozOrqB0Xvoq",
+              "text": "URL: https://www.yesform.com/forms/vform_346764.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "gvTOpMwCRTTK",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_회의록샘플무료실행위원회템플릿다운로드.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_회의록샘플무료실행위원회템플릿다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "m6kI9gfcarsO",
+          "text": "06. [제조업 회의록 무료 서식 및 ISO 샘플 자료](https://www.yesform.com/z_n/forms/view_iso/iso_151859.html)",
+          "children": [
+            {
+              "id": "MSq0kynLoXpF",
+              "text": "서식 ID: iso_151859",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "GKuEMczCQVl8",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "FKkHzQ0TalXt",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_151859.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "9OySnsUfa0wv",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_제조업회의록무료서식및ISO샘플자료.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_제조업회의록무료서식및ISO샘플자료.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "0OQlL7L4QwTJ",
+          "text": "07. [반상회 회의록 무료샘플 및 무료서식 다운로드](https://www.yesform.com/forms/vform_159439.php)",
+          "children": [
+            {
+              "id": "A2ENPZr05jbj",
+              "text": "서식 ID: vform_159439",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "SdVaCQSw8Gft",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "aWvhROE1Xtw6",
+              "text": "URL: https://www.yesform.com/forms/vform_159439.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "LGFvGAZknRIy",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_반상회회의록무료샘플및무료서식다운로드.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_반상회회의록무료샘플및무료서식다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            },
+            {
+              "id": "OjdaicGg2l2e",
+              "text": "시맨틱적 특징",
+              "children": [
+                {
+                  "id": "UMTJWPomQYvV",
+                  "text": "1. 입력 매체 및 환경: 현장 수기 배포 및 관청 보고형 (Pen-and-Paper Administrative Filing)",
+                  "children": [
+                    {
+                      "id": "NfZKARmSEQj2",
+                      "text": "반장 수기 완결: 노트북이나 전산이 없는 동네 사랑방, 가정집 현장에서 반장이 볼펜으로 직접 수기 작성",
+                      "children": []
+                    },
+                    {
+                      "id": "0BkuaIZEBLkr",
+                      "text": "임석 공무원 현장 날인: 동사무소(주민센터) 파견 공무원이 현장에서 시책 전달을 확인하고 직명, 성명 및 인감 즉시 날인",
+                      "children": []
+                    },
+                    {
+                      "id": "dEw1AF4TzsmB",
+                      "text": "동사무소 제출용 원본: 회의 종료 후 관할 주민센터로 제출되어 행정 통계 및 시책 전달 증빙으로 편철 보관",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "CZc8fI0tq3n3",
+                  "text": "2. 사고 통제 및 표현 레벨: 양방향 행정 중계형 (Bidirectional Administrative Routing)",
+                  "children": [
+                    {
+                      "id": "00qtXJtYHqDF",
+                      "text": "하향식 시책 수용: 정부/지자체 배포 간행물(반상회보 등)의 윤독 사실을 기록하도록 강제하여 상부 지침 수용 통제",
+                      "children": []
+                    },
+                    {
+                      "id": "1dH8SRNm4POW",
+                      "text": "상향식 민원 분리: 자체 결정이 불가능한 도로, 가로등, 청소 등 관청 요구사항을 [건의요망 사항요지]로 명확히 분리",
+                      "children": []
+                    },
+                    {
+                      "id": "K8rBfXz4uBhA",
+                      "text": "소규모 자체 협의 격리: 동네 자체 자치 사항([협의 및 결의사항])과 행정 건의를 분리하여 월권 방지",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "sNo1aQLN49A2",
+                  "text": "3. 데이터 구조 및 레이아웃: 관·민 대칭 분할 + 출석 그리드 (Bilateral Split & Roll-Call Grid)",
+                  "children": [
+                    {
+                      "id": "pYsGDHiUEnpK",
+                      "text": "좌우 비대칭 기능 분할: 좌측은 주민 자치 영역(협의/건의/기타), 우측은 관청 행정 영역(임석공무원/윤독간행물)으로 엄격한 기능 격리",
+                      "children": []
+                    },
+                    {
+                      "id": "k3N4CxOgKAsq",
+                      "text": "3열 15칸 출석 매트릭스: 하단에 [성명 (인)] 3열 5행 테이블을 두어 주민 15명의 단순 출석 및 동원율 체크",
+                      "children": []
+                    },
+                    {
+                      "id": "VpetF7YnA0Lg",
+                      "text": "명예반장/반장 이원 결재: 상단 우측에 주민 대표(반장)와 행정 보조(명예반장/통장) 2인 결재란 배치",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "ifhAVxcyNddG",
+                  "text": "4. 핵심 전달체 (Hero Zone): 건의 요망 및 공무원 입증 (Petition & Attestation Centric)",
+                  "children": [
+                    {
+                      "id": "k4TMIORhblKB",
+                      "text": "행정적 가치 집중: '주민들이 관청에 무엇을 요구했는가([건의요망 사항요지])'와 '공무원이 실제로 참석했는가([임석공무원 날인])'가 최우선 시각적 앵커",
+                      "children": []
+                    },
+                    {
+                      "id": "XqQsqRInY0oc",
+                      "text": "의결권 배제: 예산 승인이나 권리 변동이 없으므로 '주문식 의결' 대신 '건의 및 보고' 전달에 집중",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "pBPUMnN8YXEw",
+                  "text": "5. 거버넌스 및 책임 귀속: 관치 보조 및 단순 출석 확인 (Administrative Oversight & Attendance Only)",
+                  "children": [
+                    {
+                      "id": "UQbwj5fJxpdm",
+                      "text": "사법적 표결 불요: 대의원 표결 기구가 아니므로 의결정족수 입증이나 동·호수 자필 병기 불필요",
+                      "children": []
+                    },
+                    {
+                      "id": "UNXrRRHlMm3J",
+                      "text": "관청 감독(Oversight) 공증: 공무원의 임석 도장을 통해 문서의 공적 정당성 확보",
+                      "children": []
+                    },
+                    {
+                      "id": "l0Qb8aSM9VYd",
+                      "text": "출석 증빙(Roll Call): 15인 서명란은 의결권 행사가 아닌 '오늘 모임에 주민이 실제로 모였다'는 단순 집합 증명",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "esJEO5GuhS0O",
+                  "text": "6. 도메인 스킨 및 치환성: 타운홀 민원 수렴 프리셋 (Town-Hall & Community Petition Preset)",
+                  "children": [
+                    {
+                      "id": "2LCFwda4Cqd7",
+                      "text": "표면 어휘: 지방 행정 말단 자치 (반상회, 반장, 명예반장, 임석공무원, 윤독간행물)",
+                      "children": []
+                    },
+                    {
+                      "id": "D3aTlvTyZPG2",
+                      "text": "구조적 범용성: 뼈대 자체가 '중앙/본부 시책 전달 + 현장 참여자 고충/건의 수렴 + 감독관 입회' 구조이므로, 표면 어휘만 치환하면 군부대 [소대/중대 간담회], 기업 내 [현장 작업반 고충처리 회의], 프랜차이즈 [가맹점주 간담회], 학교 [학급 자치회]로 100% 전이 가능",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "r8g7WRHwU60P",
+                  "text": "7. 실전 작성 요령 및 방법 (Guidelines & Instructions)",
+                  "children": [
+                    {
+                      "id": "OU6B80isctAD",
+                      "text": "사전 준비: 배포할 반상회보(간행물) 수량 확보, 동사무소 파견 공무원 참석 여부 사전 확인, 인쇄물 및 흑색 볼펜 구비",
+                      "children": []
+                    },
+                    {
+                      "id": "jkeMUqS55HhQ",
+                      "text": "일시 및 출석 확인: 회의 시작 시각 기입 후, 참석한 주민들에게 하단 [반원 출석 상황] 15칸에 순서대로 성명을 쓰고 서명/도장(지장)을 받음",
+                      "children": []
+                    },
+                    {
+                      "id": "B9VLeLdNdepj",
+                      "text": "상부 시책 및 간행물 회람: 회의 전반부에 배포된 반상회보를 함께 읽고, [윤독중인간행물] 칸에 해당 간행물 명칭(예: ○○구정소식 제N호)을 명기",
+                      "children": []
+                    },
+                    {
+                      "id": "d4k0pIr0qv6m",
+                      "text": "협의 및 건의 분리 기입: [협의 및 결의사항]에는 골목 청소 등 자체 규칙 기입, [건의요망 사항요지]에는 구청/주민센터 조치가 필요한 민원을 구체적 위치와 함께 축약 기입",
+                      "children": []
+                    },
+                    {
+                      "id": "LcRNldH6GnAZ",
+                      "text": "임석공무원 현장 확인: 참석한 주민센터 공무원에게 작성 내용을 보여주고, 우측 [임석공무원] 소속/직명/성명 칸에 자필 서명 또는 인감 날인을 받음",
+                      "children": []
+                    },
+                    {
+                      "id": "UqatM2DmJrO2",
+                      "text": "최종 결재 및 제출: 반장 날인 후 주민센터에 사본 또는 원본을 제출하여 행정 건의 접수 및 모임 실적 보고 완료",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                },
+                {
+                  "id": "qrIMDUmKEHgz",
+                  "text": "8. 문서 이동 궤적 및 주이용 대상: 상향 보고 및 관청 중계 (Bottom-Up Reporting & Petition)",
+                  "children": [
+                    {
+                      "id": "ZsmtLUx8wY7F",
+                      "text": "발신 주체 (FROM): 마을 주민 및 반장 (기층 자치 단위)",
+                      "children": []
+                    },
+                    {
+                      "id": "hNlM6nERpfjy",
+                      "text": "수신 및 열람 대상 (TO): 동사무소(주민센터) 담당 공무원 및 관할 구청 행정과",
+                      "children": []
+                    },
+                    {
+                      "id": "bp5jnWwdHQgt",
+                      "text": "독자의 행동 목적: 지역 주민 민원/숙원 과제([건의요망 사항요지]) 접수 및 정부 시책 전달 실적([윤독간행물], 동원율) 행정 통계 반영",
+                      "children": []
+                    }
+                  ],
+                  "isFolded": true
+                }
+              ],
+              "isFolded": true
+            },
+            {
+              "id": "uwlag8DmbzTP",
+              "text": "구조적 토폴로지 및 골격 그래프 (AST / Skeleton Graph)",
+              "children": [
+                {
+                  "id": "M8muTQ5Hko4A",
+                  "text": "루트 골격 트리: Root -> (Header Inline Time + Dual Sign Box) -> (Body Bilateral Split: Stack-3 vs Stack-2) -> (Footer Matrix-3x5)",
+                  "children": []
+                },
+                {
+                  "id": "9Yzso3UT9AFT",
+                  "text": "컴포넌트 토폴로지: 좌우 비대칭 2분할 컨테이너(좌측 민간 3단 수직 스택 vs 우측 관청 2단 검인/간행물 스택) -> 최하단 15개 단순 출석 체크 셀(성명+인 x 15)",
+                  "children": []
+                },
+                {
+                  "id": "5504wDqmcYhr",
+                  "text": "토폴로지 시그니처: Bilateral Split-Domain Container with 15-Cell Roll-Call Attendance Grid (관·민 비대칭 2분할 컨테이너 + 15인 출석 그리드형)",
+                  "children": []
+                }
+              ],
+              "updatedAt": 1793082245359
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "zGMWw185Ikwr",
+          "text": "08. [임원회의록 무료서식 및 양식 다운로드 자료](https://www.yesform.com/forms/vform_157371.php)",
+          "children": [
+            {
+              "id": "nHGxFk5WmBEm",
+              "text": "서식 ID: vform_157371",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "uAS88ey5HC4a",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "P3jHhvVS2F7V",
+              "text": "URL: https://www.yesform.com/forms/vform_157371.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "DXVXU6WDo22t",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_임원회의록무료서식및양식다운로드자료.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_임원회의록무료서식및양식다운로드자료.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "tHRiYTPTBVYa",
+          "text": "09. [운영위원 회의록(불교대학) 무료 양식과 샘플자료](https://www.yesform.com/forms/vform_338817.php)",
+          "children": [
+            {
+              "id": "5KSA9bk6H38R",
+              "text": "서식 ID: vform_338817",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "XWQfNnLRzntl",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "Uyz8aODZNJS0",
+              "text": "URL: https://www.yesform.com/forms/vform_338817.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "q45D5HbFnSlc",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_운영위원회의록불교대학무료양식과샘플자료.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_운영위원회의록불교대학무료양식과샘플자료.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "KpsayA7KTwv3",
+          "text": "10. [무료 교회 회의록 양식 및 템플릿 다운로드](https://www.yesform.com/forms/vform_128699.php)",
+          "children": [
+            {
+              "id": "13nf4qn7qCEb",
+              "text": "서식 ID: vform_128699",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "flTwKiPXYmC2",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "NQDvvzGV7ruN",
+              "text": "URL: https://www.yesform.com/forms/vform_128699.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "oq1qlgHJlV0R",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료교회회의록양식및템플릿다운로드.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_무료교회회의록양식및템플릿다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "IScyvn5yIjF5",
+          "text": "11. [교무회의록(불교대학) 무료 양식 및 다양한 무료 샘플 제공](https://www.yesform.com/forms/vform_338755.php)",
+          "children": [
+            {
+              "id": "Dxp0ro52HxWK",
+              "text": "서식 ID: vform_338755",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "BP9CBKeSzvFV",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "PilCsanwDeLX",
+              "text": "URL: https://www.yesform.com/forms/vform_338755.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "DbYhCnP4o6yJ",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_교무회의록불교대학무료양식및다양한무료샘플제공.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_교무회의록불교대학무료양식및다양한무료샘플제공.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "lPzWwc5zeLWA",
+          "text": "12. [무료 주주 회의록 양식 - Annual Meeting Minutes Free Template](https://www.yesform.com/forms/vform_154612.php)",
+          "children": [
+            {
+              "id": "4BuroZPxaLDG",
+              "text": "서식 ID: vform_154612",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "ld8gLa4dNrDR",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "zunvoJMdlZNp",
+              "text": "URL: https://www.yesform.com/forms/vform_154612.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "uULI5k3CRdg8",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료주주회의록양식AnnualMeetingMinutesFreeTemplate.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_무료주주회의록양식AnnualMeetingMinutesFreeTemplate.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "Ph6ZKFCc6B7A",
+          "text": "13. [무료 주주 첫 회의록 양식 및 예문 다운로드](https://www.yesform.com/forms/vform_154609.php)",
+          "children": [
+            {
+              "id": "0kQTxCB7NCTh",
+              "text": "서식 ID: vform_154609",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "tA0RuFzSRzdn",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "Om063QmYgEeR",
+              "text": "URL: https://www.yesform.com/forms/vform_154609.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "7SnDUYS6TNLE",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료주주첫회의록양식및예문다운로드.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_무료주주첫회의록양식및예문다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "4XZBO8s8hijL",
+          "text": "14. [회의록 무료서식 및 양식 모음으로 손쉽게 활용하세요](https://www.yesform.com/z_n/forms/view_iso/iso_308427.html)",
+          "children": [
+            {
+              "id": "JU1Mz5cR2lWl",
+              "text": "서식 ID: iso_308427",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "cYFFRPHdRiZA",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "hEmI9tIB0tgq",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308427.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "5qb77B1HNNJf",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_회의록무료서식및양식모음으로손쉽게활용하세요.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_회의록무료서식및양식모음으로손쉽게활용하세요.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "zAqk1PonSzzV",
+          "text": "15. [주간 공정회의록 무료 양식 및 샘플 다운로드](https://www.yesform.com/z_n/forms/view_iso/iso_310570.html)",
+          "children": [
+            {
+              "id": "Fwv2SQdulsJa",
+              "text": "서식 ID: iso_310570",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "LeDKLZLnDJWd",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "ZUkyYgXV75Gr",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_310570.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "Jxndjyo16yB5",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_주간공정회의록무료양식및샘플다운로드.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_주간공정회의록무료양식및샘플다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "RtzhB54pZtsN",
+          "text": "16. [무료 안전보건 협의체회의록 서식, 다양한 예문 제공](https://www.yesform.com/z_n/forms/view_iso/iso_308239.html)",
+          "children": [
+            {
+              "id": "kBST1GYd8e7K",
+              "text": "서식 ID: iso_308239",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "AZx8bUhsGGyl",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "o2D7JFyUsftU",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308239.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "OyqS5YyHktpa",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료안전보건협의체회의록서식다양한예문제공.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_무료안전보건협의체회의록서식다양한예문제공.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "ftROojidbQ97",
+          "text": "17. [무료 공정 회의록 양식 다운로드 및 활용법](https://www.yesform.com/z_n/forms/view_iso/iso_307395.html)",
+          "children": [
+            {
+              "id": "McTl06RvHw8Q",
+              "text": "서식 ID: iso_307395",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "sRJV992yzJSa",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "yrC0ZrqAAXdK",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_307395.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "Ckui4BGdcB2Y",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료공정회의록양식다운로드및활용법.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_무료공정회의록양식다운로드및활용법.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "72rNjlhnrbfU",
+          "text": "18. [교사회의록 작성법과 무료서식 다운로드](https://www.yesform.com/forms/vform_394661.php)",
+          "children": [
+            {
+              "id": "XAevhzKhY70d",
+              "text": "서식 ID: vform_394661",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "b7OplqaUYch9",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "czbgsxM74eQs",
+              "text": "URL: https://www.yesform.com/forms/vform_394661.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "Px185aX17Q4A",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_교사회의록작성법과무료서식다운로드.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_교사회의록작성법과무료서식다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "ccD54XxTBNvc",
+          "text": "19. [학교 법인 이사회 회의록 작성 무료 양식 다운로드](https://www.yesform.com/forms/vform_134057.php)",
+          "children": [
+            {
+              "id": "QoovvyY00KGM",
+              "text": "서식 ID: vform_134057",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "2V4iJPN3M2rr",
+              "text": "지원 포맷: 한글, 워드, PDF",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "vWR5WFaMUzdJ",
+              "text": "URL: https://www.yesform.com/forms/vform_134057.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "5eUr4c8uPKZT",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_학교법인이사회회의록작성무료양식다운로드.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_학교법인이사회회의록작성무료양식다운로드.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "KkXTOt7BHPc1",
+          "text": "20. [영문 회의록 무료 예문 및 양식, 손쉽게 활용하세요](https://www.yesform.com/z_n/forms/view_iso/iso_308242.html)",
+          "children": [
+            {
+              "id": "eWNOPOJBx5IU",
+              "text": "서식 ID: iso_308242",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "oKd2rVJIowHf",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "vAJE32KX7S2t",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308242.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "os6GC89ANuvv",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_영문회의록무료예문및양식손쉽게활용하세요.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_영문회의록무료예문및양식손쉽게활용하세요.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "jKBNOygIumAx",
+          "text": "21. [회의록 무료 양식 및 샘플 다운받기](https://www.yesform.com/z_n/forms/view_iso/iso_308277.html)",
+          "children": [
+            {
+              "id": "CnMoUcPZJTwV",
+              "text": "서식 ID: iso_308277",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "gGxYhrZWfUnu",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "pptZycdTI56z",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308277.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "z2eA4nWC7EQ9",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_회의록무료양식및샘플다운받기.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_회의록무료양식및샘플다운받기.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "ZTHwUOjrFegn",
+          "text": "22. [무료 창립 총회 회의록 서식 및 예문 제공](https://www.yesform.com/z_n/forms/view_iso/iso_308263.html)",
+          "children": [
+            {
+              "id": "BeO14rrGJHYA",
+              "text": "서식 ID: iso_308263",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "eNVr0eVGDRDd",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "3yQQVdLJnTOp",
+              "text": "URL: https://www.yesform.com/z_n/forms/view_iso/iso_308263.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "qayStON4aPLt",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료창립총회회의록서식및예문제공.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_무료창립총회회의록서식및예문제공.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        },
+        {
+          "id": "wuycPcaL2nAR",
+          "text": "23. [교육부 회의록 무료 양식 다운로드 및 활용 방법 안내](https://www.yesform.com/forms/vbizf_6005.php)",
+          "children": [
+            {
+              "id": "xaUqjc2jLet4",
+              "text": "서식 ID: vbizf_6005",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "ZjO6nZsazw2p",
+              "text": "지원 포맷: 한글, 워드, 엑셀, PDF, 구글 시트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "QCHHttezdcil",
+              "text": "URL: https://www.yesform.com/forms/vbizf_6005.php",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "qY8AAbWWOBih",
+              "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_교육부회의록무료양식다운로드및활용방법안내.pdf|로컬 PDF 열기]]",
+              "children": [],
+              "file": {
+                "target": "예스폼_downloads/PDF/예스폼_교육부회의록무료양식다운로드및활용방법안내.pdf"
+              },
+              "createdAt": 1793005917994,
+              "updatedAt": 1793005917994
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793001034898,
+          "updatedAt": 1793005917994
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793001034898,
+      "updatedAt": 1793164743592
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792999285385,
-  "updatedAt": 1793163426418
+  "updatedAt": 1793251276589
 }
