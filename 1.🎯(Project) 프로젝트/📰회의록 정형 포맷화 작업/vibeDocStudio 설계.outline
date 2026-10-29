@@ -202,7 +202,7 @@
               "updatedAt": 1793253424875
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793253217797,
           "updatedAt": 1793253380487
         },
@@ -212,27 +212,28 @@
           "children": [
             {
               "id": "H9q457FAI9CA",
-              "text": "예스폼 - AI 폼 작업 화면",
+              "text": "예스폼 - AI 폼 작업 화면 #ref",
               "children": [],
               "createdAt": 1793255797677,
-              "updatedAt": 1793255873572,
+              "updatedAt": 1793256070177,
               "file": {
                 "target": "Pasted image 20261029153640.png"
               }
             },
             {
               "id": "ETA9BQu0wj6L",
-              "text": "판다독 - 문서 편집 화면",
+              "text": "판다독 - 문서 편집 화면 #ref",
               "children": [],
               "createdAt": 1793255935280,
-              "updatedAt": 1793255939597,
+              "updatedAt": 1793256073384,
               "file": {
                 "target": "Pasted image 20261029153855.png"
               }
             }
           ],
           "createdAt": 1793255866376,
-          "updatedAt": 1793255871332
+          "updatedAt": 1793255871332,
+          "isFolded": true
         }
       ],
       "createdAt": 1793253353359,
@@ -244,31 +245,33 @@
       "text": "[Window99] 템플릿 허브",
       "children": [
         {
-          "id": "zlWBs21cTzjN",
-          "text": "예스폼 - 문서서식 허브 #ref",
-          "children": [],
-          "createdAt": 1793255628080,
-          "updatedAt": 1793255673872,
-          "file": {
-            "target": "Pasted image 20261029153414.png"
-          }
-        },
-        {
-          "id": "nkEMXEnRqExI",
-          "text": "예스폼 - AI 템플릿 허브 #ref",
-          "children": [],
-          "createdAt": 1793255679049,
-          "updatedAt": 1793255717568,
-          "file": {
-            "target": "Pasted image 20261029153500.png"
-          }
-        },
-        {
-          "id": "70R1sHWk5lpO",
-          "text": "",
-          "children": [],
-          "createdAt": 1793255718811,
-          "updatedAt": 1793255718811
+          "id": "jVLl6nKipYyl",
+          "text": "참조",
+          "children": [
+            {
+              "id": "zlWBs21cTzjN",
+              "text": "예스폼 - 문서서식 허브 #ref",
+              "children": [],
+              "createdAt": 1793255628080,
+              "updatedAt": 1793256087653,
+              "file": {
+                "target": "Pasted image 20261029153414.png"
+              }
+            },
+            {
+              "id": "nkEMXEnRqExI",
+              "text": "예스폼 - AI 템플릿 허브 #ref",
+              "children": [],
+              "createdAt": 1793255679049,
+              "updatedAt": 1793256087653,
+              "file": {
+                "target": "Pasted image 20261029153500.png"
+              }
+            }
+          ],
+          "createdAt": 1793255963415,
+          "updatedAt": 1793255965307,
+          "isFolded": false
         }
       ],
       "createdAt": 1793255608251,
@@ -277,5 +280,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793253217797,
-  "updatedAt": 1793255942658
+  "updatedAt": 1793256098995
 }
