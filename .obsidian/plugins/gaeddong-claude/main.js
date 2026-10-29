@@ -3570,6 +3570,11 @@ const SKIP_DIRS = ["이미지", "images", "attachments"];
 const NOTE_AI_MIN_CHARS = 80;          // 던진 .md 를 요약할 만큼 글이 있나 — 양식 뼈대는 거의 0자
 const FOLDER_MARK = "폴더::";       // 노트 안에서 폴더를 가리키는 표시
 
+/** 파일 이름에 못 쓰는 글자를 뺍니다 — 옵시디언이 막는 것들 + 위키링크를 깨는 `[]` */
+function safeName(s) {
+  return String(s || "").replace(/[\\\/:*?"<>|#^[\]]/g, " ").replace(/\s+/g, " ").trim();
+}
+
 /* agy 에 강제할 출력 형식. 이게 있으면 응답에서 ```json 울타리를 벗길 필요가 없다 —
    `structured_output` 로 파싱된 객체가 그대로 온다. */
 const SCHEMA = {
@@ -4036,9 +4041,14 @@ class InboxMod extends Mod {
 
     const today = todayYmd();
 
-    // 파일 이름에 못 쓰는 글자 — 옵시디언이 막는 것들
-    let name = String(opts.title || "").replace(/[\\\/:*?"<>|#^[\]]/g, " ")
-                 .replace(/\s+/g, " ").trim();
+    const files = opts.files || [], links = opts.links || [];
+
+    // 제목을 비웠으면 첫 첨부의 이름을 따릅니다 — `새 인박스 날짜` 보다 무엇인지 보입니다
+    let name = safeName(opts.title);
+    if (!name) {
+      const first = files.find((it) => !it.pasted);
+      if (first) name = safeName(first.file.name.replace(/\.[^.]+$/, ""));
+    }
     if (!name) name = "새 인박스 " + today;
 
     let path = normalizePath(folder + "/" + name + ".md");
@@ -4047,17 +4057,79 @@ class InboxMod extends Mod {
     }
 
     let text = await this.templateText();
-    text = setProps(text, {
+    const props = {
       "작성일": today,
       "요약": String(opts.summary || "").trim(),
       "주제": [],            // 양식의 `주제: 양식` 을 물려받지 않습니다
-    });
+    };
+    if (links.length) props["링크"] = links[0];        // `링크` = 외부 원본 주소. 나머지는 본문에
+    text = setProps(text, props);
+
+    // 첨부는 본문 맨 아래 — 내 판단이 위, 첨부는 근거라서 아래 (감싸기와 같은 순서)
+    const att = await this.saveAttachments(folder, path, name, files, links);
+    if (att) {
+      const nl = eolOf(text);
+      text = withEol(toLf(text).replace(/\s*$/, "\n") + att, nl);
+    }
 
     const file = await this.app.vault.create(path, text);
     await this.app.workspace.getLeaf(false).openFile(file);
     this.putCursorInBody();
     if (this.settings.notice) new Notice("✏️ " + name, 4000);
     return file;
+  }
+
+  /** 창에서 넣은 첨부·링크를 저장하고 본문 끝에 붙일 글을 돌려줍니다 (없으면 "").
+      첨부 자리는 감싸기와 같습니다 — 그 폴더의 `이미지/`. 그 안은 감싸기가 안 보는 곳이라
+      (`SKIP_DIRS`) 저장하자마자 노트로 또 감싸지지 않습니다.
+      원본에는 누를 수 있는 링크를 늘 답니다 (`📎 원본 열기 → [[파일]]`) — 미리보기만 있으면
+      옵시디언이 못 여는 형식을 열 길이 없습니다. */
+  async saveAttachments(folder, notePath, noteName, files, links) {
+    const out = [];
+    if (links.length) {
+      out.push("## 링크", "");
+      for (const u of links) out.push("- " + u);
+      out.push("");
+    }
+    if (files.length) {
+      const attDir = normalizePath(folder + "/" + ATT_SUBDIR);
+      if (!(this.app.vault.getAbstractFileByPath(attDir) instanceof TFolder)) {
+        try { await this.app.vault.createFolder(attDir); } catch (e) { /* 이미 있으면 무시 */ }
+      }
+      const today = todayYmd();
+      let pasted = 0;
+      const saved = [];
+      for (const it of files) {
+        const m = /\.([^.]+)$/.exec(it.file.name);
+        const ext = (m ? m[1] : (it.file.type.split("/")[1] || "")).toLowerCase();
+        // 붙여넣은 그림은 이름이 다 `image.png` 라서 노트 이름을 따릅니다
+        const base = it.pasted ? noteName + " (붙여넣은 이미지 " + (++pasted) + ")"
+                               : (safeName(it.file.name.replace(/\.[^.]+$/, "")) || noteName);
+        const dot = ext ? "." + ext : "";
+        let to = normalizePath(attDir + "/" + base + dot);
+        for (let n = 2; this.app.vault.getAbstractFileByPath(to); n++) {
+          to = normalizePath(attDir + "/" + base + " " + n + dot);
+        }
+        let f;
+        try {
+          f = await this.app.vault.createBinary(to, await it.file.arrayBuffer());
+        } catch (e) {
+          new Notice("[인박스] 첨부를 못 넣었습니다: " + it.file.name + "\n" + e.message, 8000);
+          continue;
+        }
+        const link = this.app.metadataCache.fileToLinktext(f, notePath);
+        let preview;
+        if (IMG.includes(ext) || AV.includes(ext)) preview = `![[${link}]]`;
+        else if (ext === "pdf") preview = `![[${link}#height=700]]`;
+        else preview = "> 옵시디언이 이 형식은 미리보기를 못 합니다. " +
+                       "위 링크를 눌러 들어간 뒤 우클릭 → `기본 앱으로 열기`.";
+        saved.push(`📎 원본 열기 → [[${link}]]`, "",
+          `\`${(ext || "파일").toUpperCase()}\` · ${humanSize(it.file.size)} · ${today} 들어옴`, "",
+          preview, "");
+      }
+      if (saved.length) out.push("## 첨부", "", ...saved);
+    }
+    return out.length ? "\n---\n\n" + out.join("\n") : "";
   }
 
   /** 양식 본문. 양식 파일이 없으면 최소한의 뼈대라도 냅니다 */
@@ -4364,7 +4436,7 @@ class InboxMod extends Mod {
 }
 
 /* ── 새 인박스 노트 창 ───────────────────────────────────────
-   묻는 것은 셋뿐입니다: 제목 · 어디에 · 한 줄.
+   묻는 것은 셋뿐입니다: 제목 · 어디에 · 한 줄. (그리고 붙일 첨부·링크가 있으면 받습니다)
    유형·구역·상태는 묻지 않습니다 — 인박스는 그 판단을 **미뤄 두는 자리**이고,
    내보낼 때 `📤 PARA로 보내기` 가 한 번에 묻습니다. */
 class NewNoteModal extends Modal {
@@ -4373,6 +4445,7 @@ class NewNoteModal extends Modal {
     this.plugin = plugin;
     this.title = "";
     this.summary = "";
+    this.items = [];          // 넣은 첨부 { file, pasted } · 링크 { url }
     const folders = plugin.inboxFolders();
     const want = presetFolder && folders.includes(presetFolder) ? presetFolder : null;
     this.folder = want || plugin.settings.newFolder ||
@@ -4381,9 +4454,10 @@ class NewNoteModal extends Modal {
   }
 
   onOpen() {
+    this.modalEl.addClass("claude-inbox-modal");
     const c = this.contentEl;
     c.empty();
-    c.createEl("h3", { text: "✏️ 새 인박스 노트" });
+    c.createEl("h3", { text: "✏️ 새 인박스 노트", cls: "claude-nn-title" });
     c.createEl("p", {
       text: "떠오른 대로 던져 넣으세요. 무엇으로 볼지·어디에 둘지는 나중에 정합니다.",
       cls: "setting-item-description",
@@ -4414,9 +4488,11 @@ class NewNoteModal extends Modal {
         t.inputEl.style.width = "100%";
       });
 
+    this.buildAttachArea(c);
+
     new Setting(c)
-      .addButton((b) => b.setButtonText("만들고 열기").setCta().onClick(() => this.create()))
-      .addButton((b) => b.setButtonText("취소").onClick(() => this.close()));
+      .addButton((b) => b.setButtonText("취소").onClick(() => this.close()))
+      .addButton((b) => b.setButtonText("노트 생성").setCta().onClick(() => this.create()));
 
     // 제목 칸에서 엔터로 바로 만들기
     if (this.titleInput) {
@@ -4430,7 +4506,12 @@ class NewNoteModal extends Modal {
   async create() {
     if (this.creating) return;                 // 엔터 두 번에 두 장 만들어지지 않게
     this.creating = true;
-    const opts = { folder: this.folder, title: this.title, summary: this.summary };
+    this.addLinks(this.linkInput ? this.linkInput.value : "");   // 칸에 적어 두고 엔터를 안 친 주소도
+    const opts = {
+      folder: this.folder, title: this.title, summary: this.summary,
+      files: this.items.filter((it) => it.file),
+      links: this.items.filter((it) => it.url).map((it) => it.url),
+    };
     this.close();
     let file = null;
     try {
@@ -4443,7 +4524,132 @@ class NewNoteModal extends Modal {
     if (file && this.onCreated) this.onCreated(file);
   }
 
+  /* 첨부 — 자료·링크·이미지·동영상을 붙일 곳이 없어서 이 창을 안 쓰게 됐습니다 (2026-10-28).
+     넣는 길은 넷: 끌어다 놓기 · 파일 고르기 · Ctrl+V (그림은 파일로, 주소는 링크로) · 링크 칸.
+     창 어디에 놓거나 붙여도 받습니다 — 칸을 정확히 겨냥하라고 하면 안 쓰게 됩니다.
+     저장은 [노트 생성] 을 누를 때 합니다 (`saveAttachments`). 취소하면 아무것도 안 남습니다. */
+  buildAttachArea(c) {
+    const box = c.createDiv({ cls: "claude-nn-attach" });
+    const head = box.createDiv({ cls: "claude-nn-attach-head" });
+    head.createDiv({ text: "첨부", cls: "setting-item-name" });
+    head.createDiv({
+      text: "파일·이미지·동영상·PDF 를 끌어다 놓거나 Ctrl+V. 그 폴더의 `이미지/` 에 저장하고 본문 아래에 붙입니다",
+      cls: "setting-item-description",
+    });
+
+    this.dropEl = box.createDiv({ cls: "claude-nn-drop" });
+    this.dropEl.createSpan({ text: "여기에 끌어다 놓거나 붙여넣기 · " });
+    const picker = box.createEl("input", { type: "file", attr: { multiple: "" } });
+    picker.style.display = "none";
+    picker.addEventListener("change", () => { this.addFiles(picker.files, false); picker.value = ""; });
+    const pick = this.dropEl.createEl("button", { text: "파일 선택", cls: "claude-nn-picker-btn" });
+    pick.addEventListener("click", (e) => { e.preventDefault(); picker.click(); });
+
+    const row = box.createDiv({ cls: "claude-nn-link-row" });
+    this.linkInput = row.createEl("input", { type: "text", attr: { placeholder: "https://... 링크 입력 후 Enter" } });
+    this.linkInput.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter") return;
+      e.preventDefault(); e.stopPropagation();
+      this.addLinks(this.linkInput.value, true);
+    });
+    const addBtn = row.createEl("button", { text: "추가", cls: "claude-nn-add-btn" });
+    addBtn.addEventListener("click", (e) => { e.preventDefault(); this.addLinks(this.linkInput.value, true); });
+
+    this.listEl = box.createEl("ul", { cls: "claude-nn-list" });
+
+    // 창 전체가 받는 곳입니다
+    const m = this.modalEl;
+    let depth = 0;
+    const lit = (on) => this.dropEl.toggleClass("is-over", on);
+    m.addEventListener("dragenter", (e) => { e.preventDefault(); depth++; lit(true); });
+    m.addEventListener("dragleave", () => { if (--depth <= 0) { depth = 0; lit(false); } });
+    m.addEventListener("dragover", (e) => { e.preventDefault(); if (e.dataTransfer) e.dataTransfer.dropEffect = "copy"; });
+    m.addEventListener("drop", (e) => {
+      e.preventDefault(); e.stopPropagation();
+      depth = 0; lit(false);
+      const dt = e.dataTransfer;
+      if (!dt) return;
+      if (dt.files && dt.files.length) this.addFiles(dt.files, false);
+      else this.addLinks(dt.getData("text/uri-list") || dt.getData("text/plain"), true);
+    });
+    m.addEventListener("paste", (e) => {
+      const cd = e.clipboardData;
+      if (!cd) return;
+      if (cd.files && cd.files.length) {
+        e.preventDefault();
+        this.addFiles(cd.files, true);
+        return;
+      }
+      // 주소만 붙여넣었으면 어느 칸에서든 링크로 받습니다. 글이 섞였으면 그 칸에 그대로 들어갑니다
+      const text = cd.getData("text/plain");
+      if (urlsIn(text).length && urlsIn(text).length === text.trim().split(/\s+/).length) {
+        e.preventDefault();
+        this.addLinks(text, false);
+      }
+    });
+  }
+
+  addFiles(list, fromPaste) {
+    for (const file of Array.from(list || [])) {
+      // 붙여넣은 화면 캡처는 이름이 `image.png` 뿐입니다 — 저장할 때 노트 이름을 따릅니다
+      const pasted = fromPaste && (!file.name || /^image\.\w+$/i.test(file.name));
+      this.items.push({ file, pasted });
+    }
+    this.renderList();
+  }
+
+  addLinks(text, fromField) {
+    const urls = urlsIn(text);
+    for (const url of urls) {
+      if (!this.items.some((it) => it.url === url)) this.items.push({ url });
+    }
+    if (fromField && this.linkInput) {
+      if (String(text || "").trim() && !urls.length) {
+        new Notice("주소로 안 보입니다 — https:// 로 시작하는 주소를 넣으세요", 4000);
+        return;
+      }
+      this.linkInput.value = "";
+    }
+    if (urls.length) this.renderList();
+  }
+
+  renderList() {
+    const ul = this.listEl;
+    if (!ul) return;
+    ul.empty();
+    this.items.forEach((it, i) => {
+      const li = ul.createEl("li");
+      let icon = "🔗", name = it.url, size = "";
+      if (it.file) {
+        const t = it.file.type || "";
+        icon = t.startsWith("image/") ? "🖼️" : t.startsWith("video/") ? "🎬"
+             : t.startsWith("audio/") ? "🎵" : t === "application/pdf" ? "📄" : "📎";
+        name = it.pasted ? "붙여넣은 이미지 (노트 이름으로 저장)" : it.file.name;
+        size = humanSize(it.file.size);
+      }
+      li.createSpan({ text: icon, cls: "claude-nn-icon" });
+      li.createSpan({ text: name, cls: "claude-nn-name" });
+      if (size) li.createSpan({ text: size, cls: "claude-nn-size" });
+      const x = li.createEl("button", { text: "✕", cls: "claude-nn-remove", attr: { "aria-label": "빼기" } });
+      x.addEventListener("click", (e) => {
+        e.preventDefault();
+        this.items.splice(i, 1);
+        this.renderList();
+      });
+    });
+  }
+
   onClose() { this.contentEl.empty(); }
+}
+
+/** 글에서 웹 주소만 골라냅니다. `www.` 로 시작하면 https 를 붙입니다 */
+function urlsIn(text) {
+  const out = [];
+  for (const tok of String(text || "").trim().split(/\s+/)) {
+    if (/^https?:\/\/\S+$/i.test(tok)) out.push(tok);
+    else if (/^www\.\S+\.\S+$/i.test(tok)) out.push("https://" + tok);
+  }
+  return out;
 }
 
 InboxMod.prototype.displaySettings = function (c) {
