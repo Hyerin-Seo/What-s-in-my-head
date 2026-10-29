@@ -31,7 +31,7 @@
  */
 const {
   Plugin, PluginSettingTab, Setting, Notice, Modal, Menu,
-  TFile, TFolder, normalizePath, parseYaml, Keymap, requestUrl, ItemView,
+  TFile, TFolder, normalizePath, parseYaml, Keymap, requestUrl, ItemView, setIcon,
 } = require("obsidian");
 
 /* ══ 공통 도우미 ══════════════════════════════════════════ */
@@ -5249,10 +5249,12 @@ const CANVAS_VIEW = "canvas";
 class CanvasMod extends Mod {
   constructor(plugin) {
     super(plugin, "canvas");
-    this.title = "캔버스 우측에서 열기";
+    this.title = "캔버스 우측에서 열기 · 찾기";
     this.icon = "🎨";
     this.blurb = "옵시디언 기본 캔버스 메뉴에는 새 탭에서 열기만 있습니다. "
-      + "우측 화면·오른쪽 사이드바에서 여는 항목을 얹습니다.";
+      + "우측 화면·오른쪽 사이드바에서 여는 항목을 얹습니다. "
+      + "캔버스에서 Ctrl+F 를 누르면 카드 글자를 찾고, Enter 로 다음 카드로 옮겨 갑니다.";
+    this.finders = new Set();
   }
 
   onload() {
@@ -5298,6 +5300,57 @@ class CanvasMod extends Mod {
         return true;
       },
     });
+
+    // ③ 캔버스 안에서 찾기 (2026-10-29)
+    //    Ctrl+F 는 옵시디언의 `editor:open-search` 명령이 받습니다. 그 명령은 마크다운 편집기에서만
+    //    찾기 창을 여는데, 캔버스에서도 "처리했다" 고 돌려줘서 키를 삼킵니다 — checkCallback 이
+    //    undefined 를 내고 executeCommand 는 false 가 아니면 성공으로 칩니다 (격리 옵시디언 1.14.5 에서 확인).
+    //    그래서 같은 단축키를 하나 더 다는 대신 **그 명령에 끼어듭니다**: 캔버스이고 카드 글을 고치는 중이
+    //    아니면 캔버스 찾기, 아니면 원래대로. 사람이 찾기 단축키를 바꿔도 따라갑니다. 끌 때 되돌립니다.
+    const search = this.app.commands?.commands?.["editor:open-search"];
+    if (search && typeof search.checkCallback === "function") {
+      const orig = search.checkCallback;
+      search.checkCallback = (checking) => {
+        const view = this.app.workspace.activeEditor ? null : this.activeCanvasView();
+        if (!view) return orig.call(search, checking);
+        if (!checking) this.openFind(view);
+        return true;
+      };
+      this.restoreSearch = () => { search.checkCallback = orig; };
+    }
+    this.addCommand({
+      id: "find",
+      name: "캔버스에서 찾기",
+      checkCallback: (checking) => {
+        const view = this.activeCanvasView();
+        if (!view) return false;
+        if (!checking) this.openFind(view);
+        return true;
+      },
+    });
+  }
+
+  onunload() {
+    if (this.restoreSearch) this.restoreSearch();
+    for (const f of this.finders) f.destroy();
+    this.finders.clear();
+  }
+
+  /** 지금 손이 가 있는 캔버스 화면 — 사이드바에 손이 가 있으면 없습니다 */
+  activeCanvasView() {
+    const view = this.app.workspace.activeLeaf?.view;
+    return view && view.getViewType?.() === CANVAS_VIEW && view.canvas ? view : null;
+  }
+
+  /** 화면마다 찾기 막대 하나. 탭을 닫으면 같이 치웁니다 */
+  openFind(view) {
+    let f = view._gdFind;
+    if (!f || f.destroyed) {
+      f = view._gdFind = new CanvasFind(this, view);
+      this.finders.add(f);
+      view.register(() => { f.destroy(); this.finders.delete(f); });
+    }
+    f.open();
   }
 
   /** 지금 캔버스에서 고른 카드의 파일 */
@@ -5323,6 +5376,174 @@ class CanvasMod extends Mod {
     if (!leaf) return;
     await leaf.openFile(file);
     this.app.workspace.revealLeaf(leaf);
+  }
+}
+
+/*
+ * 캔버스 찾기 막대 — 브라우저 Ctrl+F 처럼.
+ *
+ * 찾는 곳: 글 카드 · 그룹 이름 · 링크 주소 · 화살표 이름 · 파일 카드의 파일 이름과 (마크다운이면) 본문.
+ * 화면에 그려진 글자가 아니라 **카드의 데이터**를 찾습니다 — 캔버스는 화면 밖 카드를 안 그리기 때문입니다.
+ * 옮겨 갈 때는 그 카드를 고르고(selectOnly) 화면 가운데로 당깁니다(zoomToBbox — 100% 넘게는 안 키움).
+ * 막대는 canvas-wrapper 밖에 답니다. 캔버스의 Delete 키는 wrapper 에 손이 있을 때만 카드를 지우므로
+ * (obsidian.asar 확인) 골라 둔 카드가 막대에서 글자를 지우다 같이 지워지지 않습니다.
+ */
+const FIND_HL = "gd-canvas-find";
+
+class CanvasFind {
+  constructor(mod, view) {
+    this.mod = mod;
+    this.app = mod.app;
+    this.view = view;
+    this.hits = [];
+    this.at = -1;
+    this.q = "";
+    this.token = 0;
+    this.timers = [];
+
+    const bar = this.bar = view.contentEl.createDiv({ cls: "gd-canvas-find" });
+    this.input = bar.createEl("input", { type: "text", attr: { placeholder: "캔버스에서 찾기", spellcheck: "false" } });
+    this.count = bar.createSpan({ cls: "gd-canvas-find-count" });
+    const btn = (icon, label, fn) => {
+      const b = bar.createDiv({ cls: "clickable-icon", attr: { "aria-label": label } });
+      setIcon(b, icon);
+      b.addEventListener("click", fn);
+    };
+    btn("chevron-up", "이전 (Shift+Enter)", () => this.step(-1));
+    btn("chevron-down", "다음 (Enter)", () => this.step(1));
+    btn("x", "닫기 (Esc)", () => this.close());
+
+    this.input.addEventListener("input", () => {
+      clearTimeout(this.debounce);
+      this.debounce = setTimeout(() => this.search(this.input.value), 120);
+    });
+    this.input.addEventListener("keydown", (e) => {
+      if (e.isComposing) return;   // 한글 조합 중의 Enter 는 글자를 마치는 것입니다
+      if (e.key === "Enter" || e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        this.step(e.key === "ArrowUp" || (e.key === "Enter" && e.shiftKey) ? -1 : 1);
+      } else if (e.key === "Escape") {
+        e.preventDefault();
+        this.close();
+      }
+    });
+    this.close();
+  }
+
+  open() {
+    this.bar.show();
+    this.input.focus();
+    this.input.select();
+    if (this.input.value && !this.hits.length) this.search(this.input.value);
+  }
+
+  close() {
+    this.bar.hide();
+    this.unmark();
+  }
+
+  destroy() {
+    this.destroyed = true;
+    this.unmark();
+    this.bar.remove();
+  }
+
+  /** 카드 하나에서 찾을 글자들 */
+  async textsOf(item) {
+    const d = item.getData ? item.getData() : {};
+    const out = [d.text, d.label, d.url];
+    const file = item.file;
+    if (file) {
+      out.push(file.basename);
+      if (file.extension === "md") out.push(await this.app.vault.cachedRead(file).catch(() => ""));
+    }
+    return out.filter((t) => typeof t === "string" && t);
+  }
+
+  async search(raw) {
+    const q = raw.trim().toLowerCase();
+    const token = ++this.token;
+    this.q = q;
+    const hits = [];
+    if (q) {
+      const c = this.view.canvas;
+      for (const item of [...c.nodes.values(), ...c.edges.values()]) {
+        const texts = await this.textsOf(item);
+        if (texts.some((t) => t.toLowerCase().includes(q))) hits.push({ item, box: item.getBBox() });
+      }
+      if (token !== this.token) return;   // 그 사이 더 쳤으면 버립니다
+      // 읽는 순서 — 위에서 아래로, 같은 줄이면 왼쪽부터
+      hits.sort((a, b) => (Math.round(a.box.minY / 40) - Math.round(b.box.minY / 40)) || (a.box.minX - b.box.minX));
+    }
+    this.unmark();
+    this.hits = hits;
+    this.at = -1;
+    if (hits.length) this.step(1);
+    else this.showCount();
+  }
+
+  step(dir) {
+    if (!this.hits.length) return;
+    // 그 사이 카드를 지웠으면 다시 찾습니다
+    const c = this.view.canvas;
+    if (this.hits.some((h) => !c.nodes.has(h.item.id) && !c.edges.has(h.item.id))) {
+      this.search(this.input.value);
+      return;
+    }
+    this.at = (this.at + dir + this.hits.length) % this.hits.length;
+    const { item } = this.hits[this.at];
+    const b = item.getBBox();
+    const pad = 160;
+    c.selectOnly(item);
+    c.zoomToBbox({ minX: b.minX - pad, minY: b.minY - pad, maxX: b.maxX + pad, maxY: b.maxY + pad });
+    this.mark();
+    this.showCount();
+    // 화면 밖이던 카드는 옮겨 간 뒤에야 글자가 그려집니다 — 조금 기다렸다 칠합니다
+    for (const t of this.timers) clearTimeout(t);
+    this.timers = [80, 400, 900].map((ms) => setTimeout(() => this.paint(), ms));
+  }
+
+  showCount() {
+    const n = this.hits.length;
+    this.count.setText(this.q ? (n ? (this.at + 1) + "/" + n : "없음") : "");
+    this.bar.toggleClass("is-empty", !!this.q && !n);
+  }
+
+  mark() {
+    this.hits.forEach((h, i) => {
+      const el = h.item.nodeEl;
+      if (!el) return;
+      el.addClass("gd-find-hit");
+      el.toggleClass("gd-find-current", i === this.at);
+    });
+  }
+
+  unmark() {
+    for (const h of this.hits) h.item.nodeEl?.removeClasses(["gd-find-hit", "gd-find-current"]);
+    for (const t of this.timers) clearTimeout(t);
+    if (window.CSS && CSS.highlights) CSS.highlights.delete(FIND_HL);
+  }
+
+  /** 그려져 있는 카드 안의 낱말에 형광펜 (CSS Custom Highlight — DOM 은 안 건드립니다) */
+  paint() {
+    if (this.destroyed || !this.q || !(window.CSS && CSS.highlights && window.Highlight)) return;
+    const ranges = [];
+    const q = this.q;
+    for (const h of this.hits) {
+      const el = h.item.nodeEl;
+      if (!el) continue;
+      const walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      for (let n = walk.nextNode(); n; n = walk.nextNode()) {
+        const s = n.data.toLowerCase();
+        for (let i = s.indexOf(q); i >= 0; i = s.indexOf(q, i + q.length)) {
+          const r = document.createRange();
+          r.setStart(n, i);
+          r.setEnd(n, i + q.length);
+          ranges.push(r);
+        }
+      }
+    }
+    CSS.highlights.set(FIND_HL, new Highlight(...ranges));
   }
 }
 
