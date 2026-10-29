@@ -1,0 +1,281 @@
+{
+  "version": "1.0.0",
+  "id": "97rZpqJisbd5",
+  "title": "vibeDocStudio 설계",
+  "rootNodes": [
+    {
+      "id": "3Ft0jp2RLX8m",
+      "text": "[Window4] 졍형 폼 작업화면",
+      "children": [
+        {
+          "id": "Hdq7No22Lnxb",
+          "text": "화면 구성",
+          "children": [
+            {
+              "id": "CnBfzdudFXLs",
+              "text": "상단",
+              "children": [
+                {
+                  "id": "IWnzMcj2PieL",
+                  "text": "Menus",
+                  "children": [
+                    {
+                      "id": "DOri1fkO4LU2",
+                      "text": "antigravity - topMenuBar #ref",
+                      "children": [],
+                      "createdAt": 1793255421867,
+                      "updatedAt": 1793255474454,
+                      "file": {
+                        "target": "Pasted image 20261029153027.png"
+                      }
+                    }
+                  ],
+                  "createdAt": 1793253261608,
+                  "updatedAt": 1793255079795
+                },
+                {
+                  "id": "G550bJNmDtUy",
+                  "text": "Project Names",
+                  "children": [],
+                  "createdAt": 1793255080341,
+                  "updatedAt": 1793255134926
+                },
+                {
+                  "id": "BDqnMY2nWa6S",
+                  "text": "Document Names",
+                  "children": [],
+                  "createdAt": 1793255135236,
+                  "updatedAt": 1793255139458
+                },
+                {
+                  "id": "YR238em6YTIE",
+                  "text": "[구상 중]Project Toolbox",
+                  "children": [],
+                  "createdAt": 1793255213595,
+                  "updatedAt": 1793255238770
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793253217797,
+              "updatedAt": 1793253261465
+            },
+            {
+              "id": "4Ce1bJyUHOrT",
+              "text": "왼쪽 패널 - tab base",
+              "children": [
+                {
+                  "id": "DZJO65CCF9xf",
+                  "text": "[구상 중]레퍼런스 view",
+                  "children": [],
+                  "createdAt": 1793254109867,
+                  "updatedAt": 1793255248913
+                },
+                {
+                  "id": "HwQ9kzrpc2vQ",
+                  "text": "Project Outline",
+                  "children": [],
+                  "createdAt": 1793254119482,
+                  "updatedAt": 1793254200751
+                },
+                {
+                  "id": "eIJQtLroTTYX",
+                  "text": "Document Navigator",
+                  "children": [],
+                  "createdAt": 1793254201267,
+                  "updatedAt": 1793255147981
+                },
+                {
+                  "id": "SEVX66QBzASd",
+                  "text": "Document Outline(Index)",
+                  "children": [],
+                  "createdAt": 1793255148688,
+                  "updatedAt": 1793255290289
+                }
+              ],
+              "createdAt": 1793253247190,
+              "updatedAt": 1793255164974,
+              "isFolded": true
+            },
+            {
+              "id": "B7lem7J5ucf6",
+              "text": "중앙 패널",
+              "children": [
+                {
+                  "id": "agOmRQhgCOnJ",
+                  "text": "Editor",
+                  "children": [],
+                  "createdAt": 1793253453705,
+                  "updatedAt": 1793253480227
+                },
+                {
+                  "id": "4NpehcqhfQRL",
+                  "text": "Word Toolbar",
+                  "children": [],
+                  "createdAt": 1793253458749,
+                  "updatedAt": 1793255118971
+                }
+              ],
+              "createdAt": 1793253250592,
+              "updatedAt": 1793253252514,
+              "isFolded": true
+            },
+            {
+              "id": "b0jfBJ0l0pjV",
+              "text": "오른쪽 패널 - tab base",
+              "children": [
+                {
+                  "id": "1siXU4a7RgaJ",
+                  "text": "AI Composer",
+                  "children": [],
+                  "createdAt": 1793253296104,
+                  "updatedAt": 1793253301078
+                },
+                {
+                  "id": "ClbrnOahGKfH",
+                  "text": "Resource Document Viewer",
+                  "children": [],
+                  "createdAt": 1793253337839,
+                  "updatedAt": 1793253347868
+                },
+                {
+                  "id": "c134OQjQLlMr",
+                  "text": "Resource Pipeline?? Directory Mananger?? ",
+                  "children": [],
+                  "createdAt": 1793253348511,
+                  "updatedAt": 1793253721555
+                }
+              ],
+              "createdAt": 1793253252672,
+              "updatedAt": 1793255173231,
+              "isFolded": true
+            },
+            {
+              "id": "Sg5oyq0GQ4fh",
+              "text": "푸터",
+              "children": [],
+              "createdAt": 1793253255234,
+              "updatedAt": 1793253259576
+            },
+            {
+              "id": "il8Q6p9SU7D6",
+              "text": "Headless?? Floating?? 숨겨진???",
+              "children": [
+                {
+                  "id": "ZPTEUXwGmrjK",
+                  "text": "AI Floating Toolbar",
+                  "children": [],
+                  "createdAt": 1793255089894,
+                  "updatedAt": 1793255097661
+                }
+              ],
+              "createdAt": 1793253309550,
+              "updatedAt": 1793253327832,
+              "isFolded": true
+            },
+            {
+              "id": "42QYyQO0Qxpd",
+              "text": "미정 구역",
+              "children": [
+                {
+                  "id": "FPuewGe857DY",
+                  "text": "Element 블록 라이브러리 박스 - 블록 추가",
+                  "children": [],
+                  "createdAt": 1793253425161,
+                  "updatedAt": 1793253556943
+                },
+                {
+                  "id": "PVN7zthoF7Mj",
+                  "text": "세팅 버튼들",
+                  "children": [],
+                  "createdAt": 1793253597863,
+                  "updatedAt": 1793253623881
+                },
+                {
+                  "id": "ZTk9cqZec27U",
+                  "text": "Zoom Breadhumb??? Zoom-in,out 상태",
+                  "children": [],
+                  "createdAt": 1793253626298,
+                  "updatedAt": 1793254918297
+                }
+              ],
+              "createdAt": 1793253420241,
+              "updatedAt": 1793253424875
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793253217797,
+          "updatedAt": 1793253380487
+        },
+        {
+          "id": "hbS3Q3sdpawl",
+          "text": "참조",
+          "children": [
+            {
+              "id": "H9q457FAI9CA",
+              "text": "예스폼 - AI 폼 작업 화면",
+              "children": [],
+              "createdAt": 1793255797677,
+              "updatedAt": 1793255873572,
+              "file": {
+                "target": "Pasted image 20261029153640.png"
+              }
+            },
+            {
+              "id": "ETA9BQu0wj6L",
+              "text": "판다독 - 문서 편집 화면",
+              "children": [],
+              "createdAt": 1793255935280,
+              "updatedAt": 1793255939597,
+              "file": {
+                "target": "Pasted image 20261029153855.png"
+              }
+            }
+          ],
+          "createdAt": 1793255866376,
+          "updatedAt": 1793255871332
+        }
+      ],
+      "createdAt": 1793253353359,
+      "updatedAt": 1793253399045,
+      "isFolded": false
+    },
+    {
+      "id": "PUCdyBBFYHo7",
+      "text": "[Window99] 템플릿 허브",
+      "children": [
+        {
+          "id": "zlWBs21cTzjN",
+          "text": "예스폼 - 문서서식 허브 #ref",
+          "children": [],
+          "createdAt": 1793255628080,
+          "updatedAt": 1793255673872,
+          "file": {
+            "target": "Pasted image 20261029153414.png"
+          }
+        },
+        {
+          "id": "nkEMXEnRqExI",
+          "text": "예스폼 - AI 템플릿 허브 #ref",
+          "children": [],
+          "createdAt": 1793255679049,
+          "updatedAt": 1793255717568,
+          "file": {
+            "target": "Pasted image 20261029153500.png"
+          }
+        },
+        {
+          "id": "70R1sHWk5lpO",
+          "text": "",
+          "children": [],
+          "createdAt": 1793255718811,
+          "updatedAt": 1793255718811
+        }
+      ],
+      "createdAt": 1793255608251,
+      "updatedAt": 1793255626137
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793253217797,
+  "updatedAt": 1793255942658
+}
