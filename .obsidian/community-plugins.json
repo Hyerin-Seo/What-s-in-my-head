@@ -1,16 +1,16 @@
 [
-  "calendar",
-  "obsidian-excalidraw-plugin",
-  "excalidraw-extras",
-  "kanban-bases-view",
-  "feel-the-notion",
-  "modal-opener",
-  "obsidian-leaflet-plugin",
-  "dataview",
-  "customjs",
-  "calendar-bases",
   "gaeddong-sync",
   "gaeddong-meeting-board",
-  "gaeddong-claude",
-  "gaeddong-outliner"
+  "calendar",
+  "calendar-bases",
+  "customjs",
+  "dataview",
+  "obsidian-excalidraw-plugin",
+  "excalidraw-extras",
+  "feel-the-notion",
+  "gaeddong-outliner",
+  "kanban-bases-view",
+  "obsidian-leaflet-plugin",
+  "modal-opener",
+  "gaeddong-claude"
 ]

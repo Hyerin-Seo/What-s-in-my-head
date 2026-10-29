@@ -619,7 +619,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -662,7 +662,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 }
@@ -800,7 +800,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -843,7 +843,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -929,7 +929,7 @@
                       "updatedAt": 1793005917994
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
                 },
@@ -1699,7 +1699,16 @@
                   "isFolded": false,
                   "createdAt": 1793001034898,
                   "updatedAt": 1793005917994
-                },
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793001034898,
+              "updatedAt": 1793001034898
+            },
+            {
+              "id": "a1iyzTTVFAu0",
+              "text": "📄 03페이지 (11종)",
+              "children": [
                 {
                   "id": "1fYA6tjAU044",
                   "text": "61. [무료 계약 검토회의록 양식과 활용법 안내](https://www.yesform.com/z_n/forms/view_iso/iso_307164.html)",
@@ -3258,9 +3267,39 @@
                       "children": []
                     },
                     {
-                      "id": "OoQa2qWv38Yv",
-                      "text": "건조한 주문(Verdict) 수렴: 회의 과정의 맥락을 소거하고 오직 '공식 결정 문장'만 남기도록 강제",
-                      "children": []
+                      "id": "rA7DdT3Hs1Ec",
+                      "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료심의위원회규정양식다운로드.pdf|로컬 PDF 열기]]",
+                      "children": [],
+                      "file": {
+                        "target": "예스폼_downloads/PDF/예스폼_무료심의위원회규정양식다운로드.pdf"
+                      },
+                      "createdAt": 1793005917994,
+                      "updatedAt": 1793005917994
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793001034898,
+                  "updatedAt": 1793005917994
+                },
+                {
+                  "id": "G3TroEwvhY8F",
+                  "text": "72. [무료 대학발전기금 조성위원회 규정 양식 샘플 다운로드](https://www.yesform.com/forms/vform_107738.php)",
+                  "children": [
+                    {
+                      "id": "jYy7SuBAgBNI",
+                      "text": "서식 ID: vform_107738",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793001034898,
+                      "updatedAt": 1793001034898
+                    },
+                    {
+                      "id": "py8pGS9WtlJQ",
+                      "text": "지원 포맷: 한글, 워드, PDF",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793001034898,
+                      "updatedAt": 1793001034898
                     },
                     {
                       "id": "jvw0Qb4n260F",
@@ -3327,8 +3366,9 @@
                       "children": []
                     }
                   ],
-                  "isFolded": true,
-                  "updatedAt": 1793079598411
+                  "isFolded": false,
+                  "createdAt": 1793001034898,
+                  "updatedAt": 1793005917994
                 },
                 {
                   "id": "a5diD4FUY2wI",

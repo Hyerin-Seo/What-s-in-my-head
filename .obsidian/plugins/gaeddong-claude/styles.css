@@ -289,3 +289,222 @@
 .claude-cmt-panel .cmt-done-toggle { cursor: pointer; color: var(--text-muted); margin: 8px 2px; }
 .claude-cmt-panel .cmt-empty { color: var(--text-muted); padding: 6px 2px 10px; }
 .claude-cmt-panel .cmt-add { width: 100%; margin-top: 6px; }
+
+/* ── 새 인박스 노트 창 — 모던 & 감각적인 UI/UX 스타일 ──────────────────────────── */
+.claude-inbox-modal {
+  border-radius: 14px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22), 0 0 0 1px var(--background-modifier-border);
+}
+
+.claude-inbox-modal .modal-content {
+  padding: 0.5em 0.2em;
+}
+
+.claude-nn-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: var(--text-normal);
+  letter-spacing: -0.02em;
+}
+
+/* 링크 입력창만 정돈 */
+.claude-nn-link-row input[type="text"] {
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+/* 첨부 구역 */
+.claude-nn-attach {
+  padding-top: 0.9em;
+  margin-top: 0.6em;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.claude-nn-attach-head {
+  margin-bottom: 0.7em;
+}
+
+/* 드롭존 (드래그앤드롭 및 파일 선택) */
+.claude-nn-drop {
+  border: 1.5px dashed var(--background-modifier-border-hover);
+  border-radius: 10px;
+  padding: 1.1em 1em;
+  text-align: center;
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  font-size: 0.88em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.claude-nn-drop.is-over {
+  border-color: var(--interactive-accent);
+  background: rgba(var(--interactive-accent-rgb, 120, 100, 240), 0.08);
+  color: var(--text-normal);
+  transform: scale(1.01);
+}
+
+.claude-nn-picker-btn {
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.88em;
+  font-weight: 500;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.claude-nn-picker-btn:hover {
+  background: var(--background-modifier-hover);
+  border-color: var(--background-modifier-border-hover);
+}
+
+/* 링크 입력 행 */
+.claude-nn-link-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 0.7em;
+  align-items: center;
+}
+
+.claude-nn-link-row input {
+  flex: 1;
+}
+
+.claude-nn-add-btn {
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.88em;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.claude-nn-add-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.claude-nn-add-btn:active {
+  transform: translateY(0);
+}
+
+/* 첨부 및 링크 목록 (카드/칩 리스트) */
+.claude-nn-list {
+  list-style: none;
+  margin: 0.8em 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.claude-nn-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  font-size: 0.88em;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.claude-nn-list li:hover {
+  background: var(--background-modifier-hover);
+}
+
+.claude-nn-icon {
+  font-size: 1.1em;
+  flex-shrink: 0;
+}
+
+.claude-nn-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--text-normal);
+}
+
+.claude-nn-size {
+  color: var(--text-muted);
+  font-size: 0.78em;
+  background: var(--background-modifier-border);
+  padding: 1px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.claude-nn-remove {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  font-size: 11px;
+  flex-shrink: 0;
+  box-shadow: none;
+  transition: all 0.15s ease;
+}
+
+.claude-nn-remove:hover {
+  background: rgba(235, 87, 87, 0.15);
+  color: #eb5757;
+}
+
+/* 하단 버튼 영역 */
+.claude-inbox-modal .setting-item:last-child {
+  border-top: 1px solid var(--background-modifier-border);
+  padding-top: 1em;
+  margin-top: 0.8em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.claude-inbox-modal .setting-item:last-child .setting-item-control {
+  display: flex;
+  gap: 8px;
+}
+
+.claude-inbox-modal .setting-item:last-child button {
+  padding: 7px 18px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.claude-inbox-modal .setting-item:last-child button.mod-cta {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(var(--interactive-accent-rgb, 120, 100, 240), 0.3);
+}
+
+.claude-inbox-modal .setting-item:last-child button.mod-cta:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(var(--interactive-accent-rgb, 120, 100, 240), 0.4);
+}
+

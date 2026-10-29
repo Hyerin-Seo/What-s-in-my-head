@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">(통합 원심분리기) 레퍼런스 원자 — 시범 3종</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📌 읽는 법</text>
+<circle cx="58" cy="127" r="3" fill="#9a9aa3"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">원자 1장 = 레퍼런스가 실제로 하는 일 1개. 사실만 적고,…</text>
+<circle cx="58" cy="160" r="3" fill="#9a9aa3"/>
+<text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">구분: 공통(여러 레퍼런스가 다 함) / 고유(그 레퍼런스만의…</text>
+<circle cx="58" cy="193" r="3" fill="#9a9aa3"/>
+<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📌 붙일 곳 · 🔗 닿는 니즈 두 줄만 우리 판단이다. 사실 줄…</text>
+<circle cx="58" cy="226" r="3" fill="#9a9aa3"/>
+<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">붙일 곳 값: 덩어리: · 단계: · 기본기(표준이라 따른다) ·…</text>
+<circle cx="58" cy="259" r="3" fill="#9a9aa3"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">판: JTBD 진보의 4가지 힘 (원자 작업판).canvas — 이 아웃…</text>
+<circle cx="34" cy="292" r="4.5" fill="#3a3a40"/>
+<text x="51" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">(web&amp;강추)Git</text>
+<circle cx="58" cy="325" r="3" fill="#9a9aa3"/>
+<text x="75" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">확인 방법: 공식 문서·일반 사실 (git-scm.com)</text>
+<circle cx="58" cy="358" r="4.5" fill="#3a3a40"/>
+<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">명시적 커밋 — 사용자가 직접 고른 시점만 기록으로 남긴다.…</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>
