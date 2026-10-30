@@ -1189,7 +1189,8 @@
             }
           ],
           "createdAt": 1793330195968,
-          "updatedAt": 1793331683120
+          "updatedAt": 1793331683120,
+          "isFolded": true
         },
         {
           "id": "PuUB3ixpnve8",
@@ -1544,7 +1545,46 @@
             }
           ],
           "createdAt": 1793335439802,
-          "updatedAt": 1793335439802
+          "updatedAt": 1793335439802,
+          "isFolded": true
+        },
+        {
+          "id": "4ib4nFzzpofg",
+          "text": "[GTI operate] 문서 작업 이외의 잡일, 귀찮은 일을 지원하면 편해할 것이다",
+          "children": [
+            {
+              "id": "wJcKDMdJjGOj",
+              "text": "description",
+              "children": [
+                {
+                  "id": "t9MGphdrqNUD",
+                  "text": "GTD 에서 GTI 를 대신 해주면 좋아할 것이다. 알아서 회의 기록해주고, 인용 첨부하고, TODO 뽑아주고 같은, 알림 자동으로 날려주고",
+                  "children": [],
+                  "createdAt": 1793335636745,
+                  "updatedAt": 1793335689561
+                }
+              ],
+              "createdAt": 1793335632996,
+              "updatedAt": 1793335636476
+            }
+          ],
+          "createdAt": 1793335581376,
+          "updatedAt": 1793335629761
+        },
+        {
+          "id": "dPbD0BGihpYH",
+          "text": "약식 버전",
+          "children": [
+            {
+              "id": "CVndq0VKVV6w",
+              "text": "매니패스트",
+              "children": [],
+              "createdAt": 1793335725407,
+              "updatedAt": 1793335731090
+            }
+          ],
+          "createdAt": 1793335720614,
+          "updatedAt": 1793335725130
         }
       ],
       "createdAt": 1793330178329,
@@ -1553,5 +1593,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793260355692,
-  "updatedAt": 1793335517203
+  "updatedAt": 1793335733499
 }
