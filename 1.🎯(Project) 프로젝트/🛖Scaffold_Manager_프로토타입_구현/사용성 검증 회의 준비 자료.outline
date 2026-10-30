@@ -111,7 +111,7 @@
               "updatedAt": 1793267032815
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793267032815,
           "updatedAt": 1793267032815
         },
@@ -195,7 +195,7 @@
               "updatedAt": 1793267032815
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793267032815,
           "updatedAt": 1793267032815
         }
@@ -312,11 +312,11 @@
                       "id": "W2DDU2xYK7Lh",
                       "text": "기획서 -> 프로젝트&작업 전반",
                       "children": [],
-                      "createdAt": 1793283749117,
-                      "updatedAt": 1793283762536,
                       "file": {
                         "target": "Pasted image 20261029232231.png"
-                      }
+                      },
+                      "createdAt": 1793283749117,
+                      "updatedAt": 1793283762536
                     }
                   ],
                   "isFolded": true,
@@ -641,7 +641,7 @@
           "updatedAt": 1793269673283
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1793269673283,
       "updatedAt": 1793269673283
     },
@@ -791,6 +791,7 @@
           "updatedAt": 1793269442157
         }
       ],
+      "isFolded": false,
       "createdAt": 1793265843615,
       "updatedAt": 1793269442157
     },
@@ -934,9 +935,623 @@
       "isFolded": false,
       "createdAt": 1793270108269,
       "updatedAt": 1793270108269
+    },
+    {
+      "id": "aBEhDt64cSYm",
+      "text": "[usability] 사용성 검증",
+      "children": [
+        {
+          "id": "5jdl6RwQFCX7",
+          "text": "메모 혹은 md 문서 or 여러개의 문서 -> 연출하는 적합한 폼을 바로 묘사할 수 있는가",
+          "children": [
+            {
+              "id": "hyp_raw_to_form",
+              "text": "가설화",
+              "children": [
+                {
+                  "id": "h_stmt_1",
+                  "text": "가설",
+                  "children": [
+                    {
+                      "id": "zpN1aIheAdUS",
+                      "text": "\"사용자는 빈 백지에서 서식을 직접 설계하기보다, 날것의 파편 메모(Raw)를 넣었을 때 AI가 2~3개의 적합한 뼈대(Form 후보)를 추천·도출해주는 방식에서 시작 장벽(Cold-start)이 80% 이상 해소될 것이다.\"",
+                      "children": [],
+                      "createdAt": 1793331776054,
+                      "updatedAt": 1793331776337
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793331683120,
+                  "updatedAt": 1793331776054
+                },
+                {
+                  "id": "h_stmt_2",
+                  "text": "검증 질문",
+                  "children": [
+                    {
+                      "id": "OgOjWVQl3qax",
+                      "text": "날것의 메모나 링크를 던졌을 때, 사용자가 헤매지 않고 자신이 원하는 최종 산출물 형태(표 형태, 조항 형태, 카드 형태 등)로 3초 만에 직관적으로 도달하는가?",
+                      "children": [],
+                      "createdAt": 1793331769718,
+                      "updatedAt": 1793331770683
+                    },
+                    {
+                      "id": "aXEgzqfMnhxo",
+                      "text": "사용자는 수많은 서식 허브(라이브러리)를 일일이 검색하는 것보다, AI가 즉석에서 추천·생성해주는 3대(혹은 그 이상) 프리셋을 더 빠르고 직관적이라 느끼는가?",
+                      "children": [],
+                      "createdAt": 1793332440876,
+                      "updatedAt": 1793332889370
+                    },
+                    {
+                      "id": "InfQkLBYXQEt",
+                      "text": "사용자는 제로베이스 AI 생성보다, 기존 레퍼런스 문서/링크에서 폼 구조를 역공학(추출)해오는 방식을 더 신뢰하고 선호하는가?",
+                      "children": [],
+                      "createdAt": 1793332440876,
+                      "updatedAt": 1793332440876
+                    },
+                    {
+                      "id": "WwQEwjNcLTZX",
+                      "text": "레퍼런스로부터 추출된 서식 요소(틀, 구조, 항목)가 내 문서에 어떻게 매핑·반영되었는지 사용자가 직관적으로 알아볼 수 있는가?",
+                      "children": [],
+                      "createdAt": 1793332440876,
+                      "updatedAt": 1793332440876
+                    },
+                    {
+                      "id": "6imXGSRdRUKz",
+                      "text": "[raw -> form]사용자가 raw 데이터 혹은 md 문서를 통해서 출력 형식이나 형태를 직관적으로 선택할 수 있는가?",
+                      "children": [
+                        {
+                          "id": "x67jB77761XY",
+                          "text": "허브에서 선택을 하는 것인가?",
+                          "children": [],
+                          "createdAt": 1793330250000,
+                          "updatedAt": 1793330250000
+                        },
+                        {
+                          "id": "vX0WMN3bTrJC",
+                          "text": "생성해서 선택하는 것인가?",
+                          "children": [],
+                          "createdAt": 1793330260000,
+                          "updatedAt": 1793330260000
+                        },
+                        {
+                          "id": "odOBp1CLcSGB",
+                          "text": "레퍼런스로부터 추출하는 것인가?",
+                          "children": [
+                            {
+                              "id": "y9d0E2xKlMm1",
+                              "text": "레퍼런스로부터 추출된 요소를 어떻게 알 수 있도록 하는가?",
+                              "children": [],
+                              "createdAt": 1793330275000,
+                              "updatedAt": 1793330275000
+                            }
+                          ],
+                          "createdAt": 1793330270000,
+                          "updatedAt": 1793330270000
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793330240000,
+                      "updatedAt": 1793332871585
+                    },
+                    {
+                      "id": "ccIGfWXRyorL",
+                      "text": "사용자가 본인이 원하는 나머지 10~20프로의 디테일 튜닝을 cherrypicking 형태로 간편한게 진행할 수 있는가?",
+                      "children": [],
+                      "createdAt": 1793330924915,
+                      "updatedAt": 1793332871585
+                    },
+                    {
+                      "id": "T5o918LsPTYy",
+                      "text": "사용자가 본인이 그리던, 원하던 형태의 내용 정리와 구성(내용적 적합성에 대한 얘기)이 1~2번의 피드백으로 정리가 되는가?",
+                      "children": [],
+                      "createdAt": 1793332937156,
+                      "updatedAt": 1793333016120
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793331683120,
+                  "updatedAt": 1793331769718
+                },
+                {
+                  "id": "h_stmt_3",
+                  "text": "관찰 포인트 (Failure Check)",
+                  "children": [
+                    {
+                      "id": "SoK6nQfhHs3b",
+                      "text": "AI가 추천한 서식을 보고 \"이게 왜 내 메모에 맞아?\"라며 거부감을 느끼는가, 아니면 \"아, 이 구조로 채우면 되겠네!\" 하고 즉시 수용하는가?",
+                      "children": [],
+                      "createdAt": 1793331784698,
+                      "updatedAt": 1793331798127
+                    },
+                    {
+                      "id": "nSo8j5262t35",
+                      "text": "서식 선택 단계에서 옵션이 너무 많아 인지 과부하(Decision Paralysis)로 멈칫하는가?",
+                      "children": [],
+                      "createdAt": 1793331798128,
+                      "updatedAt": 1793331798128
+                    },
+                    {
+                      "id": "a5WqvnGIYF90",
+                      "text": "ai 가 작성한 내용을 보고 '왜 이걸 이렇게 정리를 해?' 하는가. 아니면 '원하는 방향으로 정리가 됐군' 하는가?",
+                      "children": [],
+                      "createdAt": 1793331996372,
+                      "updatedAt": 1793332029447
+                    },
+                    {
+                      "id": "DKFdkQDjyAQO",
+                      "text": "허브 카탈로그 검색 과정에서 길을 잃거나(Lost in Navigation), 원하는 서식을 찾지 못해 서식 탐색 피로감을 호소하는가?",
+                      "children": [],
+                      "createdAt": 1793332440876,
+                      "updatedAt": 1793332440876
+                    },
+                    {
+                      "id": "WR86mfbLAqbR",
+                      "text": "레퍼런스에서 서식을 추출했을 때, \"어느 부분이 레퍼런스에서 반영된 거지?\"라며 추출 근거의 불투명성에 불안해하는가?",
+                      "children": [],
+                      "createdAt": 1793332440876,
+                      "updatedAt": 1793332440876
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793331683120,
+                  "updatedAt": 1793331784698
+                },
+                {
+                  "id": "h_stmt_4",
+                  "text": "실전 조작 시나리오",
+                  "children": [
+                    {
+                      "id": "tf6kRIzFJ4hj",
+                      "text": "메모 투입 ➔ AI의 3대 서식 프리셋 제안 ➔ 1클릭 뼈대 안착. [@feedback 만약 3개 안에 없다면?]",
+                      "children": [],
+                      "createdAt": 1793331808965,
+                      "updatedAt": 1793331972774
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793331683120,
+                  "updatedAt": 1793331808965
+                },
+                {
+                  "id": "xi0jjc2s0NJz",
+                  "text": "이미 대리 검증해볼 수 있는 다른 사례",
+                  "children": [
+                    {
+                      "id": "6K2RK60ZJzwL",
+                      "text": "예스폼 - 부분 변경 및 제안을 해주는 모습",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261030125609.png"
+                      },
+                      "createdAt": 1793332568935,
+                      "updatedAt": 1793332610409
+                    },
+                    {
+                      "id": "DWjddcUWGujs",
+                      "text": "예스폼 - 해당 폼에서 바로 픽하는 모습",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261030125714.png"
+                      },
+                      "createdAt": 1793332616394,
+                      "updatedAt": 1793332701318
+                    },
+                    {
+                      "id": "b05nHQ2eG23K",
+                      "text": "예스폼 - 허브에서 픽하는 모습",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261030125744.png"
+                      },
+                      "createdAt": 1793332664478,
+                      "updatedAt": 1793332703637
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793332595767,
+                  "updatedAt": 1793332610213
+                },
+                {
+                  "id": "fJWAYdP3ktw7",
+                  "text": "아직 대리 검증해볼 수 없는 사례",
+                  "children": [
+                    {
+                      "id": "A5F4LZN8EW4R",
+                      "text": "3~5개의 후보지를 주는 것",
+                      "children": [],
+                      "createdAt": 1793332727195,
+                      "updatedAt": 1793332736733
+                    },
+                    {
+                      "id": "60A62aAcuBME",
+                      "text": "기존에 있는 양식 중에 지금 내 상황에 가장 적합한 형식을 선별적으로 curation 해주는 것",
+                      "children": [],
+                      "createdAt": 1793332736967,
+                      "updatedAt": 1793332782903
+                    },
+                    {
+                      "id": "uGocdDTYav1i",
+                      "text": "부분 수정 시 시각적 3~5개 후보지를 주는 것",
+                      "children": [],
+                      "createdAt": 1793332783112,
+                      "updatedAt": 1793332809407
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793332718814,
+                  "updatedAt": 1793332726959
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793331683120,
+              "updatedAt": 1793331683120
+            }
+          ],
+          "createdAt": 1793330195968,
+          "updatedAt": 1793331683120
+        },
+        {
+          "id": "PuUB3ixpnve8",
+          "text": "[ref injection]사용자가 자신에게 필요한 레퍼런스를 어떻게 최적화하게 알아서 찾아와서 알아서 뿌려줄 것인가?(부분 적용)",
+          "children": [
+            {
+              "id": "wg8iOybCbAC8",
+              "text": "사용자가 필요한 영역의 레퍼런스 버튼만 클릭하면 알아서 물어와서 collection에 뿌려놓도록 할 것인가?",
+              "children": [
+                {
+                  "id": "70FI8hnIblG6",
+                  "text": "docs -> docs 차원의 레퍼런스, 한 칸이면 그 칸의 레퍼런스, 프로젝트면 프로젝트",
+                  "children": [
+                    {
+                      "id": "yqC8KMsA7AX1",
+                      "text": "각 차원에서의 레퍼런스 중 선택과 제거를 어떻게 편하게 만들 것인가",
+                      "children": [],
+                      "createdAt": 1793330513191,
+                      "updatedAt": 1793330533237
+                    },
+                    {
+                      "id": "DZ2mKQRYmkxz",
+                      "text": "레퍼런스 중에서도 선별한 요소와 배제하는 요소 관리를 어떻게 할 것인가",
+                      "children": [],
+                      "createdAt": 1793330533556,
+                      "updatedAt": 1793330544745
+                    },
+                    {
+                      "id": "E7C6cPLzETuS",
+                      "text": "레퍼런스의 범위 제한을 어떻게 귀찮지 않게 할 것인가? 가령, 프로젝트 전반에 적용되는 레퍼런스 요소가 있지만 특정 섹션에서는 반영이 되면 안되는 것 같은 것들",
+                      "children": [],
+                      "createdAt": 1793330567918,
+                      "updatedAt": 1793330600763
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793330431379,
+                  "updatedAt": 1793330458104
+                },
+                {
+                  "id": "iVERpFlyeoeU",
+                  "text": "해당 레퍼런스의 연관성과 사용 가능성을 어떻게 '바로 알 수 있도록' 할 것인가",
+                  "children": [],
+                  "createdAt": 1793330458803,
+                  "updatedAt": 1793330475500
+                },
+                {
+                  "id": "na8EmfCFKagu",
+                  "text": "레퍼런스에서 꺼내 쓸 수 있는 개별 요소들을 어떻게 바로 핸들링 하도록 달아줄 것인가?",
+                  "children": [
+                    {
+                      "id": "2tWfX91ppWnh",
+                      "text": "연출 및 시각적 표현에 관한 요소",
+                      "children": [
+                        {
+                          "id": "5uFXlwKzP89r",
+                          "text": "레이아웃 배치, 정보의 밀도 등등",
+                          "children": [],
+                          "createdAt": 1793330672939,
+                          "updatedAt": 1793330680996
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793330620421,
+                      "updatedAt": 1793330630497
+                    },
+                    {
+                      "id": "W7zBRdzoYLIT",
+                      "text": "단어 선택이나 어휘 표현에 대한 요소",
+                      "children": [],
+                      "createdAt": 1793330630658,
+                      "updatedAt": 1793330643063
+                    },
+                    {
+                      "id": "AypKDYi8HgV6",
+                      "text": "논리 전개나 스토리 라이닝에 대한 요소",
+                      "children": [],
+                      "createdAt": 1793330643226,
+                      "updatedAt": 1793330653631
+                    },
+                    {
+                      "id": "uuxNsr8P5MLd",
+                      "text": "각 섹션의 element 구성에 대한 요소",
+                      "children": [],
+                      "createdAt": 1793330653822,
+                      "updatedAt": 1793330664539
+                    }
+                  ],
+                  "createdAt": 1793330475889,
+                  "updatedAt": 1793330493571
+                }
+              ],
+              "createdAt": 1793330393198,
+              "updatedAt": 1793330430155
+            }
+          ],
+          "createdAt": 1793330371048,
+          "updatedAt": 1793330906146
+        },
+        {
+          "id": "uMm1W1OToB0j",
+          "text": "[doc network]문서 간의 연결성과 문서 간의 참조 상황이 사용자에게 직관적으로 보여지고, 그 제어와 변경을 손쉽게 할 수 있는가?",
+          "children": [
+            {
+              "id": "gjpvUa8Nd1iG",
+              "text": "description",
+              "children": [
+                {
+                  "id": "0OnRTWr6mmm2",
+                  "text": "문서 작업이라고 하는게 문서 하나만 독립적으로 끝나는 것도 있지만 '중간 산출물' 혹은 다른 것의 근거 자료 혹은 나중에도 재사용될 수 있는 형태가 많음. 소프트웨어 개발에 사용되는 수많은 문서를 보면 그냥 알 수 있음. 이런 식으로 프로젝트성 성격을 가지고 있는 것들은 그 자체로 다른 문서에서 가져다 사용하는 것, 연결성을 맺는게 중요함",
+                  "children": [],
+                  "createdAt": 1793333141405,
+                  "updatedAt": 1793333223637
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793333137262,
+              "updatedAt": 1793333141200
+            },
+            {
+              "id": "gOsrm9Msrabp",
+              "text": "우려포인트",
+              "children": [
+                {
+                  "id": "OUxcX2okPiKV",
+                  "text": "원천 문서나 참조 데이터가 수정되었을 때, 이를 참조하는 파생 문서들이 구버전(Stale) 상태로 방치되거나 불일치가 발생할 우려",
+                  "children": [],
+                  "createdAt": 1793335439802,
+                  "updatedAt": 1793335439802
+                },
+                {
+                  "id": "wnmZFke2n6Do",
+                  "text": "연쇄 파급(Ripple) 영향에 대한 감지 및 동기화 제어가 없으면 전체 문서 네트워크의 데이터 신뢰도가 무너질 수 있음",
+                  "children": [],
+                  "createdAt": 1793335439802,
+                  "updatedAt": 1793335439802
+                }
+              ],
+              "createdAt": 1793335439802,
+              "updatedAt": 1793335439802
+            }
+          ],
+          "createdAt": 1793330894524,
+          "updatedAt": 1793333234803
+        },
+        {
+          "id": "A3xMTfkyThrY",
+          "text": "[doc-data network]문서와 데이터 사이의 연결성이 사용자에게 직관적으로 보여지고, 그 제어와 변경을 손쉽게 할 수 있는가?",
+          "children": [
+            {
+              "id": "3096Qbh6xLxx",
+              "text": "description",
+              "children": [
+                {
+                  "id": "L2Q6FSDk1g9A",
+                  "text": "문서와 데이터, 리서치 자료, 스케치 내용 등등의 데이터와의 연결성이 직관적이고 제어하기 편해야 사용자가 얼마든지 검증 비용을 줄이고, 새로운 '디렉션'을 내리기가 편함",
+                  "children": [],
+                  "createdAt": 1793333288802,
+                  "updatedAt": 1793333357555
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793333285023,
+              "updatedAt": 1793333288581
+            }
+          ],
+          "createdAt": 1793333130601,
+          "updatedAt": 1793333278263
+        },
+        {
+          "id": "3p8de5UIGtbS",
+          "text": "[form 비정형 db화] doc 네트워크와 연결된 개념이긴하지만, 옵시디언에 프론트매터가 아예 문서 폼 버전으로 갔다고 보면 됨. 아무튼 폼 형식으로 정리한 내용을 기준으로 자동 태그화, 분류 추출, 인덱싱 정보 생성 등을 해주면 사용자는 데이터 관리 작업을 훨씬 편해할 것인가? 아니면 백엔진으로 그냥 자동으로만 하면 되나?",
+          "children": [
+            {
+              "id": "3Fia5fSxSCie",
+              "text": "description",
+              "children": [
+                {
+                  "id": "6SqEkbpKSDw5",
+                  "text": "가령 회의록을 보면 자연스럽게 일시, 참석자, 뭐 이런 속성들은 항상 박힘 -> 자동 태그 등록 -> 참석자 자동 매핑",
+                  "children": [],
+                  "createdAt": 1793333523383,
+                  "updatedAt": 1793333559896
+                },
+                {
+                  "id": "f8mHOFbuMeXj",
+                  "text": "문서 링크, 하이퍼링크, 레퍼런스 링크, 데이터 링크, 속성값 등등 관리",
+                  "children": [],
+                  "createdAt": 1793334133916,
+                  "updatedAt": 1793334165046
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793333518858,
+              "updatedAt": 1793333522162
+            }
+          ],
+          "createdAt": 1793333363191,
+          "updatedAt": 1793333518416
+        },
+        {
+          "id": "YZadqWQf1IOp",
+          "text": "[doc version, staging 관리] 문서 작업 중 갈어엎기 작업 시 git 코드 비교처럼 여러 가지 직관적 ui를 제공하면 문서 생성 속도가 부스팅 될 것인가?",
+          "children": [
+            {
+              "id": "uxh7ZLNLMrUH",
+              "text": "우려포인트",
+              "children": [
+                {
+                  "id": "vtYr5b4m5L4K",
+                  "text": "버전 분기와 갈아엎기가 너무 쉬워지면, 채택되지 않은 브랜치나 버려진 스케치 등 고립 노드(Orphan)가 무한정 누적되어 '문서 무덤'이 될 우려",
+                  "children": [],
+                  "createdAt": 1793335439802,
+                  "updatedAt": 1793335439802
+                },
+                {
+                  "id": "R0X0ipb7tUjI",
+                  "text": "무엇이 최종 단 하나의 진실(Canonical Version)인지 작업자가 한눈에 분간하기 어려워질 수 있음",
+                  "children": [],
+                  "createdAt": 1793335439802,
+                  "updatedAt": 1793335439802
+                }
+              ],
+              "createdAt": 1793335439802,
+              "updatedAt": 1793335439802
+            }
+          ],
+          "createdAt": 1793333507617,
+          "updatedAt": 1793333770833
+        },
+        {
+          "id": "ufT1xzlUPSaO",
+          "text": "[doc storylining] 백데이터와 ai의 제안을 통해서 문서의 핵심 뼈대 골격을 잡아주고, 몇가지 후보군을 제안하고 피킹하는 형태를 더 선호할 것이다 & 레퍼런스로부터 척추 뽑기",
+          "children": [],
+          "createdAt": 1793333781486,
+          "updatedAt": 1793333910742
+        },
+        {
+          "id": "Qo7m5GvcYJGh",
+          "text": "[project to doc-slot zoom in-out] project 단위에서의 큰 조망과 관리에서부터 아주 디테일한 문서 slot 개별의 작업까지 포커스를 조절하며(차원 조절에 따른 ai 자동 서포팅 차이) 깎아나가는 작업을 선호할 것이다",
+          "children": [
+            {
+              "id": "JODW2I3u2WeQ",
+              "text": "like 캐드 프로그램",
+              "children": [],
+              "createdAt": 1793334020768,
+              "updatedAt": 1793334052385
+            }
+          ],
+          "createdAt": 1793333912766,
+          "updatedAt": 1793334041444
+        },
+        {
+          "id": "OwT1E613TJHB",
+          "text": "[answer evidence] 모든 답변에 근거를 명확히하고, 해당 근거를 클릭했을 때 바로 우측에 띄워줄 수 있으면 좋아할 것이다",
+          "children": [
+            {
+              "id": "NVvU6EvOeLuq",
+              "text": "1. 필수 Grounding & Highlighting - 대충 제목만 던져주는 것이 아니라 근거가 되는 섹션 혹은 단락으로 바로 띄워놓기",
+              "children": [],
+              "createdAt": 1793334314172,
+              "updatedAt": 1793334371197
+            },
+            {
+              "id": "6vXY1u5DtZ74",
+              "text": "2. grounding 이 없을 수도(뇌피셜이다!), 여러 개일 수도, 후보군만 있는 애매한 상태일 수도 -> 그냥 표시를 해두자!",
+              "children": [],
+              "createdAt": 1793334379937,
+              "updatedAt": 1793334417766
+            }
+          ],
+          "createdAt": 1793334054975,
+          "updatedAt": 1793334221509
+        },
+        {
+          "id": "1Qc75QnDmXdL",
+          "text": "[skill&guide injection] 새롭게 접하는 작업 혹은 문서를 봤을 때 그거에 딸린 작성법이나 작성 가이드를 자연스럽게 ai에게 인젝션하면 좋아할 것이다",
+          "children": [
+            {
+              "id": "fyjs2DeunGPR",
+              "text": "description",
+              "children": [
+                {
+                  "id": "crUHcK9i3COe",
+                  "text": "정보 표준 뭐시기 작업 가이드 같은 문서가 존재한다 -> 500페이지 분량이다. 혹은 심사 자료 제출이다 -> 심사 기준이 있다. 이런 건 그냥 자동으로 꽂아버리자",
+                  "children": [],
+                  "createdAt": 1793334498967,
+                  "updatedAt": 1793334536490
+                }
+              ],
+              "createdAt": 1793334487099,
+              "updatedAt": 1793334498594
+            }
+          ],
+          "createdAt": 1793334433596,
+          "updatedAt": 1793334486239
+        },
+        {
+          "id": "3sVxDXFDRx95",
+          "text": "[doc reconstructing] 문서 서식 중 여러 개를 선별해서 각각의 세부 컴포넌트만 선별적으로 선택해서 재구성을 하면 사용자가 좋아할 것이다",
+          "children": [],
+          "createdAt": 1793334600860,
+          "updatedAt": 1793334661245
+        },
+        {
+          "id": "XWgdhAN09T35",
+          "text": "[doc slot ideation, develop] 각 slot 에서 자유롭게 발상하고 내용을 늘렸다 줄였다 하면서 sketch 칸을 따로 두는 것이 작업하기 편하게 할 것이다",
+          "children": [],
+          "createdAt": 1793334682904,
+          "updatedAt": 1793334807970
+        },
+        {
+          "id": "0PUS40Rie2sP",
+          "text": "[doc manual] 한 번 생성한 document 는 다음에는 똑같이 작업을 할 수 있도록 에이전트에게 지침을 '지침 생성하기' 이런 식으로만 만들 수 있으면 좋아할 것이다",
+          "children": [],
+          "createdAt": 1793334823102,
+          "updatedAt": 1793334869757
+        },
+        {
+          "id": "4GCM0rXN2K5G",
+          "text": "[doc slot lock & permission] AI가 확정된 수치나 필수 조항을 임의로 훼손하지 못하도록 슬롯 단위로 잠금(Lock) 및 권한 제어를 할 수 있는가?",
+          "children": [
+            {
+              "id": "kG1QWObTL9gZ",
+              "text": "description",
+              "children": [
+                {
+                  "id": "lQpYkTsv8Oeg",
+                  "text": "문서 작업은 단계별 승인(Sign-off)이나 역할 분담이 필수적임. 이미 컨펌된 재무 수치, 계약 조항, 심사 필수 문구를 AI가 다시 생성하거나 덮어쓰지 않도록 '읽기 전용/잠금' 슬롯으로 동결(Freeze)하고, 검토 책임 소재를 명확히 할 수 있어야 함",
+                  "children": [],
+                  "createdAt": 1793335439802,
+                  "updatedAt": 1793335439802
+                }
+              ],
+              "createdAt": 1793335439802,
+              "updatedAt": 1793335439802
+            },
+            {
+              "id": "817IpYPZ8DG8",
+              "text": "우려포인트",
+              "children": [
+                {
+                  "id": "tYQl2SaUO2Z9",
+                  "text": "잠금 기능 조작이 번거로우면 사용자가 잠금을 안 써서 AI에 의해 중요한 내용이 날아가거나, 반대로 너무 많은 슬롯이 잠겨 AI의 연속적 제안 흐름이 뚝뚝 끊길 우려",
+                  "children": [],
+                  "createdAt": 1793335439802,
+                  "updatedAt": 1793335439802
+                }
+              ],
+              "createdAt": 1793335439802,
+              "updatedAt": 1793335439802
+            }
+          ],
+          "createdAt": 1793335439802,
+          "updatedAt": 1793335439802
+        }
+      ],
+      "createdAt": 1793330178329,
+      "updatedAt": 1793330924915
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793260355692,
-  "updatedAt": 1793283766545
+  "updatedAt": 1793335517203
 }

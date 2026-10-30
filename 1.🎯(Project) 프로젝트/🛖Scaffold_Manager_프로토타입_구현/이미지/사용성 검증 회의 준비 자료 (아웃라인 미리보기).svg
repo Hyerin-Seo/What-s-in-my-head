@@ -12,16 +12,19 @@
 <text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">커서의 '지시 방향성'이 바로바로 수정 및 디벨롭해서 구상…</text>
 <circle cx="34" cy="193" r="4.5" fill="#3a3a40"/>
 <text x="51" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">문서의 범위와 문서의 종류</text>
-<circle cx="58" cy="226" r="4.5" fill="#3a3a40"/>
+<circle cx="58" cy="226" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="226" r="4.5" fill="#7c5cff"/>
 <text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">정형 문서 (Form-Filler 모델 - '스마트 빈칸 채우기')</text>
-<circle cx="82" cy="259" r="4.5" fill="#3a3a40"/>
-<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 문법/틀의 가시성 (Visibility): 외재적 (Explicit)</text>
-<circle cx="106" cy="292" r="3" fill="#9a9aa3"/>
-<text x="123" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">틀(와꾸)이 표 칸막이, 슬롯, 번호(1.1, 1.2)로 겉에…</text>
-<circle cx="106" cy="325" r="3" fill="#9a9aa3"/>
-<text x="123" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">작업자 행동: 빈칸에 데이터만 채우기 (Form-Filling…</text>
-<circle cx="82" cy="358" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="82" cy="358" r="4.5" fill="#7c5cff"/>
-<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2. 형태의 가소성 (Rigidity vs Elasticity): 경직됨 (…</text>
+<circle cx="58" cy="259" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="259" r="4.5" fill="#7c5cff"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">비정형 문서 (Block-Builder 모델 - '웹사이트식 블록 조립…</text>
+<circle cx="34" cy="292" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="34" cy="292" r="4.5" fill="#7c5cff"/>
+<text x="51" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">문서 작업자들에게 어떤 사용감을 제공하면 뻑이 갈 것이다</text>
+<circle cx="34" cy="325" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="34" cy="325" r="4.5" fill="#7c5cff"/>
+<text x="51" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">문서 작업자들에게 어떤 사용감을 제공하면 뻑이 갈 것이다_v2</text>
+<circle cx="34" cy="358" r="4.5" fill="#3a3a40"/>
+<text x="51" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">문서 작업자들에게 어떤 사용감을 제공하면 뻑이 갈 것이다_v3</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>
