@@ -12,17 +12,18 @@
 <text x="51" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📌 서식 시맨틱 분류 기준 및 원자 필드 선별 체계_v1 (실물 서…</text>
 <circle cx="34" cy="160" r="4.5" fill="#3a3a40"/>
 <text x="51" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📌 서식 시맨틱 분류 기준 및 원자 필드 선별 체계_v2 (실물 서…</text>
-<circle cx="58" cy="193" r="4.5" fill="#3a3a40"/>
+<circle cx="58" cy="193" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="193" r="4.5" fill="#7c5cff"/>
 <text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 회의 목적/정체성 기준 [단일 선택]</text>
-<circle cx="82" cy="226" r="3" fill="#9a9aa3"/>
-<text x="99" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">공식 의결·공증형 (법적/규약적 효력, 정족수 확인 및 결…</text>
+<circle cx="58" cy="226" r="4.5" fill="#3a3a40"/>
+<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2. 핵심 전달 사항 기준 (1순위 시각 앵커 / Hero Block) […</text>
 <circle cx="82" cy="259" r="3" fill="#9a9aa3"/>
-<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">업무 조율·루틴형 (과거 실적 점검 ↔ 차기 계획 수립, 정…</text>
+<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">최종 결정/판결형 (가결·부결, 채택안, 최종 합의문 등…</text>
 <circle cx="82" cy="292" r="3" fill="#9a9aa3"/>
-<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">문제 해결·이슈 통제형 (현장 결함/리스크 식별 ↔ 시정…</text>
+<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">긴급 조치/오너형 (Next Step, 조치 담당자, 즉각 실행…</text>
 <circle cx="82" cy="325" r="3" fill="#9a9aa3"/>
-<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">아이디어 발산·기획형 (브레인스토밍, 신규 피처 탐색,…</text>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">위험 경보/블로커형 (현장 결함, 지연 원인, 시정 대책…</text>
 <circle cx="82" cy="358" r="3" fill="#9a9aa3"/>
-<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">전략 심의·평가형 (KPI/성과 분석, 투자 및 계약 심사)</text>
+<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">핵심 숫자/진척 지표형 (참석수, 달성률, KPI 수치, 통…</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>
