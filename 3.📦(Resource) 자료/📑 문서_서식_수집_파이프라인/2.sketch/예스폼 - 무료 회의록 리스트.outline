@@ -1149,7 +1149,7 @@
                   "updatedAt": 1793005917994
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793001034898,
               "updatedAt": 1793001034898
             },
@@ -1706,7 +1706,7 @@
               "updatedAt": 1793001034898
             },
             {
-              "id": "a1iyzTTVFAu0",
+              "id": "hohl414TrKEG",
               "text": "📄 03페이지 (11종)",
               "children": [
                 {
@@ -3267,7 +3267,7 @@
                       "children": []
                     },
                     {
-                      "id": "rA7DdT3Hs1Ec",
+                      "id": "hIGRGZsop2BP",
                       "text": "로컬 파일: [[예스폼_downloads/PDF/예스폼_무료심의위원회규정양식다운로드.pdf|로컬 PDF 열기]]",
                       "children": [],
                       "file": {
@@ -3282,11 +3282,11 @@
                   "updatedAt": 1793005917994
                 },
                 {
-                  "id": "G3TroEwvhY8F",
+                  "id": "yl1oQitF3VsX",
                   "text": "72. [무료 대학발전기금 조성위원회 규정 양식 샘플 다운로드](https://www.yesform.com/forms/vform_107738.php)",
                   "children": [
                     {
-                      "id": "jYy7SuBAgBNI",
+                      "id": "5YW0hp4Q6Eus",
                       "text": "서식 ID: vform_107738",
                       "children": [],
                       "isFolded": false,
@@ -3294,7 +3294,7 @@
                       "updatedAt": 1793001034898
                     },
                     {
-                      "id": "py8pGS9WtlJQ",
+                      "id": "yH5VMeS28kTQ",
                       "text": "지원 포맷: 한글, 워드, PDF",
                       "children": [],
                       "isFolded": false,
@@ -3513,7 +3513,7 @@
               "updatedAt": 1793005917994
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793001034898,
           "updatedAt": 1793005917994
         },
@@ -4317,7 +4317,7 @@
               "updatedAt": 1793005917994
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793001034898,
           "updatedAt": 1793005917994
         },
@@ -4618,7 +4618,7 @@
               "updatedAt": 1793005917994
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793001034898,
           "updatedAt": 1793005917994
         },
@@ -4833,7 +4833,7 @@
               "updatedAt": 1793005917994
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793001034898,
           "updatedAt": 1793005917994
         }
@@ -4845,5 +4845,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1792999285385,
-  "updatedAt": 1793251276589
+  "updatedAt": 1793327132675
 }
