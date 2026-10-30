@@ -31,7 +31,8 @@
                     }
                   ],
                   "createdAt": 1793253261608,
-                  "updatedAt": 1793255079795
+                  "updatedAt": 1793255079795,
+                  "isFolded": false
                 },
                 {
                   "id": "G550bJNmDtUy",
@@ -55,7 +56,7 @@
                   "updatedAt": 1793255238770
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793253217797,
               "updatedAt": 1793253261465
             },
@@ -92,7 +93,7 @@
                   "updatedAt": 1793255290289
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793253247190,
               "updatedAt": 1793255164974
             },
@@ -115,7 +116,7 @@
                   "updatedAt": 1793255118971
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793253250592,
               "updatedAt": 1793253252514
             },
@@ -145,7 +146,7 @@
                   "updatedAt": 1793253721555
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793253252672,
               "updatedAt": 1793255173231
             },
@@ -168,7 +169,7 @@
                   "updatedAt": 1793255097661
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793253309550,
               "updatedAt": 1793253327832
             },
@@ -269,7 +270,7 @@
               "updatedAt": 1793256087653
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793255963415,
           "updatedAt": 1793255965307
         }
@@ -280,5 +281,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793253217797,
-  "updatedAt": 1793257280445
+  "updatedAt": 1793257018188
 }

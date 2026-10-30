@@ -508,3 +508,46 @@
   box-shadow: 0 4px 12px rgba(var(--interactive-accent-rgb, 120, 100, 240), 0.4);
 }
 
+
+/* ── 캔버스 찾기 막대 (canvas 모듈, 2026-10-29) ──────────────
+   위 가운데 — 오른쪽 위는 캔버스 확대 단추, 아래 가운데는 카드 메뉴 자리입니다. */
+.gd-canvas-find {
+  position: absolute;
+  top: var(--size-4-2);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 4px 4px 6px;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-s);
+}
+.gd-canvas-find input {
+  width: 220px;
+}
+.gd-canvas-find-count {
+  min-width: 3.5em;
+  text-align: center;
+  font-size: var(--font-ui-smaller);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+.gd-canvas-find.is-empty .gd-canvas-find-count {
+  color: var(--text-error);
+}
+/* 맞은 카드는 노란 테, 지금 카드는 진한 주황 테 — 회의판 포스트잇 그림자와 안 부딪히게 outline 으로 */
+.canvas-node.gd-find-hit > .canvas-node-container {
+  outline: 3px solid rgba(255, 196, 0, 0.55);
+  outline-offset: 3px;
+}
+.canvas-node.gd-find-current > .canvas-node-container {
+  outline: 4px solid rgb(255, 150, 0);
+}
+::highlight(gd-canvas-find) {
+  background-color: rgba(255, 210, 0, 0.6);
+  color: inherit;
+}
