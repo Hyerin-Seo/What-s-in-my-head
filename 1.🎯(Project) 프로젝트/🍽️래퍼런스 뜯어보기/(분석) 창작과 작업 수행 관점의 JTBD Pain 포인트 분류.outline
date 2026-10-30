@@ -1,0 +1,3136 @@
+{
+  "version": "1.0.0",
+  "id": "xpLKSbqZuqtf",
+  "title": "(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류",
+  "rootNodes": [
+    {
+      "id": "2uWggxFdgyo5",
+      "text": "📌 PART 1. 창작과 작업 수행의 JTBD Pain 포인트 (인간의 인지와 실행의 이원화)",
+      "children": [
+        {
+          "id": "u4TzCtzgU4Cr",
+          "text": "핵심 요약 : 인간이 무언가를 사유하고 기획할 때 겪는 본질적인 [창작·인지적 한계]와, 실제로 글을 쓰고 자료를 다루며 AI와 협업할 때 발생하는 [실행·도구적 마찰]의 이원화",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "quote",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        },
+        {
+          "id": "wh1i28HDAc1P",
+          "text": "🧠 축 1. 순수 창작 및 사유 과정의 Pain 포인트",
+          "children": [
+            {
+              "id": "Wp9CcAnNpEy7",
+              "text": "사유의 본질 : 머릿속에서 생각을 꺼내고, 구조를 잡고, 깊게 파고드는 과정 자체에서 오는 뇌의 과부하와 심리적 고통 (도구나 AI 유무와 상관없이 발생하는 인지적 한계)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "8bySVvrin4Hc",
+              "text": "1. 착수와 방향 탐색의 고통",
+              "children": [
+                {
+                  "id": "P77PNk7XgjIK",
+                  "text": "백지 공포증 (시작의 뇌정지)",
+                  "children": [
+                    {
+                      "id": "kjxeKUvJQnpd",
+                      "text": "빈 화면의 깜빡이는 커서를 마주하면 어디서부터 첫 문장을 떼야 할지 막막함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "ybj2Da933knp",
+                  "text": "와꾸(뼈대) 탐색의 막막함",
+                  "children": [
+                    {
+                      "id": "rMxH44RgAmRL",
+                      "text": "글솜씨가 없어서가 아니라, '이 문제를 어떤 앵글과 스토리라인(목차)으로 풀어야 할지' 머릿속에 설계도가 안 잡혀 방황함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "2KrNJjtWTAS9",
+                  "text": "무한 발산과 탈선의 방황",
+                  "children": [
+                    {
+                      "id": "CLkAofoJrk94",
+                      "text": "검증된 뼈대 없이 자유롭게 쓰다 보면 온갖 샛길로 빠져 글이 산으로 가고 결국 미완성으로 끝남",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "Rdsfqj6dA1Xu",
+              "text": "2. 작업 기억(Working Memory)과 인지 과부하",
+              "children": [
+                {
+                  "id": "2FEi2Oawx7RZ",
+                  "text": "아이디어 과부하 (머리 터짐)",
+                  "children": [
+                    {
+                      "id": "WYNxexdTDW8s",
+                      "text": "수많은 아이디어와 고려 사항이 머릿속에 뒤엉켜, '기억해야 한다'는 강박 때문에 정작 눈앞의 생각에 깊게 몰입하지 못함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "GUgbGpXGVVrA",
+                  "text": "디테일의 늪에서 미아 발생 (인지적 길 잃음)",
+                  "children": [
+                    {
+                      "id": "UfAeYt56yi3E",
+                      "text": "세부적인 내용에 몰두하다 보면 '내가 지금 큰 그림에서 뭘 입증하려고 이걸 파고 있었지?'라며 길을 잃고 멍해짐",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "YoZf1XGaSyCt",
+                  "text": "미완성 강박 (자리를 못 뜸)",
+                  "children": [
+                    {
+                      "id": "UtHKDncBBoQW",
+                      "text": "생각이 절반만 정리된 상태에서 노트를 닫으면 찝찝하고, 내일 다시 열었을 때 이 복잡한 맥락을 다시 떠올리지 못할까 봐 퇴근을 못 함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "ZTPRI7JEn6Xv",
+              "text": "3. 판단과 퇴고의 심리적 저항",
+              "children": [
+                {
+                  "id": "VNEl3augV0Uz",
+                  "text": "매몰 비용 저항 (아까워서 못 지움)",
+                  "children": [
+                    {
+                      "id": "edm18b9JZpHW",
+                      "text": "몇 시간 동안 끙끙대며 쓴 문단이 비효율적이라는 걸 알면서도, 아까워서 도려내지 못해 전체 기획이 누더기가 됨",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "kyUkLaOvVehv",
+                  "text": "자기 문서에 대한 콩깍지와 사각지대 (Unknown Unknowns)",
+                  "children": [
+                    {
+                      "id": "SzPTbQUEP5lT",
+                      "text": "내가 쓴 글은 내 눈에 이미 완벽해 보여서 논리적 결함이나 미처 고려하지 못한 맹점을 스스로 찾아내지 못함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "Ah7yhIJ7ONXO",
+                  "text": "피상적 기획 탈피 갈증 (5-Why 인과추론)",
+                  "children": [
+                    {
+                      "id": "1QsjIofgr8AT",
+                      "text": "문제의 진짜 뿌리 원인(Root Cause)까지 파고들지 못하고 뻔한 해결책 수준에서 맴돌 때 오는 답답함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        },
+        {
+          "id": "fqLi9JHT0NHK",
+          "text": "🛠️ 축 2. 작업 실행, 자료 다루기, AI 협업의 Pain 포인트",
+          "children": [
+            {
+              "id": "z99NySWZsEY4",
+              "text": "협업과 실행의 본질 : 실제 자료를 가져오고, 글을 다듬고, AI와 소통하고, 도구를 조작하는 과정에서 발생하는 인터랙션 마찰과 불신 (도구와 AI가 내 의도대로 착착 붙어주지 않아서 생기는 스트레스)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "3gr6AhiNfdTe",
+              "text": "1. 자료 수집 및 컨텍스트 노동의 고통",
+              "children": [
+                {
+                  "id": "lWjRFUfBPaND",
+                  "text": "자료 스크랩의 주객전도",
+                  "children": [
+                    {
+                      "id": "PSDLiHuPQWFj",
+                      "text": "본문 쓰기도 전에 레퍼런스 스크랩하고 정리하다가 지쳐서 정작 글은 시작도 못 함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "mPh4svgBTPQg",
+                  "text": "설명의 피로 (Context Tax)",
+                  "children": [
+                    {
+                      "id": "ctB18Xmy2i8i",
+                      "text": "새 작업을 할 때마다 내 배경 지식, 이전 결정 사항을 매번 AI 프롬프트에 1시간씩 복붙·설명하느라 진이 빠짐",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "ziiSyVxmP37M",
+                  "text": "자료 유실 불안",
+                  "children": [
+                    {
+                      "id": "gqkeRjeGkKXs",
+                      "text": "웹에서 긁어온 표, 이미지, 원본 출처가 나중에 다시 보려 하면 깨지거나 사라져 있음",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "TYWahUzQBabC",
+              "text": "2. 글쓰기 조판 및 포맷 가공 노가다",
+              "children": [
+                {
+                  "id": "QPwVK7KpxfyV",
+                  "text": "불릿 텍스트 멀미 & 줄글 벽 인지 부하",
+                  "children": [
+                    {
+                      "id": "peosSATyWNw1",
+                      "text": "빽빽한 들여쓰기 불릿이나 시커먼 마크다운 줄글 벽을 보고 있으면 숨이 막히고 맥락 파악이 안 됨",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "scecZBMwF1wR",
+                  "text": "포맷 변환 노가다",
+                  "children": [
+                    {
+                      "id": "aVevEGYA0nYF",
+                      "text": "글 다 쓰고 나서 회의용 PPT(슬라이드 덱) 사각형 그리고 있거나, 피그마 켜서 플로우차트 상자 그리고 앉아 있을 때의 자괴감",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "IeZ5jwOphHoo",
+                  "text": "수신자별 재가공 피로",
+                  "children": [
+                    {
+                      "id": "2o2nDaaCuYVV",
+                      "text": "동일한 기획서에서 C-Level 보고용 요약본, 개발자용 액션아이템을 따로 정리하느라 진이 빠짐",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "zbyUdcIkGIXr",
+                  "text": "한국 비즈니스 서식 불일치",
+                  "children": [
+                    {
+                      "id": "WxYwhOVQKiVs",
+                      "text": "외산 툴의 마크다운 줄글을 당장 공문서나 HWP 표 양식에 맞추려면 서식이 깨져 처음부터 다시 해야 함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "O5lcFIJGtjCJ",
+              "text": "3. AI 협업에서의 통제감 상실과 불신",
+              "children": [
+                {
+                  "id": "MMpteinuwCzp",
+                  "text": "프롬프팅 피로",
+                  "children": [
+                    {
+                      "id": "kjUm1kkd5wD4",
+                      "text": "AI한테 뭘 물어봐야 할지 빈 프롬프트 창에 장황하게 작문하다가 '그냥 내가 쓰고 말지' 현타 옴",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "3XKow97kDxp0",
+                  "text": "원본 파괴 공포 (노드 덮어쓰기)",
+                  "children": [
+                    {
+                      "id": "gunpLVJEsmFE",
+                      "text": "기껏 다듬어둔 완성 노드를 AI가 재생성 한 번에 제멋대로 갈아엎어 버릴까 봐 두려움",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "xhkK8TK3ZpXH",
+                  "text": "고삐 풀린 망아지 폭주",
+                  "children": [
+                    {
+                      "id": "ZTYmf0BiDK23",
+                      "text": "단어 하나에 꽂혀 삼천포로 급발진하거나, 장황한 계획질만 수천 자 쏟아내다 토큰 다 쓰고 뻗음",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "qijH5yvZrEgQ",
+                  "text": "영혼 없는 칭찬봇(Yes-man)과 상투어(AI Slop)",
+                  "children": [
+                    {
+                      "id": "xVVUtLwiVegK",
+                      "text": "가혹하게 비판받아야 할 기획서에 '훌륭합니다!' 아첨만 떨고, 기름진 상투어로 글을 망쳐놓음",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "DTuuQ5PPX2mT",
+                  "text": "완제품의 전수 검사 지옥 (Inspection Tax)",
+                  "children": [
+                    {
+                      "id": "BuArd1d7E98T",
+                      "text": "10초 만에 쏟아낸 10장짜리 줄글에 무슨 거짓말(환각)이나 수치 왜곡(앞엔 5천억, 뒤엔 8천억)이 있을지 몰라 한 줄 한 줄 검수하느라 시간이 2배로 듦",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "lOCkGDyZOmvS",
+                  "text": "지적 소유권(Ownership) 상실감 & 사고력 퇴화",
+                  "children": [
+                    {
+                      "id": "4uvdXg98Efa1",
+                      "text": "AI가 대신 다 써주니 '이게 진짜 내 생각인가?' 공허해지고, 스스로 깊게 사유하는 근육이 퇴화하는 찜찜함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "IxkTBhj6UJco",
+              "text": "4. 도구 안전망과 거버넌스 고통",
+              "children": [
+                {
+                  "id": "T0QiODXNryxJ",
+                  "text": "롤백 불가 공포",
+                  "children": [
+                    {
+                      "id": "zh55WAP42AQf",
+                      "text": "수정하다 실수로 블록을 날렸을 때 되돌릴 수 없는 파멸의 순간이 올까 봐 불안함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "REb6fzDqN7WT",
+                  "text": "사내 기밀 유출 불안",
+                  "children": [
+                    {
+                      "id": "fSP009vKkiN8",
+                      "text": "미공개 데이터나 계약 금액이 포함된 문서를 AI에 던졌다가 보안 사고 터질까 봐 떨림",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        },
+        {
+          "id": "i5JaZwdymS4y",
+          "text": "💡 요약 및 기획적 시사점",
+          "children": [
+            {
+              "id": "1nW6sh24PBbc",
+              "text": "축 1. 순수 창작/사유의 Pain",
+              "children": [
+                {
+                  "id": "7Ffd2smJFI5i",
+                  "text": "성격 : 인지적 한계 (Cognitive Limits)",
+                  "children": [
+                    {
+                      "id": "Qf47ItrjrgCD",
+                      "text": "'어떻게 생각을 열고, 정렬하고, 깊게 파고들 것인가?'",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "RXsHq8A0zLLu",
+                  "text": "해결 방향 : 생각의 비계 (Thinking Scaffold)",
+                  "children": [
+                    {
+                      "id": "22J8Bjq5ne2x",
+                      "text": "템플릿/목차 고정 및 검증된 와꾸 제공으로 백지 공포 해소",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "ieSu4dU0f2YQ",
+                      "text": "단일 노드 줌인(Zoom-in Focus)으로 불필요한 인지 부하 차단",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "WogONx77ajhR",
+                      "text": "2차원 캔버스 플립을 통한 전체 맥락 및 대안 조망",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "sTzf12bbWQGT",
+                      "text": "소크라테스식 반론(Visual Grill-Me)으로 생각의 해상도 강화",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "frZHDNxVoGGO",
+              "text": "축 2. 실행·자료·AI 협업의 Pain",
+              "children": [
+                {
+                  "id": "tfnbZu5Uq98o",
+                  "text": "성격 : 시스템 마찰 & 불신 (Friction & Anxiety)",
+                  "children": [
+                    {
+                      "id": "TtpRewHQ6hnf",
+                      "text": "'어떻게 AI의 폭주를 막고, 안전하게 작업을 실행할 것인가?'",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "akSBx6SApfUz",
+                  "text": "해결 방향 : 에이전트 하네스 & 안전망 (Harness & Safety Net)",
+                  "children": [
+                    {
+                      "id": "rryhNMeKlZm9",
+                      "text": "확정 노드 잠금(Lock) 및 핀셋 부분 생성으로 원본 보존",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "obdbvvNKnz5w",
+                      "text": "로컬 체크포인트 스냅샷 & 인라인 Diff로 롤백 불안 원천 차단",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "RkB1jJRigtHI",
+                      "text": "Things 3식 무마찰 인박스 포집으로 세팅 피로 제거",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "GMrIKpDTIdNn",
+                      "text": "출처 인라인 앵커와 팩트 린터로 환각 및 수치 왜곡 통제",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        }
+      ],
+      "isFolded": true,
+      "nodeType": "bullet",
+      "createdAt": 1793332029989,
+      "updatedAt": 1793332029989
+    },
+    {
+      "id": "zqeDeVX82Rf8",
+      "text": "🔬 PART 2. 3대 종족 35종 레퍼런스 전면 탈곡 및 극복 방식 대조",
+      "children": [
+        {
+          "id": "EaTUhEWfAzER",
+          "text": "핵심 요약 : 1종족(자유)·2종족(규칙)·3종족(블록)의 35개 글로벌 서비스들이 각각 어떤 Pain 포인트를 어떤 킬러 무기로 극복했고, 무엇을 쿨하게 버렸는가?",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "quote",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        },
+        {
+          "id": "VnOgonD1qtOo",
+          "text": "🧬 1종족. 극단적 자유파 레퍼런스 (Freedom Tribe — 8종)",
+          "children": [
+            {
+              "id": "LZno4VIt4OXi",
+              "text": "1종족 극복 전략의 본질 : 무한한 발상의 자유와 16ms 타이핑 리듬을 주어 뇌 용량 과부하와 서식 조작 피로를 0으로 낮춤 (대신 백지 공포와 수작업 정렬 피로가 발생)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "mWtxa3bQB6Wl",
+              "text": "📁 [단일 무한 트리 & 아웃라이너 군]",
+              "children": [
+                {
+                  "id": "AhhnlPDlOwcj",
+                  "text": "01. Workflowy — 단일 무한 트리 줌포커스 & 미러 블록",
+                  "children": [
+                    {
+                      "id": "kWvdHjCk2K7H",
+                      "text": "극복한 Pain : 뇌 용량 과부하, 복잡한 서식 조작 피로, 파편화된 데이터의 중복 관리 스트레스",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "BY0qGacU1nt7",
+                      "text": "극복 메커니즘 : 모든 생각을 단 하나의 거대한 무한 트리 우주로 취급하며, 클릭 한 번으로 해당 노드만 전체 화면으로 띄우는 줌포커스(Zoom-in Focus)로 시각적 인지 부하 차단. 미러(Mirrors) 블록으로 복사-붙여넣기 없이 단일 진실 공급원(SSOT) 유지",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "OsJAPDMWTJiv",
+                      "text": "쿨하게 버린 것 : 폰트/크기 등 서식 꾸미기 기능, 여러 파일/폴더 분리 체계",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "S3XK6Ik0jDji",
+                  "text": "02. Dynalist — 무제한 블릿 위계 & LaTeX 표준 마크다운",
+                  "children": [
+                    {
+                      "id": "II7euRhKxLBP",
+                      "text": "극복한 Pain : 대규모 공학/수식 자료 수집 시 구조 붕괴 및 서식 표현 한계",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "gA4ddnTZU2VA",
+                      "text": "극복 메커니즘 : 무제한 블릿과 폴더 트리를 결합하고 LaTeX 수식과 표준 마크다운을 완벽 지원. 16ms 무지연 반응 속도로 방대한 자료를 키보드만으로 빠르게 정렬",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "cxbKBxCtUYj8",
+                      "text": "쿨하게 버린 것 : 칸반 보드 뷰, 블록 실시간 미러 동기화",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "ynV25KzloUNR",
+                  "text": "03. WorkFlowy 서적 (생각하고 계획하고 일하라) — 초미니멀리즘 상태 단일화",
+                  "children": [
+                    {
+                      "id": "7j91IWERDGSQ",
+                      "text": "극복한 Pain : 복잡한 GTD 세팅 피로와 도구 공부로 인한 본 작업 착수 지연",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "yLMOro7eB3CF",
+                      "text": "극복 메커니즘 : 할일, 프로젝트, 메모, 일정을 별도 도구로 나누지 않고, 단일 불릿의 뎁스(Depth) 조작과 태그(#, @)만으로 삶의 전 영역을 통제하는 극도의 미니멀리즘 워크플로우 정립",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "9RpusrZQsuEO",
+                      "text": "쿨하게 버린 것 : 화려한 대시보드 뷰, 정형화된 데이터베이스 필드",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "1iGmSB2nYjNF",
+              "text": "📁 [2D 공간 & 캔버스 AI 군]",
+              "children": [
+                {
+                  "id": "LC6WHzFvfgul",
+                  "text": "04. Heptabase (헵타베이스) — 2D 화이트보드 공간 카드 군집화",
+                  "children": [
+                    {
+                      "id": "lRypgH3T9g9E",
+                      "text": "극복한 Pain : 1차원 줄글의 인과관계 파악 불가, 텍스트 벽 멀미, 디테일의 늪에서 길 잃음",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "lOulRgU5CG9C",
+                      "text": "극복 메커니즘 : 텍스트 아웃라인을 2차원 평면 화이트보드 카드로 쪼개어 배치하고 화살표로 연결. 복잡한 개념의 맥락과 인과관계를 조감도 보듯 시각적으로 한눈에 조망",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "0G7sAsHDTeGj",
+                      "text": "쿨하게 버린 것 : 키보드 중심의 빠른 선형 타이핑 속도 (마우스로 카드 배치·크기 조절하는 노가다 피로 발생)",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "tQYF9I2vEn85",
+                  "text": "05. Flowith (flowith.io) — 2D 캔버스형 Follow-up 노드 발산 UI",
+                  "children": [
+                    {
+                      "id": "6mm62IYhTy7n",
+                      "text": "극복한 Pain : AI 선형 채팅의 스크롤 피로, 이전 대화 찌꺼기로 인한 세션 오염",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "axGEnbZuiMoD",
+                      "text": "극복 메커니즘 : AI와의 대화를 1차원 수직 스크롤이 아닌 2차원 마인드맵 가지치기 형태로 시각화. 질문과 대안 답변이 양옆으로 뻗어나가며 맥락을 격리하고 대안을 병렬 비교",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "U6eJx0MhkE1b",
+                      "text": "쿨하게 버린 것 : 정갈한 최종 선형 문서 조판 뷰",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "96MQo0gfo2tM",
+                  "text": "08. Figma (피그마) — 무한 2차원 자유 캔버스 & Dev Mode",
+                  "children": [
+                    {
+                      "id": "jWNk31GAg9bn",
+                      "text": "극복한 Pain : 아이디어 구상 시 문서 양식의 답답한 틀, 기획-디자인 간 소통 마찰",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "XFjzlf8SCyjf",
+                      "text": "극복 메커니즘 : 제약 없는 무한 캔버스 위에 메모, 캡처, 다이어그램을 자유롭게 흩뿌리고 그룹화. 기획 의도를 시각적 레이아웃으로 즉각 구체화",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "EPkBdJsnG5XA",
+                      "text": "쿨하게 버린 것 : 순수 텍스트 기반 논증 체계 및 키보드 아웃라이닝 리듬",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "LgHctV3j8LBO",
+              "text": "📁 [로컬 퍼스트 & 네트워크 그래프 군]",
+              "children": [
+                {
+                  "id": "sifry88n92WK",
+                  "text": "06. Roam Research (롬리서치) — 블록 단위 고유 해시 ID & 양방향 그래프",
+                  "children": [
+                    {
+                      "id": "hzmyUgAkYRZG",
+                      "text": "극복한 Pain : 위계 폴더의 경직성, 자료 간 연결 단절, 맥락 유실",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "sztKmSCLw3Rq",
+                      "text": "극복 메커니즘 : 모든 불릿 노드에 고유 ID를 부여하여 어느 문서에서든 블록 단위로 호출·참조(Transclusion). 네트워크형 그래프 뷰로 생각의 유기적 연결성 회복",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "OxCuVjkPxN2U",
+                      "text": "쿨하게 버린 것 : 긴 호흡의 장문 집필 경험, 직관적인 위지윅 조판",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "rWLK0RaI2C15",
+                  "text": "07. Logseq (로그시크) — 로컬 퍼스트 불변 저장소 & PDF 하이라이트 앵커",
+                  "children": [
+                    {
+                      "id": "xp1IrH06Jamx",
+                      "text": "극복한 Pain : 클라우드 서비스 종속 불안, 원본 데이터 유실 및 프라이버시 침해 공포",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "9lJ5QOdhJvfI",
+                      "text": "극복 메커니즘 : 사용자의 로컬 드라이브에 플레인 텍스트(Markdown/Org)로 안전 보존. 원본 PDF 논문/책을 좌측에 띄우고 우측 아웃라인에 정확한 페이지 앵커를 인라인 연결",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "JH7zoErKsLIS",
+                      "text": "쿨하게 버린 것 : 원클릭 웹 협업 접근성, 가벼운 온보딩",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        },
+        {
+          "id": "nuBtHnu7hOYy",
+          "text": "🛡️ 2종족. 엄격한 규칙·슬롯파 레퍼런스 (Rule & Slot Tribe — 12종)",
+          "children": [
+            {
+              "id": "p2EWOfEelLmU",
+              "text": "2종족 극복 전략의 본질 : 엄격한 규칙, 바인더 분할, 결정론적 린터를 통해 원본 파괴 불안과 AI 환각·오염을 물리적으로 차단 (대신 진입 장벽과 초기 발상 질식이 발생)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "BpJ1Ww66BG6o",
+              "text": "📁 [버전 불변 안전망 & AI 하네스 군]",
+              "children": [
+                {
+                  "id": "n6mbaxwKXuw0",
+                  "text": "09. Git — 불변 체크포인트 스냅샷 & 초록/빨강 인라인 Diff",
+                  "children": [
+                    {
+                      "id": "dizQbc7HNb1g",
+                      "text": "극복한 Pain : 롤백 불가 공포, 수정 시 원본 파괴 공포, 과감한 가지치기 주저",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "8KjW7YwZuxMU",
+                      "text": "극복 메커니즘 : 명시적인 체크포인트 커밋으로 언제든 1초 만에 과거 상태로 복구하는 절대적 안전망 제공. 초록(`+`)/빨강(`-`) 인라인 Diff로 변경점을 대조하고 Cherry-pick으로 원하는 노드만 핀셋 채택",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "CrmD8SQxcpSA",
+                      "text": "쿨하게 버린 것 : 타이핑할 때마다 무분별하게 쌓이는 자잘한 자동저장 히스토리",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "af6nAmJewy0r",
+                  "text": "10. ai-job-search — 쓰기 권한 박탈 Reviewer & 결정론적 하드 게이트",
+                  "children": [
+                    {
+                      "id": "Q15jTZ0AK6du",
+                      "text": "극복한 Pain : AI의 환각 지뢰, 당당한 거짓 확신(가스라이팅), 원본 덮어쓰기 폭주, 영혼 없는 칭찬봇",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "AaZwikf8FsUC",
+                      "text": "극복 메커니즘 : 단일 AI에게 작성을 맡기지 않고, 파일 쓰기 권한이 완전히 박탈된 독립 Reviewer 에이전트를 투입. 원천 자료(`documents/`)에 없는 거짓 주장이나 과장된 미사여구를 0초 만에 찢어버리고 수정 Diff만 제출",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "CxJTiYpOMt8p",
+                      "text": "쿨하게 버린 것 : 부드럽고 친절한 대화형 챗봇의 편의성",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "2yAbEnrA0Dfo",
+                  "text": "19. Claude Code (아쉬운점 분석) — CLI 컨텍스트 앵커링 & 터미널 인라인 Diff 승인",
+                  "children": [
+                    {
+                      "id": "8RGVAljCwHN6",
+                      "text": "극복한 Pain : AI의 지침 누락, 자의적 일반화, 광범위한 파일 오염",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "ZX3AhZbFbl69",
+                      "text": "극복 메커니즘 : 프로젝트 전체 구조를 읽고 타겟 파일의 엄격한 라인 범위만 인라인 diff로 제시. 사용자가 터미널에서 명시적으로 승인(Accept)해야만 파일에 반영",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "fkJzZi8T5hDx",
+                      "text": "쿨하게 버린 것 : 마우스 중심의 시각적 위지윅 에디팅 환경",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "FwTvfxVbBsX4",
+                  "text": "20. Antigravity (바이브코딩 툴 아쉬운점 분석) — 격리된 아티팩트 & 영구 작업 기억(Working Memory)",
+                  "children": [
+                    {
+                      "id": "K18eBY4T3OkM",
+                      "text": "극복한 Pain : 장황한 계획질로 인한 토큰 낭비, 세션 단절 시 작업 기억 소실, 창작 주도권 상실",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "6mmaCoqKqHIx",
+                      "text": "극복 메커니즘 : 채팅 세션과 작업 결과물을 물리적으로 분리된 아티팩트(Artifact)로 격리. 실시간 작업 진행 상태와 결정 로그를 독립 파일에 영구 기록하여 맥락 연속성 유지",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "OtDmTQ3ONad8",
+                      "text": "쿨하게 버린 것 : 단일 창에서 끝내는 단순 메신저형 UX",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "FsNRBxeT513e",
+              "text": "📁 [장문 바인더 & 출판·계약 규격 슬롯 군]",
+              "children": [
+                {
+                  "id": "iKJLNz0um4XJ",
+                  "text": "11. Scrivener (스크리브너) — 바인더(원고+자료) & 스크리브닝스 모드",
+                  "children": [
+                    {
+                      "id": "PE9cjuuKC5q0",
+                      "text": "극복한 Pain : 50페이지 장문 집필 시 전체 조망 상실, 자료 스크랩 창 전환 피로, 텍스트 멀미",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "opVyFKgSICAx",
+                      "text": "극복 메커니즘 : 바인더 구조로 '좌측 집필 원고'와 '우측 참고 자료(PDF/메모)'를 한 화면에서 완벽 분리. 쓸 때는 씬(Scene) 블록 단위로 쪼개어 쓰고, 퇴고할 때는 하나의 긴 문서로 합쳐서 스크롤 점검(Scrivenings)",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "LNZMaP6eOP3F",
+                      "text": "쿨하게 버린 것 : 가벼운 웹 브라우저 접근성, 현대적 실시간 클라우드 협업",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "sv3NE27c46T6",
+                  "text": "12. Overleaf (오버리프) — 좌측 코드 ↔ 우측 조판 듀얼 뷰포트 & LaTeX 템플릿",
+                  "children": [
+                    {
+                      "id": "rO72OSKyrWcL",
+                      "text": "극복한 Pain : 문서 수치·단위 불일치, 수식 깨짐, 표 조판 노가다, 학술/비즈니스 규격 미준수 불안",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "SCuBjTbeo5fd",
+                      "text": "극복 메커니즘 : 좌측 텍스트 에디터와 우측 실시간 컴파일 프리뷰를 나란히 배치. 엄격한 수식 컴파일과 인용(Cite) 문법을 강제하여 100% 무결한 문서 빌드",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "BRvUyou6NGO2",
+                      "text": "쿨하게 버린 것 : 마우스 드래그 앤 드롭의 직관성 (문법 오류 시 컴파일이 뻗는 스트레스 감수)",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "LLk80JPIA5dF",
+                  "text": "13. PandaDoc (판다독) — Variable 토큰 바인딩 & 검증된 Content Library",
+                  "children": [
+                    {
+                      "id": "HhOdvcoyfnlf",
+                      "text": "극복한 Pain : 비즈니스 계약서/제안서의 수기 작성 실수 및 필수 조항 누락 공포",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "uEcirB7wv397",
+                      "text": "극복 메커니즘 : 문서 내 주요 변수(금액, 고객명, 날짜)를 토큰(`[Client.Name]`)으로 바인딩하고, 사전 법무 검토를 통과한 표준 블록 라이브러리만 끼워 맞춰 안전하게 문서 완성",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "NWMdwOPcbpyK",
+                      "text": "쿨하게 버린 것 : 비정형적인 자유 줄글 서술과 창의적 발상 전개",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "LwcT4FqmE7pw",
+                  "text": "16. Reedsy Book Studio (리드시) — Front / Body / Back Matter 3단 표준 조판",
+                  "children": [
+                    {
+                      "id": "TdNQKqtg4P2m",
+                      "text": "극복한 Pain : 최종 유통/출판 조판 변환 시 서식 깨짐 노가다, 출판사 규격 미달 불안",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "KyfeHjcsh2nj",
+                      "text": "극복 메커니즘 : 표제지, 목차, 본문, 판권 페이지를 표준 구조 슬롯으로 고정. 작성 완료 즉시 전 세계 유통 가능한 완벽한 전자책(EPUB/PDF)으로 원클릭 빌드",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "jpg8ORbvM7f0",
+                      "text": "쿨하게 버린 것 : 초기 아이디어 인큐베이팅용 자유 스케치 공간",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "sbHSR2u94yr8",
+              "text": "📁 [서사 플롯 & 정형 스키마 바인딩 군]",
+              "children": [
+                {
+                  "id": "hCGnAUSFsSMM",
+                  "text": "14. LivingWriter (리빙라이터) — 플롯 보드 그리드 & 스마트 인물/설정 태깅",
+                  "children": [
+                    {
+                      "id": "TiRl1Tb6BL3R",
+                      "text": "극복한 Pain : 서사 플롯의 인과관계 왜곡, 설정 구멍(Plot Hole), 복선 유실",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "0GC609DobY9u",
+                      "text": "극복 메커니즘 : 챕터마다 핵심 목표와 복선을 고정하는 그리드 제공. 본문 작성 중 등장인물이나 장소를 언급하면 자동으로 설정집 노드와 스마트 태깅되어 설정 충돌 방지",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "EcvIRmnczQSt",
+                      "text": "쿨하게 버린 것 : 일반 비즈니스 문서 서식 범용성",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "P64n3Mj7VCys",
+                  "text": "15. Dabble (대블) — 씬(Scene) 카드 타임라인 동기화 & 100% Human Words",
+                  "children": [
+                    {
+                      "id": "6Ly6q0RPqLAK",
+                      "text": "극복한 Pain : 영혼 없는 AI 상투어(Slop) 혐오, 시간축과 본문 간의 불일치",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "Gv0Q3vabC2Bv",
+                      "text": "극복 메커니즘 : 사이트 전면에 'NO SUBSTITUTES · 100% Human WORDS'를 선언하며 인간의 주체적 문체 보존. 스토리 전개 시간축과 세부 씬 카드를 1:1로 묶어 서사 궤도 이탈 방지",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "hbsvVCf7pJuO",
+                      "text": "쿨하게 버린 것 : 화려한 AI 자동 완성 및 대필 기능",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "revs9Ly95jJO",
+                  "text": "17. Adobe InDesign & XD — 마스터 페이지 그리드 & 텍스트 프레임 스레딩",
+                  "children": [
+                    {
+                      "id": "GGv3eZxAQ3eb",
+                      "text": "극복한 Pain : 줄글이 길어질 때 레이아웃이 와르르 깨지는 불안, 조판 디자인 노가다",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "E009ZKxtDpTr",
+                      "text": "극복 메커니즘 : 마스터 페이지에 수학적 그리드를 설정하고, 텍스트가 넘치면 다음 프레임으로 자동 흘러넘치게 스레딩(Threading) 연결하여 물리적 서식 무결성 유지",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "Am2UjK5fyMz3",
+                      "text": "쿨하게 버린 것 : 가벼운 일상 메모 작성성, 비개발자/비디자이너의 접근성",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "VIDMkr0MGGpt",
+                  "text": "18. Google Sheets AI (바이브 라이팅 사례) — 정형 스키마 바인딩 & 정량 교차 검증",
+                  "children": [
+                    {
+                      "id": "XLnXvepnrcZY",
+                      "text": "극복한 Pain : 수치 없는 뜬구름 형용사 남발, 문서 내 데이터 왜곡 및 환각",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "lcfhPccU0EQp",
+                      "text": "극복 메커니즘 : 행과 열로 정의된 스프레드시트 셀에 프롬프트와 입력값을 엄격히 결속. 100개 데이터셋을 정량 메트릭(Δ%, YoY) 기반으로 일괄 배치 추출하여 환각을 원천 차단",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "0g39PSTr5Z1J",
+                      "text": "쿨하게 버린 것 : 풍부한 감정적 수식어와 유려한 줄글 서사",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        },
+        {
+          "id": "FlQLgUIcq6aD",
+          "text": "🧱 3종족. 레고 블록 조립파 레퍼런스 (Block Assembly Tribe — 14종)",
+          "children": [
+            {
+              "id": "Sqdwf3j1MZsj",
+              "text": "3종족 극복 전략의 본질 : 검증된 모듈 블록을 조립하는 직관적인 D&D 손맛과 3단 뷰포트로 글쓰기 노가다와 텍스트벽 멀미를 분쇄 (대신 서식 매몰과 전체 논리 척추 상실이 발생)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "Kxz9uBJjL15c",
+              "text": "📁 [무마찰 입력 & D&D 스냅 조립 군]",
+              "children": [
+                {
+                  "id": "cRiVpAcnC2RS",
+                  "text": "21. Things 3 — Magic Plus Button & 쫀득한 16ms 마이크로 인터랙션",
+                  "children": [
+                    {
+                      "id": "05VfAdfICSxr",
+                      "text": "극복한 Pain : 생각 포집 시 서식 분류 강박, 마찰로 인한 아이디어 휘발, 조작 피로",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "sjgQ8LwECWtT",
+                      "text": "극복 메커니즘 : 화면 우하단의 `+` 버튼을 끌어당겨 원하는 위치나 하위 슬롯에 즉시 인라인 스냅 삽입(Insert Anywhere). 완료 시 0.1초 동안 살짝 튕기며 사라지는 쫀득한 손맛 피드백",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "JU0Z8xS9PGkh",
+                      "text": "쿨하게 버린 것 : 깊은 계층 트리 폴더링, 장문 문서 작성 서식",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "RwdSywehNxyn",
+                  "text": "23. Puck — 오픈소스 React 컴포넌트 빌더 & 3단 표준 뷰포트",
+                  "children": [
+                    {
+                      "id": "uDQiMT5TLEgI",
+                      "text": "극복한 Pain : 텍스트와 UI 컴포넌트 간의 분절, 위지윅 조립 시 시각적 인지 피로",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "Kb1x0MwA7QN8",
+                      "text": "극복 메커니즘 : [좌측 아웃라인 트리 (20%)] : [중앙 위지윅 작업판 (60%)] : [우측 속성 인스펙터 (20%)]의 3단 표준 뷰포트 정립. 컴포넌트 계층 트리를 보며 본문을 조립",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "5Y5ARwvUFP9J",
+                      "text": "쿨하게 버린 것 : 연속적인 키보드 타이핑 줄글 집필 리듬",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "kzcwqTH85lQH",
+                  "text": "24. Framer — 반응형 스택(Stack) 컴포넌트 & 선택 영역 AI 레이아웃",
+                  "children": [
+                    {
+                      "id": "q2HZL2X6yX8x",
+                      "text": "극복한 Pain : 줄글 ➔ 시각 레이아웃 수작업 노가다, 모바일/데스크톱 반응형 조판 피로",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "McHylxff2RtP",
+                      "text": "극복 메커니즘 : 텍스트 길이에 따라 컨테이너가 유기적으로 늘어나는 오토 레이아웃 스택. 글 전체를 갈아엎지 않고 사용자가 지정한 특정 블록만 AI에게 새 레이아웃 대안 생성을 요청",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "icMt6ZdasnjU",
+                      "text": "쿨하게 버린 것 : 가벼운 텍스트 에디터의 실행 속도",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "YNO0OPV4MHZX",
+                  "text": "25. Webflow — 좌 프롬프트 대화 ↔ 우 실시간 렌더링 듀얼 뷰포트",
+                  "children": [
+                    {
+                      "id": "yqNM0WuKil6k",
+                      "text": "극복한 Pain : AI 지시 후 결과물을 보러 창을 오가는 컨텍스트 스위칭 피로",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "F2KZaMPvoxN7",
+                      "text": "극복 메커니즘 : 좌측에서 AI에게 자연어로 수정 지시를 내리면, 우측 프리뷰 캔버스에서 변경 사항이 1초 만에 실시간으로 반영되어 즉각적인 시각 피드백 제공",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "KyNRRLnUswOu",
+                      "text": "쿨하게 버린 것 : 0.5초 이내 첫 줄 진입 속도 (무거운 웹 빌더 엔진 로딩 감수)",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "rIlW5p8iwsUU",
+              "text": "📁 [자료 인제스천 & 워크플로우 승격 군]",
+              "children": [
+                {
+                  "id": "RrMi6w8NXrRi",
+                  "text": "22. Archify — 결정론적 빌드 린터 & 원천 커밋 출처 고정",
+                  "children": [
+                    {
+                      "id": "T6rGJGzpqaUa",
+                      "text": "극복한 Pain : 출처 없는 블랙박스 공포, AI 산출물의 스키마 파괴, 무책임한 코드 투척",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "DG6rZFGk1OHr",
+                      "text": "극복 메커니즘 : AI가 제안한 모든 블록마다 원본 레퍼런스 커밋 번호를 영구 고정. 경로 검사와 스키마 테스트를 100% 통과하지 못한 코드는 메인 저장소에 절대 병합시키지 않는 하드 게이트 가동",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "SCpNnGiPSLy0",
+                      "text": "쿨하게 버린 것 : 빠른 속도로 대충 넘어가는 타협적 개발 경험",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "qQWFRaRYgeL4",
+                  "text": "26. Manifest (매니패스트) — 대화 인제스천 파이프라인 & 영역 선택 우선 생성",
+                  "children": [
+                    {
+                      "id": "7BXfMhqsCtaI",
+                      "text": "극복한 Pain : 백지 기획서 작성의 뇌정지, 회의록/메모 재가공 피로, AI의 무분별한 덮어쓰기",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "HkCI2IoTrFTa",
+                      "text": "극복 메커니즘 : 두서없는 회의록과 대화 메모를 던지면 와이어프레임과 기획서 뼈대를 자동 추출. 완성 전까지 사용자가 영역을 선택해 승인(Approve)해야만 정본으로 확정되는 게이트웨이",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "ZuvhNJhdGQLQ",
+                      "text": "쿨하게 버린 것 : 자유로운 비정형 마크다운 줄글 에디터",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "xKdOkmxx5KET",
+                  "text": "27. Storyflow — 화이트보드 섹션 카드 ➔ 원클릭 문서·슬라이드 승격",
+                  "children": [
+                    {
+                      "id": "XEb4a406UXPu",
+                      "text": "극복한 Pain : 브레인스토밍 메모의 사문화(Dead End), 발표 자료 조판 노가다",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "Aaq433wDv6JN",
+                      "text": "극복 메커니즘 : 화이트보드 위에 자유롭게 붙여둔 섹션 카드들을 클릭 한 번으로 폴더로 묶고, 발표용 슬라이드 덱이나 정돈된 기획서 문서로 즉시 승격",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "PJVnLjDzmiqO",
+                      "text": "쿨하게 버린 것 : 코드 레벨의 정밀한 스타일 CSS 제어",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "GGB7PMXWVZ7F",
+                  "text": "28. Linear — 키보드 퀵점프 (`Cmd+K`) & AI 기여자 거버넌스",
+                  "children": [
+                    {
+                      "id": "2SbMYQ6CVkJe",
+                      "text": "극복한 Pain : 마우스 조작 피로, AI 도입 시 책임 소재 불분명 및 작성자 낙인 공포",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "fPxTJrxtWMpZ",
+                      "text": "극복 메커니즘 : 마우스에 손 올릴 필요 없이 모든 작업과 문서를 단축키 하나로 점프. '인간이 주 담당자(Assignee)이고 AI는 조력자(Contributor)'라는 명확한 역할 규칙으로 책임 소재 규명",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "6v9hGzbMY0KR",
+                      "text": "쿨하게 버린 것 : 자유로운 2차원 캔버스 낙서와 리치 서식",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "mbknF7BImfvR",
+                  "text": "29. ProtoPie — 1줄 트리거 ➔ 1줄 리스폰스 분리 모듈화",
+                  "children": [
+                    {
+                      "id": "t6PLd7Iqsz7O",
+                      "text": "극복한 Pain : 복잡한 조건문과 인터랙션 로직 설계 시 줄글 엉킴 및 예외 룰 누락",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "gThZiTQbHoQ7",
+                      "text": "극복 메커니즘 : '트리거(입력)'와 '리스폰스(결과)'를 1:1 블록으로 엄격히 분리하여 조립. 복잡한 로직도 레고 블록처럼 시각적으로 인과관계가 명확히 드러남",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "xMejdWdH9xCe",
+                      "text": "쿨하게 버린 것 : 자연어 기반의 긴 서사 집필",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "ZZXqB9bU1hw6",
+              "text": "📁 [문서 협업 제안 & 시각 변환 슬롯 군]",
+              "children": [
+                {
+                  "id": "kcHfOcFArthr",
+                  "text": "30. Google Docs — 제안 모드 (Suggesting Mode) & 좌측 문서 개요 연동",
+                  "children": [
+                    {
+                      "id": "yWssoGeGhi5W",
+                      "text": "극복한 Pain : 협업 피드백 시 원본 훼손 분쟁, 퇴고 수정 사항 설명 스트레스",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "BuFKhz1J1DIL",
+                      "text": "극복 메커니즘 : 원본을 건드리지 않고 취소선과 녹색 하이라이트로 제안 카드를 띄워, 원작자가 원클릭으로 `[✓ 수락] / [✗ 거절]`을 결정",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "Sj3otmdRI5Os",
+                      "text": "쿨하게 버린 것 : 비선형 2차원 캔버스 조망 및 브랜치 버전 관리",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "48IC3mm2krp3",
+                  "text": "31. Google Docs Version Control Report — 분 단위 불변 타임라인 & 작성자별 색상 추적",
+                  "children": [
+                    {
+                      "id": "VbVvfWKRozvn",
+                      "text": "극복한 Pain : 대용량 협업 문서의 변경 이력 추적 불가 및 실수로 지웠을 때의 파멸 공포",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "apTOVCorOcaT",
+                      "text": "극복 메커니즘 : 문서를 편집하는 모든 순간을 분 단위 불변 타임라인으로 박제. 작성자별 고유 색상으로 변경점을 하이라이트하여 투명한 감사 추적(Audit Trail) 보장",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "kgcIpj2zfIXR",
+                      "text": "쿨하게 버린 것 : 로컬 오프라인 완전 독립성",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "cdJfWHMjUPv1",
+                  "text": "32. Boords — 텍스트 대본 ➔ 시각 스토리보드 자동 분해 슬롯",
+                  "children": [
+                    {
+                      "id": "tCRRyIzDAOj3",
+                      "text": "극복한 Pain : 글 다 쓰고 나서 회의용 시각 자료나 발표 컷을 일일이 그리는 노가다",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "rlTVPvnoQ4bf",
+                      "text": "극복 메커니즘 : 텍스트 줄글 대본을 던지면 핵심 씬과 지문을 인식하여 1장 1메시지 스토리보드 프레임 슬롯으로 자동 분해",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "HNotpbKwRiE0",
+                      "text": "쿨하게 버린 것 : 복잡한 텍스트 위계 트리 조작",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "cc7jFq7nWQed",
+                  "text": "33. Boarder — 칸반 카드 ↔ 상세 문서 양방향 상태 동기화",
+                  "children": [
+                    {
+                      "id": "cWLar5fa0Ex1",
+                      "text": "극복한 Pain : 문서와 프로젝트 관리 티켓이 따로 놀아 발생하는 지식 드리프트",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "hF8qes1qysLU",
+                      "text": "극복 메커니즘 : 문서 내 세부 블록이 칸반 보드의 카드와 1:1로 양방향 동기화되어, 상태 변경 시 문서 내용도 함께 최신 상태로 유지",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "xjKsD0rmLWlJ",
+                      "text": "쿨하게 버린 것 : 가벼운 단일 파일 메모장 경험",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "KTSoNGGJS47F",
+                  "text": "34. Clip Studio — 프레임 분할 룰러 & 벡터 레이어 물리 잠금",
+                  "children": [
+                    {
+                      "id": "RiCAvPxv6I0w",
+                      "text": "극복한 Pain : 컷 나누기 작업 시 인접 영역 침범 및 공들인 완성 컷 실수 훼손",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "scmXy6qbZXc0",
+                      "text": "극복 메커니즘 : 화면을 사각형 프레임으로 분할하면 내부 내용이 절대 밖으로 삐져나가지 못하게 마스킹. 완성된 레이어는 자물쇠로 잠가 추가 붓질을 물리적으로 차단",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "uvG9Sb08t61I",
+                      "text": "쿨하게 버린 것 : 텍스트 기반 논리 구조화",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        },
+        {
+          "id": "rzG9rmX764ST",
+          "text": "🏁 35종 레퍼런스 대조 총괄 요약 및 분석",
+          "children": [
+            {
+              "id": "GSvWodidTqif",
+              "text": "1. 3대 종족 극복 전략의 핵심 요약 및 딜레마 비교",
+              "children": [
+                {
+                  "id": "BC7hX2jgqzm2",
+                  "text": "1종족 극단적 자유파 (자유의 딜레마)",
+                  "children": [
+                    {
+                      "id": "1l0Pvq8JaniY",
+                      "text": "극복한 것 : 생각의 무한한 확장, 단일 노드 줌인으로 뇌 용량 과부하 차단, 16ms 타이핑 리듬",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "791Lv0qCvlUt",
+                      "text": "남겨진 고통 : 첫 시작의 백지 공포증, 캔버스 카드 배치 노가다, 구조 없는 난잡화",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "wh9glFIBzlix",
+                  "text": "2종족 엄격한 규칙·슬롯파 (규칙의 딜레마)",
+                  "children": [
+                    {
+                      "id": "hvsAJRkGMWLz",
+                      "text": "극복한 것 : Git 스냅샷/인라인 Diff로 롤백 불안 원천 차단, Reviewer 쓰기 박탈로 AI 환각 방어, 문서 무결성 보장",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "PYnu03Ql6b8e",
+                      "text": "남겨진 고통 : 숨 막히는 문법/규칙 학습 피로, 초기 자유로운 아이디어 발상의 질식",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "zFvX1s6oi4AO",
+                  "text": "3종족 레고 블록 조립파 (조립의 딜레마)",
+                  "children": [
+                    {
+                      "id": "WXhZvGovkFSM",
+                      "text": "극복한 것 : Things 3식 매직 플러스 인라인 스냅, 검증된 모듈 카드로 포맷 노가다 제거, 직관적 3단 뷰포트",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "GfitExT6KKcO",
+                      "text": "남겨진 고통 : 블록 서식 꾸미기에 매몰되어 글의 핵심 척추(A라인) 상실, 파편화",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "5loTKrTIby00",
+              "text": "2. 시장 34종 레퍼런스 어디에도 없는 '거대한 블루오션 (미해결 과제)'",
+              "children": [
+                {
+                  "id": "E8lEmc0Wyd8L",
+                  "text": "① 지적 소유권(Ownership) 보존과 사고력 퇴화 방지 (전 세계 유일 결핍)",
+                  "children": [
+                    {
+                      "id": "0hEbqNnaXIXM",
+                      "text": "시장의 현주소 : 34개 레퍼런스 중 Dabble의 'NO SUBSTITUTES' 선언 배너 외에는, 사용자의 고유 문체 지문을 지키거나 사유 근육의 퇴화를 막아주는 인터랙션을 제공하는 제품이 전무함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "kp4x5YaBvIkv",
+                      "text": "Scaffold Manager의 기회 : AI에게 글 전체 대필을 맡기는 것이 아니라, '내 생각의 해상도를 훈련시키는 비계(Scaffold)'로 작동할 때 시장 독점적 위치 선점 가능",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "qh4Uah1lrnCA",
+                  "text": "② 영혼 없는 칭찬봇 거부와 가혹한 비판자 갈증 (적대적 하네스)",
+                  "children": [
+                    {
+                      "id": "jzH1Y5sg2HRQ",
+                      "text": "시장의 현주소 : 일반 문서 툴의 AI는 전부 '훌륭한 기획입니다!'라고 아첨하는 Yes-Man 챗봇뿐임. 오직 ai-job-search 같은 극소수 코드 하네스에만 쓰기 박탈 Reviewer가 존재함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    },
+                    {
+                      "id": "dpQimZFQPd9g",
+                      "text": "Scaffold Manager의 기회 : 회의 전 상사나 동료 앞에서 털리기 전에, AI가 심사위원 페르소나로 빙의해 논리의 취약점을 먼저 난타해 주는 Visual Grill-Me 하드게이트 이식",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793332029989,
+                      "updatedAt": 1793332029989
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            },
+            {
+              "id": "bQU1yCuTHDhW",
+              "text": "3. Scaffold Manager의 최종 수렴 공식 (3대 종족의 결합)",
+              "children": [
+                {
+                  "id": "W1XpFSQIVlei",
+                  "text": "1종족에서 가져올 80% : Workflowy식 단일 노드 줌포커스 + 16ms 키보드 타이핑 리듬",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "U6fK2TBHN1Jj",
+                  "text": "2종족에서 가져올 80% : Git식 로컬 스냅샷 체크포인트 + 초록/빨강 인라인 Diff + ai-job-search식 쓰기박탈 Reviewer",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "RViXb1A6cjCZ",
+                  "text": "3종족에서 가져올 80% : Things 3식 매직 플러스 인라인 스냅 + 표준 3단 뷰포트 레이아웃",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                },
+                {
+                  "id": "9Q1VKPinBqhG",
+                  "text": "우리가 얹을 독창적 20% 킬러 무기 : 작성자의 주체성을 지키는 'Visual Grill-Me (지적 샌드백)' × '1D 아웃라인 ↔ 2D 캔버스 무지연 양방향 플립'",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793332029989,
+                  "updatedAt": 1793332029989
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793332029989,
+              "updatedAt": 1793332029989
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793332029989,
+          "updatedAt": 1793332029989
+        }
+      ],
+      "isFolded": true,
+      "nodeType": "bullet",
+      "createdAt": 1793332029989,
+      "updatedAt": 1793332029989
+    },
+    {
+      "id": "uRw9kMbu8Heo",
+      "text": "🚀 PART 3. PM 종합 분석 및 Scaffold Manager 프로토타입 실행 전략 (15분 공유회)",
+      "children": [
+        {
+          "id": "t0GQoUSqhEIw",
+          "text": "핵심 요약 : 거대한 35종 레퍼런스 탈곡과 JTBD 니즈 분석을 관통하는 최종 결론 — 왜 이 작업을 했고, 과거 웹소설의 성공 방정식에서 무엇을 계승했으며, Scaffold Manager 프로토타입이 가져야 할 핵심 사양·체크포인트·포기할 것·20% 독창적 킬러 무기는 무엇인가?",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "quote",
+          "createdAt": 1793333667172,
+          "updatedAt": 1793333667172
+        },
+        {
+          "id": "dLJplVXBy24n",
+          "text": "📁 [1. 프로젝트 추진 배경 및 분석 파이프라인 (Why & How)]",
+          "children": [
+            {
+              "id": "miWgcX1S1xNf",
+              "text": "시작은 무엇이었는가 : 현재 매일 쓰는 '.outline'의 병목 해결 갈증",
+              "children": [
+                {
+                  "id": "mwLhk3NzKoQW",
+                  "text": "추상적인 이상향의 도구를 만드는 것이 아니라, 지금 우리가 옵시디언 볼트에서 매일 사용하고 있는 '.outline' 에디터 환경에서 느끼는 답답함(수정 시 롤백 불가 불안, 1차원 줄글의 조망 한계, AI의 덮어쓰기 폭주)을 해결하기 위한 실전 프로토타입 구축 요구에서 출발",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "1rsxKr2tZYhf",
+                  "text": "글로벌 레퍼런스 서비스들을 막연히 구경하는 것이 아니라, 사용성 가설을 검증하기 위한 분해 수술대로 삼음",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "rFBs0IvVRM1e",
+              "text": "과거 성공 방정식의 소환 : 웹소설 어시스턴트 & 고작가 심층 인터뷰 회고",
+              "children": [
+                {
+                  "id": "yxaEgX1jUFGw",
+                  "text": "과거 웹소설 어시스턴트를 기획할 때, 겉핥기식 기능 나열을 버리고 전문가(고작가) 1명을 극한까지 파내어 작업 라이프사이클을 스윔레인(Swimlane) 차트로 도해화하고 수백 개 니즈를 포스트잇 카드로 뽑아냈던 성공 공식을 재가동",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "I085mIyUsR9m",
+                  "text": "그 노하우를 그대로 계승하여, '일단 끄적여 보는 것'부터 'JTBD 진보의 4가지 힘 캔버스'까지 작업자의 심층 결핍 86개를 바닥까지 탈곡 ➔ 그 결과가 바로 [PART 1. 창작과 작업 수행의 Pain 포인트]",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "QiohPqVpwJoM",
+              "text": "론 프리드먼의 《역설계》 방법론 탑재 : 80% 공통 기본기 + 20% 변주 무기 발라내기",
+              "children": [
+                {
+                  "id": "YzQGV6nRFTaW",
+                  "text": "세상에 완전히 새로운 것은 없다. 거대 레퍼런스들을 통째로 베끼려다 체하지 않고, ① 남들이 공통으로 지키는 80%의 익숙한 기본 공식과 ② 그들이 성공한 20%의 킬러 무기를 정밀 분리수거",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "0L0QPBGgy8IK",
+                  "text": "34종 레퍼런스를 1종족(자유)·2종족(규칙)·3종족(블록)으로 나누어 254개의 동작 원자(Atomic Interactions)를 핀셋 발췌하고 니즈 판과 결합 ➔ 그 결과가 바로 [PART 2. 35종 레퍼런스 극복 방식 대조]",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793333667172,
+          "updatedAt": 1793333667172
+        },
+        {
+          "id": "WXXynSf7R9W1",
+          "text": "📁 [2. PM이 정의하는 Scaffold Manager 핵심 사양 (C1~C5 파이프라인)]",
+          "children": [
+            {
+              "id": "pYFIzUcbfESh",
+              "text": "C1. 무마찰 포집 (Capture & Ingest) — Things 3식 팝업 & 원클릭 아웃라인 변환",
+              "children": [
+                {
+                  "id": "tQiDuJMH9UaE",
+                  "text": "해결하는 고통 : '생각은 쏟아지는데 처음부터 목차나 서식을 잡으려니 머리가 굳어버린다'",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "5Rz4r4NCdhPR",
+                  "text": "구현 사양 : 단축키 하나로 호출되는 경량 인박스 팝업에 줄바꿈으로 파편화된 생각을 포스트잇처럼 자유롭게 배설하고, 버튼 클릭 한 번으로 '.outline' 루트 노드 위계로 자동 정렬 묶기",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "Qhm4N5ddiJMw",
+                  "text": "참조 레퍼런스 : Things 3 (마찰 제로 입력) + Manifest (비정형 메모 인제스천)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "BMj8ImSVKm8I",
+              "text": "C2. 위계 뼈대화 (Structuring & Focusing) — Workflowy식 줌인 & URL to Scaffold",
+              "children": [
+                {
+                  "id": "athGwKkav5V2",
+                  "text": "해결하는 고통 : '문서가 길어지면 위아래 스크롤 피로와 디테일의 늪에서 길을 잃고 멍해진다'",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "rfImwBO1iC3z",
+                  "text": "구현 사양 : 어떤 불릿이든 클릭하면 해당 노드가 최상위 화면으로 전환되는 단일 노드 줌포커스(Zoom-in Focus) 및 16ms 키보드 무한 인덴트. 검증된 레퍼런스 URL을 던지면 알맹이는 빼고 목차 뼈대(Scaffold)만 빈칸 슬롯으로 즉시 복제",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "O2lIeM87PT4C",
+                  "text": "참조 레퍼런스 : Workflowy (단일 노드 줌인) + Scrivener (목차-리서치 바인더)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "vX24evC77fqa",
+              "text": "C3. 불변 안전망 (Safety Net & Staging) — Git식 체크포인트 & 인라인 Diff 체리픽",
+              "children": [
+                {
+                  "id": "FXnyVaDH7faB",
+                  "text": "해결하는 고통 : '수정하다가 날아갈까 봐 후회할까 봐 한 글자도 과감하게 못 지우겠다'",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "7JQ3c6UOmfgE",
+                  "text": "구현 사양 : 단축키로 찍는 로컬 체크포인트 스냅샷(`NodeCheckpointStore`). AI 제안 및 수정안을 초록(`+`)/빨강(`-`) 인라인 Diff로 시각 대조하고, 원하는 노드만 `Tab`(승인)/`Esc`(거절)로 핀셋 반영",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "p8Ie6UAiwE6d",
+                  "text": "참조 레퍼런스 : Git (커밋·Diff·체리픽) + Google Docs (제안 모드)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "HBjJ8aCADjPk",
+              "text": "C4. 2차원 조망 (Visualization & Branching) — 1D 아웃라인 ↔ 2D 캔버스 무지연 플립",
+              "children": [
+                {
+                  "id": "2QrQvmX2Ktkq",
+                  "text": "해결하는 고통 : '1차원 줄글로는 여러 대안(Branch)들의 인과관계가 한눈에 조망되지 않는다'",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "iRUZ2EOD7qNG",
+                  "text": "구현 사양 : 1차원 수직 아웃라인 트리가 단축키 하나로 2차원 브랜치 캔버스로 즉시 변환(`CanvasBranchFlipper`). 캔버스에서 노드를 이동하거나 대안을 비교한 결과가 아웃라인 트리에 무지연 양방향 실시간 동기화",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "kXUgZrCOJG7c",
+                  "text": "참조 레퍼런스 : Heptabase (공간 카드 시각화) + Obsidian Canvas + GitKraken (브랜치 트리)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "38988n6LJo7S",
+              "text": "C5. 에이전트 하네스 (Harness & Reviewer) — 노드 잠금(Lock) & 적대적 Reviewer 가혹 난타",
+              "children": [
+                {
+                  "id": "Fxr4Wh4adVEz",
+                  "text": "해결하는 고통 : '기껏 써둔 완성 노드가 AI 재생성에 날아가고, 아첨만 떠는 칭찬봇에 현타가 온다'",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "B17bepHSEJmJ",
+                  "text": "구현 사양 : 확정된 상위 노드는 자물쇠로 잠그고(`Ctrl + L`, `NodeLockManager`), 빈칸이나 미완성 블록만 v1/v2/v3 인라인 다중 발산. 회의 전 깐깐한 심사위원 페르소나로 빙의해 논리의 급소와 숨은 가정을 공격하는 적대적 비판자 모드 가동",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "BfMzGX20yVwJ",
+                  "text": "참조 레퍼런스 : ai-job-search (쓰기 권한 박탈 Reviewer) + Archify (하드 게이트) + Framer (선택 영역 AI)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793333667172,
+          "updatedAt": 1793333667172
+        },
+        {
+          "id": "FXZSPE1mgPQu",
+          "text": "📁 [3. 반드시 통과해야 할 5대 품질 체크포인트 (Quality Gates)]",
+          "children": [
+            {
+              "id": "RCwS9gnlNGfi",
+              "text": "Gate 01. 원본 파괴 0% 게이트 (Isolation & Staging)",
+              "children": [
+                {
+                  "id": "ZgQ7JIwoWfuf",
+                  "text": "점검 항목 : AI가 생성한 어떠한 텍스트도 작업자의 명시적 승인(Pick) 없이 메인 정본 노드를 직접 덮어쓰지 못하는 격리 샌드박스 안전선이 물리적으로 보장되는가?",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "XqruBg2w35f3",
+              "text": "Gate 02. 키보드 16ms 쫀득한 반응 속도 (Tactile Rhythm)",
+              "children": [
+                {
+                  "id": "zuOyEYwbjtjF",
+                  "text": "점검 항목 : 마우스로 손이 갈 필요 없이 엔터/탭/단축키만으로 모든 위계 조작과 줌인이 16ms 무지연으로 동작하며, 체크 완료 시 0.1초 경쾌한 피드백(Things 3 손맛)을 선사하는가?",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "yxLL8yDG9elc",
+              "text": "Gate 03. 1초 원클릭 롤백 안전망 (Deterministic Recovery)",
+              "children": [
+                {
+                  "id": "0qvrRqci7RNf",
+                  "text": "점검 항목 : 대규모 가지치기나 AI 제안 반영 후 마음에 들지 않을 때, 단축키 한 번으로 1초 전, 10분 전 체크포인트 상태로 완벽히 원상 복구할 수 있는가?",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "Mz0PpkCSxtyW",
+              "text": "Gate 04. 영혼 없는 칭찬봇(Yes-Man) 차단 & 급소 난타 (Adversarial Rigor)",
+              "children": [
+                {
+                  "id": "9A5aRSOvgGm2",
+                  "text": "점검 항목 : '훌륭한 기획입니다' 따위의 아첨을 원천 차단하고, 논리의 취약점과 데이터 부족을 소크라테스식 반론(Visual Grill-Me)으로 가혹하게 짚어주는가?",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "f9e7YuCcEo5Q",
+              "text": "Gate 05. 문체 지문 보존 & AI Slop(상투어) 제로 (Ownership Integrity)",
+              "children": [
+                {
+                  "id": "dPVydNOGqeTU",
+                  "text": "점검 항목 : '결론적으로', '다양한 측면을 고려하여' 같은 기름진 AI 상투어를 강제로 도려내고, 작성자 고유의 문체와 인지적 깊이(Why)를 훼손 없이 유지하는가?",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793333667172,
+          "updatedAt": 1793333667172
+        },
+        {
+          "id": "CXg98mpI3g5t",
+          "text": "📁 [4. 과감히 버릴 것 (Deliberate Blindness — 35장 흐린눈의 미학)]",
+          "children": [
+            {
+              "id": "tk8v063QHhez",
+              "text": "버릴 것 1. 클라우드 실시간 다자간 동시 편집 (Multiplayer Sync)",
+              "children": [
+                {
+                  "id": "vukWDepaQXii",
+                  "text": "버리는 이유 : 구글 닥스나 피그마식 동시 편집은 극심한 서버 인프라와 충돌 해결(CRDT) 비용을 유발함. Scaffold Manager의 본질은 개인 작업자가 옵시디언 볼트에서 오롯이 사유하고 깊게 기획하는 로컬 퍼스트 환경이므로 과감히 흐린눈",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "Babw1gYciCzv",
+              "text": "버릴 것 2. 서식 꾸미기 위지윅 기능 (Rich Styling & Typography)",
+              "children": [
+                {
+                  "id": "JRePqa3qLnQD",
+                  "text": "버리는 이유 : 폰트 크기, 컬러, 여백 조정 등 서식 매몰은 글의 핵심 척추(A라인) 설계를 방해하는 주범. 순수 텍스트 불릿과 단일 위계 트리에만 집중하고 스타일링은 최종 출력 단계로 완전히 격리",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "l534oQodQeXT",
+              "text": "버릴 것 3. 무거운 웹 빌더형 CMS 및 퍼블리싱 기능 (Full-Stack Publishing)",
+              "children": [
+                {
+                  "id": "MZmwk2I439dD",
+                  "text": "버리는 이유 : Webflow, Framer, Reedsy의 최종 배포/유통 엔진은 지금 당장의 가설 검증과 무관함. 우리의 유일한 닻은 매일 쓰는 '.outline'의 고통 해결이므로 복잡한 퍼블리싱 파이프라인은 쿨하게 배제",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "ZptvAaPssDRS",
+              "text": "버릴 것 4. 타이핑할 때마다 무분별하게 쌓이는 마이크로 자동저장 (Micro Auto-save)",
+              "children": [
+                {
+                  "id": "UB82GPabCA2Q",
+                  "text": "버리는 이유 : 오타 하나 칠 때마다 쌓이는 버전 히스토리는 비교 피로만 유발함. 작업자가 의도적으로 단축키를 눌러 남기는 '의미 있는 체크포인트(Milestone Commit)'만 정제 기록",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "e0pQbmBT0x1O",
+              "text": "버릴 것 5. 장황한 사전 프롬프트 엔지니어링 및 셋업 온보딩 (Setup Overhead)",
+              "children": [
+                {
+                  "id": "UwiuAbf4ZzQd",
+                  "text": "버리는 이유 : 도구 하나 쓰겠다고 세팅에 반나절을 쓰는 것은 본말전도. 볼트 내 기존 문서의 맥락을 스스로 슬라이싱하고 도구가 먼저 질문과 뼈대를 제시하는 제로 셋업 추구",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793333667172,
+          "updatedAt": 1793333667172
+        },
+        {
+          "id": "qI0lSDvi03vW",
+          "text": "📁 [5. 반드시 챙겨야 할 80% 기본기와 독창적 20% 킬러 무기 (Winning Strategy)]",
+          "children": [
+            {
+              "id": "EEBU2Z5Xk9wx",
+              "text": "반드시 챙겨야 할 80% 업계 표준선 (따라가지 않으면 탈락하는 위생 요인)",
+              "children": [
+                {
+                  "id": "J4XGNUugZG6y",
+                  "text": "Things 3의 마찰 제로 팝업 인박스 & 쫀득한 0.1초 완료 피드백 (손끝의 쾌감)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "MKvYntOYfIUu",
+                  "text": "Workflowy의 단일 노드 줌인(Zoom-in Focus)과 빵부스러기(Breadcrumb) 경로 (인지 과부하 차단)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "Hy82yspS17YB",
+                  "text": "Git의 명시적 스냅샷 체크포인트 & 초록/빨강 인라인 Diff 대조 (심리적 안전망)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "4fdIaJjenKUj",
+                  "text": "Scrivener의 좌측 목차 원고 + 우측 참고자료 분리 바인더 구조 (창 전환 피로 해소)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "bZVpTBo3HC71",
+              "text": "전 세계 34개 레퍼런스 어디에도 없는 독창적 20% 킬러 무기 (우리의 절대적 승부수)",
+              "children": [
+                {
+                  "id": "BbziKC0wNtOb",
+                  "text": "★ 킬러 무기 1. 지적 소유권(Ownership)을 보존하는 'Visual Grill-Me (지적 샌드백)'",
+                  "children": [
+                    {
+                      "id": "lYpNtYwixvac",
+                      "text": "시장의 거대한 공백 : 전 세계 34개 도구 중 작성자의 사유 근육 퇴화를 막고 주체성을 지켜주는 인터랙션은 전무함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793333667172,
+                      "updatedAt": 1793333667172
+                    },
+                    {
+                      "id": "pmTXahxBwpqf",
+                      "text": "우리의 솔루션 : AI에게 통째로 대필을 맡겨 바보가 되는 것이 아니라, 빈칸과 논리 뼈대만 핀셋으로 제안받고, 소크라테스식 반론과 5-Why 질문을 통해 내 생각의 해상도를 훈련시키는 '생각의 비계(Scaffold)' 제공",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793333667172,
+                      "updatedAt": 1793333667172
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "9olyg2Urz1u8",
+                  "text": "★ 킬러 무기 2. 1차원 아웃라인 트리 ↔ 2차원 브랜치 캔버스 무지연 양방향 플립",
+                  "children": [
+                    {
+                      "id": "fcQrGoW2tRHt",
+                      "text": "시장의 거대한 공백 : 트리는 트리대로, 캔버스는 캔버스대로 분리되어 있어 카드를 손수 배치하는 노가다 발생(Heptabase의 한계)",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793333667172,
+                      "updatedAt": 1793333667172
+                    },
+                    {
+                      "id": "v5QqcTdlnVQF",
+                      "text": "우리의 솔루션 : 키보드로 빠르게 친 1D 아웃라인이 버튼 하나로 2차원 분기 캔버스로 자동 정렬 플립되고, 캔버스 수정이 즉시 아웃라인으로 동기화되는 입체 사고 환경",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793333667172,
+                      "updatedAt": 1793333667172
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "0rQr6SUE3PeG",
+                  "text": "★ 킬러 무기 3. 개발자 하네스 사상을 문서 툴로 이식한 '아웃라이너 노드 픽스 & Reviewer'",
+                  "children": [
+                    {
+                      "id": "Sy9aoCkpe32n",
+                      "text": "시장의 거대한 공백 : 일반 문서 AI는 무조건 본문을 갈아엎거나 아첨하는 챗봇 형태에 불과함",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793333667172,
+                      "updatedAt": 1793333667172
+                    },
+                    {
+                      "id": "VpL1nYWC9Vjs",
+                      "text": "우리의 솔루션 : 확정 노드는 잠그고(`Lock`) 미완성 블록만 핀셋 생성하며, 쓰기 권한이 박탈된 Reviewer가 회의 전 논리적 허점을 먼저 공격하는 하드 게이트 가동",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1793333667172,
+                      "updatedAt": 1793333667172
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793333667172,
+          "updatedAt": 1793333667172
+        },
+        {
+          "id": "ZlRkcP9v9Jsa",
+          "text": "📁 [6. 15분 공유회 결론 및 PM 제언 (Executive Takeaway)]",
+          "children": [
+            {
+              "id": "Gvbuc69XhXai",
+              "text": "결론 : '도구의 노예가 아닌, 지휘관이 되는 글쓰기 환경 구축'",
+              "children": [
+                {
+                  "id": "acqZ0qC83VN1",
+                  "text": "우리가 이번 프로젝트에서 35개 레퍼런스를 분해하고 254개 원자를 니즈 판에 붙이며 확인한 시장의 진실은 명확하다. 사용자는 AI의 '화려한 대필'을 원하는 것이 아니라, '내 생각의 통제권을 잃지 않는 안전감'을 원하고 있다.",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "JyjIogEWOStB",
+                  "text": "남들이 이미 완성한 80%의 기본기(Git 안전망, Workflowy 줌인, Things 3 포집) 위에, 시장에 존재하지 않는 20%의 무기(지적 샌드백 Visual Grill-Me × 1D-2D 플립 × 노드 픽스 하네스)를 얹을 때, Scaffold Manager는 대체 불가능한 독점적 에디터가 된다.",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            },
+            {
+              "id": "FbQPwyJx3iEZ",
+              "text": "다음 즉각적 실행 행동 (Action Items)",
+              "children": [
+                {
+                  "id": "kb1mK9AjlfRA",
+                  "text": "1. C3 핵심 부품 개발 착수 : `NodeCheckpointStore`(로컬 스냅샷) + `InlineDiffDecorator`(초록/빨강 Diff)",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "fjwVWrkJIJYx",
+                  "text": "2. C5 노드 잠금 모듈 구현 : `Ctrl + L` 단축키 기반 노드 픽스(`NodeLockManager`) 및 프롬프트 인라인 팝업",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                },
+                {
+                  "id": "r3zJiD3u7h4a",
+                  "text": "3. 35장 흐린눈 카드 봉인 유지 : 협업, 퍼블리싱, 서식 꾸미기에 한눈팔지 않고 딱 MVP 3개 컴포넌트만 코드로 매듭짓기",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1793333667172,
+                  "updatedAt": 1793333667172
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1793333667172,
+              "updatedAt": 1793333667172
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793333667172,
+          "updatedAt": 1793333667172
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "bullet",
+      "createdAt": 1793333667172,
+      "updatedAt": 1793333667172
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793332029989,
+  "updatedAt": 1793333667172
+}
