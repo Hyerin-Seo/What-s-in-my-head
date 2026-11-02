@@ -1,0 +1,516 @@
+{
+  "version": "1.0.0",
+  "id": "xJ2IheQM2Gq7",
+  "title": "DocStudio 한국형 정형 문서 Picking & Building 기능 설계 (ver2)",
+  "rootNodes": [
+    {
+      "id": "f7ySlrbzqbOj",
+      "text": "DocStudio: 한국형 정형 문서 'Picking & Building' 기능 설계 (ver2 - 웹빌더식 표현·바이브·데이터 특성 조립 모델)",
+      "children": [
+        {
+          "id": "oIFudJRyeWdf",
+          "text": "0. 핵심 패러다임: 왜 Form-Filling이 아니라 Picking & Building인가?",
+          "children": [
+            {
+              "id": "92jzTqd8Eu8H",
+              "text": "구시대 Form-Filling (단순 빈칸 채우기)의 한계",
+              "children": [
+                {
+                  "id": "G9rcWo9MUxZg",
+                  "text": "틀(와꾸)이 굳어있어, 내 데이터의 풍부한 특성이나 강조하고 싶은 표현을 살리지 못하고 강제로 글자만 욱여넣음 (경직성, 표현 자유도 0)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "ZajtNi88fDtU",
+                  "text": "기존 문서 AI 도구들의 천편일률적 한계: 폼 먼저 고르고 빈칸 채우기만 반복",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            },
+            {
+              "id": "8qLP7ngUYK9C",
+              "text": "DocStudio의 Picking & Building (웹페이지 빌더식 컴포넌트 조립 모델)",
+              "children": [
+                {
+                  "id": "mXwwMfTDgS9n",
+                  "text": "문서를 고정된 종이 양식이 아니라, Framer/Webflow처럼 '반응형 블록(Element)들의 유기적 결합체'로 취급",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "hVLIjK35X5ex",
+                  "text": "3대 결정 축에 따른 능동적 조립:",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "HUaYzksgzMUm",
+                  "text": "1) 나타내고자 하는 표현 (Expression): 단순 줄글 서술 vs 2단 대조 표 vs 키-밸류 그리드 vs 마일스톤 카드",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "jbiaQNBIKVD5",
+                  "text": "2) 바이브 (Vibe / Formality): 법적 엄격성(Rigid 조항/단서 체제) vs 공공기관 격식(Formal 보고서 체제) vs 사내 의사결정(Compact 불릿 요약)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "0UJtY498uv43",
+                  "text": "3) 데이터 특성 (Data Semantics): 수치/금액(테이블 블록), 조건부 합의(조항+단서 블록), 타임라인(일정 블록), 당사자 권한(메타데이터 뱃지)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793358712179,
+          "updatedAt": 1793358712179
+        },
+        {
+          "id": "jfzdaY00DsZi",
+          "text": "1. 유저 시나리오 (User Scenario)",
+          "children": [
+            {
+              "id": "E3VbLOPwnLTJ",
+              "text": "페르소나",
+              "children": [
+                {
+                  "id": "9VPUqNuBjcTr",
+                  "text": "계약서, 기획서, 공문 등 격식 있는 문서를 작성하면서도, 데이터의 가독성과 설득력을 극대화해야 하는 실무자 (기획, 법무, 사업개발, 행정)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            },
+            {
+              "id": "ksK99ae8QU0A",
+              "text": "배경 및 상황",
+              "children": [
+                {
+                  "id": "vljMIeSre6rO",
+                  "text": "흩어진 메모(@회의록.md, @수치조건.xlsx, @합의사항.txt)에는 날짜, 지급 조건, 법적 의무, 금액 등 서로 다른 성격의 데이터가 혼재되어 있음",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "q2uOjtl2Wd0u",
+                  "text": "이를 단순 줄글이나 꽉 막힌 서식에 채우는 것이 아니라, 데이터 특성에 가장 어울리는 최적의 표현 컴포넌트(Element)로 조립하여 완성해야 함",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            },
+            {
+              "id": "ApVcEjCqaFmY",
+              "text": "핵심 목표",
+              "children": [
+                {
+                  "id": "DDDfGvXhz0Ls",
+                  "text": "AI가 내 데이터의 성격과 바이브를 분석해 최적의 '폼'을 추천해주면, 유저는 폼 내부의 상세 슬롯 Element들을 웹빌더처럼 피킹(Pick)하고 조립(Build)하여 1분 만에 설득력 높은 정형 문서를 완성",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            },
+            {
+              "id": "zzqbPxUD42T7",
+              "text": "한 줄 시나리오 요약",
+              "children": [
+                {
+                  "id": "VeJZAcTARuax",
+                  "text": "\"사용자는 데이터 특성과 원하는 바이브에 맞는 서식을 고르고(Form Picking), 각 슬롯의 표현 Element를 웹빌더처럼 피킹하여 조립(Element Building)함으로써 생동감 있는 정형 문서를 완성한다.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793358712179,
+          "updatedAt": 1793358712179
+        },
+        {
+          "id": "UayIaMas3tnA",
+          "text": "2. 유저 저니 맵 (User Journey Map)",
+          "children": [
+            {
+              "id": "PaSLpq1raBTo",
+              "text": "1단계: 원천 데이터 투입 및 'Form Picking' (바이브/데이터 기반 폼 뼈대 선택)",
+              "children": [
+                {
+                  "id": "7Ki9Y7Swb0Qm",
+                  "text": "@유저행동: 날것의 파편 메모와 수치 데이터를 던져 넣는다. AI가 데이터 밀도와 바이브를 분석하여 2~3개의 베이스 폼 후보를 제안하고, 유저는 1클릭으로 폼을 피킹한다.",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "v04G8WD1h1yt",
+                  "text": "#속마음: \"내 메모에 숫자가 많고 조건이 복잡하니까, 단순 줄글 계약서가 아니라 조항과 대조표가 섞인 하이브리드 폼을 알아서 추천해 주네!\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "CC0sSB9GBtJS",
+                  "text": "#PainPoint: 처음부터 어떤 양식을 써야 할지 모르는 시작 장벽(Cold-start)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "0ZU0OJNa9aWk",
+                  "text": "#해결책: AI가 입력 데이터의 시맨틱(수치 비중, 조건문 비중)을 분석하여 최적 뼈대 프리셋 제안",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            },
+            {
+              "id": "6zrQ0GAzLTB2",
+              "text": "2단계: 섹션별 'Element Picking & Building' (웹빌더식 컴포넌트 스왑 및 조립 - 핵심!)",
+              "children": [
+                {
+                  "id": "3S8ITExWySFt",
+                  "text": "@유저행동: 폼의 특정 슬롯(예: 대금 지급 조항)을 누르면, AI가 [표 형태] / [조항+단서 형태] / [마일스톤 카드 형태] 등 표현 Element 후보를 띄워준다. 유저는 가장 직관적인 Element를 피킹하여 슬롯에 장착한다.",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "C9FP4vnRgJ03",
+                  "text": "#속마음: \"대금 지급 조건은 줄글로 쓰면 눈에 안 들어오는데, 3회차 분할지급 테이블 Element로 바꾸니까 한눈에 쏙 들어오네!\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "s9JIlWkV28TH",
+                  "text": "#PainPoint: 기존 폼 필러는 칸 크기와 형태가 고정되어 있어 데이터 특성에 맞지 않는 형태를 강요받음",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "U6aYPtc0jv0L",
+                  "text": "#해결책: 웹페이지 빌더처럼 슬롯 단위로 표현 Element를 자유롭게 교체(Swap)하고 조립하는 인터랙션 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            },
+            {
+              "id": "zcYB6lBKSuTS",
+              "text": "3단계: 'Vibe & Density Tuning' (실시간 톤앤매너 및 표현 밀도 조율)",
+              "children": [
+                {
+                  "id": "9d9XKhql3xes",
+                  "text": "@유저행동: 상단 바이브 컨트롤러(격식 극대화 / 컴팩트 요약 / 시각적 하이라이트)를 조절하여 문서 전체의 문체와 정보 밀도를 즉각 변환한다.",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "xxUUkTylutjI",
+                  "text": "#속마음: \"공공기관 제출용으로 바이브를 올리니까 엄격한 조항체로 재정렬되고, 사내 보고용으로 내리니까 핵심 불릿 위주로 컴팩트해지네!\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "lLWE2ySugzq7",
+                  "text": "#PainPoint: 하나의 문서를 상사 보고용, 거래처 계약용, 감사용 등 수신처에 따라 매번 처음부터 다시 써야 하는 고통",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "6l0bZMKgS184",
+                  "text": "#해결책: 동일한 원천 데이터를 시맨틱 렌더러가 바이브에 맞게 Element 스타일을 동적 변환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            },
+            {
+              "id": "PZWMaCa6VKzg",
+              "text": "4단계: 정형 무결성 검수 및 라스트마일 컴파일 (Export)",
+              "children": [
+                {
+                  "id": "3z74jFgtGuJ9",
+                  "text": "@유저행동: 필수 슬롯 누락 체크 및 HWP/DOCX/PDF 다운로드.",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "7IQUMqPbaaOG",
+                  "text": "#속마음: \"웹빌더처럼 자유롭게 조립했는데, 최종 출력물은 공공/법무 표준 HWP/Word 서식 규격에 1픽셀도 오차 없이 딱 떨어지네!\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "b3VUV0NczTbZ",
+                  "text": "#PainPoint: 웹에서 예쁘게 조립해도 정작 HWP나 인쇄 규격으로 뽑으면 표가 깨질까 봐 두려움",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                },
+                {
+                  "id": "ghVdfZ8k6rCq",
+                  "text": "#해결책: 가상 인쇄 한계선(Ghost Print Boundary) 기반의 라스트마일 컴파일러 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793358712179,
+          "updatedAt": 1793358712179
+        },
+        {
+          "id": "7a3jxHAXKbHJ",
+          "text": "3. 유저 플로우 (User Flow) - '웹빌더식 Element 피킹과 조립'",
+          "children": [
+            {
+              "id": "MPDMTHPH7vXr",
+              "text": "3-1. 해피 패스 (#HappyPath) - 듀얼 스크린 캔버스 인터랙션",
+              "children": [
+                {
+                  "id": "piznvaGiIXQX",
+                  "text": "[듀얼 스크린 에디터: 좌측 소스 메모 & Element 팔레트 / 우측 반응형 슬롯 캔버스]",
+                  "children": [
+                    {
+                      "id": "Ogbg9OtITObu",
+                      "text": "@액션: 우측 캔버스의 특정 슬롯 클릭 (예: 제5조 지적재산권 귀속)",
+                      "children": [
+                        {
+                          "id": "LZwieJ6Si4Jr",
+                          "text": "➔ 좌측 팔레트에서 해당 슬롯에 추천하는 3대 표현 Element 카드 노출:",
+                          "children": [
+                            {
+                              "id": "tuXMWhcSuode",
+                              "text": "1) [엄격 조항형]: 법적 분쟁 방지용 상세 단서 조항 블록",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1793358712179,
+                              "updatedAt": 1793358712179
+                            },
+                            {
+                              "id": "J6GDFgaEFdsF",
+                              "text": "2) [권한 매트릭스 표]: 저작자별 권리 보유 비율 2단 테이블 블록",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1793358712179,
+                              "updatedAt": 1793358712179
+                            },
+                            {
+                              "id": "bRHQlTdpj0c8",
+                              "text": "3) [요약 뱃지형]: 핵심 귀속 주체만 강조하는 컴팩트 블록",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1793358712179,
+                              "updatedAt": 1793358712179
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1793358712179,
+                          "updatedAt": 1793358712179
+                        },
+                        {
+                          "id": "QZ7jqes8LFj7",
+                          "text": "@액션: 유저가 '2) 권한 매트릭스 표' Element 피킹 후 슬롯에 장착 ➔ 메모 데이터가 테이블 행/열로 자동 매핑 렌더링",
+                          "children": [
+                            {
+                              "id": "cQNJN3i1BojS",
+                              "text": "@액션: 상단 바이브 슬라이더 조절 ➔ 폰트, 여백, 조항 어미(~한다 vs ~함) 반응형 전환",
+                              "children": [
+                                {
+                                  "id": "wPa3cNe4ygjd",
+                                  "text": "[최종 완성 상태] ➔ '문서 컴파일' 클릭 ➔ HWP/DOCX 정형 파일 다운로드",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1793358712179,
+                                  "updatedAt": 1793358712179
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1793358712179,
+                              "updatedAt": 1793358712179
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1793358712179,
+                          "updatedAt": 1793358712179
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1793358712179,
+                      "updatedAt": 1793358712179
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            },
+            {
+              "id": "oz68QrtEU0Zi",
+              "text": "3-2. 상세 화면별 인터랙션 및 예외 처리 (#EdgeCase)",
+              "children": [
+                {
+                  "id": "0y9sXPX9TraM",
+                  "text": "[슬롯 Element 교체(Swap) 및 데이터 변환 인터랙션]",
+                  "children": [
+                    {
+                      "id": "MrdzyWxj2h5H",
+                      "text": "@액션: 이미 배치된 Element를 마우스 우클릭 또는 상단 툴바에서 '다른 Element로 교체(Swap)' 선택",
+                      "children": [
+                        {
+                          "id": "xPimYtWGrVdW",
+                          "text": "? 조건: 원천 메모 데이터가 대상 Element 구조(예: 표, 타임라인)로 자동 변환 가능한가?",
+                          "children": [
+                            {
+                              "id": "sMz3a7mYKmvA",
+                              "text": "변환 가능 (#HappyPath): 데이터 손실 없이 즉시 새로운 시각적 컴포넌트로 재렌더링",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1793358712179,
+                              "updatedAt": 1793358712179
+                            },
+                            {
+                              "id": "clmYFaA8xmNp",
+                              "text": "변환 애매 (#예외): \"수치/구조 데이터가 부족합니다. AI에게 이 Element에 맞게 데이터 보강을 지시하시겠습니까?\" 팝업 노출",
+                              "children": [
+                                {
+                                  "id": "yt53tNHkzgx0",
+                                  "text": "@액션: 'AI 데이터 보강 지시' 승인 ➔ AI가 문맥을 추론하여 빈 열(Column)을 채우고 주황색 테두리로 '검토 필요' 마킹",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1793358712179,
+                                  "updatedAt": 1793358712179
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1793358712179,
+                              "updatedAt": 1793358712179
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1793358712179,
+                          "updatedAt": 1793358712179
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1793358712179,
+                      "updatedAt": 1793358712179
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793358712179,
+                  "updatedAt": 1793358712179
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358712179,
+              "updatedAt": 1793358712179
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793358712179,
+          "updatedAt": 1793358712179
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793358712179,
+      "updatedAt": 1793358712179
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793358712179,
+  "updatedAt": 1793358712179
+}

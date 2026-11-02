@@ -1215,35 +1215,14 @@
                   "updatedAt": 1793336390614
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793331683120,
               "updatedAt": 1793331683120
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793330195968,
           "updatedAt": 1793331683120
-        },
-        {
-          "id": "ufT1xzlUPSaO",
-          "text": "[doc storylining] 백데이터와 ai의 제안을 통해서 문서의 핵심 뼈대 골격을 잡아주고, 몇가지 후보군을 제안하고 피킹하는 형태를 더 선호할 것이다 & 레퍼런스로부터 척추 뽑기",
-          "children": [],
-          "createdAt": 1793333781486,
-          "updatedAt": 1793336801986
-        },
-        {
-          "id": "3sVxDXFDRx95",
-          "text": "[doc reconstructing] 문서 서식 중 여러 개를 선별해서 각각의 세부 컴포넌트만 선별적으로 선택해서 재구성을 하면 사용자가 좋아할 것이다",
-          "children": [],
-          "createdAt": 1793334600860,
-          "updatedAt": 1793336801986
-        },
-        {
-          "id": "0PUS40Rie2sP",
-          "text": "[doc manual] 한 번 생성한 document 는 다음에는 똑같이 작업을 할 수 있도록 에이전트에게 지침을 '지침 생성하기' 이런 식으로만 만들 수 있으면 좋아할 것이다",
-          "children": [],
-          "createdAt": 1793334823102,
-          "updatedAt": 1793338549162
         },
         {
           "id": "PuUB3ixpnve8",
@@ -1342,7 +1321,7 @@
               "updatedAt": 1793330430155
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793330371048,
           "updatedAt": 1793330906146
         },
@@ -1470,7 +1449,7 @@
               "updatedAt": 1793333522162
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793333363191,
           "updatedAt": 1793333518416
         },
@@ -1507,6 +1486,64 @@
           "updatedAt": 1793333770833
         },
         {
+          "id": "ufT1xzlUPSaO",
+          "text": "[doc storylining] 백데이터와 ai의 제안을 통해서 문서의 핵심 뼈대 골격을 잡아주고, 몇가지 후보군을 제안하고 피킹하는 형태를 더 선호할 것이다 & 레퍼런스로부터 척추 뽑기",
+          "children": [],
+          "createdAt": 1793333781486,
+          "updatedAt": 1793333910742
+        },
+        {
+          "id": "Qo7m5GvcYJGh",
+          "text": "[project to doc-slot zoom in-out] project 단위에서의 큰 조망과 관리에서부터 아주 디테일한 문서 slot 개별의 작업까지 포커스를 조절하며(차원 조절에 따른 ai 자동 서포팅 차이) 깎아나가는 작업을 선호할 것이다",
+          "children": [
+            {
+              "id": "JODW2I3u2WeQ",
+              "text": "like 캐드 프로그램",
+              "children": [],
+              "createdAt": 1793334020768,
+              "updatedAt": 1793334052385
+            },
+            {
+              "id": "sA87Jf0Ejoh7",
+              "text": "https://andymatuschak.org/",
+              "children": [],
+              "createdAt": 1793364198551,
+              "updatedAt": 1793364199317
+            },
+            {
+              "id": "qh2JHA8G6UqK",
+              "text": "https://app.gingkowriter.com/BJHdia9",
+              "children": [],
+              "createdAt": 1793364199996,
+              "updatedAt": 1793364208081
+            }
+          ],
+          "createdAt": 1793333912766,
+          "updatedAt": 1793334041444
+        },
+        {
+          "id": "OwT1E613TJHB",
+          "text": "[answer evidence] 모든 답변에 근거를 명확히하고, 해당 근거를 클릭했을 때 바로 우측에 띄워줄 수 있으면 좋아할 것이다",
+          "children": [
+            {
+              "id": "NVvU6EvOeLuq",
+              "text": "1. 필수 Grounding & Highlighting - 대충 제목만 던져주는 것이 아니라 근거가 되는 섹션 혹은 단락으로 바로 띄워놓기",
+              "children": [],
+              "createdAt": 1793334314172,
+              "updatedAt": 1793334371197
+            },
+            {
+              "id": "6vXY1u5DtZ74",
+              "text": "2. grounding 이 없을 수도(뇌피셜이다!), 여러 개일 수도, 후보군만 있는 애매한 상태일 수도 -> 그냥 표시를 해두자!",
+              "children": [],
+              "createdAt": 1793334379937,
+              "updatedAt": 1793334417766
+            }
+          ],
+          "createdAt": 1793334054975,
+          "updatedAt": 1793334221509
+        },
+        {
           "id": "1Qc75QnDmXdL",
           "text": "[skill&guide injection] 새롭게 접하는 작업 혹은 문서를 봤을 때 그거에 딸린 작성법이나 작성 가이드를 자연스럽게 ai에게 인젝션하면 좋아할 것이다",
           "children": [
@@ -1527,7 +1564,7 @@
               "updatedAt": 1793334498594
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793334433596,
           "updatedAt": 1793334486239
         },
@@ -1575,7 +1612,7 @@
               "updatedAt": 1793335439802
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793335439802,
           "updatedAt": 1793335439802
         },
@@ -1600,7 +1637,7 @@
               "updatedAt": 1793335636476
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793335581376,
           "updatedAt": 1793335629761
         },
@@ -1628,5 +1665,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793260355692,
-  "updatedAt": 1793346338846
+  "updatedAt": 1793364208081
 }

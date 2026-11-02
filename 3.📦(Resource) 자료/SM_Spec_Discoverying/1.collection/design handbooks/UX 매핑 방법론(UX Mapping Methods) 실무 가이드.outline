@@ -1,0 +1,385 @@
+{
+  "version": "1.0.0",
+  "id": "21HJNDCIBO2B",
+  "title": "UX 매핑 방법론(UX Mapping Methods) 실무 가이드",
+  "rootNodes": [
+    {
+      "id": "jVYJoXK3Wg1I",
+      "text": "세부 유형별 실전 키워드 (다양한 종류)",
+      "children": [
+        {
+          "id": "mB6K6pJxLsBp",
+          "text": "Empathy Map (공감 지도): ",
+          "children": [
+            {
+              "id": "kP3XZvN9IfhA",
+              "text": "사용자가 무엇을 말하고(Says), 생각하고(Thinks), 행동하고(Does), 느끼는가(Feels)를 4분면으로 쪼개는 맵",
+              "children": [],
+              "createdAt": 1793433737914,
+              "updatedAt": 1793433738939
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793433728562,
+          "updatedAt": 1793433737914
+        },
+        {
+          "id": "Uzc0GYITRLXx",
+          "text": "User Journey Map vs Experience Map: ",
+          "children": [
+            {
+              "id": "iHdwMf1Rm2U7",
+              "text": "단순 감정선뿐 아니라 제품 외부의 삶까지 포괄하는 거시적 지도",
+              "children": [],
+              "createdAt": 1793433743320,
+              "updatedAt": 1793433743454
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793433728562,
+          "updatedAt": 1793433743320
+        },
+        {
+          "id": "QretGrfqcAiM",
+          "text": "Task Flow vs User Flow: ",
+          "children": [
+            {
+              "id": "Jnr1NN32PKDJ",
+              "text": "특정 기능 1개를 깰 때의 화면 분기 다이어그램",
+              "children": [],
+              "createdAt": 1793433746548,
+              "updatedAt": 1793433746664
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793433728562,
+          "updatedAt": 1793433746548
+        },
+        {
+          "id": "AKPIkVq5HeEc",
+          "text": "User Story Mapping (유저 스토리 매핑): ",
+          "children": [
+            {
+              "id": "yAX9ZM7yIXRz",
+              "text": "기획의 여정(가로축)과 개발 우선순위(세로축)를 포스트잇 매트릭스로 엮는 초강력 기법 (제프 패튼 창안)",
+              "children": [],
+              "createdAt": 1793433749505,
+              "updatedAt": 1793433749708
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793433728562,
+          "updatedAt": 1793433749505
+        },
+        {
+          "id": "BPApyZfGMKrp",
+          "text": "Service Blueprint (서비스 블루프린트): ",
+          "children": [
+            {
+              "id": "AGiaZLUyQNF1",
+              "text": "사용자의 화면 앞 행동(Frontstage)과 뒷단 백엔드/데이터베이스/운영자(Backstage)의 싱크로율을 입체적으로 그린 끝판왕 도면",
+              "children": [],
+              "createdAt": 1793433752862,
+              "updatedAt": 1793433753096
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793433728562,
+          "updatedAt": 1793433752862
+        },
+        {
+          "id": "z1J0I2UXEwCp",
+          "text": "Pain Point Matrix (페인포인트 매트릭스):",
+          "children": [
+            {
+              "id": "CL57GLL3PELd",
+              "text": "불편함들을 나열한 뒤 [치명도(Impact) vs 발생 빈도(Frequency)] 2축으로 정렬하여 진짜 해결할 핵심 1순위를 뽑아내는 매트릭스",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793434261113,
+          "updatedAt": 1793434261113
+        },
+        {
+          "id": "ZB9dVx1ZwUhg",
+          "text": "Breadboarding (브레드보딩):",
+          "children": [
+            {
+              "id": "YlwbGLZoKAUk",
+              "text": "화면을 그리지 않고 [장소] - [기능] - [선] 3가지만으로 내 머릿속 형상을 텍스트 와이어프레임으로 끄집어내는 초경량 기법",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793434261113,
+          "updatedAt": 1793434261113
+        },
+        {
+          "id": "qHcavyMbXO1v",
+          "text": "Forces of Progress Diagram (진보의 4대 힘 다이어그램):",
+          "children": [
+            {
+              "id": "YrU4rKTQJDcl",
+              "text": "현재 쓰는 툴의 '밀어내는 힘(불편함)'과 새 툴에 대한 '끌어당기는 힘(원하는 형상)'을 4방향 화살표로 대조하는 분석 틀",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793434261113,
+          "updatedAt": 1793434261113
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793433517542,
+      "updatedAt": 1793434261113
+    },
+    {
+      "id": "pQyA5nzant2W",
+      "text": "방법론 레퍼런스 출처 사이트",
+      "children": [
+        {
+          "id": "p78xWeE5NSrk",
+          "text": "Nielsen Norman Group (NN/g)",
+          "children": [
+            {
+              "id": "xACMlsDuhwNV",
+              "text": "검색어:",
+              "children": [
+                {
+                  "id": "lu4plRsz5x9G",
+                  "text": "UX Mapping Cheat Sheet",
+                  "children": [],
+                  "createdAt": 1793433816989,
+                  "updatedAt": 1793433817794
+                },
+                {
+                  "id": "PWz445kYugh9",
+                  "text": "경험 다이어그래밍 (Experience Diagramming)",
+                  "children": [],
+                  "createdAt": 1793433841857,
+                  "updatedAt": 1793433846647
+                },
+                {
+                  "id": "uUl13sXTIC0a",
+                  "text": "서비스 디자인 툴킷 (Service Design Tools)",
+                  "children": [],
+                  "createdAt": 1793433847273,
+                  "updatedAt": 1793433852950
+                }
+              ],
+              "nodeType": "bullet",
+              "createdAt": 1793433581119,
+              "updatedAt": 1793433816989
+            },
+            {
+              "id": "VW1TRpvblYbw",
+              "text": "주소: nngroup.com/articles/ux-mapping-cheat-sheet",
+              "children": [],
+              "createdAt": 1793433797498,
+              "updatedAt": 1793433797498
+            },
+            {
+              "id": "To94OA1NUbX5",
+              "text": "내용: 엠파시 맵, 고객 여정 맵, 경험 맵, 서비스 블루프린트 4대 맵의 차이와 언제 무엇을 써야 하는지 한 장으로 완벽 정리된 바이블입니다.",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1793433581119,
+              "updatedAt": 1793433604145
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793433581119,
+          "updatedAt": 1793433813106
+        },
+        {
+          "id": "n3I3u11YMBMB",
+          "text": "Service Design Tools (서비스 디자인 툴스)",
+          "children": [
+            {
+              "id": "CJycB3V0Y6rI",
+              "text": "주소: servicedesigntools.org",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1793433581119,
+              "updatedAt": 1793433605361
+            },
+            {
+              "id": "lz0dJ9G4Ju3X",
+              "text": "내용: 전 세계 디자인 씽킹/UX 방법론 수십 가지를 도면 형태별(지도형, 흐름형, 매트릭스형)로 모아둔 무료 오픈 아카이브입니다.",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1793433581119,
+              "updatedAt": 1793433605361
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "bullet",
+          "createdAt": 1793433581119,
+          "updatedAt": 1793433602192
+        },
+        {
+          "id": "Q61C1PG10lBE",
+          "text": "UI/UX 전문 사이트 커뮤니티",
+          "children": [
+            {
+              "id": "jP7wjCEqGkT2",
+              "text": "FigJam Community",
+              "children": [],
+              "createdAt": 1793433641445,
+              "updatedAt": 1793433792280
+            },
+            {
+              "id": "h7tgAlacurTA",
+              "text": "Miro Universe (미로 유니버스)",
+              "children": [],
+              "createdAt": 1793433636871,
+              "updatedAt": 1793433666836
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1793433581119,
+          "updatedAt": 1793433636871
+        },
+        {
+          "id": "YpnsfJ5mHKx2",
+          "text": "Basecamp (Shape Up)",
+          "children": [
+            {
+              "id": "WA3Z3FGPnbkJ",
+              "text": "검색어:",
+              "children": [
+                {
+                  "id": "0efOT179mYdO",
+                  "text": "Breadboarding (브레드보딩)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434261113,
+                  "updatedAt": 1793434261113
+                },
+                {
+                  "id": "5ndtvX04ccXD",
+                  "text": "Fat Marker Sketch (굵은 마커 스케치)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434261113,
+                  "updatedAt": 1793434261113
+                },
+                {
+                  "id": "8IMdc1fRWHiG",
+                  "text": "Rabbit Holes and Boundaries (토끼굴과 위험 경계)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434261113,
+                  "updatedAt": 1793434261113
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            },
+            {
+              "id": "MmaOGx1n918N",
+              "text": "주소: basecamp.com/shapeup",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            },
+            {
+              "id": "wvstwk3wOVTh",
+              "text": "내용: UI 디자인 툴을 켜지 않고 텍스트와 선만으로 복잡한 아이디어의 뼈대(Shape)를 15분 만에 뽑아내는 법을 다룬 공식 원문 가이드입니다.",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793434261113,
+          "updatedAt": 1793434261113
+        },
+        {
+          "id": "FPecEeHqtKnI",
+          "text": "Jobs to Be Done (JTBD) 공식 협회",
+          "children": [
+            {
+              "id": "ESsqWGM5KNR6",
+              "text": "검색어:",
+              "children": [
+                {
+                  "id": "NcFo3aH0qv59",
+                  "text": "JTBD Forces of Progress Diagram",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434261113,
+                  "updatedAt": 1793434261113
+                },
+                {
+                  "id": "ahUuj8JlmPwg",
+                  "text": "Timeline Interview (타임라인 인터뷰)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434261113,
+                  "updatedAt": 1793434261113
+                },
+                {
+                  "id": "CL8SQLZoeXVo",
+                  "text": "Unarticulated Needs (언어화되지 않은 결핍)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434261113,
+                  "updatedAt": 1793434261113
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            },
+            {
+              "id": "oVjbOLjFHxA7",
+              "text": "주소: jobstobedone.org",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            },
+            {
+              "id": "zw7ogpGH5xeJ",
+              "text": "내용: 사람이 기존 툴을 쓰다가 왜 불만을 품고 새 툴로 갈아타려 하는가를 추적하는 심리 다이어그램 템플릿을 무료 제공합니다.",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434261113,
+              "updatedAt": 1793434261113
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793434261113,
+          "updatedAt": 1793434261113
+        }
+      ],
+      "nodeType": "bullet",
+      "createdAt": 1793433581119,
+      "updatedAt": 1793434261113
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793433517542,
+  "updatedAt": 1793434302557
+}

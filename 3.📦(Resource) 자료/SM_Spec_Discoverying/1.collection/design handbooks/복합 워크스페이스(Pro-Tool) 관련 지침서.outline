@@ -1,0 +1,697 @@
+{
+  "version": "1.0.0",
+  "id": "rQZYvRLFmt6l",
+  "title": "복합 워크스페이스(Pro-Tool) 관련 지침서",
+  "rootNodes": [
+    {
+      "id": "YLzhXT1kCZm9",
+      "text": "이 세 권은 단순 미학/디자인 툴 사용법이 아니라, \"복잡한 기능을 가진 소프트웨어 화면을 어떻게 쳐내고 조립하는가\"만을 다룬 전 세계 공인 바이블",
+      "children": [
+        {
+          "id": "1aOHuA0Fg66D",
+          "text": "About Face 4: 인터랙션 디자인의 본질",
+          "children": [
+            {
+              "id": "fFCK5hqVRTcC",
+              "text": "앨런 쿠퍼 (에이콘출판사)",
+              "children": [],
+              "createdAt": 1793431851246,
+              "updatedAt": 1793431855717
+            },
+            {
+              "id": "XnMYe34dX324",
+              "text": "해결해 주는 질문: \"이것도 필요하고 저것도 필요한데 어떻게 쳐내야 하는가?\"",
+              "children": [],
+              "createdAt": 1793431856510,
+              "updatedAt": 1793431866540
+            },
+            {
+              "id": "uP3UmpAN0AhF",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "V6VZ3S1sJKlB",
+                  "text": "'목표 지향 디자인(Goal-Directed Design)'의 창시자가 쓴 복합 소프트웨어의 야전교범",
+                  "children": [],
+                  "createdAt": 1793431874680,
+                  "updatedAt": 1793431886188
+                },
+                {
+                  "id": "xrXDhQU44GEh",
+                  "text": "'기능 과잉(Featuritis)'과 '인지 부하'를 어떻게 잔인하게 쳐내고, 사용자가 작업할 때 딱 필요한 20%의 핵심 뷰포트만 남기는지 그 철학과 규칙",
+                  "children": [],
+                  "createdAt": 1793431886819,
+                  "updatedAt": 1793431897904
+                }
+              ],
+              "createdAt": 1793431867153,
+              "updatedAt": 1793431874223
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793431743637,
+          "updatedAt": 1793431850171
+        },
+        {
+          "id": "N4Qfc8fbVfs5",
+          "text": "《인터페이스 디자인: UI 패턴으로 푸는 인터랙션 설계 (Designing Interfaces)》",
+          "children": [
+            {
+              "id": "0coVM9vTaw9a",
+              "text": "제니퍼 티드웰 (한빛미디어/O'Reilly)",
+              "children": [],
+              "createdAt": 1793431938899,
+              "updatedAt": 1793431945274
+            },
+            {
+              "id": "xmLpAdlZZn7v",
+              "text": "해결해 주는 질문: \"모듈 낱개(아코디언, 트리, 카드)를 어떻게 하나의 화면으로 조립하는가?\"",
+              "children": [],
+              "createdAt": 1793431945801,
+              "updatedAt": 1793431958092
+            },
+            {
+              "id": "SrYa46rzejM0",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "sG8nV057DJuA",
+                  "text": "단순 부품 설명이 아니라, 복합 작업 공간(Workspaces), 분할 창(Split Panes), 드릴다운(Drill-down), 다단계 패널(Multi-pane Layouts)을 어떻게 결합해야 서로 충돌하지 않는지를 '패턴 언어' 형태로 조립 공식을 제공",
+                  "children": [],
+                  "createdAt": 1793431969747,
+                  "updatedAt": 1793431982474
+                }
+              ],
+              "createdAt": 1793431958579,
+              "updatedAt": 1793431969304
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793431935284,
+          "updatedAt": 1793431938030
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793431743637,
+      "updatedAt": 1793431839540
+    },
+    {
+      "id": "8PXBT6yXG0e8",
+      "text": "내 속의 '페인포인트'와 '내가 원하는 형상'을 끄집어내고 구체화하기 위한 실무 지침서 3선",
+      "children": [
+        {
+          "id": "Pw4e3LiURuNg",
+          "text": "《Shape Up (셰이프 업)》",
+          "children": [
+            {
+              "id": "XF0ER65fnpxG",
+              "text": "라이언 싱어 (Basecamp)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            },
+            {
+              "id": "H4AfKagggDTc",
+              "text": "해결해 주는 질문: \"막연한 필요성을 어떻게 너무 추상적이지도 않고, 너무 세부적이지도 않은 적당한 '형상(Shape)'으로 구체화하는가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            },
+            {
+              "id": "85nfng0t79QJ",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "JvRlrsJWaepH",
+                  "text": "브레드보딩 (Breadboarding): UI를 그리지 않고 [장소]-[Affordance]-[연결선]만으로 시스템의 뼈대를 끄집어내는 도면 기법",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432534215,
+                  "updatedAt": 1793432534215
+                },
+                {
+                  "id": "CAMCVEIlFZ4a",
+                  "text": "토끼굴(Rabbit Holes) 파악: \"이런 기능 만들면 좋겠다\"고 덤볐다가 끝없는 복잡도에 빠지는 함정을 미리 식별하고 경계선(Boundaries)을 긋는 법",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432534215,
+                  "updatedAt": 1793432534215
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793432534215,
+          "updatedAt": 1793432534215
+        },
+        {
+          "id": "EyepFrCosMY9",
+          "text": "《일자리 이론 플레이북 (The Jobs to be Done Playbook)》",
+          "children": [
+            {
+              "id": "IUim6VXPv0vD",
+              "text": "짐 칼바크 (Jim Kalbach)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            },
+            {
+              "id": "G9Z6mB6KINaS",
+              "text": "해결해 주는 질문: \"내가 지금 이 도구들을 흩뿌려놓고 쓰는 진짜 숨겨진 목적(Job)은 무엇인가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            },
+            {
+              "id": "fvHIspLxCe0W",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "taJdvRyYq1lf",
+                  "text": "우회 행동(Workaround) 역추적: \"어디가 불편한가?\"를 묻지 않고, 지금 목표 달성을 위해 억지로 땜질해서 쓰고 있는 행동을 관찰하여 진짜 페인포인트 추출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432534215,
+                  "updatedAt": 1793432534215
+                },
+                {
+                  "id": "YOCWAnVIugAN",
+                  "text": "진보(Progress)의 정의: 사용자가 원하는 것은 특정 UI 기능이 아니라 한 상태에서 더 나은 상태로 넘어가는 '진보'임을 규명",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432534215,
+                  "updatedAt": 1793432534215
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793432534215,
+          "updatedAt": 1793432534215
+        },
+        {
+          "id": "fkmuqvbE7CTW",
+          "text": "《디자인과 인간 심리 (The Design of Everyday Things)》",
+          "children": [
+            {
+              "id": "rKg3pf8XpmkM",
+              "text": "도널드 노먼 (학지사)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            },
+            {
+              "id": "CLD9yDTguWJ9",
+              "text": "해결해 주는 질문: \"왜 분명 불편한데 어디가 어떻게 불편한지 딱 짚어 말하지 못하는가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            },
+            {
+              "id": "8zhawYQ5tlKR",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "CyWx2lzz21yl",
+                  "text": "실행의 간극(Gulf of Execution): 머릿속 '하고 싶은 의도'와 시스템이 요구하는 '조작 방식' 사이의 단절 지점을 분석",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432534215,
+                  "updatedAt": 1793432534215
+                },
+                {
+                  "id": "r68y97ZCOiT5",
+                  "text": "평가의 간극(Gulf of Evaluation): 결과가 나왔을 때 '내가 원하는 대로 됐는지' 한눈에 확인하지 못해 발생하는 피로도의 정체를 분석",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432534215,
+                  "updatedAt": 1793432534215
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793432534215,
+              "updatedAt": 1793432534215
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793432534215,
+          "updatedAt": 1793432534215
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793432534215,
+      "updatedAt": 1793432534215
+    },
+    {
+      "id": "zSnSEOl8Bftk",
+      "text": "동료와 함께 기획·디자인을 고민하고 합의(Alignment)하기 위한 협업 지침서",
+      "children": [
+        {
+          "id": "8Ir3l1CpIRFT",
+          "text": "《린 UX (Lean UX)》",
+          "children": [
+            {
+              "id": "KqDK8ewOJsxy",
+              "text": "제프 고델프 & 조시 세이든 (한빛미디어)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432922474,
+              "updatedAt": 1793432922474
+            },
+            {
+              "id": "SwIADalMk39a",
+              "text": "해결해 주는 질문: \"두꺼운 기획서와 완벽한 디자인 시안을 주고받는 핑퐁(문서 던지기)을 어떻게 없앨 것인가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432922474,
+              "updatedAt": 1793432922474
+            },
+            {
+              "id": "oJJSBUNU1BBH",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "S5nCrg0LQtKD",
+                  "text": "가설 기반 협업 & 디자인 스튜디오: \"기획서 써올 테니 디자인해 줘\"를 금지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432922474,
+                  "updatedAt": 1793432922474
+                },
+                {
+                  "id": "s1umUjQH71Tl",
+                  "text": "한자리에 모여 5분간 각자 거칠게 8칸 스케치를 하고, 벽에 붙인 뒤 좋은 아이디어를 병합(Merge)하는 실시간 공동 설계(Co-design) 프로토콜",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432922474,
+                  "updatedAt": 1793432922474
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793432922474,
+              "updatedAt": 1793432922474
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793432922474,
+          "updatedAt": 1793432922474
+        },
+        {
+          "id": "rypJh6QNjhTk",
+          "text": "《구글 스프린트 (Sprint: 5일 만에 기획부터 프로토타입까지)》",
+          "children": [
+            {
+              "id": "tvLXy3ElKrGa",
+              "text": "제이크 냅 (김영사/Google Ventures)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432922474,
+              "updatedAt": 1793432922474
+            },
+            {
+              "id": "6UJ6OFiHWoLS",
+              "text": "해결해 주는 질문: \"서로 아이디어가 충돌하고 막연할 때, 끝없는 논쟁을 끝내고 며칠 만에 합의된 실물로 만드는 법\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793432922474,
+              "updatedAt": 1793432922474
+            },
+            {
+              "id": "n8o5mAHLQFCS",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "zrc3FYaLMwBt",
+                  "text": "침묵 속의 협업 (Together, Alone): 회의실에서 말 잘하는 사람의 의견으로 끌려가지 않도록 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432922474,
+                  "updatedAt": 1793432922474
+                },
+                {
+                  "id": "I9OiuSwJxa6I",
+                  "text": "각자 조용히 포스트잇에 적고 스케치한 뒤 스티커 투표(Heatmap Voting)로 결정하는 실전 워크숍 지침서",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793432922474,
+                  "updatedAt": 1793432922474
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793432922474,
+              "updatedAt": 1793432922474
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793432922474,
+          "updatedAt": 1793432922474
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793432922474,
+      "updatedAt": 1793432922474
+    },
+    {
+      "id": "UTNQ3GqzaKdL",
+      "text": "디자인적 발견과 UI 아이디어를 잘 기록해두기 위한 지침서",
+      "children": [
+        {
+          "id": "vhgwfIfOSK8F",
+          "text": "《마이크로인터랙션: 디테일이 승패를 가르는 인터랙션 디자인》",
+          "children": [
+            {
+              "id": "d80VPuoT2uKt",
+              "text": "댄 새퍼 (인사이트)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793433175192,
+              "updatedAt": 1793433175192
+            },
+            {
+              "id": "S5sIQAWCzO3c",
+              "text": "해결해 주는 질문: \"'이거 누르면 세로로 찰칵 접히면서 색인이 튀어나오면 좋겠다' 같은 UI 동작 아이디어를 어떤 규격으로 적어둬야 나중에 그대로 구현할 수 있는가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793433175192,
+              "updatedAt": 1793433175192
+            },
+            {
+              "id": "WtJENPeKYEfd",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "xrZtnrsBCCEm",
+                  "text": "인터랙션 기록 4대 요소: 머릿속 아이디어를 줄글로 쓰지 않고 딱 4칸짜리 카드로 기록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793433175192,
+                  "updatedAt": 1793433175192
+                },
+                {
+                  "id": "0VTBqex5MBzb",
+                  "text": "트리거(Trigger) ➔ 규칙(Rules) ➔ 피드백(Feedback) ➔ 루프와 모드(Loops & Modes)로 동작 규격화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793433175192,
+                  "updatedAt": 1793433175192
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793433175192,
+              "updatedAt": 1793433175192
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793433175192,
+          "updatedAt": 1793433175192
+        },
+        {
+          "id": "YVkB9PIDlxRW",
+          "text": "《스케치노트 핸드북 (The Sketchnote Handbook)》",
+          "children": [
+            {
+              "id": "CBa4OviT0lHA",
+              "text": "마이크 로디 (한빛미디어)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793433175192,
+              "updatedAt": 1793433175192
+            },
+            {
+              "id": "CxH7O5LvoYiI",
+              "text": "해결해 주는 질문: \"말로 적으면 상호작용 느낌이 안 나고, 피그마를 켜기엔 너무 무거울 때, 떠오른 UI 구조를 30초 만에 시각화해 남기는 법\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793433175192,
+              "updatedAt": 1793433175192
+            },
+            {
+              "id": "xln1yt5IM22F",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "U9R2o7LtmHCj",
+                  "text": "5대 도형 스케치 캡처: [선, 원, 사각형, 삼각형, 구름] 5가지 기호와 화살표만으로 종이나 패드에 1분 만에 캡처",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793433175192,
+                  "updatedAt": 1793433175192
+                },
+                {
+                  "id": "TudhPadlCWir",
+                  "text": "그림 실력과 무관하게 복잡한 UI 화면 전환과 레이아웃 흐름을 즉시 포착하는 비주얼 메모 테크닉",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793433175192,
+                  "updatedAt": 1793433175192
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793433175192,
+              "updatedAt": 1793433175192
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793433175192,
+          "updatedAt": 1793433175192
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793433175192,
+      "updatedAt": 1793433175192
+    },
+    {
+      "id": "2he1eG3L4w9F",
+      "text": "도메인 경계 구분 (Domain Boundary: Horizontal vs Vertical) 지침서",
+      "children": [
+        {
+          "id": "WctSGuupyNXf",
+          "text": "《도메인 주도 설계 핵심 (Domain-Driven Design Distilled)》",
+          "children": [
+            {
+              "id": "uPrFClyCxvDu",
+              "text": "본 버논 (에이콘출판사)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434861201,
+              "updatedAt": 1793434861201
+            },
+            {
+              "id": "HNeUR0zPT0di",
+              "text": "해결해 주는 질문: \"복잡한 현실 비즈니스에서 어디서부터 어디까지를 하나의 '독립된 도메인(문맥)'으로 잘라내야 시스템이 스파게티가 되지 않는가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434861201,
+              "updatedAt": 1793434861201
+            },
+            {
+              "id": "HR8J2Qm3V1Kp",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "HwPPBBciVeDB",
+                  "text": "바운디드 컨텍스트 (Bounded Context): 특정 용어와 모델이 유효한 명확한 경계선을 긋는 실전 공식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434861201,
+                  "updatedAt": 1793434861201
+                },
+                {
+                  "id": "OtSJg1hyKWr5",
+                  "text": "핵심 도메인(Core)과 서브 도메인의 분리: 본질인 '생각의 뼈대(Scaffold)'와 외부 산업 도메인(법률, 디자인 등)을 섞이지 않게 분리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434861201,
+                  "updatedAt": 1793434861201
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793434861201,
+              "updatedAt": 1793434861201
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793434861201,
+          "updatedAt": 1793434861201
+        },
+        {
+          "id": "VkD2jxqy4FZ0",
+          "text": "《팀 토폴로지 (Team Topologies)》",
+          "children": [
+            {
+              "id": "U1JddHYqYJYo",
+              "text": "매튜 스켈톤 & 마누엘 파이스 (에이콘출판사)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434861201,
+              "updatedAt": 1793434861201
+            },
+            {
+              "id": "5PIe6Z1p2vgg",
+              "text": "해결해 주는 질문: \"도메인을 직접 다루는 영역(Vertical)과, 도메인에 종속되지 않는 범용 플랫폼(Horizontal)의 경계를 어떻게 나누는가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434861201,
+              "updatedAt": 1793434861201
+            },
+            {
+              "id": "0H4rUQEliw3e",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "poFJo2b281bf",
+                  "text": "플랫폼(Platform)의 경계 정의: 특정 도메인 비즈니스를 풀지 않고 공통의 '인지 부하'를 덜어주는 도메인 중립 레이어 경계 설정법",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434861201,
+                  "updatedAt": 1793434861201
+                },
+                {
+                  "id": "5a7ne3xaGAcl",
+                  "text": "스트림-정렬과 플랫폼의 상호작용: 범용 뼈대 엔진이 다양한 버티컬 영역과 어떻게 결합선(Boundary)을 유지해야 하는지 규명",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434861201,
+                  "updatedAt": 1793434861201
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793434861201,
+              "updatedAt": 1793434861201
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793434861201,
+          "updatedAt": 1793434861201
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793434861201,
+      "updatedAt": 1793434861201
+    },
+    {
+      "id": "kEl02MQ9UrVj",
+      "text": "시스템 및 기존 툴과의 경계 구분 (System Boundary & Non-Goals) 지침서",
+      "children": [
+        {
+          "id": "qR4qI40r2nvw",
+          "text": "《인스파이어드 (INSPIRED: 감동을 전하는 제품을 만드는 법)》",
+          "children": [
+            {
+              "id": "DQjg5dqlIik8",
+              "text": "마티 케이건 (제이펍)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434879316,
+              "updatedAt": 1793434879316
+            },
+            {
+              "id": "ircTR707KCj5",
+              "text": "해결해 주는 질문: \"기존의 거대 툴들(Figma, Miro 등) 사이에서 우리 제품만의 가치 제안 경계(Value Proposition Boundary)를 어떻게 긋고 차별화할 것인가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434879316,
+              "updatedAt": 1793434879316
+            },
+            {
+              "id": "ZTkI5gK0WyLW",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "Vip7hbt69K6K",
+                  "text": "가치 리스크와 차별화 경계: 기존 툴이 이미 장악한 영역을 흉내 내지 않고, 사용자가 여전히 고통받는 0➔1 틈새에만 경계선 설정",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434879316,
+                  "updatedAt": 1793434879316
+                },
+                {
+                  "id": "zd6NWcSz1uys",
+                  "text": "제품 비전과 넌-골(Non-Goals): \"이것은 우리 제품이 하지 않는다\"를 명시하여 팀의 기능 과잉 폭주를 차단하는 프레임워크",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434879316,
+                  "updatedAt": 1793434879316
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793434879316,
+              "updatedAt": 1793434879316
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793434879316,
+          "updatedAt": 1793434879316
+        },
+        {
+          "id": "MSF14rE7asAu",
+          "text": "《소프트웨어 아키텍처 101 (Fundamentals of Software Architecture)》",
+          "children": [
+            {
+              "id": "p4qJLBZd3hJc",
+              "text": "마크 리처즈 & 닐 포드 (한빛미디어)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434879316,
+              "updatedAt": 1793434879316
+            },
+            {
+              "id": "7UFXBfhxA34L",
+              "text": "해결해 주는 질문: \"우리 시스템의 경계(System Boundary)는 어디까지이며, 외부 기존 툴들과는 어떤 경계선(오케스트레이션)으로 결합해야 하는가?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793434879316,
+              "updatedAt": 1793434879316
+            },
+            {
+              "id": "p1o6srzDVQ8N",
+              "text": "핵심 내용",
+              "children": [
+                {
+                  "id": "xAtdFM65EBEp",
+                  "text": "시스템 경계(System Boundary)와 책임의 분리: 시스템의 내부 책임과 외부 서드파티 툴의 경계를 모듈화하는 아키텍처 원칙",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434879316,
+                  "updatedAt": 1793434879316
+                },
+                {
+                  "id": "so5J4HOvwpiA",
+                  "text": "오케스트레이션(Orchestration) 경계 패턴: 외부 도구를 대체(Replace)하지 않고 상위에서 조율만 하는 통합 경계 설계 기법",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793434879316,
+                  "updatedAt": 1793434879316
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793434879316,
+              "updatedAt": 1793434879316
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793434879316,
+          "updatedAt": 1793434879316
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793434879316,
+      "updatedAt": 1793434879316
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793431743637,
+  "updatedAt": 1793451901822
+}

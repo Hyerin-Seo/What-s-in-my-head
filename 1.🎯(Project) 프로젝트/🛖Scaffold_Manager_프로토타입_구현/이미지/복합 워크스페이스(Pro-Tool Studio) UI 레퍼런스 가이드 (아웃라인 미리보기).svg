@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">복합 워크스페이스(Pro-Tool Studio) UI 레…</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">복합 워크스페이스(Pro-Tool / Studio) UI 레퍼런스 가이드</text>
+<circle cx="58" cy="127" r="3" fill="#9a9aa3"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">개요: 포토샵, CAD, VS Code, 캔바 등 화면 밀도가 높고 조…</text>
+<circle cx="58" cy="160" r="3" fill="#9a9aa3"/>
+<text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">목적: 세부 컴포넌트를 필터링하여 보거나 스튜디오 툴의 코…</text>
+<circle cx="58" cy="193" r="4.5" fill="#3a3a40"/>
+<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 필터링 및 비교가 가능한 메타 컴포넌트 갤러리</text>
+<circle cx="82" cy="226" r="3" fill="#9a9aa3"/>
+<text x="99" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">개요: 여러 기업의 디자인 시스템과 실제 프로덕트 화면…</text>
+<rect x="75.5" y="252" width="13" height="13" rx="3" fill="#7c5cff" stroke="#7c5cff" stroke-width="1.5"/>
+<path d="M78.5 258.5 l2.5 2.5 l4.5 -5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#9a9aa3" text-decoration="line-through">[x] Storybook Showcase (Component Encyclopedia) (s…</text>
+<circle cx="82" cy="292" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="292" r="4.5" fill="#7c5cff"/>
+<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">The Component Gallery (component.gallery)</text>
+<circle cx="82" cy="325" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="325" r="4.5" fill="#7c5cff"/>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Refero Design (refero.design)</text>
+<circle cx="58" cy="358" r="4.5" fill="#3a3a40"/>
+<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2. 워크스페이스/스튜디오 특화 직영 디자인 시스템</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>

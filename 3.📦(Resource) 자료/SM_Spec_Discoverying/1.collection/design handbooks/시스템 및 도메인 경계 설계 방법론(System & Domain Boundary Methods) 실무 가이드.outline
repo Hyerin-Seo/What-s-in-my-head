@@ -1,0 +1,379 @@
+{
+  "version": "1.0.0",
+  "id": "7azkMtbmKpPu",
+  "title": "시스템 및 도메인 경계 설계 방법론(System & Domain Boundary Methods) 실무 가이드",
+  "rootNodes": [
+    {
+      "id": "Y2cXXP36HVWC",
+      "text": "세부 유형별 실전 키워드 (다양한 종류)",
+      "children": [
+        {
+          "id": "tHjYuaA8VCJw",
+          "text": "Bounded Context Canvas (바운디드 컨텍스트 캔버스):",
+          "children": [
+            {
+              "id": "BDuKLuQW3rvK",
+              "text": "특정 하위 도메인의 책임, 유비쿼터스 언어, 인바운드/아웃바운드 의존성을 한 장으로 정의하는 도메인 경계 도면",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "2KGRdRuJkbOR",
+          "text": "System Context Diagram (시스템 컨텍스트 다이어그램):",
+          "children": [
+            {
+              "id": "QSeFaTld8yeG",
+              "text": "우리 시스템을 중앙에 두고, 외부 사용자 및 연동할 서드파티 툴(기존 툴)과의 데이터 경계를 1선에서 조망하는 시스템 경계도",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "8fWVmpqj4Ze0",
+          "text": "PRD Non-Goals Framework (넌-골 프레임워크):",
+          "children": [
+            {
+              "id": "UZf54rTc60xn",
+              "text": "기능 과잉을 막기 위해 \"이번 버전/우리 제품에서 절대 하지 않을 것\"의 경계를 공식 선언하는 프로덕트 스코핑 기법",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "W1kUX4iRhN5A",
+          "text": "Core vs Context Analysis (코어 vs 컨텍스트 분석):",
+          "children": [
+            {
+              "id": "mlqLqZapGt9K",
+              "text": "우리만의 독점적 차별화 가치(Core)와 남들이 이미 잘하는 범용 기능(Context/외부 툴 위임)의 경계를 가르는 전략 매트릭스",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "YR1ASKIDyYLC",
+          "text": "Domain-Agnostic vs Domain-Specific (도메인 중립 vs 특화):",
+          "children": [
+            {
+              "id": "gVaLvI6owrxo",
+              "text": "특정 산업/직무에 갇히지 않는 범용 뼈대 플랫폼(Horizontal)과 버티컬 솔루션(Vertical) 간의 계층 분리 개념",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "IPiEDCfPyqZm",
+          "text": "Orchestration Layer / Meta-Tool (오케스트레이션 레이어):",
+          "children": [
+            {
+              "id": "UdQVKk7caU4s",
+              "text": "기존 툴을 대체(Replace)하지 않고, 그 툴들이 최종 산출물을 내기 전 상위에서 0➔1 척추를 지휘·연결하는 중재자 포지셔닝",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "7cFDZRgM72KP",
+          "text": "C4 Model - System Context (C4 모델 컨텍스트 뷰):",
+          "children": [
+            {
+              "id": "a8HXpxY58stx",
+              "text": "소프트웨어 아키텍처를 줌인/줌아웃할 때 가장 최상위에서 시스템과 외부 환경의 경계선만 그리는 표준 아키텍처 다이어그램",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793435174208,
+      "updatedAt": 1793435174208
+    },
+    {
+      "id": "ZDJLCafpPZjD",
+      "text": "방법론 레퍼런스 출처 사이트",
+      "children": [
+        {
+          "id": "jUMxDHU4zQDv",
+          "text": "DDD Crew (도메인 주도 설계 오픈 툴킷)",
+          "children": [
+            {
+              "id": "wf7Lb173j0gq",
+              "text": "검색어:",
+              "children": [
+                {
+                  "id": "StlT761cMP5l",
+                  "text": "Bounded Context Canvas template",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                },
+                {
+                  "id": "WR0nywCmQvJX",
+                  "text": "Context Mapping Cheat Sheet",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                },
+                {
+                  "id": "Bueg0gNt5M0d",
+                  "text": "Core Domain Chart",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            },
+            {
+              "id": "wt2CXLOD1clP",
+              "text": "주소: github.com/ddd-crew",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            },
+            {
+              "id": "Qs67dmjeJXgo",
+              "text": "내용: 전 세계 DDD 전문가들이 도메인 경계를 실무 캔버스로 시각화할 수 있도록 오픈소스로 공개한 툴킷 아카이브입니다.",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "ZbnXHhBFwVn9",
+          "text": "C4 Model for Visualising Software Architecture",
+          "children": [
+            {
+              "id": "YKeLkaP1JaUa",
+              "text": "검색어:",
+              "children": [
+                {
+                  "id": "vf15uvxom6C6",
+                  "text": "C4 Model System Context Diagram",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                },
+                {
+                  "id": "UQsgw5NGn8IO",
+                  "text": "Software Architecture Boundaries",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                },
+                {
+                  "id": "ofyWcbJR2ybc",
+                  "text": "System Context vs Container Diagram",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            },
+            {
+              "id": "okTCzLmTw7iO",
+              "text": "주소: c4model.com",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            },
+            {
+              "id": "JNAryZHkxxAf",
+              "text": "내용: 시스템의 경계와 외부 기존 도구들과의 상호작용을 가장 직관적인 4단계 다이어그램으로 시각화하는 전 세계 공인 표준 사이트입니다.",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "Tero78693TMU",
+          "text": "Silicon Valley Product Group (SVPG)",
+          "children": [
+            {
+              "id": "pEiIZp0JeeI3",
+              "text": "검색어:",
+              "children": [
+                {
+                  "id": "q6F4DQsRcCDI",
+                  "text": "Product Vision and Principles",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                },
+                {
+                  "id": "XLLvTwAxFJZG",
+                  "text": "Product Scoping Non-Goals",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                },
+                {
+                  "id": "UiinDPpcULlX",
+                  "text": "Value Proposition Canvas Strategy",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            },
+            {
+              "id": "A62QLe4RiKh8",
+              "text": "주소: svpg.com/articles",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            },
+            {
+              "id": "HrSJBsclhKjQ",
+              "text": "내용: 《인스파이어드》의 저자 마티 케이건이 이끄는 SVPG에서 제품의 넌골(Non-Goals)과 핵심 차별화 경계를 규정하는 칼럼과 가이드를 제공합니다.",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        },
+        {
+          "id": "cs6ugInCwE1w",
+          "text": "Team Topologies Community",
+          "children": [
+            {
+              "id": "ukPA9YTHFi0c",
+              "text": "검색어:",
+              "children": [
+                {
+                  "id": "1snyf7zSCjuA",
+                  "text": "Platform vs Stream-aligned boundary",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                },
+                {
+                  "id": "NTllCyFs2iNg",
+                  "text": "Cognitive Load Assessment template",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                },
+                {
+                  "id": "3oAGYrWdy1cc",
+                  "text": "Team Interaction Modes",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793435174208,
+                  "updatedAt": 1793435174208
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            },
+            {
+              "id": "gGAeQW5o71fS",
+              "text": "주소: teamtopologies.com",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            },
+            {
+              "id": "Ky26IWFptKRN",
+              "text": "내용: 도메인 중립적인 범용 플랫폼 레이어와 특정 버티컬 도메인을 다루는 영역의 경계를 긋는 실무 캔버스와 템플릿을 제공합니다.",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793435174208,
+              "updatedAt": 1793435174208
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793435174208,
+          "updatedAt": 1793435174208
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793435174208,
+      "updatedAt": 1793435174208
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793435174208,
+  "updatedAt": 1793451631080
+}
