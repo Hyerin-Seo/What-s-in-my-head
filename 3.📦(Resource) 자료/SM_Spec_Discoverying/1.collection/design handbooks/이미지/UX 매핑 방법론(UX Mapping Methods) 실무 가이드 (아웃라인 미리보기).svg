@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">UX 매핑 방법론(UX Mapping Methods) 실무 가…</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">세부 유형별 실전 키워드 (다양한 종류)</text>
+<circle cx="58" cy="127" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="127" r="4.5" fill="#7c5cff"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Empathy Map (공감 지도):</text>
+<circle cx="58" cy="160" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="160" r="4.5" fill="#7c5cff"/>
+<text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">User Journey Map vs Experience Map:</text>
+<circle cx="58" cy="193" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="193" r="4.5" fill="#7c5cff"/>
+<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Task Flow vs User Flow:</text>
+<circle cx="58" cy="226" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="226" r="4.5" fill="#7c5cff"/>
+<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">User Story Mapping (유저 스토리 매핑):</text>
+<circle cx="58" cy="259" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="259" r="4.5" fill="#7c5cff"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Service Blueprint (서비스 블루프린트):</text>
+<circle cx="58" cy="292" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="292" r="4.5" fill="#7c5cff"/>
+<text x="75" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Pain Point Matrix (페인포인트 매트릭스):</text>
+<circle cx="58" cy="325" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="325" r="4.5" fill="#7c5cff"/>
+<text x="75" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Breadboarding (브레드보딩):</text>
+<circle cx="58" cy="358" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="358" r="4.5" fill="#7c5cff"/>
+<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Forces of Progress Diagram (진보의 4대 힘 다이어그램):</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>
