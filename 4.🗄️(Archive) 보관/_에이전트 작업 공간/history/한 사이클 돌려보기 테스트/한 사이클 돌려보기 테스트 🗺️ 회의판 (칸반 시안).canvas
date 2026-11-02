@@ -23,7 +23,7 @@
 			"height":70,
 			"color":null
 		},
-		{"id":"n-prev-3","type":"file","file":"1.🎯(Project) 프로젝트/🔬 볼트 실험실/인박스 안에 회의록 인박스 만들기.md","x":40,"y":370,"width":480,"height":200},
+		{"id":"n-prev-3","type":"file","file":"4.🗄️(Archive) 보관/🔬 볼트 실험실/인박스 안에 회의록 인박스 만들기.md","x":40,"y":370,"width":480,"height":200},
 		{"id":"n-prev-4","type":"text","text":"❓ 어제 하기로 하고 못 한 것 — PARA skill · 녹음 원본 · todo 솎기 · 캘린더 (⏭ 09.22) · 🔁 1 ✔ 체크함","x":20,"y":790,"width":230,"height":150,"color":"4"},
 		{"id":"n-prev-5","type":"text","text":"❓ 확인 필요 네 가지 (⏭ 09.22) · 🔁 1 ✔ 체크함","x":20,"y":950,"width":230,"height":120,"color":"4"},
 		{"id":"n-sok","type":"file","file":"4.🗄️(Archive) 보관/_회의록/2026.09/한 사이클 돌려보기 테스트.md","x":620,"y":40,"width":600,"height":1040,"subpath":"#속기"},
