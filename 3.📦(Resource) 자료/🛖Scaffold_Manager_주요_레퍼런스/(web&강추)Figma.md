@@ -36,3 +36,6 @@ https://help.figma.com/hc/ko/articles/15023121296151-Figma-for-VS-Code
 https://www.figma.com/ko-kr/dev-mode/
 
 ![[Pasted image 20261002210110.png]]
+
+https://help.figma.com/hc/en-us/articles/15023193382935-Compare-changes-in-Dev-Mode
+![[Pasted image 20261029191221.png]]

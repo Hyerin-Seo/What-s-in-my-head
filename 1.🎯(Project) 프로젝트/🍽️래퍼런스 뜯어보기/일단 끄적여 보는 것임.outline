@@ -900,10 +900,9 @@
               ],
               "isFolded": false,
               "nodeType": "todo",
-              "isCompleted": true,
-              "completedAt": 1793073843439,
+              "isCompleted": false,
               "createdAt": 1793071274586,
-              "updatedAt": 1793082888112
+              "updatedAt": 1793268983249
             },
             {
               "id": "WNPXO6Eew8ak",
@@ -1026,10 +1025,9 @@
               ],
               "isFolded": false,
               "nodeType": "todo",
-              "isCompleted": true,
-              "completedAt": 1793073843439,
+              "isCompleted": false,
               "createdAt": 1793071274586,
-              "updatedAt": 1793082888112
+              "updatedAt": 1793269085793
             },
             {
               "id": "keLa7CdirNJV",
@@ -2024,10 +2022,9 @@
               ],
               "isFolded": false,
               "nodeType": "todo",
-              "isCompleted": true,
-              "completedAt": 1793073843439,
+              "isCompleted": false,
               "createdAt": 1793072459657,
-              "updatedAt": 1793082888112
+              "updatedAt": 1793270909011
             },
             {
               "id": "RJQKvHELgJGm",
@@ -2189,7 +2186,7 @@
           "updatedAt": 1793074748015
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "nodeType": "bullet",
       "createdAt": 1793007932612,
       "updatedAt": 1793165466379
@@ -2265,10 +2262,9 @@
               ],
               "isFolded": false,
               "nodeType": "todo",
-              "isCompleted": true,
-              "completedAt": 1793073843439,
+              "isCompleted": false,
               "createdAt": 1793007932612,
-              "updatedAt": 1793082888112
+              "updatedAt": 1793271085004
             },
             {
               "id": "wA72mZ68x7CG",
@@ -2401,7 +2397,7 @@
           "updatedAt": 1793072877340
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "nodeType": "bullet",
       "createdAt": 1793007932612,
       "updatedAt": 1793165468577
@@ -2487,10 +2483,9 @@
               ],
               "isFolded": false,
               "nodeType": "todo",
-              "isCompleted": true,
-              "completedAt": 1793073843439,
+              "isCompleted": false,
               "createdAt": 1793072459657,
-              "updatedAt": 1793082888112
+              "updatedAt": 1793271284814
             }
           ],
           "isFolded": false,
@@ -2826,7 +2821,7 @@
           "updatedAt": 1793074748015
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "nodeType": "bullet",
       "createdAt": 1793007932612,
       "updatedAt": 1793165470473
@@ -2834,5 +2829,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1792996558206,
-  "updatedAt": 1793166668426
+  "updatedAt": 1793271284814
 }
