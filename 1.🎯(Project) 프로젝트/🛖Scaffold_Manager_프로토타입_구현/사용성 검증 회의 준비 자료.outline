@@ -111,7 +111,7 @@
               "updatedAt": 1793267032815
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793267032815,
           "updatedAt": 1793267032815
         },
@@ -941,6 +941,22 @@
       "text": "[usability] 사용성 검증",
       "children": [
         {
+          "id": "Qo7m5GvcYJGh",
+          "text": "[project to doc-slot zoom in-out] project 단위에서의 큰 조망과 관리에서부터 아주 디테일한 문서 slot 개별의 작업까지 포커스를 조절하며(차원 조절에 따른 ai 자동 서포팅 차이) 깎아나가는 작업을 선호할 것이다",
+          "children": [
+            {
+              "id": "JODW2I3u2WeQ",
+              "text": "like 캐드 프로그램",
+              "children": [],
+              "createdAt": 1793334020768,
+              "updatedAt": 1793334052385
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793333912766,
+          "updatedAt": 1793339172065
+        },
+        {
           "id": "5jdl6RwQFCX7",
           "text": "메모 혹은 md 문서 or 여러개의 문서 -> 연출하는 적합한 폼을 바로 묘사할 수 있는가",
           "children": [
@@ -960,7 +976,7 @@
                       "updatedAt": 1793331776337
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793331683120,
                   "updatedAt": 1793331776054
                 },
@@ -1026,6 +1042,7 @@
                               "updatedAt": 1793330275000
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1793330270000,
                           "updatedAt": 1793330270000
                         }
@@ -1049,7 +1066,7 @@
                       "updatedAt": 1793333016120
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793331683120,
                   "updatedAt": 1793331769718
                 },
@@ -1093,7 +1110,7 @@
                       "updatedAt": 1793332440876
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793331683120,
                   "updatedAt": 1793331784698
                 },
@@ -1178,9 +1195,24 @@
                       "updatedAt": 1793332809407
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793332718814,
                   "updatedAt": 1793332726959
+                },
+                {
+                  "id": "xdl7zsrfbQPe",
+                  "text": "우려포인트",
+                  "children": [
+                    {
+                      "id": "L3O3jO71ukVg",
+                      "text": "[의도파악의 어려움] 사용자가 아예 연관이 없거나 이상한 그룹만 묶어서 던져줬을 때, 얼마나 픽의 적합성이 담보될 것인가 아니면 몇 번의 디렉팅(10번 넘게 해야할 것 같은데)만으로 원하는 그룹으로 도달가능할 것인가 - 킥오프",
+                      "children": [],
+                      "createdAt": 1793336390898,
+                      "updatedAt": 1793336657379
+                    }
+                  ],
+                  "createdAt": 1793336387126,
+                  "updatedAt": 1793336390614
                 }
               ],
               "isFolded": false,
@@ -1188,9 +1220,30 @@
               "updatedAt": 1793331683120
             }
           ],
+          "isFolded": true,
           "createdAt": 1793330195968,
-          "updatedAt": 1793331683120,
-          "isFolded": true
+          "updatedAt": 1793331683120
+        },
+        {
+          "id": "ufT1xzlUPSaO",
+          "text": "[doc storylining] 백데이터와 ai의 제안을 통해서 문서의 핵심 뼈대 골격을 잡아주고, 몇가지 후보군을 제안하고 피킹하는 형태를 더 선호할 것이다 & 레퍼런스로부터 척추 뽑기",
+          "children": [],
+          "createdAt": 1793333781486,
+          "updatedAt": 1793336801986
+        },
+        {
+          "id": "3sVxDXFDRx95",
+          "text": "[doc reconstructing] 문서 서식 중 여러 개를 선별해서 각각의 세부 컴포넌트만 선별적으로 선택해서 재구성을 하면 사용자가 좋아할 것이다",
+          "children": [],
+          "createdAt": 1793334600860,
+          "updatedAt": 1793336801986
+        },
+        {
+          "id": "0PUS40Rie2sP",
+          "text": "[doc manual] 한 번 생성한 document 는 다음에는 똑같이 작업을 할 수 있도록 에이전트에게 지침을 '지침 생성하기' 이런 식으로만 만들 수 있으면 좋아할 것이다",
+          "children": [],
+          "createdAt": 1793334823102,
+          "updatedAt": 1793338549162
         },
         {
           "id": "PuUB3ixpnve8",
@@ -1226,7 +1279,7 @@
                       "updatedAt": 1793330600763
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1793330431379,
                   "updatedAt": 1793330458104
                 },
@@ -1279,14 +1332,17 @@
                       "updatedAt": 1793330664539
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793330475889,
                   "updatedAt": 1793330493571
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793330393198,
               "updatedAt": 1793330430155
             }
           ],
+          "isFolded": false,
           "createdAt": 1793330371048,
           "updatedAt": 1793330906146
         },
@@ -1329,10 +1385,12 @@
                   "updatedAt": 1793335439802
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793335439802,
               "updatedAt": 1793335439802
             }
           ],
+          "isFolded": true,
           "createdAt": 1793330894524,
           "updatedAt": 1793333234803
         },
@@ -1357,8 +1415,32 @@
               "updatedAt": 1793333288581
             }
           ],
+          "isFolded": true,
           "createdAt": 1793333130601,
           "updatedAt": 1793333278263
+        },
+        {
+          "id": "OwT1E613TJHB",
+          "text": "[answer evidence] 모든 답변에 근거를 명확히하고, 해당 근거를 클릭했을 때 바로 우측에 띄워줄 수 있으면 좋아할 것이다",
+          "children": [
+            {
+              "id": "NVvU6EvOeLuq",
+              "text": "1. 필수 Grounding & Highlighting - 대충 제목만 던져주는 것이 아니라 근거가 되는 섹션 혹은 단락으로 바로 띄워놓기",
+              "children": [],
+              "createdAt": 1793334314172,
+              "updatedAt": 1793334371197
+            },
+            {
+              "id": "6vXY1u5DtZ74",
+              "text": "2. grounding 이 없을 수도(뇌피셜이다!), 여러 개일 수도, 후보군만 있는 애매한 상태일 수도 -> 그냥 표시를 해두자!",
+              "children": [],
+              "createdAt": 1793334379937,
+              "updatedAt": 1793334417766
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793334054975,
+          "updatedAt": 1793338941724
         },
         {
           "id": "3p8de5UIGtbS",
@@ -1383,11 +1465,12 @@
                   "updatedAt": 1793334165046
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793333518858,
               "updatedAt": 1793333522162
             }
           ],
+          "isFolded": false,
           "createdAt": 1793333363191,
           "updatedAt": 1793333518416
         },
@@ -1414,56 +1497,14 @@
                   "updatedAt": 1793335439802
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793335439802,
               "updatedAt": 1793335439802
             }
           ],
+          "isFolded": true,
           "createdAt": 1793333507617,
           "updatedAt": 1793333770833
-        },
-        {
-          "id": "ufT1xzlUPSaO",
-          "text": "[doc storylining] 백데이터와 ai의 제안을 통해서 문서의 핵심 뼈대 골격을 잡아주고, 몇가지 후보군을 제안하고 피킹하는 형태를 더 선호할 것이다 & 레퍼런스로부터 척추 뽑기",
-          "children": [],
-          "createdAt": 1793333781486,
-          "updatedAt": 1793333910742
-        },
-        {
-          "id": "Qo7m5GvcYJGh",
-          "text": "[project to doc-slot zoom in-out] project 단위에서의 큰 조망과 관리에서부터 아주 디테일한 문서 slot 개별의 작업까지 포커스를 조절하며(차원 조절에 따른 ai 자동 서포팅 차이) 깎아나가는 작업을 선호할 것이다",
-          "children": [
-            {
-              "id": "JODW2I3u2WeQ",
-              "text": "like 캐드 프로그램",
-              "children": [],
-              "createdAt": 1793334020768,
-              "updatedAt": 1793334052385
-            }
-          ],
-          "createdAt": 1793333912766,
-          "updatedAt": 1793334041444
-        },
-        {
-          "id": "OwT1E613TJHB",
-          "text": "[answer evidence] 모든 답변에 근거를 명확히하고, 해당 근거를 클릭했을 때 바로 우측에 띄워줄 수 있으면 좋아할 것이다",
-          "children": [
-            {
-              "id": "NVvU6EvOeLuq",
-              "text": "1. 필수 Grounding & Highlighting - 대충 제목만 던져주는 것이 아니라 근거가 되는 섹션 혹은 단락으로 바로 띄워놓기",
-              "children": [],
-              "createdAt": 1793334314172,
-              "updatedAt": 1793334371197
-            },
-            {
-              "id": "6vXY1u5DtZ74",
-              "text": "2. grounding 이 없을 수도(뇌피셜이다!), 여러 개일 수도, 후보군만 있는 애매한 상태일 수도 -> 그냥 표시를 해두자!",
-              "children": [],
-              "createdAt": 1793334379937,
-              "updatedAt": 1793334417766
-            }
-          ],
-          "createdAt": 1793334054975,
-          "updatedAt": 1793334221509
         },
         {
           "id": "1Qc75QnDmXdL",
@@ -1481,19 +1522,14 @@
                   "updatedAt": 1793334536490
                 }
               ],
+              "isFolded": false,
               "createdAt": 1793334487099,
               "updatedAt": 1793334498594
             }
           ],
+          "isFolded": false,
           "createdAt": 1793334433596,
           "updatedAt": 1793334486239
-        },
-        {
-          "id": "3sVxDXFDRx95",
-          "text": "[doc reconstructing] 문서 서식 중 여러 개를 선별해서 각각의 세부 컴포넌트만 선별적으로 선택해서 재구성을 하면 사용자가 좋아할 것이다",
-          "children": [],
-          "createdAt": 1793334600860,
-          "updatedAt": 1793334661245
         },
         {
           "id": "XWgdhAN09T35",
@@ -1501,13 +1537,6 @@
           "children": [],
           "createdAt": 1793334682904,
           "updatedAt": 1793334807970
-        },
-        {
-          "id": "0PUS40Rie2sP",
-          "text": "[doc manual] 한 번 생성한 document 는 다음에는 똑같이 작업을 할 수 있도록 에이전트에게 지침을 '지침 생성하기' 이런 식으로만 만들 수 있으면 좋아할 것이다",
-          "children": [],
-          "createdAt": 1793334823102,
-          "updatedAt": 1793334869757
         },
         {
           "id": "4GCM0rXN2K5G",
@@ -1525,6 +1554,7 @@
                   "updatedAt": 1793335439802
                 }
               ],
+              "isFolded": false,
               "createdAt": 1793335439802,
               "updatedAt": 1793335439802
             },
@@ -1540,13 +1570,14 @@
                   "updatedAt": 1793335439802
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793335439802,
               "updatedAt": 1793335439802
             }
           ],
+          "isFolded": false,
           "createdAt": 1793335439802,
-          "updatedAt": 1793335439802,
-          "isFolded": true
+          "updatedAt": 1793335439802
         },
         {
           "id": "4ib4nFzzpofg",
@@ -1564,10 +1595,12 @@
                   "updatedAt": 1793335689561
                 }
               ],
+              "isFolded": false,
               "createdAt": 1793335632996,
               "updatedAt": 1793335636476
             }
           ],
+          "isFolded": false,
           "createdAt": 1793335581376,
           "updatedAt": 1793335629761
         },
@@ -1583,15 +1616,17 @@
               "updatedAt": 1793335731090
             }
           ],
+          "isFolded": true,
           "createdAt": 1793335720614,
           "updatedAt": 1793335725130
         }
       ],
+      "isFolded": false,
       "createdAt": 1793330178329,
       "updatedAt": 1793330924915
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793260355692,
-  "updatedAt": 1793335733499
+  "updatedAt": 1793346338846
 }

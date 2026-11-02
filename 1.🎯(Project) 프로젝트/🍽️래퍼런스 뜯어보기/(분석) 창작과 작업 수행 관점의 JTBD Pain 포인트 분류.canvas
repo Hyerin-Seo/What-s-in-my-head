@@ -1,0 +1,5703 @@
+{
+	"nodes":[
+		{
+			"id":"vo-g-2uWggxFdgyo5",
+			"type":"group",
+			"label":"📌 PART 1. 창작과 작업 수행의 JTBD Pain 포인트 (인간의 인지와 실행의 이원화)",
+			"x":0,
+			"y":0,
+			"width":1568,
+			"height":5216,
+			"vibeOutlineSection":{
+				"nodeId":"2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-g-zqeDeVX82Rf8",
+			"type":"group",
+			"label":"🔬 PART 2. 3대 종족 35종 레퍼런스 전면 탈곡 및 극복 방식 대조",
+			"x":0,
+			"y":5312,
+			"width":1568,
+			"height":18136,
+			"vibeOutlineSection":{
+				"nodeId":"zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-g-uRw9kMbu8Heo",
+			"type":"group",
+			"label":"🚀 PART 3. PM 종합 분석 및 Scaffold Manager 프로토타입 실행 전략 (15분 공유회)",
+			"x":0,
+			"y":23544,
+			"width":1568,
+			"height":9000,
+			"vibeOutlineSection":{
+				"nodeId":"uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-2uWggxFdgyo5",
+			"type":"text",
+			"text":"📌 PART 1. 창작과 작업 수행의 JTBD Pain 포인트 (인간의 인지와 실행의 이원화)",
+			"x":40,
+			"y":2548,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"2uWggxFdgyo5",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":40,"y":2548},
+				"under":"|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-u4TzCtzgU4Cr",
+			"type":"text",
+			"text":"핵심 요약 : 인간이 무언가를 사유하고 기획할 때 겪는 본질적인 [창작·인지적 한계]와, 실제로 글을 쓰고 자료를 다루며 AI와 협업할 때 발생하는 [실행·도구적 마찰]의 이원화",
+			"x":352,
+			"y":40,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"u4TzCtzgU4Cr",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":40},
+				"under":"2uWggxFdgyo5|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-wh1i28HDAc1P",
+			"type":"text",
+			"text":"🧠 축 1. 순수 창작 및 사유 과정의 Pain 포인트",
+			"x":352,
+			"y":968,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"wh1i28HDAc1P",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":968},
+				"under":"2uWggxFdgyo5|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Wp9CcAnNpEy7",
+			"type":"text",
+			"text":"사유의 본질 : 머릿속에서 생각을 꺼내고, 구조를 잡고, 깊게 파고드는 과정 자체에서 오는 뇌의 과부하와 심리적 고통 (도구나 AI 유무와 상관없이 발생하는 인지적 한계)",
+			"x":664,
+			"y":248,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"Wp9CcAnNpEy7",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":248},
+				"under":"wh1i28HDAc1P|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-8bySVvrin4Hc",
+			"type":"text",
+			"text":"1. 착수와 방향 탐색의 고통",
+			"x":664,
+			"y":616,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"8bySVvrin4Hc",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":616},
+				"under":"wh1i28HDAc1P|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-P77PNk7XgjIK",
+			"type":"text",
+			"text":"백지 공포증 (시작의 뇌정지)",
+			"x":976,
+			"y":468,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"P77PNk7XgjIK",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":468},
+				"under":"8bySVvrin4Hc|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kjxeKUvJQnpd",
+			"type":"text",
+			"text":"빈 화면의 깜빡이는 커서를 마주하면 어디서부터 첫 문장을 떼야 할지 막막함",
+			"x":1288,
+			"y":456,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"kjxeKUvJQnpd",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":456},
+				"under":"P77PNk7XgjIK|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ybj2Da933knp",
+			"type":"text",
+			"text":"와꾸(뼈대) 탐색의 막막함",
+			"x":976,
+			"y":614,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"ybj2Da933knp",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":614},
+				"under":"8bySVvrin4Hc|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rMxH44RgAmRL",
+			"type":"text",
+			"text":"글솜씨가 없어서가 아니라, '이 문제를 어떤 앵글과 스토리라인(목차)으로 풀어야 할지' 머릿속에 설계도가 안 잡혀 방황함",
+			"x":1288,
+			"y":568,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"rMxH44RgAmRL",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":568},
+				"under":"ybj2Da933knp|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-2KrNJjtWTAS9",
+			"type":"text",
+			"text":"무한 발산과 탈선의 방황",
+			"x":976,
+			"y":762,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"2KrNJjtWTAS9",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":762},
+				"under":"8bySVvrin4Hc|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-CLkAofoJrk94",
+			"type":"text",
+			"text":"검증된 뼈대 없이 자유롭게 쓰다 보면 온갖 샛길로 빠져 글이 산으로 가고 결국 미완성으로 끝남",
+			"x":1288,
+			"y":728,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"CLkAofoJrk94",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":728},
+				"under":"2KrNJjtWTAS9|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Rdsfqj6dA1Xu",
+			"type":"text",
+			"text":"2. 작업 기억(Working Memory)과 인지 과부하",
+			"x":664,
+			"y":1060,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"Rdsfqj6dA1Xu",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":1060},
+				"under":"wh1i28HDAc1P|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-2FEi2Oawx7RZ",
+			"type":"text",
+			"text":"아이디어 과부하 (머리 터짐)",
+			"x":976,
+			"y":900,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"2FEi2Oawx7RZ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":900},
+				"under":"Rdsfqj6dA1Xu|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-WYNxexdTDW8s",
+			"type":"text",
+			"text":"수많은 아이디어와 고려 사항이 머릿속에 뒤엉켜, '기억해야 한다'는 강박 때문에 정작 눈앞의 생각에 깊게 몰입하지 못함",
+			"x":1288,
+			"y":864,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"WYNxexdTDW8s",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":864},
+				"under":"2FEi2Oawx7RZ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-GUgbGpXGVVrA",
+			"type":"text",
+			"text":"디테일의 늪에서 미아 발생 (인지적 길 잃음)",
+			"x":976,
+			"y":1060,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"GUgbGpXGVVrA",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":1060},
+				"under":"Rdsfqj6dA1Xu|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-UfAeYt56yi3E",
+			"type":"text",
+			"text":"세부적인 내용에 몰두하다 보면 '내가 지금 큰 그림에서 뭘 입증하려고 이걸 파고 있었지?'라며 길을 잃고 멍해짐",
+			"x":1288,
+			"y":1024,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"UfAeYt56yi3E",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":1024},
+				"under":"GUgbGpXGVVrA|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-YoZf1XGaSyCt",
+			"type":"text",
+			"text":"미완성 강박 (자리를 못 뜸)",
+			"x":976,
+			"y":1220,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"YoZf1XGaSyCt",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":1220},
+				"under":"Rdsfqj6dA1Xu|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-UtHKDncBBoQW",
+			"type":"text",
+			"text":"생각이 절반만 정리된 상태에서 노트를 닫으면 찝찝하고, 내일 다시 열었을 때 이 복잡한 맥락을 다시 떠올리지 못할까 봐 퇴근을 못 함",
+			"x":1288,
+			"y":1184,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"UtHKDncBBoQW",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":1184},
+				"under":"YoZf1XGaSyCt|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ZTPRI7JEn6Xv",
+			"type":"text",
+			"text":"3. 판단과 퇴고의 심리적 저항",
+			"x":664,
+			"y":1516,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"ZTPRI7JEn6Xv",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":1516},
+				"under":"wh1i28HDAc1P|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-VNEl3augV0Uz",
+			"type":"text",
+			"text":"매몰 비용 저항 (아까워서 못 지움)",
+			"x":976,
+			"y":1380,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"VNEl3augV0Uz",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":1380},
+				"under":"ZTPRI7JEn6Xv|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-edm18b9JZpHW",
+			"type":"text",
+			"text":"몇 시간 동안 끙끙대며 쓴 문단이 비효율적이라는 걸 알면서도, 아까워서 도려내지 못해 전체 기획이 누더기가 됨",
+			"x":1288,
+			"y":1344,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"edm18b9JZpHW",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":1344},
+				"under":"VNEl3augV0Uz|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kyUkLaOvVehv",
+			"type":"text",
+			"text":"자기 문서에 대한 콩깍지와 사각지대 (Unknown Unknowns)",
+			"x":976,
+			"y":1516,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"kyUkLaOvVehv",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":1516},
+				"under":"ZTPRI7JEn6Xv|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-SzPTbQUEP5lT",
+			"type":"text",
+			"text":"내가 쓴 글은 내 눈에 이미 완벽해 보여서 논리적 결함이나 미처 고려하지 못한 맹점을 스스로 찾아내지 못함",
+			"x":1288,
+			"y":1504,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"SzPTbQUEP5lT",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":1504},
+				"under":"kyUkLaOvVehv|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Ah7yhIJ7ONXO",
+			"type":"text",
+			"text":"피상적 기획 탈피 갈증 (5-Why 인과추론)",
+			"x":976,
+			"y":1664,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"Ah7yhIJ7ONXO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":1664},
+				"under":"ZTPRI7JEn6Xv|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-1QsjIofgr8AT",
+			"type":"text",
+			"text":"문제의 진짜 뿌리 원인(Root Cause)까지 파고들지 못하고 뻔한 해결책 수준에서 맴돌 때 오는 답답함",
+			"x":1288,
+			"y":1640,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"1QsjIofgr8AT",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":1640},
+				"under":"Ah7yhIJ7ONXO|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-fqLi9JHT0NHK",
+			"type":"text",
+			"text":"🛠️ 축 2. 작업 실행, 자료 다루기, AI 협업의 Pain 포인트",
+			"x":352,
+			"y":2892,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"fqLi9JHT0NHK",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":2892},
+				"under":"2uWggxFdgyo5|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-z99NySWZsEY4",
+			"type":"text",
+			"text":"협업과 실행의 본질 : 실제 자료를 가져오고, 글을 다듬고, AI와 소통하고, 도구를 조작하는 과정에서 발생하는 인터랙션 마찰과 불신 (도구와 AI가 내 의도대로 착착 붙어주지 않아서 생기는 스트레스)",
+			"x":664,
+			"y":1776,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"z99NySWZsEY4",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":1776},
+				"under":"fqLi9JHT0NHK|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-3gr6AhiNfdTe",
+			"type":"text",
+			"text":"1. 자료 수집 및 컨텍스트 노동의 고통",
+			"x":664,
+			"y":2180,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"3gr6AhiNfdTe",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":2180},
+				"under":"fqLi9JHT0NHK|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-lWjRFUfBPaND",
+			"type":"text",
+			"text":"자료 스크랩의 주객전도",
+			"x":976,
+			"y":2042,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"lWjRFUfBPaND",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":2042},
+				"under":"3gr6AhiNfdTe|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-PSDLiHuPQWFj",
+			"type":"text",
+			"text":"본문 쓰기도 전에 레퍼런스 스크랩하고 정리하다가 지쳐서 정작 글은 시작도 못 함",
+			"x":1288,
+			"y":2008,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"PSDLiHuPQWFj",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":2008},
+				"under":"lWjRFUfBPaND|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-mPh4svgBTPQg",
+			"type":"text",
+			"text":"설명의 피로 (Context Tax)",
+			"x":976,
+			"y":2180,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"mPh4svgBTPQg",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":2180},
+				"under":"3gr6AhiNfdTe|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ctB18Xmy2i8i",
+			"type":"text",
+			"text":"새 작업을 할 때마다 내 배경 지식, 이전 결정 사항을 매번 AI 프롬프트에 1시간씩 복붙·설명하느라 진이 빠짐",
+			"x":1288,
+			"y":2144,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"ctB18Xmy2i8i",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":2144},
+				"under":"mPh4svgBTPQg|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ziiSyVxmP37M",
+			"type":"text",
+			"text":"자료 유실 불안",
+			"x":976,
+			"y":2338,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"ziiSyVxmP37M",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":2338},
+				"under":"3gr6AhiNfdTe|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-gqkeRjeGkKXs",
+			"type":"text",
+			"text":"웹에서 긁어온 표, 이미지, 원본 출처가 나중에 다시 보려 하면 깨지거나 사라져 있음",
+			"x":1288,
+			"y":2304,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"gqkeRjeGkKXs",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":2304},
+				"under":"ziiSyVxmP37M|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-TYWahUzQBabC",
+			"type":"text",
+			"text":"2. 글쓰기 조판 및 포맷 가공 노가다",
+			"x":664,
+			"y":2680,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"TYWahUzQBabC",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":2680},
+				"under":"fqLi9JHT0NHK|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-QPwVK7KpxfyV",
+			"type":"text",
+			"text":"불릿 텍스트 멀미 & 줄글 벽 인지 부하",
+			"x":976,
+			"y":2464,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"QPwVK7KpxfyV",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":2464},
+				"under":"TYWahUzQBabC|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-peosSATyWNw1",
+			"type":"text",
+			"text":"빽빽한 들여쓰기 불릿이나 시커먼 마크다운 줄글 벽을 보고 있으면 숨이 막히고 맥락 파악이 안 됨",
+			"x":1288,
+			"y":2440,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"peosSATyWNw1",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":2440},
+				"under":"QPwVK7KpxfyV|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-scecZBMwF1wR",
+			"type":"text",
+			"text":"포맷 변환 노가다",
+			"x":976,
+			"y":2622,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"scecZBMwF1wR",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":2622},
+				"under":"TYWahUzQBabC|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-aVevEGYA0nYF",
+			"type":"text",
+			"text":"글 다 쓰고 나서 회의용 PPT(슬라이드 덱) 사각형 그리고 있거나, 피그마 켜서 플로우차트 상자 그리고 앉아 있을 때의 자괴감",
+			"x":1288,
+			"y":2576,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"aVevEGYA0nYF",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":2576},
+				"under":"scecZBMwF1wR|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-IeZ5jwOphHoo",
+			"type":"text",
+			"text":"수신자별 재가공 피로",
+			"x":976,
+			"y":2770,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"IeZ5jwOphHoo",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":2770},
+				"under":"TYWahUzQBabC|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-2o2nDaaCuYVV",
+			"type":"text",
+			"text":"동일한 기획서에서 C-Level 보고용 요약본, 개발자용 액션아이템을 따로 정리하느라 진이 빠짐",
+			"x":1288,
+			"y":2736,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"2o2nDaaCuYVV",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":2736},
+				"under":"IeZ5jwOphHoo|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-zbyUdcIkGIXr",
+			"type":"text",
+			"text":"한국 비즈니스 서식 불일치",
+			"x":976,
+			"y":2906,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"zbyUdcIkGIXr",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":2906},
+				"under":"TYWahUzQBabC|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-WxYwhOVQKiVs",
+			"type":"text",
+			"text":"외산 툴의 마크다운 줄글을 당장 공문서나 HWP 표 양식에 맞추려면 서식이 깨져 처음부터 다시 해야 함",
+			"x":1288,
+			"y":2872,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"WxYwhOVQKiVs",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":2872},
+				"under":"zbyUdcIkGIXr|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-O5lcFIJGtjCJ",
+			"type":"text",
+			"text":"3. AI 협업에서의 통제감 상실과 불신",
+			"x":664,
+			"y":3396,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"O5lcFIJGtjCJ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":3396},
+				"under":"fqLi9JHT0NHK|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-MMpteinuwCzp",
+			"type":"text",
+			"text":"프롬프팅 피로",
+			"x":976,
+			"y":3042,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"MMpteinuwCzp",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":3042},
+				"under":"O5lcFIJGtjCJ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kjUm1kkd5wD4",
+			"type":"text",
+			"text":"AI한테 뭘 물어봐야 할지 빈 프롬프트 창에 장황하게 작문하다가 '그냥 내가 쓰고 말지' 현타 옴",
+			"x":1288,
+			"y":3008,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"kjUm1kkd5wD4",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":3008},
+				"under":"MMpteinuwCzp|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-3XKow97kDxp0",
+			"type":"text",
+			"text":"원본 파괴 공포 (노드 덮어쓰기)",
+			"x":976,
+			"y":3168,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"3XKow97kDxp0",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":3168},
+				"under":"O5lcFIJGtjCJ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-gunpLVJEsmFE",
+			"type":"text",
+			"text":"기껏 다듬어둔 완성 노드를 AI가 재생성 한 번에 제멋대로 갈아엎어 버릴까 봐 두려움",
+			"x":1288,
+			"y":3144,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"gunpLVJEsmFE",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":3144},
+				"under":"3XKow97kDxp0|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-xhkK8TK3ZpXH",
+			"type":"text",
+			"text":"고삐 풀린 망아지 폭주",
+			"x":976,
+			"y":3314,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"xhkK8TK3ZpXH",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":3314},
+				"under":"O5lcFIJGtjCJ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ZTYmf0BiDK23",
+			"type":"text",
+			"text":"단어 하나에 꽂혀 삼천포로 급발진하거나, 장황한 계획질만 수천 자 쏟아내다 토큰 다 쓰고 뻗음",
+			"x":1288,
+			"y":3280,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"ZTYmf0BiDK23",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":3280},
+				"under":"xhkK8TK3ZpXH|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-qijH5yvZrEgQ",
+			"type":"text",
+			"text":"영혼 없는 칭찬봇(Yes-man)과 상투어(AI Slop)",
+			"x":976,
+			"y":3440,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"qijH5yvZrEgQ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":3440},
+				"under":"O5lcFIJGtjCJ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-xVVUtLwiVegK",
+			"type":"text",
+			"text":"가혹하게 비판받아야 할 기획서에 '훌륭합니다!' 아첨만 떨고, 기름진 상투어로 글을 망쳐놓음",
+			"x":1288,
+			"y":3416,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"xVVUtLwiVegK",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":3416},
+				"under":"qijH5yvZrEgQ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-DTuuQ5PPX2mT",
+			"type":"text",
+			"text":"완제품의 전수 검사 지옥 (Inspection Tax)",
+			"x":976,
+			"y":3600,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"DTuuQ5PPX2mT",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":3600},
+				"under":"O5lcFIJGtjCJ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BuArd1d7E98T",
+			"type":"text",
+			"text":"10초 만에 쏟아낸 10장짜리 줄글에 무슨 거짓말(환각)이나 수치 왜곡(앞엔 5천억, 뒤엔 8천억)이 있을지 몰라 한 줄 한 줄 검수하느라 시간이 2배로 듦",
+			"x":1288,
+			"y":3552,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"BuArd1d7E98T",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":3552},
+				"under":"DTuuQ5PPX2mT|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-lOCkGDyZOmvS",
+			"type":"text",
+			"text":"지적 소유권(Ownership) 상실감 & 사고력 퇴화",
+			"x":976,
+			"y":3760,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"lOCkGDyZOmvS",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":3760},
+				"under":"O5lcFIJGtjCJ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-4uvdXg98Efa1",
+			"type":"text",
+			"text":"AI가 대신 다 써주니 '이게 진짜 내 생각인가?' 공허해지고, 스스로 깊게 사유하는 근육이 퇴화하는 찜찜함",
+			"x":1288,
+			"y":3736,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"4uvdXg98Efa1",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":3736},
+				"under":"lOCkGDyZOmvS|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-IxkTBhj6UJco",
+			"type":"text",
+			"text":"4. 도구 안전망과 거버넌스 고통",
+			"x":664,
+			"y":3952,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"IxkTBhj6UJco",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":3952},
+				"under":"fqLi9JHT0NHK|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-T0QiODXNryxJ",
+			"type":"text",
+			"text":"롤백 불가 공포",
+			"x":976,
+			"y":3894,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"T0QiODXNryxJ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":3894},
+				"under":"IxkTBhj6UJco|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-zh55WAP42AQf",
+			"type":"text",
+			"text":"수정하다 실수로 블록을 날렸을 때 되돌릴 수 없는 파멸의 순간이 올까 봐 불안함",
+			"x":1288,
+			"y":3872,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"zh55WAP42AQf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":3872},
+				"under":"T0QiODXNryxJ|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-REb6fzDqN7WT",
+			"type":"text",
+			"text":"사내 기밀 유출 불안",
+			"x":976,
+			"y":4018,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"REb6fzDqN7WT",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":4018},
+				"under":"IxkTBhj6UJco|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-fSP009vKkiN8",
+			"type":"text",
+			"text":"미공개 데이터나 계약 금액이 포함된 문서를 AI에 던졌다가 보안 사고 터질까 봐 떨림",
+			"x":1288,
+			"y":3984,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"fSP009vKkiN8",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":3984},
+				"under":"REb6fzDqN7WT|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-i5JaZwdymS4y",
+			"type":"text",
+			"text":"💡 요약 및 기획적 시사점",
+			"x":352,
+			"y":4622,
+			"width":240,
+			"height":52,
+			"vibeOutline":{
+				"nodeId":"i5JaZwdymS4y",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":4622},
+				"under":"2uWggxFdgyo5|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-1nW6sh24PBbc",
+			"type":"text",
+			"text":"축 1. 순수 창작/사유의 Pain",
+			"x":664,
+			"y":4344,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"1nW6sh24PBbc",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":4344},
+				"under":"i5JaZwdymS4y|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-7Ffd2smJFI5i",
+			"type":"text",
+			"text":"성격 : 인지적 한계 (Cognitive Limits)",
+			"x":976,
+			"y":4132,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"7Ffd2smJFI5i",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":4132},
+				"under":"1nW6sh24PBbc|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Qf47ItrjrgCD",
+			"type":"text",
+			"text":"'어떻게 생각을 열고, 정렬하고, 깊게 파고들 것인가?'",
+			"x":1288,
+			"y":4120,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"Qf47ItrjrgCD",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4120},
+				"under":"7Ffd2smJFI5i|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-RXsHq8A0zLLu",
+			"type":"text",
+			"text":"해결 방향 : 생각의 비계 (Thinking Scaffold)",
+			"x":976,
+			"y":4400,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"RXsHq8A0zLLu",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":4400},
+				"under":"1nW6sh24PBbc|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-22J8Bjq5ne2x",
+			"type":"text",
+			"text":"템플릿/목차 고정 및 검증된 와꾸 제공으로 백지 공포 해소",
+			"x":1288,
+			"y":4232,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"22J8Bjq5ne2x",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4232},
+				"under":"RXsHq8A0zLLu|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ieSu4dU0f2YQ",
+			"type":"text",
+			"text":"단일 노드 줌인(Zoom-in Focus)으로 불필요한 인지 부하 차단",
+			"x":1288,
+			"y":4344,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"ieSu4dU0f2YQ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4344},
+				"under":"RXsHq8A0zLLu|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-WogONx77ajhR",
+			"type":"text",
+			"text":"2차원 캔버스 플립을 통한 전체 맥락 및 대안 조망",
+			"x":1288,
+			"y":4456,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"WogONx77ajhR",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4456},
+				"under":"RXsHq8A0zLLu|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-sTzf12bbWQGT",
+			"type":"text",
+			"text":"소크라테스식 반론(Visual Grill-Me)으로 생각의 해상도 강화",
+			"x":1288,
+			"y":4544,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"sTzf12bbWQGT",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4544},
+				"under":"RXsHq8A0zLLu|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-frZHDNxVoGGO",
+			"type":"text",
+			"text":"축 2. 실행·자료·AI 협업의 Pain",
+			"x":664,
+			"y":4880,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"frZHDNxVoGGO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":4880},
+				"under":"i5JaZwdymS4y|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-tfnbZu5Uq98o",
+			"type":"text",
+			"text":"성격 : 시스템 마찰 & 불신 (Friction & Anxiety)",
+			"x":976,
+			"y":4668,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"tfnbZu5Uq98o",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":4668},
+				"under":"frZHDNxVoGGO|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-TtpRewHQ6hnf",
+			"type":"text",
+			"text":"'어떻게 AI의 폭주를 막고, 안전하게 작업을 실행할 것인가?'",
+			"x":1288,
+			"y":4656,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"TtpRewHQ6hnf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4656},
+				"under":"tfnbZu5Uq98o|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-akSBx6SApfUz",
+			"type":"text",
+			"text":"해결 방향 : 에이전트 하네스 & 안전망 (Harness & Safety Net)",
+			"x":976,
+			"y":4924,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"akSBx6SApfUz",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":4924},
+				"under":"frZHDNxVoGGO|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rryhNMeKlZm9",
+			"type":"text",
+			"text":"확정 노드 잠금(Lock) 및 핀셋 부분 생성으로 원본 보존",
+			"x":1288,
+			"y":4768,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"rryhNMeKlZm9",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4768},
+				"under":"akSBx6SApfUz|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-obdbvvNKnz5w",
+			"type":"text",
+			"text":"로컬 체크포인트 스냅샷 & 인라인 Diff로 롤백 불안 원천 차단",
+			"x":1288,
+			"y":4880,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"obdbvvNKnz5w",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4880},
+				"under":"akSBx6SApfUz|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-RkB1jJRigtHI",
+			"type":"text",
+			"text":"Things 3식 무마찰 인박스 포집으로 세팅 피로 제거",
+			"x":1288,
+			"y":4992,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"RkB1jJRigtHI",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":4992},
+				"under":"akSBx6SApfUz|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-GMrIKpDTIdNn",
+			"type":"text",
+			"text":"출처 인라인 앵커와 팩트 린터로 환각 및 수치 왜곡 통제",
+			"x":1288,
+			"y":5080,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"GMrIKpDTIdNn",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":5080},
+				"under":"akSBx6SApfUz|2uWggxFdgyo5",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-zqeDeVX82Rf8",
+			"type":"text",
+			"text":"🔬 PART 2. 3대 종족 35종 레퍼런스 전면 탈곡 및 극복 방식 대조",
+			"x":40,
+			"y":14332,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"zqeDeVX82Rf8",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":40,"y":14332},
+				"under":"|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-EaTUhEWfAzER",
+			"type":"text",
+			"text":"핵심 요약 : 1종족(자유)·2종족(규칙)·3종족(블록)의 35개 글로벌 서비스들이 각각 어떤 Pain 포인트를 어떤 킬러 무기로 극복했고, 무엇을 쿨하게 버렸는가?",
+			"x":352,
+			"y":5352,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"EaTUhEWfAzER",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":5352},
+				"under":"zqeDeVX82Rf8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-VnOgonD1qtOo",
+			"type":"text",
+			"text":"🧬 1종족. 극단적 자유파 레퍼런스 (Freedom Tribe — 8종)",
+			"x":352,
+			"y":7396,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"VnOgonD1qtOo",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":7396},
+				"under":"zqeDeVX82Rf8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-LZno4VIt4OXi",
+			"type":"text",
+			"text":"1종족 극복 전략의 본질 : 무한한 발상의 자유와 16ms 타이핑 리듬을 주어 뇌 용량 과부하와 서식 조작 피로를 0으로 낮춤 (대신 백지 공포와 수작업 정렬 피로가 발생)",
+			"x":664,
+			"y":5536,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"LZno4VIt4OXi",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":5536},
+				"under":"VnOgonD1qtOo|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-mWtxa3bQB6Wl",
+			"type":"text",
+			"text":"📁 [단일 무한 트리 & 아웃라이너 군]",
+			"x":664,
+			"y":6396,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"mWtxa3bQB6Wl",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":6396},
+				"under":"VnOgonD1qtOo|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-AhhnlPDlOwcj",
+			"type":"text",
+			"text":"01. Workflowy — 단일 무한 트리 줌포커스 & 미러 블록",
+			"x":976,
+			"y":5952,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"AhhnlPDlOwcj",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":5952},
+				"under":"mWtxa3bQB6Wl|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kWvdHjCk2K7H",
+			"type":"text",
+			"text":"극복한 Pain : 뇌 용량 과부하, 복잡한 서식 조작 피로, 파편화된 데이터의 중복 관리 스트레스",
+			"x":1288,
+			"y":5744,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"kWvdHjCk2K7H",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":5744},
+				"under":"AhhnlPDlOwcj|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BY0qGacU1nt7",
+			"type":"text",
+			"text":"극복 메커니즘 : 모든 생각을 단 하나의 거대한 무한 트리 우주로 취급하며, 클릭 한 번으로 해당 노드만 전체 화면으로 띄우는 줌포커스(Zoom-in Focus)로 시각적 인지 부하 차단. 미러(Mirrors) 블록으로 복사-붙여넣기 없이 단일 진실 공급원(SSOT) 유지",
+			"x":1288,
+			"y":5880,
+			"width":240,
+			"height":264,
+			"vibeOutline":{
+				"nodeId":"BY0qGacU1nt7",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":5880},
+				"under":"AhhnlPDlOwcj|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-OsJAPDMWTJiv",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 폰트/크기 등 서식 꾸미기 기능, 여러 파일/폴더 분리 체계",
+			"x":1288,
+			"y":6160,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"OsJAPDMWTJiv",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":6160},
+				"under":"AhhnlPDlOwcj|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-S3XK6Ik0jDji",
+			"type":"text",
+			"text":"02. Dynalist — 무제한 블릿 위계 & LaTeX 표준 마크다운",
+			"x":976,
+			"y":6432,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"S3XK6Ik0jDji",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":6432},
+				"under":"mWtxa3bQB6Wl|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-II7euRhKxLBP",
+			"type":"text",
+			"text":"극복한 Pain : 대규모 공학/수식 자료 수집 시 구조 붕괴 및 서식 표현 한계",
+			"x":1288,
+			"y":6272,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"II7euRhKxLBP",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":6272},
+				"under":"S3XK6Ik0jDji|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-gA4ddnTZU2VA",
+			"type":"text",
+			"text":"극복 메커니즘 : 무제한 블릿과 폴더 트리를 결합하고 LaTeX 수식과 표준 마크다운을 완벽 지원. 16ms 무지연 반응 속도로 방대한 자료를 키보드만으로 빠르게 정렬",
+			"x":1288,
+			"y":6384,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"gA4ddnTZU2VA",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":6384},
+				"under":"S3XK6Ik0jDji|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-cxbKBxCtUYj8",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 칸반 보드 뷰, 블록 실시간 미러 동기화",
+			"x":1288,
+			"y":6592,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"cxbKBxCtUYj8",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":6592},
+				"under":"S3XK6Ik0jDji|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ynV25KzloUNR",
+			"type":"text",
+			"text":"03. WorkFlowy 서적 (생각하고 계획하고 일하라) — 초미니멀리즘 상태 단일화",
+			"x":976,
+			"y":6864,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"ynV25KzloUNR",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":6864},
+				"under":"mWtxa3bQB6Wl|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-7j91IWERDGSQ",
+			"type":"text",
+			"text":"극복한 Pain : 복잡한 GTD 세팅 피로와 도구 공부로 인한 본 작업 착수 지연",
+			"x":1288,
+			"y":6704,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"7j91IWERDGSQ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":6704},
+				"under":"ynV25KzloUNR|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-yLMOro7eB3CF",
+			"type":"text",
+			"text":"극복 메커니즘 : 할일, 프로젝트, 메모, 일정을 별도 도구로 나누지 않고, 단일 불릿의 뎁스(Depth) 조작과 태그(#, @)만으로 삶의 전 영역을 통제하는 극도의 미니멀리즘 워크플로우 정립",
+			"x":1288,
+			"y":6816,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"yLMOro7eB3CF",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":6816},
+				"under":"ynV25KzloUNR|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-9RpusrZQsuEO",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 화려한 대시보드 뷰, 정형화된 데이터베이스 필드",
+			"x":1288,
+			"y":7024,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"9RpusrZQsuEO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":7024},
+				"under":"ynV25KzloUNR|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-1iGmSB2nYjNF",
+			"type":"text",
+			"text":"📁 [2D 공간 & 캔버스 AI 군]",
+			"x":664,
+			"y":7764,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"1iGmSB2nYjNF",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":7764},
+				"under":"VnOgonD1qtOo|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-LC6WHzFvfgul",
+			"type":"text",
+			"text":"04. Heptabase (헵타베이스) — 2D 화이트보드 공간 카드 군집화",
+			"x":976,
+			"y":7332,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"LC6WHzFvfgul",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":7332},
+				"under":"1iGmSB2nYjNF|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-lRypgH3T9g9E",
+			"type":"text",
+			"text":"극복한 Pain : 1차원 줄글의 인과관계 파악 불가, 텍스트 벽 멀미, 디테일의 늪에서 길 잃음",
+			"x":1288,
+			"y":7136,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"lRypgH3T9g9E",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":7136},
+				"under":"LC6WHzFvfgul|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-lOulRgU5CG9C",
+			"type":"text",
+			"text":"극복 메커니즘 : 텍스트 아웃라인을 2차원 평면 화이트보드 카드로 쪼개어 배치하고 화살표로 연결. 복잡한 개념의 맥락과 인과관계를 조감도 보듯 시각적으로 한눈에 조망",
+			"x":1288,
+			"y":7272,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"lOulRgU5CG9C",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":7272},
+				"under":"LC6WHzFvfgul|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-0G7sAsHDTeGj",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 키보드 중심의 빠른 선형 타이핑 속도 (마우스로 카드 배치·크기 조절하는 노가다 피로 발생)",
+			"x":1288,
+			"y":7480,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"0G7sAsHDTeGj",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":7480},
+				"under":"LC6WHzFvfgul|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-tQYF9I2vEn85",
+			"type":"text",
+			"text":"05. Flowith (flowith.io) — 2D 캔버스형 Follow-up 노드 발산 UI",
+			"x":976,
+			"y":7788,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"tQYF9I2vEn85",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":7788},
+				"under":"1iGmSB2nYjNF|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-6mm62IYhTy7n",
+			"type":"text",
+			"text":"극복한 Pain : AI 선형 채팅의 스크롤 피로, 이전 대화 찌꺼기로 인한 세션 오염",
+			"x":1288,
+			"y":7640,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"6mm62IYhTy7n",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":7640},
+				"under":"tQYF9I2vEn85|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-axGEnbZuiMoD",
+			"type":"text",
+			"text":"극복 메커니즘 : AI와의 대화를 1차원 수직 스크롤이 아닌 2차원 마인드맵 가지치기 형태로 시각화. 질문과 대안 답변이 양옆으로 뻗어나가며 맥락을 격리하고 대안을 병렬 비교",
+			"x":1288,
+			"y":7752,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"axGEnbZuiMoD",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":7752},
+				"under":"tQYF9I2vEn85|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-U6eJx0MhkE1b",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 정갈한 최종 선형 문서 조판 뷰",
+			"x":1288,
+			"y":7960,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"U6eJx0MhkE1b",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":7960},
+				"under":"tQYF9I2vEn85|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-96MQo0gfo2tM",
+			"type":"text",
+			"text":"08. Figma (피그마) — 무한 2차원 자유 캔버스 & Dev Mode",
+			"x":976,
+			"y":8208,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"96MQo0gfo2tM",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":8208},
+				"under":"1iGmSB2nYjNF|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-jWNk31GAg9bn",
+			"type":"text",
+			"text":"극복한 Pain : 아이디어 구상 시 문서 양식의 답답한 틀, 기획-디자인 간 소통 마찰",
+			"x":1288,
+			"y":8048,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"jWNk31GAg9bn",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":8048},
+				"under":"96MQo0gfo2tM|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-XFjzlf8SCyjf",
+			"type":"text",
+			"text":"극복 메커니즘 : 제약 없는 무한 캔버스 위에 메모, 캡처, 다이어그램을 자유롭게 흩뿌리고 그룹화. 기획 의도를 시각적 레이아웃으로 즉각 구체화",
+			"x":1288,
+			"y":8184,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"XFjzlf8SCyjf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":8184},
+				"under":"96MQo0gfo2tM|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-EPkBdJsnG5XA",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 순수 텍스트 기반 논증 체계 및 키보드 아웃라이닝 리듬",
+			"x":1288,
+			"y":8368,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"EPkBdJsnG5XA",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":8368},
+				"under":"96MQo0gfo2tM|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-LgHctV3j8LBO",
+			"type":"text",
+			"text":"📁 [로컬 퍼스트 & 네트워크 그래프 군]",
+			"x":664,
+			"y":8880,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"LgHctV3j8LBO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":8880},
+				"under":"VnOgonD1qtOo|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-sifry88n92WK",
+			"type":"text",
+			"text":"06. Roam Research (롬리서치) — 블록 단위 고유 해시 ID & 양방향 그래프",
+			"x":976,
+			"y":8640,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"sifry88n92WK",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":8640},
+				"under":"LgHctV3j8LBO|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-hzmyUgAkYRZG",
+			"type":"text",
+			"text":"극복한 Pain : 위계 폴더의 경직성, 자료 간 연결 단절, 맥락 유실",
+			"x":1288,
+			"y":8480,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"hzmyUgAkYRZG",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":8480},
+				"under":"sifry88n92WK|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-sztKmSCLw3Rq",
+			"type":"text",
+			"text":"극복 메커니즘 : 모든 불릿 노드에 고유 ID를 부여하여 어느 문서에서든 블록 단위로 호출·참조(Transclusion). 네트워크형 그래프 뷰로 생각의 유기적 연결성 회복",
+			"x":1288,
+			"y":8592,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"sztKmSCLw3Rq",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":8592},
+				"under":"sifry88n92WK|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-OxCuVjkPxN2U",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 긴 호흡의 장문 집필 경험, 직관적인 위지윅 조판",
+			"x":1288,
+			"y":8800,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"OxCuVjkPxN2U",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":8800},
+				"under":"sifry88n92WK|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rWLK0RaI2C15",
+			"type":"text",
+			"text":"07. Logseq (로그시크) — 로컬 퍼스트 불변 저장소 & PDF 하이라이트 앵커",
+			"x":976,
+			"y":9084,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"rWLK0RaI2C15",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":9084},
+				"under":"LgHctV3j8LBO|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-xp1IrH06Jamx",
+			"type":"text",
+			"text":"극복한 Pain : 클라우드 서비스 종속 불안, 원본 데이터 유실 및 프라이버시 침해 공포",
+			"x":1288,
+			"y":8912,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"xp1IrH06Jamx",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":8912},
+				"under":"rWLK0RaI2C15|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-9lJ5QOdhJvfI",
+			"type":"text",
+			"text":"극복 메커니즘 : 사용자의 로컬 드라이브에 플레인 텍스트(Markdown/Org)로 안전 보존. 원본 PDF 논문/책을 좌측에 띄우고 우측 아웃라인에 정확한 페이지 앵커를 인라인 연결",
+			"x":1288,
+			"y":9048,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"9lJ5QOdhJvfI",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":9048},
+				"under":"rWLK0RaI2C15|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-JH7zoErKsLIS",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 원클릭 웹 협업 접근성, 가벼운 온보딩",
+			"x":1288,
+			"y":9256,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"JH7zoErKsLIS",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":9256},
+				"under":"rWLK0RaI2C15|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-nuBtHnu7hOYy",
+			"type":"text",
+			"text":"🛡️ 2종족. 엄격한 규칙·슬롯파 레퍼런스 (Rule & Slot Tribe — 12종)",
+			"x":352,
+			"y":12104,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"nuBtHnu7hOYy",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":12104},
+				"under":"zqeDeVX82Rf8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-p2EWOfEelLmU",
+			"type":"text",
+			"text":"2종족 극복 전략의 본질 : 엄격한 규칙, 바인더 분할, 결정론적 린터를 통해 원본 파괴 불안과 AI 환각·오염을 물리적으로 차단 (대신 진입 장벽과 초기 발상 질식이 발생)",
+			"x":664,
+			"y":9368,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"p2EWOfEelLmU",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":9368},
+				"under":"nuBtHnu7hOYy|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BpJ1Ww66BG6o",
+			"type":"text",
+			"text":"📁 [버전 불변 안전망 & AI 하네스 군]",
+			"x":664,
+			"y":10456,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"BpJ1Ww66BG6o",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":10456},
+				"under":"nuBtHnu7hOYy|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-n6mbaxwKXuw0",
+			"type":"text",
+			"text":"09. Git — 불변 체크포인트 스냅샷 & 초록/빨강 인라인 Diff",
+			"x":976,
+			"y":9748,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"n6mbaxwKXuw0",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":9748},
+				"under":"BpJ1Ww66BG6o|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-dizQbc7HNb1g",
+			"type":"text",
+			"text":"극복한 Pain : 롤백 불가 공포, 수정 시 원본 파괴 공포, 과감한 가지치기 주저",
+			"x":1288,
+			"y":9576,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"dizQbc7HNb1g",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":9576},
+				"under":"n6mbaxwKXuw0|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-8KjW7YwZuxMU",
+			"type":"text",
+			"text":"극복 메커니즘 : 명시적인 체크포인트 커밋으로 언제든 1초 만에 과거 상태로 복구하는 절대적 안전망 제공. 초록(`+`)/빨강(`-`) 인라인 Diff로 변경점을 대조하고 Cherry-pick으로 원하는 노드만 핀셋 채택",
+			"x":1288,
+			"y":9688,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"8KjW7YwZuxMU",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":9688},
+				"under":"n6mbaxwKXuw0|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-CrmD8SQxcpSA",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 타이핑할 때마다 무분별하게 쌓이는 자잘한 자동저장 히스토리",
+			"x":1288,
+			"y":9920,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"CrmD8SQxcpSA",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":9920},
+				"under":"n6mbaxwKXuw0|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-af6nAmJewy0r",
+			"type":"text",
+			"text":"10. ai-job-search — 쓰기 권한 박탈 Reviewer & 결정론적 하드 게이트",
+			"x":976,
+			"y":10228,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"af6nAmJewy0r",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":10228},
+				"under":"BpJ1Ww66BG6o|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Q15jTZ0AK6du",
+			"type":"text",
+			"text":"극복한 Pain : AI의 환각 지뢰, 당당한 거짓 확신(가스라이팅), 원본 덮어쓰기 폭주, 영혼 없는 칭찬봇",
+			"x":1288,
+			"y":10032,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"Q15jTZ0AK6du",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":10032},
+				"under":"af6nAmJewy0r|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-AaZwikf8FsUC",
+			"type":"text",
+			"text":"극복 메커니즘 : 단일 AI에게 작성을 맡기지 않고, 파일 쓰기 권한이 완전히 박탈된 독립 Reviewer 에이전트를 투입. 원천 자료(`documents/`)에 없는 거짓 주장이나 과장된 미사여구를 0초 만에 찢어버리고 수정 Diff만 제출",
+			"x":1288,
+			"y":10168,
+			"width":240,
+			"height":240,
+			"vibeOutline":{
+				"nodeId":"AaZwikf8FsUC",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":10168},
+				"under":"af6nAmJewy0r|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-CxJTiYpOMt8p",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 부드럽고 친절한 대화형 챗봇의 편의성",
+			"x":1288,
+			"y":10424,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"CxJTiYpOMt8p",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":10424},
+				"under":"af6nAmJewy0r|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-2yAbEnrA0Dfo",
+			"type":"text",
+			"text":"19. Claude Code (아쉬운점 분석) — CLI 컨텍스트 앵커링 & 터미널 인라인 Diff 승인",
+			"x":976,
+			"y":10684,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"2yAbEnrA0Dfo",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":10684},
+				"under":"BpJ1Ww66BG6o|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-8RGVAljCwHN6",
+			"type":"text",
+			"text":"극복한 Pain : AI의 지침 누락, 자의적 일반화, 광범위한 파일 오염",
+			"x":1288,
+			"y":10536,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"8RGVAljCwHN6",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":10536},
+				"under":"2yAbEnrA0Dfo|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ZX3AhZbFbl69",
+			"type":"text",
+			"text":"극복 메커니즘 : 프로젝트 전체 구조를 읽고 타겟 파일의 엄격한 라인 범위만 인라인 diff로 제시. 사용자가 터미널에서 명시적으로 승인(Accept)해야만 파일에 반영",
+			"x":1288,
+			"y":10648,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"ZX3AhZbFbl69",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":10648},
+				"under":"2yAbEnrA0Dfo|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-fkJzZi8T5hDx",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 마우스 중심의 시각적 위지윅 에디팅 환경",
+			"x":1288,
+			"y":10856,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"fkJzZi8T5hDx",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":10856},
+				"under":"2yAbEnrA0Dfo|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-FwTvfxVbBsX4",
+			"type":"text",
+			"text":"20. Antigravity (바이브코딩 툴 아쉬운점 분석) — 격리된 아티팩트 & 영구 작업 기억(Working Memory)",
+			"x":976,
+			"y":11128,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"FwTvfxVbBsX4",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":11128},
+				"under":"BpJ1Ww66BG6o|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-K18eBY4T3OkM",
+			"type":"text",
+			"text":"극복한 Pain : 장황한 계획질로 인한 토큰 낭비, 세션 단절 시 작업 기억 소실, 창작 주도권 상실",
+			"x":1288,
+			"y":10968,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"K18eBY4T3OkM",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":10968},
+				"under":"FwTvfxVbBsX4|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-6mmaCoqKqHIx",
+			"type":"text",
+			"text":"극복 메커니즘 : 채팅 세션과 작업 결과물을 물리적으로 분리된 아티팩트(Artifact)로 격리. 실시간 작업 진행 상태와 결정 로그를 독립 파일에 영구 기록하여 맥락 연속성 유지",
+			"x":1288,
+			"y":11104,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"6mmaCoqKqHIx",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":11104},
+				"under":"FwTvfxVbBsX4|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-OtDmTQ3ONad8",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 단일 창에서 끝내는 단순 메신저형 UX",
+			"x":1288,
+			"y":11312,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"OtDmTQ3ONad8",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":11312},
+				"under":"FwTvfxVbBsX4|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-FsNRBxeT513e",
+			"type":"text",
+			"text":"📁 [장문 바인더 & 출판·계약 규격 슬롯 군]",
+			"x":664,
+			"y":12292,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"FsNRBxeT513e",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":12292},
+				"under":"nuBtHnu7hOYy|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-iKJLNz0um4XJ",
+			"type":"text",
+			"text":"11. Scrivener (스크리브너) — 바인더(원고+자료) & 스크리브닝스 모드",
+			"x":976,
+			"y":11620,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"iKJLNz0um4XJ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":11620},
+				"under":"FsNRBxeT513e|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-PE9cjuuKC5q0",
+			"type":"text",
+			"text":"극복한 Pain : 50페이지 장문 집필 시 전체 조망 상실, 자료 스크랩 창 전환 피로, 텍스트 멀미",
+			"x":1288,
+			"y":11424,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"PE9cjuuKC5q0",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":11424},
+				"under":"iKJLNz0um4XJ|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-opVyFKgSICAx",
+			"type":"text",
+			"text":"극복 메커니즘 : 바인더 구조로 '좌측 집필 원고'와 '우측 참고 자료(PDF/메모)'를 한 화면에서 완벽 분리. 쓸 때는 씬(Scene) 블록 단위로 쪼개어 쓰고, 퇴고할 때는 하나의 긴 문서로 합쳐서 스크롤 점검(Scrivenings)",
+			"x":1288,
+			"y":11560,
+			"width":240,
+			"height":240,
+			"vibeOutline":{
+				"nodeId":"opVyFKgSICAx",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":11560},
+				"under":"iKJLNz0um4XJ|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-LNZMaP6eOP3F",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 가벼운 웹 브라우저 접근성, 현대적 실시간 클라우드 협업",
+			"x":1288,
+			"y":11816,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"LNZMaP6eOP3F",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":11816},
+				"under":"iKJLNz0um4XJ|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-sv3NE27c46T6",
+			"type":"text",
+			"text":"12. Overleaf (오버리프) — 좌측 코드 ↔ 우측 조판 듀얼 뷰포트 & LaTeX 템플릿",
+			"x":976,
+			"y":12100,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"sv3NE27c46T6",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":12100},
+				"under":"FsNRBxeT513e|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rO72OSKyrWcL",
+			"type":"text",
+			"text":"극복한 Pain : 문서 수치·단위 불일치, 수식 깨짐, 표 조판 노가다, 학술/비즈니스 규격 미준수 불안",
+			"x":1288,
+			"y":11928,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"rO72OSKyrWcL",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":11928},
+				"under":"sv3NE27c46T6|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-SCuBjTbeo5fd",
+			"type":"text",
+			"text":"극복 메커니즘 : 좌측 텍스트 에디터와 우측 실시간 컴파일 프리뷰를 나란히 배치. 엄격한 수식 컴파일과 인용(Cite) 문법을 강제하여 100% 무결한 문서 빌드",
+			"x":1288,
+			"y":12064,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"SCuBjTbeo5fd",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":12064},
+				"under":"sv3NE27c46T6|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BRvUyou6NGO2",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 마우스 드래그 앤 드롭의 직관성 (문법 오류 시 컴파일이 뻗는 스트레스 감수)",
+			"x":1288,
+			"y":12248,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"BRvUyou6NGO2",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":12248},
+				"under":"sv3NE27c46T6|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-LLk80JPIA5dF",
+			"type":"text",
+			"text":"13. PandaDoc (판다독) — Variable 토큰 바인딩 & 검증된 Content Library",
+			"x":976,
+			"y":12544,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"LLk80JPIA5dF",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":12544},
+				"under":"FsNRBxeT513e|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-HhOdvcoyfnlf",
+			"type":"text",
+			"text":"극복한 Pain : 비즈니스 계약서/제안서의 수기 작성 실수 및 필수 조항 누락 공포",
+			"x":1288,
+			"y":12384,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"HhOdvcoyfnlf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":12384},
+				"under":"LLk80JPIA5dF|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-uEcirB7wv397",
+			"type":"text",
+			"text":"극복 메커니즘 : 문서 내 주요 변수(금액, 고객명, 날짜)를 토큰(`[Client.Name]`)으로 바인딩하고, 사전 법무 검토를 통과한 표준 블록 라이브러리만 끼워 맞춰 안전하게 문서 완성",
+			"x":1288,
+			"y":12496,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"uEcirB7wv397",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":12496},
+				"under":"LLk80JPIA5dF|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-NWMdwOPcbpyK",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 비정형적인 자유 줄글 서술과 창의적 발상 전개",
+			"x":1288,
+			"y":12704,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"NWMdwOPcbpyK",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":12704},
+				"under":"LLk80JPIA5dF|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-LwcT4FqmE7pw",
+			"type":"text",
+			"text":"16. Reedsy Book Studio (리드시) — Front / Body / Back Matter 3단 표준 조판",
+			"x":976,
+			"y":12964,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"LwcT4FqmE7pw",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":12964},
+				"under":"FsNRBxeT513e|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-TdNQKqtg4P2m",
+			"type":"text",
+			"text":"극복한 Pain : 최종 유통/출판 조판 변환 시 서식 깨짐 노가다, 출판사 규격 미달 불안",
+			"x":1288,
+			"y":12816,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"TdNQKqtg4P2m",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":12816},
+				"under":"LwcT4FqmE7pw|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-KyfeHjcsh2nj",
+			"type":"text",
+			"text":"극복 메커니즘 : 표제지, 목차, 본문, 판권 페이지를 표준 구조 슬롯으로 고정. 작성 완료 즉시 전 세계 유통 가능한 완벽한 전자책(EPUB/PDF)으로 원클릭 빌드",
+			"x":1288,
+			"y":12952,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"KyfeHjcsh2nj",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":12952},
+				"under":"LwcT4FqmE7pw|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-jpg8ORbvM7f0",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 초기 아이디어 인큐베이팅용 자유 스케치 공간",
+			"x":1288,
+			"y":13136,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"jpg8ORbvM7f0",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":13136},
+				"under":"LwcT4FqmE7pw|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-sbHSR2u94yr8",
+			"type":"text",
+			"text":"📁 [서사 플롯 & 정형 스키마 바인딩 군]",
+			"x":664,
+			"y":14056,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"sbHSR2u94yr8",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":14056},
+				"under":"nuBtHnu7hOYy|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-hCGnAUSFsSMM",
+			"type":"text",
+			"text":"14. LivingWriter (리빙라이터) — 플롯 보드 그리드 & 스마트 인물/설정 태깅",
+			"x":976,
+			"y":13396,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"hCGnAUSFsSMM",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":13396},
+				"under":"sbHSR2u94yr8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-TiRl1Tb6BL3R",
+			"type":"text",
+			"text":"극복한 Pain : 서사 플롯의 인과관계 왜곡, 설정 구멍(Plot Hole), 복선 유실",
+			"x":1288,
+			"y":13248,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"TiRl1Tb6BL3R",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":13248},
+				"under":"hCGnAUSFsSMM|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-0GC609DobY9u",
+			"type":"text",
+			"text":"극복 메커니즘 : 챕터마다 핵심 목표와 복선을 고정하는 그리드 제공. 본문 작성 중 등장인물이나 장소를 언급하면 자동으로 설정집 노드와 스마트 태깅되어 설정 충돌 방지",
+			"x":1288,
+			"y":13360,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"0GC609DobY9u",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":13360},
+				"under":"hCGnAUSFsSMM|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-EcvIRmnczQSt",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 일반 비즈니스 문서 서식 범용성",
+			"x":1288,
+			"y":13568,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"EcvIRmnczQSt",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":13568},
+				"under":"hCGnAUSFsSMM|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-P64n3Mj7VCys",
+			"type":"text",
+			"text":"15. Dabble (대블) — 씬(Scene) 카드 타임라인 동기화 & 100% Human Words",
+			"x":976,
+			"y":13804,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"P64n3Mj7VCys",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":13804},
+				"under":"sbHSR2u94yr8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-6Ly6q0RPqLAK",
+			"type":"text",
+			"text":"극복한 Pain : 영혼 없는 AI 상투어(Slop) 혐오, 시간축과 본문 간의 불일치",
+			"x":1288,
+			"y":13656,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"6Ly6q0RPqLAK",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":13656},
+				"under":"P64n3Mj7VCys|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Gv0Q3vabC2Bv",
+			"type":"text",
+			"text":"극복 메커니즘 : 사이트 전면에 'NO SUBSTITUTES · 100% Human WORDS'를 선언하며 인간의 주체적 문체 보존. 스토리 전개 시간축과 세부 씬 카드를 1:1로 묶어 서사 궤도 이탈 방지",
+			"x":1288,
+			"y":13768,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"Gv0Q3vabC2Bv",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":13768},
+				"under":"P64n3Mj7VCys|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-hbsvVCf7pJuO",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 화려한 AI 자동 완성 및 대필 기능",
+			"x":1288,
+			"y":13976,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"hbsvVCf7pJuO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":13976},
+				"under":"P64n3Mj7VCys|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-revs9Ly95jJO",
+			"type":"text",
+			"text":"17. Adobe InDesign & XD — 마스터 페이지 그리드 & 텍스트 프레임 스레딩",
+			"x":976,
+			"y":14236,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"revs9Ly95jJO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":14236},
+				"under":"sbHSR2u94yr8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-GGv3eZxAQ3eb",
+			"type":"text",
+			"text":"극복한 Pain : 줄글이 길어질 때 레이아웃이 와르르 깨지는 불안, 조판 디자인 노가다",
+			"x":1288,
+			"y":14064,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"GGv3eZxAQ3eb",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":14064},
+				"under":"revs9Ly95jJO|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-E009ZKxtDpTr",
+			"type":"text",
+			"text":"극복 메커니즘 : 마스터 페이지에 수학적 그리드를 설정하고, 텍스트가 넘치면 다음 프레임으로 자동 흘러넘치게 스레딩(Threading) 연결하여 물리적 서식 무결성 유지",
+			"x":1288,
+			"y":14200,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"E009ZKxtDpTr",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":14200},
+				"under":"revs9Ly95jJO|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Am2UjK5fyMz3",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 가벼운 일상 메모 작성성, 비개발자/비디자이너의 접근성",
+			"x":1288,
+			"y":14408,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"Am2UjK5fyMz3",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":14408},
+				"under":"revs9Ly95jJO|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-VIDMkr0MGGpt",
+			"type":"text",
+			"text":"18. Google Sheets AI (바이브 라이팅 사례) — 정형 스키마 바인딩 & 정량 교차 검증",
+			"x":976,
+			"y":14668,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"VIDMkr0MGGpt",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":14668},
+				"under":"sbHSR2u94yr8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-XLnXvepnrcZY",
+			"type":"text",
+			"text":"극복한 Pain : 수치 없는 뜬구름 형용사 남발, 문서 내 데이터 왜곡 및 환각",
+			"x":1288,
+			"y":14520,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"XLnXvepnrcZY",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":14520},
+				"under":"VIDMkr0MGGpt|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-lcfhPccU0EQp",
+			"type":"text",
+			"text":"극복 메커니즘 : 행과 열로 정의된 스프레드시트 셀에 프롬프트와 입력값을 엄격히 결속. 100개 데이터셋을 정량 메트릭(Δ%, YoY) 기반으로 일괄 배치 추출하여 환각을 원천 차단",
+			"x":1288,
+			"y":14632,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"lcfhPccU0EQp",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":14632},
+				"under":"VIDMkr0MGGpt|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-0g39PSTr5Z1J",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 풍부한 감정적 수식어와 유려한 줄글 서사",
+			"x":1288,
+			"y":14840,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"0g39PSTr5Z1J",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":14840},
+				"under":"VIDMkr0MGGpt|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-FlQLgUIcq6aD",
+			"type":"text",
+			"text":"🧱 3종족. 레고 블록 조립파 레퍼런스 (Block Assembly Tribe — 14종)",
+			"x":352,
+			"y":17988,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"FlQLgUIcq6aD",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":17988},
+				"under":"zqeDeVX82Rf8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Sqdwf3j1MZsj",
+			"type":"text",
+			"text":"3종족 극복 전략의 본질 : 검증된 모듈 블록을 조립하는 직관적인 D&D 손맛과 3단 뷰포트로 글쓰기 노가다와 텍스트벽 멀미를 분쇄 (대신 서식 매몰과 전체 논리 척추 상실이 발생)",
+			"x":664,
+			"y":14952,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"Sqdwf3j1MZsj",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":14952},
+				"under":"FlQLgUIcq6aD|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Kxz9uBJjL15c",
+			"type":"text",
+			"text":"📁 [무마찰 입력 & D&D 스냅 조립 군]",
+			"x":664,
+			"y":15992,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"Kxz9uBJjL15c",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":15992},
+				"under":"FlQLgUIcq6aD|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-cRiVpAcnC2RS",
+			"type":"text",
+			"text":"21. Things 3 — Magic Plus Button & 쫀득한 16ms 마이크로 인터랙션",
+			"x":976,
+			"y":15332,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"cRiVpAcnC2RS",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":15332},
+				"under":"Kxz9uBJjL15c|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-05VfAdfICSxr",
+			"type":"text",
+			"text":"극복한 Pain : 생각 포집 시 서식 분류 강박, 마찰로 인한 아이디어 휘발, 조작 피로",
+			"x":1288,
+			"y":15160,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"05VfAdfICSxr",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":15160},
+				"under":"cRiVpAcnC2RS|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-sjgQ8LwECWtT",
+			"type":"text",
+			"text":"극복 메커니즘 : 화면 우하단의 `+` 버튼을 끌어당겨 원하는 위치나 하위 슬롯에 즉시 인라인 스냅 삽입(Insert Anywhere). 완료 시 0.1초 동안 살짝 튕기며 사라지는 쫀득한 손맛 피드백",
+			"x":1288,
+			"y":15296,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"sjgQ8LwECWtT",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":15296},
+				"under":"cRiVpAcnC2RS|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-JU0Z8xS9PGkh",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 깊은 계층 트리 폴더링, 장문 문서 작성 서식",
+			"x":1288,
+			"y":15504,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"JU0Z8xS9PGkh",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":15504},
+				"under":"cRiVpAcnC2RS|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-RwdSywehNxyn",
+			"type":"text",
+			"text":"23. Puck — 오픈소스 React 컴포넌트 빌더 & 3단 표준 뷰포트",
+			"x":976,
+			"y":15788,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"RwdSywehNxyn",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":15788},
+				"under":"Kxz9uBJjL15c|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-uDQiMT5TLEgI",
+			"type":"text",
+			"text":"극복한 Pain : 텍스트와 UI 컴포넌트 간의 분절, 위지윅 조립 시 시각적 인지 피로",
+			"x":1288,
+			"y":15616,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"uDQiMT5TLEgI",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":15616},
+				"under":"RwdSywehNxyn|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Kb1x0MwA7QN8",
+			"type":"text",
+			"text":"극복 메커니즘 : [좌측 아웃라인 트리 (20%)] : [중앙 위지윅 작업판 (60%)] : [우측 속성 인스펙터 (20%)]의 3단 표준 뷰포트 정립. 컴포넌트 계층 트리를 보며 본문을 조립",
+			"x":1288,
+			"y":15752,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"Kb1x0MwA7QN8",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":15752},
+				"under":"RwdSywehNxyn|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-5Y5ARwvUFP9J",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 연속적인 키보드 타이핑 줄글 집필 리듬",
+			"x":1288,
+			"y":15960,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"5Y5ARwvUFP9J",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":15960},
+				"under":"RwdSywehNxyn|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kzcwqTH85lQH",
+			"type":"text",
+			"text":"24. Framer — 반응형 스택(Stack) 컴포넌트 & 선택 영역 AI 레이아웃",
+			"x":976,
+			"y":16232,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"kzcwqTH85lQH",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":16232},
+				"under":"Kxz9uBJjL15c|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-q2HZL2X6yX8x",
+			"type":"text",
+			"text":"극복한 Pain : 줄글 ➔ 시각 레이아웃 수작업 노가다, 모바일/데스크톱 반응형 조판 피로",
+			"x":1288,
+			"y":16072,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"q2HZL2X6yX8x",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":16072},
+				"under":"kzcwqTH85lQH|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-McHylxff2RtP",
+			"type":"text",
+			"text":"극복 메커니즘 : 텍스트 길이에 따라 컨테이너가 유기적으로 늘어나는 오토 레이아웃 스택. 글 전체를 갈아엎지 않고 사용자가 지정한 특정 블록만 AI에게 새 레이아웃 대안 생성을 요청",
+			"x":1288,
+			"y":16208,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"McHylxff2RtP",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":16208},
+				"under":"kzcwqTH85lQH|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-icMt6ZdasnjU",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 가벼운 텍스트 에디터의 실행 속도",
+			"x":1288,
+			"y":16416,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"icMt6ZdasnjU",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":16416},
+				"under":"kzcwqTH85lQH|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-YNO0OPV4MHZX",
+			"type":"text",
+			"text":"25. Webflow — 좌 프롬프트 대화 ↔ 우 실시간 렌더링 듀얼 뷰포트",
+			"x":976,
+			"y":16652,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"YNO0OPV4MHZX",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":16652},
+				"under":"Kxz9uBJjL15c|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-yqNM0WuKil6k",
+			"type":"text",
+			"text":"극복한 Pain : AI 지시 후 결과물을 보러 창을 오가는 컨텍스트 스위칭 피로",
+			"x":1288,
+			"y":16504,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"yqNM0WuKil6k",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":16504},
+				"under":"YNO0OPV4MHZX|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-F2KZaMPvoxN7",
+			"type":"text",
+			"text":"극복 메커니즘 : 좌측에서 AI에게 자연어로 수정 지시를 내리면, 우측 프리뷰 캔버스에서 변경 사항이 1초 만에 실시간으로 반영되어 즉각적인 시각 피드백 제공",
+			"x":1288,
+			"y":16616,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"F2KZaMPvoxN7",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":16616},
+				"under":"YNO0OPV4MHZX|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-KyNRRLnUswOu",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 0.5초 이내 첫 줄 진입 속도 (무거운 웹 빌더 엔진 로딩 감수)",
+			"x":1288,
+			"y":16800,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"KyNRRLnUswOu",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":16800},
+				"under":"YNO0OPV4MHZX|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rIlW5p8iwsUU",
+			"type":"text",
+			"text":"📁 [자료 인제스천 & 워크플로우 승격 군]",
+			"x":664,
+			"y":17984,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"rIlW5p8iwsUU",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":17984},
+				"under":"FlQLgUIcq6aD|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-RrMi6w8NXrRi",
+			"type":"text",
+			"text":"22. Archify — 결정론적 빌드 린터 & 원천 커밋 출처 고정",
+			"x":976,
+			"y":17096,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"RrMi6w8NXrRi",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":17096},
+				"under":"rIlW5p8iwsUU|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-T6rGJGzpqaUa",
+			"type":"text",
+			"text":"극복한 Pain : 출처 없는 블랙박스 공포, AI 산출물의 스키마 파괴, 무책임한 코드 투척",
+			"x":1288,
+			"y":16912,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"T6rGJGzpqaUa",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":16912},
+				"under":"RrMi6w8NXrRi|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-DG6rZFGk1OHr",
+			"type":"text",
+			"text":"극복 메커니즘 : AI가 제안한 모든 블록마다 원본 레퍼런스 커밋 번호를 영구 고정. 경로 검사와 스키마 테스트를 100% 통과하지 못한 코드는 메인 저장소에 절대 병합시키지 않는 하드 게이트 가동",
+			"x":1288,
+			"y":17048,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"DG6rZFGk1OHr",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":17048},
+				"under":"RrMi6w8NXrRi|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-SCpNnGiPSLy0",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 빠른 속도로 대충 넘어가는 타협적 개발 경험",
+			"x":1288,
+			"y":17280,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"SCpNnGiPSLy0",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":17280},
+				"under":"RrMi6w8NXrRi|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-qQWFRaRYgeL4",
+			"type":"text",
+			"text":"26. Manifest (매니패스트) — 대화 인제스천 파이프라인 & 영역 선택 우선 생성",
+			"x":976,
+			"y":17564,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"qQWFRaRYgeL4",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":17564},
+				"under":"rIlW5p8iwsUU|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-7BXfMhqsCtaI",
+			"type":"text",
+			"text":"극복한 Pain : 백지 기획서 작성의 뇌정지, 회의록/메모 재가공 피로, AI의 무분별한 덮어쓰기",
+			"x":1288,
+			"y":17392,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"7BXfMhqsCtaI",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":17392},
+				"under":"qQWFRaRYgeL4|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-HkCI2IoTrFTa",
+			"type":"text",
+			"text":"극복 메커니즘 : 두서없는 회의록과 대화 메모를 던지면 와이어프레임과 기획서 뼈대를 자동 추출. 완성 전까지 사용자가 영역을 선택해 승인(Approve)해야만 정본으로 확정되는 게이트웨이",
+			"x":1288,
+			"y":17528,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"HkCI2IoTrFTa",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":17528},
+				"under":"qQWFRaRYgeL4|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ZuvhNJhdGQLQ",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 자유로운 비정형 마크다운 줄글 에디터",
+			"x":1288,
+			"y":17736,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"ZuvhNJhdGQLQ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":17736},
+				"under":"qQWFRaRYgeL4|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-xKdOkmxx5KET",
+			"type":"text",
+			"text":"27. Storyflow — 화이트보드 섹션 카드 ➔ 원클릭 문서·슬라이드 승격",
+			"x":976,
+			"y":17996,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"xKdOkmxx5KET",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":17996},
+				"under":"rIlW5p8iwsUU|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-XEb4a406UXPu",
+			"type":"text",
+			"text":"극복한 Pain : 브레인스토밍 메모의 사문화(Dead End), 발표 자료 조판 노가다",
+			"x":1288,
+			"y":17848,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"XEb4a406UXPu",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":17848},
+				"under":"xKdOkmxx5KET|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Aaq433wDv6JN",
+			"type":"text",
+			"text":"극복 메커니즘 : 화이트보드 위에 자유롭게 붙여둔 섹션 카드들을 클릭 한 번으로 폴더로 묶고, 발표용 슬라이드 덱이나 정돈된 기획서 문서로 즉시 승격",
+			"x":1288,
+			"y":17960,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"Aaq433wDv6JN",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":17960},
+				"under":"xKdOkmxx5KET|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-PJVnLjDzmiqO",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 코드 레벨의 정밀한 스타일 CSS 제어",
+			"x":1288,
+			"y":18144,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"PJVnLjDzmiqO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":18144},
+				"under":"xKdOkmxx5KET|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-GGB7PMXWVZ7F",
+			"type":"text",
+			"text":"28. Linear — 키보드 퀵점프 (`Cmd+K`) & AI 기여자 거버넌스",
+			"x":976,
+			"y":18440,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"GGB7PMXWVZ7F",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":18440},
+				"under":"rIlW5p8iwsUU|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-2SbMYQ6CVkJe",
+			"type":"text",
+			"text":"극복한 Pain : 마우스 조작 피로, AI 도입 시 책임 소재 불분명 및 작성자 낙인 공포",
+			"x":1288,
+			"y":18256,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"2SbMYQ6CVkJe",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":18256},
+				"under":"GGB7PMXWVZ7F|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-fPxTJrxtWMpZ",
+			"type":"text",
+			"text":"극복 메커니즘 : 마우스에 손 올릴 필요 없이 모든 작업과 문서를 단축키 하나로 점프. '인간이 주 담당자(Assignee)이고 AI는 조력자(Contributor)'라는 명확한 역할 규칙으로 책임 소재 규명",
+			"x":1288,
+			"y":18392,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"fPxTJrxtWMpZ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":18392},
+				"under":"GGB7PMXWVZ7F|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-6v9hGzbMY0KR",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 자유로운 2차원 캔버스 낙서와 리치 서식",
+			"x":1288,
+			"y":18624,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"6v9hGzbMY0KR",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":18624},
+				"under":"GGB7PMXWVZ7F|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-mbknF7BImfvR",
+			"type":"text",
+			"text":"29. ProtoPie — 1줄 트리거 ➔ 1줄 리스폰스 분리 모듈화",
+			"x":976,
+			"y":18884,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"mbknF7BImfvR",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":18884},
+				"under":"rIlW5p8iwsUU|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-t6PLd7Iqsz7O",
+			"type":"text",
+			"text":"극복한 Pain : 복잡한 조건문과 인터랙션 로직 설계 시 줄글 엉킴 및 예외 룰 누락",
+			"x":1288,
+			"y":18736,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"t6PLd7Iqsz7O",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":18736},
+				"under":"mbknF7BImfvR|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-gThZiTQbHoQ7",
+			"type":"text",
+			"text":"극복 메커니즘 : '트리거(입력)'와 '리스폰스(결과)'를 1:1 블록으로 엄격히 분리하여 조립. 복잡한 로직도 레고 블록처럼 시각적으로 인과관계가 명확히 드러남",
+			"x":1288,
+			"y":18872,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"gThZiTQbHoQ7",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":18872},
+				"under":"mbknF7BImfvR|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-xMejdWdH9xCe",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 자연어 기반의 긴 서사 집필",
+			"x":1288,
+			"y":19056,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"xMejdWdH9xCe",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":19056},
+				"under":"mbknF7BImfvR|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ZZXqB9bU1hw6",
+			"type":"text",
+			"text":"📁 [문서 협업 제안 & 시각 변환 슬롯 군]",
+			"x":664,
+			"y":20096,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"ZZXqB9bU1hw6",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":20096},
+				"under":"FlQLgUIcq6aD|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kcHfOcFArthr",
+			"type":"text",
+			"text":"30. Google Docs — 제안 모드 (Suggesting Mode) & 좌측 문서 개요 연동",
+			"x":976,
+			"y":19292,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"kcHfOcFArthr",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":19292},
+				"under":"ZZXqB9bU1hw6|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-yWssoGeGhi5W",
+			"type":"text",
+			"text":"극복한 Pain : 협업 피드백 시 원본 훼손 분쟁, 퇴고 수정 사항 설명 스트레스",
+			"x":1288,
+			"y":19144,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"yWssoGeGhi5W",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":19144},
+				"under":"kcHfOcFArthr|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BuFKhz1J1DIL",
+			"type":"text",
+			"text":"극복 메커니즘 : 원본을 건드리지 않고 취소선과 녹색 하이라이트로 제안 카드를 띄워, 원작자가 원클릭으로 `[✓ 수락] / [✗ 거절]`을 결정",
+			"x":1288,
+			"y":19256,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"BuFKhz1J1DIL",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":19256},
+				"under":"kcHfOcFArthr|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Sj3otmdRI5Os",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 비선형 2차원 캔버스 조망 및 브랜치 버전 관리",
+			"x":1288,
+			"y":19440,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"Sj3otmdRI5Os",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":19440},
+				"under":"kcHfOcFArthr|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-48IC3mm2krp3",
+			"type":"text",
+			"text":"31. Google Docs Version Control Report — 분 단위 불변 타임라인 & 작성자별 색상 추적",
+			"x":976,
+			"y":19700,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"48IC3mm2krp3",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":19700},
+				"under":"ZZXqB9bU1hw6|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-VbVvfWKRozvn",
+			"type":"text",
+			"text":"극복한 Pain : 대용량 협업 문서의 변경 이력 추적 불가 및 실수로 지웠을 때의 파멸 공포",
+			"x":1288,
+			"y":19552,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"VbVvfWKRozvn",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":19552},
+				"under":"48IC3mm2krp3|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-apTOVCorOcaT",
+			"type":"text",
+			"text":"극복 메커니즘 : 문서를 편집하는 모든 순간을 분 단위 불변 타임라인으로 박제. 작성자별 고유 색상으로 변경점을 하이라이트하여 투명한 감사 추적(Audit Trail) 보장",
+			"x":1288,
+			"y":19688,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"apTOVCorOcaT",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":19688},
+				"under":"48IC3mm2krp3|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kgcIpj2zfIXR",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 로컬 오프라인 완전 독립성",
+			"x":1288,
+			"y":19896,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"kgcIpj2zfIXR",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":19896},
+				"under":"48IC3mm2krp3|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-cdJfWHMjUPv1",
+			"type":"text",
+			"text":"32. Boords — 텍스트 대본 ➔ 시각 스토리보드 자동 분해 슬롯",
+			"x":976,
+			"y":20120,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"cdJfWHMjUPv1",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":20120},
+				"under":"ZZXqB9bU1hw6|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-tCRRyIzDAOj3",
+			"type":"text",
+			"text":"극복한 Pain : 글 다 쓰고 나서 회의용 시각 자료나 발표 컷을 일일이 그리는 노가다",
+			"x":1288,
+			"y":19984,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"tCRRyIzDAOj3",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":19984},
+				"under":"cdJfWHMjUPv1|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rlTVPvnoQ4bf",
+			"type":"text",
+			"text":"극복 메커니즘 : 텍스트 줄글 대본을 던지면 핵심 씬과 지문을 인식하여 1장 1메시지 스토리보드 프레임 슬롯으로 자동 분해",
+			"x":1288,
+			"y":20120,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"rlTVPvnoQ4bf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":20120},
+				"under":"cdJfWHMjUPv1|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-HNotpbKwRiE0",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 복잡한 텍스트 위계 트리 조작",
+			"x":1288,
+			"y":20280,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"HNotpbKwRiE0",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":20280},
+				"under":"cdJfWHMjUPv1|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-cc7jFq7nWQed",
+			"type":"text",
+			"text":"33. Boarder — 칸반 카드 ↔ 상세 문서 양방향 상태 동기화",
+			"x":976,
+			"y":20492,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"cc7jFq7nWQed",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":20492},
+				"under":"ZZXqB9bU1hw6|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-cWLar5fa0Ex1",
+			"type":"text",
+			"text":"극복한 Pain : 문서와 프로젝트 관리 티켓이 따로 놀아 발생하는 지식 드리프트",
+			"x":1288,
+			"y":20368,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"cWLar5fa0Ex1",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":20368},
+				"under":"cc7jFq7nWQed|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-hF8qes1qysLU",
+			"type":"text",
+			"text":"극복 메커니즘 : 문서 내 세부 블록이 칸반 보드의 카드와 1:1로 양방향 동기화되어, 상태 변경 시 문서 내용도 함께 최신 상태로 유지",
+			"x":1288,
+			"y":20480,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"hF8qes1qysLU",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":20480},
+				"under":"cc7jFq7nWQed|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-xjKsD0rmLWlJ",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 가벼운 단일 파일 메모장 경험",
+			"x":1288,
+			"y":20640,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"xjKsD0rmLWlJ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":20640},
+				"under":"cc7jFq7nWQed|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-KTSoNGGJS47F",
+			"type":"text",
+			"text":"34. Clip Studio — 프레임 분할 룰러 & 벡터 레이어 물리 잠금",
+			"x":976,
+			"y":20876,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"KTSoNGGJS47F",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":20876},
+				"under":"ZZXqB9bU1hw6|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-RiCAvPxv6I0w",
+			"type":"text",
+			"text":"극복한 Pain : 컷 나누기 작업 시 인접 영역 침범 및 공들인 완성 컷 실수 훼손",
+			"x":1288,
+			"y":20728,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"RiCAvPxv6I0w",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":20728},
+				"under":"KTSoNGGJS47F|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-scmXy6qbZXc0",
+			"type":"text",
+			"text":"극복 메커니즘 : 화면을 사각형 프레임으로 분할하면 내부 내용이 절대 밖으로 삐져나가지 못하게 마스킹. 완성된 레이어는 자물쇠로 잠가 추가 붓질을 물리적으로 차단",
+			"x":1288,
+			"y":20840,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"scmXy6qbZXc0",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":20840},
+				"under":"KTSoNGGJS47F|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-uvG9Sb08t61I",
+			"type":"text",
+			"text":"쿨하게 버린 것 : 텍스트 기반 논리 구조화",
+			"x":1288,
+			"y":21048,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"uvG9Sb08t61I",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":21048},
+				"under":"KTSoNGGJS47F|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rzG9rmX764ST",
+			"type":"text",
+			"text":"🏁 35종 레퍼런스 대조 총괄 요약 및 분석",
+			"x":352,
+			"y":22236,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"rzG9rmX764ST",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":22236},
+				"under":"zqeDeVX82Rf8|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-GSvWodidTqif",
+			"type":"text",
+			"text":"1. 3대 종족 극복 전략의 핵심 요약 및 딜레마 비교",
+			"x":664,
+			"y":21512,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"GSvWodidTqif",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":21512},
+				"under":"rzG9rmX764ST|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BC7hX2jgqzm2",
+			"type":"text",
+			"text":"1종족 극단적 자유파 (자유의 딜레마)",
+			"x":976,
+			"y":21228,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"BC7hX2jgqzm2",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":21228},
+				"under":"GSvWodidTqif|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-1l0Pvq8JaniY",
+			"type":"text",
+			"text":"극복한 것 : 생각의 무한한 확장, 단일 노드 줌인으로 뇌 용량 과부하 차단, 16ms 타이핑 리듬",
+			"x":1288,
+			"y":21136,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"1l0Pvq8JaniY",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":21136},
+				"under":"BC7hX2jgqzm2|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-791Lv0qCvlUt",
+			"type":"text",
+			"text":"남겨진 고통 : 첫 시작의 백지 공포증, 캔버스 카드 배치 노가다, 구조 없는 난잡화",
+			"x":1288,
+			"y":21272,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"791Lv0qCvlUt",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":21272},
+				"under":"BC7hX2jgqzm2|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-wh9glFIBzlix",
+			"type":"text",
+			"text":"2종족 엄격한 규칙·슬롯파 (규칙의 딜레마)",
+			"x":976,
+			"y":21512,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"wh9glFIBzlix",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":21512},
+				"under":"GSvWodidTqif|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-hvsAJRkGMWLz",
+			"type":"text",
+			"text":"극복한 것 : Git 스냅샷/인라인 Diff로 롤백 불안 원천 차단, Reviewer 쓰기 박탈로 AI 환각 방어, 문서 무결성 보장",
+			"x":1288,
+			"y":21408,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"hvsAJRkGMWLz",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":21408},
+				"under":"wh9glFIBzlix|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-PYnu03Ql6b8e",
+			"type":"text",
+			"text":"남겨진 고통 : 숨 막히는 문법/규칙 학습 피로, 초기 자유로운 아이디어 발상의 질식",
+			"x":1288,
+			"y":21568,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"PYnu03Ql6b8e",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":21568},
+				"under":"wh9glFIBzlix|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-zFvX1s6oi4AO",
+			"type":"text",
+			"text":"3종족 레고 블록 조립파 (조립의 딜레마)",
+			"x":976,
+			"y":21796,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"zFvX1s6oi4AO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":21796},
+				"under":"GSvWodidTqif|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-WXhZvGovkFSM",
+			"type":"text",
+			"text":"극복한 것 : Things 3식 매직 플러스 인라인 스냅, 검증된 모듈 카드로 포맷 노가다 제거, 직관적 3단 뷰포트",
+			"x":1288,
+			"y":21704,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"WXhZvGovkFSM",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":21704},
+				"under":"zFvX1s6oi4AO|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-GfitExT6KKcO",
+			"type":"text",
+			"text":"남겨진 고통 : 블록 서식 꾸미기에 매몰되어 글의 핵심 척추(A라인) 상실, 파편화",
+			"x":1288,
+			"y":21864,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"GfitExT6KKcO",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":21864},
+				"under":"zFvX1s6oi4AO|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-5loTKrTIby00",
+			"type":"text",
+			"text":"2. 시장 34종 레퍼런스 어디에도 없는 '거대한 블루오션 (미해결 과제)'",
+			"x":664,
+			"y":22336,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"5loTKrTIby00",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":22336},
+				"under":"rzG9rmX764ST|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-E8lEmc0Wyd8L",
+			"type":"text",
+			"text":"① 지적 소유권(Ownership) 보존과 사고력 퇴화 방지 (전 세계 유일 결핍)",
+			"x":976,
+			"y":22128,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"E8lEmc0Wyd8L",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":22128},
+				"under":"5loTKrTIby00|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-0hEbqNnaXIXM",
+			"type":"text",
+			"text":"시장의 현주소 : 34개 레퍼런스 중 Dabble의 'NO SUBSTITUTES' 선언 배너 외에는, 사용자의 고유 문체 지문을 지키거나 사유 근육의 퇴화를 막아주는 인터랙션을 제공하는 제품이 전무함",
+			"x":1288,
+			"y":21976,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"0hEbqNnaXIXM",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":21976},
+				"under":"E8lEmc0Wyd8L|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kp4x5YaBvIkv",
+			"type":"text",
+			"text":"Scaffold Manager의 기회 : AI에게 글 전체 대필을 맡기는 것이 아니라, '내 생각의 해상도를 훈련시키는 비계(Scaffold)'로 작동할 때 시장 독점적 위치 선점 가능",
+			"x":1288,
+			"y":22184,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"kp4x5YaBvIkv",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":22184},
+				"under":"E8lEmc0Wyd8L|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-qh4Uah1lrnCA",
+			"type":"text",
+			"text":"② 영혼 없는 칭찬봇 거부와 가혹한 비판자 갈증 (적대적 하네스)",
+			"x":976,
+			"y":22544,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"qh4Uah1lrnCA",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":22544},
+				"under":"5loTKrTIby00|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-jzH1Y5sg2HRQ",
+			"type":"text",
+			"text":"시장의 현주소 : 일반 문서 툴의 AI는 전부 '훌륭한 기획입니다!'라고 아첨하는 Yes-Man 챗봇뿐임. 오직 ai-job-search 같은 극소수 코드 하네스에만 쓰기 박탈 Reviewer가 존재함",
+			"x":1288,
+			"y":22392,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"jzH1Y5sg2HRQ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":22392},
+				"under":"qh4Uah1lrnCA|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-dpQimZFQPd9g",
+			"type":"text",
+			"text":"Scaffold Manager의 기회 : 회의 전 상사나 동료 앞에서 털리기 전에, AI가 심사위원 페르소나로 빙의해 논리의 취약점을 먼저 난타해 주는 Visual Grill-Me 하드게이트 이식",
+			"x":1288,
+			"y":22600,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"dpQimZFQPd9g",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":22600},
+				"under":"qh4Uah1lrnCA|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-bQU1yCuTHDhW",
+			"type":"text",
+			"text":"3. Scaffold Manager의 최종 수렴 공식 (3대 종족의 결합)",
+			"x":664,
+			"y":23060,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"bQU1yCuTHDhW",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":23060},
+				"under":"rzG9rmX764ST|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-W1XpFSQIVlei",
+			"type":"text",
+			"text":"1종족에서 가져올 80% : Workflowy식 단일 노드 줌포커스 + 16ms 키보드 타이핑 리듬",
+			"x":976,
+			"y":22808,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"W1XpFSQIVlei",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":22808},
+				"under":"bQU1yCuTHDhW|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-U6fK2TBHN1Jj",
+			"type":"text",
+			"text":"2종족에서 가져올 80% : Git식 로컬 스냅샷 체크포인트 + 초록/빨강 인라인 Diff + ai-job-search식 쓰기박탈 Reviewer",
+			"x":976,
+			"y":22944,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"U6fK2TBHN1Jj",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":22944},
+				"under":"bQU1yCuTHDhW|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-RViXb1A6cjCZ",
+			"type":"text",
+			"text":"3종족에서 가져올 80% : Things 3식 매직 플러스 인라인 스냅 + 표준 3단 뷰포트 레이아웃",
+			"x":976,
+			"y":23104,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"RViXb1A6cjCZ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":23104},
+				"under":"bQU1yCuTHDhW|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-9Q1VKPinBqhG",
+			"type":"text",
+			"text":"우리가 얹을 독창적 20% 킬러 무기 : 작성자의 주체성을 지키는 'Visual Grill-Me (지적 샌드백)' × '1D 아웃라인 ↔ 2D 캔버스 무지연 양방향 플립'",
+			"x":976,
+			"y":23240,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"9Q1VKPinBqhG",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":23240},
+				"under":"bQU1yCuTHDhW|zqeDeVX82Rf8",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-uRw9kMbu8Heo",
+			"type":"text",
+			"text":"🚀 PART 3. PM 종합 분석 및 Scaffold Manager 프로토타입 실행 전략 (15분 공유회)",
+			"x":40,
+			"y":27984,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"uRw9kMbu8Heo",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":40,"y":27984},
+				"under":"|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-t0GQoUSqhEIw",
+			"type":"text",
+			"text":"핵심 요약 : 거대한 35종 레퍼런스 탈곡과 JTBD 니즈 분석을 관통하는 최종 결론 — 왜 이 작업을 했고, 과거 웹소설의 성공 방정식에서 무엇을 계승했으며, Scaffold Manager 프로토타입이 가져야 할 핵심 사양·체크포인트·포기할 것·20% 독창적 킬러 무기는 무엇인가?",
+			"x":352,
+			"y":23584,
+			"width":240,
+			"height":264,
+			"vibeOutline":{
+				"nodeId":"t0GQoUSqhEIw",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":23584},
+				"under":"uRw9kMbu8Heo|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-dLJplVXBy24n",
+			"type":"text",
+			"text":"📁 [1. 프로젝트 추진 배경 및 분석 파이프라인 (Why & How)]",
+			"x":352,
+			"y":24480,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"dLJplVXBy24n",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":24480},
+				"under":"uRw9kMbu8Heo|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-miWgcX1S1xNf",
+			"type":"text",
+			"text":"시작은 무엇이었는가 : 현재 매일 쓰는 '.outline'의 병목 해결 갈증",
+			"x":664,
+			"y":24016,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"miWgcX1S1xNf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":24016},
+				"under":"dLJplVXBy24n|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-mwLhk3NzKoQW",
+			"type":"text",
+			"text":"추상적인 이상향의 도구를 만드는 것이 아니라, 지금 우리가 옵시디언 볼트에서 매일 사용하고 있는 '.outline' 에디터 환경에서 느끼는 답답함(수정 시 롤백 불가 불안, 1차원 줄글의 조망 한계, AI의 덮어쓰기 폭주)을 해결하기 위한 실전 프로토타입 구축 요구에서 출발",
+			"x":976,
+			"y":23864,
+			"width":240,
+			"height":264,
+			"vibeOutline":{
+				"nodeId":"mwLhk3NzKoQW",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":23864},
+				"under":"miWgcX1S1xNf|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-1rsxKr2tZYhf",
+			"type":"text",
+			"text":"글로벌 레퍼런스 서비스들을 막연히 구경하는 것이 아니라, 사용성 가설을 검증하기 위한 분해 수술대로 삼음",
+			"x":976,
+			"y":24144,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"1rsxKr2tZYhf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":24144},
+				"under":"miWgcX1S1xNf|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rFBs0IvVRM1e",
+			"type":"text",
+			"text":"과거 성공 방정식의 소환 : 웹소설 어시스턴트 & 고작가 심층 인터뷰 회고",
+			"x":664,
+			"y":24468,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"rFBs0IvVRM1e",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":24468},
+				"under":"dLJplVXBy24n|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-yxaEgX1jUFGw",
+			"type":"text",
+			"text":"과거 웹소설 어시스턴트를 기획할 때, 겉핥기식 기능 나열을 버리고 전문가(고작가) 1명을 극한까지 파내어 작업 라이프사이클을 스윔레인(Swimlane) 차트로 도해화하고 수백 개 니즈를 포스트잇 카드로 뽑아냈던 성공 공식을 재가동",
+			"x":976,
+			"y":24280,
+			"width":240,
+			"height":240,
+			"vibeOutline":{
+				"nodeId":"yxaEgX1jUFGw",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":24280},
+				"under":"rFBs0IvVRM1e|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-I085mIyUsR9m",
+			"type":"text",
+			"text":"그 노하우를 그대로 계승하여, '일단 끄적여 보는 것'부터 'JTBD 진보의 4가지 힘 캔버스'까지 작업자의 심층 결핍 86개를 바닥까지 탈곡 ➔ 그 결과가 바로 [PART 1. 창작과 작업 수행의 Pain 포인트]",
+			"x":976,
+			"y":24536,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"I085mIyUsR9m",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":24536},
+				"under":"rFBs0IvVRM1e|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-QiohPqVpwJoM",
+			"type":"text",
+			"text":"론 프리드먼의 《역설계》 방법론 탑재 : 80% 공통 기본기 + 20% 변주 무기 발라내기",
+			"x":664,
+			"y":24920,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"QiohPqVpwJoM",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":24920},
+				"under":"dLJplVXBy24n|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-YzQGV6nRFTaW",
+			"type":"text",
+			"text":"세상에 완전히 새로운 것은 없다. 거대 레퍼런스들을 통째로 베끼려다 체하지 않고, ① 남들이 공통으로 지키는 80%의 익숙한 기본 공식과 ② 그들이 성공한 20%의 킬러 무기를 정밀 분리수거",
+			"x":976,
+			"y":24768,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"YzQGV6nRFTaW",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":24768},
+				"under":"QiohPqVpwJoM|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-0L0QPBGgy8IK",
+			"type":"text",
+			"text":"34종 레퍼런스를 1종족(자유)·2종족(규칙)·3종족(블록)으로 나누어 254개의 동작 원자(Atomic Interactions)를 핀셋 발췌하고 니즈 판과 결합 ➔ 그 결과가 바로 [PART 2. 35종 레퍼런스 극복 방식 대조]",
+			"x":976,
+			"y":24976,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"0L0QPBGgy8IK",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":24976},
+				"under":"QiohPqVpwJoM|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-WXXynSf7R9W1",
+			"type":"text",
+			"text":"📁 [2. PM이 정의하는 Scaffold Manager 핵심 사양 (C1~C5 파이프라인)]",
+			"x":352,
+			"y":26436,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"WXXynSf7R9W1",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":26436},
+				"under":"uRw9kMbu8Heo|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-pYFIzUcbfESh",
+			"type":"text",
+			"text":"C1. 무마찰 포집 (Capture & Ingest) — Things 3식 팝업 & 원클릭 아웃라인 변환",
+			"x":664,
+			"y":25380,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"pYFIzUcbfESh",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":25380},
+				"under":"WXXynSf7R9W1|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-tQiDuJMH9UaE",
+			"type":"text",
+			"text":"해결하는 고통 : '생각은 쏟아지는데 처음부터 목차나 서식을 잡으려니 머리가 굳어버린다'",
+			"x":976,
+			"y":25208,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"tQiDuJMH9UaE",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":25208},
+				"under":"pYFIzUcbfESh|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-5Rz4r4NCdhPR",
+			"type":"text",
+			"text":"구현 사양 : 단축키 하나로 호출되는 경량 인박스 팝업에 줄바꿈으로 파편화된 생각을 포스트잇처럼 자유롭게 배설하고, 버튼 클릭 한 번으로 '.outline' 루트 노드 위계로 자동 정렬 묶기",
+			"x":976,
+			"y":25344,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"5Rz4r4NCdhPR",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":25344},
+				"under":"pYFIzUcbfESh|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Qhm4N5ddiJMw",
+			"type":"text",
+			"text":"참조 레퍼런스 : Things 3 (마찰 제로 입력) + Manifest (비정형 메모 인제스천)",
+			"x":976,
+			"y":25552,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"Qhm4N5ddiJMw",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":25552},
+				"under":"pYFIzUcbfESh|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BMj8ImSVKm8I",
+			"type":"text",
+			"text":"C2. 위계 뼈대화 (Structuring & Focusing) — Workflowy식 줌인 & URL to Scaffold",
+			"x":664,
+			"y":25884,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"BMj8ImSVKm8I",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":25884},
+				"under":"WXXynSf7R9W1|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-athGwKkav5V2",
+			"type":"text",
+			"text":"해결하는 고통 : '문서가 길어지면 위아래 스크롤 피로와 디테일의 늪에서 길을 잃고 멍해진다'",
+			"x":976,
+			"y":25688,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"athGwKkav5V2",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":25688},
+				"under":"BMj8ImSVKm8I|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-rfImwBO1iC3z",
+			"type":"text",
+			"text":"구현 사양 : 어떤 불릿이든 클릭하면 해당 노드가 최상위 화면으로 전환되는 단일 노드 줌포커스(Zoom-in Focus) 및 16ms 키보드 무한 인덴트. 검증된 레퍼런스 URL을 던지면 알맹이는 빼고 목차 뼈대(Scaffold)만 빈칸 슬롯으로 즉시 복제",
+			"x":976,
+			"y":25824,
+			"width":240,
+			"height":240,
+			"vibeOutline":{
+				"nodeId":"rfImwBO1iC3z",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":25824},
+				"under":"BMj8ImSVKm8I|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-O2lIeM87PT4C",
+			"type":"text",
+			"text":"참조 레퍼런스 : Workflowy (단일 노드 줌인) + Scrivener (목차-리서치 바인더)",
+			"x":976,
+			"y":26080,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"O2lIeM87PT4C",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":26080},
+				"under":"BMj8ImSVKm8I|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-vX24evC77fqa",
+			"type":"text",
+			"text":"C3. 불변 안전망 (Safety Net & Staging) — Git식 체크포인트 & 인라인 Diff 체리픽",
+			"x":664,
+			"y":26388,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"vX24evC77fqa",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":26388},
+				"under":"WXXynSf7R9W1|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-FXnyVaDH7faB",
+			"type":"text",
+			"text":"해결하는 고통 : '수정하다가 날아갈까 봐 후회할까 봐 한 글자도 과감하게 못 지우겠다'",
+			"x":976,
+			"y":26216,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"FXnyVaDH7faB",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":26216},
+				"under":"vX24evC77fqa|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-7JQ3c6UOmfgE",
+			"type":"text",
+			"text":"구현 사양 : 단축키로 찍는 로컬 체크포인트 스냅샷(`NodeCheckpointStore`). AI 제안 및 수정안을 초록(`+`)/빨강(`-`) 인라인 Diff로 시각 대조하고, 원하는 노드만 `Tab`(승인)/`Esc`(거절)로 핀셋 반영",
+			"x":976,
+			"y":26352,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"7JQ3c6UOmfgE",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":26352},
+				"under":"vX24evC77fqa|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-p8Ie6UAiwE6d",
+			"type":"text",
+			"text":"참조 레퍼런스 : Git (커밋·Diff·체리픽) + Google Docs (제안 모드)",
+			"x":976,
+			"y":26584,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"p8Ie6UAiwE6d",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":26584},
+				"under":"vX24evC77fqa|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-HBjJ8aCADjPk",
+			"type":"text",
+			"text":"C4. 2차원 조망 (Visualization & Branching) — 1D 아웃라인 ↔ 2D 캔버스 무지연 플립",
+			"x":664,
+			"y":26880,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"HBjJ8aCADjPk",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":26880},
+				"under":"WXXynSf7R9W1|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-2QrQvmX2Ktkq",
+			"type":"text",
+			"text":"해결하는 고통 : '1차원 줄글로는 여러 대안(Branch)들의 인과관계가 한눈에 조망되지 않는다'",
+			"x":976,
+			"y":26696,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"2QrQvmX2Ktkq",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":26696},
+				"under":"HBjJ8aCADjPk|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-iRUZ2EOD7qNG",
+			"type":"text",
+			"text":"구현 사양 : 1차원 수직 아웃라인 트리가 단축키 하나로 2차원 브랜치 캔버스로 즉시 변환(`CanvasBranchFlipper`). 캔버스에서 노드를 이동하거나 대안을 비교한 결과가 아웃라인 트리에 무지연 양방향 실시간 동기화",
+			"x":976,
+			"y":26832,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"iRUZ2EOD7qNG",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":26832},
+				"under":"HBjJ8aCADjPk|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kXUgZrCOJG7c",
+			"type":"text",
+			"text":"참조 레퍼런스 : Heptabase (공간 카드 시각화) + Obsidian Canvas + GitKraken (브랜치 트리)",
+			"x":976,
+			"y":27064,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"kXUgZrCOJG7c",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":27064},
+				"under":"HBjJ8aCADjPk|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-38988n6LJo7S",
+			"type":"text",
+			"text":"C5. 에이전트 하네스 (Harness & Reviewer) — 노드 잠금(Lock) & 적대적 Reviewer 가혹 난타",
+			"x":664,
+			"y":27420,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"38988n6LJo7S",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":27420},
+				"under":"WXXynSf7R9W1|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Fxr4Wh4adVEz",
+			"type":"text",
+			"text":"해결하는 고통 : '기껏 써둔 완성 노드가 AI 재생성에 날아가고, 아첨만 떠는 칭찬봇에 현타가 온다'",
+			"x":976,
+			"y":27200,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"Fxr4Wh4adVEz",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":27200},
+				"under":"38988n6LJo7S|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-B17bepHSEJmJ",
+			"type":"text",
+			"text":"구현 사양 : 확정된 상위 노드는 자물쇠로 잠그고(`Ctrl + L`, `NodeLockManager`), 빈칸이나 미완성 블록만 v1/v2/v3 인라인 다중 발산. 회의 전 깐깐한 심사위원 페르소나로 빙의해 논리의 급소와 숨은 가정을 공격하는 적대적 비판자 모드 가동",
+			"x":976,
+			"y":27336,
+			"width":240,
+			"height":264,
+			"vibeOutline":{
+				"nodeId":"B17bepHSEJmJ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":27336},
+				"under":"38988n6LJo7S|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BfMzGX20yVwJ",
+			"type":"text",
+			"text":"참조 레퍼런스 : ai-job-search (쓰기 권한 박탈 Reviewer) + Archify (하드 게이트) + Framer (선택 영역 AI)",
+			"x":976,
+			"y":27616,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"BfMzGX20yVwJ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":27616},
+				"under":"38988n6LJo7S|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-FXZSPE1mgPQu",
+			"type":"text",
+			"text":"📁 [3. 반드시 통과해야 할 5대 품질 체크포인트 (Quality Gates)]",
+			"x":352,
+			"y":28216,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"FXZSPE1mgPQu",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":28216},
+				"under":"uRw9kMbu8Heo|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-RCwS9gnlNGfi",
+			"type":"text",
+			"text":"Gate 01. 원본 파괴 0% 게이트 (Isolation & Staging)",
+			"x":664,
+			"y":27824,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"RCwS9gnlNGfi",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":27824},
+				"under":"FXZSPE1mgPQu|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ZgQ7JIwoWfuf",
+			"type":"text",
+			"text":"점검 항목 : AI가 생성한 어떠한 텍스트도 작업자의 명시적 승인(Pick) 없이 메인 정본 노드를 직접 덮어쓰지 못하는 격리 샌드박스 안전선이 물리적으로 보장되는가?",
+			"x":976,
+			"y":27776,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"ZgQ7JIwoWfuf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":27776},
+				"under":"RCwS9gnlNGfi|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-XqruBg2w35f3",
+			"type":"text",
+			"text":"Gate 02. 키보드 16ms 쫀득한 반응 속도 (Tactile Rhythm)",
+			"x":664,
+			"y":28032,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"XqruBg2w35f3",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":28032},
+				"under":"FXZSPE1mgPQu|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-zuOyEYwbjtjF",
+			"type":"text",
+			"text":"점검 항목 : 마우스로 손이 갈 필요 없이 엔터/탭/단축키만으로 모든 위계 조작과 줌인이 16ms 무지연으로 동작하며, 체크 완료 시 0.1초 경쾌한 피드백(Things 3 손맛)을 선사하는가?",
+			"x":976,
+			"y":27984,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"zuOyEYwbjtjF",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":27984},
+				"under":"XqruBg2w35f3|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-yxLL8yDG9elc",
+			"type":"text",
+			"text":"Gate 03. 1초 원클릭 롤백 안전망 (Deterministic Recovery)",
+			"x":664,
+			"y":28228,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"yxLL8yDG9elc",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":28228},
+				"under":"FXZSPE1mgPQu|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-0qvrRqci7RNf",
+			"type":"text",
+			"text":"점검 항목 : 대규모 가지치기나 AI 제안 반영 후 마음에 들지 않을 때, 단축키 한 번으로 1초 전, 10분 전 체크포인트 상태로 완벽히 원상 복구할 수 있는가?",
+			"x":976,
+			"y":28192,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"0qvrRqci7RNf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":28192},
+				"under":"yxLL8yDG9elc|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Mz0PpkCSxtyW",
+			"type":"text",
+			"text":"Gate 04. 영혼 없는 칭찬봇(Yes-Man) 차단 & 급소 난타 (Adversarial Rigor)",
+			"x":664,
+			"y":28412,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"Mz0PpkCSxtyW",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":28412},
+				"under":"FXZSPE1mgPQu|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-9A5aRSOvgGm2",
+			"type":"text",
+			"text":"점검 항목 : '훌륭한 기획입니다' 따위의 아첨을 원천 차단하고, 논리의 취약점과 데이터 부족을 소크라테스식 반론(Visual Grill-Me)으로 가혹하게 짚어주는가?",
+			"x":976,
+			"y":28376,
+			"width":240,
+			"height":168,
+			"vibeOutline":{
+				"nodeId":"9A5aRSOvgGm2",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":28376},
+				"under":"Mz0PpkCSxtyW|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-f9e7YuCcEo5Q",
+			"type":"text",
+			"text":"Gate 05. 문체 지문 보존 & AI Slop(상투어) 제로 (Ownership Integrity)",
+			"x":664,
+			"y":28608,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"f9e7YuCcEo5Q",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":28608},
+				"under":"FXZSPE1mgPQu|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-dPVydNOGqeTU",
+			"type":"text",
+			"text":"점검 항목 : '결론적으로', '다양한 측면을 고려하여' 같은 기름진 AI 상투어를 강제로 도려내고, 작성자 고유의 문체와 인지적 깊이(Why)를 훼손 없이 유지하는가?",
+			"x":976,
+			"y":28560,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"dPVydNOGqeTU",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":28560},
+				"under":"f9e7YuCcEo5Q|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-CXg98mpI3g5t",
+			"type":"text",
+			"text":"📁 [4. 과감히 버릴 것 (Deliberate Blindness — 35장 흐린눈의 미학)]",
+			"x":352,
+			"y":29280,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"CXg98mpI3g5t",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":29280},
+				"under":"uRw9kMbu8Heo|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-tk8v063QHhez",
+			"type":"text",
+			"text":"버릴 것 1. 클라우드 실시간 다자간 동시 편집 (Multiplayer Sync)",
+			"x":664,
+			"y":28840,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"tk8v063QHhez",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":28840},
+				"under":"CXg98mpI3g5t|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-vukWDepaQXii",
+			"type":"text",
+			"text":"버리는 이유 : 구글 닥스나 피그마식 동시 편집은 극심한 서버 인프라와 충돌 해결(CRDT) 비용을 유발함. Scaffold Manager의 본질은 개인 작업자가 옵시디언 볼트에서 오롯이 사유하고 깊게 기획하는 로컬 퍼스트 환경이므로 과감히 흐린눈",
+			"x":976,
+			"y":28768,
+			"width":240,
+			"height":240,
+			"vibeOutline":{
+				"nodeId":"vukWDepaQXii",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":28768},
+				"under":"tk8v063QHhez|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Babw1gYciCzv",
+			"type":"text",
+			"text":"버릴 것 2. 서식 꾸미기 위지윅 기능 (Rich Styling & Typography)",
+			"x":664,
+			"y":29084,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"Babw1gYciCzv",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":29084},
+				"under":"CXg98mpI3g5t|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-JRePqa3qLnQD",
+			"type":"text",
+			"text":"버리는 이유 : 폰트 크기, 컬러, 여백 조정 등 서식 매몰은 글의 핵심 척추(A라인) 설계를 방해하는 주범. 순수 텍스트 불릿과 단일 위계 트리에만 집중하고 스타일링은 최종 출력 단계로 완전히 격리",
+			"x":976,
+			"y":29024,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"JRePqa3qLnQD",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":29024},
+				"under":"Babw1gYciCzv|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-l534oQodQeXT",
+			"type":"text",
+			"text":"버릴 것 3. 무거운 웹 빌더형 CMS 및 퍼블리싱 기능 (Full-Stack Publishing)",
+			"x":664,
+			"y":29316,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"l534oQodQeXT",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":29316},
+				"under":"CXg98mpI3g5t|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-MZmwk2I439dD",
+			"type":"text",
+			"text":"버리는 이유 : Webflow, Framer, Reedsy의 최종 배포/유통 엔진은 지금 당장의 가설 검증과 무관함. 우리의 유일한 닻은 매일 쓰는 '.outline'의 고통 해결이므로 복잡한 퍼블리싱 파이프라인은 쿨하게 배제",
+			"x":976,
+			"y":29256,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"MZmwk2I439dD",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":29256},
+				"under":"l534oQodQeXT|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ZptvAaPssDRS",
+			"type":"text",
+			"text":"버릴 것 4. 타이핑할 때마다 무분별하게 쌓이는 마이크로 자동저장 (Micro Auto-save)",
+			"x":664,
+			"y":29524,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"ZptvAaPssDRS",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":29524},
+				"under":"CXg98mpI3g5t|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-UB82GPabCA2Q",
+			"type":"text",
+			"text":"버리는 이유 : 오타 하나 칠 때마다 쌓이는 버전 히스토리는 비교 피로만 유발함. 작업자가 의도적으로 단축키를 눌러 남기는 '의미 있는 체크포인트(Milestone Commit)'만 정제 기록",
+			"x":976,
+			"y":29488,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"UB82GPabCA2Q",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":29488},
+				"under":"ZptvAaPssDRS|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-e0pQbmBT0x1O",
+			"type":"text",
+			"text":"버릴 것 5. 장황한 사전 프롬프트 엔지니어링 및 셋업 온보딩 (Setup Overhead)",
+			"x":664,
+			"y":29744,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"e0pQbmBT0x1O",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":29744},
+				"under":"CXg98mpI3g5t|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-UwiuAbf4ZzQd",
+			"type":"text",
+			"text":"버리는 이유 : 도구 하나 쓰겠다고 세팅에 반나절을 쓰는 것은 본말전도. 볼트 내 기존 문서의 맥락을 스스로 슬라이싱하고 도구가 먼저 질문과 뼈대를 제시하는 제로 셋업 추구",
+			"x":976,
+			"y":29696,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"UwiuAbf4ZzQd",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":29696},
+				"under":"e0pQbmBT0x1O|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-qI0lSDvi03vW",
+			"type":"text",
+			"text":"📁 [5. 반드시 챙겨야 할 80% 기본기와 독창적 20% 킬러 무기 (Winning Strategy)]",
+			"x":352,
+			"y":30636,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"qI0lSDvi03vW",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":30636},
+				"under":"uRw9kMbu8Heo|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-EEBU2Z5Xk9wx",
+			"type":"text",
+			"text":"반드시 챙겨야 할 80% 업계 표준선 (따라가지 않으면 탈락하는 위생 요인)",
+			"x":664,
+			"y":30096,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"EEBU2Z5Xk9wx",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":30096},
+				"under":"qI0lSDvi03vW|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-J4XGNUugZG6y",
+			"type":"text",
+			"text":"Things 3의 마찰 제로 팝업 인박스 & 쫀득한 0.1초 완료 피드백 (손끝의 쾌감)",
+			"x":976,
+			"y":29904,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"J4XGNUugZG6y",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":29904},
+				"under":"EEBU2Z5Xk9wx|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-MKvYntOYfIUu",
+			"type":"text",
+			"text":"Workflowy의 단일 노드 줌인(Zoom-in Focus)과 빵부스러기(Breadcrumb) 경로 (인지 과부하 차단)",
+			"x":976,
+			"y":30016,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"MKvYntOYfIUu",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":30016},
+				"under":"EEBU2Z5Xk9wx|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Hy82yspS17YB",
+			"type":"text",
+			"text":"Git의 명시적 스냅샷 체크포인트 & 초록/빨강 인라인 Diff 대조 (심리적 안전망)",
+			"x":976,
+			"y":30152,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"Hy82yspS17YB",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":30152},
+				"under":"EEBU2Z5Xk9wx|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-4fdIaJjenKUj",
+			"type":"text",
+			"text":"Scrivener의 좌측 목차 원고 + 우측 참고자료 분리 바인더 구조 (창 전환 피로 해소)",
+			"x":976,
+			"y":30264,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"4fdIaJjenKUj",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":30264},
+				"under":"EEBU2Z5Xk9wx|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-bZVpTBo3HC71",
+			"type":"text",
+			"text":"전 세계 34개 레퍼런스 어디에도 없는 독창적 20% 킬러 무기 (우리의 절대적 승부수)",
+			"x":664,
+			"y":30884,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"bZVpTBo3HC71",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":30884},
+				"under":"qI0lSDvi03vW|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-BbziKC0wNtOb",
+			"type":"text",
+			"text":"★ 킬러 무기 1. 지적 소유권(Ownership)을 보존하는 'Visual Grill-Me (지적 샌드백)'",
+			"x":976,
+			"y":30528,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"BbziKC0wNtOb",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":30528},
+				"under":"bZVpTBo3HC71|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-lYpNtYwixvac",
+			"type":"text",
+			"text":"시장의 거대한 공백 : 전 세계 34개 도구 중 작성자의 사유 근육 퇴화를 막고 주체성을 지켜주는 인터랙션은 전무함",
+			"x":1288,
+			"y":30400,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"lYpNtYwixvac",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":30400},
+				"under":"BbziKC0wNtOb|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-pmTXahxBwpqf",
+			"type":"text",
+			"text":"우리의 솔루션 : AI에게 통째로 대필을 맡겨 바보가 되는 것이 아니라, 빈칸과 논리 뼈대만 핀셋으로 제안받고, 소크라테스식 반론과 5-Why 질문을 통해 내 생각의 해상도를 훈련시키는 '생각의 비계(Scaffold)' 제공",
+			"x":1288,
+			"y":30560,
+			"width":240,
+			"height":216,
+			"vibeOutline":{
+				"nodeId":"pmTXahxBwpqf",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":30560},
+				"under":"BbziKC0wNtOb|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-9olyg2Urz1u8",
+			"type":"text",
+			"text":"★ 킬러 무기 2. 1차원 아웃라인 트리 ↔ 2차원 브랜치 캔버스 무지연 양방향 플립",
+			"x":976,
+			"y":30920,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"9olyg2Urz1u8",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":30920},
+				"under":"bZVpTBo3HC71|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-fcQrGoW2tRHt",
+			"type":"text",
+			"text":"시장의 거대한 공백 : 트리는 트리대로, 캔버스는 캔버스대로 분리되어 있어 카드를 손수 배치하는 노가다 발생(Heptabase의 한계)",
+			"x":1288,
+			"y":30792,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"fcQrGoW2tRHt",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":30792},
+				"under":"9olyg2Urz1u8|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-v5QqcTdlnVQF",
+			"type":"text",
+			"text":"우리의 솔루션 : 키보드로 빠르게 친 1D 아웃라인이 버튼 하나로 2차원 분기 캔버스로 자동 정렬 플립되고, 캔버스 수정이 즉시 아웃라인으로 동기화되는 입체 사고 환경",
+			"x":1288,
+			"y":30952,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"v5QqcTdlnVQF",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":30952},
+				"under":"9olyg2Urz1u8|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-0rQr6SUE3PeG",
+			"type":"text",
+			"text":"★ 킬러 무기 3. 개발자 하네스 사상을 문서 툴로 이식한 '아웃라이너 노드 픽스 & Reviewer'",
+			"x":976,
+			"y":31264,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"0rQr6SUE3PeG",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":31264},
+				"under":"bZVpTBo3HC71|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Sy9aoCkpe32n",
+			"type":"text",
+			"text":"시장의 거대한 공백 : 일반 문서 AI는 무조건 본문을 갈아엎거나 아첨하는 챗봇 형태에 불과함",
+			"x":1288,
+			"y":31160,
+			"width":240,
+			"height":120,
+			"vibeOutline":{
+				"nodeId":"Sy9aoCkpe32n",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":31160},
+				"under":"0rQr6SUE3PeG|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-VpL1nYWC9Vjs",
+			"type":"text",
+			"text":"우리의 솔루션 : 확정 노드는 잠그고(`Lock`) 미완성 블록만 핀셋 생성하며, 쓰기 권한이 박탈된 Reviewer가 회의 전 논리적 허점을 먼저 공격하는 하드 게이트 가동",
+			"x":1288,
+			"y":31296,
+			"width":240,
+			"height":192,
+			"vibeOutline":{
+				"nodeId":"VpL1nYWC9Vjs",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":1288,"y":31296},
+				"under":"0rQr6SUE3PeG|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-ZlRkcP9v9Jsa",
+			"type":"text",
+			"text":"📁 [6. 15분 공유회 결론 및 PM 제언 (Executive Takeaway)]",
+			"x":352,
+			"y":31956,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"ZlRkcP9v9Jsa",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":352,"y":31956},
+				"under":"uRw9kMbu8Heo|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-Gvbuc69XhXai",
+			"type":"text",
+			"text":"결론 : '도구의 노예가 아닌, 지휘관이 되는 글쓰기 환경 구축'",
+			"x":664,
+			"y":31716,
+			"width":240,
+			"height":96,
+			"vibeOutline":{
+				"nodeId":"Gvbuc69XhXai",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":31716},
+				"under":"ZlRkcP9v9Jsa|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-acqZ0qC83VN1",
+			"type":"text",
+			"text":"우리가 이번 프로젝트에서 35개 레퍼런스를 분해하고 254개 원자를 니즈 판에 붙이며 확인한 시장의 진실은 명확하다. 사용자는 AI의 '화려한 대필'을 원하는 것이 아니라, '내 생각의 통제권을 잃지 않는 안전감'을 원하고 있다.",
+			"x":976,
+			"y":31504,
+			"width":240,
+			"height":240,
+			"vibeOutline":{
+				"nodeId":"acqZ0qC83VN1",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":31504},
+				"under":"Gvbuc69XhXai|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-JyjIogEWOStB",
+			"type":"text",
+			"text":"남들이 이미 완성한 80%의 기본기(Git 안전망, Workflowy 줌인, Things 3 포집) 위에, 시장에 존재하지 않는 20%의 무기(지적 샌드백 Visual Grill-Me × 1D-2D 플립 × 노드 픽스 하네스)를 얹을 때, Scaffold Manager는 대체 불가능한 독점적 에디터가 된다.",
+			"x":976,
+			"y":31760,
+			"width":240,
+			"height":264,
+			"vibeOutline":{
+				"nodeId":"JyjIogEWOStB",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":31760},
+				"under":"Gvbuc69XhXai|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-FbQPwyJx3iEZ",
+			"type":"text",
+			"text":"다음 즉각적 실행 행동 (Action Items)",
+			"x":664,
+			"y":32236,
+			"width":240,
+			"height":72,
+			"vibeOutline":{
+				"nodeId":"FbQPwyJx3iEZ",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":664,"y":32236},
+				"under":"ZlRkcP9v9Jsa|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-kb1mK9AjlfRA",
+			"type":"text",
+			"text":"1. C3 핵심 부품 개발 착수 : `NodeCheckpointStore`(로컬 스냅샷) + `InlineDiffDecorator`(초록/빨강 Diff)",
+			"x":976,
+			"y":32040,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"kb1mK9AjlfRA",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":32040},
+				"under":"FbQPwyJx3iEZ|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-fjwVWrkJIJYx",
+			"type":"text",
+			"text":"2. C5 노드 잠금 모듈 구현 : `Ctrl + L` 단축키 기반 노드 픽스(`NodeLockManager`) 및 프롬프트 인라인 팝업",
+			"x":976,
+			"y":32200,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"fjwVWrkJIJYx",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":32200},
+				"under":"FbQPwyJx3iEZ|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"vo-r3zJiD3u7h4a",
+			"type":"text",
+			"text":"3. 35장 흐린눈 카드 봉인 유지 : 협업, 퍼블리싱, 서식 꾸미기에 한눈팔지 않고 딱 MVP 3개 컴포넌트만 코드로 매듭짓기",
+			"x":976,
+			"y":32360,
+			"width":240,
+			"height":144,
+			"vibeOutline":{
+				"nodeId":"r3zJiD3u7h4a",
+				"file":"1.🎯(Project) 프로젝트/🍽️래퍼런스 뜯어보기/(분석) 창작과 작업 수행 관점의 JTBD Pain 포인트 분류.outline",
+				"auto":{"x":976,"y":32360},
+				"under":"FbQPwyJx3iEZ|uRw9kMbu8Heo",
+				"origin":{"x":0,"y":0}
+			}
+		}
+	],
+	"edges":[
+		{"id":"vo-e-vo-2uWggxFdgyo5-vo-u4TzCtzgU4Cr","fromNode":"vo-2uWggxFdgyo5","fromSide":"right","toNode":"vo-u4TzCtzgU4Cr","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-2uWggxFdgyo5-vo-wh1i28HDAc1P","fromNode":"vo-2uWggxFdgyo5","fromSide":"right","toNode":"vo-wh1i28HDAc1P","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-wh1i28HDAc1P-vo-Wp9CcAnNpEy7","fromNode":"vo-wh1i28HDAc1P","fromSide":"right","toNode":"vo-Wp9CcAnNpEy7","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-wh1i28HDAc1P-vo-8bySVvrin4Hc","fromNode":"vo-wh1i28HDAc1P","fromSide":"right","toNode":"vo-8bySVvrin4Hc","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-8bySVvrin4Hc-vo-P77PNk7XgjIK","fromNode":"vo-8bySVvrin4Hc","fromSide":"right","toNode":"vo-P77PNk7XgjIK","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-P77PNk7XgjIK-vo-kjxeKUvJQnpd","fromNode":"vo-P77PNk7XgjIK","fromSide":"right","toNode":"vo-kjxeKUvJQnpd","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-8bySVvrin4Hc-vo-ybj2Da933knp","fromNode":"vo-8bySVvrin4Hc","fromSide":"right","toNode":"vo-ybj2Da933knp","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ybj2Da933knp-vo-rMxH44RgAmRL","fromNode":"vo-ybj2Da933knp","fromSide":"right","toNode":"vo-rMxH44RgAmRL","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-8bySVvrin4Hc-vo-2KrNJjtWTAS9","fromNode":"vo-8bySVvrin4Hc","fromSide":"right","toNode":"vo-2KrNJjtWTAS9","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-2KrNJjtWTAS9-vo-CLkAofoJrk94","fromNode":"vo-2KrNJjtWTAS9","fromSide":"right","toNode":"vo-CLkAofoJrk94","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-wh1i28HDAc1P-vo-Rdsfqj6dA1Xu","fromNode":"vo-wh1i28HDAc1P","fromSide":"right","toNode":"vo-Rdsfqj6dA1Xu","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Rdsfqj6dA1Xu-vo-2FEi2Oawx7RZ","fromNode":"vo-Rdsfqj6dA1Xu","fromSide":"right","toNode":"vo-2FEi2Oawx7RZ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-2FEi2Oawx7RZ-vo-WYNxexdTDW8s","fromNode":"vo-2FEi2Oawx7RZ","fromSide":"right","toNode":"vo-WYNxexdTDW8s","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Rdsfqj6dA1Xu-vo-GUgbGpXGVVrA","fromNode":"vo-Rdsfqj6dA1Xu","fromSide":"right","toNode":"vo-GUgbGpXGVVrA","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-GUgbGpXGVVrA-vo-UfAeYt56yi3E","fromNode":"vo-GUgbGpXGVVrA","fromSide":"right","toNode":"vo-UfAeYt56yi3E","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Rdsfqj6dA1Xu-vo-YoZf1XGaSyCt","fromNode":"vo-Rdsfqj6dA1Xu","fromSide":"right","toNode":"vo-YoZf1XGaSyCt","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-YoZf1XGaSyCt-vo-UtHKDncBBoQW","fromNode":"vo-YoZf1XGaSyCt","fromSide":"right","toNode":"vo-UtHKDncBBoQW","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-wh1i28HDAc1P-vo-ZTPRI7JEn6Xv","fromNode":"vo-wh1i28HDAc1P","fromSide":"right","toNode":"vo-ZTPRI7JEn6Xv","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZTPRI7JEn6Xv-vo-VNEl3augV0Uz","fromNode":"vo-ZTPRI7JEn6Xv","fromSide":"right","toNode":"vo-VNEl3augV0Uz","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-VNEl3augV0Uz-vo-edm18b9JZpHW","fromNode":"vo-VNEl3augV0Uz","fromSide":"right","toNode":"vo-edm18b9JZpHW","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZTPRI7JEn6Xv-vo-kyUkLaOvVehv","fromNode":"vo-ZTPRI7JEn6Xv","fromSide":"right","toNode":"vo-kyUkLaOvVehv","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-kyUkLaOvVehv-vo-SzPTbQUEP5lT","fromNode":"vo-kyUkLaOvVehv","fromSide":"right","toNode":"vo-SzPTbQUEP5lT","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZTPRI7JEn6Xv-vo-Ah7yhIJ7ONXO","fromNode":"vo-ZTPRI7JEn6Xv","fromSide":"right","toNode":"vo-Ah7yhIJ7ONXO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Ah7yhIJ7ONXO-vo-1QsjIofgr8AT","fromNode":"vo-Ah7yhIJ7ONXO","fromSide":"right","toNode":"vo-1QsjIofgr8AT","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-2uWggxFdgyo5-vo-fqLi9JHT0NHK","fromNode":"vo-2uWggxFdgyo5","fromSide":"right","toNode":"vo-fqLi9JHT0NHK","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-fqLi9JHT0NHK-vo-z99NySWZsEY4","fromNode":"vo-fqLi9JHT0NHK","fromSide":"right","toNode":"vo-z99NySWZsEY4","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-fqLi9JHT0NHK-vo-3gr6AhiNfdTe","fromNode":"vo-fqLi9JHT0NHK","fromSide":"right","toNode":"vo-3gr6AhiNfdTe","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-3gr6AhiNfdTe-vo-lWjRFUfBPaND","fromNode":"vo-3gr6AhiNfdTe","fromSide":"right","toNode":"vo-lWjRFUfBPaND","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-lWjRFUfBPaND-vo-PSDLiHuPQWFj","fromNode":"vo-lWjRFUfBPaND","fromSide":"right","toNode":"vo-PSDLiHuPQWFj","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-3gr6AhiNfdTe-vo-mPh4svgBTPQg","fromNode":"vo-3gr6AhiNfdTe","fromSide":"right","toNode":"vo-mPh4svgBTPQg","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-mPh4svgBTPQg-vo-ctB18Xmy2i8i","fromNode":"vo-mPh4svgBTPQg","fromSide":"right","toNode":"vo-ctB18Xmy2i8i","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-3gr6AhiNfdTe-vo-ziiSyVxmP37M","fromNode":"vo-3gr6AhiNfdTe","fromSide":"right","toNode":"vo-ziiSyVxmP37M","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ziiSyVxmP37M-vo-gqkeRjeGkKXs","fromNode":"vo-ziiSyVxmP37M","fromSide":"right","toNode":"vo-gqkeRjeGkKXs","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-fqLi9JHT0NHK-vo-TYWahUzQBabC","fromNode":"vo-fqLi9JHT0NHK","fromSide":"right","toNode":"vo-TYWahUzQBabC","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-TYWahUzQBabC-vo-QPwVK7KpxfyV","fromNode":"vo-TYWahUzQBabC","fromSide":"right","toNode":"vo-QPwVK7KpxfyV","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-QPwVK7KpxfyV-vo-peosSATyWNw1","fromNode":"vo-QPwVK7KpxfyV","fromSide":"right","toNode":"vo-peosSATyWNw1","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-TYWahUzQBabC-vo-scecZBMwF1wR","fromNode":"vo-TYWahUzQBabC","fromSide":"right","toNode":"vo-scecZBMwF1wR","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-scecZBMwF1wR-vo-aVevEGYA0nYF","fromNode":"vo-scecZBMwF1wR","fromSide":"right","toNode":"vo-aVevEGYA0nYF","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-TYWahUzQBabC-vo-IeZ5jwOphHoo","fromNode":"vo-TYWahUzQBabC","fromSide":"right","toNode":"vo-IeZ5jwOphHoo","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-IeZ5jwOphHoo-vo-2o2nDaaCuYVV","fromNode":"vo-IeZ5jwOphHoo","fromSide":"right","toNode":"vo-2o2nDaaCuYVV","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-TYWahUzQBabC-vo-zbyUdcIkGIXr","fromNode":"vo-TYWahUzQBabC","fromSide":"right","toNode":"vo-zbyUdcIkGIXr","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-zbyUdcIkGIXr-vo-WxYwhOVQKiVs","fromNode":"vo-zbyUdcIkGIXr","fromSide":"right","toNode":"vo-WxYwhOVQKiVs","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-fqLi9JHT0NHK-vo-O5lcFIJGtjCJ","fromNode":"vo-fqLi9JHT0NHK","fromSide":"right","toNode":"vo-O5lcFIJGtjCJ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-O5lcFIJGtjCJ-vo-MMpteinuwCzp","fromNode":"vo-O5lcFIJGtjCJ","fromSide":"right","toNode":"vo-MMpteinuwCzp","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-MMpteinuwCzp-vo-kjUm1kkd5wD4","fromNode":"vo-MMpteinuwCzp","fromSide":"right","toNode":"vo-kjUm1kkd5wD4","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-O5lcFIJGtjCJ-vo-3XKow97kDxp0","fromNode":"vo-O5lcFIJGtjCJ","fromSide":"right","toNode":"vo-3XKow97kDxp0","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-3XKow97kDxp0-vo-gunpLVJEsmFE","fromNode":"vo-3XKow97kDxp0","fromSide":"right","toNode":"vo-gunpLVJEsmFE","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-O5lcFIJGtjCJ-vo-xhkK8TK3ZpXH","fromNode":"vo-O5lcFIJGtjCJ","fromSide":"right","toNode":"vo-xhkK8TK3ZpXH","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-xhkK8TK3ZpXH-vo-ZTYmf0BiDK23","fromNode":"vo-xhkK8TK3ZpXH","fromSide":"right","toNode":"vo-ZTYmf0BiDK23","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-O5lcFIJGtjCJ-vo-qijH5yvZrEgQ","fromNode":"vo-O5lcFIJGtjCJ","fromSide":"right","toNode":"vo-qijH5yvZrEgQ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-qijH5yvZrEgQ-vo-xVVUtLwiVegK","fromNode":"vo-qijH5yvZrEgQ","fromSide":"right","toNode":"vo-xVVUtLwiVegK","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-O5lcFIJGtjCJ-vo-DTuuQ5PPX2mT","fromNode":"vo-O5lcFIJGtjCJ","fromSide":"right","toNode":"vo-DTuuQ5PPX2mT","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-DTuuQ5PPX2mT-vo-BuArd1d7E98T","fromNode":"vo-DTuuQ5PPX2mT","fromSide":"right","toNode":"vo-BuArd1d7E98T","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-O5lcFIJGtjCJ-vo-lOCkGDyZOmvS","fromNode":"vo-O5lcFIJGtjCJ","fromSide":"right","toNode":"vo-lOCkGDyZOmvS","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-lOCkGDyZOmvS-vo-4uvdXg98Efa1","fromNode":"vo-lOCkGDyZOmvS","fromSide":"right","toNode":"vo-4uvdXg98Efa1","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-fqLi9JHT0NHK-vo-IxkTBhj6UJco","fromNode":"vo-fqLi9JHT0NHK","fromSide":"right","toNode":"vo-IxkTBhj6UJco","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-IxkTBhj6UJco-vo-T0QiODXNryxJ","fromNode":"vo-IxkTBhj6UJco","fromSide":"right","toNode":"vo-T0QiODXNryxJ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-T0QiODXNryxJ-vo-zh55WAP42AQf","fromNode":"vo-T0QiODXNryxJ","fromSide":"right","toNode":"vo-zh55WAP42AQf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-IxkTBhj6UJco-vo-REb6fzDqN7WT","fromNode":"vo-IxkTBhj6UJco","fromSide":"right","toNode":"vo-REb6fzDqN7WT","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-REb6fzDqN7WT-vo-fSP009vKkiN8","fromNode":"vo-REb6fzDqN7WT","fromSide":"right","toNode":"vo-fSP009vKkiN8","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-2uWggxFdgyo5-vo-i5JaZwdymS4y","fromNode":"vo-2uWggxFdgyo5","fromSide":"right","toNode":"vo-i5JaZwdymS4y","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-i5JaZwdymS4y-vo-1nW6sh24PBbc","fromNode":"vo-i5JaZwdymS4y","fromSide":"right","toNode":"vo-1nW6sh24PBbc","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-1nW6sh24PBbc-vo-7Ffd2smJFI5i","fromNode":"vo-1nW6sh24PBbc","fromSide":"right","toNode":"vo-7Ffd2smJFI5i","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-7Ffd2smJFI5i-vo-Qf47ItrjrgCD","fromNode":"vo-7Ffd2smJFI5i","fromSide":"right","toNode":"vo-Qf47ItrjrgCD","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-1nW6sh24PBbc-vo-RXsHq8A0zLLu","fromNode":"vo-1nW6sh24PBbc","fromSide":"right","toNode":"vo-RXsHq8A0zLLu","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RXsHq8A0zLLu-vo-22J8Bjq5ne2x","fromNode":"vo-RXsHq8A0zLLu","fromSide":"right","toNode":"vo-22J8Bjq5ne2x","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RXsHq8A0zLLu-vo-ieSu4dU0f2YQ","fromNode":"vo-RXsHq8A0zLLu","fromSide":"right","toNode":"vo-ieSu4dU0f2YQ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RXsHq8A0zLLu-vo-WogONx77ajhR","fromNode":"vo-RXsHq8A0zLLu","fromSide":"right","toNode":"vo-WogONx77ajhR","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RXsHq8A0zLLu-vo-sTzf12bbWQGT","fromNode":"vo-RXsHq8A0zLLu","fromSide":"right","toNode":"vo-sTzf12bbWQGT","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-i5JaZwdymS4y-vo-frZHDNxVoGGO","fromNode":"vo-i5JaZwdymS4y","fromSide":"right","toNode":"vo-frZHDNxVoGGO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-frZHDNxVoGGO-vo-tfnbZu5Uq98o","fromNode":"vo-frZHDNxVoGGO","fromSide":"right","toNode":"vo-tfnbZu5Uq98o","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-tfnbZu5Uq98o-vo-TtpRewHQ6hnf","fromNode":"vo-tfnbZu5Uq98o","fromSide":"right","toNode":"vo-TtpRewHQ6hnf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-frZHDNxVoGGO-vo-akSBx6SApfUz","fromNode":"vo-frZHDNxVoGGO","fromSide":"right","toNode":"vo-akSBx6SApfUz","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-akSBx6SApfUz-vo-rryhNMeKlZm9","fromNode":"vo-akSBx6SApfUz","fromSide":"right","toNode":"vo-rryhNMeKlZm9","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-akSBx6SApfUz-vo-obdbvvNKnz5w","fromNode":"vo-akSBx6SApfUz","fromSide":"right","toNode":"vo-obdbvvNKnz5w","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-akSBx6SApfUz-vo-RkB1jJRigtHI","fromNode":"vo-akSBx6SApfUz","fromSide":"right","toNode":"vo-RkB1jJRigtHI","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-akSBx6SApfUz-vo-GMrIKpDTIdNn","fromNode":"vo-akSBx6SApfUz","fromSide":"right","toNode":"vo-GMrIKpDTIdNn","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-zqeDeVX82Rf8-vo-EaTUhEWfAzER","fromNode":"vo-zqeDeVX82Rf8","fromSide":"right","toNode":"vo-EaTUhEWfAzER","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-zqeDeVX82Rf8-vo-VnOgonD1qtOo","fromNode":"vo-zqeDeVX82Rf8","fromSide":"right","toNode":"vo-VnOgonD1qtOo","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-VnOgonD1qtOo-vo-LZno4VIt4OXi","fromNode":"vo-VnOgonD1qtOo","fromSide":"right","toNode":"vo-LZno4VIt4OXi","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-VnOgonD1qtOo-vo-mWtxa3bQB6Wl","fromNode":"vo-VnOgonD1qtOo","fromSide":"right","toNode":"vo-mWtxa3bQB6Wl","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-mWtxa3bQB6Wl-vo-AhhnlPDlOwcj","fromNode":"vo-mWtxa3bQB6Wl","fromSide":"right","toNode":"vo-AhhnlPDlOwcj","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-AhhnlPDlOwcj-vo-kWvdHjCk2K7H","fromNode":"vo-AhhnlPDlOwcj","fromSide":"right","toNode":"vo-kWvdHjCk2K7H","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-AhhnlPDlOwcj-vo-BY0qGacU1nt7","fromNode":"vo-AhhnlPDlOwcj","fromSide":"right","toNode":"vo-BY0qGacU1nt7","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-AhhnlPDlOwcj-vo-OsJAPDMWTJiv","fromNode":"vo-AhhnlPDlOwcj","fromSide":"right","toNode":"vo-OsJAPDMWTJiv","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-mWtxa3bQB6Wl-vo-S3XK6Ik0jDji","fromNode":"vo-mWtxa3bQB6Wl","fromSide":"right","toNode":"vo-S3XK6Ik0jDji","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-S3XK6Ik0jDji-vo-II7euRhKxLBP","fromNode":"vo-S3XK6Ik0jDji","fromSide":"right","toNode":"vo-II7euRhKxLBP","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-S3XK6Ik0jDji-vo-gA4ddnTZU2VA","fromNode":"vo-S3XK6Ik0jDji","fromSide":"right","toNode":"vo-gA4ddnTZU2VA","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-S3XK6Ik0jDji-vo-cxbKBxCtUYj8","fromNode":"vo-S3XK6Ik0jDji","fromSide":"right","toNode":"vo-cxbKBxCtUYj8","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-mWtxa3bQB6Wl-vo-ynV25KzloUNR","fromNode":"vo-mWtxa3bQB6Wl","fromSide":"right","toNode":"vo-ynV25KzloUNR","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ynV25KzloUNR-vo-7j91IWERDGSQ","fromNode":"vo-ynV25KzloUNR","fromSide":"right","toNode":"vo-7j91IWERDGSQ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ynV25KzloUNR-vo-yLMOro7eB3CF","fromNode":"vo-ynV25KzloUNR","fromSide":"right","toNode":"vo-yLMOro7eB3CF","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ynV25KzloUNR-vo-9RpusrZQsuEO","fromNode":"vo-ynV25KzloUNR","fromSide":"right","toNode":"vo-9RpusrZQsuEO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-VnOgonD1qtOo-vo-1iGmSB2nYjNF","fromNode":"vo-VnOgonD1qtOo","fromSide":"right","toNode":"vo-1iGmSB2nYjNF","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-1iGmSB2nYjNF-vo-LC6WHzFvfgul","fromNode":"vo-1iGmSB2nYjNF","fromSide":"right","toNode":"vo-LC6WHzFvfgul","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LC6WHzFvfgul-vo-lRypgH3T9g9E","fromNode":"vo-LC6WHzFvfgul","fromSide":"right","toNode":"vo-lRypgH3T9g9E","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LC6WHzFvfgul-vo-lOulRgU5CG9C","fromNode":"vo-LC6WHzFvfgul","fromSide":"right","toNode":"vo-lOulRgU5CG9C","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LC6WHzFvfgul-vo-0G7sAsHDTeGj","fromNode":"vo-LC6WHzFvfgul","fromSide":"right","toNode":"vo-0G7sAsHDTeGj","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-1iGmSB2nYjNF-vo-tQYF9I2vEn85","fromNode":"vo-1iGmSB2nYjNF","fromSide":"right","toNode":"vo-tQYF9I2vEn85","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-tQYF9I2vEn85-vo-6mm62IYhTy7n","fromNode":"vo-tQYF9I2vEn85","fromSide":"right","toNode":"vo-6mm62IYhTy7n","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-tQYF9I2vEn85-vo-axGEnbZuiMoD","fromNode":"vo-tQYF9I2vEn85","fromSide":"right","toNode":"vo-axGEnbZuiMoD","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-tQYF9I2vEn85-vo-U6eJx0MhkE1b","fromNode":"vo-tQYF9I2vEn85","fromSide":"right","toNode":"vo-U6eJx0MhkE1b","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-1iGmSB2nYjNF-vo-96MQo0gfo2tM","fromNode":"vo-1iGmSB2nYjNF","fromSide":"right","toNode":"vo-96MQo0gfo2tM","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-96MQo0gfo2tM-vo-jWNk31GAg9bn","fromNode":"vo-96MQo0gfo2tM","fromSide":"right","toNode":"vo-jWNk31GAg9bn","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-96MQo0gfo2tM-vo-XFjzlf8SCyjf","fromNode":"vo-96MQo0gfo2tM","fromSide":"right","toNode":"vo-XFjzlf8SCyjf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-96MQo0gfo2tM-vo-EPkBdJsnG5XA","fromNode":"vo-96MQo0gfo2tM","fromSide":"right","toNode":"vo-EPkBdJsnG5XA","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-VnOgonD1qtOo-vo-LgHctV3j8LBO","fromNode":"vo-VnOgonD1qtOo","fromSide":"right","toNode":"vo-LgHctV3j8LBO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LgHctV3j8LBO-vo-sifry88n92WK","fromNode":"vo-LgHctV3j8LBO","fromSide":"right","toNode":"vo-sifry88n92WK","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sifry88n92WK-vo-hzmyUgAkYRZG","fromNode":"vo-sifry88n92WK","fromSide":"right","toNode":"vo-hzmyUgAkYRZG","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sifry88n92WK-vo-sztKmSCLw3Rq","fromNode":"vo-sifry88n92WK","fromSide":"right","toNode":"vo-sztKmSCLw3Rq","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sifry88n92WK-vo-OxCuVjkPxN2U","fromNode":"vo-sifry88n92WK","fromSide":"right","toNode":"vo-OxCuVjkPxN2U","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LgHctV3j8LBO-vo-rWLK0RaI2C15","fromNode":"vo-LgHctV3j8LBO","fromSide":"right","toNode":"vo-rWLK0RaI2C15","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rWLK0RaI2C15-vo-xp1IrH06Jamx","fromNode":"vo-rWLK0RaI2C15","fromSide":"right","toNode":"vo-xp1IrH06Jamx","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rWLK0RaI2C15-vo-9lJ5QOdhJvfI","fromNode":"vo-rWLK0RaI2C15","fromSide":"right","toNode":"vo-9lJ5QOdhJvfI","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rWLK0RaI2C15-vo-JH7zoErKsLIS","fromNode":"vo-rWLK0RaI2C15","fromSide":"right","toNode":"vo-JH7zoErKsLIS","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-zqeDeVX82Rf8-vo-nuBtHnu7hOYy","fromNode":"vo-zqeDeVX82Rf8","fromSide":"right","toNode":"vo-nuBtHnu7hOYy","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-nuBtHnu7hOYy-vo-p2EWOfEelLmU","fromNode":"vo-nuBtHnu7hOYy","fromSide":"right","toNode":"vo-p2EWOfEelLmU","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-nuBtHnu7hOYy-vo-BpJ1Ww66BG6o","fromNode":"vo-nuBtHnu7hOYy","fromSide":"right","toNode":"vo-BpJ1Ww66BG6o","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BpJ1Ww66BG6o-vo-n6mbaxwKXuw0","fromNode":"vo-BpJ1Ww66BG6o","fromSide":"right","toNode":"vo-n6mbaxwKXuw0","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-n6mbaxwKXuw0-vo-dizQbc7HNb1g","fromNode":"vo-n6mbaxwKXuw0","fromSide":"right","toNode":"vo-dizQbc7HNb1g","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-n6mbaxwKXuw0-vo-8KjW7YwZuxMU","fromNode":"vo-n6mbaxwKXuw0","fromSide":"right","toNode":"vo-8KjW7YwZuxMU","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-n6mbaxwKXuw0-vo-CrmD8SQxcpSA","fromNode":"vo-n6mbaxwKXuw0","fromSide":"right","toNode":"vo-CrmD8SQxcpSA","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BpJ1Ww66BG6o-vo-af6nAmJewy0r","fromNode":"vo-BpJ1Ww66BG6o","fromSide":"right","toNode":"vo-af6nAmJewy0r","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-af6nAmJewy0r-vo-Q15jTZ0AK6du","fromNode":"vo-af6nAmJewy0r","fromSide":"right","toNode":"vo-Q15jTZ0AK6du","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-af6nAmJewy0r-vo-AaZwikf8FsUC","fromNode":"vo-af6nAmJewy0r","fromSide":"right","toNode":"vo-AaZwikf8FsUC","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-af6nAmJewy0r-vo-CxJTiYpOMt8p","fromNode":"vo-af6nAmJewy0r","fromSide":"right","toNode":"vo-CxJTiYpOMt8p","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BpJ1Ww66BG6o-vo-2yAbEnrA0Dfo","fromNode":"vo-BpJ1Ww66BG6o","fromSide":"right","toNode":"vo-2yAbEnrA0Dfo","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-2yAbEnrA0Dfo-vo-8RGVAljCwHN6","fromNode":"vo-2yAbEnrA0Dfo","fromSide":"right","toNode":"vo-8RGVAljCwHN6","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-2yAbEnrA0Dfo-vo-ZX3AhZbFbl69","fromNode":"vo-2yAbEnrA0Dfo","fromSide":"right","toNode":"vo-ZX3AhZbFbl69","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-2yAbEnrA0Dfo-vo-fkJzZi8T5hDx","fromNode":"vo-2yAbEnrA0Dfo","fromSide":"right","toNode":"vo-fkJzZi8T5hDx","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BpJ1Ww66BG6o-vo-FwTvfxVbBsX4","fromNode":"vo-BpJ1Ww66BG6o","fromSide":"right","toNode":"vo-FwTvfxVbBsX4","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FwTvfxVbBsX4-vo-K18eBY4T3OkM","fromNode":"vo-FwTvfxVbBsX4","fromSide":"right","toNode":"vo-K18eBY4T3OkM","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FwTvfxVbBsX4-vo-6mmaCoqKqHIx","fromNode":"vo-FwTvfxVbBsX4","fromSide":"right","toNode":"vo-6mmaCoqKqHIx","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FwTvfxVbBsX4-vo-OtDmTQ3ONad8","fromNode":"vo-FwTvfxVbBsX4","fromSide":"right","toNode":"vo-OtDmTQ3ONad8","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-nuBtHnu7hOYy-vo-FsNRBxeT513e","fromNode":"vo-nuBtHnu7hOYy","fromSide":"right","toNode":"vo-FsNRBxeT513e","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FsNRBxeT513e-vo-iKJLNz0um4XJ","fromNode":"vo-FsNRBxeT513e","fromSide":"right","toNode":"vo-iKJLNz0um4XJ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-iKJLNz0um4XJ-vo-PE9cjuuKC5q0","fromNode":"vo-iKJLNz0um4XJ","fromSide":"right","toNode":"vo-PE9cjuuKC5q0","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-iKJLNz0um4XJ-vo-opVyFKgSICAx","fromNode":"vo-iKJLNz0um4XJ","fromSide":"right","toNode":"vo-opVyFKgSICAx","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-iKJLNz0um4XJ-vo-LNZMaP6eOP3F","fromNode":"vo-iKJLNz0um4XJ","fromSide":"right","toNode":"vo-LNZMaP6eOP3F","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FsNRBxeT513e-vo-sv3NE27c46T6","fromNode":"vo-FsNRBxeT513e","fromSide":"right","toNode":"vo-sv3NE27c46T6","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sv3NE27c46T6-vo-rO72OSKyrWcL","fromNode":"vo-sv3NE27c46T6","fromSide":"right","toNode":"vo-rO72OSKyrWcL","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sv3NE27c46T6-vo-SCuBjTbeo5fd","fromNode":"vo-sv3NE27c46T6","fromSide":"right","toNode":"vo-SCuBjTbeo5fd","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sv3NE27c46T6-vo-BRvUyou6NGO2","fromNode":"vo-sv3NE27c46T6","fromSide":"right","toNode":"vo-BRvUyou6NGO2","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FsNRBxeT513e-vo-LLk80JPIA5dF","fromNode":"vo-FsNRBxeT513e","fromSide":"right","toNode":"vo-LLk80JPIA5dF","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LLk80JPIA5dF-vo-HhOdvcoyfnlf","fromNode":"vo-LLk80JPIA5dF","fromSide":"right","toNode":"vo-HhOdvcoyfnlf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LLk80JPIA5dF-vo-uEcirB7wv397","fromNode":"vo-LLk80JPIA5dF","fromSide":"right","toNode":"vo-uEcirB7wv397","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LLk80JPIA5dF-vo-NWMdwOPcbpyK","fromNode":"vo-LLk80JPIA5dF","fromSide":"right","toNode":"vo-NWMdwOPcbpyK","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FsNRBxeT513e-vo-LwcT4FqmE7pw","fromNode":"vo-FsNRBxeT513e","fromSide":"right","toNode":"vo-LwcT4FqmE7pw","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LwcT4FqmE7pw-vo-TdNQKqtg4P2m","fromNode":"vo-LwcT4FqmE7pw","fromSide":"right","toNode":"vo-TdNQKqtg4P2m","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LwcT4FqmE7pw-vo-KyfeHjcsh2nj","fromNode":"vo-LwcT4FqmE7pw","fromSide":"right","toNode":"vo-KyfeHjcsh2nj","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-LwcT4FqmE7pw-vo-jpg8ORbvM7f0","fromNode":"vo-LwcT4FqmE7pw","fromSide":"right","toNode":"vo-jpg8ORbvM7f0","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-nuBtHnu7hOYy-vo-sbHSR2u94yr8","fromNode":"vo-nuBtHnu7hOYy","fromSide":"right","toNode":"vo-sbHSR2u94yr8","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sbHSR2u94yr8-vo-hCGnAUSFsSMM","fromNode":"vo-sbHSR2u94yr8","fromSide":"right","toNode":"vo-hCGnAUSFsSMM","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-hCGnAUSFsSMM-vo-TiRl1Tb6BL3R","fromNode":"vo-hCGnAUSFsSMM","fromSide":"right","toNode":"vo-TiRl1Tb6BL3R","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-hCGnAUSFsSMM-vo-0GC609DobY9u","fromNode":"vo-hCGnAUSFsSMM","fromSide":"right","toNode":"vo-0GC609DobY9u","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-hCGnAUSFsSMM-vo-EcvIRmnczQSt","fromNode":"vo-hCGnAUSFsSMM","fromSide":"right","toNode":"vo-EcvIRmnczQSt","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sbHSR2u94yr8-vo-P64n3Mj7VCys","fromNode":"vo-sbHSR2u94yr8","fromSide":"right","toNode":"vo-P64n3Mj7VCys","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-P64n3Mj7VCys-vo-6Ly6q0RPqLAK","fromNode":"vo-P64n3Mj7VCys","fromSide":"right","toNode":"vo-6Ly6q0RPqLAK","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-P64n3Mj7VCys-vo-Gv0Q3vabC2Bv","fromNode":"vo-P64n3Mj7VCys","fromSide":"right","toNode":"vo-Gv0Q3vabC2Bv","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-P64n3Mj7VCys-vo-hbsvVCf7pJuO","fromNode":"vo-P64n3Mj7VCys","fromSide":"right","toNode":"vo-hbsvVCf7pJuO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sbHSR2u94yr8-vo-revs9Ly95jJO","fromNode":"vo-sbHSR2u94yr8","fromSide":"right","toNode":"vo-revs9Ly95jJO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-revs9Ly95jJO-vo-GGv3eZxAQ3eb","fromNode":"vo-revs9Ly95jJO","fromSide":"right","toNode":"vo-GGv3eZxAQ3eb","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-revs9Ly95jJO-vo-E009ZKxtDpTr","fromNode":"vo-revs9Ly95jJO","fromSide":"right","toNode":"vo-E009ZKxtDpTr","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-revs9Ly95jJO-vo-Am2UjK5fyMz3","fromNode":"vo-revs9Ly95jJO","fromSide":"right","toNode":"vo-Am2UjK5fyMz3","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-sbHSR2u94yr8-vo-VIDMkr0MGGpt","fromNode":"vo-sbHSR2u94yr8","fromSide":"right","toNode":"vo-VIDMkr0MGGpt","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-VIDMkr0MGGpt-vo-XLnXvepnrcZY","fromNode":"vo-VIDMkr0MGGpt","fromSide":"right","toNode":"vo-XLnXvepnrcZY","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-VIDMkr0MGGpt-vo-lcfhPccU0EQp","fromNode":"vo-VIDMkr0MGGpt","fromSide":"right","toNode":"vo-lcfhPccU0EQp","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-VIDMkr0MGGpt-vo-0g39PSTr5Z1J","fromNode":"vo-VIDMkr0MGGpt","fromSide":"right","toNode":"vo-0g39PSTr5Z1J","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-zqeDeVX82Rf8-vo-FlQLgUIcq6aD","fromNode":"vo-zqeDeVX82Rf8","fromSide":"right","toNode":"vo-FlQLgUIcq6aD","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FlQLgUIcq6aD-vo-Sqdwf3j1MZsj","fromNode":"vo-FlQLgUIcq6aD","fromSide":"right","toNode":"vo-Sqdwf3j1MZsj","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FlQLgUIcq6aD-vo-Kxz9uBJjL15c","fromNode":"vo-FlQLgUIcq6aD","fromSide":"right","toNode":"vo-Kxz9uBJjL15c","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Kxz9uBJjL15c-vo-cRiVpAcnC2RS","fromNode":"vo-Kxz9uBJjL15c","fromSide":"right","toNode":"vo-cRiVpAcnC2RS","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cRiVpAcnC2RS-vo-05VfAdfICSxr","fromNode":"vo-cRiVpAcnC2RS","fromSide":"right","toNode":"vo-05VfAdfICSxr","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cRiVpAcnC2RS-vo-sjgQ8LwECWtT","fromNode":"vo-cRiVpAcnC2RS","fromSide":"right","toNode":"vo-sjgQ8LwECWtT","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cRiVpAcnC2RS-vo-JU0Z8xS9PGkh","fromNode":"vo-cRiVpAcnC2RS","fromSide":"right","toNode":"vo-JU0Z8xS9PGkh","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Kxz9uBJjL15c-vo-RwdSywehNxyn","fromNode":"vo-Kxz9uBJjL15c","fromSide":"right","toNode":"vo-RwdSywehNxyn","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RwdSywehNxyn-vo-uDQiMT5TLEgI","fromNode":"vo-RwdSywehNxyn","fromSide":"right","toNode":"vo-uDQiMT5TLEgI","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RwdSywehNxyn-vo-Kb1x0MwA7QN8","fromNode":"vo-RwdSywehNxyn","fromSide":"right","toNode":"vo-Kb1x0MwA7QN8","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RwdSywehNxyn-vo-5Y5ARwvUFP9J","fromNode":"vo-RwdSywehNxyn","fromSide":"right","toNode":"vo-5Y5ARwvUFP9J","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Kxz9uBJjL15c-vo-kzcwqTH85lQH","fromNode":"vo-Kxz9uBJjL15c","fromSide":"right","toNode":"vo-kzcwqTH85lQH","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-kzcwqTH85lQH-vo-q2HZL2X6yX8x","fromNode":"vo-kzcwqTH85lQH","fromSide":"right","toNode":"vo-q2HZL2X6yX8x","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-kzcwqTH85lQH-vo-McHylxff2RtP","fromNode":"vo-kzcwqTH85lQH","fromSide":"right","toNode":"vo-McHylxff2RtP","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-kzcwqTH85lQH-vo-icMt6ZdasnjU","fromNode":"vo-kzcwqTH85lQH","fromSide":"right","toNode":"vo-icMt6ZdasnjU","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Kxz9uBJjL15c-vo-YNO0OPV4MHZX","fromNode":"vo-Kxz9uBJjL15c","fromSide":"right","toNode":"vo-YNO0OPV4MHZX","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-YNO0OPV4MHZX-vo-yqNM0WuKil6k","fromNode":"vo-YNO0OPV4MHZX","fromSide":"right","toNode":"vo-yqNM0WuKil6k","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-YNO0OPV4MHZX-vo-F2KZaMPvoxN7","fromNode":"vo-YNO0OPV4MHZX","fromSide":"right","toNode":"vo-F2KZaMPvoxN7","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-YNO0OPV4MHZX-vo-KyNRRLnUswOu","fromNode":"vo-YNO0OPV4MHZX","fromSide":"right","toNode":"vo-KyNRRLnUswOu","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FlQLgUIcq6aD-vo-rIlW5p8iwsUU","fromNode":"vo-FlQLgUIcq6aD","fromSide":"right","toNode":"vo-rIlW5p8iwsUU","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rIlW5p8iwsUU-vo-RrMi6w8NXrRi","fromNode":"vo-rIlW5p8iwsUU","fromSide":"right","toNode":"vo-RrMi6w8NXrRi","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RrMi6w8NXrRi-vo-T6rGJGzpqaUa","fromNode":"vo-RrMi6w8NXrRi","fromSide":"right","toNode":"vo-T6rGJGzpqaUa","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RrMi6w8NXrRi-vo-DG6rZFGk1OHr","fromNode":"vo-RrMi6w8NXrRi","fromSide":"right","toNode":"vo-DG6rZFGk1OHr","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RrMi6w8NXrRi-vo-SCpNnGiPSLy0","fromNode":"vo-RrMi6w8NXrRi","fromSide":"right","toNode":"vo-SCpNnGiPSLy0","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rIlW5p8iwsUU-vo-qQWFRaRYgeL4","fromNode":"vo-rIlW5p8iwsUU","fromSide":"right","toNode":"vo-qQWFRaRYgeL4","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-qQWFRaRYgeL4-vo-7BXfMhqsCtaI","fromNode":"vo-qQWFRaRYgeL4","fromSide":"right","toNode":"vo-7BXfMhqsCtaI","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-qQWFRaRYgeL4-vo-HkCI2IoTrFTa","fromNode":"vo-qQWFRaRYgeL4","fromSide":"right","toNode":"vo-HkCI2IoTrFTa","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-qQWFRaRYgeL4-vo-ZuvhNJhdGQLQ","fromNode":"vo-qQWFRaRYgeL4","fromSide":"right","toNode":"vo-ZuvhNJhdGQLQ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rIlW5p8iwsUU-vo-xKdOkmxx5KET","fromNode":"vo-rIlW5p8iwsUU","fromSide":"right","toNode":"vo-xKdOkmxx5KET","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-xKdOkmxx5KET-vo-XEb4a406UXPu","fromNode":"vo-xKdOkmxx5KET","fromSide":"right","toNode":"vo-XEb4a406UXPu","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-xKdOkmxx5KET-vo-Aaq433wDv6JN","fromNode":"vo-xKdOkmxx5KET","fromSide":"right","toNode":"vo-Aaq433wDv6JN","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-xKdOkmxx5KET-vo-PJVnLjDzmiqO","fromNode":"vo-xKdOkmxx5KET","fromSide":"right","toNode":"vo-PJVnLjDzmiqO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rIlW5p8iwsUU-vo-GGB7PMXWVZ7F","fromNode":"vo-rIlW5p8iwsUU","fromSide":"right","toNode":"vo-GGB7PMXWVZ7F","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-GGB7PMXWVZ7F-vo-2SbMYQ6CVkJe","fromNode":"vo-GGB7PMXWVZ7F","fromSide":"right","toNode":"vo-2SbMYQ6CVkJe","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-GGB7PMXWVZ7F-vo-fPxTJrxtWMpZ","fromNode":"vo-GGB7PMXWVZ7F","fromSide":"right","toNode":"vo-fPxTJrxtWMpZ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-GGB7PMXWVZ7F-vo-6v9hGzbMY0KR","fromNode":"vo-GGB7PMXWVZ7F","fromSide":"right","toNode":"vo-6v9hGzbMY0KR","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rIlW5p8iwsUU-vo-mbknF7BImfvR","fromNode":"vo-rIlW5p8iwsUU","fromSide":"right","toNode":"vo-mbknF7BImfvR","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-mbknF7BImfvR-vo-t6PLd7Iqsz7O","fromNode":"vo-mbknF7BImfvR","fromSide":"right","toNode":"vo-t6PLd7Iqsz7O","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-mbknF7BImfvR-vo-gThZiTQbHoQ7","fromNode":"vo-mbknF7BImfvR","fromSide":"right","toNode":"vo-gThZiTQbHoQ7","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-mbknF7BImfvR-vo-xMejdWdH9xCe","fromNode":"vo-mbknF7BImfvR","fromSide":"right","toNode":"vo-xMejdWdH9xCe","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FlQLgUIcq6aD-vo-ZZXqB9bU1hw6","fromNode":"vo-FlQLgUIcq6aD","fromSide":"right","toNode":"vo-ZZXqB9bU1hw6","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZZXqB9bU1hw6-vo-kcHfOcFArthr","fromNode":"vo-ZZXqB9bU1hw6","fromSide":"right","toNode":"vo-kcHfOcFArthr","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-kcHfOcFArthr-vo-yWssoGeGhi5W","fromNode":"vo-kcHfOcFArthr","fromSide":"right","toNode":"vo-yWssoGeGhi5W","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-kcHfOcFArthr-vo-BuFKhz1J1DIL","fromNode":"vo-kcHfOcFArthr","fromSide":"right","toNode":"vo-BuFKhz1J1DIL","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-kcHfOcFArthr-vo-Sj3otmdRI5Os","fromNode":"vo-kcHfOcFArthr","fromSide":"right","toNode":"vo-Sj3otmdRI5Os","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZZXqB9bU1hw6-vo-48IC3mm2krp3","fromNode":"vo-ZZXqB9bU1hw6","fromSide":"right","toNode":"vo-48IC3mm2krp3","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-48IC3mm2krp3-vo-VbVvfWKRozvn","fromNode":"vo-48IC3mm2krp3","fromSide":"right","toNode":"vo-VbVvfWKRozvn","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-48IC3mm2krp3-vo-apTOVCorOcaT","fromNode":"vo-48IC3mm2krp3","fromSide":"right","toNode":"vo-apTOVCorOcaT","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-48IC3mm2krp3-vo-kgcIpj2zfIXR","fromNode":"vo-48IC3mm2krp3","fromSide":"right","toNode":"vo-kgcIpj2zfIXR","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZZXqB9bU1hw6-vo-cdJfWHMjUPv1","fromNode":"vo-ZZXqB9bU1hw6","fromSide":"right","toNode":"vo-cdJfWHMjUPv1","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cdJfWHMjUPv1-vo-tCRRyIzDAOj3","fromNode":"vo-cdJfWHMjUPv1","fromSide":"right","toNode":"vo-tCRRyIzDAOj3","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cdJfWHMjUPv1-vo-rlTVPvnoQ4bf","fromNode":"vo-cdJfWHMjUPv1","fromSide":"right","toNode":"vo-rlTVPvnoQ4bf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cdJfWHMjUPv1-vo-HNotpbKwRiE0","fromNode":"vo-cdJfWHMjUPv1","fromSide":"right","toNode":"vo-HNotpbKwRiE0","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZZXqB9bU1hw6-vo-cc7jFq7nWQed","fromNode":"vo-ZZXqB9bU1hw6","fromSide":"right","toNode":"vo-cc7jFq7nWQed","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cc7jFq7nWQed-vo-cWLar5fa0Ex1","fromNode":"vo-cc7jFq7nWQed","fromSide":"right","toNode":"vo-cWLar5fa0Ex1","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cc7jFq7nWQed-vo-hF8qes1qysLU","fromNode":"vo-cc7jFq7nWQed","fromSide":"right","toNode":"vo-hF8qes1qysLU","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-cc7jFq7nWQed-vo-xjKsD0rmLWlJ","fromNode":"vo-cc7jFq7nWQed","fromSide":"right","toNode":"vo-xjKsD0rmLWlJ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZZXqB9bU1hw6-vo-KTSoNGGJS47F","fromNode":"vo-ZZXqB9bU1hw6","fromSide":"right","toNode":"vo-KTSoNGGJS47F","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-KTSoNGGJS47F-vo-RiCAvPxv6I0w","fromNode":"vo-KTSoNGGJS47F","fromSide":"right","toNode":"vo-RiCAvPxv6I0w","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-KTSoNGGJS47F-vo-scmXy6qbZXc0","fromNode":"vo-KTSoNGGJS47F","fromSide":"right","toNode":"vo-scmXy6qbZXc0","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-KTSoNGGJS47F-vo-uvG9Sb08t61I","fromNode":"vo-KTSoNGGJS47F","fromSide":"right","toNode":"vo-uvG9Sb08t61I","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-zqeDeVX82Rf8-vo-rzG9rmX764ST","fromNode":"vo-zqeDeVX82Rf8","fromSide":"right","toNode":"vo-rzG9rmX764ST","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rzG9rmX764ST-vo-GSvWodidTqif","fromNode":"vo-rzG9rmX764ST","fromSide":"right","toNode":"vo-GSvWodidTqif","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-GSvWodidTqif-vo-BC7hX2jgqzm2","fromNode":"vo-GSvWodidTqif","fromSide":"right","toNode":"vo-BC7hX2jgqzm2","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BC7hX2jgqzm2-vo-1l0Pvq8JaniY","fromNode":"vo-BC7hX2jgqzm2","fromSide":"right","toNode":"vo-1l0Pvq8JaniY","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BC7hX2jgqzm2-vo-791Lv0qCvlUt","fromNode":"vo-BC7hX2jgqzm2","fromSide":"right","toNode":"vo-791Lv0qCvlUt","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-GSvWodidTqif-vo-wh9glFIBzlix","fromNode":"vo-GSvWodidTqif","fromSide":"right","toNode":"vo-wh9glFIBzlix","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-wh9glFIBzlix-vo-hvsAJRkGMWLz","fromNode":"vo-wh9glFIBzlix","fromSide":"right","toNode":"vo-hvsAJRkGMWLz","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-wh9glFIBzlix-vo-PYnu03Ql6b8e","fromNode":"vo-wh9glFIBzlix","fromSide":"right","toNode":"vo-PYnu03Ql6b8e","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-GSvWodidTqif-vo-zFvX1s6oi4AO","fromNode":"vo-GSvWodidTqif","fromSide":"right","toNode":"vo-zFvX1s6oi4AO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-zFvX1s6oi4AO-vo-WXhZvGovkFSM","fromNode":"vo-zFvX1s6oi4AO","fromSide":"right","toNode":"vo-WXhZvGovkFSM","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-zFvX1s6oi4AO-vo-GfitExT6KKcO","fromNode":"vo-zFvX1s6oi4AO","fromSide":"right","toNode":"vo-GfitExT6KKcO","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rzG9rmX764ST-vo-5loTKrTIby00","fromNode":"vo-rzG9rmX764ST","fromSide":"right","toNode":"vo-5loTKrTIby00","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-5loTKrTIby00-vo-E8lEmc0Wyd8L","fromNode":"vo-5loTKrTIby00","fromSide":"right","toNode":"vo-E8lEmc0Wyd8L","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-E8lEmc0Wyd8L-vo-0hEbqNnaXIXM","fromNode":"vo-E8lEmc0Wyd8L","fromSide":"right","toNode":"vo-0hEbqNnaXIXM","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-E8lEmc0Wyd8L-vo-kp4x5YaBvIkv","fromNode":"vo-E8lEmc0Wyd8L","fromSide":"right","toNode":"vo-kp4x5YaBvIkv","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-5loTKrTIby00-vo-qh4Uah1lrnCA","fromNode":"vo-5loTKrTIby00","fromSide":"right","toNode":"vo-qh4Uah1lrnCA","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-qh4Uah1lrnCA-vo-jzH1Y5sg2HRQ","fromNode":"vo-qh4Uah1lrnCA","fromSide":"right","toNode":"vo-jzH1Y5sg2HRQ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-qh4Uah1lrnCA-vo-dpQimZFQPd9g","fromNode":"vo-qh4Uah1lrnCA","fromSide":"right","toNode":"vo-dpQimZFQPd9g","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rzG9rmX764ST-vo-bQU1yCuTHDhW","fromNode":"vo-rzG9rmX764ST","fromSide":"right","toNode":"vo-bQU1yCuTHDhW","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-bQU1yCuTHDhW-vo-W1XpFSQIVlei","fromNode":"vo-bQU1yCuTHDhW","fromSide":"right","toNode":"vo-W1XpFSQIVlei","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-bQU1yCuTHDhW-vo-U6fK2TBHN1Jj","fromNode":"vo-bQU1yCuTHDhW","fromSide":"right","toNode":"vo-U6fK2TBHN1Jj","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-bQU1yCuTHDhW-vo-RViXb1A6cjCZ","fromNode":"vo-bQU1yCuTHDhW","fromSide":"right","toNode":"vo-RViXb1A6cjCZ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-bQU1yCuTHDhW-vo-9Q1VKPinBqhG","fromNode":"vo-bQU1yCuTHDhW","fromSide":"right","toNode":"vo-9Q1VKPinBqhG","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-uRw9kMbu8Heo-vo-t0GQoUSqhEIw","fromNode":"vo-uRw9kMbu8Heo","fromSide":"right","toNode":"vo-t0GQoUSqhEIw","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-uRw9kMbu8Heo-vo-dLJplVXBy24n","fromNode":"vo-uRw9kMbu8Heo","fromSide":"right","toNode":"vo-dLJplVXBy24n","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-dLJplVXBy24n-vo-miWgcX1S1xNf","fromNode":"vo-dLJplVXBy24n","fromSide":"right","toNode":"vo-miWgcX1S1xNf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-miWgcX1S1xNf-vo-mwLhk3NzKoQW","fromNode":"vo-miWgcX1S1xNf","fromSide":"right","toNode":"vo-mwLhk3NzKoQW","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-miWgcX1S1xNf-vo-1rsxKr2tZYhf","fromNode":"vo-miWgcX1S1xNf","fromSide":"right","toNode":"vo-1rsxKr2tZYhf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-dLJplVXBy24n-vo-rFBs0IvVRM1e","fromNode":"vo-dLJplVXBy24n","fromSide":"right","toNode":"vo-rFBs0IvVRM1e","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rFBs0IvVRM1e-vo-yxaEgX1jUFGw","fromNode":"vo-rFBs0IvVRM1e","fromSide":"right","toNode":"vo-yxaEgX1jUFGw","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-rFBs0IvVRM1e-vo-I085mIyUsR9m","fromNode":"vo-rFBs0IvVRM1e","fromSide":"right","toNode":"vo-I085mIyUsR9m","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-dLJplVXBy24n-vo-QiohPqVpwJoM","fromNode":"vo-dLJplVXBy24n","fromSide":"right","toNode":"vo-QiohPqVpwJoM","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-QiohPqVpwJoM-vo-YzQGV6nRFTaW","fromNode":"vo-QiohPqVpwJoM","fromSide":"right","toNode":"vo-YzQGV6nRFTaW","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-QiohPqVpwJoM-vo-0L0QPBGgy8IK","fromNode":"vo-QiohPqVpwJoM","fromSide":"right","toNode":"vo-0L0QPBGgy8IK","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-uRw9kMbu8Heo-vo-WXXynSf7R9W1","fromNode":"vo-uRw9kMbu8Heo","fromSide":"right","toNode":"vo-WXXynSf7R9W1","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-WXXynSf7R9W1-vo-pYFIzUcbfESh","fromNode":"vo-WXXynSf7R9W1","fromSide":"right","toNode":"vo-pYFIzUcbfESh","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-pYFIzUcbfESh-vo-tQiDuJMH9UaE","fromNode":"vo-pYFIzUcbfESh","fromSide":"right","toNode":"vo-tQiDuJMH9UaE","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-pYFIzUcbfESh-vo-5Rz4r4NCdhPR","fromNode":"vo-pYFIzUcbfESh","fromSide":"right","toNode":"vo-5Rz4r4NCdhPR","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-pYFIzUcbfESh-vo-Qhm4N5ddiJMw","fromNode":"vo-pYFIzUcbfESh","fromSide":"right","toNode":"vo-Qhm4N5ddiJMw","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-WXXynSf7R9W1-vo-BMj8ImSVKm8I","fromNode":"vo-WXXynSf7R9W1","fromSide":"right","toNode":"vo-BMj8ImSVKm8I","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BMj8ImSVKm8I-vo-athGwKkav5V2","fromNode":"vo-BMj8ImSVKm8I","fromSide":"right","toNode":"vo-athGwKkav5V2","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BMj8ImSVKm8I-vo-rfImwBO1iC3z","fromNode":"vo-BMj8ImSVKm8I","fromSide":"right","toNode":"vo-rfImwBO1iC3z","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BMj8ImSVKm8I-vo-O2lIeM87PT4C","fromNode":"vo-BMj8ImSVKm8I","fromSide":"right","toNode":"vo-O2lIeM87PT4C","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-WXXynSf7R9W1-vo-vX24evC77fqa","fromNode":"vo-WXXynSf7R9W1","fromSide":"right","toNode":"vo-vX24evC77fqa","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-vX24evC77fqa-vo-FXnyVaDH7faB","fromNode":"vo-vX24evC77fqa","fromSide":"right","toNode":"vo-FXnyVaDH7faB","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-vX24evC77fqa-vo-7JQ3c6UOmfgE","fromNode":"vo-vX24evC77fqa","fromSide":"right","toNode":"vo-7JQ3c6UOmfgE","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-vX24evC77fqa-vo-p8Ie6UAiwE6d","fromNode":"vo-vX24evC77fqa","fromSide":"right","toNode":"vo-p8Ie6UAiwE6d","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-WXXynSf7R9W1-vo-HBjJ8aCADjPk","fromNode":"vo-WXXynSf7R9W1","fromSide":"right","toNode":"vo-HBjJ8aCADjPk","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-HBjJ8aCADjPk-vo-2QrQvmX2Ktkq","fromNode":"vo-HBjJ8aCADjPk","fromSide":"right","toNode":"vo-2QrQvmX2Ktkq","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-HBjJ8aCADjPk-vo-iRUZ2EOD7qNG","fromNode":"vo-HBjJ8aCADjPk","fromSide":"right","toNode":"vo-iRUZ2EOD7qNG","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-HBjJ8aCADjPk-vo-kXUgZrCOJG7c","fromNode":"vo-HBjJ8aCADjPk","fromSide":"right","toNode":"vo-kXUgZrCOJG7c","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-WXXynSf7R9W1-vo-38988n6LJo7S","fromNode":"vo-WXXynSf7R9W1","fromSide":"right","toNode":"vo-38988n6LJo7S","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-38988n6LJo7S-vo-Fxr4Wh4adVEz","fromNode":"vo-38988n6LJo7S","fromSide":"right","toNode":"vo-Fxr4Wh4adVEz","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-38988n6LJo7S-vo-B17bepHSEJmJ","fromNode":"vo-38988n6LJo7S","fromSide":"right","toNode":"vo-B17bepHSEJmJ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-38988n6LJo7S-vo-BfMzGX20yVwJ","fromNode":"vo-38988n6LJo7S","fromSide":"right","toNode":"vo-BfMzGX20yVwJ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-uRw9kMbu8Heo-vo-FXZSPE1mgPQu","fromNode":"vo-uRw9kMbu8Heo","fromSide":"right","toNode":"vo-FXZSPE1mgPQu","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FXZSPE1mgPQu-vo-RCwS9gnlNGfi","fromNode":"vo-FXZSPE1mgPQu","fromSide":"right","toNode":"vo-RCwS9gnlNGfi","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-RCwS9gnlNGfi-vo-ZgQ7JIwoWfuf","fromNode":"vo-RCwS9gnlNGfi","fromSide":"right","toNode":"vo-ZgQ7JIwoWfuf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FXZSPE1mgPQu-vo-XqruBg2w35f3","fromNode":"vo-FXZSPE1mgPQu","fromSide":"right","toNode":"vo-XqruBg2w35f3","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-XqruBg2w35f3-vo-zuOyEYwbjtjF","fromNode":"vo-XqruBg2w35f3","fromSide":"right","toNode":"vo-zuOyEYwbjtjF","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FXZSPE1mgPQu-vo-yxLL8yDG9elc","fromNode":"vo-FXZSPE1mgPQu","fromSide":"right","toNode":"vo-yxLL8yDG9elc","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-yxLL8yDG9elc-vo-0qvrRqci7RNf","fromNode":"vo-yxLL8yDG9elc","fromSide":"right","toNode":"vo-0qvrRqci7RNf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FXZSPE1mgPQu-vo-Mz0PpkCSxtyW","fromNode":"vo-FXZSPE1mgPQu","fromSide":"right","toNode":"vo-Mz0PpkCSxtyW","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Mz0PpkCSxtyW-vo-9A5aRSOvgGm2","fromNode":"vo-Mz0PpkCSxtyW","fromSide":"right","toNode":"vo-9A5aRSOvgGm2","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FXZSPE1mgPQu-vo-f9e7YuCcEo5Q","fromNode":"vo-FXZSPE1mgPQu","fromSide":"right","toNode":"vo-f9e7YuCcEo5Q","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-f9e7YuCcEo5Q-vo-dPVydNOGqeTU","fromNode":"vo-f9e7YuCcEo5Q","fromSide":"right","toNode":"vo-dPVydNOGqeTU","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-uRw9kMbu8Heo-vo-CXg98mpI3g5t","fromNode":"vo-uRw9kMbu8Heo","fromSide":"right","toNode":"vo-CXg98mpI3g5t","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-CXg98mpI3g5t-vo-tk8v063QHhez","fromNode":"vo-CXg98mpI3g5t","fromSide":"right","toNode":"vo-tk8v063QHhez","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-tk8v063QHhez-vo-vukWDepaQXii","fromNode":"vo-tk8v063QHhez","fromSide":"right","toNode":"vo-vukWDepaQXii","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-CXg98mpI3g5t-vo-Babw1gYciCzv","fromNode":"vo-CXg98mpI3g5t","fromSide":"right","toNode":"vo-Babw1gYciCzv","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Babw1gYciCzv-vo-JRePqa3qLnQD","fromNode":"vo-Babw1gYciCzv","fromSide":"right","toNode":"vo-JRePqa3qLnQD","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-CXg98mpI3g5t-vo-l534oQodQeXT","fromNode":"vo-CXg98mpI3g5t","fromSide":"right","toNode":"vo-l534oQodQeXT","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-l534oQodQeXT-vo-MZmwk2I439dD","fromNode":"vo-l534oQodQeXT","fromSide":"right","toNode":"vo-MZmwk2I439dD","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-CXg98mpI3g5t-vo-ZptvAaPssDRS","fromNode":"vo-CXg98mpI3g5t","fromSide":"right","toNode":"vo-ZptvAaPssDRS","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZptvAaPssDRS-vo-UB82GPabCA2Q","fromNode":"vo-ZptvAaPssDRS","fromSide":"right","toNode":"vo-UB82GPabCA2Q","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-CXg98mpI3g5t-vo-e0pQbmBT0x1O","fromNode":"vo-CXg98mpI3g5t","fromSide":"right","toNode":"vo-e0pQbmBT0x1O","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-e0pQbmBT0x1O-vo-UwiuAbf4ZzQd","fromNode":"vo-e0pQbmBT0x1O","fromSide":"right","toNode":"vo-UwiuAbf4ZzQd","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-uRw9kMbu8Heo-vo-qI0lSDvi03vW","fromNode":"vo-uRw9kMbu8Heo","fromSide":"right","toNode":"vo-qI0lSDvi03vW","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-qI0lSDvi03vW-vo-EEBU2Z5Xk9wx","fromNode":"vo-qI0lSDvi03vW","fromSide":"right","toNode":"vo-EEBU2Z5Xk9wx","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-EEBU2Z5Xk9wx-vo-J4XGNUugZG6y","fromNode":"vo-EEBU2Z5Xk9wx","fromSide":"right","toNode":"vo-J4XGNUugZG6y","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-EEBU2Z5Xk9wx-vo-MKvYntOYfIUu","fromNode":"vo-EEBU2Z5Xk9wx","fromSide":"right","toNode":"vo-MKvYntOYfIUu","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-EEBU2Z5Xk9wx-vo-Hy82yspS17YB","fromNode":"vo-EEBU2Z5Xk9wx","fromSide":"right","toNode":"vo-Hy82yspS17YB","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-EEBU2Z5Xk9wx-vo-4fdIaJjenKUj","fromNode":"vo-EEBU2Z5Xk9wx","fromSide":"right","toNode":"vo-4fdIaJjenKUj","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-qI0lSDvi03vW-vo-bZVpTBo3HC71","fromNode":"vo-qI0lSDvi03vW","fromSide":"right","toNode":"vo-bZVpTBo3HC71","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-bZVpTBo3HC71-vo-BbziKC0wNtOb","fromNode":"vo-bZVpTBo3HC71","fromSide":"right","toNode":"vo-BbziKC0wNtOb","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BbziKC0wNtOb-vo-lYpNtYwixvac","fromNode":"vo-BbziKC0wNtOb","fromSide":"right","toNode":"vo-lYpNtYwixvac","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-BbziKC0wNtOb-vo-pmTXahxBwpqf","fromNode":"vo-BbziKC0wNtOb","fromSide":"right","toNode":"vo-pmTXahxBwpqf","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-bZVpTBo3HC71-vo-9olyg2Urz1u8","fromNode":"vo-bZVpTBo3HC71","fromSide":"right","toNode":"vo-9olyg2Urz1u8","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-9olyg2Urz1u8-vo-fcQrGoW2tRHt","fromNode":"vo-9olyg2Urz1u8","fromSide":"right","toNode":"vo-fcQrGoW2tRHt","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-9olyg2Urz1u8-vo-v5QqcTdlnVQF","fromNode":"vo-9olyg2Urz1u8","fromSide":"right","toNode":"vo-v5QqcTdlnVQF","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-bZVpTBo3HC71-vo-0rQr6SUE3PeG","fromNode":"vo-bZVpTBo3HC71","fromSide":"right","toNode":"vo-0rQr6SUE3PeG","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-0rQr6SUE3PeG-vo-Sy9aoCkpe32n","fromNode":"vo-0rQr6SUE3PeG","fromSide":"right","toNode":"vo-Sy9aoCkpe32n","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-0rQr6SUE3PeG-vo-VpL1nYWC9Vjs","fromNode":"vo-0rQr6SUE3PeG","fromSide":"right","toNode":"vo-VpL1nYWC9Vjs","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-uRw9kMbu8Heo-vo-ZlRkcP9v9Jsa","fromNode":"vo-uRw9kMbu8Heo","fromSide":"right","toNode":"vo-ZlRkcP9v9Jsa","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZlRkcP9v9Jsa-vo-Gvbuc69XhXai","fromNode":"vo-ZlRkcP9v9Jsa","fromSide":"right","toNode":"vo-Gvbuc69XhXai","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Gvbuc69XhXai-vo-acqZ0qC83VN1","fromNode":"vo-Gvbuc69XhXai","fromSide":"right","toNode":"vo-acqZ0qC83VN1","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-Gvbuc69XhXai-vo-JyjIogEWOStB","fromNode":"vo-Gvbuc69XhXai","fromSide":"right","toNode":"vo-JyjIogEWOStB","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-ZlRkcP9v9Jsa-vo-FbQPwyJx3iEZ","fromNode":"vo-ZlRkcP9v9Jsa","fromSide":"right","toNode":"vo-FbQPwyJx3iEZ","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FbQPwyJx3iEZ-vo-kb1mK9AjlfRA","fromNode":"vo-FbQPwyJx3iEZ","fromSide":"right","toNode":"vo-kb1mK9AjlfRA","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FbQPwyJx3iEZ-vo-fjwVWrkJIJYx","fromNode":"vo-FbQPwyJx3iEZ","fromSide":"right","toNode":"vo-fjwVWrkJIJYx","toSide":"left","toEnd":"none"},
+		{"id":"vo-e-vo-FbQPwyJx3iEZ-vo-r3zJiD3u7h4a","fromNode":"vo-FbQPwyJx3iEZ","fromSide":"right","toNode":"vo-r3zJiD3u7h4a","toSide":"left","toEnd":"none"}
+	]
+}
