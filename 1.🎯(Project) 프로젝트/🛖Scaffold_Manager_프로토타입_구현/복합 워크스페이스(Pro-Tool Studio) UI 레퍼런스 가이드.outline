@@ -1,0 +1,423 @@
+{
+  "version": "1.0.0",
+  "id": "n46BwoJAeoMB",
+  "title": "복합 워크스페이스(Pro-Tool Studio) UI 레퍼런스 가이드",
+  "rootNodes": [
+    {
+      "id": "OLH2aoYjFT7M",
+      "text": "복합 워크스페이스(Pro-Tool / Studio) UI 레퍼런스 가이드",
+      "children": [
+        {
+          "id": "TP4hp18FPCg5",
+          "text": "개요: 포토샵, CAD, VS Code, 캔바 등 화면 밀도가 높고 조작 요소가 많은 툴은 일반 웹·모바일 갤러리(Mobbin 등)에서 찾기 어려움",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793360858657,
+          "updatedAt": 1793360858657
+        },
+        {
+          "id": "YQiTrBfqIbqV",
+          "text": "목적: 세부 컴포넌트를 필터링하여 보거나 스튜디오 툴의 코어 라이브러리를 탐색하기 위한 가이드",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793360858657,
+          "updatedAt": 1793360858657
+        },
+        {
+          "id": "dFZlIvJmqHDF",
+          "text": "1. 필터링 및 비교가 가능한 메타 컴포넌트 갤러리",
+          "children": [
+            {
+              "id": "pIbP6GGOJCYG",
+              "text": "개요: 여러 기업의 디자인 시스템과 실제 프로덕트 화면에서 특정 컴포넌트를 골라 비교하기 좋은 서비스",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            },
+            {
+              "id": "XdE2ZYO77Ghv",
+              "text": "[x] Storybook Showcase (Component Encyclopedia) (storybook.js.org/showcase)",
+              "children": [
+                {
+                  "id": "lq8vMnPPKmlG",
+                  "text": "특징: 전 세계 주요 테크 기업들이 실제 코드로 구현해 공개한 Storybook 아카이브",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                },
+                {
+                  "id": "dhGYdwDuhMf5",
+                  "text": "활용법",
+                  "children": [
+                    {
+                      "id": "V39WoBNxll10",
+                      "text": "상단 필터를 통해 컴포넌트 단위(ColorPicker, Tree, Slider, Toolbar 등) 라이브 데모 조작 가능",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793360858657,
+                      "updatedAt": 1793360858657
+                    },
+                    {
+                      "id": "ZpTnUhexN4tV",
+                      "text": "Adobe Spectrum, Blender, Three.js(drei) 등 스튜디오/3D 툴 고밀도 UI 확인에 최적",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793360858657,
+                      "updatedAt": 1793360858657
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793362524530,
+              "isCompleted": true,
+              "completedAt": 1793362524530
+            },
+            {
+              "id": "E1jIU6anWRvG",
+              "text": "The Component Gallery (component.gallery)",
+              "children": [
+                {
+                  "id": "Kxlw4aGCglHP",
+                  "text": "특징: 60개 이상 유명 디자인 시스템의 컴포넌트 명칭별 매핑 아카이브",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                },
+                {
+                  "id": "wNGMWXsMKJ7V",
+                  "text": "활용법: Accordion, Popover, Segmented Control 등 항목별로 Adobe, Microsoft, GitHub 등의 설계 방식을 한눈에 비교",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            },
+            {
+              "id": "Ya7M282dKMV8",
+              "text": "Refero Design (refero.design)",
+              "children": [
+                {
+                  "id": "ZC78KjWdAHgM",
+                  "text": "특징: 웹 애플리케이션, SaaS, 복합 툴의 실제 화면 비중이 높은 리서치 라이브러리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                },
+                {
+                  "id": "XBi9WA6RHHVo",
+                  "text": "활용법: UI Elements 필터(Sidebar, Toolbar, Floating Panel 등)와 프로덕트 조합으로 Figma, Canva, Linear 등의 레이아웃 내 컴포넌트 활용 사례 파악",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793360858657,
+          "updatedAt": 1793360858657
+        },
+        {
+          "id": "d1ALE5y8ptH7",
+          "text": "2. 워크스페이스/스튜디오 특화 직영 디자인 시스템",
+          "children": [
+            {
+              "id": "3PgQ3KTJWbSB",
+              "text": "개요: 원본 컴포넌트 명세서를 직접 살펴 세부 상태값(State)과 해부도(Anatomy) 파악",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            },
+            {
+              "id": "nSglsh9NdoPx",
+              "text": "포토샵 / 에디터류: Adobe Spectrum (spectrum.adobe.com)",
+              "children": [
+                {
+                  "id": "xMDWyY9U6JWf",
+                  "text": "핵심 포인트: 워크스페이스 UI의 바이블, Color Wheel/Loupe/Slider, Swatch, Action Bar, Tray, 고밀도 속성 패널(Property Panel) 명세",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            },
+            {
+              "id": "tjKBCn2aMZcG",
+              "text": "캔바 / 미리캔버스류: ",
+              "children": [
+                {
+                  "id": "95CuxCCQEDzx",
+                  "text": "핵심 포인트: 에디터 좌측 사이드바 에셋 그리드, 폰트/컬러 선택기, 슬라이더, 레이어 컨트롤 등 웹 기반 디자인 툴의 정석",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                },
+                {
+                  "id": "ECmoT4FD3nWm",
+                  "text": "Canva App UI Kit (Storybook) (canva.dev)",
+                  "children": [],
+                  "createdAt": 1793361072963,
+                  "updatedAt": 1793361075209
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793361072963
+            },
+            {
+              "id": "eHyj7RCxySei",
+              "text": "CAD / 3D / 엔지니어링: ",
+              "children": [
+                {
+                  "id": "gEySVOcfkzgO",
+                  "text": "핵심 포인트: Floating Widget, 계층형 레이어 트리(Tree), 상태 표시줄, 정밀 수치 입력 필드 등 복잡한 뷰포트 UI 구조",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                },
+                {
+                  "id": "vK7W8pKy2vX1",
+                  "text": "Autodesk Hig / Forma Design & ",
+                  "children": [],
+                  "createdAt": 1793361032253,
+                  "updatedAt": 1793361058260
+                },
+                {
+                  "id": "InCLzLiho551",
+                  "text": "Bentley iTwin UI (itwinui.bentley.com)",
+                  "children": [],
+                  "createdAt": 1793361058260,
+                  "updatedAt": 1793361058260
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793361032253
+            },
+            {
+              "id": "BdvQusQY7hre",
+              "text": "VS Code / IDE 환경: VS Code Webview UI Toolkit & JetBrains IntelliJ UI Guidelines (jetbrains.design/intellij)",
+              "children": [
+                {
+                  "id": "peKETQXp2zNI",
+                  "text": "핵심 포인트: 스플릿 뷰(Split View), 도구 창(Tool Window), 복잡한 트리 뷰, 좁은 공간 내 유효성 검사(Validation) 처리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            },
+            {
+              "id": "tc1jecvMqmSF",
+              "text": "Figma 스타일 속성 패널: Figma UI3 Design System (Figma Community)",
+              "children": [
+                {
+                  "id": "hOlEy2M0JTdO",
+                  "text": "핵심 포인트: 수치 입력 인풋(Scrubbable Input - 드래그 조절), 다중 속성 그리드, 아이콘 버튼 토글 등 공간 최적화 방식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793360858657,
+                  "updatedAt": 1793360858657
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793360858657,
+          "updatedAt": 1793360858657
+        },
+        {
+          "id": "L4oIOltZFVcw",
+          "text": "3. 실무 적용을 위한 탐색 팁",
+          "children": [
+            {
+              "id": "vea2iimO8mpk",
+              "text": "개요: 일반 웹 컴포넌트와 다른 복합 워크스페이스 전용 검색 키워드 활용",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            },
+            {
+              "id": "i2FoJu4nsn8W",
+              "text": "좁은 영역의 수치 조작: ",
+              "children": [
+                {
+                  "id": "APnCL0p9Zcc0",
+                  "text": "Scrubbable Input (라벨 드래그 수치 변경), ",
+                  "children": [],
+                  "createdAt": 1793360954960,
+                  "updatedAt": 1793360959164
+                },
+                {
+                  "id": "rbjEaTfOQhNR",
+                  "text": "Number Field, ",
+                  "children": [],
+                  "createdAt": 1793360959164,
+                  "updatedAt": 1793360961831
+                },
+                {
+                  "id": "rTc5rhGFrpGR",
+                  "text": "Precision Slider",
+                  "children": [],
+                  "createdAt": 1793360961831,
+                  "updatedAt": 1793360961831
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360954959
+            },
+            {
+              "id": "pIkugQrXieAj",
+              "text": "패널 및 뷰포트 제어: ",
+              "children": [
+                {
+                  "id": "HEAY3sm13mJ0",
+                  "text": "Dockable Panel, ",
+                  "children": [],
+                  "createdAt": 1793360965723,
+                  "updatedAt": 1793360970729
+                },
+                {
+                  "id": "eGsAtVs6HbBu",
+                  "text": "Split Pane / Resizer, ",
+                  "children": [],
+                  "createdAt": 1793360970729,
+                  "updatedAt": 1793360972750
+                },
+                {
+                  "id": "OdqnzmDCCeHU",
+                  "text": "Floating Toolbar, ",
+                  "children": [],
+                  "createdAt": 1793360972750,
+                  "updatedAt": 1793360975228
+                },
+                {
+                  "id": "l19W3jaA4nu6",
+                  "text": "Inspector",
+                  "children": [],
+                  "createdAt": 1793360975228,
+                  "updatedAt": 1793360975228
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360965723
+            },
+            {
+              "id": "De1uZI6oYrjH",
+              "text": "계층 및 레이어 관리: ",
+              "children": [
+                {
+                  "id": "FgANRWFx1ylt",
+                  "text": "Tree View (드래그 앤 드롭, 눈/자물쇠 아이콘 토글 포함), ",
+                  "children": [],
+                  "createdAt": 1793360979763,
+                  "updatedAt": 1793360984127
+                },
+                {
+                  "id": "5660Zb2B5hqp",
+                  "text": "Layer List",
+                  "children": [],
+                  "createdAt": 1793360984127,
+                  "updatedAt": 1793360984127
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360979763
+            },
+            {
+              "id": "TEElbdEhhYy4",
+              "text": "상태 및 모드 전환: ",
+              "children": [
+                {
+                  "id": "g9vyta3VxfXK",
+                  "text": "Segmented Control, ",
+                  "children": [],
+                  "createdAt": 1793360989989,
+                  "updatedAt": 1793360993406
+                },
+                {
+                  "id": "s8EuajrkOVJ0",
+                  "text": "Toggle Button Group,",
+                  "children": [],
+                  "createdAt": 1793360993406,
+                  "updatedAt": 1793360995236
+                },
+                {
+                  "id": "reE7zCR47ITy",
+                  "text": "Context Menu (다단계 서브메뉴, 단축키 표기)",
+                  "children": [],
+                  "createdAt": 1793360995236,
+                  "updatedAt": 1793360997015
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360989988
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793360858657,
+          "updatedAt": 1793360858657
+        },
+        {
+          "id": "2pcI5mDozjrR",
+          "text": "후속 지원 안내",
+          "children": [
+            {
+              "id": "VUt7787MEgch",
+              "text": "현재 기획·디자인 중인 워크스페이스에서 가장 까다로운 특정 영역(예: 레이어 트리, 우측 다중 속성 인스펙터, 상단 툴바, 타임라인 등) 공유 시 최적의 레퍼런스 사례 심층 분석 지원",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793360858657
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793360858657,
+          "updatedAt": 1793360858657
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793360858657,
+      "updatedAt": 1793360858657
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793360858657,
+  "updatedAt": 1793362526888
+}

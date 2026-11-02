@@ -1,0 +1,350 @@
+{
+  "version": "1.0.0",
+  "id": "XVAaocvwgLxX",
+  "title": "DocStudio 한국형 정형 문서 Picking & Building 기능 설계",
+  "rootNodes": [
+    {
+      "id": "MSwhZTq1p70Z",
+      "text": "DocStudio: 한국형 정형 문서 'Picking & Building' 기능 설계",
+      "children": [
+        {
+          "id": "kmfnd4IC7Qqf",
+          "text": "1. 유저 시나리오 (User Scenario)",
+          "children": [
+            {
+              "id": "kbDsj9RV2qsc",
+              "text": "페르소나",
+              "children": [
+                {
+                  "id": "IhMHVquJJBEF",
+                  "text": "계약서, 공문, 정형화된 보고서를 자주 작성해야 하는 실무자 (법무, 기획, 행정)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            },
+            {
+              "id": "T43cOnlqC6hN",
+              "text": "배경 및 상황",
+              "children": [
+                {
+                  "id": "FH51GMELXH45",
+                  "text": "머릿속 생각이나 흩어진 메모(@회의록.md, @조건정리.txt)에는 당사자 정보, 금액, 조항별 합의 내용이 난잡하게 널려 있음",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "qyrAu5plUY3T",
+                  "text": "이를 한국형 문서 양식(예: 2차적저작물작성권 양도계약서)에 맞게 1조, 2조, 조항별 단서로 딱딱 맞아떨어지게 조립해야 함",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            },
+            {
+              "id": "nyGi38hGHZ57",
+              "text": "핵심 목표",
+              "children": [
+                {
+                  "id": "QEeN2RdV23pf",
+                  "text": "템플릿의 각 조항 슬롯에 AI가 알맞은 메모 조각을 매칭해 주면, 유저는 이를 고르고(Pick) 조합(Build)하여 단 1분 만에 완벽한 격식의 문서를 완성하는 것",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            },
+            {
+              "id": "rYxwpmXxkygE",
+              "text": "한 줄 시나리오 요약",
+              "children": [
+                {
+                  "id": "LyUcZVkJn7Ly",
+                  "text": "\"사용자가 흩어진 메모와 타겟 문서 양식을 올리면, AI가 문서의 각 조항 슬롯에 맞는 메모 조각들을 매칭해주고, 사용자는 이를 보며 직관적으로 골라 담아(Picking & Building) 정형 문서를 완성한다.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793358217262,
+          "updatedAt": 1793358217262
+        },
+        {
+          "id": "aFELxBNAwxbr",
+          "text": "2. 유저 저니 맵 (User Journey Map)",
+          "children": [
+            {
+              "id": "Bg3skHqnEfFJ",
+              "text": "1단계: 문서 뼈대(Template) 선택 및 메모(Source) 투입",
+              "children": [
+                {
+                  "id": "k2nI0S7Rrwq3",
+                  "text": "@유저행동: 표준 양식(예: 계약서 폼)을 고르고, 참고할 내 메모 파일들을 끌어다 놓는다.",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "k2Ckn3Wack1z",
+                  "text": "#속마음: \"이 복잡한 조항 구조에 내 메모 내용들이 알아서 딱딱 들어가야 할 텐데...\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "mYx8o43kDyEW",
+                  "text": "#PainPoint: 기존 AI는 그냥 긴 줄글로 써버려서 한국식 계약서 양식(제1조, 제2조)에 맞추려면 내가 일일이 복사해서 쪼개 넣어야 함",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "pDAPbecTnNNd",
+                  "text": "#해결책: 문서 양식의 구조(조항/항/호)를 시스템이 먼저 인식하고, 메모들을 원자 단위 블록으로 쪼개어 대기시킴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            },
+            {
+              "id": "pHTIGLpy3eK7",
+              "text": "2단계: 조항별 블록 매칭 및 'Picking & Building'",
+              "children": [
+                {
+                  "id": "jvWrBc9xrTtw",
+                  "text": "@유저행동: 문서의 각 조항 슬롯(예: 계약금액, 당사자 정보)을 누르면, AI가 내 메모 중에서 그에 맞는 조각들을 후보로 띄워준다. 유저는 마음에 드는 조각을 선택(Pick)해 조항에 끼워 넣는다(Build).",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "mLjHksWyjNtb",
+                  "text": "#속마음: \"오, 이 메모에 있던 날짜를 계약일 슬롯에 톡 누르니까 제1조 양식에 딱 맞게 들어가네?\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "rEJxdtrOiJdv",
+                  "text": "#PainPoint: AI가 엉뚱한 메모를 조항에 갖다 붙이면 법적으로 큰일 남",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "QL6sViw5CtYV",
+                  "text": "#해결책: AI가 임의로 채우지 않고, 반드시 유저가 사이드바의 메모 조각을 드래그하거나 선택하여 꽂아 넣는 '수동 확정(Confirm)' UI 제공",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            },
+            {
+              "id": "ocEryNNsoabD",
+              "text": "3단계: 완성된 한국형 정형 문서 검수 및 내보내기",
+              "children": [
+                {
+                  "id": "UvSXvhWn0p57",
+                  "text": "@유저행동: 빈 슬롯이 모두 채워진 한국식 문서(조/항/호 구조)를 확인하고 최종 다운로드한다.",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "P5kMd4208JZK",
+                  "text": "#속마음: \"수고스럽게 폼 맞추느라 야근 안 해도 되겠네. 완벽하다.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "gzWHRMXIvyir",
+                  "text": "#PainPoint: 서식이나 맞춤법, 법적 필수 문구가 빠졌을까 봐 불안함",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                },
+                {
+                  "id": "sLJgOcLpUscH",
+                  "text": "#해결책: 필수 조항 누락 여부를 체크해주는 '법무/형식 검수 체크리스트' 뱃지 노출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793358217262,
+          "updatedAt": 1793358217262
+        },
+        {
+          "id": "0fyMfQkA7ZdG",
+          "text": "3. 유저 플로우 (User Flow) - '조각 메모를 조항에 조립하기'",
+          "children": [
+            {
+              "id": "lvX8aUiwDONB",
+              "text": "3-1. 해피 패스 (#HappyPath)",
+              "children": [
+                {
+                  "id": "5ohbpYdTOqHh",
+                  "text": "[듀얼 스크린 에디터 (좌: 내 메모/조각 창 / 우: 한국형 문서 템플릿 뷰)]",
+                  "children": [
+                    {
+                      "id": "k15HU4G3DxV2",
+                      "text": "@액션: 우측 문서 템플릿의 빈 조항 슬롯 클릭 (예: [저작권자1 성명]) -> 좌측 메모 창에서 해당 정보가 담긴 메모 블록 하이라이트 -> '@추천 블록' 선택 후 우측 슬롯에 드래그 앤 드롭(또는 클릭으로 장착)",
+                      "children": [
+                        {
+                          "id": "oy2KvijEoA4y",
+                          "text": "[문서 조립 완료 상태]",
+                          "children": [
+                            {
+                              "id": "QR6pJTldAEGy",
+                              "text": "@액션: 모든 슬롯 빌드 완료 확인 -> 상단 '문서 최종 컴파일(Export)' 클릭 -> 정형화된 HWP/DOCX/PDF 양식으로 다운로드",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1793358217262,
+                              "updatedAt": 1793358217262
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1793358217262,
+                          "updatedAt": 1793358217262
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1793358217262,
+                      "updatedAt": 1793358217262
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            },
+            {
+              "id": "PHJms0fCEChy",
+              "text": "3-2. 상세 화면별 플로우 및 예외 처리 (#EdgeCase)",
+              "children": [
+                {
+                  "id": "hxfHyeghz4Qt",
+                  "text": "[우측 문서 템플릿 뷰 (조항 슬롯 관리)]",
+                  "children": [
+                    {
+                      "id": "hETfwE1CNsbI",
+                      "text": "@액션: 특정 조항 슬롯(예: 제5조 대금 지급 조건)을 클릭했을 때",
+                      "children": [
+                        {
+                          "id": "8FiiPD1MvmCq",
+                          "text": "? 조건: 업로드한 메모 조각들 중에 해당 조항을 채울 수 있는 키워드가 존재하는가?",
+                          "children": [
+                            {
+                              "id": "d5OBKkfs3ZRn",
+                              "text": "존재함 (#HappyPath): 좌측 메모 창에서 가장 맥락이 일치하는 메모 조각 2~3개를 '추천 칩(Chip)' 형태로 띄워줌",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1793358217262,
+                              "updatedAt": 1793358217262
+                            },
+                            {
+                              "id": "talPFw8aXmSU",
+                              "text": "존재하지 않음 (#예외): 추천 칩 대신 \"관련 메모가 없습니다. 직접 입력하거나 AI에게 초안 작성을 지시하세요\" 플레이스홀더 노출",
+                              "children": [
+                                {
+                                  "id": "ivBUkWamig0t",
+                                  "text": "@액션: 'AI에게 이 조항 내용 작성을 지시하기' 클릭 -> 사용자의 전체 맥락을 바탕으로 해당 조항의 표준 문구를 생성해 슬롯에 채워 넣기 (#정책: AI가 채운 조항은 주황색 테두리로 '검토 필요' 마크 표시)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "createdAt": 1793358217262,
+                                  "updatedAt": 1793358217262
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1793358217262,
+                              "updatedAt": 1793358217262
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1793358217262,
+                          "updatedAt": 1793358217262
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1793358217262,
+                      "updatedAt": 1793358217262
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793358217262,
+                  "updatedAt": 1793358217262
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793358217262,
+              "updatedAt": 1793358217262
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793358217262,
+          "updatedAt": 1793358217262
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793358217262,
+      "updatedAt": 1793358217262
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793358217262,
+  "updatedAt": 1793358217262
+}

@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "id": "UFtZgAV47O7P",
+  "title": "사용성 검증 시나리오 리스트업",
+  "rootNodes": [
+    {
+      "id": "LsNaGQNA1FQX",
+      "text": "zero -> 한 페이지 빌드 시나리오_create",
+      "children": [
+        {
+          "id": "c09WqBtir3mX",
+          "text": "핵심 아이디어와 생각의 흐름을 여기에 작성하세요",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793352150020,
+          "updatedAt": 1793352150020
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793352150020,
+      "updatedAt": 1793352182164
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793352150020,
+  "updatedAt": 1793352182164
+}

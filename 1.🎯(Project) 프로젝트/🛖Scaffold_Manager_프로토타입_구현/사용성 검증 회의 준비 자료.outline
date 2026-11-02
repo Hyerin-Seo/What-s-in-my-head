@@ -1183,14 +1183,14 @@
                   "updatedAt": 1793332726959
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793331683120,
               "updatedAt": 1793331683120
             }
           ],
+          "isFolded": false,
           "createdAt": 1793330195968,
-          "updatedAt": 1793331683120,
-          "isFolded": true
+          "updatedAt": 1793331683120
         },
         {
           "id": "PuUB3ixpnve8",
@@ -1287,6 +1287,7 @@
               "updatedAt": 1793330430155
             }
           ],
+          "isFolded": true,
           "createdAt": 1793330371048,
           "updatedAt": 1793330906146
         },
@@ -1329,6 +1330,7 @@
                   "updatedAt": 1793335439802
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793335439802,
               "updatedAt": 1793335439802
             }
@@ -1357,6 +1359,7 @@
               "updatedAt": 1793333288581
             }
           ],
+          "isFolded": true,
           "createdAt": 1793333130601,
           "updatedAt": 1793333278263
         },
@@ -1388,6 +1391,7 @@
               "updatedAt": 1793333522162
             }
           ],
+          "isFolded": true,
           "createdAt": 1793333363191,
           "updatedAt": 1793333518416
         },
@@ -1414,6 +1418,7 @@
                   "updatedAt": 1793335439802
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793335439802,
               "updatedAt": 1793335439802
             }
@@ -1438,6 +1443,20 @@
               "children": [],
               "createdAt": 1793334020768,
               "updatedAt": 1793334052385
+            },
+            {
+              "id": "sA87Jf0Ejoh7",
+              "text": "https://andymatuschak.org/",
+              "children": [],
+              "createdAt": 1793364198551,
+              "updatedAt": 1793364199317
+            },
+            {
+              "id": "qh2JHA8G6UqK",
+              "text": "https://app.gingkowriter.com/BJHdia9",
+              "children": [],
+              "createdAt": 1793364199996,
+              "updatedAt": 1793364208081
             }
           ],
           "createdAt": 1793333912766,
@@ -1485,6 +1504,7 @@
               "updatedAt": 1793334498594
             }
           ],
+          "isFolded": true,
           "createdAt": 1793334433596,
           "updatedAt": 1793334486239
         },
@@ -1544,9 +1564,9 @@
               "updatedAt": 1793335439802
             }
           ],
+          "isFolded": true,
           "createdAt": 1793335439802,
-          "updatedAt": 1793335439802,
-          "isFolded": true
+          "updatedAt": 1793335439802
         },
         {
           "id": "4ib4nFzzpofg",
@@ -1568,6 +1588,7 @@
               "updatedAt": 1793335636476
             }
           ],
+          "isFolded": true,
           "createdAt": 1793335581376,
           "updatedAt": 1793335629761
         },
@@ -1593,5 +1614,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793260355692,
-  "updatedAt": 1793335733499
+  "updatedAt": 1793364208081
 }
