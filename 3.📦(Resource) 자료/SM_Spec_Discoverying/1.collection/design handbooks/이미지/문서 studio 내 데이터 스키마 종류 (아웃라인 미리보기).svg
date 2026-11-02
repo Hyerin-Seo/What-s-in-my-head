@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">문서 studio 내 데이터 스키마 종류</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Raw 데이터</text>
+<circle cx="58" cy="127" r="4.5" fill="#3a3a40"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 사고 &amp; 맥락 차원 (인간의 내면과 소통)</text>
+<circle cx="82" cy="160" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="160" r="4.5" fill="#7c5cff"/>
+<text x="99" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1) 끄적인 메모 (개인적 발상)</text>
+<circle cx="82" cy="193" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="193" r="4.5" fill="#7c5cff"/>
+<text x="99" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2) 회의 · 소통 기록 (집단적 대화)</text>
+<circle cx="58" cy="226" r="4.5" fill="#3a3a40"/>
+<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2. 지식 &amp; 참조 차원 (외부 세계의 탐색)</text>
+<circle cx="82" cy="259" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="259" r="4.5" fill="#7c5cff"/>
+<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1) 외부 조사 · 스크랩 (디지털 리서치 및 외부 팩트)</text>
+<circle cx="82" cy="292" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="292" r="4.5" fill="#7c5cff"/>
+<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">2) 시각 캡처 &amp; 화면 스케치 (시각 레퍼런스 스크랩)</text>
+<circle cx="82" cy="325" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="325" r="4.5" fill="#7c5cff"/>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">3) 실물 서류 · 인쇄물 스캔본 (물리 실물 참조)</text>
+<circle cx="58" cy="358" r="4.5" fill="#3a3a40"/>
+<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">3. 실적 &amp; 증빙 차원 (조직 운영의 팩트와 숫자)</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>

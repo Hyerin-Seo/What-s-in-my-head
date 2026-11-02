@@ -4,9 +4,27 @@
 <rect width="600" height="66" fill="#f6f6f8"/>
 <line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
 <text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">사용성 검증 시나리오 리스트업</text>
-<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
-<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">zero -&gt; 한 페이지 빌드 시나리오_create</text>
-<circle cx="58" cy="127" r="3" fill="#9a9aa3"/>
-<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">핵심 아이디어와 생각의 흐름을 여기에 작성하세요</text>
+<circle cx="34" cy="94" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="34" cy="94" r="4.5" fill="#7c5cff"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">(Building) zero -&gt; 한 페이지 빌드 시나리오_create</text>
+<circle cx="34" cy="127" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="34" cy="127" r="4.5" fill="#7c5cff"/>
+<text x="51" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">(Building) zero -&gt; 멀티페이지 패키지 빌드 시나리오_compos…</text>
+<circle cx="34" cy="160" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="34" cy="160" r="4.5" fill="#7c5cff"/>
+<text x="51" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">(Building) one_pager -&gt; 멀티챕터 문서 확장 시나리오_expan…</text>
+<circle cx="34" cy="193" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="34" cy="193" r="4.5" fill="#7c5cff"/>
+<text x="51" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">(Tuning) baseline_doc -&gt; 20% 최적화 문서 시나리오_tuning</text>
+<circle cx="34" cy="226" r="4.5" fill="#3a3a40"/>
+<text x="51" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">raw_dump -&gt; 구조화된 척추 블록 시나리오_refactor</text>
+<circle cx="58" cy="259" r="3" fill="#9a9aa3"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">[상황]: 회사에 굴러다니는 줄글 50페이지짜리 난잡한 레거…</text>
+<circle cx="58" cy="292" r="4.5" fill="#3a3a40"/>
+<text x="75" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">[Input ➔ Output]:</text>
+<circle cx="82" cy="325" r="3" fill="#9a9aa3"/>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Input: 구조가 엉망인 원시 텍스트 덤프 (Raw Dump / 긴…</text>
+<circle cx="82" cy="358" r="3" fill="#9a9aa3"/>
+<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Output: 재사용 가능한 뼈대(Spine)와 인덱싱된 온톨로…</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>

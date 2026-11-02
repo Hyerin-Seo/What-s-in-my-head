@@ -1220,7 +1220,7 @@
               "updatedAt": 1793331683120
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793330195968,
           "updatedAt": 1793331683120
         },
@@ -1399,29 +1399,6 @@
           "updatedAt": 1793333278263
         },
         {
-          "id": "OwT1E613TJHB",
-          "text": "[answer evidence] 모든 답변에 근거를 명확히하고, 해당 근거를 클릭했을 때 바로 우측에 띄워줄 수 있으면 좋아할 것이다",
-          "children": [
-            {
-              "id": "NVvU6EvOeLuq",
-              "text": "1. 필수 Grounding & Highlighting - 대충 제목만 던져주는 것이 아니라 근거가 되는 섹션 혹은 단락으로 바로 띄워놓기",
-              "children": [],
-              "createdAt": 1793334314172,
-              "updatedAt": 1793334371197
-            },
-            {
-              "id": "6vXY1u5DtZ74",
-              "text": "2. grounding 이 없을 수도(뇌피셜이다!), 여러 개일 수도, 후보군만 있는 애매한 상태일 수도 -> 그냥 표시를 해두자!",
-              "children": [],
-              "createdAt": 1793334379937,
-              "updatedAt": 1793334417766
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793334054975,
-          "updatedAt": 1793338941724
-        },
-        {
           "id": "3p8de5UIGtbS",
           "text": "[form 비정형 db화] doc 네트워크와 연결된 개념이긴하지만, 옵시디언에 프론트매터가 아예 문서 폼 버전으로 갔다고 보면 됨. 아무튼 폼 형식으로 정리한 내용을 기준으로 자동 태그화, 분류 추출, 인덱싱 정보 생성 등을 해주면 사용자는 데이터 관리 작업을 훨씬 편해할 것인가? 아니면 백엔진으로 그냥 자동으로만 하면 되나?",
           "children": [
@@ -1491,57 +1468,6 @@
           "children": [],
           "createdAt": 1793333781486,
           "updatedAt": 1793333910742
-        },
-        {
-          "id": "Qo7m5GvcYJGh",
-          "text": "[project to doc-slot zoom in-out] project 단위에서의 큰 조망과 관리에서부터 아주 디테일한 문서 slot 개별의 작업까지 포커스를 조절하며(차원 조절에 따른 ai 자동 서포팅 차이) 깎아나가는 작업을 선호할 것이다",
-          "children": [
-            {
-              "id": "JODW2I3u2WeQ",
-              "text": "like 캐드 프로그램",
-              "children": [],
-              "createdAt": 1793334020768,
-              "updatedAt": 1793334052385
-            },
-            {
-              "id": "sA87Jf0Ejoh7",
-              "text": "https://andymatuschak.org/",
-              "children": [],
-              "createdAt": 1793364198551,
-              "updatedAt": 1793364199317
-            },
-            {
-              "id": "qh2JHA8G6UqK",
-              "text": "https://app.gingkowriter.com/BJHdia9",
-              "children": [],
-              "createdAt": 1793364199996,
-              "updatedAt": 1793364208081
-            }
-          ],
-          "createdAt": 1793333912766,
-          "updatedAt": 1793334041444
-        },
-        {
-          "id": "OwT1E613TJHB",
-          "text": "[answer evidence] 모든 답변에 근거를 명확히하고, 해당 근거를 클릭했을 때 바로 우측에 띄워줄 수 있으면 좋아할 것이다",
-          "children": [
-            {
-              "id": "NVvU6EvOeLuq",
-              "text": "1. 필수 Grounding & Highlighting - 대충 제목만 던져주는 것이 아니라 근거가 되는 섹션 혹은 단락으로 바로 띄워놓기",
-              "children": [],
-              "createdAt": 1793334314172,
-              "updatedAt": 1793334371197
-            },
-            {
-              "id": "6vXY1u5DtZ74",
-              "text": "2. grounding 이 없을 수도(뇌피셜이다!), 여러 개일 수도, 후보군만 있는 애매한 상태일 수도 -> 그냥 표시를 해두자!",
-              "children": [],
-              "createdAt": 1793334379937,
-              "updatedAt": 1793334417766
-            }
-          ],
-          "createdAt": 1793334054975,
-          "updatedAt": 1793334221509
         },
         {
           "id": "1Qc75QnDmXdL",
@@ -1642,6 +1568,13 @@
           "updatedAt": 1793335629761
         },
         {
+          "id": "89lWT1vpDCrX",
+          "text": "[anwser evidence] 답변 시 반드시 근거 제시 - 특히, 링크 하나가 아니라 하이라이팅 + 직접 언급 단락 및 페이지",
+          "children": [],
+          "createdAt": 1793611455361,
+          "updatedAt": 1793611534036
+        },
+        {
           "id": "dPbD0BGihpYH",
           "text": "약식 버전",
           "children": [
@@ -1665,5 +1598,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793260355692,
-  "updatedAt": 1793364208081
+  "updatedAt": 1793611534037
 }

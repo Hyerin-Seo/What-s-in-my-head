@@ -4,24 +4,439 @@
   "title": "사용성 검증 시나리오 리스트업",
   "rootNodes": [
     {
-      "id": "LsNaGQNA1FQX",
-      "text": "zero -> 한 페이지 빌드 시나리오_create",
+      "id": "VnkzVZYf6NsJ",
+      "text": "(Building) zero -> 한 페이지 빌드 시나리오_create ",
       "children": [
         {
-          "id": "c09WqBtir3mX",
-          "text": "핵심 아이디어와 생각의 흐름을 여기에 작성하세요",
+          "id": "jZxPthJ7bUWQ",
+          "text": "[아웃라인 vs 내용 비율]: 뼈대(아웃라인) 70% : 내용 30% (뼈대 잡고 즉시 1페이지 완결)",
           "children": [],
           "isFolded": false,
-          "createdAt": 1793352150020,
-          "updatedAt": 1793352150020
+          "createdAt": 1793615067671,
+          "updatedAt": 1793615210850
+        },
+        {
+          "id": "smZzeVWtiRRY",
+          "text": "[상황]: 아무것도 없는 백지 상태에서 새로운 기획/문서의 초안을 빠르게 잡아야 할 때",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "n19mHj4omnCR",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "WUpFf7EeAa8T",
+              "text": "Input: 주제 키워드 1개 및 막연한 아이디어 메모 몇 줄",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            },
+            {
+              "id": "PMcUw9akW429",
+              "text": "Output: 3단 척추(Spine)와 세부 블록이 결합된 완결된 1페이지 문서 초안",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "DuyQqsbBiXVz",
+          "text": "[검증 포인트]: 빈 화면에서의 멍때림(Zero-base Block) 없이, AI가 추천한 척추를 피킹하여 3분 만에 초안을 뽑아내는 효능감",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1793614944780,
+      "updatedAt": 1793615204478
+    },
+    {
+      "id": "S3qpZtSHpUKE",
+      "text": "(Building) zero -> 멀티페이지 패키지 빌드 시나리오_compose",
+      "children": [
+        {
+          "id": "oQXYQOQt8jx2",
+          "text": "[아웃라인 vs 내용 비율]: 뼈대(아웃라인) 90% : 내용 10% (수십 페이지 거대 골조 및 전체 목차 설계)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793615067671,
+          "updatedAt": 1793615067671
+        },
+        {
+          "id": "sZngHApnAKmP",
+          "text": "[상황]: RFP(제안요청서)나 대형 프로젝트를 받아 목차(1장~5장)부터 부록까지 수십 페이지의 복합 문서를 한 번에 설계해야 할 때",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "y7BMbjVoXdIO",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "he6DSNFQpVFK",
+              "text": "Input: 프로젝트 핵심 목표, RFP 요구사항 목록, 필수 포함 조항",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            },
+            {
+              "id": "lolFXV5gPvW0",
+              "text": "Output: 1장(개요)부터 5장(실행계획)까지 챕터별로 정렬된 20~30페이지 분량의 멀티페이지 문서 패키지(Dossier)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "dt3bEfZ3nSG6",
+          "text": "[검증 포인트]: 장(Chapter) 간의 정합성(Consistency)과 앞뒤 모순 없이 하나의 척추로 꿰어지며 챕터별 살이 고르게 분배되는 대형 구조화 효능감",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1793614944780,
+      "updatedAt": 1793615245579
+    },
+    {
+      "id": "zSZ50JDCx6fv",
+      "text": "(Building) one_pager -> 멀티챕터 문서 확장 시나리오_expand",
+      "children": [
+        {
+          "id": "3LU7vnNntO2T",
+          "text": "[아웃라인 vs 내용 비율]: 뼈대(아웃라인) 50% : 내용 50% (1개 뼈대를 챕터로 쪼개며 본격 살 채우기)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793615067671,
+          "updatedAt": 1793615067671
+        },
+        {
+          "id": "2cVk1fPUdRGa",
+          "text": "[상황]: 1페이지짜리 요약 기획안을 결재권자에게 보고한 뒤, \"구체적인 10장짜리 상세 실행안으로 늘려오라\"는 지시를 받았을 때",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "cgl1MJxbDPV0",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "3AWUNtDom7FX",
+              "text": "Input: 이미 작성된 1페이지 요약 초안 (One-pager Draft)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            },
+            {
+              "id": "0RpbxxCJF69m",
+              "text": "Output: 1페이지의 각 단락/슬롯들이 각각 독립된 1개의 챕터(Chapter)로 확장된 다페이지 상세 보고서",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "4Fw0MmQIGiUA",
+          "text": "[검증 포인트]: 기존 1페이지의 문맥을 잃지 않은 채, 슬롯 하나를 '챕터로 승격(Promote to Chapter)'시켰을 때 하위 페이지들이 유기적으로 분기(Branching)되는 확장감",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1793614944780,
+      "updatedAt": 1793615245579
+    },
+    {
+      "id": "KEcbb0HhH46v",
+      "text": "(Tuning) baseline_doc -> 20% 최적화 문서 시나리오_tuning",
+      "children": [
+        {
+          "id": "76uuc2K5snC0",
+          "text": "[아웃라인 vs 내용 비율]: 기존 뼈대 80% (상속 유지) : 신규 내용 20% (슬롯 정밀 교체)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793615067671,
+          "updatedAt": 1793615067671
+        },
+        {
+          "id": "cmIJVNFOxBhY",
+          "text": "[상황]: 작년에 성공한 제안서나 기존 사내 표준 문서(80% 베이스)를 기반으로, 올해의 신규 변경점이나 타깃 맞춤형 내용(20%)만 스마트하게 개선해야 할 때",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793615067671,
+          "updatedAt": 1793615067671
+        },
+        {
+          "id": "oWlauU32N0t2",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "4Y3P5zoGTHr0",
+              "text": "Input: 기존 검증된 원본 문서 1본(80% 자산) + 신규 변경 사항/추가 요구 팩트(20%)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793615067671,
+              "updatedAt": 1793615067671
+            },
+            {
+              "id": "Yxs3ymWN4fWV",
+              "text": "Output: 기존의 검증된 척추와 서식 규격은 100% 안전하게 유지되면서, 변경이 필요한 20%의 슬롯만 정밀하게 교체·튜닝된 신규 문서",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793615067671,
+              "updatedAt": 1793615067671
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793615067671,
+          "updatedAt": 1793615067671
+        },
+        {
+          "id": "PZQtf76Ngf6r",
+          "text": "[검증 포인트]: 문서를 처음부터 다시 쓰는 피로감 없이, AI가 기존 문서의 80%를 그대로 상속(Inherit)하고 어느 슬롯 20%를 갈아끼워야 하는지(Diff)를 정확히 짚어내어 교체해 주는 생산성의 쾌감",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793615067671,
+          "updatedAt": 1793615067671
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1793615067671,
+      "updatedAt": 1793615272715
+    },
+    {
+      "id": "YooEQtSAu8uK",
+      "text": "raw_dump -> 구조화된 척추 블록 시나리오_refactor",
+      "children": [
+        {
+          "id": "o2HN7BCJOUB4",
+          "text": "[상황]: 회사에 굴러다니는 줄글 50페이지짜리 난잡한 레거시 보고서나 횡설수설한 회의 녹취록을 받았을 때",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "gPtygpO8yLeX",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "o1UEJNbAcXFc",
+              "text": "Input: 구조가 엉망인 원시 텍스트 덤프 (Raw Dump / 긴 줄글)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            },
+            {
+              "id": "quoXmJVhFOU5",
+              "text": "Output: 재사용 가능한 뼈대(Spine)와 인덱싱된 온톨로지 카드 블록들",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "tUbBDW4H8k89",
+          "text": "[검증 포인트]: 사람이 일일이 읽고 자르지 않아도, AI가 핵심 뼈대를 자동 분해(Deconstruct)하여 정갈한 블록으로 정돈해 주는 쾌감",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
         }
       ],
       "isFolded": false,
-      "createdAt": 1793352150020,
-      "updatedAt": 1793352182164
+      "createdAt": 1793614944780,
+      "updatedAt": 1793614944780
+    },
+    {
+      "id": "wKiwjhSguw4b",
+      "text": "multi_slots -> 단일 종합 문서 시나리오_assemble",
+      "children": [
+        {
+          "id": "T7MHWMNwevPe",
+          "text": "[상황]: A기획서의 [문제정의], B제안서의 [기술스펙], C회의록의 [예산]을 모아 종합보고서를 만들어야 할 때",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "GnAaT70kFSoe",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "3tqa0LgfldsB",
+              "text": "Input: 여러 문서에 흩어져 있는 특정 세부 슬롯(Slot) 조각들",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            },
+            {
+              "id": "tTsF3IDQ4K37",
+              "text": "Output: 피킹된 조각들이 하나로 매끄럽게 엮인 신규 마스터 문서 1본",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "rVvZ96Osm7Ls",
+          "text": "[검증 포인트]: 창을 여러 개 띄워 복사-붙여넣기 땜질을 하지 않고, 필요한 슬롯만 쏙쏙 골라 레고처럼 한 화면에서 조립하는 조작감",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793614944780,
+      "updatedAt": 1793614944780
+    },
+    {
+      "id": "RQtYsrJvQuDg",
+      "text": "macro_project -> micro_slot 시나리오_zoom",
+      "children": [
+        {
+          "id": "akmWCknaMEEb",
+          "text": "[상황]: 수십 개 문서가 얽힌 거시적 프로젝트 전체 지도에서부터 ➔ 특정 세부 단락의 깊은 집필까지 오갈 때",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "FDnONpVA4W4L",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "76CzRf2euBXA",
+              "text": "Input: 거시적 프로젝트 전체 척추 지도 (Macro Overview)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            },
+            {
+              "id": "6FIrApFMq6MT",
+              "text": "Output: 시선 분산 없이 1개 카드만 화면 80%를 차지하며 열린 집중 작업면 (Micro Slot)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "vKcZmRsa1F7q",
+          "text": "[검증 포인트]: 줌아웃하면 전체 숲이 보이고, 줌인하면 이전 계층이 포스트잇 색인으로 찰칵 접혀 인지 부하(길 잃음) 없이 몰입하는 사용감",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793614944780,
+      "updatedAt": 1793614944780
+    },
+    {
+      "id": "gGwFEbcmCpJ7",
+      "text": "flexible_draft -> locked_format 시나리오_finalize",
+      "children": [
+        {
+          "id": "kT9mqmk9G1kM",
+          "text": "[상황]: 내 마음대로 자유롭게 주무른 초안을 회사의 엄격한 공식 결재/인쇄 규격에 맞춰 제출해야 할 때",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "4keXJbtaG2Ae",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "OmwmeyZNqhnh",
+              "text": "Input: 사용자가 자유롭게 블록을 추가/변형하며 작성한 유연한 초안 (Flexible Draft)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            },
+            {
+              "id": "NmrawGQcmMEQ",
+              "text": "Output: 핵심 수치/조항이 잠금(Lock)되고 회사의 표준 A4 규격에 자동 매핑된 최종 결재본 (Locked Format)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793614944780,
+              "updatedAt": 1793614944780
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        },
+        {
+          "id": "6xRtxUd5ye0a",
+          "text": "[검증 포인트]: 자유로운 작업 형상이 회사의 딱딱한 서식으로 왜곡 없이 실시간 투영(Projection)되고 안전하게 동결되는 안심감",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793614944780,
+          "updatedAt": 1793614944780
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793614944780,
+      "updatedAt": 1793614944780
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793352150020,
-  "updatedAt": 1793352182164
+  "updatedAt": 1793615272715
 }

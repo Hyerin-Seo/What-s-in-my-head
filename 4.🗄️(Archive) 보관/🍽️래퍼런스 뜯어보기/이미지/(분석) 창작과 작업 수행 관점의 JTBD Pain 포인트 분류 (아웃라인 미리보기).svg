@@ -14,15 +14,16 @@
 <text x="51" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">🚀 PART 3. PM 종합 분석 및 Scaffold Manager 프로토타입 실…</text>
 <circle cx="58" cy="193" r="3" fill="#9a9aa3"/>
 <text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">핵심 요약 : 거대한 35종 레퍼런스 탈곡과 JTBD 니즈 분석…</text>
-<circle cx="58" cy="226" r="4.5" fill="#3a3a40"/>
+<circle cx="58" cy="226" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="226" r="4.5" fill="#7c5cff"/>
 <text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📁 [1. 프로젝트 추진 배경 및 분석 파이프라인 (Why &amp; How)…</text>
-<circle cx="82" cy="259" r="4.5" fill="#3a3a40"/>
-<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">시작은 무엇이었는가 : 현재 매일 쓰는 '.outline'의 병…</text>
-<circle cx="106" cy="292" r="3" fill="#9a9aa3"/>
-<text x="123" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">추상적인 이상향의 도구를 만드는 것이 아니라, 지금…</text>
+<circle cx="58" cy="259" r="4.5" fill="#3a3a40"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">📁 [2. PM이 정의하는 Scaffold Manager 핵심 사양 (C1~C…</text>
+<circle cx="82" cy="292" r="4.5" fill="#3a3a40"/>
+<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">C1. 무마찰 포집 (Capture &amp; Ingest) — Things 3식 팝업…</text>
 <circle cx="106" cy="325" r="3" fill="#9a9aa3"/>
-<text x="123" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">글로벌 레퍼런스 서비스들을 막연히 구경하는 것이 아…</text>
-<circle cx="82" cy="358" r="4.5" fill="#3a3a40"/>
-<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">과거 성공 방정식의 소환 : 웹소설 어시스턴트 &amp; 고작가…</text>
+<text x="123" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">해결하는 고통 : '생각은 쏟아지는데 처음부터 목차나…</text>
+<circle cx="106" cy="358" r="3" fill="#9a9aa3"/>
+<text x="123" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">구현 사양 : 단축키 하나로 호출되는 경량 인박스 팝업…</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>
