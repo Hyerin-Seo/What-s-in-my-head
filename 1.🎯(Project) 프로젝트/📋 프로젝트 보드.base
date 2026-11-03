@@ -285,6 +285,7 @@ views:
         - 완료
         - 퍼즈
         - 히스토리
+        - in progress
     columnColors:
       note.상태: {}
     cardOrders:

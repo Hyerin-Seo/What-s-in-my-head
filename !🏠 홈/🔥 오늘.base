@@ -19,6 +19,8 @@ views:
       - 작성자
       - 마감
     sort:
+      - property: file
+        direction: ASC
       - property: 상태
         direction: DESC
     summaries:

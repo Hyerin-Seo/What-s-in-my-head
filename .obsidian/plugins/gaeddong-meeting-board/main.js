@@ -1,9 +1,11 @@
 /*
  * 개똥이 머릿속 — 회의판 (포스트잇 캔버스)
  *
- * 이름이 `회의판.canvas` 로 끝나는 캔버스 화면에만
+ * 이름이 `회의판.canvas` 로 끝나는 캔버스, 또는 캔버스 파일 맨 위에 `"meetingBoard": true` 를 적은 캔버스 화면에만
  *   1) `mb-board` 클래스를 붙이고 (모양은 전부 styles.css)
  *   2) 왼쪽에 포스트잇 더미를 띄웁니다 — 끌어다 놓거나 누르면 그 색 포스트잇이 생기고 바로 글쓰기.
+ * `meetingBoard` 표시는 이름을 못 바꾸는 캔버스(아웃라인 짝 캔버스 등)를 회의판 모양으로 켤 때 씁니다.
+ * 옵시디언은 캔버스를 저장할 때 맨 위의 다른 키를 그대로 둡니다 (`{...this.data, nodes, edges}`).
  * 끄면 클래스와 더미를 떼서 원래 캔버스로 돌아갑니다. 캔버스 파일은 사람이 포스트잇을 만들 때만 바뀝니다.
  *
  * 포스트잇을 만드는 건 옵시디언 캔버스의 문서에 없는 API(`canvas.createTextNode`)입니다.
@@ -13,6 +15,7 @@
 const { Plugin, Notice } = require("obsidian");
 
 const SUFFIX = "회의판.canvas";
+const FLAG = "meetingBoard";
 const CLS = "mb-board";
 const DT = "application/x-mb-sticky";
 const SIZE = { width: 240, height: 200 };
@@ -37,7 +40,7 @@ module.exports = class MeetingBoard extends Plugin {
     for (const leaf of this.app.workspace.getLeavesOfType("canvas")) {
       const view = leaf.view;
       if (!view || !view.containerEl) continue;
-      const on = !!(view.file && view.file.name.endsWith(SUFFIX));
+      const on = !!(view.file && (view.file.name.endsWith(SUFFIX) || view.canvas?.data?.[FLAG] === true));
       view.containerEl.classList.toggle(CLS, on);
       const bar = view.containerEl.querySelector(".mb-pads");
       if (on && !bar) this.addPads(view);
