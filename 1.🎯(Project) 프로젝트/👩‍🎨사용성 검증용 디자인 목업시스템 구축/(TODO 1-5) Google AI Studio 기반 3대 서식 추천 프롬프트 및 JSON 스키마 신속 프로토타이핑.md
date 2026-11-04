@@ -9,8 +9,8 @@
   - Structured Outputs
   - JSON Schema
   - 3대 서식 추천
-상태: to do
-요약: "Google AI Studio를 활용하여 날것의 메모로부터 3대 서식 프리셋을 도출하는 시스템 프롬프트와 정형 JSON 스키마를 웹 GUI에서 초고속으로 검증하고 Mock 데이터 추출"
+상태: 히스토리
+요약: Google AI Studio를 활용하여 날것의 메모로부터 3대 서식 프리셋을 도출하는 시스템 프롬프트와 정형 JSON 스키마를 웹 GUI에서 초고속으로 검증하고 Mock 데이터 추출
 작성일: 2026-10-30
 마감:
 커버:
@@ -20,7 +20,6 @@
   - https://aistudio.google.com/
 담당:
 작성자:
-# ── 이외 속성 (유형별 고유값 · 통일 대상 아님) ──
 일정:
 시작:
 ---

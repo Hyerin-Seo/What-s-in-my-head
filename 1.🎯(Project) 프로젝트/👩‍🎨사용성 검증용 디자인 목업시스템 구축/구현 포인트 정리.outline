@@ -1,0 +1,680 @@
+{
+  "version": "1.0.0",
+  "id": "w0hZU4AWFPh5",
+  "title": "구현 포인트 정리",
+  "rootNodes": [
+    {
+      "id": "qw1gAjAqpLzO",
+      "text": "컴포넌트 구성 및 동작",
+      "children": [
+        {
+          "id": "vHMks9yFCFpV",
+          "text": "참조 레이어 추가 사양",
+          "children": [
+            {
+              "id": "6xMdRye0FdC3",
+              "text": "참조 레이어 상태1",
+              "children": [
+                {
+                  "id": "yzdX1l10J4EP",
+                  "text": "패널 상태",
+                  "children": [
+                    {
+                      "id": "dCjVwz7nrZXC",
+                      "text": "패널 레이어",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261104130215.png"
+                      },
+                      "createdAt": 1793764936022,
+                      "updatedAt": 1793766645837,
+                      "isCompleted": true,
+                      "completedAt": 1793766645837
+                    },
+                    {
+                      "id": "kHFpk5RioMfF",
+                      "text": "프리뷰 미리보기 - Navigation",
+                      "children": [
+                        {
+                          "id": "XBUVMqwOmf0f",
+                          "text": "프리뷰 아이디어1",
+                          "children": [
+                            {
+                              "id": "2oUhhKvDCYpD",
+                              "text": "썸네일로 교체 + 아래쪽 미리보기",
+                              "children": [],
+                              "createdAt": 1793771194850,
+                              "updatedAt": 1793771208745,
+                              "file": {
+                                "target": "Pasted image 20261104144635.png"
+                              }
+                            }
+                          ],
+                          "file": {
+                            "target": "Pasted image 20261104133030.png"
+                          },
+                          "createdAt": 1793766630043,
+                          "updatedAt": 1793776377393,
+                          "isCompleted": true,
+                          "completedAt": 1793776377393,
+                          "isFolded": true
+                        },
+                        {
+                          "id": "F8oNq0peGfCP",
+                          "text": "ctrl + 마우스 호버",
+                          "children": [],
+                          "createdAt": 1793766782800,
+                          "updatedAt": 1793766789601
+                        }
+                      ],
+                      "createdAt": 1793765106608,
+                      "updatedAt": 1793769413297,
+                      "isFolded": false
+                    },
+                    {
+                      "id": "5OKPRhKJ9OIG",
+                      "text": "추가, 제거, 참조 영역 혹은 참조 항목",
+                      "children": [],
+                      "createdAt": 1793765628413,
+                      "updatedAt": 1793766043522,
+                      "file": {
+                        "target": "Pasted image 20261104132033.png"
+                      }
+                    }
+                  ],
+                  "createdAt": 1793764933152,
+                  "updatedAt": 1793766777529,
+                  "isFolded": false,
+                  "isCompleted": false
+                },
+                {
+                  "id": "F2afG8kVoTqL",
+                  "text": "작업대에 올리기",
+                  "children": [
+                    {
+                      "id": "EeFcAnCbwP54",
+                      "text": "작업대에 올리면 한 개, 두 개 등 멀티로 올리도록",
+                      "children": [],
+                      "createdAt": 1793765695258,
+                      "updatedAt": 1793765738722,
+                      "file": {
+                        "target": "Pasted image 20261104131517.png"
+                      }
+                    },
+                    {
+                      "id": "2yPhuZ7zWGm0",
+                      "text": "레퍼런스 항목 관리, 옵션",
+                      "children": [
+                        {
+                          "id": "6txDW3ezgOzl",
+                          "text": "개별 섹션 중 참조 지정 및 범위 레퍼런스 인터렉션",
+                          "children": [],
+                          "createdAt": 1793765817607,
+                          "updatedAt": 1793765828527
+                        },
+                        {
+                          "id": "GMPkn2GzQvwo",
+                          "text": "추출 항목 리스트업(배치? 이 영역, 섹션? 내용? 등등",
+                          "children": [],
+                          "createdAt": 1793765766854,
+                          "updatedAt": 1793765828527
+                        }
+                      ],
+                      "createdAt": 1793765742685,
+                      "updatedAt": 1793765826627,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "VZHW8rgBHQ3s",
+                      "text": "새 탭으로 빼기, 모달로 꺼내기, 핀으로 고정하기",
+                      "children": [],
+                      "createdAt": 1793770648364,
+                      "updatedAt": 1793770659908
+                    }
+                  ],
+                  "createdAt": 1793765609018,
+                  "updatedAt": 1793765686702,
+                  "isFolded": false
+                },
+                {
+                  "id": "ILzNwWlTrVDj",
+                  "text": "작업대 <> 페이즈 간 인터렉션",
+                  "children": [
+                    {
+                      "id": "KwRA648NEZgN",
+                      "text": "참조 <> 아웃라인",
+                      "children": [],
+                      "createdAt": 1793765873958,
+                      "updatedAt": 1793765882138
+                    },
+                    {
+                      "id": "oNd2m1G5hALa",
+                      "text": "참조 <> 뼈대 정의",
+                      "children": [],
+                      "createdAt": 1793765882327,
+                      "updatedAt": 1793765890336
+                    },
+                    {
+                      "id": "2RvUlz08Zh6Q",
+                      "text": "참조 <> 채우기",
+                      "children": [],
+                      "createdAt": 1793765890489,
+                      "updatedAt": 1793765894154
+                    }
+                  ],
+                  "createdAt": 1793765861268,
+                  "updatedAt": 1793765873651,
+                  "isFolded": false
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793764849322,
+              "updatedAt": 1793764895869
+            },
+            {
+              "id": "QOBeu72SeEUv",
+              "text": "참조 레이어 뷰포트 아이디어1",
+              "children": [
+                {
+                  "id": "507edlNx4xel",
+                  "text": "레퍼런스로 삼은 형태 별로 다른 뷰를 계획하자 - 레퍼런스 뷰 박스",
+                  "children": [
+                    {
+                      "id": "qhS49PXshjjh",
+                      "text": "논리 전개 -> 좌측 위에 논리 트리 및 서순만",
+                      "children": [],
+                      "createdAt": 1793777319231,
+                      "updatedAt": 1793777332437
+                    },
+                    {
+                      "id": "KpzxQwaljSQz",
+                      "text": "시각적 배치 -> 포토샵 처럼 overlay 겹치기",
+                      "children": [],
+                      "createdAt": 1793777333069,
+                      "updatedAt": 1793777343468
+                    },
+                    {
+                      "id": "mLnb3VCXWtzu",
+                      "text": "단어 선택이나 뉘앙스 -> 단어들, 문장 표현 같은 DeepL 식",
+                      "children": [],
+                      "createdAt": 1793777344521,
+                      "updatedAt": 1793777403845
+                    }
+                  ],
+                  "createdAt": 1793777305829,
+                  "updatedAt": 1793777377559
+                }
+              ],
+              "createdAt": 1793777299341,
+              "updatedAt": 1793777305086
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793764849322,
+          "updatedAt": 1793769252445
+        },
+        {
+          "id": "8RjO7FQpciBv",
+          "text": "Zoom 사양 조절",
+          "children": [
+            {
+              "id": "TvzJJU9OUD5G",
+              "text": "slot zoom",
+              "children": [],
+              "createdAt": 1793766175694,
+              "updatedAt": 1793766180327
+            },
+            {
+              "id": "YNS5egFD03i6",
+              "text": "element zoom",
+              "children": [],
+              "createdAt": 1793766181586,
+              "updatedAt": 1793766186930
+            },
+            {
+              "id": "YVSJArI4oUeo",
+              "text": "page zoom",
+              "children": [],
+              "createdAt": 1793766485846,
+              "updatedAt": 1793766488207
+            },
+            {
+              "id": "Hb4px2LKwkUa",
+              "text": "doc zoom",
+              "children": [],
+              "createdAt": 1793766488612,
+              "updatedAt": 1793766490523
+            },
+            {
+              "id": "lCNu6ycs2pzS",
+              "text": "zoom <> doc navigation 간 인터랙션 연동",
+              "children": [],
+              "createdAt": 1793770695789,
+              "updatedAt": 1793770708045
+            }
+          ],
+          "createdAt": 1793766168899,
+          "updatedAt": 1793769252445,
+          "isFolded": false
+        },
+        {
+          "id": "e3LQ82vcKjPn",
+          "text": "Phase 별 조절",
+          "children": [
+            {
+              "id": "fFDd6uknWH2G",
+              "text": "Phase1",
+              "children": [
+                {
+                  "id": "tbF3P0CFo1Nr",
+                  "text": "Concept -> 쭉 늘려보기",
+                  "children": [],
+                  "createdAt": 1793771770698,
+                  "updatedAt": 1793771780666
+                }
+              ],
+              "createdAt": 1793766996195,
+              "updatedAt": 1793767000963
+            },
+            {
+              "id": "G9Q1HCC4upqI",
+              "text": "Phase2",
+              "children": [],
+              "createdAt": 1793766989100,
+              "updatedAt": 1793766995887
+            },
+            {
+              "id": "Q7QLjH3ICqBV",
+              "text": "Phase3",
+              "children": [
+                {
+                  "id": "59OHYVfChoI7",
+                  "text": "Compoent Select 시 가능한 작업",
+                  "children": [
+                    {
+                      "id": "z5AFGAqBwCWb",
+                      "text": "연계 가능 컴포넌트",
+                      "children": [],
+                      "createdAt": 1793767034401,
+                      "updatedAt": 1793767040405
+                    },
+                    {
+                      "id": "fAcgrferqug6",
+                      "text": "",
+                      "children": [],
+                      "createdAt": 1793767040892,
+                      "updatedAt": 1793767040892
+                    }
+                  ],
+                  "createdAt": 1793767013269,
+                  "updatedAt": 1793767026501
+                }
+              ],
+              "createdAt": 1793766981934,
+              "updatedAt": 1793767004031
+            }
+          ],
+          "createdAt": 1793766536706,
+          "updatedAt": 1793769252445,
+          "isFolded": false
+        },
+        {
+          "id": "u4lSwds7W5hK",
+          "text": "File Explorer",
+          "children": [
+            {
+              "id": "jytrnPowU8F0",
+              "text": "File Explorer 와 다른 컴포넌트 간 인터랙션",
+              "children": [
+                {
+                  "id": "WFvkpFmXeAVT",
+                  "text": "File Explorer <> 다른 컴포넌트 간의 인터랙션",
+                  "children": [],
+                  "createdAt": 1793767094459,
+                  "updatedAt": 1793771454511
+                },
+                {
+                  "id": "dHVo7f36mavg",
+                  "text": "File Explorer - View 상태 정의",
+                  "children": [],
+                  "createdAt": 1793767128220,
+                  "updatedAt": 1793771454511
+                },
+                {
+                  "id": "0WeI3TGgnTVc",
+                  "text": "File Explorer - 내부 이벤트",
+                  "children": [],
+                  "createdAt": 1793767148422,
+                  "updatedAt": 1793771454511
+                }
+              ],
+              "createdAt": 1793771431914,
+              "updatedAt": 1793771448746
+            },
+            {
+              "id": "LkWOX0gMuP4P",
+              "text": "File Explorer를 폴더 연동하면 단지 파일들만 쭉 펼쳐줄 것인가? vs 우리와 연관된 확장자 및 영역만 국한해서 보여줘야하는가",
+              "children": [
+                {
+                  "id": "o7f76uTkvfUr",
+                  "text": "그렇다면 File Explorer 가 맞는가? Workbench 내지는 Project Manager 가 아닌가",
+                  "children": [],
+                  "createdAt": 1793771499625,
+                  "updatedAt": 1793771523931
+                }
+              ],
+              "createdAt": 1793771456648,
+              "updatedAt": 1793771498333
+            }
+          ],
+          "createdAt": 1793767085676,
+          "updatedAt": 1793769252445,
+          "isFolded": true
+        },
+        {
+          "id": "c5UXHJYKjn17",
+          "text": "작업 도구 상자들",
+          "children": [
+            {
+              "id": "8LQTLVaMT3wk",
+              "text": "Insert Blocks",
+              "children": [
+                {
+                  "id": "YpSBqqfpF1Pj",
+                  "text": "Register",
+                  "children": [],
+                  "createdAt": 1793769583093,
+                  "updatedAt": 1793769587538
+                },
+                {
+                  "id": "c5XpIBV3WHNn",
+                  "text": "Hub",
+                  "children": [],
+                  "createdAt": 1793769587869,
+                  "updatedAt": 1793769589238
+                }
+              ],
+              "createdAt": 1793769575183,
+              "updatedAt": 1793769581425,
+              "isFolded": true
+            }
+          ],
+          "createdAt": 1793769564370,
+          "updatedAt": 1793769569806,
+          "isFolded": true
+        },
+        {
+          "id": "0HZvzhf7rf7r",
+          "text": "에이전트 작업 대시보드(패널) 및 관리 도구들",
+          "children": [
+            {
+              "id": "dCzE1g00nDBr",
+              "text": "에이전트 도구",
+              "children": [
+                {
+                  "id": "JN58Ofvrw4eS",
+                  "text": "리서쳐",
+                  "children": [],
+                  "createdAt": 1793771257478,
+                  "updatedAt": 1793771259530
+                },
+                {
+                  "id": "aMs60dFNauG7",
+                  "text": "builder",
+                  "children": [],
+                  "createdAt": 1793771265155,
+                  "updatedAt": 1793771267484
+                },
+                {
+                  "id": "0DJJT1IJWlxt",
+                  "text": "writer",
+                  "children": [],
+                  "createdAt": 1793771269709,
+                  "updatedAt": 1793771272374
+                },
+                {
+                  "id": "WJVIiTHStPWO",
+                  "text": "storyliner",
+                  "children": [],
+                  "createdAt": 1793771272674,
+                  "updatedAt": 1793771275142
+                }
+              ],
+              "createdAt": 1793771252903,
+              "updatedAt": 1793771255727,
+              "isFolded": false
+            }
+          ],
+          "createdAt": 1793771236564,
+          "updatedAt": 1793771250384,
+          "isFolded": true
+        },
+        {
+          "id": "Bl7i7cqGHCik",
+          "text": "Layout 및 Shell",
+          "children": [
+            {
+              "id": "53czpoGuAzkn",
+              "text": "이전 package 부분 적으러 가져오기",
+              "children": [],
+              "createdAt": 1793771372605,
+              "updatedAt": 1793771384092
+            }
+          ],
+          "createdAt": 1793771357921,
+          "updatedAt": 1793771369503,
+          "isFolded": true
+        },
+        {
+          "id": "z2WDIMltZy0b",
+          "text": "Resource 매니저",
+          "children": [],
+          "createdAt": 1793771406318,
+          "updatedAt": 1793771412152
+        },
+        {
+          "id": "QTCXmUbTgGhg",
+          "text": "",
+          "children": [],
+          "createdAt": 1793771414175,
+          "updatedAt": 1793771417273
+        }
+      ],
+      "createdAt": 1793769223297,
+      "updatedAt": 1793769243530,
+      "isFolded": false
+    },
+    {
+      "id": "yE3qPUvMNM2x",
+      "text": "UserFlow Case",
+      "children": [
+        {
+          "id": "HDJY5ylB9086",
+          "text": "시작 루트별 Flow",
+          "children": [
+            {
+              "id": "DH20D0uc8WL5",
+              "text": "작성 기준 틀이 없는 경우",
+              "children": [
+                {
+                  "id": "bTfuvWyxc8xA",
+                  "text": "서석만 가지고 시작하기",
+                  "children": [],
+                  "createdAt": 1793769255253,
+                  "updatedAt": 1793769339731
+                },
+                {
+                  "id": "NEi44fl6C6To",
+                  "text": "레퍼런스로 부터 시작하기",
+                  "children": [
+                    {
+                      "id": "wCCzTks6bxrC",
+                      "text": "서식 동일",
+                      "children": [],
+                      "createdAt": 1793769279500,
+                      "updatedAt": 1793769283184
+                    },
+                    {
+                      "id": "P1zP8oVHZaPw",
+                      "text": "서식 불일치",
+                      "children": [],
+                      "createdAt": 1793769283491,
+                      "updatedAt": 1793769285176
+                    }
+                  ],
+                  "createdAt": 1793769262955,
+                  "updatedAt": 1793769339731
+                },
+                {
+                  "id": "3VAJFzsGBNO1",
+                  "text": "제로 베이스에서 시작하기",
+                  "children": [],
+                  "createdAt": 1793769266838,
+                  "updatedAt": 1793769339731
+                }
+              ],
+              "createdAt": 1793769299855,
+              "updatedAt": 1793769325334,
+              "isFolded": false
+            },
+            {
+              "id": "kxlcxBtSuHMz",
+              "text": "작성 기준 툴이 있는 경우",
+              "children": [
+                {
+                  "id": "U36F0hisrFlN",
+                  "text": "레퍼런스 활용하기",
+                  "children": [
+                    {
+                      "id": "tBdlRdwPgWu7",
+                      "text": "서식 동일",
+                      "children": [],
+                      "nodeType": "bullet",
+                      "createdAt": 1793769363257,
+                      "updatedAt": 1793769367601
+                    },
+                    {
+                      "id": "jmoOXCK5qlTJ",
+                      "text": "서식 불일치",
+                      "children": [],
+                      "nodeType": "bullet",
+                      "createdAt": 1793769363257,
+                      "updatedAt": 1793769367601
+                    }
+                  ],
+                  "createdAt": 1793769345231,
+                  "updatedAt": 1793769351644
+                },
+                {
+                  "id": "xSGsowNi8l9h",
+                  "text": "",
+                  "children": [],
+                  "createdAt": 1793769351860,
+                  "updatedAt": 1793769351860
+                }
+              ],
+              "createdAt": 1793769271265,
+              "updatedAt": 1793769345077,
+              "isFolded": false
+            }
+          ],
+          "createdAt": 1793769208382,
+          "updatedAt": 1793769644993,
+          "isFolded": false
+        },
+        {
+          "id": "601DeAhPhqHG",
+          "text": "부분 수정 Flow",
+          "children": [],
+          "createdAt": 1793769653897,
+          "updatedAt": 1793769658025
+        },
+        {
+          "id": "WCYt6rGVt9Av",
+          "text": "Migration Flow",
+          "children": [],
+          "createdAt": 1793769658821,
+          "updatedAt": 1793769665680
+        },
+        {
+          "id": "EhXS0jDKHECG",
+          "text": "Version Up(Migrate) Flow",
+          "children": [],
+          "createdAt": 1793769665969,
+          "updatedAt": 1793769677733
+        },
+        {
+          "id": "rLS3slTuyBd9",
+          "text": "Project Document Pipeline 구성",
+          "children": [],
+          "createdAt": 1793771320283,
+          "updatedAt": 1793771332949
+        }
+      ],
+      "createdAt": 1793769634386,
+      "updatedAt": 1793769642299,
+      "isFolded": false
+    },
+    {
+      "id": "jkTX3HP7UGel",
+      "text": "아이디어",
+      "children": [
+        {
+          "id": "Wt5GtIAZeUDZ",
+          "text": "아이디어 스케치 모달 그림판 < 신규 사양 < Excalidraw",
+          "children": [
+            {
+              "id": "tOhsPmaikbHJ",
+              "text": "그림판 같이 배치 혹은 추가 확장 모달? 스케치 모달",
+              "children": [],
+              "createdAt": 1793765291605,
+              "updatedAt": 1793767243405,
+              "file": {
+                "target": "Pasted image 20261104130812.png"
+              }
+            }
+          ],
+          "createdAt": 1793767185370,
+          "updatedAt": 1793767224322,
+          "isFolded": true
+        },
+        {
+          "id": "nHT7KQfd8b3Z",
+          "text": " 일일 패치노트 자동화",
+          "children": [
+            {
+              "id": "Vy2ZQZr6QXMB",
+              "text": "작업 내역, 변경 사항 관리 이력 보기 -> 패치 노트 자동으로",
+              "children": [],
+              "createdAt": 1793767259451,
+              "updatedAt": 1793767279131
+            }
+          ],
+          "createdAt": 1793767231600,
+          "updatedAt": 1793767258451,
+          "isFolded": true
+        },
+        {
+          "id": "HiIdWPdD710k",
+          "text": "쓰다버리는 놈들에 대한 손쉬운 관리 방안 - 메모 찌끄리고 빈 문서 만들어놓고 버리는 놈들이 산더미 -> 관리 방안... -> 이용자에게 부담이 없도록 하는 것이 키포인트(얼마든지 여기서 막 낙서해도 된다)",
+          "children": [],
+          "createdAt": 1793770727388,
+          "updatedAt": 1793770776739
+        },
+        {
+          "id": "qsMJtG47z4Gn",
+          "text": "Voice Record - Voice Register",
+          "children": [],
+          "createdAt": 1793770891753,
+          "updatedAt": 1793770906656
+        }
+      ],
+      "createdAt": 1793765288631,
+      "updatedAt": 1793766195531,
+      "isFolded": true
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793764849322,
+  "updatedAt": 1793777403846
+}

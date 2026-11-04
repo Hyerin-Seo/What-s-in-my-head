@@ -1,6 +1,6 @@
 ---
 유형: 지침서
-구역: 3.resource
+구역: 1.project
 분류:
   - SM_Spec_Discoverying
   - design handbooks
