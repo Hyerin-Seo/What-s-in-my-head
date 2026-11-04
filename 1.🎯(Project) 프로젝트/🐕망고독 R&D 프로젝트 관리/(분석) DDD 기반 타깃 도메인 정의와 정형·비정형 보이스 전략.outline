@@ -1,0 +1,550 @@
+{
+  "version": "1.0.0",
+  "id": "BqmlI4NOEBVT",
+  "title": "(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략",
+  "rootNodes": [
+    {
+      "id": "KnSbZnbI8nvR",
+      "text": "1. Problem Statement (문제 정의)",
+      "children": [
+        {
+          "id": "lqYIoUDIjH5d",
+          "text": "🚨 [합의된 공식 문제 정의] \"전문 지식과 전략을 갖춘 시니어 전문가들이, 방대한 자료를 논리 구조로 조립하고 규격화된 서식에 맞추는 본원적 문서 노가다에 짓눌려 있으며, 이를 덜고자 도입한 AI마저 맥락을 훼손하고 통제되지 않아 검토와 수정의 이중고 속에 매일 야근을 반복하고 있습니다.\"",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "gpj50Un9QBBS",
+          "text": "균형 잡힌 문제의 이중 구조 (원초적 노가다 + AI의 2차 왜곡)",
+          "children": [
+            {
+              "id": "6bMTFkYUGQGd",
+              "text": "[1단계: 본원적 고통 (AI 이전부터 존재)] 방대한 팩트와 자료를 설득력 있는 논리 구조(뼈대)로 조립하고, 복잡한 규격 서식(표/칸)에 맞춰 넣는 극심한 수작업 노가다가 작업의 80%를 차지함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "5r21yKq8nZQ2",
+              "text": "[2단계: 2차 가중 고통 (AI 도입 후 발생)] 이 짐을 덜고자 AI를 썼더니 오히려 사람이 세운 뼈대와 맥락을 왜곡하고, 거짓말(환각)을 일삼아 사람도 도구도 못 믿는 최악의 검토 마비에 빠짐",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "OopSfJ1DdrJW",
+              "text": "결과: 원래 하던 문서 노가다에 AI 뒤치다꺼리까지 얹어져 시니어 전문가의 뇌 용량이 완전히 소진되고 매일 야근에 짓눌림",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "F2wleROS4SQZ",
+          "text": "실무자(User) 관점의 생생한 4대 고통 (Rin의 캔버스 본심 포스트잇)",
+          "children": [
+            {
+              "id": "e1qbp2j4ctVK",
+              "text": "1) [시작 단계] \"어쩌란 건지 모르겠고 결국 하던 대로 하게 되어버리는 매직\" ➔ 막막함과 파편화된 자료로 인해 결국 비효율적인 옛날 방식으로 되돌아감",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "ciVml3eh4M2Q",
+              "text": "2) [생성 단계] \"알잘딱 설명 힘들고 내 스타일도 아님 설명해바짜\" ➔ 문체 DNA 주입 불가로 영혼 없는 모범생 쓰레기만 받아보는 가짜 노동에 시달림",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "cMmC2DFwK9RR",
+              "text": "3) [검토 단계] \"나를 못믿어서 너를 쓰는데 너도 못믿게 된 지경 ㅅㅂ\" ➔ AI 환각과 덮어쓰기로 사람도 도구도 못 믿는 최악의 검토 마비에 빠짐",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "bCVYz9Q63Trx",
+              "text": "4) [운영 단계] \"ㅇㅋ 그럼 내 매일 하던 거 할 테니까 자비스나 가져와 뒤치닥거리나 잘 해\" ➔ 행정 잡무에 치여 가장 날카로운 본업 지적 에너지가 소진됨",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "NDMOeDTB1rIV",
+          "text": "경영진/리더(Customer) 관점의 비즈니스 위기 포스트잇",
+          "children": [
+            {
+              "id": "7w3Zke5qr3U0",
+              "text": "\"전폭적인 디지털 혁신과 생산성 폭발을 기대하고 AI를 도입했으나, 실무자가 2차로 뒤치다꺼리하고 재가공하는 초벌 수준에 머물러 실질적 야근 감소나 인력 효율화에 실패하고 있음\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793703622678,
+      "updatedAt": 1793703622678
+    },
+    {
+      "id": "jwbvn1GiiJnk",
+      "text": "2. People Impacted (영향받는 사람들 - I-C-E 도메인)",
+      "children": [
+        {
+          "id": "1tkhnA3G4IHa",
+          "text": "Users (직접 고통받는 시니어 실무 전문가)",
+          "children": [
+            {
+              "id": "RLxJh56VIfp3",
+              "text": "핵심 타깃: I-C-E 결합형 진성 문서 노동자 (이미 전문 지식과 뼈대가 있는 시니어)",
+              "children": [
+                {
+                  "id": "RVNfaERSca64",
+                  "text": "I (탐구형): 연구원, 데이터 분석가, 의사, 교수, 전문 애널리스트 (방대한 백데이터와 팩트 취합에 치임)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                },
+                {
+                  "id": "MRChXMHdD7em",
+                  "text": "C (관습/체계형): 법무/특허 검토자, 회계사, 세무사, ISMS/RA 인증 심사관, 공공 행정가 (토씨 하나 규격 서식에 치임)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                },
+                {
+                  "id": "BU6ej1pr6dIx",
+                  "text": "E (진취/기업형): B2G 제안 PM, 전략기획자, 경영 컨설턴트, IR 덱 기획자 (복합 표와 설득 척추 설계에 치임)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "5gPZDbO2lymh",
+              "text": "비정형 지식 텍스트 전문가 (깊은 글쓰기 직군)",
+              "children": [
+                {
+                  "id": "iTX24QKDKLZj",
+                  "text": "GTD 같은 전공/실용 서적 집필자 (10만 자 속 지식 아키텍처와 뼈대 조립 노가다)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                },
+                {
+                  "id": "Sp0F0WzRNsXx",
+                  "text": "단행본 기획편집자 (날것의 원고에서 뼈대 발라내고 문단 재배치하는 노가다)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                },
+                {
+                  "id": "FOfnglNa1YjK",
+                  "text": "전문 기술/학술 번역가 (원문 맥락과 용어 정합성을 유지하며 문장 윤문하는 노가다)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                },
+                {
+                  "id": "heiUy94X8g0m",
+                  "text": "인사이트 테크 블로거 (보이지 않는 논리 호흡과 텐션을 깎아내는 노가다)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "RQJlfV71y2A8",
+              "text": "작업 형태별 2대 고통 도메인 (정형 vs 비정형의 두 얼굴)",
+              "children": [
+                {
+                  "id": "Rk7KzxITZRSJ",
+                  "text": "정형 문서군: 표 양식, 고정 서식, 규격 목차 칸 채우기에 치이는 사람들 (DocStudio형 슬롯 분리수거 대상)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                },
+                {
+                  "id": "HrbogullLwxV",
+                  "text": "비정형 문서군: 긴 줄글 속에서 보이지 않는 논리 척추(Spine)와 비트(Beat)를 설계하는 사람들 (Outliner + RM 대상)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "vPQ52eJyCLE9",
+              "text": "과감한 배제 집단 (Out-of-Scope 명시)",
+              "children": [
+                {
+                  "id": "7idNvE9FUhe9",
+                  "text": "A (예술/창작형): 웹소설, 시나리오, 웹툰 (주관적 감성/서사 텐션의 기술적 한계로 배제)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                },
+                {
+                  "id": "jm9KtIxzDvUk",
+                  "text": "R (실재/현장형): 엔지니어, 기술자 (현장 작업 중심, 문서 비중 낮음)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                },
+                {
+                  "id": "2IXpk2s7jp91",
+                  "text": "S (사회/교육형): 교사, 상담사 (대인 감정 교류 및 대면 소통 중심)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703622678,
+                  "updatedAt": 1793703622678
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "hZEEYkX2MmFL",
+          "text": "Customers (비용 지불자 및 조직 관리자)",
+          "children": [
+            {
+              "id": "BHnMVvWesHFu",
+              "text": "팀장 / 본부장 / 부서장 (야근 수당, 프로젝트 납기 지연, 핵심 시니어의 번아웃 및 퇴사 리스크를 지는 관리자)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "Pcyv7KMsN6Kl",
+              "text": "전문직 법인 대표 / 에이전시 대표 / 출판사 대표 (인당 지적 생산성과 수주 성공률에 사활을 건 최종 의사결정권자)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "j1h5CjG9t64d",
+          "text": "Stakeholders (기타 이해관계자)",
+          "children": [
+            {
+              "id": "SP4jAzrC2sNK",
+              "text": "발주처(정부/공공기관), 최종 고객, 독자 (문서의 오류, 납기 지연, 퀄리티 저하에 직접 영향받는 최종 수신자)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "R0sEii8Y7RT4",
+              "text": "사내 IT/보안 담당자 (사내 핵심 기밀 유출 및 프라이버시 규정 준수 감시자)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793703622678,
+      "updatedAt": 1793703622678
+    },
+    {
+      "id": "VPtDBrGYn9wd",
+      "text": "3. Desired Outcomes (원하는 성과 지표)",
+      "children": [
+        {
+          "id": "G2vljDAdAX0o",
+          "text": "Top People Outcomes (시니어 실무자 체감 성과 포스트잇)",
+          "children": [
+            {
+              "id": "meXudwtRutmG",
+              "text": "1. 논리 뼈대(Scaffold) 조립 시간 70% 단축 (1D 아웃라인 ↔ 2D 조망 플립으로 인과관계 즉시 배치)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "n3VuQs8zmnBn",
+              "text": "2. 껍데기 서식 맞추기 시간 제로화 (DocStudio형 외재적 슬롯 분리수거로 표 노가다 종결)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "t4Og6nNjNnD7",
+              "text": "3. 검증 및 팩트체크 피로도 80% 감소 (1초 인라인 Diff 대조와 원천 백데이터 바인딩)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "wsz6H5llIIEv",
+              "text": "4. 수동 후가공 및 재작성 해소 (보이스 추출 엔진으로 내 문체/곤조 그대로 초안 생성)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "3FNhGYXZ2dtC",
+              "text": "5. 핵심 사고 집중 및 4시간 칼퇴 (8시간 동안 끙끙대던 고강도 문서를 4시간 만에 무결점 완성)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "kKy3esTbjiPa",
+          "text": "Top Business Outcomes (조직 및 비즈니스 성과 포스트잇)",
+          "children": [
+            {
+              "id": "r2B6PdTISY1o",
+              "text": "1. 문서 완성 및 납기 리드타임 50% 단축 (프로젝트 사이클 가속화)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "hocddAZC5QOs",
+              "text": "2. 야근 수당 지출 및 핵심 인력 번아웃 퇴사율 대폭 감소",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "Bdglw3tm07Np",
+              "text": "3. 제안서 수주율 및 보고서 결재 통과율 급증 (무결점 논리 척추와 사내 표준 톤 결합)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "9SNth7UReVHx",
+              "text": "4. 전사 AI 도입 ROI 극대화 (단순 초벌 번역을 넘어 즉시 제출 가능한 완제품 생산 체계 확립)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793703622678,
+      "updatedAt": 1793703622678
+    },
+    {
+      "id": "7qOBv0EAys5f",
+      "text": "4. Constraints (4대 제약 조건 포스트잇)",
+      "children": [
+        {
+          "id": "uyBVdPD0uiTS",
+          "text": "Budget (예산 및 자원 제약)",
+          "children": [
+            {
+              "id": "gWHI0VIA1LnR",
+              "text": "거대 전용 파운데이션 모델을 직접 프리트레이닝할 자본/인프라 없음 ➔ 상용 프론티어 API + 경량 클라이언트 아키텍처 필수",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "cC5Wdjd3hIw2",
+              "text": "팀 단위/개인 프로페셔널이 즉시 결제할 수 있는 B2Pro 수준의 합리적 가격대(월 구독형) 유지 필요",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "HDD2o1MGfC18",
+          "text": "Technology (기술적 한계 및 필수 스펙)",
+          "children": [
+            {
+              "id": "RxOqiXG3PcFh",
+              "text": "LLM의 본질적 한계(환각 100% 제거 불가) ➔ 모델 지능에만 의존하지 않고 슬롯 잠금(Lock), Diff 대조, 백데이터 하드게이트로 방어",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "MUCxOZZZxRpl",
+              "text": "복잡한 한국형 표(HWP/Word) 조판의 한계 ➔ 코어 텍스트 생성 엔진과 서식 렌더러의 엄격한 분리 아키텍처 채택",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "i5l1R1opEYHo",
+              "text": "Scaffold 3합 엔진 구현 필수 ➔ 완벽한 전문가 문서 = Scaffold(논리 뼈대) × RM(백데이터 근거) × Voice(문체 DNA)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "zXGmJXgx8gmx",
+              "text": "주관적 감성 창작(A)의 품질 담보 불가 ➔ I-C-E 비즈니스·학술·전문 지식 문서로 기술 범위 한정",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "54QQZzG4lrRT",
+          "text": "Desirability (사용자 수용성 및 온보딩 제약)",
+          "children": [
+            {
+              "id": "G3aEARTCRgK5",
+              "text": "바쁜 시니어는 새로운 복잡한 툴(노션식 블록 코딩, 프롬프트 엔지니어링)을 배울 시간/의지가 없음 ➔ 제로 러닝커브(Zero Learning Curve) 지향",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "uBB1gEgrtt0O",
+              "text": "과거 잘 쓴 글 1~2개 투척만으로 끝나는 원클릭 보이스 추출 인터랙션 필수 (문체 DNA 역공학)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "d5kf8RBrs4ID",
+              "text": "사용자가 이미 확정한 영역을 AI가 절대 훼손하지 않는다는 강력한 작업 통제권(자물쇠) 체감 보장",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        },
+        {
+          "id": "AaFWYvLyVapA",
+          "text": "Regulatory (보안 및 규정 준수 제약)",
+          "children": [
+            {
+              "id": "0ERgg4ue2CF6",
+              "text": "법무, 입찰, 의료, 연구 기밀 취급 ➔ 기업 데이터 비학습(Zero Data Retention) 및 엔터프라이즈급 데이터 격리 필수",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            },
+            {
+              "id": "RA5bhvbGIgQh",
+              "text": "감사 추적(Audit Trail) 의무 ➔ 모든 생성 문장과 수치의 원천 출처(Grounding)를 100% 역추적할 수 있는 인용 근거 보존",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703622678,
+              "updatedAt": 1793703622678
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703622678,
+          "updatedAt": 1793703622678
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793703622678,
+      "updatedAt": 1793703622678
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793703622678,
+  "updatedAt": 1793703622678
+}

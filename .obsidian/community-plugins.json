@@ -1,6 +1,5 @@
 [
   "gaeddong-sync",
-  "gaeddong-meeting-board",
   "calendar",
   "calendar-bases",
   "customjs",
@@ -12,5 +11,6 @@
   "kanban-bases-view",
   "obsidian-leaflet-plugin",
   "modal-opener",
-  "gaeddong-claude"
+  "gaeddong-claude",
+  "gaeddong-meeting-board"
 ]
