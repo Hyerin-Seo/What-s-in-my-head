@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"fe439206b7cbf4b5","type":"group","x":-120,"y":300,"width":200,"height":320,"label":"Tree Explorer"},
+		{"id":"c4131f32447a8340","type":"file","file":"1.🎯(Project) 프로젝트/👩‍🎨사용성 검증용 디자인 목업시스템 구축/이미지/Pasted image 20261103174417.png","x":-47,"y":0,"width":447,"height":240},
+		{"id":"820f1678b0bb7def","type":"text","text":"viewport","x":-100,"y":320,"width":108,"height":50,"color":"#242af0"},
+		{"id":"b98fc42baf48540b","type":"text","text":"Command Bus","x":-100,"y":380,"width":160,"height":50,"color":"#242af0"},
+		{"id":"97ca882de0b355d2","type":"text","text":"Headless Tree Engine(Headless Core Logic)","x":-100,"y":440,"width":160,"height":80,"color":"#242af0"},
+		{"id":"8cc3456a6cb27c01","type":"text","text":"3-Tier State Manager","x":-100,"y":520,"width":160,"height":80,"color":"#242af0"}
+	],
+	"edges":[]
+}

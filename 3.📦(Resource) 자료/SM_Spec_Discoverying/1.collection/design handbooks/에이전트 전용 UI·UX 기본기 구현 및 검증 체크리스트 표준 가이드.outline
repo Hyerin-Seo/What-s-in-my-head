@@ -1,0 +1,383 @@
+{
+  "version": "1.0.0",
+  "id": "VyMDUr2ChzOZ",
+  "title": "에이전트 전용 UI·UX 기본기 구현 및 검증 체크리스트 표준 가이드",
+  "rootNodes": [
+    {
+      "id": "rBRKlWbSSoZj",
+      "text": "1. 사람이라면 당연히 세트로 반영하는 5대 암묵적 UX 기본기 (Implicit UX Common Sense)",
+      "children": [
+        {
+          "id": "XVzTbLGyKYeG",
+          "text": "1) 대칭 행동의 법칙 (Action Symmetry — 열었으면 닫아야 한다)",
+          "children": [
+            {
+              "id": "FwJ3shAt9N4u",
+              "text": "열기 ↔ 닫기: 패널·서랍·모달 오픈 시 닫기 버튼([X]), 배경 클릭(Backdrop), Esc 키 닫기 세트 필수",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "0mbnZOo1RU83",
+              "text": "접기 ↔ 다시 펴기: 사이드바를 접는(Collapse) 버튼을 만들었으면 접힌 상태에서도 다시 펼 수 있는 손잡이(Expand Trigger) 상시 노출",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "LoLuGotlp73a",
+              "text": "추가 ↔ 삭제·수정: 항목 [+ 추가] 제공 시 삭제(휴지통/우클릭)와 이름 바꾸기(더블클릭/F2) 세트 제공",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "Zr1N73b68Jej",
+              "text": "줌인 ↔ 탈출구: 하위 계층 호이스팅(Zoom-in) 시 상단 Breadcrumb 및 뒤로가기 탈출 경로 보장",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "2jToa7CSRkMV",
+          "text": "2) 컨테이너 물리 법칙 (Overflow & Sizing — 넘치면 감당해야 한다)",
+          "children": [
+            {
+              "id": "JNfiALQJ25tb",
+              "text": "글자 초과 (Text Ellipsis): 긴 제목·경로(50자 이상) 발생 시 레이아웃 붕괴 방지(min-w-0, truncate) 및 마우스 호버 시 전체 텍스트 Tooltip 제공",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "5WlVnXbMzcJ0",
+              "text": "항목 초과 (Independent Scroll): 목록이 50~100개로 늘어날 때 전체 창이 밀리지 않고 해당 패널 내부에만 독립 스크롤바(min-h-0, overflow-y-auto) 작동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "kKU9zdBEBKYn",
+              "text": "영역 크기 조절 (Resizing): 좌·우·하단 도킹 패널에 드래그 리사이즈 핸들 및 최소·최대 폭(min/max-width) 방어선 적용",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "KVhf89XeIvsS",
+          "text": "3) 상태 피드백 상식 (Affordance — 누를 수 있는지 눈으로 보여야 한다)",
+          "children": [
+            {
+              "id": "IE7diIcXoBGf",
+              "text": "마우스 반응: 클릭 가능 요소에 cursor-pointer 및 Hover/Active 배경색 미세 변화 제공",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "2tPDMnlhuKmK",
+              "text": "현재 위치 강조 (Active/Selected State): 현재 열려 있는 탭, 선택된 트리 불릿, 활성 Phase에 뚜렷한 강조 스타일 유지",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "ULZHAAsjv5lz",
+              "text": "먹통 및 중복 클릭 방지 (Loading & Disabled): 0.2초 이상 소요 작업 시 스피너 표시 및 버튼 Disabled 잠금, AI 스트리밍 중 [중단(Stop)] 버튼 제공",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "AfGP3UwoaPKB",
+          "text": "4) 빈 화면과 극단값 상식 (Empty & Boundary State)",
+          "children": [
+            {
+              "id": "xuUBkRjfomoo",
+              "text": "0개일 때 (Empty State): 데이터가 없을 때 백지 방치 금지, 안내 문구와 첫 생성 CTA 버튼([+ 추가]) 노출",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "Tuv3mBdynR88",
+              "text": "읽기 전용 잠금 (Read-Only Guard): 참조 프로젝트 등 수정 불가 영역에 자물쇠(🔒) 시각 표시 및 편집 차단(복사·인용만 허용)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "0ecPj2tdBOgr",
+          "text": "5) 입력창 키보드 및 포커스 상식 (Input & Focus Hygiene)",
+          "children": [
+            {
+              "id": "xLtXqVy4Arzh",
+              "text": "자동 포커스 (autoFocus): 인라인 이름 변경·프롬프트 모달 오픈 즉시 마우스 재클릭 없이 타이핑 가능하도록 포커스 주입",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "2JfBKI7GHKL8",
+              "text": "키보드 완결 (Enter / Esc): 입력 중 Enter는 즉시 확정(Submit), Esc는 변경 취소(Cancel) 후 이전 포커스 복원",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793703992083,
+      "updatedAt": 1793704029778
+    },
+    {
+      "id": "pT8u7DWSgkpw",
+      "text": "2. 에이전트 전용 UI·UX 구현 및 감사(Audit) 글로벌 4대 오픈소스 표준",
+      "children": [
+        {
+          "id": "ojp7Y1xu8X4T",
+          "text": "1) Vercel 공식 에이전트 스킬 — Web Interface Guidelines (vercel-labs/agent-skills)",
+          "children": [
+            {
+              "id": "uj48eU4gw3TE",
+              "text": "출처 및 설치: github.com/vercel-labs/web-interface-guidelines (npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "NErFgAtuDACV",
+              "text": "성격: AI 코딩 에이전트가 시킨 기능만 대충 구현하고 기본 디테일을 누락하는 현상을 막기 위해 Rauno Freiberg·Emil Kowalski 등 Vercel 디자인 엔지니어링 팀이 제정한 객관적 UI 감사 규칙집",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "qgG5DOo5VxZI",
+              "text": "핵심 강제 규격 5선:",
+              "children": [
+                {
+                  "id": "Ub6BUIdUClRA",
+                  "text": "Flex/Grid 자식에 min-w-0 및 텍스트 truncate 기본 적용으로 레이아웃 파괴 원천 차단",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703992083,
+                  "updatedAt": 1793703992083
+                },
+                {
+                  "id": "rDoXoZDtcmj2",
+                  "text": "모든 인터랙션의 키보드 작동 보장 및 :focus-visible 포커스 링 유지 (Sticky 헤더의 포커스 가림 금지)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703992083,
+                  "updatedAt": 1793703992083
+                },
+                {
+                  "id": "9fNq2oykL2U2",
+                  "text": "작은 아이콘 버튼도 최소 24px × 24px (모바일 44px) 이상의 클릭 히트 타겟(Hit Target) 확보",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703992083,
+                  "updatedAt": 1793703992083
+                },
+                {
+                  "id": "wXA9QRnNs7oG",
+                  "text": "비동기 액션 중 버튼 중복 클릭 잠금 및 150~300ms 지연 스피너로 화면 깜빡임(Flicker) 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703992083,
+                  "updatedAt": 1793703992083
+                },
+                {
+                  "id": "QllIbyilxhN5",
+                  "text": "카운트·페이지 번호 등 동적 숫자에 tabular-nums(고정폭 숫자)를 적용해 숫자 변경 시 레이아웃 흔들림 방지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793703992083,
+                  "updatedAt": 1793703992083
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "bUEenSV4X44N",
+          "text": "2) W3C 국제 컴포넌트 동작 표준 — WAI-ARIA Authoring Practices Guide (APG)",
+          "children": [
+            {
+              "id": "P2jp9dwgL81R",
+              "text": "출처: w3.org/WAI/ARIA/apg/patterns/ (Radix UI, Shadcn UI, Headless UI, React Aria의 100% 구현 원전)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "4HUbbz1DjhrN",
+              "text": "성격: Tree View(아웃라이너), Tabs(탭), Breadcrumb, Accordion, Dialog(모달), Menu(툴박스) 등 28개 표준 UI 패턴별 필수 키보드 단축키와 포커스 이동 규칙을 정의한 국제 표준",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "WEEPUHFff7CM",
+              "text": "핵심 강제 규격: Tree View에서 화살표(↑/↓/←/→) 노드 이동·펼침·접기, Dialog 오픈 시 Focus Trap 및 Esc 닫기 후 원래 트리거 버튼으로 포커스 복귀",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "9cYUzKL2iAFx",
+          "text": "3) 컴포넌트 단위 짝꿍 누락 검증 바이블 — Checklist Design & Design System Checklist",
+          "children": [
+            {
+              "id": "x6BRJDGnjHWE",
+              "text": "출처: checklist.design / designsystemchecklist.com",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "FTBSjyIzeEk2",
+              "text": "성격: 모달, 사이드바, 테이블, 토스트, 에디터 등 개별 UI 컴포넌트 제작 시 인간 디자이너·개발자가 반드시 세트로 챙겨야 할 필수 요소(Dismiss 수단, Empty/Loading/Error 상태, 말줄임, 헤더 고정 스크롤) 체크리스트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "aGvHGWsYhO5H",
+          "text": "4) UI 상태 완전성 표준 — The 9 States of Design (Scott Hurff)",
+          "children": [
+            {
+              "id": "gEdrvyYeuugb",
+              "text": "성격: 에이전트가 데이터가 예쁘게 3개 들어있는 정상 화면(Ideal State) 1개만 구현하고 끝내는 병폐를 막기 위한 9대 상태 검증 프레임워크",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            },
+            {
+              "id": "zF7vZoiKUeas",
+              "text": "필수 점검 상태: Nothing(0개 빈 화면) · Loading(로딩 중) · None(검색 결과 없음) · One(1개일 때) · Some(보통) · Too Many(100개·100글자 초과) · Incorrect(에러) · Correct(완료) · Locked(읽기 전용 잠금)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793703992083,
+              "updatedAt": 1793703992083
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793703992083,
+      "updatedAt": 1793704030060
+    },
+    {
+      "id": "Vjc8ULxb1n3P",
+      "text": "3. 신규 사양 반영 시 누락을 잡아내는 4대 실전 스트레스 검증 (Audit Tests)",
+      "children": [
+        {
+          "id": "aqorCaevjfCG",
+          "text": "1) 왕복 테스트 (Round-trip Check): 열기 ➔ 닫기, 접기 ➔ 다시 펴기, 추가 ➔ 삭제, 줌인 ➔ 줌아웃, Phase 1 ➔ 3 ➔ 1 왕복 시 막히는 막다른 길(Dead-end)이 없는가?",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "teregYuo24kU",
+          "text": "2) 0 / 1 / 100 개수 폭탄 테스트 (Count Check): 항목을 0개(전부 삭제), 1개, 100개로 넣었을 때 0개 안내(Empty State)와 100개 패널 내부 독립 스크롤이 정상 작동하는가?",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "mcyuJ0O0OjqJ",
+          "text": "3) 100글자 장문 폭탄 테스트 (Long-Text Check): 제목·불릿·탭 이름에 100글자 문장을 넣었을 때 옆 버튼을 밀어내지 않고 ... 말줄임과 호버 툴팁이 작동하는가?",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        },
+        {
+          "id": "tNgRMi1QxcK1",
+          "text": "4) 마우스 압수 & 헛손질 테스트 (Keyboard & Esc Check): 마우스 호버 시 클릭 가능 여부가 시각적으로 표시되며, 열린 창에서 Esc/바깥 클릭 시 닫히고 포커스가 증발하지 않는가?",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793703992083,
+          "updatedAt": 1793703992083
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793703992083,
+      "updatedAt": 1793704030391
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793703992083,
+  "updatedAt": 1793704030391
+}

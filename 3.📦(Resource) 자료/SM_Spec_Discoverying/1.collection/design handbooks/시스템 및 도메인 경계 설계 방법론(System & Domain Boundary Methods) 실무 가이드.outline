@@ -18,9 +18,19 @@
               "isFolded": false,
               "createdAt": 1793435174208,
               "updatedAt": 1793435174208
+            },
+            {
+              "id": "DwBugafxFEO5",
+              "text": "DDD 대략 흐름",
+              "children": [],
+              "createdAt": 1793673188782,
+              "updatedAt": 1793673199322,
+              "file": {
+                "target": "Pasted image 20261103113309.png"
+              }
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793435174208,
           "updatedAt": 1793435174208
         },
@@ -375,5 +385,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793435174208,
-  "updatedAt": 1793451631080
+  "updatedAt": 1793695436690
 }

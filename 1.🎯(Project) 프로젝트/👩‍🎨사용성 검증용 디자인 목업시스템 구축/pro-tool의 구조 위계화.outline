@@ -1,0 +1,275 @@
+{
+  "version": "1.0.0",
+  "id": "DCEn03sGvg5M",
+  "title": "pro-tool의 구조 위계화",
+  "rootNodes": [
+    {
+      "id": "S8IhZslcU5sQ",
+      "text": "IDE형의 Pro-tool의 계층",
+      "children": [
+        {
+          "id": "i6wXRO7amfG8",
+          "text": "Level 1: Workbench (또는 Shell) - 전체 최상위 프레임",
+          "children": [],
+          "isFolded": false,
+          "note": "애플리케이션 전체를 감싸는 최상위 창 프레임 (메뉴바, 윈도우 창틀, 상태표시줄 등 모든 영역을 담는 그릇)",
+          "createdAt": 1793696729952,
+          "updatedAt": 1793696729952
+        },
+        {
+          "id": "9f1vbcHi9U2G",
+          "text": "Level 2: Part (또는 Area / Zone) - 4대 화면 대구역",
+          "children": [
+            {
+              "id": "h9NCoV2TDSk2",
+              "text": "Activity Bar (맨 좌측 글로벌 도구/모드 전환 아이콘 바)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            },
+            {
+              "id": "hjNWiHQdSZD6",
+              "text": "Side Bar (좌측 탐색기 및 기능별 패널 컨테이너 영역)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            },
+            {
+              "id": "FvwgeqbOD1QF",
+              "text": "Editor Area (중앙 캔버스·리치 텍스트 에디터 메인 작업 영역)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            },
+            {
+              "id": "yemY6cwCiThO",
+              "text": "Panel (하단 터미널, 출력 로그, 디버그 콘솔 영역)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            }
+          ],
+          "isFolded": false,
+          "note": "화면을 크게 분할한 4대 레이아웃 영역",
+          "createdAt": 1793696729952,
+          "updatedAt": 1793696729952
+        },
+        {
+          "id": "NfQmVqhq5cGn",
+          "text": "Level 3: View / ViewPane - 개별 기능 창 (패널 단위)",
+          "children": [
+            {
+              "id": "QZGzuCVmUVzg",
+              "text": "Explorer (파일/프로젝트 트리)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            },
+            {
+              "id": "YTqOj7RRg0m0",
+              "text": "Outline (현재 열린 문서의 AST 구조 트리)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            },
+            {
+              "id": "JQnZ9ZiI9YxV",
+              "text": "Timeline (시계열 변경 이력 및 체크포인트)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            },
+            {
+              "id": "kliRs49QK6bE",
+              "text": "Inspector (선택된 노드의 속성/스타일 편집 창)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            }
+          ],
+          "isFolded": false,
+          "note": "사이드바나 패널 안에서 접었다 폈다 하는 개별 창 단위",
+          "createdAt": 1793696729952,
+          "updatedAt": 1793696729952
+        },
+        {
+          "id": "SCl7vny9TTRL",
+          "text": "Level 4: Widget / Control / Node - UI 최소 단위",
+          "children": [
+            {
+              "id": "ZyfeEnUtmpYd",
+              "text": "UI Control (트리 안의 파일 항목 한 줄, 버튼, 텍스트 인풋, 스위치, 툴팁)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            },
+            {
+              "id": "WdXlaFFiIBw8",
+              "text": "Canvas Node (2D 캔버스 공간 상의 개별 카드/블록 노드)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696729952,
+              "updatedAt": 1793696729952
+            }
+          ],
+          "isFolded": false,
+          "note": "화면을 이루는 가장 작은 단위 UI 부품",
+          "createdAt": 1793696729952,
+          "updatedAt": 1793696729952
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793696553291,
+      "updatedAt": 1793696930917
+    },
+    {
+      "id": "nHOjCh5kFy6M",
+      "text": "📌 Figma / 포토샵형 Pro-tool의 계층",
+      "children": [
+        {
+          "id": "LcoJBwMAQBS7",
+          "text": "Level 1: Studio Shell - 최상위 그래픽스 프레임",
+          "children": [],
+          "isFolded": false,
+          "note": "타이틀바, 메뉴바, 단축키 서비스, 렌더링 뷰포트와 툴박스를 감싸는 최상위 창 프레임",
+          "createdAt": 1793696983853,
+          "updatedAt": 1793696983853
+        },
+        {
+          "id": "qXchz8YDRCAj",
+          "text": "Level 2: Part (또는 Area / Zone) - 그래픽스 4대 화면 대구역",
+          "children": [
+            {
+              "id": "MxnvvArfPtBw",
+              "text": "Toolbar / Toolbox (상단 또는 플로팅 도구 모음: 선택, 프레임, 도형, 펜, 텍스트 도구)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            },
+            {
+              "id": "nJtde1H316BO",
+              "text": "Left Sidebar (레이어 계층 및 에셋/컴포넌트 라이브러리 컨테이너)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            },
+            {
+              "id": "9ZYsnazFKTHJ",
+              "text": "Infinite Viewport (중앙 무한 2D 캔버스 작업 영역 - 카메라 줌/팬 좌표계)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            },
+            {
+              "id": "wGY4obfzVe2X",
+              "text": "Right Inspector (우측 속성 제어 창 - 디자인 치수, 오토레이아웃, 색상, 프로토타입)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            }
+          ],
+          "isFolded": false,
+          "note": "무한 캔버스와 3대 제어 패널로 분할된 그래픽스 레이아웃",
+          "createdAt": 1793696983853,
+          "updatedAt": 1793696983853
+        },
+        {
+          "id": "ElkwTnWXBLND",
+          "text": "Level 3: View / ViewPane - 개별 그래픽스 패널 단위",
+          "children": [
+            {
+              "id": "fMwPxOXrO5xJ",
+              "text": "Layers Panel (캔버스 위에 배치된 요소들의 포함 계층 트리 - Scene Graph 탐색기)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            },
+            {
+              "id": "h2tRJKQEiRqT",
+              "text": "Assets / Components Panel (재사용 가능한 컴포넌트 라이브러리 목록)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            },
+            {
+              "id": "MehIIiYqisy9",
+              "text": "Property Inspector (선택된 노드의 x, y 좌표, 크기, 정렬, 제약조건, Fill/Stroke 스타일)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            },
+            {
+              "id": "bTDT9v48lZV5",
+              "text": "Prototype / Inspect (상호작용 인터랙션 연결 및 CSS/코드 속성 추출 창)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            }
+          ],
+          "isFolded": false,
+          "note": "레이어 및 디자인 속성을 제어하는 도킹/탭 패널",
+          "createdAt": 1793696983853,
+          "updatedAt": 1793696983853
+        },
+        {
+          "id": "6AWzzpNQly0F",
+          "text": "Level 4: Scene Node / Control - 최소 그래픽스 객체 및 위젯",
+          "children": [
+            {
+              "id": "r9sVdN80qJKk",
+              "text": "Scene Node (Frame, Group, Shape, Vector, Text 등 2D 좌표와 바운딩 박스를 가진 그래픽스 객체)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            },
+            {
+              "id": "PxxSUMzGJWiI",
+              "text": "Control Handles (선택 노드의 바운딩 박스 크기 조절 핸들, 회전 조절점, 코너 라운딩 핸들)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            },
+            {
+              "id": "K272Zm25IFCa",
+              "text": "Inspector Controls (속성창의 수치 인풋 필드, 색상 피커(Color Picker), 드롭다운, 스위치)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793696983853,
+              "updatedAt": 1793696983853
+            }
+          ],
+          "isFolded": false,
+          "note": "캔버스에 직접 렌더링되는 그래픽 엔티티 및 속성 조절기",
+          "createdAt": 1793696983853,
+          "updatedAt": 1793696983853
+        }
+      ],
+      "isFolded": true,
+      "note": "무한 2D 캔버스, 씬 그래프(Scene Graph), 도구 상태 머신 기반의 그래픽스 스튜디오 위계",
+      "createdAt": 1793696983853,
+      "updatedAt": 1793697000936
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793696492550,
+  "updatedAt": 1793707379585
+}

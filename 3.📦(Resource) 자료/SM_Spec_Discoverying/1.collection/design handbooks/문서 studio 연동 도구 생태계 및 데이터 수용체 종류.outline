@@ -1,0 +1,721 @@
+{
+  "version": "1.0.0",
+  "id": "1rKPwIPNu0Yw",
+  "title": "문서 studio 연동 도구 생태계 및 데이터 수용체 종류",
+  "rootNodes": [
+    {
+      "id": "XhhIbAnllyFr",
+      "text": "1. 업무 SaaS 및 전문 도구 (Workplace SaaS & Tools)",
+      "children": [
+        {
+          "id": "FoKB1N2RELYw",
+          "text": "1) 전문 저작 스튜디오 (Authoring & Engineering Workbenches) - '만드는 곳'",
+          "children": [
+            {
+              "id": "B527Bk8nPiw8",
+              "text": "의미 및 연동 방식: 산출물을 직접 설계·코딩·렌더링하여 깎아 만드는 전문가 전용 작업대, 디자인 시안·도면·코드 diff 등의 산출물 라이브 임베드(Artifact Embed) 연동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "PRIO5XULabUi",
+              "text": "세부 도구 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "tuiuUmkba1EN",
+                  "text": "UI/제품 디자인: Figma, FigJam, Miro (UI 화면 시안 프레임, 디자인 시스템 토큰, 캔버스 플로우)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "n5NpnPyI68Ae",
+                  "text": "미디어/크리에이티브: Adobe CC (Photoshop, Illustrator, Premiere Pro), Blender (고해상도 그래픽 원본, 영상 편집 타임라인, 3D 에셋)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "F8i7kPyptvi4",
+                  "text": "기계/건축 공학 CAD: AutoCAD, SolidWorks, CATIA, Revit (2D/3D 기계 부품 설계도, 건축 정보 모델링 BIM 데이터, 배관 계통도)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "eGNCCKOY4Jlw",
+                  "text": "소프트웨어 엔지니어링: GitHub, GitLab, Postman, SwaggerHub (Git 리포지토리 소스코드, 커밋/PR 이력, REST API 엔드포인트 명세)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "VifYgqljpFdM",
+          "text": "2) 분석 & 관측 대시보드 (Analytics & Observability Consoles) - '보고 판단하는 곳'",
+          "children": [
+            {
+              "id": "4dsaSCjKzevU",
+              "text": "의미 및 연동 방식: 쏟아지는 데이터를 집계·시각화하여 비즈니스와 시스템 상태를 모니터링하는 통제탑, 실시간 지표 및 그래프를 문서에 띄워두는 메트릭 위젯(Metric Card) 연동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "43UVCabmRKY6",
+              "text": "세부 도구 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "F2Qb0yXzP5t6",
+                  "text": "비즈니스 & 프로덕트 BI: Tableau, Power BI, Amplitude, Looker, GA4, Metabase (퍼널 전환율 차트, 유저 코호트 분석, LTV/CAC 시각화 대시보드)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "y410JTdEMS6n",
+                  "text": "클라우드 & 시스템 옵저버빌리티: AWS 콘솔, Datadog, Grafana, Sentry (서버 CPU/메모리 부하 그래프, 에러 스택 트레이스 로그, K8s 클러스터 상태)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "TnyRtZJGYPpW",
+                  "text": "광고 집행 & 성과 콘솔: 메타 광고 관리자(Meta Ads), 구글 애즈 (광고 소재별 ROAS 지표, 타깃 오디언스 세그먼트, 캠페인 지표)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "fQS53029pvth",
+          "text": "3) 협업 & 비즈니스 운영 플랫폼 (Collaboration & Operation Platforms) - '소통하고 굴리는 곳'",
+          "children": [
+            {
+              "id": "vMKaqTkAKlbl",
+              "text": "의미 및 연동 방식: 사람과 사람이 소통하고, 업무를 조율하며, 고객과 상호작용하는 전사 운영 플랫폼, 티켓 진행 상태·대화 스레드·결재선을 연동하는 상태 동기화 카드(Status Sync Card) 연동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "AgXJGORztHVr",
+              "text": "세부 도구 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "Ht7szDqwhjj3",
+                  "text": "커뮤니케이션 & 미팅: Slack, MS Teams, Zoom, Google Meet (채널별 업무 대화 스레드, 다이렉트 메시지 DM, 회의 녹화본 및 STT 전문)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "VZBSjxqQUfHR",
+                  "text": "프로젝트 & 이슈 트래킹: Jira, Linear, Asana, Monday (이슈 티켓 번호, 스프린트 백로그, 작업 진행 상태 In Progress/Done, 마일스톤)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "pvENB3HzeCDX",
+                  "text": "전사 지식 & 전자결재 그룹웨어: Notion, Confluence, 다우오피스, 하이웍스, Google Workspace (위키 문서 트리, 공식 결재선 승인 문서함, 공유 드라이브/시트)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "djXA3ZPyigKa",
+                  "text": "고객 접점 & CS 헬프데스크: 채널톡, Zendesk Support, 카카오 상담톡, Genesys (실시간 인입 채팅 상담창, CTI 콜 통계, 고객 문의 티켓)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "flQMYHgm91FK",
+                  "text": "마케팅 자동화 & CRM 발송: Braze, Stibee, Mailchimp (푸시 알림/이메일 발송 여정 Journey 자동화 플로우, 고객 세그먼트 타깃팅)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793626015978,
+      "updatedAt": 1793626015978
+    },
+    {
+      "id": "DEjM6UwuHwXk",
+      "text": "2. 자원 & 마스터 DB 차원 (Enterprise DB & Core Systems)",
+      "children": [
+        {
+          "id": "bi9RBc023ob0",
+          "text": "1) 전사 자원 관리 시스템 (ERP - 재무/구매 DB)",
+          "children": [
+            {
+              "id": "Mch54RjCjpXH",
+              "text": "의미 및 연동 방식: 사내 회계 원장 및 거래처 기준정보, '@거래처명' 입력 시 ERP 마스터 자동 바인딩",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "DiUrxTWbFj5D",
+              "text": "대표 시스템 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "ULsMEneGVYqo",
+                  "text": "SAP, Oracle ERP: 회계 계정별 원장, 분개 전표, 자금 수지 및 부가세 신고 데이터",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "GtHnhNmScINh",
+                  "text": "더존, 영림원: 거래처 마스터 (사업자등록번호, 대표자, 여신한도, 결제계좌), 전자세금계산서 발행 내역",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "95ZqF3M6qjBM",
+          "text": "2) 고객 관계 관리 시스템 (CRM - 고객/영업 DB)",
+          "children": [
+            {
+              "id": "X7fL4taTkOlr",
+              "text": "의미 및 연동 방식: 고객 신원 정보 및 영업 파이프라인, '@고객명' 스마트 칩 및 세일즈 단계 위젯 연동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "zSywQgX42mM6",
+              "text": "대표 시스템 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "BqETpUJEOyTJ",
+                  "text": "Salesforce, HubSpot: 고객 프로필 마스터 (고객 ID, 연락처, 구매 이력), 세일즈 파이프라인 단계",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "ljc9lfVNJG1u",
+                  "text": "사내 CS 접수 DB, Zendesk: 고객 불만(VOC) 인입 티켓, 인바운드 문의 접수 이력",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "6oIwXjSsBbjH",
+          "text": "3) 인사 정보 관리 시스템 (HRIS - 인사/조직 DB)",
+          "children": [
+            {
+              "id": "V7JlRCvsL7mD",
+              "text": "의미 및 연동 방식: 임직원 마스터 및 조직도 체계, '@사원명' 멘션 시 직급/부서 프로필 및 결재선 매핑",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "WWA8fWtgWJ0Z",
+              "text": "대표 시스템 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "CjpgPiJ3qbrA",
+                  "text": "Workday, 사내 인사 DB: 사원 마스터 DB (사번, 직급, 입사일, 발령 이력), 전사 부서 조직도",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "IdaCVqAXh4bf",
+                  "text": "flex: 급여/성과 테이블, 연차 및 근태 신청 원장, 전결 승인 한도 규정",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "hzpURP2mGUqb",
+          "text": "4) 제조 · 설비 & 엔지니어링 관리 (MES / PLM / 시설 DB)",
+          "children": [
+            {
+              "id": "LnRNdFd3BpyI",
+              "text": "의미 및 연동 방식: 실물 공장 조감도 및 부품 트리(BOM), 설비 자산 번호 및 도면 식별자 바인딩",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "Ivd4ofa2OlHj",
+              "text": "대표 시스템 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "4BLdjZ5QIf1C",
+                  "text": "사내 시설관리 DB: 공장 조감도, 공장/설비 배치 CAD 설계도, 배관 계통도(P&ID), 건축 평면도",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "bS36aqjJqQC5",
+                  "text": "사내 MES, PLM: 제품 SKU 마스터, 원자재 코드, 부품 계층 구조(BOM), 단위별 표준 원가표",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "tBZW0gjxjkGB",
+          "text": "5) 인프라 & 보안 접근 통제 (IAM & Security DB)",
+          "children": [
+            {
+              "id": "ADVg2B9DvB6b",
+              "text": "의미 및 연동 방식: 사원별 시스템 접근 인가 및 결재 권한, 문서 보안 등급 및 인가 범위 매핑",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "TwybmfnoOqbL",
+              "text": "대표 시스템 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "AqIzAfuOu8OV",
+                  "text": "Active Directory, LDAP, 사내 IAM: 사원별 시스템/DB 접근 권한(RBAC 매트릭스), 보안 크리덴셜",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "NhLndNQzcQWK",
+                  "text": "사옥 보안 시스템: 사옥 출입 통제(RFID 태깅) 이력, 서버룸 물리 접근 로그",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793626015978,
+      "updatedAt": 1793626015978
+    },
+    {
+      "id": "OVxDrhukggf8",
+      "text": "3. 문서 (Documents & Deliverables)",
+      "children": [
+        {
+          "id": "UgSwHJA6ZEll",
+          "text": "1) 비정형 문서 (Unstructured / Exploratory Docs)",
+          "children": [
+            {
+              "id": "EVmmkycfu0aq",
+              "text": "의미 및 성격: 서식이 빡빡하지 않은 단편형 메모 및 아이디어 발상 스케치",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "P3GglD6lcsx4",
+              "text": "실제 사례: 기획 아이디어 조각, 데스크 리서치 스크랩 정리본, 화이트보드 회의 정리 노트",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "nDLWkRYipVyE",
+          "text": "2) 정형 업무 문서 (Structured / Formal Docs)",
+          "children": [
+            {
+              "id": "ncjx3jH1CYuu",
+              "text": "의미 및 성격: 표준 목차와 결재선을 갖춘 대내외 공표 및 결재 완성본",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "KQ1IVIw16Cum",
+              "text": "실제 사례: One-page 기안서/품의서, 3단 사업계획서, 수주 제안서, 분기 실적 보고서",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "sAxArOzYeitn",
+          "text": "3) 거버넌스 & 준거 표준 문서 (Standards & Compliance Docs)",
+          "children": [
+            {
+              "id": "tsQku7Vl5JDl",
+              "text": "의미 및 성격: 임의 수정이 불가하고 작성 시 100% 준수해야 하는 강제 기준틀",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "TFnP8NPg74ii",
+              "text": "실제 사례: 사내 취업규칙/보안규정, 조달청 RFP 필수 규격집, 표준 계약서 양식 템플릿",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "rV5lg397f1Qx",
+          "text": "4) 레거시 아카이브 자산 (Historical Archive Docs)",
+          "children": [
+            {
+              "id": "lwZcnIlaaa0g",
+              "text": "의미 및 성격: 과거에 이미 기안·결재가 완료되어 신규 작성의 분해·재활용 원천이 되는 자산",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "FYqv4XJirFZo",
+              "text": "실제 사례: 작년 통과된 50페이지 사업계획서 PDF, 이전 프로젝트 상세설계서 완성본",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793626015978,
+      "updatedAt": 1793626015978
+    },
+    {
+      "id": "aI3em3LFv3Hf",
+      "text": "4. 리서치 & 외부 레퍼런스 수집 파이프라인 (Research & Ingestion Pipelines)",
+      "children": [
+        {
+          "id": "rRwDdsDWya5k",
+          "text": "1) 지식재산(IP) & 학술·논문 추적 (Intellectual Property & Scholarly Intelligence)",
+          "children": [
+            {
+              "id": "MNl95ofLtViI",
+              "text": "의미 및 연동 방식: 선행기술 조사, 글로벌 특허 분석 및 학술지 인용 계보 추적, 특허번호/DOI 입력 시 공보 요약 및 학술 인용(Citation Anchor) 자동 생성",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "HU6UCpY4TG0j",
+              "text": "세부 도구 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "gYAewupIFdXi",
+                  "text": "특허 & 선행기술 조사: KIPRIS, Google Patents, WIPO, Lens.org (공개/등록 특허 공보, 청구항 분석, 특허 패밀리, FTO 검토 리포트)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "EJpR8JXF4HJQ",
+                  "text": "학술지 & 논문 인용 계보: Semantic Scholar, Connected Papers, Web of Science, arXiv (논문 인용-피인용 그래프, 저널 임팩트 팩터, 프리프린트 원문)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "WPweDAFXoBi7",
+                  "text": "서지 관리 & 라이선스 감사: Zotero, Mendeley, Black Duck (DOI 기반 메타데이터 라이브러리, BibTeX 서지 인용, 오픈소스 라이선스 검증)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "Kh5EYpPHl2xx",
+          "text": "2) 스마트 캡처 & UI/UX 아카이빙 (Smart Capture & Web Archiving)",
+          "children": [
+            {
+              "id": "HNPIHvsldOgU",
+              "text": "의미 및 연동 방식: 화면 시안 및 웹페이지를 체계적으로 수집·분석·역공학하기 위한 자동화 수집 도구군, 캔버스 위 레퍼런스 피드(Reference Feed) 연동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "oz1F5NGV02uy",
+              "text": "세부 도구 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "BYu5SDGBTyh8",
+                  "text": "UI/UX 플로우 아카이브: Mobbin, Pageflows (수만 개 글로벌 서비스 온보딩/결제/기능 화면 플로우 캡처)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "ftMFOUw4y0R9",
+                  "text": "자동화 캡처 & 에이전트: Shot-scraper, Browser-Use, Playwright (URL 목록 기반 일괄 고화질 스크린샷, LLM 자율 탐색 캡처)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "YGFxNfxsD5NJ",
+                  "text": "웹 클리핑 & 북마크: Readwise, Raindrop, Notion Web Clipper (웹 아티클 하이라이트, 주석, 북마크 아카이브)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "s8DmEMpU7KnQ",
+          "text": "3) 시장 · 산업 · 경쟁사 인텔리전스 (Market & Competitive Intelligence)",
+          "children": [
+            {
+              "id": "KxUaEAhsNSUS",
+              "text": "의미 및 연동 방식: 경쟁사 트래픽, 공시, 시장 통계를 추적하여 사업 전략의 근거를 보증하는 팩트 링크(Fact Link) 연동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "W968FN55xLqS",
+              "text": "세부 도구 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "VrXFUryC8UOQ",
+                  "text": "트래픽 & 앱 랭킹: SimilarWeb, Sensor Tower, Data.ai (경쟁사 웹 유입 경로, 모바일 앱 다운로드/매출 순위)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "89pl7J9JH1Kl",
+                  "text": "기업 정보 & 공시: DART 전자공시, 혁신의숲, KED (상장사/스타트업 재무제표, 감사보고서, 투자 유치 데이터)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "GqlorBMbtDpE",
+                  "text": "공공 통계 & 입찰: KOSIS 국가통계포털, 조달청 나라장터 (국가 통계 데이터, 공공 입찰 공고 원본)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        },
+        {
+          "id": "zNuB91gph4Rq",
+          "text": "4) AI 딥리서치 & 자율 합성 엔진 (AI Deep Research & Synthesizers)",
+          "children": [
+            {
+              "id": "lt3zJeH2h1iu",
+              "text": "의미 및 연동 방식: 방대한 웹을 AI가 직접 크롤링·교차 검증하여 종합 리포트를 산출하는 선행 리서치 인젝터(Pre-research Injector) 연동",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            },
+            {
+              "id": "MfTBTFrXxxze",
+              "text": "세부 도구 및 관리 데이터:",
+              "children": [
+                {
+                  "id": "MSTxw9DCN6VO",
+                  "text": "생성형 리서치 엔진: Perplexity Pro, Genspark, Google Deep Research, Consensus (다중 출처 교차 대조 리포트, 학술 합의 스코어)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                },
+                {
+                  "id": "rqe5CmAv5fK6",
+                  "text": "전문 에이전트: 도메인 특화 자율 크롤링 및 텍스트 마이닝 에이전트 (실시간 웹 브라우징 결과 요약본)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793626015978,
+                  "updatedAt": 1793626015978
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793626015978,
+              "updatedAt": 1793626015978
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793626015978,
+          "updatedAt": 1793626015978
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793626015978,
+      "updatedAt": 1793626015978
+    }
+  ],
+  "createdAt": 1793626015978,
+  "updatedAt": 1793626220650
+}

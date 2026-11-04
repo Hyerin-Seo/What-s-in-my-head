@@ -74,10 +74,10 @@
                 }
               ],
               "isFolded": true,
-              "createdAt": 1793360858657,
-              "updatedAt": 1793362524530,
               "isCompleted": true,
-              "completedAt": 1793362524530
+              "completedAt": 1793362524530,
+              "createdAt": 1793360858657,
+              "updatedAt": 1793362524530
             },
             {
               "id": "E1jIU6anWRvG",
