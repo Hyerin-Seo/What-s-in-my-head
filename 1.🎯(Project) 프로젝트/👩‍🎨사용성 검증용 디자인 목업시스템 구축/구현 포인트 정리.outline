@@ -4,1665 +4,1680 @@
   "title": "구현 포인트 정리",
   "rootNodes": [
     {
-      "id": "qw1gAjAqpLzO",
-      "text": "컴포넌트 구성 및 동작",
+      "id": "EPqTcY4Shc9m",
+      "text": "@Mango",
       "children": [
         {
-          "id": "vHMks9yFCFpV",
-          "text": "참조 레이어 추가 사양",
+          "id": "qw1gAjAqpLzO",
+          "text": "컴포넌트 구성 및 동작",
           "children": [
             {
-              "id": "AhX0lTA513dB",
-              "text": "에이전트 레퍼런스 코워크 정의",
+              "id": "vHMks9yFCFpV",
+              "text": "참조 레이어 추가 사양",
               "children": [
                 {
-                  "id": "FS9q5DfzDb8j",
-                  "text": "레퍼런스를 한다는 것이란?",
+                  "id": "AhX0lTA513dB",
+                  "text": "에이전트 레퍼런스 코워크 정의",
                   "children": [
                     {
-                      "id": "LZcvNg3ZS6n8",
-                      "text": "타인이 특정 문제를 풀기 위해 내린 수많은 의사결정의 궤적을 층위별로 해체해 내 상황에 이식하는 고도의 추상화 작업",
-                      "children": [],
-                      "createdAt": 1793789583441,
-                      "updatedAt": 1793789624039
-                    },
-                    {
-                      "id": "IdHLT6OHtI7t",
-                      "text": "1. 설득의 논리와 정보의 위계",
+                      "id": "FS9q5DfzDb8j",
+                      "text": "레퍼런스를 한다는 것이란?",
                       "children": [
                         {
-                          "id": "RU4I30CKprDK",
-                          "text": "스토리라인과 퍼널",
-                          "children": [
-                            {
-                              "id": "rlv5Rre447td",
-                              "text": "문제 제기 -> 공감 -> 솔루션 제시 -> 근거(데이터/후기) -> 행동 유도 심리적 흐름",
-                              "children": [],
-                              "createdAt": 1793789677127,
-                              "updatedAt": 1793789711908
-                            }
-                          ],
-                          "isFolded": true,
-                          "createdAt": 1793789642701,
-                          "updatedAt": 1793789674939
+                          "id": "LZcvNg3ZS6n8",
+                          "text": "타인이 특정 문제를 풀기 위해 내린 수많은 의사결정의 궤적을 층위별로 해체해 내 상황에 이식하는 고도의 추상화 작업",
+                          "children": [],
+                          "createdAt": 1793789583441,
+                          "updatedAt": 1793789624039
                         },
                         {
-                          "id": "0FAHOEAM8Z9V",
-                          "text": "정보의 우선순위",
+                          "id": "IdHLT6OHtI7t",
+                          "text": "1. 설득의 논리와 정보의 위계",
                           "children": [
                             {
-                              "id": "mGr8sMk0wQRK",
-                              "text": "사용자의 시선이 머무르는 곳, 결론에 주장을 먼저 ... 등등 설득 시 보는 순서에 따른 배치",
-                              "children": [],
-                              "createdAt": 1793789717720,
-                              "updatedAt": 1793789798282
+                              "id": "RU4I30CKprDK",
+                              "text": "스토리라인과 퍼널",
+                              "children": [
+                                {
+                                  "id": "rlv5Rre447td",
+                                  "text": "문제 제기 -> 공감 -> 솔루션 제시 -> 근거(데이터/후기) -> 행동 유도 심리적 흐름",
+                                  "children": [],
+                                  "createdAt": 1793789677127,
+                                  "updatedAt": 1793789711908
+                                }
+                              ],
+                              "createdAt": 1793789642701,
+                              "updatedAt": 1793789674939,
+                              "isFolded": true
+                            },
+                            {
+                              "id": "0FAHOEAM8Z9V",
+                              "text": "정보의 우선순위",
+                              "children": [
+                                {
+                                  "id": "mGr8sMk0wQRK",
+                                  "text": "사용자의 시선이 머무르는 곳, 결론에 주장을 먼저 ... 등등 설득 시 보는 순서에 따른 배치",
+                                  "children": [],
+                                  "createdAt": 1793789717720,
+                                  "updatedAt": 1793789798282
+                                }
+                              ],
+                              "createdAt": 1793789712039,
+                              "updatedAt": 1793789717539,
+                              "isFolded": true
                             }
                           ],
-                          "isFolded": true,
-                          "createdAt": 1793789712039,
-                          "updatedAt": 1793789717539
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"어떤 순서로 말을 꺼내고 무엇을 강조했는가?\"",
-                      "createdAt": 1793789624387,
-                      "updatedAt": 1793789660512
-                    },
-                    {
-                      "id": "7bVnGmuEVsDr",
-                      "text": "2. 문제 해결 패턴(ui/ux 같긴한데)",
-                      "children": [
-                        {
-                          "id": "EBGni7UcA8bA",
-                          "text": "방대한 정보량을 어떻게 한 구역(좁은 영역)으로 다 표현을 해냈는지",
-                          "children": [],
-                          "createdAt": 1793790010799,
-                          "updatedAt": 1793790070375
+                          "createdAt": 1793789624387,
+                          "updatedAt": 1793789660512,
+                          "note": "\"어떤 순서로 말을 꺼내고 무엇을 강조했는가?\"",
+                          "isFolded": true
                         },
                         {
-                          "id": "JMspp3cJ4lmf",
-                          "text": "방대한 필터 조건, 혹은 온보딩 과정과 같은 기능적 난제의 돌파구 힌트 - 타영역에서 얻는 것도 가능",
-                          "children": [],
-                          "createdAt": 1793790043734,
-                          "updatedAt": 1793790114658
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"이 복잡하고 난해한 상황을 어떻게 우회하거나 단순화했는가?\"\n",
-                      "createdAt": 1793789854166,
-                      "updatedAt": 1793790382112
-                    },
-                    {
-                      "id": "hFHtoagHYYJT",
-                      "text": "3. 인터랙션과 반응의 문법(ui/ux 같긴한데)",
-                      "children": [
-                        {
-                          "id": "Fn137aQyaTX5",
-                          "text": "버튼 구성, 배치 및 반응",
-                          "children": [],
-                          "createdAt": 1793790393319,
-                          "updatedAt": 1793790408506
+                          "id": "7bVnGmuEVsDr",
+                          "text": "2. 문제 해결 패턴(ui/ux 같긴한데)",
+                          "children": [
+                            {
+                              "id": "EBGni7UcA8bA",
+                              "text": "방대한 정보량을 어떻게 한 구역(좁은 영역)으로 다 표현을 해냈는지",
+                              "children": [],
+                              "createdAt": 1793790010799,
+                              "updatedAt": 1793790070375
+                            },
+                            {
+                              "id": "JMspp3cJ4lmf",
+                              "text": "방대한 필터 조건, 혹은 온보딩 과정과 같은 기능적 난제의 돌파구 힌트 - 타영역에서 얻는 것도 가능",
+                              "children": [],
+                              "createdAt": 1793790043734,
+                              "updatedAt": 1793790114658
+                            }
+                          ],
+                          "createdAt": 1793789854166,
+                          "updatedAt": 1793790382112,
+                          "note": "\"이 복잡하고 난해한 상황을 어떻게 우회하거나 단순화했는가?\"\n",
+                          "isFolded": true
                         },
                         {
-                          "id": "x4xPj842B3UL",
-                          "text": "상태 변화 등",
-                          "children": [],
-                          "createdAt": 1793790410597,
-                          "updatedAt": 1793790417416
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"사용자의 입력에 시스템이 어떻게 호흡하는가?\"",
-                      "createdAt": 1793790363588,
-                      "updatedAt": 1793790447992
-                    },
-                    {
-                      "id": "lv16AwibNr4i",
-                      "text": "4. 톤앤매너와 정서적 질감",
-                      "children": [
-                        {
-                          "id": "U526n4tRs0dL",
-                          "text": "어조와 화법(voice&tone)",
+                          "id": "hFHtoagHYYJT",
+                          "text": "3. 인터랙션과 반응의 문법(ui/ux 같긴한데)",
                           "children": [
                             {
-                              "id": "jJRs9UcpHrRN",
-                              "text": "친근한지, 딱딱한지, 커뮤체인지 등등",
+                              "id": "Fn137aQyaTX5",
+                              "text": "버튼 구성, 배치 및 반응",
                               "children": [],
-                              "createdAt": 1793790547374,
-                              "updatedAt": 1793790556306
+                              "createdAt": 1793790393319,
+                              "updatedAt": 1793790408506
+                            },
+                            {
+                              "id": "x4xPj842B3UL",
+                              "text": "상태 변화 등",
+                              "children": [],
+                              "createdAt": 1793790410597,
+                              "updatedAt": 1793790417416
                             }
                           ],
-                          "isFolded": true,
-                          "createdAt": 1793790431468,
-                          "updatedAt": 1793790546663
+                          "createdAt": 1793790363588,
+                          "updatedAt": 1793790447992,
+                          "note": "\"사용자의 입력에 시스템이 어떻게 호흡하는가?\"",
+                          "isFolded": true
                         },
                         {
-                          "id": "D7AijtnckkEn",
-                          "text": "여백, 간격, 폰트, 크기 등등 '텍스트 시각적' 질감",
-                          "children": [],
-                          "createdAt": 1793790556649,
-                          "updatedAt": 1793790597413
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"사용자에게 어떤 사람(브랜드)처럼 말하고 느껴지게 할 것인가?\"",
-                      "createdAt": 1793790418007,
-                      "updatedAt": 1793790629717
-                    },
-                    {
-                      "id": "58eOyTaXymqk",
-                      "text": "5. 조형적 토큰과 비례 감각",
-                      "children": [
-                        {
-                          "id": "gY1Cb4eyNgnO",
-                          "text": "글자와 다른 구성 요소들의 배치",
-                          "children": [],
-                          "createdAt": 1793790642519,
-                          "updatedAt": 1793790672607
+                          "id": "lv16AwibNr4i",
+                          "text": "4. 톤앤매너와 정서적 질감",
+                          "children": [
+                            {
+                              "id": "U526n4tRs0dL",
+                              "text": "어조와 화법(voice&tone)",
+                              "children": [
+                                {
+                                  "id": "jJRs9UcpHrRN",
+                                  "text": "친근한지, 딱딱한지, 커뮤체인지 등등",
+                                  "children": [],
+                                  "createdAt": 1793790547374,
+                                  "updatedAt": 1793790556306
+                                }
+                              ],
+                              "createdAt": 1793790431468,
+                              "updatedAt": 1793790546663,
+                              "isFolded": true
+                            },
+                            {
+                              "id": "D7AijtnckkEn",
+                              "text": "여백, 간격, 폰트, 크기 등등 '텍스트 시각적' 질감",
+                              "children": [],
+                              "createdAt": 1793790556649,
+                              "updatedAt": 1793790597413
+                            }
+                          ],
+                          "createdAt": 1793790418007,
+                          "updatedAt": 1793790629717,
+                          "note": "\"사용자에게 어떤 사람(브랜드)처럼 말하고 느껴지게 할 것인가?\"",
+                          "isFolded": true
                         },
                         {
-                          "id": "mXoDDHlA1Rml",
-                          "text": "글자 내에서도 시각적으로 비춰지는 비율, 혹은 적절하고 안정감 있는 view, layout",
-                          "children": [],
-                          "createdAt": 1793790673694,
-                          "updatedAt": 1793790729377
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"각 요소들이 어떤 규칙과 비례로 배치되어 있는가?\"\n",
-                      "createdAt": 1793790599027,
-                      "updatedAt": 1793791002919
-                    },
-                    {
-                      "id": "ySfLbDrFAaOt",
-                      "text": "6. 시장의 기대치와 기준선",
-                      "children": [
-                        {
-                          "id": "35QsYu64L2Fi",
-                          "text": "암묵적 컨벤션",
+                          "id": "58eOyTaXymqk",
+                          "text": "5. 조형적 토큰과 비례 감각",
                           "children": [
                             {
-                              "id": "rfluAQrTgcpm",
-                              "text": "필수적으로 구성되어야하는 구성 요소들과 배치 포지션 등등",
+                              "id": "gY1Cb4eyNgnO",
+                              "text": "글자와 다른 구성 요소들의 배치",
                               "children": [],
-                              "createdAt": 1793791192583,
-                              "updatedAt": 1793791197003
+                              "createdAt": 1793790642519,
+                              "updatedAt": 1793790672607
+                            },
+                            {
+                              "id": "mXoDDHlA1Rml",
+                              "text": "글자 내에서도 시각적으로 비춰지는 비율, 혹은 적절하고 안정감 있는 view, layout",
+                              "children": [],
+                              "createdAt": 1793790673694,
+                              "updatedAt": 1793790729377
                             }
                           ],
-                          "createdAt": 1793791013167,
-                          "updatedAt": 1793791196102
+                          "createdAt": 1793790599027,
+                          "updatedAt": 1793791002919,
+                          "note": "\"각 요소들이 어떤 규칙과 비례로 배치되어 있는가?\"\n",
+                          "isFolded": true
                         },
                         {
-                          "id": "RToSrPYYQ5Jf",
-                          "text": "업계의 디폴트 규격",
+                          "id": "ySfLbDrFAaOt",
+                          "text": "6. 시장의 기대치와 기준선",
                           "children": [
                             {
-                              "id": "y1twqg29Agzx",
-                              "text": "굳이 새로운 방식이나 규격을 발명해 사용자의 피로도를 높이지 않기 위해",
-                              "children": [],
-                              "createdAt": 1793791329591,
-                              "updatedAt": 1793791356604
+                              "id": "35QsYu64L2Fi",
+                              "text": "암묵적 컨벤션",
+                              "children": [
+                                {
+                                  "id": "rfluAQrTgcpm",
+                                  "text": "필수적으로 구성되어야하는 구성 요소들과 배치 포지션 등등",
+                                  "children": [],
+                                  "createdAt": 1793791192583,
+                                  "updatedAt": 1793791197003
+                                }
+                              ],
+                              "createdAt": 1793791013167,
+                              "updatedAt": 1793791196102
+                            },
+                            {
+                              "id": "RToSrPYYQ5Jf",
+                              "text": "업계의 디폴트 규격",
+                              "children": [
+                                {
+                                  "id": "y1twqg29Agzx",
+                                  "text": "굳이 새로운 방식이나 규격을 발명해 사용자의 피로도를 높이지 않기 위해",
+                                  "children": [],
+                                  "createdAt": 1793791329591,
+                                  "updatedAt": 1793791356604
+                                }
+                              ],
+                              "createdAt": 1793791188223,
+                              "updatedAt": 1793791328714
                             }
                           ],
-                          "createdAt": 1793791188223,
-                          "updatedAt": 1793791328714
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"사용자가 결함으로 느끼지 않을 최소한의 상식선은 어디인가?\"",
-                      "createdAt": 1793791005742,
-                      "updatedAt": 1793791371091
-                    },
-                    {
-                      "id": "JIzVpI9YXHkL",
-                      "text": "7. 협업의 언어를 일치시키는 닻",
-                      "children": [
-                        {
-                          "id": "8O0piO2DNNjN",
-                          "text": "느낌이나 애매한 추상적 형용사 대신 시각적 증거물로써 앵커를 놓는다",
-                          "children": [],
-                          "createdAt": 1793791447793,
-                          "updatedAt": 1793791476514
+                          "createdAt": 1793791005742,
+                          "updatedAt": 1793791371091,
+                          "note": "\"사용자가 결함으로 느끼지 않을 최소한의 상식선은 어디인가?\"",
+                          "isFolded": true
                         },
                         {
-                          "id": "9KERUYaA64RK",
-                          "text": "모호하고 암묵적이며 사람마다 다르게 받아들일 수 있는 언어적 오차를 시각적 합의점 제시를 통해 줄여줌",
+                          "id": "JIzVpI9YXHkL",
+                          "text": "7. 협업의 언어를 일치시키는 닻",
+                          "children": [
+                            {
+                              "id": "8O0piO2DNNjN",
+                              "text": "느낌이나 애매한 추상적 형용사 대신 시각적 증거물로써 앵커를 놓는다",
+                              "children": [],
+                              "createdAt": 1793791447793,
+                              "updatedAt": 1793791476514
+                            },
+                            {
+                              "id": "9KERUYaA64RK",
+                              "text": "모호하고 암묵적이며 사람마다 다르게 받아들일 수 있는 언어적 오차를 시각적 합의점 제시를 통해 줄여줌",
+                              "children": [],
+                              "createdAt": 1793791476689,
+                              "updatedAt": 1793791582374
+                            }
+                          ],
+                          "createdAt": 1793791377135,
+                          "updatedAt": 1793791602849,
+                          "note": "\"우리가 말하는 애매한 기준을 어디에 둘 것인가?\"",
+                          "isFolded": true
+                        }
+                      ],
+                      "createdAt": 1793789557686,
+                      "updatedAt": 1793794612759,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "c7p5w00lHxWx",
+                      "text": "그렇다면 '에이전트'와 소통을 할 때 레퍼런스로써 협업을 한다는 것은 어떤 점이 가장 중요한 것인가?",
+                      "children": [
+                        {
+                          "id": "bh3vWMohZHTh",
+                          "text": "사람이 말로 설명하거나 채팅으로 피드백을 하는 것을 최대한 줄여야한다. 마찬가지 레퍼런스 컨센서스 피드백, 조율로만 피로도를 느낀다면 그것은 가장 안좋은 신호이다",
                           "children": [],
-                          "createdAt": 1793791476689,
-                          "updatedAt": 1793791582374
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"우리가 말하는 애매한 기준을 어디에 둘 것인가?\"",
-                      "createdAt": 1793791377135,
-                      "updatedAt": 1793791602849
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793789557686,
-                  "updatedAt": 1793794612759
-                },
-                {
-                  "id": "c7p5w00lHxWx",
-                  "text": "그렇다면 '에이전트'와 소통을 할 때 레퍼런스로써 협업을 한다는 것은 어떤 점이 가장 중요한 것인가?",
-                  "children": [
-                    {
-                      "id": "bh3vWMohZHTh",
-                      "text": "사람이 말로 설명하거나 채팅으로 피드백을 하는 것을 최대한 줄여야한다. 마찬가지 레퍼런스 컨센서스 피드백, 조율로만 피로도를 느낀다면 그것은 가장 안좋은 신호이다",
-                      "children": [],
-                      "createdAt": 1793794652496,
-                      "updatedAt": 1793794704458
-                    },
-                    {
-                      "id": "fred5AAvdVVN",
-                      "text": "1. 미리보기 2~3 후보군 중 픽(구현된 프로토타입 미리보기)",
-                      "children": [],
-                      "createdAt": 1793794708039,
-                      "updatedAt": 1793794744419
-                    },
-                    {
-                      "id": "DhVOz9i0dpwq",
-                      "text": "2. 자동 전체 원심분리 및 적용 on/off 를 통한 diff 직관적 시각화",
-                      "children": [],
-                      "createdAt": 1793794744878,
-                      "updatedAt": 1793794771396
-                    }
-                  ],
-                  "isFolded": true,
-                  "note": "\"Show Don't Tell!\", \"나이브한 느낌 전달과 알잘딱한 반영\"",
-                  "createdAt": 1793791617720,
-                  "updatedAt": 1793794850392
-                },
-                {
-                  "id": "X9XwyiOtZrQA",
-                  "text": "지금 이건 ui/ux 기준으로만 얘기한 것 같은데 '문서'를 기준으로 본다면 무엇이 달라지나 그래도 동일한가?",
-                  "children": [
-                    {
-                      "id": "Krycpm5UL9QU",
-                      "text": "vs UI/UX 레퍼런스",
-                      "children": [],
-                      "note": "\"사용자가 무엇을 만지고 겪는가(Experience)를 참조하는 것\"",
-                      "createdAt": 1793796786533,
-                      "updatedAt": 1793796829454
-                    },
-                    {
-                      "id": "6vzvD7gNxuSK",
-                      "text": "1. 스캐너빌리티와 정보 밀도",
-                      "children": [
-                        {
-                          "id": "0gWn2kaKBTm7",
-                          "text": "독자의 인지 피로도를 줄이기 위한 글 호흡 조절 장치",
-                          "children": [
-                            {
-                              "id": "Z9QFTHsjJAfm",
-                              "text": "줄글의 호흡(단락의 길이), 강조 볼드 처리 주기, 인용구(Callout) 박스의 위치, 개조식 불릿 등등",
-                              "children": [],
-                              "createdAt": 1793795407485,
-                              "updatedAt": 1793795437915
-                            }
-                          ],
-                          "isFolded": true,
-                          "createdAt": 1793795387977,
-                          "updatedAt": 1793795446213
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"정독하지 않고 훑어보는 사람에게 어떻게 핵심을 꽂을 것인가?\"\n",
-                      "createdAt": 1793795217017,
-                      "updatedAt": 1793795385880
-                    },
-                    {
-                      "id": "D2JadcuN04tA",
-                      "text": "2. 근거 및 데이터 증명 방식",
-                      "children": [
-                        {
-                          "id": "b7CQjQBrPr5g",
-                          "text": "문서의 설득력과 무게감을 더하는 방식",
-                          "children": [
-                            {
-                              "id": "6pN61ar6R9rB",
-                              "text": "통계 표를 사용하는가? 도식화를 많이 활용해서 직관적인 설득력을 높이되 압축하는가? 권위자의 한 줄을 반드시 단락 끝에 두는가 등등",
-                              "children": [],
-                              "createdAt": 1793795739917,
-                              "updatedAt": 1793795778247
-                            }
-                          ],
-                          "createdAt": 1793795459228,
-                          "updatedAt": 1793795739042
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"주장을 어떤 형태의 데이터로 입증하고 있는가?\"",
-                      "createdAt": 1793795448495,
-                      "updatedAt": 1793795788373
-                    },
-                    {
-                      "id": "VCfgGQrh56Y8",
-                      "text": "3. 문서의 격식과 메타 규격",
-                      "children": [
-                        {
-                          "id": "5cL7R3JcBe0w",
-                          "text": "문서의 권위 부여 장치",
-                          "children": [
-                            {
-                              "id": "AVhApkgJLFmz",
-                              "text": "표지 양식, 문서 번호/버전 관리 블록, 요약문의 유무, 결재란 및 각주 표기법 등",
-                              "children": [],
-                              "createdAt": 1793795827029,
-                              "updatedAt": 1793795833299
-                            }
-                          ],
-                          "createdAt": 1793795798719,
-                          "updatedAt": 1793795832423
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"형식 자체에서 어떻게 전문성과 공신력을 풍길 것인가?\"",
-                      "createdAt": 1793795791255,
-                      "updatedAt": 1793795852406
-                    },
-                    {
-                      "id": "eOuYzwNI5rs8",
-                      "text": "4. 서술 프레임워크",
-                      "children": [
-                        {
-                          "id": "s9ypgaP3wV0A",
-                          "text": "수정<- [2. 문제 해결 패턴(ui/ux 같긴한데)]",
-                          "children": [],
-                          "createdAt": 1793796105025,
-                          "updatedAt": 1793796119373
+                          "createdAt": 1793794652496,
+                          "updatedAt": 1793794704458
                         },
                         {
-                          "id": "ojnrBMJPfoUz",
-                          "text": "화면 기능의 우회가 아니라, 독자의 반론을 잠재우고 설득하는 논증의 틀",
-                          "children": [
-                            {
-                              "id": "cxSU269YTNg2",
-                              "text": "SCQA 기법, 피라미드 원칙, PREP 기법, 결론-근거-실행 구조 등)",
-                              "children": [],
-                              "createdAt": 1793796264305,
-                              "updatedAt": 1793796285388
-                            }
-                          ],
-                          "createdAt": 1793796243507,
-                          "updatedAt": 1793796263564
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "\"논증의 틀\"",
-                      "createdAt": 1793795860959,
-                      "updatedAt": 1793796240719
-                    },
-                    {
-                      "id": "l5qLGrPmaDwa",
-                      "text": "5. 타이포그래피 및 활자 조판",
-                      "children": [
-                        {
-                          "id": "2S1PSjTbCSH0",
-                          "text": "수정<- [5. 조형적 토큰과 비례 감각]",
+                          "id": "fred5AAvdVVN",
+                          "text": "1. 미리보기 2~3 후보군 중 픽(구현된 프로토타입 미리보기)",
                           "children": [],
-                          "createdAt": 1793796435249,
-                          "updatedAt": 1793796472496
+                          "createdAt": 1793794708039,
+                          "updatedAt": 1793794744419
                         },
                         {
-                          "id": "FQcLO5VSRvjP",
-                          "text": "컬러나 아이콘보다는 폰트 계층(H1, H2, H3의 크기/자간/행간 비례), 인쇄/화면 여백, 다단, 그리드, 표의 스타일 등",
+                          "id": "DhVOz9i0dpwq",
+                          "text": "2. 자동 전체 원심분리 및 적용 on/off 를 통한 diff 직관적 시각화",
                           "children": [],
-                          "createdAt": 1793796476230,
-                          "updatedAt": 1793796526851
+                          "createdAt": 1793794744878,
+                          "updatedAt": 1793794771396
                         }
                       ],
-                      "isFolded": true,
-                      "note": "\"Layout Grid & Typography\"",
-                      "createdAt": 1793796286074,
-                      "updatedAt": 1793796547926
+                      "createdAt": 1793791617720,
+                      "updatedAt": 1793794850392,
+                      "note": "\"Show Don't Tell!\", \"나이브한 느낌 전달과 알잘딱한 반영\"",
+                      "isFolded": true
                     },
                     {
-                      "id": "mhJQG7H2Ly47",
-                      "text": "6. 장르 규약",
+                      "id": "X9XwyiOtZrQA",
+                      "text": "지금 이건 ui/ux 기준으로만 얘기한 것 같은데 '문서'를 기준으로 본다면 무엇이 달라지나 그래도 동일한가?",
                       "children": [
                         {
-                          "id": "xRlJEDh0vqPd",
-                          "text": "수정 <- [시장의 기대치와 기준선]",
+                          "id": "Krycpm5UL9QU",
+                          "text": "vs UI/UX 레퍼런스",
                           "children": [],
-                          "createdAt": 1793796571187,
-                          "updatedAt": 1793796603145
+                          "createdAt": 1793796786533,
+                          "updatedAt": 1793796829454,
+                          "note": "\"사용자가 무엇을 만지고 겪는가(Experience)를 참조하는 것\""
                         },
                         {
-                          "id": "tPgxXmx7JVvZ",
-                          "text": "문서 장르별 독자의 암묵적 기대치",
+                          "id": "6vzvD7gNxuSK",
+                          "text": "1. 스캐너빌리티와 정보 밀도",
                           "children": [
                             {
-                              "id": "Y3t6jOdGWdcY",
-                              "text": "공문서의 건조한 개조식 종결어미, seo 블로그의 h2 태그 배치화 후킹 인트로, 투자 제안서의 단골 기법 등등",
-                              "children": [],
-                              "createdAt": 1793796583108,
-                              "updatedAt": 1793796645568
+                              "id": "0gWn2kaKBTm7",
+                              "text": "독자의 인지 피로도를 줄이기 위한 글 호흡 조절 장치",
+                              "children": [
+                                {
+                                  "id": "Z9QFTHsjJAfm",
+                                  "text": "줄글의 호흡(단락의 길이), 강조 볼드 처리 주기, 인용구(Callout) 박스의 위치, 개조식 불릿 등등",
+                                  "children": [],
+                                  "createdAt": 1793795407485,
+                                  "updatedAt": 1793795437915
+                                }
+                              ],
+                              "createdAt": 1793795387977,
+                              "updatedAt": 1793795446213,
+                              "isFolded": true
                             }
                           ],
-                          "createdAt": 1793796587593,
-                          "updatedAt": 1793796587593
+                          "createdAt": 1793795217017,
+                          "updatedAt": 1793795385880,
+                          "note": "\"정독하지 않고 훑어보는 사람에게 어떻게 핵심을 꽂을 것인가?\"\n",
+                          "isFolded": true
+                        },
+                        {
+                          "id": "D2JadcuN04tA",
+                          "text": "2. 근거 및 데이터 증명 방식",
+                          "children": [
+                            {
+                              "id": "b7CQjQBrPr5g",
+                              "text": "문서의 설득력과 무게감을 더하는 방식",
+                              "children": [
+                                {
+                                  "id": "6pN61ar6R9rB",
+                                  "text": "통계 표를 사용하는가? 도식화를 많이 활용해서 직관적인 설득력을 높이되 압축하는가? 권위자의 한 줄을 반드시 단락 끝에 두는가 등등",
+                                  "children": [],
+                                  "createdAt": 1793795739917,
+                                  "updatedAt": 1793795778247
+                                }
+                              ],
+                              "createdAt": 1793795459228,
+                              "updatedAt": 1793795739042
+                            }
+                          ],
+                          "createdAt": 1793795448495,
+                          "updatedAt": 1793795788373,
+                          "note": "\"주장을 어떤 형태의 데이터로 입증하고 있는가?\"",
+                          "isFolded": true
+                        },
+                        {
+                          "id": "VCfgGQrh56Y8",
+                          "text": "3. 문서의 격식과 메타 규격",
+                          "children": [
+                            {
+                              "id": "5cL7R3JcBe0w",
+                              "text": "문서의 권위 부여 장치",
+                              "children": [
+                                {
+                                  "id": "AVhApkgJLFmz",
+                                  "text": "표지 양식, 문서 번호/버전 관리 블록, 요약문의 유무, 결재란 및 각주 표기법 등",
+                                  "children": [],
+                                  "createdAt": 1793795827029,
+                                  "updatedAt": 1793795833299
+                                }
+                              ],
+                              "createdAt": 1793795798719,
+                              "updatedAt": 1793795832423
+                            }
+                          ],
+                          "createdAt": 1793795791255,
+                          "updatedAt": 1793795852406,
+                          "note": "\"형식 자체에서 어떻게 전문성과 공신력을 풍길 것인가?\"",
+                          "isFolded": true
+                        },
+                        {
+                          "id": "eOuYzwNI5rs8",
+                          "text": "4. 서술 프레임워크",
+                          "children": [
+                            {
+                              "id": "s9ypgaP3wV0A",
+                              "text": "수정<- [2. 문제 해결 패턴(ui/ux 같긴한데)]",
+                              "children": [],
+                              "createdAt": 1793796105025,
+                              "updatedAt": 1793796119373
+                            },
+                            {
+                              "id": "ojnrBMJPfoUz",
+                              "text": "화면 기능의 우회가 아니라, 독자의 반론을 잠재우고 설득하는 논증의 틀",
+                              "children": [
+                                {
+                                  "id": "cxSU269YTNg2",
+                                  "text": "SCQA 기법, 피라미드 원칙, PREP 기법, 결론-근거-실행 구조 등)",
+                                  "children": [],
+                                  "createdAt": 1793796264305,
+                                  "updatedAt": 1793796285388
+                                }
+                              ],
+                              "createdAt": 1793796243507,
+                              "updatedAt": 1793796263564
+                            }
+                          ],
+                          "createdAt": 1793795860959,
+                          "updatedAt": 1793796240719,
+                          "note": "\"논증의 틀\"",
+                          "isFolded": true
+                        },
+                        {
+                          "id": "l5qLGrPmaDwa",
+                          "text": "5. 타이포그래피 및 활자 조판",
+                          "children": [
+                            {
+                              "id": "2S1PSjTbCSH0",
+                              "text": "수정<- [5. 조형적 토큰과 비례 감각]",
+                              "children": [],
+                              "createdAt": 1793796435249,
+                              "updatedAt": 1793796472496
+                            },
+                            {
+                              "id": "FQcLO5VSRvjP",
+                              "text": "컬러나 아이콘보다는 폰트 계층(H1, H2, H3의 크기/자간/행간 비례), 인쇄/화면 여백, 다단, 그리드, 표의 스타일 등",
+                              "children": [],
+                              "createdAt": 1793796476230,
+                              "updatedAt": 1793796526851
+                            }
+                          ],
+                          "createdAt": 1793796286074,
+                          "updatedAt": 1793796547926,
+                          "note": "\"Layout Grid & Typography\"",
+                          "isFolded": true
+                        },
+                        {
+                          "id": "mhJQG7H2Ly47",
+                          "text": "6. 장르 규약",
+                          "children": [
+                            {
+                              "id": "xRlJEDh0vqPd",
+                              "text": "수정 <- [시장의 기대치와 기준선]",
+                              "children": [],
+                              "createdAt": 1793796571187,
+                              "updatedAt": 1793796603145
+                            },
+                            {
+                              "id": "tPgxXmx7JVvZ",
+                              "text": "문서 장르별 독자의 암묵적 기대치",
+                              "children": [
+                                {
+                                  "id": "Y3t6jOdGWdcY",
+                                  "text": "공문서의 건조한 개조식 종결어미, seo 블로그의 h2 태그 배치화 후킹 인트로, 투자 제안서의 단골 기법 등등",
+                                  "children": [],
+                                  "createdAt": 1793796583108,
+                                  "updatedAt": 1793796645568
+                                }
+                              ],
+                              "createdAt": 1793796587593,
+                              "updatedAt": 1793796587593
+                            }
+                          ],
+                          "createdAt": 1793796561376,
+                          "updatedAt": 1793796662223,
+                          "note": "\"문서 Convention, 암묵적 기준치\"",
+                          "isFolded": true
                         }
                       ],
-                      "isFolded": true,
-                      "note": "\"문서 Convention, 암묵적 기준치\"",
-                      "createdAt": 1793796561376,
-                      "updatedAt": 1793796662223
-                    }
-                  ],
-                  "isFolded": true,
-                  "note": "\"독자의 뇌가 정보를 소화하는 순서(Cognitive Flow)와 그럴듯함(Credibility)를 참조하는 것\"",
-                  "createdAt": 1793790834327,
-                  "updatedAt": 1793796842722
-                },
-                {
-                  "id": "KE8tucfFPsyd",
-                  "text": "추출 항목",
-                  "children": [
-                    {
-                      "id": "VQIUOtljKIxz",
-                      "text": "논리 전개??? (스토리 라인)",
-                      "children": [],
-                      "createdAt": 1793788501016,
-                      "updatedAt": 1793788626194
+                      "createdAt": 1793790834327,
+                      "updatedAt": 1793796842722,
+                      "note": "\"독자의 뇌가 정보를 소화하는 순서(Cognitive Flow)와 그럴듯함(Credibility)를 참조하는 것\"",
+                      "isFolded": true
                     },
                     {
-                      "id": "JfpGXX722yjH",
-                      "text": "단어 선택 및 문장 뉘망스",
-                      "children": [],
-                      "createdAt": 1793788505022,
-                      "updatedAt": 1793788551521
-                    },
-                    {
-                      "id": "fvQTmnLyaJm4",
-                      "text": "레이아웃 배치",
-                      "children": [],
-                      "createdAt": 1793788551663,
-                      "updatedAt": 1793788556022
-                    },
-                    {
-                      "id": "vDfhtwnbbtN1",
-                      "text": "전체 구성",
-                      "children": [],
-                      "createdAt": 1793788556218,
-                      "updatedAt": 1793788615828
-                    },
-                    {
-                      "id": "4b9SezxiFC7B",
-                      "text": "스토리 라인",
-                      "children": [],
-                      "createdAt": 1793788616023,
-                      "updatedAt": 1793788620938
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793788494575,
-                  "updatedAt": 1793794612759
-                },
-                {
-                  "id": "RISv69yDdx7H",
-                  "text": "추출 범위",
-                  "children": [
-                    {
-                      "id": "2A03m7Hpe92o",
-                      "text": "한 섹션",
-                      "children": [],
-                      "createdAt": 1793788568386,
-                      "updatedAt": 1793788570006
-                    },
-                    {
-                      "id": "DSbdLgs3Ic6e",
-                      "text": "한 슬롯",
-                      "children": [],
-                      "createdAt": 1793788596216,
-                      "updatedAt": 1793788597408
-                    },
-                    {
-                      "id": "43TLquF5bR3v",
-                      "text": "몇 개의 단락",
-                      "children": [],
-                      "createdAt": 1793788570170,
-                      "updatedAt": 1793788579395
-                    },
-                    {
-                      "id": "W0c0Yt3johOC",
-                      "text": "한 페이지 등",
-                      "children": [],
-                      "createdAt": 1793788588095,
-                      "updatedAt": 1793788594494
-                    },
-                    {
-                      "id": "MRwE27QstD4R",
-                      "text": "전체",
-                      "children": [],
-                      "createdAt": 1793788579778,
-                      "updatedAt": 1793788584554
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793788497539,
-                  "updatedAt": 1793794612759
-                },
-                {
-                  "id": "Dr52vNL0B6WH",
-                  "text": "다른 확장 질문 리스트",
-                  "children": [
-                    {
-                      "id": "NtkvoRMmwMI8",
-                      "text": "이 레이어 중에서 인지적으로는 어렴풋이 느낄 수 있지만 이걸 표현, 즉 시각화해서 보이는 상태로 조작할 수 있는 것은 다른 문제이지 않나? 가능한 것과 불가능한 것 그리고 그렇게 생각하는 근거?",
-                      "children": [],
-                      "createdAt": 1793790851618,
-                      "updatedAt": 1793790907945
-                    },
-                    {
-                      "id": "1NrV9UHkHgoh",
-                      "text": "정보의 밀도나 서술, 작성 요령 같은 것들은? 가령, '논문' 작성 방식과 '기술 블로그', '여행 블로그' 작성 방식은 아예 다른잖아. 어떻게 보면 '문법', '기본기'?이지. 반드시 포함되어야하는 구성 그리고 참조나 인용을 많이 쓸 것이냐 아예 없이 가져갈 것이냐 등등",
-                      "children": [],
-                      "isCompleted": true,
-                      "completedAt": 1793795229400,
-                      "createdAt": 1793790908201,
-                      "updatedAt": 1793795229400
-                    },
-                    {
-                      "id": "8vkiNNqt2hLu",
-                      "text": "혹시 레퍼런스 주입 혹은 컨센서스 비용 절감에 꽂히고 진심이여서 어떻게든 에이전트에게 그걸 하는 방법만 갈구하는 오픈소스, 모듈, 파츠, 프로젝트들이 있나? 요새 jev도 그렇고 별의별 모듈들이 다 시도 되잖아",
-                      "children": [],
-                      "createdAt": 1793792924783,
-                      "updatedAt": 1793792969759
-                    }
-                  ],
-                  "isFolded": false,
-                  "createdAt": 1793790818543,
-                  "updatedAt": 1793794635587
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1793794573873,
-              "updatedAt": 1793794619188
-            },
-            {
-              "id": "6xMdRye0FdC3",
-              "text": "참조 레이어 상태1",
-              "children": [
-                {
-                  "id": "yzdX1l10J4EP",
-                  "text": "패널 상태",
-                  "children": [
-                    {
-                      "id": "dCjVwz7nrZXC",
-                      "text": "패널 레이어",
-                      "children": [],
-                      "isCompleted": true,
-                      "completedAt": 1793766645837,
-                      "file": {
-                        "target": "Pasted image 20261104130215.png"
-                      },
-                      "createdAt": 1793764936022,
-                      "updatedAt": 1793766645837
-                    },
-                    {
-                      "id": "kHFpk5RioMfF",
-                      "text": "프리뷰 미리보기 - Navigation",
+                      "id": "KE8tucfFPsyd",
+                      "text": "추출 항목",
                       "children": [
                         {
-                          "id": "XBUVMqwOmf0f",
-                          "text": "프리뷰 아이디어1",
-                          "children": [
-                            {
-                              "id": "2oUhhKvDCYpD",
-                              "text": "썸네일로 교체 + 아래쪽 미리보기",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261104144635.png"
-                              },
-                              "createdAt": 1793771194850,
-                              "updatedAt": 1793771208745
-                            }
-                          ],
-                          "isFolded": true,
+                          "id": "VQIUOtljKIxz",
+                          "text": "논리 전개??? (스토리 라인)",
+                          "children": [],
+                          "createdAt": 1793788501016,
+                          "updatedAt": 1793788626194
+                        },
+                        {
+                          "id": "JfpGXX722yjH",
+                          "text": "단어 선택 및 문장 뉘망스",
+                          "children": [],
+                          "createdAt": 1793788505022,
+                          "updatedAt": 1793788551521
+                        },
+                        {
+                          "id": "fvQTmnLyaJm4",
+                          "text": "레이아웃 배치",
+                          "children": [],
+                          "createdAt": 1793788551663,
+                          "updatedAt": 1793788556022
+                        },
+                        {
+                          "id": "vDfhtwnbbtN1",
+                          "text": "전체 구성",
+                          "children": [],
+                          "createdAt": 1793788556218,
+                          "updatedAt": 1793788615828
+                        },
+                        {
+                          "id": "4b9SezxiFC7B",
+                          "text": "스토리 라인",
+                          "children": [],
+                          "createdAt": 1793788616023,
+                          "updatedAt": 1793788620938
+                        }
+                      ],
+                      "createdAt": 1793788494575,
+                      "updatedAt": 1793794612759,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "RISv69yDdx7H",
+                      "text": "추출 범위",
+                      "children": [
+                        {
+                          "id": "2A03m7Hpe92o",
+                          "text": "한 섹션",
+                          "children": [],
+                          "createdAt": 1793788568386,
+                          "updatedAt": 1793788570006
+                        },
+                        {
+                          "id": "DSbdLgs3Ic6e",
+                          "text": "한 슬롯",
+                          "children": [],
+                          "createdAt": 1793788596216,
+                          "updatedAt": 1793788597408
+                        },
+                        {
+                          "id": "43TLquF5bR3v",
+                          "text": "몇 개의 단락",
+                          "children": [],
+                          "createdAt": 1793788570170,
+                          "updatedAt": 1793788579395
+                        },
+                        {
+                          "id": "W0c0Yt3johOC",
+                          "text": "한 페이지 등",
+                          "children": [],
+                          "createdAt": 1793788588095,
+                          "updatedAt": 1793788594494
+                        },
+                        {
+                          "id": "MRwE27QstD4R",
+                          "text": "전체",
+                          "children": [],
+                          "createdAt": 1793788579778,
+                          "updatedAt": 1793788584554
+                        }
+                      ],
+                      "createdAt": 1793788497539,
+                      "updatedAt": 1793794612759,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "Dr52vNL0B6WH",
+                      "text": "다른 확장 질문 리스트",
+                      "children": [
+                        {
+                          "id": "NtkvoRMmwMI8",
+                          "text": "이 레이어 중에서 인지적으로는 어렴풋이 느낄 수 있지만 이걸 표현, 즉 시각화해서 보이는 상태로 조작할 수 있는 것은 다른 문제이지 않나? 가능한 것과 불가능한 것 그리고 그렇게 생각하는 근거?",
+                          "children": [],
+                          "createdAt": 1793790851618,
+                          "updatedAt": 1793790907945
+                        },
+                        {
+                          "id": "1NrV9UHkHgoh",
+                          "text": "정보의 밀도나 서술, 작성 요령 같은 것들은? 가령, '논문' 작성 방식과 '기술 블로그', '여행 블로그' 작성 방식은 아예 다른잖아. 어떻게 보면 '문법', '기본기'?이지. 반드시 포함되어야하는 구성 그리고 참조나 인용을 많이 쓸 것이냐 아예 없이 가져갈 것이냐 등등",
+                          "children": [],
+                          "createdAt": 1793790908201,
+                          "updatedAt": 1793795229400,
                           "isCompleted": true,
-                          "completedAt": 1793776377393,
+                          "completedAt": 1793795229400
+                        },
+                        {
+                          "id": "8vkiNNqt2hLu",
+                          "text": "혹시 레퍼런스 주입 혹은 컨센서스 비용 절감에 꽂히고 진심이여서 어떻게든 에이전트에게 그걸 하는 방법만 갈구하는 오픈소스, 모듈, 파츠, 프로젝트들이 있나? 요새 jev도 그렇고 별의별 모듈들이 다 시도 되잖아",
+                          "children": [],
+                          "createdAt": 1793792924783,
+                          "updatedAt": 1793792969759
+                        }
+                      ],
+                      "createdAt": 1793790818543,
+                      "updatedAt": 1793794635587,
+                      "isFolded": false
+                    }
+                  ],
+                  "createdAt": 1793794573873,
+                  "updatedAt": 1793794619188,
+                  "isFolded": false
+                },
+                {
+                  "id": "6xMdRye0FdC3",
+                  "text": "참조 레이어 상태1",
+                  "children": [
+                    {
+                      "id": "yzdX1l10J4EP",
+                      "text": "패널 상태",
+                      "children": [
+                        {
+                          "id": "dCjVwz7nrZXC",
+                          "text": "패널 레이어",
+                          "children": [],
                           "file": {
-                            "target": "Pasted image 20261104133030.png"
+                            "target": "Pasted image 20261104130215.png"
                           },
-                          "createdAt": 1793766630043,
-                          "updatedAt": 1793776377393
+                          "createdAt": 1793764936022,
+                          "updatedAt": 1793766645837,
+                          "isCompleted": true,
+                          "completedAt": 1793766645837
                         },
                         {
-                          "id": "F8oNq0peGfCP",
-                          "text": "ctrl + 마우스 호버",
-                          "children": [],
-                          "createdAt": 1793766782800,
-                          "updatedAt": 1793766789601
-                        }
-                      ],
-                      "isFolded": false,
-                      "createdAt": 1793765106608,
-                      "updatedAt": 1793769413297
-                    },
-                    {
-                      "id": "5OKPRhKJ9OIG",
-                      "text": "추가, 제거, 참조 영역 혹은 참조 항목",
-                      "children": [],
-                      "file": {
-                        "target": "Pasted image 20261104132033.png"
-                      },
-                      "createdAt": 1793765628413,
-                      "updatedAt": 1793766043522
-                    }
-                  ],
-                  "isFolded": true,
-                  "isCompleted": false,
-                  "createdAt": 1793764933152,
-                  "updatedAt": 1793766777529
-                },
-                {
-                  "id": "8QdrhPMr0pV0",
-                  "text": "패널 상태2",
-                  "children": [
-                    {
-                      "id": "tBAFv0rVyb07",
-                      "text": "레퍼런스 참조 박스(1)과 레퍼런스 작업창(2) 재편",
-                      "children": [
-                        {
-                          "id": "o1Pns7wJS3IT",
-                          "text": "outline 패널 -> 레퍼런스 박스 혹은 리스트 패널로 취급",
+                          "id": "kHFpk5RioMfF",
+                          "text": "프리뷰 미리보기 - Navigation",
                           "children": [
                             {
-                              "id": "VbaGu0WgG4hw",
-                              "text": "아예 activity bar 나 작업창이랑 통합해도 무방할 듯",
-                              "children": [],
-                              "createdAt": 1793794429912,
-                              "updatedAt": 1793794456175
+                              "id": "XBUVMqwOmf0f",
+                              "text": "프리뷰 아이디어1",
+                              "children": [
+                                {
+                                  "id": "2oUhhKvDCYpD",
+                                  "text": "썸네일로 교체 + 아래쪽 미리보기",
+                                  "children": [],
+                                  "createdAt": 1793771194850,
+                                  "updatedAt": 1793771208745,
+                                  "file": {
+                                    "target": "Pasted image 20261104144635.png"
+                                  }
+                                }
+                              ],
+                              "file": {
+                                "target": "Pasted image 20261104133030.png"
+                              },
+                              "createdAt": 1793766630043,
+                              "updatedAt": 1793776377393,
+                              "isCompleted": true,
+                              "completedAt": 1793776377393,
+                              "isFolded": true
                             },
                             {
-                              "id": "UyQI0hsVTKc9",
-                              "text": "설정 관련 다 빼기",
+                              "id": "F8oNq0peGfCP",
+                              "text": "ctrl + 마우스 호버",
                               "children": [],
-                              "createdAt": 1793794505759,
-                              "updatedAt": 1793794511588
-                            },
-                            {
-                              "id": "sKFRaXiLADti",
-                              "text": "작업창 '뷰' on/off 버튼 추가",
-                              "children": [],
-                              "createdAt": 1793794511716,
-                              "updatedAt": 1793794523352
+                              "createdAt": 1793766782800,
+                              "updatedAt": 1793766789601
                             }
                           ],
-                          "createdAt": 1793794387470,
-                          "updatedAt": 1793794388974
+                          "createdAt": 1793765106608,
+                          "updatedAt": 1793769413297,
+                          "isFolded": true
                         },
                         {
-                          "id": "GHdrxJIY0Qer",
-                          "text": "작업창 개편",
-                          "children": [
-                            {
-                              "id": "6bZkCHJp60bu",
-                              "text": "1. 아코디언 추가 접히게",
-                              "children": [],
-                              "createdAt": 1793794463884,
-                              "updatedAt": 1793794469309
-                            },
-                            {
-                              "id": "4HriOQGTOZ77",
-                              "text": "2. 뷰 -> 반영 여부를 뜻함, ai와 작업 및 채팅 시 작업창에서 조절 가능하도록",
-                              "children": [],
-                              "createdAt": 1793794470102,
-                              "updatedAt": 1793794501810
-                            },
-                            {
-                              "id": "7Hs9cmJT3vqu",
-                              "text": "탭 전환? 뷰모드 전환? 필요한 속성만 보게",
-                              "children": [],
-                              "createdAt": 1793794501843,
-                              "updatedAt": 1793794543256
-                            }
-                          ],
-                          "createdAt": 1793794456830,
-                          "updatedAt": 1793794463415
+                          "id": "5OKPRhKJ9OIG",
+                          "text": "추가, 제거, 참조 영역 혹은 참조 항목",
+                          "children": [],
+                          "createdAt": 1793765628413,
+                          "updatedAt": 1793766043522,
+                          "file": {
+                            "target": "Pasted image 20261104132033.png"
+                          }
                         }
                       ],
-                      "file": {
-                        "target": "Pasted image 20261104211236.png"
-                      },
-                      "createdAt": 1793794354577,
-                      "updatedAt": 1793794412720
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793794350359,
-                  "updatedAt": 1793794354297
-                },
-                {
-                  "id": "F2afG8kVoTqL",
-                  "text": "작업대에 올리기",
-                  "children": [
-                    {
-                      "id": "EeFcAnCbwP54",
-                      "text": "작업대에 올리면 한 개, 두 개 등 멀티로 올리도록",
-                      "children": [],
-                      "file": {
-                        "target": "Pasted image 20261104131517.png"
-                      },
-                      "createdAt": 1793765695258,
-                      "updatedAt": 1793765738722
+                      "createdAt": 1793764933152,
+                      "updatedAt": 1793766777529,
+                      "isFolded": true,
+                      "isCompleted": false
                     },
                     {
-                      "id": "2yPhuZ7zWGm0",
-                      "text": "레퍼런스 항목 관리, 옵션",
+                      "id": "8QdrhPMr0pV0",
+                      "text": "패널 상태2",
                       "children": [
                         {
-                          "id": "6txDW3ezgOzl",
-                          "text": "개별 섹션 중 참조 지정 및 범위 레퍼런스 인터렉션",
-                          "children": [],
-                          "createdAt": 1793765817607,
-                          "updatedAt": 1793765828527
-                        },
-                        {
-                          "id": "GMPkn2GzQvwo",
-                          "text": "추출 항목 리스트업(배치? 이 영역, 섹션? 내용? 등등",
-                          "children": [],
-                          "createdAt": 1793765766854,
-                          "updatedAt": 1793765828527
+                          "id": "tBAFv0rVyb07",
+                          "text": "레퍼런스 참조 박스(1)과 레퍼런스 작업창(2) 재편",
+                          "children": [
+                            {
+                              "id": "o1Pns7wJS3IT",
+                              "text": "outline 패널 -> 레퍼런스 박스 혹은 리스트 패널로 취급",
+                              "children": [
+                                {
+                                  "id": "VbaGu0WgG4hw",
+                                  "text": "아예 activity bar 나 작업창이랑 통합해도 무방할 듯",
+                                  "children": [],
+                                  "createdAt": 1793794429912,
+                                  "updatedAt": 1793794456175
+                                },
+                                {
+                                  "id": "UyQI0hsVTKc9",
+                                  "text": "설정 관련 다 빼기",
+                                  "children": [],
+                                  "createdAt": 1793794505759,
+                                  "updatedAt": 1793794511588
+                                },
+                                {
+                                  "id": "sKFRaXiLADti",
+                                  "text": "작업창 '뷰' on/off 버튼 추가",
+                                  "children": [],
+                                  "createdAt": 1793794511716,
+                                  "updatedAt": 1793794523352
+                                }
+                              ],
+                              "createdAt": 1793794387470,
+                              "updatedAt": 1793794388974
+                            },
+                            {
+                              "id": "GHdrxJIY0Qer",
+                              "text": "작업창 개편",
+                              "children": [
+                                {
+                                  "id": "6bZkCHJp60bu",
+                                  "text": "1. 아코디언 추가 접히게",
+                                  "children": [],
+                                  "createdAt": 1793794463884,
+                                  "updatedAt": 1793794469309
+                                },
+                                {
+                                  "id": "4HriOQGTOZ77",
+                                  "text": "2. 뷰 -> 반영 여부를 뜻함, ai와 작업 및 채팅 시 작업창에서 조절 가능하도록",
+                                  "children": [],
+                                  "createdAt": 1793794470102,
+                                  "updatedAt": 1793794501810
+                                },
+                                {
+                                  "id": "7Hs9cmJT3vqu",
+                                  "text": "탭 전환? 뷰모드 전환? 필요한 속성만 보게",
+                                  "children": [],
+                                  "createdAt": 1793794501843,
+                                  "updatedAt": 1793794543256
+                                }
+                              ],
+                              "createdAt": 1793794456830,
+                              "updatedAt": 1793794463415
+                            }
+                          ],
+                          "createdAt": 1793794354577,
+                          "updatedAt": 1793794412720,
+                          "file": {
+                            "target": "Pasted image 20261104211236.png"
+                          }
                         }
                       ],
-                      "isFolded": false,
-                      "createdAt": 1793765742685,
-                      "updatedAt": 1793765826627
+                      "createdAt": 1793794350359,
+                      "updatedAt": 1793794354297,
+                      "isFolded": true
                     },
                     {
-                      "id": "VZHW8rgBHQ3s",
-                      "text": "새 탭으로 빼기, 모달로 꺼내기, 핀으로 고정하기",
-                      "children": [],
-                      "createdAt": 1793770648364,
-                      "updatedAt": 1793770659908
+                      "id": "F2afG8kVoTqL",
+                      "text": "작업대에 올리기",
+                      "children": [
+                        {
+                          "id": "EeFcAnCbwP54",
+                          "text": "작업대에 올리면 한 개, 두 개 등 멀티로 올리도록",
+                          "children": [],
+                          "createdAt": 1793765695258,
+                          "updatedAt": 1793765738722,
+                          "file": {
+                            "target": "Pasted image 20261104131517.png"
+                          }
+                        },
+                        {
+                          "id": "2yPhuZ7zWGm0",
+                          "text": "레퍼런스 항목 관리, 옵션",
+                          "children": [
+                            {
+                              "id": "6txDW3ezgOzl",
+                              "text": "개별 섹션 중 참조 지정 및 범위 레퍼런스 인터렉션",
+                              "children": [],
+                              "createdAt": 1793765817607,
+                              "updatedAt": 1793765828527
+                            },
+                            {
+                              "id": "GMPkn2GzQvwo",
+                              "text": "추출 항목 리스트업(배치? 이 영역, 섹션? 내용? 등등",
+                              "children": [],
+                              "createdAt": 1793765766854,
+                              "updatedAt": 1793765828527
+                            }
+                          ],
+                          "createdAt": 1793765742685,
+                          "updatedAt": 1793765826627,
+                          "isFolded": false
+                        },
+                        {
+                          "id": "VZHW8rgBHQ3s",
+                          "text": "새 탭으로 빼기, 모달로 꺼내기, 핀으로 고정하기",
+                          "children": [],
+                          "createdAt": 1793770648364,
+                          "updatedAt": 1793770659908
+                        }
+                      ],
+                      "createdAt": 1793765609018,
+                      "updatedAt": 1793765686702,
+                      "isFolded": false
+                    },
+                    {
+                      "id": "ILzNwWlTrVDj",
+                      "text": "작업대 <> 페이즈 간 인터렉션",
+                      "children": [
+                        {
+                          "id": "KwRA648NEZgN",
+                          "text": "참조 <> 아웃라인",
+                          "children": [],
+                          "createdAt": 1793765873958,
+                          "updatedAt": 1793765882138
+                        },
+                        {
+                          "id": "oNd2m1G5hALa",
+                          "text": "참조 <> 뼈대 정의",
+                          "children": [],
+                          "createdAt": 1793765882327,
+                          "updatedAt": 1793765890336
+                        },
+                        {
+                          "id": "2RvUlz08Zh6Q",
+                          "text": "참조 <> 채우기",
+                          "children": [],
+                          "createdAt": 1793765890489,
+                          "updatedAt": 1793765894154
+                        }
+                      ],
+                      "createdAt": 1793765861268,
+                      "updatedAt": 1793765873651,
+                      "isFolded": false
                     }
                   ],
                   "isFolded": false,
-                  "createdAt": 1793765609018,
-                  "updatedAt": 1793765686702
+                  "createdAt": 1793764849322,
+                  "updatedAt": 1793764895869
                 },
                 {
-                  "id": "ILzNwWlTrVDj",
-                  "text": "작업대 <> 페이즈 간 인터렉션",
+                  "id": "QOBeu72SeEUv",
+                  "text": "참조 레이어 뷰포트 아이디어1",
                   "children": [
                     {
-                      "id": "KwRA648NEZgN",
-                      "text": "참조 <> 아웃라인",
-                      "children": [],
-                      "createdAt": 1793765873958,
-                      "updatedAt": 1793765882138
-                    },
-                    {
-                      "id": "oNd2m1G5hALa",
-                      "text": "참조 <> 뼈대 정의",
-                      "children": [],
-                      "createdAt": 1793765882327,
-                      "updatedAt": 1793765890336
-                    },
-                    {
-                      "id": "2RvUlz08Zh6Q",
-                      "text": "참조 <> 채우기",
-                      "children": [],
-                      "createdAt": 1793765890489,
-                      "updatedAt": 1793765894154
+                      "id": "507edlNx4xel",
+                      "text": "레퍼런스로 삼은 형태 별로 다른 뷰를 계획하자 - 레퍼런스 뷰 박스",
+                      "children": [
+                        {
+                          "id": "qhS49PXshjjh",
+                          "text": "논리 전개 -> 좌측 위에 논리 트리 및 서순만",
+                          "children": [],
+                          "createdAt": 1793777319231,
+                          "updatedAt": 1793777332437
+                        },
+                        {
+                          "id": "KpzxQwaljSQz",
+                          "text": "시각적 배치 -> 포토샵 처럼 overlay 겹치기",
+                          "children": [],
+                          "createdAt": 1793777333069,
+                          "updatedAt": 1793777343468
+                        },
+                        {
+                          "id": "mLnb3VCXWtzu",
+                          "text": "단어 선택이나 뉘앙스 -> 단어들, 문장 표현 같은 DeepL 식",
+                          "children": [],
+                          "createdAt": 1793777344521,
+                          "updatedAt": 1793777403845
+                        }
+                      ],
+                      "createdAt": 1793777305829,
+                      "updatedAt": 1793777377559,
+                      "isFolded": false
                     }
                   ],
-                  "isFolded": false,
-                  "createdAt": 1793765861268,
-                  "updatedAt": 1793765873651
+                  "createdAt": 1793777299341,
+                  "updatedAt": 1793777305086,
+                  "isFolded": false
+                },
+                {
+                  "id": "RUPXJ81X5Jg6",
+                  "text": "참조 레이버 뷰포트 아이디어2",
+                  "children": [
+                    {
+                      "id": "ajTtR4LC3YSA",
+                      "text": "extension으로 뺀다",
+                      "children": [],
+                      "createdAt": 1793787750481,
+                      "updatedAt": 1793787755670
+                    }
+                  ],
+                  "createdAt": 1793787742172,
+                  "updatedAt": 1793787748743,
+                  "isFolded": false
+                },
+                {
+                  "id": "YswkjXF8TOCb",
+                  "text": "참조 레이어 뷰포트 아이디어3",
+                  "children": [
+                    {
+                      "id": "K7zDyG0UfppW",
+                      "text": "AI와의 레퍼런스 관련 개별 대화 세션 기록으로 관리한다",
+                      "children": [],
+                      "createdAt": 1793789902511,
+                      "updatedAt": 1793789912860
+                    },
+                    {
+                      "id": "UJODGMsN0dvC",
+                      "text": "어차피 추상화이고 어바웃한 것이다. 그리고 사용자가 느끼는 논리적 맥락이든 뭐든 '뉘앙스' 속에 묻어있다. 그저 특정 포인트, 혹은 강조 포인트를 바탕으로한 '레퍼런스 사일로 대화 맥락' 그 자체가 통으로 관리가 된다",
+                      "children": [],
+                      "createdAt": 1793789913049,
+                      "updatedAt": 1793789971095
+                    }
+                  ],
+                  "createdAt": 1793789894954,
+                  "updatedAt": 1793789902173,
+                  "isFolded": false
+                },
+                {
+                  "id": "PDcbrx9SBcZh",
+                  "text": "참조 레이어 뷰포트 아이디어4",
+                  "children": [
+                    {
+                      "id": "3TmKl2ZOBRZl",
+                      "text": "범위 지정까지만 -> 어노테이션 혹은 필터 지정까지 해주면 좋지만",
+                      "children": [],
+                      "createdAt": 1793792748862,
+                      "updatedAt": 1793792766030
+                    },
+                    {
+                      "id": "11J2ZZQqc5qJ",
+                      "text": "안하더라도 자동 원심 분리[무조건 원심 분리기 다 돌린다] -> 결과물에 알아서 반영[인용을 통해 레퍼런스가 이렇게 반영된거다]를 \"Show Don't Tell\"",
+                      "children": [],
+                      "createdAt": 1793792766357,
+                      "updatedAt": 1793792845856
+                    },
+                    {
+                      "id": "r77VRaYLY6dH",
+                      "text": "하다가 이 느낌 아닌데? 하면 추후 해제 혹은 레퍼런스 아예 제외식",
+                      "children": [],
+                      "createdAt": 1793792777409,
+                      "updatedAt": 1793792798455
+                    },
+                    {
+                      "id": "M59XfJOWWvc9",
+                      "text": "버전 2~3개 중에서 뭐가 맞냐? -> 거기서 튜닝 하는 식",
+                      "children": [],
+                      "createdAt": 1793793960613,
+                      "updatedAt": 1793793991306
+                    },
+                    {
+                      "id": "h8PtskAJu2np",
+                      "text": "레퍼 - edit 다이렉트 지시 및 -> 출력 후 피드백(이걸로 이거 쓰셈!)",
+                      "children": [],
+                      "createdAt": 1793793991762,
+                      "updatedAt": 1793794050267,
+                      "file": {
+                        "target": "Pasted image 20261104210658.png"
+                      }
+                    }
+                  ],
+                  "createdAt": 1793792743175,
+                  "updatedAt": 1793792748172,
+                  "isFolded": false
                 }
               ],
               "isFolded": false,
               "createdAt": 1793764849322,
-              "updatedAt": 1793764895869
+              "updatedAt": 1793769252445
             },
             {
-              "id": "QOBeu72SeEUv",
-              "text": "참조 레이어 뷰포트 아이디어1",
+              "id": "8RjO7FQpciBv",
+              "text": "Zoom 사양 조절",
               "children": [
                 {
-                  "id": "507edlNx4xel",
-                  "text": "레퍼런스로 삼은 형태 별로 다른 뷰를 계획하자 - 레퍼런스 뷰 박스",
+                  "id": "TvzJJU9OUD5G",
+                  "text": "slot zoom",
+                  "children": [],
+                  "createdAt": 1793766175694,
+                  "updatedAt": 1793766180327
+                },
+                {
+                  "id": "YNS5egFD03i6",
+                  "text": "element zoom",
+                  "children": [],
+                  "createdAt": 1793766181586,
+                  "updatedAt": 1793766186930
+                },
+                {
+                  "id": "YVSJArI4oUeo",
+                  "text": "page zoom",
+                  "children": [],
+                  "createdAt": 1793766485846,
+                  "updatedAt": 1793766488207
+                },
+                {
+                  "id": "Hb4px2LKwkUa",
+                  "text": "doc zoom",
+                  "children": [],
+                  "createdAt": 1793766488612,
+                  "updatedAt": 1793766490523
+                },
+                {
+                  "id": "lCNu6ycs2pzS",
+                  "text": "zoom <> doc navigation 간 인터랙션 연동",
+                  "children": [],
+                  "createdAt": 1793770695789,
+                  "updatedAt": 1793770708045
+                }
+              ],
+              "createdAt": 1793766168899,
+              "updatedAt": 1793769252445,
+              "isFolded": true
+            },
+            {
+              "id": "e3LQ82vcKjPn",
+              "text": "Phase 별 조절",
+              "children": [
+                {
+                  "id": "fFDd6uknWH2G",
+                  "text": "Phase1",
                   "children": [
                     {
-                      "id": "qhS49PXshjjh",
-                      "text": "논리 전개 -> 좌측 위에 논리 트리 및 서순만",
+                      "id": "tbF3P0CFo1Nr",
+                      "text": "Concept -> 쭉 늘려보기",
                       "children": [],
-                      "createdAt": 1793777319231,
-                      "updatedAt": 1793777332437
-                    },
-                    {
-                      "id": "KpzxQwaljSQz",
-                      "text": "시각적 배치 -> 포토샵 처럼 overlay 겹치기",
-                      "children": [],
-                      "createdAt": 1793777333069,
-                      "updatedAt": 1793777343468
-                    },
-                    {
-                      "id": "mLnb3VCXWtzu",
-                      "text": "단어 선택이나 뉘앙스 -> 단어들, 문장 표현 같은 DeepL 식",
-                      "children": [],
-                      "createdAt": 1793777344521,
-                      "updatedAt": 1793777403845
+                      "createdAt": 1793771770698,
+                      "updatedAt": 1793771780666
                     }
                   ],
-                  "isFolded": false,
-                  "createdAt": 1793777305829,
-                  "updatedAt": 1793777377559
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1793777299341,
-              "updatedAt": 1793777305086
-            },
-            {
-              "id": "RUPXJ81X5Jg6",
-              "text": "참조 레이버 뷰포트 아이디어2",
-              "children": [
-                {
-                  "id": "ajTtR4LC3YSA",
-                  "text": "extension으로 뺀다",
-                  "children": [],
-                  "createdAt": 1793787750481,
-                  "updatedAt": 1793787755670
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1793787742172,
-              "updatedAt": 1793787748743
-            },
-            {
-              "id": "YswkjXF8TOCb",
-              "text": "참조 레이어 뷰포트 아이디어3",
-              "children": [
-                {
-                  "id": "K7zDyG0UfppW",
-                  "text": "AI와의 레퍼런스 관련 개별 대화 세션 기록으로 관리한다",
-                  "children": [],
-                  "createdAt": 1793789902511,
-                  "updatedAt": 1793789912860
+                  "createdAt": 1793766996195,
+                  "updatedAt": 1793767000963,
+                  "isFolded": true
                 },
                 {
-                  "id": "UJODGMsN0dvC",
-                  "text": "어차피 추상화이고 어바웃한 것이다. 그리고 사용자가 느끼는 논리적 맥락이든 뭐든 '뉘앙스' 속에 묻어있다. 그저 특정 포인트, 혹은 강조 포인트를 바탕으로한 '레퍼런스 사일로 대화 맥락' 그 자체가 통으로 관리가 된다",
+                  "id": "G9Q1HCC4upqI",
+                  "text": "Phase2",
                   "children": [],
-                  "createdAt": 1793789913049,
-                  "updatedAt": 1793789971095
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1793789894954,
-              "updatedAt": 1793789902173
-            },
-            {
-              "id": "PDcbrx9SBcZh",
-              "text": "참조 레이어 뷰포트 아이디어4",
-              "children": [
-                {
-                  "id": "3TmKl2ZOBRZl",
-                  "text": "범위 지정까지만 -> 어노테이션 혹은 필터 지정까지 해주면 좋지만",
-                  "children": [],
-                  "createdAt": 1793792748862,
-                  "updatedAt": 1793792766030
+                  "createdAt": 1793766989100,
+                  "updatedAt": 1793766995887
                 },
                 {
-                  "id": "11J2ZZQqc5qJ",
-                  "text": "안하더라도 자동 원심 분리[무조건 원심 분리기 다 돌린다] -> 결과물에 알아서 반영[인용을 통해 레퍼런스가 이렇게 반영된거다]를 \"Show Don't Tell\"",
-                  "children": [],
-                  "createdAt": 1793792766357,
-                  "updatedAt": 1793792845856
-                },
-                {
-                  "id": "r77VRaYLY6dH",
-                  "text": "하다가 이 느낌 아닌데? 하면 추후 해제 혹은 레퍼런스 아예 제외식",
-                  "children": [],
-                  "createdAt": 1793792777409,
-                  "updatedAt": 1793792798455
-                },
-                {
-                  "id": "M59XfJOWWvc9",
-                  "text": "버전 2~3개 중에서 뭐가 맞냐? -> 거기서 튜닝 하는 식",
-                  "children": [],
-                  "createdAt": 1793793960613,
-                  "updatedAt": 1793793991306
-                },
-                {
-                  "id": "h8PtskAJu2np",
-                  "text": "레퍼 - edit 다이렉트 지시 및 -> 출력 후 피드백(이걸로 이거 쓰셈!)",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261104210658.png"
-                  },
-                  "createdAt": 1793793991762,
-                  "updatedAt": 1793794050267
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1793792743175,
-              "updatedAt": 1793792748172
-            }
-          ],
-          "isFolded": false,
-          "createdAt": 1793764849322,
-          "updatedAt": 1793769252445
-        },
-        {
-          "id": "8RjO7FQpciBv",
-          "text": "Zoom 사양 조절",
-          "children": [
-            {
-              "id": "TvzJJU9OUD5G",
-              "text": "slot zoom",
-              "children": [],
-              "createdAt": 1793766175694,
-              "updatedAt": 1793766180327
-            },
-            {
-              "id": "YNS5egFD03i6",
-              "text": "element zoom",
-              "children": [],
-              "createdAt": 1793766181586,
-              "updatedAt": 1793766186930
-            },
-            {
-              "id": "YVSJArI4oUeo",
-              "text": "page zoom",
-              "children": [],
-              "createdAt": 1793766485846,
-              "updatedAt": 1793766488207
-            },
-            {
-              "id": "Hb4px2LKwkUa",
-              "text": "doc zoom",
-              "children": [],
-              "createdAt": 1793766488612,
-              "updatedAt": 1793766490523
-            },
-            {
-              "id": "lCNu6ycs2pzS",
-              "text": "zoom <> doc navigation 간 인터랙션 연동",
-              "children": [],
-              "createdAt": 1793770695789,
-              "updatedAt": 1793770708045
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793766168899,
-          "updatedAt": 1793769252445
-        },
-        {
-          "id": "e3LQ82vcKjPn",
-          "text": "Phase 별 조절",
-          "children": [
-            {
-              "id": "fFDd6uknWH2G",
-              "text": "Phase1",
-              "children": [
-                {
-                  "id": "tbF3P0CFo1Nr",
-                  "text": "Concept -> 쭉 늘려보기",
-                  "children": [],
-                  "createdAt": 1793771770698,
-                  "updatedAt": 1793771780666
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1793766996195,
-              "updatedAt": 1793767000963
-            },
-            {
-              "id": "G9Q1HCC4upqI",
-              "text": "Phase2",
-              "children": [],
-              "createdAt": 1793766989100,
-              "updatedAt": 1793766995887
-            },
-            {
-              "id": "Q7QLjH3ICqBV",
-              "text": "Phase3",
-              "children": [
-                {
-                  "id": "59OHYVfChoI7",
-                  "text": "Compoent Select 시 가능한 작업",
+                  "id": "Q7QLjH3ICqBV",
+                  "text": "Phase3",
                   "children": [
                     {
-                      "id": "z5AFGAqBwCWb",
-                      "text": "연계 가능 컴포넌트",
-                      "children": [],
-                      "createdAt": 1793767034401,
-                      "updatedAt": 1793767040405
-                    },
-                    {
-                      "id": "fAcgrferqug6",
-                      "text": "",
-                      "children": [],
-                      "createdAt": 1793767040892,
-                      "updatedAt": 1793767040892
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793767013269,
-                  "updatedAt": 1793767026501
-                },
-                {
-                  "id": "KY2nMDqr4B7s",
-                  "text": "Editor 기능 개선",
-                  "children": [
-                    {
-                      "id": "WLSA311Rh6it",
-                      "text": "Selector, 선택 영역 관련 기능 개선",
+                      "id": "59OHYVfChoI7",
+                      "text": "Compoent Select 시 가능한 작업",
                       "children": [
                         {
-                          "id": "57IqXG9xTrZx",
-                          "text": "긁는 족족 다 선택되어야함",
+                          "id": "z5AFGAqBwCWb",
+                          "text": "연계 가능 컴포넌트",
                           "children": [],
-                          "file": {
-                            "target": "Pasted image 20261105074453.png"
-                          },
-                          "createdAt": 1793832291772,
-                          "updatedAt": 1793839313623
+                          "createdAt": 1793767034401,
+                          "updatedAt": 1793767040405
                         },
                         {
-                          "id": "NqS3lzfaGoH7",
-                          "text": "Inline-AI 가 항상 뜨면 시선이 불편하고 상시 오픈 모드 혹은 다른 툴바에 숨겨야함",
+                          "id": "fAcgrferqug6",
+                          "text": "",
                           "children": [],
-                          "file": {
-                            "target": "Pasted image 20261105085347.png"
-                          },
-                          "createdAt": 1793836426357,
-                          "updatedAt": 1793839313623
-                        },
-                        {
-                          "id": "Hdal8ajt982h",
-                          "text": "툴바 저 두 개 + 많이 쓰이는 도구 툴 바가 기본 우측 상단 -> AI도 저쪽으로 포함할 것",
-                          "children": [],
-                          "file": {
-                            "target": "Pasted image 20261105094051.png"
-                          },
-                          "createdAt": 1793839250263,
-                          "updatedAt": 1793839313623
+                          "createdAt": 1793767040892,
+                          "updatedAt": 1793767040892
                         }
                       ],
-                      "isFolded": true,
-                      "createdAt": 1793839293376,
-                      "updatedAt": 1793839310201
-                    }
-                  ],
-                  "createdAt": 1793832285480,
-                  "updatedAt": 1793832291645
-                },
-                {
-                  "id": "x19jC0z43HPk",
-                  "text": "AI 인터랙션 기능 개선",
-                  "children": [
+                      "createdAt": 1793767013269,
+                      "updatedAt": 1793767026501,
+                      "isFolded": true
+                    },
                     {
-                      "id": "EuK5SbfveWmV",
-                      "text": "뭐지 이 흉물은?",
-                      "children": [],
-                      "file": {
-                        "target": "Pasted image 20261105095630.png"
-                      },
-                      "createdAt": 1793840189312,
-                      "updatedAt": 1793840197035
+                      "id": "KY2nMDqr4B7s",
+                      "text": "Editor 기능 개선",
+                      "children": [
+                        {
+                          "id": "WLSA311Rh6it",
+                          "text": "Selector, 선택 영역 관련 기능 개선",
+                          "children": [
+                            {
+                              "id": "57IqXG9xTrZx",
+                              "text": "긁는 족족 다 선택되어야함",
+                              "children": [],
+                              "createdAt": 1793832291772,
+                              "updatedAt": 1793839313623,
+                              "file": {
+                                "target": "Pasted image 20261105074453.png"
+                              }
+                            },
+                            {
+                              "id": "NqS3lzfaGoH7",
+                              "text": "Inline-AI 가 항상 뜨면 시선이 불편하고 상시 오픈 모드 혹은 다른 툴바에 숨겨야함",
+                              "children": [],
+                              "createdAt": 1793836426357,
+                              "updatedAt": 1793839313623,
+                              "file": {
+                                "target": "Pasted image 20261105085347.png"
+                              }
+                            },
+                            {
+                              "id": "Hdal8ajt982h",
+                              "text": "툴바 저 두 개 + 많이 쓰이는 도구 툴 바가 기본 우측 상단 -> AI도 저쪽으로 포함할 것",
+                              "children": [],
+                              "createdAt": 1793839250263,
+                              "updatedAt": 1793839313623,
+                              "file": {
+                                "target": "Pasted image 20261105094051.png"
+                              }
+                            }
+                          ],
+                          "createdAt": 1793839293376,
+                          "updatedAt": 1793839310201,
+                          "isFolded": true
+                        }
+                      ],
+                      "createdAt": 1793832285480,
+                      "updatedAt": 1793832291645
+                    },
+                    {
+                      "id": "x19jC0z43HPk",
+                      "text": "AI 인터랙션 기능 개선",
+                      "children": [
+                        {
+                          "id": "EuK5SbfveWmV",
+                          "text": "뭐지 이 흉물은?",
+                          "children": [],
+                          "createdAt": 1793840189312,
+                          "updatedAt": 1793840197035,
+                          "file": {
+                            "target": "Pasted image 20261105095630.png"
+                          }
+                        }
+                      ],
+                      "createdAt": 1793840181201,
+                      "updatedAt": 1793840189207
                     }
                   ],
-                  "createdAt": 1793840181201,
-                  "updatedAt": 1793840189207
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1793766981934,
-              "updatedAt": 1793767004031
-            },
-            {
-              "id": "9B9Zk95bKfU7",
-              "text": "스테이지 - zoom 에 따른 자동 하네스 반영",
-              "children": [],
-              "file": {
-                "target": "Pasted image 20261105104426.png"
-              },
-              "createdAt": 1793843066512,
-              "updatedAt": 1793843098977
-            }
-          ],
-          "isFolded": false,
-          "createdAt": 1793766536706,
-          "updatedAt": 1793769252445
-        },
-        {
-          "id": "u4lSwds7W5hK",
-          "text": "File Explorer",
-          "children": [
-            {
-              "id": "jytrnPowU8F0",
-              "text": "File Explorer 와 다른 컴포넌트 간 인터랙션",
-              "children": [
-                {
-                  "id": "WFvkpFmXeAVT",
-                  "text": "File Explorer <> 다른 컴포넌트 간의 인터랙션",
-                  "children": [],
-                  "createdAt": 1793767094459,
-                  "updatedAt": 1793771454511
+                  "createdAt": 1793766981934,
+                  "updatedAt": 1793767004031,
+                  "isFolded": true
                 },
                 {
-                  "id": "dHVo7f36mavg",
-                  "text": "File Explorer - View 상태 정의",
-                  "children": [],
-                  "createdAt": 1793767128220,
-                  "updatedAt": 1793771454511
-                },
-                {
-                  "id": "0WeI3TGgnTVc",
-                  "text": "File Explorer - 내부 이벤트",
-                  "children": [],
-                  "createdAt": 1793767148422,
-                  "updatedAt": 1793771454511
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1793771431914,
-              "updatedAt": 1793771448746
-            },
-            {
-              "id": "LkWOX0gMuP4P",
-              "text": "File Explorer를 폴더 연동하면 단지 파일들만 쭉 펼쳐줄 것인가? vs 우리와 연관된 확장자 및 영역만 국한해서 보여줘야하는가",
-              "children": [
-                {
-                  "id": "o7f76uTkvfUr",
-                  "text": "그렇다면 File Explorer 가 맞는가? Workbench 내지는 Project Manager 가 아닌가",
-                  "children": [],
-                  "createdAt": 1793771499625,
-                  "updatedAt": 1793771523931
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1793771456648,
-              "updatedAt": 1793771498333
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793767085676,
-          "updatedAt": 1793769252445
-        },
-        {
-          "id": "c5UXHJYKjn17",
-          "text": "작업 도구 상자들",
-          "children": [
-            {
-              "id": "8LQTLVaMT3wk",
-              "text": "Insert Blocks",
-              "children": [
-                {
-                  "id": "YpSBqqfpF1Pj",
-                  "text": "Register",
-                  "children": [],
-                  "createdAt": 1793769583093,
-                  "updatedAt": 1793769587538
-                },
-                {
-                  "id": "c5XpIBV3WHNn",
-                  "text": "Hub",
-                  "children": [],
-                  "createdAt": 1793769587869,
-                  "updatedAt": 1793769589238
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1793769575183,
-              "updatedAt": 1793769581425
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793769564370,
-          "updatedAt": 1793769569806
-        },
-        {
-          "id": "0HZvzhf7rf7r",
-          "text": "에이전트 작업 대시보드(패널) 및 관리 도구들",
-          "children": [
-            {
-              "id": "dCzE1g00nDBr",
-              "text": "에이전트 도구",
-              "children": [
-                {
-                  "id": "JN58Ofvrw4eS",
-                  "text": "리서쳐",
-                  "children": [],
-                  "createdAt": 1793771257478,
-                  "updatedAt": 1793771259530
-                },
-                {
-                  "id": "aMs60dFNauG7",
-                  "text": "builder",
-                  "children": [],
-                  "createdAt": 1793771265155,
-                  "updatedAt": 1793771267484
-                },
-                {
-                  "id": "0DJJT1IJWlxt",
-                  "text": "writer",
-                  "children": [],
-                  "createdAt": 1793771269709,
-                  "updatedAt": 1793771272374
-                },
-                {
-                  "id": "WJVIiTHStPWO",
-                  "text": "storyliner",
-                  "children": [],
-                  "createdAt": 1793771272674,
-                  "updatedAt": 1793771275142
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1793771252903,
-              "updatedAt": 1793771255727
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793771236564,
-          "updatedAt": 1793771250384
-        },
-        {
-          "id": "Bl7i7cqGHCik",
-          "text": "Layout 및 Shell",
-          "children": [
-            {
-              "id": "53czpoGuAzkn",
-              "text": "이전 package 부분 적으러 가져오기",
-              "children": [],
-              "createdAt": 1793771372605,
-              "updatedAt": 1793771384092
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793771357921,
-          "updatedAt": 1793771369503
-        },
-        {
-          "id": "z2WDIMltZy0b",
-          "text": "Resource 매니저",
-          "children": [],
-          "createdAt": 1793771406318,
-          "updatedAt": 1793771412152
-        },
-        {
-          "id": "QTCXmUbTgGhg",
-          "text": "AI Composer",
-          "children": [
-            {
-              "id": "FelJ8rEQDxqh",
-              "text": "작업 중, 출력 중",
-              "children": [],
-              "file": {
-                "target": "Pasted image 20261105100736.png"
-              },
-              "createdAt": 1793840856277,
-              "updatedAt": 1793840879847
-            },
-            {
-              "id": "14x56HqJw2CL",
-              "text": "병렬 처리",
-              "children": [],
-              "createdAt": 1793840851204,
-              "updatedAt": 1793840883426
-            },
-            {
-              "id": "2CiffqyAohjl",
-              "text": "비동기 처리",
-              "children": [],
-              "createdAt": 1793840895448,
-              "updatedAt": 1793840900242
-            },
-            {
-              "id": "XQv1nPWcu3oY",
-              "text": "제어 처리",
-              "children": [
-                {
-                  "id": "LwPWfIu7Prb9",
-                  "text": "queue 처리 + 순서 바꾸기",
+                  "id": "9B9Zk95bKfU7",
+                  "text": "스테이지 - zoom 에 따른 자동 하네스 반영",
                   "children": [],
                   "file": {
-                    "target": "Pasted image 20261105101349.png"
+                    "target": "Pasted image 20261105104426.png"
                   },
-                  "createdAt": 1793841229198,
-                  "updatedAt": 1793841238258
-                },
-                {
-                  "id": "fhxySLzJa1KD",
-                  "text": "stop 일시정지",
-                  "children": [],
-                  "createdAt": 1793841239173,
-                  "updatedAt": 1793841241916
-                },
-                {
-                  "id": "ilxqTVRg7KPX",
-                  "text": "멈춘 거 재개 시키기 등등",
-                  "children": [],
-                  "createdAt": 1793841242627,
-                  "updatedAt": 1793841248753
-                },
-                {
-                  "id": "pt3PRz3q8X1q",
-                  "text": "인수인계하기",
-                  "children": [],
-                  "createdAt": 1793841250503,
-                  "updatedAt": 1793841254614
+                  "createdAt": 1793843066512,
+                  "updatedAt": 1793843098977
                 }
               ],
-              "createdAt": 1793841225039,
-              "updatedAt": 1793841228679
+              "createdAt": 1793766536706,
+              "updatedAt": 1793769252445,
+              "isFolded": false
             },
             {
-              "id": "fg416A1F8Yx7",
-              "text": "로그 및 입출력 데이터 스키마 보관",
-              "children": [],
-              "createdAt": 1793840883577,
-              "updatedAt": 1793840895312
-            },
-            {
-              "id": "O6r8ljit4TZD",
-              "text": "다른 ai 연동",
-              "children": [],
-              "createdAt": 1793840908651,
-              "updatedAt": 1793840912131
-            },
-            {
-              "id": "SUxKRF6kWr84",
-              "text": "엔진 성능 향상",
-              "children": [],
-              "createdAt": 1793840912992,
-              "updatedAt": 1793840917403
-            },
-            {
-              "id": "Pg6r5jLkKtZ7",
-              "text": "기능 추가",
-              "children": [],
-              "createdAt": 1793840917581,
-              "updatedAt": 1793840919033
-            },
-            {
-              "id": "fqXOjHQ9ZtLH",
-              "text": "인터랙션 추가",
-              "children": [],
-              "createdAt": 1793840920584,
-              "updatedAt": 1793840926643
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793771414175,
-          "updatedAt": 1793840850398
-        },
-        {
-          "id": "gilgbzZXjH75",
-          "text": "InBound AI 제어",
-          "children": [
-            {
-              "id": "Y2yTlQnYaJet",
-              "text": "각 버튼, 기능이 정해진 AI 에 대한 관리 체계",
+              "id": "u4lSwds7W5hK",
+              "text": "File Explorer",
               "children": [
                 {
-                  "id": "mBm1SdaHcVNa",
-                  "text": "가령, 문서 파서 Import -> 딱 정해져 있어야. stream No -> 한 번에 하는 설정으로",
-                  "children": [],
-                  "createdAt": 1793841645703,
-                  "updatedAt": 1793841685399
-                }
-              ],
-              "createdAt": 1793841627695,
-              "updatedAt": 1793841640510
-            }
-          ],
-          "isFolded": false,
-          "createdAt": 1793841617757,
-          "updatedAt": 1793841627251
-        }
-      ],
-      "isFolded": false,
-      "createdAt": 1793769223297,
-      "updatedAt": 1793769243530
-    },
-    {
-      "id": "yE3qPUvMNM2x",
-      "text": "UserFlow Case",
-      "children": [
-        {
-          "id": "HDJY5ylB9086",
-          "text": "시작 루트별 Flow",
-          "children": [
-            {
-              "id": "DH20D0uc8WL5",
-              "text": "작성 기준 틀이 없는 경우",
-              "children": [
-                {
-                  "id": "bTfuvWyxc8xA",
-                  "text": "서석만 가지고 시작하기",
-                  "children": [],
-                  "createdAt": 1793769255253,
-                  "updatedAt": 1793769339731
-                },
-                {
-                  "id": "NEi44fl6C6To",
-                  "text": "레퍼런스로 부터 시작하기",
+                  "id": "jytrnPowU8F0",
+                  "text": "File Explorer 와 다른 컴포넌트 간 인터랙션",
                   "children": [
                     {
-                      "id": "wCCzTks6bxrC",
-                      "text": "서식 동일",
+                      "id": "WFvkpFmXeAVT",
+                      "text": "File Explorer <> 다른 컴포넌트 간의 인터랙션",
                       "children": [],
-                      "createdAt": 1793769279500,
-                      "updatedAt": 1793769283184
+                      "createdAt": 1793767094459,
+                      "updatedAt": 1793771454511
                     },
                     {
-                      "id": "P1zP8oVHZaPw",
-                      "text": "서식 불일치",
+                      "id": "dHVo7f36mavg",
+                      "text": "File Explorer - View 상태 정의",
                       "children": [],
-                      "createdAt": 1793769283491,
-                      "updatedAt": 1793769285176
+                      "createdAt": 1793767128220,
+                      "updatedAt": 1793771454511
+                    },
+                    {
+                      "id": "0WeI3TGgnTVc",
+                      "text": "File Explorer - 내부 이벤트",
+                      "children": [],
+                      "createdAt": 1793767148422,
+                      "updatedAt": 1793771454511
                     }
                   ],
-                  "isFolded": true,
-                  "createdAt": 1793769262955,
-                  "updatedAt": 1793769339731
+                  "createdAt": 1793771431914,
+                  "updatedAt": 1793771448746,
+                  "isFolded": true
                 },
                 {
-                  "id": "3VAJFzsGBNO1",
-                  "text": "제로 베이스에서 시작하기",
-                  "children": [],
-                  "createdAt": 1793769266838,
-                  "updatedAt": 1793769339731
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1793769299855,
-              "updatedAt": 1793769325334
-            },
-            {
-              "id": "kxlcxBtSuHMz",
-              "text": "작성 기준 툴이 있는 경우",
-              "children": [
-                {
-                  "id": "U36F0hisrFlN",
-                  "text": "레퍼런스 활용하기",
+                  "id": "LkWOX0gMuP4P",
+                  "text": "File Explorer를 폴더 연동하면 단지 파일들만 쭉 펼쳐줄 것인가? vs 우리와 연관된 확장자 및 영역만 국한해서 보여줘야하는가",
                   "children": [
                     {
-                      "id": "tBdlRdwPgWu7",
-                      "text": "서식 동일",
+                      "id": "o7f76uTkvfUr",
+                      "text": "그렇다면 File Explorer 가 맞는가? Workbench 내지는 Project Manager 가 아닌가",
                       "children": [],
-                      "nodeType": "bullet",
-                      "createdAt": 1793769363257,
-                      "updatedAt": 1793769367601
-                    },
-                    {
-                      "id": "jmoOXCK5qlTJ",
-                      "text": "서식 불일치",
-                      "children": [],
-                      "nodeType": "bullet",
-                      "createdAt": 1793769363257,
-                      "updatedAt": 1793769367601
+                      "createdAt": 1793771499625,
+                      "updatedAt": 1793771523931
                     }
                   ],
-                  "isFolded": true,
-                  "createdAt": 1793769345231,
-                  "updatedAt": 1793769351644
-                },
-                {
-                  "id": "xSGsowNi8l9h",
-                  "text": "",
-                  "children": [],
-                  "createdAt": 1793769351860,
-                  "updatedAt": 1793769351860
+                  "createdAt": 1793771456648,
+                  "updatedAt": 1793771498333,
+                  "isFolded": true
                 }
               ],
-              "isFolded": true,
-              "createdAt": 1793769271265,
-              "updatedAt": 1793769345077
+              "createdAt": 1793767085676,
+              "updatedAt": 1793769252445,
+              "isFolded": true
+            },
+            {
+              "id": "c5UXHJYKjn17",
+              "text": "작업 도구 상자들",
+              "children": [
+                {
+                  "id": "8LQTLVaMT3wk",
+                  "text": "Insert Blocks",
+                  "children": [
+                    {
+                      "id": "YpSBqqfpF1Pj",
+                      "text": "Register",
+                      "children": [],
+                      "createdAt": 1793769583093,
+                      "updatedAt": 1793769587538
+                    },
+                    {
+                      "id": "c5XpIBV3WHNn",
+                      "text": "Hub",
+                      "children": [],
+                      "createdAt": 1793769587869,
+                      "updatedAt": 1793769589238
+                    }
+                  ],
+                  "createdAt": 1793769575183,
+                  "updatedAt": 1793769581425,
+                  "isFolded": true
+                }
+              ],
+              "createdAt": 1793769564370,
+              "updatedAt": 1793769569806,
+              "isFolded": true
+            },
+            {
+              "id": "0HZvzhf7rf7r",
+              "text": "에이전트 작업 대시보드(패널) 및 관리 도구들",
+              "children": [
+                {
+                  "id": "dCzE1g00nDBr",
+                  "text": "에이전트 도구",
+                  "children": [
+                    {
+                      "id": "JN58Ofvrw4eS",
+                      "text": "리서쳐",
+                      "children": [],
+                      "createdAt": 1793771257478,
+                      "updatedAt": 1793771259530
+                    },
+                    {
+                      "id": "aMs60dFNauG7",
+                      "text": "builder",
+                      "children": [],
+                      "createdAt": 1793771265155,
+                      "updatedAt": 1793771267484
+                    },
+                    {
+                      "id": "0DJJT1IJWlxt",
+                      "text": "writer",
+                      "children": [],
+                      "createdAt": 1793771269709,
+                      "updatedAt": 1793771272374
+                    },
+                    {
+                      "id": "WJVIiTHStPWO",
+                      "text": "storyliner",
+                      "children": [],
+                      "createdAt": 1793771272674,
+                      "updatedAt": 1793771275142
+                    }
+                  ],
+                  "createdAt": 1793771252903,
+                  "updatedAt": 1793771255727,
+                  "isFolded": true
+                }
+              ],
+              "createdAt": 1793771236564,
+              "updatedAt": 1793771250384,
+              "isFolded": true
+            },
+            {
+              "id": "Bl7i7cqGHCik",
+              "text": "Layout 및 Shell",
+              "children": [
+                {
+                  "id": "53czpoGuAzkn",
+                  "text": "이전 package 부분 적으러 가져오기",
+                  "children": [],
+                  "createdAt": 1793771372605,
+                  "updatedAt": 1793771384092
+                }
+              ],
+              "createdAt": 1793771357921,
+              "updatedAt": 1793771369503,
+              "isFolded": true
+            },
+            {
+              "id": "z2WDIMltZy0b",
+              "text": "Resource 매니저",
+              "children": [],
+              "createdAt": 1793771406318,
+              "updatedAt": 1793771412152
+            },
+            {
+              "id": "QTCXmUbTgGhg",
+              "text": "AI Composer",
+              "children": [
+                {
+                  "id": "FelJ8rEQDxqh",
+                  "text": "작업 중, 출력 중",
+                  "children": [],
+                  "createdAt": 1793840856277,
+                  "updatedAt": 1793840879847,
+                  "file": {
+                    "target": "Pasted image 20261105100736.png"
+                  }
+                },
+                {
+                  "id": "14x56HqJw2CL",
+                  "text": "병렬 처리",
+                  "children": [],
+                  "createdAt": 1793840851204,
+                  "updatedAt": 1793840883426
+                },
+                {
+                  "id": "2CiffqyAohjl",
+                  "text": "비동기 처리",
+                  "children": [],
+                  "createdAt": 1793840895448,
+                  "updatedAt": 1793840900242
+                },
+                {
+                  "id": "XQv1nPWcu3oY",
+                  "text": "제어 처리",
+                  "children": [
+                    {
+                      "id": "LwPWfIu7Prb9",
+                      "text": "queue 처리 + 순서 바꾸기",
+                      "children": [],
+                      "createdAt": 1793841229198,
+                      "updatedAt": 1793841238258,
+                      "file": {
+                        "target": "Pasted image 20261105101349.png"
+                      }
+                    },
+                    {
+                      "id": "fhxySLzJa1KD",
+                      "text": "stop 일시정지",
+                      "children": [],
+                      "createdAt": 1793841239173,
+                      "updatedAt": 1793841241916
+                    },
+                    {
+                      "id": "ilxqTVRg7KPX",
+                      "text": "멈춘 거 재개 시키기 등등",
+                      "children": [],
+                      "createdAt": 1793841242627,
+                      "updatedAt": 1793841248753
+                    },
+                    {
+                      "id": "pt3PRz3q8X1q",
+                      "text": "인수인계하기",
+                      "children": [],
+                      "createdAt": 1793841250503,
+                      "updatedAt": 1793841254614
+                    }
+                  ],
+                  "createdAt": 1793841225039,
+                  "updatedAt": 1793841228679
+                },
+                {
+                  "id": "fg416A1F8Yx7",
+                  "text": "로그 및 입출력 데이터 스키마 보관",
+                  "children": [],
+                  "createdAt": 1793840883577,
+                  "updatedAt": 1793840895312
+                },
+                {
+                  "id": "O6r8ljit4TZD",
+                  "text": "다른 ai 연동",
+                  "children": [],
+                  "createdAt": 1793840908651,
+                  "updatedAt": 1793840912131
+                },
+                {
+                  "id": "SUxKRF6kWr84",
+                  "text": "엔진 성능 향상",
+                  "children": [],
+                  "createdAt": 1793840912992,
+                  "updatedAt": 1793840917403
+                },
+                {
+                  "id": "Pg6r5jLkKtZ7",
+                  "text": "기능 추가",
+                  "children": [],
+                  "createdAt": 1793840917581,
+                  "updatedAt": 1793840919033
+                },
+                {
+                  "id": "fqXOjHQ9ZtLH",
+                  "text": "인터랙션 추가",
+                  "children": [],
+                  "createdAt": 1793840920584,
+                  "updatedAt": 1793840926643
+                }
+              ],
+              "createdAt": 1793771414175,
+              "updatedAt": 1793840850398,
+              "isFolded": true
+            },
+            {
+              "id": "gilgbzZXjH75",
+              "text": "InBound AI 제어",
+              "children": [
+                {
+                  "id": "Y2yTlQnYaJet",
+                  "text": "각 버튼, 기능이 정해진 AI 에 대한 관리 체계",
+                  "children": [
+                    {
+                      "id": "mBm1SdaHcVNa",
+                      "text": "가령, 문서 파서 Import -> 딱 정해져 있어야. stream No -> 한 번에 하는 설정으로",
+                      "children": [],
+                      "createdAt": 1793841645703,
+                      "updatedAt": 1793841685399
+                    }
+                  ],
+                  "createdAt": 1793841627695,
+                  "updatedAt": 1793841640510
+                }
+              ],
+              "createdAt": 1793841617757,
+              "updatedAt": 1793841627251,
+              "isFolded": false
             }
           ],
-          "isFolded": true,
-          "createdAt": 1793769208382,
-          "updatedAt": 1793769644993
+          "createdAt": 1793769223297,
+          "updatedAt": 1793848827721,
+          "isFolded": true
         },
         {
-          "id": "601DeAhPhqHG",
-          "text": "부분 수정 Flow",
-          "children": [],
-          "createdAt": 1793769653897,
-          "updatedAt": 1793769658025
-        },
-        {
-          "id": "WCYt6rGVt9Av",
-          "text": "Migration Flow",
-          "children": [],
-          "createdAt": 1793769658821,
-          "updatedAt": 1793769665680
-        },
-        {
-          "id": "EhXS0jDKHECG",
-          "text": "Version Up(Migrate) Flow",
-          "children": [],
-          "createdAt": 1793769665969,
-          "updatedAt": 1793769677733
-        },
-        {
-          "id": "rLS3slTuyBd9",
-          "text": "Project Document Pipeline 구성",
-          "children": [],
-          "createdAt": 1793771320283,
-          "updatedAt": 1793771332949
-        }
-      ],
-      "isFolded": false,
-      "createdAt": 1793769634386,
-      "updatedAt": 1793769642299
-    },
-    {
-      "id": "jkTX3HP7UGel",
-      "text": "아이디어",
-      "children": [
-        {
-          "id": "Wt5GtIAZeUDZ",
-          "text": "아이디어 스케치 모달 그림판 < 신규 사양 < Excalidraw",
+          "id": "yE3qPUvMNM2x",
+          "text": "UserFlow Case",
           "children": [
             {
-              "id": "tOhsPmaikbHJ",
-              "text": "그림판 같이 배치 혹은 추가 확장 모달? 스케치 모달",
+              "id": "HDJY5ylB9086",
+              "text": "시작 루트별 Flow",
+              "children": [
+                {
+                  "id": "DH20D0uc8WL5",
+                  "text": "작성 기준 틀이 없는 경우",
+                  "children": [
+                    {
+                      "id": "bTfuvWyxc8xA",
+                      "text": "서석만 가지고 시작하기",
+                      "children": [],
+                      "createdAt": 1793769255253,
+                      "updatedAt": 1793769339731
+                    },
+                    {
+                      "id": "NEi44fl6C6To",
+                      "text": "레퍼런스로 부터 시작하기",
+                      "children": [
+                        {
+                          "id": "wCCzTks6bxrC",
+                          "text": "서식 동일",
+                          "children": [],
+                          "createdAt": 1793769279500,
+                          "updatedAt": 1793769283184
+                        },
+                        {
+                          "id": "P1zP8oVHZaPw",
+                          "text": "서식 불일치",
+                          "children": [],
+                          "createdAt": 1793769283491,
+                          "updatedAt": 1793769285176
+                        }
+                      ],
+                      "createdAt": 1793769262955,
+                      "updatedAt": 1793769339731,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "3VAJFzsGBNO1",
+                      "text": "제로 베이스에서 시작하기",
+                      "children": [],
+                      "createdAt": 1793769266838,
+                      "updatedAt": 1793769339731
+                    }
+                  ],
+                  "createdAt": 1793769299855,
+                  "updatedAt": 1793769325334,
+                  "isFolded": true
+                },
+                {
+                  "id": "kxlcxBtSuHMz",
+                  "text": "작성 기준 툴이 있는 경우",
+                  "children": [
+                    {
+                      "id": "U36F0hisrFlN",
+                      "text": "레퍼런스 활용하기",
+                      "children": [
+                        {
+                          "id": "tBdlRdwPgWu7",
+                          "text": "서식 동일",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1793769363257,
+                          "updatedAt": 1793769367601
+                        },
+                        {
+                          "id": "jmoOXCK5qlTJ",
+                          "text": "서식 불일치",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1793769363257,
+                          "updatedAt": 1793769367601
+                        }
+                      ],
+                      "createdAt": 1793769345231,
+                      "updatedAt": 1793769351644,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "xSGsowNi8l9h",
+                      "text": "",
+                      "children": [],
+                      "createdAt": 1793769351860,
+                      "updatedAt": 1793769351860
+                    }
+                  ],
+                  "createdAt": 1793769271265,
+                  "updatedAt": 1793769345077,
+                  "isFolded": true
+                }
+              ],
+              "createdAt": 1793769208382,
+              "updatedAt": 1793769644993,
+              "isFolded": true
+            },
+            {
+              "id": "601DeAhPhqHG",
+              "text": "부분 수정 Flow",
               "children": [],
+              "createdAt": 1793769653897,
+              "updatedAt": 1793769658025
+            },
+            {
+              "id": "WCYt6rGVt9Av",
+              "text": "Migration Flow",
+              "children": [],
+              "createdAt": 1793769658821,
+              "updatedAt": 1793769665680
+            },
+            {
+              "id": "EhXS0jDKHECG",
+              "text": "Version Up(Migrate) Flow",
+              "children": [],
+              "createdAt": 1793769665969,
+              "updatedAt": 1793769677733
+            },
+            {
+              "id": "rLS3slTuyBd9",
+              "text": "Project Document Pipeline 구성",
+              "children": [],
+              "createdAt": 1793771320283,
+              "updatedAt": 1793771332949
+            }
+          ],
+          "createdAt": 1793769634386,
+          "updatedAt": 1793848827721,
+          "isFolded": true
+        },
+        {
+          "id": "jkTX3HP7UGel",
+          "text": "아이디어",
+          "children": [
+            {
+              "id": "Wt5GtIAZeUDZ",
+              "text": "아이디어 스케치 모달 그림판 < 신규 사양 < Excalidraw",
+              "children": [
+                {
+                  "id": "tOhsPmaikbHJ",
+                  "text": "그림판 같이 배치 혹은 추가 확장 모달? 스케치 모달",
+                  "children": [],
+                  "createdAt": 1793765291605,
+                  "updatedAt": 1793767243405,
+                  "file": {
+                    "target": "Pasted image 20261104130812.png"
+                  }
+                }
+              ],
+              "createdAt": 1793767185370,
+              "updatedAt": 1793767224322,
+              "isFolded": true
+            },
+            {
+              "id": "nHT7KQfd8b3Z",
+              "text": " 일일 패치노트 자동화",
+              "children": [
+                {
+                  "id": "Vy2ZQZr6QXMB",
+                  "text": "작업 내역, 변경 사항 관리 이력 보기 -> 패치 노트 자동으로",
+                  "children": [],
+                  "createdAt": 1793767259451,
+                  "updatedAt": 1793767279131
+                }
+              ],
+              "createdAt": 1793767231600,
+              "updatedAt": 1793767258451,
+              "isFolded": true
+            },
+            {
+              "id": "HiIdWPdD710k",
+              "text": "쓰다버리는 놈들에 대한 손쉬운 관리 방안 - 메모 찌끄리고 빈 문서 만들어놓고 버리는 놈들이 산더미 -> 관리 방안... -> 이용자에게 부담이 없도록 하는 것이 키포인트(얼마든지 여기서 막 낙서해도 된다)",
+              "children": [],
+              "createdAt": 1793770727388,
+              "updatedAt": 1793770776739
+            },
+            {
+              "id": "qsMJtG47z4Gn",
+              "text": "Voice Record - Voice Register",
+              "children": [],
+              "createdAt": 1793770891753,
+              "updatedAt": 1793770906656
+            },
+            {
+              "id": "YBXpLaGWbcLA",
+              "text": "일괄 '문서 스타일링'... 이거 어떻게 ui/ux에 수용할 것인가",
+              "children": [
+                {
+                  "id": "wHo6BWxRWCoq",
+                  "text": "가령 지금은 '한글', '문서' 에 '스타일' 적용을 하고 그 패턴을 조율하는 방식으로 사용 중",
+                  "children": [],
+                  "createdAt": 1793795587400,
+                  "updatedAt": 1793795602515
+                },
+                {
+                  "id": "blZTZz3iU6eR",
+                  "text": "하지만, 에이전트는 다이렉트한 조절이 가능",
+                  "children": [],
+                  "createdAt": 1793795604644,
+                  "updatedAt": 1793795614486
+                }
+              ],
+              "createdAt": 1793795567196,
+              "updatedAt": 1793795582000,
+              "isFolded": true
+            },
+            {
+              "id": "Fu80Qg0vA5Eq",
+              "text": "비동기, 시켜놓기, 컴퓨터 꺼도 해야한다!",
+              "children": [],
+              "createdAt": 1793832195444,
+              "updatedAt": 1793832205702
+            },
+            {
+              "id": "Qy2WeCQc6Uxr",
+              "text": "판도독 처럼 block 베이스로 관리를 하되, free-writing 모드로 변환해서 쭉 칠 수 있도록 하까? 대신 쭉 줄 글로 치면 단락으로 잡아주고, 마크다운 태그만 잡아주는 걸로",
+              "children": [],
+              "createdAt": 1793838923301,
+              "updatedAt": 1793838970777,
               "file": {
-                "target": "Pasted image 20261104130812.png"
-              },
-              "createdAt": 1793765291605,
-              "updatedAt": 1793767243405
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793767185370,
-          "updatedAt": 1793767224322
-        },
-        {
-          "id": "nHT7KQfd8b3Z",
-          "text": " 일일 패치노트 자동화",
-          "children": [
-            {
-              "id": "Vy2ZQZr6QXMB",
-              "text": "작업 내역, 변경 사항 관리 이력 보기 -> 패치 노트 자동으로",
-              "children": [],
-              "createdAt": 1793767259451,
-              "updatedAt": 1793767279131
-            }
-          ],
-          "isFolded": true,
-          "createdAt": 1793767231600,
-          "updatedAt": 1793767258451
-        },
-        {
-          "id": "HiIdWPdD710k",
-          "text": "쓰다버리는 놈들에 대한 손쉬운 관리 방안 - 메모 찌끄리고 빈 문서 만들어놓고 버리는 놈들이 산더미 -> 관리 방안... -> 이용자에게 부담이 없도록 하는 것이 키포인트(얼마든지 여기서 막 낙서해도 된다)",
-          "children": [],
-          "createdAt": 1793770727388,
-          "updatedAt": 1793770776739
-        },
-        {
-          "id": "qsMJtG47z4Gn",
-          "text": "Voice Record - Voice Register",
-          "children": [],
-          "createdAt": 1793770891753,
-          "updatedAt": 1793770906656
-        },
-        {
-          "id": "YBXpLaGWbcLA",
-          "text": "일괄 '문서 스타일링'... 이거 어떻게 ui/ux에 수용할 것인가",
-          "children": [
-            {
-              "id": "wHo6BWxRWCoq",
-              "text": "가령 지금은 '한글', '문서' 에 '스타일' 적용을 하고 그 패턴을 조율하는 방식으로 사용 중",
-              "children": [],
-              "createdAt": 1793795587400,
-              "updatedAt": 1793795602515
+                "target": "Pasted image 20261105093524.png"
+              }
             },
             {
-              "id": "blZTZz3iU6eR",
-              "text": "하지만, 에이전트는 다이렉트한 조절이 가능",
+              "id": "X0h2YeHeF4px",
+              "text": "레퍼런스 VS 작성 가이드, 체크리스트, 규정, 요령 이런 것은 구분해서 관리를 해야하나... 아니면 그냥 자유롭게 '챗창'에서 보인이 설정할 수 있도록만 해주면 되나",
               "children": [],
-              "createdAt": 1793795604644,
-              "updatedAt": 1793795614486
+              "createdAt": 1793840576708,
+              "updatedAt": 1793840612255
             }
           ],
-          "isFolded": true,
-          "createdAt": 1793795567196,
-          "updatedAt": 1793795582000
-        },
-        {
-          "id": "Fu80Qg0vA5Eq",
-          "text": "비동기, 시켜놓기, 컴퓨터 꺼도 해야한다!",
-          "children": [],
-          "createdAt": 1793832195444,
-          "updatedAt": 1793832205702
-        },
-        {
-          "id": "Qy2WeCQc6Uxr",
-          "text": "판도독 처럼 block 베이스로 관리를 하되, free-writing 모드로 변환해서 쭉 칠 수 있도록 하까? 대신 쭉 줄 글로 치면 단락으로 잡아주고, 마크다운 태그만 잡아주는 걸로",
-          "children": [],
-          "file": {
-            "target": "Pasted image 20261105093524.png"
-          },
-          "createdAt": 1793838923301,
-          "updatedAt": 1793838970777
-        },
-        {
-          "id": "X0h2YeHeF4px",
-          "text": "레퍼런스 VS 작성 가이드, 체크리스트, 규정, 요령 이런 것은 구분해서 관리를 해야하나... 아니면 그냥 자유롭게 '챗창'에서 보인이 설정할 수 있도록만 해주면 되나",
-          "children": [],
-          "createdAt": 1793840576708,
-          "updatedAt": 1793840612255
+          "createdAt": 1793765288631,
+          "updatedAt": 1793848827721,
+          "isFolded": true
         }
       ],
-      "isFolded": false,
-      "createdAt": 1793765288631,
-      "updatedAt": 1793766195531
+      "createdAt": 1793848816376,
+      "updatedAt": 1793848822724
+    },
+    {
+      "id": "4abciIbktN7B",
+      "text": "@Rin",
+      "children": [],
+      "createdAt": 1793848829518,
+      "updatedAt": 1793848832048
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1793848874776
+  "updatedAt": 1793848832048
 }
