@@ -194,7 +194,8 @@
                                 }
                               ],
                               "createdAt": 1793791013167,
-                              "updatedAt": 1793791196102
+                              "updatedAt": 1793791196102,
+                              "isFolded": true
                             },
                             {
                               "id": "RToSrPYYQ5Jf",
@@ -209,7 +210,8 @@
                                 }
                               ],
                               "createdAt": 1793791188223,
-                              "updatedAt": 1793791328714
+                              "updatedAt": 1793791328714,
+                              "isFolded": true
                             }
                           ],
                           "createdAt": 1793791005742,
@@ -332,7 +334,8 @@
                                 }
                               ],
                               "createdAt": 1793795459228,
-                              "updatedAt": 1793795739042
+                              "updatedAt": 1793795739042,
+                              "isFolded": true
                             }
                           ],
                           "createdAt": 1793795448495,
@@ -357,7 +360,8 @@
                                 }
                               ],
                               "createdAt": 1793795798719,
-                              "updatedAt": 1793795832423
+                              "updatedAt": 1793795832423,
+                              "isFolded": true
                             }
                           ],
                           "createdAt": 1793795791255,
@@ -389,7 +393,8 @@
                                 }
                               ],
                               "createdAt": 1793796243507,
-                              "updatedAt": 1793796263564
+                              "updatedAt": 1793796263564,
+                              "isFolded": true
                             }
                           ],
                           "createdAt": 1793795860959,
@@ -445,7 +450,8 @@
                                 }
                               ],
                               "createdAt": 1793796587593,
-                              "updatedAt": 1793796587593
+                              "updatedAt": 1793796587593,
+                              "isFolded": true
                             }
                           ],
                           "createdAt": 1793796561376,
@@ -577,12 +583,12 @@
                       ],
                       "createdAt": 1793790818543,
                       "updatedAt": 1793794635587,
-                      "isFolded": false
+                      "isFolded": true
                     }
                   ],
                   "createdAt": 1793794573873,
                   "updatedAt": 1793794619188,
-                  "isFolded": false
+                  "isFolded": true
                 },
                 {
                   "id": "6xMdRye0FdC3",
@@ -695,7 +701,8 @@
                                 }
                               ],
                               "createdAt": 1793794387470,
-                              "updatedAt": 1793794388974
+                              "updatedAt": 1793794388974,
+                              "isFolded": true
                             },
                             {
                               "id": "GHdrxJIY0Qer",
@@ -724,14 +731,16 @@
                                 }
                               ],
                               "createdAt": 1793794456830,
-                              "updatedAt": 1793794463415
+                              "updatedAt": 1793794463415,
+                              "isFolded": true
                             }
                           ],
                           "createdAt": 1793794354577,
                           "updatedAt": 1793794412720,
                           "file": {
                             "target": "Pasted image 20261104211236.png"
-                          }
+                          },
+                          "isFolded": true
                         }
                       ],
                       "createdAt": 1793794350359,
@@ -747,10 +756,12 @@
                           "text": "작업대에 올리면 한 개, 두 개 등 멀티로 올리도록",
                           "children": [],
                           "createdAt": 1793765695258,
-                          "updatedAt": 1793765738722,
+                          "updatedAt": 1793853123429,
                           "file": {
                             "target": "Pasted image 20261104131517.png"
-                          }
+                          },
+                          "isCompleted": true,
+                          "completedAt": 1793853123429
                         },
                         {
                           "id": "2yPhuZ7zWGm0",
@@ -773,7 +784,7 @@
                           ],
                           "createdAt": 1793765742685,
                           "updatedAt": 1793765826627,
-                          "isFolded": false
+                          "isFolded": true
                         },
                         {
                           "id": "VZHW8rgBHQ3s",
@@ -785,7 +796,7 @@
                       ],
                       "createdAt": 1793765609018,
                       "updatedAt": 1793765686702,
-                      "isFolded": false
+                      "isFolded": true
                     },
                     {
                       "id": "ILzNwWlTrVDj",
@@ -815,137 +826,150 @@
                       ],
                       "createdAt": 1793765861268,
                       "updatedAt": 1793765873651,
-                      "isFolded": false
+                      "isFolded": true
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1793764849322,
                   "updatedAt": 1793764895869
                 },
                 {
-                  "id": "QOBeu72SeEUv",
-                  "text": "참조 레이어 뷰포트 아이디어1",
+                  "id": "qzpeVY6lnd7l",
+                  "text": "뷰포트 컨트롤 아이디어",
                   "children": [
                     {
-                      "id": "507edlNx4xel",
-                      "text": "레퍼런스로 삼은 형태 별로 다른 뷰를 계획하자 - 레퍼런스 뷰 박스",
+                      "id": "QOBeu72SeEUv",
+                      "text": "참조 레이어 뷰포트 아이디어1",
                       "children": [
                         {
-                          "id": "qhS49PXshjjh",
-                          "text": "논리 전개 -> 좌측 위에 논리 트리 및 서순만",
-                          "children": [],
-                          "createdAt": 1793777319231,
-                          "updatedAt": 1793777332437
-                        },
-                        {
-                          "id": "KpzxQwaljSQz",
-                          "text": "시각적 배치 -> 포토샵 처럼 overlay 겹치기",
-                          "children": [],
-                          "createdAt": 1793777333069,
-                          "updatedAt": 1793777343468
-                        },
-                        {
-                          "id": "mLnb3VCXWtzu",
-                          "text": "단어 선택이나 뉘앙스 -> 단어들, 문장 표현 같은 DeepL 식",
-                          "children": [],
-                          "createdAt": 1793777344521,
-                          "updatedAt": 1793777403845
+                          "id": "507edlNx4xel",
+                          "text": "레퍼런스로 삼은 형태 별로 다른 뷰를 계획하자 - 레퍼런스 뷰 박스",
+                          "children": [
+                            {
+                              "id": "qhS49PXshjjh",
+                              "text": "논리 전개 -> 좌측 위에 논리 트리 및 서순만",
+                              "children": [],
+                              "createdAt": 1793777319231,
+                              "updatedAt": 1793777332437
+                            },
+                            {
+                              "id": "KpzxQwaljSQz",
+                              "text": "시각적 배치 -> 포토샵 처럼 overlay 겹치기",
+                              "children": [],
+                              "createdAt": 1793777333069,
+                              "updatedAt": 1793777343468
+                            },
+                            {
+                              "id": "mLnb3VCXWtzu",
+                              "text": "단어 선택이나 뉘앙스 -> 단어들, 문장 표현 같은 DeepL 식",
+                              "children": [],
+                              "createdAt": 1793777344521,
+                              "updatedAt": 1793777403845
+                            }
+                          ],
+                          "createdAt": 1793777305829,
+                          "updatedAt": 1793777377559,
+                          "isFolded": true
                         }
                       ],
-                      "createdAt": 1793777305829,
-                      "updatedAt": 1793777377559,
-                      "isFolded": false
+                      "createdAt": 1793777299341,
+                      "updatedAt": 1793865080908,
+                      "isFolded": true,
+                      "note": "\"요소별 다른 view 요소로 제공하자\""
+                    },
+                    {
+                      "id": "RUPXJ81X5Jg6",
+                      "text": "참조 레이버 뷰포트 아이디어2[저후보]",
+                      "children": [
+                        {
+                          "id": "ajTtR4LC3YSA",
+                          "text": "extension으로 뺀다",
+                          "children": [],
+                          "createdAt": 1793787750481,
+                          "updatedAt": 1793787755670
+                        }
+                      ],
+                      "createdAt": 1793787742172,
+                      "updatedAt": 1793865080908,
+                      "isFolded": true,
+                      "note": "\"별도의 모드나 작업 환경에서 레퍼런스 작업만 별도로 진행하자\""
+                    },
+                    {
+                      "id": "YswkjXF8TOCb",
+                      "text": "참조 레이어 뷰포트 아이디어3",
+                      "children": [
+                        {
+                          "id": "K7zDyG0UfppW",
+                          "text": "AI와의 레퍼런스 관련 개별 대화 세션 기록으로 관리한다",
+                          "children": [],
+                          "createdAt": 1793789902511,
+                          "updatedAt": 1793789912860
+                        },
+                        {
+                          "id": "UJODGMsN0dvC",
+                          "text": "어차피 추상화이고 어바웃한 것이다. 그리고 사용자가 느끼는 논리적 맥락이든 뭐든 '뉘앙스' 속에 묻어있다. 그저 특정 포인트, 혹은 강조 포인트를 바탕으로한 '레퍼런스 사일로 대화 맥락' 그 자체가 통으로 관리가 된다",
+                          "children": [],
+                          "createdAt": 1793789913049,
+                          "updatedAt": 1793789971095
+                        }
+                      ],
+                      "createdAt": 1793789894954,
+                      "updatedAt": 1793865080908,
+                      "isFolded": true,
+                      "note": "\"캡쳐 정도와 지시 사항\"만 마커 혹은 history 관리로 남겨주자"
+                    },
+                    {
+                      "id": "PDcbrx9SBcZh",
+                      "text": "참조 레이어 뷰포트 아이디어4",
+                      "children": [
+                        {
+                          "id": "3TmKl2ZOBRZl",
+                          "text": "범위 지정까지만 -> 어노테이션 혹은 필터 지정까지 해주면 좋지만",
+                          "children": [],
+                          "createdAt": 1793792748862,
+                          "updatedAt": 1793792766030
+                        },
+                        {
+                          "id": "11J2ZZQqc5qJ",
+                          "text": "안하더라도 자동 원심 분리[무조건 원심 분리기 다 돌린다] -> 결과물에 알아서 반영[인용을 통해 레퍼런스가 이렇게 반영된거다]를 \"Show Don't Tell\"",
+                          "children": [],
+                          "createdAt": 1793792766357,
+                          "updatedAt": 1793792845856
+                        },
+                        {
+                          "id": "r77VRaYLY6dH",
+                          "text": "하다가 이 느낌 아닌데? 하면 추후 해제 혹은 레퍼런스 아예 제외식",
+                          "children": [],
+                          "createdAt": 1793792777409,
+                          "updatedAt": 1793792798455
+                        },
+                        {
+                          "id": "M59XfJOWWvc9",
+                          "text": "버전 2~3개 중에서 뭐가 맞냐? -> 거기서 튜닝 하는 식",
+                          "children": [],
+                          "createdAt": 1793793960613,
+                          "updatedAt": 1793793991306
+                        },
+                        {
+                          "id": "h8PtskAJu2np",
+                          "text": "레퍼 - edit 다이렉트 지시 및 -> 출력 후 피드백(이걸로 이거 쓰셈!)",
+                          "children": [],
+                          "createdAt": 1793793991762,
+                          "updatedAt": 1793794050267,
+                          "file": {
+                            "target": "Pasted image 20261104210658.png"
+                          }
+                        }
+                      ],
+                      "createdAt": 1793792743175,
+                      "updatedAt": 1793865080908,
+                      "isFolded": true,
+                      "note": "\"빡빡한 원심분리와 결과물 선제시 + 태깅 표시\""
                     }
                   ],
-                  "createdAt": 1793777299341,
-                  "updatedAt": 1793777305086,
-                  "isFolded": false
-                },
-                {
-                  "id": "RUPXJ81X5Jg6",
-                  "text": "참조 레이버 뷰포트 아이디어2",
-                  "children": [
-                    {
-                      "id": "ajTtR4LC3YSA",
-                      "text": "extension으로 뺀다",
-                      "children": [],
-                      "createdAt": 1793787750481,
-                      "updatedAt": 1793787755670
-                    }
-                  ],
-                  "createdAt": 1793787742172,
-                  "updatedAt": 1793787748743,
-                  "isFolded": false
-                },
-                {
-                  "id": "YswkjXF8TOCb",
-                  "text": "참조 레이어 뷰포트 아이디어3",
-                  "children": [
-                    {
-                      "id": "K7zDyG0UfppW",
-                      "text": "AI와의 레퍼런스 관련 개별 대화 세션 기록으로 관리한다",
-                      "children": [],
-                      "createdAt": 1793789902511,
-                      "updatedAt": 1793789912860
-                    },
-                    {
-                      "id": "UJODGMsN0dvC",
-                      "text": "어차피 추상화이고 어바웃한 것이다. 그리고 사용자가 느끼는 논리적 맥락이든 뭐든 '뉘앙스' 속에 묻어있다. 그저 특정 포인트, 혹은 강조 포인트를 바탕으로한 '레퍼런스 사일로 대화 맥락' 그 자체가 통으로 관리가 된다",
-                      "children": [],
-                      "createdAt": 1793789913049,
-                      "updatedAt": 1793789971095
-                    }
-                  ],
-                  "createdAt": 1793789894954,
-                  "updatedAt": 1793789902173,
-                  "isFolded": false
-                },
-                {
-                  "id": "PDcbrx9SBcZh",
-                  "text": "참조 레이어 뷰포트 아이디어4",
-                  "children": [
-                    {
-                      "id": "3TmKl2ZOBRZl",
-                      "text": "범위 지정까지만 -> 어노테이션 혹은 필터 지정까지 해주면 좋지만",
-                      "children": [],
-                      "createdAt": 1793792748862,
-                      "updatedAt": 1793792766030
-                    },
-                    {
-                      "id": "11J2ZZQqc5qJ",
-                      "text": "안하더라도 자동 원심 분리[무조건 원심 분리기 다 돌린다] -> 결과물에 알아서 반영[인용을 통해 레퍼런스가 이렇게 반영된거다]를 \"Show Don't Tell\"",
-                      "children": [],
-                      "createdAt": 1793792766357,
-                      "updatedAt": 1793792845856
-                    },
-                    {
-                      "id": "r77VRaYLY6dH",
-                      "text": "하다가 이 느낌 아닌데? 하면 추후 해제 혹은 레퍼런스 아예 제외식",
-                      "children": [],
-                      "createdAt": 1793792777409,
-                      "updatedAt": 1793792798455
-                    },
-                    {
-                      "id": "M59XfJOWWvc9",
-                      "text": "버전 2~3개 중에서 뭐가 맞냐? -> 거기서 튜닝 하는 식",
-                      "children": [],
-                      "createdAt": 1793793960613,
-                      "updatedAt": 1793793991306
-                    },
-                    {
-                      "id": "h8PtskAJu2np",
-                      "text": "레퍼 - edit 다이렉트 지시 및 -> 출력 후 피드백(이걸로 이거 쓰셈!)",
-                      "children": [],
-                      "createdAt": 1793793991762,
-                      "updatedAt": 1793794050267,
-                      "file": {
-                        "target": "Pasted image 20261104210658.png"
-                      }
-                    }
-                  ],
-                  "createdAt": 1793792743175,
-                  "updatedAt": 1793792748172,
-                  "isFolded": false
+                  "createdAt": 1793865069351,
+                  "updatedAt": 1793865078633,
+                  "isFolded": true
                 }
               ],
               "isFolded": false,
@@ -1090,8 +1114,10 @@
                             }
                           ],
                           "createdAt": 1793839293376,
-                          "updatedAt": 1793839310201,
-                          "isFolded": true
+                          "updatedAt": 1793853203256,
+                          "isFolded": true,
+                          "isCompleted": true,
+                          "completedAt": 1793853203256
                         }
                       ],
                       "createdAt": 1793832285480,
@@ -1118,17 +1144,17 @@
                   ],
                   "createdAt": 1793766981934,
                   "updatedAt": 1793767004031,
-                  "isFolded": true
+                  "isFolded": false
                 },
                 {
                   "id": "9B9Zk95bKfU7",
-                  "text": "스테이지 - zoom 에 따른 자동 하네스 반영",
+                  "text": "스테이지(Phase) - zoom 에 따른 자동 하네스 반영",
                   "children": [],
                   "file": {
                     "target": "Pasted image 20261105104426.png"
                   },
                   "createdAt": 1793843066512,
-                  "updatedAt": 1793843098977
+                  "updatedAt": 1793853695145
                 }
               ],
               "createdAt": 1793766536706,
@@ -1188,7 +1214,7 @@
               ],
               "createdAt": 1793767085676,
               "updatedAt": 1793769252445,
-              "isFolded": true
+              "isFolded": false
             },
             {
               "id": "c5UXHJYKjn17",
@@ -1287,7 +1313,291 @@
             {
               "id": "z2WDIMltZy0b",
               "text": "Resource 매니저",
-              "children": [],
+              "children": [
+                {
+                  "id": "qReuUqPpRT1A",
+                  "text": "필수 사양 - 덤핑",
+                  "children": [
+                    {
+                      "id": "rkROIGlEO9mY",
+                      "text": "디렉토리 뭉탱이가 추가될 것",
+                      "children": [
+                        {
+                          "id": "S1qpCG0JKCUt",
+                          "text": "여기서 선별 및 발라내기가 가능할 것",
+                          "children": [],
+                          "createdAt": 1793859796938,
+                          "updatedAt": 1793859805298
+                        }
+                      ],
+                      "createdAt": 1793859787459,
+                      "updatedAt": 1793859822703
+                    },
+                    {
+                      "id": "f9aNXClgzv3E",
+                      "text": "디렉토리 뭉탱이 + 몇 백 페이지 중 '사용된 놈'만 바로 카드형으로 뿌려줄 것(Choice / Not Choice 구분)",
+                      "children": [
+                        {
+                          "id": "fAathnfxbbqa",
+                          "text": "디렉토리 중 선택된 파일 소스와 아닌 것",
+                          "children": [],
+                          "createdAt": 1793859876170,
+                          "updatedAt": 1793859886141
+                        },
+                        {
+                          "id": "yY8owW66rcfN",
+                          "text": "선택된 파일 소스 중 선택된 섹터와 아닌 것",
+                          "children": [],
+                          "createdAt": 1793859886349,
+                          "updatedAt": 1793859904706
+                        }
+                      ],
+                      "createdAt": 1793859827425,
+                      "updatedAt": 1793859867033
+                    },
+                    {
+                      "id": "yAGg3YHtGuvy",
+                      "text": "여러 유형이 가능할 것",
+                      "children": [
+                        {
+                          "id": "8SOHuG07cHjK",
+                          "text": "다른 외부 테이블",
+                          "children": [],
+                          "createdAt": 1793859924126,
+                          "updatedAt": 1793859928803
+                        },
+                        {
+                          "id": "AnTNiEFCEW0l",
+                          "text": "외부 API",
+                          "children": [],
+                          "createdAt": 1793859929038,
+                          "updatedAt": 1793859934657
+                        },
+                        {
+                          "id": "bBVcn1nBgDnk",
+                          "text": "파일 디렉토리",
+                          "children": [],
+                          "createdAt": 1793859934968,
+                          "updatedAt": 1793859940165
+                        },
+                        {
+                          "id": "6ZxUbMRjL3P0",
+                          "text": "멀티미디어",
+                          "children": [],
+                          "createdAt": 1793859940378,
+                          "updatedAt": 1793859943762
+                        },
+                        {
+                          "id": "QwjbFVWeyi3o",
+                          "text": "사이트 등",
+                          "children": [],
+                          "createdAt": 1793859945794,
+                          "updatedAt": 1793859949003
+                        }
+                      ],
+                      "createdAt": 1793859850074,
+                      "updatedAt": 1793859923947
+                    }
+                  ],
+                  "createdAt": 1793859815350,
+                  "updatedAt": 1793859987645,
+                  "isFolded": true
+                },
+                {
+                  "id": "QwhTl29UQUHN",
+                  "text": "메인 컨셉들",
+                  "children": [
+                    {
+                      "id": "ozmbNcA40YjD",
+                      "text": "컨셉1 - 클립 스튜디오 소재 창고 스타일",
+                      "children": [
+                        {
+                          "id": "bl5UhIQAGGLG",
+                          "text": "파일 트리 - 뷰 설정",
+                          "children": [],
+                          "file": {
+                            "target": "Pasted image 20261105144955.png"
+                          },
+                          "createdAt": 1793857795102,
+                          "updatedAt": 1793857815500
+                        }
+                      ],
+                      "createdAt": 1793857707294,
+                      "updatedAt": 1793858853649,
+                      "file": {
+                        "target": "Pasted image 20261105144827.png"
+                      },
+                      "isFolded": true
+                    },
+                    {
+                      "id": "aT0QIWWIBxC6",
+                      "text": "컨셉2 - File Explorer 리소스 특화 스타일",
+                      "children": [
+                        {
+                          "id": "Tq1VNhc12e1o",
+                          "text": "리소스 첨부 전",
+                          "children": [
+                            {
+                              "id": "88mY0Za9n1V6",
+                              "text": "첨부 전2",
+                              "children": [],
+                              "createdAt": 1793859152509,
+                              "updatedAt": 1793859167254,
+                              "file": {
+                                "target": "Pasted image 20261105151232.png"
+                              }
+                            }
+                          ],
+                          "file": {
+                            "target": "Pasted image 20261105151146.png"
+                          },
+                          "createdAt": 1793859106919,
+                          "updatedAt": 1793859119725,
+                          "isFolded": true
+                        },
+                        {
+                          "id": "j68DcLkG77QU",
+                          "text": "리소스 첨부 후",
+                          "children": [],
+                          "file": {
+                            "target": "Pasted image 20261105151038.png"
+                          },
+                          "createdAt": 1793859038080,
+                          "updatedAt": 1793859051445
+                        }
+                      ],
+                      "createdAt": 1793858810916,
+                      "updatedAt": 1793858853649,
+                      "file": {
+                        "target": "Pasted image 20261105150651.png"
+                      },
+                      "isFolded": true
+                    },
+                    {
+                      "id": "yXa518kWC6Dz",
+                      "text": "컨셉3 - 플로팅&부착형 채집통 스타일",
+                      "children": [],
+                      "createdAt": 1793859665360,
+                      "updatedAt": 1793859687397,
+                      "file": {
+                        "target": "Pasted image 20261105152105.png"
+                      }
+                    },
+                    {
+                      "id": "tvBcp0liZXDp",
+                      "text": "컨셉4 - NotebookLM",
+                      "children": [
+                        {
+                          "id": "3uTNLrrzAVqS",
+                          "text": "리소스 불러온 상태",
+                          "children": [],
+                          "file": {
+                            "target": "Pasted image 20261105153024.png"
+                          },
+                          "createdAt": 1793860224614,
+                          "updatedAt": 1793860256411
+                        },
+                        {
+                          "id": "ClgmDKHNfsM0",
+                          "text": "옵시디언 디렉토리",
+                          "children": [],
+                          "createdAt": 1793860336056,
+                          "updatedAt": 1793860342025,
+                          "file": {
+                            "target": "Pasted image 20261105153216.png"
+                          }
+                        }
+                      ],
+                      "createdAt": 1793860159447,
+                      "updatedAt": 1793860243474,
+                      "file": {
+                        "target": "Pasted image 20261105152919.png"
+                      }
+                    }
+                  ],
+                  "createdAt": 1793858843052,
+                  "updatedAt": 1793858856811,
+                  "isFolded": true
+                },
+                {
+                  "id": "jAsrxcyrY56i",
+                  "text": "import files",
+                  "children": [
+                    {
+                      "id": "27u7qVHZbKdl",
+                      "text": "import from other services / upload a file / upload a URL / Upload a DOI??",
+                      "children": [],
+                      "createdAt": 1793864402895,
+                      "updatedAt": 1793864439705
+                    },
+                    {
+                      "id": "MQLJKS6UKLyg",
+                      "text": "OCR Files",
+                      "children": [
+                        {
+                          "id": "arUDJW4bC9Aa",
+                          "text": "Queueing",
+                          "children": [],
+                          "file": {
+                            "target": "Pasted image 20261105164204.png"
+                          },
+                          "createdAt": 1793864524987,
+                          "updatedAt": 1793864534204
+                        }
+                      ],
+                      "file": {
+                        "target": "Pasted image 20261105164117.png"
+                      },
+                      "createdAt": 1793864477158,
+                      "updatedAt": 1793864490751
+                    }
+                  ],
+                  "createdAt": 1793864373394,
+                  "updatedAt": 1793864393450,
+                  "file": {
+                    "target": "Pasted image 20261105163949.png"
+                  },
+                  "isFolded": true
+                },
+                {
+                  "id": "vrBlekSbLW9r",
+                  "text": "annotating",
+                  "children": [],
+                  "createdAt": 1793864634007,
+                  "updatedAt": 1793864638674,
+                  "file": {
+                    "target": "Pasted image 20261105164354.png"
+                  }
+                },
+                {
+                  "id": "wks6yBoM1K0E",
+                  "text": "특정 대상별 인용 파일",
+                  "children": [],
+                  "file": {
+                    "target": "Pasted image 20261105164755.png"
+                  },
+                  "createdAt": 1793864875817,
+                  "updatedAt": 1793864894274
+                },
+                {
+                  "id": "7KnGICYBO8er",
+                  "text": "멀티 섹션 지원 + 아코디언?",
+                  "children": [
+                    {
+                      "id": "BzNozU6hXPR1",
+                      "text": "Filter + 정렬 + Group by 등등 '뷰' + 스냅샷",
+                      "children": [],
+                      "createdAt": 1793866608057,
+                      "updatedAt": 1793866637124
+                    }
+                  ],
+                  "createdAt": 1793866392545,
+                  "updatedAt": 1793866403337,
+                  "file": {
+                    "target": "Pasted image 20261105171312.png"
+                  }
+                }
+              ],
               "createdAt": 1793771406318,
               "updatedAt": 1793771412152
             },
@@ -1297,13 +1607,15 @@
               "children": [
                 {
                   "id": "FelJ8rEQDxqh",
-                  "text": "작업 중, 출력 중",
+                  "text": "작업 중, 출력 중 - 1차 스켈레톤 및 시동은 검",
                   "children": [],
                   "createdAt": 1793840856277,
-                  "updatedAt": 1793840879847,
+                  "updatedAt": 1793853753524,
                   "file": {
                     "target": "Pasted image 20261105100736.png"
-                  }
+                  },
+                  "isCompleted": true,
+                  "completedAt": 1793853753524
                 },
                 {
                   "id": "14x56HqJw2CL",
@@ -1356,7 +1668,8 @@
                     }
                   ],
                   "createdAt": 1793841225039,
-                  "updatedAt": 1793841228679
+                  "updatedAt": 1793841228679,
+                  "isFolded": true
                 },
                 {
                   "id": "fg416A1F8Yx7",
@@ -1420,12 +1733,31 @@
               ],
               "createdAt": 1793841617757,
               "updatedAt": 1793841627251,
-              "isFolded": false
+              "isFolded": true
+            },
+            {
+              "id": "c5akG6EQsxT5",
+              "text": "프로젝트 대시보드",
+              "children": [
+                {
+                  "id": "DzxHungBTJX3",
+                  "text": "프로젝트 대시보드 - 캔바 샘플",
+                  "children": [],
+                  "createdAt": 1793859222084,
+                  "updatedAt": 1793859239224,
+                  "file": {
+                    "target": "Pasted image 20261105151343.png"
+                  }
+                }
+              ],
+              "createdAt": 1793859215718,
+              "updatedAt": 1793859221833,
+              "isFolded": true
             }
           ],
           "createdAt": 1793769223297,
           "updatedAt": 1793848827721,
-          "isFolded": true
+          "isFolded": false
         },
         {
           "id": "yE3qPUvMNM2x",
@@ -1655,10 +1987,24 @@
             },
             {
               "id": "X0h2YeHeF4px",
-              "text": "레퍼런스 VS 작성 가이드, 체크리스트, 규정, 요령 이런 것은 구분해서 관리를 해야하나... 아니면 그냥 자유롭게 '챗창'에서 보인이 설정할 수 있도록만 해주면 되나",
+              "text": "레퍼런스 VS 작성 가이드, 체크리스트, 규정, 요령, 스킬북, 핸디북 이런 것은 구분해서 관리를 해야하나... 아니면 그냥 자유롭게 '챗창'에서 보인이 설정할 수 있도록만 해주면 되나",
               "children": [],
               "createdAt": 1793840576708,
-              "updatedAt": 1793840612255
+              "updatedAt": 1793852808038
+            },
+            {
+              "id": "KGo3FYlwfmHQ",
+              "text": "문서 구성 요소, 작업 단위별 대화 세션 별도 관리, 통합 관리 시나리오",
+              "children": [],
+              "createdAt": 1793863186169,
+              "updatedAt": 1793863210837
+            },
+            {
+              "id": "XSshHybznQFG",
+              "text": "기본 원칙을 '빡센 작업창' -> widget 요런 식으로 하는기... 흠...",
+              "children": [],
+              "createdAt": 1793865092364,
+              "updatedAt": 1793865119400
             }
           ],
           "createdAt": 1793765288631,
@@ -1679,5 +2025,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1793848832048
+  "updatedAt": 1793866637124
 }
