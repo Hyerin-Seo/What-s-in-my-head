@@ -57,7 +57,7 @@
           "updatedAt": 1793614944780
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "createdAt": 1793614944780,
       "updatedAt": 1793615204478
     },
@@ -234,6 +234,86 @@
       "isFolded": true,
       "createdAt": 1793615067671,
       "updatedAt": 1793615272715
+    },
+    {
+      "id": "aOr61qeHIGXv",
+      "text": "(Tuning) rough sketch -> 정형화된 문서 시나리오",
+      "children": [
+        {
+          "id": "Ln54cllxJqll",
+          "text": "[아웃라인 vs 내용 비율]: 이미 잡힌 상태",
+          "children": [],
+          "createdAt": 1793839388607,
+          "updatedAt": 1793839404881
+        },
+        {
+          "id": "B9ZuVIqnrbgO",
+          "text": "[상황]: 아웃라인과 내용을 스케치 혹은 프리라이팅으로 이미 작성을 해뒀지만 '연출', '레이아웃'만 못 잡은 상태",
+          "children": [],
+          "createdAt": 1793839405226,
+          "updatedAt": 1793839435341
+        },
+        {
+          "id": "f71PBUcSM178",
+          "text": "[Input ➔ Output]:",
+          "children": [
+            {
+              "id": "E9yEfKsWF1uW",
+              "text": "Input: 스케치로 작성한 줄글로만 있는 md 파일 혹은 워드 파일",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1793839443391,
+              "updatedAt": 1793839472368
+            },
+            {
+              "id": "42sxn1bg4g44",
+              "text": "Output: 정형화되고 워드 디자인이 적용된 design 디벨롭이된 파일",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1793839443391,
+              "updatedAt": 1793839498354
+            }
+          ],
+          "nodeType": "bullet",
+          "createdAt": 1793839443391,
+          "updatedAt": 1793839443391
+        },
+        {
+          "id": "cCll491KO8ex",
+          "text": "[검증 포인트]: ",
+          "children": [
+            {
+              "id": "y4mmwJ2scDPm",
+              "text": "시각적 배치 및 가독성에 대한 작업 퀄리티",
+              "children": [],
+              "createdAt": 1793839532170,
+              "updatedAt": 1793839532532
+            },
+            {
+              "id": "3e6r6UQKt4RM",
+              "text": "시각적 디렉팅에 대한 편의성",
+              "children": [],
+              "createdAt": 1793839534853,
+              "updatedAt": 1793839542666
+            }
+          ],
+          "createdAt": 1793839503905,
+          "updatedAt": 1793839532170
+        }
+      ],
+      "createdAt": 1793839346098,
+      "updatedAt": 1793839553970,
+      "isFolded": true
+    },
+    {
+      "id": "hnVmGz0TynNZ",
+      "text": "(Show!) ai 챗 -> 바로 반영된 결과물",
+      "children": [],
+      "createdAt": 1793842966406,
+      "updatedAt": 1793842989589,
+      "file": {
+        "target": "Pasted image 20261105104249.png"
+      }
     },
     {
       "id": "YooEQtSAu8uK",
@@ -438,5 +518,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793352150020,
-  "updatedAt": 1793615272715
+  "updatedAt": 1793842989589
 }

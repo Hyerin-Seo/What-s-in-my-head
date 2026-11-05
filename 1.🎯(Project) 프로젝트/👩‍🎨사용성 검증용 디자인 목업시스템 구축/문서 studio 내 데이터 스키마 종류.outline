@@ -1026,6 +1026,13 @@
           "isFolded": true,
           "createdAt": 1793617064075,
           "updatedAt": 1793617064075
+        },
+        {
+          "id": "m3EJOT4wgnbG",
+          "text": "3. 내 작업 voice",
+          "children": [],
+          "createdAt": 1793695523336,
+          "updatedAt": 1793695529270
         }
       ],
       "isFolded": false,
@@ -1086,5 +1093,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793615781805,
-  "updatedAt": 1793619975804
+  "updatedAt": 1793695529270
 }
