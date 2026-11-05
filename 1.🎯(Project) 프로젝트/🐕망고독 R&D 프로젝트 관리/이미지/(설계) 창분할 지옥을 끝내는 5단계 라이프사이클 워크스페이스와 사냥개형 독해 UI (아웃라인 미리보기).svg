@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">(설계) 창분할 지옥을 끝내는 5단계 라이프사…</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1. 문제 제기: 왜 기존 5개 창 분할은 인지적 자살인가? (모기…</text>
+<circle cx="58" cy="127" r="4.5" fill="#3a3a40"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1.1. 캡처로 증명된 5분할 모기장 화면의 참극</text>
+<circle cx="82" cy="160" r="3" fill="#9a9aa3"/>
+<text x="99" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">현재 구조: [파일 탐색기 | 래퍼런스 PDF | 최종 에디터…</text>
+<circle cx="82" cy="193" r="3" fill="#9a9aa3"/>
+<text x="99" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">결과: 각각의 창 폭이 스마트폰 화면보다 좁아져 정작 글…</text>
+<circle cx="82" cy="226" r="3" fill="#9a9aa3"/>
+<text x="99" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">시각적 주의력 분산 (Attention Fragmentation): 인간…</text>
+<circle cx="58" cy="259" r="4.5" fill="#3a3a40"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1.2. 기존 IDE 및 생산성 툴들의 무책임한 방치</text>
+<circle cx="82" cy="292" r="3" fill="#9a9aa3"/>
+<text x="99" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">개발자용 창분할(Tiling) 방식을 복합 지식 노동자에게…</text>
+<circle cx="82" cy="325" r="3" fill="#9a9aa3"/>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">도구가 작업 상태를 제어해주지 않고 '너한테 다 필요하…</text>
+<circle cx="58" cy="358" r="4.5" fill="#3a3a40"/>
+<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">1.3. 핵심 해결 철칙: '화면은 언제나 최대 2개 창(2-Pane)…</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>

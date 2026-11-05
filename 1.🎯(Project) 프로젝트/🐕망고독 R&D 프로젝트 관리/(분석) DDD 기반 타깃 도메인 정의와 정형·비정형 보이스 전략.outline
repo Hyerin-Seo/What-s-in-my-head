@@ -74,7 +74,7 @@
               "children": [],
               "isFolded": false,
               "createdAt": 1793703622678,
-              "updatedAt": 1793703622678
+              "updatedAt": 1793758483285
             },
             {
               "id": "bCVYz9Q63Trx",
@@ -105,6 +105,31 @@
           "isFolded": false,
           "createdAt": 1793703622678,
           "updatedAt": 1793703622678
+        },
+        {
+          "id": "rdPbStmHdr01",
+          "text": "독해·소화의 병목: 헤비 라이터는 곧 헤비 리더 (자료를 읽고 이해하는 데 작업 시간의 50% 이상 소진)",
+          "children": [
+            {
+              "id": "rdPbExtDat01",
+              "text": "방대한 외부 자료(RFP 500쪽, 판례 30건, 논문, 특허, 타부서 기획안)를 직접 퍼먹고 소화(Sensemaking)하는 데 업무 시간의 50% 이상을 소진함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793770116016,
+              "updatedAt": 1793770116016
+            },
+            {
+              "id": "rdPbRAGLim01",
+              "text": "기존 AI RAG는 \"AI 혼자 이해하는 블랙박스\"라 법적·비즈니스 책임을 져야 하는 시니어의 독해 부채와 원문 검증 불안을 전혀 덜어주지 못함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793770116016,
+              "updatedAt": 1793770116016
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793770116016,
+          "updatedAt": 1793770116016
         }
       ],
       "isFolded": false,
@@ -192,6 +217,14 @@
               "isFolded": false,
               "createdAt": 1793703622678,
               "updatedAt": 1793703622678
+            },
+            {
+              "id": "usrHvyRdrWrt",
+              "text": "헤비 리더 겸 헤비 라이터 (Heavy Reader & Heavy Writer): 남이 쓴 방대한 전문 텍스트(판례, 특허, RFP, 논문, 타부서 초안)를 끊임없이 퍼먹고 소화하여 자신의 논리로 치환해야 하는 시니어 전문가",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793770116016,
+              "updatedAt": 1793770116016
             },
             {
               "id": "RQJlfV71y2A8",
@@ -358,6 +391,14 @@
               "isFolded": false,
               "createdAt": 1793703622678,
               "updatedAt": 1793703622678
+            },
+            {
+              "id": "outPeopleRead",
+              "text": "6. 외부 자료 독해 및 소화 시간 70% 단축 (사족 분쇄·1% 쟁점 증류 + 내 과제 관점 맥락 번역 + 1초 원문 핑으로 직접 읽고 검증하는 안도감 확보)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793770116016,
+              "updatedAt": 1793770116016
             }
           ],
           "isFolded": false,
@@ -474,6 +515,14 @@
               "isFolded": false,
               "createdAt": 1793703622678,
               "updatedAt": 1793703622678
+            },
+            {
+              "id": "techReadIngst",
+              "text": "단순 RAG를 넘어선 '인간 중심 독해 레버리지 (Reader Workbench)' 필수 ➔ 사족 분쇄, 쟁점 대조 매트릭스, 1초 원문 핑(Grounding Ping) 및 증거 취조형 대화 인터랙션 지원",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793770116016,
+              "updatedAt": 1793770116016
             }
           ],
           "isFolded": false,
@@ -507,6 +556,14 @@
               "isFolded": false,
               "createdAt": 1793703622678,
               "updatedAt": 1793703622678
+            },
+            {
+              "id": "desirReadTrst",
+              "text": "AI 요약에 대한 불신(블랙박스 공포) 해소 ➔ 요약문/인용구 클릭 시 원문 PDF/문서의 해당 단락 형광펜 위치로 1초 만에 점프하는 투명성 제공",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793770116016,
+              "updatedAt": 1793770116016
             }
           ],
           "isFolded": false,
@@ -546,5 +603,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793703622678,
-  "updatedAt": 1793703622678
+  "updatedAt": 1793770116016
 }
