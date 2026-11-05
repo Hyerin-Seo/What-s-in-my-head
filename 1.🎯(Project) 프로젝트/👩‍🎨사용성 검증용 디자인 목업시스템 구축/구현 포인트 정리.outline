@@ -855,7 +855,7 @@
               ],
               "createdAt": 1793777299341,
               "updatedAt": 1793777305086,
-              "isFolded": true
+              "isFolded": false
             },
             {
               "id": "RUPXJ81X5Jg6",
@@ -871,7 +871,7 @@
               ],
               "createdAt": 1793787742172,
               "updatedAt": 1793787748743,
-              "isFolded": true
+              "isFolded": false
             },
             {
               "id": "YswkjXF8TOCb",
@@ -894,7 +894,7 @@
               ],
               "createdAt": 1793789894954,
               "updatedAt": 1793789902173,
-              "isFolded": true
+              "isFolded": false
             },
             {
               "id": "PDcbrx9SBcZh",
@@ -941,7 +941,7 @@
               ],
               "createdAt": 1793792743175,
               "updatedAt": 1793792748172,
-              "isFolded": true
+              "isFolded": false
             }
           ],
           "isFolded": false,
@@ -1045,16 +1045,91 @@
                   "createdAt": 1793767013269,
                   "updatedAt": 1793767026501,
                   "isFolded": true
+                },
+                {
+                  "id": "KY2nMDqr4B7s",
+                  "text": "Editor 기능 개선",
+                  "children": [
+                    {
+                      "id": "WLSA311Rh6it",
+                      "text": "Selector, 선택 영역 관련 기능 개선",
+                      "children": [
+                        {
+                          "id": "57IqXG9xTrZx",
+                          "text": "긁는 족족 다 선택되어야함",
+                          "children": [],
+                          "createdAt": 1793832291772,
+                          "updatedAt": 1793839313623,
+                          "file": {
+                            "target": "Pasted image 20261105074453.png"
+                          }
+                        },
+                        {
+                          "id": "NqS3lzfaGoH7",
+                          "text": "Inline-AI 가 항상 뜨면 시선이 불편하고 상시 오픈 모드 혹은 다른 툴바에 숨겨야함",
+                          "children": [],
+                          "createdAt": 1793836426357,
+                          "updatedAt": 1793839313623,
+                          "file": {
+                            "target": "Pasted image 20261105085347.png"
+                          }
+                        },
+                        {
+                          "id": "Hdal8ajt982h",
+                          "text": "툴바 저 두 개 + 많이 쓰이는 도구 툴 바가 기본 우측 상단 -> AI도 저쪽으로 포함할 것",
+                          "children": [],
+                          "createdAt": 1793839250263,
+                          "updatedAt": 1793839313623,
+                          "file": {
+                            "target": "Pasted image 20261105094051.png"
+                          }
+                        }
+                      ],
+                      "createdAt": 1793839293376,
+                      "updatedAt": 1793839310201,
+                      "isFolded": true
+                    }
+                  ],
+                  "createdAt": 1793832285480,
+                  "updatedAt": 1793832291645
+                },
+                {
+                  "id": "x19jC0z43HPk",
+                  "text": "AI 인터랙션 기능 개선",
+                  "children": [
+                    {
+                      "id": "EuK5SbfveWmV",
+                      "text": "뭐지 이 흉물은?",
+                      "children": [],
+                      "createdAt": 1793840189312,
+                      "updatedAt": 1793840197035,
+                      "file": {
+                        "target": "Pasted image 20261105095630.png"
+                      }
+                    }
+                  ],
+                  "createdAt": 1793840181201,
+                  "updatedAt": 1793840189207
                 }
               ],
               "createdAt": 1793766981934,
               "updatedAt": 1793767004031,
               "isFolded": true
+            },
+            {
+              "id": "9B9Zk95bKfU7",
+              "text": "스테이지 - zoom 에 따른 자동 하네스 반영",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261105104426.png"
+              },
+              "createdAt": 1793843066512,
+              "updatedAt": 1793843098977
             }
           ],
           "createdAt": 1793766536706,
           "updatedAt": 1793769252445,
-          "isFolded": true
+          "isFolded": false
         },
         {
           "id": "u4lSwds7W5hK",
@@ -1214,10 +1289,134 @@
         },
         {
           "id": "QTCXmUbTgGhg",
-          "text": "",
-          "children": [],
+          "text": "AI Composer",
+          "children": [
+            {
+              "id": "FelJ8rEQDxqh",
+              "text": "작업 중, 출력 중",
+              "children": [],
+              "createdAt": 1793840856277,
+              "updatedAt": 1793840879847,
+              "file": {
+                "target": "Pasted image 20261105100736.png"
+              }
+            },
+            {
+              "id": "14x56HqJw2CL",
+              "text": "병렬 처리",
+              "children": [],
+              "createdAt": 1793840851204,
+              "updatedAt": 1793840883426
+            },
+            {
+              "id": "2CiffqyAohjl",
+              "text": "비동기 처리",
+              "children": [],
+              "createdAt": 1793840895448,
+              "updatedAt": 1793840900242
+            },
+            {
+              "id": "XQv1nPWcu3oY",
+              "text": "제어 처리",
+              "children": [
+                {
+                  "id": "LwPWfIu7Prb9",
+                  "text": "queue 처리 + 순서 바꾸기",
+                  "children": [],
+                  "createdAt": 1793841229198,
+                  "updatedAt": 1793841238258,
+                  "file": {
+                    "target": "Pasted image 20261105101349.png"
+                  }
+                },
+                {
+                  "id": "fhxySLzJa1KD",
+                  "text": "stop 일시정지",
+                  "children": [],
+                  "createdAt": 1793841239173,
+                  "updatedAt": 1793841241916
+                },
+                {
+                  "id": "ilxqTVRg7KPX",
+                  "text": "멈춘 거 재개 시키기 등등",
+                  "children": [],
+                  "createdAt": 1793841242627,
+                  "updatedAt": 1793841248753
+                },
+                {
+                  "id": "pt3PRz3q8X1q",
+                  "text": "인수인계하기",
+                  "children": [],
+                  "createdAt": 1793841250503,
+                  "updatedAt": 1793841254614
+                }
+              ],
+              "createdAt": 1793841225039,
+              "updatedAt": 1793841228679
+            },
+            {
+              "id": "fg416A1F8Yx7",
+              "text": "로그 및 입출력 데이터 스키마 보관",
+              "children": [],
+              "createdAt": 1793840883577,
+              "updatedAt": 1793840895312
+            },
+            {
+              "id": "O6r8ljit4TZD",
+              "text": "다른 ai 연동",
+              "children": [],
+              "createdAt": 1793840908651,
+              "updatedAt": 1793840912131
+            },
+            {
+              "id": "SUxKRF6kWr84",
+              "text": "엔진 성능 향상",
+              "children": [],
+              "createdAt": 1793840912992,
+              "updatedAt": 1793840917403
+            },
+            {
+              "id": "Pg6r5jLkKtZ7",
+              "text": "기능 추가",
+              "children": [],
+              "createdAt": 1793840917581,
+              "updatedAt": 1793840919033
+            },
+            {
+              "id": "fqXOjHQ9ZtLH",
+              "text": "인터랙션 추가",
+              "children": [],
+              "createdAt": 1793840920584,
+              "updatedAt": 1793840926643
+            }
+          ],
           "createdAt": 1793771414175,
-          "updatedAt": 1793771417273
+          "updatedAt": 1793840850398,
+          "isFolded": true
+        },
+        {
+          "id": "gilgbzZXjH75",
+          "text": "InBound AI 제어",
+          "children": [
+            {
+              "id": "Y2yTlQnYaJet",
+              "text": "각 버튼, 기능이 정해진 AI 에 대한 관리 체계",
+              "children": [
+                {
+                  "id": "mBm1SdaHcVNa",
+                  "text": "가령, 문서 파서 Import -> 딱 정해져 있어야. stream No -> 한 번에 하는 설정으로",
+                  "children": [],
+                  "createdAt": 1793841645703,
+                  "updatedAt": 1793841685399
+                }
+              ],
+              "createdAt": 1793841627695,
+              "updatedAt": 1793841640510
+            }
+          ],
+          "createdAt": 1793841617757,
+          "updatedAt": 1793841627251,
+          "isFolded": false
         }
       ],
       "createdAt": 1793769223297,
@@ -1432,6 +1631,30 @@
           "createdAt": 1793795567196,
           "updatedAt": 1793795582000,
           "isFolded": true
+        },
+        {
+          "id": "Fu80Qg0vA5Eq",
+          "text": "비동기, 시켜놓기, 컴퓨터 꺼도 해야한다!",
+          "children": [],
+          "createdAt": 1793832195444,
+          "updatedAt": 1793832205702
+        },
+        {
+          "id": "Qy2WeCQc6Uxr",
+          "text": "판도독 처럼 block 베이스로 관리를 하되, free-writing 모드로 변환해서 쭉 칠 수 있도록 하까? 대신 쭉 줄 글로 치면 단락으로 잡아주고, 마크다운 태그만 잡아주는 걸로",
+          "children": [],
+          "createdAt": 1793838923301,
+          "updatedAt": 1793838970777,
+          "file": {
+            "target": "Pasted image 20261105093524.png"
+          }
+        },
+        {
+          "id": "X0h2YeHeF4px",
+          "text": "레퍼런스 VS 작성 가이드, 체크리스트, 규정, 요령 이런 것은 구분해서 관리를 해야하나... 아니면 그냥 자유롭게 '챗창'에서 보인이 설정할 수 있도록만 해주면 되나",
+          "children": [],
+          "createdAt": 1793840576708,
+          "updatedAt": 1793840612255
         }
       ],
       "createdAt": 1793765288631,
@@ -1441,5 +1664,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1793796851848
+  "updatedAt": 1793847604120
 }
