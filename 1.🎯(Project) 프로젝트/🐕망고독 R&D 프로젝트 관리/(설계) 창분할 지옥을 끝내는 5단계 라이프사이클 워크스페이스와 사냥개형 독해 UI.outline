@@ -1,0 +1,715 @@
+{
+  "version": "1.0.0",
+  "id": "0dmZbEbsLGW6",
+  "title": "(설계) 창분할 지옥을 끝내는 5단계 라이프사이클 워크스페이스와 사냥개형 독해 UI",
+  "rootNodes": [
+    {
+      "id": "8Jwq0rcg5EDx",
+      "text": "1. 문제 제기: 왜 기존 5개 창 분할은 인지적 자살인가? (모기장 화면의 한계)",
+      "children": [
+        {
+          "id": "084ftqFZfzN0",
+          "text": "1.1. 캡처로 증명된 5분할 모기장 화면의 참극",
+          "children": [
+            {
+              "id": "wIwYqrU8fd0S",
+              "text": "현재 구조: [파일 탐색기 | 래퍼런스 PDF | 최종 에디터 | 캔버스/아웃라인 | AI 채팅창] 5개 창이 가로·세로로 파편화",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "WZux27Iy3aZl",
+              "text": "결과: 각각의 창 폭이 스마트폰 화면보다 좁아져 정작 글자, 표, 캔버스 수형도를 전혀 읽을 수 없는 가시성 마비",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "9GPinYoNOWNI",
+              "text": "시각적 주의력 분산 (Attention Fragmentation): 인간의 단기 기억(RAM)은 1개의 초점만 깊게 처리하는데, 5개 창이 시선을 난타하여 극심한 뇌 피로 유발",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "1lbR3Jq2aoG9",
+          "text": "1.2. 기존 IDE 및 생산성 툴들의 무책임한 방치",
+          "children": [
+            {
+              "id": "2hkSqGwsfM23",
+              "text": "개발자용 창분할(Tiling) 방식을 복합 지식 노동자에게 그대로 강요함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "LBYx3HP9zhtx",
+              "text": "도구가 작업 상태를 제어해주지 않고 '너한테 다 필요하니까 네가 알아서 쪼개놓고 봐'라며 인지적 책임을 사용자에게 전가함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "7DF3YxQaJg0q",
+          "text": "1.3. 핵심 해결 철칙: '화면은 언제나 최대 2개 창(2-Pane)을 넘지 않는다'",
+          "children": [
+            {
+              "id": "lQctFyJLiVyC",
+              "text": "상시 분할 금지: 5개 기능이 한 화면에 동시에 상주하는 것을 영구 퇴출",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "cVYlxFM9a8nF",
+              "text": "모드 기반 전환 (Mode-based Workspace): 작업자의 현재 인지 단계에 맞춰 딱 필요한 2개의 패널만 짝지어 집중 제공",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793843155008,
+      "updatedAt": 1793843155008
+    },
+    {
+      "id": "gqVie0HaVsdr",
+      "text": "2. 핵심 데이터의 엄격한 분리: 래퍼런스(Reference) vs 리소스(Resource)",
+      "children": [
+        {
+          "id": "lY3RcBiI8SBj",
+          "text": "2.1. 래퍼런스 (Reference) — 뼈대·형식·레시피 참조용",
+          "children": [
+            {
+              "id": "A8Qxx30hUyYK",
+              "text": "정의: 최종 결과물의 빈칸에 내용으로 직접 들어가지 않고, 글의 구조와 스타일을 훔쳐보는 벤치마킹 설계도",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "BnjhWJWy7WP6",
+              "text": "참조 대상: 과거 성공 제안서 목차, 잘 쓴 단행본의 기능적 비트(Beat), 논문 서론 전개 프레임워크, 문체(Voice) 톤앤매너",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "Q2U01cuok6K1",
+              "text": "소비 시점: [Stage 1. 뼈대 설계] 단계에서만 집중 열람하고 이후 본문 집필 시에는 화면에서 닫힘",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "N8w1RqohW9jp",
+          "text": "2.2. 리소스 (Resource) — 내용·팩트·증거 원자재",
+          "children": [
+            {
+              "id": "eIu82IVxSMY9",
+              "text": "정의: 최종 결과물의 각 슬롯 빈칸에 실제 팩트와 수치로 들어가야 하는 핵심 근거 자료",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "2AFnN732eOwF",
+              "text": "참조 대상: 발주처 500쪽 RFP 요구조건, 소송 관련 판례 30건, 임상/인증 규정집, 타부서 기획안 및 원시 데이터",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "VPvQ2wcGUyNz",
+              "text": "소비 시점: [Stage 2. 독해 및 소화]와 [Stage 5. 최종 팩트 검증 1초 핑]에서 정밀 대조용으로 활용",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "Lje0LOAs56bi",
+          "text": "2.3. 분리의 의의: 왜 두 자료를 나란히 띄우면 뇌가 터지는가?",
+          "children": [
+            {
+              "id": "guBDjaw5ogYy",
+              "text": "래퍼런스는 '망원경(숲)'으로 구조를 보는 작업이고, 리소스는 '현미경(나무)'으로 팩트를 씹어먹는 작업임",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "7vxWemJhMcVS",
+              "text": "두 작업의 뇌 인지 모드가 완전히 다르므로, 같은 화면에 동시에 띄워놓고 번갈아 보는 방식은 절대 금지되어야 함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793843155008,
+      "updatedAt": 1793843155008
+    },
+    {
+      "id": "RN7WK7InxRtI",
+      "text": "3. 문서 생산 5대 라이프사이클과 화면 분할 판별 (Split vs Non-split)",
+      "children": [
+        {
+          "id": "kymM7m99BzsN",
+          "text": "Stage 1. 뼈대 역공학 (Scaffold Inception) ➔ [필수 2-Pane 분할]",
+          "children": [
+            {
+              "id": "dbI6BhuhaTwO",
+              "text": "작업 목표: 래퍼런스의 논리 전개 비트를 보며 내 신규 아웃라인의 뼈대(Scaffold)를 조립",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "lxwLzwTI1Wen",
+              "text": "좌측 (50%): 래퍼런스 구조 뷰어 (목차 트리 및 뼈대 조망)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "jIlQ9vDtFXQA",
+              "text": "우측 (50%): 내 신규 아웃라인 에디터 (Outliner)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "vYcfPDhsczne",
+              "text": "숨김 요소: 리소스 PDF 본문, 에디터 본문 줄글, 파일 트리, AI 챗창 전부 숨김",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "PFmLMM9dZhaQ",
+              "text": "분할 불가피 사유: 래퍼런스의 인과 흐름을 눈으로 보면서 내 아웃라인을 오른쪽에 즉각 타이핑·재배치해야 함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "cllNWAMd4cyI",
+          "text": "Stage 2. 원시 자료 독해·소화 (Sensemaking) ➔ [전체화면 독해 모드 (Reader Mode)]",
+          "children": [
+            {
+              "id": "3hXdWukCco9i",
+              "text": "작업 목표: 방대한 리소스(RFP, 판례, 논문)에서 이번 과제에 필요한 1% 핵심 쟁점과 수치를 발라내어 내 머릿속에 납득시키기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "BZVIyWdtKyI2",
+              "text": "화면 구성: 2-Pane 분할이지만 '에디터'가 아님! [좌측: 타깃 앵커 HUD (25%)] ↔ [우측: 원문 리더 & AI 사냥개 레이더 (75%)]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "O7pATLcTWl8q",
+              "text": "숨김 요소: 최종 에디터(DocStudio)를 화면에서 완전히 퇴출 (아직 쓸 준비가 안 됐는데 빈 에디터를 띄우면 극심한 스트레스 유발)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "zNz1XGD0kGum",
+              "text": "분할 형태: 글쓰기 창분할이 아니라 '독해 전용 워크벤치'로 전체 화면 전환",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "9gtOgFWvxfkq",
+          "text": "Stage 3. 슬롯-근거 바인딩 (Slot-Evidence Mapping) ➔ [분할 금지: 서랍식 드로어(Drawer)]",
+          "children": [
+            {
+              "id": "Zbg37jkerDkp",
+              "text": "작업 목표: 내가 짠 아웃라인 목차의 각 슬롯에, Stage 2에서 소화해 둔 팩트 원자(Fact Snippet)를 1:1로 장착",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "mfekdNyH1wFN",
+              "text": "화면 구성: 아웃라인 트리 전체 화면",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "8ENalOUIaoHd",
+              "text": "인터랙션: 슬롯 옆의 [+ 근거 바인딩] 버튼을 누르면 우측에서 '서랍(Drawer)' 형태로 소화된 팩트 카드들이 스르륵 튀어나옴",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "bIdEgbDTzJyw",
+              "text": "반영 방식: 카드를 끌어다 슬롯에 꽂으면 '보라색 팩트 칩(Chip)'으로 결합된 후 서랍은 닫힘 (상시 분할 불필요)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "PSYRBtOe3Zqu",
+          "text": "Stage 4. 슬롯 집중 집필 (Drafting with Voice) ➔ [절대 분할 금지: 단일 에디터 + 인라인 프롬프트]",
+          "children": [
+            {
+              "id": "yeVg3NRdip2v",
+              "text": "작업 목표: 각 슬롯에 꽂힌 팩트 칩을 바탕으로 내 고유 문체(Voice)를 입혀 완성된 문장으로 살 붙이기",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "fluj3uDGigHR",
+              "text": "화면 구성: 넓고 평화로운 1열 집중 에디터 (Focus Writing Mode)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "VXGw0ibHYOrM",
+              "text": "AI 인터랙션 혁신: 거대한 우측 AI 챗 패널 완전 퇴출 ➔ 슬롯 내부에서 단축키로 호출하는 '인라인 입력 바 (Cursor Cmd+K 방식)'",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "1HB8sn96nvUj",
+              "text": "결과: 슬롯 안에서 AI가 내 Voice로 초안을 생성하고, 인라인 Diff로 즉시 채택/수정한 뒤 닫힘",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "1PXaJKquk5IP",
+          "text": "Stage 5. 최종 팩트 검증 (Fact Grounding & Review) ➔ [필수 2-Pane 분할: Grounding Dock]",
+          "children": [
+            {
+              "id": "SJjT75fjelkF",
+              "text": "작업 목표: 작성된 문장의 수치와 주장이 원본 리소스와 일치하는지 내 눈으로 전수 검사하여 서명/제출 리스크 0% 확보",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "0J61Y37YXVxa",
+              "text": "좌측 (55%): 최종 산출물 에디터 (검토 대상 문장 포커스)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "gMvR8tkawWvU",
+              "text": "우측 (45%): 1초 원문 핑 뷰어 (문장의 근거가 된 원본 PDF/문서의 정확한 페이지 형광펜 위치 자동 고정)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "qvSSHlneyKbT",
+              "text": "숨김 요소: 아웃라인 전체 트리, 래퍼런스, 파일 트리, AI 챗창 전부 숨김",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "xBmbn1ik74w7",
+              "text": "분할 불가피 사유: 눈동자가 좌우로 오가며 '작성된 본문의 15.3%'와 '원문의 15.3%'를 1:1 시각 대조해야 함",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793843155008,
+      "updatedAt": 1793843155008
+    },
+    {
+      "id": "EvE5yfZdjDqq",
+      "text": "4. [Stage 2 심화] 사냥개형 목적 독해 워크벤치 아키텍처 (Rin의 핵심 인사이트)",
+      "children": [
+        {
+          "id": "HQwIJlv6MjBL",
+          "text": "4.1. 전문가 독해의 본질: '정독(Passive Reading)'이 아닌 '수색 및 취조(Adversarial Interrogation)'",
+          "children": [
+            {
+              "id": "49F3jpvqwmmN",
+              "text": "상황 예시: 변호사가 100쪽짜리 상대방 준비서면을 읽을 때, 그냥 읽는 것이 아니라 '상대방 주장의 모순과 허점'을 찌르기 위한 칼을 품고 읽음",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "O32cnBjuWfcx",
+              "text": "인지적 표류 (Cognitive Drift)의 위험: 상대방의 장황한 법리와 핑계를 읽다 보면 단기 기억(RAM)이 과부하되어 '내가 지금 뭘 반박하려고 읽고 있었지?' 잊어버림",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "i16D5TcXXLSB",
+          "text": "4.2. 타깃 앵커 헤드업 디스플레이 (Target Anchor HUD - 좌측 25~30%)",
+          "children": [
+            {
+              "id": "qRLnfPKhZRSv",
+              "text": "역할: 내가 지금 이 문서를 읽는 '공격 목표(가설)'를 화면 좌측 상단에 선명한 닻(Anchor)으로 항상 고정",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "SVddNMs4JME4",
+              "text": "표시 항목 1: [현재 검증 목표] '상대방의 3월 15일 구두합의 부인 주장 반박'",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "VYSr0uP6NlU3",
+              "text": "표시 항목 2: [내가 찾아야 할 허점 체크리스트] ① 3월 이전 메일/카톡 대화, ② 대금 지급 메모, ③ 2차 회의록 날인 여부",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "v3GYKSPmnEaN",
+              "text": "표시 항목 3: [포착된 탄환 바구니] 우측 원문에서 건져 올린 핵심 증거 조각들이 슬롯 형태로 쌓임",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "kgFdPenLWYFt",
+          "text": "4.3. AI의 포지셔닝 혁신: '재판관(Judge)'이 아닌 '사냥개(Bloodhound / Radar)'",
+          "children": [
+            {
+              "id": "063waPTwzFfh",
+              "text": "100% 신뢰 불가 원칙: AI에게 '반박문 써줘'라고 시키고 복붙하는 것은 전문가로서 법적·비즈니스적 자살행위",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "MEXDR53388Fi",
+              "text": "사냥개의 임무: 수백 쪽 문서에서 냄새를 맡아, 좌측 타깃 앵커와 모순·충돌하는 '의심 구간의 좌표(Coordinate)'만 물어옴",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "vveXm1OTmGpL",
+              "text": "예시 알림: '⚡ 42쪽 주장과 충돌하는 정황 2건 포착: ① 갑 제4호증 12쪽 카톡 [지난번 통화하신 대로 진행], ② 을 제2호증 87쪽 입금 메모'",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "VVQykgzsV5TI",
+              "text": "인간의 1초 육안 확인 (Grounding): 사용자가 좌표를 누르면 원본 서류의 해당 줄로 즉시 이동하여 형광펜 점등 ➔ 전문가 본인의 눈으로 '모순 맞네!' 확인 후 채택",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "cuJhoWfN1QZY",
+          "text": "4.4. 사냥개형 독해가 주는 3대 레버리지",
+          "children": [
+            {
+              "id": "x0T2LhHfSt31",
+              "text": "1. 뇌 용량 방어: 타깃 앵커가 시각적 닻 역할을 하여 100쪽을 읽어도 흐릿해지지 않음",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "igzjQul9f7DY",
+              "text": "2. 환각 리스크 0%: AI의 글을 믿는 것이 아니라 AI가 짚어준 원문의 실제 텍스트를 내 눈으로 보고 채택",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "RZYTG1o9ft3G",
+              "text": "3. 독해 리드타임 90% 단축: 6시간 걸리던 전수 독해를 5~6개 의심 지점 1초 핑 확인으로 30분 만에 돌파",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793843155008,
+      "updatedAt": 1793843155008
+    },
+    {
+      "id": "iDEL3xnynJHN",
+      "text": "5. 주변부 UI 요소의 퇴출 및 인터랙션 규격 (Clean Desk Policy)",
+      "children": [
+        {
+          "id": "QYqG6n9rA4HS",
+          "text": "5.1. 파일 탐색기 (File Tree) ➔ 자동 숨김 (Auto-hide / Drawer)",
+          "children": [
+            {
+              "id": "dpaC4nkXeBCD",
+              "text": "규칙: 작업 중에는 화면에서 100% 숨김 처리",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "bWvqjvLVQ8Zo",
+              "text": "호출: 단축키(Cmd+\\) 또는 좌측 가장자리 호버 시에만 슬라이드 오버로 나타나고 파일 선택 즉시 사라짐",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "1BQWv8ObLI9E",
+          "text": "5.2. 독립 AI 채팅창 (Gemini/ChatGPT Pane) ➔ 영구 퇴출",
+          "children": [
+            {
+              "id": "9tpqfxtxmlu8",
+              "text": "규칙: 우측에 상시 자리 잡고 앉아 있는 거대한 챗봇 패널은 공간 낭비와 문맥 단절의 주범",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "MYPwHbzNVEJH",
+              "text": "대체: 슬롯 내부 인라인 프롬프트 (Cmd+K) 및 리더 내부 사냥개 레이더 팝업으로 100% 대체",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "nhas0HmtyFaD",
+          "text": "5.3. 캔버스 (Canvas 2D) ↔ 아웃라인 (Outline 1D) ➔ 전체 화면 뷰 스위처 (View Switcher)",
+          "children": [
+            {
+              "id": "gjGcyQUOmhJ6",
+              "text": "규칙: 둘을 나란히 분할해서 띄우지 않음",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "teBTr72545uB",
+              "text": "대체: 상단 탭의 [1D 아웃라인 ↔ 2D 캔버스] 토글 버튼 하나로 0.1초 만에 전체 화면 조망 전환",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793843155008,
+      "updatedAt": 1793843155008
+    },
+    {
+      "id": "D7jzCIqhTNAu",
+      "text": "6. 결론: 전문가를 위한 '3대 워크스페이스 모드 전환' 설계 공식",
+      "children": [
+        {
+          "id": "PO8qIzZmLDmy",
+          "text": "공식: [문서 작성] = [Mode A. 뼈대 모드] ➔ [Mode B. 사냥개 독해 모드] ➔ [Mode C. 집필/검증 모드]",
+          "children": [
+            {
+              "id": "nl6oXzxk9cCs",
+              "text": "Mode A (뼈대 모드): 래퍼런스 뼈대 (50%) ↔ 내 아웃라인 (50%) [2-Pane Split]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "6fN7N1EpQHDw",
+              "text": "Mode B (사냥개 독해 모드): 타깃 앵커 HUD (25%) ↔ 원문 리더 & AI 레이더 (75%) [Reader Workbench]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            },
+            {
+              "id": "yF5c2oxhM6uQ",
+              "text": "Mode C (집필 및 검증 모드): 1열 집중 에디터 [Single Focus] ↔ 검증 클릭 시 1초 핑 독크 오픈 [Grounding Split]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793843155008,
+              "updatedAt": 1793843155008
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        },
+        {
+          "id": "CHdGA7w71BwY",
+          "text": "북극성 가치: 5개 창 분할의 멀미를 없애고, 언제나 넓고 시원한 2단 화면 안에서 생각의 선명함과 1초 팩트 검증을 완벽히 보장한다",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793843155008,
+          "updatedAt": 1793843155008
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793843155008,
+      "updatedAt": 1793843155008
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793843155008,
+  "updatedAt": 1793843155008
+}

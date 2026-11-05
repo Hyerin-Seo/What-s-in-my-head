@@ -2,21 +2,38 @@
 	"meetingBoard": true,
 	"nodes": [
 		{
-			"id": "vo-g-jwbvn1GiiJnk",
+			"id": "vo-g-7qOBv0EAys5f",
 			"type": "group",
 			"vibeOutlineSection": {
-				"nodeId": "jwbvn1GiiJnk",
+				"nodeId": "7qOBv0EAys5f",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": 416,
-			"y": 310,
-			"width": 2660,
-			"height": 2016,
-			"label": "2. People Impacted (영향받는 사람들 - I-C-E 도메인)",
-			"color": "4"
+			"x": 480,
+			"y": 3791,
+			"width": 2596,
+			"height": 1014,
+			"color": "1",
+			"label": "4. Constraints (4대 제약 조건 포스트잇)"
+		},
+		{
+			"id": "vo-g-VPtDBrGYn9wd",
+			"type": "group",
+			"vibeOutlineSection": {
+				"nodeId": "VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2549,
+			"y": 3791,
+			"width": 1284,
+			"height": 990,
+			"color": "3",
+			"label": "3. Desired Outcomes (원하는 성과 지표)"
 		},
 		{
 			"id": "vo-g-KnSbZnbI8nvR",
@@ -32,74 +49,186 @@
 			"y": 310,
 			"width": 1330,
 			"height": 1650,
-			"label": "1. Problem Statement (문제 정의)",
-			"color": "5"
+			"color": "5",
+			"label": "1. Problem Statement (문제 정의)"
 		},
 		{
-			"id": "vo-g-7qOBv0EAys5f",
+			"id": "vo-g-jwbvn1GiiJnk",
 			"type": "group",
 			"vibeOutlineSection": {
-				"nodeId": "7qOBv0EAys5f",
+				"nodeId": "jwbvn1GiiJnk",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": 480,
-			"y": 3791,
-			"width": 2596,
-			"height": 822,
-			"label": "4. Constraints (4대 제약 조건 포스트잇)",
-			"color": "1"
+			"x": 416,
+			"y": 310,
+			"width": 2660,
+			"height": 2232,
+			"color": "4",
+			"label": "2. People Impacted (영향받는 사람들 - I-C-E 도메인)"
 		},
 		{
-			"id": "vo-g-VPtDBrGYn9wd",
-			"type": "group",
-			"vibeOutlineSection": {
-				"nodeId": "VPtDBrGYn9wd",
+			"id": "vo-hocddAZC5QOs",
+			"type": "text",
+			"text": "2. 야근 수당 지출 및 핵심 인력 번아웃 퇴사율 대폭 감소",
+			"vibeOutline": {
+				"nodeId": "hocddAZC5QOs",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 5200
+				},
+				"under": "kKy3esTbjiPa|VPtDBrGYn9wd",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": -2549,
-			"y": 3791,
-			"width": 1284,
-			"height": 942,
-			"label": "3. Desired Outcomes (원하는 성과 지표)",
+			"x": -1545,
+			"y": 4285,
+			"width": 240,
+			"height": 96,
 			"color": "3"
 		},
 		{
-			"id": "mb-backdrop",
-			"type": "file",
-			"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/이미지/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략 (판 바탕).svg",
-			"x": -2669,
-			"y": 0,
-			"width": 5865,
-			"height": 4897
-		},
-		{
-			"id": "vo-jwbvn1GiiJnk",
+			"id": "vo-t4Og6nNjNnD7",
 			"type": "text",
-			"text": "2. People Impacted (영향받는 사람들 - I-C-E 도메인)",
+			"text": "3. 검증 및 팩트체크 피로도 80% 감소 (1초 인라인 Diff 대조와 원천 백데이터 바인딩)",
 			"vibeOutline": {
-				"nodeId": "jwbvn1GiiJnk",
+				"nodeId": "t4Og6nNjNnD7",
 				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
 				"auto": {
-					"x": 3636,
-					"y": 3104
+					"x": 4260,
+					"y": 4680
 				},
-				"under": "|jwbvn1GiiJnk",
+				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": 2796,
-			"y": 350,
+			"x": -2465,
+			"y": 4429,
 			"width": 240,
-			"height": 96,
-			"color": "4"
+			"height": 120,
+			"color": "3"
+		},
+		{
+			"id": "vo-wsz6H5llIIEv",
+			"type": "text",
+			"text": "4. 수동 후가공 및 재작성 해소 (보이스 추출 엔진으로 내 문체/곤조 그대로 초안 생성)",
+			"vibeOutline": {
+				"nodeId": "wsz6H5llIIEv",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 4816
+				},
+				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2201,
+			"y": 4429,
+			"width": 240,
+			"height": 120,
+			"color": "3"
+		},
+		{
+			"id": "vo-3FNhGYXZ2dtC",
+			"type": "text",
+			"text": "5. 핵심 사고 집중 및 4시간 칼퇴 (8시간 동안 끙끙대던 고강도 문서를 4시간 만에 무결점 완성)",
+			"vibeOutline": {
+				"nodeId": "3FNhGYXZ2dtC",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 4952
+				},
+				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2465,
+			"y": 4573,
+			"width": 240,
+			"height": 120,
+			"color": "3"
+		},
+		{
+			"id": "vo-i5l1R1opEYHo",
+			"type": "text",
+			"text": "Scaffold 3합 엔진 구현 필수 ➔ 완벽한 전문가 문서 = Scaffold(논리 뼈대) × RM(백데이터 근거) × Voice(문체 DNA)",
+			"vibeOutline": {
+				"nodeId": "i5l1R1opEYHo",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 6360
+				},
+				"under": "HDD2o1MGfC18|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1176,
+			"y": 4429,
+			"width": 240,
+			"height": 144,
+			"color": "1"
+		},
+		{
+			"id": "vo-meXudwtRutmG",
+			"type": "text",
+			"text": "1. 논리 뼈대(Scaffold) 조립 시간 70% 단축 (1D 아웃라인 ↔ 2D 조망 플립으로 인과관계 즉시 배치)",
+			"vibeOutline": {
+				"nodeId": "meXudwtRutmG",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 4408
+				},
+				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2465,
+			"y": 4285,
+			"width": 240,
+			"height": 120,
+			"color": "3"
+		},
+		{
+			"id": "vo-n3VuQs8zmnBn",
+			"type": "text",
+			"text": "2. 껍데기 서식 맞추기 시간 제로화 (DocStudio형 외재적 슬롯 분리수거로 표 노가다 종결)",
+			"vibeOutline": {
+				"nodeId": "n3VuQs8zmnBn",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 4544
+				},
+				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2201,
+			"y": 4285,
+			"width": 240,
+			"height": 120,
+			"color": "3"
 		},
 		{
 			"id": "vo-hZEEYkX2MmFL",
@@ -125,73 +254,956 @@
 			"color": "#c4e27c"
 		},
 		{
-			"id": "vo-BHnMVvWesHFu",
+			"id": "vo-MRChXMHdD7em",
 			"type": "text",
-			"text": "팀장 / 본부장 / 부서장 (야근 수당, 프로젝트 납기 지연, 핵심 시니어의 번아웃 및 퇴사 리스크를 지는 관리자)",
+			"text": "C (관습/체계형): 법무/특허 검토자, 회계사, 세무사, ISMS/RA 인증 심사관, 공공 행정가 (토씨 하나 규격 서식에 치임)",
 			"vibeOutline": {
-				"nodeId": "BHnMVvWesHFu",
+				"nodeId": "MRChXMHdD7em",
 				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
 				"auto": {
-					"x": 4260,
-					"y": 3656
+					"x": 4572,
+					"y": 2208
 				},
-				"under": "hZEEYkX2MmFL|jwbvn1GiiJnk",
+				"under": "RLxJh56VIfp3|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 456,
+			"y": 1974,
+			"width": 240,
+			"height": 144,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-FOfnglNa1YjK",
+			"type": "text",
+			"text": "전문 기술/학술 번역가 (원문 맥락과 용어 정합성을 유지하며 문장 윤문하는 노가다)",
+			"vibeOutline": {
+				"nodeId": "FOfnglNa1YjK",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 2752
+				},
+				"under": "5gPZDbO2lymh|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 736,
+			"y": 2022,
+			"width": 240,
+			"height": 120,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-1tkhnA3G4IHa",
+			"type": "text",
+			"text": "Users (직접 고통받는 시니어 실무 전문가)",
+			"vibeOutline": {
+				"nodeId": "1tkhnA3G4IHa",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 2820
+				},
+				"under": "jwbvn1GiiJnk|jwbvn1GiiJnk",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
 			"x": 876,
-			"y": 979,
+			"y": 1574,
 			"width": 240,
-			"height": 144,
-			"color": "#c4e27c"
+			"height": 72,
+			"color": "#d9edaa"
 		},
 		{
-			"id": "vo-SP4jAzrC2sNK",
+			"id": "vo-gWHI0VIA1LnR",
 			"type": "text",
-			"text": "발주처(정부/공공기관), 최종 고객, 독자 (문서의 오류, 납기 지연, 퀄리티 저하에 직접 영향받는 최종 수신자)",
+			"text": "거대 전용 파운데이션 모델을 직접 프리트레이닝할 자본/인프라 없음 ➔ 상용 프론티어 API + 경량 클라이언트 아키텍처 필수",
 			"vibeOutline": {
-				"nodeId": "SP4jAzrC2sNK",
+				"nodeId": "gWHI0VIA1LnR",
 				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
 				"auto": {
 					"x": 4260,
-					"y": 3976
+					"y": 5744
 				},
-				"under": "j1h5CjG9t64d|jwbvn1GiiJnk",
+				"under": "uyBVdPD0uiTS|7qOBv0EAys5f",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": 876,
-			"y": 630,
+			"x": 520,
+			"y": 4261,
 			"width": 240,
 			"height": 144,
-			"color": "#97dba8"
+			"color": "1"
 		},
 		{
-			"id": "vo-R0sEii8Y7RT4",
+			"id": "vo-uyBVdPD0uiTS",
 			"type": "text",
-			"text": "사내 IT/보안 담당자 (사내 핵심 기밀 유출 및 프라이버시 규정 준수 감시자)",
+			"text": "Budget (예산 및 자원 제약)",
 			"vibeOutline": {
-				"nodeId": "R0sEii8Y7RT4",
+				"nodeId": "uyBVdPD0uiTS",
 				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
 				"auto": {
-					"x": 4260,
-					"y": 4136
+					"x": 3948,
+					"y": 5848
 				},
-				"under": "j1h5CjG9t64d|jwbvn1GiiJnk",
+				"under": "7qOBv0EAys5f|7qOBv0EAys5f",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": 1140,
-			"y": 630,
+			"x": 520,
+			"y": 4165,
+			"width": 240,
+			"height": 72,
+			"color": "1"
+		},
+		{
+			"id": "vo-cC5Wdjd3hIw2",
+			"type": "text",
+			"text": "팀 단위/개인 프로페셔널이 즉시 결제할 수 있는 B2Pro 수준의 합리적 가격대(월 구독형) 유지 필요",
+			"vibeOutline": {
+				"nodeId": "cC5Wdjd3hIw2",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 5904
+				},
+				"under": "uyBVdPD0uiTS|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 784,
+			"y": 4261,
+			"width": 240,
+			"height": 120,
+			"color": "1"
+		},
+		{
+			"id": "vo-Bdglw3tm07Np",
+			"type": "text",
+			"text": "3. 제안서 수주율 및 보고서 결재 통과율 급증 (무결점 논리 척추와 사내 표준 톤 결합)",
+			"vibeOutline": {
+				"nodeId": "Bdglw3tm07Np",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 5312
+				},
+				"under": "kKy3esTbjiPa|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1809,
+			"y": 4405,
+			"width": 240,
+			"height": 120,
+			"color": "3"
+		},
+		{
+			"id": "vo-9SNth7UReVHx",
+			"type": "text",
+			"text": "4. 전사 AI 도입 ROI 극대화 (단순 초벌 번역을 넘어 즉시 제출 가능한 완제품 생산 체계 확립)",
+			"vibeOutline": {
+				"nodeId": "9SNth7UReVHx",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 5448
+				},
+				"under": "kKy3esTbjiPa|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1545,
+			"y": 4405,
+			"width": 240,
+			"height": 120,
+			"color": "3"
+		},
+		{
+			"id": "vo-RLxJh56VIfp3",
+			"type": "text",
+			"text": "핵심 타깃: I-C-E 결합형 진성 문서 노동자 (이미 전문 지식과 뼈대가 있는 시니어)",
+			"vibeOutline": {
+				"nodeId": "RLxJh56VIfp3",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 2232
+				},
+				"under": "1tkhnA3G4IHa|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 456,
+			"y": 1686,
+			"width": 240,
+			"height": 120,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-RVNfaERSca64",
+			"type": "text",
+			"text": "I (탐구형): 연구원, 데이터 분석가, 의사, 교수, 전문 애널리스트 (방대한 백데이터와 팩트 취합에 치임)",
+			"vibeOutline": {
+				"nodeId": "RVNfaERSca64",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 2072
+				},
+				"under": "RLxJh56VIfp3|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 456,
+			"y": 1830,
+			"width": 240,
+			"height": 120,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-iTX24QKDKLZj",
+			"type": "text",
+			"text": "GTD 같은 전공/실용 서적 집필자 (10만 자 속 지식 아키텍처와 뼈대 조립 노가다)",
+			"vibeOutline": {
+				"nodeId": "iTX24QKDKLZj",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 2528
+				},
+				"under": "5gPZDbO2lymh|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 736,
+			"y": 1782,
 			"width": 240,
 			"height": 96,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-Sp0F0WzRNsXx",
+			"type": "text",
+			"text": "단행본 기획편집자 (날것의 원고에서 뼈대 발라내고 문단 재배치하는 노가다)",
+			"vibeOutline": {
+				"nodeId": "Sp0F0WzRNsXx",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 2640
+				},
+				"under": "5gPZDbO2lymh|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 736,
+			"y": 1902,
+			"width": 240,
+			"height": 96,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-j1h5CjG9t64d",
+			"type": "text",
+			"text": "Stakeholders (기타 이해관계자)",
+			"vibeOutline": {
+				"nodeId": "j1h5CjG9t64d",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 4068
+				},
+				"under": "jwbvn1GiiJnk|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 612,
+			"y": 630,
+			"width": 240,
+			"height": 72,
 			"color": "#97dba8"
+		},
+		{
+			"id": "vo-heiUy94X8g0m",
+			"type": "text",
+			"text": "인사이트 테크 블로거 (보이지 않는 논리 호흡과 텐션을 깎아내는 노가다)",
+			"vibeOutline": {
+				"nodeId": "heiUy94X8g0m",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 2888
+				},
+				"under": "5gPZDbO2lymh|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 736,
+			"y": 2166,
+			"width": 240,
+			"height": 96,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-2IXpk2s7jp91",
+			"type": "text",
+			"text": "S (사회/교육형): 교사, 상담사 (대인 감정 교류 및 대면 소통 중심)",
+			"vibeOutline": {
+				"nodeId": "2IXpk2s7jp91",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 3544
+				},
+				"under": "vPQ52eJyCLE9|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1296,
+			"y": 2046,
+			"width": 240,
+			"height": 96,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-5gPZDbO2lymh",
+			"type": "text",
+			"text": "비정형 지식 텍스트 전문가 (깊은 글쓰기 직군)",
+			"vibeOutline": {
+				"nodeId": "5gPZDbO2lymh",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 2720
+				},
+				"under": "1tkhnA3G4IHa|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 736,
+			"y": 1686,
+			"width": 240,
+			"height": 72,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-BU6ej1pr6dIx",
+			"type": "text",
+			"text": "E (진취/기업형): B2G 제안 PM, 전략기획자, 경영 컨설턴트, IR 덱 기획자 (복합 표와 설득 척추 설계에 치임)",
+			"vibeOutline": {
+				"nodeId": "BU6ej1pr6dIx",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 2368
+				},
+				"under": "RLxJh56VIfp3|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 456,
+			"y": 2142,
+			"width": 240,
+			"height": 144,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-F2wleROS4SQZ",
+			"type": "text",
+			"text": "실무자(User) 관점의 생생한 4대 고통 (Rin의 캔버스 본심 포스트잇)",
+			"vibeOutline": {
+				"nodeId": "F2wleROS4SQZ",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 1280
+				},
+				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1787,
+			"y": 1056,
+			"width": 240,
+			"height": 96,
+			"color": "5"
+		},
+		{
+			"id": "vo-bCVYz9Q63Trx",
+			"type": "text",
+			"text": "4) [운영 단계] \"ㅇㅋ 그럼 내 매일 하던 거 할 테니까 자비스나 가져와 뒤치닥거리나 잘 해\" ➔ 행정 잡무에 치여 가장 날카로운 본업 지적 에너지가 소진됨",
+			"vibeOutline": {
+				"nodeId": "bCVYz9Q63Trx",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 1520
+				},
+				"under": "F2wleROS4SQZ|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1787,
+			"y": 1752,
+			"width": 240,
+			"height": 168,
+			"color": "5"
+		},
+		{
+			"id": "vo-NDMOeDTB1rIV",
+			"type": "text",
+			"text": "경영진/리더(Customer) 관점의 비즈니스 위기 포스트잇",
+			"vibeOutline": {
+				"nodeId": "NDMOeDTB1rIV",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 1752
+				},
+				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1499,
+			"y": 1056,
+			"width": 240,
+			"height": 96,
+			"color": "5"
+		},
+		{
+			"id": "vo-cMmC2DFwK9RR",
+			"type": "text",
+			"text": "3) [검토 단계] \"나를 못믿어서 너를 쓰는데 너도 못믿게 된 지경 ㅅㅂ\" ➔ AI 환각과 덮어쓰기로 사람도 도구도 못 믿는 최악의 검토 마비에 빠짐",
+			"vibeOutline": {
+				"nodeId": "cMmC2DFwK9RR",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 1336
+				},
+				"under": "F2wleROS4SQZ|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1787,
+			"y": 1560,
+			"width": 240,
+			"height": 168,
+			"color": "5"
+		},
+		{
+			"id": "vo-e1qbp2j4ctVK",
+			"type": "text",
+			"text": "1) [시작 단계] \"어쩌란 건지 모르겠고 결국 하던 대로 하게 되어버리는 매직\" ➔ 막막함과 파편화된 자료로 인해 결국 비효율적인 옛날 방식으로 되돌아감",
+			"vibeOutline": {
+				"nodeId": "e1qbp2j4ctVK",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 968
+				},
+				"under": "F2wleROS4SQZ|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1787,
+			"y": 1176,
+			"width": 240,
+			"height": 168,
+			"color": "5"
+		},
+		{
+			"id": "vo-ciVml3eh4M2Q",
+			"type": "text",
+			"text": "2) [생성 단계] \"알잘딱 설명 힘들고 내 스타일도 아님 설명해바짜\" ➔ 문체 DNA 주입 불가로 영혼 없는 모범생 쓰레기만 받아보는 가짜 노동에 시달림",
+			"vibeOutline": {
+				"nodeId": "ciVml3eh4M2Q",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 1152
+				},
+				"under": "F2wleROS4SQZ|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1787,
+			"y": 1368,
+			"width": 240,
+			"height": 168,
+			"color": "5"
+		},
+		{
+			"id": "vo-7w3Zke5qr3U0",
+			"type": "text",
+			"text": "\"전폭적인 디지털 혁신과 생산성 폭발을 기대하고 AI를 도입했으나, 실무자가 2차로 뒤치다꺼리하고 재가공하는 초벌 수준에 머물러 실질적 야근 감소나 인력 효율화에 실패하고 있음\"",
+			"vibeOutline": {
+				"nodeId": "7w3Zke5qr3U0",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 1704
+				},
+				"under": "NDMOeDTB1rIV|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1499,
+			"y": 1176,
+			"width": 240,
+			"height": 192,
+			"color": "5"
+		},
+		{
+			"id": "mb-backdrop",
+			"type": "file",
+			"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/이미지/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략 (판 바탕).svg",
+			"x": -2669,
+			"y": 0,
+			"width": 5865,
+			"height": 4897
+		},
+		{
+			"id": "vo-gpj50Un9QBBS",
+			"type": "text",
+			"text": "균형 잡힌 문제의 이중 구조 (원초적 노가다 + AI의 2차 왜곡)",
+			"vibeOutline": {
+				"nodeId": "gpj50Un9QBBS",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 600
+				},
+				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2075,
+			"y": 1056,
+			"width": 240,
+			"height": 96,
+			"color": "5"
+		},
+		{
+			"id": "vo-6bMTFkYUGQGd",
+			"type": "text",
+			"text": "[1단계: 본원적 고통 (AI 이전부터 존재)] 방대한 팩트와 자료를 설득력 있는 논리 구조(뼈대)로 조립하고, 복잡한 규격 서식(표/칸)에 맞춰 넣는 극심한 수작업 노가다가 작업의 80%를 차지함",
+			"vibeOutline": {
+				"nodeId": "6bMTFkYUGQGd",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 344
+				},
+				"under": "gpj50Un9QBBS|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2075,
+			"y": 1176,
+			"width": 240,
+			"height": 216,
+			"color": "5"
+		},
+		{
+			"id": "vo-5r21yKq8nZQ2",
+			"type": "text",
+			"text": "[2단계: 2차 가중 고통 (AI 도입 후 발생)] 이 짐을 덜고자 AI를 썼더니 오히려 사람이 세운 뼈대와 맥락을 왜곡하고, 거짓말(환각)을 일삼아 사람도 도구도 못 믿는 최악의 검토 마비에 빠짐",
+			"vibeOutline": {
+				"nodeId": "5r21yKq8nZQ2",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 576
+				},
+				"under": "gpj50Un9QBBS|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2075,
+			"y": 1416,
+			"width": 240,
+			"height": 216,
+			"color": "5"
+		},
+		{
+			"id": "vo-OopSfJ1DdrJW",
+			"type": "text",
+			"text": "결과: 원래 하던 문서 노가다에 AI 뒤치다꺼리까지 얹어져 시니어 전문가의 뇌 용량이 완전히 소진되고 매일 야근에 짓눌림",
+			"vibeOutline": {
+				"nodeId": "OopSfJ1DdrJW",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 808
+				},
+				"under": "gpj50Un9QBBS|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2075,
+			"y": 1656,
+			"width": 240,
+			"height": 144,
+			"color": "5"
+		},
+		{
+			"id": "vo-lqYIoUDIjH5d",
+			"type": "text",
+			"text": "🚨 [합의된 공식 문제 정의] \"전문 지식과 전략을 갖춘 시니어 전문가들이, 방대한 자료를 논리 구조로 조립하고 규격화된 서식에 맞추는 본원적 문서 노가다에 짓눌려 있으며, 이를 덜고자 도입한 AI마저 맥락을 훼손하고 통제되지 않아 검토와 수정의 이중고 속에 매일 야근을 반복하고 있습니다.\"",
+			"vibeOutline": {
+				"nodeId": "lqYIoUDIjH5d",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 40
+				},
+				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1927,
+			"y": 704,
+			"width": 520,
+			"height": 288,
+			"color": "5"
+		},
+		{
+			"id": "vo-r2B6PdTISY1o",
+			"type": "text",
+			"text": "1. 문서 완성 및 납기 리드타임 50% 단축 (프로젝트 사이클 가속화)",
+			"vibeOutline": {
+				"nodeId": "r2B6PdTISY1o",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 5088
+				},
+				"under": "kKy3esTbjiPa|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1809,
+			"y": 4285,
+			"width": 240,
+			"height": 96,
+			"color": "3"
+		},
+		{
+			"id": "vo-kKy3esTbjiPa",
+			"type": "text",
+			"text": "Top Business Outcomes (조직 및 비즈니스 성과 포스트잇)",
+			"vibeOutline": {
+				"nodeId": "kKy3esTbjiPa",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 5280
+				},
+				"under": "VPtDBrGYn9wd|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -1809,
+			"y": 4165,
+			"width": 240,
+			"height": 96,
+			"color": "3"
+		},
+		{
+			"id": "vo-KnSbZnbI8nvR",
+			"type": "text",
+			"text": "1. Problem Statement (문제 정의)",
+			"vibeOutline": {
+				"nodeId": "KnSbZnbI8nvR",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3636,
+					"y": 932
+				},
+				"under": "|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2509,
+			"y": 350,
+			"width": 240,
+			"height": 72,
+			"color": "5"
+		},
+		{
+			"id": "vo-54QQZzG4lrRT",
+			"type": "text",
+			"text": "Desirability (사용자 수용성 및 온보딩 제약)",
+			"vibeOutline": {
+				"nodeId": "54QQZzG4lrRT",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 6840
+				},
+				"under": "7qOBv0EAys5f|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1832,
+			"y": 4165,
+			"width": 240,
+			"height": 72,
+			"color": "1"
+		},
+		{
+			"id": "vo-0ERgg4ue2CF6",
+			"type": "text",
+			"text": "법무, 입찰, 의료, 연구 기밀 취급 ➔ 기업 데이터 비학습(Zero Data Retention) 및 엔터프라이즈급 데이터 격리 필수",
+			"vibeOutline": {
+				"nodeId": "0ERgg4ue2CF6",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 7112
+				},
+				"under": "AaFWYvLyVapA|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 2488,
+			"y": 4261,
+			"width": 240,
+			"height": 144,
+			"color": "1"
+		},
+		{
+			"id": "vo-7qOBv0EAys5f",
+			"type": "text",
+			"text": "4. Constraints (4대 제약 조건 포스트잇)",
+			"vibeOutline": {
+				"nodeId": "7qOBv0EAys5f",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3636,
+					"y": 6544
+				},
+				"under": "|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 2796,
+			"y": 3831,
+			"width": 240,
+			"height": 72,
+			"color": "1"
+		},
+		{
+			"id": "vo-AaFWYvLyVapA",
+			"type": "text",
+			"text": "Regulatory (보안 및 규정 준수 제약)",
+			"vibeOutline": {
+				"nodeId": "AaFWYvLyVapA",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 7228
+				},
+				"under": "7qOBv0EAys5f|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 2488,
+			"y": 4165,
+			"width": 240,
+			"height": 72,
+			"color": "1"
+		},
+		{
+			"id": "vo-uBB1gEgrtt0O",
+			"type": "text",
+			"text": "과거 잘 쓴 글 1~2개 투척만으로 끝나는 원클릭 보이스 추출 인터랙션 필수 (문체 DNA 역공학)",
+			"vibeOutline": {
+				"nodeId": "uBB1gEgrtt0O",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 6840
+				},
+				"under": "54QQZzG4lrRT|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 2096,
+			"y": 4261,
+			"width": 240,
+			"height": 120,
+			"color": "1"
+		},
+		{
+			"id": "vo-RA5bhvbGIgQh",
+			"type": "text",
+			"text": "감사 추적(Audit Trail) 의무 ➔ 모든 생성 문장과 수치의 원천 출처(Grounding)를 100% 역추적할 수 있는 인용 근거 보존",
+			"vibeOutline": {
+				"nodeId": "RA5bhvbGIgQh",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 7272
+				},
+				"under": "AaFWYvLyVapA|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 2752,
+			"y": 4261,
+			"width": 240,
+			"height": 144,
+			"color": "1"
+		},
+		{
+			"id": "vo-VPtDBrGYn9wd",
+			"type": "text",
+			"text": "3. Desired Outcomes (원하는 성과 지표)",
+			"vibeOutline": {
+				"nodeId": "VPtDBrGYn9wd",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3636,
+					"y": 4952
+				},
+				"under": "|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2509,
+			"y": 3831,
+			"width": 240,
+			"height": 72,
+			"color": "3"
+		},
+		{
+			"id": "vo-G2vljDAdAX0o",
+			"type": "text",
+			"text": "Top People Outcomes (시니어 실무자 체감 성과 포스트잇)",
+			"vibeOutline": {
+				"nodeId": "G2vljDAdAX0o",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3948,
+					"y": 4692
+				},
+				"under": "VPtDBrGYn9wd|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2465,
+			"y": 4165,
+			"width": 240,
+			"height": 96,
+			"color": "3"
+		},
+		{
+			"id": "vo-rdPbStmHdr01",
+			"type": "text",
+			"text": "독해·소화의 병목: 헤비 라이터는 곧 헤비 리더 (자료를 읽고 이해하는 데 작업 시간의 50% 이상 소진)",
+			"vibeOutline": {
+				"nodeId": "rdPbStmHdr01",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 3636,
+					"y": 3104
+				},
+				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2363,
+			"y": 1056,
+			"width": 240,
+			"height": 120,
+			"color": "5"
 		},
 		{
 			"id": "vo-RQJlfV71y2A8",
@@ -286,880 +1298,6 @@
 			"color": "#d9edaa"
 		},
 		{
-			"id": "vo-7idNvE9FUhe9",
-			"type": "text",
-			"text": "A (예술/창작형): 웹소설, 시나리오, 웹툰 (주관적 감성/서사 텐션의 기술적 한계로 배제)",
-			"vibeOutline": {
-				"nodeId": "7idNvE9FUhe9",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 3296
-				},
-				"under": "vPQ52eJyCLE9|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 1296,
-			"y": 1782,
-			"width": 240,
-			"height": 120,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-RLxJh56VIfp3",
-			"type": "text",
-			"text": "핵심 타깃: I-C-E 결합형 진성 문서 노동자 (이미 전문 지식과 뼈대가 있는 시니어)",
-			"vibeOutline": {
-				"nodeId": "RLxJh56VIfp3",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 2232
-				},
-				"under": "1tkhnA3G4IHa|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 456,
-			"y": 1686,
-			"width": 240,
-			"height": 120,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-RVNfaERSca64",
-			"type": "text",
-			"text": "I (탐구형): 연구원, 데이터 분석가, 의사, 교수, 전문 애널리스트 (방대한 백데이터와 팩트 취합에 치임)",
-			"vibeOutline": {
-				"nodeId": "RVNfaERSca64",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 2072
-				},
-				"under": "RLxJh56VIfp3|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 456,
-			"y": 1830,
-			"width": 240,
-			"height": 120,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-MRChXMHdD7em",
-			"type": "text",
-			"text": "C (관습/체계형): 법무/특허 검토자, 회계사, 세무사, ISMS/RA 인증 심사관, 공공 행정가 (토씨 하나 규격 서식에 치임)",
-			"vibeOutline": {
-				"nodeId": "MRChXMHdD7em",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 2208
-				},
-				"under": "RLxJh56VIfp3|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 456,
-			"y": 1974,
-			"width": 240,
-			"height": 144,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-iTX24QKDKLZj",
-			"type": "text",
-			"text": "GTD 같은 전공/실용 서적 집필자 (10만 자 속 지식 아키텍처와 뼈대 조립 노가다)",
-			"vibeOutline": {
-				"nodeId": "iTX24QKDKLZj",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 2528
-				},
-				"under": "5gPZDbO2lymh|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 736,
-			"y": 1782,
-			"width": 240,
-			"height": 96,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-Sp0F0WzRNsXx",
-			"type": "text",
-			"text": "단행본 기획편집자 (날것의 원고에서 뼈대 발라내고 문단 재배치하는 노가다)",
-			"vibeOutline": {
-				"nodeId": "Sp0F0WzRNsXx",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 2640
-				},
-				"under": "5gPZDbO2lymh|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 736,
-			"y": 1902,
-			"width": 240,
-			"height": 96,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-FOfnglNa1YjK",
-			"type": "text",
-			"text": "전문 기술/학술 번역가 (원문 맥락과 용어 정합성을 유지하며 문장 윤문하는 노가다)",
-			"vibeOutline": {
-				"nodeId": "FOfnglNa1YjK",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 2752
-				},
-				"under": "5gPZDbO2lymh|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 736,
-			"y": 2022,
-			"width": 240,
-			"height": 120,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-BU6ej1pr6dIx",
-			"type": "text",
-			"text": "E (진취/기업형): B2G 제안 PM, 전략기획자, 경영 컨설턴트, IR 덱 기획자 (복합 표와 설득 척추 설계에 치임)",
-			"vibeOutline": {
-				"nodeId": "BU6ej1pr6dIx",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 2368
-				},
-				"under": "RLxJh56VIfp3|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 456,
-			"y": 2142,
-			"width": 240,
-			"height": 144,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-Pcyv7KMsN6Kl",
-			"type": "text",
-			"text": "전문직 법인 대표 / 에이전시 대표 / 출판사 대표 (인당 지적 생산성과 수주 성공률에 사활을 건 최종 의사결정권자)",
-			"vibeOutline": {
-				"nodeId": "Pcyv7KMsN6Kl",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 3816
-				},
-				"under": "hZEEYkX2MmFL|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 1140,
-			"y": 979,
-			"width": 240,
-			"height": 144,
-			"color": "#c4e27c"
-		},
-		{
-			"id": "vo-j1h5CjG9t64d",
-			"type": "text",
-			"text": "Stakeholders (기타 이해관계자)",
-			"vibeOutline": {
-				"nodeId": "j1h5CjG9t64d",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 4068
-				},
-				"under": "jwbvn1GiiJnk|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 612,
-			"y": 630,
-			"width": 240,
-			"height": 72,
-			"color": "#97dba8"
-		},
-		{
-			"id": "vo-5gPZDbO2lymh",
-			"type": "text",
-			"text": "비정형 지식 텍스트 전문가 (깊은 글쓰기 직군)",
-			"vibeOutline": {
-				"nodeId": "5gPZDbO2lymh",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 2720
-				},
-				"under": "1tkhnA3G4IHa|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 736,
-			"y": 1686,
-			"width": 240,
-			"height": 72,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-1tkhnA3G4IHa",
-			"type": "text",
-			"text": "Users (직접 고통받는 시니어 실무 전문가)",
-			"vibeOutline": {
-				"nodeId": "1tkhnA3G4IHa",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 2820
-				},
-				"under": "jwbvn1GiiJnk|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 876,
-			"y": 1574,
-			"width": 240,
-			"height": 72,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-gpj50Un9QBBS",
-			"type": "text",
-			"text": "균형 잡힌 문제의 이중 구조 (원초적 노가다 + AI의 2차 왜곡)",
-			"vibeOutline": {
-				"nodeId": "gpj50Un9QBBS",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 600
-				},
-				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2075,
-			"y": 1056,
-			"width": 240,
-			"height": 96,
-			"color": "5"
-		},
-		{
-			"id": "vo-6bMTFkYUGQGd",
-			"type": "text",
-			"text": "[1단계: 본원적 고통 (AI 이전부터 존재)] 방대한 팩트와 자료를 설득력 있는 논리 구조(뼈대)로 조립하고, 복잡한 규격 서식(표/칸)에 맞춰 넣는 극심한 수작업 노가다가 작업의 80%를 차지함",
-			"vibeOutline": {
-				"nodeId": "6bMTFkYUGQGd",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 344
-				},
-				"under": "gpj50Un9QBBS|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2075,
-			"y": 1176,
-			"width": 240,
-			"height": 216,
-			"color": "5"
-		},
-		{
-			"id": "vo-F2wleROS4SQZ",
-			"type": "text",
-			"text": "실무자(User) 관점의 생생한 4대 고통 (Rin의 캔버스 본심 포스트잇)",
-			"vibeOutline": {
-				"nodeId": "F2wleROS4SQZ",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 1280
-				},
-				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1787,
-			"y": 1056,
-			"width": 240,
-			"height": 96,
-			"color": "5"
-		},
-		{
-			"id": "vo-bCVYz9Q63Trx",
-			"type": "text",
-			"text": "4) [운영 단계] \"ㅇㅋ 그럼 내 매일 하던 거 할 테니까 자비스나 가져와 뒤치닥거리나 잘 해\" ➔ 행정 잡무에 치여 가장 날카로운 본업 지적 에너지가 소진됨",
-			"vibeOutline": {
-				"nodeId": "bCVYz9Q63Trx",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 1520
-				},
-				"under": "F2wleROS4SQZ|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1787,
-			"y": 1752,
-			"width": 240,
-			"height": 168,
-			"color": "5"
-		},
-		{
-			"id": "vo-NDMOeDTB1rIV",
-			"type": "text",
-			"text": "경영진/리더(Customer) 관점의 비즈니스 위기 포스트잇",
-			"vibeOutline": {
-				"nodeId": "NDMOeDTB1rIV",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 1752
-				},
-				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1499,
-			"y": 1056,
-			"width": 240,
-			"height": 96,
-			"color": "5"
-		},
-		{
-			"id": "vo-heiUy94X8g0m",
-			"type": "text",
-			"text": "인사이트 테크 블로거 (보이지 않는 논리 호흡과 텐션을 깎아내는 노가다)",
-			"vibeOutline": {
-				"nodeId": "heiUy94X8g0m",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 2888
-				},
-				"under": "5gPZDbO2lymh|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 736,
-			"y": 2166,
-			"width": 240,
-			"height": 96,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-jm9KtIxzDvUk",
-			"type": "text",
-			"text": "R (실재/현장형): 엔지니어, 기술자 (현장 작업 중심, 문서 비중 낮음)",
-			"vibeOutline": {
-				"nodeId": "jm9KtIxzDvUk",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 3432
-				},
-				"under": "vPQ52eJyCLE9|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 1296,
-			"y": 1926,
-			"width": 240,
-			"height": 96,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-2IXpk2s7jp91",
-			"type": "text",
-			"text": "S (사회/교육형): 교사, 상담사 (대인 감정 교류 및 대면 소통 중심)",
-			"vibeOutline": {
-				"nodeId": "2IXpk2s7jp91",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4572,
-					"y": 3544
-				},
-				"under": "vPQ52eJyCLE9|jwbvn1GiiJnk",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 1296,
-			"y": 2046,
-			"width": 240,
-			"height": 96,
-			"color": "#d9edaa"
-		},
-		{
-			"id": "vo-cMmC2DFwK9RR",
-			"type": "text",
-			"text": "3) [검토 단계] \"나를 못믿어서 너를 쓰는데 너도 못믿게 된 지경 ㅅㅂ\" ➔ AI 환각과 덮어쓰기로 사람도 도구도 못 믿는 최악의 검토 마비에 빠짐",
-			"vibeOutline": {
-				"nodeId": "cMmC2DFwK9RR",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 1336
-				},
-				"under": "F2wleROS4SQZ|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1787,
-			"y": 1560,
-			"width": 240,
-			"height": 168,
-			"color": "5"
-		},
-		{
-			"id": "vo-5r21yKq8nZQ2",
-			"type": "text",
-			"text": "[2단계: 2차 가중 고통 (AI 도입 후 발생)] 이 짐을 덜고자 AI를 썼더니 오히려 사람이 세운 뼈대와 맥락을 왜곡하고, 거짓말(환각)을 일삼아 사람도 도구도 못 믿는 최악의 검토 마비에 빠짐",
-			"vibeOutline": {
-				"nodeId": "5r21yKq8nZQ2",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 576
-				},
-				"under": "gpj50Un9QBBS|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2075,
-			"y": 1416,
-			"width": 240,
-			"height": 216,
-			"color": "5"
-		},
-		{
-			"id": "vo-OopSfJ1DdrJW",
-			"type": "text",
-			"text": "결과: 원래 하던 문서 노가다에 AI 뒤치다꺼리까지 얹어져 시니어 전문가의 뇌 용량이 완전히 소진되고 매일 야근에 짓눌림",
-			"vibeOutline": {
-				"nodeId": "OopSfJ1DdrJW",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 808
-				},
-				"under": "gpj50Un9QBBS|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2075,
-			"y": 1656,
-			"width": 240,
-			"height": 144,
-			"color": "5"
-		},
-		{
-			"id": "vo-KnSbZnbI8nvR",
-			"type": "text",
-			"text": "1. Problem Statement (문제 정의)",
-			"vibeOutline": {
-				"nodeId": "KnSbZnbI8nvR",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3636,
-					"y": 932
-				},
-				"under": "|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2509,
-			"y": 350,
-			"width": 240,
-			"height": 72,
-			"color": "5"
-		},
-		{
-			"id": "vo-e1qbp2j4ctVK",
-			"type": "text",
-			"text": "1) [시작 단계] \"어쩌란 건지 모르겠고 결국 하던 대로 하게 되어버리는 매직\" ➔ 막막함과 파편화된 자료로 인해 결국 비효율적인 옛날 방식으로 되돌아감",
-			"vibeOutline": {
-				"nodeId": "e1qbp2j4ctVK",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 968
-				},
-				"under": "F2wleROS4SQZ|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1787,
-			"y": 1176,
-			"width": 240,
-			"height": 168,
-			"color": "5"
-		},
-		{
-			"id": "vo-ciVml3eh4M2Q",
-			"type": "text",
-			"text": "2) [생성 단계] \"알잘딱 설명 힘들고 내 스타일도 아님 설명해바짜\" ➔ 문체 DNA 주입 불가로 영혼 없는 모범생 쓰레기만 받아보는 가짜 노동에 시달림",
-			"vibeOutline": {
-				"nodeId": "ciVml3eh4M2Q",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 1152
-				},
-				"under": "F2wleROS4SQZ|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1787,
-			"y": 1368,
-			"width": 240,
-			"height": 168,
-			"color": "5"
-		},
-		{
-			"id": "vo-lqYIoUDIjH5d",
-			"type": "text",
-			"text": "🚨 [합의된 공식 문제 정의] \"전문 지식과 전략을 갖춘 시니어 전문가들이, 방대한 자료를 논리 구조로 조립하고 규격화된 서식에 맞추는 본원적 문서 노가다에 짓눌려 있으며, 이를 덜고자 도입한 AI마저 맥락을 훼손하고 통제되지 않아 검토와 수정의 이중고 속에 매일 야근을 반복하고 있습니다.\"",
-			"vibeOutline": {
-				"nodeId": "lqYIoUDIjH5d",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 40
-				},
-				"under": "KnSbZnbI8nvR|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1927,
-			"y": 704,
-			"width": 520,
-			"height": 288,
-			"color": "5"
-		},
-		{
-			"id": "vo-7w3Zke5qr3U0",
-			"type": "text",
-			"text": "\"전폭적인 디지털 혁신과 생산성 폭발을 기대하고 AI를 도입했으나, 실무자가 2차로 뒤치다꺼리하고 재가공하는 초벌 수준에 머물러 실질적 야근 감소나 인력 효율화에 실패하고 있음\"",
-			"vibeOutline": {
-				"nodeId": "7w3Zke5qr3U0",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 1704
-				},
-				"under": "NDMOeDTB1rIV|KnSbZnbI8nvR",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1499,
-			"y": 1176,
-			"width": 240,
-			"height": 192,
-			"color": "5"
-		},
-		{
-			"id": "vo-54QQZzG4lrRT",
-			"type": "text",
-			"text": "Desirability (사용자 수용성 및 온보딩 제약)",
-			"vibeOutline": {
-				"nodeId": "54QQZzG4lrRT",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 6840
-				},
-				"under": "7qOBv0EAys5f|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 1832,
-			"y": 4165,
-			"width": 240,
-			"height": 72,
-			"color": "1"
-		},
-		{
-			"id": "vo-r2B6PdTISY1o",
-			"type": "text",
-			"text": "1. 문서 완성 및 납기 리드타임 50% 단축 (프로젝트 사이클 가속화)",
-			"vibeOutline": {
-				"nodeId": "r2B6PdTISY1o",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 5088
-				},
-				"under": "kKy3esTbjiPa|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1809,
-			"y": 4285,
-			"width": 240,
-			"height": 96,
-			"color": "3"
-		},
-		{
-			"id": "vo-hocddAZC5QOs",
-			"type": "text",
-			"text": "2. 야근 수당 지출 및 핵심 인력 번아웃 퇴사율 대폭 감소",
-			"vibeOutline": {
-				"nodeId": "hocddAZC5QOs",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 5200
-				},
-				"under": "kKy3esTbjiPa|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1545,
-			"y": 4285,
-			"width": 240,
-			"height": 96,
-			"color": "3"
-		},
-		{
-			"id": "vo-0ERgg4ue2CF6",
-			"type": "text",
-			"text": "법무, 입찰, 의료, 연구 기밀 취급 ➔ 기업 데이터 비학습(Zero Data Retention) 및 엔터프라이즈급 데이터 격리 필수",
-			"vibeOutline": {
-				"nodeId": "0ERgg4ue2CF6",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 7112
-				},
-				"under": "AaFWYvLyVapA|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 2488,
-			"y": 4261,
-			"width": 240,
-			"height": 144,
-			"color": "1"
-		},
-		{
-			"id": "vo-7qOBv0EAys5f",
-			"type": "text",
-			"text": "4. Constraints (4대 제약 조건 포스트잇)",
-			"vibeOutline": {
-				"nodeId": "7qOBv0EAys5f",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3636,
-					"y": 6544
-				},
-				"under": "|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 2796,
-			"y": 3831,
-			"width": 240,
-			"height": 72,
-			"color": "1"
-		},
-		{
-			"id": "vo-t4Og6nNjNnD7",
-			"type": "text",
-			"text": "3. 검증 및 팩트체크 피로도 80% 감소 (1초 인라인 Diff 대조와 원천 백데이터 바인딩)",
-			"vibeOutline": {
-				"nodeId": "t4Og6nNjNnD7",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 4680
-				},
-				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2465,
-			"y": 4429,
-			"width": 240,
-			"height": 120,
-			"color": "3"
-		},
-		{
-			"id": "vo-wsz6H5llIIEv",
-			"type": "text",
-			"text": "4. 수동 후가공 및 재작성 해소 (보이스 추출 엔진으로 내 문체/곤조 그대로 초안 생성)",
-			"vibeOutline": {
-				"nodeId": "wsz6H5llIIEv",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 4816
-				},
-				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2201,
-			"y": 4429,
-			"width": 240,
-			"height": 120,
-			"color": "3"
-		},
-		{
-			"id": "vo-3FNhGYXZ2dtC",
-			"type": "text",
-			"text": "5. 핵심 사고 집중 및 4시간 칼퇴 (8시간 동안 끙끙대던 고강도 문서를 4시간 만에 무결점 완성)",
-			"vibeOutline": {
-				"nodeId": "3FNhGYXZ2dtC",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 4952
-				},
-				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2465,
-			"y": 4573,
-			"width": 240,
-			"height": 120,
-			"color": "3"
-		},
-		{
-			"id": "vo-AaFWYvLyVapA",
-			"type": "text",
-			"text": "Regulatory (보안 및 규정 준수 제약)",
-			"vibeOutline": {
-				"nodeId": "AaFWYvLyVapA",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 7228
-				},
-				"under": "7qOBv0EAys5f|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 2488,
-			"y": 4165,
-			"width": 240,
-			"height": 72,
-			"color": "1"
-		},
-		{
-			"id": "vo-gWHI0VIA1LnR",
-			"type": "text",
-			"text": "거대 전용 파운데이션 모델을 직접 프리트레이닝할 자본/인프라 없음 ➔ 상용 프론티어 API + 경량 클라이언트 아키텍처 필수",
-			"vibeOutline": {
-				"nodeId": "gWHI0VIA1LnR",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 5744
-				},
-				"under": "uyBVdPD0uiTS|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 520,
-			"y": 4261,
-			"width": 240,
-			"height": 144,
-			"color": "1"
-		},
-		{
 			"id": "vo-MUCxOZZZxRpl",
 			"type": "text",
 			"text": "복잡한 한국형 표(HWP/Word) 조판의 한계 ➔ 코어 텍스트 생성 엔진과 서식 렌더러의 엄격한 분리 아키텍처 채택",
@@ -1229,29 +1367,6 @@
 			"color": "1"
 		},
 		{
-			"id": "vo-uBB1gEgrtt0O",
-			"type": "text",
-			"text": "과거 잘 쓴 글 1~2개 투척만으로 끝나는 원클릭 보이스 추출 인터랙션 필수 (문체 DNA 역공학)",
-			"vibeOutline": {
-				"nodeId": "uBB1gEgrtt0O",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 6840
-				},
-				"under": "54QQZzG4lrRT|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 2096,
-			"y": 4261,
-			"width": 240,
-			"height": 120,
-			"color": "1"
-		},
-		{
 			"id": "vo-d5kf8RBrs4ID",
 			"type": "text",
 			"text": "사용자가 이미 확정한 영역을 AI가 절대 훼손하지 않는다는 강력한 작업 통제권(자물쇠) 체감 보장",
@@ -1273,144 +1388,6 @@
 			"width": 240,
 			"height": 120,
 			"color": "1"
-		},
-		{
-			"id": "vo-uyBVdPD0uiTS",
-			"type": "text",
-			"text": "Budget (예산 및 자원 제약)",
-			"vibeOutline": {
-				"nodeId": "uyBVdPD0uiTS",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 5848
-				},
-				"under": "7qOBv0EAys5f|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 520,
-			"y": 4165,
-			"width": 240,
-			"height": 72,
-			"color": "1"
-		},
-		{
-			"id": "vo-cC5Wdjd3hIw2",
-			"type": "text",
-			"text": "팀 단위/개인 프로페셔널이 즉시 결제할 수 있는 B2Pro 수준의 합리적 가격대(월 구독형) 유지 필요",
-			"vibeOutline": {
-				"nodeId": "cC5Wdjd3hIw2",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 5904
-				},
-				"under": "uyBVdPD0uiTS|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 784,
-			"y": 4261,
-			"width": 240,
-			"height": 120,
-			"color": "1"
-		},
-		{
-			"id": "vo-i5l1R1opEYHo",
-			"type": "text",
-			"text": "Scaffold 3합 엔진 구현 필수 ➔ 완벽한 전문가 문서 = Scaffold(논리 뼈대) × RM(백데이터 근거) × Voice(문체 DNA)",
-			"vibeOutline": {
-				"nodeId": "i5l1R1opEYHo",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 6360
-				},
-				"under": "HDD2o1MGfC18|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 1176,
-			"y": 4429,
-			"width": 240,
-			"height": 144,
-			"color": "1"
-		},
-		{
-			"id": "vo-meXudwtRutmG",
-			"type": "text",
-			"text": "1. 논리 뼈대(Scaffold) 조립 시간 70% 단축 (1D 아웃라인 ↔ 2D 조망 플립으로 인과관계 즉시 배치)",
-			"vibeOutline": {
-				"nodeId": "meXudwtRutmG",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 4408
-				},
-				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2465,
-			"y": 4285,
-			"width": 240,
-			"height": 120,
-			"color": "3"
-		},
-		{
-			"id": "vo-n3VuQs8zmnBn",
-			"type": "text",
-			"text": "2. 껍데기 서식 맞추기 시간 제로화 (DocStudio형 외재적 슬롯 분리수거로 표 노가다 종결)",
-			"vibeOutline": {
-				"nodeId": "n3VuQs8zmnBn",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 4544
-				},
-				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2201,
-			"y": 4285,
-			"width": 240,
-			"height": 120,
-			"color": "3"
-		},
-		{
-			"id": "vo-kKy3esTbjiPa",
-			"type": "text",
-			"text": "Top Business Outcomes (조직 및 비즈니스 성과 포스트잇)",
-			"vibeOutline": {
-				"nodeId": "kKy3esTbjiPa",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 5280
-				},
-				"under": "VPtDBrGYn9wd|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -1809,
-			"y": 4165,
-			"width": 240,
-			"height": 96,
-			"color": "3"
 		},
 		{
 			"id": "vo-HDD2o1MGfC18",
@@ -1459,119 +1436,303 @@
 			"color": "1"
 		},
 		{
-			"id": "vo-RA5bhvbGIgQh",
+			"id": "vo-jwbvn1GiiJnk",
 			"type": "text",
-			"text": "감사 추적(Audit Trail) 의무 ➔ 모든 생성 문장과 수치의 원천 출처(Grounding)를 100% 역추적할 수 있는 인용 근거 보존",
+			"text": "2. People Impacted (영향받는 사람들 - I-C-E 도메인)",
 			"vibeOutline": {
-				"nodeId": "RA5bhvbGIgQh",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 4260,
-					"y": 7272
-				},
-				"under": "AaFWYvLyVapA|7qOBv0EAys5f",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": 2752,
-			"y": 4261,
-			"width": 240,
-			"height": 144,
-			"color": "1"
-		},
-		{
-			"id": "vo-VPtDBrGYn9wd",
-			"type": "text",
-			"text": "3. Desired Outcomes (원하는 성과 지표)",
-			"vibeOutline": {
-				"nodeId": "VPtDBrGYn9wd",
+				"nodeId": "jwbvn1GiiJnk",
 				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
 				"auto": {
 					"x": 3636,
-					"y": 4952
+					"y": 3104
 				},
-				"under": "|VPtDBrGYn9wd",
+				"under": "|jwbvn1GiiJnk",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": -2509,
-			"y": 3831,
-			"width": 240,
-			"height": 72,
-			"color": "3"
-		},
-		{
-			"id": "vo-G2vljDAdAX0o",
-			"type": "text",
-			"text": "Top People Outcomes (시니어 실무자 체감 성과 포스트잇)",
-			"vibeOutline": {
-				"nodeId": "G2vljDAdAX0o",
-				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
-				"auto": {
-					"x": 3948,
-					"y": 4692
-				},
-				"under": "VPtDBrGYn9wd|VPtDBrGYn9wd",
-				"origin": {
-					"x": 3596,
-					"y": 0
-				}
-			},
-			"x": -2465,
-			"y": 4165,
+			"x": 2796,
+			"y": 350,
 			"width": 240,
 			"height": 96,
-			"color": "3"
+			"color": "4"
 		},
 		{
-			"id": "vo-Bdglw3tm07Np",
+			"id": "vo-BHnMVvWesHFu",
 			"type": "text",
-			"text": "3. 제안서 수주율 및 보고서 결재 통과율 급증 (무결점 논리 척추와 사내 표준 톤 결합)",
+			"text": "팀장 / 본부장 / 부서장 (야근 수당, 프로젝트 납기 지연, 핵심 시니어의 번아웃 및 퇴사 리스크를 지는 관리자)",
 			"vibeOutline": {
-				"nodeId": "Bdglw3tm07Np",
+				"nodeId": "BHnMVvWesHFu",
 				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
 				"auto": {
 					"x": 4260,
-					"y": 5312
+					"y": 3656
 				},
-				"under": "kKy3esTbjiPa|VPtDBrGYn9wd",
+				"under": "hZEEYkX2MmFL|jwbvn1GiiJnk",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": -1809,
-			"y": 4405,
+			"x": 876,
+			"y": 979,
 			"width": 240,
-			"height": 120,
-			"color": "3"
+			"height": 144,
+			"color": "#c4e27c"
 		},
 		{
-			"id": "vo-9SNth7UReVHx",
+			"id": "vo-SP4jAzrC2sNK",
 			"type": "text",
-			"text": "4. 전사 AI 도입 ROI 극대화 (단순 초벌 번역을 넘어 즉시 제출 가능한 완제품 생산 체계 확립)",
+			"text": "발주처(정부/공공기관), 최종 고객, 독자 (문서의 오류, 납기 지연, 퀄리티 저하에 직접 영향받는 최종 수신자)",
 			"vibeOutline": {
-				"nodeId": "9SNth7UReVHx",
+				"nodeId": "SP4jAzrC2sNK",
 				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
 				"auto": {
 					"x": 4260,
-					"y": 5448
+					"y": 3976
 				},
-				"under": "kKy3esTbjiPa|VPtDBrGYn9wd",
+				"under": "j1h5CjG9t64d|jwbvn1GiiJnk",
 				"origin": {
 					"x": 3596,
 					"y": 0
 				}
 			},
-			"x": -1545,
-			"y": 4405,
+			"x": 876,
+			"y": 630,
+			"width": 240,
+			"height": 144,
+			"color": "#97dba8"
+		},
+		{
+			"id": "vo-R0sEii8Y7RT4",
+			"type": "text",
+			"text": "사내 IT/보안 담당자 (사내 핵심 기밀 유출 및 프라이버시 규정 준수 감시자)",
+			"vibeOutline": {
+				"nodeId": "R0sEii8Y7RT4",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 4136
+				},
+				"under": "j1h5CjG9t64d|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1140,
+			"y": 630,
+			"width": 240,
+			"height": 96,
+			"color": "#97dba8"
+		},
+		{
+			"id": "vo-7idNvE9FUhe9",
+			"type": "text",
+			"text": "A (예술/창작형): 웹소설, 시나리오, 웹툰 (주관적 감성/서사 텐션의 기술적 한계로 배제)",
+			"vibeOutline": {
+				"nodeId": "7idNvE9FUhe9",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 3296
+				},
+				"under": "vPQ52eJyCLE9|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1296,
+			"y": 1782,
 			"width": 240,
 			"height": 120,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-Pcyv7KMsN6Kl",
+			"type": "text",
+			"text": "전문직 법인 대표 / 에이전시 대표 / 출판사 대표 (인당 지적 생산성과 수주 성공률에 사활을 건 최종 의사결정권자)",
+			"vibeOutline": {
+				"nodeId": "Pcyv7KMsN6Kl",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 3816
+				},
+				"under": "hZEEYkX2MmFL|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1140,
+			"y": 979,
+			"width": 240,
+			"height": 144,
+			"color": "#c4e27c"
+		},
+		{
+			"id": "vo-jm9KtIxzDvUk",
+			"type": "text",
+			"text": "R (실재/현장형): 엔지니어, 기술자 (현장 작업 중심, 문서 비중 낮음)",
+			"vibeOutline": {
+				"nodeId": "jm9KtIxzDvUk",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4572,
+					"y": 3432
+				},
+				"under": "vPQ52eJyCLE9|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1296,
+			"y": 1926,
+			"width": 240,
+			"height": 96,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-rdPbExtDat01",
+			"type": "text",
+			"text": "방대한 외부 자료(RFP 500쪽, 판례 30건, 논문, 특허, 타부서 기획안)를 직접 퍼먹고 소화(Sensemaking)하는 데 업무 시간의 50% 이상을 소진함",
+			"vibeOutline": {
+				"nodeId": "rdPbExtDat01",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 1912
+				},
+				"under": "rdPbStmHdr01|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2363,
+			"y": 1208,
+			"width": 240,
+			"height": 168,
+			"color": "5"
+		},
+		{
+			"id": "vo-rdPbRAGLim01",
+			"type": "text",
+			"text": "기존 AI RAG는 \"AI 혼자 이해하는 블랙박스\"라 법적·비즈니스 책임을 져야 하는 시니어의 독해 부채와 원문 검증 불안을 전혀 덜어주지 못함",
+			"vibeOutline": {
+				"nodeId": "rdPbRAGLim01",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 2096
+				},
+				"under": "rdPbStmHdr01|KnSbZnbI8nvR",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2363,
+			"y": 1392,
+			"width": 240,
+			"height": 168,
+			"color": "5"
+		},
+		{
+			"id": "vo-usrHvyRdrWrt",
+			"type": "text",
+			"text": "헤비 리더 겸 헤비 라이터 (Heavy Reader & Heavy Writer): 남이 쓴 방대한 전문 텍스트(판례, 특허, RFP, 논문, 타부서 초안)를 끊임없이 퍼먹고 소화하여 자신의 논리로 치환해야 하는 시니어 전문가",
+			"vibeOutline": {
+				"nodeId": "usrHvyRdrWrt",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 3368
+				},
+				"under": "1tkhnA3G4IHa|jwbvn1GiiJnk",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 736,
+			"y": 2286,
+			"width": 240,
+			"height": 216,
+			"color": "#d9edaa"
+		},
+		{
+			"id": "vo-outPeopleRead",
+			"type": "text",
+			"text": "6. 외부 자료 독해 및 소화 시간 70% 단축 (사족 분쇄·1% 쟁점 증류 + 내 과제 관점 맥락 번역 + 1초 원문 핑으로 직접 읽고 검증하는 안도감 확보)",
+			"vibeOutline": {
+				"nodeId": "outPeopleRead",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 5688
+				},
+				"under": "G2vljDAdAX0o|VPtDBrGYn9wd",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": -2201,
+			"y": 4573,
+			"width": 240,
+			"height": 168,
 			"color": "3"
+		},
+		{
+			"id": "vo-techReadIngst",
+			"type": "text",
+			"text": "단순 RAG를 넘어선 '인간 중심 독해 레버리지 (Reader Workbench)' 필수 ➔ 사족 분쇄, 쟁점 대조 매트릭스, 1초 원문 핑(Grounding Ping) 및 증거 취조형 대화 인터랙션 지원",
+			"vibeOutline": {
+				"nodeId": "techReadIngst",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 7440
+				},
+				"under": "HDD2o1MGfC18|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1440,
+			"y": 4573,
+			"width": 240,
+			"height": 192,
+			"color": "1"
+		},
+		{
+			"id": "vo-desirReadTrst",
+			"type": "text",
+			"text": "AI 요약에 대한 불신(블랙박스 공포) 해소 ➔ 요약문/인용구 클릭 시 원문 PDF/문서의 해당 단락 형광펜 위치로 1초 만에 점프하는 투명성 제공",
+			"vibeOutline": {
+				"nodeId": "desirReadTrst",
+				"file": "1.🎯(Project) 프로젝트/🐕망고독 R&D 프로젝트 관리/(분석) DDD 기반 타깃 도메인 정의와 정형·비정형 보이스 전략.outline",
+				"auto": {
+					"x": 4260,
+					"y": 8104
+				},
+				"under": "54QQZzG4lrRT|7qOBv0EAys5f",
+				"origin": {
+					"x": 3596,
+					"y": 0
+				}
+			},
+			"x": 1832,
+			"y": 4465,
+			"width": 240,
+			"height": 168,
+			"color": "1"
 		}
 	],
 	"edges": [
@@ -1672,6 +1833,30 @@
 			"toEnd": "none"
 		},
 		{
+			"id": "vo-e-vo-KnSbZnbI8nvR-vo-rdPbStmHdr01",
+			"fromNode": "vo-KnSbZnbI8nvR",
+			"fromSide": "right",
+			"toNode": "vo-rdPbStmHdr01",
+			"toSide": "left",
+			"toEnd": "none"
+		},
+		{
+			"id": "vo-e-vo-rdPbStmHdr01-vo-rdPbExtDat01",
+			"fromNode": "vo-rdPbStmHdr01",
+			"fromSide": "right",
+			"toNode": "vo-rdPbExtDat01",
+			"toSide": "left",
+			"toEnd": "none"
+		},
+		{
+			"id": "vo-e-vo-rdPbStmHdr01-vo-rdPbRAGLim01",
+			"fromNode": "vo-rdPbStmHdr01",
+			"fromSide": "right",
+			"toNode": "vo-rdPbRAGLim01",
+			"toSide": "left",
+			"toEnd": "none"
+		},
+		{
 			"id": "vo-e-vo-jwbvn1GiiJnk-vo-1tkhnA3G4IHa",
 			"fromNode": "vo-jwbvn1GiiJnk",
 			"fromSide": "right",
@@ -1748,6 +1933,14 @@
 			"fromNode": "vo-5gPZDbO2lymh",
 			"fromSide": "right",
 			"toNode": "vo-heiUy94X8g0m",
+			"toSide": "left",
+			"toEnd": "none"
+		},
+		{
+			"id": "vo-e-vo-1tkhnA3G4IHa-vo-usrHvyRdrWrt",
+			"fromNode": "vo-1tkhnA3G4IHa",
+			"fromSide": "right",
+			"toNode": "vo-usrHvyRdrWrt",
 			"toSide": "left",
 			"toEnd": "none"
 		},
@@ -1904,6 +2097,14 @@
 			"toEnd": "none"
 		},
 		{
+			"id": "vo-e-vo-G2vljDAdAX0o-vo-outPeopleRead",
+			"fromNode": "vo-G2vljDAdAX0o",
+			"fromSide": "right",
+			"toNode": "vo-outPeopleRead",
+			"toSide": "left",
+			"toEnd": "none"
+		},
+		{
 			"id": "vo-e-vo-VPtDBrGYn9wd-vo-kKy3esTbjiPa",
 			"fromNode": "vo-VPtDBrGYn9wd",
 			"fromSide": "right",
@@ -2008,6 +2209,14 @@
 			"toEnd": "none"
 		},
 		{
+			"id": "vo-e-vo-HDD2o1MGfC18-vo-techReadIngst",
+			"fromNode": "vo-HDD2o1MGfC18",
+			"fromSide": "right",
+			"toNode": "vo-techReadIngst",
+			"toSide": "left",
+			"toEnd": "none"
+		},
+		{
 			"id": "vo-e-vo-7qOBv0EAys5f-vo-54QQZzG4lrRT",
 			"fromNode": "vo-7qOBv0EAys5f",
 			"fromSide": "right",
@@ -2036,6 +2245,14 @@
 			"fromNode": "vo-54QQZzG4lrRT",
 			"fromSide": "right",
 			"toNode": "vo-d5kf8RBrs4ID",
+			"toSide": "left",
+			"toEnd": "none"
+		},
+		{
+			"id": "vo-e-vo-54QQZzG4lrRT-vo-desirReadTrst",
+			"fromNode": "vo-54QQZzG4lrRT",
+			"fromSide": "right",
+			"toNode": "vo-desirReadTrst",
 			"toSide": "left",
 			"toEnd": "none"
 		},
