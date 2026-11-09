@@ -5,27 +5,25 @@
 <line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
 <text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">구현 포인트 정리</text>
 <circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
-<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">컴포넌트 구성 및 동작</text>
-<circle cx="58" cy="127" r="4.5" fill="#3a3a40"/>
-<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">참조 레이어 추가 사양</text>
-<circle cx="82" cy="160" r="4.5" fill="#3a3a40"/>
-<text x="99" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">에이전트 레퍼런스 코워크 정의</text>
-<circle cx="106" cy="193" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="106" cy="193" r="4.5" fill="#7c5cff"/>
-<text x="123" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">레퍼런스를 한다는 것이란?</text>
-<circle cx="106" cy="226" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="106" cy="226" r="4.5" fill="#7c5cff"/>
-<text x="123" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">그렇다면 '에이전트'와 소통을 할 때 레퍼런스로써 협…</text>
-<circle cx="106" cy="259" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="106" cy="259" r="4.5" fill="#7c5cff"/>
-<text x="123" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">지금 이건 ui/ux 기준으로만 얘기한 것 같은데 '문서'…</text>
-<circle cx="106" cy="292" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="106" cy="292" r="4.5" fill="#7c5cff"/>
-<text x="123" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">추출 항목</text>
-<circle cx="106" cy="325" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="106" cy="325" r="4.5" fill="#7c5cff"/>
-<text x="123" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">추출 범위</text>
-<circle cx="106" cy="358" r="4.5" fill="#3a3a40"/>
-<text x="123" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">다른 확장 질문 리스트</text>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">@Mango</text>
+<circle cx="58" cy="127" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="127" r="4.5" fill="#7c5cff"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">컴포넌트 구성 및 동작</text>
+<circle cx="58" cy="160" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="58" cy="160" r="4.5" fill="#7c5cff"/>
+<text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">UserFlow Case</text>
+<circle cx="58" cy="193" r="4.5" fill="#3a3a40"/>
+<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">아이디어</text>
+<circle cx="82" cy="226" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
+<circle cx="82" cy="226" r="4.5" fill="#7c5cff"/>
+<text x="99" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">아이디어 스케치 모달 그림판 &lt; 신규 사양 &lt; Excalidraw</text>
+<circle cx="82" cy="259" r="4.5" fill="#3a3a40"/>
+<text x="99" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">일일 패치노트 자동화</text>
+<circle cx="106" cy="292" r="3" fill="#9a9aa3"/>
+<text x="123" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">작업 내역, 변경 사항 관리 이력 보기 -&gt; 패치 노트 자…</text>
+<circle cx="82" cy="325" r="3" fill="#9a9aa3"/>
+<text x="99" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">쓰다버리는 놈들에 대한 손쉬운 관리 방안 - 메모 찌끄리…</text>
+<circle cx="82" cy="358" r="3" fill="#9a9aa3"/>
+<text x="99" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Voice Record - Voice Register</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>
