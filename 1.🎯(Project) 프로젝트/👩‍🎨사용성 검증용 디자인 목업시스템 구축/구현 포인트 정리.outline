@@ -193,9 +193,9 @@
                                   "updatedAt": 1793791197003
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793791013167,
-                              "updatedAt": 1793791196102,
-                              "isFolded": true
+                              "updatedAt": 1793791196102
                             },
                             {
                               "id": "RToSrPYYQ5Jf",
@@ -209,9 +209,9 @@
                                   "updatedAt": 1793791356604
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793791188223,
-                              "updatedAt": 1793791328714,
-                              "isFolded": true
+                              "updatedAt": 1793791328714
                             }
                           ],
                           "isFolded": true,
@@ -333,9 +333,9 @@
                                   "updatedAt": 1793795778247
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793795459228,
-                              "updatedAt": 1793795739042,
-                              "isFolded": true
+                              "updatedAt": 1793795739042
                             }
                           ],
                           "isFolded": true,
@@ -359,9 +359,9 @@
                                   "updatedAt": 1793795833299
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793795798719,
-                              "updatedAt": 1793795832423,
-                              "isFolded": true
+                              "updatedAt": 1793795832423
                             }
                           ],
                           "isFolded": true,
@@ -392,9 +392,9 @@
                                   "updatedAt": 1793796285388
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793796243507,
-                              "updatedAt": 1793796263564,
-                              "isFolded": true
+                              "updatedAt": 1793796263564
                             }
                           ],
                           "isFolded": true,
@@ -449,9 +449,9 @@
                                   "updatedAt": 1793796645568
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793796587593,
-                              "updatedAt": 1793796587593,
-                              "isFolded": true
+                              "updatedAt": 1793796587593
                             }
                           ],
                           "isFolded": true,
@@ -581,16 +581,14 @@
                           "updatedAt": 1793792969759
                         }
                       ],
-                      "isFolded": false,
+                      "isFolded": true,
                       "createdAt": 1793790818543,
-                      "updatedAt": 1793794635587,
-                      "isFolded": true
+                      "updatedAt": 1793794635587
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1793794573873,
-                  "updatedAt": 1793794619188,
-                  "isFolded": true
+                  "updatedAt": 1793794619188
                 },
                 {
                   "id": "6xMdRye0FdC3",
@@ -702,9 +700,9 @@
                                   "updatedAt": 1793794523352
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793794387470,
-                              "updatedAt": 1793794388974,
-                              "isFolded": true
+                              "updatedAt": 1793794388974
                             },
                             {
                               "id": "GHdrxJIY0Qer",
@@ -732,15 +730,15 @@
                                   "updatedAt": 1793794543256
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793794456830,
-                              "updatedAt": 1793794463415,
-                              "isFolded": true
+                              "updatedAt": 1793794463415
                             }
                           ],
+                          "isFolded": true,
                           "file": {
                             "target": "Pasted image 20261104211236.png"
-                          },
-                          "isFolded": true
+                          }
                         }
                       ],
                       "isFolded": true,
@@ -755,13 +753,13 @@
                           "id": "EeFcAnCbwP54",
                           "text": "작업대에 올리면 한 개, 두 개 등 멀티로 올리도록",
                           "children": [],
-                          "createdAt": 1793765695258,
-                          "updatedAt": 1793853123429,
+                          "isCompleted": true,
+                          "completedAt": 1793853123429,
                           "file": {
                             "target": "Pasted image 20261104131517.png"
                           },
-                          "isCompleted": true,
-                          "completedAt": 1793853123429
+                          "createdAt": 1793765695258,
+                          "updatedAt": 1793853123429
                         },
                         {
                           "id": "2yPhuZ7zWGm0",
@@ -782,10 +780,9 @@
                               "updatedAt": 1793765828527
                             }
                           ],
-                          "isFolded": false,
+                          "isFolded": true,
                           "createdAt": 1793765742685,
-                          "updatedAt": 1793765826627,
-                          "isFolded": true
+                          "updatedAt": 1793765826627
                         },
                         {
                           "id": "VZHW8rgBHQ3s",
@@ -795,10 +792,9 @@
                           "updatedAt": 1793770659908
                         }
                       ],
-                      "isFolded": false,
+                      "isFolded": true,
                       "createdAt": 1793765609018,
-                      "updatedAt": 1793765686702,
-                      "isFolded": true
+                      "updatedAt": 1793765686702
                     },
                     {
                       "id": "ILzNwWlTrVDj",
@@ -826,10 +822,9 @@
                           "updatedAt": 1793765894154
                         }
                       ],
-                      "isFolded": false,
+                      "isFolded": true,
                       "createdAt": 1793765861268,
-                      "updatedAt": 1793765873651,
-                      "isFolded": true
+                      "updatedAt": 1793765873651
                     }
                   ],
                   "isFolded": true,
@@ -870,15 +865,15 @@
                               "updatedAt": 1793777403845
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1793777305829,
-                          "updatedAt": 1793777377559,
-                          "isFolded": true
+                          "updatedAt": 1793777377559
                         }
                       ],
-                      "createdAt": 1793777299341,
-                      "updatedAt": 1793865080908,
                       "isFolded": true,
-                      "note": "\"요소별 다른 view 요소로 제공하자\""
+                      "note": "\"요소별 다른 view 요소로 제공하자\"",
+                      "createdAt": 1793777299341,
+                      "updatedAt": 1793865080908
                     },
                     {
                       "id": "RUPXJ81X5Jg6",
@@ -892,10 +887,10 @@
                           "updatedAt": 1793787755670
                         }
                       ],
-                      "createdAt": 1793787742172,
-                      "updatedAt": 1793865080908,
                       "isFolded": true,
-                      "note": "\"별도의 모드나 작업 환경에서 레퍼런스 작업만 별도로 진행하자\""
+                      "note": "\"별도의 모드나 작업 환경에서 레퍼런스 작업만 별도로 진행하자\"",
+                      "createdAt": 1793787742172,
+                      "updatedAt": 1793865080908
                     },
                     {
                       "id": "YswkjXF8TOCb",
@@ -916,10 +911,10 @@
                           "updatedAt": 1793789971095
                         }
                       ],
-                      "createdAt": 1793789894954,
-                      "updatedAt": 1793865080908,
                       "isFolded": true,
-                      "note": "\"캡쳐 정도와 지시 사항\"만 마커 혹은 history 관리로 남겨주자"
+                      "note": "\"캡쳐 정도와 지시 사항\"만 마커 혹은 history 관리로 남겨주자",
+                      "createdAt": 1793789894954,
+                      "updatedAt": 1793865080908
                     },
                     {
                       "id": "PDcbrx9SBcZh",
@@ -957,22 +952,22 @@
                           "id": "h8PtskAJu2np",
                           "text": "레퍼 - edit 다이렉트 지시 및 -> 출력 후 피드백(이걸로 이거 쓰셈!)",
                           "children": [],
-                          "createdAt": 1793793991762,
-                          "updatedAt": 1793794050267,
                           "file": {
                             "target": "Pasted image 20261104210658.png"
-                          }
+                          },
+                          "createdAt": 1793793991762,
+                          "updatedAt": 1793794050267
                         }
                       ],
-                      "createdAt": 1793792743175,
-                      "updatedAt": 1793865080908,
                       "isFolded": true,
-                      "note": "\"빡빡한 원심분리와 결과물 선제시 + 태깅 표시\""
+                      "note": "\"빡빡한 원심분리와 결과물 선제시 + 태깅 표시\"",
+                      "createdAt": 1793792743175,
+                      "updatedAt": 1793865080908
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793865069351,
-                  "updatedAt": 1793865078633,
-                  "isFolded": true
+                  "updatedAt": 1793865078633
                 }
               ],
               "isFolded": false,
@@ -1117,11 +1112,10 @@
                             }
                           ],
                           "isFolded": true,
-                          "createdAt": 1793839293376,
-                          "updatedAt": 1793853203256,
-                          "isFolded": true,
                           "isCompleted": true,
-                          "completedAt": 1793853203256
+                          "completedAt": 1793853203256,
+                          "createdAt": 1793839293376,
+                          "updatedAt": 1793853203256
                         }
                       ],
                       "createdAt": 1793832285480,
@@ -1146,10 +1140,9 @@
                       "updatedAt": 1793840189207
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793766981934,
-                  "updatedAt": 1793767004031,
-                  "isFolded": false
+                  "updatedAt": 1793767004031
                 },
                 {
                   "id": "9B9Zk95bKfU7",
@@ -1217,10 +1210,9 @@
                   "updatedAt": 1793771498333
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793767085676,
-              "updatedAt": 1793769252445,
-              "isFolded": false
+              "updatedAt": 1793769252445
             },
             {
               "id": "c5UXHJYKjn17",
@@ -1405,9 +1397,9 @@
                       "updatedAt": 1793859923947
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793859815350,
-                  "updatedAt": 1793859987645,
-                  "isFolded": true
+                  "updatedAt": 1793859987645
                 },
                 {
                   "id": "QwhTl29UQUHN",
@@ -1428,12 +1420,12 @@
                           "updatedAt": 1793857815500
                         }
                       ],
-                      "createdAt": 1793857707294,
-                      "updatedAt": 1793858853649,
+                      "isFolded": true,
                       "file": {
                         "target": "Pasted image 20261105144827.png"
                       },
-                      "isFolded": true
+                      "createdAt": 1793857707294,
+                      "updatedAt": 1793858853649
                     },
                     {
                       "id": "aT0QIWWIBxC6",
@@ -1447,19 +1439,19 @@
                               "id": "88mY0Za9n1V6",
                               "text": "첨부 전2",
                               "children": [],
-                              "createdAt": 1793859152509,
-                              "updatedAt": 1793859167254,
                               "file": {
                                 "target": "Pasted image 20261105151232.png"
-                              }
+                              },
+                              "createdAt": 1793859152509,
+                              "updatedAt": 1793859167254
                             }
                           ],
+                          "isFolded": true,
                           "file": {
                             "target": "Pasted image 20261105151146.png"
                           },
                           "createdAt": 1793859106919,
-                          "updatedAt": 1793859119725,
-                          "isFolded": true
+                          "updatedAt": 1793859119725
                         },
                         {
                           "id": "j68DcLkG77QU",
@@ -1472,22 +1464,22 @@
                           "updatedAt": 1793859051445
                         }
                       ],
-                      "createdAt": 1793858810916,
-                      "updatedAt": 1793858853649,
+                      "isFolded": true,
                       "file": {
                         "target": "Pasted image 20261105150651.png"
                       },
-                      "isFolded": true
+                      "createdAt": 1793858810916,
+                      "updatedAt": 1793858853649
                     },
                     {
                       "id": "yXa518kWC6Dz",
                       "text": "컨셉3 - 플로팅&부착형 채집통 스타일",
                       "children": [],
-                      "createdAt": 1793859665360,
-                      "updatedAt": 1793859687397,
                       "file": {
                         "target": "Pasted image 20261105152105.png"
-                      }
+                      },
+                      "createdAt": 1793859665360,
+                      "updatedAt": 1793859687397
                     },
                     {
                       "id": "tvBcp0liZXDp",
@@ -1507,23 +1499,23 @@
                           "id": "ClgmDKHNfsM0",
                           "text": "옵시디언 디렉토리",
                           "children": [],
-                          "createdAt": 1793860336056,
-                          "updatedAt": 1793860342025,
                           "file": {
                             "target": "Pasted image 20261105153216.png"
-                          }
+                          },
+                          "createdAt": 1793860336056,
+                          "updatedAt": 1793860342025
                         }
                       ],
-                      "createdAt": 1793860159447,
-                      "updatedAt": 1793860243474,
                       "file": {
                         "target": "Pasted image 20261105152919.png"
-                      }
+                      },
+                      "createdAt": 1793860159447,
+                      "updatedAt": 1793860243474
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793858843052,
-                  "updatedAt": 1793858856811,
-                  "isFolded": true
+                  "updatedAt": 1793858856811
                 },
                 {
                   "id": "jAsrxcyrY56i",
@@ -1558,22 +1550,22 @@
                       "updatedAt": 1793864490751
                     }
                   ],
-                  "createdAt": 1793864373394,
-                  "updatedAt": 1793864393450,
+                  "isFolded": true,
                   "file": {
                     "target": "Pasted image 20261105163949.png"
                   },
-                  "isFolded": true
+                  "createdAt": 1793864373394,
+                  "updatedAt": 1793864393450
                 },
                 {
                   "id": "vrBlekSbLW9r",
                   "text": "annotating",
                   "children": [],
-                  "createdAt": 1793864634007,
-                  "updatedAt": 1793864638674,
                   "file": {
                     "target": "Pasted image 20261105164354.png"
-                  }
+                  },
+                  "createdAt": 1793864634007,
+                  "updatedAt": 1793864638674
                 },
                 {
                   "id": "wks6yBoM1K0E",
@@ -1597,11 +1589,11 @@
                       "updatedAt": 1793866637124
                     }
                   ],
-                  "createdAt": 1793866392545,
-                  "updatedAt": 1793866403337,
                   "file": {
                     "target": "Pasted image 20261105171312.png"
-                  }
+                  },
+                  "createdAt": 1793866392545,
+                  "updatedAt": 1793866403337
                 }
               ],
               "createdAt": 1793771406318,
@@ -1615,13 +1607,13 @@
                   "id": "FelJ8rEQDxqh",
                   "text": "작업 중, 출력 중 - 1차 스켈레톤 및 시동은 검",
                   "children": [],
-                  "createdAt": 1793840856277,
-                  "updatedAt": 1793853753524,
+                  "isCompleted": true,
+                  "completedAt": 1793853753524,
                   "file": {
                     "target": "Pasted image 20261105100736.png"
                   },
-                  "isCompleted": true,
-                  "completedAt": 1793853753524
+                  "createdAt": 1793840856277,
+                  "updatedAt": 1793853753524
                 },
                 {
                   "id": "14x56HqJw2CL",
@@ -1673,9 +1665,9 @@
                       "updatedAt": 1793841254614
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793841225039,
-                  "updatedAt": 1793841228679,
-                  "isFolded": true
+                  "updatedAt": 1793841228679
                 },
                 {
                   "id": "fg416A1F8Yx7",
@@ -1737,10 +1729,9 @@
                   "updatedAt": 1793841640510
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793841617757,
-              "updatedAt": 1793841627251,
-              "isFolded": true
+              "updatedAt": 1793841627251
             },
             {
               "id": "c5akG6EQsxT5",
@@ -1750,22 +1741,21 @@
                   "id": "DzxHungBTJX3",
                   "text": "프로젝트 대시보드 - 캔바 샘플",
                   "children": [],
-                  "createdAt": 1793859222084,
-                  "updatedAt": 1793859239224,
                   "file": {
                     "target": "Pasted image 20261105151343.png"
-                  }
+                  },
+                  "createdAt": 1793859222084,
+                  "updatedAt": 1793859239224
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793859215718,
-              "updatedAt": 1793859221833,
-              "isFolded": true
+              "updatedAt": 1793859221833
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793769223297,
-          "updatedAt": 1793848827721,
-          "isFolded": false
+          "updatedAt": 1793848827721
         },
         {
           "id": "yE3qPUvMNM2x",
@@ -2032,6 +2022,35 @@
           "text": "아이디어",
           "children": [
             {
+              "id": "3sjvKde5NROd",
+              "text": "논문 쓰는 사람에게 물어보니 ai가 쓴게 걸리면 끝이라고 하더라고? 그래서 작성할 때 딸깍은 필요 없다고 함",
+              "children": [
+                {
+                  "id": "yrgeByNJfWX4",
+                  "text": "그럼에도 불구하고 자료 조사, 문맥, 검색 등 ai 기능은 최대한 활용하고 싶어한다고",
+                  "children": [],
+                  "createdAt": 1794203179416,
+                  "updatedAt": 1794203200881
+                },
+                {
+                  "id": "sAWndHHhMWgD",
+                  "text": "그럼 그냥 딸깍 다 하게 하고 마지막에 필사하면서 점검하는? 안전빵을 제공할까? 그 약간 따라쓰기 하면서 또 내 말투로 고쳐지고 하잖아?",
+                  "children": [],
+                  "createdAt": 1794203201640,
+                  "updatedAt": 1794203234955
+                },
+                {
+                  "id": "21fLk0wmRMr4",
+                  "text": "몰라 여튼 딸깍을 그대로 쓰는건 좀 어렵긴 할듯? 아니면 그걸 완벽하게 지우는걸 우리 장점으로 내세우거나",
+                  "children": [],
+                  "createdAt": 1794203236073,
+                  "updatedAt": 1794203269114
+                }
+              ],
+              "createdAt": 1794203091065,
+              "updatedAt": 1794203179138
+            },
+            {
               "id": "14P8H8iJsX2q",
               "text": "최종 Export/인쇄 전 필수 검토 슬롯(빨간 박스) 강제 서명·체크 게이트 — 사용자 검토 태만 및 툴 책임 전가 방어",
               "children": [
@@ -2066,13 +2085,50 @@
           ],
           "createdAt": 1793848925177,
           "updatedAt": 1793848928993
+        },
+        {
+          "id": "Z2a5g1EgD9cW",
+          "text": "좌측 사이드바",
+          "children": [
+            {
+              "id": "g3M7TTGg7yfl",
+              "text": "파일트리이자 outline 그 자체인 좌측 사이드바를 사용자 편의 고려하여 재설계",
+              "children": [],
+              "createdAt": 1794200148118,
+              "updatedAt": 1794200179511
+            },
+            {
+              "id": "G0KZrMRXc1Zs",
+              "text": "시각적으로 피로도가 덜 해야함",
+              "children": [],
+              "createdAt": 1794203271737,
+              "updatedAt": 1794203286194
+            },
+            {
+              "id": "A3R4k5JyL8bU",
+              "text": "직관적이여야함",
+              "children": [],
+              "createdAt": 1794203287315,
+              "updatedAt": 1794203289507
+            },
+            {
+              "id": "YfSx7EoS2zgV",
+              "text": "기능은 네이게이션일 뿐만 아니라, 모든 요소를 포함하고 있어야하며 .outline의 기능도 제공해야함",
+              "children": [],
+              "createdAt": 1794203290181,
+              "updatedAt": 1794203316700
+            }
+          ],
+          "createdAt": 1794200129193,
+          "updatedAt": 1794201187362
         }
       ],
+      "isFolded": false,
       "createdAt": 1793848829518,
       "updatedAt": 1793848924754
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1793866637124
+  "updatedAt": 1794203316700
 }
