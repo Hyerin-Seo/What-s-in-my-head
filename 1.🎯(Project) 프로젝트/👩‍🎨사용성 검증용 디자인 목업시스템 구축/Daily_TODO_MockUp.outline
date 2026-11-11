@@ -1,0 +1,652 @@
+{
+  "version": "1.0.0",
+  "id": "wtuS5EKS0578",
+  "title": "Daily_TODO_MockUp",
+  "rootNodes": [
+    {
+      "id": "85KhQkvVTtLQ",
+      "text": "2026.11.06",
+      "children": [
+        {
+          "id": "0dHl9x7EpKaQ",
+          "text": "reference 패널 정비",
+          "children": [
+            {
+              "id": "Y1xbX5V7L03x",
+              "text": "영역 지정 및 어노테이션, 마커, 추출 요소 등의 위계 표시",
+              "children": [
+                {
+                  "id": "MTwIZojxF1C9",
+                  "text": "영역 박스 위치",
+                  "children": [],
+                  "createdAt": 1793945849733,
+                  "updatedAt": 1793945854594
+                },
+                {
+                  "id": "FjvmQ7sj4r4I",
+                  "text": "텍스트 지정 위치",
+                  "children": [],
+                  "createdAt": 1793945854819,
+                  "updatedAt": 1793945857897
+                },
+                {
+                  "id": "2LvU2oz2ARYV",
+                  "text": "핀 - 위계 표시",
+                  "children": [],
+                  "createdAt": 1793945860414,
+                  "updatedAt": 1793945865507
+                }
+              ],
+              "createdAt": 1793935875857,
+              "updatedAt": 1793935917224,
+              "isFolded": true
+            },
+            {
+              "id": "5ehZ9xrjCmLV",
+              "text": "작업 영역 및 표시, 보관 등",
+              "children": [],
+              "createdAt": 1793936109499,
+              "updatedAt": 1793936132909
+            }
+          ],
+          "createdAt": 1793935689281,
+          "updatedAt": 1793945889240,
+          "isFolded": false
+        },
+        {
+          "id": "2oTtYiXyhDee",
+          "text": "Phase3",
+          "children": [
+            {
+              "id": "0XW4bLti3V28",
+              "text": "reference + 에디터 + Resource -> AI Composer 작업 지시 ",
+              "children": [
+                {
+                  "id": "3Rl58dDV5Swb",
+                  "text": "레퍼런스를 보고 어떤 식(지시) + 만들어줘",
+                  "children": [
+                    {
+                      "id": "YSpcAJADt6dD",
+                      "text": "레퍼런스에 대해서 되게 대충 봄",
+                      "children": [],
+                      "createdAt": 1793947744496,
+                      "updatedAt": 1793947751281
+                    },
+                    {
+                      "id": "ey7KF4esVOKO",
+                      "text": "애초에 이거 시각적으로도 안볼 것 같은데... 이미지로 넣었어. 캡쳐로 말이지",
+                      "children": [],
+                      "createdAt": 1793948234713,
+                      "updatedAt": 1793948258648
+                    },
+                    {
+                      "id": "87Wcm6N1AeOf",
+                      "text": "레퍼런스 보라고도 안했는데 그냥 쳐보고 지랄이네",
+                      "children": [],
+                      "createdAt": 1793948242214,
+                      "updatedAt": 1793948517517
+                    }
+                  ],
+                  "createdAt": 1793946679688,
+                  "updatedAt": 1793946712557
+                }
+              ],
+              "createdAt": 1793934407229,
+              "updatedAt": 1793934441421
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793934368821,
+          "updatedAt": 1793934406767
+        },
+        {
+          "id": "pPYBfujmNpUd",
+          "text": "아부지 테스트셋 밀어넣기",
+          "children": [
+            {
+              "id": "cFBUBRVG7bLm",
+              "text": "클로드 한글 인식 여부 확인 -> python 라이브러리로",
+              "children": [],
+              "isCompleted": true,
+              "completedAt": 1793937417625,
+              "createdAt": 1793935152470,
+              "updatedAt": 1793937427279
+            },
+            {
+              "id": "pdTJVUKWByhV",
+              "text": "내용 분류 및 확인",
+              "children": [
+                {
+                  "id": "AYFHr9xB7U3X",
+                  "text": "분류 체계 + 실제 분류 리스트업 정리",
+                  "children": [],
+                  "createdAt": 1793938079763,
+                  "updatedAt": 1793938087749
+                },
+                {
+                  "id": "dWvF4z0IT2mo",
+                  "text": "자료 보관 및 관리 장소 지정 -> Resource - 테스트셋 수집",
+                  "children": [],
+                  "createdAt": 1793938089437,
+                  "updatedAt": 1793938111814
+                },
+                {
+                  "id": "PHQdMfzJJsYW",
+                  "text": "[[흥극화재 자료 Index.outline]]",
+                  "children": [],
+                  "createdAt": 1793938112399,
+                  "updatedAt": 1793940753779
+                }
+              ],
+              "isCompleted": true,
+              "completedAt": 1793945177869,
+              "createdAt": 1793935156129,
+              "updatedAt": 1793945177869
+            },
+            {
+              "id": "WWazS312o3j0",
+              "text": "제출해야할 결과물 형식 확인하기",
+              "children": [],
+              "isCompleted": true,
+              "completedAt": 1793945183544,
+              "createdAt": 1793935167519,
+              "updatedAt": 1793945183544
+            }
+          ],
+          "isFolded": true,
+          "isCompleted": true,
+          "completedAt": 1793945185337,
+          "createdAt": 1793934446126,
+          "updatedAt": 1793945185337
+        },
+        {
+          "id": "fjPVlxItDXTs",
+          "text": "Phase1, 2 정비",
+          "children": [
+            {
+              "id": "q43CkXmYhqsE",
+              "text": "Phase1 ",
+              "children": [
+                {
+                  "id": "aWK6HCFCYpgZ",
+                  "text": "스토리 라이닝",
+                  "children": [
+                    {
+                      "id": "QZSYmiO3Xau5",
+                      "text": "레퍼런스와 리소스의 역할은",
+                      "children": [],
+                      "createdAt": 1793935749929,
+                      "updatedAt": 1793935758256
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793935739862,
+                  "updatedAt": 1793935744423
+                }
+              ],
+              "createdAt": 1793935736618,
+              "updatedAt": 1793935739448
+            },
+            {
+              "id": "64jya1n79enr",
+              "text": "Phase2",
+              "children": [
+                {
+                  "id": "pKk50CqOZF60",
+                  "text": "레이아웃 잡기",
+                  "children": [
+                    {
+                      "id": "48tmhGIG8DXS",
+                      "text": "리소스와 레퍼런스의 역할은",
+                      "children": [],
+                      "createdAt": 1793935783168,
+                      "updatedAt": 1793935793889
+                    }
+                  ],
+                  "createdAt": 1793935744589,
+                  "updatedAt": 1793935780510
+                }
+              ],
+              "createdAt": 1793935772738,
+              "updatedAt": 1793935777186
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793934976768,
+          "updatedAt": 1793934983072
+        },
+        {
+          "id": "2H1sIAzd965H",
+          "text": "AI 비동기 병렬 작업 대시보드",
+          "children": [
+            {
+              "id": "uHp1v7tbUUFK",
+              "text": "Researcher",
+              "children": [],
+              "createdAt": 1793934483034,
+              "updatedAt": 1793934487388
+            }
+          ],
+          "createdAt": 1793934476507,
+          "updatedAt": 1793934482630
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793934368821,
+      "updatedAt": 1793934383885
+    },
+    {
+      "id": "NKRdF0X5OFdR",
+      "text": "2026.11.08 - ACP(Agent Client Protocol",
+      "children": [
+        {
+          "id": "8lYfZxfrijAr",
+          "text": "agy-cli 하네스 엔진 단도리",
+          "children": [
+            {
+              "id": "iOstAGlQafBQ",
+              "text": "사용성 검증 - ai 동작이 포함된 것이다",
+              "children": [
+                {
+                  "id": "T73UWPUiqYin",
+                  "text": "회의록 -> 한 장도 작업을 못하면 다음은 나가리",
+                  "children": [],
+                  "createdAt": 1794122856549,
+                  "updatedAt": 1794122869307
+                },
+                {
+                  "id": "XUQlyhwcRnor",
+                  "text": "Reference, Phase 별로 엔진이 다르게 인식하고, 경우에 따라서는 Phase 간에도 이해를 해야한다",
+                  "children": [],
+                  "createdAt": 1794122869579,
+                  "updatedAt": 1794122895737
+                },
+                {
+                  "id": "KzM25qV8O3vk",
+                  "text": "어차피 구현은 CLI, API 로 해야하는 것 -> 성능을 내야만 한다",
+                  "children": [],
+                  "createdAt": 1794122895993,
+                  "updatedAt": 1794122912217
+                },
+                {
+                  "id": "riRRpYh7opfe",
+                  "text": "Thinking 고도화, 답변 고도화 - 더 똑똑하고 사용자가 원하는 방향",
+                  "children": [],
+                  "createdAt": 1794122955561,
+                  "updatedAt": 1794123020085
+                },
+                {
+                  "id": "F8HYOThHjxO1",
+                  "text": "그 다음은 블로그 -> 시각적으로 보고 다듬고 하는 작업 같은 것들",
+                  "children": [],
+                  "createdAt": 1794122921461,
+                  "updatedAt": 1794122934261
+                }
+              ],
+              "createdAt": 1794122847717,
+              "updatedAt": 1794122856195,
+              "isFolded": true
+            },
+            {
+              "id": "cwsmpnFuO1pm",
+              "text": "아... 이거 sdk 있잖아... agy-sdk 였나?? -> agy-acp??? 시도",
+              "children": [],
+              "createdAt": 1794123048426,
+              "updatedAt": 1794131005328
+            }
+          ],
+          "createdAt": 1794122835844,
+          "updatedAt": 1794187825037,
+          "isFolded": true,
+          "isCompleted": true,
+          "completedAt": 1794187825037
+        },
+        {
+          "id": "FvakG90N5KTV",
+          "text": "만약 안되면 창만 저기로 하고 나머지는 mcp로 다 돌리는 방안을 생각해야겠다...",
+          "children": [
+            {
+              "id": "J8rvhlUK1T6v",
+              "text": "mcp 로 하면 어떤 게 제약에 걸리는가 -> 인터랙션들이 다 빠지지",
+              "children": [],
+              "createdAt": 1794131090311,
+              "updatedAt": 1794131108669
+            },
+            {
+              "id": "jVf2OQI0roDm",
+              "text": "mcp로 하되, 채팅에서는 사실은 mcp -> 가고 답변도 물려서 하지만 소비자는 티안나게 가능?",
+              "children": [],
+              "createdAt": 1794131109001,
+              "updatedAt": 1794131133315
+            }
+          ],
+          "createdAt": 1794131051510,
+          "updatedAt": 1794187825037,
+          "isFolded": true,
+          "isCompleted": true,
+          "completedAt": 1794187825037
+        }
+      ],
+      "createdAt": 1794122829726,
+      "updatedAt": 1794357752460,
+      "isCompleted": true,
+      "completedAt": 1794357752460,
+      "isFolded": true
+    },
+    {
+      "id": "mlGXsRq6tpCW",
+      "text": "2026.11.09",
+      "children": [
+        {
+          "id": "NHWI73xsAyiA",
+          "text": "Editor 화면 정리",
+          "children": [
+            {
+              "id": "K6tKtS31FJ4Z",
+              "text": "Editor 제어 파일 추가, 웹 url 추가",
+              "children": [],
+              "createdAt": 1794197631657,
+              "updatedAt": 1794197651173
+            },
+            {
+              "id": "a1Jm3ogZvPRQ",
+              "text": "페이지 관리 저장, 불러오기 등",
+              "children": [],
+              "createdAt": 1794197651414,
+              "updatedAt": 1794197663955
+            },
+            {
+              "id": "0wR6fJKiO5rq",
+              "text": "블로그 및 웹사이트 분해하기 - 다른 형식",
+              "children": [],
+              "createdAt": 1794200034023,
+              "updatedAt": 1794200043096
+            }
+          ],
+          "createdAt": 1794196612762,
+          "updatedAt": 1794373494171,
+          "isCompleted": true,
+          "completedAt": 1794373494171,
+          "isFolded": true
+        },
+        {
+          "id": "jVmBxnrXZYf3",
+          "text": "쿼리 리스트업을 하까... ",
+          "children": [],
+          "createdAt": 1794207828860,
+          "updatedAt": 1794207835278
+        }
+      ],
+      "createdAt": 1794131069727,
+      "updatedAt": 1794196611478
+    },
+    {
+      "id": "n0A6sSHKMwou",
+      "text": "2026.11.10",
+      "children": [
+        {
+          "id": "kpfR3OcmmhJr",
+          "text": "Outliner ",
+          "children": [
+            {
+              "id": "cXBI74OQmXag",
+              "text": "Page 추가",
+              "children": [
+                {
+                  "id": "j4DbD9Mss55b",
+                  "text": "page 추가 버튼 구현",
+                  "children": [],
+                  "createdAt": 1794289177590,
+                  "updatedAt": 1794289202002
+                },
+                {
+                  "id": "hxQbqRE5xlQM",
+                  "text": "page 추가 양식 선택 모달? 아니면 다른 애들처럼",
+                  "children": [
+                    {
+                      "id": "Y61TeGSUmnzX",
+                      "text": "from pdf",
+                      "children": [
+                        {
+                          "id": "xOhg73pkFtOD",
+                          "text": "1페이지",
+                          "children": [
+                            {
+                              "id": "QpZUvEkEY9dz",
+                              "text": "바로 추가",
+                              "children": [],
+                              "createdAt": 1794289310675,
+                              "updatedAt": 1794289312493
+                            }
+                          ],
+                          "createdAt": 1794289308388,
+                          "updatedAt": 1794289308858,
+                          "isFolded": true
+                        },
+                        {
+                          "id": "InPAHTNMkZQl",
+                          "text": "1페이지 이상",
+                          "children": [
+                            {
+                              "id": "CGOHHXMQ9BhX",
+                              "text": "여러 개? 한 개? -> Choose",
+                              "children": [],
+                              "createdAt": 1794289317192,
+                              "updatedAt": 1794289328040
+                            }
+                          ],
+                          "createdAt": 1794289312803,
+                          "updatedAt": 1794289316937,
+                          "isFolded": true
+                        }
+                      ],
+                      "createdAt": 1794289219089,
+                      "updatedAt": 1794289308388,
+                      "isFolded": false
+                    },
+                    {
+                      "id": "UvHQ0Wssqn7f",
+                      "text": "빈 문서 선택",
+                      "children": [],
+                      "createdAt": 1794289231021,
+                      "updatedAt": 1794289231021
+                    },
+                    {
+                      "id": "m86E5v5zGZFQ",
+                      "text": "블로그 섹터 만들기",
+                      "children": [],
+                      "createdAt": 1794289748169,
+                      "updatedAt": 1794289757015
+                    }
+                  ],
+                  "createdAt": 1794289202356,
+                  "updatedAt": 1794289261409
+                }
+              ],
+              "createdAt": 1794289170255,
+              "updatedAt": 1794289177305,
+              "isFolded": true
+            },
+            {
+              "id": "vQJZUVuQwAA2",
+              "text": "Page 복사",
+              "children": [
+                {
+                  "id": "4A6nLATXbriq",
+                  "text": "사본 만들기",
+                  "children": [],
+                  "createdAt": 1794289889909,
+                  "updatedAt": 1794289892274
+                }
+              ],
+              "createdAt": 1794289212316,
+              "updatedAt": 1794289878543,
+              "isFolded": true
+            },
+            {
+              "id": "ThnjceAtRydD",
+              "text": "Page Rename",
+              "children": [],
+              "createdAt": 1794289898933,
+              "updatedAt": 1794289906630
+            },
+            {
+              "id": "LpQcHIXQ8M9I",
+              "text": "Page Delete",
+              "children": [],
+              "createdAt": 1794290619672,
+              "updatedAt": 1794290624750
+            }
+          ],
+          "createdAt": 1794289011185,
+          "updatedAt": 1794358215727,
+          "isFolded": true,
+          "isCompleted": true,
+          "completedAt": 1794358215727
+        },
+        {
+          "id": "vO6dhdUPp6J3",
+          "text": "Canvas",
+          "children": [
+            {
+              "id": "0X8561FQjo0O",
+              "text": "Element 복사하기(canvas 내)",
+              "children": [],
+              "createdAt": 1794289927094,
+              "updatedAt": 1794289951696
+            },
+            {
+              "id": "wWtBtKW1sDmT",
+              "text": "복사한 Element Insert 하기(canvas 내)",
+              "children": [],
+              "createdAt": 1794289934048,
+              "updatedAt": 1794289955688
+            },
+            {
+              "id": "vN8GWUqohUx3",
+              "text": "Element 삭제하기",
+              "children": [],
+              "createdAt": 1794289963622,
+              "updatedAt": 1794289970441
+            }
+          ],
+          "createdAt": 1794289915373,
+          "updatedAt": 1794358214765,
+          "isFolded": true,
+          "isCompleted": true,
+          "completedAt": 1794358214765
+        }
+      ],
+      "createdAt": 1794289007802,
+      "updatedAt": 1794289010630,
+      "isFolded": true
+    },
+    {
+      "id": "MiRgZY4fWbxW",
+      "text": "2026.11.11",
+      "children": [
+        {
+          "id": "ucl6LIE52lVn",
+          "text": "Outliner 의 하네스 세팅",
+          "children": [
+            {
+              "id": "nbmFgGE0ZZWg",
+              "text": "Project - Document - Page 에 따른 하네스",
+              "children": [],
+              "createdAt": 1794357742926,
+              "updatedAt": 1794357802334
+            },
+            {
+              "id": "XShyLJQ2MSBc",
+              "text": "Zoom 하네스",
+              "children": [],
+              "createdAt": 1794357802866,
+              "updatedAt": 1794357861651
+            },
+            {
+              "id": "591GjU4OZIf5",
+              "text": "타 Project - Project, Project 내 다른 Document",
+              "children": [],
+              "createdAt": 1794357811840,
+              "updatedAt": 1794357855202
+            },
+            {
+              "id": "1czxkzXtmy9C",
+              "text": "AI-Composer의 컨트롤러",
+              "children": [],
+              "createdAt": 1794357858376,
+              "updatedAt": 1794357873097
+            }
+          ],
+          "createdAt": 1794357730186,
+          "updatedAt": 1794357741829
+        },
+        {
+          "id": "EZBhtCO3ZsLz",
+          "text": "Outliner 사양 정의",
+          "children": [
+            {
+              "id": "6PcLVoSczImY",
+              "text": "틀 - 양식과 내용의 구분 기준은?",
+              "children": [
+                {
+                  "id": "41QLdm4UaHpq",
+                  "text": "특히 블로그 같은 글에서...",
+                  "children": [],
+                  "createdAt": 1794358436827,
+                  "updatedAt": 1794358442428
+                }
+              ],
+              "createdAt": 1794358410119,
+              "updatedAt": 1794358427731
+            },
+            {
+              "id": "d7h7IWlsO6OS",
+              "text": "Project - Document - Page  사양 정의",
+              "children": [
+                {
+                  "id": "uXlZrR0MOCRV",
+                  "text": "각각의 역할과 속성",
+                  "children": [],
+                  "createdAt": 1794365456734,
+                  "updatedAt": 1794365463214
+                }
+              ],
+              "createdAt": 1794365433750,
+              "updatedAt": 1794365453344
+            }
+          ],
+          "createdAt": 1794358234386,
+          "updatedAt": 1794358289564
+        },
+        {
+          "id": "ymUV6HExqrfW",
+          "text": "Editor -> 블로그 작성 가능한 그냥 기본엔진",
+          "children": [
+            {
+              "id": "ggcdHpVg1Way",
+              "text": "와이어프레임 + 주제 및 대충 섹션에 쓸 내용, 빈칸 채우기...",
+              "children": [],
+              "createdAt": 1794359895140,
+              "updatedAt": 1794359911657
+            },
+            {
+              "id": "zp5Y6GY5pwol",
+              "text": "현재 개발 중인 것은 -> 레퍼런스에 붙여야지",
+              "children": [],
+              "createdAt": 1794359955425,
+              "updatedAt": 1794359963768
+            }
+          ],
+          "createdAt": 1794359880304,
+          "updatedAt": 1794359893055
+        }
+      ],
+      "createdAt": 1794357725140,
+      "updatedAt": 1794357729753
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793934368821,
+  "updatedAt": 1794376817734
+}

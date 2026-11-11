@@ -505,7 +505,7 @@
                           "updatedAt": 1793788620938
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1793788494575,
                       "updatedAt": 1793794612759
                     },
@@ -549,7 +549,7 @@
                           "updatedAt": 1793788584554
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1793788497539,
                       "updatedAt": 1793794612759
                     },
@@ -662,9 +662,10 @@
                         }
                       ],
                       "isFolded": true,
-                      "isCompleted": false,
+                      "isCompleted": true,
+                      "completedAt": 1794357901474,
                       "createdAt": 1793764933152,
-                      "updatedAt": 1793766777529
+                      "updatedAt": 1794357901474
                     },
                     {
                       "id": "8QdrhPMr0pV0",
@@ -742,8 +743,10 @@
                         }
                       ],
                       "isFolded": true,
+                      "isCompleted": true,
+                      "completedAt": 1794357901474,
                       "createdAt": 1793794350359,
-                      "updatedAt": 1793794354297
+                      "updatedAt": 1794357901474
                     },
                     {
                       "id": "F2afG8kVoTqL",
@@ -793,8 +796,10 @@
                         }
                       ],
                       "isFolded": true,
+                      "isCompleted": true,
+                      "completedAt": 1794357901474,
                       "createdAt": 1793765609018,
-                      "updatedAt": 1793765686702
+                      "updatedAt": 1794357901474
                     },
                     {
                       "id": "ILzNwWlTrVDj",
@@ -822,7 +827,7 @@
                           "updatedAt": 1793765894154
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1793765861268,
                       "updatedAt": 1793765873651
                     }
@@ -968,9 +973,23 @@
                   "isFolded": true,
                   "createdAt": 1793865069351,
                   "updatedAt": 1793865078633
+                },
+                {
+                  "id": "NSwTWdb6hsHl",
+                  "text": "Reference 매니저 및 Extension",
+                  "children": [],
+                  "createdAt": 1793935700779,
+                  "updatedAt": 1793935710800
+                },
+                {
+                  "id": "s0JlM4gpj4XT",
+                  "text": "확대, 축소 기능 추가 - 뭐가 안보임",
+                  "children": [],
+                  "createdAt": 1794272213578,
+                  "updatedAt": 1794272225139
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793764849322,
               "updatedAt": 1793769252445
             },
@@ -1118,6 +1137,7 @@
                           "updatedAt": 1793853203256
                         }
                       ],
+                      "isFolded": false,
                       "createdAt": 1793832285480,
                       "updatedAt": 1793832291645
                     },
@@ -1136,8 +1156,48 @@
                           "updatedAt": 1793840197035
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793840181201,
                       "updatedAt": 1793840189207
+                    },
+                    {
+                      "id": "34hhogrSant5",
+                      "text": "Project Outliner + Document Manage",
+                      "children": [
+                        {
+                          "id": "HrN9uqSzVozN",
+                          "text": "Project 안에 여러 종류의 문서가 섞일 수 있음",
+                          "children": [
+                            {
+                              "id": "ateVXQ0l5WIK",
+                              "text": "투 탭, 멀티 탭",
+                              "children": [],
+                              "createdAt": 1793937913574,
+                              "updatedAt": 1793937919362
+                            },
+                            {
+                              "id": "JFKI705v730y",
+                              "text": "한 문서와 다른 문서는 구분 표시를 명확히",
+                              "children": [],
+                              "createdAt": 1793937919699,
+                              "updatedAt": 1793937929075
+                            }
+                          ],
+                          "isFolded": false,
+                          "createdAt": 1793937898685,
+                          "updatedAt": 1793937912214
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793937881871,
+                      "updatedAt": 1793937898114
+                    },
+                    {
+                      "id": "2TY3clLikfD4",
+                      "text": "annotation 혹은 constraint 지시",
+                      "children": [],
+                      "createdAt": 1793873568117,
+                      "updatedAt": 1793873601914
                     }
                   ],
                   "isFolded": false,
@@ -1153,6 +1213,13 @@
                   },
                   "createdAt": 1793843066512,
                   "updatedAt": 1793853695145
+                },
+                {
+                  "id": "AGiJ2u8RhFjy",
+                  "text": "문서 자체의 확대 축소 기능 - (그리드?)",
+                  "children": [],
+                  "createdAt": 1794273199378,
+                  "updatedAt": 1794273210592
                 }
               ],
               "isFolded": false,
@@ -1210,7 +1277,7 @@
                   "updatedAt": 1793771498333
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793767085676,
               "updatedAt": 1793769252445
             },
@@ -1240,6 +1307,59 @@
                   "isFolded": true,
                   "createdAt": 1793769575183,
                   "updatedAt": 1793769581425
+                },
+                {
+                  "id": "YQM1kyvZkDJ1",
+                  "text": "포집기, 수집기",
+                  "children": [
+                    {
+                      "id": "dCxfPDyI6UoY",
+                      "text": "sketchs",
+                      "children": [],
+                      "createdAt": 1793876759104,
+                      "updatedAt": 1793876762472
+                    },
+                    {
+                      "id": "eTyf5odVERJ1",
+                      "text": "note",
+                      "children": [],
+                      "createdAt": 1793876762750,
+                      "updatedAt": 1793876763984
+                    },
+                    {
+                      "id": "4vqgG2NWp0cH",
+                      "text": "hightlighting",
+                      "children": [],
+                      "createdAt": 1793876764133,
+                      "updatedAt": 1793876774062
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793876748208,
+                  "updatedAt": 1793876751725
+                },
+                {
+                  "id": "LfbOQO4luzsc",
+                  "text": "Researcher",
+                  "children": [
+                    {
+                      "id": "VrquISXGpJTs",
+                      "text": "Reference",
+                      "children": [],
+                      "createdAt": 1793876849852,
+                      "updatedAt": 1793876852782
+                    },
+                    {
+                      "id": "DpOooiF3nKwn",
+                      "text": "Resource",
+                      "children": [],
+                      "createdAt": 1793876853208,
+                      "updatedAt": 1793876857002
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793876751940,
+                  "updatedAt": 1793876754376
                 }
               ],
               "isFolded": true,
@@ -1247,55 +1367,16 @@
               "updatedAt": 1793769569806
             },
             {
-              "id": "0HZvzhf7rf7r",
-              "text": "에이전트 작업 대시보드(패널) 및 관리 도구들",
+              "id": "Bl7i7cqGHCik",
+              "text": "Layout 및 Shell [일단 보류]",
               "children": [
                 {
-                  "id": "dCzE1g00nDBr",
-                  "text": "에이전트 도구",
-                  "children": [
-                    {
-                      "id": "JN58Ofvrw4eS",
-                      "text": "리서쳐",
-                      "children": [],
-                      "createdAt": 1793771257478,
-                      "updatedAt": 1793771259530
-                    },
-                    {
-                      "id": "aMs60dFNauG7",
-                      "text": "builder",
-                      "children": [],
-                      "createdAt": 1793771265155,
-                      "updatedAt": 1793771267484
-                    },
-                    {
-                      "id": "0DJJT1IJWlxt",
-                      "text": "writer",
-                      "children": [],
-                      "createdAt": 1793771269709,
-                      "updatedAt": 1793771272374
-                    },
-                    {
-                      "id": "WJVIiTHStPWO",
-                      "text": "storyliner",
-                      "children": [],
-                      "createdAt": 1793771272674,
-                      "updatedAt": 1793771275142
-                    }
-                  ],
-                  "isFolded": true,
-                  "createdAt": 1793771252903,
-                  "updatedAt": 1793771255727
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1793771236564,
-              "updatedAt": 1793771250384
-            },
-            {
-              "id": "Bl7i7cqGHCik",
-              "text": "Layout 및 Shell",
-              "children": [
+                  "id": "aZSUu7jqbDCq",
+                  "text": "보류 사유 : 탭 작업을 메인으로 사용하지 않을 계획",
+                  "children": [],
+                  "createdAt": 1793936047877,
+                  "updatedAt": 1793936062164
+                },
                 {
                   "id": "53czpoGuAzkn",
                   "text": "이전 package 부분 적으러 가져오기",
@@ -1305,8 +1386,10 @@
                 }
               ],
               "isFolded": true,
+              "isCompleted": true,
+              "completedAt": 1793936041977,
               "createdAt": 1793771357921,
-              "updatedAt": 1793771369503
+              "updatedAt": 1793936041977
             },
             {
               "id": "z2WDIMltZy0b",
@@ -1551,11 +1634,13 @@
                     }
                   ],
                   "isFolded": true,
+                  "isCompleted": true,
+                  "completedAt": 1793946373279,
                   "file": {
                     "target": "Pasted image 20261105163949.png"
                   },
                   "createdAt": 1793864373394,
-                  "updatedAt": 1793864393450
+                  "updatedAt": 1793946373279
                 },
                 {
                   "id": "vrBlekSbLW9r",
@@ -1571,11 +1656,13 @@
                   "id": "wks6yBoM1K0E",
                   "text": "특정 대상별 인용 파일",
                   "children": [],
+                  "isCompleted": true,
+                  "completedAt": 1793946376206,
                   "file": {
                     "target": "Pasted image 20261105164755.png"
                   },
                   "createdAt": 1793864875817,
-                  "updatedAt": 1793864894274
+                  "updatedAt": 1793946376206
                 },
                 {
                   "id": "7KnGICYBO8er",
@@ -1589,13 +1676,165 @@
                       "updatedAt": 1793866637124
                     }
                   ],
+                  "isCompleted": true,
+                  "completedAt": 1793946377831,
                   "file": {
                     "target": "Pasted image 20261105171312.png"
                   },
                   "createdAt": 1793866392545,
-                  "updatedAt": 1793866403337
+                  "updatedAt": 1793946377831
+                },
+                {
+                  "id": "KKjU1LecdIkn",
+                  "text": "ai 자동화 기능",
+                  "children": [
+                    {
+                      "id": "ib6IHqq4bcIH",
+                      "text": "나이브 청킹",
+                      "children": [],
+                      "createdAt": 1793874055001,
+                      "updatedAt": 1793874061044
+                    },
+                    {
+                      "id": "s4JhjJYbaGrz",
+                      "text": "인덱싱 - hierachy",
+                      "children": [
+                        {
+                          "id": "1wJfEcIJeXpb",
+                          "text": "이건 따로 해야함... 뽑은 놈은 별도 패널과 별도 트리로",
+                          "children": [],
+                          "createdAt": 1793874090042,
+                          "updatedAt": 1793874111316
+                        },
+                        {
+                          "id": "LikaRnQOhKDR",
+                          "text": "auto-selection",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1793874179036,
+                          "updatedAt": 1793874179036
+                        },
+                        {
+                          "id": "2AdSM8d3Mk2f",
+                          "text": "auto-highlighting",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1793874179036,
+                          "updatedAt": 1793874179036
+                        },
+                        {
+                          "id": "LoKi38m5KKp1",
+                          "text": "분류 체계 자동화",
+                          "children": [],
+                          "createdAt": 1793949386331,
+                          "updatedAt": 1793949389322
+                        },
+                        {
+                          "id": "dYj6BmOQT61D",
+                          "text": "인덱스 - 목차 제공(view로)",
+                          "children": [],
+                          "createdAt": 1793949389437,
+                          "updatedAt": 1793949398215
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793874061185,
+                      "updatedAt": 1793874070946
+                    },
+                    {
+                      "id": "04v61ifk7fn3",
+                      "text": "자료 필수 정리 기능 - ex.Notebook LM - 요약+태그 보관",
+                      "children": [
+                        {
+                          "id": "pbXeD5OvzgHr",
+                          "text": "자동 자료 분석 및 보관 스키마 정의",
+                          "children": [],
+                          "createdAt": 1793936287599,
+                          "updatedAt": 1793936302418
+                        },
+                        {
+                          "id": "YHxSHmk0Mljs",
+                          "text": "viewer 및 show 방법 정의",
+                          "children": [],
+                          "createdAt": 1793936302562,
+                          "updatedAt": 1793936315272
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1793936264572,
+                      "updatedAt": 1794358004799
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793873248911,
+                  "updatedAt": 1793873253715
+                },
+                {
+                  "id": "fkC37tOnI2zr",
+                  "text": "Extension 기능 충분히 나오겠는데?",
+                  "children": [
+                    {
+                      "id": "12ubDTNO6li4",
+                      "text": "일단 막 만들어놓은 거 폴더에 일단 다 때려놓은 거 정리 및 가지치기",
+                      "children": [],
+                      "createdAt": 1793881903917,
+                      "updatedAt": 1793881924422
+                    },
+                    {
+                      "id": "6nd9mz3W5gIY",
+                      "text": "중요한 내용 솎아내기",
+                      "children": [],
+                      "createdAt": 1793881926071,
+                      "updatedAt": 1793881929880
+                    },
+                    {
+                      "id": "ZEphutafg7Z6",
+                      "text": "내가 처음보는 자료 뭉치 일단 전체적으로 Pre-view",
+                      "children": [],
+                      "createdAt": 1793881930035,
+                      "updatedAt": 1793881943462
+                    },
+                    {
+                      "id": "SHbnEK30Dafk",
+                      "text": "[[흥극화재 자료 Index.outline]] 자동으로 분류 체계 생성",
+                      "children": [
+                        {
+                          "id": "JbsHCx4ZJVBR",
+                          "text": "이건 전제 조건이 어느 정도 대량의 파일이 있을 때, ai 스스로 판단할 수 있는 기준이 설 때",
+                          "children": [],
+                          "createdAt": 1793946537341,
+                          "updatedAt": 1793946558477
+                        },
+                        {
+                          "id": "YYpe0CU6BVBf",
+                          "text": "다른 대상으로부터 인젝션은 가능",
+                          "children": [],
+                          "createdAt": 1793946559373,
+                          "updatedAt": 1793946566171
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793946393179,
+                      "updatedAt": 1793946446983
+                    },
+                    {
+                      "id": "0tsc0H1FLAlG",
+                      "text": "show-groupby 보여주기",
+                      "children": [],
+                      "createdAt": 1793946447709,
+                      "updatedAt": 1793946473285
+                    }
+                  ],
+                  "isFolded": true,
+                  "note": "자료 덤프(정리 완 NO)에서 정리를 한다고 한다면",
+                  "file": {
+                    "target": "Pasted image 20261105212235.png"
+                  },
+                  "createdAt": 1793881351475,
+                  "updatedAt": 1793881396153
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793771406318,
               "updatedAt": 1793771412152
             },
@@ -1628,6 +1867,36 @@
                   "children": [],
                   "createdAt": 1793840895448,
                   "updatedAt": 1793840900242
+                },
+                {
+                  "id": "pQv5tZHTS7Uc",
+                  "text": "Router 및 작업 분류",
+                  "children": [
+                    {
+                      "id": "rYo9u4QJDewK",
+                      "text": "stage 에 따른 분기",
+                      "children": [],
+                      "createdAt": 1793935992540,
+                      "updatedAt": 1793935998628
+                    },
+                    {
+                      "id": "elM04ILOkK5k",
+                      "text": "작업에 따른 분기",
+                      "children": [],
+                      "createdAt": 1793935998765,
+                      "updatedAt": 1793936004014
+                    },
+                    {
+                      "id": "ZqrHliB2yKgM",
+                      "text": "Extension에 따른 분기 등등",
+                      "children": [],
+                      "createdAt": 1793936004253,
+                      "updatedAt": 1793936010959
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793935979200,
+                  "updatedAt": 1793935992351
                 },
                 {
                   "id": "XQv1nPWcu3oY",
@@ -1703,6 +1972,13 @@
                   "children": [],
                   "createdAt": 1793840920584,
                   "updatedAt": 1793840926643
+                },
+                {
+                  "id": "OE7l3Ecvx3bf",
+                  "text": "Session 및 대화 맥락 - Context 관리",
+                  "children": [],
+                  "createdAt": 1793940465569,
+                  "updatedAt": 1793940484682
                 }
               ],
               "isFolded": true,
@@ -1743,9 +2019,127 @@
                   "children": [],
                   "file": {
                     "target": "Pasted image 20261105151343.png"
-                  },
-                  "createdAt": 1793859222084,
-                  "updatedAt": 1793859239224
+                  }
+                },
+                {
+                  "id": "Thh5ikKRJLE5",
+                  "text": "AI 비동기 병렬 작업 대시보드",
+                  "children": [
+                    {
+                      "id": "TkVoX63eZz6v",
+                      "text": "Researcher",
+                      "children": [
+                        {
+                          "id": "EDTpZhZLXe7M",
+                          "text": "내 컴퓨터",
+                          "children": [],
+                          "createdAt": 1793934929107,
+                          "updatedAt": 1793934931832
+                        },
+                        {
+                          "id": "5o4MGpj0Id1E",
+                          "text": "연결된 API 에서",
+                          "children": [],
+                          "createdAt": 1793934931948,
+                          "updatedAt": 1793934936167
+                        },
+                        {
+                          "id": "hJ7Cly3eZmA5",
+                          "text": "그냥 웹에서",
+                          "children": [],
+                          "createdAt": 1793934936325,
+                          "updatedAt": 1793934939844
+                        },
+                        {
+                          "id": "YZ6wNLx0gy5Z",
+                          "text": "특정 플랫폼, 서비스 에서(도메인 특화)",
+                          "children": [],
+                          "createdAt": 1793934939982,
+                          "updatedAt": 1793934950636
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793934774638,
+                      "updatedAt": 1793934778053
+                    },
+                    {
+                      "id": "kIUg0JZw4jgu",
+                      "text": "문서 대량 일괄 작업 처리",
+                      "children": [],
+                      "createdAt": 1793934778640,
+                      "updatedAt": 1793934783346
+                    },
+                    {
+                      "id": "GLeOclKF6Nc6",
+                      "text": "Document Parser",
+                      "children": [
+                        {
+                          "id": "hPBuIE2Ry5rn",
+                          "text": "Import 로 각종 레퍼런스 및 서류 투입",
+                          "children": [],
+                          "createdAt": 1793876942144,
+                          "updatedAt": 1793876954498
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793876935279,
+                      "updatedAt": 1793934796498
+                    },
+                    {
+                      "id": "dPHyRQGM3oAz",
+                      "text": "Resource -> KB 등록",
+                      "children": [],
+                      "createdAt": 1793934852279,
+                      "updatedAt": 1793934875887
+                    },
+                    {
+                      "id": "2Nk1z1A8dNGu",
+                      "text": "Crawler(스펠링 맞나?)",
+                      "children": [],
+                      "createdAt": 1793934879711,
+                      "updatedAt": 1793934888435
+                    },
+                    {
+                      "id": "0HZvzhf7rf7r",
+                      "text": "에이전트 작업 대시보드(패널) 및 관리 도구들",
+                      "children": [
+                        {
+                          "id": "aMs60dFNauG7",
+                          "text": "builder",
+                          "children": [],
+                          "createdAt": 1793771265155,
+                          "updatedAt": 1793934826567
+                        },
+                        {
+                          "id": "0DJJT1IJWlxt",
+                          "text": "writer",
+                          "children": [],
+                          "createdAt": 1793771269709,
+                          "updatedAt": 1793934826567
+                        },
+                        {
+                          "id": "WJVIiTHStPWO",
+                          "text": "storyliner",
+                          "children": [],
+                          "createdAt": 1793771272674,
+                          "updatedAt": 1793934826567
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793771236564,
+                      "updatedAt": 1793934818053
+                    },
+                    {
+                      "id": "XzhIsdpCKMve",
+                      "text": "",
+                      "children": [],
+                      "createdAt": 1793934783494,
+                      "updatedAt": 1793934783494
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793934769744,
+                  "updatedAt": 1793934774066
                 }
               ],
               "isFolded": true,
@@ -1756,6 +2150,30 @@
           "isFolded": false,
           "createdAt": 1793769223297,
           "updatedAt": 1793848827721
+        },
+        {
+          "id": "b0Kghbn7WILX",
+          "text": "인텔리전스 향상",
+          "children": [
+            {
+              "id": "a50i2mBvjyBD",
+              "text": "도메인별 '기본기'에 대한 확인 방법 고도화",
+              "children": [
+                {
+                  "id": "WLAT033jHIL0",
+                  "text": "이미지 ui 에 대한 기본 구성",
+                  "children": [],
+                  "createdAt": 1794364290554,
+                  "updatedAt": 1794364301577
+                }
+              ],
+              "createdAt": 1794364279925,
+              "updatedAt": 1794364287156,
+              "isFolded": true
+            }
+          ],
+          "createdAt": 1794364274294,
+          "updatedAt": 1794364279761
         },
         {
           "id": "yE3qPUvMNM2x",
@@ -1884,6 +2302,20 @@
               "children": [],
               "createdAt": 1793771320283,
               "updatedAt": 1793771332949
+            },
+            {
+              "id": "SIrOI1XXTTyS",
+              "text": "대량 작업 (ex. 회의록 일괄 작업)",
+              "children": [],
+              "createdAt": 1793936177696,
+              "updatedAt": 1793936192426
+            },
+            {
+              "id": "mFaAUuotcmP3",
+              "text": "위임 및 자동 지시",
+              "children": [],
+              "createdAt": 1793936194807,
+              "updatedAt": 1793936202462
             }
           ],
           "isFolded": true,
@@ -2003,11 +2435,176 @@
               "children": [],
               "createdAt": 1793865092364,
               "updatedAt": 1793865119400
+            },
+            {
+              "id": "gG4Fgxmh5y22",
+              "text": "템플릿 제작 공정을 별도 EXTENSION으로 빼버릴까",
+              "children": [
+                {
+                  "id": "GaYspHdDZv22",
+                  "text": "추출해서 만들기",
+                  "children": [],
+                  "createdAt": 1793930672436,
+                  "updatedAt": 1793930674820
+                },
+                {
+                  "id": "YXS88EDizakk",
+                  "text": "서식 직접 집어넣기",
+                  "children": [],
+                  "createdAt": 1793930674984,
+                  "updatedAt": 1793933116865
+                },
+                {
+                  "id": "ROIV1nVQHHzc",
+                  "text": "새로 만들기",
+                  "children": [],
+                  "createdAt": 1793933117024,
+                  "updatedAt": 1793933119453
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793930661719,
+              "updatedAt": 1793930671456
+            },
+            {
+              "id": "7XsqJ6Fgb9XY",
+              "text": "이런 필수 입력칸 정보들은 회사의 ERP?? 아무튼 리소스랑은 다른 것 같은 옵션이 아님",
+              "children": [
+                {
+                  "id": "yEI0XRiwO3pp",
+                  "text": "태그나 변수 정보 자동 등록 - Google Docs 참고",
+                  "children": [],
+                  "file": {
+                    "target": "Pasted image 20261106121025.png"
+                  },
+                  "createdAt": 1793934624189,
+                  "updatedAt": 1793934655348
+                }
+              ],
+              "isFolded": true,
+              "file": {
+                "target": "Pasted image 20261106120919.png"
+              },
+              "createdAt": 1793934558297,
+              "updatedAt": 1793934583694
+            },
+            {
+              "id": "AQuqJupd2nsQ",
+              "text": "작업 및 보고 양식 지정하기",
+              "children": [],
+              "createdAt": 1793936596127,
+              "updatedAt": 1793936604788
+            },
+            {
+              "id": "ptHgBIKgBD3S",
+              "text": "팀원, 팀장의 페르소나 ",
+              "children": [
+                {
+                  "id": "raODjfFFNLpw",
+                  "text": "망고 관점에서 망고체로 번역을 해줘봐",
+                  "children": [],
+                  "createdAt": 1794202537035,
+                  "updatedAt": 1794202542192
+                },
+                {
+                  "id": "Ww0XH5TrSC1B",
+                  "text": "망고라면 지금 보고서를 보고 뭐라고 피드백 할 것 같아?",
+                  "children": [],
+                  "createdAt": 1794202543805,
+                  "updatedAt": 1794202550777
+                },
+                {
+                  "id": "U65pgTYwR5yu",
+                  "text": "이 책을 쓴 작가, 메뉴얼을 쓴 사람이라면",
+                  "children": [],
+                  "createdAt": 1794202612270,
+                  "updatedAt": 1794202623782
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794202521028,
+              "updatedAt": 1794202608005
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793765288631,
+          "updatedAt": 1793848827721
+        },
+        {
+          "id": "viXyFsD22ZRg",
+          "text": "Test Case",
+          "children": [
+            {
+              "id": "mXLk3RWUb48R",
+              "text": "디딤돌 지원사업 사업계획서",
+              "children": [
+                {
+                  "id": "GA1HTJyGWwRL",
+                  "text": "정형 폼",
+                  "children": [],
+                  "createdAt": 1794273084677,
+                  "updatedAt": 1794273086597
+                }
+              ],
+              "createdAt": 1793881999315,
+              "updatedAt": 1793882008391,
+              "isFolded": true
+            },
+            {
+              "id": "SaRowZ0r9FmP",
+              "text": "이전 온톨로지 + 문서 studio 사업 계획서",
+              "children": [],
+              "createdAt": 1793882008503,
+              "updatedAt": 1793882022947
+            },
+            {
+              "id": "5HQTfoKm4ImV",
+              "text": "창업지원사업 신규 사업계획서",
+              "children": [],
+              "createdAt": 1793882023755,
+              "updatedAt": 1793882033125
+            },
+            {
+              "id": "0LcAvTXC0TpO",
+              "text": "회의록 자동 정리, 일괄 정리",
+              "children": [],
+              "createdAt": 1793882033480,
+              "updatedAt": 1793882038979
+            },
+            {
+              "id": "vz810izQpfHU",
+              "text": "흥국화재 상고",
+              "children": [],
+              "createdAt": 1793882039202,
+              "updatedAt": 1793882047529
+            },
+            {
+              "id": "1a3Gu2zeEo0k",
+              "text": "지금 구현한 코드를 소프트웨어 명세서 및 아키텍처 형식에 따라 정리 - 와... 개발 사양서...",
+              "children": [],
+              "createdAt": 1793948710406,
+              "updatedAt": 1794203779417
             }
           ],
           "isFolded": false,
-          "createdAt": 1793765288631,
-          "updatedAt": 1793848827721
+          "createdAt": 1793881996305,
+          "updatedAt": 1793881998867
+        },
+        {
+          "id": "GG9w7vovQfjx",
+          "text": "문서에서 추구해야할 에이전트의 쾌감",
+          "children": [
+            {
+              "id": "iGQPbsyhtj2N",
+              "text": "",
+              "children": [],
+              "createdAt": 1794199879574,
+              "updatedAt": 1794199879717
+            }
+          ],
+          "createdAt": 1794199863814,
+          "updatedAt": 1794199879457,
+          "isFolded": true
         }
       ],
       "createdAt": 1793848816376,
@@ -2048,7 +2645,8 @@
                 }
               ],
               "createdAt": 1794203091065,
-              "updatedAt": 1794203179138
+              "updatedAt": 1794203179138,
+              "isFolded": true
             },
             {
               "id": "14P8H8iJsX2q",

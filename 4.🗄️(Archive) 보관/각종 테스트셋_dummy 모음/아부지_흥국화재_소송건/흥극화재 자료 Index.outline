@@ -1,0 +1,2395 @@
+{
+  "version": "1.0.0",
+  "id": "ZIhX9o0jng6U",
+  "title": "흥극화재 자료 Index",
+  "rootNodes": [
+    {
+      "id": "nwZYdBPIxtUw",
+      "text": "체계 및 분류 기준",
+      "children": [
+        {
+          "id": "3WVswkUsdl45",
+          "text": "법원 서류",
+          "children": [
+            {
+              "id": "PBC7SAz5pdN9",
+              "text": "심급",
+              "children": [
+                {
+                  "id": "uyGrDmNC5gbj",
+                  "text": "1심(2024가단311696 / 반소 2025가단13188)",
+                  "children": [],
+                  "createdAt": 1793940199888,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "IcZHzC3eGl2R",
+                  "text": "항소심(2026나1265 / 반소 2026나1266)",
+                  "children": [],
+                  "createdAt": 1793940204399,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "SmKN6yDtXJJI",
+                  "text": "상고",
+                  "children": [],
+                  "createdAt": 1793940208334,
+                  "updatedAt": 1793940208431
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793940131202,
+              "updatedAt": 1793940184510
+            },
+            {
+              "id": "jGF7o5oGxhUL",
+              "text": "발송처",
+              "children": [
+                {
+                  "id": "d2j42afR1Wse",
+                  "text": "우리가 낸 것",
+                  "children": [],
+                  "createdAt": 1793940212652,
+                  "updatedAt": 1793940216454
+                },
+                {
+                  "id": "XIz2h2zKHzti",
+                  "text": "상대가 낸 것",
+                  "children": [],
+                  "createdAt": 1793940216812,
+                  "updatedAt": 1793940219306
+                },
+                {
+                  "id": "TFGF78MR31KW",
+                  "text": "법원이 보낸 것",
+                  "children": [],
+                  "createdAt": 1793940219670,
+                  "updatedAt": 1793940222179
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793940179534,
+              "updatedAt": 1793940197027
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793940109451,
+          "updatedAt": 1793940328491
+        },
+        {
+          "id": "8ZYYK62vZ5xr",
+          "text": "증거",
+          "children": [
+            {
+              "id": "TE98nKnzjyrE",
+              "text": "출처",
+              "children": [
+                {
+                  "id": "HKJ941J2sR2y",
+                  "text": "흥국화재",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                },
+                {
+                  "id": "GvKvY1nrZaVY",
+                  "text": "다른 보험사(DB·KB·메리츠·AIA·현대해상)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                },
+                {
+                  "id": "gVOXAl2ExVIV",
+                  "text": "병원(의무기록)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                },
+                {
+                  "id": "uy0Mgdc2lofY",
+                  "text": "통화(녹음·녹취록)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793940328491,
+              "updatedAt": 1793940328491
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793940109451,
+          "updatedAt": 1793940328491
+        },
+        {
+          "id": "S5DcGMlTPzNm",
+          "text": "참고자료",
+          "children": [
+            {
+              "id": "shmreVeH8PHx",
+              "text": "종류",
+              "children": [
+                {
+                  "id": "UEwCiruruH85",
+                  "text": "판례",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                },
+                {
+                  "id": "aGrATbeyYHYh",
+                  "text": "감독기관·연구 자료",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                },
+                {
+                  "id": "ZV2S3WJTPsyf",
+                  "text": "웹 검색",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                },
+                {
+                  "id": "kien8z4HEPJo",
+                  "text": "GPT 대화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793940328491,
+              "updatedAt": 1793940328491
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793940109451,
+          "updatedAt": 1793940328491
+        },
+        {
+          "id": "LwNOg4yeyNlh",
+          "text": "사무",
+          "children": [
+            {
+              "id": "VW2fQ1N66wMQ",
+              "text": "종류",
+              "children": [
+                {
+                  "id": "qKuql3f06qZk",
+                  "text": "위임계약",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                },
+                {
+                  "id": "uRAQSx0KlGdM",
+                  "text": "인지대·송달료",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                },
+                {
+                  "id": "G8l6PsjwpxP2",
+                  "text": "기일 통지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793940328491,
+                  "updatedAt": 1793940328491
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793940328491,
+              "updatedAt": 1793940328491
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793940109451,
+          "updatedAt": 1793940328491
+        },
+        {
+          "id": "4yjSVeHLMiKR",
+          "text": "작업 메모",
+          "children": [
+            {
+              "id": "UUqqfbYrU28M",
+              "text": "종류",
+              "children": [
+                {
+                  "id": "64EBO9ji1F6I",
+                  "text": "대응 정리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "FLuQ92fAFhjI",
+                  "text": "변호사 전달 자료",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "ofbYCmjpiq4T",
+                  "text": "녹음 정리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793941148441,
+          "updatedAt": 1793941148441
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1793940109451,
+      "updatedAt": 1793941148441
+    },
+    {
+      "id": "Cz5JVmEbgVtK",
+      "text": "파일 인덱스 (문서 78개, 녹음 제외)",
+      "children": [
+        {
+          "id": "IQZKzass44vI",
+          "text": "법원 서류",
+          "children": [
+            {
+              "id": "mT3umZfdf0ug",
+              "text": "1심(2024가단311696 / 반소 2025가단13188)",
+              "children": [
+                {
+                  "id": "8rYq67QSuv2d",
+                  "text": "우리가 낸 것",
+                  "children": [
+                    {
+                      "id": "0e8Tbh3r5GoW",
+                      "text": "2025.07.08 준비서면 — 문경숙 본인 작성 [흥국5]",
+                      "children": [
+                        {
+                          "id": "HFxrg0TdfAPS",
+                          "text": "파일: 흥국5-보험소송 준비서면.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "stsVOrYqqjXK",
+                          "text": "⚠ 사건번호가 24가단313203으로 적혀 있음",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "beVsFsMWENgo",
+                          "text": "⚠ 실제 제출 여부 확인 안 함",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "lVweqN8UwkLz",
+                      "text": "2025.07.31 준비서면·반소장 + 을1~을5 [흥국10]",
+                      "children": [
+                        {
+                          "id": "ONmthiH8UsHR",
+                          "text": "파일: 흥국10-[준비서면,반소장(250731)]문경숙v흥국화재해상보험(주)-채무부존재확인,보험금(1).zip",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "cUQTD1k9XVzJ",
+                          "text": "⚠ zip — 안의 파일 8개가 이 압축 안에만 있음",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "oepmxHE0lw6v",
+                      "text": "2026.01.28 준비서면 — 원고 주장 반박 (강남)",
+                      "children": [
+                        {
+                          "id": "ggkdI0kh2SQ1",
+                          "text": "파일: 뻐꾸기/[준비서면(260128)]문경숙v.흥국화재해상보험주식회사-채무부존재확인(1).pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "m62Ve7KVt6j1",
+                          "text": "초안(PDF의 절반 분량): 뻐꾸기/문경숙 26-01-22 준비서면.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941771110,
+                          "updatedAt": 1793941771110
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "QVSW2MvkyxfV",
+                  "text": "상대가 낸 것",
+                  "children": [
+                    {
+                      "id": "tpghG8z86A7F",
+                      "text": "2024.12.20 소장 — 채무부존재확인 [흥국4]",
+                      "children": [
+                        {
+                          "id": "qOYnEFI7cH3g",
+                          "text": "파일: 흥국4-흥국소송 소장.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "8Egxsv0sAELe",
+                      "text": "2025.10.02 준비서면 — 상법 제644조 계약 무효 주장, 갑8~9 [흥국11]",
+                      "children": [
+                        {
+                          "id": "uebpxmQ344Rd",
+                          "text": "파일: 흥국11-[준비서면(갑8~9)(251013)]문경숙v.흥국화재해상보험(주)-채무부존재확인(1).pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "PsssBQ6NceXl",
+                      "text": "2025.12.31 준비서면 — 암 담보 상법 제644조 무효 (공정)",
+                      "children": [
+                        {
+                          "id": "wg52J3pgUKb3",
+                          "text": "파일: 뻐꾸기/[준비서면(25.12.31자)(260102)]문경숙v.흥국화재해상보험(주)-채무부존재확인(1).pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "UpeypsnnDMPK",
+                  "text": "법원이 보낸 것",
+                  "children": [
+                    {
+                      "id": "wOeBjJWv6JSw",
+                      "text": "2025.09.29 진료기록감정 통지 — 삼성서울병원 비뇨의학과",
+                      "children": [
+                        {
+                          "id": "j5oUzYLVuFiE",
+                          "text": "파일: [진료기록감정통지서(250930)]문경숙v.흥국화재보험(주)-채무부존재확인(1).pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "X2JSGSUl3jAM",
+                      "text": "2026.02.11 1심 판결 (정본 2026.02.13) [흥국12]",
+                      "children": [
+                        {
+                          "id": "Zx0a7Ui7vsSQ",
+                          "text": "파일: 흥국12-[판결정본(260213)]문경숙v.흥국화재해상보험(주)-채무부존재확인(1).pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            },
+            {
+              "id": "posSIsDDh9ko",
+              "text": "항소심(2026나1265 / 반소 2026나1266)",
+              "children": [
+                {
+                  "id": "ZmfRiEKnwf4x",
+                  "text": "우리가 낸 것",
+                  "children": [
+                    {
+                      "id": "Skoh41EjAyki",
+                      "text": "2026.02.27 항소장 [흥국13]",
+                      "children": [
+                        {
+                          "id": "226gOe8pUZBL",
+                          "text": "파일: 흥국13-(서울서부지방법원_2024가단311696_001001_2026.02.27_항소장_(항소장)_피고 대리인_법무법인(유한) 강남.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "kweHg70RKChE",
+                      "text": "2026.02.27 항소장 접수증명신청서 [흥국14]",
+                      "children": [
+                        {
+                          "id": "JzGhbuJbIT29",
+                          "text": "파일: 흥국14-서울서부지방법원_2024가단311696_002001_2026.02.27_항소장_첨부_(접수증명신청서)_피고 대리인_법무법인(유한) 강남.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "OzlyTkQw6qB4",
+                      "text": "2026.05 항소이유서",
+                      "children": [
+                        {
+                          "id": "MUjOQI5eiFZ9",
+                          "text": "파일: 항소/2026나1265_항소이유서.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "1I5wobOZZ4su",
+                          "text": "초안(PDF보다 짧음): 항소/문경숙 26-05-04 항소이유서.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941771110,
+                          "updatedAt": 1793941771110
+                        },
+                        {
+                          "id": "volmhL5Ggt6I",
+                          "text": "⚠ 날짜는 같은 내용의 hwp 이름(26-05-04)에서 가져옴",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "ai0bIIYi4YoN",
+                      "text": "2026.06.11 준비서면 — 주요 사실관계(최초 진단 내용) 정리",
+                      "children": [
+                        {
+                          "id": "NKcAEpq68eQW",
+                          "text": "파일: 항소/흥국항소자료송부(강남최진규)/문경숙 26-06-11 준비서면.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "uecln8SxgJgG",
+                          "text": "⚠ hwp만 있음. 낸 판 PDF 없음",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "96zHwZ4ob41A",
+                      "text": "2026.09.28 문서제출명령신청서 — 청약 통화 녹음·녹취록",
+                      "children": [
+                        {
+                          "id": "33HBYgkyLBrC",
+                          "text": "파일: 흥국상고 대응(항소자료)/문경숙 26-09-28 문서제출명령신청서.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "bjv8lw0EpMrT",
+                          "text": "⚠ hwp만 있음",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "dL8d70hLaOYz",
+                      "text": "2026.09.28 변론재개신청서",
+                      "children": [
+                        {
+                          "id": "az1UrxieBR9C",
+                          "text": "파일: 흥국상고 대응(항소자료)/문경숙 26-09-28 변론재개신청서.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "qSStZIQoTw0W",
+                          "text": "⚠ hwp만 있음",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "nFf6BdRmTCiU",
+                      "text": "2026.10.15 참고서면 — 설명의무 위반, 신의칙·금반언",
+                      "children": [
+                        {
+                          "id": "owRcY357xCUS",
+                          "text": "파일: 흥국상고 대응/문경숙 26-10-15 참고서면-1.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941771110,
+                          "updatedAt": 1793941771110
+                        },
+                        {
+                          "id": "7qL3t4PX05Sn",
+                          "text": "초안(변호사에게 남긴 메모가 섞인 10-15판): 흥국상고 대응/문경숙 26-10-15 참고서면.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941771110,
+                          "updatedAt": 1793941771110
+                        },
+                        {
+                          "id": "fH1VqZBMTHti",
+                          "text": "⚠ hwp만 있음. 제출 여부 확인 안 함",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941771110,
+                          "updatedAt": 1793941771110
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "yqVf3XrooMNh",
+                      "text": "2026.10.16 문서제출명령신청서 — 상담사 소속·스크립트·전산 입력 자료",
+                      "children": [
+                        {
+                          "id": "FR1Ap16D0Kxw",
+                          "text": "파일: 흥국상고 대응(항소자료)/문경숙 26-10-16 문서제출명령신청서.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "El7GlUNCnZGh",
+                          "text": "⚠ hwp만 있음",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "jqigJiMK7AvQ",
+                      "text": "날짜 없음 진술서 — 문경숙 → 재판장",
+                      "children": [
+                        {
+                          "id": "MnlPZvzCyXqA",
+                          "text": "파일: 항소/문경숙 진술서.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "I83jpHP7PfYW",
+                          "text": "⚠ 제출 여부 확인 안 함",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941780449
+                },
+                {
+                  "id": "mhEFl1GFV6On",
+                  "text": "상대가 낸 것",
+                  "children": [
+                    {
+                      "id": "UnJKpyNi25Kc",
+                      "text": "2026.05.08 준비서면 — 항소이유 반박 (박성원)",
+                      "children": [
+                        {
+                          "id": "Pc7g9g5gD8An",
+                          "text": "파일: 항소/2026나1265_2026.05.11_준비서면_원고 대리인_박성원.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "c4bN3NUv9ALs",
+                      "text": "2026.08.18 준비서면 외 — 가입 전 암 확진 여부, 갑10~12 (박성원)",
+                      "children": [
+                        {
+                          "id": "np6JDm5u407Q",
+                          "text": "파일: 흥국상고 대응(항소자료)/2026나1265_2026.08.19_준비서면 외_원고 대리인_박성원.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "4xik2IjY2Aao",
+                  "text": "법원이 보낸 것",
+                  "children": [
+                    {
+                      "id": "eOnYpP72SsjF",
+                      "text": "2026.03.20 항소기록접수통지서 외",
+                      "children": [
+                        {
+                          "id": "QxNqzx8rltth",
+                          "text": "파일: 항소-2026나1265_2026.03.20_항소기록접수통지서 외.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "8qIN6Nc5g9QJ",
+                      "text": "2026.10.23 항소심 판결 — 항소 기각 (정본 2026.10.29)",
+                      "children": [
+                        {
+                          "id": "SdsimJUQvEQL",
+                          "text": "파일: [판결정본(261029)]문경숙v.흥국화재해상보험주식회사-채무부존재확인(2)-항소심 판결문.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793942430516
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793941148441,
+          "updatedAt": 1793941148441
+        },
+        {
+          "id": "1GpT6qAsRh0C",
+          "text": "증거",
+          "children": [
+            {
+              "id": "dr8wCR8w4A4N",
+              "text": "흥국화재",
+              "children": [
+                {
+                  "id": "D9XeN4WXhoO9",
+                  "text": "2020.06.29 보험금 부지급 안내 (흥국 → 서정근) [흥국1]",
+                  "children": [
+                    {
+                      "id": "MsBo2Poo5zfE",
+                      "text": "파일: 흥국1-보험금부지급안내.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "YzwYuRsZ9qjM",
+                      "text": "⚠ 오른쪽 아래 손글씨 메모 있음",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "Bie8rAEzV5Nv",
+                  "text": "2020.06.29 무효통지서 6쪽 (흥국 → 서정근)",
+                  "children": [
+                    {
+                      "id": "xJ6zV1czrLIA",
+                      "text": "파일: 항소/흥국항소자료송부(강남최진규)/자료-흥국화재 무효통지서.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "jVS2kUUQaL01",
+                      "text": "⚠ 첫 쪽이 흥국1과 같은 문서번호(2020-32285-679)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "uBr6pIPvJDUH",
+                  "text": "2020.07.09 계약해지 부동의 통보 (문경숙 → 흥국) [흥국2]",
+                  "children": [
+                    {
+                      "id": "qJpAiU9FkOPo",
+                      "text": "파일: 흥국2-계약해지 결정에 대한 부동의(2020.07.09.).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "1ZtzoAbDMlyK",
+                  "text": "2020.09.02 손해사정서 보정·심사지연 요청 (흥국 → 손해사정회사) [흥국8]",
+                  "children": [
+                    {
+                      "id": "XXIhGoY2g1Io",
+                      "text": "파일: 흥국8-흥국화재 발송공문-보정및심사지연요청.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "zYKL9k725Pfg",
+                      "text": "사본(다른 스캔): 흥국상고 대응(항소자료)/원고 준비서면에 대한 반론(26.08.21.)/보정 및 심사지연 요청(20.9.2.).pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "zXNENIlrRGe5",
+                      "text": "⚠ 1심 을4호증과 제목 같음",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941771110
+                },
+                {
+                  "id": "s21mJXEDLCk1",
+                  "text": "2024.11.25 원상회복 요청 (문경숙 → 흥국) [흥국3]",
+                  "children": [
+                    {
+                      "id": "jQ2HvxrMSpyX",
+                      "text": "파일: 흥국3-금감원 권고결정에 따른 원상회복요청(2024.11.25.).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "onovcdgKIKSe",
+                  "text": "날짜 없음 약관 발췌 — 암진단비 특약, 갑2호증 [흥국6]",
+                  "children": [
+                    {
+                      "id": "dIGZeKj36nnR",
+                      "text": "파일: 흥국6-보험약관(발췌) 참고.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            },
+            {
+              "id": "6dCtmwKi67mv",
+              "text": "다른 보험사",
+              "children": [
+                {
+                  "id": "gWZKUHrsTs9L",
+                  "text": "DB손보",
+                  "children": [
+                    {
+                      "id": "NBwCupTZRDrE",
+                      "text": "2020.06.17 고지의무 위반 계약해지 안내 (DB → 문경숙) [DB1]",
+                      "children": [
+                        {
+                          "id": "ifAKSlkLQFOh",
+                          "text": "파일: DB손보1-고지의무위반 계약해지 안내.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "UxLD1BN4Le4a",
+                      "text": "2020 계약해지 부동의 통보 (→ DB) [DB2]",
+                      "children": [
+                        {
+                          "id": "LTUwRWWwUENZ",
+                          "text": "파일: DB손보2-계약해지 결정에 대한 부동의(DB).hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "Gmo0Vt2ijhyB",
+                          "text": "⚠ 날짜 확인 안 함",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "efs9JWDu5QQ3",
+                      "text": "2024.02.20 금감원 민원 신청 49쪽 [DB3]",
+                      "children": [
+                        {
+                          "id": "PvVHQldcGZ2N",
+                          "text": "파일: DB손보3-금감원민원신청(24.02.20.).pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "1fNLInPAeIjS",
+                      "text": "2025.03.07 부지급 답변·보험금 지급결과 회신 (DB → 서정근) [DB4]",
+                      "children": [
+                        {
+                          "id": "O6CG0yy9zitn",
+                          "text": "파일: DB손보4-부지급답변서와 보험금지급결과회신.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "AGPtYaAcFFQv",
+                          "text": "⚠ 1심 을1호증 제목과 같음",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "oiyu8TLLH1Lv",
+                  "text": "KB손보",
+                  "children": [
+                    {
+                      "id": "JimOSMsvjF79",
+                      "text": "2020.06.17 면책 및 계약무효·취소 안내 (KB → 서정근) [KB1]",
+                      "children": [
+                        {
+                          "id": "bLyncgKZ2sI7",
+                          "text": "파일: KB손보1-면책및계약무효,취소안내.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "cgZP7fnIwwly",
+                      "text": "2020 계약심사 결과·면책 부동의 통보 (→ KB) [KB2]",
+                      "children": [
+                        {
+                          "id": "L4dl7GeNTEn8",
+                          "text": "파일: KB손보2-계약해지 결정에 대한 부동의.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "KLg4mOZUZkNA",
+                          "text": "⚠ 날짜 확인 안 함",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "UdLfO38q93rA",
+                      "text": "날짜 없음 원상회복 요청 (→ KB) [KB3]",
+                      "children": [
+                        {
+                          "id": "Q0L3ArQtwCY5",
+                          "text": "파일: KB손보3-금감원 권고결정에 따른 원상회복요청.hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "sihbj2ORU20K",
+                      "text": "2025.05 보험금 지급 설명서 (KB → 서정근) [KB4]",
+                      "children": [
+                        {
+                          "id": "dtoEZ6TREDL4",
+                          "text": "파일: KB손보4- 보험금지급설명서.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "dAg7DGKP5zho",
+                          "text": "⚠ 1심 을2호증 제목과 같음. 월은 KB5 문자 날짜 기준",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "JHqUpNq17yMu",
+                      "text": "2025.05.14 보험금 지급 안내 문자 (KB 민우정 대리) [KB5]",
+                      "children": [
+                        {
+                          "id": "Np56z8IDSeOl",
+                          "text": "파일: KB손보5- 민우정 대리 보험금지급설명 안내문자.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "CtSIuNrBwdaC",
+                  "text": "메리츠화재",
+                  "children": [
+                    {
+                      "id": "wYB96MyL7kqO",
+                      "text": "2020 계약해지 부동의 통보 (문경숙 → 메리츠)",
+                      "children": [
+                        {
+                          "id": "dbP6LHpL2pHB",
+                          "text": "파일: 메리츠화재(계약해지 결정에 대한 부동의).hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "NhP07tgpD57v",
+                          "text": "⚠ 날짜 확인 안 함",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "qd1Y17Ib8GZx",
+                      "text": "날짜 없음 원상회복 1차 요청 (→ 메리츠)",
+                      "children": [
+                        {
+                          "id": "yHOEX2iioJI4",
+                          "text": "파일: 메리츠화재(1차회복요청).hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "4VOHaBTfXNOS",
+                      "text": "날짜 없음 원상회복 2차 요청 (→ 메리츠)",
+                      "children": [
+                        {
+                          "id": "nXwJhiMLbE6p",
+                          "text": "파일: 메리츠화재(2차회복요청).hwp",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "BU1BPMnsPmuv",
+                      "text": "날짜 없음 보험금 지급내역 (그림)",
+                      "children": [
+                        {
+                          "id": "amu0WJwLNlgZ",
+                          "text": "파일: 메리츠화재 보험금지급내역(1).jpeg",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "wvlkhp9S78iu",
+                          "text": "⚠ 1심 을3호증 제목과 관련",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "0qX1Ic6U556l",
+                      "text": "날짜 없음 보험금 지급 상세내역 (그림)",
+                      "children": [
+                        {
+                          "id": "0wRVLH7PDsP4",
+                          "text": "파일: 메리츠화재 보험금지급상세내역(2).jpeg",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "U0UpTS3TiTix",
+                  "text": "기타",
+                  "children": [
+                    {
+                      "id": "i4oRhK0GOc3Q",
+                      "text": "2017.10.10 시작 보험증권 — 무배당 간단하고편리한건강보험(갱신형), 신용정보원 발급",
+                      "children": [
+                        {
+                          "id": "l44t5fXjKXa3",
+                          "text": "파일: 흥국상고 대응(항소자료)/원고 준비서면에 대한 반론(26.08.21.)/한국신용정보원 대체 보험증권류.pdf",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        },
+                        {
+                          "id": "6x1YZju943t5",
+                          "text": "⚠ 어느 보험사 증권인지 확인 안 함",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1793941148441,
+                          "updatedAt": 1793941148441
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            },
+            {
+              "id": "PcdMQcEnFShn",
+              "text": "병원(의무기록)",
+              "children": [
+                {
+                  "id": "OI6lK4bGWYMS",
+                  "text": "2012~2019 의무기록 9쪽",
+                  "children": [
+                    {
+                      "id": "L4GPSes6b6Ja",
+                      "text": "파일: 항소/흥국항소자료송부(강남최진규)/의무기록(2012-2019).pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "xu06iFa37PZ7",
+                  "text": "2020.05.12 발행 서울대병원 의무기록사본 — 검사일정별 발췌",
+                  "children": [
+                    {
+                      "id": "P4z8SFXy3ILN",
+                      "text": "파일: 항소/흥국항소자료송부(강남최진규)/자료-의무기록지 검사일정별 발췌본.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            },
+            {
+              "id": "k2qAU7OSZU5m",
+              "text": "통화(녹음·녹취록)",
+              "children": [
+                {
+                  "id": "aXUHSsGDYwlJ",
+                  "text": "2017.10.10~13 청약 통화 녹취록 37쪽 — 상담사 양승원 (녹음 5개)",
+                  "children": [
+                    {
+                      "id": "Ib7VmQKYvY5L",
+                      "text": "파일: 항소/흥국항소자료송부(강남최진규)/자료-상담사 양승원(녹취록 PDF, 서정근).pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "gkmT9ubm4jvF",
+                      "text": "표시본(중요 구간 파란 글씨·밑줄): 항소/260602(녹취록 초안, 서정근) A.hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "M8tAnkixKhs6",
+                      "text": "⚠ 녹음 7개 중 5개만 담김. 빠진 것: 2017.10.10 10:58 녹음(압축 안에만 있음), 2017.10.18 '완판' 녹음(6분 9초)",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941771110
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793941148441,
+          "updatedAt": 1793941148441
+        },
+        {
+          "id": "ZsAnONscNYMG",
+          "text": "참고자료",
+          "children": [
+            {
+              "id": "lcDvCpfzbyk7",
+              "text": "판례",
+              "children": [
+                {
+                  "id": "sogOObO70Mrz",
+                  "text": "2010.12.09 대법원 2010다66835 — 상법 제644조",
+                  "children": [
+                    {
+                      "id": "GW2YOZnHjXDh",
+                      "text": "파일: 흥국상고 대응(항소자료)/2010다66835.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            },
+            {
+              "id": "sJ4pRBXG7Xqz",
+              "text": "감독기관·연구 자료",
+              "children": [
+                {
+                  "id": "2MSPQhmIiCO5",
+                  "text": "2016.11.02 금감원 금융꿀팁 — 유병자 보험 유의사항",
+                  "children": [
+                    {
+                      "id": "OhPNxlTIUnyC",
+                      "text": "파일: 소송참고자료/35_161102_금융꿀팁_200선_유병자도(금감원).pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "cwEWJwcTj9rD",
+                  "text": "2018 간편심사 보험의 성장 (보고서 7장)",
+                  "children": [
+                    {
+                      "id": "IRD21EGVS0Lw",
+                      "text": "파일: 소송참고자료/nre2018-05_07 간편심사.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    },
+                    {
+                      "id": "TJ6dpuOQcISq",
+                      "text": "⚠ 발행처 확인 안 함",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "uGFr6U7LxS6w",
+                  "text": "2019.10.21 KB지식비타민 — 유병자보험과 간편심사",
+                  "children": [
+                    {
+                      "id": "1wo1PFYF60oH",
+                      "text": "파일: 소송참고자료/KB지식비타민_유병자보험과 간편심사(이경식).pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            },
+            {
+              "id": "7oY5Ig4TZK8I",
+              "text": "웹 검색",
+              "children": [
+                {
+                  "id": "wT5yXqXhNfQX",
+                  "text": "구글 검색 — 유병자보험 가입 시 부담보특약 적용 의무 (AI 요약 포함)",
+                  "children": [
+                    {
+                      "id": "pENKyxUuCSRW",
+                      "text": "파일: 소송참고자료/국내보험상품 중 유병자보험 가입시 부담보특약 적용 의무 - Google 검색.html",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941771110,
+              "updatedAt": 1793941771110
+            },
+            {
+              "id": "6VPwfUZtTqzC",
+              "text": "GPT 대화",
+              "children": [
+                {
+                  "id": "BYQaRCIcGmN3",
+                  "text": "GPT 대화 기록 152쪽",
+                  "children": [
+                    {
+                      "id": "dnNn8I0fnbWd",
+                      "text": "파일: 흥국-GPT_대화내역_보험.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "1p4ko6CxIo6e",
+                  "text": "AI 답변 — 보험의 '우연성'과 동일암 쟁점",
+                  "children": [
+                    {
+                      "id": "ENhlRB3lLug3",
+                      "text": "파일: 항소/한글 - 복사본.hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                },
+                {
+                  "id": "Z04Qudjlbyrq",
+                  "text": "AI 답변 — 쌍방이 알고 승낙한 뒤 상법 제644조로 거절할 때 대응",
+                  "children": [
+                    {
+                      "id": "C9lyLh0MC4ng",
+                      "text": "파일: 흥국상고 대응(항소자료)/한글 - 복사본.hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                },
+                {
+                  "id": "OedchuuSFA6s",
+                  "text": "구글 AI 모드 답변 — 암 완치 판정 기준",
+                  "children": [
+                    {
+                      "id": "zPxxgu7QAWph",
+                      "text": "파일: 흥국상고 대응(항소자료)/한글 - 복사본 (2).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                },
+                {
+                  "id": "1Vg5zws4ST9p",
+                  "text": "AI 답변 — '쌍방이 알고 보장 약정하면 유효' 문구와 관련 판례",
+                  "children": [
+                    {
+                      "id": "7CtNwgPKm76l",
+                      "text": "파일: 흥국상고 대응(항소자료)/한글 - 복사본 (3).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "ZW0FlnTzuBHz",
+                      "text": "⚠ AI가 대법원 2001다59064 판결은 오히려 반대 취지라고 답함",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                },
+                {
+                  "id": "PptJOIS28vjc",
+                  "text": "AI 답변 — 2020년 청구 가능성과 확보할 증거",
+                  "children": [
+                    {
+                      "id": "HqoScCWZyUez",
+                      "text": "파일: 흥국상고 대응(항소자료)/향후자료활용.txt",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                },
+                {
+                  "id": "cjVjKJX54j5l",
+                  "text": "ChatGPT 대화 — 보험사의 설명의무 위반",
+                  "children": [
+                    {
+                      "id": "MIgd4tpypaph",
+                      "text": "파일: 소송참고자료/보험사의 설명의무 위반.html",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "cwJB5Ikc4497",
+                      "text": "⚠ 왼쪽에 다른 개인 채팅 목록이 함께 저장돼 있음",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                },
+                {
+                  "id": "GwH1xhybweLV",
+                  "text": "ChatGPT 대화 — 암 완치 판정 기준",
+                  "children": [
+                    {
+                      "id": "QBcgPQwiRQnE",
+                      "text": "파일: 소송참고자료/암 완치 판정 기준.html",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "UQpQPH9nTKW6",
+                      "text": "⚠ 왼쪽에 다른 개인 채팅 목록이 함께 저장돼 있음",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793941148441,
+          "updatedAt": 1793941148441
+        },
+        {
+          "id": "KVssmTpeIQ3B",
+          "text": "사무",
+          "children": [
+            {
+              "id": "O2oldnHLBfWs",
+              "text": "위임계약",
+              "children": [
+                {
+                  "id": "1QyEdxzoeQXI",
+                  "text": "2026.03 항소심 사건위임계약서 — 양쪽 날인본 (문경숙 ↔ 법무법인 강남)",
+                  "children": [
+                    {
+                      "id": "BVfumrayZKBr",
+                      "text": "파일: 항소-사건위임계약(항소).pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "Dy7iyQ8y0PDj",
+                      "text": "강남 도장만 찍힌 판: 항소-[사건위임계약서(260311)]+문경숙+항소심.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941771110,
+              "updatedAt": 1793941771110
+            },
+            {
+              "id": "HxBkQk1gIWpN",
+              "text": "인지대·송달료",
+              "children": [
+                {
+                  "id": "kgx6tr8GIm20",
+                  "text": "2026.03.03 보정명령 — 항소 인지대·송달료",
+                  "children": [
+                    {
+                      "id": "5i4jshVmW5a9",
+                      "text": "파일: 항소-2024가단311696_2026.03.03_참여관용 보정명령(항소 인지대송달료)_참여_박혜지.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793941148441,
+          "updatedAt": 1793941148441
+        },
+        {
+          "id": "1yxY47qgRSAo",
+          "text": "작업 메모",
+          "children": [
+            {
+              "id": "1deudcNINBsk",
+              "text": "대응 정리",
+              "children": [
+                {
+                  "id": "Bx29K0dJZhP6",
+                  "text": "2026.01.28 흥국화재 소송 대응자료 — 주장 요점",
+                  "children": [
+                    {
+                      "id": "oBZmgOsXYqQ4",
+                      "text": "파일: 뻐꾸기/흥국화재소송자료(26.01.28).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "jfD6APjEqiUk",
+                  "text": "날짜 없음 항소장 제안 내용",
+                  "children": [
+                    {
+                      "id": "0kAvRQ0Cb2NG",
+                      "text": "파일: 흥국- 항소장(제안내용).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "qGYMHJ2FIWcP",
+                  "text": "날짜 없음 흥국 항소 대응방안 — 유병자보험의 특징",
+                  "children": [
+                    {
+                      "id": "S9DF11f5eUyF",
+                      "text": "파일: 항소/흥국대응(항소).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "JdZIYTfpJcgX",
+                  "text": "날짜 없음 흥국 대응 — 보험사의 인수심사 의무·승낙 권한 중심",
+                  "children": [
+                    {
+                      "id": "ZStEqqpKjlrc",
+                      "text": "파일: 흥국상고 대응/흥국대응.hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    },
+                    {
+                      "id": "7AIwvAyZGyvz",
+                      "text": "⚠ 「흥국대응(최종)」과 내용이 35%만 겹치는 별개 문서",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941771110,
+                      "updatedAt": 1793941771110
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941771110,
+                  "updatedAt": 1793941771110
+                },
+                {
+                  "id": "vZoakAm829rK",
+                  "text": "날짜 없음 흥국대응(최종) — 준비서면 방향",
+                  "children": [
+                    {
+                      "id": "JkBaQL2e3524",
+                      "text": "파일: 흥국상고 대응/흥국대응(최종).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "1N54NUHWBBhm",
+                  "text": "날짜 없음 원고 준비서면에 대한 피고 반론",
+                  "children": [
+                    {
+                      "id": "NjHAZpuf5KGU",
+                      "text": "파일: 흥국상고 대응/흥국 준비서면에 대한 반론(피고의견).hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "shyJLdewSh6I",
+                  "text": "날짜 없음 재판재개·문서제출명령 신청 의견",
+                  "children": [
+                    {
+                      "id": "r1yh1mRStw0W",
+                      "text": "파일: 흥국상고 대응/재판재개 및 문서명령신청 의견.hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "5LSC4svRyoss",
+                  "text": "날짜 없음 흥국소송 최종정리 — 상법 제644조 분석",
+                  "children": [
+                    {
+                      "id": "P768CkBMnpVM",
+                      "text": "파일: 흥국상고 대응(항소자료)/흥국소송최종정리.hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            },
+            {
+              "id": "Rl9lFH5Aj1Eg",
+              "text": "변호사 전달 자료",
+              "children": [
+                {
+                  "id": "YRnjVKP6pXux",
+                  "text": "날짜 없음 항소 답변서 자료 — 첨부 표 3개(녹취 요약·MRI 소견·타사 비교)",
+                  "children": [
+                    {
+                      "id": "YFvD9Qk47rSk",
+                      "text": "파일: 항소/흥국항소자료송부(강남최진규)/자료-흥국항소  답변서.hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                },
+                {
+                  "id": "2KFOZKbcLaXn",
+                  "text": "날짜 없음 의무기록 일정·내역 요약표",
+                  "children": [
+                    {
+                      "id": "8xIsOxLVy4bl",
+                      "text": "파일: 항소/흥국항소자료송부(강남최진규)/자료-의무기록 일정 및 내역 요악.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            },
+            {
+              "id": "CMyzD6lbG2x1",
+              "text": "녹음 정리",
+              "children": [
+                {
+                  "id": "S2WVPcDq3lj5",
+                  "text": "날짜 없음 2017.10.10 통화 중요 구간 메모 [흥국9]",
+                  "children": [
+                    {
+                      "id": "qmT9VVYtZNXw",
+                      "text": "파일: 흥국9-흥국화재 녹음관련내용.hwp",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793941148441,
+                      "updatedAt": 1793941148441
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793941148441,
+                  "updatedAt": 1793941148441
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793941148441,
+              "updatedAt": 1793941148441
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793941148441,
+          "updatedAt": 1793941148441
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1793941148441,
+      "updatedAt": 1793941771110
+    },
+    {
+      "id": "E9MXoXla1zxH",
+      "text": "원본 파일 위치",
+      "children": [
+        {
+          "id": "9z7veeadrM06",
+          "text": "C:\\Users\\knee2\\Downloads\\COLLECTION_FOR_MANGODOC\\보험소송제공자료_아부지_흥국화재",
+          "children": [],
+          "createdAt": 1793945697744,
+          "updatedAt": 1793945698386
+        }
+      ],
+      "createdAt": 1793945692062,
+      "updatedAt": 1793945697217
+    },
+    {
+      "id": "tygInMEGhmNn",
+      "text": "흥국상고 대응 (상고 준비 자료)",
+      "children": [
+        {
+          "id": "a8BKtGZv0Mel",
+          "text": "흥국상고 대응 — 우리가 쓴 것",
+          "children": [
+            {
+              "id": "9sBa0eDzx0eN",
+              "text": "흥국항소 준비서면 답변서 (「자료-흥국항소 답변서」와 같은 파일)",
+              "children": [
+                {
+                  "id": "Q677TxwhvrDQ",
+                  "text": "파일: 흥국상고 대응/흥국항소  준비서면 답변서-1.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "Ae1tQAl54Wyy",
+              "text": "원고 준비서면에 대한 피고 반론",
+              "children": [
+                {
+                  "id": "zGq89ZWQZHc3",
+                  "text": "파일: 흥국상고 대응/흥국 준비서면에 대한 반론(피고의견).hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "HuXI5lmqRYaS",
+              "text": "재판재개·문서제출명령 신청 의견",
+              "children": [
+                {
+                  "id": "MpPJO7zJ7WRj",
+                  "text": "파일: 흥국상고 대응/재판재개 및 문서명령신청 의견.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "kKtsbDgpP77z",
+              "text": "흥국 대응 — 보험사의 인수심사 의무·승낙 권한 중심",
+              "children": [
+                {
+                  "id": "6VeuXuulbE0s",
+                  "text": "파일: 흥국상고 대응/흥국대응.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "yM7eL9dmqi8s",
+              "text": "흥국대응(최종) — 준비서면 방향",
+              "children": [
+                {
+                  "id": "LEGHB1Sm9XS9",
+                  "text": "파일: 흥국상고 대응/흥국대응(최종).hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "m9iUMW0eEe9d",
+              "text": "2026.10.15 참고서면 초안 (메모 포함)",
+              "children": [
+                {
+                  "id": "WVLC7l3RSTnX",
+                  "text": "파일: 흥국상고 대응/문경숙 26-10-15 참고서면.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "Vyom2YLn5C3Y",
+              "text": "2026.10.15 참고서면 (다듬은 판)",
+              "children": [
+                {
+                  "id": "y8U23oaJZNQz",
+                  "text": "파일: 흥국상고 대응/문경숙 26-10-15 참고서면-1.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793942303219,
+          "updatedAt": 1793942303219
+        },
+        {
+          "id": "Uy6bUSHDRzPn",
+          "text": "흥국상고 대응(항소자료) — 재료와 신청서",
+          "children": [
+            {
+              "id": "aIxXHJGwbfCB",
+              "text": "2026.08.18 흥국 준비서면 외 — 가입 전 암 확진 여부, 갑10~12",
+              "children": [
+                {
+                  "id": "M6GoC9uJGaDn",
+                  "text": "파일: 흥국상고 대응(항소자료)/2026나1265_2026.08.19_준비서면 외_원고 대리인_박성원.pdf",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "rMxBbehp8DR4",
+              "text": "2010.12.09 대법원 2010다66835 — 상법 제644조",
+              "children": [
+                {
+                  "id": "LlWdbeljS2Q7",
+                  "text": "파일: 흥국상고 대응(항소자료)/2010다66835.pdf",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "gI6aK813gecg",
+              "text": "2026.09.28 문서제출명령신청서 — 청약 통화 녹음·녹취록",
+              "children": [
+                {
+                  "id": "SMzllSYfHbjL",
+                  "text": "파일: 흥국상고 대응(항소자료)/문경숙 26-09-28 문서제출명령신청서.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "46zrNV8IFaja",
+              "text": "2026.09.28 변론재개신청서",
+              "children": [
+                {
+                  "id": "rU4yenJQurCL",
+                  "text": "파일: 흥국상고 대응(항소자료)/문경숙 26-09-28 변론재개신청서.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "bQ0Iq3V0r9Hx",
+              "text": "2026.10.16 문서제출명령신청서 — 상담사 소속·스크립트·전산 입력 자료",
+              "children": [
+                {
+                  "id": "7Y9YSinesVup",
+                  "text": "파일: 흥국상고 대응(항소자료)/문경숙 26-10-16 문서제출명령신청서.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "xbRgwd8tx8Ld",
+              "text": "흥국소송 최종정리 — 상법 제644조 분석",
+              "children": [
+                {
+                  "id": "vM7Sv5xFHWH6",
+                  "text": "파일: 흥국상고 대응(항소자료)/흥국소송최종정리.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "ZL88kpwTPuWW",
+              "text": "AI 답변 — 쌍방이 알고 승낙한 뒤 상법 제644조로 거절할 때 대응",
+              "children": [
+                {
+                  "id": "Y19oWW7l5Tf5",
+                  "text": "파일: 흥국상고 대응(항소자료)/한글 - 복사본.hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "hpoUVxt18bea",
+              "text": "구글 AI 모드 답변 — 암 완치 판정 기준",
+              "children": [
+                {
+                  "id": "mhAj39SypOhN",
+                  "text": "파일: 흥국상고 대응(항소자료)/한글 - 복사본 (2).hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "bo1qvOFKHpVz",
+              "text": "AI 답변 — '쌍방이 알고 보장 약정하면 유효' 문구와 관련 판례",
+              "children": [
+                {
+                  "id": "6UwDleoVtKUd",
+                  "text": "파일: 흥국상고 대응(항소자료)/한글 - 복사본 (3).hwp",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "o54MI9j4AaBk",
+              "text": "AI 답변 — 2020년 청구 가능성과 확보할 증거",
+              "children": [
+                {
+                  "id": "BXmhZhnZXl4q",
+                  "text": "파일: 흥국상고 대응(항소자료)/향후자료활용.txt",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            },
+            {
+              "id": "kKr128cfbwxN",
+              "text": "원고 준비서면에 대한 반론(26.08.21.) — 08.19 흥국 준비서면 반박용 첨부",
+              "children": [
+                {
+                  "id": "fOkHhHFHhHBe",
+                  "text": "2020.09.02 손해사정서 보정·심사지연 요청 (흥국8의 다른 스캔)",
+                  "children": [
+                    {
+                      "id": "320zxRuxYZt4",
+                      "text": "파일: 흥국상고 대응(항소자료)/원고 준비서면에 대한 반론(26.08.21.)/보정 및 심사지연 요청(20.9.2.).pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793942303219,
+                      "updatedAt": 1793942303219
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                },
+                {
+                  "id": "MLeaYHqUNd8c",
+                  "text": "보험증권 — 신용정보원 발급, 2017.10.10 시작 계약",
+                  "children": [
+                    {
+                      "id": "2ErCPsBIfswj",
+                      "text": "파일: 흥국상고 대응(항소자료)/원고 준비서면에 대한 반론(26.08.21.)/한국신용정보원 대체 보험증권류.pdf",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793942303219,
+                      "updatedAt": 1793942303219
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1793942303219,
+                  "updatedAt": 1793942303219
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793942303219,
+              "updatedAt": 1793942303219
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1793942303219,
+          "updatedAt": 1793942303219
+        },
+        {
+          "id": "gOl1nWNMCd36",
+          "text": "[[4.🗄️(Archive) 보관/각종 테스트셋_dummy 모음/아부지_흥국화재_소송건/흥국상고 대응 컨셉.md|흥국상고 대응 컨셉]]",
+          "children": [],
+          "createdAt": 1793942588089,
+          "updatedAt": 1793942707675
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793942303219,
+      "updatedAt": 1793942303219
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793939703593,
+  "updatedAt": 1793946480022
+}
