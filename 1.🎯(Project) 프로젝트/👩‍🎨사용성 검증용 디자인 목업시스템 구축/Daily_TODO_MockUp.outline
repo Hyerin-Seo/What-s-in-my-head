@@ -51,7 +51,7 @@
           ],
           "createdAt": 1793935689281,
           "updatedAt": 1793945889240,
-          "isFolded": true
+          "isFolded": false
         },
         {
           "id": "2oTtYiXyhDee",
@@ -364,7 +364,10 @@
             }
           ],
           "createdAt": 1794196612762,
-          "updatedAt": 1794197631416
+          "updatedAt": 1794373494171,
+          "isCompleted": true,
+          "completedAt": 1794373494171,
+          "isFolded": true
         },
         {
           "id": "jVmBxnrXZYf3",
@@ -496,8 +499,10 @@
             }
           ],
           "createdAt": 1794289011185,
-          "updatedAt": 1794289019057,
-          "isFolded": true
+          "updatedAt": 1794358215727,
+          "isFolded": true,
+          "isCompleted": true,
+          "completedAt": 1794358215727
         },
         {
           "id": "vO6dhdUPp6J3",
@@ -526,13 +531,15 @@
             }
           ],
           "createdAt": 1794289915373,
-          "updatedAt": 1794289926602,
-          "isFolded": true
+          "updatedAt": 1794358214765,
+          "isFolded": true,
+          "isCompleted": true,
+          "completedAt": 1794358214765
         }
       ],
       "createdAt": 1794289007802,
       "updatedAt": 1794289010630,
-      "isFolded": false
+      "isFolded": true
     },
     {
       "id": "MiRgZY4fWbxW",
@@ -573,6 +580,66 @@
           ],
           "createdAt": 1794357730186,
           "updatedAt": 1794357741829
+        },
+        {
+          "id": "EZBhtCO3ZsLz",
+          "text": "Outliner 사양 정의",
+          "children": [
+            {
+              "id": "6PcLVoSczImY",
+              "text": "틀 - 양식과 내용의 구분 기준은?",
+              "children": [
+                {
+                  "id": "41QLdm4UaHpq",
+                  "text": "특히 블로그 같은 글에서...",
+                  "children": [],
+                  "createdAt": 1794358436827,
+                  "updatedAt": 1794358442428
+                }
+              ],
+              "createdAt": 1794358410119,
+              "updatedAt": 1794358427731
+            },
+            {
+              "id": "d7h7IWlsO6OS",
+              "text": "Project - Document - Page  사양 정의",
+              "children": [
+                {
+                  "id": "uXlZrR0MOCRV",
+                  "text": "각각의 역할과 속성",
+                  "children": [],
+                  "createdAt": 1794365456734,
+                  "updatedAt": 1794365463214
+                }
+              ],
+              "createdAt": 1794365433750,
+              "updatedAt": 1794365453344
+            }
+          ],
+          "createdAt": 1794358234386,
+          "updatedAt": 1794358289564
+        },
+        {
+          "id": "ymUV6HExqrfW",
+          "text": "Editor -> 블로그 작성 가능한 그냥 기본엔진",
+          "children": [
+            {
+              "id": "ggcdHpVg1Way",
+              "text": "와이어프레임 + 주제 및 대충 섹션에 쓸 내용, 빈칸 채우기...",
+              "children": [],
+              "createdAt": 1794359895140,
+              "updatedAt": 1794359911657
+            },
+            {
+              "id": "zp5Y6GY5pwol",
+              "text": "현재 개발 중인 것은 -> 레퍼런스에 붙여야지",
+              "children": [],
+              "createdAt": 1794359955425,
+              "updatedAt": 1794359963768
+            }
+          ],
+          "createdAt": 1794359880304,
+          "updatedAt": 1794359893055
         }
       ],
       "createdAt": 1794357725140,
@@ -581,5 +648,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793934368821,
-  "updatedAt": 1794357873097
+  "updatedAt": 1794376817734
 }

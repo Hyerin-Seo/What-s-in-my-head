@@ -505,10 +505,9 @@
                           "updatedAt": 1793788620938
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1793788494575,
-                      "updatedAt": 1793794612759,
-                      "isFolded": false
+                      "updatedAt": 1793794612759
                     },
                     {
                       "id": "RISv69yDdx7H",
@@ -550,10 +549,9 @@
                           "updatedAt": 1793788584554
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1793788497539,
-                      "updatedAt": 1793794612759,
-                      "isFolded": false
+                      "updatedAt": 1793794612759
                     },
                     {
                       "id": "Dr52vNL0B6WH",
@@ -663,11 +661,11 @@
                           "updatedAt": 1793766043522
                         }
                       ],
-                      "createdAt": 1793764933152,
-                      "updatedAt": 1794357901474,
                       "isFolded": true,
                       "isCompleted": true,
-                      "completedAt": 1794357901474
+                      "completedAt": 1794357901474,
+                      "createdAt": 1793764933152,
+                      "updatedAt": 1794357901474
                     },
                     {
                       "id": "8QdrhPMr0pV0",
@@ -745,11 +743,10 @@
                         }
                       ],
                       "isFolded": true,
-                      "createdAt": 1793794350359,
-                      "updatedAt": 1794357901474,
-                      "isFolded": true,
                       "isCompleted": true,
-                      "completedAt": 1794357901474
+                      "completedAt": 1794357901474,
+                      "createdAt": 1793794350359,
+                      "updatedAt": 1794357901474
                     },
                     {
                       "id": "F2afG8kVoTqL",
@@ -799,11 +796,10 @@
                         }
                       ],
                       "isFolded": true,
-                      "createdAt": 1793765609018,
-                      "updatedAt": 1794357901474,
-                      "isFolded": true,
                       "isCompleted": true,
-                      "completedAt": 1794357901474
+                      "completedAt": 1794357901474,
+                      "createdAt": 1793765609018,
+                      "updatedAt": 1794357901474
                     },
                     {
                       "id": "ILzNwWlTrVDj",
@@ -831,10 +827,9 @@
                           "updatedAt": 1793765894154
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1793765861268,
-                      "updatedAt": 1793765873651,
-                      "isFolded": false
+                      "updatedAt": 1793765873651
                     }
                   ],
                   "isFolded": true,
@@ -977,8 +972,7 @@
                   ],
                   "isFolded": true,
                   "createdAt": 1793865069351,
-                  "updatedAt": 1793865078633,
-                  "isFolded": true
+                  "updatedAt": 1793865078633
                 },
                 {
                   "id": "NSwTWdb6hsHl",
@@ -1143,9 +1137,9 @@
                           "updatedAt": 1793853203256
                         }
                       ],
+                      "isFolded": false,
                       "createdAt": 1793832285480,
-                      "updatedAt": 1793832291645,
-                      "isFolded": false
+                      "updatedAt": 1793832291645
                     },
                     {
                       "id": "x19jC0z43HPk",
@@ -1162,9 +1156,9 @@
                           "updatedAt": 1793840197035
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793840181201,
-                      "updatedAt": 1793840189207,
-                      "isFolded": true
+                      "updatedAt": 1793840189207
                     },
                     {
                       "id": "34hhogrSant5",
@@ -1189,14 +1183,14 @@
                               "updatedAt": 1793937929075
                             }
                           ],
+                          "isFolded": false,
                           "createdAt": 1793937898685,
-                          "updatedAt": 1793937912214,
-                          "isFolded": false
+                          "updatedAt": 1793937912214
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793937881871,
-                      "updatedAt": 1793937898114,
-                      "isFolded": true
+                      "updatedAt": 1793937898114
                     },
                     {
                       "id": "2TY3clLikfD4",
@@ -1283,10 +1277,9 @@
                   "updatedAt": 1793771498333
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793767085676,
-              "updatedAt": 1793769252445,
-              "isFolded": true
+              "updatedAt": 1793769252445
             },
             {
               "id": "c5UXHJYKjn17",
@@ -1313,8 +1306,7 @@
                   ],
                   "isFolded": true,
                   "createdAt": 1793769575183,
-                  "updatedAt": 1793769581425,
-                  "isFolded": true
+                  "updatedAt": 1793769581425
                 },
                 {
                   "id": "YQM1kyvZkDJ1",
@@ -1342,9 +1334,9 @@
                       "updatedAt": 1793876774062
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793876748208,
-                  "updatedAt": 1793876751725,
-                  "isFolded": true
+                  "updatedAt": 1793876751725
                 },
                 {
                   "id": "LfbOQO4luzsc",
@@ -1365,14 +1357,14 @@
                       "updatedAt": 1793876857002
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793876751940,
-                  "updatedAt": 1793876754376,
-                  "isFolded": true
+                  "updatedAt": 1793876754376
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793769564370,
-              "updatedAt": 1793769569806,
-              "isFolded": true
+              "updatedAt": 1793769569806
             },
             {
               "id": "Bl7i7cqGHCik",
@@ -1394,11 +1386,10 @@
                 }
               ],
               "isFolded": true,
-              "createdAt": 1793771357921,
-              "updatedAt": 1793936041977,
-              "isFolded": true,
               "isCompleted": true,
-              "completedAt": 1793936041977
+              "completedAt": 1793936041977,
+              "createdAt": 1793771357921,
+              "updatedAt": 1793936041977
             },
             {
               "id": "z2WDIMltZy0b",
@@ -1642,14 +1633,14 @@
                       "updatedAt": 1793864490751
                     }
                   ],
-                  "createdAt": 1793864373394,
-                  "updatedAt": 1793946373279,
+                  "isFolded": true,
+                  "isCompleted": true,
+                  "completedAt": 1793946373279,
                   "file": {
                     "target": "Pasted image 20261105163949.png"
                   },
-                  "isFolded": true,
-                  "isCompleted": true,
-                  "completedAt": 1793946373279
+                  "createdAt": 1793864373394,
+                  "updatedAt": 1793946373279
                 },
                 {
                   "id": "vrBlekSbLW9r",
@@ -1665,13 +1656,13 @@
                   "id": "wks6yBoM1K0E",
                   "text": "특정 대상별 인용 파일",
                   "children": [],
+                  "isCompleted": true,
+                  "completedAt": 1793946376206,
                   "file": {
                     "target": "Pasted image 20261105164755.png"
                   },
                   "createdAt": 1793864875817,
-                  "updatedAt": 1793946376206,
-                  "isCompleted": true,
-                  "completedAt": 1793946376206
+                  "updatedAt": 1793946376206
                 },
                 {
                   "id": "7KnGICYBO8er",
@@ -1685,13 +1676,13 @@
                       "updatedAt": 1793866637124
                     }
                   ],
-                  "createdAt": 1793866392545,
-                  "updatedAt": 1793946377831,
+                  "isCompleted": true,
+                  "completedAt": 1793946377831,
                   "file": {
                     "target": "Pasted image 20261105171312.png"
                   },
-                  "isCompleted": true,
-                  "completedAt": 1793946377831
+                  "createdAt": 1793866392545,
+                  "updatedAt": 1793946377831
                 },
                 {
                   "id": "KKjU1LecdIkn",
@@ -1746,9 +1737,9 @@
                           "updatedAt": 1793949398215
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793874061185,
-                      "updatedAt": 1793874070946,
-                      "isFolded": true
+                      "updatedAt": 1793874070946
                     },
                     {
                       "id": "04v61ifk7fn3",
@@ -1769,14 +1760,14 @@
                           "updatedAt": 1793936315272
                         }
                       ],
+                      "isFolded": false,
                       "createdAt": 1793936264572,
-                      "updatedAt": 1794358004799,
-                      "isFolded": false
+                      "updatedAt": 1794358004799
                     }
                   ],
+                  "isFolded": false,
                   "createdAt": 1793873248911,
-                  "updatedAt": 1793873253715,
-                  "isFolded": false
+                  "updatedAt": 1793873253715
                 },
                 {
                   "id": "fkC37tOnI2zr",
@@ -1822,9 +1813,9 @@
                           "updatedAt": 1793946566171
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793946393179,
-                      "updatedAt": 1793946446983,
-                      "isFolded": true
+                      "updatedAt": 1793946446983
                     },
                     {
                       "id": "0tsc0H1FLAlG",
@@ -1834,18 +1825,18 @@
                       "updatedAt": 1793946473285
                     }
                   ],
-                  "createdAt": 1793881351475,
-                  "updatedAt": 1793881396153,
+                  "isFolded": true,
+                  "note": "자료 덤프(정리 완 NO)에서 정리를 한다고 한다면",
                   "file": {
                     "target": "Pasted image 20261105212235.png"
                   },
-                  "note": "자료 덤프(정리 완 NO)에서 정리를 한다고 한다면",
-                  "isFolded": true
+                  "createdAt": 1793881351475,
+                  "updatedAt": 1793881396153
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793771406318,
-              "updatedAt": 1793771412152,
-              "isFolded": true
+              "updatedAt": 1793771412152
             },
             {
               "id": "QTCXmUbTgGhg",
@@ -1903,9 +1894,9 @@
                       "updatedAt": 1793936010959
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793935979200,
-                  "updatedAt": 1793935992351,
-                  "isFolded": true
+                  "updatedAt": 1793935992351
                 },
                 {
                   "id": "XQv1nPWcu3oY",
@@ -2067,9 +2058,9 @@
                           "updatedAt": 1793934950636
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793934774638,
-                      "updatedAt": 1793934778053,
-                      "isFolded": true
+                      "updatedAt": 1793934778053
                     },
                     {
                       "id": "kIUg0JZw4jgu",
@@ -2090,9 +2081,9 @@
                           "updatedAt": 1793876954498
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793876935279,
-                      "updatedAt": 1793934796498,
-                      "isFolded": true
+                      "updatedAt": 1793934796498
                     },
                     {
                       "id": "dPHyRQGM3oAz",
@@ -2134,9 +2125,9 @@
                           "updatedAt": 1793934826567
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793771236564,
-                      "updatedAt": 1793934818053,
-                      "isFolded": true
+                      "updatedAt": 1793934818053
                     },
                     {
                       "id": "XzhIsdpCKMve",
@@ -2146,9 +2137,9 @@
                       "updatedAt": 1793934783494
                     }
                   ],
+                  "isFolded": false,
                   "createdAt": 1793934769744,
-                  "updatedAt": 1793934774066,
-                  "isFolded": false
+                  "updatedAt": 1793934774066
                 }
               ],
               "isFolded": true,
@@ -2159,6 +2150,30 @@
           "isFolded": false,
           "createdAt": 1793769223297,
           "updatedAt": 1793848827721
+        },
+        {
+          "id": "b0Kghbn7WILX",
+          "text": "인텔리전스 향상",
+          "children": [
+            {
+              "id": "a50i2mBvjyBD",
+              "text": "도메인별 '기본기'에 대한 확인 방법 고도화",
+              "children": [
+                {
+                  "id": "WLAT033jHIL0",
+                  "text": "이미지 ui 에 대한 기본 구성",
+                  "children": [],
+                  "createdAt": 1794364290554,
+                  "updatedAt": 1794364301577
+                }
+              ],
+              "createdAt": 1794364279925,
+              "updatedAt": 1794364287156,
+              "isFolded": true
+            }
+          ],
+          "createdAt": 1794364274294,
+          "updatedAt": 1794364279761
         },
         {
           "id": "yE3qPUvMNM2x",
@@ -2447,9 +2462,9 @@
                   "updatedAt": 1793933119453
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793930661719,
-              "updatedAt": 1793930671456,
-              "isFolded": true
+              "updatedAt": 1793930671456
             },
             {
               "id": "7XsqJ6Fgb9XY",
@@ -2459,19 +2474,19 @@
                   "id": "yEI0XRiwO3pp",
                   "text": "태그나 변수 정보 자동 등록 - Google Docs 참고",
                   "children": [],
-                  "createdAt": 1793934624189,
-                  "updatedAt": 1793934655348,
                   "file": {
                     "target": "Pasted image 20261106121025.png"
-                  }
+                  },
+                  "createdAt": 1793934624189,
+                  "updatedAt": 1793934655348
                 }
               ],
-              "createdAt": 1793934558297,
-              "updatedAt": 1793934583694,
+              "isFolded": true,
               "file": {
                 "target": "Pasted image 20261106120919.png"
               },
-              "isFolded": true
+              "createdAt": 1793934558297,
+              "updatedAt": 1793934583694
             },
             {
               "id": "AQuqJupd2nsQ",
@@ -2506,15 +2521,14 @@
                   "updatedAt": 1794202623782
                 }
               ],
+              "isFolded": true,
               "createdAt": 1794202521028,
-              "updatedAt": 1794202608005,
-              "isFolded": true
+              "updatedAt": 1794202608005
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793765288631,
-          "updatedAt": 1793848827721,
-          "isFolded": true
+          "updatedAt": 1793848827721
         },
         {
           "id": "viXyFsD22ZRg",
@@ -2533,7 +2547,8 @@
                 }
               ],
               "createdAt": 1793881999315,
-              "updatedAt": 1793882008391
+              "updatedAt": 1793882008391,
+              "isFolded": true
             },
             {
               "id": "SaRowZ0r9FmP",
@@ -2571,9 +2586,9 @@
               "updatedAt": 1794203779417
             }
           ],
+          "isFolded": false,
           "createdAt": 1793881996305,
-          "updatedAt": 1793881998867,
-          "isFolded": true
+          "updatedAt": 1793881998867
         },
         {
           "id": "GG9w7vovQfjx",
@@ -2588,7 +2603,8 @@
             }
           ],
           "createdAt": 1794199863814,
-          "updatedAt": 1794199879457
+          "updatedAt": 1794199879457,
+          "isFolded": true
         }
       ],
       "createdAt": 1793848816376,
@@ -2629,7 +2645,8 @@
                 }
               ],
               "createdAt": 1794203091065,
-              "updatedAt": 1794203179138
+              "updatedAt": 1794203179138,
+              "isFolded": true
             },
             {
               "id": "14P8H8iJsX2q",
@@ -2711,5 +2728,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1794358035249
+  "updatedAt": 1794375634854
 }
