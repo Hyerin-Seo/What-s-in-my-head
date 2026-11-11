@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "captures": {
+    "문서 레퍼런스 허브 01 - NIA 연구보고서 정책연구.png": {
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/List.do?cbIdx=66361",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-11-11T23:44:22+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "bb3eab601e6359c9d34c5cdf6d79fb313032dbf25716abd616fd24cbdcddf384"
+    },
+    "문서 레퍼런스 허브 02 - 포스코경영연구원 이슈리포트.png": {
+      "url": "https://www.posri.re.kr/kor/bbs/report_list.do?mmcd=2606111001430015461&cate=2403071010350015910",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-11-11T23:48:43+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "63090130818edd6b18910dbc07e4c3d3c5d2f55122575c44b4d2021ba2ec3aa5"
+    },
+    "문서 레퍼런스 허브 03 - LG경영연구원 분석 보고서.png": {
+      "url": "https://www.lgbr.co.kr/business/list.do?rankOptions=TITLE/50,CONTENTS_PDF/30,KEYWORD/100,KEYWORD_TOP/100",
+      "source": "headless-browser",
+      "browser": "msedge.exe",
+      "captured_at": "2026-11-11T23:48:55+09:00",
+      "viewport": [
+        1280,
+        1800
+      ],
+      "crop": [
+        0,
+        1500
+      ],
+      "size": [
+        1280,
+        1500
+      ],
+      "sha256": "ac44061a001c102fbe07d10141046b67c38462fdc6c7b99645c2c42307c97163"
+    }
+  }
+}
