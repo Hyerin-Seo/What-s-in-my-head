@@ -1,0 +1,4213 @@
+{
+  "version": "1.0.0",
+  "id": "be9gIzNkem7w",
+  "title": "문서 구조 트리 사이드바 레퍼런스 조사",
+  "rootNodes": [
+    {
+      "id": "5cVRHCRD7Gg2",
+      "text": "이 조사가 푸는 문제",
+      "children": [
+        {
+          "id": "Ot6fo1M9QJCK",
+          "text": "지금 화면",
+          "children": [],
+          "isFolded": false,
+          "file": {
+            "target": "사이드바 레퍼런스 00 지금 화면.png"
+          },
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "UfE5dkasiOmS",
+          "text": "이 트리는 무엇인가 — Phase 1 에서 짠 뼈대(scaffold) 그 자체. 서식에서 가져온 뼈대도 같다. 본문을 찾아가는 색인이 아니라 원본이다 (2026-11-05 민규 서와 맞춤)",
+          "children": [
+            {
+              "id": "CoKs75gjyhwc",
+              "text": "지금 사양 (2026-11-05 민규 서 확인)",
+              "children": [
+                {
+                  "id": "qjd668TVxIl3",
+                  "text": "Phase 3 에서는 Phase 1 · 2 에서 짠 뼈대를 보기만 한다. 순서 바꾸기 · 들여쓰기 · 줄 추가 같은 구조 수정은 안 된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866230953,
+                  "updatedAt": 1793866230953
+                },
+                {
+                  "id": "8ddAp6HcrhnT",
+                  "text": "Phase 3 의 목적은 확정된 뼈대(또는 서식)의 빈칸을 채워 넣는 것",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866230953,
+                  "updatedAt": 1793866230953
+                },
+                {
+                  "id": "mfVe5KB9CzPO",
+                  "text": "앞으로: Phase 3 에서도 뼈대를 바로 고치고 동시에 반영되게 할지 고민 중 — 아직 정해지지 않음",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866230953,
+                  "updatedAt": 1793866230953
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866230953,
+              "updatedAt": 1793866230953
+            },
+            {
+              "id": "IuoXoMTc3jMh",
+              "text": "뼈대의 깊이 — 전부 뼈대다",
+              "children": [
+                {
+                  "id": "grDCOh4jGfLT",
+                  "text": "구역 · 블록뿐 아니라 \"출석 101호\" 같은 표 칸, \"(인)\" 서명 칸까지 모두 뼈대",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866230953,
+                  "updatedAt": 1793866230953
+                },
+                {
+                  "id": "NUWbBgo6FC4K",
+                  "text": "서명 칸에는 누구에게 · 몇 명에게 받을지, 서명인지 직인인지, 그냥 전달만 할지까지 Phase 1 · 2 에서 짜서 넣는다 — 칸 하나가 이름표가 아니라 정해진 일의 단위",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866230953,
+                  "updatedAt": 1793866230953
+                },
+                {
+                  "id": "gyWGxnYCzBIB",
+                  "text": "그래서 트리가 깊고 길다 (Home 126줄). 줄을 줄여서 풀 수 없고, 길고 깊은 채로 읽히게 해야 한다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866230953,
+                  "updatedAt": 1793866230953
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866230953,
+              "updatedAt": 1793866230953
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793866230953
+        },
+        {
+          "id": "RRJtbIXxDThh",
+          "text": "화면에서 걸리는 것 (캡처 한 장만 보고 적은 것이라 실제 동작은 확인 필요)",
+          "children": [
+            {
+              "id": "QLbtfGcSD9kK",
+              "text": "줄 모양이 다 같다 — 구역 · 블록 · 행 · 슬롯이 모두 \"격자 아이콘 + 글자\" 또는 \"점 + 글자\"라서, 어떤 줄이 칸(슬롯)이고 어떤 줄이 묶음인지 눈으로 구분이 안 된다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "3gHKwqdrMxoj",
+              "text": "트리 줄과 오른쪽 본문 사이에 연결 신호가 안 보인다 — \"3구역 · 건의요망 사항요지\"가 본문 어디인지 화면에 표시가 없다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "2iQuQTHQQBN9",
+              "text": "트리 이름과 본문 글자가 다르다 — 트리는 \"1구역 · 일시 및 결재란 › 개최 일시\", 본문은 \"일시: [Meeting.Date]\". 사람은 본문에 보이는 글자로 찾는다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "DdKlVmsRFvDp",
+              "text": "깊이를 들여쓰기로만 보여준다 — 세로 안내선이 없어서 \"6구역 › 1행 › 출석 101호\"처럼 깊어지면 어느 부모 밑인지 놓친다. 스크롤하면 부모 줄은 화면 밖으로 사라진다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "KNWpg6p8pE54",
+              "text": "한 패널에 페이지 썸네일 · 트리 · 참조 레이어가 쌓여 있어 트리 칸이 좁다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "tyfLGUtqCDJb",
+          "text": "레퍼런스를 고를 때 던진 질문 네 개",
+          "children": [
+            {
+              "id": "G8auIcA0Vz2j",
+              "text": "1. 트리 한 줄이 본문 어디인지 바로 알려 주는가 (짝 맞추기)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "dlTXXWLoPhXi",
+              "text": "2. 줄이 수십 개여도 위계와 지금 위치가 눈에 바로 들어오는가 (읽기 쉬움)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "G09KX8z7He3F",
+              "text": "3. 트리가 \"내가 짠 뼈대\"로 읽히는가 — 흐름 · 채운 칸과 빈 칸이 보이는가 (이야기 뼈대 레퍼런스에서 본다). 구조를 고치면 본문도 따라오는가는 지금 사양 밖이라 나중",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793866230953
+            },
+            {
+              "id": "mxqHMneHofP2",
+              "text": "4. 보기만 하는 목차에서 채운 칸과 빈 칸이 바로 갈리는가 — 값이 들어간 줄은 연하게? 진하게? 남은 칸은 어떻게 튀게? (채움 상태 레퍼런스에서 본다. 지금 가장 궁금한 것)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793866894715
+        }
+      ],
+      "isFolded": true,
+      "nodeType": "h1",
+      "createdAt": 1793862095082,
+      "updatedAt": 1793866894715
+    },
+    {
+      "id": "lOdaN9KwCf3X",
+      "text": "레퍼런스 — 채움 상태 (뷰어 목차에서 빈 칸 · 채운 칸을 어떻게 보이나)",
+      "children": [
+        {
+          "id": "T4LkS60crIew",
+          "text": "왜 모았나: Phase 3 사이드바는 고치지 않고 보기만 하는 목차이고, 사용자가 하는 일은 빈칸 채우기다. 그래서 \"값이 들어간 줄은 연하게? 진하게?\", \"남은 칸은 어떻게 튀게?\"를 여러 곳에서 본다. 가장 닮은 것은 Figma",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793866894715
+        },
+        {
+          "id": "BflmuqAA8wWm",
+          "text": "Figma — 개발 모드 왼쪽 사이드바 (상태가 붙은 목차)",
+          "children": [
+            {
+              "id": "FDsnx3eETk94",
+              "text": "링크: https://help.figma.com/hc/en-us/articles/15023124644247",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "TatB4lqAxMr5",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "nNq70oA5qpMH",
+                  "text": "디자인을 개발자에게 넘길 때 쓰는 화면. 왼쪽 사이드바가 페이지 → 준비된 것 목록 → 레이어 순서",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "FHCL3lsg5M7q",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "DVH8MFtTRf6d",
+                  "text": "맨 위에 \"Ready for dev 10\" — 상태가 붙은 것의 개수가 한 줄로",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "YEVvcoP7jhfc",
+                  "text": "페이지 목록에서 준비된 것이 들어 있는 페이지에만 </> 아이콘이 붙는다. 없는 페이지(Scratch / WIP)는 이름만 — 부모 줄이 \"안에 무엇이 있다\"를 대신 말해 준다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "kbcSHAEvAx0O",
+                  "text": "준비된 것만 따로 묶어 \"Ready for development\" 아래에 썸네일 + 마지막 수정일로 보여 준다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "vvUrD19vyc5u",
+                  "text": "상태 탭: Ready / Completed 개수로 나눠 본다 (Completed 는 조직 · 엔터프라이즈 요금제)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "vsmAoYth9ISh",
+                  "text": "디자인 모드 레이어 패널에서는 숨긴 레이어가 흐리게 보인다 — 흐림 = \"지금 화면에 없는 것\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "GfHgoKaPwfPS",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "UFNLTJVggWHK",
+                  "text": "페이지 · 구역 줄에 \"안에 빈 칸이 남았다\" 표시를 붙이고, 맨 위에 남은 칸 개수. 다 채운 구역은 이름만 남겨 조용하게",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "AZVLHWf8U3q3",
+              "text": "캡처 · 맨 위 Ready for dev 개수, 준비된 것이 든 페이지에만 </> 아이콘, 준비된 것 묶음, 그 아래 레이어",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Figma 도움말 https://help.figma.com/hc/en-us/articles/15023124644247",
+              "file": {
+                "target": "사이드바 레퍼런스 32 Figma 개발 모드 사이드바 상태 개수와 페이지 아이콘.png"
+              },
+              "createdAt": 1793867009099,
+              "updatedAt": 1793867009099
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793867009099
+        },
+        {
+          "id": "KrBh6zr0aN6g",
+          "text": "GOV.UK 디자인 시스템 — 할 일 목록 (Task list)",
+          "children": [
+            {
+              "id": "7nIJvR1SSdpt",
+              "text": "링크: https://design-system.service.gov.uk/components/task-list/ · 상태 규칙: https://design-system.service.gov.uk/patterns/complete-multiple-tasks/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "9Twyrcjbir2j",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "hz1pKGUFf2aT",
+                  "text": "영국 정부 서비스의 긴 신청서를 여러 칸으로 나눠 보여 주는 목록. 줄마다 이름 + 상태",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "4ypcxcCk0AZA",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "cTqVT2ha3sH3",
+                  "text": "끝낸 칸은 \"Completed\" 를 검정 글자로, 배경 없이 — 일부러 조용하게",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "BZJJuzCoMwNe",
+                  "text": "아직인 칸은 \"Incomplete\" 를 파란 배경 꼬리표로 — 눈이 남은 칸으로 간다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "GZS0pE2g5hGQ",
+                  "text": "아직 시작할 수 없는 칸은 \"Cannot start yet\" 회색 글자, 줄에 링크도 없다 (예: 다른 칸이 먼저 끝나야 할 때)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "S22DFHyv0Xt8",
+                  "text": "바꾼 까닭 (공식 설명): 완료가 몇 개 쌓이면 남은 칸을 찾기 어려워진다는 사용자 조사 결과 — 그래서 완료를 꼬리표에서 평범한 글자로 내렸다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "q8XhwUsyXl5f",
+                  "text": "상태 종류는 적게 시작하라고 한다 (Completed · Incomplete 둘부터). 빨간 배경은 오류에만",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "Kmg7CDWmpoe1",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "UjAMuB0Ej3kL",
+                  "text": "채운 칸은 연하게(평범하게), 남은 칸만 색 꼬리표 — \"연하게 vs 진하게\"에 대한 가장 분명한 답 하나",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "nXzmnkoqdkgr",
+                  "text": "\"시작할 수 없음\" 회색은 서명 받을 칸처럼 내가 지금 채울 수 없는 칸에 맞는 모양",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "ltnUYNpPMmJl",
+              "text": "캡처 · 완료는 검정 글자, 미완료는 파란 꼬리표, 시작 불가는 회색 글자",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: GOV.UK 디자인 시스템 예시 화면을 직접 캡처 https://design-system.service.gov.uk/components/task-list/cannot-start-yet/ (2026-11-05)",
+              "file": {
+                "target": "사이드바 레퍼런스 33 GOV.UK 할 일 목록 완료는 연하게 남은 것은 태그.png"
+              },
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793866894715
+        },
+        {
+          "id": "wQw5Mij6k4UA",
+          "text": "PandaDoc — 받는 사람이 칸 채우기",
+          "children": [
+            {
+              "id": "NP2MzR4oDjcn",
+              "text": "링크: https://support.pandadoc.com/en/articles/9714786-sign-a-pandadoc-recipient-s-guide",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "qUVVnjblAN8p",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "lklHs45KysW2",
+                  "text": "우리 엔진이 80% 를 닮으려는 문서 도구. 받는 사람이 문서 안의 칸을 채우고 서명하는 화면",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "IDnaCRRsxwiM",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "LoUXP5GGMsar",
+                  "text": "내가 꼭 채워야 할 칸은 빨간색, 선택 칸은 회색 — 칸 종류가 색으로 갈린다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "AK9UXjXuvTm0",
+                  "text": "맨 위에 \"2 fields required\" — 남은 필수 칸 개수",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "9ijmW2GNcBsT",
+                  "text": "필수 칸에 쓰기 시작하면 왼쪽에 Next 버튼이 나와 다음 필수 칸으로 데려간다. 선택 칸은 건너뛴다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "bz6Kpy9g3KUY",
+                  "text": "다 채우면 맨 위 Finish 로 끝낸다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "e31zmjxdEhBN",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "rqCMrqhxz9lb",
+                  "text": "트리에도 필수 / 선택 / 남이 채울 칸(서명 받을 칸)을 색으로 나누고, 위에 남은 필수 칸 개수 + \"다음 빈칸\" 버튼",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "HmjFquVzHl0m",
+              "text": "캡처에서 더 보인 것: 다른 사람(ACME 쪽) 몫의 서명 칸과 날짜 칸은 회색으로 비활성 — 내가 채울 칸만 빨간 테두리로 살아 있다. 맨 위 \"4 fields required\", 아래 \"2 of 2 documents\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793867009099,
+              "updatedAt": 1793867009099
+            },
+            {
+              "id": "TxNnuZp1nePr",
+              "text": "캡처 · 필수 칸은 빨강(Required 꼬리표), 선택 칸은 회색, 맨 위 남은 필수 칸 개수",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: PandaDoc 도움말 https://support.pandadoc.com/en/articles/9714786-sign-a-pandadoc-recipient-s-guide",
+              "file": {
+                "target": "사이드바 레퍼런스 34 PandaDoc 필수 칸 빨강 선택 칸 회색 남은 개수.png"
+              },
+              "createdAt": 1793867009099,
+              "updatedAt": 1793867009099
+            },
+            {
+              "id": "hjWvi4cGYThV",
+              "text": "캡처 · 왼쪽 노란 Next 로 다음 빈칸, 남의 서명 칸은 회색",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: PandaDoc 도움말 (위 링크)",
+              "file": {
+                "target": "사이드바 레퍼런스 35 PandaDoc Next 버튼으로 다음 빈칸.png"
+              },
+              "createdAt": 1793867009099,
+              "updatedAt": 1793867009099
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793867009099
+        },
+        {
+          "id": "T1gvquael8XB",
+          "text": "DocuSign — START · NEXT 꼬리표",
+          "children": [
+            {
+              "id": "mxJSOfaoYtfe",
+              "text": "링크: 학교 IT 안내서 기준 (공식 문서 아님): https://docusign.utexas.edu/tag-documents · https://www.publicpower.org/system/files/documents/Light%20Up%20Navajo%20DocuSign%20instructions%2011.27.18_0.pdf",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "FfKqkagPFn0W",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "1Ageigg1vaoQ",
+                  "text": "전자 서명 도구. 받는 사람이 문서를 열면 채울 곳으로 차례로 안내한다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "zvd0h4vKIRKX",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "maLLYKdd6lAB",
+                  "text": "왼쪽 여백의 노란 START 꼬리표를 누르면 첫 칸으로, 이어서 NEXT 꼬리표가 다음 칸으로",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "LPKM2IUXzf1p",
+                  "text": "필수 칸은 빨간 테두리, 다 채우지 않으면 보낼 수 없다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "f9mSiWc4jcWu",
+                  "text": "칸 색은 받는 사람마다 다르다 — 한 문서 안에서 \"누구 칸인지\"가 색으로",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "r69FQ7xJmYLc",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "M8i2szcgyqU1",
+                  "text": "서명 칸이 여러 사람 몫일 때: 사람마다 색, 지금 보는 사람 칸만 진하게",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793866894715
+        },
+        {
+          "id": "qOy0RGBvNQ9T",
+          "text": "Weblate — 줄마다 진행 막대 (번역 도구)",
+          "children": [
+            {
+              "id": "xCcXI6IxHeIa",
+              "text": "링크: https://docs.weblate.org/en/latest/user/translating.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "iIQHNH7tkgRo",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "IUhHdZMr6Y27",
+                  "text": "오픈소스 번역 도구. 번역할 문장(빈칸)이 수천 개라 \"어디가 얼마나 남았나\"가 핵심",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "0984WKZ98om3",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "1AIY939qGDPm",
+                  "text": "언어 · 묶음 줄마다 번역된 % + 남은 개수 + 줄 아래 얇은 진행 막대",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "6QhzIYAzbcpn",
+                  "text": "다 끝난 줄은 막대가 꽉 차고 남은 개수 칸이 비어 조용해진다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "PTKnt2mLK0EA",
+                  "text": "문서 안에서는 \"남은 문장만\" 같은 거르개로 빈칸만 골라 본다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "BKU8zgJj1ZoQ",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "XfY7L4PwOOGt",
+                  "text": "구역 줄 아래 얇은 막대 + 남은 칸 숫자. 126줄을 다 펼치지 않아도 어느 구역이 비었는지 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "knz7mhFZ2BTN",
+              "text": "캡처 · 줄마다 번역 % · 남은 개수 · 얇은 진행 막대, 100% 줄은 남은 칸이 비어 조용하다",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Weblate 문서 https://docs.weblate.org/en/latest/user/translating.html",
+              "file": {
+                "target": "사이드바 레퍼런스 36 Weblate 줄마다 진행 막대와 남은 개수.webp"
+              },
+              "createdAt": 1793867009099,
+              "updatedAt": 1793867009099
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793867009099
+        },
+        {
+          "id": "UhVSAhfoKCzs",
+          "text": "Workflowy — 끝낸 줄은 흐리게 + 취소선, 숨기기 버튼",
+          "children": [
+            {
+              "id": "OCgqaKoNkyPw",
+              "text": "링크: https://workflowy.com/help/todos",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "iIJ5VPWGGVOf",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "OLyduduQRGrZ",
+                  "text": "우리 Phase 1 아웃라이너의 원본 모델",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "n1fLIHcYLvqy",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "gohCzOuOa8d1",
+                  "text": "끝낸 줄은 회색 + 취소선으로 흐려진다. 남은 줄은 그대로 진하다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "17fDLgitYt78",
+                  "text": "위 도구 막대의 체크 버튼으로 끝낸 줄을 통째로 숨기거나 다시 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "i431yhJwWapw",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "1qqMRs5AmHog",
+                  "text": "채운 칸을 흐리게 하거나 아예 숨기는 토글 — \"남은 칸만 보기\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "p4FFYO8Ibhfn",
+              "text": "캡처 · 끝낸 줄이 회색 취소선이 되고, 체크 버튼으로 숨겨진다 (움직이는 그림)",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Workflowy 도움말 https://workflowy.com/help/todos",
+              "file": {
+                "target": "사이드바 레퍼런스 37 Workflowy 끝낸 줄 흐리게 그리고 숨기기.gif"
+              },
+              "createdAt": 1793867009099,
+              "updatedAt": 1793867009099
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793867009099
+        },
+        {
+          "id": "0gk2tvSDjkLm",
+          "text": "Things — 프로젝트 이름 옆 진행 파이",
+          "children": [
+            {
+              "id": "7fHK2Gt1EoEO",
+              "text": "링크: https://culturedcode.com/things/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "Btw4pwHRfPiK",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "vckWXkHAPqdl",
+                  "text": "할 일 앱. 프로젝트마다 작은 원이 할 일을 끝낼수록 파이처럼 찬다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "2X7BLSA9wmOG",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "Da0wjhlykIPi",
+                  "text": "이름 바로 앞 작은 원 하나가 진행률 — 숫자 없이 모양으로",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "haKdlmzQoRdI",
+                  "text": "글자를 흐리게 하지 않고 아이콘만 바뀐다 — 목록은 늘 같은 진하기로 읽힌다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "p1j7LqB9jYLO",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "NAwiPOsTuhsS",
+                  "text": "구역 줄 앞 아이콘 자리에 채움 파이. 글자 색은 건드리지 않는 방법",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "Q1JhE5HTjSC4",
+              "text": "캡처 · 프로젝트 이름 앞 반쯤 찬 파이 (사이드바 목록은 같은 진하기)",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Cultured Code 공식 사이트 https://culturedcode.com/things/",
+              "file": {
+                "target": "사이드바 레퍼런스 38 Things 프로젝트 진행 파이.jpg"
+              },
+              "createdAt": 1793867009099,
+              "updatedAt": 1793867009099
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793867009099
+        },
+        {
+          "id": "vsYeyVu3mst6",
+          "text": "Tiptap 목차 — 지나온 곳은 진하게 (반대 방향)",
+          "children": [
+            {
+              "id": "9mFJzP6bFpUr",
+              "text": "링크: 위 \"레퍼런스 — 읽기 쉬움\"의 Tiptap 항목 (캡처 08)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "ao5bq4Zw7kfE",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "qgvmEwcOzINv",
+                  "text": "본문 스크롤에 따라 목차가 움직이는 확장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "6n8mfhCogFig",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "NM8NTV98uMvr",
+                  "text": "이미 지나온 제목은 진하게, 아직 안 온 제목은 흐리게 — GOV.UK · Workflowy 와 정반대 방향",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "YAzBe6qW3Gus",
+                  "text": "여기서 진함의 뜻은 \"채웠다\"가 아니라 \"읽고 지나왔다\"",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "0W1Zegk3Hm3n",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "xFYs8TxFXWAy",
+                  "text": "진하게 / 흐리게를 어느 뜻에 쓸지 먼저 정해야 한다 — 채움 상태인지, 지금 위치인지. 둘을 같은 수단에 섞으면 헷갈린다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793866894715
+        },
+        {
+          "id": "R1S5dEahnDI2",
+          "text": "VS Code — 폴더에 \"안에 무엇이 있다\" 표시",
+          "children": [
+            {
+              "id": "D4Nwi8H8MGkq",
+              "text": "링크: https://code.visualstudio.com/docs/getstarted/userinterface · 표시 올리기 규칙: https://pub.dev/documentation/typings/latest/typings.vscode/FileDecoration$Typings.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "szH3VLSdY8cJ",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "i8ja9zEDRNSV",
+                  "text": "코드 편집기의 파일 트리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "pRibjv627pyB",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "pvKPe5a4dNev",
+                  "text": "찾기에서 강조 모드를 쓰면 맞는 파일이 든 폴더에 배지가 붙는다 — 접힌 폴더도 안에 있다는 걸 안다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "nrpEUEev4l27",
+                  "text": "파일 꾸밈(색 · 글자 배지)에 propagate 를 켜면 부모 폴더까지 같은 표시가 올라간다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "1IuZonzp8XuK",
+                  "text": "Outline 보기에도 오류 · 경고가 표시돼 문제 위치를 한눈에 본다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "YI5jr4XXuyFR",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "7rTi5ArbcjIH",
+                  "text": "접힌 구역에도 \"안에 빈 칸 있음\" 점을 올려 보낸다 — 펼치지 않고도 어디를 열어야 할지 안다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793866894715
+        },
+        {
+          "id": "KrPxnSRV0H9Q",
+          "text": "Word 콘텐츠 컨트롤 · 한글 누름틀 — 본문 쪽 빈칸 모양",
+          "children": [
+            {
+              "id": "kg0uOVzdAbPe",
+              "text": "링크: Word: https://dradis.com/support/guides/word_reports/content_controls.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "yShpUtbNVmtW",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "haKeAPb7Dltf",
+                  "text": "서식 문서 안의 채울 칸",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "EqqRXVpG8Rbo",
+              "text": "킬링 포인트 — 무엇이 연하고 무엇이 진한가",
+              "children": [
+                {
+                  "id": "hYkwc98z3a3C",
+                  "text": "Word: 빈 칸에는 \"자리 표시 텍스트\" 스타일의 안내 글자가 회색으로 들어 있다가, 입력하면 바뀐다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                },
+                {
+                  "id": "xr3Ys338USIJ",
+                  "text": "한글 누름틀: 안내문이 들어 있다가 입력하면 사라진다. 안내문 색 · 기울임 같은 모양은 이번에 확인하지 못했다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "7tGLiH6YFE2h",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "xkWfXtOWTPml",
+                  "text": "트리의 빈 칸 줄과 본문의 빈 칸 모양을 같은 신호로 맞춘다 — 트리에서 흐린 줄 = 본문에서 회색 안내 글자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793866894715,
+                  "updatedAt": 1793866894715
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793866894715
+        },
+        {
+          "id": "ECfYzUIEv3Kr",
+          "text": "한눈에 — 연하게 / 진하게를 쓰는 방향",
+          "children": [
+            {
+              "id": "xJZF0Yt5MorS",
+              "text": "채운 것을 연하게, 남은 것을 진하게 (남은 일에 눈이 가게): GOV.UK · Workflowy · Weblate",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "eKzds7sV1BM2",
+              "text": "지나온 것을 진하게 (어디까지 왔는지): Tiptap — 진함의 뜻이 다르다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "ugQROuQ7d79s",
+              "text": "글자는 그대로 두고 아이콘 · 막대만 바꾸기: Things 파이 · Weblate 막대 · Figma 페이지 아이콘",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "ACmOpbkqLh5s",
+              "text": "빈 칸만 색으로 튀게: PandaDoc 빨간 필수 칸 · DocuSign 빨간 테두리",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "mMxibs3FGJHP",
+              "text": "부모 줄에 요약 올리기: Figma(페이지 아이콘 · 맨 위 개수) · VS Code(폴더 배지) · Weblate(줄마다 %) · Things(파이)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "huA2duaTWtpC",
+              "text": "다음 빈 칸으로 건너뛰기: PandaDoc Next · DocuSign START / NEXT",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            },
+            {
+              "id": "HuSmyw3xjKxC",
+              "text": "칸 종류를 상태로 나누기: 필수 / 선택(PandaDoc), 시작할 수 없음(GOV.UK 회색), 받는 사람마다 색(DocuSign) — 서명 받을 칸처럼 내가 못 채우는 칸을 보여 줄 모양",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793866894715,
+              "updatedAt": 1793866894715
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793866894715,
+          "updatedAt": 1793866894715
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793866894715,
+      "updatedAt": 1793867009099
+    },
+    {
+      "id": "fuZ8s2Ve46mk",
+      "text": "레퍼런스 — 짝 맞추기 (트리 ↔ 본문)",
+      "children": [
+        {
+          "id": "kcjfRSsbNi5B",
+          "text": "WordPress 블록 에디터 — List View · Outline 탭",
+          "children": [
+            {
+              "id": "pv01h36krsE0",
+              "text": "링크: https://wordpress.org/documentation/article/list-view/ (직접 만져 보기: https://playground.wordpress.net/ — 로그인 없이 바로 열림)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "MlptE5Tjws3w",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "eDTW3jTWqonk",
+                  "text": "문서 편집기의 블록 트리라 우리와 가장 닮았다. 페이지 → 그룹 → 블록 순서로 중첩된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "z85qqxVqcb4z",
+                  "text": "트리 위에 탭 두 개: List View(모든 블록) / Outline(제목 구조 + 글자 수)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "G2I0DhmfDVHA",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "yNH1TF7ucykj",
+                  "text": "트리 줄에 마우스를 올리면 본문의 그 블록에 테두리가 그려진다 (캡처 01: Header 줄 → 본문 머리 영역 보라 테두리)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "9xCFCaTddQRr",
+                  "text": "본문에서 블록을 누르면 트리가 그 블록까지 저절로 펼쳐지고 그 줄이 파랗게 선택된다 (캡처 02: Group 이 펼쳐지며 Hidden blog heading 선택)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "ApYKvWRci56W",
+                  "text": "화면 맨 아래에 지금 위치 경로가 뜬다: Template › Group › Hidden blog heading. 경로 한 칸을 누르면 그 부모로 올라간다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "C1Qtpkx7dnDO",
+                  "text": "줄마다 블록 종류 아이콘이 다르다 (머리글 · 그룹 · 패턴 · 바닥글). 템플릿 부품은 보라색",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "uaTFFdIvoQa9",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "TxqAR35hIZr3",
+                  "text": "1순위로 가져올 것: 트리 hover → 본문 테두리, 본문 클릭 → 트리 펼침 + 그 줄로 스크롤. \"어느 부분인지 모르겠다\"를 바로 푼다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "nVnEWXD9RTwg",
+                  "text": "\"블록 전체\" / \"구역만\" 두 탭으로 나누면 126줄짜리 트리를 구역 8~10줄로 먼저 볼 수 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "MfM2ZaupPm66",
+                  "text": "아래쪽 경로 표시는 참조 레이어 위에 한 줄로 넣을 수 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "YweBfzF0nbpn",
+              "text": "캡처 · 트리 줄에 올리면 본문이 강조됨",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "사이드바 레퍼런스 01 워드프레스 트리에 올리면 본문 강조.png"
+              },
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "ZL6VomV7zRtU",
+              "text": "캡처 · 본문을 누르면 트리가 그 블록까지 펼쳐지고, 아래에 경로가 뜸",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "사이드바 레퍼런스 02 워드프레스 본문 누르면 트리가 펼쳐짐.png"
+              },
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "aT2W6eaYl1p9",
+              "text": "캡처 · Outline 탭 — 제목 구조만 따로",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "사이드바 레퍼런스 03 워드프레스 Outline 탭.png"
+              },
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "tHhEstjtJ49Z",
+          "text": "Figma — 왼쪽 사이드바 (Pages + Layers)",
+          "children": [
+            {
+              "id": "ZA1ztpFv7mpV",
+              "text": "링크: https://help.figma.com/hc/en-us/articles/360039831974",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "2QvRx0aZMtxk",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "L0dgDu8EyjZy",
+                  "text": "아이콘 줄 → 페이지 목록 → 레이어 트리. 우리 화면(아이콘 줄 → 페이지 썸네일 → 트리)과 배치가 똑같다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "efSYpJYpPdOc",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "9IBOmjUvPT4X",
+                  "text": "레이어 줄에 올리면 캔버스의 그 레이어에 파란 테두리 (환경설정 \"Highlight layers on hover\"로 켜고 끔)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "IQurHZRIST5V",
+                  "text": "캔버스에서 고르면 레이어 패널이 그 줄로 스크롤된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "4JYFJmfhDyoH",
+                  "text": "종류마다 아이콘과 색이 다르다: 프레임은 #, 컴포넌트는 보라색 글자와 아이콘 — 글자를 읽기 전에 색으로 먼저 구분된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "sVEMT1wRLXXd",
+                  "text": "페이지 목록은 위에 짧게, 접을 수 있다. 레이어가 패널 대부분을 쓴다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "45krxwUJmX1E",
+                  "text": "실제 레이어 패널에서 본 것 (Ant UX Wireframes 파일, 2026-11-05)",
+                  "children": [
+                    {
+                      "id": "GQbhZXLhqOKJ",
+                      "text": "종류별 아이콘이 줄 맨 앞에 있다: # 프레임 · 마름모 컴포넌트 · 원 도형 · ㄴ자 벡터 · T 글자 · 산 모양 이미지 · 점선 네모 그룹",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793864399058,
+                      "updatedAt": 1793864399058
+                    },
+                    {
+                      "id": "caC66Aya69NZ",
+                      "text": "컴포넌트와 그 안의 것은 줄 전체가 보라색 — 일반 레이어(검정)와 색 하나로 갈린다",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793864399058,
+                      "updatedAt": 1793864399058
+                    },
+                    {
+                      "id": "7wcAeYqavAs9",
+                      "text": "세로 안내선은 없다. 들여쓰기 + 접기 화살표만 쓴다. 대신 아이콘과 색이 깊이를 버텨 준다",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793864399058,
+                      "updatedAt": 1793864399058
+                    },
+                    {
+                      "id": "BLaXRXN1pL0N",
+                      "text": "잠금 · 숨김 버튼은 마우스를 올린 줄에만 뜬다 (Line Round 줄). 평소 줄은 이름만 있어 깔끔하다",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793864399058,
+                      "updatedAt": 1793864399058
+                    },
+                    {
+                      "id": "EBhBJnygQ36a",
+                      "text": "고른 줄은 파란 배경, 올린 줄은 회색 배경 — 두 상태가 섞이지 않는다",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793864399058,
+                      "updatedAt": 1793864399058
+                    },
+                    {
+                      "id": "t6a58dRkbg8e",
+                      "text": "페이지 목록은 위에 한 줄(Ant UX (EN)), 레이어가 패널 대부분을 쓴다",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1793864399058,
+                      "updatedAt": 1793864399058
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "F8xq3ZVSBKXg",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "hrUi2HToTyu4",
+                  "text": "페이지 썸네일 목록을 접을 수 있게 하거나 한 줄 높이로 줄여 트리 자리를 넓힌다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "RRkzMj1JVrdR",
+                  "text": "구역 / 블록 / 행 / 슬롯 마다 아이콘 + 색을 하나씩 정한다. 특히 \"슬롯(채울 칸)\"은 다른 색으로 두면 사용자가 채울 곳만 골라 본다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "yNMhzAfGu1Gb",
+              "text": "캡처 · 아이콘 줄 + Pages + Layers (Figma 공식 도움말 이미지)",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "사이드바 레퍼런스 04 피그마 왼쪽 사이드바.png"
+              },
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "z41k8gB8omfr",
+              "text": "캡처 · 실제 Figma 파일의 레이어 패널 — 종류 아이콘, 보라색 컴포넌트, 올린 줄에만 잠금·숨김",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: 민규 서 화면 캡처 (Figma 파일 Ant UX Wireframes)",
+              "file": {
+                "target": "사이드바 레퍼런스 09 피그마 레이어 패널 실제 화면.png"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "dFiyQoGTB01M",
+          "text": "Webflow — Navigator",
+          "children": [
+            {
+              "id": "ClOwsHoIIYDh",
+              "text": "링크: https://help.webflow.com/hc/en-us/articles/33961320786451-Navigator (영상: https://www.youtube.com/watch?v=sP7qvl9_uDk)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "L3LtMoDhmpDI",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "Tl8ufbsGXP5J",
+                  "text": "웹페이지 요소 트리. 캔버스에서 누르기 어려운 요소(겹친 것, 숨긴 것)를 트리에서 고르는 용도",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "tIcO424BXl1R",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "y4BQMGkRW6kC",
+                  "text": "줄마다 요소 종류 아이콘 + 붙은 클래스 이름이 같이 보인다 — \"무엇인지\"와 \"어떤 모양인지\"가 한 줄에",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "nkVSMf6mH0QN",
+                  "text": "트리에서 순서를 바꾸면 캔버스에 바로 반영된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "jlpzzztxwECk",
+                  "text": "넓은 화면(1440px 이상)에서는 패널을 고정(pin)해 둘 수 있다. Z 키로 열고 닫는다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "sX1iU3Yr6YmS",
+                  "text": "트리에서 고른 줄(H1 Heading)이 캔버스에도 같은 이름표(\"H1 Heading\")로 붙는다 — 트리 이름과 본문 표시가 같은 글자라 바로 짝이 맞는다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                },
+                {
+                  "id": "sDFwdtx1S8Wb",
+                  "text": "글자 종류는 아이콘 대신 H1 · H2 · T · P 같은 짧은 글자로, 컴포넌트는 초록색으로 구분한다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "752DBX6LtY0S",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "VXbtPUxtuNOh",
+                  "text": "슬롯 줄에 이름 + 연결된 변수(예: Meeting.Date)를 같이 보여 주면 본문 칩과 바로 짝이 맞는다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "1LPnscqzqRMX",
+                  "text": "숨긴 블록 · 잠긴 블록도 트리에서는 고를 수 있게",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "CvY2zTF0OJ9T",
+              "text": "캡처 · Navigator — 종류별 글자 아이콘(H1 · T · P), 초록 컴포넌트, 고른 줄과 같은 이름표가 캔버스에",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Webflow University 영상 썸네일 https://www.youtube.com/watch?v=sP7qvl9_uDk",
+              "file": {
+                "target": "사이드바 레퍼런스 10 Webflow Navigator.jpg"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "acZAMjcjafEw",
+          "text": "Canva — 레이어 패널",
+          "children": [
+            {
+              "id": "Y8Az0Q5zkGND",
+              "text": "링크: https://www.canva.com/help/finding-and-arranging-layers/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "uU7PDcQBp7YH",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "AGy7XrtP8Pgz",
+                  "text": "디자인 요소 목록. 위치 → 레이어 탭에서 연다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "u8Q7RADnuaAR",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "cQ0M8Pst6o1Q",
+                  "text": "줄마다 이름 대신 그 요소의 작은 그림(썸네일)이 들어간다 — 이름을 몰라도 생김새로 찾는다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "ID6yXb2h3ogp",
+                  "text": "줄에 올리면 더보기 버튼이 나오고, 끌어서 순서를 바꾼다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "frYIykCVZqEa",
+                  "text": "줄 안에 요소가 실제 모양 그대로 들어간다 — 글자는 그 글꼴 그대로(Open House), 그림은 작은 사진. 이름표가 아예 없다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                },
+                {
+                  "id": "nqJKN1CIhNY9",
+                  "text": "위에 \"전체 / 겹친 것만\" 거르개가 있다 — 지금 고른 요소와 겹친 레이어만 남겨 본다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                },
+                {
+                  "id": "BNqtUw7VKqju",
+                  "text": "고른 줄(사진)과 캔버스의 고른 요소가 같은 보라 테두리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "o3JrN4TBJTFD",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "6nPyuW01eyJ0",
+                  "text": "슬롯 줄 오른쪽에 본문에 실제로 들어간 값 미리보기를 작게 붙인다 (예: 개최 일시 · Meeting.Date / 출석 101호 · 김철수)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "Sfzex44Ld9Lr",
+                  "text": "표 · 그림 블록은 작은 썸네일로 보여 주면 \"6구역 · 15인 출석부 매트릭스\"가 표라는 게 바로 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "X03S5gB4d7Zn",
+                  "text": "\"겹친 것만\" 처럼 \"지금 고른 블록의 형제 · 자식만\" 거르개를 두면 126줄을 한 번에 볼 필요가 없다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "cAjGIuoJA4Le",
+              "text": "캡처 · 레이어 패널 — 줄마다 실제 모양, 전체 / 겹친 것만 거르개",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Trainn 튜토리얼 https://trainn.co/tutorials/see-layers-in-canva/",
+              "file": {
+                "target": "사이드바 레퍼런스 11 Canva 레이어 패널.png"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "aqfqEgYaK6Y7",
+          "text": "Storybook — 사이드바 분류 체계 · 격리 시각화 · 살아있는 인터랙션 Docs",
+          "children": [
+            {
+              "id": "xHGNj904vNhx",
+              "text": "링크: https://storybook.js.org/ (공식 튜토리얼 모음: https://storybook.js.org/tutorials/)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793944737701,
+              "updatedAt": 1793944737701
+            },
+            {
+              "id": "pxZQF5XfA95s",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "SKbJmpXVFn1p",
+                  "text": "컴포넌트 안내 페이지를 빌드하는 전문 도구로서, 좌측 [계층형 사이드바] ↔ 우측 [Canvas / Docs] 뷰를 완벽하게 분리·연동한 모범 사례",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                },
+                {
+                  "id": "jZRCEOviSteE",
+                  "text": "단순 텍스트 설명서가 아니라, 실제 렌더링된 살아있는 UI 컴포넌트(Visual)와 사용자 조작(Interaction)을 한 페이지에 녹여내는 방식",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793944737701,
+              "updatedAt": 1793944737701
+            },
+            {
+              "id": "F9VVT0lldxnA",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "JMTH2XITXVlg",
+                  "text": "1. 사이드바 분류 체계 (Title Hierarchy): 'Category / Component / Variant Story' 3단계 슬래시(/) 네임스페이스로 수백 개 컴포넌트를 깔끔하게 폴딩",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                },
+                {
+                  "id": "UWk1sXNkmSBJ",
+                  "text": "2. Canvas vs Docs 탭 전환: UI만 격리해서 보고 테스트하는 'Canvas 뷰'와, 전체 사양과 API 속성표를 함께 읽는 'Docs 뷰'를 상단 탭 하나로 전환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                },
+                {
+                  "id": "Rvsa3WSgfSmR",
+                  "text": "3. 인터랙션 시뮬레이션 (Play Function): 사용자가 버튼을 누르거나 값을 입력했을 때 어떻게 반응하는지 브라우저에서 실시간으로 시각화",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                },
+                {
+                  "id": "NwKKPbfo2NEB",
+                  "text": "4. 상태 뱃지 (Status Badge): 사이드바 항목 옆에 작은 뱃지(Stable, Beta, Test Passed)를 달아 컴포넌트의 완성도/검증 상태를 즉시 파악",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793944737701,
+              "updatedAt": 1793944737701
+            },
+            {
+              "id": "XaWuivxl9DiN",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "fnUJzlt2vYP2",
+                  "text": "우리 문서 트리도 'Phase 1 스토리라인' ↔ 'Phase 2 서식 조율' ↔ 'Phase 3 슬롯 집필' 단계에 맞춰, 트리의 세부 노드 표시 밀도를 전환",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                },
+                {
+                  "id": "sK3SNkYtQeqL",
+                  "text": "슬롯 옆에 Storybook의 뱃지 문법을 차용해 [AI 초안 완료], [검증 통과], [필수 확인(Red)] 상태 칩을 장착",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                },
+                {
+                  "id": "eHQWp2Ssofv1",
+                  "text": "트리에서 슬롯을 선택했을 때 본문 해당 위치로 스크롤되는 동시에, 하단 인스펙터에 Storybook의 Controls 패널처럼 해당 슬롯의 입력값(Props)과 바인딩된 백데이터를 편집하는 툴바 연동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793944737701,
+              "updatedAt": 1793944737701
+            },
+            {
+              "id": "4MGk8eQ44R8A",
+              "text": "📚 Storybook 3대 핵심 튜토리얼 한눈에 보기",
+              "children": [
+                {
+                  "id": "Q3UozrO8sjRW",
+                  "text": "1. Intro to Storybook (기초): Component-Driven Development(상향식 격리 조립) 원리 및 화면 구축 가이드 — https://storybook.js.org/tutorials/intro-to-storybook/",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                },
+                {
+                  "id": "ZTTMN3RQlmw6",
+                  "text": "2. UI Testing Handbook (종합): 대규모 팀의 6대 UI 테스트 피라미드(시각, 상호작용 play(), 접근성, 회귀 방지) — https://storybook.js.org/tutorials/ui-testing-handbook/",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                },
+                {
+                  "id": "FvEOvbN2zjJ5",
+                  "text": "3. Visual Testing Handbook (비주얼 TDD): CSS 깨짐과 픽셀 오차를 100% 자동 검증하는 스냅샷 회귀 테스팅 — https://storybook.js.org/tutorials/visual-testing-handbook/",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793944737701,
+                  "updatedAt": 1793944737701
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793944737701,
+              "updatedAt": 1793944737701
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793944737701,
+          "updatedAt": 1793944737701
+        }
+      ],
+      "isFolded": true,
+      "nodeType": "h1",
+      "createdAt": 1793862095082,
+      "updatedAt": 1793862095082
+    },
+    {
+      "id": "O2OtVliU2knG",
+      "text": "레퍼런스 — 읽기 쉬움 (위계 · 지금 위치)",
+      "children": [
+        {
+          "id": "5ANCOl2hlh30",
+          "text": "VS Code — Outline · 경로 표시줄(Breadcrumbs) · 스티키 스크롤 · 미니맵",
+          "children": [
+            {
+              "id": "Xaqa8TqQ86Ai",
+              "text": "링크: https://code.visualstudio.com/docs/getstarted/userinterface",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "xV3j2kXo9YvP",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "sSfJnireGmcF",
+                  "text": "코드 파일의 구조 트리와, 지금 어디에 있는지 알려 주는 장치 네 가지",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "vSHVGruVNbSG",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "mlEpoBaMd3oc",
+                  "text": "Outline 의 \"Follow Cursor\": 커서가 있는 곳의 줄이 트리에서 저절로 선택된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "DTEOy5RHosq6",
+                  "text": "경로 표시줄: 편집기 맨 위에 파일 › 클래스 › 함수 경로. 한 칸을 누르면 같은 단계의 형제 목록이 펼쳐져 바로 옮겨 간다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "mAocOV7Hydl6",
+                  "text": "스티키 스크롤: 스크롤해서 부모 줄이 화면 밖으로 나가도 맨 위에 붙어 있다 — 지금 어느 부모 안인지 항상 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "J6ALJ4qXOTnA",
+                  "text": "종류마다 아이콘 + 색 (클래스 · 함수 · 변수 …)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "MXZ0KFpNi2Z4",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "4IJMTD5Tx9ek",
+                  "text": "스티키 스크롤을 트리 자체에 건다: \"6구역 · 15인 출석부 › 1행\" 을 스크롤해도 트리 위쪽에 붙여 둔다. 깊은 줄에서 길을 잃는 문제를 바로 푼다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "Rgs73zVrPKcL",
+                  "text": "경로 표시줄을 본문 위 툴바 아래에 한 줄로: 2페이지 › 3구역 › 건의요망 사항요지 본문",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "xDXKAh9cnT1p",
+              "text": "캡처 · Outline 패널",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "사이드바 레퍼런스 05 VS Code 아웃라인.png"
+              },
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "xaX409Ajr5pJ",
+              "text": "캡처 · 경로 표시줄 — 한 칸을 누르면 형제 목록",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "사이드바 레퍼런스 06 VS Code 경로 표시줄.png"
+              },
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "geZWNvyAlszl",
+              "text": "캡처 · 스티키 스크롤 — 부모 줄이 위에 붙어 있음",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "사이드바 레퍼런스 07 VS Code 스티키 스크롤.png"
+              },
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "FqJ6OzuIAIYn",
+              "text": "미니맵도 같은 문서에 있다 (오른쪽 세로 축소 지도). 우리 화면 하단 \"문서 미리보기\"와 같은 역할",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "QSBt8rq543rH",
+          "text": "Tiptap — Table of Contents 확장",
+          "children": [
+            {
+              "id": "muGnaMLcY8VA",
+              "text": "링크: https://tiptap.dev/docs/editor/extensions/functionality/table-of-contents (데모: https://embed.tiptap.dev/src/extensions/tableofcontents/react/)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "aycyYrGzAvC2",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "0LBo9wZAgN0i",
+                  "text": "본문 스크롤에 맞춰 목차가 따라 움직이는 기능. 우리 슬롯 편집기가 Tiptap 계열(maily.to)이라 그대로 붙일 수 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "ksGp7cNoxs8n",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "ICu4j5DqJQUx",
+                  "text": "이미 지나온 제목은 진하게, 아직 안 온 제목은 흐리게 — 본문 어디까지 봤는지가 목차에 보인다 (캡처 08)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "SwYUDJ3LGFF6",
+                  "text": "항목마다 isActive(지금 보는 곳) · isScrolledOver(지나온 곳) 값을 준다. 화면 표시는 직접 만든다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "2ChP001tn8HH",
+                  "text": "getHierarchicalIndexes 로 1. / 1.1 / 1.1.1 번호를 자동으로 붙인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "AUwXSeBMHVxq",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "5aU9elCOefFS",
+                  "text": "본문을 스크롤하면 트리의 해당 구역 줄이 강조되게 (스크롤 스파이)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "GcbWRFGuSQbu",
+                  "text": "번호 자동 붙이기로 \"1구역 · …\" 같은 이름에 손으로 번호를 넣지 않아도 된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "tmjoPM15kEET",
+              "text": "캡처 · 스크롤한 뒤 — 지나온 제목은 진하게, 남은 제목은 흐리게",
+              "children": [],
+              "isFolded": false,
+              "file": {
+                "target": "사이드바 레퍼런스 08 Tiptap 목차 스크롤 따라 강조.png"
+              },
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "ZwJRbjLHhyU0",
+          "text": "Logseq — 불릿 스레딩 (Bullet Threading)",
+          "children": [
+            {
+              "id": "qjMf4DunoaNh",
+              "text": "링크: https://github.com/pengx17/logseq-plugin-bullet-threading",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "eINMpysP2U6m",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "JNqx0T9sFC10",
+                  "text": "아웃라이너 플러그인. CSS 한 장(logseq-dev-theme 의 bullet_threading.css)으로 만든다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "2Uh10Gna7Lem",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "u2ZxO1ehdAYr",
+                  "text": "편집 중인 블록에서 맨 위 부모까지 이어지는 세로선 · 꺾은선을 색칠한다 — \"이 블록이 어디 밑인지\"가 선 하나로 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "EZrGyI5kceEp",
+                  "text": "선택 안 된 가지는 흐린 회색 안내선만",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "r9IghTWuywN8",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "d4XF8lzJtObp",
+                  "text": "우리 트리에 세로 안내선을 깔고, 선택한 줄의 조상 경로만 진하게 칠한다. CSS 만으로 가능해서 가장 싸다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "ctJsbApEayfO",
+                  "text": "우리 gaeddong-outliner 에도 그대로 적용해 볼 수 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "NUmFJw8s849b",
+              "text": "캡처 · 우리 문서 구조로 직접 만들어 본 것 — \"날인 101호 김철수\"를 고르면 1행 › 6구역까지 파란 선이 이어진다",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Logseq 데모(https://demo.logseq.com/)에 bullet_threading.css 를 얹어 직접 캡처, 2026-11-05",
+              "file": {
+                "target": "사이드바 레퍼런스 12 Logseq 불릿 스레딩.png"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            },
+            {
+              "id": "ZBPZyPZeXT1y",
+              "text": "캡처에서 보이는 것: 고른 줄의 조상 경로만 파란 꺾은선, 나머지 가지(1구역 · 2행)는 흐린 회색 안내선 — 깊이와 지금 위치가 선 하나로 같이 보인다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "xzmNxVdSgleM",
+          "text": "Workflowy — 확대(줌) · 경로",
+          "children": [
+            {
+              "id": "GMuZvzOgi9tU",
+              "text": "링크: https://workflowy.com/learn/zooming-in/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "U9m4C45JvFDc",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "xlRmAqZlpwBS",
+                  "text": "아웃라이너. 불릿을 누르면 그 항목이 화면 전체가 된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "bvrX97RDjMqE",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "1jmWemS4gVzJ",
+                  "text": "줌: 큰 가지 하나만 화면에 띄우고, 위에 경로(홈 › 상위 › 지금)를 남긴다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "qofAngls3iLz",
+                  "text": "접힌 항목은 불릿에 테두리 원이 생겨 \"안에 더 있다\"가 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "AKUpJ07L0LKc",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "pDiqUpIVtO9p",
+                  "text": "\"6구역 · 15인 출석부\" 같은 큰 구역을 트리 안에서 확대해 그 구역만 보기. Home(126) 옆 경로로 돌아오기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "N0IT7w2fRDKU",
+                  "text": "접힌 구역에 자식 개수 배지 (예: 1행 · 2칸)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "Tncbep1vLciv",
+              "text": "캡처 · Work 를 확대한 화면 — 위에 집 › Work 경로, 제목이 크게, 그 아래만 보인다",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Workflowy 데모(https://workflowy.com/demo/embed) 직접 캡처, 2026-11-05",
+              "file": {
+                "target": "사이드바 레퍼런스 13 Workflowy 확대와 경로.png"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            },
+            {
+              "id": "ZkOirFjpX5k8",
+              "text": "경로가 길어지면 가운데를 ··· 로 접고, 마우스를 올리면 숨은 단계가 펼쳐진다 (Workflowy 도움말)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793864399058
+        }
+      ],
+      "isFolded": true,
+      "nodeType": "h1",
+      "createdAt": 1793862095082,
+      "updatedAt": 1793862095082
+    },
+    {
+      "id": "3fEnJhvBzC86",
+      "text": "레퍼런스 — 문서 구조 전용 (페이지 · 제목)",
+      "children": [
+        {
+          "id": "T2AasFLt4VT0",
+          "text": "Microsoft Word — 탐색 창",
+          "children": [
+            {
+              "id": "vEtshYAU7CPc",
+              "text": "링크: https://support.microsoft.com/en-us/office/use-the-navigation-pane-in-word-394787be-bca7-459b-894e-3f8511515e55",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "mfxFvcDZBf2G",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "ttvKFZLbUKT4",
+                  "text": "긴 문서용 왼쪽 패널. 제목 / 페이지 / 검색 결과 세 탭",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "YQVzlllENwSk",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "R03zBwAfcpl2",
+                  "text": "지금 커서가 있는 제목이 트리에서 강조된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "ETsOYJbQkGAA",
+                  "text": "제목을 끌면 그 아래 내용까지 통째로 옮겨진다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "R7IJroXMT8bh",
+                  "text": "검색하면 결과가 있는 제목이 트리 안에서 노랗게 칠해진다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "LN8hUjJ86O14",
+                  "text": "페이지 탭은 썸네일, 제목 탭은 트리 — 둘을 탭으로 나눠 한 번에 하나만 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "Ka75zoatdlMm",
+                  "text": "제목에 오른쪽 클릭: 올리기 · 내리기 · 앞뒤에 새 제목 · 하위 제목 · \"제목과 내용 선택\" · 모두 펼치기/접기 · 보일 단계 고르기 — 트리에서 바로 문서 구조를 고친다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "OtKXcdERsjEt",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "i6oMXM5krUty",
+                  "text": "우리 \"페이지 썸네일\" 과 \"트리\" 를 위아래로 쌓지 말고 탭으로 나눈다 → 트리 칸이 두 배",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "U607DfHjKjZU",
+                  "text": "Search nodes 결과를 따로 목록으로 빼지 말고 트리 안에서 칠하기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "Ec0jv28ofTyM",
+                  "text": "트리 줄 오른쪽 클릭에 \"이 구역 본문 전체 선택\", \"구역 단계까지만 보기\" 를 넣는다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "eLYhKBvg4DgN",
+              "text": "캡처 · 제목 탭 — 지금 커서가 있는 제목(Implementation Plan)이 파랗게 칠해져 있다",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Microsoft 지원 문서 (위 링크)",
+              "file": {
+                "target": "사이드바 레퍼런스 14 Word 탐색 창 지금 제목 강조.png"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            },
+            {
+              "id": "m6jAEW8Odmkz",
+              "text": "캡처 · 페이지 탭 — 같은 패널에서 탭만 바꾸면 썸네일",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Microsoft 지원 문서 (위 링크)",
+              "file": {
+                "target": "사이드바 레퍼런스 15 Word 탐색 창 페이지 탭.png"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            },
+            {
+              "id": "H2ehlFIgTYXu",
+              "text": "캡처 · 오른쪽 클릭 메뉴 — 올리기 · 내리기 · 제목과 내용 선택 · 보일 단계",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Microsoft 지원 문서 (위 링크)",
+              "file": {
+                "target": "사이드바 레퍼런스 16 Word 탐색 창 우클릭 구조 편집.jpg"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "1KqaRQtMDXTK",
+          "text": "Google Docs — 문서 탭 · 개요",
+          "children": [
+            {
+              "id": "wgc9A9rj1yEz",
+              "text": "링크: https://support.google.com/docs/answer/6367684?hl=en",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "T5oucUdswvYJ",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "vyq3yyjPkDnC",
+                  "text": "문서 안의 여러 탭 + 탭마다 제목 개요",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "O2pgyLwrF1gp",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "KeDdKUx6UnWS",
+                  "text": "탭(페이지에 해당) 아래에 개요가 붙어 한 목록 안에서 두 단계를 본다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "Ihl60C1lVysB",
+                  "text": "커서가 있는 제목이 개요에서 강조된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "GX0Tk8enI1qo",
+                  "text": "탭 안에 하위 탭, 그 아래에 제목 개요까지 한 목록에 들어간다. 탭마다 아이콘(이모지)을 붙여 눈으로 먼저 찾는다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793864399058,
+                  "updatedAt": 1793864399058
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "7ya64MTuCIXZ",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "yeuKEZztbrJT",
+                  "text": "페이지를 트리의 맨 윗단으로 넣어 \"페이지 썸네일 목록\"과 \"Home 트리\"를 하나로 합치는 방법도 있다 (Word 처럼 탭으로 나누는 것과 둘 중 하나)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "UL0sv6r7MJVu",
+              "text": "캡처 · 탭 · 하위 탭 · 개요가 한 목록에 (움직이는 그림)",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Google Workspace Updates 블로그 https://workspaceupdates.googleblog.com/2024/10/tabs-in-google-docs.html",
+              "file": {
+                "target": "사이드바 레퍼런스 17 Google Docs 탭과 개요.gif"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "7hOmUO4C81nh",
+          "text": "Notion — 떠 있는 목차",
+          "children": [
+            {
+              "id": "qxZhfpESXUzp",
+              "text": "링크: https://www.notion.com/releases/2024-06-11",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "hQrJPvHdKk1r",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "HlosfmubQUt4",
+                  "text": "제목이 있는 페이지 오른쪽 가장자리에 붙는 목차 (2024년 6월 릴리스)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "NSAevWo5TXdw",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "gVjFMv3uT6lI",
+                  "text": "평소에는 오른쪽 끝에 짧은 가로줄만 보인다. 줄 길이가 제목 단계를 뜻한다 — 자리를 거의 안 차지한다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                },
+                {
+                  "id": "yW9wzad3sVmj",
+                  "text": "마우스를 올리면 제목 목록으로 펼쳐지고 누르면 그 위치로 간다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "xLe3GobNqH7q",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "rxdIGNVhcHiF",
+                  "text": "사이드바를 접었을 때도 본문 오른쪽에 이 가로줄 지도를 남겨 두면, 패널 없이도 지금 위치를 안다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793862095082,
+                  "updatedAt": 1793862095082
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793862095082,
+              "updatedAt": 1793862095082
+            },
+            {
+              "id": "HS5aIPh3VR2W",
+              "text": "캡처 · 오른쪽 가장자리 가로줄에 올리면 목차가 펼쳐진다 (움직이는 그림)",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Simple.ink 블로그 https://www.simple.ink/guides/the-new-floating-notion-table-of-content-or-page-navigation",
+              "file": {
+                "target": "사이드바 레퍼런스 18 Notion 떠 있는 목차.gif"
+              },
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793864399058
+        }
+      ],
+      "isFolded": true,
+      "nodeType": "h1",
+      "createdAt": 1793862095082,
+      "updatedAt": 1793862095082
+    },
+    {
+      "id": "j80VbsXFjv4a",
+      "text": "레퍼런스 — 이야기 뼈대 (영화 · 드라마 · 소설 · 게임 · 음악)",
+      "children": [
+        {
+          "id": "hudRrquWTnXb",
+          "text": "왜 넓혔나: 사이드바 트리는 본문의 색인이 아니라 Phase 1 에서 짠 뼈대 그 자체다. 영화 · 소설 쪽은 오래전부터 \"뼈대를 먼저 짜고, 전체 흐름을 보면서, 칸을 채운다\"를 해 왔다. 느낌을 보려고 모은 것이라 매체를 가리지 않았다",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793865875980
+        },
+        {
+          "id": "uUgLWiwS4VH6",
+          "text": "드라마 작가실 보드 · Final Draft — Beat Board · Story Map",
+          "children": [
+            {
+              "id": "tIbpzS2qA2Nu",
+              "text": "링크: https://www.finaldraft.com/blog/breakdown-your-script-with-story-maps-and-beatboard",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "EZn4x4bZKtoZ",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "o2wwBbVVx21S",
+                  "text": "각본을 쓰기 전에 장면(비트)을 카드로 벽에 붙여 흐름을 짜는 방식. 미국 드라마 작가실의 코르크 보드를 프로그램 안으로 옮긴 것",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "KXWMR1AM4Pzm",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "dkrYYbGRgJfM",
+                  "text": "실제 작가실 보드: 줄 하나가 막 하나(TEASER · ACT I~IV), 그 줄에 카드가 왼쪽에서 오른쪽으로. 막마다 카드 수가 달라 어느 막이 두껍고 얇은지가 멀리서도 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "YPkAT7hFr6uq",
+                  "text": "Beat Board: 상자에 비트를 쓰고 색을 칠하고 끌어서 순서를 바꾼다. 상자에 제목만 · 본문만 · 둘 다 보이게 고른다 (Final Draft 13)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "sOgDOJSEWG3D",
+                  "text": "Story Map: Beat Board 위를 가로지르는 시간 축(각본 쪽수). 비트 상자를 위로 끌어 놓으면 그 쪽에 연결된다 — 뼈대 카드와 본문 위치가 짝지어진다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "nzaU7uPcrvc2",
+                  "text": "Structure Points: 막이나 큰 전환점이 와야 할 자리에 꽂는 핀",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "Df7f51hicohp",
+                  "text": "Outline Editor (Final Draft 12~): 카드 벽과 각본 사이를 잇는 다리 역할의 아웃라인 화면",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "FkthUYrQRhUR",
+                  "text": "구조 양식을 깔고 시작할 수 있다: Save the Cat · 댄 하먼 Story Circle 등",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "TSBsn0bC53mY",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "FC0MuUpleKrA",
+                  "text": "사이드바 맨 위나 본문 위에 가로 한 줄 \"구역 지도\" — 구역마다 분량만큼의 막대. 뼈대가 본문 어디쯤에 얼마나 차지하는지가 한 줄로 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "QH3Z6NqBqgLn",
+              "text": "캡처 · 실제 작가실 보드 — 막(TEASER · ACT I~IV)마다 카드 한 줄",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Final Draft 블로그 https://www.finaldraft.com/blog/breakdown-your-script-with-story-maps-and-beatboard",
+              "file": {
+                "target": "사이드바 레퍼런스 22 작가실 보드 막마다 카드 한 줄.jpg"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793866085055
+        },
+        {
+          "id": "tzl2IbypdDwH",
+          "text": "Arc Studio — 같은 이야기를 세 화면으로 (Script · Beats · Outline)",
+          "children": [
+            {
+              "id": "HBzqH79hHRLo",
+              "text": "링크: https://help.arcstudiopro.com/guides/the-plot-board · 화면: https://www.arcstudiopro.com/features/story-development",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "rx0T571C5vzc",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "cF3qkSiEbM81",
+                  "text": "클라우드 각본 프로그램. Plot Board 의 세로 칸은 막, 카드는 비트",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "NqEbGTzhgn2b",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "j8K5C2xe1MEI",
+                  "text": "맨 위 탭 세 개 Script / Beats / Outline — 하나의 이야기를 각본 · 카드판 · 아웃라인으로 바꿔 본다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "7xKPf1eJCZcx",
+                  "text": "비트와 그 비트에 해당하는 각본 부분이 이어져 있어, 비트를 고치면 Plot Board 도 따라 바뀐다 (도움말). 각본을 쓰면서 아웃라인을 옆에 띄워 둔다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "ATxYmZ54IQFW",
+                  "text": "카드 왼쪽 가장자리 색 = 이야기 줄기(Storylines). 오른쪽 패널에 줄기 목록과 등장인물",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "3UvV20G1pPsU",
+                  "text": "카드 한 장 = 제목 + 두세 줄 시놉 + 등장인물 동그라미 — 이름 한 줄이 아니라 \"무슨 일이 일어나는지\"가 카드에 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "Qhw1vbvpBSYn",
+                  "text": "시즌 전체를 짠 뒤 에피소드마다 각본으로 나눈다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "KUQkmfPArgNl",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "BegoorUMf43B",
+                  "text": "\"Phase 1 아웃라인 · 사이드바 트리 · 본문은 같은 것을 다르게 보는 화면\"이라는 우리 생각과 가장 가깝다. 상단 Phase 탭이 Arc 의 Script / Beats / Outline 탭과 같은 자리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "x6AQsXIlegWX",
+              "text": "캡처 · Beats 화면 — 위에 Script · Beats · Outline 탭, 막마다 세로 칸, 카드 왼쪽 색이 이야기 줄기",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Arc Studio 공식 사이트 https://www.arcstudiopro.com/features/story-development",
+              "file": {
+                "target": "사이드바 레퍼런스 23 Arc Studio Beats 화면.webp"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793866085055
+        },
+        {
+          "id": "b41qpW8QzYUO",
+          "text": "구조 양식 — Save the Cat 15비트",
+          "children": [
+            {
+              "id": "ouvbhtjmgRDQ",
+              "text": "링크: https://filmdaft.com/save-the-cat-beat-sheet/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "HwROBQfx0sWZ",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "thb6Xsk4sA74",
+                  "text": "블레이크 스나이더가 만든 15칸짜리 이야기 뼈대. 110쪽 각본을 기준으로 칸마다 들어갈 자리가 정해져 있다 (예: 촉발 사건 10% 근처 · 중간점 50% · 모든 걸 잃는 순간 75%). 출처마다 쪽수가 조금씩 다르다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "4skdjgIzmcCk",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "V02y7rwGRArR",
+                  "text": "빈 칸 15개짜리 뼈대가 먼저 있고 작가는 칸을 채운다. 칸마다 \"어디쯤 · 얼마나\"가 함께 정해져 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "M2jIFvmnRZxU",
+                  "text": "Final Draft · Arc Studio 모두 이런 양식을 카드판에 깔고 시작하게 한다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "SPvLcHO4yMkS",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "Mhd7M1VlQaGC",
+                  "text": "Phase 2 \"서식에 이미 든 뼈대\"와 같은 모양. 서식에서 온 뼈대는 칸마다 목표 위치 · 분량을 같이 들고 올 수 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793865875980
+        },
+        {
+          "id": "zMDPIRysD3Gd",
+          "text": "StudioBinder — 스트립보드 (촬영 순서 판)",
+          "children": [
+            {
+              "id": "DwatV7heKgsa",
+              "text": "링크: https://www.studiobinder.com/blog/shooting-schedule-stripboard/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "lx8UzrCk3hyc",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "XqSoYxgalU2J",
+                  "text": "장면 하나를 가는 띠 하나로 만들어 판에 꽂는 촬영 계획표. 원래는 종이 띠였고 지금은 프로그램",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "fZTsYDY8ROg5",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "wuxbtsyoJjjb",
+                  "text": "띠 색이 장면 성격을 말한다: 실내/실외 × 낮/밤. 멀리서 봐도 색 띠만으로 영화 전체의 리듬이 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "9n7VV031nm4Y",
+                  "text": "각본을 불러오면 장면마다 띠가 저절로 생긴다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "a9Sh5wIQ3hkD",
+                  "text": "띠 한 줄에 장면 번호 · 장소 · 한 줄 요약 · 배우 번호 · 분량(1쪽을 8로 나눈 단위)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "9Y9TichOL5ht",
+                  "text": "띠를 끌어 순서를 바꾸고, 촬영일 구분 띠를 사이에 끼운다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "78e1Lsqbbpyx",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "Yln4uA9XENYI",
+                  "text": "트리 줄을 \"얇은 띠\"로 보고 색 = 구역 종류나 채움 상태로 칠하면, 126줄을 접어도 색 띠로 전체 리듬이 남는다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "5ZeVdrBsaLAf",
+              "text": "캡처 · 종이 스트립보드 — 색 띠만으로 전체 리듬이 보인다 (영화 The Life Aquatic 한 장면)",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: StudioBinder 블로그 https://www.studiobinder.com/blog/shooting-schedule-stripboard/",
+              "file": {
+                "target": "사이드바 레퍼런스 24 종이 스트립보드.jpg"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            },
+            {
+              "id": "85Y9CK66Jg1Z",
+              "text": "캡처 · 프로그램 스트립보드 — 장면 한 줄 = 띠 하나, 색은 실내외 · 낮밤",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: StudioBinder 블로그 (위 링크)",
+              "file": {
+                "target": "사이드바 레퍼런스 25 StudioBinder 스트립보드 색 띠.png"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793866085055
+        },
+        {
+          "id": "aGenZRa1TMnn",
+          "text": "Storyboarder — 장면 그림 줄 + 시간 축",
+          "children": [
+            {
+              "id": "dlEyvrNT9uph",
+              "text": "링크: https://wonderunit.com/storyboarder/",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "NrSww3BBosKl",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "H2eWexb9Dpca",
+                  "text": "무료 오픈소스 스토리보드 프로그램 (Wonder Unit)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "KHHfqTcoOVVQ",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "sN2m6qNUkfIe",
+                  "text": "가운데 지금 장면을 크게, 바로 아래에 모든 장면 썸네일이 한 줄로, 그 아래에 시간 축",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "6jNjZEKEbtoS",
+                  "text": "오른쪽에 지금 장면의 번호(Shot 4A) · 길이 · 대사 · 행동 · 메모 칸이 정해져 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "oOQI2lvmUD0D",
+                  "text": "장면마다 길이를 정해 움직이는 콘티(애니매틱)로 바로 돌려 본다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "EI6SMwPHgNAl",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "g4nnDt4UVsYI",
+                  "text": "\"지금 채우는 칸은 크게, 전체는 아래 띠로 작게\" 배치. 슬롯마다 정해진 입력 칸(대사 · 행동처럼)을 오른쪽에",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "ffIYQSWjMwvK",
+              "text": "캡처 · 지금 장면은 크게, 아래에 전체 장면 썸네일 한 줄 + 시간 축, 오른쪽에 장면 정보 칸",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Wonder Unit 공식 사이트 https://wonderunit.com/storyboarder/",
+              "file": {
+                "target": "사이드바 레퍼런스 26 Storyboarder 지금 장면과 썸네일 줄.jpg"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793866085055
+        },
+        {
+          "id": "PE8izxktKyKr",
+          "text": "Scrivener — 바인더 · 코르크보드 · 아웃라이너",
+          "children": [
+            {
+              "id": "fm97IKtl0eCY",
+              "text": "링크: https://www.literatureandlatte.com/scrivener/overview · 상태 표시: https://www.literatureandlatte.com/blog/three-ways-to-mark-the-status-of-items-in-your-scrivener-project",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "cIC6QQU6SN6g",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "plt3EXAV6lld",
+                  "text": "장편 소설 · 논문용 집필 프로그램. 왼쪽 바인더(트리)가 원고 그 자체",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "vPahS2iBtjkQ",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "tYPpD4OD7wfx",
+                  "text": "바인더의 폴더 · 문서가 곧 원고의 장 · 절. 내보낼 때(Compile) 이 트리 순서대로 원고 한 권이 된다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "NVaD2183jXMf",
+                  "text": "같은 폴더를 코르크보드로 열면 하위 문서는 색인 카드(제목 + 시놉), 하위 폴더는 카드 묶음",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "bouDvAqN0Ov8",
+                  "text": "아웃라이너로 열면 같은 항목이 표가 된다: 제목과 시놉 · 섹션 종류 · 완료 체크. 아래에 본문",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "HYThjH6iYlzt",
+                  "text": "카드의 시놉과 옆 패널의 시놉은 같은 값 — 어느 쪽에서 고쳐도 같다. 코르크보드에서 순서를 바꾸면 바인더도 바뀐다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "4ge9s6FYWng0",
+                  "text": "라벨은 색(카드 · 줄을 물들임), 상태는 카드 위에 찍는 도장(초고 · 수정본)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "gpdemYC4W1Tl",
+                  "text": "섹션 종류(장 폴더 · 섹션 …)에 따라 내보낼 때 서식이 붙는다 — 뼈대와 서식이 따로 있다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "zkIhlSy5y7Kc",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "hPytr8iL6mjd",
+                  "text": "사이드바 트리 = 바인더. 같은 트리를 카드판 · 표로 바꿔 보는 스위치, 줄마다 시놉 한 줄과 상태 도장",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "F56sGe5fPkhj",
+              "text": "캡처 · 코르크보드 — 문서마다 색인 카드(제목 + 시놉), 라벨 색으로 물든 카드",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Literature & Latte 공식 사이트 https://www.literatureandlatte.com/scrivener/overview",
+              "file": {
+                "target": "사이드바 레퍼런스 27 Scrivener 코르크보드.jpg"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            },
+            {
+              "id": "QM6hBVNeNvOK",
+              "text": "캡처 · 왼쪽 바인더 + 위 아웃라이너(시놉 · 섹션 종류 · 완료) + 아래 본문",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Literature & Latte 공식 사이트 (위 링크)",
+              "file": {
+                "target": "사이드바 레퍼런스 28 Scrivener 바인더와 아웃라이너.jpg"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793866085055
+        },
+        {
+          "id": "A0RUXzb2dETt",
+          "text": "Plottr — 타임라인 격자",
+          "children": [
+            {
+              "id": "Q3bm8etpLEv9",
+              "text": "링크: https://docs.plottr.com/article/54-timeline-overview",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "z7HM08J2Mu1E",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "MA9UPVXsWm3j",
+                  "text": "소설 플롯 짜기 프로그램",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "zenGCK7oK76F",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "MPiKXJXigFOI",
+                  "text": "가로 = 챕터, 세로 = 이야기 줄기(본 줄거리 · 인물별), 만나는 칸에 장면 카드",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "I6rxgOp3tc18",
+                  "text": "줄기마다 색이 있고 빈 칸이 빈 채로 보인다 — \"이 인물은 3~5장에 안 나온다\"가 눈에 들어온다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "cZwP7OjWHdXH",
+                  "text": "같은 칸에 카드가 여러 장이면 겹쳐 쌓인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "EmpnhLF4ohyA",
+                  "text": "챕터라는 이름을 Scene · Beat 로 바꿔 쓸 수 있다. Word · Scrivener 로 내보낸다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "lwsmcBYFWG7V",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "utVWgcYDaz0N",
+                  "text": "세로 한 줄짜리 트리를 두 축 표로 펼쳐 보는 보기. 예: 가로 = 페이지, 세로 = 참조 레이어나 담당자",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "JXsOX3a9zh81",
+              "text": "캡처 · 가로 챕터 × 세로 이야기 줄기, 만나는 칸에 장면 카드",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: Plottr 도움말 https://docs.plottr.com/article/54-timeline-overview",
+              "file": {
+                "target": "사이드바 레퍼런스 29 Plottr 타임라인 격자.png"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793866085055
+        },
+        {
+          "id": "ViWaKmGkVBGj",
+          "text": "articy:draft — 흐름 상자 안으로 들어가기 (게임 대사 · 퀘스트)",
+          "children": [
+            {
+              "id": "b87DuIVfSQy1",
+              "text": "링크: https://www.articy.com/en/improve-project-structure-with-nesting/ · 도움말: https://www.articy.com/help/adx/UI_View_Flow.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "Rz6bTdHhF6kY",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "8xUg8qohNYv0",
+                  "text": "게임 이야기 · 대사 설계 도구. 이야기 흐름을 상자와 화살표로 그린다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "50VqaVNcarm0",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "lFzAP8n7ygVk",
+                  "text": "맨 위 단계에서는 하루(Day 1, Day 2 …)가 색 상자로 화살표를 따라 이어진다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "Q7kjxghpWnQy",
+                  "text": "상자 안으로 들어가면(Enter · 더블클릭) 그 안의 대사 흐름이 나오고, 바깥 상자 테두리가 점선으로 둘러싼다. Ctrl+Backspace 로 다시 나온다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "C75Nvy3vJGwN",
+                  "text": "안에 내용이 있는 상자는 머리에 삼각형 두 개 표시",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "MVJTjshJUeJl",
+                  "text": "왼쪽에 같은 구조의 트리, 위에 지금 위치 경로(Nesting › Flow › Day 1)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "G3KVSalPWrbn",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "0Ldz8x8FldfM",
+                  "text": "Workflowy 확대와 같은 원리를 흐름 그림으로. 큰 구역은 상자, 들어가면 그 안의 슬롯들",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "XuG8Lf7l7AOe",
+              "text": "캡처 · 맨 위 단계 — 하루마다 색 상자가 화살표로 이어진다",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: articy 블로그 https://www.articy.com/en/improve-project-structure-with-nesting/",
+              "file": {
+                "target": "사이드바 레퍼런스 30 articy 맨 위 흐름.jpg"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            },
+            {
+              "id": "i2SLOWKdjHn8",
+              "text": "캡처 · Day 1 상자 안으로 들어간 화면 — 대사 흐름, 왼쪽 트리, 위 경로",
+              "children": [],
+              "isFolded": false,
+              "note": "출처: articy 블로그 (위 링크)",
+              "file": {
+                "target": "사이드바 레퍼런스 31 articy 상자 안으로 들어간 화면.jpg"
+              },
+              "createdAt": 1793866085055,
+              "updatedAt": 1793866085055
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793866085055
+        },
+        {
+          "id": "IiqP9AGpbW7t",
+          "text": "Twine — 스토리 맵",
+          "children": [
+            {
+              "id": "X0TLq3dMaakC",
+              "text": "링크: https://twinery.org/reference/en/editing-stories/navigating.html",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "MFhCeW2KNzDo",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "qHRPj81vILZ6",
+                  "text": "갈래가 있는 인터랙티브 소설을 만드는 무료 도구",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "vcw9XkvzWkly",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "VZse7GHkdfDt",
+                  "text": "글 조각(passage) 하나가 카드, 이어지는 링크가 화살표",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "mTcsstbhIMdj",
+                  "text": "없는 조각으로 가는 링크는 빨간 선 + 진입 금지 표시 — 깨진 곳이 지도에서 바로 보인다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "HkS5wLjw35vt",
+                  "text": "시작 조각에 초록 로켓 표시. \"화면에 다 맞추기\" 버튼, P 키로 조각 찾아가기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "Sh9cX2VDWzOA",
+                  "text": "지도 위 배치는 마음대로 바꿔도 결과물에는 영향이 없다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "lL4Oj0oIptiQ",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "PCmM1Hzd1PX2",
+                  "text": "빈 슬롯 · 연결이 끊긴 변수를 트리에서 빨갛게 표시",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793865875980
+        },
+        {
+          "id": "ZS9roK5xmQlT",
+          "text": "Logic Pro — 편곡 트랙 (노래의 구역)",
+          "children": [
+            {
+              "id": "JRCzs8PVM93a",
+              "text": "링크: https://support.apple.com/ko-kr/guide/logicpro/lgcpf7c0c09c/mac",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "76dXJv2jZrxl",
+              "text": "무엇을 참고하나",
+              "children": [
+                {
+                  "id": "ods83NGMvwZI",
+                  "text": "노래를 인트로 · 벌스 · 코러스 같은 구역으로 나누는 맨 위 한 줄",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "kW1f8qp5FmUR",
+              "text": "킬링 포인트",
+              "children": [
+                {
+                  "id": "bhS0wAuB576I",
+                  "text": "구역 막대를 더하면 순서대로 Intro · Verse … 이름이 붙고 기본 8마디",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "zeVBRDADJC4L",
+                  "text": "구역 막대를 끌면 그 아래 모든 소리가 통째로 따라 움직인다. 막대를 다른 막대 위에 놓으면 둘이 자리를 바꾼다. Option 을 누르고 끌면 복사",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                },
+                {
+                  "id": "F97m5T2EzXCP",
+                  "text": "일반 마커는 이름표일 뿐 내용을 옮기지 못한다 — 편곡 마커만 내용을 거느린다",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "Pfm07vNhyWCJ",
+              "text": "우리 사이드바에 옮기면",
+              "children": [
+                {
+                  "id": "hQlihHHWywiH",
+                  "text": "구역 줄을 \"이름표\"가 아니라 \"쥐면 내용이 따라오는 손잡이\"로. Word 탐색 창에서 제목을 끌면 내용이 따라오는 것과 같은 원리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793865875980,
+                  "updatedAt": 1793865875980
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793865875980
+        },
+        {
+          "id": "3ctiXLydCduz",
+          "text": "공통으로 보이는 것",
+          "children": [
+            {
+              "id": "bZvQLX8AElY5",
+              "text": "뼈대 한 칸 = 카드 한 장 (제목 + 두세 줄 시놉). 이름 한 줄이 아니다 — Final Draft · Arc Studio · Scrivener · Plottr",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "Fg6XTiZFPQK4",
+              "text": "같은 뼈대를 여러 화면으로 바꿔 본다: 카드판 / 아웃라인(표) / 본문 — Arc Studio(Script · Beats · Outline) · Scrivener(바인더 · 코르크보드 · 아웃라이너)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "mTrc0cTdcPr6",
+              "text": "뼈대와 본문이 이어져 있다: 한쪽을 옮기거나 고치면 다른 쪽도 따라간다 — Arc Studio · Scrivener · Logic Pro · Final Draft Story Map",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "4Vhnr584di1m",
+              "text": "색은 \"줄의 종류\"보다 \"이야기 줄기 · 장면 성격\"을 칠한다 — Plottr · Arc Studio(줄기), StudioBinder(실내외 · 낮밤), Scrivener(라벨)",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "t5es78ZdG4Z2",
+              "text": "전체는 가로 축 위에 작게, 지금 것은 크게 — Story Map · Storyboarder · Logic Pro · 작가실 보드",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "MAthLs3EmDAU",
+              "text": "구조 양식은 빈 칸 뼈대이고, 칸마다 위치 · 분량이 정해져 있다 — Save the Cat",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            },
+            {
+              "id": "zB4NRE3MFp8t",
+              "text": "각자만의 것: Plottr 은 두 축 격자 · articy 는 상자 안으로 들어가기 · Twine 은 깨진 연결을 빨갛게 · StudioBinder 는 얇은 색 띠로 수백 장면",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793865875980,
+              "updatedAt": 1793865875980
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793865875980
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1793865875980,
+      "updatedAt": 1793866894715
+    },
+    {
+      "id": "MVOwCRoysIo6",
+      "text": "한눈에 비교 — 우리 사이드바에 무엇을 먼저 넣을까",
+      "children": [
+        {
+          "id": "bXlvFMGVP7uu",
+          "text": "정한 순서와 이유: 지금 가장 아픈 것이 \"어느 부분인지 모르겠다\"라서 짝 맞추기를 먼저, 그다음이 \"보기 어렵다\"",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "quote",
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "Fqv2iMxDGzR5",
+          "text": "1. 트리 ↔ 본문 짝 맞추기 — 트리에 올리면 본문 테두리, 본문 누르면 트리 펼침 · 스크롤 (WordPress · Figma)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "Gtj8yWUkNc2x",
+          "text": "2. 줄 종류를 아이콘 + 색으로 — 구역 / 블록 / 행 / 슬롯. 슬롯은 따로 눈에 띄는 색 (Figma · WordPress · Webflow)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "AP5kqTkCW3eE",
+          "text": "3. 지금 위치 붙잡기 — 조상 줄 위쪽 고정(스티키) 또는 아래쪽 경로 한 줄, 조상 안내선 칠하기 (VS Code · WordPress · Logseq)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "2hHegihpipVd",
+          "text": "4. 이름 옆에 본문 값 미리보기 — 개최 일시 · Meeting.Date (Canva · Webflow)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "M62FZ9VUU47x",
+          "text": "5. 자리 넓히기 — 페이지 썸네일과 트리를 탭으로 나누거나 접기, \"구역만 보기\" 탭 (Word · WordPress · Notion)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "Mr8q900XBBWr",
+          "text": "6. 본문 스크롤에 트리가 따라오기 — 스크롤 스파이 (Tiptap · Google Docs)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1793862095082,
+      "updatedAt": 1793862095082
+    },
+    {
+      "id": "HeZ7G1k5HJ8K",
+      "text": "만들 때 볼 것 — 구현 · 표준",
+      "children": [
+        {
+          "id": "8LmHG3zkLnUl",
+          "text": "react-arborist — VS Code 같은 트리, 가상 스크롤, 끌어 놓기. https://github.com/brimdata/react-arborist (데모: https://react-arborist.netlify.app/ — 3만 줄 데모 있음)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "qwKGn9PCU6gt",
+          "text": "Headless Tree — 모양 없이 동작만 주는 트리 (react-complex-tree 후속). https://headless-tree.lukasbach.com/",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "CWbdQKV0SYbx",
+          "text": "WAI-ARIA 트리 뷰 패턴 — 키보드 규칙의 기준 (← → 펼치기 · 접기, 글자 입력으로 이동). https://www.w3.org/WAI/ARIA/apg/patterns/treeview/",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "IIkIV3qVAMEB",
+          "text": "Tiptap Table of Contents — 위 레퍼런스 참고. 스크롤 스파이를 직접 만들지 않아도 된다",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        },
+        {
+          "id": "DeGyBvYiPQOp",
+          "text": "검색할 때 쓸 말: \"layers panel hover highlight canvas\", \"outline view follow cursor\", \"sticky scroll tree\", \"bullet threading\", \"scroll spy table of contents\", \"list view block editor\"",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793862095082,
+          "updatedAt": 1793862095082
+        }
+      ],
+      "isFolded": true,
+      "nodeType": "h1",
+      "createdAt": 1793862095082,
+      "updatedAt": 1793862095082
+    },
+    {
+      "id": "aUc1nqzJRfH5",
+      "text": "곁가지 — Figma Specs (캔버스 위 문서 + 에이전트)",
+      "children": [
+        {
+          "id": "bdj2dh8xVF9X",
+          "text": "무엇인가: Figma 안에서 쓰는 마크다운 문서. 2026-10-15 Config 에서 오픈 베타. 파일 목록의 Spec 또는 figma.com/spec/new, 디자인 파일 안에서는 D 키",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "Z8aYk1w3SI5C",
+          "text": "링크: https://www.figma.com/blog/introducing-figma-specs/ · 도움말: https://help.figma.com/hc/en-us/articles/44049066011671-Guide-to-Specs-in-Figma",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "ZN4uLIdloBhh",
+          "text": "사이드바와 상관있는 점",
+          "children": [
+            {
+              "id": "rM5jJRvMO1uW",
+              "text": "문서 안에 프레임 · FigJam · 캔버스 노드를 살아 있는 채로 넣는다 — 글과 디자인이 나란히. 우리 \"본문 블록 ↔ 참조 레이어\" 와 같은 문제를 푼다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            },
+            {
+              "id": "FdLDKarRV6mJ",
+              "text": "캔버스와 문서 사이로 끌어서 오간다. 끌어 낸 뒤에도 Figma 속성이 남는다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            },
+            {
+              "id": "aqqWDivPv7N7",
+              "text": "Figma 에이전트가 코멘트를 읽고 답한다. MCP 로 GitHub · Hex 같은 바깥 자료를 끌어와 문서를 채운다 — 우리 \"에이전트 레퍼런스 코워크\" 와 겹친다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            },
+            {
+              "id": "QvGwaHC0v6Ra",
+              "text": "Figma MCP 에 붙은 코딩 에이전트(Claude Code 포함)가 figma-spec 스킬로 읽고 고칠 수 있다",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1793864399058,
+              "updatedAt": 1793864399058
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "qbLjibWcMRd6",
+          "text": "볼트 노트를 넣었을 때: 프론트매터를 속성으로 읽지 못하고 본문 글자로 풀어 버린다 (유형 · 구역이 한 줄로 붙고, 커버의 위키링크도 글자 그대로). 옮길 때는 프론트매터를 빼고 본문만",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "3x12XaV3BYUO",
+          "text": "캡처 · GitHub 커넥터로 기술 스펙 쓰기를 시키는 장면",
+          "children": [],
+          "isFolded": false,
+          "note": "출처: Figma 블로그 (위 링크)",
+          "file": {
+            "target": "사이드바 레퍼런스 19 Figma Specs GitHub로 기술 스펙 쓰기.png"
+          },
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "EuEYezYWtVDT",
+          "text": "캡처 · 컴포넌트 옆에 스펙 문서를 두고 에이전트에게 컴포넌트를 만들게 하는 장면",
+          "children": [],
+          "isFolded": false,
+          "note": "출처: Figma 블로그 (위 링크)",
+          "file": {
+            "target": "사이드바 레퍼런스 20 Figma Specs 컴포넌트 옆 문서.png"
+          },
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "sHcrHngFqCUP",
+          "text": "캡처 · 볼트 노트를 Spec 에 넣은 화면 — 프론트매터가 본문으로 풀림",
+          "children": [],
+          "isFolded": false,
+          "note": "출처: 민규 서 화면 캡처",
+          "file": {
+            "target": "사이드바 레퍼런스 21 Figma Specs 볼트 노트 넣은 화면.png"
+          },
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        }
+      ],
+      "isFolded": true,
+      "nodeType": "h1",
+      "createdAt": 1793864399058,
+      "updatedAt": 1793864399058
+    },
+    {
+      "id": "WA9KqMsdEWDX",
+      "text": "이번 조사에서 못 한 것",
+      "children": [
+        {
+          "id": "MNkiv63Ym1IA",
+          "text": "직접 캡처: WordPress · Tiptap · Logseq · Workflowy — 로그인 없이 열리는 실제 화면 (2026-11-05). WordPress 캡처 아래쪽 검은 막대는 Playground 자체 도구 막대라 무시",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "88xl6FEiMEaW",
+          "text": "공식 이미지: Figma 도움말 · VS Code 문서 · Microsoft 지원 문서 · Google Workspace 블로그 · Webflow University 영상 썸네일 · Figma 블로그",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "JPEhZbyBoZeo",
+          "text": "블로그 · 튜토리얼 이미지: Canva(Trainn), Notion(Simple.ink). 출처는 캡처 노드의 메모에 적었다",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "0FzGa091B29x",
+          "text": "Google Docs · Notion 캡처는 움직이는 GIF 라 아웃라인에서 바로 재생된다",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "aFIwzmNuXYhu",
+          "text": "\"지금 화면\"에서 걸리는 것은 캡처 한 장으로 판단했다. 마우스를 올렸을 때 본문 표시가 정말 없는지는 실제 앱에서 확인 필요",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793864399058,
+          "updatedAt": 1793864399058
+        },
+        {
+          "id": "j8sKNNDU8Z28",
+          "text": "이야기 뼈대 갈래 (2026-11-05): Save the Cat · Twine · Logic Pro 는 캡처 없음 (Logic 공식 도움말 그림은 빈 트랙뿐). Final Draft 는 프로그램 화면 대신 블로그의 실제 작가실 보드 사진",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793865875980,
+          "updatedAt": 1793865875980
+        },
+        {
+          "id": "3C9vNC299RUf",
+          "text": "이야기 뼈대 캡처 22~31 (2026-11-05): 모두 공식 사이트 · 공식 블로그 · 도움말 이미지. 출처는 캡처 노드의 메모에 적었다",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793866085055,
+          "updatedAt": 1793866085055
+        },
+        {
+          "id": "btdztGGpMLOp",
+          "text": "채움 상태 갈래 (2026-11-05): 33 GOV.UK 는 예시 화면 직접 캡처, 32 · 34~38 은 공식 도움말 · 사이트 이미지. DocuSign 은 화면 있는 안내서가 보안 확인에 막혀 글만, VS Code · Word 는 맞는 공식 그림이 없어 글만. 한글 누름틀 안내문 모양은 확인 못 함",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1793867009099,
+          "updatedAt": 1793867009099
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1793862095082,
+      "updatedAt": 1793867009099
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1793862095082,
+  "updatedAt": 1793946536275
+}

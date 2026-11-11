@@ -46,9 +46,9 @@
                                   "updatedAt": 1793789711908
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793789642701,
-                              "updatedAt": 1793789674939,
-                              "isFolded": true
+                              "updatedAt": 1793789674939
                             },
                             {
                               "id": "0FAHOEAM8Z9V",
@@ -62,15 +62,15 @@
                                   "updatedAt": 1793789798282
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793789712039,
-                              "updatedAt": 1793789717539,
-                              "isFolded": true
+                              "updatedAt": 1793789717539
                             }
                           ],
-                          "createdAt": 1793789624387,
-                          "updatedAt": 1793789660512,
+                          "isFolded": true,
                           "note": "\"어떤 순서로 말을 꺼내고 무엇을 강조했는가?\"",
-                          "isFolded": true
+                          "createdAt": 1793789624387,
+                          "updatedAt": 1793789660512
                         },
                         {
                           "id": "7bVnGmuEVsDr",
@@ -91,10 +91,10 @@
                               "updatedAt": 1793790114658
                             }
                           ],
-                          "createdAt": 1793789854166,
-                          "updatedAt": 1793790382112,
+                          "isFolded": true,
                           "note": "\"이 복잡하고 난해한 상황을 어떻게 우회하거나 단순화했는가?\"\n",
-                          "isFolded": true
+                          "createdAt": 1793789854166,
+                          "updatedAt": 1793790382112
                         },
                         {
                           "id": "hFHtoagHYYJT",
@@ -115,10 +115,10 @@
                               "updatedAt": 1793790417416
                             }
                           ],
-                          "createdAt": 1793790363588,
-                          "updatedAt": 1793790447992,
+                          "isFolded": true,
                           "note": "\"사용자의 입력에 시스템이 어떻게 호흡하는가?\"",
-                          "isFolded": true
+                          "createdAt": 1793790363588,
+                          "updatedAt": 1793790447992
                         },
                         {
                           "id": "lv16AwibNr4i",
@@ -136,9 +136,9 @@
                                   "updatedAt": 1793790556306
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793790431468,
-                              "updatedAt": 1793790546663,
-                              "isFolded": true
+                              "updatedAt": 1793790546663
                             },
                             {
                               "id": "D7AijtnckkEn",
@@ -148,10 +148,10 @@
                               "updatedAt": 1793790597413
                             }
                           ],
-                          "createdAt": 1793790418007,
-                          "updatedAt": 1793790629717,
+                          "isFolded": true,
                           "note": "\"사용자에게 어떤 사람(브랜드)처럼 말하고 느껴지게 할 것인가?\"",
-                          "isFolded": true
+                          "createdAt": 1793790418007,
+                          "updatedAt": 1793790629717
                         },
                         {
                           "id": "58eOyTaXymqk",
@@ -172,10 +172,10 @@
                               "updatedAt": 1793790729377
                             }
                           ],
-                          "createdAt": 1793790599027,
-                          "updatedAt": 1793791002919,
+                          "isFolded": true,
                           "note": "\"각 요소들이 어떤 규칙과 비례로 배치되어 있는가?\"\n",
-                          "isFolded": true
+                          "createdAt": 1793790599027,
+                          "updatedAt": 1793791002919
                         },
                         {
                           "id": "ySfLbDrFAaOt",
@@ -193,9 +193,9 @@
                                   "updatedAt": 1793791197003
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793791013167,
-                              "updatedAt": 1793791196102,
-                              "isFolded": true
+                              "updatedAt": 1793791196102
                             },
                             {
                               "id": "RToSrPYYQ5Jf",
@@ -209,15 +209,15 @@
                                   "updatedAt": 1793791356604
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793791188223,
-                              "updatedAt": 1793791328714,
-                              "isFolded": true
+                              "updatedAt": 1793791328714
                             }
                           ],
-                          "createdAt": 1793791005742,
-                          "updatedAt": 1793791371091,
+                          "isFolded": true,
                           "note": "\"사용자가 결함으로 느끼지 않을 최소한의 상식선은 어디인가?\"",
-                          "isFolded": true
+                          "createdAt": 1793791005742,
+                          "updatedAt": 1793791371091
                         },
                         {
                           "id": "JIzVpI9YXHkL",
@@ -238,15 +238,15 @@
                               "updatedAt": 1793791582374
                             }
                           ],
-                          "createdAt": 1793791377135,
-                          "updatedAt": 1793791602849,
+                          "isFolded": true,
                           "note": "\"우리가 말하는 애매한 기준을 어디에 둘 것인가?\"",
-                          "isFolded": true
+                          "createdAt": 1793791377135,
+                          "updatedAt": 1793791602849
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793789557686,
-                      "updatedAt": 1793794612759,
-                      "isFolded": true
+                      "updatedAt": 1793794612759
                     },
                     {
                       "id": "c7p5w00lHxWx",
@@ -274,10 +274,10 @@
                           "updatedAt": 1793794771396
                         }
                       ],
-                      "createdAt": 1793791617720,
-                      "updatedAt": 1793794850392,
+                      "isFolded": true,
                       "note": "\"Show Don't Tell!\", \"나이브한 느낌 전달과 알잘딱한 반영\"",
-                      "isFolded": true
+                      "createdAt": 1793791617720,
+                      "updatedAt": 1793794850392
                     },
                     {
                       "id": "X9XwyiOtZrQA",
@@ -287,9 +287,9 @@
                           "id": "Krycpm5UL9QU",
                           "text": "vs UI/UX 레퍼런스",
                           "children": [],
+                          "note": "\"사용자가 무엇을 만지고 겪는가(Experience)를 참조하는 것\"",
                           "createdAt": 1793796786533,
-                          "updatedAt": 1793796829454,
-                          "note": "\"사용자가 무엇을 만지고 겪는가(Experience)를 참조하는 것\""
+                          "updatedAt": 1793796829454
                         },
                         {
                           "id": "6vzvD7gNxuSK",
@@ -307,15 +307,15 @@
                                   "updatedAt": 1793795437915
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793795387977,
-                              "updatedAt": 1793795446213,
-                              "isFolded": true
+                              "updatedAt": 1793795446213
                             }
                           ],
-                          "createdAt": 1793795217017,
-                          "updatedAt": 1793795385880,
+                          "isFolded": true,
                           "note": "\"정독하지 않고 훑어보는 사람에게 어떻게 핵심을 꽂을 것인가?\"\n",
-                          "isFolded": true
+                          "createdAt": 1793795217017,
+                          "updatedAt": 1793795385880
                         },
                         {
                           "id": "D2JadcuN04tA",
@@ -333,15 +333,15 @@
                                   "updatedAt": 1793795778247
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793795459228,
-                              "updatedAt": 1793795739042,
-                              "isFolded": true
+                              "updatedAt": 1793795739042
                             }
                           ],
-                          "createdAt": 1793795448495,
-                          "updatedAt": 1793795788373,
+                          "isFolded": true,
                           "note": "\"주장을 어떤 형태의 데이터로 입증하고 있는가?\"",
-                          "isFolded": true
+                          "createdAt": 1793795448495,
+                          "updatedAt": 1793795788373
                         },
                         {
                           "id": "VCfgGQrh56Y8",
@@ -359,15 +359,15 @@
                                   "updatedAt": 1793795833299
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793795798719,
-                              "updatedAt": 1793795832423,
-                              "isFolded": true
+                              "updatedAt": 1793795832423
                             }
                           ],
-                          "createdAt": 1793795791255,
-                          "updatedAt": 1793795852406,
+                          "isFolded": true,
                           "note": "\"형식 자체에서 어떻게 전문성과 공신력을 풍길 것인가?\"",
-                          "isFolded": true
+                          "createdAt": 1793795791255,
+                          "updatedAt": 1793795852406
                         },
                         {
                           "id": "eOuYzwNI5rs8",
@@ -392,15 +392,15 @@
                                   "updatedAt": 1793796285388
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793796243507,
-                              "updatedAt": 1793796263564,
-                              "isFolded": true
+                              "updatedAt": 1793796263564
                             }
                           ],
-                          "createdAt": 1793795860959,
-                          "updatedAt": 1793796240719,
+                          "isFolded": true,
                           "note": "\"논증의 틀\"",
-                          "isFolded": true
+                          "createdAt": 1793795860959,
+                          "updatedAt": 1793796240719
                         },
                         {
                           "id": "l5qLGrPmaDwa",
@@ -421,10 +421,10 @@
                               "updatedAt": 1793796526851
                             }
                           ],
-                          "createdAt": 1793796286074,
-                          "updatedAt": 1793796547926,
+                          "isFolded": true,
                           "note": "\"Layout Grid & Typography\"",
-                          "isFolded": true
+                          "createdAt": 1793796286074,
+                          "updatedAt": 1793796547926
                         },
                         {
                           "id": "mhJQG7H2Ly47",
@@ -449,21 +449,21 @@
                                   "updatedAt": 1793796645568
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793796587593,
-                              "updatedAt": 1793796587593,
-                              "isFolded": true
+                              "updatedAt": 1793796587593
                             }
                           ],
-                          "createdAt": 1793796561376,
-                          "updatedAt": 1793796662223,
+                          "isFolded": true,
                           "note": "\"문서 Convention, 암묵적 기준치\"",
-                          "isFolded": true
+                          "createdAt": 1793796561376,
+                          "updatedAt": 1793796662223
                         }
                       ],
-                      "createdAt": 1793790834327,
-                      "updatedAt": 1793796842722,
+                      "isFolded": true,
                       "note": "\"독자의 뇌가 정보를 소화하는 순서(Cognitive Flow)와 그럴듯함(Credibility)를 참조하는 것\"",
-                      "isFolded": true
+                      "createdAt": 1793790834327,
+                      "updatedAt": 1793796842722
                     },
                     {
                       "id": "KE8tucfFPsyd",
@@ -505,6 +505,7 @@
                           "updatedAt": 1793788620938
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793788494575,
                       "updatedAt": 1793794612759,
                       "isFolded": false
@@ -549,6 +550,7 @@
                           "updatedAt": 1793788584554
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793788497539,
                       "updatedAt": 1793794612759,
                       "isFolded": false
@@ -568,10 +570,10 @@
                           "id": "1NrV9UHkHgoh",
                           "text": "정보의 밀도나 서술, 작성 요령 같은 것들은? 가령, '논문' 작성 방식과 '기술 블로그', '여행 블로그' 작성 방식은 아예 다른잖아. 어떻게 보면 '문법', '기본기'?이지. 반드시 포함되어야하는 구성 그리고 참조나 인용을 많이 쓸 것이냐 아예 없이 가져갈 것이냐 등등",
                           "children": [],
-                          "createdAt": 1793790908201,
-                          "updatedAt": 1793795229400,
                           "isCompleted": true,
-                          "completedAt": 1793795229400
+                          "completedAt": 1793795229400,
+                          "createdAt": 1793790908201,
+                          "updatedAt": 1793795229400
                         },
                         {
                           "id": "8vkiNNqt2hLu",
@@ -581,14 +583,14 @@
                           "updatedAt": 1793792969759
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793790818543,
-                      "updatedAt": 1793794635587,
-                      "isFolded": true
+                      "updatedAt": 1793794635587
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793794573873,
-                  "updatedAt": 1793794619188,
-                  "isFolded": true
+                  "updatedAt": 1793794619188
                 },
                 {
                   "id": "6xMdRye0FdC3",
@@ -602,13 +604,13 @@
                           "id": "dCjVwz7nrZXC",
                           "text": "패널 레이어",
                           "children": [],
+                          "isCompleted": true,
+                          "completedAt": 1793766645837,
                           "file": {
                             "target": "Pasted image 20261104130215.png"
                           },
                           "createdAt": 1793764936022,
-                          "updatedAt": 1793766645837,
-                          "isCompleted": true,
-                          "completedAt": 1793766645837
+                          "updatedAt": 1793766645837
                         },
                         {
                           "id": "kHFpk5RioMfF",
@@ -622,21 +624,21 @@
                                   "id": "2oUhhKvDCYpD",
                                   "text": "썸네일로 교체 + 아래쪽 미리보기",
                                   "children": [],
-                                  "createdAt": 1793771194850,
-                                  "updatedAt": 1793771208745,
                                   "file": {
                                     "target": "Pasted image 20261104144635.png"
-                                  }
+                                  },
+                                  "createdAt": 1793771194850,
+                                  "updatedAt": 1793771208745
                                 }
                               ],
+                              "isFolded": true,
+                              "isCompleted": true,
+                              "completedAt": 1793776377393,
                               "file": {
                                 "target": "Pasted image 20261104133030.png"
                               },
                               "createdAt": 1793766630043,
-                              "updatedAt": 1793776377393,
-                              "isCompleted": true,
-                              "completedAt": 1793776377393,
-                              "isFolded": true
+                              "updatedAt": 1793776377393
                             },
                             {
                               "id": "F8oNq0peGfCP",
@@ -646,19 +648,19 @@
                               "updatedAt": 1793766789601
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1793765106608,
-                          "updatedAt": 1793769413297,
-                          "isFolded": true
+                          "updatedAt": 1793769413297
                         },
                         {
                           "id": "5OKPRhKJ9OIG",
                           "text": "추가, 제거, 참조 영역 혹은 참조 항목",
                           "children": [],
-                          "createdAt": 1793765628413,
-                          "updatedAt": 1793766043522,
                           "file": {
                             "target": "Pasted image 20261104132033.png"
-                          }
+                          },
+                          "createdAt": 1793765628413,
+                          "updatedAt": 1793766043522
                         }
                       ],
                       "createdAt": 1793764933152,
@@ -701,9 +703,9 @@
                                   "updatedAt": 1793794523352
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793794387470,
-                              "updatedAt": 1793794388974,
-                              "isFolded": true
+                              "updatedAt": 1793794388974
                             },
                             {
                               "id": "GHdrxJIY0Qer",
@@ -731,19 +733,18 @@
                                   "updatedAt": 1793794543256
                                 }
                               ],
+                              "isFolded": true,
                               "createdAt": 1793794456830,
-                              "updatedAt": 1793794463415,
-                              "isFolded": true
+                              "updatedAt": 1793794463415
                             }
                           ],
-                          "createdAt": 1793794354577,
-                          "updatedAt": 1793794412720,
+                          "isFolded": true,
                           "file": {
                             "target": "Pasted image 20261104211236.png"
-                          },
-                          "isFolded": true
+                          }
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793794350359,
                       "updatedAt": 1794357901474,
                       "isFolded": true,
@@ -758,13 +759,13 @@
                           "id": "EeFcAnCbwP54",
                           "text": "작업대에 올리면 한 개, 두 개 등 멀티로 올리도록",
                           "children": [],
-                          "createdAt": 1793765695258,
-                          "updatedAt": 1793853123429,
+                          "isCompleted": true,
+                          "completedAt": 1793853123429,
                           "file": {
                             "target": "Pasted image 20261104131517.png"
                           },
-                          "isCompleted": true,
-                          "completedAt": 1793853123429
+                          "createdAt": 1793765695258,
+                          "updatedAt": 1793853123429
                         },
                         {
                           "id": "2yPhuZ7zWGm0",
@@ -785,9 +786,9 @@
                               "updatedAt": 1793765828527
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1793765742685,
-                          "updatedAt": 1793765826627,
-                          "isFolded": true
+                          "updatedAt": 1793765826627
                         },
                         {
                           "id": "VZHW8rgBHQ3s",
@@ -797,6 +798,7 @@
                           "updatedAt": 1793770659908
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793765609018,
                       "updatedAt": 1794357901474,
                       "isFolded": true,
@@ -829,6 +831,7 @@
                           "updatedAt": 1793765894154
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793765861268,
                       "updatedAt": 1793765873651,
                       "isFolded": false
@@ -872,15 +875,15 @@
                               "updatedAt": 1793777403845
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1793777305829,
-                          "updatedAt": 1793777377559,
-                          "isFolded": true
+                          "updatedAt": 1793777377559
                         }
                       ],
-                      "createdAt": 1793777299341,
-                      "updatedAt": 1793865080908,
                       "isFolded": true,
-                      "note": "\"요소별 다른 view 요소로 제공하자\""
+                      "note": "\"요소별 다른 view 요소로 제공하자\"",
+                      "createdAt": 1793777299341,
+                      "updatedAt": 1793865080908
                     },
                     {
                       "id": "RUPXJ81X5Jg6",
@@ -894,10 +897,10 @@
                           "updatedAt": 1793787755670
                         }
                       ],
-                      "createdAt": 1793787742172,
-                      "updatedAt": 1793865080908,
                       "isFolded": true,
-                      "note": "\"별도의 모드나 작업 환경에서 레퍼런스 작업만 별도로 진행하자\""
+                      "note": "\"별도의 모드나 작업 환경에서 레퍼런스 작업만 별도로 진행하자\"",
+                      "createdAt": 1793787742172,
+                      "updatedAt": 1793865080908
                     },
                     {
                       "id": "YswkjXF8TOCb",
@@ -918,10 +921,10 @@
                           "updatedAt": 1793789971095
                         }
                       ],
-                      "createdAt": 1793789894954,
-                      "updatedAt": 1793865080908,
                       "isFolded": true,
-                      "note": "\"캡쳐 정도와 지시 사항\"만 마커 혹은 history 관리로 남겨주자"
+                      "note": "\"캡쳐 정도와 지시 사항\"만 마커 혹은 history 관리로 남겨주자",
+                      "createdAt": 1793789894954,
+                      "updatedAt": 1793865080908
                     },
                     {
                       "id": "PDcbrx9SBcZh",
@@ -959,19 +962,20 @@
                           "id": "h8PtskAJu2np",
                           "text": "레퍼 - edit 다이렉트 지시 및 -> 출력 후 피드백(이걸로 이거 쓰셈!)",
                           "children": [],
-                          "createdAt": 1793793991762,
-                          "updatedAt": 1793794050267,
                           "file": {
                             "target": "Pasted image 20261104210658.png"
-                          }
+                          },
+                          "createdAt": 1793793991762,
+                          "updatedAt": 1793794050267
                         }
                       ],
-                      "createdAt": 1793792743175,
-                      "updatedAt": 1793865080908,
                       "isFolded": true,
-                      "note": "\"빡빡한 원심분리와 결과물 선제시 + 태깅 표시\""
+                      "note": "\"빡빡한 원심분리와 결과물 선제시 + 태깅 표시\"",
+                      "createdAt": 1793792743175,
+                      "updatedAt": 1793865080908
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793865069351,
                   "updatedAt": 1793865078633,
                   "isFolded": true
@@ -1035,9 +1039,9 @@
                   "updatedAt": 1793770708045
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793766168899,
-              "updatedAt": 1793769252445,
-              "isFolded": true
+              "updatedAt": 1793769252445
             },
             {
               "id": "e3LQ82vcKjPn",
@@ -1055,9 +1059,9 @@
                       "updatedAt": 1793771780666
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793766996195,
-                  "updatedAt": 1793767000963,
-                  "isFolded": true
+                  "updatedAt": 1793767000963
                 },
                 {
                   "id": "G9Q1HCC4upqI",
@@ -1089,9 +1093,9 @@
                           "updatedAt": 1793767040892
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793767013269,
-                      "updatedAt": 1793767026501,
-                      "isFolded": true
+                      "updatedAt": 1793767026501
                     },
                     {
                       "id": "KY2nMDqr4B7s",
@@ -1105,38 +1109,38 @@
                               "id": "57IqXG9xTrZx",
                               "text": "긁는 족족 다 선택되어야함",
                               "children": [],
-                              "createdAt": 1793832291772,
-                              "updatedAt": 1793839313623,
                               "file": {
                                 "target": "Pasted image 20261105074453.png"
-                              }
+                              },
+                              "createdAt": 1793832291772,
+                              "updatedAt": 1793839313623
                             },
                             {
                               "id": "NqS3lzfaGoH7",
                               "text": "Inline-AI 가 항상 뜨면 시선이 불편하고 상시 오픈 모드 혹은 다른 툴바에 숨겨야함",
                               "children": [],
-                              "createdAt": 1793836426357,
-                              "updatedAt": 1793839313623,
                               "file": {
                                 "target": "Pasted image 20261105085347.png"
-                              }
+                              },
+                              "createdAt": 1793836426357,
+                              "updatedAt": 1793839313623
                             },
                             {
                               "id": "Hdal8ajt982h",
                               "text": "툴바 저 두 개 + 많이 쓰이는 도구 툴 바가 기본 우측 상단 -> AI도 저쪽으로 포함할 것",
                               "children": [],
-                              "createdAt": 1793839250263,
-                              "updatedAt": 1793839313623,
                               "file": {
                                 "target": "Pasted image 20261105094051.png"
-                              }
+                              },
+                              "createdAt": 1793839250263,
+                              "updatedAt": 1793839313623
                             }
                           ],
-                          "createdAt": 1793839293376,
-                          "updatedAt": 1793853203256,
                           "isFolded": true,
                           "isCompleted": true,
-                          "completedAt": 1793853203256
+                          "completedAt": 1793853203256,
+                          "createdAt": 1793839293376,
+                          "updatedAt": 1793853203256
                         }
                       ],
                       "createdAt": 1793832285480,
@@ -1151,11 +1155,11 @@
                           "id": "EuK5SbfveWmV",
                           "text": "뭐지 이 흉물은?",
                           "children": [],
-                          "createdAt": 1793840189312,
-                          "updatedAt": 1793840197035,
                           "file": {
                             "target": "Pasted image 20261105095630.png"
-                          }
+                          },
+                          "createdAt": 1793840189312,
+                          "updatedAt": 1793840197035
                         }
                       ],
                       "createdAt": 1793840181201,
@@ -1202,9 +1206,9 @@
                       "updatedAt": 1793873601914
                     }
                   ],
+                  "isFolded": false,
                   "createdAt": 1793766981934,
-                  "updatedAt": 1793767004031,
-                  "isFolded": false
+                  "updatedAt": 1793767004031
                 },
                 {
                   "id": "9B9Zk95bKfU7",
@@ -1224,9 +1228,9 @@
                   "updatedAt": 1794273210592
                 }
               ],
+              "isFolded": false,
               "createdAt": 1793766536706,
-              "updatedAt": 1793769252445,
-              "isFolded": false
+              "updatedAt": 1793769252445
             },
             {
               "id": "u4lSwds7W5hK",
@@ -1258,9 +1262,9 @@
                       "updatedAt": 1793771454511
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793771431914,
-                  "updatedAt": 1793771448746,
-                  "isFolded": true
+                  "updatedAt": 1793771448746
                 },
                 {
                   "id": "LkWOX0gMuP4P",
@@ -1274,11 +1278,12 @@
                       "updatedAt": 1793771523931
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793771456648,
-                  "updatedAt": 1793771498333,
-                  "isFolded": true
+                  "updatedAt": 1793771498333
                 }
               ],
+              "isFolded": false,
               "createdAt": 1793767085676,
               "updatedAt": 1793769252445,
               "isFolded": true
@@ -1306,6 +1311,7 @@
                       "updatedAt": 1793769589238
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793769575183,
                   "updatedAt": 1793769581425,
                   "isFolded": true
@@ -1387,6 +1393,7 @@
                   "updatedAt": 1793771384092
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793771357921,
               "updatedAt": 1793936041977,
               "isFolded": true,
@@ -1482,9 +1489,9 @@
                       "updatedAt": 1793859923947
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793859815350,
-                  "updatedAt": 1793859987645,
-                  "isFolded": true
+                  "updatedAt": 1793859987645
                 },
                 {
                   "id": "QwhTl29UQUHN",
@@ -1505,12 +1512,12 @@
                           "updatedAt": 1793857815500
                         }
                       ],
-                      "createdAt": 1793857707294,
-                      "updatedAt": 1793858853649,
+                      "isFolded": true,
                       "file": {
                         "target": "Pasted image 20261105144827.png"
                       },
-                      "isFolded": true
+                      "createdAt": 1793857707294,
+                      "updatedAt": 1793858853649
                     },
                     {
                       "id": "aT0QIWWIBxC6",
@@ -1524,19 +1531,19 @@
                               "id": "88mY0Za9n1V6",
                               "text": "첨부 전2",
                               "children": [],
-                              "createdAt": 1793859152509,
-                              "updatedAt": 1793859167254,
                               "file": {
                                 "target": "Pasted image 20261105151232.png"
-                              }
+                              },
+                              "createdAt": 1793859152509,
+                              "updatedAt": 1793859167254
                             }
                           ],
+                          "isFolded": true,
                           "file": {
                             "target": "Pasted image 20261105151146.png"
                           },
                           "createdAt": 1793859106919,
-                          "updatedAt": 1793859119725,
-                          "isFolded": true
+                          "updatedAt": 1793859119725
                         },
                         {
                           "id": "j68DcLkG77QU",
@@ -1549,22 +1556,22 @@
                           "updatedAt": 1793859051445
                         }
                       ],
-                      "createdAt": 1793858810916,
-                      "updatedAt": 1793858853649,
+                      "isFolded": true,
                       "file": {
                         "target": "Pasted image 20261105150651.png"
                       },
-                      "isFolded": true
+                      "createdAt": 1793858810916,
+                      "updatedAt": 1793858853649
                     },
                     {
                       "id": "yXa518kWC6Dz",
                       "text": "컨셉3 - 플로팅&부착형 채집통 스타일",
                       "children": [],
-                      "createdAt": 1793859665360,
-                      "updatedAt": 1793859687397,
                       "file": {
                         "target": "Pasted image 20261105152105.png"
-                      }
+                      },
+                      "createdAt": 1793859665360,
+                      "updatedAt": 1793859687397
                     },
                     {
                       "id": "tvBcp0liZXDp",
@@ -1584,23 +1591,23 @@
                           "id": "ClgmDKHNfsM0",
                           "text": "옵시디언 디렉토리",
                           "children": [],
-                          "createdAt": 1793860336056,
-                          "updatedAt": 1793860342025,
                           "file": {
                             "target": "Pasted image 20261105153216.png"
-                          }
+                          },
+                          "createdAt": 1793860336056,
+                          "updatedAt": 1793860342025
                         }
                       ],
-                      "createdAt": 1793860159447,
-                      "updatedAt": 1793860243474,
                       "file": {
                         "target": "Pasted image 20261105152919.png"
-                      }
+                      },
+                      "createdAt": 1793860159447,
+                      "updatedAt": 1793860243474
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793858843052,
-                  "updatedAt": 1793858856811,
-                  "isFolded": true
+                  "updatedAt": 1793858856811
                 },
                 {
                   "id": "jAsrxcyrY56i",
@@ -1648,11 +1655,11 @@
                   "id": "vrBlekSbLW9r",
                   "text": "annotating",
                   "children": [],
-                  "createdAt": 1793864634007,
-                  "updatedAt": 1793864638674,
                   "file": {
                     "target": "Pasted image 20261105164354.png"
-                  }
+                  },
+                  "createdAt": 1793864634007,
+                  "updatedAt": 1793864638674
                 },
                 {
                   "id": "wks6yBoM1K0E",
@@ -1848,13 +1855,13 @@
                   "id": "FelJ8rEQDxqh",
                   "text": "작업 중, 출력 중 - 1차 스켈레톤 및 시동은 검",
                   "children": [],
-                  "createdAt": 1793840856277,
-                  "updatedAt": 1793853753524,
+                  "isCompleted": true,
+                  "completedAt": 1793853753524,
                   "file": {
                     "target": "Pasted image 20261105100736.png"
                   },
-                  "isCompleted": true,
-                  "completedAt": 1793853753524
+                  "createdAt": 1793840856277,
+                  "updatedAt": 1793853753524
                 },
                 {
                   "id": "14x56HqJw2CL",
@@ -1908,11 +1915,11 @@
                       "id": "LwPWfIu7Prb9",
                       "text": "queue 처리 + 순서 바꾸기",
                       "children": [],
-                      "createdAt": 1793841229198,
-                      "updatedAt": 1793841238258,
                       "file": {
                         "target": "Pasted image 20261105101349.png"
-                      }
+                      },
+                      "createdAt": 1793841229198,
+                      "updatedAt": 1793841238258
                     },
                     {
                       "id": "fhxySLzJa1KD",
@@ -1936,9 +1943,9 @@
                       "updatedAt": 1793841254614
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793841225039,
-                  "updatedAt": 1793841228679,
-                  "isFolded": true
+                  "updatedAt": 1793841228679
                 },
                 {
                   "id": "fg416A1F8Yx7",
@@ -1983,9 +1990,9 @@
                   "updatedAt": 1793940484682
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793771414175,
-              "updatedAt": 1793840850398,
-              "isFolded": true
+              "updatedAt": 1793840850398
             },
             {
               "id": "gilgbzZXjH75",
@@ -2007,9 +2014,9 @@
                   "updatedAt": 1793841640510
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793841617757,
-              "updatedAt": 1793841627251,
-              "isFolded": true
+              "updatedAt": 1793841627251
             },
             {
               "id": "c5akG6EQsxT5",
@@ -2019,8 +2026,6 @@
                   "id": "DzxHungBTJX3",
                   "text": "프로젝트 대시보드 - 캔바 샘플",
                   "children": [],
-                  "createdAt": 1793859222084,
-                  "updatedAt": 1793859239224,
                   "file": {
                     "target": "Pasted image 20261105151343.png"
                   }
@@ -2146,14 +2151,14 @@
                   "isFolded": false
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793859215718,
-              "updatedAt": 1793859221833,
-              "isFolded": true
+              "updatedAt": 1793859221833
             }
           ],
+          "isFolded": false,
           "createdAt": 1793769223297,
-          "updatedAt": 1793848827721,
-          "isFolded": false
+          "updatedAt": 1793848827721
         },
         {
           "id": "yE3qPUvMNM2x",
@@ -2193,9 +2198,9 @@
                           "updatedAt": 1793769285176
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793769262955,
-                      "updatedAt": 1793769339731,
-                      "isFolded": true
+                      "updatedAt": 1793769339731
                     },
                     {
                       "id": "3VAJFzsGBNO1",
@@ -2205,9 +2210,9 @@
                       "updatedAt": 1793769339731
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793769299855,
-                  "updatedAt": 1793769325334,
-                  "isFolded": true
+                  "updatedAt": 1793769325334
                 },
                 {
                   "id": "kxlcxBtSuHMz",
@@ -2234,9 +2239,9 @@
                           "updatedAt": 1793769367601
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1793769345231,
-                      "updatedAt": 1793769351644,
-                      "isFolded": true
+                      "updatedAt": 1793769351644
                     },
                     {
                       "id": "xSGsowNi8l9h",
@@ -2246,14 +2251,14 @@
                       "updatedAt": 1793769351860
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1793769271265,
-                  "updatedAt": 1793769345077,
-                  "isFolded": true
+                  "updatedAt": 1793769345077
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793769208382,
-              "updatedAt": 1793769644993,
-              "isFolded": true
+              "updatedAt": 1793769644993
             },
             {
               "id": "601DeAhPhqHG",
@@ -2298,9 +2303,9 @@
               "updatedAt": 1793936202462
             }
           ],
+          "isFolded": true,
           "createdAt": 1793769634386,
-          "updatedAt": 1793848827721,
-          "isFolded": true
+          "updatedAt": 1793848827721
         },
         {
           "id": "jkTX3HP7UGel",
@@ -2314,16 +2319,16 @@
                   "id": "tOhsPmaikbHJ",
                   "text": "그림판 같이 배치 혹은 추가 확장 모달? 스케치 모달",
                   "children": [],
-                  "createdAt": 1793765291605,
-                  "updatedAt": 1793767243405,
                   "file": {
                     "target": "Pasted image 20261104130812.png"
-                  }
+                  },
+                  "createdAt": 1793765291605,
+                  "updatedAt": 1793767243405
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793767185370,
-              "updatedAt": 1793767224322,
-              "isFolded": true
+              "updatedAt": 1793767224322
             },
             {
               "id": "nHT7KQfd8b3Z",
@@ -2337,9 +2342,9 @@
                   "updatedAt": 1793767279131
                 }
               ],
+              "isFolded": false,
               "createdAt": 1793767231600,
-              "updatedAt": 1793767258451,
-              "isFolded": true
+              "updatedAt": 1793767258451
             },
             {
               "id": "HiIdWPdD710k",
@@ -2374,9 +2379,9 @@
                   "updatedAt": 1793795614486
                 }
               ],
+              "isFolded": false,
               "createdAt": 1793795567196,
-              "updatedAt": 1793795582000,
-              "isFolded": true
+              "updatedAt": 1793795582000
             },
             {
               "id": "Fu80Qg0vA5Eq",
@@ -2389,11 +2394,11 @@
               "id": "Qy2WeCQc6Uxr",
               "text": "판도독 처럼 block 베이스로 관리를 하되, free-writing 모드로 변환해서 쭉 칠 수 있도록 하까? 대신 쭉 줄 글로 치면 단락으로 잡아주고, 마크다운 태그만 잡아주는 걸로",
               "children": [],
-              "createdAt": 1793838923301,
-              "updatedAt": 1793838970777,
               "file": {
                 "target": "Pasted image 20261105093524.png"
-              }
+              },
+              "createdAt": 1793838923301,
+              "updatedAt": 1793838970777
             },
             {
               "id": "X0h2YeHeF4px",
@@ -2506,6 +2511,7 @@
               "isFolded": true
             }
           ],
+          "isFolded": false,
           "createdAt": 1793765288631,
           "updatedAt": 1793848827721,
           "isFolded": true
@@ -2591,9 +2597,116 @@
     {
       "id": "4abciIbktN7B",
       "text": "@Rin",
-      "children": [],
+      "children": [
+        {
+          "id": "Y5h6MO6wZPii",
+          "text": "아이디어",
+          "children": [
+            {
+              "id": "3sjvKde5NROd",
+              "text": "논문 쓰는 사람에게 물어보니 ai가 쓴게 걸리면 끝이라고 하더라고? 그래서 작성할 때 딸깍은 필요 없다고 함",
+              "children": [
+                {
+                  "id": "yrgeByNJfWX4",
+                  "text": "그럼에도 불구하고 자료 조사, 문맥, 검색 등 ai 기능은 최대한 활용하고 싶어한다고",
+                  "children": [],
+                  "createdAt": 1794203179416,
+                  "updatedAt": 1794203200881
+                },
+                {
+                  "id": "sAWndHHhMWgD",
+                  "text": "그럼 그냥 딸깍 다 하게 하고 마지막에 필사하면서 점검하는? 안전빵을 제공할까? 그 약간 따라쓰기 하면서 또 내 말투로 고쳐지고 하잖아?",
+                  "children": [],
+                  "createdAt": 1794203201640,
+                  "updatedAt": 1794203234955
+                },
+                {
+                  "id": "21fLk0wmRMr4",
+                  "text": "몰라 여튼 딸깍을 그대로 쓰는건 좀 어렵긴 할듯? 아니면 그걸 완벽하게 지우는걸 우리 장점으로 내세우거나",
+                  "children": [],
+                  "createdAt": 1794203236073,
+                  "updatedAt": 1794203269114
+                }
+              ],
+              "createdAt": 1794203091065,
+              "updatedAt": 1794203179138
+            },
+            {
+              "id": "14P8H8iJsX2q",
+              "text": "최종 Export/인쇄 전 필수 검토 슬롯(빨간 박스) 강제 서명·체크 게이트 — 사용자 검토 태만 및 툴 책임 전가 방어",
+              "children": [
+                {
+                  "id": "DrJblD56rkA2",
+                  "text": "사용자가 템플릿/AI 믿고 대충 넘겼다가 계약서 날려먹고 \"너네가 이상하게 써줬잖아\" 탓하는 휴먼 에러 방어책",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793849235725,
+                  "updatedAt": 1793849235725
+                },
+                {
+                  "id": "JZQ4J2Q3Gfyg",
+                  "text": "서식/템플릿에서 '필수 더블체크(Red Box)'로 지정해 둔 핵심 조항이나 슬롯은, 최종 Export/프린트 버튼을 눌렀을 때 검토 모달을 띄워 해당 항목에 직접 서명(Sign-off)하거나 확인 체크를 마쳐야만 다운로드가 풀리도록 강제(Interlock)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793849235725,
+                  "updatedAt": 1793849235725
+                },
+                {
+                  "id": "ad2TnJO68hpR",
+                  "text": "판도독/DocuSign의 필수 서명 필드 메커니즘 차용 -> \"내가 이 조항 눈으로 직접 보고 승인했다\"는 사용자 명시적 액션을 유도해서 법적 책임 소재를 사용자 본인에게 확실히 귀속시킴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1793849235725,
+                  "updatedAt": 1793849235725
+                }
+              ],
+              "createdAt": 1793848929446,
+              "updatedAt": 1793849235725
+            }
+          ],
+          "createdAt": 1793848925177,
+          "updatedAt": 1793848928993
+        },
+        {
+          "id": "Z2a5g1EgD9cW",
+          "text": "좌측 사이드바",
+          "children": [
+            {
+              "id": "g3M7TTGg7yfl",
+              "text": "파일트리이자 outline 그 자체인 좌측 사이드바를 사용자 편의 고려하여 재설계",
+              "children": [],
+              "createdAt": 1794200148118,
+              "updatedAt": 1794200179511
+            },
+            {
+              "id": "G0KZrMRXc1Zs",
+              "text": "시각적으로 피로도가 덜 해야함",
+              "children": [],
+              "createdAt": 1794203271737,
+              "updatedAt": 1794203286194
+            },
+            {
+              "id": "A3R4k5JyL8bU",
+              "text": "직관적이여야함",
+              "children": [],
+              "createdAt": 1794203287315,
+              "updatedAt": 1794203289507
+            },
+            {
+              "id": "YfSx7EoS2zgV",
+              "text": "기능은 네이게이션일 뿐만 아니라, 모든 요소를 포함하고 있어야하며 .outline의 기능도 제공해야함",
+              "children": [],
+              "createdAt": 1794203290181,
+              "updatedAt": 1794203316700
+            }
+          ],
+          "createdAt": 1794200129193,
+          "updatedAt": 1794201187362
+        }
+      ],
+      "isFolded": false,
       "createdAt": 1793848829518,
-      "updatedAt": 1793848832048
+      "updatedAt": 1793848924754
     }
   ],
   "defaultView": "bullets",
