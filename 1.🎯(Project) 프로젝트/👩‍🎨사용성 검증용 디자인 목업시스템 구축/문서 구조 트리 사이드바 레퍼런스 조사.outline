@@ -4016,7 +4016,7 @@
           "updatedAt": 1793862095082
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "nodeType": "h1",
       "createdAt": 1793862095082,
       "updatedAt": 1793862095082
@@ -4127,7 +4127,7 @@
           "updatedAt": 1793864399058
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "nodeType": "h1",
       "createdAt": 1793864399058,
       "updatedAt": 1793864399058
@@ -4209,5 +4209,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793862095082,
-  "updatedAt": 1793946536275
+  "updatedAt": 1794283662072
 }
