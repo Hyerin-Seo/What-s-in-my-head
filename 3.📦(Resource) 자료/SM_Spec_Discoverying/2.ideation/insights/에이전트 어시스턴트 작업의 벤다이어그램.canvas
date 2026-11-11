@@ -347,11 +347,16 @@
 		{
 			"id": "40cb129c8f396aa8",
 			"type": "text",
-			"text": "Outliner",
+			"text": "Outliner ",
 			"x": 2110,
 			"y": 25,
 			"width": 250,
-			"height": 60
+			"height": 60,
+			"vibeOutline": {
+				"nodeId": "kpfR3OcmmhJr",
+				"file": "1.🎯(Project) 프로젝트/👩‍🎨사용성 검증용 디자인 목업시스템 구축/Daily_TODO_MockUp.outline",
+				"off": true
+			}
 		},
 		{
 			"id": "900cd585133f1c4d",
