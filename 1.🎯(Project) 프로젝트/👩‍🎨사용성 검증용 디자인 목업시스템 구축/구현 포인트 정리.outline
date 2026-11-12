@@ -1222,7 +1222,7 @@
                   "updatedAt": 1794273210592
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793766536706,
               "updatedAt": 1793769252445
             },
@@ -2167,9 +2167,9 @@
                   "updatedAt": 1794364301577
                 }
               ],
+              "isFolded": true,
               "createdAt": 1794364279925,
-              "updatedAt": 1794364287156,
-              "isFolded": true
+              "updatedAt": 1794364287156
             }
           ],
           "createdAt": 1794364274294,
@@ -2225,7 +2225,7 @@
                       "updatedAt": 1793769339731
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793769299855,
                   "updatedAt": 1793769325334
                 },
@@ -2266,12 +2266,12 @@
                       "updatedAt": 1793769351860
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1793769271265,
                   "updatedAt": 1793769345077
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1793769208382,
               "updatedAt": 1793769644993
             },
@@ -2318,7 +2318,7 @@
               "updatedAt": 1793936202462
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793769634386,
           "updatedAt": 1793848827721
         },
@@ -2546,9 +2546,9 @@
                   "updatedAt": 1794273086597
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793881999315,
-              "updatedAt": 1793882008391,
-              "isFolded": true
+              "updatedAt": 1793882008391
             },
             {
               "id": "SaRowZ0r9FmP",
@@ -2602,9 +2602,9 @@
               "updatedAt": 1794199879717
             }
           ],
+          "isFolded": true,
           "createdAt": 1794199863814,
-          "updatedAt": 1794199879457,
-          "isFolded": true
+          "updatedAt": 1794199879457
         }
       ],
       "createdAt": 1793848816376,
@@ -2644,9 +2644,9 @@
                   "updatedAt": 1794203269114
                 }
               ],
+              "isFolded": true,
               "createdAt": 1794203091065,
-              "updatedAt": 1794203179138,
-              "isFolded": true
+              "updatedAt": 1794203179138
             },
             {
               "id": "14P8H8iJsX2q",
@@ -3417,11 +3417,11 @@
                   "id": "X06fOimDx3CU",
                   "text": "섹션으로 묶어두면 assets 탭에 자동 그룹핑되고 블록으로 이용 가능",
                   "children": [],
-                  "createdAt": 1794375362210,
-                  "updatedAt": 1794375594955,
                   "file": {
                     "target": "Pasted image 20261111143911.png"
-                  }
+                  },
+                  "createdAt": 1794375362210,
+                  "updatedAt": 1794375594955
                 },
                 {
                   "id": "x35pN0BO7rn0",
@@ -3483,12 +3483,13 @@
                 }
               ],
               "createdAt": 1794375337232,
-              "updatedAt": 1794375360197
+              "updatedAt": 1794375360197,
+              "isFolded": true
             }
           ],
+          "isFolded": false,
           "createdAt": 1794200129193,
-          "updatedAt": 1794297425676,
-          "isFolded": false
+          "updatedAt": 1794297425676
         },
         {
           "id": "ErGRf3TyA4j6",
@@ -3663,5 +3664,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1794377757424
+  "updatedAt": 1794463017996
 }

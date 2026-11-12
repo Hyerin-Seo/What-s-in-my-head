@@ -1,0 +1,160 @@
+{
+  "version": "1.0.0",
+  "id": "aAK6FXrPiukx",
+  "title": "문서 엔지니어링 관련 핫키 모음",
+  "rootNodes": [
+    {
+      "id": "IRny6SNkGVff",
+      "text": "Document Engineering",
+      "children": [],
+      "isFolded": false,
+      "createdAt": 1794458461263,
+      "updatedAt": 1794458482867
+    },
+    {
+      "id": "uV4o4ieRUnvv",
+      "text": "Docs as Code",
+      "children": [
+        {
+          "id": "9FbzY21AQHM2",
+          "text": "체계적인 문서화 파이프라인 구축 능력",
+          "children": [],
+          "createdAt": 1794458506572,
+          "updatedAt": 1794458507167
+        },
+        {
+          "id": "5Mp0QsK0iCu3",
+          "text": "깃(Git) 기반의 버전 관리부터 자동화 테스트 및 배포까지 개발 워크플로우에 문서를 자연스럽게 통합하는 체계",
+          "children": [],
+          "createdAt": 1794458508503,
+          "updatedAt": 1794458529272
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1794458461263,
+      "updatedAt": 1794458495670
+    },
+    {
+      "id": "e5qaUNNppCE9",
+      "text": "writethedocs",
+      "children": [
+        {
+          "id": "Qf12RJbMmh6j",
+          "text": "그냥 뼈대 잡혀있음",
+          "children": [],
+          "createdAt": 1794465247326,
+          "updatedAt": 1794465252533
+        },
+        {
+          "id": "3Udv5aIX2JB9",
+          "text": "https://www.writethedocs.org/",
+          "children": [],
+          "createdAt": 1794465252795,
+          "updatedAt": 1794465259956
+        }
+      ],
+      "createdAt": 1794465238012,
+      "updatedAt": 1794465464120
+    },
+    {
+      "id": "XKTh3chATBeD",
+      "text": "UX Writing",
+      "children": [
+        {
+          "id": "ht25gUfN5Jef",
+          "text": "사용자가 소프트웨어 인터페이스에서 마주하는 텍스트(예: 버튼, 레이블, 오류 메시지 등), 즉 제품 전반에서 사용자를 안내하는 모든 문구를 작성하는 일",
+          "children": [],
+          "createdAt": 1794465272545,
+          "updatedAt": 1794465289693
+        },
+        {
+          "id": "8GadvJE80toO",
+          "text": "유의어",
+          "children": [
+            {
+              "id": "He6vfe0PaoZK",
+              "text": "마이크로카피(microcopy)",
+              "children": [],
+              "createdAt": 1794465312542,
+              "updatedAt": 1794465313265
+            },
+            {
+              "id": "Ko5ja78PJTwW",
+              "text": "",
+              "children": [],
+              "createdAt": 1794465313723,
+              "updatedAt": 1794465313723
+            }
+          ],
+          "createdAt": 1794465290579,
+          "updatedAt": 1794465312390
+        }
+      ],
+      "createdAt": 1794465264723,
+      "updatedAt": 1794465271439
+    },
+    {
+      "id": "xPU8Epbwjsjx",
+      "text": "End-User Documentation",
+      "children": [
+        {
+          "id": "LItP6Wh0JndM",
+          "text": "유의어",
+          "children": [
+            {
+              "id": "1o4ZdF7OcoH4",
+              "text": "사용자 지원 (User Assistance, UA)",
+              "children": [],
+              "createdAt": 1794465614061,
+              "updatedAt": 1794465614610
+            }
+          ],
+          "createdAt": 1794465601586,
+          "updatedAt": 1794465613807
+        },
+        {
+          "id": "slby6myposIG",
+          "text": "주요 사이트",
+          "children": [
+            {
+              "id": "bgNyKOJrVj7q",
+              "text": "https://diataxis.fr/map/",
+              "children": [],
+              "createdAt": 1794465716363,
+              "updatedAt": 1794465722289
+            },
+            {
+              "id": "NUiG9sC2HnHB",
+              "text": "",
+              "children": [],
+              "createdAt": 1794465722760,
+              "updatedAt": 1794465722760
+            }
+          ],
+          "createdAt": 1794465713569,
+          "updatedAt": 1794465716234
+        }
+      ],
+      "createdAt": 1794465599565,
+      "updatedAt": 1794465601111
+    },
+    {
+      "id": "YH4e2t23gLT8",
+      "text": "스타일 가이드를 잡는다",
+      "children": [
+        {
+          "id": "777Pyr0hD3R3",
+          "text": "문서 표준화 전반을 가리키는 말",
+          "children": [],
+          "createdAt": 1794466166954,
+          "updatedAt": 1794466180696
+        }
+      ],
+      "createdAt": 1794466164865,
+      "updatedAt": 1794466166105
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1794458461263,
+  "updatedAt": 1794466180696
+}
