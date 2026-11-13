@@ -2167,9 +2167,9 @@
                   "updatedAt": 1794364301577
                 }
               ],
+              "isFolded": true,
               "createdAt": 1794364279925,
-              "updatedAt": 1794364287156,
-              "isFolded": true
+              "updatedAt": 1794364287156
             }
           ],
           "createdAt": 1794364274294,
@@ -2546,9 +2546,9 @@
                   "updatedAt": 1794273086597
                 }
               ],
+              "isFolded": true,
               "createdAt": 1793881999315,
-              "updatedAt": 1793882008391,
-              "isFolded": true
+              "updatedAt": 1793882008391
             },
             {
               "id": "SaRowZ0r9FmP",
@@ -2602,9 +2602,9 @@
               "updatedAt": 1794199879717
             }
           ],
+          "isFolded": true,
           "createdAt": 1794199863814,
-          "updatedAt": 1794199879457,
-          "isFolded": true
+          "updatedAt": 1794199879457
         }
       ],
       "createdAt": 1793848816376,
@@ -2644,9 +2644,9 @@
                   "updatedAt": 1794203269114
                 }
               ],
+              "isFolded": true,
               "createdAt": 1794203091065,
-              "updatedAt": 1794203179138,
-              "isFolded": true
+              "updatedAt": 1794203179138
             },
             {
               "id": "14P8H8iJsX2q",
@@ -2679,8 +2679,39 @@
               ],
               "createdAt": 1793848929446,
               "updatedAt": 1793849235725
+            },
+            {
+              "id": "Ch8BogNswCSJ",
+              "text": "부분 템플릿 저장해두는 것 (뼈대만) figma assets 처럼 디테일 내용 필요 없음",
+              "children": [
+                {
+                  "id": "lrkp6eFmm0dp",
+                  "text": "제목 - 주제 사진 - 로고 이미지 - 컨텐츠 이런식으로",
+                  "children": [],
+                  "createdAt": 1794454792048,
+                  "updatedAt": 1794454807882
+                }
+              ],
+              "createdAt": 1794454763293,
+              "updatedAt": 1794454791362
+            },
+            {
+              "id": "rtVxA3U3ij9x",
+              "text": "캔버스에서 아이디어 발산한 시각화 이미지 부분 추출",
+              "children": [
+                {
+                  "id": "AE0xpv4qKu3D",
+                  "text": "지금 옵시디언 처럼 전체 임베드가 아닌 부분 선택해서 png 혹은 임베드로 특정 부분만 문서에 반영하고 싶음",
+                  "children": [],
+                  "createdAt": 1794454861216,
+                  "updatedAt": 1794454861852
+                }
+              ],
+              "createdAt": 1794454808354,
+              "updatedAt": 1794454872304
             }
           ],
+          "isFolded": true,
           "createdAt": 1793848925177,
           "updatedAt": 1793848928993
         },
@@ -2717,943 +2748,1076 @@
               "updatedAt": 1794203316700
             },
             {
-              "id": "Ud1100t7LCx6",
-              "text": "figma dev 기능",
+              "id": "ddGaRpfY2UDs",
+              "text": "Figma",
               "children": [
                 {
-                  "id": "vJ9SJwfc1ida",
-                  "text": "file / agents / assets 으로 나뉘어진 tab",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110144336.png"
-                  },
-                  "createdAt": 1794289414518,
-                  "updatedAt": 1794289670633
-                },
-                {
-                  "id": "iutr4oMADIKk",
-                  "text": "figma agents 대화창 화면",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110144434.png"
-                  },
-                  "createdAt": 1794289446125,
-                  "updatedAt": 1794289684734
-                },
-                {
-                  "id": "zNyGVIF1BhBa",
-                  "text": "리소스 대화창에서 추가하는 방법인가봄",
-                  "children": [],
-                  "isFolded": false,
-                  "file": {
-                    "target": "Pasted image 20261110144504.png"
-                  },
-                  "createdAt": 1794289504801,
-                  "updatedAt": 1794289701187
-                },
-                {
-                  "id": "EFpjDW158Q8z",
-                  "text": "인라인 대화창 활용하는 방안 assets 에 등록한거 불러오기 @로",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110144611.png"
-                  },
-                  "createdAt": 1794289571967,
-                  "updatedAt": 1794289714146
-                },
-                {
-                  "id": "NGsX16yjJ0Q4",
-                  "text": "인라인 챗 화면 (피드백들 혹은 코멘트들이 있다면 그거 모아서 요약 피드백 반영하는 기능도 있다함)",
+                  "id": "Ud1100t7LCx6",
+                  "text": "figma dev 기능",
                   "children": [
                     {
-                      "id": "d2wsYQGmWEQg",
-                      "text": "왼쪽 피드백들을 반영해서 오른쪽에 반영안 동일하게 생성",
+                      "id": "vJ9SJwfc1ida",
+                      "text": "file / agents / assets 으로 나뉘어진 tab",
                       "children": [],
                       "file": {
-                        "target": "Pasted image 20261110150108.png"
+                        "target": "Pasted image 20261110144336.png"
                       },
-                      "createdAt": 1794290468503,
-                      "updatedAt": 1794290490395
-                    }
-                  ],
-                  "file": {
-                    "target": "Pasted image 20261110145001.png"
-                  },
-                  "createdAt": 1794289801553,
-                  "updatedAt": 1794289829930
-                },
-                {
-                  "id": "TitWE9DMN1Ag",
-                  "text": "새로운 이미지를 생성할 때, 우리로 치면 새로운 칸을 생성할 때, 참조 할 리소스 (+) 버튼으로 추가하기",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110150616.png"
-                  },
-                  "createdAt": 1794290776077,
-                  "updatedAt": 1794290815712
-                },
-                {
-                  "id": "x7FFTrZvGmcA",
-                  "text": "인터렉션을 확인하기 위한 재생 화면이지만 우리가 쓸 곳이 있지 않을까?",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110150808.png"
-                  },
-                  "createdAt": 1794290888081,
-                  "updatedAt": 1794290920311
-                },
-                {
-                  "id": "RjVMXD0xHglm",
-                  "text": "우리로 따지면 위키 등록한다는 건가?",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110151140.png"
-                  },
-                  "createdAt": 1794291100217,
-                  "updatedAt": 1794291170969
-                },
-                {
-                  "id": "EPw35eEd56cC",
-                  "text": "디자인 검토 도구 ",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110151511.png"
-                  },
-                  "createdAt": 1794291311655,
-                  "updatedAt": 1794291345215
-                },
-                {
-                  "id": "0pnNB163fFw1",
-                  "text": "colors / dimensions / typography / components 이렇게 체크하는건가봐? 다르게 설정된 부분 검토 하는건가베",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110151506.png"
-                  },
-                  "createdAt": 1794291306374,
-                  "updatedAt": 1794291412086
-                },
-                {
-                  "id": "0VOdaR5KYHe0",
-                  "text": "https://help.figma.com/hc/en-us/articles/38978644498199-AI-workflows-collection-Refine-your-components-and-variables-for-the-Figma-agent",
-                  "children": [
+                      "createdAt": 1794289414518,
+                      "updatedAt": 1794289670633
+                    },
                     {
-                      "id": "kkIyR1cOq9vO",
-                      "text": "변수 설정 관련 페이지",
-                      "children": [],
-                      "createdAt": 1794291453166,
-                      "updatedAt": 1794291469431
-                    }
-                  ],
-                  "createdAt": 1794291450826,
-                  "updatedAt": 1794291452125
-                },
-                {
-                  "id": "H495HMPhi2vX",
-                  "text": "https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode-in-Figma#h_01JA8Z1DAZSGZ1M4AV2RK05C65",
-                  "children": [
-                    {
-                      "id": "uwFOAp5OQV76",
-                      "text": "figma 개발자 모드 사용 가이드",
-                      "children": [
-                        {
-                          "id": "JgoR50QvYgRC",
-                          "text": "</> 버튼으로 모드 변경",
-                          "children": [
-                            {
-                              "id": "GtY8rN6Cr1VT",
-                              "text": "dev mode 버튼",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110152658.png"
-                              },
-                              "createdAt": 1794292018637,
-                              "updatedAt": 1794292026349
-                            },
-                            {
-                              "id": "vtKvzTVB0U6f",
-                              "text": "탭 바 바뀐 모습",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110152802.png"
-                              },
-                              "createdAt": 1794292082188,
-                              "updatedAt": 1794292092342
-                            }
-                          ],
-                          "isFolded": true,
-                          "file": {
-                            "target": "Pasted image 20261110152024.png"
-                          },
-                          "createdAt": 1794291624650,
-                          "updatedAt": 1794291643984
-                        },
-                        {
-                          "id": "UuvvnprB2A4u",
-                          "text": "디자인은 끝났고, 개발 모드로 들어가라는 섹터 표시임 (ready for dev)",
-                          "children": [
-                            {
-                              "id": "k339xJoWbg4b",
-                              "text": "디자인 완료 되었으면 디자인 캔버스에서 mask as ready for dev로 표시",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110152846.png"
-                              },
-                              "createdAt": 1794292126426,
-                              "updatedAt": 1794292150904
-                            },
-                            {
-                              "id": "Kd73HJKU4nTt",
-                              "text": "이게 그 dev 모드 변경하는 화면인가보네",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110152621.png"
-                              },
-                              "createdAt": 1794291981525,
-                              "updatedAt": 1794292724548
-                            }
-                          ],
-                          "isFolded": true,
-                          "file": {
-                            "target": "Pasted image 20261110152119.png"
-                          },
-                          "createdAt": 1794291679394,
-                          "updatedAt": 1794291707819
-                        },
-                        {
-                          "id": "t3CnUdO0l4lw",
-                          "text": "버전 관리",
-                          "children": [
-                            {
-                              "id": "pTbINQaN22Vy",
-                              "text": "diff 확인",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110153919.png"
-                              },
-                              "createdAt": 1794292759623,
-                              "updatedAt": 1794292764345
-                            },
-                            {
-                              "id": "KvxzNpBs61Rn",
-                              "text": "diff  관리 화면이 따로 제공되나보네?",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110153934.png"
-                              },
-                              "createdAt": 1794292774828,
-                              "updatedAt": 1794292787834
-                            },
-                            {
-                              "id": "vLrF9Ra9UfHo",
-                              "text": "https://help.figma.com/hc/en-us/articles/15023193382935-Compare-changes-in-Dev-Mode",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110155008.png"
-                              },
-                              "createdAt": 1794293408479,
-                              "updatedAt": 1794293416667
-                            }
-                          ],
-                          "isFolded": true,
-                          "file": {
-                            "target": "Pasted image 20261110153705.png"
-                          },
-                          "createdAt": 1794292625710,
-                          "updatedAt": 1794292741485
-                        },
-                        {
-                          "id": "s2D6vFWcDBgE",
-                          "text": "개발 준비 완료 탭에서 볼 수 있는 화면으로 focus 기능 제공 (리스트 피드 뷰)",
-                          "children": [
-                            {
-                              "id": "bjcLv3u1t9dg",
-                              "text": "여러개 일때 보이는 피드형 화면",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110152932.png"
-                              },
-                              "createdAt": 1794292172891,
-                              "updatedAt": 1794292194847
-                            },
-                            {
-                              "id": "iRd4WTnWnuZa",
-                              "text": "상세 포커스 뷰",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110152434.png"
-                              },
-                              "createdAt": 1794291874971,
-                              "updatedAt": 1794291902824
-                            },
-                            {
-                              "id": "cONKEuZOfKLL",
-                              "text": "무료 플랜에서는 사용 불가래 어쩌라고",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110153026.png"
-                              },
-                              "createdAt": 1794292226944,
-                              "updatedAt": 1794292516698
-                            },
-                            {
-                              "id": "NUUxCG85ad1C",
-                              "text": "코드가 바로 보인다",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110153128.png"
-                              },
-                              "createdAt": 1794292288573,
-                              "updatedAt": 1794292539312
-                            }
-                          ],
-                          "isFolded": true,
-                          "file": {
-                            "target": "Pasted image 20261110152406.png"
-                          },
-                          "createdAt": 1794291846990,
-                          "updatedAt": 1794292846166
-                        },
-                        {
-                          "id": "Zu1G7MG0aaJ7",
-                          "text": "검사 패널로 코드 변환에 필요한 설계 사양 및 구성 요소 정보 표시",
-                          "children": [],
-                          "file": {
-                            "target": "Pasted image 20261110152223.png"
-                          },
-                          "createdAt": 1794291743574,
-                          "updatedAt": 1794292871325
-                        },
-                        {
-                          "id": "13KkKiDxobND",
-                          "text": "주석 달기로 연필모양 클릭하고 캔버스 찍어서 남기면 주석이 됨",
-                          "children": [],
-                          "file": {
-                            "target": "Pasted image 20261110152326.png"
-                          },
-                          "createdAt": 1794291806109,
-                          "updatedAt": 1794292830287
-                        },
-                        {
-                          "id": "TeuJxhdQ9pe0",
-                          "text": "개발 완료 후 완료 표시 mark as completed",
-                          "children": [
-                            {
-                              "id": "dGM90CHDtX29",
-                              "text": "피드 뷰에서도 체크 가능",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110154208.png"
-                              },
-                              "createdAt": 1794292928967,
-                              "updatedAt": 1794292938380
-                            }
-                          ],
-                          "isFolded": true,
-                          "file": {
-                            "target": "Pasted image 20261110154128.png"
-                          },
-                          "createdAt": 1794292888386,
-                          "updatedAt": 1794292903789
-                        },
-                        {
-                          "id": "UdiKvrJCezN3",
-                          "text": "리소스를 링크 형식으로 inspect 에 연결시켜뒀네",
-                          "children": [
-                            {
-                              "id": "CZkZgLqhYAGc",
-                              "text": "https://help.figma.com/hc/en-us/articles/15023231995927-Link-Dev-resources-to-layers-in-Dev-Mode",
-                              "children": [],
-                              "createdAt": 1794293538702,
-                              "updatedAt": 1794293542684
-                            }
-                          ],
-                          "isFolded": true,
-                          "file": {
-                            "target": "Pasted image 20261110155136.png"
-                          },
-                          "createdAt": 1794293496119,
-                          "updatedAt": 1794293528076
-                        },
-                        {
-                          "id": "EUT4mStiqgMn",
-                          "text": "개발모드에서 변수 설정",
-                          "children": [
-                            {
-                              "id": "u1o0Pqtyc6Be",
-                              "text": "https://help.figma.com/hc/en-us/articles/27882809912471-Variables-in-Dev-Mode#h_01JD03NW7FA3PYRN5PK9GD2VZ5",
-                              "children": [],
-                              "createdAt": 1794293580404,
-                              "updatedAt": 1794293581811
-                            },
-                            {
-                              "id": "Uwz3TV0Ezbfo",
-                              "text": "변수 세부정보",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110155325.png"
-                              },
-                              "createdAt": 1794293605946,
-                              "updatedAt": 1794293616159
-                            },
-                            {
-                              "id": "oYr0kSb4g2mH",
-                              "text": "모달로 표시됨",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110155344.png"
-                              },
-                              "createdAt": 1794293624574,
-                              "updatedAt": 1794293631092
-                            }
-                          ],
-                          "isFolded": true,
-                          "createdAt": 1794293562920,
-                          "updatedAt": 1794293579778
-                        },
-                        {
-                          "id": "4RcjdCdPq85a",
-                          "text": "측정값 그리고 주석 추가",
-                          "children": [
-                            {
-                              "id": "ZBXTG0Je9Whc",
-                              "text": "https://help.figma.com/hc/en-us/articles/20774752502935-Add-measurements-and-annotate-designs",
-                              "children": [],
-                              "createdAt": 1794293788692,
-                              "updatedAt": 1794293793775
-                            },
-                            {
-                              "id": "sOJzhj5jLQM8",
-                              "text": "주석을 추가할 때, 단순 멘트 뿐만 아니라 치수, 값, 변수 등을 설정할 수 있음",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110155509.png"
-                              },
-                              "createdAt": 1794293709658,
-                              "updatedAt": 1794293755184
-                            },
-                            {
-                              "id": "3SBrt9B6lLLY",
-                              "text": "카테고리 crud 가능",
-                              "children": [],
-                              "file": {
-                                "target": "Pasted image 20261110155608.png"
-                              },
-                              "createdAt": 1794293768643,
-                              "updatedAt": 1794293778741
-                            }
-                          ],
-                          "isFolded": true,
-                          "createdAt": 1794293681851,
-                          "updatedAt": 1794293699214
-                        }
-                      ],
-                      "isFolded": true,
-                      "note": "디자인을 건드릴 수 없다는 관점에서는 \"안전한 읽기 전용(Read-Only)\"이 맞습니다.\n\n디자이너가 만들어 둔 화면을 망가뜨리지 않고 개발에만 필요한 정보를 안전하게 꺼내 쓰도록 설계된 모드입니다.\n\n1. 못 하는 것 (디자인 수정 불가 ❌)\n요소를 클릭하고 드래그해도 위치가 옮겨지지 않습니다. (실수로 삐뚤어질 걱정 없음)\n텍스트를 더블클릭해도 내용이 편집되지 않습니다.\n색상, 폰트, 크기, 오토레이아웃 등 디자인 속성을 변경할 수 없습니다.\n2. 할 수 있는 것 (개발 관련 작업 및 데이터 추출 ⭕)\n\n완전한 뷰어(View-only)와 달리 개발 협업을 위한 작업들은 가능합니다:\n\n수치/간격 측정: 마우스만 올리면 요소 간 간격(px), 패딩, 마진 자동 표시\n코드 및 CSS 복사: CSS, Tailwind, SwiftUI, Compose 등 코드로 바로 복사\n에셋(Asset) 추출: 아이콘, 이미지 등을 SVG / PNG / WebP로 바로 Export\n개발 상태 변경: \"Ready for dev(개발 대기)\", \"Completed(개발 완료)\" 상태 표시/변경\n협업/링크 연결: 댓글(Comment) 작성, Jira 티켓/GitHub PR 링크 연결\n\n💡 한 줄 요약: \"디자인 원본은 절대 망가뜨릴 수 없는 안전 모드이면서, 코드·치수·이미지 추출은 마음껏 할 수 있는 개발 전용 모드\"로 보시면 됩니다.",
-                      "createdAt": 1794291518365,
-                      "updatedAt": 1794293149461
-                    }
-                  ],
-                  "createdAt": 1794291501340,
-                  "updatedAt": 1794291512307
-                },
-                {
-                  "id": "TAnKa4JVhAhU",
-                  "text": "세세한 부분까지 다 object로 잡아줌 + 보이게 / 안보이게 눈 표시로 확인 가능",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110161205.png"
-                  },
-                  "createdAt": 1794294724137,
-                  "updatedAt": 1794294761414
-                },
-                {
-                  "id": "XUO2P3k2AJ3b",
-                  "text": "어디나 찍어서 코멘트 달 수 잇슴",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110161309.png"
-                  },
-                  "createdAt": 1794294789788,
-                  "updatedAt": 1794294804838
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1794289407935,
-              "updatedAt": 1794297393766
-            },
-            {
-              "id": "I33VCvA3bSCt",
-              "text": "code layers 기능 !! ",
-              "children": [
-                {
-                  "id": "8zatJ6Wq8DVy",
-                  "text": "https://help.figma.com/hc/en-us/articles/44193259600535-Code-layers-in-Figma-Design#h_01M4XTGCV37FMZHXHGZJCNQM1M",
-                  "children": [],
-                  "createdAt": 1794297368687,
-                  "updatedAt": 1794297386155
-                },
-                {
-                  "id": "gTf1G2AHE56s",
-                  "text": "바이브 코딩한거 걍 피그마에 던지면 피그마에서 수정 가능해짐 (기획/개발자 - 디자이너 상호작용 가능해짐)",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110161709.png"
-                  },
-                  "createdAt": 1794295029020,
-                  "updatedAt": 1794296622129
-                },
-                {
-                  "id": "mTCOwYI1RK0S",
-                  "text": "변경하고 싶은거 ai에게 프롬프트 형식으로 던지면",
-                  "children": [
-                    {
-                      "id": "1ULNkJEXG1jv",
-                      "text": "이런식으로 3개의 결과를 보여줌 (이건 사실상 피그마 기능과 동일)",
+                      "id": "iutr4oMADIKk",
+                      "text": "figma agents 대화창 화면",
                       "children": [],
                       "file": {
-                        "target": "Pasted image 20261110164424.png"
+                        "target": "Pasted image 20261110144434.png"
                       },
-                      "createdAt": 1794296664484,
-                      "updatedAt": 1794296679035
+                      "createdAt": 1794289446125,
+                      "updatedAt": 1794289684734
                     },
                     {
-                      "id": "eTc3TJO6hXDw",
-                      "text": "그러니까, git hub에 있는 무지성 기능만 고려한 바이브 코딩을 피그마에 이식을 하면 랜더링 해주고, 작동도 하며 디자이너가 익숙한 figma 툴로 디자인 수정까지 해준다는 거잖슴 ㄷㄷ;;",
+                      "id": "zNyGVIF1BhBa",
+                      "text": "리소스 대화창에서 추가하는 방법인가봄",
                       "children": [],
-                      "createdAt": 1794296680559,
-                      "updatedAt": 1794296774429
+                      "isFolded": false,
+                      "file": {
+                        "target": "Pasted image 20261110144504.png"
+                      },
+                      "createdAt": 1794289504801,
+                      "updatedAt": 1794289701187
+                    },
+                    {
+                      "id": "EFpjDW158Q8z",
+                      "text": "인라인 대화창 활용하는 방안 assets 에 등록한거 불러오기 @로",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110144611.png"
+                      },
+                      "createdAt": 1794289571967,
+                      "updatedAt": 1794289714146
+                    },
+                    {
+                      "id": "NGsX16yjJ0Q4",
+                      "text": "인라인 챗 화면 (피드백들 혹은 코멘트들이 있다면 그거 모아서 요약 피드백 반영하는 기능도 있다함)",
+                      "children": [
+                        {
+                          "id": "d2wsYQGmWEQg",
+                          "text": "왼쪽 피드백들을 반영해서 오른쪽에 반영안 동일하게 생성",
+                          "children": [],
+                          "file": {
+                            "target": "Pasted image 20261110150108.png"
+                          },
+                          "createdAt": 1794290468503,
+                          "updatedAt": 1794290490395
+                        }
+                      ],
+                      "file": {
+                        "target": "Pasted image 20261110145001.png"
+                      },
+                      "createdAt": 1794289801553,
+                      "updatedAt": 1794289829930
+                    },
+                    {
+                      "id": "TitWE9DMN1Ag",
+                      "text": "새로운 이미지를 생성할 때, 우리로 치면 새로운 칸을 생성할 때, 참조 할 리소스 (+) 버튼으로 추가하기",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110150616.png"
+                      },
+                      "createdAt": 1794290776077,
+                      "updatedAt": 1794290815712
+                    },
+                    {
+                      "id": "x7FFTrZvGmcA",
+                      "text": "인터렉션을 확인하기 위한 재생 화면이지만 우리가 쓸 곳이 있지 않을까?",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110150808.png"
+                      },
+                      "createdAt": 1794290888081,
+                      "updatedAt": 1794290920311
+                    },
+                    {
+                      "id": "RjVMXD0xHglm",
+                      "text": "우리로 따지면 위키 등록한다는 건가?",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110151140.png"
+                      },
+                      "createdAt": 1794291100217,
+                      "updatedAt": 1794291170969
+                    },
+                    {
+                      "id": "EPw35eEd56cC",
+                      "text": "디자인 검토 도구 ",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110151511.png"
+                      },
+                      "createdAt": 1794291311655,
+                      "updatedAt": 1794291345215
+                    },
+                    {
+                      "id": "0pnNB163fFw1",
+                      "text": "colors / dimensions / typography / components 이렇게 체크하는건가봐? 다르게 설정된 부분 검토 하는건가베",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110151506.png"
+                      },
+                      "createdAt": 1794291306374,
+                      "updatedAt": 1794291412086
+                    },
+                    {
+                      "id": "0VOdaR5KYHe0",
+                      "text": "https://help.figma.com/hc/en-us/articles/38978644498199-AI-workflows-collection-Refine-your-components-and-variables-for-the-Figma-agent",
+                      "children": [
+                        {
+                          "id": "kkIyR1cOq9vO",
+                          "text": "변수 설정 관련 페이지",
+                          "children": [],
+                          "createdAt": 1794291453166,
+                          "updatedAt": 1794291469431
+                        }
+                      ],
+                      "createdAt": 1794291450826,
+                      "updatedAt": 1794291452125
+                    },
+                    {
+                      "id": "H495HMPhi2vX",
+                      "text": "https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode-in-Figma#h_01JA8Z1DAZSGZ1M4AV2RK05C65",
+                      "children": [
+                        {
+                          "id": "uwFOAp5OQV76",
+                          "text": "figma 개발자 모드 사용 가이드",
+                          "children": [
+                            {
+                              "id": "JgoR50QvYgRC",
+                              "text": "</> 버튼으로 모드 변경",
+                              "children": [
+                                {
+                                  "id": "GtY8rN6Cr1VT",
+                                  "text": "dev mode 버튼",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110152658.png"
+                                  },
+                                  "createdAt": 1794292018637,
+                                  "updatedAt": 1794292026349
+                                },
+                                {
+                                  "id": "vtKvzTVB0U6f",
+                                  "text": "탭 바 바뀐 모습",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110152802.png"
+                                  },
+                                  "createdAt": 1794292082188,
+                                  "updatedAt": 1794292092342
+                                }
+                              ],
+                              "isFolded": false,
+                              "file": {
+                                "target": "Pasted image 20261110152024.png"
+                              },
+                              "createdAt": 1794291624650,
+                              "updatedAt": 1794291643984
+                            },
+                            {
+                              "id": "UuvvnprB2A4u",
+                              "text": "디자인은 끝났고, 개발 모드로 들어가라는 섹터 표시임 (ready for dev)",
+                              "children": [
+                                {
+                                  "id": "k339xJoWbg4b",
+                                  "text": "디자인 완료 되었으면 디자인 캔버스에서 mask as ready for dev로 표시",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110152846.png"
+                                  },
+                                  "createdAt": 1794292126426,
+                                  "updatedAt": 1794292150904
+                                },
+                                {
+                                  "id": "Kd73HJKU4nTt",
+                                  "text": "이게 그 dev 모드 변경하는 화면인가보네",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110152621.png"
+                                  },
+                                  "createdAt": 1794291981525,
+                                  "updatedAt": 1794292724548
+                                }
+                              ],
+                              "isFolded": false,
+                              "file": {
+                                "target": "Pasted image 20261110152119.png"
+                              },
+                              "createdAt": 1794291679394,
+                              "updatedAt": 1794291707819
+                            },
+                            {
+                              "id": "t3CnUdO0l4lw",
+                              "text": "버전 관리",
+                              "children": [
+                                {
+                                  "id": "pTbINQaN22Vy",
+                                  "text": "diff 확인",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110153919.png"
+                                  },
+                                  "createdAt": 1794292759623,
+                                  "updatedAt": 1794292764345
+                                },
+                                {
+                                  "id": "KvxzNpBs61Rn",
+                                  "text": "diff  관리 화면이 따로 제공되나보네?",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110153934.png"
+                                  },
+                                  "createdAt": 1794292774828,
+                                  "updatedAt": 1794292787834
+                                },
+                                {
+                                  "id": "vLrF9Ra9UfHo",
+                                  "text": "https://help.figma.com/hc/en-us/articles/15023193382935-Compare-changes-in-Dev-Mode",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110155008.png"
+                                  },
+                                  "createdAt": 1794293408479,
+                                  "updatedAt": 1794293416667
+                                }
+                              ],
+                              "isFolded": false,
+                              "file": {
+                                "target": "Pasted image 20261110153705.png"
+                              },
+                              "createdAt": 1794292625710,
+                              "updatedAt": 1794292741485
+                            },
+                            {
+                              "id": "s2D6vFWcDBgE",
+                              "text": "개발 준비 완료 탭에서 볼 수 있는 화면으로 focus 기능 제공 (리스트 피드 뷰)",
+                              "children": [
+                                {
+                                  "id": "bjcLv3u1t9dg",
+                                  "text": "여러개 일때 보이는 피드형 화면",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110152932.png"
+                                  },
+                                  "createdAt": 1794292172891,
+                                  "updatedAt": 1794292194847
+                                },
+                                {
+                                  "id": "iRd4WTnWnuZa",
+                                  "text": "상세 포커스 뷰",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110152434.png"
+                                  },
+                                  "createdAt": 1794291874971,
+                                  "updatedAt": 1794291902824
+                                },
+                                {
+                                  "id": "cONKEuZOfKLL",
+                                  "text": "무료 플랜에서는 사용 불가래 어쩌라고",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110153026.png"
+                                  },
+                                  "createdAt": 1794292226944,
+                                  "updatedAt": 1794292516698
+                                },
+                                {
+                                  "id": "NUUxCG85ad1C",
+                                  "text": "코드가 바로 보인다",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110153128.png"
+                                  },
+                                  "createdAt": 1794292288573,
+                                  "updatedAt": 1794292539312
+                                }
+                              ],
+                              "isFolded": false,
+                              "file": {
+                                "target": "Pasted image 20261110152406.png"
+                              },
+                              "createdAt": 1794291846990,
+                              "updatedAt": 1794292846166
+                            },
+                            {
+                              "id": "Zu1G7MG0aaJ7",
+                              "text": "검사 패널로 코드 변환에 필요한 설계 사양 및 구성 요소 정보 표시",
+                              "children": [],
+                              "file": {
+                                "target": "Pasted image 20261110152223.png"
+                              },
+                              "createdAt": 1794291743574,
+                              "updatedAt": 1794292871325
+                            },
+                            {
+                              "id": "13KkKiDxobND",
+                              "text": "주석 달기로 연필모양 클릭하고 캔버스 찍어서 남기면 주석이 됨",
+                              "children": [],
+                              "file": {
+                                "target": "Pasted image 20261110152326.png"
+                              },
+                              "createdAt": 1794291806109,
+                              "updatedAt": 1794292830287
+                            },
+                            {
+                              "id": "TeuJxhdQ9pe0",
+                              "text": "개발 완료 후 완료 표시 mark as completed",
+                              "children": [
+                                {
+                                  "id": "dGM90CHDtX29",
+                                  "text": "피드 뷰에서도 체크 가능",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110154208.png"
+                                  },
+                                  "createdAt": 1794292928967,
+                                  "updatedAt": 1794292938380
+                                }
+                              ],
+                              "isFolded": false,
+                              "file": {
+                                "target": "Pasted image 20261110154128.png"
+                              },
+                              "createdAt": 1794292888386,
+                              "updatedAt": 1794292903789
+                            },
+                            {
+                              "id": "UdiKvrJCezN3",
+                              "text": "리소스를 링크 형식으로 inspect 에 연결시켜뒀네",
+                              "children": [
+                                {
+                                  "id": "CZkZgLqhYAGc",
+                                  "text": "https://help.figma.com/hc/en-us/articles/15023231995927-Link-Dev-resources-to-layers-in-Dev-Mode",
+                                  "children": [],
+                                  "createdAt": 1794293538702,
+                                  "updatedAt": 1794293542684
+                                }
+                              ],
+                              "isFolded": false,
+                              "file": {
+                                "target": "Pasted image 20261110155136.png"
+                              },
+                              "createdAt": 1794293496119,
+                              "updatedAt": 1794293528076
+                            },
+                            {
+                              "id": "EUT4mStiqgMn",
+                              "text": "개발모드에서 변수 설정",
+                              "children": [
+                                {
+                                  "id": "u1o0Pqtyc6Be",
+                                  "text": "https://help.figma.com/hc/en-us/articles/27882809912471-Variables-in-Dev-Mode#h_01JD03NW7FA3PYRN5PK9GD2VZ5",
+                                  "children": [],
+                                  "createdAt": 1794293580404,
+                                  "updatedAt": 1794293581811
+                                },
+                                {
+                                  "id": "Uwz3TV0Ezbfo",
+                                  "text": "변수 세부정보",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110155325.png"
+                                  },
+                                  "createdAt": 1794293605946,
+                                  "updatedAt": 1794293616159
+                                },
+                                {
+                                  "id": "oYr0kSb4g2mH",
+                                  "text": "모달로 표시됨",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110155344.png"
+                                  },
+                                  "createdAt": 1794293624574,
+                                  "updatedAt": 1794293631092
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1794293562920,
+                              "updatedAt": 1794293579778
+                            },
+                            {
+                              "id": "4RcjdCdPq85a",
+                              "text": "측정값 그리고 주석 추가",
+                              "children": [
+                                {
+                                  "id": "ZBXTG0Je9Whc",
+                                  "text": "https://help.figma.com/hc/en-us/articles/20774752502935-Add-measurements-and-annotate-designs",
+                                  "children": [],
+                                  "createdAt": 1794293788692,
+                                  "updatedAt": 1794293793775
+                                },
+                                {
+                                  "id": "sOJzhj5jLQM8",
+                                  "text": "주석을 추가할 때, 단순 멘트 뿐만 아니라 치수, 값, 변수 등을 설정할 수 있음",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110155509.png"
+                                  },
+                                  "createdAt": 1794293709658,
+                                  "updatedAt": 1794293755184
+                                },
+                                {
+                                  "id": "3SBrt9B6lLLY",
+                                  "text": "카테고리 crud 가능",
+                                  "children": [],
+                                  "file": {
+                                    "target": "Pasted image 20261110155608.png"
+                                  },
+                                  "createdAt": 1794293768643,
+                                  "updatedAt": 1794293778741
+                                }
+                              ],
+                              "isFolded": false,
+                              "createdAt": 1794293681851,
+                              "updatedAt": 1794293699214
+                            }
+                          ],
+                          "isFolded": false,
+                          "note": "디자인을 건드릴 수 없다는 관점에서는 \"안전한 읽기 전용(Read-Only)\"이 맞습니다.\n\n디자이너가 만들어 둔 화면을 망가뜨리지 않고 개발에만 필요한 정보를 안전하게 꺼내 쓰도록 설계된 모드입니다.\n\n1. 못 하는 것 (디자인 수정 불가 ❌)\n요소를 클릭하고 드래그해도 위치가 옮겨지지 않습니다. (실수로 삐뚤어질 걱정 없음)\n텍스트를 더블클릭해도 내용이 편집되지 않습니다.\n색상, 폰트, 크기, 오토레이아웃 등 디자인 속성을 변경할 수 없습니다.\n2. 할 수 있는 것 (개발 관련 작업 및 데이터 추출 ⭕)\n\n완전한 뷰어(View-only)와 달리 개발 협업을 위한 작업들은 가능합니다:\n\n수치/간격 측정: 마우스만 올리면 요소 간 간격(px), 패딩, 마진 자동 표시\n코드 및 CSS 복사: CSS, Tailwind, SwiftUI, Compose 등 코드로 바로 복사\n에셋(Asset) 추출: 아이콘, 이미지 등을 SVG / PNG / WebP로 바로 Export\n개발 상태 변경: \"Ready for dev(개발 대기)\", \"Completed(개발 완료)\" 상태 표시/변경\n협업/링크 연결: 댓글(Comment) 작성, Jira 티켓/GitHub PR 링크 연결\n\n💡 한 줄 요약: \"디자인 원본은 절대 망가뜨릴 수 없는 안전 모드이면서, 코드·치수·이미지 추출은 마음껏 할 수 있는 개발 전용 모드\"로 보시면 됩니다.",
+                          "createdAt": 1794291518365,
+                          "updatedAt": 1794293149461
+                        }
+                      ],
+                      "createdAt": 1794291501340,
+                      "updatedAt": 1794291512307
+                    },
+                    {
+                      "id": "TAnKa4JVhAhU",
+                      "text": "세세한 부분까지 다 object로 잡아줌 + 보이게 / 안보이게 눈 표시로 확인 가능",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110161205.png"
+                      },
+                      "createdAt": 1794294724137,
+                      "updatedAt": 1794294761414
+                    },
+                    {
+                      "id": "XUO2P3k2AJ3b",
+                      "text": "어디나 찍어서 코멘트 달 수 잇슴",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110161309.png"
+                      },
+                      "createdAt": 1794294789788,
+                      "updatedAt": 1794294804838
                     }
                   ],
                   "isFolded": false,
-                  "file": {
-                    "target": "Pasted image 20261110164303.png"
-                  },
-                  "createdAt": 1794296583800,
-                  "updatedAt": 1794296644989
+                  "createdAt": 1794289407935,
+                  "updatedAt": 1794392192305
                 },
                 {
-                  "id": "2RebXmfKP7Ib",
-                  "text": "browser 탭 화면 + create PR 이면 디자인 반영해서 풀리도 날려준다는건가",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110164557.png"
-                  },
-                  "createdAt": 1794296757726,
-                  "updatedAt": 1794296980522
-                },
-                {
-                  "id": "eghACTG3bSdj",
-                  "text": "files 탭 화면 +로 계속 개발 창처럼 추가 할 수 있나봐",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110164941.png"
-                  },
-                  "createdAt": 1794296981425,
-                  "updatedAt": 1794297009391
-                },
-                {
-                  "id": "dY5i4sIlgnyn",
-                  "text": "현재 스테이트  복사 + 특정 엘리먼트 복사 + 화면 레코딩 복사까지",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110165117.png"
-                  },
-                  "createdAt": 1794297077566,
-                  "updatedAt": 1794297110729
-                },
-                {
-                  "id": "sU5BfRa6qEhu",
-                  "text": "실시간 랜더링 동작 화면도 여러개 띄워놓고 진행 가능함",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261110165216.png"
-                  },
-                  "createdAt": 1794297136899,
-                  "updatedAt": 1794297152727
-                },
-                {
-                  "id": "jvEWqoAw6iE1",
-                  "text": "Figma Design의 코드 레이어(Code layers)는 단순한 이미지가 아닌, 캔버스 위에 직접 배치되어 실제 코드로 구동되는 인터랙티브 프로토타입입니다. 해당 가이드 문서의 핵심 내용을 요약하면 다음과 같습니다.",
+                  "id": "I33VCvA3bSCt",
+                  "text": "code layers 기능 !! ",
                   "children": [
                     {
-                      "id": "qm5BhKMwrUMG",
-                      "text": "코드 레이어 생성 방법",
-                      "children": [
-                        {
-                          "id": "GBEPwQddZDOF",
-                          "text": "처음부터 시작(Start from scratch): 빈 프레임을 생성하고 프롬프트를 입력해 AI가 코드를 작성하게 합니다.",
-                          "children": [],
-                          "nodeType": "bullet",
-                          "createdAt": 1794297255588,
-                          "updatedAt": 1794297277094
-                        },
-                        {
-                          "id": "Iq8h40OlAwNF",
-                          "text": "정적 디자인 활용(Start with static designs): 캔버스의 기존 디자인 프레임을 인터랙티브한 코드로 변환합니다.",
-                          "children": [],
-                          "nodeType": "bullet",
-                          "createdAt": 1794297255588,
-                          "updatedAt": 1794297277095
-                        },
-                        {
-                          "id": "1yqssUvQEEqQ",
-                          "text": "웹페이지 캡처(Capture code from your webpage): Figma Chrome 확장 프로그램을 사용해 실제 웹페이지의 코드를 복사해 바로 붙여넣습니다.",
-                          "children": [],
-                          "nodeType": "bullet",
-                          "createdAt": 1794297255588,
-                          "updatedAt": 1794297277095
-                        },
-                        {
-                          "id": "D1lUvss7VX2w",
-                          "text": "코드 소스 연결(Connect your code source): GitHub 저장소나 로컬 폴더를 연결해 실제 프로덕션 코드를 캔버스로 불러옵니다.",
-                          "children": [],
-                          "nodeType": "bullet",
-                          "createdAt": 1794297255588,
-                          "updatedAt": 1794297277095
-                        }
-                      ],
-                      "nodeType": "bullet",
-                      "createdAt": 1794297255588,
-                      "updatedAt": 1794297297667
+                      "id": "8zatJ6Wq8DVy",
+                      "text": "https://help.figma.com/hc/en-us/articles/44193259600535-Code-layers-in-Figma-Design#h_01M4XTGCV37FMZHXHGZJCNQM1M",
+                      "children": [],
+                      "createdAt": 1794297368687,
+                      "updatedAt": 1794297386155
                     },
                     {
-                      "id": "AknEgsDEo3gi",
-                      "text": "편집 및 상호작용",
-                      "children": [
-                        {
-                          "id": "ZTmRMnkNFidF",
-                          "text": "코드 레이어 재생(Play a code layer): 레이어 우측 상단의 'Play'를 눌러 빈 상태, 로딩, 에러 등 실제 기기 환경과 동일한 인터랙션을 테스트할 수 있습니다.",
-                          "children": [],
-                          "nodeType": "bullet",
-                          "createdAt": 1794297255588,
-                          "updatedAt": 1794297282231
-                        },
-                        {
-                          "id": "L786oTQ52xTA",
-                          "text": "포인트 앤 에디트(Point and edit): 화면 내 요소를 직접 클릭해 우측 패널에서 색상, 패딩 등 디자인 속성을 시각적으로 수정하면 AI가 코드를 업데이트합니다.",
-                          "children": [],
-                          "nodeType": "bullet",
-                          "createdAt": 1794297255588,
-                          "updatedAt": 1794297282231
-                        }
-                      ],
-                      "nodeType": "bullet",
-                      "createdAt": 1794297255588,
-                      "updatedAt": 1794297297667
+                      "id": "gTf1G2AHE56s",
+                      "text": "바이브 코딩한거 걍 피그마에 던지면 피그마에서 수정 가능해짐 (기획/개발자 - 디자이너 상호작용 가능해짐)",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110161709.png"
+                      },
+                      "createdAt": 1794295029020,
+                      "updatedAt": 1794296622129
                     },
                     {
-                      "id": "Xyus672biegr",
-                      "text": "디자인 추출 및 양방향 협업",
+                      "id": "mTCOwYI1RK0S",
+                      "text": "변경하고 싶은거 ai에게 프롬프트 형식으로 던지면",
                       "children": [
                         {
-                          "id": "8GFiZDw9xoBF",
-                          "text": "디자인으로 추출(Extract a code layer to design): 코드로 만들어진 화면을 일반적인 편집 가능한 Figma 디자인 레이어로 변환합니다. 여기서 픽셀 단위로 디자인을 수정한 뒤, 다시 코드로 푸시(Push)할 수 있습니다.",
+                          "id": "1ULNkJEXG1jv",
+                          "text": "이런식으로 3개의 결과를 보여줌 (이건 사실상 피그마 기능과 동일)",
                           "children": [],
-                          "nodeType": "bullet",
-                          "createdAt": 1794297255588,
-                          "updatedAt": 1794297287384
+                          "file": {
+                            "target": "Pasted image 20261110164424.png"
+                          },
+                          "createdAt": 1794296664484,
+                          "updatedAt": 1794296679035
+                        },
+                        {
+                          "id": "eTc3TJO6hXDw",
+                          "text": "그러니까, git hub에 있는 무지성 기능만 고려한 바이브 코딩을 피그마에 이식을 하면 랜더링 해주고, 작동도 하며 디자이너가 익숙한 figma 툴로 디자인 수정까지 해준다는 거잖슴 ㄷㄷ;;",
+                          "children": [],
+                          "createdAt": 1794296680559,
+                          "updatedAt": 1794296774429
                         }
                       ],
-                      "nodeType": "bullet",
-                      "createdAt": 1794297255588,
-                      "updatedAt": 1794297297667
+                      "isFolded": false,
+                      "file": {
+                        "target": "Pasted image 20261110164303.png"
+                      },
+                      "createdAt": 1794296583800,
+                      "updatedAt": 1794296644989
                     },
                     {
-                      "id": "kGomugYUBRg4",
-                      "text": "고급 기능 및 참고 사항",
+                      "id": "2RebXmfKP7Ib",
+                      "text": "browser 탭 화면 + create PR 이면 디자인 반영해서 풀리도 날려준다는건가",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110164557.png"
+                      },
+                      "createdAt": 1794296757726,
+                      "updatedAt": 1794296980522
+                    },
+                    {
+                      "id": "eghACTG3bSdj",
+                      "text": "files 탭 화면 +로 계속 개발 창처럼 추가 할 수 있나봐",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110164941.png"
+                      },
+                      "createdAt": 1794296981425,
+                      "updatedAt": 1794297009391
+                    },
+                    {
+                      "id": "dY5i4sIlgnyn",
+                      "text": "현재 스테이트  복사 + 특정 엘리먼트 복사 + 화면 레코딩 복사까지",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110165117.png"
+                      },
+                      "createdAt": 1794297077566,
+                      "updatedAt": 1794297110729
+                    },
+                    {
+                      "id": "sU5BfRa6qEhu",
+                      "text": "실시간 랜더링 동작 화면도 여러개 띄워놓고 진행 가능함",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261110165216.png"
+                      },
+                      "createdAt": 1794297136899,
+                      "updatedAt": 1794297152727
+                    },
+                    {
+                      "id": "jvEWqoAw6iE1",
+                      "text": "Figma Design의 코드 레이어(Code layers)는 단순한 이미지가 아닌, 캔버스 위에 직접 배치되어 실제 코드로 구동되는 인터랙티브 프로토타입입니다. 해당 가이드 문서의 핵심 내용을 요약하면 다음과 같습니다.",
                       "children": [
                         {
-                          "id": "OXV5oCI3yVm4",
-                          "text": "Shaders 지원: 블러 처리나 유리 같은 왜곡, 애니메이션 효과 등 복잡한 시각 효과를 코드 레이어 안에서 지원합니다 (Chrome 환경 필요).",
-                          "children": [],
+                          "id": "qm5BhKMwrUMG",
+                          "text": "코드 레이어 생성 방법",
+                          "children": [
+                            {
+                              "id": "GBEPwQddZDOF",
+                              "text": "처음부터 시작(Start from scratch): 빈 프레임을 생성하고 프롬프트를 입력해 AI가 코드를 작성하게 합니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297277094
+                            },
+                            {
+                              "id": "Iq8h40OlAwNF",
+                              "text": "정적 디자인 활용(Start with static designs): 캔버스의 기존 디자인 프레임을 인터랙티브한 코드로 변환합니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297277095
+                            },
+                            {
+                              "id": "1yqssUvQEEqQ",
+                              "text": "웹페이지 캡처(Capture code from your webpage): Figma Chrome 확장 프로그램을 사용해 실제 웹페이지의 코드를 복사해 바로 붙여넣습니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297277095
+                            },
+                            {
+                              "id": "D1lUvss7VX2w",
+                              "text": "코드 소스 연결(Connect your code source): GitHub 저장소나 로컬 폴더를 연결해 실제 프로덕션 코드를 캔버스로 불러옵니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297277095
+                            }
+                          ],
                           "nodeType": "bullet",
                           "createdAt": 1794297255588,
-                          "updatedAt": 1794297289956
+                          "updatedAt": 1794297297667
                         },
                         {
-                          "id": "Urd2vuzRd0By",
-                          "text": "MCP 서버 연동: Figma MCP 서버를 활용하면 외부 코딩 에이전트에서 작업한 프로젝트를 Figma 캔버스로 곧바로 임포트할 수 있습니다.",
-                          "children": [],
+                          "id": "AknEgsDEo3gi",
+                          "text": "편집 및 상호작용",
+                          "children": [
+                            {
+                              "id": "ZTmRMnkNFidF",
+                              "text": "코드 레이어 재생(Play a code layer): 레이어 우측 상단의 'Play'를 눌러 빈 상태, 로딩, 에러 등 실제 기기 환경과 동일한 인터랙션을 테스트할 수 있습니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297282231
+                            },
+                            {
+                              "id": "L786oTQ52xTA",
+                              "text": "포인트 앤 에디트(Point and edit): 화면 내 요소를 직접 클릭해 우측 패널에서 색상, 패딩 등 디자인 속성을 시각적으로 수정하면 AI가 코드를 업데이트합니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297282231
+                            }
+                          ],
                           "nodeType": "bullet",
                           "createdAt": 1794297255588,
-                          "updatedAt": 1794297289956
+                          "updatedAt": 1794297297667
                         },
                         {
-                          "id": "JdVY14lrfYqi",
-                          "text": "크레딧 소모: 현재 이 기능은 오픈 베타로 제공되며, 작업의 복잡도에 따라 Figma AI 크레딧이 소모됩니다.",
-                          "children": [],
+                          "id": "Xyus672biegr",
+                          "text": "디자인 추출 및 양방향 협업",
+                          "children": [
+                            {
+                              "id": "8GFiZDw9xoBF",
+                              "text": "디자인으로 추출(Extract a code layer to design): 코드로 만들어진 화면을 일반적인 편집 가능한 Figma 디자인 레이어로 변환합니다. 여기서 픽셀 단위로 디자인을 수정한 뒤, 다시 코드로 푸시(Push)할 수 있습니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297287384
+                            }
+                          ],
                           "nodeType": "bullet",
                           "createdAt": 1794297255588,
-                          "updatedAt": 1794297289956
+                          "updatedAt": 1794297297667
+                        },
+                        {
+                          "id": "kGomugYUBRg4",
+                          "text": "고급 기능 및 참고 사항",
+                          "children": [
+                            {
+                              "id": "OXV5oCI3yVm4",
+                              "text": "Shaders 지원: 블러 처리나 유리 같은 왜곡, 애니메이션 효과 등 복잡한 시각 효과를 코드 레이어 안에서 지원합니다 (Chrome 환경 필요).",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297289956
+                            },
+                            {
+                              "id": "Urd2vuzRd0By",
+                              "text": "MCP 서버 연동: Figma MCP 서버를 활용하면 외부 코딩 에이전트에서 작업한 프로젝트를 Figma 캔버스로 곧바로 임포트할 수 있습니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297289956
+                            },
+                            {
+                              "id": "JdVY14lrfYqi",
+                              "text": "크레딧 소모: 현재 이 기능은 오픈 베타로 제공되며, 작업의 복잡도에 따라 Figma AI 크레딧이 소모됩니다.",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794297255588,
+                              "updatedAt": 1794297289956
+                            }
+                          ],
+                          "nodeType": "bullet",
+                          "createdAt": 1794297255588,
+                          "updatedAt": 1794297297667
                         }
                       ],
+                      "isFolded": false,
                       "nodeType": "bullet",
                       "createdAt": 1794297255588,
-                      "updatedAt": 1794297297667
+                      "updatedAt": 1794297306067
                     }
                   ],
                   "isFolded": false,
-                  "nodeType": "bullet",
-                  "createdAt": 1794297255588,
-                  "updatedAt": 1794297306067
-                }
-              ],
-              "isFolded": true,
-              "createdAt": 1794296600480,
-              "updatedAt": 1794297368687
-            },
-            {
-              "id": "l8aV3e05F8Cp",
-              "text": "figma 디자인 기능",
-              "children": [
-                {
-                  "id": "YcyP7SgorSb1",
-                  "text": "https://help.figma.com/hc/en-us/articles/31010075634967-FD4B-Assemble-your-portfolio-pages",
-                  "children": [],
-                  "createdAt": 1794376084079,
-                  "updatedAt": 1794376088751
+                  "createdAt": 1794296600480,
+                  "updatedAt": 1794392192306
                 },
                 {
-                  "id": "X06fOimDx3CU",
-                  "text": "섹션으로 묶어두면 assets 탭에 자동 그룹핑되고 블록으로 이용 가능",
-                  "children": [],
-                  "createdAt": 1794375362210,
-                  "updatedAt": 1794375594955,
-                  "file": {
-                    "target": "Pasted image 20261111143911.png"
-                  }
-                },
-                {
-                  "id": "x35pN0BO7rn0",
-                  "text": "section 선택해서 섹션으로 그룹핑 가능함",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261111145554.png"
-                  },
-                  "createdAt": 1794376554165,
-                  "updatedAt": 1794376598029
-                },
-                {
-                  "id": "o76p3OH683Gh",
-                  "text": "좌측 assets 리스트에 미리보기처럼 보여지기도 하네?",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261111145941.png"
-                  },
-                  "createdAt": 1794376781634,
-                  "updatedAt": 1794376809138
-                },
-                {
-                  "id": "KiXpMWyfq3O7",
-                  "text": "블록을 저장해두면 한번에 조정이 가능하다 이말이여~ 스몰 템플릿 파쿠리 땡겨잇",
+                  "id": "l8aV3e05F8Cp",
+                  "text": "figma 디자인 기능",
                   "children": [
                     {
-                      "id": "XyGNCYt28D7c",
-                      "text": "이게 그러니까는 내가 만약에 블로그를 작성하는 사람이라고 치면, 내 글 스타일이 소제목 쓰고 -> 이미지 한장 크게 넣고 -> 아래 이미지 그리드로 두세장 넣고 -> 하위 설명 쓰고 -> 이모티콘 넣고 이런식이라고 하면 이걸 섹션으로 만들어두고 그 뼈대를 템플릿처럼 지금 피그마에 저장된것처럼 불러와서 바로바로 바로론으로 쓸 수 있다 이말이다!",
+                      "id": "YcyP7SgorSb1",
+                      "text": "https://help.figma.com/hc/en-us/articles/31010075634967-FD4B-Assemble-your-portfolio-pages",
                       "children": [],
-                      "createdAt": 1794377206988,
-                      "updatedAt": 1794377287840
+                      "createdAt": 1794376084079,
+                      "updatedAt": 1794376088751
+                    },
+                    {
+                      "id": "X06fOimDx3CU",
+                      "text": "섹션으로 묶어두면 assets 탭에 자동 그룹핑되고 블록으로 이용 가능",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111143911.png"
+                      },
+                      "createdAt": 1794375362210,
+                      "updatedAt": 1794375594955
+                    },
+                    {
+                      "id": "x35pN0BO7rn0",
+                      "text": "section 선택해서 섹션으로 그룹핑 가능함",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111145554.png"
+                      },
+                      "createdAt": 1794376554165,
+                      "updatedAt": 1794376598029
+                    },
+                    {
+                      "id": "o76p3OH683Gh",
+                      "text": "좌측 assets 리스트에 미리보기처럼 보여지기도 하네?",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111145941.png"
+                      },
+                      "createdAt": 1794376781634,
+                      "updatedAt": 1794376809138
+                    },
+                    {
+                      "id": "KiXpMWyfq3O7",
+                      "text": "블록을 저장해두면 한번에 조정이 가능하다 이말이여~ 스몰 템플릿 파쿠리 땡겨잇",
+                      "children": [
+                        {
+                          "id": "XyGNCYt28D7c",
+                          "text": "이게 그러니까는 내가 만약에 블로그를 작성하는 사람이라고 치면, 내 글 스타일이 소제목 쓰고 -> 이미지 한장 크게 넣고 -> 아래 이미지 그리드로 두세장 넣고 -> 하위 설명 쓰고 -> 이모티콘 넣고 이런식이라고 하면 이걸 섹션으로 만들어두고 그 뼈대를 템플릿처럼 지금 피그마에 저장된것처럼 불러와서 바로바로 바로론으로 쓸 수 있다 이말이다!",
+                          "children": [],
+                          "createdAt": 1794377206988,
+                          "updatedAt": 1794377287840
+                        },
+                        {
+                          "id": "Ms10UIAo3NTu",
+                          "text": "좌측 Assets 탭: '컴포넌트 섹션' 이름대로 트리가 자동으로 묶여 보이는 구조 그대로 카피",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1794375059740,
+                          "updatedAt": 1794387197298
+                        }
+                      ],
+                      "file": {
+                        "target": "Pasted image 20261111150517.png"
+                      },
+                      "createdAt": 1794377117481,
+                      "updatedAt": 1794377186990
+                    },
+                    {
+                      "id": "6BkClqQzrRwt",
+                      "text": "우측 패널 정렬이랑 오토 레이아웃 이런거 맛있어 보이는데?",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111151221.png"
+                      },
+                      "createdAt": 1794377541143,
+                      "updatedAt": 1794377673122
+                    },
+                    {
+                      "id": "fLMCxmZ8831c",
+                      "text": "fill container 로 폭 100% 채우는 자동 기능 이거 높이 100%도 되잖아",
+                      "children": [
+                        {
+                          "id": "Tow1TAWpk00W",
+                          "text": "우리 문서에서도 표나 블록이 A4 마진 안에서 꽉 차게 자동으로 늘어나게 하는 조판 로직이랑 직결됨",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1794375059740,
+                          "updatedAt": 1794386818262
+                        }
+                      ],
+                      "file": {
+                        "target": "Pasted image 20261111151533.png"
+                      },
+                      "createdAt": 1794377733401,
+                      "updatedAt": 1794386467077
+                    },
+                    {
+                      "id": "hUJX9GQUCkjz",
+                      "text": "이거 focus in (zoom in) 기능을 지원하네 -> 그리고 나서 return to instance로 전체로 돌아가고",
+                      "children": [
+                        {
+                          "id": "XgKOKaBTUrB4",
+                          "text": "본문에서 쓰다가 블록 정렬이나 서식이 이상하면 우클릭 ➔ 'Go to main component'로 원본 서식 가서 고치고",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1794375059740,
+                          "updatedAt": 1794386868274
+                        },
+                        {
+                          "id": "5K9Q0wizzzcn",
+                          "text": "수정 반영 안 먹으면 'Reset all changes'로 초기화",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1794375059740,
+                          "updatedAt": 1794386869379
+                        }
+                      ],
+                      "file": {
+                        "target": "Pasted image 20261111174401.png"
+                      },
+                      "createdAt": 1794386641494,
+                      "updatedAt": 1794386682977
+                    },
+                    {
+                      "id": "sdk64vEkyZ3i",
+                      "text": "디자인적으로 아주 안정되어 있다 레이아웃만 봐도, 내가 원하는게 이런거야 글 아직 안채워도 일단 와꾸 먼저 보자고",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111174513.png"
+                      },
+                      "createdAt": 1794386713760,
+                      "updatedAt": 1794386741481
+                    },
+                    {
+                      "id": "7EKKc3bDokZg",
+                      "text": "컨텐츠는 차차 채우자고",
+                      "children": [
+                        {
+                          "id": "pxwyGChMklXv",
+                          "text": "블록 던져놓고 더블클릭해서 글자 타이핑하면 오토레이아웃이라서 글 길이에 맞춰 아래로 쭉쭉 밀려남",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1794375059740,
+                          "updatedAt": 1794386890808
+                        }
+                      ],
+                      "file": {
+                        "target": "Pasted image 20261111174608.png"
+                      },
+                      "createdAt": 1794386768569,
+                      "updatedAt": 1794386783267
+                    },
+                    {
+                      "id": "akD0t9thTBH9",
+                      "text": "이미지 어떤식으로 자르고 넣을지에 대한 ui 참고",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111174921.png"
+                      },
+                      "createdAt": 1794386961975,
+                      "updatedAt": 1794386986350
+                    },
+                    {
+                      "id": "9PWFtjfO3Qf0",
+                      "text": "피그잼 (=캔버스 도식) 에 자유롭게 그리고 이미지로 내보내거나 마크다운으로 내보내기",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111175034.png"
+                      },
+                      "createdAt": 1794387034319,
+                      "updatedAt": 1794387080086
+                    },
+                    {
+                      "id": "WZphk42WJfX5",
+                      "text": "문서 내 이미지에 넣고 fill / fit / crop / tile 이런식으로 넣어서 맞추기",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111175115.png"
+                      },
+                      "createdAt": 1794387075308,
+                      "updatedAt": 1794387118392
                     }
                   ],
-                  "file": {
-                    "target": "Pasted image 20261111150517.png"
-                  },
-                  "createdAt": 1794377117481,
-                  "updatedAt": 1794377186990
+                  "isFolded": false,
+                  "createdAt": 1794375337232,
+                  "updatedAt": 1794392192306
                 },
                 {
-                  "id": "6BkClqQzrRwt",
-                  "text": "우측 패널 정렬이랑 오토 레이아웃 이런거 맛있어 보이는데?",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261111151221.png"
-                  },
-                  "createdAt": 1794377541143,
-                  "updatedAt": 1794377673122
-                },
-                {
-                  "id": "fLMCxmZ8831c",
-                  "text": "fill container 로 폭 100% 채우는 자동 기능 이거 세로도 되잖아",
-                  "children": [],
-                  "file": {
-                    "target": "Pasted image 20261111151533.png"
-                  },
-                  "createdAt": 1794377733401,
-                  "updatedAt": 1794377757424
-                }
-              ],
-              "createdAt": 1794375337232,
-              "updatedAt": 1794375360197
-            }
-          ],
-          "createdAt": 1794200129193,
-          "updatedAt": 1794297425676,
-          "isFolded": false
-        },
-        {
-          "id": "ErGRf3TyA4j6",
-          "text": "figma 공식 튜토리얼 (FD4B: 포트폴리오 페이지 조립) — 우리 문서 빌딩이랑 존똑인 부분들 싹 다 탈곡",
-          "children": [
-            {
-              "id": "Bh8bkqtUcw76",
-              "text": "링크: https://help.figma.com/hc/en-us/articles/31010075634967-FD4B-Assemble-your-portfolio-pages",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1794375059740,
-              "updatedAt": 1794375059740
-            },
-            {
-              "id": "R8sxhvjDGGjr",
-              "text": "이거 보니까 포트폴리오 웹페이지 만든다고 튜토리얼 써놨는데, 실상은 우리가 하려는 'A4 서식 문서 조립'이랑 구조가 100% 판박이임",
-              "children": [],
-              "isFolded": false,
-              "createdAt": 1794375059740,
-              "updatedAt": 1794375059740
-            },
-            {
-              "id": "aQF7o57qK7K0",
-              "text": "4. 자식 레이어 전체 선택(Enter) ➔ Fill container 로 폭 100% 꽉 채우기",
-              "children": [
-                {
-                  "id": "XxYo2WlNEGSd",
-                  "text": "프레임 선택하고 키보드 'Enter' 치면 안에 든 모든 블록(자식 레이어)이 한 번에 싹 잡힘 (단축키 꿀팁)",
-                  "children": [],
+                  "id": "Rrw8zaYhn8cd",
+                  "text": "figma 기본 포맷",
+                  "children": [
+                    {
+                      "id": "7NBi2EiUE5Wp",
+                      "text": "기본 figma 디자인 화면",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111175510.png"
+                      },
+                      "createdAt": 1794387308152,
+                      "updatedAt": 1794387317495
+                    },
+                    {
+                      "id": "EGowc3dQX24x",
+                      "text": "tool bar",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111175546.png"
+                      },
+                      "createdAt": 1794387346059,
+                      "updatedAt": 1794387380371
+                    },
+                    {
+                      "id": "OZYMKEMKPZyI",
+                      "text": "image tab",
+                      "children": [
+                        {
+                          "id": "nwxwbz8FrCLC",
+                          "text": "custom image tab",
+                          "children": [],
+                          "file": {
+                            "target": "Pasted image 20261111180213.png"
+                          },
+                          "createdAt": 1794387733310,
+                          "updatedAt": 1794387746478
+                        }
+                      ],
+                      "file": {
+                        "target": "Pasted image 20261111175621.png"
+                      },
+                      "createdAt": 1794387381959,
+                      "updatedAt": 1794387440744
+                    },
+                    {
+                      "id": "4q189B5ydwTG",
+                      "text": "layers",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111175705.png"
+                      },
+                      "createdAt": 1794387425097,
+                      "updatedAt": 1794387434256
+                    },
+                    {
+                      "id": "is7Xy7TeyM76",
+                      "text": "frame to group",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111175748.png"
+                      },
+                      "createdAt": 1794387468241,
+                      "updatedAt": 1794387484606
+                    },
+                    {
+                      "id": "EkIJQMv4dxdb",
+                      "text": "layout",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111175842.png"
+                      },
+                      "createdAt": 1794387522736,
+                      "updatedAt": 1794387532076
+                    },
+                    {
+                      "id": "NBtXLI4AM1rz",
+                      "text": "typography & layout",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111175939.png"
+                      },
+                      "createdAt": 1794387579232,
+                      "updatedAt": 1794387597364
+                    },
+                    {
+                      "id": "W1kzJtDXW96t",
+                      "text": "position",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111180237.png"
+                      },
+                      "createdAt": 1794387757726,
+                      "updatedAt": 1794387762188
+                    },
+                    {
+                      "id": "QqFva76Q7w1F",
+                      "text": "https://help.figma.com/hc/en-us/articles/31351261703063-FD4B-Auto-layout-fundamentals",
+                      "children": [
+                        {
+                          "id": "RPQvnAH0hb82",
+                          "text": "진짜 padding / margin / layout 에 대해서 알려주고 싶을 때 보여주고 싶은 페이지다 css 최고",
+                          "children": [],
+                          "createdAt": 1794387936994,
+                          "updatedAt": 1794387960148
+                        }
+                      ],
+                      "createdAt": 1794387933622,
+                      "updatedAt": 1794387936374
+                    },
+                    {
+                      "id": "BSrmQ8krVA7R",
+                      "text": "component로 만들기",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111180632.png"
+                      },
+                      "createdAt": 1794387992229,
+                      "updatedAt": 1794388019766
+                    },
+                    {
+                      "id": "pqCiw3ZOnyst",
+                      "text": "멀티 components 만들기",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111180840.png"
+                      },
+                      "createdAt": 1794388120043,
+                      "updatedAt": 1794388134654
+                    },
+                    {
+                      "id": "wPPiJ9DAIn4i",
+                      "text": "컨테이너로 생성하기",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111180827.png"
+                      },
+                      "createdAt": 1794388107544,
+                      "updatedAt": 1794388144172
+                    },
+                    {
+                      "id": "bSXn6UnG7j4r",
+                      "text": "outline 스케폴드 어떻게 구성되어있는지 보기 ",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111181039.png"
+                      },
+                      "createdAt": 1794388239773,
+                      "updatedAt": 1794388277658
+                    },
+                    {
+                      "id": "YH6FF0Bv4r7S",
+                      "text": "interaction -> prototype으로 확인",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111185216.png"
+                      },
+                      "createdAt": 1794390736754,
+                      "updatedAt": 1794390766742
+                    },
+                    {
+                      "id": "Q0v6fz4nf4Xg",
+                      "text": "primary / secondary 설정 가능",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261111185348.png"
+                      },
+                      "createdAt": 1794390828173,
+                      "updatedAt": 1794390849972
+                    }
+                  ],
                   "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "xBXHPvUAY8l4",
-                  "text": "그 상태에서 Width를 'Fill container'로 바꾸면 종이 너비에 맞춰서 표나 글 상자가 100% 꽉 참",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "Tow1TAWpk00W",
-                  "text": "우리 문서에서도 표나 블록이 A4 마진 안에서 꽉 차게 자동으로 늘어나게 하는 조판 로직이랑 직결됨",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1794375059740,
-              "updatedAt": 1794375059740
-            },
-            {
-              "id": "uwrGBpi09Zi7",
-              "text": "5. 인스턴스에서 원본 컴포넌트로 역점프 (Go to main component ↔ Return to instance)",
-              "children": [
-                {
-                  "id": "XgKOKaBTUrB4",
-                  "text": "본문에서 쓰다가 블록 정렬이나 서식이 이상하면 우클릭 ➔ 'Go to main component'로 원본 서식 가서 고치고",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "NYMRxmVOX4H7",
-                  "text": "'Return to instance' 누르면 원래 내가 작업하던 본문 페이지로 0.1초 만에 복귀",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "5K9Q0wizzzcn",
-                  "text": "수정 반영 안 먹으면 'Reset all changes'로 초기화",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "DubbUSkyvEGy",
-                  "text": "메인 컴포넌트 점프 캡처: https://help.figma.com/hc/article_attachments/31617504459159",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1794375059740,
-              "updatedAt": 1794375059740
-            },
-            {
-              "id": "rk3NZbOpQsvV",
-              "text": "6. 인스턴스 빈칸 채우기 (더블클릭 타이핑 & 외부 캡처 복붙)",
-              "children": [
-                {
-                  "id": "pxwyGChMklXv",
-                  "text": "블록 던져놓고 더블클릭해서 글자 타이핑하면 오토레이아웃이라서 글 길이에 맞춰 아래로 쭉쭉 밀려남",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "XBVUcn7HRZhi",
-                  "text": "이미지나 캡처도 PNG 복사해서 플레이스홀더에 Ctrl+V 치면 쏙 들어감",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "W2zmfdbnajoG",
-                  "text": "PNG 복붙 애니메이션: https://help.figma.com/hc/article_attachments/31729634393879",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                }
-              ],
-              "isFolded": false,
-              "createdAt": 1794375059740,
-              "updatedAt": 1794375059740
-            },
-            {
-              "id": "JD5wU00EIuXv",
-              "text": "7. 우리 좌측 사이드바 + 문서 조립에 바로 훔쳐 올 결론",
-              "children": [
-                {
-                  "id": "Ms10UIAo3NTu",
-                  "text": "좌측 Assets 탭: '컴포넌트 섹션' 이름대로 트리가 자동으로 묶여 보이는 구조 그대로 카피",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "DRaafd2ZKUdd",
-                  "text": "본문 조립: 좌측에서 드래그해서 A4 프레임에 넣으면 오토레이아웃으로 착착 쌓이는 인터랙션",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
-                },
-                {
-                  "id": "sP70Crcuxqot",
-                  "text": "단축키 UX: Enter(자식 전체 선택), Shift+A(오토레이아웃), Shift+S(섹션 묶기)",
-                  "children": [],
-                  "isFolded": false,
-                  "createdAt": 1794375059740,
-                  "updatedAt": 1794375059740
+                  "createdAt": 1794387300389,
+                  "updatedAt": 1794392192306
                 }
               ],
               "isFolded": false,
-              "createdAt": 1794375059740,
-              "updatedAt": 1794375059740
+              "createdAt": 1794392179374,
+              "updatedAt": 1794392185893
             }
           ],
           "isFolded": false,
-          "createdAt": 1794375059740,
-          "updatedAt": 1794375059740
+          "createdAt": 1794200129193,
+          "updatedAt": 1794297425676
+        },
+        {
+          "id": "fQ3ju1jzPk2E",
+          "text": "최종으로 구현해야하는 needs.",
+          "children": [],
+          "createdAt": 1794470021116,
+          "updatedAt": 1794470037896,
+          "file": {
+            "target": "Pasted image 20261112165342.png"
+          }
         }
       ],
       "isFolded": false,
@@ -3663,5 +3827,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1794377757424
+  "updatedAt": 1794484534651
 }
