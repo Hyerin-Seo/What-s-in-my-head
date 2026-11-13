@@ -301,19 +301,19 @@
           "updatedAt": 1793839532170
         }
       ],
+      "isFolded": true,
       "createdAt": 1793839346098,
-      "updatedAt": 1793839553970,
-      "isFolded": true
+      "updatedAt": 1793839553970
     },
     {
       "id": "hnVmGz0TynNZ",
       "text": "(Show!) ai 챗 -> 바로 반영된 결과물",
       "children": [],
-      "createdAt": 1793842966406,
-      "updatedAt": 1793842989589,
       "file": {
         "target": "Pasted image 20261105104249.png"
-      }
+      },
+      "createdAt": 1793842966406,
+      "updatedAt": 1793842989589
     },
     {
       "id": "YooEQtSAu8uK",

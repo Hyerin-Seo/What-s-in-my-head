@@ -1,0 +1,601 @@
+{
+  "version": "1.0.0",
+  "id": "659XvvX9jixd",
+  "title": "기획개념_UX 리서치 핸드북",
+  "rootNodes": [
+    {
+      "id": "maqWVLxQ6ZSg",
+      "text": "UX 리서치 핸드북",
+      "children": [
+        {
+          "id": "ZM1sBCUvsEbs",
+          "text": "북커버",
+          "children": [],
+          "createdAt": 1794481279937,
+          "updatedAt": 1794481313493,
+          "file": {
+            "target": "Pasted image 20261112200147.png"
+          }
+        },
+        {
+          "id": "2u6UC9LUvktw",
+          "text": "1장 UX 디자인 빠르게 이해하기",
+          "children": [
+            {
+              "id": "SGhWoMgGaSNW",
+              "text": "UX디자인이란?",
+              "children": [],
+              "createdAt": 1794481395531,
+              "updatedAt": 1794481402342
+            },
+            {
+              "id": "JyCLHJeu6MGi",
+              "text": "UX 디자인의 방향",
+              "children": [],
+              "createdAt": 1794481402550,
+              "updatedAt": 1794481411181
+            },
+            {
+              "id": "Ty36Uc427sTH",
+              "text": "UX의 근간, 사용자 중심 디자인",
+              "children": [],
+              "createdAt": 1794481411283,
+              "updatedAt": 1794481419771
+            },
+            {
+              "id": "XuOl9MYFH6XJ",
+              "text": "UX 디자인 프로세스",
+              "children": [],
+              "createdAt": 1794481419896,
+              "updatedAt": 1794481426080
+            },
+            {
+              "id": "jJua4EqrqwU7",
+              "text": "피드백과 반복적 개선이 필요한 이유",
+              "children": [],
+              "createdAt": 1794481426195,
+              "updatedAt": 1794481432951
+            }
+          ],
+          "createdAt": 1794481315478,
+          "updatedAt": 1794481395264
+        },
+        {
+          "id": "GX2eIvEx1SDH",
+          "text": "2장 UX 디자인 접근법",
+          "children": [
+            {
+              "id": "RmLGZMb9q9IP",
+              "text": "워터폴 방법론",
+              "children": [],
+              "createdAt": 1794481441579,
+              "updatedAt": 1794481445501
+            },
+            {
+              "id": "37I5a349xzTC",
+              "text": "애자일 방법론",
+              "children": [],
+              "createdAt": 1794481445912,
+              "updatedAt": 1794481449782
+            },
+            {
+              "id": "qHuYX6WAYJ9t",
+              "text": "린 스타트업",
+              "children": [],
+              "createdAt": 1794481449885,
+              "updatedAt": 1794481452487
+            }
+          ],
+          "createdAt": 1794481433122,
+          "updatedAt": 1794481441442
+        },
+        {
+          "id": "cdeF3EPsL35m",
+          "text": "3장 트렌드 분석",
+          "children": [
+            {
+              "id": "GHU2EfWHs63G",
+              "text": "BCG 매트릭스",
+              "children": [],
+              "createdAt": 1794481457357,
+              "updatedAt": 1794481463526
+            },
+            {
+              "id": "lD8SfcgSexIG",
+              "text": "PEST 분석",
+              "children": [],
+              "createdAt": 1794481463675,
+              "updatedAt": 1794481469082
+            },
+            {
+              "id": "KBWUDwgI4Wtu",
+              "text": "검색 트렌드 분석",
+              "children": [],
+              "createdAt": 1794481469280,
+              "updatedAt": 1794481472355
+            },
+            {
+              "id": "inuGJZLIrVjC",
+              "text": "감성 매핑",
+              "children": [],
+              "createdAt": 1794481472440,
+              "updatedAt": 1794481476426
+            }
+          ],
+          "createdAt": 1794481452629,
+          "updatedAt": 1794481457277
+        },
+        {
+          "id": "urubb1s1ZpUs",
+          "text": "4장 아이데이션",
+          "children": [
+            {
+              "id": "sRNGPgnIz0g6",
+              "text": "카드소팅",
+              "children": [],
+              "createdAt": 1794481484289,
+              "updatedAt": 1794481486827
+            },
+            {
+              "id": "Sl33YnfxFcde",
+              "text": "어피니티 모델링",
+              "children": [],
+              "createdAt": 1794481486903,
+              "updatedAt": 1794481490996
+            },
+            {
+              "id": "ETjtUTlJ0fnz",
+              "text": "브레인스토밍",
+              "children": [],
+              "createdAt": 1794481491171,
+              "updatedAt": 1794481494920
+            },
+            {
+              "id": "TwJz1YCzszqZ",
+              "text": "브레인라이팅",
+              "children": [],
+              "createdAt": 1794481495012,
+              "updatedAt": 1794481497286
+            },
+            {
+              "id": "mbkdk0JQuznn",
+              "text": "스캠퍼",
+              "children": [],
+              "createdAt": 1794481497411,
+              "updatedAt": 1794481498998
+            },
+            {
+              "id": "w8Tx9DyffCkB",
+              "text": "가정 매핑",
+              "children": [],
+              "createdAt": 1794481499103,
+              "updatedAt": 1794481501262
+            },
+            {
+              "id": "nBJmYzOqXBa0",
+              "text": "연꽃 기법",
+              "children": [],
+              "createdAt": 1794481501376,
+              "updatedAt": 1794481503262
+            },
+            {
+              "id": "5XoV7rvzaytN",
+              "text": "콘셉트 맵",
+              "children": [],
+              "createdAt": 1794481503342,
+              "updatedAt": 1794481507740
+            },
+            {
+              "id": "Str8BzXQ8r26",
+              "text": "시네틱스",
+              "children": [],
+              "createdAt": 1794481507851,
+              "updatedAt": 1794481510474
+            }
+          ],
+          "createdAt": 1794481476535,
+          "updatedAt": 1794481484083
+        },
+        {
+          "id": "k6lraUWF9ynM",
+          "text": "5장 관찰",
+          "children": [
+            {
+              "id": "MSzix7jSjSx9",
+              "text": "비디오 에스노그래피",
+              "children": [],
+              "createdAt": 1794481514522,
+              "updatedAt": 1794481518453
+            },
+            {
+              "id": "d0QpR084cBRZ",
+              "text": "에스노그래피 인터뷰",
+              "children": [],
+              "createdAt": 1794481518550,
+              "updatedAt": 1794481521432
+            },
+            {
+              "id": "R6uerkMcsE1c",
+              "text": "다이어리 스터디",
+              "children": [],
+              "createdAt": 1794481521575,
+              "updatedAt": 1794481525109
+            },
+            {
+              "id": "ragfWM3FcfR6",
+              "text": "섀도우 트래킹",
+              "children": [],
+              "createdAt": 1794481525358,
+              "updatedAt": 1794481529494
+            },
+            {
+              "id": "4GMzWlEkvp4n",
+              "text": "체크리스트법",
+              "children": [],
+              "createdAt": 1794481529574,
+              "updatedAt": 1794481532482
+            },
+            {
+              "id": "a98tnzQ1C4Fl",
+              "text": "인지 지도",
+              "children": [],
+              "createdAt": 1794481532562,
+              "updatedAt": 1794481534460
+            }
+          ],
+          "createdAt": 1794481510506,
+          "updatedAt": 1794481514411
+        },
+        {
+          "id": "BIr6VWv8isoB",
+          "text": "6장 이해관계자 분석",
+          "children": [
+            {
+              "id": "agzKCf15hNd5",
+              "text": "고객 일상 관찰법",
+              "children": [],
+              "createdAt": 1794481540199,
+              "updatedAt": 1794481546314
+            },
+            {
+              "id": "vCuwmOhN0i6L",
+              "text": "고객 여정 지도",
+              "children": [],
+              "createdAt": 1794481546436,
+              "updatedAt": 1794481549846
+            },
+            {
+              "id": "a72yHHBiMCht",
+              "text": "멘탈 모델",
+              "children": [],
+              "createdAt": 1794481549939,
+              "updatedAt": 1794481553293
+            },
+            {
+              "id": "HQw5r30qKk96",
+              "text": "RACI 매트릭스",
+              "children": [],
+              "createdAt": 1794481553361,
+              "updatedAt": 1794481559451
+            },
+            {
+              "id": "51664kXMdEMR",
+              "text": "사용자 스토리",
+              "children": [],
+              "createdAt": 1794481559477,
+              "updatedAt": 1794481561466
+            }
+          ],
+          "createdAt": 1794481534558,
+          "updatedAt": 1794481540133
+        },
+        {
+          "id": "D1OmC1GzUIxx",
+          "text": "7장 소비자 분석",
+          "children": [
+            {
+              "id": "LMiGPQshEQ6g",
+              "text": "페이크 도어 테스트",
+              "children": [],
+              "createdAt": 1794481570703,
+              "updatedAt": 1794481629003
+            },
+            {
+              "id": "rs2765hPUTie",
+              "text": "컨조인트 분석",
+              "children": [],
+              "createdAt": 1794481629599,
+              "updatedAt": 1794481632364
+            },
+            {
+              "id": "urlI9PunX5P0",
+              "text": "사용자 니즈 리스트",
+              "children": [],
+              "createdAt": 1794481632479,
+              "updatedAt": 1794481713121
+            },
+            {
+              "id": "3UQ19vfUHISH",
+              "text": "극단적 사용자 분석",
+              "children": [],
+              "createdAt": 1794481713541,
+              "updatedAt": 1794481719823
+            }
+          ],
+          "createdAt": 1794481561554,
+          "updatedAt": 1794481570511
+        },
+        {
+          "id": "cPmPDvmDlTkk",
+          "text": "8장 타깃 분석",
+          "children": [
+            {
+              "id": "c3TRxj1FJ0yr",
+              "text": "STP 분석",
+              "children": [],
+              "createdAt": 1794481724366,
+              "updatedAt": 1794481727324
+            },
+            {
+              "id": "BVGyonW9DX7h",
+              "text": "퍼소나",
+              "children": [],
+              "createdAt": 1794481727411,
+              "updatedAt": 1794481729081
+            },
+            {
+              "id": "BK2o1IB5vMAP",
+              "text": "핵심 사용자 그룹 분석",
+              "children": [],
+              "createdAt": 1794481729172,
+              "updatedAt": 1794481733597
+            }
+          ],
+          "createdAt": 1794481719943,
+          "updatedAt": 1794481724246
+        },
+        {
+          "id": "2uPqnMKPL3Jr",
+          "text": "9장 문제점 발견",
+          "children": [
+            {
+              "id": "fECCi3lsNxSQ",
+              "text": "포커스 그룹 토의",
+              "children": [],
+              "createdAt": 1794481738512,
+              "updatedAt": 1794481741879
+            },
+            {
+              "id": "vj83y5jXK19V",
+              "text": "데이터 시트",
+              "children": [],
+              "createdAt": 1794481742044,
+              "updatedAt": 1794481743203
+            },
+            {
+              "id": "4YfuhvmqYMIx",
+              "text": "웹 트래픽 분석",
+              "children": [],
+              "createdAt": 1794481743284,
+              "updatedAt": 1794481747292
+            },
+            {
+              "id": "ziyYzGJd7OY9",
+              "text": "토론 포럼",
+              "children": [],
+              "createdAt": 1794481747375,
+              "updatedAt": 1794481749414
+            },
+            {
+              "id": "qM2VcOp74yg0",
+              "text": "전문가 구성원 인터뷰",
+              "children": [],
+              "createdAt": 1794481749512,
+              "updatedAt": 1794481753774
+            },
+            {
+              "id": "h0Pnbagx0gDr",
+              "text": "파트너 및 공급자 인터뷰",
+              "children": [],
+              "createdAt": 1794481753955,
+              "updatedAt": 1794481758996
+            },
+            {
+              "id": "RlUA7gpsz1FL",
+              "text": "설문조사",
+              "children": [],
+              "createdAt": 1794481759182,
+              "updatedAt": 1794481762338
+            },
+            {
+              "id": "bw7LUj1tPOtZ",
+              "text": "포커스 그룹 인터뷰",
+              "children": [],
+              "createdAt": 1794481762476,
+              "updatedAt": 1794481768193
+            }
+          ],
+          "createdAt": 1794481733684,
+          "updatedAt": 1794481738396
+        },
+        {
+          "id": "lC9qh9TB8nrI",
+          "text": "10장 태스크 분석",
+          "children": [
+            {
+              "id": "fiepcsnm69PV",
+              "text": "와이어프레임",
+              "children": [],
+              "createdAt": 1794481776165,
+              "updatedAt": 1794481780977
+            },
+            {
+              "id": "ndatgRvPCkUP",
+              "text": "태스크 플로우",
+              "children": [],
+              "createdAt": 1794481781131,
+              "updatedAt": 1794481785073
+            },
+            {
+              "id": "ZBe5SCD2T2Qm",
+              "text": "스윔레인",
+              "children": [],
+              "createdAt": 1794481785231,
+              "updatedAt": 1794481787313
+            },
+            {
+              "id": "d3iOiDinG18L",
+              "text": "시나리오",
+              "children": [],
+              "createdAt": 1794481787449,
+              "updatedAt": 1794481789658
+            },
+            {
+              "id": "2yRuQmD1GX7W",
+              "text": "스토리보드",
+              "children": [],
+              "createdAt": 1794481789792,
+              "updatedAt": 1794481791495
+            },
+            {
+              "id": "mxhNBj8kdbnP",
+              "text": "유스  케이스",
+              "children": [],
+              "createdAt": 1794481791567,
+              "updatedAt": 1794481794077
+            }
+          ],
+          "createdAt": 1794481768506,
+          "updatedAt": 1794481776071
+        },
+        {
+          "id": "eajFW2Dh27ef",
+          "text": "11장 기능 분석",
+          "children": [
+            {
+              "id": "8Bio8Tw2Z3m2",
+              "text": "기능 우선순위 매트릭스",
+              "children": [],
+              "createdAt": 1794481799405,
+              "updatedAt": 1794481806422
+            },
+            {
+              "id": "H9sUfJo2eC5N",
+              "text": "의미분별법",
+              "children": [],
+              "createdAt": 1794481806508,
+              "updatedAt": 1794481809141
+            },
+            {
+              "id": "bx8Ipe1urYB1",
+              "text": "인간공학 평가",
+              "children": [],
+              "createdAt": 1794481809276,
+              "updatedAt": 1794481812153
+            },
+            {
+              "id": "KIm9reZcXH1Y",
+              "text": "우선순위 비교표",
+              "children": [],
+              "createdAt": 1794481812317,
+              "updatedAt": 1794481815502
+            },
+            {
+              "id": "FIvsdMd1wuLV",
+              "text": "형태학적 차트",
+              "children": [],
+              "createdAt": 1794481815623,
+              "updatedAt": 1794481819607
+            },
+            {
+              "id": "Ez4GEeJUhKzu",
+              "text": "기능 단순화",
+              "children": [],
+              "createdAt": 1794481819699,
+              "updatedAt": 1794481821401
+            }
+          ],
+          "createdAt": 1794481794112,
+          "updatedAt": 1794481799304
+        },
+        {
+          "id": "MB04UZ9VhTMT",
+          "text": "12장 사용성 평가",
+          "children": [
+            {
+              "id": "QmFXH0bWzCPJ",
+              "text": "404테스트",
+              "children": [],
+              "createdAt": 1794481825850,
+              "updatedAt": 1794481828501
+            },
+            {
+              "id": "sE6qDoHImHqk",
+              "text": "아이트래킹",
+              "children": [],
+              "createdAt": 1794481828621,
+              "updatedAt": 1794481831002
+            },
+            {
+              "id": "C4f6yoOklp5Y",
+              "text": "사용성 실험실 테스트",
+              "children": [],
+              "createdAt": 1794481831132,
+              "updatedAt": 1794481834915
+            },
+            {
+              "id": "lOO4B3nqYeim",
+              "text": "페이퍼 프로토타입",
+              "children": [],
+              "createdAt": 1794481835056,
+              "updatedAt": 1794481839321
+            },
+            {
+              "id": "HjesZmZY00if",
+              "text": "실물 크기 프로토타이핑",
+              "children": [],
+              "createdAt": 1794481839415,
+              "updatedAt": 1794481843659
+            },
+            {
+              "id": "2J2FJXFEfOyS",
+              "text": "3D 프린팅",
+              "children": [],
+              "createdAt": 1794481843768,
+              "updatedAt": 1794481849229
+            },
+            {
+              "id": "fJDCFSMaTNp2",
+              "text": "디지털 프로토타입",
+              "children": [],
+              "createdAt": 1794481849345,
+              "updatedAt": 1794481853975
+            },
+            {
+              "id": "HZAuGkEWcbHx",
+              "text": "심플 랜딩 페이지",
+              "children": [],
+              "createdAt": 1794481854065,
+              "updatedAt": 1794481857848
+            },
+            {
+              "id": "ZJjbSBs69UjM",
+              "text": "가상 소유",
+              "children": [],
+              "createdAt": 1794481857945,
+              "updatedAt": 1794481861627
+            }
+          ],
+          "createdAt": 1794481821677,
+          "updatedAt": 1794481825699
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1794481240066,
+      "updatedAt": 1794481274237
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1794481240066,
+  "updatedAt": 1794481861627
+}
