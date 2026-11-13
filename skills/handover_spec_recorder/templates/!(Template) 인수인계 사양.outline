@@ -1,0 +1,285 @@
+{
+  "version": "1.0.0",
+  "id": "RS7mXl0ya1fb",
+  "title": "(인수인계) <무엇> — <YY.MM.DD>",
+  "rootNodes": [
+    {
+      "id": "UY4pjNnKw5xc",
+      "text": "0. 메타",
+      "children": [
+        {
+          "id": "PWCZ7YzsIp5v",
+          "text": "회의 성격: <무엇의 인수인계 · 시연 · 공유>",
+          "children": [
+            {
+              "id": "0lIgMloBZLFN",
+              "text": "U001 ⏱00:00 발화자 1: \"<회의 성격을 말한 원문>\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562276875,
+              "updatedAt": 1794562276875
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875,
+          "note": "넘김 = <화자> · 받음 = <화자> · 그 밖 = <잡담 화자>. 이름은 사람이 확인해 준 뒤에만 적습니다"
+        },
+        {
+          "id": "cDQ3sIlKCdTq",
+          "text": "원본: <원본 파일 이름> · <길이> · 발화 <N>개 (<화자별 개수>)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        },
+        {
+          "id": "X80mtzpgoM1p",
+          "text": "한 줄 형식: <UI ID> <무엇> · <상태> · ⏱<처음 나온 시각>  → 하위 불릿 = 원문 그대로",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        },
+        {
+          "id": "mOslm7VqmXES",
+          "text": "상태: ✅ 동작함 · 🟡 목업·자리만 · ⚪ 손 안 댐 · 🐞 버그 의심 · ❓ 정체·위치 불명 · 🗑 버려도 됨 · 🎨 디자인만 바꾸면 됨 · 💬 의견",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        },
+        {
+          "id": "w4aVQ6XzWw9P",
+          "text": "출처: AG = Antigravity · FG = Figma · <그 밖 레퍼런스> · 표시 없으면 자체",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        },
+        {
+          "id": "NtHvGBXfWUuU",
+          "text": "UI ID: <Part>-<View>-<번호> — Part·View 는 pro-tool의 구조 위계화 (Level 2 Part · Level 3 View · Level 4 Widget)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875,
+          "note": "이번 화면의 Part · View 약어표를 여기 적습니다"
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562276875,
+      "updatedAt": 1794562276875
+    },
+    {
+      "id": "uFGISaXO42SK",
+      "text": "1. UI 사양",
+      "children": [
+        {
+          "id": "6ZZR079ZGFSL",
+          "text": "<PART> <Part 이름>",
+          "children": [
+            {
+              "id": "b6D6BmBGy8mn",
+              "text": "<PART>-<VIEW> <View 이름>",
+              "children": [
+                {
+                  "id": "wMQE4gIQ8EVX",
+                  "text": "<PART>-<VIEW>-01 <무엇이 바뀌었나> · <상태> · ⏱00:00",
+                  "children": [
+                    {
+                      "id": "oOcrnadLvlbI",
+                      "text": "U001 ⏱00:00 발화자 1: \"<원문 그대로 — 발화의 부분 문자열>\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562276875,
+                      "updatedAt": 1794562276875
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1794562276875,
+                  "updatedAt": 1794562276875,
+                  "note": "STT 오인식 · 출처 · 다른 ID 와의 관계 (→ D1 · → Q1)"
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "h3",
+              "createdAt": 1794562276875,
+              "updatedAt": 1794562276875
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562276875,
+      "updatedAt": 1794562276875
+    },
+    {
+      "id": "n4TSgWR7ZhyQ",
+      "text": "2. 정한 것",
+      "children": [
+        {
+          "id": "WtVIvb2UGWrt",
+          "text": "D1 <정한 것 한 문장> → <UI ID> · ⏱00:00",
+          "children": [
+            {
+              "id": "EZXoN9eFhFtr",
+              "text": "U001 ⏱00:00 발화자 1: \"<정한 말>\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562276875,
+              "updatedAt": 1794562276875
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562276875,
+      "updatedAt": 1794562276875
+    },
+    {
+      "id": "mCY2byW66gbv",
+      "text": "3. 열린 질문",
+      "children": [
+        {
+          "id": "cQxnGMHdxj8e",
+          "text": "Q1 <아직 안 정한 것 — 누가 어느 쪽인지> → <UI ID> · ⏱00:00",
+          "children": [
+            {
+              "id": "numcAgQMOySo",
+              "text": "정하기",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562276875,
+              "updatedAt": 1794562276875
+            },
+            {
+              "id": "SJuuGboLLxhp",
+              "text": "U001 ⏱00:00 발화자 1: \"<질문 · 쟁점 원문>\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562276875,
+              "updatedAt": 1794562276875
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562276875,
+      "updatedAt": 1794562276875
+    },
+    {
+      "id": "LqqKYz1fSmXi",
+      "text": "4. 할 일",
+      "children": [
+        {
+          "id": "sdf6A5VDYUuO",
+          "text": "T1 <할 일> → <UI ID 또는 D 번호> · ⏱00:00",
+          "children": [
+            {
+              "id": "JJ9zN5ea8Rhy",
+              "text": "할 일",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562276875,
+              "updatedAt": 1794562276875
+            },
+            {
+              "id": "B3K5utJ4f9CE",
+              "text": "U001 ⏱00:00 발화자 1: \"<할 일 원문>\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562276875,
+              "updatedAt": 1794562276875
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562276875,
+      "updatedAt": 1794562276875
+    },
+    {
+      "id": "Yr5kkqfx0dgI",
+      "text": "5. 용어 해석 (STT 오인식 추정)",
+      "children": [
+        {
+          "id": "8x6SvxezDDSw",
+          "text": "<원문 표기> → <추정 원어>?",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562276875,
+      "updatedAt": 1794562276875
+    },
+    {
+      "id": "ohRPvmPC6r0n",
+      "text": "6. 커버리지 점검",
+      "children": [
+        {
+          "id": "G73XlA3znx43",
+          "text": "결과: (크로스체크가 채움)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        },
+        {
+          "id": "YeC1J231yJF5",
+          "text": "버린 발화",
+          "children": [
+            {
+              "id": "OqHNYpzkQ0u6",
+              "text": "U001 ⏱00:00 맞장구 — \"<원문>\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562276875,
+              "updatedAt": 1794562276875
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1794562276875,
+          "updatedAt": 1794562276875
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562276875,
+      "updatedAt": 1794562276875
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1794562276875,
+  "updatedAt": 1794562276875
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">(인수인계) UI 레이아웃 개편 — 26.11.13</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">0. 메타</text>
+<circle cx="58" cy="127" r="4.5" fill="#3a3a40"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">회의 성격: UI 인수인계 — 화면을 보여 주며 넘김</text>
+<circle cx="82" cy="160" r="3" fill="#9a9aa3"/>
+<text x="99" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">U001 ⏱00:02 발화자 1: &quot;OK UI 인수인계.&quot;</text>
+<circle cx="82" cy="193" r="3" fill="#9a9aa3"/>
+<text x="99" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">U002 ⏱00:06 발화자 2: &quot;전체적인 그 화면 레이아웃이…</text>
+<circle cx="58" cy="226" r="3" fill="#9a9aa3"/>
+<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">원본: 261113_1704-UI 인수인계전달_original.txt · 15…</text>
+<circle cx="58" cy="259" r="3" fill="#9a9aa3"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">한 줄 형식: · · ⏱ → 하위 불릿 = 원문 그대로</text>
+<circle cx="58" cy="292" r="3" fill="#9a9aa3"/>
+<text x="75" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">상태: ✅ 동작함 · 🟡 목업·자리만 · ⚪ 손 안 댐 · 🐞 버그…</text>
+<circle cx="58" cy="325" r="3" fill="#9a9aa3"/>
+<text x="75" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">출처: AG = Antigravity · FG = Figma · 표시 없으면 자체</text>
+<circle cx="58" cy="358" r="3" fill="#9a9aa3"/>
+<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">UI ID: -- — Part·View 는 pro-tool의 구조 위계화 (Level…</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>

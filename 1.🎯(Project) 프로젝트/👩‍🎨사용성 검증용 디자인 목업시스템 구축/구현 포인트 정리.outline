@@ -2357,7 +2357,7 @@
                   "updatedAt": 1793767279131
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793767231600,
               "updatedAt": 1793767258451
             },
@@ -2394,7 +2394,7 @@
                   "updatedAt": 1793795614486
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1793795567196,
               "updatedAt": 1793795582000
             },
@@ -2524,6 +2524,13 @@
               "isFolded": true,
               "createdAt": 1794202521028,
               "updatedAt": 1794202608005
+            },
+            {
+              "id": "zhNmAxLxmThD",
+              "text": "가비지 컬렉션...",
+              "children": [],
+              "createdAt": 1794530637393,
+              "updatedAt": 1794530655346
             }
           ],
           "isFolded": true,
@@ -3664,5 +3671,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1794463017996
+  "updatedAt": 1794530658211
 }
