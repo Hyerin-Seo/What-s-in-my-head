@@ -1,0 +1,2465 @@
+{
+  "version": "1.0.0",
+  "id": "SE9G83zIHypp",
+  "title": "(인수인계) UI 레이아웃 개편 — 26.11.13",
+  "rootNodes": [
+    {
+      "id": "sO30yPZlX2Rh",
+      "text": "0. 메타",
+      "children": [
+        {
+          "id": "aA0ooDwT6yQ1",
+          "text": "회의 성격: UI 인수인계 — 화면을 보여 주며 넘김",
+          "children": [
+            {
+              "id": "6rve2qX5k1ij",
+              "text": "U001 ⏱00:02 발화자 1: \"OK UI 인수인계.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "lgFwsokcrtpk",
+              "text": "U002 ⏱00:06 발화자 2: \"전체적인 그 화면 레이아웃이 바뀌었거든.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": false,
+          "note": "넘김 = 발화자 2 · 받음(머지) = 발화자 1 · 발화자 3 = 회의 밖 잡담. 누가 누구인지는 아직 확인 전 (말투로 짐작하지 않음)",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "bpUrVR2IRj53",
+          "text": "원본: 261113_1704-UI 인수인계전달_original.txt · 15:55 · 발화 130개 (발화자 1: 48 · 발화자 2: 76 · 발화자 3: 6)",
+          "children": [],
+          "isFolded": false,
+          "note": "작업 공간 A3.working memory/원문/ 에 원본 사본 · utterances.json · 발화 목록.md",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "UaQ0Nqx0nUF2",
+          "text": "한 줄 형식: <UI ID> <무엇> · <상태> · ⏱<처음 나온 시각>  → 하위 불릿 = 원문 그대로",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "t3pIKenIkZuN",
+          "text": "상태: ✅ 동작함 · 🟡 목업·자리만 · ⚪ 손 안 댐 · 🐞 버그 의심 · ❓ 정체·위치 불명 · 🗑 버려도 됨 · 🎨 디자인만 바꾸면 됨 · 💬 의견",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "OrQXqQ1BwnlP",
+          "text": "출처: AG = Antigravity · FG = Figma · 표시 없으면 자체",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "O50c3htRfkg0",
+          "text": "UI ID: <Part>-<View>-<번호> — Part·View 는 pro-tool의 구조 위계화 (Level 2 Part · Level 3 View · Level 4 Widget)",
+          "children": [],
+          "isFolded": false,
+          "note": "HD 헤더 · LS 좌측 사이드바(TAB 탭바 · EXP 파일 트리 · SCM Git) · TB 툴바(PAGE · MODE · SEC · BLK) · HUB 템플릿 허브 · ED 에디터 · RS 우측 사이드바 · PG 새 페이지\n정한 것 D · 열린 질문 Q · 할 일 T",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562188869,
+      "updatedAt": 1794562188869
+    },
+    {
+      "id": "QuMJq7VZCXCE",
+      "text": "1. UI 사양",
+      "children": [
+        {
+          "id": "DtDr25TGwMtl",
+          "text": "HD 헤더",
+          "children": [
+            {
+              "id": "vNoIem0OqAPP",
+              "text": "U003 ⏱00:19 발화자 2: \"그래서 제일 위에 헤더부터 얘기를 하자면\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "TQVM7hKtwhqw",
+              "text": "U009 ⏱01:13 발화자 1: \"이거 이게 이거는 안티그레비티 사양 가져왔네.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "wTfZKOjFWeoS",
+              "text": "HD-01 파비콘(?) 교체 · ✅ · ⏱00:19",
+              "children": [
+                {
+                  "id": "4KFb9rKm625Q",
+                  "text": "U003 ⏱00:19 발화자 2: \"팝이콘 바뀌었고\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "note": "STT '팝이콘' → 파비콘으로 추정",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "P5Citc2HioPk",
+              "text": "HD-02 파일·편집 메뉴(?) — 있던 것 그대로 · ⚪ · ⏱00:19",
+              "children": [
+                {
+                  "id": "tgh9uDu27a9S",
+                  "text": "U003 ⏱00:19 발화자 2: \"파일 에디큐 이거 그대로 그냥 있던 거\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "note": "STT '파일 에디큐' → 파일·편집(Edit) 메뉴로 추정",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "wEaifKABgx0x",
+              "text": "HD-03 메뉴에서 뜨는 모달창 — 디자인만 교체 · ⚪🎨 · ⏱00:19",
+              "children": [
+                {
+                  "id": "tUvbsPSC7ZVw",
+                  "text": "U003 ⏱00:19 발화자 2: \"여기 뜨는 모달 창들 이건 다 그대로거든. 음 근데 디자인이 바뀌었으니까 디자인만 바꾸면 되고.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "tPrQiMOpkP8A",
+              "text": "HD-04 가운데 프로젝트 이름 · ✅ AG · ⏱00:38",
+              "children": [
+                {
+                  "id": "gKxjyNzSVY90",
+                  "text": "U004 ⏱00:38 발화자 2: \"그리고 가운데는 지금 프로젝트 이름 제일 가운데 뜨는 거고 헤더 가운데? 어? 그래서 이거는 옵시디언 아 아니지.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "a4i5bsBxRYct",
+                  "text": "U005 ⏱00:50 발화자 2: \"안티유리 부츠랑 사양이 동일해.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "xAWggKPBVbYx",
+              "text": "HD-05 실행 취소 · 다시 실행 (우측) · ✅ AG · ⏱00:50",
+              "children": [
+                {
+                  "id": "eDYUGgHAPGDG",
+                  "text": "U005 ⏱00:50 발화자 2: \"그래서 이걸 뭘 바꾸고 하면은 요거 뒷 뒤돌리기 실행 취소 뭐 앞으로 가기 이거 다시 실행 요기.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "agO4QLduyiOV",
+                  "text": "U006 ⏱00:59 발화자 2: \"음 우측에 있고 최상단 헤더에\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "E7i0nSv3KyBL",
+              "text": "HD-06 좌측 사이드바 열고 닫기 — 느려서 안 펴짐 · 🐞 · ⏱00:59",
+              "children": [
+                {
+                  "id": "eAu0NjFK0eTe",
+                  "text": "U006 ⏱00:59 발화자 2: \"그다음에 여기 좌측 사이드바 열고 닫는 것도 여기 있거든.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "K3P7ic62W3Bz",
+                  "text": "U008 ⏱01:09 발화자 2: \"근데 얘는 너무 느려서 안 펴지는 거고 왜 두는 것도 되는 거임.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "jlqAbkNyz8uQ",
+              "text": "HD-07 참조 작업창 열고 닫기 — 있던 버튼을 최상단으로 · ✅ · ⏱01:16",
+              "children": [
+                {
+                  "id": "t68K5yDKj2uq",
+                  "text": "U010 ⏱01:16 발화자 2: \"음 그리고 이거 누르면 첨조 작업창 열리는 것까지.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "ArVy4jDLHktN",
+                  "text": "U019 ⏱01:43 발화자 2: \"그래서 음 지금 이거 참조창 여기 여는 거 여기고 어. 너 열고 끄는 거 음 있던 버튼을 그냥 제일 최상단으로 다 올렸다고 생각하면 되고\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "NpW4TuTYk3W7",
+          "text": "LS 좌측 사이드바",
+          "children": [
+            {
+              "id": "1sQheuSgD6rp",
+              "text": "LS-TAB 탭바",
+              "children": [
+                {
+                  "id": "OAf7KdxL8TDu",
+                  "text": "LS-TAB-01 위쪽의 많은 탭(레이어·에셋·레퍼런스…)을 없애고 왼쪽 탭으로 · ✅ · ⏱01:43",
+                  "children": [
+                    {
+                      "id": "cebgIH79LOph",
+                      "text": "U019 ⏱01:43 발화자 2: \"그다음에 여기에 엄청 많은 탭들이 있었어. 뭐 레이어스랑 어셋이랑 또 뭐였지?\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "GTC8klfMuXvk",
+                      "text": "U020 ⏱02:06 발화자 2: \"뭐 레퍼런스랑 뭐 욕이 있었는데 그걸 없애고 일로 뺐어.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "nUdqnbydcLgQ",
+                      "text": "U022 ⏱02:12 발화자 2: \"어 왼쪽으로 빼 가지고\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "LCpUe2v32DSO",
+                  "text": "LS-TAB-02 탭바 추가 — 눌러도 바뀌지 않음(?) · 🟡❓ · ⏱06:06",
+                  "children": [
+                    {
+                      "id": "CtGIJaUI27Zl",
+                      "text": "U054 ⏱06:06 발화자 2: \"그래서 아 그리고 이 탭바가 추가됐는데 이걸 누른다고 해서 바뀌\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "hAiniw2dvAdH",
+                      "text": "U092 ⏱10:49 발화자 1: \"그다음에 탭 들어갔고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "cbpqyTFxU0Qw",
+                      "text": "U093 ⏱10:52 발화자 2: \"탭 들어갔고\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "UIGlYDKAzv4W",
+                  "text": "LS-TAB-03 탭이 너무 애매하다 · 💬 · ⏱11:17",
+                  "children": [
+                    {
+                      "id": "0MXzvqicVF8P",
+                      "text": "U095 ⏱11:17 발화자 2: \"아 탭이 너무 애매하고\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "P1I1tx6oWXZO",
+                  "text": "LS-TAB-04 '참조'는 그대로 둠 — 무엇을 가리키는지 확인 필요 · ⚪❓ · ⏱09:08",
+                  "children": [
+                    {
+                      "id": "04V7Fdfy8Eyf",
+                      "text": "U078 ⏱09:08 발화자 2: \"음 그래서 여기 참조 그대로\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "h3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "YcGqPyHkhmD3",
+              "text": "LS-EXP 파일 트리 (첫 번째 탭)",
+              "children": [
+                {
+                  "id": "BFJGUbexNbpr",
+                  "text": "LS-EXP-01 고친 항목 = 노란색 · ✅ AG · ⏱02:12",
+                  "children": [
+                    {
+                      "id": "lEJnXggfGBrd",
+                      "text": "U022 ⏱02:12 발화자 2: \"이 첫 번째 탭이 이 파일 트리 구조 보여주는 건데 어 여기서 제일 많이 바뀐 거는 응. 음 오늘 이렇게 변경하면 여기 노란색으로\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "Q2BtApjoyTYV",
+                  "text": "LS-EXP-02 새 페이지 = 초록색 · ✅ AG · ⏱02:35",
+                  "children": [
+                    {
+                      "id": "W9oUVFFyqC8E",
+                      "text": "U024 ⏱02:35 발화자 2: \"그리고 여기에 페이지를 추가를 하면 이거 기본 페이지 해서 추가를 하잖아. 그러면 요렇게 초록색으로 이거는 안티그래비티랑 사양이 똑같아. 세 페이지 추가.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "AhvLYfVCHzvo",
+                  "text": "LS-EXP-03 전체 접기·펴기를 도큐먼트 페이지에도 · ✅ · ⏱02:52",
+                  "children": [
+                    {
+                      "id": "aQ8hlZWXZuTa",
+                      "text": "U025 ⏱02:52 발화자 2: \"전체 접고 펴는 기능 여기 엘리문츠에 있었는데 도큐먼트 페이젠 없었거든. 음 어 그것도 전체 적고 펴는 거 추가해 놨고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "note": "엘리먼트에만 있던 기능",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "XlYFv30aejKz",
+                  "text": "LS-EXP-04 항목을 누르면 보이는 기능 — 무엇인지 확인 필요 (LS-EXP-05 와 같은 것일 수 있음) · ✅ AG ❓ · ⏱02:52",
+                  "children": [
+                    {
+                      "id": "wYyg5M3pJXEn",
+                      "text": "U025 ⏱02:52 발화자 2: \"음 그다음에 이게 올해 클릭하면 이렇게 보이잖아.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "GyQkOwlI3T58",
+                      "text": "U026 ⏱03:06 발화자 2: \"그래서 이걸 추가했어. 나 이거 좀 편한 거 같아. 이게 안티그래PT가 이렇게 해 놨다라고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "WqxQdN7qQLFI",
+                  "text": "LS-EXP-05 스크롤하면 상위 폴더가 sticky 로 고정 — 페이지 기준, 엘리먼트는 안 함 · ✅ AG · ⏱03:12",
+                  "children": [
+                    {
+                      "id": "TtCPOITxyNRy",
+                      "text": "U027 ⏱03:12 발화자 2: \"여기서 스크롤을 내릴 때 얘 상위 있는 폴더를 이렇게 스티키 픽스로 고정해 놨더라고. 그래서 이게 페이지 2 페이지 3 스콜하면서 내려가면 이게 똑같이 바뀌어. 그냥 상단 파일 그래서 이게 페이지 기준이에요.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "gqxzrQVExf0H",
+                      "text": "U028 ⏱03:29 발화자 2: \"음 엘리멘트는 아무리 중첩돼 있어도 이렇게 안 되거든. 내가 그냥 그건 그렇게 정해 놔 가지고 페이지 기준으로 밑에 엘리먼트들은 이렇게 접혀서 고정된 스티키로 모인다. 음 이거 필요하고\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "OdgFkPbaInAw",
+                  "text": "LS-EXP-06 변경 개수 표시 · ✅ · ⏱03:29",
+                  "children": [
+                    {
+                      "id": "1EzJs7sxPefX",
+                      "text": "U028 ⏱03:29 발화자 2: \"그다음에 이거 변경된 거 몇 개인지?\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "h3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "fvWVbHFrPpc9",
+              "text": "LS-SCM Git (소스 컨트롤)",
+              "children": [
+                {
+                  "id": "KZ51hW1TNNVV",
+                  "text": "LS-SCM-01 스테이징된 변경 사항 영역 · 🟡 · ⏱03:46",
+                  "children": [
+                    {
+                      "id": "0pwsJSIIzY0x",
+                      "text": "U029 ⏱03:46 발화자 2: \"이거 뜨는 거 여기에서 여기 들어와 보면 스테이징된 변경 사항이 있어.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "Ptgz8d53V9iP",
+                  "text": "LS-SCM-02 Changes 에 '수정'이 안 뜨고 '추가'만 뜸 · 🐞 · ⏱03:46",
+                  "children": [
+                    {
+                      "id": "mV1aifnggk2O",
+                      "text": "U029 ⏱03:46 발화자 2: \"원래 여기 있었는데 여기 체인지스에 수정도 떴었거든. 근데 지금 추가만 뜨네.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "OW5Fyne104KX",
+                      "text": "U030 ⏱03:59 발화자 2: \"이건 오륜듯?\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "pLbXKMSbnaeA",
+                      "text": "U031 ⏱04:01 발화자 1: \"아 어차피 데이터 정합성이나 이런 거는 다 안 맞\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "note": "발화자 1: 데이터 정합성은 원래 안 맞음",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "3RyEQ30sFFKM",
+                  "text": "LS-SCM-03 Changes 를 누르면 diff 비교 (없어진 것 · 생긴 것) ★ 이번 업데이트에서 가장 큼 · ✅ · ⏱04:06",
+                  "children": [
+                    {
+                      "id": "mt0CxQTwCv0Z",
+                      "text": "U032 ⏱04:06 발화자 2: \"그래서 여하튼 체인지스를 눌려 보면은 이렇게 비교 디프트 뜨는 거 이거 추가해 놓은 거고 끝 그래서 이것도 한번 뜰 거 같긴 한데. 어 여기 체인지 뜨네. 이렇게 없어진 거 생긴 거 그래서 디프 뜨는 거 이게 제일 큰 이번 업데이트고 그다음에 이거 디프 뜨는 거에 어.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "h0xZ7tnfAq52",
+                  "text": "LS-SCM-04 + (스테이징에 올리기) — 자리만 있음 · 🟡 · ⏱06:11",
+                  "children": [
+                    {
+                      "id": "SaPrShoAqK2j",
+                      "text": "U055 ⏱06:11 발화자 1: \"많거든. 그러면은 뭔가를 수정하면은 스테이징 저쪽에 쌓이네.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "nBt19wvqlR7Z",
+                      "text": "U056 ⏱06:15 발화자 2: \"체인지스에 바꾸는 거지. 오빠가 아까 스테이징은 뭐 플러스에서 추가하는 것만 스테이징.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "bMfYbhza7PEv",
+                      "text": "U057 ⏱06:21 발화자 1: \"아 그러니까 그 플러스 하면은 스테이징으로 들어가고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "b2YN6Jpq3IAP",
+                      "text": "U058 ⏱06:24 발화자 2: \"플러스 기능을 구현하는\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "Xp5NXmZB1H2q",
+                      "text": "U059 ⏱06:26 발화자 1: \"아 그냥 구현 안 했고 그냥 그 공간만 만들어 놨네.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "iAFqkH0ROQi7",
+                  "text": "LS-SCM-05 커밋 앤 푸시 — 기능 없음, 누르면 사라짐 · 🟡 · ⏱04:49",
+                  "children": [
+                    {
+                      "id": "6M1GnKsJ3WRZ",
+                      "text": "U039 ⏱04:49 발화자 2: \"그래서 여기서 이게 뭔가 기능은 없거든. 그냥 저장하는 거야. 그래서 커밋 앤 푸시 이걸 누르면 없어져.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "dYH4ZKy2Hnpc",
+                      "text": "U040 ⏱05:00 발화자 2: \"변화가 없는 거지. 우리가 그 VS 코드에서 코드 고치고 난 다음에 깃에 푸시하고. 난 다음에는 이게 그 트리가 벤치.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "PPrSs0gGi5HZ",
+                      "text": "U041 ⏱05:11 발화자 1: \"저기 표시되면 밑으로 꽂혀야겠네. 이력으로 그게 이제 이 밑으로 이제 붙어 그죠?\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "urdA7IUrpF9W",
+                      "text": "U042 ⏱05:18 발화자 2: \"음 그럼 이건 D프로 뜨면 안 되는 거잖아. 응? 이 확정된 거니까\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "UC7VdywlsHtL",
+                      "text": "U043 ⏱05:23 발화자 1: \"그 지금 그 깃 깃 패널이면은 지금\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "rNxbpdR3ytCA",
+                      "text": "U053 ⏱05:55 발화자 2: \"맞아. 그러면 컴퓨터하고 푸시되면은 여기 그 깃 벤치에 이렇게 트리가 합쳐져야 되는 거 맞아? 여튼 그렇고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "note": "커밋한 뒤에는 diff 가 아니라 브랜치 트리(이력) 아래로 붙어야 하는지 → Q5",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "6MESxSB4H9Ay",
+                  "text": "LS-SCM-06 '계정 이력'(STT?) · 되돌리기 — 원래 있던 것, 둘 다 정체 모름 (worktree 를 그리려던 것으로 추정) · ❓🗑 · ⏱04:29",
+                  "children": [
+                    {
+                      "id": "TePImaIxEVSF",
+                      "text": "U033 ⏱04:29 발화자 2: \"아 근데 나 이게 뭔지 모르겠더라. 계정 이력해서.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "WuJ6YiDGyZS3",
+                      "text": "U034 ⏱04:32 발화자 1: \"나도 몰라.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "KbOC8giwstGS",
+                      "text": "U035 ⏱04:33 발화자 2: \"이거는 원래 있던 거거든. 그래서 내가 손을 안 댔어. 계정 이력이랑 되돌리.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "2Dz9y1OOfhNM",
+                      "text": "U036 ⏱04:38 발화자 1: \"아마도 그냥 제가 만들어 준 대로 그냥 놔둬 놓고\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "TxiByAjhORGc",
+                      "text": "U038 ⏱04:43 발화자 1: \"그래서 쟤는 그냥 다 버려도 돼요. 일단 나도 제 아예 뭔 놈인지 몰\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "AsqDRLDt6cod",
+                      "text": "U044 ⏱05:28 발화자 2: \"아 이 워크 트림 이거를 구현하고 싶었던 거야. 저기서? 계정 이력이 이거야?\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "2MqDLelmwPBd",
+                      "text": "U045 ⏱05:33 발화자 1: \"그걸 해 놓은 거 같아. 좀마가\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "241uNbHRZaYo",
+                      "text": "U047 ⏱05:37 발화자 1: \"어허 그걸저걸 해 놓은 거 같아요.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "gADr5xjRMNjR",
+                      "text": "U048 ⏱05:39 발화자 2: \"그냥 좀 써 볼래? 오빠? 이걸로 다시 하라고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "5IlRALpaY5FZ",
+                      "text": "U051 ⏱05:48 발화자 2: \"우와 하여튼 너무 많다. 이익 이력이 그거구나.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "ywDBgFnSKTMT",
+                      "text": "U052 ⏱05:51 발화자 1: \"어 워크틀이 아마 그거를 뭔가 점막감 표현해 내는 거 같아.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "note": "발화자 1: 다 버려도 됨 → Q6",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "qoIiXdIQGW12",
+                  "text": "LS-SCM-07 되돌리기 버튼 — 변경 사항을 되돌림 · ✅ · ⏱06:38",
+                  "children": [
+                    {
+                      "id": "LqF0nzCVaY12",
+                      "text": "U063 ⏱06:38 발화자 2: \"그래서 그 되돌리기 버튼도 있거든. 어. 뭐 이런 거를 쉬워 보면 변경 사항에 뜨고 이거 되돌리기.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "xP1hPYmvDlRR",
+                      "text": "U064 ⏱06:49 발화자 1: \"했어. 이게 단지 저기 뭐지? 그것만 하면은 봤어.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "CfXdwMBPeydc",
+                      "text": "U065 ⏱06:54 발화자 1: \"되돌리게 하면은 내가 이제 어\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "6uPD0q7XZBvt",
+                      "text": "U066 ⏱06:58 발화자 2: \"이거 바로 바뀐 거고 되돌리게 하면 돌아가신다. 녹아지고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "Yy30RJtE1TJW",
+                  "text": "LS-SCM-08 범위 — Changes 까지는 새로 만들었고, 그 아래는 원래 있던 것 · ⚪ · ⏱06:28",
+                  "children": [
+                    {
+                      "id": "srIELmbLvOtx",
+                      "text": "U060 ⏱06:28 발화자 2: \"거기서부터는 원래 다 있던 거야. 이 체인지스까지 여기만 내가 만든 거고 이 밑에는 원래\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "eoFvBQ0NACP5",
+                      "text": "U061 ⏱06:35 발화자 1: \"어떤 거야? 저게 원래 있던 거야. 어.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "h3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "19sfdnBuNrBU",
+          "text": "TB 툴바",
+          "children": [
+            {
+              "id": "znwYdOszYpYR",
+              "text": "TB-PAGE 페이지 탭",
+              "children": [
+                {
+                  "id": "bK9JN3r2D9Z7",
+                  "text": "TB-PAGE-01 페이지 1·2·3 탭을 위쪽에서 툴바로 옮김 · ✅ FG · ⏱06:58",
+                  "children": [
+                    {
+                      "id": "63lstrncqFO5",
+                      "text": "U066 ⏱06:58 발화자 2: \"그다음에 내가 하고 있었던 거는 아 요 툴바에서 또 핵심이 그 페이지 1 2 3로 가던 탭이 여기 상단에 있었는데 아니 내 생각엔 툴바로 가는 게 낫더라고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "Of9O74MWj7yo",
+                      "text": "U067 ⏱07:18 발화자 2: \"왜냐면 그 레퍼런스는 피그마다. 피그마도 그렇게 관리를 하고 있어서. 그래서 이게 페이스 1이고 2고 3다.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "h3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "Ww3OakovqHrp",
+              "text": "TB-MODE 편집 · 읽기",
+              "children": [
+                {
+                  "id": "1If0svqMa78o",
+                  "text": "TB-MODE-01 편집 모드 / 읽기 모드 · ✅ · ⏱07:28",
+                  "children": [
+                    {
+                      "id": "MiaFU5Tykubw",
+                      "text": "U068 ⏱07:28 발화자 2: \"는 거 이거 편집 모드 그다음에 읽기 모드 이거고\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "h3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "HDNlO2d4niRb",
+              "text": "TB-SEC 섹션 → 작은 템플릿",
+              "children": [
+                {
+                  "id": "2hBEolHEWAma",
+                  "text": "TB-SEC-01 섹션을 골라 작은 템플릿으로 추가 — 아직 고민 중 · 🟡 · ⏱07:28",
+                  "children": [
+                    {
+                      "id": "JmmII8rkhvDs",
+                      "text": "U068 ⏱07:28 발화자 2: \"그다음에 여기 섹션을 선택해서 이건 지금 고민 중인 거라. 예 이렇게 두면 여기에 추가되는 걸로 음 SS로 음 템플릿 작은 템플릿 만드는 것처.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "note": "STT 'SS' · 'SSI' · '섹션 엑셀' → 섹션으로 추정",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "9xUNO7EtQQmV",
+                  "text": "TB-SEC-02 범위 선택 → 우클릭 ⋯ 메뉴로도 추가 · 🟡 · ⏱08:13",
+                  "children": [
+                    {
+                      "id": "ikPFJk5uzPTs",
+                      "text": "U072 ⏱08:13 발화자 2: \"그리고 이것도 되거든. 야 이렇게 범위 선택해 가지고 우쿨릭 아 이거 점 점 점 해서 이거 웍 해서 싸는 걸로 하면 또 여기 추가돼요. 음흠.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "M43Y378uq6oX",
+                  "text": "TB-SEC-03 생성된 섹션 목록 · 🟡 · ⏱08:26",
+                  "children": [
+                    {
+                      "id": "3q5fzws5l8IW",
+                      "text": "U073 ⏱08:26 발화자 2: \"그래서 여튼 생성된 섹션 엑셀이라고 해 가지고 이렇게 있고\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "80I1OJud0ajh",
+                  "text": "TB-SEC-04 섹션 썸네일 — 내용(제목·텍스트·표·이미지)을 도식으로, 회색 블러 · 🟡 · ⏱11:17",
+                  "children": [
+                    {
+                      "id": "0L2i3qSSwPWQ",
+                      "text": "U095 ⏱11:17 발화자 2: \"그다음에 이 SNS를 하고 싶은데 여기에 AI 기능이 들어가야 되거든. 이걸 이렇게 긁었다고 해서 음 그러니까 이게 내 최선이야. AI 기능을 뺀 음 뭐 텍스트 제목이랑 텍스트 그다음에 뭐 표랑 텍스트 그다음에 이미지가 들어갔다.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "aSIdBFbHw4Pr",
+                      "text": "U096 ⏱11:43 발화자 2: \"이런 거를 약간 뭐라고 해야 되지? 좀 심플하게 도시 화해서 보여 주는 거잖아. 이게.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "R7GlvB2DOFeK",
+                      "text": "U097 ⏱11:50 발화자 2: \"썸네일? 아 이게 그 짜잘한 내용은 빼고 여튼 이거를 회색으로 블러 처리해 가지고 딱 약간 컴팩트하게 이모티콘처럼 이렇게 만들어서 보여주는 거니까\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "JfsvR8UbDHH5",
+                      "text": "U100 ⏱12:29 발화자 2: \"음 근데 이런 건 맞잖아요. 이단 그리드 맞아 맞아 맞아.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "note": "AI 가 그릴지 캡처를 박을지 → Q1",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "h3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "DMHqxF1KU8V6",
+              "text": "TB-BLK 기본 블록박스",
+              "children": [
+                {
+                  "id": "PJqtXiXp13C0",
+                  "text": "TB-BLK-01 기본 블록박스 — 우측 블록탭 = 좌측 기본 블록, 툴바로 모음 · 🟡 · ⏱08:26",
+                  "children": [
+                    {
+                      "id": "89lcvAM1tklV",
+                      "text": "U073 ⏱08:26 발화자 2: \"음 원래 있던 이 블록탭 오른쪽에 있는 이거 있잖아. 이거를 요쪽으로 옮기려고 하거든. 어차피 이게 기본 블록이니까.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "vFIYkZZm4C2E",
+                      "text": "U077 ⏱08:55 발화자 2: \"여튼 여기 있는 거나 여기 있는 오른쪽에 우측 사이드바에 있는 블록이랑 왼쪽 사이드바에 있는 기본 블록은 정확하게 일치한다. 그래서 이쪽에 몰아넣을 예정이에요. 여기서 빼고 우측에서 빼고.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "IxirFVIvm2x3",
+                      "text": "U079 ⏱09:13 발화자 1: \"어. 근데 내가 이거를 뭐지? 이거 같은 경우에는 그냥 저기 뭐고 아예 없으면 그러니까 넣어 놓으라고 한 거지 그 뭐지?\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "WuIhD2EsYXyQ",
+                      "text": "U080 ⏱09:24 발화자 1: \"이렇게 패널로 아예 가져갈까 싶긴 한 사양이긴 하거든. 이 블록이라고 하는 거 자체가.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "HNG9rE29vSbV",
+                      "text": "U081 ⏱09:32 발화자 2: \"아니면 나는 지금 여기 있어서 왼쪽에다 옮긴 건데 에셋으로 묶은 건 여기 있고 내 생각엔 기본 블로그인 여기 툴바에 있으면 편할 거 같아요. 여기서 당겨서 바로.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "yywY1PWSkWsG",
+                      "text": "U082 ⏱09:43 발화자 1: \"맞아. 오히려 툴바에 있는 게 자연스러운\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "7lg7Dvev2aNp",
+                      "text": "U083 ⏱09:46 발화자 2: \"그러면 굳이 2\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "gVpe57T0Zvy3",
+                      "text": "U084 ⏱09:47 발화자 1: \"따로 이렇게 하는 게 오히려 더 뭔가 그냥.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "note": "정한 것 → D1",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "lymcQIvZ2HZO",
+                  "text": "TB-BLK-02 블록 넣기 · 텍스트 입력 — 동작함, 깜빡임 있음 · ✅🐞 · ⏱08:40",
+                  "children": [
+                    {
+                      "id": "bKOocHAgtOdM",
+                      "text": "U074 ⏱08:40 발화자 2: \"음 그래서 이거는 기능 구현돼 있어서 바로 되더라고요. 텍스트 넣는 거 넣어 주고. 근데 원래 이렇게 깜빡깜빡거렸어?\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    },
+                    {
+                      "id": "Ysu6qaBIZQkt",
+                      "text": "U076 ⏱08:52 발화자 1: \"음 음 아직 최적화가를 해야 돼요.\"",
+                      "children": [],
+                      "isFolded": false,
+                      "nodeType": "quote",
+                      "createdAt": 1794562188869,
+                      "updatedAt": 1794562188869
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "nodeType": "h3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "1kWps20pNxh9",
+          "text": "HUB 템플릿 허브 (화면 위치 ❓)",
+          "children": [
+            {
+              "id": "tLIehKNP8tLA",
+              "text": "HUB-01 그리드뷰 · 목록뷰 · ✅ FG · ⏱09:51",
+              "children": [
+                {
+                  "id": "AuqtBjREz8iD",
+                  "text": "U085 ⏱09:51 발화자 2: \"그래서 이거 그리드뷰랑 뭐 목록뷰 해서 이렇게 뒀거든.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "xcgu7p2JIX2i",
+                  "text": "U086 ⏱10:10 발화자 2: \"이것도 피그마 그대로야 거의 어.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "m2oDm48WwvNm",
+              "text": "HUB-02 사람들이 올린 템플릿 · 에셋 받기 — 동작 여부 확인 필요 · 🟡❓ · ⏱10:10",
+              "children": [
+                {
+                  "id": "o4Tw8FSCP74J",
+                  "text": "U086 ⏱10:10 발화자 2: \"음 그래서 이제 여기에 사람들이 올린 템플릿이나 에셋 같은 것들을 다운받을 수 있는 거죠.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "PE8gtndaEFVs",
+              "text": "HUB-03 같은 템플릿 허브가 두 군데 — 엮는 방법 고민 · ❓ · ⏱10:10",
+              "children": [
+                {
+                  "id": "EbBSqpGaRbeY",
+                  "text": "U086 ⏱10:10 발화자 2: \"근데 이거랑 동일한 거 같아.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "66765nEXKKLt",
+                  "text": "U087 ⏱10:21 발화자 2: \"이거 맞아? 이것도 템플릿 허브 아니야?\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "7fJ4qEFOzwEu",
+                  "text": "U088 ⏱10:24 발화자 1: \"맞아 맞아 맞아 맞아. 템플릿 허브 맞아. 음\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "8RpplmexpAtH",
+                  "text": "U089 ⏱10:28 발화자 2: \"맞아. 맞아요. 이거 두 개를 어떻게 엮어 가지고 좀 맛있게 노션처럼 말아 볼지 그건 좀 고민해 볼게.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "note": "→ Q4",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "cHy8H6IDBwSw",
+              "text": "HUB-04 '템플릿 라이브러리 허브 열기' 로 이어 놓음 · ✅ · ⏱15:03",
+              "children": [
+                {
+                  "id": "lojrTFWuwAOF",
+                  "text": "U120 ⏱15:03 발화자 2: \"얘도 얘랑 같다고 인식을 했네. 이거 템플릿 라이브러리 허브 열기 하면 일로 가게 만들어 놨네. 맞긴 해.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "w8fQYj0SE3qN",
+              "text": "HUB-05 목록 = 더미 데이터 실사 · 세부 정보 = 썸네일 · 🟡 · ⏱14:05",
+              "children": [
+                {
+                  "id": "jlkrdE9QynuD",
+                  "text": "U112 ⏱14:05 발화자 2: \"그럼 이렇게 하면 되겠다. 여기는 그 더미 다 들어가 가지고 실사로 보이고 이 세부 정보 이걸 클릭해서 뜨는 이거는 이 쌈네일로 보이면\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "note": "정한 것 → D5",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": false,
+          "nodeType": "h2",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "LcJi8tUIGRsN",
+          "text": "ED 에디터",
+          "children": [
+            {
+              "id": "TmDEcj85Oiqv",
+              "text": "ED-01 인라인 대화창 — 아이콘 하나만 둬도 됨 · 🟡 · ⏱10:52",
+              "children": [
+                {
+                  "id": "e7dLeselqkYR",
+                  "text": "U093 ⏱10:52 발화자 2: \"뭐 이런 짜잘한 것들 아까 뭐 아이콘 하나만 둬도 된다고 해서 막 인라인 대화창 이\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "h2",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "8EMe3ZBWUmaY",
+          "text": "RS 우측 사이드바",
+          "children": [
+            {
+              "id": "w0mJbSPOc8hV",
+              "text": "RS-01 손 안 댐 — 블록탭은 툴바로 빠질 예정 (D1) · ⚪ · ⏱00:06",
+              "children": [
+                {
+                  "id": "BgrCAfNp9XqB",
+                  "text": "U002 ⏱00:06 발화자 2: \"어 일단은 우측 좌측반은 우측반은 손 안 댔어. 어. 우측반은 그래서 뭐 아무것도 된 게 없고\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "h2",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "Zy2v3XSWyB8J",
+          "text": "PG 새 페이지 (제안)",
+          "children": [
+            {
+              "id": "Yt4YlngFRL37",
+              "text": "PG-01 템플릿 편집 페이지 — 만들기 · 편집 · 관리 · 🟡 · ⏱15:13",
+              "children": [
+                {
+                  "id": "UW8w9UTbxRQy",
+                  "text": "U121 ⏱15:13 발화자 2: \"그럼 이거는 각각의 작은 템플릿 그러니까 진짜 에셋이고 템플릿 여기 있는 요 템플릿 페이지에서 여기서 뭐 추가하거나 만들기 하면 본페이지가 뜨면서 여기서 템플릿을 만드는 걸로 해야겠다.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "wiNbKPW57Jdu",
+                  "text": "U122 ⏱15:27 발화자 1: \"음 그거 그거 어 그 템플릿 템플릿 만들기도 되고 그다음에 관리해 가지고 편집도 되고.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                },
+                {
+                  "id": "7kAFlXaOKnGo",
+                  "text": "U123 ⏱15:35 발화자 2: \"음 그러니까 템플릿 편집하는 페이지가 뜨는 거지. 그렇게 가야겠다.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "note": "정한 것 → D6",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "vxPPnxMmsLUH",
+              "text": "PG-02 에셋 전용 작업 페이지 · ❓ · ⏱14:41",
+              "children": [
+                {
+                  "id": "4gdZF31Z7bJv",
+                  "text": "U118 ⏱14:41 발화자 2: \"이렇게 되니까. 그럼 그럴 거면 이 에셈만 만드는 페이지가 필요할 것 같은데.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "note": "→ Q3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "xlwLtcbyeZtp",
+              "text": "PG-03 레퍼런스 전용 작업 페이지 · ❓ · ⏱14:45",
+              "children": [
+                {
+                  "id": "faJkC30yLIky",
+                  "text": "U119 ⏱14:45 발화자 1: \"페이지. 그래서 그런 뭔가 익셀 아예 그냥 공격적으로 작업하는 거 레퍼런스도 마찬가지로 본격적으로 작업하는 거 막 그런 것마다 약간 좀 본격적인 페이지 하나씩이 아마 있긴 있어야 될 거에요.\"",
+                  "children": [],
+                  "isFolded": false,
+                  "nodeType": "quote",
+                  "createdAt": 1794562188869,
+                  "updatedAt": 1794562188869
+                }
+              ],
+              "isFolded": true,
+              "note": "→ Q3",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "h2",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562188869,
+      "updatedAt": 1794562188869
+    },
+    {
+      "id": "hRmsbeYKM4Du",
+      "text": "2. 정한 것",
+      "children": [
+        {
+          "id": "sjfiuYkMe0G3",
+          "text": "D1 기본 블록박스는 툴바에 둔다 — 좌·우 사이드바에서는 뺀다 → TB-BLK-01 · ⏱10:35",
+          "children": [
+            {
+              "id": "kg9tso0UeAmW",
+              "text": "U090 ⏱10:35 발화자 2: \"여튼 그러면 여기 툴바에 블록박스 내려가는 걸로 확정한다.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "I7VdtpwCOuIv",
+          "text": "D2 스타일은 발화자 2 의 것을 본 사양으로 — 그대로 덮어쓴다 · ⏱11:02",
+          "children": [
+            {
+              "id": "sr8cGWXbvaHp",
+              "text": "U094 ⏱11:02 발화자 1: \"일단 스타일 같은 경우에는 니 거를 메인으로 해서 다 그냥 그 덮어 쓰는 식으로 그냥 스타일 같은 경우에는 무조건 이게 이제 본 사양으로 해서 그냥. 엎어 차이.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "z5Khc7yXpKQc",
+          "text": "D3 목업 상태 그대로 머지한다 · ⏱07:52",
+          "children": [
+            {
+              "id": "w60YD5ByQd5B",
+              "text": "U069 ⏱07:52 발화자 1: \"그러면은 이거는 아직까지는 그냥 목업으로만 되는 거네. 음 그러면은 저기 뭐고 내가 이거를 머지 할 때 음 이거를 머지 할 때는 그러면\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "rvJdRKEErE03",
+              "text": "U071 ⏱08:06 발화자 1: \"그러니까 저기 그냥 목업인 상태로만 머지를 이렇게 하면 되는 거네요.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "WUPsaGInHlXq",
+          "text": "D4 섹션 목업은 그대로 가져간다 — 있어야 '여기 추가하라' 고 할 수 있어서 → TB-SEC · ⏱09:51",
+          "children": [
+            {
+              "id": "ykd2LLHvM65l",
+              "text": "U085 ⏱09:51 발화자 2: \"이거 지우고 그러면 이거 그냥 목업 그대로 받아 놓고 왜냐하면 이게 이게 있어야 여기다가 추가하라고 할 수 있으니까. 여튼 SSI는 그대로 가져가는 걸로 하고.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "RqAzwvP7kPGn",
+          "text": "D5 템플릿 목록은 더미가 든 실사, 세부 정보는 썸네일 → HUB-05 · ⏱14:05",
+          "children": [
+            {
+              "id": "XdBFdV5zE5zn",
+              "text": "U109 ⏱13:43 발화자 2: \"근데 그거를 비슷해서. 어. 그 더미 이미지랑 더미 데이터가 있는 채로 템플릿에 넣자는 거잖아.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "p7q1ewaVBzZU",
+              "text": "U110 ⏱13:52 발화자 2: \"근데 나는 그걸 또 지우는 게 귀찮거든. 나는 빈 표만 들어\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "wJU0dlNOYXia",
+              "text": "U111 ⏱13:56 발화자 1: \"좋겠어요. 그래서 그거를 약간 그 두 개를 레이어를 나눠서 약간 그 그 뭐 뭐 흐림 처리하고 겉\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "T8ZqJUInQVOL",
+              "text": "U112 ⏱14:05 발화자 2: \"그럼 이렇게 하면 되겠다.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "yMhv6CVZVgtW",
+              "text": "U113 ⏱14:15 발화자 1: \"뭐 그런 식으로 하는지.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "GL0JtTgreqkc",
+          "text": "D6 허브에서 만들기 · 편집을 누르면 템플릿 편집 페이지가 뜬다 → PG-01 · ⏱15:13",
+          "children": [
+            {
+              "id": "eGPl3pGobAPD",
+              "text": "U123 ⏱15:35 발화자 2: \"그렇게 가야겠다.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562188869,
+      "updatedAt": 1794562188869
+    },
+    {
+      "id": "1Fn5C3UawsWI",
+      "text": "3. 열린 질문",
+      "children": [
+        {
+          "id": "K0mnlW4sJ35r",
+          "text": "Q1 섹션 썸네일 — AI 가 도식으로 그릴지(발화자 2) · 캡처 이미지를 박을지(발화자 1) → TB-SEC-04 · ⏱11:50",
+          "children": [
+            {
+              "id": "ZjHAbffs2nDK",
+              "text": "정하기",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "2PgpQirdJ7yN",
+              "text": "U097 ⏱11:50 발화자 2: \"음 이거를 이렇게 긁었을 때 만약에 이 표를 긁었다고 했을 때는 어떻게 들어가야 될지 보세요. 우선 AI 기능이 좀 필요할 것 같아요.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "xecxaey74kl5",
+              "text": "U099 ⏱12:14 발화자 1: \"또 뭐 AI 기능이야. 어차피 긁어서 거기 넣어 놓으면은 그 발라 놓으면 되는데. 예를 들어서 저렇게만 표시를 하면은 아마 다 비슷하게 생겼을 걸 비슷하게 생긴 돈만 쭈르륵 있을 걸\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "i280U35l8AFI",
+              "text": "U101 ⏱12:36 발화자 1: \"근데 이제 그거 자체가 이제 내가 그래서 어쩔 수 없이 저걸 한 게 페이지 뷰 할 때 그냥 캡처를 해 가지고 그거를 그냥 박아 버린 거거든요.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "bIxhw6wS6Rgq",
+              "text": "U102 ⏱12:47 발화자 2: \"캡처라더 실제 이미지를 썼다고\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "JRMKrr0GPjrl",
+              "text": "U103 ⏱12:50 발화자 1: \"어 이 썸네일이 나는 그 박히는 게 맞지 않나 싶어.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "tF2m3RfATxY4",
+              "text": "U104 ⏱12:55 발화자 2: \"나는 얘가 원래 그렇게 만들었는데 내가 하지 말라 했거든. 음 이거 보면은 이렇게 해 놓은 거를 내가 굳이 그림판에 들어가서 이렇게 이렇게 바꿔서 하라고\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "FGiiLKxAaSWZ",
+              "text": "U105 ⏱13:04 발화자 1: \"시킨 거야. 이게 저기 뭐지? 그거를 그 나는 미리 캔버스나 캔바 있잖아.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "uHuBqNsj6eNw",
+              "text": "U106 ⏱13:10 발화자 1: \"음 그쪽에서 보면은 결국에는 저기서 다 그 그거를 보여주잖아. 그냥 이미지로 보여 주잖아. 쫙 내리면은 그냥 그 그거 뭐고.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "va5ArR6JaAAd",
+              "text": "U107 ⏱13:21 발화자 1: \"포스터도 그렇고 다른 그 그런 템플릿 같은 것들 할 때 응. 그래서 걔네도 어떻게 보면은 그냥 썸네일 형식이라서 아 아마 그쪽으로 대해야 되지 않을까 생각은 하고 있었던 부분이긴 해요. 그렇게 이제 그 그냥 임 이모티콘이라고 해야 되나?\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "VcVo9RFS3ixm",
+          "text": "Q2 그룹 칩 — 같은 형식 여러 개를 묶어 꽂으면 AI 가 더 정확하다 · ⏱14:19",
+          "children": [
+            {
+              "id": "raErtBRiNCcq",
+              "text": "정하기",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "QBFdk9DAls2Y",
+              "text": "U115 ⏱14:19 발화자 1: \"그다음에 이제 그럴 때는 기억 못 한 거 그런 것도 난 가능하다고 생각합니다. 그룹 칩으로 운영하는 것도 나는 가능하다고 생각을 하거든.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "3dR0O8S3kyNm",
+              "text": "U116 ⏱14:26 발화자 2: \"여러 개 찍는 거 그렇\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "SvXJjwLDolX5",
+              "text": "U117 ⏱14:28 발화자 1: \"그러니까 그 형식의 그 작업을 한 여러 가지 그러니까 얘도 얘도 얘도 얘도 같이 그룹으로 꽂아 놓으면은 오히려 AI 관점에서 봤을 때는 더 정확한\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "o9MPAqgoN1nw",
+          "text": "Q3 에셋 · 레퍼런스마다 전용 작업 페이지를 둘지 → PG-02 · PG-03 · ⏱14:41",
+          "children": [
+            {
+              "id": "PcjTphmcUrk7",
+              "text": "정하기",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "z9j3oIhdJgyp",
+              "text": "U118 ⏱14:41 발화자 2: \"그럼 그럴 거면 이 에셈만 만드는 페이지가 필요할 것 같은데.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "HyBsKp6UVavl",
+          "text": "Q4 템플릿 허브 두 개를 노션처럼 엮는 방법 → HUB-03 · ⏱10:28",
+          "children": [
+            {
+              "id": "vLUMmnxA9P3J",
+              "text": "발화자 2 가 고민해 보기로",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "J3p4q42UmJQX",
+              "text": "U089 ⏱10:28 발화자 2: \"그건 좀 고민해 볼게.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "vSHni3pQdEhU",
+          "text": "Q5 커밋 · 푸시한 뒤 diff 대신 브랜치 트리에 합쳐져야 하나 → LS-SCM-05 · ⏱05:55",
+          "children": [
+            {
+              "id": "6iSRMlqvbf4s",
+              "text": "확인하기",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "GzBEuAU5VCGt",
+              "text": "U053 ⏱05:55 발화자 2: \"그러면 컴퓨터하고 푸시되면은 여기 그 깃 벤치에 이렇게 트리가 합쳐져야 되는 거 맞아?\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "EXgrteZiZUH0",
+          "text": "Q6 '계정 이력' 이 무엇인지 — 버릴지 → LS-SCM-06 · ⏱04:29",
+          "children": [
+            {
+              "id": "38bH2vtiCMNQ",
+              "text": "정하기 (발화자 1 은 버려도 된다고 함)",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "bEB8H31WayfO",
+              "text": "U038 ⏱04:43 발화자 1: \"그래서 쟤는 그냥 다 버려도 돼요.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562188869,
+      "updatedAt": 1794562188869
+    },
+    {
+      "id": "n3tKPSZNJ4sz",
+      "text": "4. 할 일",
+      "children": [
+        {
+          "id": "xfFKXDOFWIqS",
+          "text": "T1 블록박스 확정 상황을 발화자 2 에게 알려 주기 → D1 · ⏱10:35",
+          "children": [
+            {
+              "id": "f5hEc4ipTHiR",
+              "text": "할 일",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "vPvieXSRZLK2",
+              "text": "U090 ⏱10:35 발화자 2: \"확정된 상황 나중에 좀 알려줘.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "LSvgXGH7RrUb",
+          "text": "T2 블록 깜빡임 최적화 → TB-BLK-02 · ⏱08:52",
+          "children": [
+            {
+              "id": "0ORDVzLenOMV",
+              "text": "할 일",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "sOe9LlipaTcy",
+              "text": "U076 ⏱08:52 발화자 1: \"아직 최적화가를 해야 돼요.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "qLrW6dxxHfdk",
+          "text": "T3 목업 상태로 머지 → D3 · ⏱08:06",
+          "children": [
+            {
+              "id": "I7HAxeqOhwnF",
+              "text": "할 일",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "Wf56124ktBDK",
+              "text": "U071 ⏱08:06 발화자 1: \"목업인 상태로만 머지를 이렇게 하면 되는 거네요.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "TAoHMiMvQma3",
+          "text": "T4 블록을 좌·우 사이드바에서 빼고 툴바로 옮기기 → D1 · ⏱08:55",
+          "children": [
+            {
+              "id": "hTfBV0b48YuM",
+              "text": "할 일",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "MMv4gEAVjfeo",
+              "text": "U077 ⏱08:55 발화자 2: \"여기서 빼고 우측에서 빼고.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "diRycqHFtJ46",
+          "text": "T5 헤더 모달창 디자인 교체 → HD-03 · ⏱00:19",
+          "children": [
+            {
+              "id": "vm3U7WzQIGdS",
+              "text": "할 일",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "m4MYghT4P0Eb",
+              "text": "U003 ⏱00:19 발화자 2: \"디자인만 바꾸면 되고.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "NH8IxW6lq9Ts",
+          "text": "T6 좌측 사이드바 열고 닫기가 느림 → HD-06 · ⏱01:09",
+          "children": [
+            {
+              "id": "8dCVfx4syGOr",
+              "text": "할 일",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "s7AWCF5O8QNm",
+              "text": "U008 ⏱01:09 발화자 2: \"너무 느려서 안 펴지는 거고\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "IyD5HCGhbLi2",
+          "text": "T7 Changes 에 '수정' 이 안 뜨는 것 확인 → LS-SCM-02 · ⏱03:46",
+          "children": [
+            {
+              "id": "m7lHsV1HbdOT",
+              "text": "할 일",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "todo",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "AA4k2OTvH4vJ",
+              "text": "U029 ⏱03:46 발화자 2: \"근데 지금 추가만 뜨네.\"",
+              "children": [],
+              "isFolded": false,
+              "nodeType": "quote",
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562188869,
+      "updatedAt": 1794562188869
+    },
+    {
+      "id": "yeW7bjGnWIpC",
+      "text": "5. 용어 해석 (STT 오인식 추정)",
+      "children": [
+        {
+          "id": "pXkbsq9cf0oS",
+          "text": "팝이콘 → 파비콘? · 파일 에디큐 → 파일 · 편집 메뉴?",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "j0s32Cm615S5",
+          "text": "안티유리 부츠 · 안티그레비티 · 안티그래PT → Antigravity",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "0gRQo98KAgo7",
+          "text": "첨조 → 참조 · 엘리문츠 → Elements · 도큐먼트 페이젠 → Document 페이지 · 올해 클릭 → ❓",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "FEbvg6ozs864",
+          "text": "디프트 · 디프 · D프 → diff · 체인지스 → Changes · 워크 트림 · 워크틀 → worktree · 벤치 → 브랜치?",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "WdhyZp3datpU",
+          "text": "계정 이력 · 이익 이력 → 커밋 이력? · 좀마가 · 점막감 → ❓",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "6kxsR5zZSkWW",
+          "text": "SS · SSI · 섹션 엑셀 · SNS → 섹션? · 에셈 · 익셀 → 에셋 · 블로그인 → 블록인 · 쌈네일 → 썸네일 · 페이스 → 페이지",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562188869,
+      "updatedAt": 1794562188869
+    },
+    {
+      "id": "DUktwVL1de2J",
+      "text": "6. 커버리지 점검",
+      "children": [
+        {
+          "id": "hzipDkfvGTfc",
+          "text": "결과: 발화 130 · 인용 101 · 버림 29 · 빠짐 0 · 지어낸 인용 0 · 원문 없는 항목 0 — 통과 (2026-11-13 crosscheck.py)",
+          "children": [],
+          "isFolded": false,
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        },
+        {
+          "id": "H8KqENRr8PU7",
+          "text": "버린 발화",
+          "children": [
+            {
+              "id": "1WiGJLQx6uD9",
+              "text": "U007 ⏱01:08 맞장구 — \"어허\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "iZMqqkQYdlML",
+              "text": "U011 ⏱01:21 잡담 — 발화자 3, 회의 밖",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "FNtYzm4uRvRu",
+              "text": "U012 ⏱01:22 진행 — \"그래 가지고. 네.\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "OLitwUsEzP9S",
+              "text": "U013 ⏱01:23 잡담 — 발화자 3, 회의 밖",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "Z2yjFpphcWYq",
+              "text": "U014 ⏱01:24 잡담 — 발화자 3 에게 하는 말",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "dpD0S0GLJWAy",
+              "text": "U015 ⏱01:25 잡담 — 발화자 3, 회의 밖",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "e8YQz7BHH3sV",
+              "text": "U016 ⏱01:28 잡담 — 발화자 3 에게 하는 말",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "UglTyz85ljS0",
+              "text": "U017 ⏱01:29 잡담 — 발화자 3, 회의 밖",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "s2egYNafgKjs",
+              "text": "U018 ⏱01:37 잡담 — 발화자 3, 회의 밖",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "yvMacqmwKqK7",
+              "text": "U021 ⏱02:10 맞장구 — \"아 아 오케이.\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "BOhC4yvL7ObW",
+              "text": "U023 ⏱02:32 맞장구 — \"아 OK OK 웃기는 거 OK.\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "nY5TXpSFFADp",
+              "text": "U037 ⏱04:41 맞장구 — \"어. 어.\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "htL8cIrtjSoK",
+              "text": "U046 ⏱05:36 맞장구 — \"아\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "H7aas9fSc3tx",
+              "text": "U049 ⏱05:44 맞장구 — \"음\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "neSNQFm4yUec",
+              "text": "U050 ⏱05:46 진행 — \"녹음해 놨지.\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "cpaHHSaWEO8b",
+              "text": "U062 ⏱06:37 맞장구 — \"아 OK OK.\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "4W9KB24xaHjM",
+              "text": "U070 ⏱08:04 진행 — \"야 뭐지?\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "v5EwOtRMxP6D",
+              "text": "U075 ⏱08:50 맞장구 — \"어\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "QRc5yVftH74e",
+              "text": "U091 ⏱10:47 진행 — \"그래서 여튼 여기까지 나\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "uSsIUGW58xks",
+              "text": "U098 ⏱12:13 맞장구 — \"음\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "squx0i8NeUWe",
+              "text": "U108 ⏱13:42 진행 — \"아무튼\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "JW2HY1mnbAzG",
+              "text": "U114 ⏱14:17 맞장구 — \"어 잘\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "EXiKDazQXHbS",
+              "text": "U124 ⏱15:42 진행 — \"녹음해 놓길 잘했다.\"",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "OskpMKtwPE7w",
+              "text": "U125 ⏱15:44 잡담 — 마무리 소감",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "c4JE2F9pxtz5",
+              "text": "U126 ⏱15:46 진행 — 마무리",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "Hk7D6KaS89Kd",
+              "text": "U127 ⏱15:47 잡담 — 마무리 소감",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "v3mvnbdJgYnp",
+              "text": "U128 ⏱15:51 잡담 — 발화자 3, 회의 밖",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "vB5L0rodOPsT",
+              "text": "U129 ⏱15:52 잡담 — 마무리 소감",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            },
+            {
+              "id": "vtRlbAbpN8w4",
+              "text": "U130 ⏱15:55 잡담 — 마무리 소감",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794562188869,
+              "updatedAt": 1794562188869
+            }
+          ],
+          "isFolded": true,
+          "nodeType": "h2",
+          "createdAt": 1794562188869,
+          "updatedAt": 1794562188869
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "h1",
+      "createdAt": 1794562188869,
+      "updatedAt": 1794562188869
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1794562188869,
+  "updatedAt": 1794562969030
+}

@@ -653,9 +653,373 @@
       ],
       "createdAt": 1794357725140,
       "updatedAt": 1794357729753
+    },
+    {
+      "id": "kJIT0c4ipT6y",
+      "text": "2026.11.13",
+      "children": [
+        {
+          "id": "eGbvgVxJR2fu",
+          "text": "디자인? UI/UX 협업 시스템 세팅",
+          "children": [
+            {
+              "id": "EyyvbzJDUgZA",
+              "text": "화면 정의서? ",
+              "children": [],
+              "createdAt": 1794530438446,
+              "updatedAt": 1794530442834
+            }
+          ],
+          "createdAt": 1794529063213,
+          "updatedAt": 1794529073032
+        },
+        {
+          "id": "AvIDwUuUlti7",
+          "text": "업무 전도, 업무 지식 전달 UX 확립",
+          "children": [
+            {
+              "id": "t6Z7xm22i2f2",
+              "text": "내가 이부분은 알려줬고, 가르쳐줬음. 담부터 이렇게 하셈",
+              "children": [],
+              "createdAt": 1794544868329,
+              "updatedAt": 1794544883365
+            },
+            {
+              "id": "gJmdBji5JE0y",
+              "text": "인지적 도제 시스템",
+              "children": [
+                {
+                  "id": "JdEEHD5SY5RD",
+                  "text": "모델링 : 모델링(시범) → 코칭(피드백) → 외현화(Articulation) → 성찰(Reflection)",
+                  "children": [],
+                  "createdAt": 1794548058073,
+                  "updatedAt": 1794548135827
+                },
+                {
+                  "id": "F6Wve1YmRcwR",
+                  "text": "스냅샷, 특정 순간, 특정 시점의 상태",
+                  "children": [
+                    {
+                      "id": "rJGz63Thzd1e",
+                      "text": "입력 UX",
+                      "children": [
+                        {
+                          "id": "p0DqNvJ8rUnA",
+                          "text": "[판단의 기준과 관점]을 데이터화 하는 것이 핵심",
+                          "children": [],
+                          "createdAt": 1794548160333,
+                          "updatedAt": 1794548200749
+                        },
+                        {
+                          "id": "132iTQ2ukA0o",
+                          "text": "코칭 메모가 동반된 수정(Intent-Attached Edit)",
+                          "children": [
+                            {
+                              "id": "JvsX92Obywdd",
+                              "text": "단순 텍스트 수정에서 끝나지 않고 옆에 '사수의 코멘트(왜 이렇게 고쳤는가)'를 한 줄 남길 수 있게",
+                              "children": [],
+                              "createdAt": 1794548235716,
+                              "updatedAt": 1794548262990
+                            }
+                          ],
+                          "createdAt": 1794548184136,
+                          "updatedAt": 1794548191162,
+                          "isFolded": true
+                        },
+                        {
+                          "id": "Z4gXpzqEYhoO",
+                          "text": "옵시디언식 아토믹 노하우 카드(Atomic Playbook)",
+                          "children": [
+                            {
+                              "id": "HklolwJPvNm1",
+                              "text": "가르친 내용은 '우리만의 일하는 원칙/화법 카드' 형태로 쌓입니다",
+                              "children": [],
+                              "createdAt": 1794548239613,
+                              "updatedAt": 1794548294061
+                            }
+                          ],
+                          "createdAt": 1794548192098,
+                          "updatedAt": 1794548233706,
+                          "isFolded": true
+                        }
+                      ],
+                      "createdAt": 1794548137810,
+                      "updatedAt": 1794549475243,
+                      "isFolded": false
+                    },
+                    {
+                      "id": "mqY69PGZ4921",
+                      "text": "맥락 UX",
+                      "children": [
+                        {
+                          "id": "WhOHEjdUnyCq",
+                          "text": "\"내가 어떤 상황에서 어떤 지시를 했는지\" 직관적 = '기억의 에피소드(Origin Story)'",
+                          "children": [],
+                          "createdAt": 1794548354664,
+                          "updatedAt": 1794548396180
+                        },
+                        {
+                          "id": "Jd0K6VoiLoeQ",
+                          "text": "에피소드 꼬리표(Episodic Provenance)",
+                          "children": [
+                            {
+                              "id": "tQ7PdPb8g8JH",
+                              "text": "당시의 프로젝트 맥락과 수정 전후 스냅샷이 꼬리표, 클릭하면 그 지시가 탄생했던 실제 현장을 바로 확인",
+                              "children": [],
+                              "createdAt": 1794548419616,
+                              "updatedAt": 1794548525837
+                            }
+                          ],
+                          "createdAt": 1794548397572,
+                          "updatedAt": 1794548408086,
+                          "isFolded": true
+                        },
+                        {
+                          "id": "HYCxjIz3iyaC",
+                          "text": "관점 렌즈(Perspective Lens)의 동적 장착",
+                          "children": [
+                            {
+                              "id": "BrM3t45Sjdd3",
+                              "text": "AI가 축적된 노하우 중 이번 판에서 꺼내 들어야 할 핵심 무기 2~3개를 스스로 골라 작업 화면 상단에 '장착된 렌즈' 형태로 띄워줍(skill 과는 조금 다른 사양으로 잡아야할 것 같긴한데...)",
+                              "children": [],
+                              "createdAt": 1794548528576,
+                              "updatedAt": 1794548607610
+                            }
+                          ],
+                          "createdAt": 1794548409069,
+                          "updatedAt": 1794548418238,
+                          "isFolded": true
+                        }
+                      ],
+                      "createdAt": 1794548305846,
+                      "updatedAt": 1794549475244,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "2OEbITLYFdar",
+                      "text": "증명 UX",
+                      "children": [
+                        {
+                          "id": "SlJkZ290Xcl5",
+                          "text": "도제가 자기 머릿속을 말로 설명하게 만드는 것(외현화)",
+                          "children": [],
+                          "createdAt": 1794548633176,
+                          "updatedAt": 1794548672006
+                        },
+                        {
+                          "id": "pD7E0yQkPQNS",
+                          "text": "초안 상단의 '도제 의도 브리핑(Thinking Note)'",
+                          "children": [
+                            {
+                              "id": "vObmnb5ZyI7d",
+                              "text": "전수해주신 [발주처 리스크 해소 우선] 관점을 반영해 도입부 논리를 이렇게 재구성했습니다\"*라고 자신이 지침을 어떻게 해석해 녹여냈는지 먼저 설명",
+                              "children": [],
+                              "createdAt": 1794548696245,
+                              "updatedAt": 1794548852267
+                            }
+                          ],
+                          "createdAt": 1794548673365,
+                          "updatedAt": 1794548692053
+                        },
+                        {
+                          "id": "scmhLMH1gkM8",
+                          "text": "관점 렌즈 ON/OFF 토글 (Vanilla vs. Apprenticed)",
+                          "children": [
+                            {
+                              "id": "eyNkDIOIiOq5",
+                              "text": "초안 화면에서 클릭 한 번으로 '렌즈 끄기(깡통 엔진의 기본 작문)'와 '렌즈 켜기(우리 회사 Voice와 요령이 반영된 작문)'를 전환하거나 나란히 비교할 수 있게",
+                              "children": [],
+                              "createdAt": 1794548709642,
+                              "updatedAt": 1794548869503
+                            }
+                          ],
+                          "createdAt": 1794548707248,
+                          "updatedAt": 1794548708173
+                        }
+                      ],
+                      "createdAt": 1794548607902,
+                      "updatedAt": 1794549475244,
+                      "isFolded": true
+                    }
+                  ],
+                  "createdAt": 1794549457393,
+                  "updatedAt": 1794549470173
+                },
+                {
+                  "id": "1m3yorKIbJgS",
+                  "text": "시간의 흐름과 실전 변수 매니징",
+                  "children": [
+                    {
+                      "id": "g0uOGncco3PO",
+                      "text": "조율과 경계",
+                      "children": [
+                        {
+                          "id": "crHjSye8J5xF",
+                          "text": "AI의 과잉 해석(Over-indexing), 과적합 방지",
+                          "children": [],
+                          "createdAt": 1794552889570,
+                          "updatedAt": 1794552895730
+                        },
+                        {
+                          "id": "0cY9bH3bjc5I",
+                          "text": "개입 강도 스펙트럼(Voice Intensity) 관점 개입 감도 조절 UX",
+                          "children": [],
+                          "createdAt": 1794552895898,
+                          "updatedAt": 1794553499895
+                        },
+                        {
+                          "id": "8ypq4YCE33Vm",
+                          "text": "RFP 준수(Compliance)와의 경계선",
+                          "children": [
+                            {
+                              "id": "3oMD8h2g54ME",
+                              "text": "발주처가 RFP에 명시한 필수 요구사항과 평가 기준이 절대 우선",
+                              "children": [],
+                              "createdAt": 1794553520812,
+                              "updatedAt": 1794553533878
+                            },
+                            {
+                              "id": "S51AbyC2qzL6",
+                              "text": "우리의 관점 렌즈가 RFP의 핵심 요구사항과 충돌할 때, AI가 무리하게 자기 고집을 피우지 않고 *\"이 부분은 발주처 요구사항 때문에 평소 가르쳐주신 화법을 자제하고 표준 스펙 위주로 작성했습니다\"*라고 경계를 긋는 안전장치",
+                              "children": [],
+                              "createdAt": 1794553534444,
+                              "updatedAt": 1794553543654
+                            }
+                          ],
+                          "createdAt": 1794552913218,
+                          "updatedAt": 1794553520238,
+                          "isFolded": true
+                        }
+                      ],
+                      "createdAt": 1794549490996,
+                      "updatedAt": 1794549495752,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "tkq2GT27syM5",
+                      "text": "진화와 소멸",
+                      "children": [
+                        {
+                          "id": "oP4Fh6VPE53u",
+                          "text": "사수의 비계(Scaffolding)는 영구적이지 않으며, 도제가 숙련됨에 따라 점진적으로 철수(Fading) 프로젝트가 수십 건 쌓이면 노하우 노트도 비대해져 서로 모순되거나 프롬프트의 집중력을 떨어뜨립",
+                          "children": [],
+                          "createdAt": 1794553557330,
+                          "updatedAt": 1794553587661
+                        },
+                        {
+                          "id": "yfoPomvZsWKg",
+                          "text": "에피소드의 원칙화(Consolidation)",
+                          "children": [
+                            {
+                              "id": "LfAYD3GrQ6EK",
+                              "text": "여러 프로젝트에서 반복적으로 지적한 비슷한 코칭 에피소드들이 3~4개 모이면, 시스템이 이를 감지해 *\"최근 4건의 입찰에서 모두 '도입부 기술 나열 축소'를 지시하셨습니다. 이를 하나의 상위 원칙 카드로 통합할까요?\"*라고 제안해 지식을 압축",
+                              "children": [],
+                              "createdAt": 1794553606243,
+                              "updatedAt": 1794553985402
+                            }
+                          ],
+                          "createdAt": 1794553588547,
+                          "updatedAt": 1794553596399,
+                          "isFolded": true
+                        },
+                        {
+                          "id": "WslVamPMdTiB",
+                          "text": "엔진 업그레이드에 따른 '지침 졸업(Graduation)'",
+                          "children": [
+                            {
+                              "id": "HNE23IFQEVJb",
+                              "text": "향후 기본 집필 엔진이 고도화되면, 과거 엔진이 멍청해서 일일이 가르쳐야 했던 기초적인 요령들은 불필요해집니다. 새 엔진 버전이 배포될 때 기존 노하우 카드 중 기본 엔진만으로도 충분히 구현되는 항목들을 추려내 '기본 역량으로 내재화됨(졸업 권장)' 상태로 정리해 주는 유지보수 관점이 필요 -> 흠... 이건 당분간 가능할까? 이것보다는 엔진 격차에 따른???",
+                              "children": [],
+                              "createdAt": 1794553603715,
+                              "updatedAt": 1794554176467
+                            }
+                          ],
+                          "createdAt": 1794553596820,
+                          "updatedAt": 1794553602385,
+                          "isFolded": true
+                        }
+                      ],
+                      "createdAt": 1794549496052,
+                      "updatedAt": 1794550404230,
+                      "isFolded": true
+                    },
+                    {
+                      "id": "YH5Y8yGc6LBO",
+                      "text": "최종 결과물 역산과 회고",
+                      "children": [],
+                      "createdAt": 1794550404883,
+                      "updatedAt": 1794550472122
+                    }
+                  ],
+                  "createdAt": 1794549476868,
+                  "updatedAt": 1794549490924
+                }
+              ],
+              "createdAt": 1794548053140,
+              "updatedAt": 1794548057189
+            }
+          ],
+          "createdAt": 1794529078710,
+          "updatedAt": 1794529094621
+        },
+        {
+          "id": "KuRAi7Db70h0",
+          "text": "outline -> 정,비정 나누기(물론 서로도 전환 가능) -> 완료 레이아웃 배치 완 문서",
+          "children": [
+            {
+              "id": "Rk96VhcR0Slx",
+              "text": "데이터 스키마 및 ",
+              "children": [],
+              "createdAt": 1794529155003,
+              "updatedAt": 1794529158745
+            },
+            {
+              "id": "47VA5gVBRd63",
+              "text": "정 vs 비정의 구분 : 포맷의 변경 가능 여부",
+              "children": [],
+              "createdAt": 1794529174840,
+              "updatedAt": 1794529186233
+            },
+            {
+              "id": "nztogj3ZEGbo",
+              "text": "outline 데[이터 스키마 및 사양 정하기",
+              "children": [],
+              "createdAt": 1794529527499,
+              "updatedAt": 1794529536821
+            }
+          ],
+          "createdAt": 1794529094853,
+          "updatedAt": 1794529151356,
+          "isFolded": false
+        },
+        {
+          "id": "y9mNxo3MxoBe",
+          "text": "Phase3 -> Phase1 으로 역으로 분해하는 과정에서 아웃라인 수정을 할 시,",
+          "children": [
+            {
+              "id": "jqV4zgxyjLcb",
+              "text": "Phase1 -> 미리보기만 일단 제공 수정 시 미리보기 단에서 컴파일?? 아무튼 그렇게 하면 변경 와꾸를 보여주는 거",
+              "children": [],
+              "createdAt": 1794550283015,
+              "updatedAt": 1794550384778
+            }
+          ],
+          "createdAt": 1794550263359,
+          "updatedAt": 1794550282819
+        },
+        {
+          "id": "7XgcuR1jtuVB",
+          "text": "Hooking 포인트 - '아! 이거 써봐야겠다. 조금 써볼 가치가 있겠다 하고 느낄 수 있게 하는 첫 (코-워크)작업은",
+          "children": [],
+          "createdAt": 1794529151901,
+          "updatedAt": 1794529385830
+        }
+      ],
+      "createdAt": 1794529058769,
+      "updatedAt": 1794529062642
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793934368821,
-  "updatedAt": 1794461725470
+  "updatedAt": 1794556538350
 }

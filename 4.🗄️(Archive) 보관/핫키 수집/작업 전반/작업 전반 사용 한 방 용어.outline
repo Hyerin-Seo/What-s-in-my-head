@@ -52,9 +52,165 @@
       "isFolded": false,
       "createdAt": 1792837399407,
       "updatedAt": 1792837462992
+    },
+    {
+      "id": "F8Mi1wc1WojV",
+      "text": "RPA(Robotic Process Automation, 로보틱 프로세스 자동화)",
+      "children": [
+        {
+          "id": "3BWzf1PhW4ia",
+          "text": "사람이 컴퓨터로 반복 수행하는 정형화된 단순 업무를 소프트웨어 로봇이 대신 처리하는 기술",
+          "children": [],
+          "createdAt": 1794546990189,
+          "updatedAt": 1794546998233
+        },
+        {
+          "id": "LxCAyFPMwxSJ",
+          "text": "예를 들어 '특정 폴더에 엑셀 파일이 들어오면, A열의 데이터를 복사해 사내 시스템에 입력한다'처럼 명확한 규칙(If-Then)이 정해진 업무를 자동화할 때",
+          "children": [],
+          "createdAt": 1794547010813,
+          "updatedAt": 1794547011057
+        }
+      ],
+      "createdAt": 1794546975103,
+      "updatedAt": 1794547030299
+    },
+    {
+      "id": "ZiFBlCXRoryR",
+      "text": "RFP (Request For Proposal, 제안요청서)",
+      "children": [
+        {
+          "id": "7yvEo8LD7dnH",
+          "text": "정부 기관이나 기업 같은 발주처가 특정 프로젝트를 맡길 업체를 찾기 위해 발행하는 공식 입찰 요구사항 문서",
+          "children": [],
+          "createdAt": 1794547124737,
+          "updatedAt": 1794547125366
+        }
+      ],
+      "createdAt": 1794547020427,
+      "updatedAt": 1794547021377
+    },
+    {
+      "id": "Ys5PXayusWKQ",
+      "text": "도제식 코칭(Apprenticeship Coaching)",
+      "children": [
+        {
+          "id": "FS7eJRXC7sDl",
+          "text": "매뉴얼이나 체크리스트로 글자화할 수 없는 '암묵지(Tacit Knowledge)'와 '상황 판단력'을 전수할 때 사용하는 방식",
+          "children": [],
+          "createdAt": 1794547551682,
+          "updatedAt": 1794547556426
+        },
+        {
+          "id": "Vd4tS9cVAhVu",
+          "text": "사용 상황:",
+          "children": [
+            {
+              "id": "AdgPBX3IRq23",
+              "text": "매번 판이 바뀌는 비정형 실무, 입찰 제안 전략 수립, B2B 협상, 크리에이티브 디렉팅처럼 변수가 너무 많아 A일 때 B를 하라는 표준 매뉴얼을 만들 수 없을 때",
+              "children": [],
+              "createdAt": 1794547474804,
+              "updatedAt": 1794547493219
+            }
+          ],
+          "createdAt": 1794547462224,
+          "updatedAt": 1794547473916,
+          "isFolded": true
+        },
+        {
+          "id": "AAGnU3bRUu4K",
+          "text": "작동 방식",
+          "children": [
+            {
+              "id": "mPcBnLT5ZONZ",
+              "text": "사수가 먼저 시범을 보이고(Modeling) → 실전에서 후배가 초안을 잡으면 사수가 그 자리에서 맥락을 짚어 교정해 주며(Coaching) → 후배의 감이 올라오면 개입을 서서히 줄이는(Fading) 흐름으로 진행",
+              "children": [],
+              "createdAt": 1794547522751,
+              "updatedAt": 1794547541317
+            }
+          ],
+          "createdAt": 1794547521572,
+          "updatedAt": 1794547522257,
+          "isFolded": true
+        }
+      ],
+      "createdAt": 1794547459733,
+      "updatedAt": 1794547461151,
+      "isFolded": true
+    },
+    {
+      "id": "Mj4jf7NuJ41j",
+      "text": "인지적 도제 코칭 (Cognitive Apprenticeship)",
+      "children": [
+        {
+          "id": "FrK5LTayBrLa",
+          "text": "전통적인 도제가 도자기 빚기 같은 '손기술'을 전수한다면, 이건 전문가의 머릿속 사고 과정을 겉으로 꺼내어(Thinking Aloud) 가르치는 방식이야. 단순히 \"여기를 이렇게 고쳐\"가 아니라 *\"이 공고문에서는 예산 규모보다 추진 배경의 '시급성' 문구를 먼저 봐야 해. 그래야 우리 솔루션의 빠른 구축 기간을 핵심 경쟁력으로 내세울 수 있거든\"*처럼 판단의 기준과 논리 회로 자체를 공유하는 코칭이지.",
+          "children": [],
+          "createdAt": 1794547609448,
+          "updatedAt": 1794547610810
+        },
+        {
+          "id": "xO07mIJuIyS9",
+          "text": "코칭 대상 : 판단의 기준, 관점",
+          "children": [],
+          "createdAt": 1794547758219,
+          "updatedAt": 1794547789398
+        }
+      ],
+      "createdAt": 1794547445303,
+      "updatedAt": 1794547448923,
+      "isFolded": false
+    },
+    {
+      "id": "i8QpHhBA0gXV",
+      "text": "지시형 코칭 (Directive / Instructional Coaching)",
+      "children": [
+        {
+          "id": "2PFFBafnxAdq",
+          "text": "명확한 정답이나 표준 업무 절차(SOP)가 존재할 때 사용해. 숙련도가 낮은 초기 단계에서 사수가 구체적인 방법론, 규칙, 예시를 직접 제시하고, 틀린 부분을 즉각 바로잡아 주는 티칭(Teaching)에 가장 가까운 형태야.",
+          "children": [],
+          "createdAt": 1794547618702,
+          "updatedAt": 1794547619552
+        }
+      ],
+      "createdAt": 1794547588184,
+      "updatedAt": 1794547588358,
+      "isFolded": true
+    },
+    {
+      "id": "4T4dWISP6Ktx",
+      "text": "촉진형 / 비지시형 코칭 (Facilitative / Non-Directive Coaching)",
+      "children": [
+        {
+          "id": "N8b6wcCjLNB1",
+          "text": "코치가 답을 주지 않고 질문을 던져 상대방 스스로 해답과 관점을 찾게 유도하는 방식이야(대표적으로 목표-현실-대안-의지를 묻는 GROW 모델). 주로 리더십 개발이나 창의적인 기획처럼 정답이 열려 있는 문제에서 사고를 확장시킬 때 쓰여.",
+          "children": [],
+          "createdAt": 1794547625715,
+          "updatedAt": 1794547626175
+        }
+      ],
+      "createdAt": 1794547594777,
+      "updatedAt": 1794547594914,
+      "isFolded": true
+    },
+    {
+      "id": "b4enJOoQm6RH",
+      "text": "성과·피드백 루프 코칭 (Performance Coaching)",
+      "children": [
+        {
+          "id": "0mkUoSrAbZQy",
+          "text": "특정 결과물의 퀄리티를 끌어올리기 위해 '실행 → 결과 측정 → 갭(Gap) 분석 → 재실행'의 사이클을 짧게 돌리는 방식이야. 스포츠 코칭이나 세일즈 피치 튜닝처럼, 기준점 대비 실제 결과물이 얼마나 달라졌는지를 계속 비교하며 영점을 맞춰 나갈 때 효과적이야.",
+          "children": [],
+          "createdAt": 1794547631773,
+          "updatedAt": 1794547632342
+        }
+      ],
+      "createdAt": 1794547600548,
+      "updatedAt": 1794547600736,
+      "isFolded": true
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792837399407,
-  "updatedAt": 1792837486972
+  "updatedAt": 1794547789399
 }
