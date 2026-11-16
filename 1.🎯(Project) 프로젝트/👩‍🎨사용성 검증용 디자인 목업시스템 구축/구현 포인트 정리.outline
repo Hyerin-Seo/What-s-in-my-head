@@ -2615,7 +2615,8 @@
         }
       ],
       "createdAt": 1793848816376,
-      "updatedAt": 1793848822724
+      "updatedAt": 1793848822724,
+      "isFolded": true
     },
     {
       "id": "4abciIbktN7B",
@@ -3812,7 +3813,7 @@
               "updatedAt": 1794392185893
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1794200129193,
           "updatedAt": 1794297425676
         },
@@ -3820,11 +3821,11 @@
           "id": "fQ3ju1jzPk2E",
           "text": "최종으로 구현해야하는 needs.",
           "children": [],
-          "createdAt": 1794470021116,
-          "updatedAt": 1794470037896,
           "file": {
             "target": "Pasted image 20261112165342.png"
-          }
+          },
+          "createdAt": 1794470021116,
+          "updatedAt": 1794470037896
         }
       ],
       "isFolded": false,
@@ -3834,5 +3835,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1794530658211
+  "updatedAt": 1794794330889
 }
