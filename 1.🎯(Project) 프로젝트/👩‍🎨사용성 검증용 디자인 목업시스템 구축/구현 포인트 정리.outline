@@ -2686,7 +2686,8 @@
                 }
               ],
               "createdAt": 1793848929446,
-              "updatedAt": 1793849235725
+              "updatedAt": 1793849235725,
+              "isFolded": true
             },
             {
               "id": "Ch8BogNswCSJ",
@@ -2701,7 +2702,8 @@
                 }
               ],
               "createdAt": 1794454763293,
-              "updatedAt": 1794454791362
+              "updatedAt": 1794454791362,
+              "isFolded": true
             },
             {
               "id": "rtVxA3U3ij9x",
@@ -2716,7 +2718,8 @@
                 }
               ],
               "createdAt": 1794454808354,
-              "updatedAt": 1794454872304
+              "updatedAt": 1794454872304,
+              "isFolded": true
             }
           ],
           "isFolded": true,
@@ -2823,7 +2826,8 @@
                         "target": "Pasted image 20261110145001.png"
                       },
                       "createdAt": 1794289801553,
-                      "updatedAt": 1794289829930
+                      "updatedAt": 1794289829930,
+                      "isFolded": true
                     },
                     {
                       "id": "TitWE9DMN1Ag",
@@ -2888,7 +2892,8 @@
                         }
                       ],
                       "createdAt": 1794291450826,
-                      "updatedAt": 1794291452125
+                      "updatedAt": 1794291452125,
+                      "isFolded": true
                     },
                     {
                       "id": "H495HMPhi2vX",
@@ -2923,7 +2928,7 @@
                                   "updatedAt": 1794292092342
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "file": {
                                 "target": "Pasted image 20261110152024.png"
                               },
@@ -2955,7 +2960,7 @@
                                   "updatedAt": 1794292724548
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "file": {
                                 "target": "Pasted image 20261110152119.png"
                               },
@@ -2997,7 +3002,7 @@
                                   "updatedAt": 1794293416667
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "file": {
                                 "target": "Pasted image 20261110153705.png"
                               },
@@ -3049,7 +3054,7 @@
                                   "updatedAt": 1794292539312
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "file": {
                                 "target": "Pasted image 20261110152406.png"
                               },
@@ -3091,7 +3096,7 @@
                                   "updatedAt": 1794292938380
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "file": {
                                 "target": "Pasted image 20261110154128.png"
                               },
@@ -3110,7 +3115,7 @@
                                   "updatedAt": 1794293542684
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "file": {
                                 "target": "Pasted image 20261110155136.png"
                               },
@@ -3149,7 +3154,7 @@
                                   "updatedAt": 1794293631092
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "createdAt": 1794293562920,
                               "updatedAt": 1794293579778
                             },
@@ -3185,19 +3190,20 @@
                                   "updatedAt": 1794293778741
                                 }
                               ],
-                              "isFolded": false,
+                              "isFolded": true,
                               "createdAt": 1794293681851,
                               "updatedAt": 1794293699214
                             }
                           ],
-                          "isFolded": false,
+                          "isFolded": true,
                           "note": "디자인을 건드릴 수 없다는 관점에서는 \"안전한 읽기 전용(Read-Only)\"이 맞습니다.\n\n디자이너가 만들어 둔 화면을 망가뜨리지 않고 개발에만 필요한 정보를 안전하게 꺼내 쓰도록 설계된 모드입니다.\n\n1. 못 하는 것 (디자인 수정 불가 ❌)\n요소를 클릭하고 드래그해도 위치가 옮겨지지 않습니다. (실수로 삐뚤어질 걱정 없음)\n텍스트를 더블클릭해도 내용이 편집되지 않습니다.\n색상, 폰트, 크기, 오토레이아웃 등 디자인 속성을 변경할 수 없습니다.\n2. 할 수 있는 것 (개발 관련 작업 및 데이터 추출 ⭕)\n\n완전한 뷰어(View-only)와 달리 개발 협업을 위한 작업들은 가능합니다:\n\n수치/간격 측정: 마우스만 올리면 요소 간 간격(px), 패딩, 마진 자동 표시\n코드 및 CSS 복사: CSS, Tailwind, SwiftUI, Compose 등 코드로 바로 복사\n에셋(Asset) 추출: 아이콘, 이미지 등을 SVG / PNG / WebP로 바로 Export\n개발 상태 변경: \"Ready for dev(개발 대기)\", \"Completed(개발 완료)\" 상태 표시/변경\n협업/링크 연결: 댓글(Comment) 작성, Jira 티켓/GitHub PR 링크 연결\n\n💡 한 줄 요약: \"디자인 원본은 절대 망가뜨릴 수 없는 안전 모드이면서, 코드·치수·이미지 추출은 마음껏 할 수 있는 개발 전용 모드\"로 보시면 됩니다.",
                           "createdAt": 1794291518365,
                           "updatedAt": 1794293149461
                         }
                       ],
                       "createdAt": 1794291501340,
-                      "updatedAt": 1794291512307
+                      "updatedAt": 1794291512307,
+                      "isFolded": true
                     },
                     {
                       "id": "TAnKa4JVhAhU",
@@ -3220,7 +3226,7 @@
                       "updatedAt": 1794294804838
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1794289407935,
                   "updatedAt": 1794392192305
                 },
@@ -3267,7 +3273,7 @@
                           "updatedAt": 1794296774429
                         }
                       ],
-                      "isFolded": false,
+                      "isFolded": true,
                       "file": {
                         "target": "Pasted image 20261110164303.png"
                       },
@@ -3357,7 +3363,8 @@
                           ],
                           "nodeType": "bullet",
                           "createdAt": 1794297255588,
-                          "updatedAt": 1794297297667
+                          "updatedAt": 1794297297667,
+                          "isFolded": true
                         },
                         {
                           "id": "AknEgsDEo3gi",
@@ -3382,7 +3389,8 @@
                           ],
                           "nodeType": "bullet",
                           "createdAt": 1794297255588,
-                          "updatedAt": 1794297297667
+                          "updatedAt": 1794297297667,
+                          "isFolded": true
                         },
                         {
                           "id": "Xyus672biegr",
@@ -3399,7 +3407,8 @@
                           ],
                           "nodeType": "bullet",
                           "createdAt": 1794297255588,
-                          "updatedAt": 1794297297667
+                          "updatedAt": 1794297297667,
+                          "isFolded": true
                         },
                         {
                           "id": "kGomugYUBRg4",
@@ -3432,16 +3441,17 @@
                           ],
                           "nodeType": "bullet",
                           "createdAt": 1794297255588,
-                          "updatedAt": 1794297297667
+                          "updatedAt": 1794297297667,
+                          "isFolded": true
                         }
                       ],
-                      "isFolded": false,
+                      "isFolded": true,
                       "nodeType": "bullet",
                       "createdAt": 1794297255588,
                       "updatedAt": 1794297306067
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1794296600480,
                   "updatedAt": 1794392192306
                 },
@@ -3510,7 +3520,8 @@
                         "target": "Pasted image 20261111150517.png"
                       },
                       "createdAt": 1794377117481,
-                      "updatedAt": 1794377186990
+                      "updatedAt": 1794377186990,
+                      "isFolded": true
                     },
                     {
                       "id": "6BkClqQzrRwt",
@@ -3539,7 +3550,8 @@
                         "target": "Pasted image 20261111151533.png"
                       },
                       "createdAt": 1794377733401,
-                      "updatedAt": 1794386467077
+                      "updatedAt": 1794386467077,
+                      "isFolded": true
                     },
                     {
                       "id": "hUJX9GQUCkjz",
@@ -3566,7 +3578,8 @@
                         "target": "Pasted image 20261111174401.png"
                       },
                       "createdAt": 1794386641494,
-                      "updatedAt": 1794386682977
+                      "updatedAt": 1794386682977,
+                      "isFolded": true
                     },
                     {
                       "id": "sdk64vEkyZ3i",
@@ -3595,7 +3608,8 @@
                         "target": "Pasted image 20261111174608.png"
                       },
                       "createdAt": 1794386768569,
-                      "updatedAt": 1794386783267
+                      "updatedAt": 1794386783267,
+                      "isFolded": true
                     },
                     {
                       "id": "akD0t9thTBH9",
@@ -3628,7 +3642,7 @@
                       "updatedAt": 1794387118392
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1794375337232,
                   "updatedAt": 1794392192306
                 },
@@ -3675,7 +3689,8 @@
                         "target": "Pasted image 20261111175621.png"
                       },
                       "createdAt": 1794387381959,
-                      "updatedAt": 1794387440744
+                      "updatedAt": 1794387440744,
+                      "isFolded": true
                     },
                     {
                       "id": "4q189B5ydwTG",
@@ -3740,7 +3755,8 @@
                         }
                       ],
                       "createdAt": 1794387933622,
-                      "updatedAt": 1794387936374
+                      "updatedAt": 1794387936374,
+                      "isFolded": true
                     },
                     {
                       "id": "BSrmQ8krVA7R",
@@ -3803,12 +3819,12 @@
                       "updatedAt": 1794390849972
                     }
                   ],
-                  "isFolded": false,
+                  "isFolded": true,
                   "createdAt": 1794387300389,
                   "updatedAt": 1794392192306
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1794392179374,
               "updatedAt": 1794392185893
             }
@@ -3835,5 +3851,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1794794330889
+  "updatedAt": 1794565247595
 }
