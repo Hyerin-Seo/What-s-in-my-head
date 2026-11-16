@@ -675,7 +675,7 @@
         },
         {
           "id": "AvIDwUuUlti7",
-          "text": "업무 전도, 업무 지식 전달 UX 확립",
+          "text": "업무 전도, 업무 지식 전달 UX 고민 및 고려, 초기 아이데이션",
           "children": [
             {
               "id": "t6Z7xm22i2f2",
@@ -745,7 +745,7 @@
                       ],
                       "createdAt": 1794548137810,
                       "updatedAt": 1794549475243,
-                      "isFolded": false
+                      "isFolded": true
                     },
                     {
                       "id": "mqY69PGZ4921",
@@ -946,9 +946,50 @@
                     {
                       "id": "YH5Y8yGc6LBO",
                       "text": "최종 결과물 역산과 회고",
-                      "children": [],
+                      "children": [
+                        {
+                          "id": "NgFeBKxWEHU4",
+                          "text": "실제 제출된 서류와 결과를 통해 한 번 더 업그레이드 하는 것",
+                          "children": [],
+                          "createdAt": 1794565365086,
+                          "updatedAt": 1794565383109
+                        },
+                        {
+                          "id": "wBqEtoRtnnXG",
+                          "text": "침묵의 수정 역산(Silent Edit Mining)",
+                          "children": [
+                            {
+                              "id": "AF1VTmQZXp6v",
+                              "text": "사용자가 바빠서 코칭 메모를 남기지 않고 최종 제출본만 고쳤더라도, 'AI가 낸 최종안'과 '실제 제출된 문서'의 차이야말로 가장 순도 높은 암묵지입니다. 사후에 이 차이를 분석해 역으로 노하우 카드를 제안하는 회고 루프",
+                              "children": [],
+                              "createdAt": 1794565391619,
+                              "updatedAt": 1794565392260
+                            }
+                          ],
+                          "createdAt": 1794565343001,
+                          "updatedAt": 1794565348745,
+                          "isFolded": true
+                        },
+                        {
+                          "id": "MUv03ByHosFV",
+                          "text": "수주 성패와의 연결(Win/Loss Attribution)",
+                          "children": [
+                            {
+                              "id": "OW9Va2MDqOpT",
+                              "text": "입찰은 결국 '선정'과 '탈락'이라는 명확한 성적표가 나옵니다. 프로젝트 종료 후 수주 결과나 평가위원 피드백을 기록해 두면, \"어떤 관점 렌즈 조합을 썼을 때 수주율이 높았는지\"를 데이터로 검증",
+                              "children": [],
+                              "createdAt": 1794565394897,
+                              "updatedAt": 1794565402135
+                            }
+                          ],
+                          "createdAt": 1794565349257,
+                          "updatedAt": 1794565354774,
+                          "isFolded": true
+                        }
+                      ],
                       "createdAt": 1794550404883,
-                      "updatedAt": 1794550472122
+                      "updatedAt": 1794550472122,
+                      "isFolded": true
                     }
                   ],
                   "createdAt": 1794549476868,
@@ -956,11 +997,13 @@
                 }
               ],
               "createdAt": 1794548053140,
-              "updatedAt": 1794548057189
+              "updatedAt": 1794548057189,
+              "isFolded": true
             }
           ],
           "createdAt": 1794529078710,
-          "updatedAt": 1794529094621
+          "updatedAt": 1794566901646,
+          "isFolded": true
         },
         {
           "id": "KuRAi7Db70h0",
@@ -1021,5 +1064,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793934368821,
-  "updatedAt": 1794556538350
+  "updatedAt": 1794566901647
 }

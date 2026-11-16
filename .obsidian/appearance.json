@@ -14,5 +14,6 @@
   "interfaceFontFamily": "LG Smart UI",
   "baseFontSizeAction": false,
   "monospaceFontFamily": "LG Smart UI",
-  "theme": "system"
+  "theme": "system",
+  "showRibbon": true
 }
