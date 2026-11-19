@@ -4,29 +4,24 @@
 <rect width="600" height="66" fill="#f6f6f8"/>
 <line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
 <text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">(규모분류) UI 사양 — 26.11.13</text>
-<circle cx="34" cy="94" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="34" cy="94" r="4.5" fill="#7c5cff"/>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
 <text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">0. 분류 체계 범례 및 원본 출처</text>
-<circle cx="34" cy="127" r="4.5" fill="#3a3a40"/>
-<text x="51" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">HD 헤더 (7건 · M:2 S:3 XS:2)</text>
+<circle cx="58" cy="127" r="3" fill="#9a9aa3"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">정렬 기준: 기존 화면별 섹션(HD · LS · TB · HUB · ED · R…</text>
 <circle cx="58" cy="160" r="3" fill="#9a9aa3"/>
-<text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">U003 ⏱00:19 발화자 2: &quot;그래서 제일 위에 헤더부터 얘기…</text>
+<text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">기초 규모 기준 (XL → XS): [XL·코어]=전역 쉘·IA·이종 Ta…</text>
 <circle cx="58" cy="193" r="3" fill="#9a9aa3"/>
-<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">U009 ⏱01:13 발화자 1: &quot;이거 이게 이거는 안티그레비티…</text>
-<circle cx="58" cy="226" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="226" r="4.5" fill="#7c5cff"/>
-<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">[XS·표면] HD-01 파비콘 및 상단 앱 아이콘 교체 ▸ 기초: a…</text>
-<circle cx="58" cy="259" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="259" r="4.5" fill="#7c5cff"/>
-<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">[S·위젯] HD-02 파일 · 편집(File · Edit · View) 메뉴 —…</text>
-<circle cx="58" cy="292" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="292" r="4.5" fill="#7c5cff"/>
-<text x="75" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">[XS·표면] HD-03 메뉴에서 뜨는 모달창 — 디자인만 교체 (…</text>
-<circle cx="58" cy="325" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="325" r="4.5" fill="#7c5cff"/>
-<text x="75" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">[S·위젯] HD-04 헤더 가운데 프로젝트 이름 · 문서 제목 ▸…</text>
-<circle cx="58" cy="358" r="8.5" fill="#7c5cff" fill-opacity="0.22"/>
-<circle cx="58" cy="358" r="4.5" fill="#7c5cff"/>
-<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">[M·연결] HD-05 실행 취소 · 다시 실행 (헤더 우측) ▸ 기초…</text>
+<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">한 줄 형식: [{등급}] {ID} {항목명} ▸ 기초: {어디까지 잡…</text>
+<circle cx="58" cy="226" r="3" fill="#9a9aa3"/>
+<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">원본 출처: (인수인계) UI 레이아웃 개편 — 26.11.13.out…</text>
+<circle cx="34" cy="259" r="4.5" fill="#3a3a40"/>
+<text x="51" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">HD 헤더 (7건 · M:2 S:3 XS:2) - 사실상 해야하는 건 없음. 바…</text>
+<circle cx="58" cy="292" r="3" fill="#9a9aa3"/>
+<text x="75" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">U003 ⏱00:19 발화자 2: &quot;그래서 제일 위에 헤더부터 얘기…</text>
+<circle cx="58" cy="325" r="3" fill="#9a9aa3"/>
+<text x="75" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">U009 ⏱01:13 발화자 1: &quot;이거 이게 이거는 안티그레비티…</text>
+<rect x="51.5" y="351" width="13" height="13" rx="3" fill="#7c5cff" stroke="#7c5cff" stroke-width="1.5"/>
+<path d="M54.5 357.5 l2.5 2.5 l4.5 -5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#9a9aa3" text-decoration="line-through">[XS·표면] HD-01 파비콘 및 상단 앱 아이콘 교체 ▸ 기초: a…</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>

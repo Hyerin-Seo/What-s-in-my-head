@@ -40,14 +40,14 @@
           "updatedAt": 1794570683913
         }
       ],
-      "isFolded": true,
+      "isFolded": false,
       "nodeType": "h1",
       "createdAt": 1794570683913,
       "updatedAt": 1794570683913
     },
     {
       "id": "IzgroZ8p3pxr",
-      "text": "HD 헤더 (7건 · M:2 S:3 XS:2)",
+      "text": "HD 헤더 (7건 · M:2 S:3 XS:2) - 사실상 해야하는 건 없음. 바뀐거 설명한게 다임.",
       "children": [
         {
           "id": "C1yku6cnj9er",
@@ -101,7 +101,9 @@
           "isFolded": true,
           "note": "STT '팝이콘' → 파비콘으로 추정",
           "createdAt": 1794562188869,
-          "updatedAt": 1794562188869
+          "updatedAt": 1794900876904,
+          "isCompleted": true,
+          "completedAt": 1794900876904
         },
         {
           "id": "mB00UVRyenJw",
@@ -137,7 +139,9 @@
           "isFolded": true,
           "note": "STT '파일 에디큐' → 파일·편집(Edit) 메뉴로 추정",
           "createdAt": 1794562188869,
-          "updatedAt": 1794562188869
+          "updatedAt": 1794900885318,
+          "isCompleted": true,
+          "completedAt": 1794900885318
         },
         {
           "id": "Kt6ewMVL9Lqt",
@@ -171,7 +175,9 @@
           ],
           "isFolded": true,
           "createdAt": 1794562188869,
-          "updatedAt": 1794562188869
+          "updatedAt": 1794900891844,
+          "isCompleted": true,
+          "completedAt": 1794900891844
         },
         {
           "id": "xmLx2hpPKlnl",
@@ -214,7 +220,9 @@
           ],
           "isFolded": true,
           "createdAt": 1794562188869,
-          "updatedAt": 1794562188869
+          "updatedAt": 1794900897379,
+          "isCompleted": true,
+          "completedAt": 1794900897379
         },
         {
           "id": "RLdASUib7c8x",
@@ -257,7 +265,9 @@
           ],
           "isFolded": true,
           "createdAt": 1794562188869,
-          "updatedAt": 1794562188869
+          "updatedAt": 1794900906282,
+          "isCompleted": true,
+          "completedAt": 1794900906282
         },
         {
           "id": "nV0rRRDIMCeZ",
@@ -300,7 +310,9 @@
           ],
           "isFolded": true,
           "createdAt": 1794562188869,
-          "updatedAt": 1794562188869
+          "updatedAt": 1794900926007,
+          "isCompleted": true,
+          "completedAt": 1794900926007
         },
         {
           "id": "JleD4Yvp4npu",
@@ -343,13 +355,15 @@
           ],
           "isFolded": true,
           "createdAt": 1794562188869,
-          "updatedAt": 1794562188869
+          "updatedAt": 1794901172915,
+          "isCompleted": true,
+          "completedAt": 1794901172915
         }
       ],
       "isFolded": false,
       "nodeType": "h1",
       "createdAt": 1794562188869,
-      "updatedAt": 1794562188869
+      "updatedAt": 1794798791196
     },
     {
       "id": "qt0UJSrDRsfn",
@@ -409,7 +423,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901192798,
+              "isCompleted": true,
+              "completedAt": 1794901192798
             },
             {
               "id": "rKkUNHRyUHe1",
@@ -461,7 +477,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901156257,
+              "isCompleted": true,
+              "completedAt": 1794901156257
             },
             {
               "id": "HKiOd7c4HNd8",
@@ -529,7 +547,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901130149,
+              "isCompleted": true,
+              "completedAt": 1794901130149
             }
           ],
           "isFolded": false,
@@ -573,7 +593,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901241190,
+              "isCompleted": true,
+              "completedAt": 1794901241190
             },
             {
               "id": "5B7feVULfVeH",
@@ -607,7 +629,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901247264,
+              "isCompleted": true,
+              "completedAt": 1794901247264
             },
             {
               "id": "kX2ZFSPfWUZE",
@@ -643,7 +667,9 @@
               "isFolded": true,
               "note": "엘리먼트에만 있던 기능",
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901254346,
+              "isCompleted": true,
+              "completedAt": 1794901254346
             },
             {
               "id": "YoHDgfmUJjxk",
@@ -686,7 +712,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901271558,
+              "isCompleted": true,
+              "completedAt": 1794901271558
             },
             {
               "id": "AoCUntv2XpUi",
@@ -729,7 +757,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901274334,
+              "isCompleted": true,
+              "completedAt": 1794901274334
             },
             {
               "id": "e9XOVYXUu2VX",
@@ -763,7 +793,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901277222,
+              "isCompleted": true,
+              "completedAt": 1794901277222
             }
           ],
           "isFolded": false,
@@ -807,7 +839,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901290572,
+              "isCompleted": true,
+              "completedAt": 1794901290572
             },
             {
               "id": "aXMK5oEpEmob",
@@ -861,7 +895,9 @@
               "isFolded": true,
               "note": "발화자 1: 데이터 정합성은 원래 안 맞음",
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901293287,
+              "isCompleted": true,
+              "completedAt": 1794901293287
             },
             {
               "id": "Sq3jIsvVD7eE",
@@ -895,7 +931,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901300510,
+              "isCompleted": true,
+              "completedAt": 1794901300510
             },
             {
               "id": "IC1VbiF8nbs5",
@@ -965,7 +1003,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901304567,
+              "isCompleted": true,
+              "completedAt": 1794901304567
             },
             {
               "id": "4emuZLRVbjCt",
@@ -1046,7 +1086,9 @@
               "isFolded": true,
               "note": "커밋한 뒤에는 diff 가 아니라 브랜치 트리(이력) 아래로 붙어야 하는지 → Q5",
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901309000,
+              "isCompleted": true,
+              "completedAt": 1794901309000
             },
             {
               "id": "wMhj7wZbDjwB",
@@ -1172,7 +1214,9 @@
               "isFolded": true,
               "note": "발화자 1: 다 버려도 됨 → Q6",
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901320145,
+              "isCompleted": true,
+              "completedAt": 1794901320145
             },
             {
               "id": "H4ttHWnIHTLn",
@@ -1233,7 +1277,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901325838,
+              "isCompleted": true,
+              "completedAt": 1794901325838
             },
             {
               "id": "Zf8KeNz3j9sR",
@@ -1276,7 +1322,19 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901332063,
+              "isCompleted": true,
+              "completedAt": 1794901332063
+            },
+            {
+              "id": "wrspNKTmLO9Z",
+              "text": "26.11.16 기준 스테이징 화면",
+              "children": [],
+              "file": {
+                "target": "Pasted image 20261116121612.png"
+              },
+              "createdAt": 1794798972568,
+              "updatedAt": 1794798999903
             }
           ],
           "isFolded": false,
@@ -1339,7 +1397,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901349996,
+              "isCompleted": true,
+              "completedAt": 1794901349996
             }
           ],
           "isFolded": false,
@@ -1383,7 +1443,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901354227,
+              "isCompleted": true,
+              "completedAt": 1794901354227
             }
           ],
           "isFolded": false,
@@ -1429,7 +1491,9 @@
               "isFolded": true,
               "note": "STT 'SS' · 'SSI' · '섹션 엑셀' → 섹션으로 추정",
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901358052,
+              "isCompleted": true,
+              "completedAt": 1794901358052
             },
             {
               "id": "wnjZ769oCEoX",
@@ -1463,7 +1527,9 @@
               ],
               "isFolded": true,
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901362207,
+              "isCompleted": true,
+              "completedAt": 1794901362207
             },
             {
               "id": "Z7fH4meKSrii",
@@ -1495,7 +1561,7 @@
                   "updatedAt": 1794570683913
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1794562188869,
               "updatedAt": 1794562188869
             },
@@ -1560,7 +1626,9 @@
               "isFolded": true,
               "note": "AI 가 그릴지 캡처를 박을지 → Q1",
               "createdAt": 1794562188869,
-              "updatedAt": 1794562188869
+              "updatedAt": 1794901375925,
+              "isCompleted": true,
+              "completedAt": 1794901375925
             }
           ],
           "isFolded": false,
@@ -2173,5 +2241,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1794570683913,
-  "updatedAt": 1794570683913
+  "updatedAt": 1794901375926
 }
