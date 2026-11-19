@@ -652,7 +652,8 @@
         }
       ],
       "createdAt": 1794357725140,
-      "updatedAt": 1794357729753
+      "updatedAt": 1794357729753,
+      "isFolded": true
     },
     {
       "id": "kJIT0c4ipT6y",
@@ -722,9 +723,9 @@
                               "updatedAt": 1794548262990
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794548184136,
-                          "updatedAt": 1794548191162,
-                          "isFolded": true
+                          "updatedAt": 1794548191162
                         },
                         {
                           "id": "Z4gXpzqEYhoO",
@@ -738,14 +739,14 @@
                               "updatedAt": 1794548294061
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794548192098,
-                          "updatedAt": 1794548233706,
-                          "isFolded": true
+                          "updatedAt": 1794548233706
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1794548137810,
-                      "updatedAt": 1794549475243,
-                      "isFolded": true
+                      "updatedAt": 1794549475243
                     },
                     {
                       "id": "mqY69PGZ4921",
@@ -770,9 +771,9 @@
                               "updatedAt": 1794548525837
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794548397572,
-                          "updatedAt": 1794548408086,
-                          "isFolded": true
+                          "updatedAt": 1794548408086
                         },
                         {
                           "id": "HYCxjIz3iyaC",
@@ -786,14 +787,14 @@
                               "updatedAt": 1794548607610
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794548409069,
-                          "updatedAt": 1794548418238,
-                          "isFolded": true
+                          "updatedAt": 1794548418238
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1794548305846,
-                      "updatedAt": 1794549475244,
-                      "isFolded": true
+                      "updatedAt": 1794549475244
                     },
                     {
                       "id": "2OEbITLYFdar",
@@ -837,9 +838,9 @@
                           "updatedAt": 1794548708173
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1794548607902,
-                      "updatedAt": 1794549475244,
-                      "isFolded": true
+                      "updatedAt": 1794549475244
                     }
                   ],
                   "createdAt": 1794549457393,
@@ -886,14 +887,14 @@
                               "updatedAt": 1794553543654
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794552913218,
-                          "updatedAt": 1794553520238,
-                          "isFolded": true
+                          "updatedAt": 1794553520238
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1794549490996,
-                      "updatedAt": 1794549495752,
-                      "isFolded": true
+                      "updatedAt": 1794549495752
                     },
                     {
                       "id": "tkq2GT27syM5",
@@ -918,9 +919,9 @@
                               "updatedAt": 1794553985402
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794553588547,
-                          "updatedAt": 1794553596399,
-                          "isFolded": true
+                          "updatedAt": 1794553596399
                         },
                         {
                           "id": "WslVamPMdTiB",
@@ -934,14 +935,14 @@
                               "updatedAt": 1794554176467
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794553596820,
-                          "updatedAt": 1794553602385,
-                          "isFolded": true
+                          "updatedAt": 1794553602385
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1794549496052,
-                      "updatedAt": 1794550404230,
-                      "isFolded": true
+                      "updatedAt": 1794550404230
                     },
                     {
                       "id": "YH5Y8yGc6LBO",
@@ -966,9 +967,9 @@
                               "updatedAt": 1794565392260
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794565343001,
-                          "updatedAt": 1794565348745,
-                          "isFolded": true
+                          "updatedAt": 1794565348745
                         },
                         {
                           "id": "MUv03ByHosFV",
@@ -982,28 +983,28 @@
                               "updatedAt": 1794565402135
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794565349257,
-                          "updatedAt": 1794565354774,
-                          "isFolded": true
+                          "updatedAt": 1794565354774
                         }
                       ],
+                      "isFolded": true,
                       "createdAt": 1794550404883,
-                      "updatedAt": 1794550472122,
-                      "isFolded": true
+                      "updatedAt": 1794550472122
                     }
                   ],
                   "createdAt": 1794549476868,
                   "updatedAt": 1794549490924
                 }
               ],
+              "isFolded": true,
               "createdAt": 1794548053140,
-              "updatedAt": 1794548057189,
-              "isFolded": true
+              "updatedAt": 1794548057189
             }
           ],
+          "isFolded": true,
           "createdAt": 1794529078710,
-          "updatedAt": 1794566901646,
-          "isFolded": true
+          "updatedAt": 1794566901646
         },
         {
           "id": "KuRAi7Db70h0",
@@ -1031,9 +1032,9 @@
               "updatedAt": 1794529536821
             }
           ],
+          "isFolded": false,
           "createdAt": 1794529094853,
-          "updatedAt": 1794529151356,
-          "isFolded": false
+          "updatedAt": 1794529151356
         },
         {
           "id": "y9mNxo3MxoBe",
@@ -1058,11 +1059,173 @@
           "updatedAt": 1794529385830
         }
       ],
+      "isFolded": true,
       "createdAt": 1794529058769,
       "updatedAt": 1794529062642
+    },
+    {
+      "id": "UlIOlGRU16bb",
+      "text": "2026.11.16",
+      "children": [
+        {
+          "id": "LuW74UbGHiY7",
+          "text": "Outliner - Phase1",
+          "children": [
+            {
+              "id": "Mv7MEEOctjxa",
+              "text": "Draft",
+              "children": [],
+              "createdAt": 1794813262769,
+              "updatedAt": 1794813266647
+            },
+            {
+              "id": "dGZBnGhGxbbg",
+              "text": "새 outline 만들기 - 각각의 시작점",
+              "children": [],
+              "createdAt": 1794813266978,
+              "updatedAt": 1794813282794
+            },
+            {
+              "id": "eq4joW9dLTAs",
+              "text": "듬성 듬성",
+              "children": [],
+              "createdAt": 1794813282949,
+              "updatedAt": 1794813287013
+            },
+            {
+              "id": "Zx3w7B0W2pjd",
+              "text": "다른 표현 및 수정",
+              "children": [],
+              "createdAt": 1794813287201,
+              "updatedAt": 1794813299919
+            },
+            {
+              "id": "U6Ke2ywR8lVc",
+              "text": "WYSIWYM 에 대한 접근",
+              "children": [],
+              "createdAt": 1794813300105,
+              "updatedAt": 1794813751804
+            },
+            {
+              "id": "WxkzgYsE3ZFz",
+              "text": "컴포넌트 설정 UI도 저걸 일일이? 태그를? 걍 보는건데?",
+              "children": [
+                {
+                  "id": "xuliZw5F3mJY",
+                  "text": "그리고 저걸 무조건 Phase3 기준으로? 희한한 설정도 그대로?",
+                  "children": [],
+                  "createdAt": 1794813779741,
+                  "updatedAt": 1794813791929
+                }
+              ],
+              "createdAt": 1794813762004,
+              "updatedAt": 1794813774966
+            }
+          ],
+          "createdAt": 1794813241413,
+          "updatedAt": 1794813262071
+        }
+      ],
+      "createdAt": 1794813237515,
+      "updatedAt": 1794813240745
+    },
+    {
+      "id": "fcFkwV1GNOe4",
+      "text": "2026.11.18",
+      "children": [
+        {
+          "id": "5BQDjJNdpulp",
+          "text": "File Explorer 장착",
+          "children": [
+            {
+              "id": "4z1tqM1mIVy6",
+              "text": "저장 형태 및 불러오기 형태",
+              "children": [],
+              "createdAt": 1794963808207,
+              "updatedAt": 1794963814226
+            },
+            {
+              "id": "cIzbiWP0B7V4",
+              "text": "Reference, Resource 연동 형태",
+              "children": [],
+              "createdAt": 1794963820246,
+              "updatedAt": 1794963838122
+            },
+            {
+              "id": "zxsuIstJGgYj",
+              "text": "템플릿(에셋) 허브",
+              "children": [],
+              "createdAt": 1794963848112,
+              "updatedAt": 1794963908825
+            },
+            {
+              "id": "SJu0dWNvfZPV",
+              "text": "기본 폴더 - 파일 생성을 동일하게 제공? 아니면 특수하게 제한?",
+              "children": [],
+              "createdAt": 1794963934009,
+              "updatedAt": 1794964002162
+            }
+          ],
+          "createdAt": 1794963766439,
+          "updatedAt": 1794963776865
+        },
+        {
+          "id": "URmvzdUOAbLR",
+          "text": "Reference, Resource Phase1, Phase2 가동",
+          "children": [],
+          "createdAt": 1794963773341,
+          "updatedAt": 1794963797198
+        },
+        {
+          "id": "iLeG24W2cRpK",
+          "text": "Markdown 편집기, 엔진",
+          "children": [
+            {
+              "id": "3M4dWpkC1bL9",
+              "text": ".outline",
+              "children": [],
+              "createdAt": 1794964724536,
+              "updatedAt": 1794964728128
+            },
+            {
+              "id": "D46PXvTDEKuG",
+              "text": ".md???",
+              "children": [],
+              "createdAt": 1794964728727,
+              "updatedAt": 1794964730458
+            }
+          ],
+          "createdAt": 1794963797337,
+          "updatedAt": 1794963918677
+        },
+        {
+          "id": "oLB4ITM0t4y3",
+          "text": "Researcher Draft",
+          "children": [
+            {
+              "id": "a02DsSwuP87i",
+              "text": "Reference + Report 템플릿",
+              "children": [],
+              "createdAt": 1794964037401,
+              "updatedAt": 1794964055289
+            }
+          ],
+          "createdAt": 1794964007706,
+          "updatedAt": 1794964023931
+        },
+        {
+          "id": "VL7Hmn70VMGv",
+          "text": "Phase1 = Phase3 공통 스키마",
+          "children": [],
+          "createdAt": 1794964100187,
+          "updatedAt": 1794964110933
+        }
+      ],
+      "createdAt": 1794963758535,
+      "updatedAt": 1794963766030
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793934368821,
-  "updatedAt": 1794566901647
+  "updatedAt": 1794964730458
 }
