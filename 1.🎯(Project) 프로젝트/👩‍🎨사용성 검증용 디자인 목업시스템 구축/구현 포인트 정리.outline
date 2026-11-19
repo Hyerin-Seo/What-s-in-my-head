@@ -2615,7 +2615,8 @@
         }
       ],
       "createdAt": 1793848816376,
-      "updatedAt": 1793848822724
+      "updatedAt": 1793848822724,
+      "isFolded": true
     },
     {
       "id": "4abciIbktN7B",
