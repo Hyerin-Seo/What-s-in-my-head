@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<rect width="600" height="66" fill="#f6f6f8"/>
+<line x1="0" y1="66" x2="600" y2="66" stroke="#e4e4e8"/>
+<text x="26" y="42" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="25" font-weight="700" fill="#1f1f24">2026_하반기_워크샵</text>
+<circle cx="34" cy="94" r="4.5" fill="#3a3a40"/>
+<text x="51" y="100" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">팀장님 초기 리퀘스트 (원문)</text>
+<circle cx="58" cy="127" r="3" fill="#9a9aa3"/>
+<text x="75" y="133" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">출발·거리:: 오창 본사 기준 차량 1시간 내외</text>
+<circle cx="58" cy="160" r="3" fill="#9a9aa3"/>
+<text x="75" y="166" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">필수 요소:: 팀 단합 활동 + 일부 야외 활동 포함</text>
+<circle cx="58" cy="193" r="3" fill="#9a9aa3"/>
+<text x="75" y="199" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">예산:: 300~1000(팀비 200 + 참가비 명 당)</text>
+<circle cx="58" cy="226" r="3" fill="#9a9aa3"/>
+<text x="75" y="232" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">기간:: 1박 2일</text>
+<circle cx="58" cy="259" r="3" fill="#9a9aa3"/>
+<text x="75" y="265" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">참고 자료:: 전반기 워크샵 활동계획서 양식 준용</text>
+<circle cx="34" cy="292" r="4.5" fill="#3a3a40"/>
+<text x="51" y="298" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">Todo</text>
+<circle cx="58" cy="325" r="3" fill="#9a9aa3"/>
+<text x="75" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">워크샵 레퍼런스 및 양식 체크</text>
+<circle cx="58" cy="358" r="3" fill="#9a9aa3"/>
+<text x="75" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">참가자 파악</text>
+<rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
+</svg>

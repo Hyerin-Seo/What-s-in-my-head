@@ -1,0 +1,2763 @@
+{
+  "version": "1.0.0",
+  "id": "jmTTSxAjeLax",
+  "title": "2026_하반기_워크샵",
+  "rootNodes": [
+    {
+      "id": "nMHusJcyQbW5",
+      "text": "팀장님 초기 리퀘스트 (원문)",
+      "children": [
+        {
+          "id": "yQllhczS7rB2",
+          "text": "출발·거리:: 오창 본사 기준 차량 1시간 내외",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1794916044524,
+          "updatedAt": 1794916044524
+        },
+        {
+          "id": "Cg2ROsZz58W7",
+          "text": "필수 요소:: 팀 단합 활동 + 일부 야외 활동 포함",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1794916044524,
+          "updatedAt": 1794916044524
+        },
+        {
+          "id": "ty2rEaTiiNug",
+          "text": "예산:: 300~1000(팀비 200 + 참가비 명 당)",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1794916044524,
+          "updatedAt": 1794916044524
+        },
+        {
+          "id": "CIf8acFn0sE3",
+          "text": "기간:: 1박 2일",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1794916044524,
+          "updatedAt": 1794916044524
+        },
+        {
+          "id": "koNVZMOTTCNW",
+          "text": "참고 자료:: 전반기 워크샵 활동계획서 양식 준용",
+          "children": [],
+          "isFolded": false,
+          "nodeType": "bullet",
+          "createdAt": 1794916044524,
+          "updatedAt": 1794916044524
+        }
+      ],
+      "isFolded": false,
+      "nodeType": "bullet",
+      "note": "초기 구두 전달 조건 — 아래 Key::Value 속성 기준",
+      "createdAt": 1794916044524,
+      "updatedAt": 1794916044524
+    },
+    {
+      "id": "mIF1NBRgCaLn",
+      "text": "Todo",
+      "children": [
+        {
+          "id": "KSQR4in42hpr",
+          "text": "워크샵 레퍼런스 및 양식 체크",
+          "children": [],
+          "createdAt": 1794916295502,
+          "updatedAt": 1794916310294
+        },
+        {
+          "id": "BCaXNLEyrLCG",
+          "text": "참가자 파악",
+          "children": [],
+          "createdAt": 1794918787343,
+          "updatedAt": 1794918846554
+        },
+        {
+          "id": "UmtChhH7ZwZe",
+          "text": "사전 조사, 문의 및 사전 예약",
+          "children": [],
+          "createdAt": 1794916310688,
+          "updatedAt": 1794918802571
+        }
+      ],
+      "createdAt": 1794916288070,
+      "updatedAt": 1794916295198
+    },
+    {
+      "id": "Z7ClTtvHOzIL",
+      "text": "결정 요소",
+      "children": [
+        {
+          "id": "B7zStMNi7kDh",
+          "text": "메인 컨셉",
+          "children": [
+            {
+              "id": "AogY9W2J1jWY",
+              "text": "핵심 소재 후보군",
+              "children": [
+                {
+                  "id": "Y3JnO8GRrKyC",
+                  "text": "스키",
+                  "children": [
+                    {
+                      "id": "57E19uDKHPeP",
+                      "text": "오창 1시간 내외권 (핵심 후보)",
+                      "children": [
+                        {
+                          "id": "AGCrY6vU50EM",
+                          "text": "지산 포레스트 리조트 (경기 이천)",
+                          "children": [
+                            {
+                              "id": "JqqsXcw75TQq",
+                              "text": "약 65~70km / 50분~1시간",
+                              "children": [],
+                              "createdAt": 1794920543216,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "hKiEC5bOFBSv",
+                              "text": "메이플 콘도 · 세미나실 · 족구장 / 천연잔디운동장",
+                              "children": [],
+                              "createdAt": 1794920554744,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "fTzvjGmyi2oh",
+                              "text": "26~27 개장 12월 초·중순 예상 (단체 문의 010-4953-1240 / 031-644-1261~2)",
+                              "children": [],
+                              "createdAt": 1794920561090,
+                              "updatedAt": 1794920606215
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794920493289,
+                          "updatedAt": 1794920606215
+                        },
+                        {
+                          "id": "fbFhz2kt5xPV",
+                          "text": "곤지암 리조트 (경기 광주)",
+                          "children": [
+                            {
+                              "id": "e2AMBz6CJDKi",
+                              "text": "약 75~80km / 1시간~1시간 10분",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "tNbT4qhbJIho",
+                              "text": "그랜드볼룸 · 세미나실 · 콘도 객실 다수",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "cfEBhRX6MtqR",
+                              "text": "26~27 개장 12월 둘째 주(중순경) 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794920493289,
+                          "updatedAt": 1794920606215
+                        },
+                        {
+                          "id": "BMDAcXPD6aBa",
+                          "text": "오크밸리 리조트 (강원 원주)",
+                          "children": [
+                            {
+                              "id": "FumngTj8hBUf",
+                              "text": "약 85~95km / 1시간 10분~25분",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "sWxnzaSaxs4X",
+                              "text": "대형 리조트 단지 · 단체 숙박 / 연회 수용력 넉넉",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "YhI0TsJygZlK",
+                              "text": "26~27 개장 12월 11일경 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794920493289,
+                          "updatedAt": 1794920606215
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1794920493289,
+                      "updatedAt": 1794920493289
+                    },
+                    {
+                      "id": "1pwJwOgfygM8",
+                      "text": "거리 초과권 (1시간 40분~2시간 · 이른 개장 대안)",
+                      "children": [
+                        {
+                          "id": "1xS0L9mPbrQ4",
+                          "text": "소노벨 비발디파크 (강원 홍천)",
+                          "children": [
+                            {
+                              "id": "47tdeUGq4kRh",
+                              "text": "약 115~125km / 1시간 40분~2시간",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "R6wa1o5mzAmB",
+                              "text": "26~27 개장 11월 말~12월 초 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794920493289,
+                          "updatedAt": 1794920606215
+                        },
+                        {
+                          "id": "GxLPSklD7Ke3",
+                          "text": "무주 덕유산 리조트 (전북 무주)",
+                          "children": [
+                            {
+                              "id": "vYJUqHWORnMY",
+                              "text": "약 130~140km / 1시간 40분~2시간",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "J2Pg9Shm1OV6",
+                              "text": "대형 컨벤션 · 세미나실 · 국민호텔 / 가족호텔 단체동",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            },
+                            {
+                              "id": "sUiFrSdQtrk9",
+                              "text": "26~27 개장 12월 초순 예상",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794920606215,
+                              "updatedAt": 1794920606215
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794920493289,
+                          "updatedAt": 1794920606215
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1794920493289,
+                      "updatedAt": 1794920493289
+                    },
+                    {
+                      "id": "viewTblSki01",
+                      "text": "<<view:table>>",
+                      "children": [
+                        {
+                          "id": "vTblSkiHdr01",
+                          "text": "권역 | 리조트 | 거리·소요 | 부대시설 | 개장·문의",
+                          "children": [],
+                          "isFolded": false,
+                          "createdAt": 1794972220000,
+                          "updatedAt": 1794972220000
+                        },
+                        {
+                          "id": "vTblSkiGrp1",
+                          "text": "오창 1시간 내외권 (핵심 후보)",
+                          "children": [
+                            {
+                              "id": "vTblSkiG1R1",
+                              "text": "지산 포레스트 리조트 (경기 이천) | 약 65~70km / 50분~1시간 | 메이플 콘도 · 세미나실 · 족구장 / 천연잔디운동장 | 26~27 개장 12월 초·중순 예상 (단체 문의 010-4953-1240 / 031-644-1261~2)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            },
+                            {
+                              "id": "vTblSkiG1R2",
+                              "text": "곤지암 리조트 (경기 광주) | 약 75~80km / 1시간~1시간 10분 | 그랜드볼룸 · 세미나실 · 콘도 객실 다수 | 26~27 개장 12월 둘째 주(중순경) 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            },
+                            {
+                              "id": "vTblSkiG1R3",
+                              "text": "오크밸리 리조트 (강원 원주) | 약 85~95km / 1시간 10분~25분 | 대형 리조트 단지 · 단체 숙박 / 연회 수용력 넉넉 | 26~27 개장 12월 11일경 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794972220000,
+                          "updatedAt": 1794972220000
+                        },
+                        {
+                          "id": "vTblSkiGrp2",
+                          "text": "거리 초과권 (1시간 40분~2시간 · 이른 개장 대안)",
+                          "children": [
+                            {
+                              "id": "vTblSkiG2R1",
+                              "text": "소노벨 비발디파크 (강원 홍천) | 약 115~125km / 1시간 40분~2시간 | [-] | 26~27 개장 11월 말~12월 초 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            },
+                            {
+                              "id": "vTblSkiG2R2",
+                              "text": "무주 덕유산 리조트 (전북 무주) | 약 130~140km / 1시간 40분~2시간 | 대형 컨벤션 · 세미나실 · 국민호텔 / 가족호텔 단체동 | 26~27 개장 12월 초순 예상",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794972220000,
+                          "updatedAt": 1794972220000
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1794972220000,
+                      "updatedAt": 1794972220000
+                    },
+                    {
+                      "id": "viewLstSki01",
+                      "text": "<<view:list>>",
+                      "children": [
+                        {
+                          "id": "vLstSkiGrp1",
+                          "text": "오창 1시간 내외권 (핵심 후보)",
+                          "children": [
+                            {
+                              "id": "vLstSkiG1R1",
+                              "text": "지산 포레스트 리조트 (경기 이천): 약 65~70km(50분~1시간), 메이플 콘도·세미나실·족구장/천연잔디운동장, 12월 초·중순 개장 예상",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            },
+                            {
+                              "id": "vLstSkiG1R2",
+                              "text": "곤지암 리조트 (경기 광주): 약 75~80km(1시간~1시간 10분), 그랜드볼룸·세미나실·콘도 객실 다수, 12월 둘째 주 개장 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            },
+                            {
+                              "id": "vLstSkiG1R3",
+                              "text": "오크밸리 리조트 (강원 원주): 약 85~95km(1시간 10분~25분), 대형 리조트 단지·단체 숙박/연회 수용력 넉넉, 12월 11일경 개장 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794972220000,
+                          "updatedAt": 1794972220000
+                        },
+                        {
+                          "id": "vLstSkiGrp2",
+                          "text": "거리 초과권 (1시간 40분~2시간 · 이른 개장 대안)",
+                          "children": [
+                            {
+                              "id": "vLstSkiG2R1",
+                              "text": "소노벨 비발디파크 (강원 홍천): 약 115~125km(1시간 40분~2시간), 11월 말~12월 초 개장 목표",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            },
+                            {
+                              "id": "vLstSkiG2R2",
+                              "text": "무주 덕유산 리조트 (전북 무주): 약 130~140km(1시간 40분~2시간), 대형 컨벤션·세미나실·국민/가족호텔 단체동, 12월 초순 개장 예상",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794972220000,
+                              "updatedAt": 1794972220000
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794972220000,
+                          "updatedAt": 1794972220000
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1794972220000,
+                      "updatedAt": 1794972220000
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794917206452,
+                  "updatedAt": 1794972220000
+                },
+                {
+                  "id": "M7P4suIIP2Wi",
+                  "text": "등산",
+                  "children": [
+                    {
+                      "id": "hkGrpNear01A",
+                      "text": "오창 1시간 내외권 (핵심 후보)",
+                      "children": [
+                        {
+                          "id": "hkLocJag01A1",
+                          "text": "증평 좌구산 (자연휴양림 · 율리휴양촌)",
+                          "children": [
+                            {
+                              "id": "hkJagDist01A",
+                              "text": "약 25~30km / 35~40분 (오창IC · 증평IC 경유)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkJagTrl01A2",
+                              "text": "코스: 천문대 원점(약 3~4km, 2시간~2시간 20분, 하~중하) / 휴양림·구름다리 순환(약 6.8km, 2시간 30분~3시간) — 괴산 산막이옛길(약 4.4km 데크·유람선) 연계 가능",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkJagLod01A3",
+                              "text": "숙박·세미나: 좌구산자연휴양림·율리휴양촌(10~18인실 단체방, 숲나들e 예약) + 문화체험관(강당/세미나실, 관리사무소 043-835-4551~2 대관·기자재 확인 필요)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkJagDin01A4",
+                              "text": "식사·부대: 율리휴양촌 단체 식당(약 60명 수용) / 명상구름다리(230m) · 짚라인 · 좌구산 천문대",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794983485729,
+                          "updatedAt": 1794983485729
+                        },
+                        {
+                          "id": "hkLocSok01B1",
+                          "text": "보은 속리산 (법주사 · 세조길)",
+                          "children": [
+                            {
+                              "id": "hkSokDist01B",
+                              "text": "약 65~75km / 50분~1시간 10분 (문의 · 미원 경유)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkSokTrl01B2",
+                              "text": "코스: 문장대(왕복 약 13.2km, 순수 6시간~6시간 30분, 중) / 세조길(편도 2.4~3.2km, 왕복 2시간~2시간 30분, 무장애 데크·흙길) — 상·하 난이도 분기 가능",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkSokLod01B3",
+                              "text": "숙박·세미나: 속리산 포레스트(구 유스타운, 1544-8531) — 호텔동·연수동 단체 객실 + 비전홀(최대 500명)·시너지룸 등 세미나실",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkSokDin01B4",
+                              "text": "식사: 포레스트 구내식당(3일 전 사전예약) + 법주사 상가지구 다래식당(약 130석) · 속리토속음식점(산채정식·버섯전골)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794983485729,
+                          "updatedAt": 1794983485729
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1794983485729,
+                      "updatedAt": 1794983485729
+                    },
+                    {
+                      "id": "hkGrpAlt01C1",
+                      "text": "1시간~1시간 30분권 (연수 · 온천 연계 대안)",
+                      "children": [
+                        {
+                          "id": "hkLocGye01C2",
+                          "text": "공주 계룡산 (동학사 · 유성온천 권역)",
+                          "children": [
+                            {
+                              "id": "hkGyeDist01C",
+                              "text": "약 75km 내외 / 1시간~1시간 20분 (오창IC → 남이JC → 북대전·남세종IC)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkGyeTrl01C3",
+                              "text": "코스: 동학사~남매탑 계곡 숲길 트레킹",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkGyeLod01C4",
+                              "text": "숙박·세미나: 동학사 단체펜션(계룡산 1박2일·들꽃·계룡산의아침 등, 세미나실·족구장·바비큐) 또는 유성온천 호텔(차량 15~20분, 호텔 인터시티 10여 개 연회장·롯데시티·스카이파크)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkGyeDin01C5",
+                              "text": "식사: 동학사 입구 음식문화거리 대형 한식·백숙·고기 식당",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794983485729,
+                          "updatedAt": 1794983485729
+                        },
+                        {
+                          "id": "hkLocSua01D1",
+                          "text": "충주 수안보 (온천지구 · 월악산 연계)",
+                          "children": [
+                            {
+                              "id": "hkSuaDist01D",
+                              "text": "수안보 약 70~75km / 1시간~1시간 10분 (월악산 송계지구 연계 시 약 75~85km / 1시간 10~30분)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkSuaLod01D2",
+                              "text": "숙박·세미나: 수안보상록호텔(그랜드홀·가야금홀·온천사우나) / 수안보파크호텔(조령홀·노천온천) — 주의: 구 한화리조트 2021.08 폐업 후 한화손해보험 라이프캠퍼스(사내전용) 전환",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkSuaDin01D3",
+                              "text": "식사: 대장군(꿩코스) · 본가할매숨두부(1·2층 각 40~50석, 전골·산채정식) · 향나무식당",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794983485729,
+                          "updatedAt": 1794983485729
+                        },
+                        {
+                          "id": "hkLocDeo01E1",
+                          "text": "예산 덕숭산 (수덕사 · 스플라스 리솜)",
+                          "children": [
+                            {
+                              "id": "hkDeoDist01E",
+                              "text": "덕숭산 약 80~90km / 1시간 10~20분 (스플라스 리솜 약 85~95km / 1시간 20~30분 — 1시간 기준 소폭 초과)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkDeoTrl01E2",
+                              "text": "코스: 수덕사 원점회귀(왕복 약 4.8~5.3km, 약 2시간~2시간 30분, 초~중하 돌계단)",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkDeoLod01E3",
+                              "text": "숙박·세미나: 스플라스 리솜(덕산온천) — 세이지·라벤더홀(50~80명) 등 11개 연회장·컨퍼런스 + 보양온천",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            },
+                            {
+                              "id": "hkDeoDin01E4",
+                              "text": "식사: 리솜 리조트 내 연회·식음 + 수덕사 일대 산채정식 식당가",
+                              "children": [],
+                              "isFolded": false,
+                              "createdAt": 1794983485729,
+                              "updatedAt": 1794983485729
+                            }
+                          ],
+                          "isFolded": true,
+                          "createdAt": 1794983485729,
+                          "updatedAt": 1794983485729
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1794983485729,
+                      "updatedAt": 1794983485729
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794917118903,
+                  "updatedAt": 1795003495578,
+                  "isCompleted": true,
+                  "completedAt": 1795003495578
+                },
+                {
+                  "id": "oCsDLME9W1KT",
+                  "text": "글램핑",
+                  "children": [
+                    {
+                      "id": "glmpRefs006",
+                      "text": "참고 사례 · 상세 리소스",
+                      "children": [
+                        {
+                          "id": "S36DFideRmNc",
+                          "text": "[[글램핑_씨브이리조트.md]]",
+                          "children": [],
+                          "createdAt": 1794997298188,
+                          "updatedAt": 1794997301678
+                        }
+                      ],
+                      "isFolded": true,
+                      "createdAt": 1794998000000,
+                      "updatedAt": 1794998000000
+                    },
+                    {
+                      "id": "586ClIUZgaLU",
+                      "text": "특징",
+                      "children": [
+                        {
+                          "id": "42TC4jHHQGVf",
+                          "text": "장소(중심 거점)",
+                          "children": [
+                            {
+                              "id": "glmpLoc01a",
+                              "text": "복합 글램핑·카라반·펜션 단지",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpLoc01b",
+                              "text": "세미나실·대형 야외 잔디광장 구비 여부",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpLoc01c",
+                              "text": "단체 전용 구역·주차 수용력",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794997777429,
+                          "updatedAt": 1794998200000
+                        },
+                        {
+                          "id": "bE6EnyWddODJ",
+                          "text": "컨텐츠(관광 장소 포함)",
+                          "children": [
+                            {
+                              "id": "glmpCnt02a",
+                              "text": "수상 레저(보트·워터파크·래프팅)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpCnt02b",
+                              "text": "육상 액티비티(ATV·트레킹)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpCnt02c",
+                              "text": "자연·호수·계곡 뷰 기반 리프레시",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794997777429,
+                          "updatedAt": 1794998200000
+                        },
+                        {
+                          "id": "gtlUhhUwM1AE",
+                          "text": "일정 및 행사 - 워크샵 수행 커리큘럼",
+                          "children": [
+                            {
+                              "id": "glmpSch03a",
+                              "text": "1일차: 입실 → 저녁 바베큐(주류·교류) → 야간 불멍",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1794999799176,
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794999799176
+                            },
+                            {
+                              "id": "glmpSch03b",
+                              "text": "2일차: 간편 해장 조식 → 오전 야외 액티비티·팀 미션 → 퇴소",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1794999799176,
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794999799176
+                            },
+                            {
+                              "id": "PRGy7r0QLQPK",
+                              "text": "저녁 바베큐(주류·교류)",
+                              "children": [],
+                              "createdAt": 1794999777723,
+                              "updatedAt": 1794999778968
+                            },
+                            {
+                              "id": "9m1h4d43NvuN",
+                              "text": "야간 불멍",
+                              "children": [],
+                              "createdAt": 1794999779560,
+                              "updatedAt": 1794999785018
+                            },
+                            {
+                              "id": "0y0rN82GU9Dk",
+                              "text": "오전 야외 액티비티·팀 미션",
+                              "children": [],
+                              "createdAt": 1794999785655,
+                              "updatedAt": 1794999796109
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794997777429,
+                          "updatedAt": 1794998200000
+                        },
+                        {
+                          "id": "FoEt61jW3BAR",
+                          "text": "식사",
+                          "children": [
+                            {
+                              "id": "glmpMel04a",
+                              "text": "올인원·무한리필 바베큐(육류·해산물·셀프바)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpMel04b",
+                              "text": "생맥주·주류 패키지",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpMel04c",
+                              "text": "간편 해장 조식(라면 뷔페·국물류)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794997777429,
+                          "updatedAt": 1794998200000
+                        },
+                        {
+                          "id": "j7bkx1ioHiOd",
+                          "text": "기타 주의사항 및 꿀팁",
+                          "children": [
+                            {
+                              "id": "glmpWrn05a",
+                              "text": "공용(텐트) vs 개별 화장실(카라반·독채) 분기",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpWrn05b",
+                              "text": "텐트 방음·매너타임·우천 시 실내 대체 공간",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpWrn05c",
+                              "text": "외부 음식·주류 반입 규정 및 보증금·패키지 의무",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpWrn05d",
+                              "text": "과도한 유흥성 이벤트 직장 적합성 유의",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794997777429,
+                          "updatedAt": 1794998200000
+                        },
+                        {
+                          "id": "oHI2GGmFPSTt",
+                          "text": "레크레이션 혹은 단합 활동(워크샵 프로그램)",
+                          "children": [
+                            {
+                              "id": "glmpRec06a",
+                              "text": "장작 캠프파이어(야간 불멍 네트워킹)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpRec06b",
+                              "text": "팀 전술·미션(서바이벌·명랑운동회)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpRec06c",
+                              "text": "잔디 구기(족구·풋살)·실내 게임",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794997777429,
+                          "updatedAt": 1794998200000
+                        },
+                        {
+                          "id": "bPO9sRzeQ3Ih",
+                          "text": "비용 - 시세 혹은 가격",
+                          "children": [
+                            {
+                              "id": "glmpCst07a",
+                              "text": "객실 기본 대여료 + 기준 인원 초과 추가금",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            },
+                            {
+                              "id": "glmpCst07b",
+                              "text": "숙박·바베큐·레저 올인원 패키지(인당 단가)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794998200000,
+                              "updatedAt": 1794998200000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794997777429,
+                          "updatedAt": 1794998200000
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1794997772956,
+                      "updatedAt": 1794998200000
+                    }
+                  ],
+                  "isFolded": true,
+                  "createdAt": 1794917203242,
+                  "updatedAt": 1794998000000
+                },
+                {
+                  "id": "XMsEb2USyPPl",
+                  "text": "낚시",
+                  "children": [
+                    {
+                      "id": "Exr7mYARFzCJ",
+                      "text": "부분, 곁다리 혹은 좋아하는 사람만",
+                      "children": [],
+                      "createdAt": 1795004139922,
+                      "updatedAt": 1795004154029
+                    }
+                  ],
+                  "createdAt": 1794917120702,
+                  "updatedAt": 1795004155959,
+                  "isCompleted": true,
+                  "completedAt": 1795004155959,
+                  "isFolded": true
+                },
+                {
+                  "id": "2aawJzmc6DDd",
+                  "text": "골프",
+                  "children": [],
+                  "createdAt": 1794917121920,
+                  "updatedAt": 1794917123114
+                },
+                {
+                  "id": "6IRgVo6NGO4J",
+                  "text": "바닷가 - 수상 액티비티",
+                  "children": [],
+                  "createdAt": 1794917212990,
+                  "updatedAt": 1794917222162
+                },
+                {
+                  "id": "OaNctjwJ742R",
+                  "text": "수영장",
+                  "children": [],
+                  "createdAt": 1794917215592,
+                  "updatedAt": 1794917252356
+                },
+                {
+                  "id": "5a0upA4IxlfH",
+                  "text": "운동회",
+                  "children": [],
+                  "createdAt": 1794917256693,
+                  "updatedAt": 1794917264548
+                },
+                {
+                  "id": "trsmMain001",
+                  "text": "관광",
+                  "children": [
+                    {
+                      "id": "trsmRefs001",
+                      "text": "참고 사례 · 상세 리소스",
+                      "children": [
+                        {
+                          "id": "trsmRefItem01",
+                          "text": "[[관광_강화도_힐하우스_루지.md]]",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1794999600000,
+                          "updatedAt": 1794999600000
+                        },
+                        {
+                          "id": "trsmRefItem02",
+                          "text": "[[관광_제천_청풍호_센서리움.md]]",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1795002000000,
+                          "updatedAt": 1795002000000
+                        },
+                        {
+                          "id": "trsmRefItem03",
+                          "text": "[[관광_단양_도담삼봉_소닉스.md]]",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1795002000000,
+                          "updatedAt": 1795002000000
+                        }
+                      ],
+                      "isFolded": true,
+                      "nodeType": "bullet",
+                      "createdAt": 1794999600000,
+                      "updatedAt": 1794999600000
+                    },
+                    {
+                      "id": "trsmFeat002",
+                      "text": "특징",
+                      "children": [
+                        {
+                          "id": "trsmSlot01",
+                          "text": "장소(중심 거점)",
+                          "children": [
+                            {
+                              "id": "trsmLoc01a",
+                              "text": "대형 독채펜션·풀빌라 중심 거점",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1795000755174,
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1795000755174
+                            },
+                            {
+                              "id": "trsmLoc01b",
+                              "text": "단체 집결용 넓은 거실·대형 TV·화이트보드",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1795000686097,
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1795000686097
+                            },
+                            {
+                              "id": "trsmLoc01c",
+                              "text": "복층 다수 방·단독 화장실 및 실내외 바베큐·오락 시설",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1795000686097,
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1795000686097
+                            },
+                            {
+                              "id": "nCQnJbiRokX6",
+                              "text": "강화도",
+                              "children": [
+                                {
+                                  "id": "trsmLocGh01",
+                                  "text": "화도면 대형 독채펜션·풀빌라",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocGh02",
+                                  "text": "강화루지·곤돌라 리조트(길상면)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocGh03",
+                                  "text": "대명항 수산시장(경유지)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocGh04",
+                                  "text": "감성 뷰 카페",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocGh05",
+                                  "text": "주변 연계(장화리 일몰조망지·옥토끼 우주센터·갯벌센터)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                }
+                              ],
+                              "createdAt": 1795000689149,
+                              "updatedAt": 1795000751301
+                            },
+                            {
+                              "id": "trsmLoc01d",
+                              "text": "호텔 및 세미나실 중심 거점",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1795001166289,
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795001166289
+                            },
+                            {
+                              "id": "trsmLoc01e",
+                              "text": "전천후 천막형 바베큐장",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1795001166289,
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795001166289
+                            },
+                            {
+                              "id": "trsmLoc01f",
+                              "text": "빔프로젝터·스크린 및 노래방·대형 주방 설비",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1795001166289,
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795001166289
+                            },
+                            {
+                              "id": "la9Ze5qvYgZm",
+                              "text": "단양",
+                              "children": [
+                                {
+                                  "id": "trsmLocDy01",
+                                  "text": "도담삼봉 선착장(유람선)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocDy02",
+                                  "text": "두산마을·양방산 활공장(패러글라이딩)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocDy03",
+                                  "text": "영춘면·남한강 일대 레포츠장(ATV)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocDy04",
+                                  "text": "금수산(상학주차장)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocDy05",
+                                  "text": "단양 호텔·세미나실",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocDy06",
+                                  "text": "현지 정육식당·선착장 인근 식당가",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                }
+                              ],
+                              "createdAt": 1795001170580,
+                              "updatedAt": 1795001172347
+                            },
+                            {
+                              "id": "XmxJEGuWbD0Y",
+                              "text": "제천",
+                              "children": [
+                                {
+                                  "id": "bOnLZZd5voGX",
+                                  "text": "제천호",
+                                  "children": [],
+                                  "createdAt": 1795001205753,
+                                  "updatedAt": 1795001207483
+                                },
+                                {
+                                  "id": "mnEqVPvmHirf",
+                                  "text": "제천중앙시장",
+                                  "children": [],
+                                  "createdAt": 1795001207871,
+                                  "updatedAt": 1795001210464
+                                },
+                                {
+                                  "id": "trsmLocJc03",
+                                  "text": "청풍호반 케이블카(물태리역·비봉산 전망대)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmLocJc04",
+                                  "text": "청풍면·금성면 독채펜션",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                }
+                              ],
+                              "createdAt": 1795001172635,
+                              "updatedAt": 1795001205162
+                            },
+                            {
+                              "id": "wbmo3CZhCoiw",
+                              "text": "충주",
+                              "children": [
+                                {
+                                  "id": "J8jxC0Z6ww6A",
+                                  "text": "충주_활옥동굴",
+                                  "children": [],
+                                  "createdAt": 1795003045391,
+                                  "updatedAt": 1795003045930
+                                }
+                              ],
+                              "createdAt": 1795001175250,
+                              "updatedAt": 1795001179625
+                            }
+                          ],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1794999600000,
+                          "updatedAt": 1794999600000
+                        },
+                        {
+                          "id": "trsmSlot02",
+                          "text": "컨텐츠(관광 장소 포함)",
+                          "children": [
+                            {
+                              "id": "trsmCntGh00",
+                              "text": "강화도",
+                              "children": [
+                                {
+                                  "id": "trsmCntGh01",
+                                  "text": "루지 주행(1.8km 2개 라인)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmCntGh02",
+                                  "text": "곤돌라 케이블카 탑승",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmCntGh03",
+                                  "text": "정상(어디???) 360도 전망대 산책",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795002190560
+                                },
+                                {
+                                  "id": "trsmCntGh04",
+                                  "text": "대명항 수산시장 구경·장보기",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmCntGh05",
+                                  "text": "뷰 카페 티타임",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                }
+                              ],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            },
+                            {
+                              "id": "trsmCntDy00",
+                              "text": "단양",
+                              "children": [
+                                {
+                                  "id": "trsmCntDy01",
+                                  "text": "패러글라이딩(분조 선택)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmCntDy02",
+                                  "text": "산악오토바이 ATV(분조 선택)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmCntDy03",
+                                  "text": "도담삼봉 관광 유람선",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmCntDy04",
+                                  "text": "금수산 아침 등산(상학 코스)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                }
+                              ],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            },
+                            {
+                              "id": "trsmCntJc00",
+                              "text": "제천",
+                              "children": [
+                                {
+                                  "id": "trsmCntJc01",
+                                  "text": "청풍호반 케이블카(일반·크리스탈 캐빈)",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmCntJc02",
+                                  "text": "비봉산 정상 전망대 조망",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                },
+                                {
+                                  "id": "trsmCntJc03",
+                                  "text": "제천중앙시장 먹거리 투어·장보기",
+                                  "children": [],
+                                  "isFolded": false,
+                                  "nodeType": "bullet",
+                                  "createdAt": 1795003000000,
+                                  "updatedAt": 1795003000000
+                                }
+                              ],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            },
+                            {
+                              "id": "trsmCntCj00",
+                              "text": "충주",
+                              "children": [
+                                {
+                                  "id": "KL17eqiQmt5E",
+                                  "text": "투명 카약",
+                                  "children": [],
+                                  "createdAt": 1795003032042,
+                                  "updatedAt": 1795003032170
+                                }
+                              ],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            }
+                          ],
+                          "isFolded": false,
+                          "nodeType": "bullet",
+                          "createdAt": 1794999600000,
+                          "updatedAt": 1794999600000
+                        },
+                        {
+                          "id": "trsmSlot03",
+                          "text": "일정 및 행사 - 워크샵 수행 커리큘럼",
+                          "children": [
+                            {
+                              "id": "trsmSch03a",
+                              "text": "1일차: 집결·랜덤 차량 이동 → 경유지 장보기·지역 액티비티 → 입실·팀별 세션(PPT) → 바베큐·실내 게임",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1794999865518,
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999865518
+                            },
+                            {
+                              "id": "trsmSch03b",
+                              "text": "2일차: 체크아웃 → 지역 해장식 조식 → 뷰 카페 자유 대화 → 해산",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "isCompleted": true,
+                              "completedAt": 1794999865518,
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999865518
+                            },
+                            {
+                              "id": "9aWnQ4cTNuuz",
+                              "text": "랜덤 사다리타기 배차",
+                              "children": [],
+                              "createdAt": 1794999814689,
+                              "updatedAt": 1794999833695
+                            },
+                            {
+                              "id": "liql2bBBYVPC",
+                              "text": "경유지 장보기",
+                              "children": [],
+                              "createdAt": 1794999834106,
+                              "updatedAt": 1794999840585
+                            },
+                            {
+                              "id": "2eMPaBZHQ1TP",
+                              "text": "지역 액티비티",
+                              "children": [],
+                              "createdAt": 1794999840985,
+                              "updatedAt": 1794999844287
+                            },
+                            {
+                              "id": "M0XKPogUDUm5",
+                              "text": "팀별 세션(PPT)",
+                              "children": [],
+                              "createdAt": 1794999844677,
+                              "updatedAt": 1794999852963
+                            },
+                            {
+                              "id": "3hLVaD5HKJsg",
+                              "text": "실내 게임",
+                              "children": [],
+                              "createdAt": 1794999853466,
+                              "updatedAt": 1794999858311
+                            },
+                            {
+                              "id": "Ozg01ZaddhDM",
+                              "text": "뷰 카페 자유 대화",
+                              "children": [],
+                              "createdAt": 1794999859745,
+                              "updatedAt": 1794999863545
+                            },
+                            {
+                              "id": "trsmSch03c",
+                              "text": "조별 승용차 분승 이동",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmSch03d",
+                              "text": "분조 선택 액티비티 및 영상 공유",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmSch03e",
+                              "text": "팀별 야식 요리 대결",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmSch03f",
+                              "text": "조별 현안 토론",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmSch03g",
+                              "text": "세 줄 감사 카드 정서 세션",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmSch03h",
+                              "text": "아침 등산",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmSch03i",
+                              "text": "경유지 이색 체험",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795004000000,
+                              "updatedAt": 1795004000000
+                            },
+                            {
+                              "id": "trsmSch03j",
+                              "text": "숙소 숯불 바베큐 파티",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795004000000,
+                              "updatedAt": 1795004000000
+                            },
+                            {
+                              "id": "trsmSch03k",
+                              "text": "사내 특기자 오프닝 공연(마술쇼)",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795004000000,
+                              "updatedAt": 1795004000000
+                            },
+                            {
+                              "id": "trsmSch03l",
+                              "text": "PPT 기반 레크레이션",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795004000000,
+                              "updatedAt": 1795004000000
+                            },
+                            {
+                              "id": "trsmSch03m",
+                              "text": "미션 카드형 뒤풀이(술술카드)",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795004000000,
+                              "updatedAt": 1795004000000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794999600000,
+                          "updatedAt": 1794999600000
+                        },
+                        {
+                          "id": "trsmSlot04",
+                          "text": "식사",
+                          "children": [
+                            {
+                              "id": "trsmMel04a",
+                              "text": "출발·이동 간편식(김밥·샌드위치)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmMel04b",
+                              "text": "저녁: 현지 수산물(회·해산물) + 숙소 셀프 숯불 바베큐",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmMel04c",
+                              "text": "아침: 인근 지역 맛집(해물칼국수 등) + 카페 디저트",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmMel04d",
+                              "text": "전통시장 먹거리 간식 및 안주 장보기",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmMel04e",
+                              "text": "특수 육류(양갈비) 바베큐 + 시장 안주 페어링",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmMel04f",
+                              "text": "현지 정육식당 단체 회식",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmMel04g",
+                              "text": "지역 토속 식사(막국수·산채비빔밥)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmMel04h",
+                              "text": "복귀 전 중식(짬뽕·짜장) 마무리",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmMel04i",
+                              "text": "팀별 야식 요리 대결(버터갈릭새우·어묵탕·깐풍치킨 등)",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794999600000,
+                          "updatedAt": 1794999600000
+                        },
+                        {
+                          "id": "trsmSlot05",
+                          "text": "기타 주의사항 및 꿀팁",
+                          "children": [
+                            {
+                              "id": "trsmWrn05a",
+                              "text": "독채 정원·최대 인원 초과 및 미예약 방문객 엄격 제한 여부 확인",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmWrn05b",
+                              "text": "액티비티 비탑승자용 카페·휴식 대체 동선 분리",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmWrn05c",
+                              "text": "이동 경유지(특산품)와 숙소 인근 마트(육류·소모품) 장보기 역할 분리",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmWrn05d",
+                              "text": "유람선 탑승 시 전원 신분증 지참 및 승선신고서 사전 작성",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmWrn05e",
+                              "text": "고소공포증·체력 편차 고려 캐빈(일반·크리스탈) 및 코스 난이도 분조",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmWrn05f",
+                              "text": "우천·강풍 대비 전천후 유람선 및 실내 대체 백업 플랜",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmWrn05g",
+                              "text": "산간 외곽 숙소 일몰 전 입실 및 분조용 다수 차량 분승",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmWrn05h",
+                              "text": "루지 신장 120cm·만 10세·65세 이상 탑승 제한 확인",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            },
+                            {
+                              "id": "trsmWrn05i",
+                              "text": "ATV 운동화 착용 및 금수산 돌길 대비 등산 복장 권장",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794999600000,
+                          "updatedAt": 1794999600000
+                        },
+                        {
+                          "id": "trsmSlot06",
+                          "text": "레크레이션 혹은 단합 활동(워크샵 프로그램)",
+                          "children": [
+                            {
+                              "id": "trsmRec06a",
+                              "text": "사다리타기 기반 이동·게임 랜덤 팀 매칭",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmRec06b",
+                              "text": "실내 자체 보드·퀴즈·미션 게임 + 핀볼·추첨",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmRec06c",
+                              "text": "실용 보상(연차·반차·기프트카드) 기반 몰입 유도 및 야외 배드민턴",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmRec06d",
+                              "text": "사내 특기자 오프닝 공연(마술쇼·독심술 등)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmRec06e",
+                              "text": "사전 제작 PPT 기반 팀별 미니게임(고요 속의 외침·몸으로 말해요)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmRec06f",
+                              "text": "오글타임 세 줄 감사 카드 교환(정서 유대 클로징)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmRec06g",
+                              "text": "미션 카드형 뒤풀이 술게임",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmRec06h",
+                              "text": "조별 테마 토론(협업·소통·성장)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmRec06i",
+                              "text": "액티비티 체험 영상 상호 공유",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794999600000,
+                          "updatedAt": 1794999600000
+                        },
+                        {
+                          "id": "trsmSlot07",
+                          "text": "비용 - 시세 혹은 가격",
+                          "children": [
+                            {
+                              "id": "trsmCst07a",
+                              "text": "대형 독채 1박 대관료(시즌별 변동·정원 내 추가금 없음)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmCst07b",
+                              "text": "외부 체험(단체 할인) + 장보기·외식 실비 분리 산정",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1794999600000,
+                              "updatedAt": 1794999600000
+                            },
+                            {
+                              "id": "trsmCst07c",
+                              "text": "숙소 기준 인원 초과 시 1인 추가금 및 바베큐 그릴 대여료 별도 확인",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmCst07d",
+                              "text": "유람선·케이블카 1인 1~2만 원대(20인+ 단체 할인)",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmCst07e",
+                              "text": "고액 액티비티(패러글라이딩 9~14만 원·ATV 3만 원대) 패키지·단체 견적",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmCst07f",
+                              "text": "정육식당 1인분 1.5~4만 원대 단체 외식 실비 산정",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795002000000,
+                              "updatedAt": 1795002000000
+                            },
+                            {
+                              "id": "trsmCst07g",
+                              "text": "강화도형 대형 독채 1박 110만 원대부터·루지 1~5회 1.9~5만 원대",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            },
+                            {
+                              "id": "trsmCst07h",
+                              "text": "제천형 기준 10인 초과 1인 5만 원·10인용 바베큐 그릴 5만 원",
+                              "children": [],
+                              "isFolded": false,
+                              "nodeType": "bullet",
+                              "createdAt": 1795003000000,
+                              "updatedAt": 1795003000000
+                            }
+                          ],
+                          "isFolded": true,
+                          "nodeType": "bullet",
+                          "createdAt": 1794999600000,
+                          "updatedAt": 1794999600000
+                        }
+                      ],
+                      "isFolded": false,
+                      "nodeType": "bullet",
+                      "createdAt": 1794999600000,
+                      "updatedAt": 1794999600000
+                    }
+                  ],
+                  "isFolded": true,
+                  "nodeType": "bullet",
+                  "createdAt": 1794999000000,
+                  "updatedAt": 1794999600000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1794917117318,
+              "updatedAt": 1794917715994
+            },
+            {
+              "id": "qQorekK2rP7a",
+              "text": "레퍼런스, 플랫폼, 정보 포털 사이트",
+              "children": [
+                {
+                  "id": "pwHCn17FujIv",
+                  "text": "야모이자[전문 플랫폼]",
+                  "children": [
+                    {
+                      "id": "NLXxHYE5TZxA",
+                      "text": "https://www.yamoiza.com/",
+                      "children": [],
+                      "createdAt": 1795005402069,
+                      "updatedAt": 1795005402636
+                    }
+                  ],
+                  "createdAt": 1795005392689,
+                  "updatedAt": 1795005412694,
+                  "isFolded": true
+                },
+                {
+                  "id": "P8FEbX6ojsSf",
+                  "text": "Innertrip[전문 플랫폼]",
+                  "children": [
+                    {
+                      "id": "NXKT6aSe2NFn",
+                      "text": "https://innertrip.co.kr/",
+                      "children": [],
+                      "createdAt": 1795006413387,
+                      "updatedAt": 1795006429814
+                    }
+                  ],
+                  "createdAt": 1795006415604,
+                  "updatedAt": 1795006520248,
+                  "isFolded": true
+                },
+                {
+                  "id": "f4doqRSrDo03",
+                  "text": "위버[전문 플랫폼]",
+                  "children": [
+                    {
+                      "id": "4P6GXn2NWLTO",
+                      "text": "https://www.weebur.com/",
+                      "children": [],
+                      "createdAt": 1795006460565,
+                      "updatedAt": 1795006461208
+                    }
+                  ],
+                  "createdAt": 1795006457336,
+                  "updatedAt": 1795006521156,
+                  "isFolded": true
+                },
+                {
+                  "id": "ak0uzRyWBAc7",
+                  "text": "리멤버 커뮤니티",
+                  "children": [],
+                  "createdAt": 1794918167940,
+                  "updatedAt": 1794918172526
+                },
+                {
+                  "id": "ZpxewnwY1EQl",
+                  "text": "네이버 카페",
+                  "children": [],
+                  "createdAt": 1794918172702,
+                  "updatedAt": 1794918177914
+                },
+                {
+                  "id": "zB8e393IIt41",
+                  "text": "유튜브",
+                  "children": [],
+                  "createdAt": 1794918178035,
+                  "updatedAt": 1794918181955
+                },
+                {
+                  "id": "ckofPl57wuIV",
+                  "text": "야놀자/여기어때",
+                  "children": [],
+                  "createdAt": 1794918182099,
+                  "updatedAt": 1794918203100
+                },
+                {
+                  "id": "LimMTbQZsxSL",
+                  "text": "인스타 -> (#)검색, 네이버 -> 폐쇄 포탈, 유튜브 등등 특화 사이트를 어떻게 가져올 것이냐",
+                  "children": [],
+                  "createdAt": 1795006735680,
+                  "updatedAt": 1795006776423
+                },
+                {
+                  "id": "yknR6Ui8FlHX",
+                  "text": "행사 대행사",
+                  "children": [
+                    {
+                      "id": "2DlSZUThcAhe",
+                      "text": "eventpft - 워크샵 가이드 or 메뉴얼 레퍼",
+                      "children": [
+                        {
+                          "id": "VlplTdX9gdzU",
+                          "text": "공식 주소",
+                          "children": [
+                            {
+                              "id": "TT7M306NiOJK",
+                              "text": "https://eventpft.com/",
+                              "children": [],
+                              "createdAt": 1795000916886,
+                              "updatedAt": 1795000941533
+                            }
+                          ],
+                          "createdAt": 1795000928242,
+                          "updatedAt": 1795000937602,
+                          "isFolded": true
+                        },
+                        {
+                          "id": "2Bl83SnJi7Nf",
+                          "text": "행사 제안요청서(RFP) 작성 가이드",
+                          "children": [
+                            {
+                              "id": "rcT063UtiFvk",
+                              "text": "https://eventpft.com/guides/event-rfp",
+                              "children": [],
+                              "createdAt": 1795000889594,
+                              "updatedAt": 1795000890507
+                            },
+                            {
+                              "id": "sytL3Gq4Rio8",
+                              "text": "행사 기획 실무 양식 공유 ㄷㄷ",
+                              "children": [],
+                              "createdAt": 1795002593763,
+                              "updatedAt": 1795002611004,
+                              "file": {
+                                "target": "Pasted image 20261118204954.png"
+                              }
+                            }
+                          ],
+                          "createdAt": 1794921032682,
+                          "updatedAt": 1795000889594,
+                          "isFolded": true
+                        }
+                      ],
+                      "isFolded": false,
+                      "createdAt": 1794921035922,
+                      "updatedAt": 1795005203902
+                    },
+                    {
+                      "id": "mw7IyOxMlV7k",
+                      "text": "필드멘토",
+                      "children": [
+                        {
+                          "id": "SstHgqmtOe7P",
+                          "text": "블로그",
+                          "children": [
+                            {
+                              "id": "25FrLTzRNZjn",
+                              "text": "https://blog.fieldmentor.co.kr/80768",
+                              "children": [],
+                              "createdAt": 1795005207349,
+                              "updatedAt": 1795005245003
+                            }
+                          ],
+                          "createdAt": 1795005235637,
+                          "updatedAt": 1795005238965
+                        }
+                      ],
+                      "createdAt": 1795005214523,
+                      "updatedAt": 1795005222654
+                    }
+                  ],
+                  "createdAt": 1795005196579,
+                  "updatedAt": 1795005200029,
+                  "isFolded": true
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1794918163509,
+              "updatedAt": 1795005535909
+            },
+            {
+              "id": "p2XP3AJadHVP",
+              "text": "",
+              "children": [],
+              "createdAt": 1794918218168,
+              "updatedAt": 1794918246697
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1794916496917,
+          "updatedAt": 1794917660048
+        },
+        {
+          "id": "jRw3JPJUAZEw",
+          "text": "위치 : ",
+          "children": [],
+          "createdAt": 1794916530823,
+          "updatedAt": 1794917660048
+        },
+        {
+          "id": "zVBAGYZU480p",
+          "text": "일정 : 정확한 기간",
+          "children": [],
+          "createdAt": 1794916502998,
+          "updatedAt": 1794917660048
+        },
+        {
+          "id": "WvptnBpxH4IP",
+          "text": "참여 인원 : ",
+          "children": [],
+          "createdAt": 1794916505334,
+          "updatedAt": 1794917660048
+        },
+        {
+          "id": "nuxfAA8Cfp60",
+          "text": "예산 포함 범위 :",
+          "children": [],
+          "createdAt": 1794916515284,
+          "updatedAt": 1794917660048
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1794917610552,
+      "updatedAt": 1794917655035
+    },
+    {
+      "id": "IwxLDam80zdP",
+      "text": "중간 산출물[나 -> 타인]",
+      "children": [
+        {
+          "id": "3A83MUa50pY6",
+          "text": "필수",
+          "children": [
+            {
+              "id": "eAB1mJgkewj6",
+              "text": "워크샵 참가 설문지",
+              "children": [
+                {
+                  "id": "rW3GtMyldEZa",
+                  "text": "주요 내용 : 참가 여부, 참가 가능 일정(일정 산출을 위해), 관심 메인 컨텐츠",
+                  "children": [],
+                  "createdAt": 1794918353918,
+                  "updatedAt": 1794918398436
+                },
+                {
+                  "id": "5gSZJ7uUdJMf",
+                  "text": "작성 툴 : 이메일 혹은 사내 문서 툴",
+                  "children": [
+                    {
+                      "id": "Lh7rVblw0IEy",
+                      "text": "주로 각 파트별 메인 문서 집계 담당자가 있음 - > 엑셀 취합 후 리턴",
+                      "children": [],
+                      "createdAt": 1794918459899,
+                      "updatedAt": 1794918501179
+                    }
+                  ],
+                  "createdAt": 1794918412157,
+                  "updatedAt": 1794918421617
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1794918336806,
+              "updatedAt": 1794918627916
+            },
+            {
+              "id": "DoGTbYJz42lO",
+              "text": "활동계획서(결재용)",
+              "children": [
+                {
+                  "id": "lae6bCkQVLlo",
+                  "text": "참석자 현황 취합 내용",
+                  "children": [],
+                  "createdAt": 1794963589540,
+                  "updatedAt": 1794963594596
+                }
+              ],
+              "createdAt": 1794918400076,
+              "updatedAt": 1794918627916
+            },
+            {
+              "id": "PCEDGHLHWKpq",
+              "text": "워크샵 일정 확정 공지",
+              "children": [],
+              "createdAt": 1794918876399,
+              "updatedAt": 1794918882529
+            },
+            {
+              "id": "zortwFdGGU21",
+              "text": "조 편성, 방 배정, 서비스 이용 배정 등등 실질 운영표",
+              "children": [
+                {
+                  "id": "Xe33eJNa6Bu6",
+                  "text": "만약 필요하다면 장보기 담당 팀에게 배정할 장보기 리스트 및 각종 지시서",
+                  "children": [],
+                  "createdAt": 1794918566506,
+                  "updatedAt": 1794918705732
+                }
+              ],
+              "createdAt": 1794918527025,
+              "updatedAt": 1794918686269
+            },
+            {
+              "id": "1reXuYSEziLm",
+              "text": "워크샵 활동보고서 및 경비 처리 내역",
+              "children": [
+                {
+                  "id": "WQyzBV4kZ2V4",
+                  "text": "사진 촬영",
+                  "children": [],
+                  "createdAt": 1794918735939,
+                  "updatedAt": 1794918738228
+                },
+                {
+                  "id": "sJl2FD76scTv",
+                  "text": "영수증 증빙(경비 처리), 서류 증빙",
+                  "children": [],
+                  "createdAt": 1794918738681,
+                  "updatedAt": 1794918748589
+                }
+              ],
+              "createdAt": 1794918724396,
+              "updatedAt": 1794918765660
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1794918618084,
+          "updatedAt": 1794918621051
+        },
+        {
+          "id": "9IP3QhgDsVP7",
+          "text": "옵션",
+          "children": [
+            {
+              "id": "gFDvmLT258m1",
+              "text": "활동 시간표, 일정표 팀원 공유용",
+              "children": [],
+              "createdAt": 1794918636579,
+              "updatedAt": 1794918716570
+            },
+            {
+              "id": "Qa7N42584Nxn",
+              "text": "한 번씩 이런 플랭카드 같은 거 시킴...",
+              "children": [],
+              "createdAt": 1795003089752,
+              "updatedAt": 1795003100154,
+              "file": {
+                "target": "Pasted image 20261118205809.png"
+              }
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1794918633589,
+          "updatedAt": 1794918636003
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1794918329549,
+      "updatedAt": 1794999583856
+    },
+    {
+      "id": "BC7uZgbxqMcZ",
+      "text": "중간 산출물[에이전트 -> 나]",
+      "children": [
+        {
+          "id": "e4Q1WWc2VvaU",
+          "text": "내가 딱딱 보고 싶어하는 것만 정리하고 추려서",
+          "children": [],
+          "createdAt": 1795004269945,
+          "updatedAt": 1795004278766
+        },
+        {
+          "id": "Vs3DlCkrOMp6",
+          "text": "그냥 직접 내가 눌러서 보고 판단하기 vs 비교표로 한눈에 보기(다듬는 비용을 좀 투자하는 대신)",
+          "children": [],
+          "createdAt": 1795004282045,
+          "updatedAt": 1795004304643
+        },
+        {
+          "id": "WLuGFCgWgdpU",
+          "text": "어떤 사이트가 좋나? 여기서 어떤 것을 하면 좋나? 어떤 관광단지들이 있나?",
+          "children": [
+            {
+              "id": "xhKOfhOaT3tu",
+              "text": "블로그 형식 고정! 나한테 이렇게 보여줘! 사진 + 특징 알아서 조사",
+              "children": [],
+              "createdAt": 1795006312818,
+              "updatedAt": 1795006353976,
+              "file": {
+                "target": "Pasted image 20261118215154.png"
+              }
+            },
+            {
+              "id": "R03xFoPHnlSN",
+              "text": "이걸 단순히 사이트 소개 레퍼런스로 해서 하라니까 진짜 기성 블로그처럼만 이미지랑 구성을 짰네 좀 더 소프트웨어 소개 및 ui 조작 같은 느낌으로 버전업 시키는게 좋을텐데",
+              "children": [],
+              "createdAt": 1795008728560,
+              "updatedAt": 1795008773533,
+              "file": {
+                "target": "Pasted image 20261118223209.png"
+              }
+            }
+          ],
+          "createdAt": 1795006292814,
+          "updatedAt": 1795006312584,
+          "isFolded": false
+        }
+      ],
+      "createdAt": 1794999588178,
+      "updatedAt": 1794999595518
+    },
+    {
+      "id": "g1K9Nl3MyPQB",
+      "text": "실험용 에셋 묶음",
+      "children": [
+        {
+          "id": "expAst01Grp",
+          "text": "1. 좌측 대분류 세로 병합(rowSpan) 비교표 <<asset:table-grouped-compare>>",
+          "children": [
+            {
+              "id": "expAst01Spec",
+              "text": "변환규칙:: 상위 분류를 좌측 세로 병합(rowSpan) 열로 묶고, 하위 항목과 속성들을 우측 행으로 나열",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst01Style",
+              "text": "시각스타일:: 테두리=HWP 실선 | 헤더배경=#e2e8f0 | 빈칸=[-]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst01Tpl",
+              "text": "<<template:table>>",
+              "children": [
+                {
+                  "id": "expAst01VHdr",
+                  "text": "{{분류열}} | {{항목열}} | {{속성1}} | {{속성2}} | {{속성3}}",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst01VG1",
+                  "text": "{{대분류_1}}",
+                  "children": [
+                    {
+                      "id": "expAst01VG1R1",
+                      "text": "{{항목_1}} | {{속성1_값}} | {{속성2_값}} | {{속성3_값}}",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1794972820000,
+                      "updatedAt": 1794972960000
+                    },
+                    {
+                      "id": "expAst01VG1R2",
+                      "text": "{{항목_2}} | {{속성1_값}} | {{속성2_값}} | {{속성3_값}}",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1794972820000,
+                      "updatedAt": 1794972960000
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst01VG2",
+                  "text": "{{대분류_2}}",
+                  "children": [
+                    {
+                      "id": "expAst01VG2R1",
+                      "text": "{{항목_3}} | {{속성1_값}} | [-] | {{속성3_값}}",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1794972820000,
+                      "updatedAt": 1794972960000
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            }
+          ],
+          "isFolded": false,
+          "note": "레퍼런스: 예스폼_무료계약검토회의록양식과활용법안내.pdf",
+          "createdAt": 1794972820000,
+          "updatedAt": 1794972960000
+        },
+        {
+          "id": "expAst02Mod",
+          "text": "2. 모던 수평 비교표 (구글문서 스타일) <<asset:table-modern-flat>>",
+          "children": [
+            {
+              "id": "expAst02Spec",
+              "text": "변환규칙:: 세로 병합 없이 모든 행을 동일 열 개수로 수평 정렬하고 1행 상단 헤더 고정",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst02Style",
+              "text": "시각스타일:: 테두리=가로 연한 실선(세로선 없음) | 헤더배경=#f1f5f9 | 빈칸=[-]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst02Tpl",
+              "text": "<<template:table>>",
+              "children": [
+                {
+                  "id": "expAst02VHdr",
+                  "text": "{{분류}} | {{항목}} | {{요약1}} | {{요약2}} | {{비고}}",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst02VR1",
+                  "text": "{{대분류_1}} | {{항목_1}} | {{값_1}} | {{값_2}} | {{비고_값}}",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst02VR2",
+                  "text": "{{대분류_2}} | {{항목_2}} | {{값_1}} | [-] | {{비고_값}}",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            }
+          ],
+          "isFolded": false,
+          "note": "레퍼런스: 예스폼_분기성과분석및전략이행회의록(구글문서변환).pdf",
+          "createdAt": 1794972820000,
+          "updatedAt": 1794972960000
+        },
+        {
+          "id": "expAst03Led",
+          "text": "3. 다열 실무 현황·관리대장형 <<asset:table-roster-ledger>>",
+          "children": [
+            {
+              "id": "expAst03Spec",
+              "text": "변환규칙:: 좁은 구분·상태 열 + 넓은 내용 열 + 우측 확인/비고 빈 칸을 두는 고밀도 일람표",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst03Style",
+              "text": "시각스타일:: 테두리=HWP 실선(외곽 2px) | 헤더배경=#e2e8f0 | 빈칸=[-]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst03Tpl",
+              "text": "<<template:table>>",
+              "children": [
+                {
+                  "id": "expAst03VHdr",
+                  "text": "{{구분}} | {{명칭}} | {{핵심지표}} | {{세부내용}} | {{일정}} | {{상태}} | {{비고}}",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst03VR1",
+                  "text": "{{구분_1}} | {{명칭_1}} | {{지표_1}} | {{내용_1}} | {{일정_1}} | [-] | [-]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst03VR2",
+                  "text": "{{구분_2}} | {{명칭_2}} | {{지표_2}} | [-] | {{일정_2}} | [-] | [-]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            }
+          ],
+          "isFolded": false,
+          "note": "레퍼런스: 예스폼_회의록관리현황표무료다운로드및활용법.pdf",
+          "createdAt": 1794972820000,
+          "updatedAt": 1794972960000
+        },
+        {
+          "id": "expAst04Mtx",
+          "text": "4. 상하 2단 라벨·값 가로 비교 매트릭스 <<asset:table-header-below-matrix>>",
+          "children": [
+            {
+              "id": "expAst04Spec",
+              "text": "변환규칙:: 좌측 그룹 열 옆에 개체명을 윗줄(가로 헤더)로 올리고 바로 아랫줄에 상세/기입칸을 나란히 배치",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst04Style",
+              "text": "시각스타일:: 테두리=HWP 실선 | 라벨행배경=#e2e8f0 | 빈칸=[-]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst04Tpl",
+              "text": "<<template:table>>",
+              "children": [
+                {
+                  "id": "expAst04VG1",
+                  "text": "{{대분류_1}}",
+                  "children": [
+                    {
+                      "id": "expAst04VG1H",
+                      "text": "{{항목_1}} | {{항목_2}} | {{항목_3}}",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1794972820000,
+                      "updatedAt": 1794972960000
+                    },
+                    {
+                      "id": "expAst04VG1V",
+                      "text": "{{상세요약_1}} | {{상세요약_2}} | {{상세요약_3}}",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1794972820000,
+                      "updatedAt": 1794972960000
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst04VG2",
+                  "text": "{{대분류_2}}",
+                  "children": [
+                    {
+                      "id": "expAst04VG2H",
+                      "text": "{{항목_4}} | {{항목_5}}",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1794972820000,
+                      "updatedAt": 1794972960000
+                    },
+                    {
+                      "id": "expAst04VG2V",
+                      "text": "{{상세요약_4}} | [-]",
+                      "children": [],
+                      "isFolded": false,
+                      "createdAt": 1794972820000,
+                      "updatedAt": 1794972960000
+                    }
+                  ],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            }
+          ],
+          "isFolded": false,
+          "note": "레퍼런스: 예스폼_무료설계심사회의록샘플과예문다운로드.pdf",
+          "createdAt": 1794972820000,
+          "updatedAt": 1794972960000
+        },
+        {
+          "id": "expAst05Chk",
+          "text": "5. 내용 + 우측 체크/평가 품평표 <<asset:table-eval-checklist>>",
+          "children": [
+            {
+              "id": "expAst05Spec",
+              "text": "변환규칙:: 개체별 요약 내용을 넓은 좌측 열에 두고, 우측에 체크 선택(□) 및 평가 메모([-]) 열을 부착",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst05Style",
+              "text": "시각스타일:: 테두리=HWP 실선 | 헤더배경=#e2e8f0 | 선택기호=□ | 빈칸=[-]",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            },
+            {
+              "id": "expAst05Tpl",
+              "text": "<<template:table>>",
+              "children": [
+                {
+                  "id": "expAst05VHdr",
+                  "text": "{{항목 및 요약}} | {{평가/선택}} | {{비고}}",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst05VR1",
+                  "text": "{{항목_1}} — {{요약_1}} | □ {{선택1}}   □ {{선택2}}   □ {{선택3}} | [-]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                },
+                {
+                  "id": "expAst05VR2",
+                  "text": "{{항목_2}} — {{요약_2}} | □ {{선택1}}   □ {{선택2}}   □ {{선택3}} | [-]",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1794972820000,
+                  "updatedAt": 1794972960000
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1794972820000,
+              "updatedAt": 1794972960000
+            }
+          ],
+          "isFolded": false,
+          "note": "레퍼런스: 예스폼_제품품평회의록무료양식과샘플다운로드.pdf",
+          "createdAt": 1794972820000,
+          "updatedAt": 1794972960000
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1794972389212,
+      "updatedAt": 1794972960000
+    },
+    {
+      "id": "Oz5MSsVQ69Vv",
+      "text": "리소스 수집 항목",
+      "children": [
+        {
+          "id": "j6KesD1H0UuG",
+          "text": "장소(중심 거점)",
+          "children": [],
+          "createdAt": 1794992843384,
+          "updatedAt": 1794992855418
+        },
+        {
+          "id": "rEsL8TuvpJKj",
+          "text": "컨텐츠(관광 장소 포함)",
+          "children": [],
+          "createdAt": 1794992855679,
+          "updatedAt": 1794992873856
+        },
+        {
+          "id": "qGWqBAcx0n25",
+          "text": "일정 및 행사 - 워크샵 수행 커리큘럼",
+          "children": [],
+          "createdAt": 1794992866624,
+          "updatedAt": 1794993244955
+        },
+        {
+          "id": "l3TRGw0KcoIl",
+          "text": "식사",
+          "children": [],
+          "createdAt": 1794992883926,
+          "updatedAt": 1794993249076
+        },
+        {
+          "id": "ZdQbiEvHwmpp",
+          "text": "기타 주의사항 및 꿀팁",
+          "children": [],
+          "createdAt": 1794993249483,
+          "updatedAt": 1794993262697
+        },
+        {
+          "id": "nZn2Qa3wIA5d",
+          "text": "레크레이션 혹은 단합 활동(워크샵 프로그램)",
+          "children": [],
+          "createdAt": 1794993258877,
+          "updatedAt": 1794993924842
+        },
+        {
+          "id": "6MzaT3GMd0C0",
+          "text": "비용 - 시세 혹은 가격",
+          "children": [],
+          "createdAt": 1794993940649,
+          "updatedAt": 1794993965886
+        }
+      ],
+      "createdAt": 1794992837510,
+      "updatedAt": 1794992843218
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1794916044524,
+  "updatedAt": 1795008773534
+}
