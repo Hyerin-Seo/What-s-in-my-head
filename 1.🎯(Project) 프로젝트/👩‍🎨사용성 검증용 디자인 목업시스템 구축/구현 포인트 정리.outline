@@ -2147,7 +2147,7 @@
               "updatedAt": 1793859221833
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793769223297,
           "updatedAt": 1793848827721
         },
@@ -2521,7 +2521,7 @@
                   "updatedAt": 1794202623782
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1794202521028,
               "updatedAt": 1794202608005
             },
@@ -2533,7 +2533,7 @@
               "updatedAt": 1794530655346
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793765288631,
           "updatedAt": 1793848827721
         },
@@ -2614,9 +2614,9 @@
           "updatedAt": 1794199879457
         }
       ],
+      "isFolded": false,
       "createdAt": 1793848816376,
-      "updatedAt": 1793848822724,
-      "isFolded": true
+      "updatedAt": 1793848822724
     },
     {
       "id": "4abciIbktN7B",
@@ -2722,7 +2722,7 @@
               "updatedAt": 1794454872304
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793848925177,
           "updatedAt": 1793848928993
         },
@@ -3844,12 +3844,12 @@
           "updatedAt": 1794470037896
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1793848829518,
       "updatedAt": 1793848924754
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1794565247595
+  "updatedAt": 1795166472945
 }

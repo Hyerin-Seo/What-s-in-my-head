@@ -72,9 +72,9 @@
           "updatedAt": 1794547011057
         }
       ],
+      "isFolded": true,
       "createdAt": 1794546975103,
-      "updatedAt": 1794547030299,
-      "isFolded": true
+      "updatedAt": 1794547030299
     },
     {
       "id": "ZiFBlCXRoryR",
@@ -88,9 +88,9 @@
           "updatedAt": 1794547125366
         }
       ],
+      "isFolded": true,
       "createdAt": 1794547020427,
-      "updatedAt": 1794547021377,
-      "isFolded": true
+      "updatedAt": 1794547021377
     },
     {
       "id": "Ys5PXayusWKQ",
@@ -213,13 +213,20 @@
     },
     {
       "id": "Zy4813h9bhgj",
-      "text": "",
+      "text": "기준선(Ground Truth)",
       "children": [],
       "createdAt": 1794802982833,
-      "updatedAt": 1794802982833
+      "updatedAt": 1795080389327
+    },
+    {
+      "id": "pza4Zs82H495",
+      "text": "최소 직교 원소(배치·슬롯·병합·계층)",
+      "children": [],
+      "createdAt": 1795169199050,
+      "updatedAt": 1795169212592
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1792837399407,
-  "updatedAt": 1794802982834
+  "updatedAt": 1795169212592
 }

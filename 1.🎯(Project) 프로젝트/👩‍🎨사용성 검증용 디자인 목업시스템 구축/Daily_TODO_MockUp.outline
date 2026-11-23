@@ -1223,9 +1223,45 @@
       ],
       "createdAt": 1794963758535,
       "updatedAt": 1794963766030
+    },
+    {
+      "id": "v32p3rXQEw8E",
+      "text": "2026.11.23",
+      "children": [
+        {
+          "id": "cQEdFxMXoDpp",
+          "text": "outline + 스키마",
+          "children": [],
+          "createdAt": 1795402500646,
+          "updatedAt": 1795418420979
+        },
+        {
+          "id": "POxKh4TlZagw",
+          "text": "에셋 허브 + 추가 및 레이아웃",
+          "children": [],
+          "createdAt": 1795402491515,
+          "updatedAt": 1795402565203
+        },
+        {
+          "id": "evszRCe8otLo",
+          "text": "resource 표현( feat. reference )",
+          "children": [],
+          "createdAt": 1795414291139,
+          "updatedAt": 1795419354491
+        },
+        {
+          "id": "SP4bPJ7P39Fv",
+          "text": "research",
+          "children": [],
+          "createdAt": 1795414287556,
+          "updatedAt": 1795414290978
+        }
+      ],
+      "createdAt": 1795402486671,
+      "updatedAt": 1795402490900
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793934368821,
-  "updatedAt": 1794964730458
+  "updatedAt": 1795419354491
 }

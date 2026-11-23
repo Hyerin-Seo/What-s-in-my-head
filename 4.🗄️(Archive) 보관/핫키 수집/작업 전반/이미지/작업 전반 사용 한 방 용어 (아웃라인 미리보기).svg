@@ -29,5 +29,6 @@
 <circle cx="34" cy="325" r="4.5" fill="#7c5cff"/>
 <text x="51" y="331" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">성과·피드백 루프 코칭 (Performance Coaching)</text>
 <circle cx="34" cy="358" r="3" fill="#9a9aa3"/>
+<text x="51" y="364" font-family="'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" font-size="18" fill="#2b2b31">기준선(Ground Truth)</text>
 <rect x="0" y="352" width="600" height="48" fill="url(#f)"/>
 </svg>

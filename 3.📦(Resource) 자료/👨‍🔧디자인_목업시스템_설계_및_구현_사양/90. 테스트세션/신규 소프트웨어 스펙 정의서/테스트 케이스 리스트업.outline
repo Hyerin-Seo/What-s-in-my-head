@@ -1,0 +1,182 @@
+{
+  "version": "1.0.0",
+  "id": "SnvwbRqfrMoA",
+  "title": "테스트 케이스 리스트업",
+  "rootNodes": [
+    {
+      "id": "QRp9T5kepFJr",
+      "text": "Blog",
+      "children": [
+        {
+          "id": "FXKN9UniIl9H",
+          "text": "유닛 테스트",
+          "children": [
+            {
+              "id": "5LOMtzn3zRf0",
+              "text": "b-ut-01 : ",
+              "children": [],
+              "isFolded": false,
+              "createdAt": 1795161039499,
+              "updatedAt": 1795161328094
+            }
+          ],
+          "createdAt": 1795161310063,
+          "updatedAt": 1795161326047
+        },
+        {
+          "id": "1nkFm7jQh6pN",
+          "text": "UT-AI",
+          "children": [
+            {
+              "id": "cR3L6g5Xgd1r",
+              "text": "",
+              "children": [],
+              "createdAt": 1795161796318,
+              "updatedAt": 1795161796422
+            }
+          ],
+          "createdAt": 1795161785505,
+          "updatedAt": 1795161795728,
+          "isFolded": true
+        },
+        {
+          "id": "1bH0jRV4kjr7",
+          "text": "연동 테스트",
+          "children": [
+            {
+              "id": "lX8HWPdL2qmV",
+              "text": "",
+              "children": [],
+              "createdAt": 1795161371887,
+              "updatedAt": 1795161372100
+            }
+          ],
+          "createdAt": 1795161306033,
+          "updatedAt": 1795161370407
+        },
+        {
+          "id": "lyMTWYV3CiQq",
+          "text": "IT-AI",
+          "children": [
+            {
+              "id": "otm5OvDPtj1c",
+              "text": "",
+              "children": [],
+              "createdAt": 1795161815986,
+              "updatedAt": 1795161816162
+            }
+          ],
+          "createdAt": 1795161808982,
+          "updatedAt": 1795161812650,
+          "isFolded": true
+        }
+      ],
+      "isFolded": false,
+      "createdAt": 1795161039499,
+      "updatedAt": 1795161191676
+    },
+    {
+      "id": "SRJ747opeEi4",
+      "text": "A4",
+      "children": [
+        {
+          "id": "97MdknF4qKko",
+          "text": "유닛 테스트",
+          "children": [
+            {
+              "id": "iGKXTigpiMh5",
+              "text": "b-ut-01 : ",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1795161829950,
+              "updatedAt": 1795161829950
+            }
+          ],
+          "nodeType": "bullet",
+          "createdAt": 1795161829950,
+          "updatedAt": 1795161829950
+        },
+        {
+          "id": "H13XjaYC5R74",
+          "text": "UT-AI",
+          "children": [
+            {
+              "id": "gwJPoMHdYJ0J",
+              "text": "",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1795161829950,
+              "updatedAt": 1795161829950
+            }
+          ],
+          "nodeType": "bullet",
+          "createdAt": 1795161829950,
+          "updatedAt": 1795161829950,
+          "isFolded": true
+        },
+        {
+          "id": "qnilCHKudvFu",
+          "text": "연동 테스트",
+          "children": [
+            {
+              "id": "Nj4Hq1B7Wmxi",
+              "text": "",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1795161829950,
+              "updatedAt": 1795161829950
+            }
+          ],
+          "nodeType": "bullet",
+          "createdAt": 1795161829950,
+          "updatedAt": 1795161829950
+        },
+        {
+          "id": "LMFYTfaQdU4E",
+          "text": "IT-AI",
+          "children": [
+            {
+              "id": "AarQCIbd20I2",
+              "text": "",
+              "children": [],
+              "nodeType": "bullet",
+              "createdAt": 1795161829950,
+              "updatedAt": 1795161829950
+            }
+          ],
+          "nodeType": "bullet",
+          "createdAt": 1795161829950,
+          "updatedAt": 1795161829950,
+          "isFolded": true
+        }
+      ],
+      "createdAt": 1795161821187,
+      "updatedAt": 1795161823352
+    },
+    {
+      "id": "PF4NjhoLh2Wp",
+      "text": "AI-Composer",
+      "children": [
+        {
+          "id": "95M7UyJ0D7to",
+          "text": "UT",
+          "children": [],
+          "createdAt": 1795161772615,
+          "updatedAt": 1795161776353
+        },
+        {
+          "id": "yCRpZHwBfQ03",
+          "text": "IT",
+          "children": [],
+          "createdAt": 1795161776931,
+          "updatedAt": 1795161779990
+        }
+      ],
+      "createdAt": 1795161761867,
+      "updatedAt": 1795161767746
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1795161039499,
+  "updatedAt": 1795161845397
+}

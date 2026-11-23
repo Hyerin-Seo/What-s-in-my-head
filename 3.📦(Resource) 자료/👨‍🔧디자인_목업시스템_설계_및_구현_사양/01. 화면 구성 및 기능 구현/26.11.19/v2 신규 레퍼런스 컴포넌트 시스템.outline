@@ -1,0 +1,844 @@
+{
+  "version": "1.0.0",
+  "id": "krPhtG4X6ZER",
+  "title": "v2 신규 레퍼런스 컴포넌트 시스템",
+  "rootNodes": [
+    {
+      "id": "7Rzc7uTyvSUp",
+      "text": "migrate spec",
+      "children": [
+        {
+          "id": "3ckyLxT2GfuY",
+          "text": "옵시디언",
+          "children": [
+            {
+              "id": "vY5tjaXYO4Ty",
+              "text": "File Explorer",
+              "children": [
+                {
+                  "id": "yyuDvCjGKWKI",
+                  "text": "거의 90프로",
+                  "children": [],
+                  "createdAt": 1795073564519,
+                  "updatedAt": 1795073567229
+                }
+              ],
+              "isFolded": false,
+              "createdAt": 1795073454730,
+              "updatedAt": 1795073494728
+            },
+            {
+              "id": "OU7VoIMx04Np",
+              "text": "탭 - layout",
+              "children": [],
+              "createdAt": 1795073495246,
+              "updatedAt": 1795073534302
+            },
+            {
+              "id": "uep7WGa93Z48",
+              "text": "File System",
+              "children": [],
+              "createdAt": 1795073500626,
+              "updatedAt": 1795073514083
+            },
+            {
+              "id": "j7r4blfUokTR",
+              "text": "Vault 시스템",
+              "children": [],
+              "createdAt": 1795073519241,
+              "updatedAt": 1795073530456
+            },
+            {
+              "id": "HC8HJinCMUyE",
+              "text": "문서 편집 엔진",
+              "children": [
+                {
+                  "id": "Cmg8V6dEXm7T",
+                  "text": "나중에 2D 엔진 고려",
+                  "children": [],
+                  "createdAt": 1795073583916,
+                  "updatedAt": 1795073591748
+                },
+                {
+                  "id": "Wav02oLkluNU",
+                  "text": ".outline을 정식 사양으로",
+                  "children": [],
+                  "createdAt": 1795073595522,
+                  "updatedAt": 1795073604647
+                }
+              ],
+              "createdAt": 1795073543624,
+              "updatedAt": 1795073548597
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1795073454730,
+          "updatedAt": 1795081599017
+        },
+        {
+          "id": "kwkUNIucMoVZ",
+          "text": "AGY-IDE",
+          "children": [
+            {
+              "id": "TGBjDQh6Io9r",
+              "text": "AI-Composer 와 그 주변 인터랙션",
+              "children": [
+                {
+                  "id": "22FY9SH5pqdv",
+                  "text": "File Explorer",
+                  "children": [],
+                  "createdAt": 1795078016905,
+                  "updatedAt": 1795078022503
+                },
+                {
+                  "id": "8x2S7Cz6wLby",
+                  "text": "Editor",
+                  "children": [],
+                  "createdAt": 1795078023183,
+                  "updatedAt": 1795078026144
+                }
+              ],
+              "createdAt": 1795073617092,
+              "updatedAt": 1795073639115
+            },
+            {
+              "id": "q1mmJk8NRD4d",
+              "text": "Harness Engineering",
+              "children": [
+                {
+                  "id": "9rqhLMyxRTdU",
+                  "text": "skill",
+                  "children": [],
+                  "createdAt": 1795078026825,
+                  "updatedAt": 1795078203690
+                },
+                {
+                  "id": "bLDggs28wDmI",
+                  "text": "mention",
+                  "children": [],
+                  "createdAt": 1795078162627,
+                  "updatedAt": 1795078203690
+                }
+              ],
+              "createdAt": 1795078183183,
+              "updatedAt": 1795078196952
+            },
+            {
+              "id": "CNfCOGcrnMLM",
+              "text": "Terminal - AI 실행 로그 띄워주면 되겠군",
+              "children": [],
+              "createdAt": 1795079726809,
+              "updatedAt": 1795079739086
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1795073575402,
+          "updatedAt": 1795081599017
+        },
+        {
+          "id": "U6xq3vg69I7X",
+          "text": "VibeDocStudio",
+          "children": [
+            {
+              "id": "Wx8uasEQSw1r",
+              "text": "Editor 및 vdoc",
+              "children": [
+                {
+                  "id": "6vvWPtHVY1Ss",
+                  "text": "block base",
+                  "children": [],
+                  "createdAt": 1795081471514,
+                  "updatedAt": 1795081473867
+                }
+              ],
+              "createdAt": 1795081356664,
+              "updatedAt": 1795081363240
+            },
+            {
+              "id": "sdYWzII1t3mm",
+              "text": "AI-Composer",
+              "children": [],
+              "createdAt": 1795081363646,
+              "updatedAt": 1795081409007
+            },
+            {
+              "id": "ltK2x52F2ING",
+              "text": "Outline",
+              "children": [
+                {
+                  "id": "lAITR91s0C32",
+                  "text": "Project - document - page - element - slot",
+                  "children": [],
+                  "createdAt": 1795081447566,
+                  "updatedAt": 1795081466053
+                }
+              ],
+              "createdAt": 1795081441172,
+              "updatedAt": 1795081447133
+            },
+            {
+              "id": "gVy1KrQm6qVp",
+              "text": "Inline-AI",
+              "children": [],
+              "createdAt": 1795081488974,
+              "updatedAt": 1795081494263
+            },
+            {
+              "id": "lUO9WyrvC6F9",
+              "text": "Reference - Resource Tab -> 이건 좀 적절히 변형을 하면 좋을텐데...",
+              "children": [],
+              "createdAt": 1795081388229,
+              "updatedAt": 1795081548237
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1795081343293,
+          "updatedAt": 1795081599017
+        }
+      ],
+      "createdAt": 1795081569721,
+      "updatedAt": 1795081585422
+    },
+    {
+      "id": "BEIMnDvo94V1",
+      "text": "신규 Assembly 사양",
+      "children": [
+        {
+          "id": "3kszMz04OSGY",
+          "text": "asset schema",
+          "children": [],
+          "createdAt": 1795081648129,
+          "updatedAt": 1795081655229
+        },
+        {
+          "id": "4EptA0AMcRwQ",
+          "text": "importers",
+          "children": [],
+          "createdAt": 1795081664262,
+          "updatedAt": 1795081667278
+        },
+        {
+          "id": "LWDxLyByBpzQ",
+          "text": "Research -> Collection -> Resource 의 체계적 관리",
+          "children": [],
+          "createdAt": 1795082035044,
+          "updatedAt": 1795082063182
+        }
+      ],
+      "createdAt": 1795081548467,
+      "updatedAt": 1795081568819
+    },
+    {
+      "id": "RhEs94fcFxId",
+      "text": "필수 동작 기준 (단동 / 연동 / 자율)",
+      "children": [
+        {
+          "id": "Ms896Nquna5I",
+          "text": "1. 단동 (Standalone — 결정론적 부품 검증: Pass / Fail)",
+          "children": [
+            {
+              "id": "Zdynr73QMbxK",
+              "text": "Vault & File System",
+              "children": [
+                {
+                  "id": "HClnFjULrA23",
+                  "text": "로컬/가상 볼트 폴더 트리 로드 · 저장 · 변경 감지(watch)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "wEFhtdQDtQUW",
+                  "text": "Research -> Collection -> Resource 단계별 폴더/자료 구조 관리",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "odejgleDb6Df",
+              "text": "File Explorer (Obsidian 90%+)",
+              "children": [
+                {
+                  "id": "SlzeEphPpFDz",
+                  "text": "폴더/파일 생성 · 인라인 리네임(F2) · 삭제 · 복제 · 우클릭 컨텍스트 메뉴",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "SlGshimjYYz8",
+                  "text": "정렬 · 모두 접기/펼치기 · 다중 선택 · 드래그 앤 드롭 이동",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "CYWcabxH3AZx",
+                  "text": "세로 인덴트 가이드선 · 확장자 배지(.outline / .vdoc / asset)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "uVnccIjqE857",
+              "text": "Tab & Split Layout (Obsidian 90%+)",
+              "children": [
+                {
+                  "id": "PpA6WVvdVnAs",
+                  "text": "멀티 탭 열기 · 닫기 · 닫은 탭 복원(Ctrl+Shift+T) · 고정(Pin)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "89jGRHtnaMoY",
+                  "text": "좌/우/상/하 무한 분할 · 경계선 리사이즈 · 탭 드래그 도킹",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "Sdn9wYbJnFCh",
+              "text": "문서 편집 엔진 (확장자 기반 FileView 구조)",
+              "children": [
+                {
+                  "id": "ASFkBEtss1HA",
+                  "text": ".outline 정식 사양 단독 편집 (불릿 뼈대 작성 · 계층 조정 · 접기)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "WEKiqw94ABQH",
+                  "text": ".vdoc (block base) 단독 편집 (Project - document - page - element - slot)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "yJBG2ZefkKJI",
+                  "text": ".md / 이미지(검수판·캡처) 뷰어 및 향후 2D 엔진 확장 슬롯 확보",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "fbIQqJJQsp1s",
+              "text": "신규 Assembly (importers · asset schema · 에셋 허브)",
+              "children": [
+                {
+                  "id": "4uTRiE46k45v",
+                  "text": "importers: hwpx 등에서 자주 쓰는 표·블록 양식을 원형(병합·선·비율) 유지하며 추출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "I4Zqu34vHTbq",
+                  "text": "asset schema: 추출 양식을 재사용 가능한 표준 에셋 규격(구조·스타일·메타태그)으로 등록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "GDMQlnrcEM7D",
+                  "text": "에셋 허브 (Reference-Resource Tab 변형): 등록된 에셋 조회 · 미리보기 · 분류",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "qNgZoDD0qAh4",
+              "text": "AGY-IDE 레이어",
+              "children": [
+                {
+                  "id": "jfy2QD85l2m7",
+                  "text": "AI-Composer 입력 및 응답 스트림",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "RfRTzmhQzt87",
+                  "text": "Harness UI: /skill 호출 목록 · @mention 대상 검색 및 주입",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "CR4UOrPtsaWD",
+                  "text": "Inline-AI: 블록/문단 부분 수정 요청 및 Diff 수락/거절 UI",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "6soQXC699TCS",
+                  "text": "Terminal: AI 실행 스텝 · CLI 스크립트 실행 로그 실시간 출력",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1795084816009,
+          "updatedAt": 1795084816009
+        },
+        {
+          "id": "6Qy8n043NdO0",
+          "text": "2. 연동 (Integration — 결정론적 배관·계약 검증: Pass / Fail, Mock 응답 포함)",
+          "children": [
+            {
+              "id": "TrbOHdoClbKj",
+              "text": "[배관 1] 자산화 파이프: hwpx -> importers -> asset schema -> Vault & 에셋 허브",
+              "children": [
+                {
+                  "id": "dPUaWjN1yBfc",
+                  "text": "hwpx 표 양식을 import하면 asset schema로 볼트에 저장되고 에셋 허브에 즉시 표출",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "suNuljtWQ1ot",
+              "text": "[배관 2] 탐색·자료 동기화: Research -> Collection -> Resource <-> Vault / File Explorer / Tab",
+              "children": [
+                {
+                  "id": "n5kLRc8nxMD9",
+                  "text": "파일 생성 · 리네임 · 이동 · 삭제 · 승격이 File Explorer와 열린 Tab Layout에 즉시 반영",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "o1uEXzWex0R3",
+                  "text": "에이전트/외부 스크립트가 생성한 작업 폴더(설계_노트.md · 레퍼런스/ · 리소스/ · 캡처/ · 근거점검.md)가 Explorer에 실시간 반영",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "YLjHHUNLCMMU",
+              "text": "[배관 3] 서식화 변환 파이프: .outline 뼈대 <-> 에셋 허브 <-> .vdoc",
+              "children": [
+                {
+                  "id": "VAvps0mekLgd",
+                  "text": "에셋 허브에서 특정 assetId를 선택하면 .outline 데이터가 깨지지 않고 .vdoc 표/블록 슬롯(element/slot)에 매핑·렌더링",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "T1zQmbaWYkpz",
+              "text": "[배관 4] AI 실행·관측 파이프: AI-Composer / Harness -> Tool·Script 실행 -> Editor 반영 -> Terminal 로그",
+              "children": [
+                {
+                  "id": "KWBzEMWMnV1U",
+                  "text": "/skill · @mention · 선택 영역 컨텍스트가 AI-Composer로 정확히 전달",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "JmRml4Yp4sO5",
+                  "text": "AI의 파일·스크립트·툴 호출 결과가 Vault/.vdoc(또는 Diff Staging)에 반영되고, 하단 Terminal에 로그가 남아 클릭 시 해당 파일/위치로 점프",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "wuv2jJP5N8MC",
+              "text": "[배관 5] 부분 수정·스왑 파이프: Editor <-> Inline-AI <-> 에셋 허브",
+              "children": [
+                {
+                  "id": "vX6LI38MeqSm",
+                  "text": "특정 블록만 다른 에셋으로 스왑하거나 Inline-AI Diff 제안을 수락/거절할 때 나머지 블록이 깨지지 않고 반영",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1795084816009,
+          "updatedAt": 1795084816009
+        },
+        {
+          "id": "QtsMnM8bLODj",
+          "text": "3. 자율 (Agentic Eval — AI 판단·오케스트레이션·품질 검증: 권한 · 동작 · 결과)",
+          "children": [
+            {
+              "id": "mL4madmcdN9d",
+              "text": "① 권한 경계 (어디까지 스스로 건드릴 수 있는가)",
+              "children": [
+                {
+                  "id": "IiZLYlKtXNdU",
+                  "text": "자율 읽기 (허가 불필요): 활성 .outline/.vdoc, Research->Collection->Resource 자료, @mention 파일, asset schema 풀, /skill 및 requester_preferences.md",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "l3mNGarI1LhD",
+                  "text": "자율 쓰기 (안전 구역 / 1국면 작업 폴더): 작업 폴더 내 설계_노트.md · 레퍼런스/ · 리소스/ · 캡처/ · 인용/ · 이미지/ 생성·갱신, 비어 있는 골격 초안 채움, Terminal 로그 기록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "Mw3t4JIMIaRw",
+                  "text": "국면·승인 게이트 (명시적 신호 전 금지): 1국면(뼈대 대화)에서 사용자 명시 요청('작성해줘') 전 최종 리포트 파일 생성 금지 · 첫 뼈대 확인 전 깊은 수집 폭주 금지 · 확정된 .outline/.vdoc 수정 및 에셋 교체는 Diff/Staging 승인 후 반영 · 취향 파일은 명시 확인분만 기록",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "kZFG8MJF7c9K",
+                  "text": "절대 금지 (Hard Guardrail): 작업 폴더 외부 파일 오염(무가비지) · 원본 파일(.outline/hwpx/원천 자료) 임의 삭제 · HOW(레퍼런스)와 WHAT(리소스) 혼합 복사 · 비공개/로그인/차단 우회",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "4QKMy8zRX48d",
+              "text": "② 수행 동작 (어떤 동작을 스스로 수행해야 하는가)",
+              "children": [
+                {
+                  "id": "6UWPDPMXmKS6",
+                  "text": "하위 스킬 오케스트레이션: HOW(레퍼런스·에셋 선정)와 WHAT(근거·사진·인용 수집) 역할을 분리해 조합 실행 (예: topic_blog_report -> blog_reference_study + resource_harvest)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "FueqpcrgrQ4F",
+                  "text": "CLI·수집 도구 자율 실행: 검색 + scripts/*.py(캡처·원문 인용·이미지 검수판·수집)를 실제 실행해 본 것만 사실로 확보 (미방문/미확인 명시)",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "bSIOjYUeLWVx",
+                  "text": "에셋 자율 매칭 & 슬롯 채움: '초안 작성해봐' 지시 또는 서식화 시점에 골격 성격을 분류해 볼트 내 적절한 에셋(hwpx 표 양식 등)을 선정하고 element/slot에 매핑",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "RFgPjqOoz1fb",
+                  "text": "사고 영속화 & 짧은 체크포인트 보고: 중간 판단·정해진 것/열린 것을 설계_노트.md에 유지(세션 이어하기 가능), 채팅에는 바뀐 뼈대와 결정 필요 항목 1~2개만 짧게 보고 후 대기",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "jjlgqwm7PrZ2",
+                  "text": "자가 기계 점검 후 완료 보고: 스스로 통과 선언 금지 — evidence_check.py(0건) · ref_compare.py 등 점검 도구를 돌려 검증한 뒤 완료 보고",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            },
+            {
+              "id": "D3H4k7GCiqWd",
+              "text": "③ 기대 결과 & 합격 기준 (그 결과는 무엇이 되어야 하는가)",
+              "children": [
+                {
+                  "id": "QaQC3aGsAh5X",
+                  "text": "볼트 산출물 패키지: 작업 폴더 내 설계_노트.md · 레퍼런스/ · 리소스/ · 근거점검.md · 최종 문서(.md / .vdoc)가 규격대로 완비되고 미사용 가비지 정리 완료",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "xw4VoWUkNkLd",
+                  "text": "기계적 게이트 (0건 통과): 근거 없는 값 0 · 원문에 없는 인용 0 · 빈 근거 파일 0 · 출처/대상 불일치 사진 0 · 제목-본문 숫자 불일치 0 · 권한 경계 위반 0",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "ZodWr3Ok9IiZ",
+                  "text": "판단 적중도: 서식화 시점 에셋 허브 추천 적중(Top-K) 및 원샷 초안에서 맥락에 맞는 hwpx 표·블록 에셋 자율 선택",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "MqMpyLEQnGiM",
+                  "text": "효능감 기준 (원샷 70%+ 만족도): '초안 작성해봐' 결과물이 다시 짜야 할 수준이 아니라 '70% 이상 됐고 나머지 30%만 스왑/Inline-AI로 다듬으면 끝'인 품질",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                },
+                {
+                  "id": "sQmonrPRSTv9",
+                  "text": "부분 수정 정밀도 (회귀 0): 30% 보정 요청 시 지적한 블록만 고치고 이미 확정된 70% 영역은 무손상 보존",
+                  "children": [],
+                  "isFolded": false,
+                  "createdAt": 1795084816009,
+                  "updatedAt": 1795084816009
+                }
+              ],
+              "isFolded": true,
+              "createdAt": 1795084816009,
+              "updatedAt": 1795084816009
+            }
+          ],
+          "isFolded": false,
+          "createdAt": 1795084816009,
+          "updatedAt": 1795084816009
+        }
+      ],
+      "isFolded": true,
+      "createdAt": 1795084816009,
+      "updatedAt": 1795084816009
+    },
+    {
+      "id": "yXGtTnU9TdEC",
+      "text": "리소스의 무마찰 포집 및 사용",
+      "children": [
+        {
+          "id": "24SlHvr9hhRQ",
+          "text": "Research -> 얼마든지 어디서나 발동 가능",
+          "children": [],
+          "createdAt": 1795142558582,
+          "updatedAt": 1795142637661
+        },
+        {
+          "id": "UXiab7gBl2mV",
+          "text": "Research 결과의 적절한 폴더링",
+          "children": [
+            {
+              "id": "W4DfFHEx4Tgf",
+              "text": "images랑 같은 전략을 사용하자!!",
+              "children": [],
+              "createdAt": 1795142692278,
+              "updatedAt": 1795142740419
+            }
+          ],
+          "createdAt": 1795142637872,
+          "updatedAt": 1795142691813
+        },
+        {
+          "id": "rClVlwpfGlXe",
+          "text": "Resource 혹은 picked",
+          "children": [
+            {
+              "id": "8zRzP1AH7VrB",
+              "text": "직접 끌어다놓음 - 어떤 문서에 사용된",
+              "children": [
+                {
+                  "id": "yqTq9ENqdz3H",
+                  "text": "1. 원본 리소스에 표기, 연결 정보에 관해",
+                  "children": [],
+                  "createdAt": 1795142789897,
+                  "updatedAt": 1795142799970
+                },
+                {
+                  "id": "JPfq3TlN8dBi",
+                  "text": "2. 따로 모아줌? 그 문서 하위에?",
+                  "children": [],
+                  "createdAt": 1795142800111,
+                  "updatedAt": 1795142809649
+                },
+                {
+                  "id": "OMDOqkNlBo6S",
+                  "text": "3. 문서에만 '연결 정보'를 관리만 해둠?",
+                  "children": [],
+                  "createdAt": 1795142810520,
+                  "updatedAt": 1795142821669
+                }
+              ],
+              "createdAt": 1795142774395,
+              "updatedAt": 1795142788790
+            }
+          ],
+          "createdAt": 1795142760031,
+          "updatedAt": 1795142773706
+        }
+      ],
+      "createdAt": 1795142544663,
+      "updatedAt": 1795142833113
+    },
+    {
+      "id": "1rkb9ky9pQcN",
+      "text": "위치 표기, 네비게이터 및 프로젝트 조망",
+      "children": [
+        {
+          "id": "wDeAeqxUr65R",
+          "text": "긴 페이지와 Elements의 자동 매핑 및 포커싱 관리",
+          "children": [],
+          "createdAt": 1795143263057,
+          "updatedAt": 1795143283961,
+          "file": {
+            "target": "Pasted image 20261120115423.png"
+          }
+        },
+        {
+          "id": "4jk9T0FAdfOw",
+          "text": "미니맵 (Minimap) - (VS Code / Monaco Editor 기준 공식 명칭, 우측에",
+          "children": [],
+          "createdAt": 1795143301831,
+          "updatedAt": 1795143323142
+        }
+      ],
+      "createdAt": 1795143255051,
+      "updatedAt": 1795143301428
+    },
+    {
+      "id": "dHWiZGiidW74",
+      "text": "부분 인터랙션이 가능할 것",
+      "children": [
+        {
+          "id": "wC6xDgL1PKaA",
+          "text": "webpage",
+          "children": [],
+          "createdAt": 1795143763097,
+          "updatedAt": 1795143765772
+        },
+        {
+          "id": "DVHJBrv10T1X",
+          "text": "pdf",
+          "children": [],
+          "createdAt": 1795143766000,
+          "updatedAt": 1795143767652
+        },
+        {
+          "id": "L7GtufytUziM",
+          "text": "hwpx",
+          "children": [],
+          "createdAt": 1795143767773,
+          "updatedAt": 1795143769311
+        },
+        {
+          "id": "QA3pgfzQge7S",
+          "text": "word",
+          "children": [],
+          "createdAt": 1795143769470,
+          "updatedAt": 1795143770821
+        },
+        {
+          "id": "QAOFWM6gHUp4",
+          "text": "ppt",
+          "children": [],
+          "createdAt": 1795143770923,
+          "updatedAt": 1795143771630
+        },
+        {
+          "id": "V2ql1yi4McYT",
+          "text": "excel 등등",
+          "children": [],
+          "createdAt": 1795143772135,
+          "updatedAt": 1795143774464
+        }
+      ],
+      "createdAt": 1795143754278,
+      "updatedAt": 1795143762947,
+      "isFolded": false
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1795073454730,
+  "updatedAt": 1795144897929
+}
