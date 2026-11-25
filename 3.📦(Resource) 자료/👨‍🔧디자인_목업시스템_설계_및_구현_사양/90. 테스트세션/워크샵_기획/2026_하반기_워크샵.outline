@@ -644,10 +644,10 @@
                     }
                   ],
                   "isFolded": true,
-                  "createdAt": 1794917118903,
-                  "updatedAt": 1795003495578,
                   "isCompleted": true,
-                  "completedAt": 1795003495578
+                  "completedAt": 1795003495578,
+                  "createdAt": 1794917118903,
+                  "updatedAt": 1795003495578
                 },
                 {
                   "id": "oCsDLME9W1KT",
@@ -950,11 +950,11 @@
                       "updatedAt": 1795004154029
                     }
                   ],
-                  "createdAt": 1794917120702,
-                  "updatedAt": 1795004155959,
+                  "isFolded": true,
                   "isCompleted": true,
                   "completedAt": 1795004155959,
-                  "isFolded": true
+                  "createdAt": 1794917120702,
+                  "updatedAt": 1795004155959
                 },
                 {
                   "id": "2aawJzmc6DDd",
@@ -1954,9 +1954,9 @@
                       "updatedAt": 1795005402636
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1795005392689,
-                  "updatedAt": 1795005412694,
-                  "isFolded": true
+                  "updatedAt": 1795005412694
                 },
                 {
                   "id": "P8FEbX6ojsSf",
@@ -1970,9 +1970,9 @@
                       "updatedAt": 1795006429814
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1795006415604,
-                  "updatedAt": 1795006520248,
-                  "isFolded": true
+                  "updatedAt": 1795006520248
                 },
                 {
                   "id": "f4doqRSrDo03",
@@ -1986,9 +1986,9 @@
                       "updatedAt": 1795006461208
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1795006457336,
-                  "updatedAt": 1795006521156,
-                  "isFolded": true
+                  "updatedAt": 1795006521156
                 },
                 {
                   "id": "ak0uzRyWBAc7",
@@ -2045,9 +2045,9 @@
                               "updatedAt": 1795000941533
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1795000928242,
-                          "updatedAt": 1795000937602,
-                          "isFolded": true
+                          "updatedAt": 1795000937602
                         },
                         {
                           "id": "2Bl83SnJi7Nf",
@@ -2064,16 +2064,16 @@
                               "id": "sytL3Gq4Rio8",
                               "text": "행사 기획 실무 양식 공유 ㄷㄷ",
                               "children": [],
-                              "createdAt": 1795002593763,
-                              "updatedAt": 1795002611004,
                               "file": {
                                 "target": "Pasted image 20261118204954.png"
-                              }
+                              },
+                              "createdAt": 1795002593763,
+                              "updatedAt": 1795002611004
                             }
                           ],
+                          "isFolded": true,
                           "createdAt": 1794921032682,
-                          "updatedAt": 1795000889594,
-                          "isFolded": true
+                          "updatedAt": 1795000889594
                         }
                       ],
                       "isFolded": false,
@@ -2104,9 +2104,9 @@
                       "updatedAt": 1795005222654
                     }
                   ],
+                  "isFolded": true,
                   "createdAt": 1795005196579,
-                  "updatedAt": 1795005200029,
-                  "isFolded": true
+                  "updatedAt": 1795005200029
                 }
               ],
               "isFolded": false,
@@ -2190,10 +2190,11 @@
                     }
                   ],
                   "createdAt": 1794918412157,
-                  "updatedAt": 1794918421617
+                  "updatedAt": 1794918421617,
+                  "isFolded": true
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1794918336806,
               "updatedAt": 1794918627916
             },
@@ -2210,7 +2211,8 @@
                 }
               ],
               "createdAt": 1794918400076,
-              "updatedAt": 1794918627916
+              "updatedAt": 1794918627916,
+              "isFolded": false
             },
             {
               "id": "PCEDGHLHWKpq",
@@ -2232,7 +2234,8 @@
                 }
               ],
               "createdAt": 1794918527025,
-              "updatedAt": 1794918686269
+              "updatedAt": 1794918686269,
+              "isFolded": true
             },
             {
               "id": "1reXuYSEziLm",
@@ -2254,7 +2257,8 @@
                 }
               ],
               "createdAt": 1794918724396,
-              "updatedAt": 1794918765660
+              "updatedAt": 1794918765660,
+              "isFolded": false
             }
           ],
           "isFolded": false,
@@ -2276,11 +2280,11 @@
               "id": "Qa7N42584Nxn",
               "text": "한 번씩 이런 플랭카드 같은 거 시킴...",
               "children": [],
-              "createdAt": 1795003089752,
-              "updatedAt": 1795003100154,
               "file": {
                 "target": "Pasted image 20261118205809.png"
-              }
+              },
+              "createdAt": 1795003089752,
+              "updatedAt": 1795003100154
             }
           ],
           "isFolded": false,
@@ -2318,30 +2322,31 @@
               "id": "xhKOfhOaT3tu",
               "text": "블로그 형식 고정! 나한테 이렇게 보여줘! 사진 + 특징 알아서 조사",
               "children": [],
-              "createdAt": 1795006312818,
-              "updatedAt": 1795006353976,
               "file": {
                 "target": "Pasted image 20261118215154.png"
-              }
+              },
+              "createdAt": 1795006312818,
+              "updatedAt": 1795006353976
             },
             {
               "id": "R03xFoPHnlSN",
               "text": "이걸 단순히 사이트 소개 레퍼런스로 해서 하라니까 진짜 기성 블로그처럼만 이미지랑 구성을 짰네 좀 더 소프트웨어 소개 및 ui 조작 같은 느낌으로 버전업 시키는게 좋을텐데",
               "children": [],
-              "createdAt": 1795008728560,
-              "updatedAt": 1795008773533,
               "file": {
                 "target": "Pasted image 20261118223209.png"
-              }
+              },
+              "createdAt": 1795008728560,
+              "updatedAt": 1795008773533
             }
           ],
+          "isFolded": true,
           "createdAt": 1795006292814,
-          "updatedAt": 1795006312584,
-          "isFolded": false
+          "updatedAt": 1795006312584
         }
       ],
       "createdAt": 1794999588178,
-      "updatedAt": 1794999595518
+      "updatedAt": 1794999595518,
+      "isFolded": false
     },
     {
       "id": "g1K9Nl3MyPQB",
@@ -2755,9 +2760,68 @@
       ],
       "createdAt": 1794992837510,
       "updatedAt": 1794992843218
+    },
+    {
+      "id": "u2g1A3S5LSOb",
+      "text": "클로드 카드 안내장 만들기",
+      "children": [
+        {
+          "id": "49mVXulpRZWJ",
+          "text": "표지 한줄 약속 ",
+          "children": [
+            {
+              "id": "p01eWM3PidXv",
+              "text": "상품명 소개",
+              "children": [],
+              "createdAt": 1795063502412,
+              "updatedAt": 1795063688335
+            },
+            {
+              "id": "sULcq14G3wcy",
+              "text": "한줄 소개",
+              "children": [],
+              "createdAt": 1795063506709,
+              "updatedAt": 1795063689762
+            }
+          ],
+          "createdAt": 1795063482560,
+          "updatedAt": 1795063683670
+        },
+        {
+          "id": "mVwGLXppRnIp",
+          "text": "혜택 한눈에",
+          "children": [
+            {
+              "id": "uLXbJlav6RF6",
+              "text": "다섯장을 한표로 보여주면 되려나?",
+              "children": [],
+              "createdAt": 1795063519204,
+              "updatedAt": 1795063527504
+            },
+            {
+              "id": "GpSRXAPzzFLa",
+              "text": "아 시발 몰라",
+              "children": [],
+              "createdAt": 1795063694632,
+              "updatedAt": 1795063700382
+            }
+          ],
+          "createdAt": 1795063488441,
+          "updatedAt": 1795063492928
+        },
+        {
+          "id": "27prD6ixpRn7",
+          "text": "구독 간편 결제 할인",
+          "children": [],
+          "createdAt": 1795063493143,
+          "updatedAt": 1795063501590
+        }
+      ],
+      "createdAt": 1795063470282,
+      "updatedAt": 1795063482335
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1794916044524,
-  "updatedAt": 1795008773534
+  "updatedAt": 1795063700382
 }

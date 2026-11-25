@@ -10,7 +10,7 @@
   "timeFormat": "HH:mm",
   "hideSyntaxMarkers": false,
   "snapSelectionToBlocks": false,
-  "blockKeys": true,
+  "blockKeys": false,
   "plusHandle": true,
   "slashMenu": true,
   "slashTrigger": "/",

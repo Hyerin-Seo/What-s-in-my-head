@@ -2519,9 +2519,16 @@
                   "children": [],
                   "createdAt": 1794202612270,
                   "updatedAt": 1794202623782
+                },
+                {
+                  "id": "9oBaWfnQ3cDV",
+                  "text": "즐! 앵! 숑!",
+                  "children": [],
+                  "createdAt": 1795166549296,
+                  "updatedAt": 1795166565667
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1794202521028,
               "updatedAt": 1794202608005
             },
@@ -2533,7 +2540,7 @@
               "updatedAt": 1794530655346
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793765288631,
           "updatedAt": 1793848827721
         },
@@ -2614,9 +2621,9 @@
           "updatedAt": 1794199879457
         }
       ],
+      "isFolded": false,
       "createdAt": 1793848816376,
-      "updatedAt": 1793848822724,
-      "isFolded": true
+      "updatedAt": 1793848822724
     },
     {
       "id": "4abciIbktN7B",
@@ -2722,7 +2729,7 @@
               "updatedAt": 1794454872304
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1793848925177,
           "updatedAt": 1793848928993
         },
@@ -2891,7 +2898,7 @@
                           "updatedAt": 1794291469431
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1794291450826,
                       "updatedAt": 1794291452125
                     },
@@ -3195,13 +3202,13 @@
                               "updatedAt": 1794293699214
                             }
                           ],
-                          "isFolded": true,
+                          "isFolded": false,
                           "note": "디자인을 건드릴 수 없다는 관점에서는 \"안전한 읽기 전용(Read-Only)\"이 맞습니다.\n\n디자이너가 만들어 둔 화면을 망가뜨리지 않고 개발에만 필요한 정보를 안전하게 꺼내 쓰도록 설계된 모드입니다.\n\n1. 못 하는 것 (디자인 수정 불가 ❌)\n요소를 클릭하고 드래그해도 위치가 옮겨지지 않습니다. (실수로 삐뚤어질 걱정 없음)\n텍스트를 더블클릭해도 내용이 편집되지 않습니다.\n색상, 폰트, 크기, 오토레이아웃 등 디자인 속성을 변경할 수 없습니다.\n2. 할 수 있는 것 (개발 관련 작업 및 데이터 추출 ⭕)\n\n완전한 뷰어(View-only)와 달리 개발 협업을 위한 작업들은 가능합니다:\n\n수치/간격 측정: 마우스만 올리면 요소 간 간격(px), 패딩, 마진 자동 표시\n코드 및 CSS 복사: CSS, Tailwind, SwiftUI, Compose 등 코드로 바로 복사\n에셋(Asset) 추출: 아이콘, 이미지 등을 SVG / PNG / WebP로 바로 Export\n개발 상태 변경: \"Ready for dev(개발 대기)\", \"Completed(개발 완료)\" 상태 표시/변경\n협업/링크 연결: 댓글(Comment) 작성, Jira 티켓/GitHub PR 링크 연결\n\n💡 한 줄 요약: \"디자인 원본은 절대 망가뜨릴 수 없는 안전 모드이면서, 코드·치수·이미지 추출은 마음껏 할 수 있는 개발 전용 모드\"로 보시면 됩니다.",
                           "createdAt": 1794291518365,
                           "updatedAt": 1794293149461
                         }
                       ],
-                      "isFolded": true,
+                      "isFolded": false,
                       "createdAt": 1794291501340,
                       "updatedAt": 1794291512307
                     },
@@ -3226,7 +3233,7 @@
                       "updatedAt": 1794294804838
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1794289407935,
                   "updatedAt": 1794392192305
                 },
@@ -3642,7 +3649,7 @@
                       "updatedAt": 1794387118392
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1794375337232,
                   "updatedAt": 1794392192306
                 },
@@ -3819,17 +3826,17 @@
                       "updatedAt": 1794390849972
                     }
                   ],
-                  "isFolded": true,
+                  "isFolded": false,
                   "createdAt": 1794387300389,
                   "updatedAt": 1794392192306
                 }
               ],
-              "isFolded": true,
+              "isFolded": false,
               "createdAt": 1794392179374,
               "updatedAt": 1794392185893
             }
           ],
-          "isFolded": true,
+          "isFolded": false,
           "createdAt": 1794200129193,
           "updatedAt": 1794297425676
         },
@@ -3851,5 +3858,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793764849322,
-  "updatedAt": 1794565247595
+  "updatedAt": 1795515437699
 }
