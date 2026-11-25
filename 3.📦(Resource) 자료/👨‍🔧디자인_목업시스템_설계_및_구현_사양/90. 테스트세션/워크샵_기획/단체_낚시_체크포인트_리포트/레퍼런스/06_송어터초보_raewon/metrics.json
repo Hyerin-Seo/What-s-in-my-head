@@ -1,0 +1,78 @@
+{
+ "chars": 1148,
+ "paragraphs": 29,
+ "avg_para_chars": 36.9,
+ "max_para_chars": 95,
+ "long_para_ratio": 0.0,
+ "bold_per_para": 0.16,
+ "bullet_ratio": 0.06,
+ "callouts": 0,
+ "avg_sentence_chars": 27.0,
+ "numbers_per_100": 2.26,
+ "tables": 0,
+ "source_marks": 0,
+ "quote_marks": 0,
+ "headings": 1,
+ "heading_levels": [
+  2
+ ],
+ "heading_sequence": [
+  "세월 낚을 시간이 으디있나!"
+ ],
+ "conclusion_first": false,
+ "ending_style": {
+  "평서(~다)": 17,
+  "명사형 종결": 8
+ },
+ "emoji": 0,
+ "questions": 0,
+ "exclamations": 1,
+ "block_kinds": [
+  "caption",
+  "divider",
+  "gallery",
+  "heading",
+  "image",
+  "text"
+ ],
+ "marker_scheme": [
+  "box"
+ ],
+ "meta_doc_no": false,
+ "meta_approval": false,
+ "meta_summary": false,
+ "meta_footnote": false,
+ "meta_version": false,
+ "sections": 1,
+ "section_signature": "H P HR P IMG CAP IMG CAP P IMG CAP IMG CAP P G P G P G P IMG CAP P IMG CAP G P IMG CAP P IMG CAP G P G P IMG CAP HR IMG P",
+ "signature_share": 1.0,
+ "photo_signature": "H P HR P PHOTO CAP PHOTO CAP P PHOTO CAP PHOTO CAP P PHOTO P PHOTO P PHOTO P PHOTO CAP P PHOTO CAP PHOTO P PHOTO CAP P PHOTO CAP PHOTO P PHOTO P PHOTO CAP HR PHOTO P",
+ "photo_first_ratio": 0.0,
+ "link_end_ratio": 0.0,
+ "photo_signature_share": 1.0,
+ "opening": "",
+ "paras_per_section": 13.0,
+ "photos": 22,
+ "photos_per_section": 22.0,
+ "galleries": 6,
+ "gallery_sizes": [
+  2
+ ],
+ "photo_text_ratio": 1.69,
+ "captions": 9,
+ "caption_ratio": 0.56,
+ "gallery_share": 0.38,
+ "stickers": 0,
+ "link_cards": 0,
+ "link_cards_per_section": 0.0,
+ "link_thumb_ratio": 0.0,
+ "dividers": 2,
+ "boxes": 0,
+ "hero": false,
+ "highlight_per_para": 0.0,
+ "color_accents": 0,
+ "accent_per_para": 0.0,
+ "centered_ratio": 0.0,
+ "question_headings": 0.0,
+ "layout_tokens": "H P HR P IMG CAP IMG CAP P IMG CAP IMG CAP P G2 P G2 P G2 P IMG CAP P IMG CAP G2 P IMG CAP P IMG CAP G2 P G2 P IMG CAP HR IMG P"
+}

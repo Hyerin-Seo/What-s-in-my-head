@@ -1,0 +1,594 @@
+[
+ {
+  "kind": "heading",
+  "level": 2,
+  "text": "맞벌이 부부의 우당탕탕 하루살기",
+  "sourceY": 694.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "캠핑을 시작하고 나서 가장 많이 검색했던 것 중 하나가 바로 캠핑 준비물이었다.\n처음에는 텐트랑 의자, 테이블 정도만 있으면 되는 줄 알았는데...\n막상 캠핑을 준비하다 보니 필요한 물건이 왜 이렇게 많은 건지! ㅎㅎ",
+  "sourceY": 738.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "처음 캠핑을 시작할 때 중고 캠핑용품을 일괄 구매했는데, 막상 확인해 보니 곰팡이가 있는 장비도 있었고 랜턴 8개 중 5개는 작동하지 않았다.\n그때부터 캠핑용품은 하나씩 제대로 확인하고 준비해야겠다는 생각이 들었다.\n그렇게 직접 정리하기 시작한 초보 캠핑 준비물 전체 체크리스트!",
+  "sourceY": 819.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "우리 가족은 3인 가족이고, 당일치기 캠핑을 주로 다니지만 1박 캠핑까지 고려해서 목록을 만들었다.",
+  "sourceY": 927.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "아직 구매하지 않은 물건도 있고, 캠핑을 다니면서 필요성을 느껴 추가한 물건도 있다.\n초보 캠퍼라면 참고해서 본인에게 필요한 장비만 골라 준비하면 좋을 것 같다.\n초보 캠퍼가 되기 위해 지금까지 구매한 캠핑용품 비용을 계산해 봤더니 무려 약 72만 원! ㅎㅎ",
+  "sourceY": 954.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "🥕마켓에서 새상품이나 중고제품을 구매하고, 집에 있던 물건도 최대한 활용했는데 생각보다 비용이 꽤 들었다.",
+  "sourceY": 1062.0
+ },
+ {
+  "kind": "table",
+  "level": 0,
+  "text": "카테고리 | 금액 | 텐트·설치 | 307,500원 | 생활·편의 | 119,000원 | 조명·전기 | 158,000원 | 취사·식사 | 78,460원 | 숙박·방한 | 55,000원 | 총합계 | 717,960원",
+  "sourceY": 1120.8
+ },
+ {
+  "kind": "divider",
+  "level": 0,
+  "text": "",
+  "sourceY": 1498.8,
+  "media": {
+   "variant": "line"
+  }
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "01. 캠핑 준비물, 전부 다 사야 할까?\n캠핑용품을 알아보면서 가장 고민했던 부분이다.\n인터넷에서 추천하는 제품을 하나씩 담다 보면 끝이 없다.",
+  "sourceY": 1558.8
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "그렇다고 처음부터 모든 장비를 구매할 필요는 없을 것 같아서 우리 가족에게 필요한 정도에 따라 다섯 단계로 구분했다.",
+  "sourceY": 1647.0
+ },
+ {
+  "kind": "table",
+  "level": 0,
+  "text": "구분 | 의미 | 필수 | 해당 캠핑 방식에서 반드시 필요한 준비물 | 중요 | 없으면 불편할 가능성이 큰 준비물 | 추천 | 직접 준비해 두면 활용도가 높은 준비물 | 편함 | 없어도 되지만 있으면 편리한 준비물 | 선택 | 캠핑 스타일이나 계절에 따라 선택할 준비물",
+  "sourceY": 1731.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "여기서 중요한 점!\n필수 준비물이라고 해서 모든 캠핑장에서 반드시 가져가야 하는 건 아니다.\n예를 들어 텐트가 설치되어 있는 캠핑장이라면 개인 텐트가 필요 없고, 그릴을 대여할 수 있다면 화로대를 따로 준비하지 않아도 된다.",
+  "sourceY": 2034.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "아래 체크리스트는 일반적인 개인 장비 캠핑을 기준으로 정리한 목록이다.",
+  "sourceY": 2142.0
+ },
+ {
+  "kind": "divider",
+  "level": 0,
+  "text": "",
+  "sourceY": 2229.0,
+  "media": {
+   "variant": "line"
+  }
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "02. 텐트·설치 준비물 체크리스트\n캠핑을 시작하려면 가장 먼저 준비해야 하는 텐트와 설치용품!",
+  "sourceY": 2289.0
+ },
+ {
+  "kind": "table",
+  "level": 0,
+  "text": "준비물 | 우선순위 | 용도 및 체크 포인트 | 텐트·폴대·팩·스트링 | 필수 | 기본 쉼터 | 팩망치 | 필수 | 팩 설치 | 데크팩 | 필수 | 데크 사이트 규격 확인, 데크에 텐트 설치하려면 필수품임. 다이소 데크는 두꺼워서 잘 안들어가는경우가 많음 (인터넷에서 파는오징어팩 추천) | 그라운드시트 | 중요 | 습기 및 오염 방지 | 카라비너 | 추천 | 장비 보조 고정 및 정리 | 타프 | 선택 | 그늘 및 비 대비",
+  "sourceY": 2380.2
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "※ 데크팩과 일반 팩은 사이트 바닥 종류에 맞게 준비하면 된다.\n우리가 준비한 제품",
+  "sourceY": 2824.2
+ },
+ {
+  "kind": "list",
+  "level": 0,
+  "text": "텐트: 제드 아그네스 데크돔3 / 297,000원\n데크팩: 6,500원\n카라비너: 다이소 구매 / 4,000원",
+  "sourceY": 2878.2
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "데크팩",
+  "sourceY": 2979.2,
+  "media": {
+   "count": 1,
+   "role": "sticker",
+   "widthPx": 126.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTFfMjYx/MDAxNzk0MzY2OTgyMDM1.8e7Xuw2ocCT0QJXOjBWwB-ovZrfGMC_l7O5BwYSw5Ocg.9YolKhXRBBc4guHNPO4g4_1H1hm3w_WfYyg7zkhdlnkg.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "데크팩"
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "카라비너",
+  "sourceY": 3143.7,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 211.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTFfMTM1/MDAxNzk0MzY3MDM4MjM3.INZ1rw8DT0Oe4afNQVB8cymt5DcXJ7CkFMC-ckQ6xLwg.FQFIB4ghAap7Vvcm8UTi1KlNyxJ3zmZ53fFLYCoVTxkg.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "카라비너"
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "텐트는 고민 끝에 제드 제품을 선택했다.\n초보자라 쭈굴쭈굴 텐트였지만...ㅎㅎ\n캠핑을 다니면서 설치 방법에도 조금씩 익숙해지는 중이다.",
+  "sourceY": 3317.6
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "그라운드시트는 텐트 구성품에 포함된 경우도 있으니 별도로 구매하기 전에 확인하면 좋겠다.\n제드 아그네스 데크돔3 돔텐트 3~5m 데크용 미니멀 캠핑 텐트 알루미늄폴 결로방지 : 제드샵",
+  "sourceY": 3398.6
+ },
+ {
+  "kind": "link-card",
+  "level": 0,
+  "text": "제드 아그네스 데크돔3 돔텐트 3~5m 데크용 미니멀 캠핑 텐트 알루미늄폴 결로방지 : 제드샵\n[제드샵] 터널형텐트, 차박텐트, 다양한 캠핑용품을 제조 판매하는 제드",
+  "sourceY": 3752.6,
+  "media": {
+   "url": "https://brand.naver.com/zednation/products/13654805560?nl-query=%EC%95%84%EA%B7%B8%EB%84%A4%EC%8A%A4+%EB%8F%943&nl-ts-pid=jY6%2BKdqX5EwssmL7AMo-510201&NaPm=ct%3Dmwabwizk%7Cci%3Dee12d727333cc3b9ca8cb3d36f7bdbc92d67ad48%7Ctr%3Dsls%7Csn%3D12410258%7Chk%3D7a33d8d52b52bae4281c3d934bd28274befd3a10",
+   "thumbnail": true,
+   "domain": "brand.naver.com"
+  }
+ },
+ {
+  "kind": "divider",
+  "level": 0,
+  "text": "",
+  "sourceY": 3921.6,
+  "media": {
+   "variant": "line"
+  }
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "03. 생활·편의 준비물 체크리스트\n텐트만큼이나 중요한 게 캠핑장에서 편하게 생활할 수 있는 장비다.",
+  "sourceY": 3981.6
+ },
+ {
+  "kind": "table",
+  "level": 0,
+  "text": "준비물 | 우선순위 | 용도 및 체크 포인트 | 캠핑 의자 | 중요 | 가족 인원에 맞게 준비 | 캠핑 테이블 | 중요 | 식사 및 물품 정리 | 자충매트 등 매트 | 중요 | 바닥 쿠션, 매트 없이 파쇄석(돌) 사이트는 불가하다고 봄. | 자충베개 | 선택 | 취침 시 사용 | 에어펌프 | 편함 | 자충매트 공기 주입·배출 | 수납박스(폴딩수납박스) | 편함 | 캠핑 장비 정리 | 보조 테이블 | 추천 | 추가 작업 공간",
+  "sourceY": 4072.8
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "우리가 준비한 제품",
+  "sourceY": 4489.8
+ },
+ {
+  "kind": "list",
+  "level": 0,
+  "text": "카즈미 캠핑의자: 기존 제품 사용 + 1개 추가 구매(🥕새상품) / 15,000원\n캠핑 테이블(쿠팡): 12,000원\n파크론 자충식 클라우드 캠핑 에어매트(🥕): 더블 1개 + 싱글 1개 / 55,000원\n자충베개(🥕): 10,000원\n캠핑스쿨 에어펌프(🥕): 15,000원\n폴딩수납박스(쿠팡): 12,000원",
+  "sourceY": 4516.8
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "캠핑 의자는 기존에 있던 제품을 활용했다.\n자충매트도 당근마켓에서 구매했다.\n캠핑을 시작하면서 느낀 건, 모든 장비를 새것으로 구매하지 않아도 충분히 캠핑을 즐길 수 있다는 것!",
+  "sourceY": 4713.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "다만 중고 제품은 상태와 구성품을 꼼꼼하게 확인하는 게 중요하다.",
+  "sourceY": 4794.0
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "캠핑의자 + 테이블",
+  "sourceY": 4841.0,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 698.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTBfMTM0/MDAxNzk0MjkxMDY2OTAw.DTS2OpbXNObCvWADjeEyZFppjHopg7N7cO3wSzJ30L0g.gzlONznwH3dx0tEYnOe0JOS-fmr79J_OH_JGJfRq11wg.PNG/KZM_%EC%BA%A0%ED%95%91_%EC%9D%98%EC%9E%90%EC%99%80_%EC%9A%B0%EB%93%9C_%ED%85%8C%EC%9D%B4%EB%B8%94_%EC%84%B8%ED%8A%B8.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "캠핑의자 + 테이블"
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "자충매트 2인 + 1인",
+  "sourceY": 5024.7,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 698.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTBfMjMx/MDAxNzk0MjkxMjYwMzUw.3G6nOtx2flmWk7R4vEdShLkpqFKLPvIoZ5LY_U8mB7wg.8nPOyErl4b1YrVuRNw9ZRNrulZ3L8ncaEoGbz2QWXxsg.PNG/%EB%B3%B4%EB%9D%BC%EB%B9%9B_%EC%BA%A0%ED%95%91_%ED%85%90%ED%8A%B8%EC%99%80_%ED%8C%A8%ED%84%B4_%EB%A7%A4%ED%8A%B8%EB%A6%AC%EC%8A%A4.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "자충매트 2인 + 1인"
+ },
+ {
+  "kind": "divider",
+  "level": 0,
+  "text": "",
+  "sourceY": 5416.6,
+  "media": {
+   "variant": "line"
+  }
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "04. 조명·전기 준비물 체크리스트\n개인적으로 캠핑 준비물 중 중요성을 가장 크게 느꼈던 카테고리다.\n바로 랜턴!",
+  "sourceY": 5476.6
+ },
+ {
+  "kind": "table",
+  "level": 0,
+  "text": "준비물 | 우선순위 | 용도 및 체크 포인트 | 메인 랜턴(스탠딩 되는 걸로 삼) | 필수 | 사이트 외부 조명 | 이너텐트 랜턴 | 필수 | 텐트 내부 조명 | 요리용 랜턴·스탠드 | 중요 | 야간 조리 시 사용 | 무드등·감성 조명 | 선택 | 분위기 연출 | 캠핑용 릴선 | 필수* | 전기 사이트 이용 시 | 멀티탭 | 선택 | 전기 연결 및 안전 규격 확인 | 보조배터리 | 선택 | 휴대기기 충전 | 블루투스 스피커 | 선택 | 주변 사이트 소음 배려",
+  "sourceY": 5594.8
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "*릴선은 전기를 사용하는 캠핑 방식에서 필요한 장비이며, 전기 사용이 불가능한 사이트에는 해당하지 않는다.\n구매 및 준비 내역",
+  "sourceY": 6032.8
+ },
+ {
+  "kind": "list",
+  "level": 0,
+  "text": "메인 랜턴(🥕새상품): 80,000원\n요리용 랜턴(🥕새상품): 40,000원\n이너텐트 랜턴: 추가 구매 예정\n캠핑용 릴선(트레이더스): 38000원",
+  "sourceY": 6086.8
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "처음 중고 캠핑용품을 구매했을 때 랜턴이 여러 개 들어 있어서 충분할 거라고 생각했다.\n그런데 8개 중 5개가 고장!\n결국 제대로 사용할 수 있는 랜턴이 생각보다 적었다.",
+  "sourceY": 6198.4
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "서울대공원 캠핑장에서는 랜턴 3개를 가져갔는데 모두 사용했다.\n텐트 내부가 정말 어두워서 랜턴의 중요성을 다시 한번 느꼈다.\n랜턴은 단순히 분위기를 내기 위한 장비가 아니라 꼭 필요한 조명이다.",
+  "sourceY": 6279.4
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "스탠드 랜턴 2개",
+  "sourceY": 6380.4,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 297.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTBfMTM2/MDAxNzk0MjkxNzEwNjk1.bJVI-_CGr6-tN28BH-QSGX5GRepVmnWVUx7w7Vjico4g.fqDaW_Fl_oDJi1T8jC5uj6cbKUpadbnukYufFysKzjMg.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "스탠드 랜턴 2개"
+ },
+ {
+  "kind": "divider",
+  "level": 0,
+  "text": "",
+  "sourceY": 6761.9,
+  "media": {
+   "variant": "line"
+  }
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "05. 취사·식사 준비물 체크리스트\n캠핑에서 빠질 수 없는 즐거움이 바로 먹는 것!\n하지만 음식을 준비하다 보면 생각보다 챙길 게 많다.",
+  "sourceY": 6821.9
+ },
+ {
+  "kind": "table",
+  "level": 0,
+  "text": "준비물 | 우선순위 | 용도 및 체크 포인트 | 생수 | 필수 | 식수 | 버너·가스 | 필수* | 직접 조리할 때 | 냄비·코펠 | 필수* | 음식 조리 | 그리들 | 편함 | 다양한 음식 조리 | 식기·수저·컵 | 필수 | 식사 | 조리도구 | 추천 | 음식 준비 | 식기건조망 | 편함 | 설거지한 식기 건조 | 일회용 수세미 | 추천 | 설거지 후 위생적으로 처리 | 아이스박스 | 선택 | 식재료 보관 | 화로대 | 선택 | 허용된 장소에서 사용",
+  "sourceY": 6940.1
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "*직접 조리하지 않거나 조리도구를 대여하는 경우에는 달라질 수 있다.\n구매 및 준비 내역",
+  "sourceY": 7468.1
+ },
+ {
+  "kind": "list",
+  "level": 0,
+  "text": "버너·가스(편의점): 28,000원\n버팔로 코펠세트(🥕 새상품): 20,000원\n그리들 구매 (네이버): 지아이엘 25cm / 17,560원\n식기건조망 구매(네이버) : 3단 원형 건조망 / 9,900원\n일회용 베이킹소다 수세미(다이소): 30매 / 3,000원",
+  "sourceY": 7522.1
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "현재 식기와 수저는 주로 일회용품을 챙겨 다니고 있다.\n캠핑을 다니면서 식기건조망이나 일회용 수세미처럼 소소하지만 편리할 것 같은 물건도 체크리스트에 추가했다.\n그리고 고기를 구워 먹을 계획이라면 꼭 챙겨야 할 것이 있다.",
+  "sourceY": 7658.9
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "바로 고기 집게와 가위!\n서울대공원 캠핑장에서 그릴세트를 대여했을 때도 숯집게는 포함되어 있었지만 고기 집게와 가위는 별도로 준비해야 했다.\n그릴을 대여한다고 모든 조리도구가 포함되는 것은 아니니 미리 확인하는 것이 좋겠다.",
+  "sourceY": 7739.9
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "그리들",
+  "sourceY": 7867.9,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 166.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTFfMjQ4/MDAxNzk0Mzc3MjkxODMy.CKUwX_biJuY1g7sSCPJlW53wUgHtzK1QA20wvEupQxAg.DoAiLnrINhr0xnHOnA2-Q0rfPif2xxVqMJIag9VwlGkg.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "그리들"
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "조리도구",
+  "sourceY": 8067.4,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 698.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTBfMjE4/MDAxNzk0MjkzMjI2NzE0.qROx0SQlMYNOX-30z-YVi3Ggzv1WNOgdjdQEwSd0SE4g.efSZ0oC4NPBhmKAsFBVa6kdkoLzxKpoeYoWre4KSMHEg.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "조리도구"
+ },
+ {
+  "kind": "divider",
+  "level": 0,
+  "text": "",
+  "sourceY": 8401.7,
+  "media": {
+   "variant": "line"
+  }
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "06. 위생·안전 준비물 체크리스트\n캠핑용품을 준비하다 보면 텐트나 랜턴 같은 큰 장비에 먼저 눈이 간다.\n하지만 막상 캠핑장에 도착하면 작은 위생용품이 없어서 불편할 때가 있다.",
+  "sourceY": 8461.7
+ },
+ {
+  "kind": "table",
+  "level": 0,
+  "text": "준비물 | 우선순위 | 용도 및 체크 포인트 | 구급약품 | 선택 | 응급상황 대비 | 쓰레기봉투 | 선택 | 쓰레기 처리 | 휴지·물티슈 | 중요 | 위생 관리 | 벌레기피제 | 선택 | 계절에 따라 준비 | 자외선차단제 | 선택 | 야외 활동 | 소화기·소화용품 | 선택 | 화기 사용 시 안전 대비",
+  "sourceY": 8579.9
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "이 카테고리는 구매해야 하는 캠핑 전용 장비라기보다 집에 있는 물건을 활용할 수 있는 품목이 많다.\n우리 가족도 휴지와 물티슈는 캠핑 갈 때마다 챙겨간다.\n특히 아이와 함께 캠핑한다면 물티슈는 넉넉하게 준비하는 편이 좋겠다.",
+  "sourceY": 8927.9
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "쓰레기봉투는 캠핑장에서 별도로 제공하는지 확인하고, 화기 사용 시에는 안전장비와 캠핑장 규정을 함께 확인해야 한다.",
+  "sourceY": 9008.9
+ },
+ {
+  "kind": "divider",
+  "level": 0,
+  "text": "",
+  "sourceY": 9122.9,
+  "media": {
+   "variant": "line"
+  }
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "07. 숙박·방한 준비물 체크리스트\n캠핑을 시작하고 나서 예상보다 중요하다고 느꼈던 것이 바로 방한용품이다.\n특히 늦가을이나 겨울 캠핑을 생각한다면 더 신경 써야 한다.",
+  "sourceY": 9182.9
+ },
+ {
+  "kind": "table",
+  "level": 0,
+  "text": "준비물 | 우선순위 | 용도 및 체크 포인트 | 침낭·이불 | 중요 | 취침 시 보온 | 전기장판 | 필수* | 허용된 전기 사이트에서 사용 | 여벌 옷·겉옷 | 편함 | 기온 변화 대비 | 세면도구 | 중요 | 숙박 시 위생 관리 | 전기 온풍기 500W | 중요(조건부 선택) | 캠핑장 사용 허용 여부 확인 필수, 500W 이하가 좋으며, 여름에도 간혹 필요할 수 있음. (보통 사이트마다 전기사용이 합계 600W으로 상한되어있음) 온풍기로 늦가을, 겨울 캠핑은 불가능..(팬히터 등 온열장비 별도 필요)",
+  "sourceY": 9301.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "*전기장판은 개인적으로 중요하게 생각한 준비물이지만, 모든 캠핑장에서 사용 가능한 것은 아니다.\n구매 및 준비 내역",
+  "sourceY": 9772.0
+ },
+ {
+  "kind": "list",
+  "level": 0,
+  "text": "침낭(네이버): 30,000원\n집에 있는 담요와 이불 활용\n한일전기 가습겸용 온풍기 HEFU-C500(🥕새상품): 25,000원",
+  "sourceY": 9826.0
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "서울대공원 캠핑장을 방문했을 때는 기온이 약 0℃까지 내려갔다.\n자충매트와 침낭, 전기장판 등 방한용품을 준비했지만 생각보다 추웠다.\n이때 느낀 건 겨울 캠핑은 단순히 난방기구를 챙기는 것보다 바닥 단열과 보온 준비가 중요하다는 점이었다.",
+  "sourceY": 9908.8
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "그리고 주의할 점!\n온풍기는 소비전력이 낮다고 해서 모든 캠핑장에서 사용할 수 있는 것이 아니다.\n서울대공원 캠핑장처럼 온풍기 등 전열기구 사용을 금지하는 곳도 있으므로, 방문 전에 반드시 해당 캠핑장의 규정을 확인해야 한다.",
+  "sourceY": 9989.8
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "반고 침낭 (2인)",
+  "sourceY": 10117.8,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 695.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTBfMzQg/MDAxNzk0MjkzNDA3NjA3.isAJGYD6EsEZIHlFhISG4G2iCCIT4yXGPTwidl2-nBwg.SDjCicZ1x4J99Msd5yDQ-sUKi1nP0GkDTW8akqGyJK8g.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "반고 침낭 (2인)"
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "한일의료기 북극곰 전기매트 (L)",
+  "sourceY": 10374.6,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 658.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTBfNzQg/MDAxNzk0MjkzNDU4NDA2.c6OSmAVf9dvCegeImq1QFzRWkF2QVBMesU49qZnj6FEg.MVkOusN4PjIhcdA1z09eiXYNTuei_pZh9x0CxMjuXPMg.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "한일의료기 북극곰 전기매트 (L)"
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "한일 가습 온풍기 _회전안되는게 아쉽 ㅜ",
+  "sourceY": 10628.1,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 457.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTFfNTgg/MDAxNzk0MzY2Mjk3NzU1.9M64Abr2z-2mecxXma0ifNNHGbFM-aDbaifPLrryPpYg.VIjI1ECdFmMHAOXjfDja0nVWd8KAtEPp7FNRBsmdrbYg.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "한일 가습 온풍기 _회전안되는게 아쉽 ㅜ"
+ },
+ {
+  "kind": "divider",
+  "level": 0,
+  "text": "",
+  "sourceY": 11044.1,
+  "media": {
+   "variant": "line"
+  }
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "08. 전체 체크리스트를 정리하며\n처음 캠핑을 시작했을 때는 필요한 물건이 너무 많아 무엇부터 구매해야 할지 막막했다.\n그런데 직접 캠핑을 다녀보니 생각이 조금 바뀌었다.",
+  "sourceY": 11104.1
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "캠핑용품은 무조건 많이 구매하는 것보다 우리 가족의 캠핑 방식에 맞게 준비하는 것이 중요하다는 것!\n우리 가족은 아직 초보 캠퍼라 구매하지 않은 제품도 많고, 실제로 사용하면서 우선순위가 바뀌는 물건도 있다.\n그래서 이 체크리스트는 앞으로 캠핑을 다니면서 계속 수정하고 업데이트할 예정이다.",
+  "sourceY": 11192.3
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "처음 캠핑을 준비하는 분들에게 조금이나마 도움이 되었으면 좋겠다.",
+  "sourceY": 11273.3
+ },
+ {
+  "kind": "image",
+  "level": 0,
+  "text": "캠핑 준비물사진(텐트제외)",
+  "sourceY": 11320.3,
+  "media": {
+   "count": 1,
+   "role": "photo",
+   "widthPx": 698.0,
+   "src": [
+    "https://postfiles.pstatic.net/MjAyNjExMTFfMTQ5/MDAxNzk0MzY2NTI4MjA5.4WT6t-ZsyuElwtBX_XM4V6lzXUiIu-upXZkUjqXBKNsg.RC4ppXCruQ19eOn8VknnnVUFYvqtXF8sec2z6nMotmYg.PNG/image.png?type=w773"
+   ]
+  }
+ },
+ {
+  "kind": "caption",
+  "level": 0,
+  "text": "캠핑 준비물사진(텐트제외)"
+ },
+ {
+  "kind": "paragraph",
+  "level": 0,
+  "text": "다음에는 직접 구매한 캠핑용품들의 가격과 사용 후기도 하나씩 정리해 봐야겠다. ㅎㅎ",
+  "sourceY": 12010.8
+ }
+]

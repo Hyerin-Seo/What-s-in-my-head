@@ -2147,7 +2147,7 @@
               "updatedAt": 1793859221833
             }
           ],
-          "isFolded": false,
+          "isFolded": true,
           "createdAt": 1793769223297,
           "updatedAt": 1793848827721
         },
@@ -3851,7 +3851,7 @@
           "updatedAt": 1794470037896
         }
       ],
-      "isFolded": false,
+      "isFolded": true,
       "createdAt": 1793848829518,
       "updatedAt": 1793848924754
     }
@@ -3859,4 +3859,5 @@
   "defaultView": "bullets",
   "createdAt": 1793764849322,
   "updatedAt": 1795515437699
+  "updatedAt": 1795166472945
 }

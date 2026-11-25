@@ -1,0 +1,354 @@
+{
+  "version": "1.0.0",
+  "id": "gJJ3ILDDx3Cr",
+  "title": "주요 Object Data 스키마",
+  "rootNodes": [
+    {
+      "id": "oyLz9vMaqEt7",
+      "text": "Vdoc",
+      "children": [
+        {
+          "id": "R5vigD1MJVEK",
+          "text": "Document",
+          "children": [
+            {
+              "id": "HY4bLoVim4wx",
+              "text": "Blog",
+              "children": [
+                {
+                  "id": "l1v79ohCqYJK",
+                  "text": "SECTION",
+                  "children": [],
+                  "createdAt": 1795160705344,
+                  "updatedAt": 1795160707112
+                }
+              ],
+              "createdAt": 1795160536008,
+              "updatedAt": 1795160542120
+            },
+            {
+              "id": "mp3Svt5VxVJZ",
+              "text": "A4",
+              "children": [
+                {
+                  "id": "2Zm8dQH1yuAg",
+                  "text": "PAGE",
+                  "children": [],
+                  "createdAt": 1795160699682,
+                  "updatedAt": 1795160702129
+                }
+              ],
+              "createdAt": 1795160530761,
+              "updatedAt": 1795160542120
+            },
+            {
+              "id": "UWZwMkA5d2dn",
+              "text": "WEB",
+              "children": [
+                {
+                  "id": "ho5i4ItL9r0W",
+                  "text": "SECTION",
+                  "children": [],
+                  "createdAt": 1795160712693,
+                  "updatedAt": 1795160716125
+                }
+              ],
+              "createdAt": 1795160543258,
+              "updatedAt": 1795160546296
+            }
+          ],
+          "createdAt": 1795160482159,
+          "updatedAt": 1795160643128
+        },
+        {
+          "id": "cREiRC50XcjH",
+          "text": "Element",
+          "children": [
+            {
+              "id": "Q2HKdkmSNlRr",
+              "text": "표 형식",
+              "children": [
+                {
+                  "id": "t9xIFjp8Yej7",
+                  "text": "세부 기호",
+                  "children": [
+                    {
+                      "id": "MAGxES1p4Kn8",
+                      "text": "| : 열 구분",
+                      "children": [],
+                      "nodeType": "bullet",
+                      "createdAt": 1795160423465,
+                      "updatedAt": 1795160423465
+                    },
+                    {
+                      "id": "164n1llx5taI",
+                      "text": "[-] : 빈 칸 표시",
+                      "children": [],
+                      "nodeType": "bullet",
+                      "createdAt": 1795160423465,
+                      "updatedAt": 1795160423465
+                    },
+                    {
+                      "id": "45mh4khyprC3",
+                      "text": "[<] : 왼쪽 기준 병합",
+                      "children": [],
+                      "nodeType": "bullet",
+                      "createdAt": 1795160423465,
+                      "updatedAt": 1795160423465
+                    },
+                    {
+                      "id": "hzAdFU5o1K00",
+                      "text": "[^] : 위쪽 칸과 병합",
+                      "children": [],
+                      "nodeType": "bullet",
+                      "createdAt": 1795160423465,
+                      "updatedAt": 1795160423465
+                    },
+                    {
+                      "id": "XcBf9EEIim1l",
+                      "text": "",
+                      "children": [],
+                      "nodeType": "bullet",
+                      "createdAt": 1795160423465,
+                      "updatedAt": 1795160423465
+                    }
+                  ],
+                  "isFolded": false,
+                  "nodeType": "bullet",
+                  "createdAt": 1795160423465,
+                  "updatedAt": 1795160423465
+                },
+                {
+                  "id": "GPtCYFkUZ540",
+                  "text": "예시",
+                  "children": [
+                    {
+                      "id": "8AVzjk8gY87G",
+                      "text": "<<view:table>>",
+                      "children": [
+                        {
+                          "id": "bUaEIjQ2FD4B",
+                          "text": "기본 인적 사항",
+                          "children": [
+                            {
+                              "id": "q7Ov0ZhKDlqx",
+                              "text": "성명 | [-]",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795160423465,
+                              "updatedAt": 1795160423465
+                            },
+                            {
+                              "id": "MOIKfufRTDtY",
+                              "text": "파트 | [-] | 직급 | [-]",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795160423465,
+                              "updatedAt": 1795160423465
+                            },
+                            {
+                              "id": "nagXAxjtexll",
+                              "text": "차량 지참 여부 | [-]",
+                              "children": [],
+                              "nodeType": "bullet",
+                              "createdAt": 1795160423465,
+                              "updatedAt": 1795160423465
+                            }
+                          ],
+                          "nodeType": "bullet",
+                          "createdAt": 1795160423465,
+                          "updatedAt": 1795160423465
+                        },
+                        {
+                          "id": "u2q3FvDSgRPj",
+                          "text": "참석 구분 | □ 참석   □ 불참(사유)   □ 현장 설비 필수 대기·교대",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1795160423465,
+                          "updatedAt": 1795160423465
+                        },
+                        {
+                          "id": "KCGNWmpIayuR",
+                          "text": "불참 사유(불참자만) | [-]",
+                          "children": [],
+                          "nodeType": "bullet",
+                          "createdAt": 1795160423465,
+                          "updatedAt": 1795160423465
+                        }
+                      ],
+                      "isFolded": true,
+                      "nodeType": "bullet",
+                      "createdAt": 1795160423465,
+                      "updatedAt": 1795160423465
+                    },
+                    {
+                      "id": "wLJI8ljHT0nC",
+                      "text": "실제 렌더링 이미지",
+                      "children": [],
+                      "file": {
+                        "target": "Pasted image 20261120164041.png"
+                      },
+                      "createdAt": 1795160434489,
+                      "updatedAt": 1795160452869
+                    }
+                  ],
+                  "isFolded": true,
+                  "nodeType": "bullet",
+                  "createdAt": 1795160423465,
+                  "updatedAt": 1795160508039
+                }
+              ],
+              "isFolded": false,
+              "nodeType": "bullet",
+              "createdAt": 1795160423465,
+              "updatedAt": 1795160638787
+            },
+            {
+              "id": "dpRRCB1KS3GL",
+              "text": "Section",
+              "children": [
+                {
+                  "id": "IgDPVG3HfOaV",
+                  "text": "",
+                  "children": [],
+                  "createdAt": 1795168552597,
+                  "updatedAt": 1795168552688
+                }
+              ],
+              "createdAt": 1795168547641,
+              "updatedAt": 1795168551822
+            }
+          ],
+          "createdAt": 1795160557753,
+          "updatedAt": 1795160643128
+        }
+      ],
+      "createdAt": 1795160616686,
+      "updatedAt": 1795160622471
+    },
+    {
+      "id": "kp8NMAzyvXF6",
+      "text": "Support",
+      "children": [
+        {
+          "id": "OKTbDRfPwfP6",
+          "text": "Reference",
+          "children": [],
+          "createdAt": 1795160567290,
+          "updatedAt": 1795160610666
+        },
+        {
+          "id": "VoKZ5P50GxAO",
+          "text": "Resource",
+          "children": [
+            {
+              "id": "fjd7EIXlOeHs",
+              "text": "Filling 시",
+              "children": [
+                {
+                  "id": "D4uAYNEgFG4u",
+                  "text": "증거 및 근거",
+                  "children": [],
+                  "createdAt": 1795476992407,
+                  "updatedAt": 1795477041520
+                },
+                {
+                  "id": "2VFIPwsXDZbA",
+                  "text": "인용 및 출처",
+                  "children": [],
+                  "createdAt": 1795477009309,
+                  "updatedAt": 1795477041520
+                }
+              ],
+              "createdAt": 1795477032574,
+              "updatedAt": 1795477037673
+            },
+            {
+              "id": "3hfFgnbWtC7K",
+              "text": "Storylining 시",
+              "children": [
+                {
+                  "id": "CoTZjrGNtd0M",
+                  "text": "뼈대의 증거 및 근거",
+                  "children": [],
+                  "createdAt": 1795477058444,
+                  "updatedAt": 1795477077285
+                }
+              ],
+              "createdAt": 1795477043405,
+              "updatedAt": 1795477057929
+            }
+          ],
+          "createdAt": 1795160571205,
+          "updatedAt": 1795160610666
+        },
+        {
+          "id": "SsQU4ecmS6Fk",
+          "text": "(고민 중) Research",
+          "children": [],
+          "createdAt": 1795160854629,
+          "updatedAt": 1795160861538
+        }
+      ],
+      "createdAt": 1795160600261,
+      "updatedAt": 1795160605604
+    },
+    {
+      "id": "xLZ7LJtJjE8t",
+      "text": "Asset",
+      "children": [
+        {
+          "id": "XOFw7I5GAaTn",
+          "text": "PAGE",
+          "children": [],
+          "createdAt": 1795160807823,
+          "updatedAt": 1795160811543
+        },
+        {
+          "id": "POr7Jb5tk6eS",
+          "text": "Element",
+          "children": [],
+          "createdAt": 1795160811786,
+          "updatedAt": 1795160816021
+        }
+      ],
+      "createdAt": 1795160574842,
+      "updatedAt": 1795160805219
+    },
+    {
+      "id": "pa0T8rXXFMV7",
+      "text": "Layout",
+      "children": [
+        {
+          "id": "Pnso9TgJ7GwX",
+          "text": "TAB-Group",
+          "children": [],
+          "createdAt": 1795161971066,
+          "updatedAt": 1795414272412,
+          "isCompleted": true,
+          "completedAt": 1795414272412
+        }
+      ],
+      "createdAt": 1795161967627,
+      "updatedAt": 1795161970879
+    },
+    {
+      "id": "SGF6KPNSoOPp",
+      "text": "Editor",
+      "children": [
+        {
+          "id": "TvNyCq7c7avA",
+          "text": "Tools",
+          "children": [],
+          "createdAt": 1795162177014,
+          "updatedAt": 1795162178806
+        }
+      ],
+      "createdAt": 1795162169082,
+      "updatedAt": 1795162176833
+    }
+  ],
+  "defaultView": "bullets",
+  "createdAt": 1795160402369,
+  "updatedAt": 1795477077285
+}

@@ -1223,9 +1223,191 @@
       ],
       "createdAt": 1794963758535,
       "updatedAt": 1794963766030
+    },
+    {
+      "id": "v32p3rXQEw8E",
+      "text": "2026.11.23",
+      "children": [
+        {
+          "id": "cQEdFxMXoDpp",
+          "text": "outline + 스키마",
+          "children": [],
+          "createdAt": 1795402500646,
+          "updatedAt": 1795418420979
+        },
+        {
+          "id": "POxKh4TlZagw",
+          "text": "에셋 허브 + 추가 및 레이아웃",
+          "children": [
+            {
+              "id": "1UknU4rkUrdJ",
+              "text": "AG-UI",
+              "children": [],
+              "createdAt": 1795500971996,
+              "updatedAt": 1795500975356
+            }
+          ],
+          "createdAt": 1795402491515,
+          "updatedAt": 1795402565203
+        },
+        {
+          "id": "evszRCe8otLo",
+          "text": "resource 표현( feat. reference )",
+          "children": [],
+          "createdAt": 1795414291139,
+          "updatedAt": 1795419354491
+        },
+        {
+          "id": "SP4bPJ7P39Fv",
+          "text": "research",
+          "children": [],
+          "createdAt": 1795414287556,
+          "updatedAt": 1795414290978
+        }
+      ],
+      "createdAt": 1795402486671,
+      "updatedAt": 1795402490900
+    },
+    {
+      "id": "KL1PwRbFBVDk",
+      "text": "2026.11.24",
+      "children": [
+        {
+          "id": "QYWJ1u5T3eds",
+          "text": "대시보드 및 비동기, 병렬 처리",
+          "children": [],
+          "createdAt": 1795486993850,
+          "updatedAt": 1795487004660
+        },
+        {
+          "id": "9jU6tPvIlAD5",
+          "text": "JTBD 기준 내일 시연 시 반드시 되어야 하는 항목",
+          "children": [
+            {
+              "id": "IhOJRYv0W5mt",
+              "text": "<Reference> -> <asset>에셋 신규 생성 -> 활동 계획서에 포맷 잡기",
+              "children": [
+                {
+                  "id": "EAMI5EVgds2r",
+                  "text": "import,register 시 정확히 포맷 추출하기 - 에셋 register 하기",
+                  "children": [],
+                  "createdAt": 1795509924174,
+                  "updatedAt": 1795515326602
+                },
+                {
+                  "id": "LKZed3qhT0Aq",
+                  "text": "바로 filling 하기",
+                  "children": [],
+                  "createdAt": 1795510506191,
+                  "updatedAt": 1795510508811
+                }
+              ],
+              "createdAt": 1795509742895,
+              "updatedAt": 1795512284670
+            },
+            {
+              "id": "U6lIFxyZB8kO",
+              "text": "<DEVELOP> OUTLINE -> 이 부분 문서화",
+              "children": [
+                {
+                  "id": "5wQiTxu6fgkx",
+                  "text": "page&element - outline.compile 동기화",
+                  "children": [],
+                  "createdAt": 1795533295305,
+                  "updatedAt": 1795533320958
+                }
+              ],
+              "createdAt": 1795513901070,
+              "updatedAt": 1795513927138
+            },
+            {
+              "id": "Aa6y1M7N3qKU",
+              "text": "활동 계획서 -> 리소스 기준 -> 에셋 추천 및 ",
+              "children": [],
+              "createdAt": 1795509821247,
+              "updatedAt": 1795512350604
+            },
+            {
+              "id": "T1PHd33xFhVt",
+              "text": "<RESEARCH> 이런 자료로 추가 조사해와 -> 알아서 -> 폴더에 뙇",
+              "children": [],
+              "createdAt": 1795509630689,
+              "updatedAt": 1795509691644
+            },
+            {
+              "id": "dFF3NPfXGyUc",
+              "text": "<RESOURCE> 이런 자료로 이 부분만 변경해봐 -> 부분 수정 혹은 새로운 스토리라이닝",
+              "children": [],
+              "createdAt": 1795509640908,
+              "updatedAt": 1795509712310
+            },
+            {
+              "id": "xWGbHFT0tIHh",
+              "text": "<STORYLING> 서혜린 컨셉별로 여러 아웃라인",
+              "children": [
+                {
+                  "id": "4gACcLapDIhB",
+                  "text": "-> 레퍼런스 -> 여러 유형을 디테일하게 손보기 -> 패턴화 -> 쭉 밀기",
+                  "children": [],
+                  "createdAt": 1795509757676,
+                  "updatedAt": 1795509777201
+                },
+                {
+                  "id": "oUpDpFM0eiGu",
+                  "text": "<선 Resource> 서혜린 사진첩을 밀어넣고 와꾸 잡아보라고 하기",
+                  "children": [],
+                  "createdAt": 1795510799409,
+                  "updatedAt": 1795510819673
+                }
+              ],
+              "createdAt": 1795509713766,
+              "updatedAt": 1795509742176
+            },
+            {
+              "id": "wMI0bKLuNmnp",
+              "text": "<RESEARCH> 레퍼런스 물어오기 -> 알아서 -> 잘 꽂아넣기",
+              "children": [],
+              "createdAt": 1795510315098,
+              "updatedAt": 1795510338232
+            },
+            {
+              "id": "ImnHa72Un8x4",
+              "text": "<REFERENCE> 부분 수정하기 -> 통째로 갈아끼우고, 이어붙이고",
+              "children": [],
+              "createdAt": 1795510328590,
+              "updatedAt": 1795512371607
+            },
+            {
+              "id": "V3U2yg1QqqEK",
+              "text": "<STD?? > 작업 메뉴얼, 기준 가이드 -> 회의록 알잘딱 정리시키기 ",
+              "children": [],
+              "createdAt": 1795510840136,
+              "updatedAt": 1795514075858
+            },
+            {
+              "id": "Xvn13WsV9iTh",
+              "text": "<딸깍?> -> 블로그 확장 ",
+              "children": [],
+              "createdAt": 1795511475828,
+              "updatedAt": 1795511485510
+            },
+            {
+              "id": "oY5oUPI2te4L",
+              "text": "<유동적이고 확장적 수정? 능동적 수정? write>",
+              "children": [],
+              "createdAt": 1795513030583,
+              "updatedAt": 1795513052774
+            }
+          ],
+          "createdAt": 1795487006145,
+          "updatedAt": 1795509630408
+        }
+      ],
+      "createdAt": 1795486988738,
+      "updatedAt": 1795486993151
     }
   ],
   "defaultView": "bullets",
   "createdAt": 1793934368821,
-  "updatedAt": 1794964730458
+  "updatedAt": 1795533320958
 }
