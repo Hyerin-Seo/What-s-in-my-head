@@ -240,7 +240,45 @@
         {
           "id": "VoKZ5P50GxAO",
           "text": "Resource",
-          "children": [],
+          "children": [
+            {
+              "id": "fjd7EIXlOeHs",
+              "text": "Filling 시",
+              "children": [
+                {
+                  "id": "D4uAYNEgFG4u",
+                  "text": "증거 및 근거",
+                  "children": [],
+                  "createdAt": 1795476992407,
+                  "updatedAt": 1795477041520
+                },
+                {
+                  "id": "2VFIPwsXDZbA",
+                  "text": "인용 및 출처",
+                  "children": [],
+                  "createdAt": 1795477009309,
+                  "updatedAt": 1795477041520
+                }
+              ],
+              "createdAt": 1795477032574,
+              "updatedAt": 1795477037673
+            },
+            {
+              "id": "3hfFgnbWtC7K",
+              "text": "Storylining 시",
+              "children": [
+                {
+                  "id": "CoTZjrGNtd0M",
+                  "text": "뼈대의 증거 및 근거",
+                  "children": [],
+                  "createdAt": 1795477058444,
+                  "updatedAt": 1795477077285
+                }
+              ],
+              "createdAt": 1795477043405,
+              "updatedAt": 1795477057929
+            }
+          ],
           "createdAt": 1795160571205,
           "updatedAt": 1795160610666
         },
@@ -312,5 +350,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1795160402369,
-  "updatedAt": 1795414272413
+  "updatedAt": 1795477077285
 }
