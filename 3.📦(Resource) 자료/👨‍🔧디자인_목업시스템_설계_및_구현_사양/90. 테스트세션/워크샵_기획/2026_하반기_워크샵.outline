@@ -2190,10 +2190,11 @@
                     }
                   ],
                   "createdAt": 1794918412157,
-                  "updatedAt": 1794918421617
+                  "updatedAt": 1794918421617,
+                  "isFolded": true
                 }
               ],
-              "isFolded": false,
+              "isFolded": true,
               "createdAt": 1794918336806,
               "updatedAt": 1794918627916
             },
@@ -2210,7 +2211,8 @@
                 }
               ],
               "createdAt": 1794918400076,
-              "updatedAt": 1794918627916
+              "updatedAt": 1794918627916,
+              "isFolded": false
             },
             {
               "id": "PCEDGHLHWKpq",
@@ -2232,7 +2234,8 @@
                 }
               ],
               "createdAt": 1794918527025,
-              "updatedAt": 1794918686269
+              "updatedAt": 1794918686269,
+              "isFolded": true
             },
             {
               "id": "1reXuYSEziLm",
@@ -2254,7 +2257,8 @@
                 }
               ],
               "createdAt": 1794918724396,
-              "updatedAt": 1794918765660
+              "updatedAt": 1794918765660,
+              "isFolded": false
             }
           ],
           "isFolded": false,
@@ -2341,7 +2345,8 @@
         }
       ],
       "createdAt": 1794999588178,
-      "updatedAt": 1794999595518
+      "updatedAt": 1794999595518,
+      "isFolded": false
     },
     {
       "id": "g1K9Nl3MyPQB",
@@ -2755,6 +2760,65 @@
       ],
       "createdAt": 1794992837510,
       "updatedAt": 1794992843218
+    },
+    {
+      "id": "u2g1A3S5LSOb",
+      "text": "클로드 카드 안내장 만들기",
+      "children": [
+        {
+          "id": "49mVXulpRZWJ",
+          "text": "표지 한줄 약속 ",
+          "children": [
+            {
+              "id": "p01eWM3PidXv",
+              "text": "상품명 소개",
+              "children": [],
+              "createdAt": 1795063502412,
+              "updatedAt": 1795063688335
+            },
+            {
+              "id": "sULcq14G3wcy",
+              "text": "한줄 소개",
+              "children": [],
+              "createdAt": 1795063506709,
+              "updatedAt": 1795063689762
+            }
+          ],
+          "createdAt": 1795063482560,
+          "updatedAt": 1795063683670
+        },
+        {
+          "id": "mVwGLXppRnIp",
+          "text": "혜택 한눈에",
+          "children": [
+            {
+              "id": "uLXbJlav6RF6",
+              "text": "다섯장을 한표로 보여주면 되려나?",
+              "children": [],
+              "createdAt": 1795063519204,
+              "updatedAt": 1795063527504
+            },
+            {
+              "id": "GpSRXAPzzFLa",
+              "text": "아 시발 몰라",
+              "children": [],
+              "createdAt": 1795063694632,
+              "updatedAt": 1795063700382
+            }
+          ],
+          "createdAt": 1795063488441,
+          "updatedAt": 1795063492928
+        },
+        {
+          "id": "27prD6ixpRn7",
+          "text": "구독 간편 결제 할인",
+          "children": [],
+          "createdAt": 1795063493143,
+          "updatedAt": 1795063501590
+        }
+      ],
+      "createdAt": 1795063470282,
+      "updatedAt": 1795063482335
     }
   ],
   "defaultView": "bullets",

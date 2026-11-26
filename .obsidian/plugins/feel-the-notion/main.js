@@ -2041,7 +2041,7 @@ var NotionBlockActionMenu = class {
     this.renderSection(t("menu.turnInto"), transformItems);
     this.renderSeparator();
     this.renderSection("", colorItems);
-    this.renderSeparator();
+    if (colorItems.length) this.renderSeparator();   // [개똥이 머릿속 수정] 색 메뉴를 빼서 구분선이 두 줄 되지 않게
     this.renderSection("", blockItems);
     this.reposition();
   }
@@ -2066,9 +2066,11 @@ var NotionBlockActionMenu = class {
     ];
   }
   getColorEntryItems() {
-    return [
-      { id: "color", label: t("menu.color"), icon: "paint-roller", page: "color" }
-    ];
+    // [개똥이 머릿속 수정] 2026-11-20 — "색" 메뉴를 뺐습니다. 배경색·글자색을 <mark style>/<span style> HTML 로
+    // 감싸는데, 라이브 프리뷰가 그 줄을 한 덩어리로 그려서 줄 안을 클릭하고 치면 칠한 글 전체가 친 글자로
+    // 통째로 바뀝니다 (넛지 노트에서 재현). 하이라이트는 옵시디언 기본 ==글== 을 씁니다.
+    // 되돌리려면 아래 줄을 원래대로: return [{ id: "color", label: t("menu.color"), icon: "paint-roller", page: "color" }];
+    return [];
   }
   getBlockActionItems() {
     return [
