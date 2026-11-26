@@ -1303,7 +1303,24 @@
                 }
               ],
               "createdAt": 1795509742895,
-              "updatedAt": 1795512284670
+              "updatedAt": 1795589352978,
+              "isFolded": true,
+              "isCompleted": true,
+              "completedAt": 1795589352978
+            },
+            {
+              "id": "dFF3NPfXGyUc",
+              "text": "<RESOURCE> 이런 자료로 이 부분만 변경해봐 -> 부분 수정 혹은 새로운 스토리라이닝",
+              "children": [],
+              "createdAt": 1795509640908,
+              "updatedAt": 1795589332898
+            },
+            {
+              "id": "T1PHd33xFhVt",
+              "text": "<RESEARCH> 이런 자료로 추가 조사해와 -> 알아서 -> 폴더에 뙇",
+              "children": [],
+              "createdAt": 1795509630689,
+              "updatedAt": 1795589358697
             },
             {
               "id": "U6lIFxyZB8kO",
@@ -1315,6 +1332,14 @@
                   "children": [],
                   "createdAt": 1795533295305,
                   "updatedAt": 1795533320958
+                },
+                {
+                  "id": "CzkysHmnzZQp",
+                  "text": "라야 인저리",
+                  "children": [],
+                  "createdAt": 1795616274473,
+                  "updatedAt": 1795616290070,
+                  "nodeType": "todo"
                 }
               ],
               "createdAt": 1795513901070,
@@ -1326,20 +1351,6 @@
               "children": [],
               "createdAt": 1795509821247,
               "updatedAt": 1795512350604
-            },
-            {
-              "id": "T1PHd33xFhVt",
-              "text": "<RESEARCH> 이런 자료로 추가 조사해와 -> 알아서 -> 폴더에 뙇",
-              "children": [],
-              "createdAt": 1795509630689,
-              "updatedAt": 1795509691644
-            },
-            {
-              "id": "dFF3NPfXGyUc",
-              "text": "<RESOURCE> 이런 자료로 이 부분만 변경해봐 -> 부분 수정 혹은 새로운 스토리라이닝",
-              "children": [],
-              "createdAt": 1795509640908,
-              "updatedAt": 1795509712310
             },
             {
               "id": "xWGbHFT0tIHh",
@@ -1358,6 +1369,14 @@
                   "children": [],
                   "createdAt": 1795510799409,
                   "updatedAt": 1795510819673
+                },
+                {
+                  "id": "hfPQ0Eae6HAT",
+                  "text": "여행 -> 이쪽 이미지 중심으로 여러 주제 뽑",
+                  "children": [],
+                  "createdAt": 1795614620874,
+                  "updatedAt": 1795614932971,
+                  "nodeType": "todo"
                 }
               ],
               "createdAt": 1795509713766,
@@ -1366,14 +1385,31 @@
             {
               "id": "wMI0bKLuNmnp",
               "text": "<RESEARCH> 레퍼런스 물어오기 -> 알아서 -> 잘 꽂아넣기",
-              "children": [],
+              "children": [
+                {
+                  "id": "yRSYlbV2K95T",
+                  "text": "skill 로 파야할 듯",
+                  "children": [],
+                  "createdAt": 1795614964182,
+                  "updatedAt": 1795614971476
+                }
+              ],
               "createdAt": 1795510315098,
               "updatedAt": 1795510338232
             },
             {
               "id": "ImnHa72Un8x4",
               "text": "<REFERENCE> 부분 수정하기 -> 통째로 갈아끼우고, 이어붙이고",
-              "children": [],
+              "children": [
+                {
+                  "id": "4kef9HKnVgOR",
+                  "text": "아부지 다 때려넣고 상고 이유서",
+                  "children": [],
+                  "createdAt": 1795614664994,
+                  "updatedAt": 1795614923950,
+                  "nodeType": "todo"
+                }
+              ],
               "createdAt": 1795510328590,
               "updatedAt": 1795512371607
             },
@@ -1401,6 +1437,23 @@
           ],
           "createdAt": 1795487006145,
           "updatedAt": 1795509630408
+        },
+        {
+          "id": "4cLTnP0Cbg6W",
+          "text": "2026.11.25",
+          "children": [
+            {
+              "id": "ofcKZ0Fqqp8C",
+              "text": "개발 서버 - 본 서버 분리 구조 구축하기 - 내부 배포식 운영구조",
+              "children": [],
+              "createdAt": 1795592659698,
+              "updatedAt": 1795614946058,
+              "isCompleted": true,
+              "completedAt": 1795614946058
+            }
+          ],
+          "createdAt": 1795592655674,
+          "updatedAt": 1795592659321
         }
       ],
       "createdAt": 1795486988738,
@@ -1409,5 +1462,5 @@
   ],
   "defaultView": "bullets",
   "createdAt": 1793934368821,
-  "updatedAt": 1795533320958
+  "updatedAt": 1795616290071
 }
